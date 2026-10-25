@@ -344,12 +344,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .trailer::before { content: ""; border-left: 8px solid var(--red); border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
 .trailer[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
 .spread .trailer { border-color: var(--spread-fg); }
-/* Trailers float in a corner window so reading continues around them. */
-body.com-player.player-video { padding-bottom: 24px; }
-body.com-player.player-video dialog.leitura { padding-bottom: 24px; }
-body.player-video .dock { left: auto; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(420px, calc(100% - 32px)); border-radius: 14px; padding-bottom: 0; }
-body.player-video .dock .wrap { padding: 8px 10px 10px; }
-.dock iframe.video { aspect-ratio: 16 / 9; width: 100%; height: auto !important; border-radius: 8px; }
+.dock iframe.video { aspect-ratio: 16 / 9; width: 100%; height: auto !important; border-radius: 10px; }
 @media (max-width: 1000px) { .mgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 /* Films & books */
@@ -364,18 +359,35 @@ body.player-video .dock .wrap { padding: 8px 10px 10px; }
 .cult-card .rec, .cult-card .ponte { margin-bottom: 8px; }
 
 /* Player dock (GitHub site only: claude.ai does not allow embeds) */
-.dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--spread-bg); color: var(--spread-fg); box-shadow: 0 -8px 24px rgba(0, 0, 0, .18); padding-bottom: env(safe-area-inset-bottom, 0px); }
-.dock .wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; padding-block: 8px 10px; }
-.dock-top { display: flex; align-items: center; gap: 12px; min-width: 0; }
-.dock-top .tocando { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 800 16px/1.2 var(--f-display); font-stretch: 75%; }
-.dock-top .tocando em { font: italic 400 15px var(--f-body); font-stretch: normal; }
-.dock-btn { border: 1.5px solid var(--spread-fg); background: transparent; color: var(--spread-fg); padding: 3px 10px; border-radius: 999px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; white-space: nowrap; }
+/* The player is a floating card in the corner, like a sleeve with the embed underneath, so reading goes on around it. */
+.dock { position: fixed; z-index: 40; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(400px, calc(100% - 32px)); background: var(--spread-bg); color: var(--spread-fg); border-radius: 18px; box-shadow: 0 18px 50px rgba(0, 0, 0, .32), 0 2px 8px rgba(0, 0, 0, .18); overflow: hidden; }
+.dock .wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 12px; width: auto; max-width: none; margin: 0; }
+.dock-top { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto; align-items: center; gap: 12px; min-width: 0; }
+.dock-capa { width: 48px; height: 48px; border-radius: 8px; overflow: hidden; background: var(--spread-fg); display: block; }
+.dock-capa img, .dock-capa .ph { width: 100%; height: 100%; object-fit: cover; display: block; }
+.dock-txt { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.dock-fonte { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--red); display: flex; align-items: center; gap: 6px; }
+.dock-fonte::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: pulsa 1.6s ease-in-out infinite; }
+@keyframes pulsa { 50% { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .dock-fonte::before { animation: none; } }
+.dock-top .tocando { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 800 17px/1.15 var(--f-display); font-stretch: 75%; }
+.dock-top .tocando em { display: block; overflow: hidden; text-overflow: ellipsis; font: italic 400 14.5px/1.2 var(--f-body); font-stretch: normal; opacity: .85; }
+.dock-acoes { display: flex; gap: 6px; }
+.dock-btn { width: 30px; height: 30px; display: inline-grid; place-items: center; border: 1.5px solid currentColor; background: transparent; color: var(--spread-fg); border-radius: 50%; font: 600 14px/1 var(--f-mono); cursor: pointer; padding: 0; }
+.dock-btn:hover { background: var(--spread-fg); color: var(--spread-bg); }
 .dock iframe { width: 100%; border: 0; border-radius: 12px; display: block; background: transparent; }
-body.com-player { padding-bottom: 210px; }
-body.com-player.player-grande { padding-bottom: 410px; }
-body.com-player dialog.leitura { padding-bottom: 210px; }
-body.com-player.player-grande dialog.leitura { padding-bottom: 410px; }
+body.com-player { padding-bottom: 24px; }
+@media (max-width: 700px) {
+  .dock { right: 8px; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); width: calc(100% - 16px); border-radius: 16px; }
+  body.com-player { padding-bottom: 250px; }
+  body.com-player.player-grande { padding-bottom: 450px; }
+  body.com-player.player-video { padding-bottom: 330px; }
+  body.com-player dialog.leitura { padding-bottom: 250px; }
+  body.com-player.player-grande dialog.leitura { padding-bottom: 450px; }
+  body.com-player.player-video dialog.leitura { padding-bottom: 330px; }
+}
 .ouvir { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; background: var(--red); color: var(--on-red); padding: 6px 12px 6px 10px; border-radius: 999px; font: 800 13px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; }
+.ouvir .ouvir-fonte { font: 500 10px var(--f-mono); letter-spacing: .04em; opacity: .8; border-left: 1px solid currentColor; padding-left: 7px; }
 .ouvir::before { content: ""; width: 0; height: 0; border-left: 9px solid currentColor; border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
 .ouvir:hover { filter: brightness(1.08); }
 .ouvir:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
@@ -544,10 +556,12 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
 <aside class="dock" id="dock" hidden aria-label="Player">
   <div class="wrap">
     <div class="dock-top">
-      <span class="mono" style="color:var(--red)">Tocando</span>
-      <span class="tocando" id="dock-tocando"></span>
-      <button class="dock-btn" type="button" id="dock-tam">Ver faixas</button>
-      <button class="dock-btn" type="button" id="dock-fechar">Fechar</button>
+      <span class="dock-capa" id="dock-capa" aria-hidden="true"></span>
+      <span class="dock-txt"><span class="dock-fonte" id="dock-fonte">Tocando</span><span class="tocando" id="dock-tocando"></span></span>
+      <span class="dock-acoes">
+        <button class="dock-btn" type="button" id="dock-tam" aria-label="Ver faixas" title="Ver faixas">↕</button>
+        <button class="dock-btn" type="button" id="dock-fechar" aria-label="Fechar o player" title="Fechar">×</button>
+      </span>
     </div>
     <div id="dock-frame"></div>
   </div>
@@ -636,19 +650,20 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     const q = encodeURIComponent(`${str(a.artista)} ${str(a.album)}`.trim());
     return h("div", { class: "links" },
       h("a", { href: safeUrl(a.spotify_url) || `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener" }, "Spotify"),
+      h("a", { href: ytLista(a) ? `https://music.youtube.com/playlist?list=${ytLista(a)}` : `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener" }, "YT Music"),
       h("a", { href: safeUrl(a.apple_url) || `https://music.apple.com/br/search?term=${q}`, target: "_blank", rel: "noopener" }, "Apple Music"),
-      h("a", { href: `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener" }, "YT Music"),
       safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
   }
-  // Embedded player: Spotify album embed when we know the id, Apple Music embed as fallback.
+  // Embedded player: Spotify album embed when we know the id, else the album's YouTube Music playlist.
   const tocando = { url: null, grande: false };
+  const ytLista = (a) => (/^(OLAK5uy_|PL)[A-Za-z0-9_-]{16,40}$/.test(str(a.youtube_list)) ? str(a.youtube_list) : "");
   function embedUrl(a) {
     const sid = str(a.spotify_id) || (str(a.spotify_url).match(/album\/([A-Za-z0-9]{22})/) || [])[1];
-    if (sid && /^[A-Za-z0-9]{22}$/.test(sid)) return `https://open.spotify.com/embed/album/${sid}?utm_source=generator`;
-    const ap = str(a.apple_url);
-    if (/^https:\/\/music\.apple\.com\//.test(ap)) return ap.replace("https://music.apple.com/", "https://embed.music.apple.com/");
+    if (sid && /^[A-Za-z0-9]{22}$/.test(sid)) return `https://open.spotify.com/embed/album/${sid}?utm_source=generator&theme=0`;
+    if (ytLista(a)) return `https://www.youtube-nocookie.com/embed/videoseries?list=${ytLista(a)}&rel=0`;
     return null;
   }
+  const fonteDe = (url) => (/spotify\.com/.test(url) ? "Spotify" : /list=/.test(url) ? "YouTube Music" : "Trailer");
   function trailerUrl(a) {
     const u = str(a.trailer_url);
     const m = u.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
@@ -665,41 +680,49 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     dock.hidden = !tocando.url;
     const tam = document.getElementById("dock-tam");
     tam.hidden = !!tocando.video;
-    tam.textContent = tocando.grande ? "Compacto" : "Ver faixas";
+    tam.setAttribute("aria-label", tocando.grande ? "Compactar" : "Ver faixas");
+    tam.title = tam.getAttribute("aria-label");
+    tam.textContent = tocando.grande ? "–" : "↕";
   }
-  function tocar(url, quem, oque, video) {
+  function tocar(url, quem, oque, video, capaDe) {
     if (!url) return;
     const box = document.getElementById("dock-frame");
     if (tocando.url !== url) {
       tocando.url = url;
-      tocando.video = !!video;
+      tocando.video = !!video || /list=/.test(url);
+      video = tocando.video;
+      document.getElementById("dock-fonte").textContent = fonteDe(url);
+      const cx = document.getElementById("dock-capa");
+      cx.replaceChildren(...(capaDe ? [capa(capaDe)] : []));
+      cx.hidden = !capaDe;
       const f = document.createElement("iframe");
       f.src = url;
-      f.title = `${video ? "Trailer" : "Player"}: ${oque}`;
+      const trailer = fonteDe(url) === "Trailer";
+      f.title = `${trailer ? "Trailer" : "Player"}: ${oque}`;
       f.loading = "eager";
       if (video) f.className = "video";
       f.allow = "autoplay *; clipboard-write; encrypted-media *; fullscreen; picture-in-picture";
       box.replaceChildren(f);
       const t = document.getElementById("dock-tocando");
-      t.replaceChildren(document.createTextNode(`${video ? "Trailer · " : ""}${quem} · `), h("em", null, oque));
+      t.replaceChildren(document.createTextNode(quem), h("em", null, oque));
     }
     desenharPlayer();
     render();
   }
-  function ouvir(a) { tocar(embedUrl(a), str(a.exibir_artista || a.artista), str(a.album), false); }
+  function ouvir(a) { tocar(embedUrl(a), str(a.exibir_artista || a.artista), str(a.album), false, a); }
   function botaoTrailer(a) {
     if (S.modo !== "site") return null;
     const url = trailerUrl(a);
     if (!url) return null;
     const ativo = tocando.url === url;
-    return h("button", { class: "trailer", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(url, str(a.titulo), str(a.autor), true) }, ativo ? "Passando" : "Ver trailer");
+    return h("button", { class: "trailer", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(url, str(a.titulo), str(a.autor), true, { capa: a.capa, album: a.titulo, artista: a.autor, _tipo: a.tipo }) }, ativo ? "Passando" : "Ver trailer");
   }
   function botaoOuvir(a) {
     if (S.modo !== "site") return null;
     const url = embedUrl(a);
     if (!url) return null;
     const ativo = tocando.url === url;
-    return h("button", { class: "ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => ouvir(a) }, ativo ? "Tocando" : "Ouvir aqui");
+    return h("button", { class: "ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => ouvir(a) }, ativo ? "Tocando" : "Ouvir aqui", h("small", { class: "ouvir-fonte" }, fonteDe(url) === "Spotify" ? "Spotify" : "YouTube"));
   }
 
   // Missing covers become a typographic sleeve, coloured by kind (disc, film, series, book...).
