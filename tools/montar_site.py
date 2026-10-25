@@ -16,7 +16,7 @@ Prints the asset ids referenced by the data but missing from --assets, so they c
 import argparse, glob, json, os, re, shutil, sys
 
 COLECOES = ["edicoes", "itens", "guias", "semanas", "cultura", "dias",
-            "cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias", "agenda"]
+            "cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias", "agenda", "leituras"]
 SKELETON_HEAD = """<!doctype html>
 <html lang="pt-BR">
 <head>

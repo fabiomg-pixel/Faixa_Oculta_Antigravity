@@ -252,6 +252,36 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .jr-contraste, .jr-leitura { margin-top: 26px; max-width: 760px; }
 .jr-contraste p { font-size: 17px; line-height: 1.55; }
 .jr-nota { color: var(--muted); font-size: 11px; margin-top: 22px; }
+.versoes { border-bottom: 1.5px solid currentColor; padding-bottom: 18px; margin-bottom: 18px; }
+.versoes h4 { margin: 0 0 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--red); }
+.versoes p { margin: 0 0 10px; }
+.versoes select { width: min(100%, 420px); font: 400 16px var(--f-body); padding: 10px 12px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); border-radius: 0; }
+dialog.texto { width: min(760px, calc(100% - 24px)); max-height: calc(100% - 40px); border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); padding: 0; border-radius: 4px; }
+dialog.texto::backdrop { background: rgba(0, 0, 0, .55); }
+.lt-box { padding: 18px clamp(16px, 4vw, 40px) 28px; }
+.lt-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; position: sticky; top: 0; background: var(--paper); padding: 6px 0 12px; border-bottom: 1.5px solid var(--ink); margin-bottom: 16px; }
+.lt-bar .mono { color: var(--red); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+.lt-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 12px; color: var(--muted); }
+.lt-meta b { color: var(--ink); text-transform: uppercase; letter-spacing: .04em; }
+.lt-nota { background: var(--ink); color: var(--paper); padding: 2px 7px; border-radius: 999px; }
+.lt-tit { font: 800 clamp(24px, 3.4vw, 34px)/1.05 var(--f-display); font-stretch: 75%; margin: 8px 0 12px; }
+.lt-box p, .lc p { font-size: 17.5px; line-height: 1.6; margin: 0 0 .85em; }
+.lt-pontos { margin: 0 0 1em; padding-left: 1.1em; }
+.lt-pontos li { margin-bottom: .35em; }
+.lt-cit { margin: 0 0 1em; padding-left: 14px; border-left: 3px solid var(--red); font-style: italic; }
+.lt-orig { display: inline-block; font: 800 14px var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; color: var(--red); }
+.lt-aviso { color: var(--muted); font-size: 11px; }
+.l-criticas { padding-block: 10px 48px; }
+.l-criticas > h3 { font: 900 clamp(32px, 5vw, 52px)/.95 var(--f-display); font-stretch: 75%; margin: 18px 0 4px; border-top: 1.5px solid var(--ink); padding-top: 18px; }
+.l-criticas > h3::after { content: "."; color: var(--red); }
+.lc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 22px 32px; margin-top: 14px; }
+.lc { border-top: 1px solid var(--rule); padding-top: 12px; min-width: 0; }
+.lc .lt-tit { font-size: 22px; }
+.lc p { font-size: 16px; }
+.fl { display: inline-flex; align-items: baseline; gap: 6px; }
+.fl-ler { all: unset; cursor: pointer; font-weight: 700; text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 3px; }
+.fl-ler:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.fl-orig { font-size: 12px; color: var(--muted); text-decoration: none; }
 .ag-desc summary { cursor: pointer; color: var(--muted); padding: 6px 0; }
 .ag-desc ul { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
 .ag-desc li { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--rule); padding-bottom: 8px; min-width: 0; }
@@ -270,8 +300,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .arq-txt span { color: var(--muted); }
 .arq-txt small { color: var(--muted); font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .fds { padding-block: 8px 36px; border-top: 1.5px solid var(--ink); }
-.fds h3 { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 75%; text-transform: lowercase; font-size: clamp(30px, 5vw, 48px); line-height: .95; margin: 6px 0 18px; }
-.fds h3::after { content: "."; color: var(--red); }
+.fds > h3 { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 75%; text-transform: lowercase; font-size: clamp(30px, 5vw, 48px); line-height: .95; margin: 6px 0 18px; }
+.fds > h3::after { content: "."; color: var(--red); }
 .fds-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 18px; margin-bottom: 18px; }
 .fds-item { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .fds-nota { margin: 0; font-size: 17px; line-height: 1.45; font-style: italic; }
@@ -279,7 +309,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .ag-ev.marcado { box-shadow: 6px 6px 0 var(--tc, var(--red)); }
 .ag-data { background: var(--tc, var(--ink)); color: #fff; padding: 10px 8px; display: flex; flex-direction: column; gap: 4px; }
 .ag-data .k { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .05em; }
-.ag-data b { font: 900 34px/.85 var(--f-display); font-stretch: 62%; }
+.ag-data b { font: 900 28px/.9 var(--f-display); font-stretch: 62%; overflow-wrap: anywhere; }
 .ag-data span { font: 600 12px/1.2 var(--f-body); }
 .ag-corpo { padding: 12px 14px 14px; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .ag-corpo h3 { margin: 0; font: 800 22px/1.05 var(--f-display); font-stretch: 75%; }
@@ -298,6 +328,83 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .ag-marcas button { border: 1.5px solid var(--ink); background: transparent; padding: 3px 9px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
 .ag-marcas button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
 .ag-marcas.mini button { padding: 2px 7px; font-size: 10px; }
+.ag-marcas button:disabled { opacity: .45; cursor: default; }
+.ag-marcas .ag-com { border-style: dashed; }
+/* Agenda controls: search and the three filter rows */
+.ag-ctrl { padding-block: 0 26px; display: grid; gap: 14px; }
+.ag-busca label { display: block; color: var(--muted); margin-bottom: 5px; }
+.ag-busca .campo { display: flex; gap: 6px; max-width: 640px; }
+.ag-busca input { flex: 1; min-width: 0; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); padding: 10px 12px; font: 400 17px var(--f-body); border-radius: 0; -webkit-appearance: none; appearance: none; }
+.ag-busca input::placeholder { color: var(--muted); }
+.ag-busca button { border: 1.5px solid var(--ink); background: var(--ink); color: var(--paper); font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; padding: 0 14px; cursor: pointer; }
+.ag-res { margin: 6px 0 0; color: var(--muted); font-size: 15px; font-style: italic; max-width: 62ch; }
+.ag-frow { display: grid; gap: 5px; }
+.ag-frow > .mono { color: var(--muted); }
+.ag-frow .ag-filtros { margin-top: 0; }
+.ag-frow.pausado { opacity: .5; }
+.chip.ag-tc::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--tc); flex: none; }
+.chip.ag-tc[aria-pressed="true"] { background: var(--tc); border-color: var(--tc); color: #fff; }
+.chip.ag-tc[aria-pressed="true"]::before { background: #fff; }
+/* Card details mirrored from the Radar */
+.ag-sobre { margin: 0; font-size: 15px; color: var(--muted); max-width: 62ch; }
+.ag-mets { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; min-width: 0; }
+.ag-met { display: flex; flex-wrap: wrap; gap: 5px; }
+.ag-met a, .ag-met span { font: 500 11.5px/1.4 var(--f-mono); border: 1px solid var(--rule); padding: 2px 8px; text-decoration: none; min-width: 0; overflow-wrap: anywhere; }
+.ag-met a:hover { border-color: var(--ink); }
+.ag-met b { font-weight: 500; color: var(--muted); margin-right: 5px; text-transform: uppercase; letter-spacing: .03em; }
+.ag-rev { margin: 0; font-size: 15px; max-width: 62ch; }
+.ag-rev { overflow-wrap: anywhere; }
+.ag-rev a { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; margin-left: 8px; }
+.ag-lbl { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-right: 6px; }
+.ag-links { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+.ag-links a { font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: 1.5px solid var(--red); padding-bottom: 1px; }
+.ag-links a:hover { color: var(--red); }
+.ag-links .fonte { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+.ag-refs, .ag-artistas { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; min-width: 0; }
+.ag-artistas { gap: 8px 16px; }
+a.ag-ref { border: 1px solid var(--ink); border-radius: 999px; padding: 2px 9px; font: 500 11px/1.3 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; text-decoration: none; white-space: nowrap; }
+a.ag-ref:hover, a.ag-ref:focus-visible { background: var(--ink); color: var(--paper); }
+.ag-art { display: inline-flex; flex-wrap: wrap; gap: 5px 6px; align-items: center; min-width: 0; }
+.ag-art b { font: 800 15.5px/1.1 var(--f-display); font-stretch: 75%; margin-right: 2px; }
+.ouvir.ag-ouvir { padding: 4px 9px 4px 8px; font-size: 11px; gap: 5px; }
+.ouvir.ag-ouvir::before { border-left-width: 7px; border-top-width: 5px; border-bottom-width: 5px; }
+.ag-dest { border-top: 1.5px solid var(--ink); margin-top: 4px; padding-top: 10px; display: grid; grid-template-columns: minmax(0, 1fr); min-width: 0; }
+.ag-dt { margin: 4px 0 2px; font: 800 18px/1.1 var(--f-display); font-stretch: 75%; }
+.ag-pick { padding-block: 10px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; min-width: 0; }
+.ag-pick:last-of-type { border-bottom: 0; }
+.ag-pick h5 { margin: 0; font: 700 16.5px/1.2 var(--f-body); }
+.ag-pick .cred { margin: 0; font: 500 11.5px/1.4 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+.ag-pick .pw { margin: 0; font-size: 15px; }
+.ag-pick .pw a { font: 500 11.5px var(--f-mono); text-transform: uppercase; }
+.ag-pick.nao { opacity: .5; }
+.ag-pick.quero h5::before { content: ""; display: inline-block; width: 9px; height: 9px; background: var(--tc); margin-right: 7px; vertical-align: 1px; }
+.ag-pick.rec { border-left: 5px solid var(--tc); padding-left: 10px; }
+.ag-sess { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.ag-sess li { display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: baseline; font-size: 14.5px; min-width: 0; }
+.ag-sess .d { font-weight: 700; min-width: 128px; }
+.ag-sess .off { color: var(--muted); text-decoration: line-through; }
+.ag-sess .esg { font: 500 11px var(--f-mono); text-transform: uppercase; color: var(--red); }
+.ag-sess a { font: 500 11.5px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; }
+.ag-sess a.mapa { color: var(--muted); }
+.ag-mais { justify-self: start; margin-top: 8px; }
+.ag-nota { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 6px; align-items: start; }
+.ag-nota textarea { width: 100%; min-height: 54px; border: 1.5px solid var(--ink); background: var(--wash); color: var(--ink); padding: 7px 9px; font: 400 15px/1.4 var(--f-body); resize: vertical; border-radius: 0; }
+.ag-nota button { border: 1.5px solid var(--ink); background: var(--ink); color: var(--paper); font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; padding: 8px 10px; cursor: pointer; }
+.ag-nota button.sec { background: transparent; color: var(--ink); }
+.ag-salvo { margin: 0; font-size: 14.5px; color: var(--muted); font-style: italic; }
+.ag-disp { padding-bottom: 28px; display: grid; gap: 18px; }
+.pls .pl-note { margin: 0; font-size: 14.5px; color: var(--muted); }
+.pls .pl-old a { margin-right: 10px; }
+.pl-card .acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+.pl-card details summary { cursor: pointer; color: var(--muted); }
+.pl-card details p { margin: 6px 0 0; font-size: 14.5px; }
+@media (max-width: 560px) {
+  .ag-ev { grid-template-columns: 74px minmax(0, 1fr); }
+  .ag-data b { font-size: 24px; }
+  .ag-nota { grid-template-columns: 1fr 1fr; }
+  .ag-nota textarea { grid-column: 1 / -1; }
+  .ag-sess .d { min-width: 0; }
+}
 .na-revista { all: unset; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; font: 800 12px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; color: var(--red); border-bottom: 2px solid var(--red); padding-bottom: 2px; align-self: flex-start; }
 .na-revista::before { content: "◆"; font-size: 9px; }
 .ao-vivo { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; background: var(--ink); color: var(--paper); padding: 4px 10px; font: 600 11px/1.2 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; align-self: flex-start; max-width: 100%; }
@@ -561,6 +668,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
 </main>
 
 <dialog class="leitura" id="leitura" aria-label="Página do disco"></dialog>
+<dialog class="texto" id="texto" aria-label="Leitura"></dialog>
 
 <aside class="dock" id="dock" hidden aria-label="Player">
   <div class="wrap">
@@ -578,6 +686,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
 
 <footer>
   <div class="wrap">
+    <div id="versoes"></div>
     <p id="rodape-fontes">Cada disco traz a fonte da informação. Capas e links via Apple Music e Spotify.</p>
     <p>Os botões "quero ouvir" e "ouvi" ficam guardados só para você e aparecem em "Minha fila".</p>
   </div>
@@ -619,9 +728,9 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       busca: (q) => [["Amazon", `https://www.amazon.com.br/s?k=${q}`], ["Goodreads", `https://www.goodreads.com/search?q=${q}`]],
     },
   };
-  const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias"];
-  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], selRev: {}, agenda: null, agQuando: "30", agTipo: "todos", marcasEm: {}, loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "musica", filtro: "tudo", podeMarcar: false, falhou: false };
-  const ABAS = [["musica", "música"], ["hoje", "hoje"], ["agenda", "agenda"], ["noticias", "semana"], ["temas", "temas"], ["filmes", "filmes"], ["livros", "livros"], ["arquivo", "arquivo"]];
+  const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias", "leituras"];
+  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agArtistas: {}, comentarios: {}, marcasEm: {}, loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false };
+  const ABAS = [["hoje", "hoje"], ["noticias", "semana"], ["musica", "música"], ["filmes", "filmes"], ["livros", "livros"], ["agenda", "agenda"], ["arquivo", "arquivo"]];
   const DSEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
   // DOM helper: text only, never HTML from data.
@@ -897,6 +1006,41 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     return h("label", { class: "edsel mono", for: "semana-sel" }, "Semana ",
       (() => { const sel = h("select", { id: "semana-sel", onchange: (e) => { S.selSem = e.target.value; render(); window.scrollTo(0, 0); } }, S.semanas.map((x) => h("option", { value: x._id }, fmtPeriodo(x.inicio, x.fim)))); sel.value = s._id; return sel; })());
   }
+  // Clean readings: our own summary of an article or review (never the full text), with the link to the original.
+  const urlChave = (u) => str(u).replace(/[?#].*$/, "").replace(/\/+$/, "").replace(/^https?:\/\/(www\.)?/, "").toLowerCase();
+  let idxLeituras = null;
+  function leituraDe(url) {
+    if (!idxLeituras) { idxLeituras = new Map(); for (const l of S.leituras) if (l.url) idxLeituras.set(urlChave(l.url), l); }
+    return url ? idxLeituras.get(urlChave(url)) : null;
+  }
+  const criticasDe = (ref) => S.leituras.filter((l) => l.ref === ref).sort((a, b) => (Number(a.ordem) || 9) - (Number(b.ordem) || 9));
+  function corpoLeitura(l, comTitulo) {
+    return [
+      h("div", { class: "lt-meta mono" }, h("b", null, str(l.fonte)), [l.autor, l.data ? fmtData(l.data) : ""].map(str).filter(Boolean).join(" · "), l.nota ? h("span", { class: "lt-nota" }, str(l.nota)) : null),
+      comTitulo && l.titulo ? h("h3", { class: "lt-tit" }, str(l.titulo)) : null,
+      ...arr(l.resumo).map((p) => h("p", null, str(p))),
+      arr(l.pontos).length ? h("ul", { class: "lt-pontos" }, arr(l.pontos).map((x) => h("li", null, str(x)))) : null,
+      l.citacao ? h("blockquote", { class: "lt-cit" }, `“${str(l.citacao)}”`) : null,
+      safeUrl(l.url) ? h("a", { class: "lt-orig", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Ler o texto completo em ${str(l.fonte) || "site original"} ↗`) : null,
+    ];
+  }
+  function abrirTexto(l) {
+    const t = document.getElementById("texto");
+    t.replaceChildren(h("div", { class: "lt-box" },
+      h("div", { class: "lt-bar" }, h("span", { class: "mono" }, l.tipo === "review" ? "Crítica, em resumo" : "A matéria, em resumo"),
+        h("button", { class: "l-btn", type: "button", onclick: () => t.close(), "aria-label": "Fechar" }, "Fechar ×")),
+      ...corpoLeitura(l, true),
+      h("p", { class: "lt-aviso mono" }, "Resumo da Faixa Oculta com base no texto original. Para a íntegra, use o link acima.")));
+    t.showModal();
+    t.querySelector(".l-btn").focus({ preventScroll: true });
+  }
+  // A source link: opens our clean reading when we have one, else the original site.
+  function fonteLink(url, txt) {
+    const l = leituraDe(url);
+    if (!l) return linkExt(url, txt);
+    return h("span", { class: "fl" }, h("button", { type: "button", class: "fl-ler", onclick: () => abrirTexto(l) }, txt),
+      safeUrl(url) ? h("a", { href: safeUrl(url), target: "_blank", rel: "noopener", class: "fl-orig", "aria-label": `${txt} no site original` }, "↗") : null);
+  }
   function linkExt(href, txt) { const u = safeUrl(href); return u ? h("a", { href: u, target: "_blank", rel: "noopener" }, txt) : h("span", { class: "tt" }, txt); }
 
   function blocoNoticias() {
@@ -925,7 +1069,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
         t.por_que_importa ? h("aside", { class: "importa" }, h("h4", { style: "margin-top:0" }, "Por que importa"), h("p", null, str(t.por_que_importa))) : null),
       arr(t.cobertura).length ? [h("h4", null, "Como cada um cobriu"), h("div", { class: "cob" }, arr(t.cobertura).map((c) => h("div", { class: "cob-card" },
         h("b", null, str(c.fonte)), h("span", { class: "cob-perfil mono" }, str(c.perfil)), h("p", null, str(c.enfoque)),
-        safeUrl(c.url) ? h("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener" }, "Ler a matéria →") : null)))] : null,
+        leituraDe(c.url) ? h("button", { class: "ler", type: "button", onclick: () => abrirTexto(leituraDe(c.url)) }, "Ler aqui") : null,
+        safeUrl(c.url) ? h("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener" }, leituraDe(c.url) ? "Original ↗" : "Ler a matéria →") : null)))] : null,
       h("div", { class: "n-duo" },
         h("div", null, h("h4", null, "Os vieses"), h("p", null, str(t.vieses))),
         h("div", null, h("h4", null, "O que ficou de fora"), h("p", null, str(t.o_que_falta)))),
@@ -935,7 +1080,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           h("span", { class: "tp" }, str(a.tipo)), linkExt(a.url, str(a.titulo)),
           h("small", null, [str(a.autor), str(a.ano)].filter(Boolean).join(", "), a.nota ? ` · ${str(a.nota)}` : ""))))))));
     const fim = h("div", { class: "wrap", style: "padding-block:28px" },
-      h("button", { class: "ler", type: "button", onclick: () => trocarAba("temas") }, "Temas fora do radar desta semana"));
+      h("button", { class: "ler", type: "button", onclick: () => document.getElementById("fora-do-radar")?.scrollIntoView({ behavior: "smooth", block: "start" }) }, "Temas fora do radar desta semana"));
     const evs = arr(S.agenda && S.agenda.eventos);
     const fds = arr(s.fim_de_semana).map((x) => ({ x, ev: evs.find((e) => e.id === x.evento) })).filter((o) => o.ev && proximaDoEvento(o.ev));
     const blocoFds = fds.length ? h("section", { class: "wrap fds", id: "fim-de-semana" },
@@ -944,7 +1089,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       h("div", { class: "fds-lista" }, fds.map(({ x, ev }) => h("div", { class: "fds-item" },
         x.nota ? h("p", { class: "fds-nota" }, str(x.nota)) : null, cardEvento(ev)))),
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("agenda") }, "Agenda completa")) : null;
-    return [head, blocoFds, ...blocos, fim];
+    return [head, blocoFds, ...blocos, fim, ...blocoTemas()];
   }
 
   function diaAtual() { return S.dias.find((d) => d._id === S.selDia) || S.dias[0]; }
@@ -973,7 +1118,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       h("p", null, str(n.texto)),
       n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
       arr(n.fontes).length ? h("ul", { class: "d-fontes" }, arr(n.fontes).map((f) => h("li", null,
-        linkExt(f.url, str(f.fonte)), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
+        fonteLink(f.url, str(f.fonte)), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
         f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null))));
     const fim = h("div", { class: "wrap", style: "padding-block:8px 32px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("noticias") }, "A revista da semana: grandes temas, cobertura e vieses"));
@@ -1009,14 +1154,14 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     if (!S.loaded.semanas) return [estado("abrindo os temas", "Os temas aparecem aqui assim que o arquivo da revista responder.")];
     if (!S.semanas.length) return [estado("nenhum tema ainda", "Os temas fora do radar chegam junto com a primeira análise semanal.")];
     const s = semanaAtual();
-    const head = h("section", { class: "wrap secao", style: "padding-bottom:8px" }, h("div", { class: "sec-head" },
+    const head = h("section", { class: "wrap secao", id: "fora-do-radar", style: "padding-bottom:8px;scroll-margin-top:120px" }, h("div", { class: "sec-head" },
       h("span", { class: "num", "aria-hidden": "true" }, h("span", { class: "dot" })),
       h("h3", null, "fora do radar"),
-      h("p", null, "Assuntos que a imprensa cobriu pouco nesta semana e que conversam com o seu trabalho e os seus interesses.")), seletorSemana(s));
+      h("p", null, "Assuntos que a imprensa cobriu pouco nesta semana e que conversam com o seu trabalho e os seus interesses.")));
     const radar = arr(s.fora_do_radar);
     const grade = h("section", { class: "wrap", style: "padding-bottom:40px" }, radar.length ? h("div", { class: "radar-grid" }, radar.map((r) => h("article", { class: "radar-card" },
       h("span", { class: "edt" }, str(r.editoria)), h("h3", null, str(r.titulo)), h("p", null, str(r.texto)),
-      h("div", { class: "links" }, arr(r.ler).map((l) => safeUrl(l.url) ? h("a", { href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `${str(l.fonte)}: ${str(l.titulo)}`) : null)))))
+      h("div", { class: "links" }, arr(r.ler).map((l) => safeUrl(l.url) ? fonteLink(l.url, `${str(l.fonte)}: ${str(l.titulo)}`) : null)))))
       : h("p", { class: "vazio" }, "Nenhum tema fora do radar nesta semana."));
     const todos = arr(s.temas).flatMap((t) => arr(t.aprofundar).map((a) => ({ ...a, _tema: t.titulo })));
     const estante = todos.length ? h("section", { class: "wrap secao" },
@@ -1244,16 +1389,17 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   }
 
   // ---------- Agenda: the Radar cultural inside the magazine ----------
-  const TIPOS_AG = { musica: "Música", cinema: "Cinema", artes: "Artes visuais", teatro: "Teatro e dança", festival: "Festival", livros: "Livros", outros: "Outros" };
-  const REG_AG = { tijuca: "Grande Tijuca", "zona-sul": "Zona Sul", centro: "Centro", rio: "Rio", "estado-rj": "Estado do RJ", sp: "São Paulo" };
+  // Mirrors the Radar dashboard it replaces: search, Quando/Onde/O quê filters, the Radar's score, full cards
+  // with picks, sessions and festival days, metrics, "Saber mais" links, artist chips that play in the dock,
+  // marks (radar:<key>) and comments (S.comentarios), both synced back to the radar by tools/sync_radar.py.
+  const TIPOS_AG = { cinema: "Cinema", musica: "Música", artes: "Artes visuais", teatro: "Teatro e dança", festival: "Festival", livros: "Livros", outros: "Outros" };
+  const REG_AG = { tijuca: "Grande Tijuca", "zona-sul": "Zona Sul", centro: "Centro", rio: "Rio, outras zonas", "estado-rj": "Estado do RJ", sp: "São Paulo" };
+  const PESO_AG = { tijuca: 1, "zona-sul": 1, centro: 0.92, rio: 0.75, "estado-rj": 0.6, sp: 0.5 };
+  const ONDE_AG = [["tijuca", "Só Tijuca e Grande Tijuca", ["tijuca"]], ["perto", "Perto: Tijuca, Zona Sul, Centro", ["tijuca", "zona-sul", "centro"]], ["rio", "Cidade do Rio", ["tijuca", "zona-sul", "centro", "rio"]], ["estado", "Estado do RJ", ["estado-rj"]], ["sp", "São Paulo", ["sp"]], ["todos", "Tudo", null]];
+  const QUANDO_AG = [["hoje", "Hoje", 0], ["agora", "Agora e próximos 7 dias", 7], ["fds", "Neste fim de semana", null], ["mes", "Próximos 30 dias", 30], ["tudo", "Tudo no radar", 3650]];
   const nrm = (t) => str(t).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   const isoHoje = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
-  const addDias = (iso, n) => { const [y, m, d] = iso.split("-").map(Number); const x = new Date(y, m - 1, d + n); return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`; };
-  function janelaFds() {
-    const t = isoHoje(); const [y, m, d] = t.split("-").map(Number); const w = new Date(y, m - 1, d).getDay();
-    if (w === 0) return [t, t]; if (w === 6) return [t, addDias(t, 1)];
-    const sex = addDias(t, 5 - w); return [w === 5 ? t : sex, addDias(sex, 2)];
-  }
+  // Used by the semana tab and the cross-links: the next date of an event, or null when it is over.
   function datasDoEvento(ev) {
     const out = [];
     for (const p of arr(ev.destaques)) for (const s of arr(p.sessoes)) if (s.data) out.push({ data: s.data, hora: s.hora, local: s.local || p.local, pick: p });
@@ -1268,6 +1414,83 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     if (!ev.fim || str(ev.fim) >= hoje) return { data: hoje, emCurso: true };
     return null;
   }
+
+  // Dates, as in the Radar (local midnight Date objects).
+  const agHoje = () => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; };
+  const agD = (s) => { const m = str(s).match(/^(\d{4})-(\d{2})-(\d{2})/); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; };
+  const agDias = (a, b) => Math.round((b - a) / 864e5);
+  const agCurta = (d) => `${d.getDate()} ${MESES[d.getMonth()]}`;
+  // Rio weekend: Sunday is just today, Saturday is Sat-Sun, any other day is the coming Fri-Sun.
+  function agFds() {
+    const t = agHoje(), w = t.getDay(), mais = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+    if (w === 0) return { a: t, b: t };
+    if (w === 6) return { a: t, b: mais(t, 1) };
+    const a = mais(t, 5 - w); return { a, b: mais(a, 2) };
+  }
+  // Filters apply only while the agenda tab renders; cards elsewhere (semana tab) show everything.
+  let AGF = null;
+  const agF = () => AGF || { quando: "tudo", onde: "todos", tipo: "todos", ts: [] };
+  function agJanela() { const q = agF().quando; if (q === "hoje") { const t = agHoje(); return { a: t, b: t }; } return q === "fds" ? agFds() : null; }
+  function agNaJanela(s) { const w = agJanela(); if (!w || !s) return true; const d = agD(s); return !!d && d >= w.a && d <= w.b; }
+  function agMin(hh) { const m = str(hh).toLowerCase().match(/(\d{1,2})\s*[h:]\s*(\d{2})?/); return m ? Number(m[1]) * 60 + Number(m[2] || 0) : null; }
+  // A session still counts until three hours after it starts.
+  function agSessaoFutura(s) {
+    const d = agD(s.data), t = agHoje();
+    if (!d) return false; if (d > t) return true; if (d < t) return false;
+    const m = agMin(s.hora); if (m == null) return true;
+    const n = new Date(); return m + 180 > n.getHours() * 60 + n.getMinutes();
+  }
+  function agProxSessao(p) { const xs = arr(p.sessoes).filter(agSessaoFutura).map((x) => agD(x.data).getTime() + (agMin(x.hora) ?? 0) * 6e4); return xs.length ? Math.min(...xs) : Infinity; }
+  function agDetalhada(ev) { return arr(ev.destaques).some((d) => arr(d.sessoes).length || d.temporada) || arr(ev.dias).length > 0; }
+  function agSessoesNaJanela(ev) {
+    const j = agJanela(), t = agHoje();
+    return arr(ev.destaques).some((d) => arr(d.sessoes).some((x) => agSessaoFutura(x) && agNaJanela(x.data)) || (d.temporada && (!d.fim || agD(d.fim) >= t) && (!d.inicio || !j || agD(d.inicio) <= j.b)))
+      || arr(ev.dias).some((x) => agNaJanela(x.data) && agD(x.data) >= t);
+  }
+  const emTij = (t) => /tijuca|vila isabel|grajaú|grajau|maracanã|maracana|andaraí|andarai|praça da bandeira|praca da bandeira|alto da boa vista|usina/i.test(str(t));
+  function picksTij(ev) { return arr(ev.destaques).map((d) => ({ ...d, sessoes: arr(d.sessoes).filter((s) => emTij(s.bairro) || emTij(s.local)) })).filter((d) => d.sessoes.length || emTij(d.local)); }
+
+  // Search: accents and case ignored, every term must appear (event, picks or festival days).
+  const agNorm = (t) => str(t).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  function agJuntar(x, campos) {
+    const o = [], j = (i) => (typeof i === "object" && i ? JSON.stringify(i) : str(i));
+    for (const c of campos) { const v = x[c]; if (v == null) continue; if (Array.isArray(v)) o.push(v.map(j).join(" ")); else if (typeof v === "object") o.push(Object.values(v).map(j).join(" ")); else o.push(str(v)); }
+    return agNorm(o.join(" "));
+  }
+  const CAMPOS_EV = ["titulo", "local", "bairro", "cidade", "quando", "artistas", "sobre", "porque", "fonte", "tituloDestaques"];
+  const CAMPOS_PICK = ["titulo", "diretor", "ano", "origem", "mostra", "local", "artistas", "sobre", "porque", "temporada", "tituloBusca"];
+  const agCasa = (txt, ts) => ts.every((t) => txt.includes(t));
+  const txtEv = (ev) => `${agJuntar(ev, CAMPOS_EV)} ${agNorm(TIPOS_AG[ev.tipo])} ${agNorm(REG_AG[ev.regiao])} ${agJuntar(ev, ["reviews"])}`;
+  const txtPick = (d) => `${agJuntar(d, CAMPOS_PICK)} ${agJuntar(d, ["reviews"])} ${agNorm(arr(d.sessoes).map((s) => [s.local, s.bairro].map(str).join(" ")).join(" "))}`;
+  const txtDia = (d) => agJuntar(d, ["atracoes", "artistas", "nota", "local"]);
+  function casaEvento(ev) { const ts = agF().ts; if (!ts.length || agCasa(txtEv(ev), ts)) return true; return arr(ev.destaques).some((d) => agCasa(txtPick(d), ts)) || arr(ev.dias).some((d) => agCasa(txtDia(d), ts)); }
+  const casaDireto = (ev) => { const ts = agF().ts; return !ts.length || agCasa(txtEv(ev), ts); };
+
+  function agVisivel(ev) {
+    const t = agHoje(), f = agF();
+    const fim = agD(ev.fim) || (ev.emCartaz ? null : agD(ev.inicio)), ini = agD(ev.inicio) || fim;
+    if (fim && fim < t) return false;
+    if (f.ts.length) return casaEvento(ev);
+    const jc = agJanela();
+    if (jc) { if (ini && ini > jc.b) return false; if (fim && fim < jc.a) return false; if (agDetalhada(ev) && !agSessoesNaJanela(ev)) return false; }
+    else { const jan = (QUANDO_AG.find((q) => q[0] === f.quando) || QUANDO_AG[3])[2]; if (ini && agDias(t, ini) > jan) return false; }
+    if (f.onde === "tijuca") { const ok = arr(ev.destaques).length ? picksTij(ev).length > 0 : ev.regiao === "tijuca" || emTij(ev.bairro) || emTij(ev.local); if (!ok) return false; }
+    else { const regs = (ONDE_AG.find((o) => o[0] === f.onde) || [])[2]; if (regs && !regs.includes(ev.regiao)) return false; }
+    if (f.tipo !== "todos" && ev.tipo !== f.tipo) return false;
+    return true;
+  }
+  // The Radar's ordering: affinity weighted by region, ending soon, a session today or tomorrow, "quero" first.
+  function agScore(ev) {
+    const r = decisaoRadar(ev.id);
+    let s = (Number(ev.afinidade) || 3) * 20 * (PESO_AG[ev.regiao] ?? 0.6);
+    const t = agHoje(), fim = agD(ev.fim) || agD(ev.inicio), ini = agD(ev.inicio);
+    if (fim) { const df = agDias(t, fim); if (df <= 3) s += 15; else if (df <= 7) s += 8; }
+    if (ini && agDias(t, ini) > 30) s -= 10;
+    if (agDetalhada(ev)) { const prox = Math.min(...arr(ev.destaques).map(agProxSessao), Infinity); const k = prox === Infinity ? 99 : Math.floor((prox - t) / 864e5); if (k === 0) s += 40; else if (k === 1) s += 20; }
+    if (r === "quero") s += 200; if (r === "talvez") s += 20;
+    return s;
+  }
+
   function decisaoRadar(chave) {
     const local = S.marcas[`radar:${chave}`];
     const r = (S.agenda && S.agenda.retorno && S.agenda.retorno[chave]) || {};
@@ -1275,10 +1498,32 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     if (local !== undefined || emLocal) return emLocal >= str(r.em) ? local : r.decisao;
     return r.decisao;
   }
+  // The comment typed here wins over the radar's note when it is newer.
+  function notaRadar(chave) {
+    const c = S.comentarios[chave], r = (S.agenda && S.agenda.retorno && S.agenda.retorno[chave]) || {};
+    if (c && (!r.nota || str(c.em) >= str(r.em))) return str(c.texto);
+    return str(r.nota);
+  }
+  const idNota = (k) => "ag-nota-" + str(k).replace(/[^A-Za-z0-9_-]/g, "-");
   function marcasAgenda(chave, mini) {
     const cur = decisaoRadar(chave);
-    const op = mini ? [["quero", "Quero"], ["fui", "Fui"], ["nao", "Não"]] : [["quero", "Quero ir"], ["talvez", "Talvez"], ["fui", "Fui"], ["nao", "Não é pra mim"]];
-    return h("div", { class: "ag-marcas" + (mini ? " mini" : "") }, op.map(([v, t]) => h("button", { type: "button", "aria-pressed": String(cur === v), disabled: !S.podeMarcar, onclick: () => marcar(`radar:${chave}`, cur === v ? null : v) }, t)));
+    const op = mini ? [["quero", "Quero"], ["talvez", "Talvez"], ["fui", "Fui"], ["nao", "Não"]] : [["quero", "Quero ir"], ["talvez", "Talvez"], ["fui", "Fui"], ["nao", "Não é pra mim"]];
+    const aberto = S.agNota === chave;
+    return h("div", { class: "ag-marcas" + (mini ? " mini" : "") },
+      op.map(([v, t]) => h("button", { type: "button", "aria-pressed": String(cur === v), disabled: !S.podeMarcar, onclick: () => marcar(`radar:${chave}`, cur === v ? null : v) }, t)),
+      h("button", { type: "button", class: "ag-com", "aria-expanded": String(aberto), disabled: !S.podeMarcar,
+        onclick: () => { S.agNota = aberto ? null : chave; render(); if (!aberto) setTimeout(() => document.getElementById(idNota(chave))?.focus(), 0); } },
+      notaRadar(chave) ? "Editar comentário" : "Comentar"));
+  }
+  function editorNota(chave, titulo) {
+    const n = notaRadar(chave);
+    if (S.agNota !== chave) return n ? h("p", { class: "ag-salvo" }, "Seu comentário: ", n) : null;
+    const ta = h("textarea", { id: idNota(chave), rows: "2", "aria-label": `Comentário sobre ${str(titulo)}`, placeholder: "O que o radar deve saber sobre isto?", oninput: (e) => { S.agRasc[chave] = e.target.value; } });
+    ta.value = S.agRasc[chave] ?? n;
+    const fechar = () => { delete S.agRasc[chave]; S.agNota = null; };
+    return h("div", { class: "ag-nota" }, ta,
+      h("button", { type: "button", onclick: () => { const v = ta.value.trim(); fechar(); comentar(chave, v); } }, "Salvar"),
+      h("button", { type: "button", class: "sec", onclick: () => { fechar(); render(); } }, "Cancelar"));
   }
 
   // Cross-links: names that appear both in the radar and in a magazine edition.
@@ -1310,7 +1555,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   }
   function idx() { if (!indices) indices = construirIndices(); return indices; }
   function irParaEvento(id) {
-    S.aba = "agenda"; S.agQuando = "tudo"; S.agTipo = "todos"; hashAba("agenda");
+    S.aba = "agenda"; S.agQuando = "tudo"; S.agOnde = "todos"; S.agTipo = "todos"; S.agQ = ""; hashAba("agenda");
+    if (decisaoRadar(id) === "nao") S.agDispOpen = true;
     if (S.aberto) fecharLeitura();
     document.activeElement?.blur?.();
     render();
@@ -1338,99 +1584,265 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     return null;
   }
 
-  function cardEvento(ev) {
-    const prox = proximaDoEvento(ev);
-    const dec = decisaoRadar(ev.id);
-    const cor = `var(--t-${TIPOS_AG[ev.tipo] ? ev.tipo : "outros"})`;
-    const [, m, d] = str(prox.data).split("-");
-    const hoje = isoHoje();
-    const picks = arr(ev.destaques).map((p) => ({ p, prox: arr(p.sessoes).filter((s) => s.data >= hoje).sort((a, b) => (a.data + (a.hora || "")).localeCompare(b.data + (b.hora || "")))[0] }))
-      .filter((x) => x.prox || (x.p.temporada && (!x.p.fim || x.p.fim >= hoje)))
-      .sort((a, b) => (decisaoRadar(`${ev.id}__${b.p.id}`) === "quero") - (decisaoRadar(`${ev.id}__${a.p.id}`) === "quero") || str(a.prox && a.prox.data).localeCompare(str(b.prox && b.prox.data)));
-    const dias = arr(ev.dias).filter((x) => x.data >= hoje);
-    const art = h("article", { class: "ag-ev" + (dec === "quero" ? " marcado" : ""), id: `ev-${ev.id}`, style: `--tc:${cor}` },
-      h("div", { class: "ag-data" }, h("span", { class: "k" }, TIPOS_AG[ev.tipo] || "Outros"), h("b", null, prox.emCurso ? "hoje" : `${+d} ${MESES[+m - 1] || ""}`),
-        h("span", null, ev.fim && ev.fim > prox.data ? `até ${fmtData(ev.fim)}` : prox.hora || "")),
-      h("div", { class: "ag-corpo" },
-        h("h3", null, safeUrl(ev.link) ? h("a", { href: safeUrl(ev.link), target: "_blank", rel: "noopener" }, str(ev.titulo)) : str(ev.titulo)),
-        h("p", { class: "ag-onde" }, [ev.local, ev.bairro].map(str).filter(Boolean).join(", "), REG_AG[ev.regiao] ? h("span", { class: "mono" }, REG_AG[ev.regiao]) : null),
-        h("p", { class: "ag-quando" }, [ev.quando, ev.preco].map(str).filter(Boolean).join(" · ")),
-        ev.porque ? h("p", { class: "ag-porque" }, str(ev.porque)) : null,
-        linkRevista(...arr(ev.artistas), ev.titulo),
-        picks.length ? h("ul", { class: "ag-picks" }, picks.slice(0, S.agAberto === ev.id ? 99 : 4).map(({ p, prox: s }) => h("li", null,
-          h("span", { class: "pt" }, str(p.titulo)),
-          h("span", { class: "ps" }, [s ? `${rotuloDia(s.data)}${s.hora ? " " + str(s.hora) : ""}` : str(p.temporada), s ? s.local || s.bairro : p.local, p.diretor, p.ano].map(str).filter(Boolean).join(" · ")),
-          p.porque ? h("p", { class: "pw" }, str(p.porque)) : null,
-          linkRevista(...arr(p.artistas), p.titulo, p.tituloBusca),
-          marcasAgenda(`${ev.id}__${p.id}`, true)))) : null,
-        picks.length > 4 ? h("button", { class: "ler", type: "button", onclick: () => { S.agAberto = S.agAberto === ev.id ? null : ev.id; render(); } }, S.agAberto === ev.id ? "Mostrar menos" : `Ver os ${picks.length} destaques`) : null,
-        dias.length ? h("ul", { class: "ag-picks" }, dias.map((x) => h("li", null,
-          h("span", { class: "pt" }, `${rotuloDia(x.data)}${x.recomendado ? " · o seu dia" : ""}`),
-          h("span", { class: "ps" }, [x.hora, x.local, x.preco].map(str).filter(Boolean).join(" · ")),
-          x.atracoes ? h("p", { class: "pw" }, arr(x.atracoes).map(str).join(", ")) : null,
-          linkRevista(...arr(x.artistas)),
-          marcasAgenda(`${ev.id}__dia-${x.data}`, true)))) : null,
-        marcasAgenda(ev.id),
-        h("div", { class: "links" },
-          safeUrl(ev.link) ? h("a", { href: safeUrl(ev.link), target: "_blank", rel: "noopener" }, "Programação e ingressos") : null,
-          safeUrl(S.agenda.radar_url) ? h("a", { href: safeUrl(S.agenda.radar_url), target: "_blank", rel: "noopener" }, "Abrir no Radar") : null)));
-    return art;
+  // Artists: a chip per name that plays in the dock (site mode, Spotify id known) and opens Spotify / YouTube Music.
+  let artIdx = null, artDe = null;
+  function spotifyIdDe(nome) {
+    const m = S.agArtistas || {};
+    if (artDe !== m) { artDe = m; artIdx = new Map(); for (const [n, v] of Object.entries(m)) { const k = nrm(n); if (k && !artIdx.has(k)) artIdx.set(k, v); } }
+    const id = str(Object.prototype.hasOwnProperty.call(m, nome) ? m[nome] : artIdx.get(nrm(nome)));
+    return /^[A-Za-z0-9]{22}$/.test(id) ? id : null;
+  }
+  function chipArtista(nome) {
+    nome = str(nome).trim();
+    if (!nome) return null;
+    const id = spotifyIdDe(nome), q = encodeURIComponent(nome);
+    const emb = id ? `https://open.spotify.com/embed/artist/${id}?utm_source=generator&theme=0` : null;
+    const ativo = !!emb && tocando.url === emb;
+    return h("span", { class: "ag-art" }, h("b", null, nome),
+      S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), "aria-label": `${ativo ? "Tocando" : "Ouvir aqui"}: ${nome}`, onclick: () => tocar(emb, nome, "no Spotify", false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
+      h("a", { class: "ag-ref", href: id ? `https://open.spotify.com/artist/${id}` : `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener", title: `${nome} no Spotify` }, "Spotify"),
+      h("a", { class: "ag-ref", href: `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener", title: `Buscar ${nome} no YouTube Music` }, "YouTube Music"));
+  }
+  function linhaArtistas(lista) {
+    const nomes = arr(lista).map(str).filter((n) => n.trim());
+    if (!nomes.length) return null;
+    return h("div", { class: "ag-artistas" }, h("span", { class: "ag-lbl" }, "Ouvir"), nomes.map(chipArtista));
   }
 
+  // "Saber mais" chips, metrics and reviews, as in the Radar.
+  const enc = encodeURIComponent;
+  const AGU = {
+    imdb: (q, nome) => `https://www.imdb.com/find/?q=${enc(q)}&s=${nome ? "nm" : "tt"}`,
+    rt: (q) => `https://www.rottentomatoes.com/search?search=${enc(q)}`,
+    lb: (q) => `https://letterboxd.com/search/${enc(q)}/`,
+    yt: (q) => `https://www.youtube.com/results?search_query=${enc(q)}`,
+    mapa: (q) => `https://www.google.com/maps/search/?api=1&query=${enc(q)}`,
+    web: (q) => `https://www.google.com/search?q=${enc(q)}`,
+  };
+  const agRef = (txt, url, title) => h("a", { class: "ag-ref", href: url, target: "_blank", rel: "noopener", title: title || null }, txt);
+  const cidadeDe = (ev) => (ev.regiao === "sp" ? "São Paulo" : ev.regiao === "estado-rj" ? str(ev.cidade) || "Rio de Janeiro" : "Rio de Janeiro");
+  function linhaFilme(d) {
+    const q = str(d.tituloBusca || d.titulo);
+    return h("div", { class: "ag-refs" }, h("span", { class: "ag-lbl" }, "Saber mais"),
+      agRef("IMDb", AGU.imdb(q, d.imdbNome), "Buscar no IMDb"), agRef("Rotten Tomatoes", AGU.rt(q), "Buscar no Rotten Tomatoes"),
+      agRef("Letterboxd", AGU.lb(q), "Buscar no Letterboxd"), agRef("Trailer", AGU.yt(`${q}${d.ano ? " " + str(d.ano) : ""} trailer`), "Buscar trailer no YouTube"));
+  }
+  function blocoMetricas(x) {
+    const out = [];
+    const em = x.metricasEm ? ` (consultado em ${str(x.metricasEm).split("-").reverse().join("/")})` : "";
+    if (arr(x.metricas).length) out.push(h("div", { class: "ag-met" }, arr(x.metricas).map((m) => {
+      const inner = [h("b", null, `${str(m.k)}:`), str(m.v)];
+      return safeUrl(m.url) ? h("a", { href: safeUrl(m.url), target: "_blank", rel: "noopener", title: `Fonte${em}` }, inner) : h("span", null, inner);
+    })));
+    if (x.reviews && x.reviews.texto) out.push(h("p", { class: "ag-rev" }, h("span", { class: "ag-lbl" }, "Reviews"), str(x.reviews.texto),
+      arr(x.reviews.fontes).filter((f) => f && safeUrl(f.url)).map((f) => h("a", { href: safeUrl(f.url), target: "_blank", rel: "noopener" }, str(f.nome) || "fonte"))));
+    return out.length ? h("div", { class: "ag-mets" }, out) : null;
+  }
+  function refsDoPick(ev, d) {
+    if (d.refs === false) return null;
+    if (ev.tipo === "cinema") return linhaFilme(d);
+    if (Array.isArray(d.artistas)) return linhaArtistas(d.artistas);
+    const cid = cidadeDe(ev);
+    if (ev.tipo === "livros") {
+      const q = `${str(d.titulo)}${d.diretor ? " " + str(d.diretor) : ""}`;
+      return h("div", { class: "ag-refs" }, h("span", { class: "ag-lbl" }, "Saber mais"), agRef("Buscar", AGU.web(q)),
+        agRef("Goodreads", `https://www.goodreads.com/search?q=${enc(q)}`), d.local ? agRef("Mapa", AGU.mapa(`${str(d.local)}, ${cid}`)) : null);
+    }
+    if (["teatro", "artes", "outros"].includes(ev.tipo)) {
+      return h("div", { class: "ag-refs" }, h("span", { class: "ag-lbl" }, "Saber mais"),
+        agRef("Buscar", AGU.web(`${str(d.titulo)} ${str(d.local || ev.local)} ${cid}`)), agRef("Vídeos", AGU.yt(`${str(d.titulo)} ${str(d.local)}`)),
+        d.local ? agRef("Mapa", AGU.mapa(`${str(d.local)}, ${cid}`)) : null);
+    }
+    return null;
+  }
+  function refsDoEvento(ev) {
+    const out = [];
+    let art = ev.artistas;
+    if (!art && ev.tipo === "musica" && !ev.destaques && !ev.dias && str(ev.titulo).length < 40 && !/[:(]/.test(str(ev.titulo))) art = [ev.titulo];
+    const a = linhaArtistas(art); if (a) out.push(a);
+    const chips = [], buscar = () => agRef("Buscar", AGU.web(`${str(ev.titulo)} ${cidadeDe(ev)}`));
+    if (["artes", "teatro", "festival", "outros", "livros"].includes(ev.tipo) && !arr(ev.destaques).some((d) => d.refs !== false && d.titulo)) chips.push(buscar());
+    else if (["artes", "festival", "outros", "livros"].includes(ev.tipo)) chips.push(buscar());
+    const semMapa = ev.mapa === false || (ev.tipo === "cinema" && ev.destaques);
+    const loc = typeof ev.mapa === "string" && ev.mapa ? ev.mapa : (ev.local && str(ev.local).length < 80 && !/ e |\bsalas\b|cinemas/i.test(str(ev.local)) ? `${str(ev.local)}, ${str(ev.bairro)}, ${cidadeDe(ev)}` : null);
+    if (!semMapa && loc) chips.push(agRef("Mapa", AGU.mapa(loc)));
+    if (chips.length) out.push(h("div", { class: "ag-refs" }, h("span", { class: "ag-lbl" }, "Saber mais"), chips));
+    return out.length ? h("div", { class: "ag-mets" }, out) : null;
+  }
+  function agRotulo(s, hora) { const d = agD(s); if (!d) return str(s); const k = agDias(agHoje(), d); return `${k === 0 ? "hoje" : k === 1 ? "amanhã" : DSEM[d.getDay()]}, ${agCurta(d)}${hora ? " " + str(hora).toLowerCase() : ""}`; }
+
+  // Picks ("O que ver para você") with their sessions, and festival days.
+  function agDestaques(ev) {
+    const box = h("div", { class: "ag-dest" }), f = agF(), ts = f.ts, t = agHoje();
+    if (arr(ev.destaques).length) {
+      const rank = (d) => { const r = decisaoRadar(`${ev.id}__${d.id}`); return (r === "quero" ? 100 : 0) + (r === "nao" ? -100 : 0) + (Number(d.afinidade) || 3) * 10; };
+      const lista = (f.onde === "tijuca" ? picksTij(ev) : arr(ev.destaques))
+        .map((d) => ({ ...d, sessoes: arr(d.sessoes).filter(agSessaoFutura).filter((s) => agNaJanela(s.data)).sort((a, b) => (str(a.data) + str(a.hora)).localeCompare(str(b.data) + str(b.hora))) }))
+        .filter((d) => d.sessoes.length || (d.temporada && (!d.fim || agD(d.fim) >= t)))
+        .filter((d) => !ts.length || casaDireto(ev) || agCasa(txtPick(d), ts))
+        .sort((a, b) => {
+          if (agJanela()) return agProxSessao(a) - agProxSessao(b) || rank(b) - rank(a);
+          const pa = agProxSessao(a) - t < 2 * 864e5 ? 60 : 0, pb = agProxSessao(b) - t < 2 * 864e5 ? 60 : 0;
+          return rank(b) + pb - (rank(a) + pa);
+        });
+      const aberto = !!S.agAbertos[ev.id], mostrar = aberto ? lista : lista.slice(0, 5);
+      if (lista.length) box.append(h("h4", { class: "ag-dt" }, `${str(ev.tituloDestaques) || "O que ver para você"} (${lista.length})`));
+      for (const d of mostrar) {
+        const key = `${ev.id}__${d.id}`, r = decisaoRadar(key);
+        box.append(h("div", { class: "ag-pick" + (r ? " " + r : "") },
+          h("h5", null, str(d.titulo)),
+          (() => { const c = [d.diretor, d.ano, d.origem, d.duracao ? `${str(d.duracao)} min` : null, d.mostra, d.local].map(str).filter(Boolean).join(", "); return c ? h("p", { class: "cred" }, c) : null; })(),
+          d.sobre ? h("p", { class: "ag-sobre" }, str(d.sobre)) : null,
+          blocoMetricas(d),
+          refsDoPick(ev, d),
+          d.temporada ? h("p", { class: "pw" }, h("b", null, "Temporada: "), str(d.temporada), safeUrl(d.link) ? " " : null, safeUrl(d.link) ? h("a", { href: safeUrl(d.link), target: "_blank", rel: "noopener" }, "Ingressos") : null) : null,
+          d.porque ? h("p", { class: "pw" }, str(d.porque)) : null,
+          linkRevista(...arr(d.artistas), d.titulo, d.tituloBusca),
+          d.sessoes.length ? h("ul", { class: "ag-sess" }, d.sessoes.map((s) => {
+            const esg = s.status === "esgotado";
+            return h("li", null,
+              h("span", { class: "d" + (esg ? " off" : "") }, agRotulo(s.data, s.hora)),
+              h("span", { class: esg ? "off" : null }, [s.local, s.bairro].map(str).filter(Boolean).join(", ") + (s.obs ? ` (${str(s.obs)})` : "")),
+              esg ? h("span", { class: "esg" }, "esgotado") : safeUrl(s.link) ? h("a", { href: safeUrl(s.link), target: "_blank", rel: "noopener" }, "Comprar") : null,
+              h("a", { class: "mapa", href: AGU.mapa([s.local, s.bairro, cidadeDe(ev)].map(str).filter(Boolean).join(", ")), target: "_blank", rel: "noopener", title: "Ver no mapa" }, "mapa"));
+          })) : null,
+          marcasAgenda(key, true),
+          editorNota(key, d.titulo)));
+      }
+      if (lista.length > 5) box.append(h("button", { class: "chip ag-mais", type: "button", "aria-expanded": String(aberto), onclick: () => { S.agAbertos[ev.id] = !aberto; render(); } }, aberto ? "Mostrar só os 5 primeiros" : `Ver todos os ${lista.length}`));
+    }
+    const dias = arr(ev.dias).filter((x) => agD(x.data) >= t && agNaJanela(x.data)).filter((x) => !ts.length || casaDireto(ev) || agCasa(txtDia(x), ts));
+    if (dias.length) {
+      box.append(h("h4", { class: "ag-dt" }, "Dias do festival"));
+      for (const d of dias) {
+        const key = `${ev.id}__dia-${d.data}`;
+        box.append(h("div", { class: "ag-pick dia" + (d.recomendado ? " rec" : "") + (decisaoRadar(key) ? " " + decisaoRadar(key) : "") },
+          h("h5", null, agRotulo(d.data), d.recomendado ? " (o seu dia)" : null),
+          arr(d.atracoes).length ? h("p", { class: "cred" }, arr(d.atracoes).map(str).join(", ")) : null,
+          d.local || d.hora ? h("p", { class: "cred" }, [d.hora, d.local, d.preco].map(str).filter(Boolean).join(", ")) : null,
+          linhaArtistas(d.artistas),
+          d.nota ? h("p", { class: "pw" }, str(d.nota)) : null,
+          linkRevista(...arr(d.artistas)),
+          safeUrl(d.link) || d.local ? h("p", { class: "ag-links" }, safeUrl(d.link) ? h("a", { href: safeUrl(d.link), target: "_blank", rel: "noopener" }, "Ingressos") : null,
+            d.local ? h("a", { href: AGU.mapa(`${str(d.local)}, ${cidadeDe(ev)}`), target: "_blank", rel: "noopener" }, "Mapa") : null) : null,
+          marcasAgenda(key, true),
+          editorNota(key, `${str(ev.titulo)}, ${agRotulo(d.data)}`)));
+      }
+    }
+    return box.childNodes.length ? box : null;
+  }
+
+  // One event card; also used by the semana tab (where no agenda filter applies).
+  function cardEvento(ev) {
+    const tipo = TIPOS_AG[ev.tipo] ? ev.tipo : "outros", dec = decisaoRadar(ev.id);
+    const t = agHoje(), fim = agD(ev.fim), ini = agD(ev.inicio);
+    let ate = "", resta = "";
+    if (ini && ini > t) { ate = agCurta(ini); const d = agDias(t, ini); resta = d === 1 ? "começa amanhã" : `começa em ${d} dias`; }
+    else if (fim) { ate = `até ${agCurta(fim)}`; const d = agDias(t, fim); resta = d < 0 ? "encerrado" : d === 0 ? "último dia" : d === 1 ? "acaba amanhã" : `faltam ${d} dias`; }
+    else if (ev.emCartaz) { ate = "em cartaz"; resta = "encerramento a confirmar"; }
+    else if (ini) { ate = agCurta(ini); resta = "hoje"; }
+    const link = safeUrl(ev.link);
+    return h("article", { class: "ag-ev" + (dec === "quero" ? " marcado" : ""), id: `ev-${ev.id}`, style: `--tc:var(--t-${tipo})` },
+      h("div", { class: "ag-data" }, h("span", { class: "k" }, TIPOS_AG[tipo]), h("b", null, ate), h("span", null, resta)),
+      h("div", { class: "ag-corpo" },
+        h("h3", null, link ? h("a", { href: link, target: "_blank", rel: "noopener", title: "Abrir a página do evento" }, str(ev.titulo)) : str(ev.titulo)),
+        h("p", { class: "ag-onde" }, [ev.local, ev.bairro].map(str).filter(Boolean).join(", "), REG_AG[ev.regiao] ? h("span", { class: "mono" }, REG_AG[ev.regiao]) : null),
+        h("p", { class: "ag-quando" }, [ev.quando, ev.preco].map(str).filter(Boolean).join(". ")),
+        ev.sobre ? h("p", { class: "ag-sobre" }, str(ev.sobre)) : null,
+        blocoMetricas(ev),
+        ev.porque ? h("p", { class: "ag-porque" }, str(ev.porque)) : null,
+        link || ev.fonte ? h("p", { class: "ag-links" }, link ? h("a", { href: link, target: "_blank", rel: "noopener" }, "Ver programação e ingressos") : null, ev.fonte ? h("span", { class: "fonte" }, `Fonte: ${str(ev.fonte)}`) : null) : null,
+        refsDoEvento(ev),
+        linkRevista(...arr(ev.artistas), ev.titulo),
+        marcasAgenda(ev.id),
+        editorNota(ev.id, ev.titulo),
+        agDestaques(ev)));
+  }
+
+  function blocoPlaylists(ag) {
+    const p = ag.playlists || {};
+    const itens = [["semana", "Esta semana"], ["trinta", "Próximos 30 dias"]].map(([k, rot]) => ({ rot, d: p[k] })).filter((x) => x.d && safeUrl(x.d.url));
+    if (!itens.length) return null;
+    const ant = arr(p.anteriores).filter((a) => a && safeUrl(a.url));
+    return h("aside", { class: "pls", "aria-label": "Playlists dos shows" },
+      h("h4", { class: "mono", style: "margin:0;color:var(--red)" }, "Playlists dos shows"),
+      p.em ? h("p", { class: "pl-note" }, `Gerado em ${new Date(p.em).toLocaleDateString("pt-BR")}, a cada segunda e quinta. Cada banda vem em bloco, com cinco músicas em sequência.`) : null,
+      itens.map(({ rot, d }) => {
+        const bandas = arr(d.artistas).map(str).filter(Boolean);
+        const emb = /open\.spotify\.com\/playlist\/[A-Za-z0-9]{22}/.test(d.url) ? d.url.replace("open.spotify.com/playlist/", "open.spotify.com/embed/playlist/").split("?")[0] : null;
+        const ativo = !!emb && tocando.url === emb;
+        return h("div", { class: "pl-card" }, h("b", null, str(d.nome) || `Radar: ${rot}`),
+          h("span", { class: "mono", style: "color:var(--muted)" }, [rot, d.intervalo].map(str).filter(Boolean).join(", ") + (bandas.length ? ` · ${bandas.length} bandas` : "")),
+          h("div", { class: "acts" },
+            S.modo === "site" && emb ? h("button", { class: "ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(emb, "Radar", str(d.nome) || rot, false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
+            h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "mono" }, "Abrir no Spotify")),
+          bandas.length ? h("details", null, h("summary", { class: "mono" }, "Ver as bandas"), h("p", null, bandas.join(", "))) : null);
+      }),
+      p.obs ? h("p", { class: "pl-note" }, str(p.obs)) : null,
+      ant.length ? h("p", { class: "pl-note pl-old" }, "Versões anteriores: ", ant.map((a) => h("a", { href: safeUrl(a.url), target: "_blank", rel: "noopener" }, str(a.nome) || "playlist"))) : null);
+  }
+
+  let agTm = null;
   function blocoAgenda() {
     if (!S.loaded.agenda) return [estado("abrindo a agenda", "Os eventos do Radar cultural aparecem aqui assim que o arquivo da revista responder.")];
     const ag = S.agenda;
     if (!ag) return [estado("agenda vazia", "A agenda do Radar cultural entra aqui na próxima sincronização diária.")];
-    const hoje = isoHoje();
-    const [fa, fb] = janelaFds();
-    const lim = { fds: fb, "7": addDias(hoje, 7), "30": addDias(hoje, 30), tudo: "9999-12-31" }[S.agQuando];
-    const visiveis = arr(ag.eventos).map((ev) => ({ ev, prox: proximaDoEvento(ev) })).filter(({ ev, prox }) => {
-      if (!prox) return false;
-      if (S.agTipo !== "todos" && ev.tipo !== S.agTipo) return false;
-      if (decisaoRadar(ev.id) === "nao") return false;
-      if (S.agQuando === "fds") {
-        const ds = datasDoEvento(ev).filter((x) => x.data >= fa && x.data <= fb);
-        return ds.length || (prox.emCurso && (!ev.fim || ev.fim >= fa)) || (prox.data >= fa && prox.data <= fb);
-      }
-      return prox.data <= lim;
-    }).sort((a, b) => (decisaoRadar(b.ev.id) === "quero") - (decisaoRadar(a.ev.id) === "quero") || a.prox.data.localeCompare(b.prox.data) || (Number(b.ev.afinidade) || 3) - (Number(a.ev.afinidade) || 3));
-    const tipos = [...new Set(arr(ag.eventos).map((e) => e.tipo).filter(Boolean))];
-    const chip = (atual, v, t, set) => h("button", { class: "chip", type: "button", "aria-pressed": String(atual === v), onclick: () => { set(v); render(); } }, t);
-    const pl = ag.playlists || {};
-    const playlists = [["semana", "Shows desta semana"], ["trinta", "Próximos 30 dias"]].map(([k, t]) => ({ t, d: pl[k] })).filter((x) => x.d && safeUrl(x.d.url));
-    const head = h("section", { class: "wrap ag-head" },
-      h("div", { style: "min-width:0" },
-        h("div", { class: "kicker mono" }, "Agenda · Radar cultural"),
-        h("h2", null, "o que fazer no Rio"),
-        h("p", { class: "lede" }, "Shows, filmes, exposições, peças e encontros escolhidos pelo radar. O que tem ligação com a revista aparece marcado, e seus botões voltam para o radar na próxima sincronização."),
-        ag.rodada ? h("p", { class: "mono", style: "color:var(--muted);margin:0" }, `Última varredura: ${fmtData(str(ag.rodada.em).slice(0, 10))}. ${str(ag.rodada.resumo).slice(0, 220)}${str(ag.rodada.resumo).length > 220 ? "…" : ""}`) : null,
-        h("div", { class: "ag-filtros", role: "group", "aria-label": "Quando" }, [["fds", "Fim de semana"], ["7", "7 dias"], ["30", "30 dias"], ["tudo", "Tudo"]].map(([v, t]) => chip(S.agQuando, v, t, (x) => (S.agQuando = x)))),
-        h("div", { class: "ag-filtros", role: "group", "aria-label": "Tipo" }, [chip(S.agTipo, "todos", "Tudo", (x) => (S.agTipo = x)), ...tipos.map((t) => chip(S.agTipo, t, TIPOS_AG[t] || t, (x) => (S.agTipo = x)))])),
-      playlists.length ? h("aside", { class: "pls" }, h("h4", { class: "mono", style: "margin:0;color:var(--red)" }, "Playlists dos shows"),
-        playlists.map(({ t, d }) => h("div", { class: "pl-card" }, h("b", null, str(d.nome || t)), h("span", { class: "mono", style: "color:var(--muted)" }, [t, d.intervalo].map(str).filter(Boolean).join(" · ")),
-          h("div", { class: "acts" },
-            S.modo === "site" && /open\.spotify\.com\/playlist\/([A-Za-z0-9]{22})/.test(d.url) ? h("button", { class: "ouvir", type: "button", onclick: () => tocar(d.url.replace(/open\.spotify\.com\/playlist\//, "open.spotify.com/embed/playlist/").split("?")[0], "Radar", str(d.nome || t), false) }, "Ouvir aqui") : null,
-            h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "mono" }, "Abrir no Spotify"))))) : null);
-    const lista = h("section", { class: "wrap", style: "padding-bottom:24px" }, visiveis.length ? h("div", { class: "ag-lista" }, visiveis.map(({ ev }) => cardEvento(ev)))
-      : h("p", { class: "vazio" }, "Nada neste filtro. Amplie o período ou o tipo."));
-    const idas = arr(ag.idas).slice().sort((a, b) => str(b.data).localeCompare(str(a.data)));
-    const estrelas = (n) => (n ? h("span", { class: "estrelas", "aria-label": `${n} de 5` }, "★".repeat(n) + "☆".repeat(5 - n)) : null);
-    const fomos = idas.length ? h("section", { class: "wrap secao" },
-      h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, idas.length), h("h3", null, "fomos"), h("p", null, "O diário do que vocês foram ver, com notas. Notas altas viram pauta na revista e prioridade no radar.")),
-      h("div", { class: "fomos" }, idas.map((i) => { const [, mm, dd] = str(i.data).split("-"); return h("article", { class: "ida" },
-        h("div", { class: "dia" }, h("b", null, +dd || ""), h("span", null, MESES[+mm - 1] || "")),
+    AGF = { quando: S.agQuando, onde: S.agOnde, tipo: S.agTipo, ts: agNorm(S.agQ).split(/\s+/).filter(Boolean) };
+    try {
+      const vis = arr(ag.eventos).filter(agVisivel);
+      const ativos = vis.filter((e) => decisaoRadar(e.id) !== "nao").sort((a, b) => agScore(b) - agScore(a));
+      const disp = vis.filter((e) => decisaoRadar(e.id) === "nao");
+      const qOn = AGF.ts.length > 0;
+      const futuros = arr(ag.eventos).filter((e) => { const f = agD(e.fim) || agD(e.inicio); return !f || f >= agHoje(); }).length;
+      const chip = (atual, v, txt, set, tc) => h("button", { class: "chip" + (tc ? " ag-tc" : ""), type: "button", "aria-pressed": String(atual === v), style: tc ? `--tc:var(--t-${tc})` : null, onclick: () => { set(v); render(); } }, txt);
+      const resumo = str(ag.rodada && ag.rodada.resumo);
+      const head = h("section", { class: "wrap ag-head" },
         h("div", { style: "min-width:0" },
-          h("h4", null, str(i.titulo || i.evento)),
-          h("p", { class: "mono", style: "margin:0;color:var(--muted)" }, [i.local, i.bairro, i.com ? `com ${str(i.com)}` : ""].map(str).filter(Boolean).join(" · "), " ", estrelas(Number(i.nota) || 0)),
-          i.comentario ? h("p", { style: "margin:6px 0 0" }, str(i.comentario)) : null,
-          h("ul", null, arr(i.itens).map((x) => h("li", { class: x.viu === false ? "nv" : "" }, h("b", null, str(x.nome)), estrelas(Number(x.nota) || 0), x.obs ? h("span", null, str(x.obs)) : null, linkRevista(x.nome))))));
-      }))) : null;
-    const descartados = arr(ag.eventos).filter((ev) => decisaoRadar(ev.id) === "nao" && proximaDoEvento(ev));
-    const desfazer = descartados.length ? h("section", { class: "wrap", style: "padding-bottom:28px" },
-      h("details", { class: "ag-desc" }, h("summary", { class: "mono" }, `Descartados (${descartados.length})`),
-        h("ul", null, descartados.map((ev) => h("li", null, h("span", null, str(ev.titulo)),
-          h("button", { class: "chip", type: "button", disabled: !S.podeMarcar, onclick: () => marcar(`radar:${ev.id}`, null) }, "Desfazer")))))) : null;
-    return [head, lista, desfazer, fomos];
+          h("div", { class: "kicker mono" }, "Agenda · Radar cultural"),
+          h("h2", null, "o que fazer no Rio"),
+          h("p", { class: "lede" }, "Shows, filmes, exposições, peças e encontros escolhidos pelo radar. O que tem ligação com a revista aparece marcado, e seus botões e comentários voltam para o radar na próxima sincronização."),
+          h("p", { class: "mono", style: "color:var(--muted);margin:0" },
+            ag.rodada && ag.rodada.em ? `Última varredura: ${new Date(ag.rodada.em).toLocaleString("pt-BR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}. ${resumo.slice(0, 220)}${resumo.length > 220 ? "…" : ""} ` : "",
+            `${futuros} ${futuros === 1 ? "item" : "itens"} no radar.`)),
+        blocoPlaylists(ag));
+      const campo = h("input", { id: "ag-q", type: "search", placeholder: "Banda, filme, local, bairro, livro…", autocomplete: "off", enterkeyhint: "search", "aria-describedby": qOn ? "ag-res" : null,
+        oninput: (e) => { S.agQ = e.target.value; clearTimeout(agTm); agTm = setTimeout(render, 150); },
+        onkeydown: (e) => { if (e.key === "Escape" && S.agQ) { e.preventDefault(); S.agQ = ""; clearTimeout(agTm); render(); } } });
+      campo.value = S.agQ;
+      const n = ativos.length + disp.length;
+      const ctrl = h("section", { class: "wrap ag-ctrl" },
+        h("div", { class: "ag-busca", role: "search" },
+          h("label", { for: "ag-q", class: "mono" }, "Buscar"),
+          h("div", { class: "campo" }, campo, qOn ? h("button", { type: "button", "aria-label": "Limpar a busca", onclick: () => { S.agQ = ""; clearTimeout(agTm); render(); setTimeout(() => document.getElementById("ag-q")?.focus(), 0); } }, "Limpar") : null),
+          qOn ? h("p", { class: "ag-res", id: "ag-res", role: "status" }, `${n} ${n === 1 ? "evento encontrado" : "eventos encontrados"} em todo o radar (os filtros de data, lugar e tipo ficam pausados enquanto você busca).`) : null),
+        h("div", { class: "ag-frow" + (qOn ? " pausado" : "") }, h("span", { class: "mono" }, "Quando"),
+          h("div", { class: "ag-filtros", role: "group", "aria-label": "Quando" }, QUANDO_AG.map(([v, t]) => chip(S.agQuando, v, t, (x) => (S.agQuando = x))))),
+        h("div", { class: "ag-frow" + (qOn ? " pausado" : "") }, h("span", { class: "mono" }, "Onde"),
+          h("div", { class: "ag-filtros", role: "group", "aria-label": "Onde" }, ONDE_AG.map(([v, t]) => chip(S.agOnde, v, t, (x) => (S.agOnde = x))))),
+        h("div", { class: "ag-frow" + (qOn ? " pausado" : "") }, h("span", { class: "mono" }, "O quê"),
+          h("div", { class: "ag-filtros", role: "group", "aria-label": "O quê" }, chip(S.agTipo, "todos", "Tudo", (x) => (S.agTipo = x)),
+            Object.entries(TIPOS_AG).map(([k, t]) => chip(S.agTipo, k, t, (x) => (S.agTipo = x), k)))),
+        safeUrl(ag.radar_url) ? h("div", { class: "links" }, h("a", { href: safeUrl(ag.radar_url), target: "_blank", rel: "noopener" }, "Abrir o Radar cultural")) : null);
+      const lista = h("section", { class: "wrap", style: "padding-bottom:24px" }, ativos.length ? h("div", { class: "ag-lista" }, ativos.map(cardEvento))
+        : h("p", { class: "vazio" }, qOn ? "Nada no radar com esses termos." : "Nada neste filtro. Amplie “Onde” ou “Quando” para ver mais."));
+      const dispensados = disp.length ? h("section", { class: "wrap ag-disp" },
+        h("button", { class: "ler", type: "button", "aria-expanded": String(!!S.agDispOpen), onclick: () => { S.agDispOpen = !S.agDispOpen; render(); } },
+          `${S.agDispOpen ? "Esconder" : "Mostrar"} ${disp.length} ${disp.length === 1 ? "item dispensado" : "itens dispensados"}`),
+        S.agDispOpen ? h("div", { class: "ag-lista" }, disp.map(cardEvento)) : null) : null;
+      const idas = arr(ag.idas).slice().sort((a, b) => str(b.data).localeCompare(str(a.data)));
+      const estrelas = (k) => (k ? h("span", { class: "estrelas", "aria-label": `${k} de 5` }, "★".repeat(k) + "☆".repeat(5 - k)) : null);
+      const fomos = idas.length ? h("section", { class: "wrap secao" },
+        h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, idas.length), h("h3", null, "fomos"), h("p", null, "O diário do que vocês foram ver, com notas. Notas altas viram pauta na revista e prioridade no radar.")),
+        h("div", { class: "fomos" }, idas.map((i) => { const [, mm, dd] = str(i.data).split("-"); return h("article", { class: "ida" },
+          h("div", { class: "dia" }, h("b", null, +dd || ""), h("span", null, MESES[+mm - 1] || "")),
+          h("div", { style: "min-width:0" },
+            h("h4", null, str(i.titulo || i.evento)),
+            h("p", { class: "mono", style: "margin:0;color:var(--muted)" }, [i.local, i.bairro, i.com ? `com ${str(i.com)}` : ""].map(str).filter(Boolean).join(" · "), " ", estrelas(Number(i.nota) || 0)),
+            i.comentario ? h("p", { style: "margin:6px 0 0" }, str(i.comentario)) : null,
+            h("ul", null, arr(i.itens).map((x) => h("li", { class: x.viu === false ? "nv" : "" }, h("b", null, str(x.nome)), estrelas(Number(x.nota) || 0), x.obs ? h("span", null, str(x.obs)) : null, linkRevista(x.nome))))));
+        }))) : null;
+      return [head, ctrl, lista, dispensados, fomos];
+    } finally { AGF = null; }
   }
 
   // ---------- Arquivo: every album, film and book ever published, searchable ----------
@@ -1583,7 +1995,14 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           ponte ? h("div", null, h("h4", null, "Para quem gosta de"), h("p", { style: "margin:0;font-size:16px" }, str(ponte))) : null,
           (() => { const b = cfg ? badgeAoVivo(a.titulo_original, a.titulo, a.autor) : badgeAoVivo(a.exibir_artista, a.artista); return b ? h("div", null, h("h4", null, "Na agenda"), b) : null; })(),
           h("div", null, h("h4", null, "Sua fila"), marcas(S.aberto, cfg?.rot)),
-          ouca)))
+          ouca))),
+      (() => {
+        const cs = criticasDe(S.aberto);
+        return cs.length ? h("section", { class: "wrap l-criticas" },
+          h("h3", null, "o que a crítica disse"),
+          h("p", { class: "mono lt-aviso" }, "Resumos da Faixa Oculta, com o link para cada texto original."),
+          h("div", { class: "lc-grid" }, cs.map((l) => h("article", { class: "lc" }, ...corpoLeitura(l, true))))) : null;
+      })()
     );
     // Non-modal so the player dock stays usable while reading.
     if (!dlg.open) dlg.show();
@@ -1594,11 +2013,44 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
 
   function render() {
     const foco = guardarFoco();
+    // The agenda's search box and comment boxes are rebuilt too: keep the caret where it was.
+    const ae = document.activeElement;
+    const caret = ae && /^ag-/.test(ae.id || "") && /^(INPUT|TEXTAREA)$/.test(ae.tagName) ? { id: ae.id, a: ae.selectionStart, b: ae.selectionEnd } : null;
     renderTudo();
     restaurarFoco(foco);
+    const alvo = caret && document.getElementById(caret.id);
+    if (alvo && document.activeElement !== alvo) { alvo.focus({ preventScroll: true }); try { alvo.setSelectionRange(caret.a, caret.b); } catch (e) {} }
+  }
+  // Every past edition of every section, in one select at the foot of the page.
+  function renderVersoes() {
+    const box = document.getElementById("versoes");
+    if (!box) return;
+    const grupos = [
+      ["Boletins do dia", "dia", S.dias, (x) => `Boletim de ${rotuloDia(x.data || x._id)}`, "hoje"],
+      ["Revistas da semana", "sem", S.semanas, (x) => `Semana de ${fmtPeriodo(x.inicio, x.fim)}`, "noticias"],
+      ["Música", "mus", S.edicoes, (x) => `Música nº ${str(x.numero)} · ${str(x.mes)}`, "musica"],
+      ["Cinema", "cine", S.cine_edicoes, (x) => `Cinema nº ${str(x.numero)} · ${str(x.mes)}`, "filmes"],
+      ["Livros", "liv", S.livro_edicoes, (x) => `Livros nº ${str(x.numero)} · ${str(x.mes)}`, "livros"],
+    ].filter((g) => arr(g[2]).length);
+    if (!grupos.length) { box.replaceChildren(); return; }
+    const ir = (v) => {
+      const [k, id] = [v.slice(0, v.indexOf(":")), v.slice(v.indexOf(":") + 1)];
+      const g = grupos.find((x) => x[1] === k);
+      if (!g) return;
+      if (k === "dia") S.selDia = id; else if (k === "sem") S.selSem = id; else if (k === "mus") { S.sel = id; S.filtro = "tudo"; }
+      else S.selRev[k === "cine" ? "cinema" : "livros"] = id;
+      trocarAba(g[4]);
+      window.scrollTo(0, 0);
+    };
+    const sel = h("select", { id: "versoes-sel", "aria-label": "Edições anteriores", onchange: (e) => { if (e.target.value) ir(e.target.value); } },
+      h("option", { value: "" }, "Escolha uma edição…"),
+      grupos.map(([rot, k, lista, nome]) => h("optgroup", { label: rot }, arr(lista).map((x) => h("option", { value: `${k}:${x._id}` }, nome(x))))));
+    box.replaceChildren(h("div", { class: "versoes" }, h("h4", { class: "mono" }, "Edições anteriores"),
+      h("p", null, "Todas as edições continuam guardadas. Escolha uma para abrir na aba dela."), sel));
   }
   function renderTudo() {
     renderLeitura();
+    renderVersoes();
     if (!S.hashLido && S.carregou && S.itens.length) {
       S.hashLido = true;
       let k = ""; try { k = decodeURIComponent(location.hash.slice(1)); } catch (e) {}
@@ -1722,7 +2174,25 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     if (!S.db || !S.uid) return;
     S.marcas = novo; S.marcasEm = em;
     render();
-    gravando = gravando.then(() => S.db.doc(`data/users/${S.uid}/estado`).set({ marcas: novo, marcas_em: em, atualizado: new Date().toISOString() }))
+    gravarEstado();
+  }
+  // Comments on agenda items ({key: {texto, em}}), stored next to the marks; an empty text clears the radar's note.
+  function comentar(key, texto) {
+    const novo = { ...S.comentarios, [key]: { texto: str(texto), em: new Date().toISOString() } };
+    if (S.modo === "site") {
+      S.comentarios = novo;
+      try { localStorage.setItem("fo-comentarios", JSON.stringify(novo)); } catch (e) {}
+      render();
+      return;
+    }
+    if (!S.db || !S.uid) return;
+    S.comentarios = novo;
+    render();
+    gravarEstado();
+  }
+  // The whole estado doc is written each time, so marks and comments never overwrite each other.
+  function gravarEstado() {
+    gravando = gravando.then(() => S.db.doc(`data/users/${S.uid}/estado`).set({ marcas: S.marcas, marcas_em: S.marcasEm, comentarios: S.comentarios, atualizado: new Date().toISOString() }))
       .catch((e) => { if (e && e.code === "invalid_argument") { S.podeMarcar = false; render(); } });
   }
 
@@ -1731,19 +2201,19 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       S[alvo] = snap.docs.map((d) => ({ ...d.data(), _id: d.id }));
       if (ordenar) S[alvo].sort(ordenar);
       S.loaded[alvo] = true;
-      indices = null;
+      indices = null; idxLeituras = null;
       if (alvo === "edicoes") S.carregou = true;
       render();
     }, () => {});
   }
 
   try { const f = localStorage.getItem("fo-filtro"); if (f) S.filtro = f; const a = localStorage.getItem("fo-aba"); if (ABAS.some(([k]) => k === a)) S.aba = a; } catch (e) {}
-  try { const hsh = location.hash.slice(1); if (ABAS.some(([k]) => k === hsh)) { S.aba = hsh; S.hashLido = true; } } catch (e) {}
+  try { let hsh = location.hash.slice(1); if (hsh === "temas") hsh = "noticias"; if (ABAS.some(([k]) => k === hsh)) { S.aba = hsh; S.hashLido = true; } } catch (e) {}
   renderAbas();
   const dlg = document.getElementById("leitura");
   dlg.addEventListener("close", () => { if (S.aberto) { S.aberto = null; abertoAntes = null; voltarAoOpener(); } });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dlg.open) { e.preventDefault(); fecharLeitura(); } });
-  window.addEventListener("hashchange", () => { const k = location.hash.slice(1); if (k !== S.aba && ABAS.some(([a]) => a === k)) { if (S.aberto) fecharLeitura(); trocarAba(k); } });
+  window.addEventListener("hashchange", () => { let k = location.hash.slice(1); if (k === "temas") k = "noticias"; if (k !== S.aba && ABAS.some(([a]) => a === k)) { if (S.aberto) fecharLeitura(); trocarAba(k); } });
   document.getElementById("dock-fechar").addEventListener("click", () => { tocando.url = null; document.getElementById("dock-frame").replaceChildren(); desenharPlayer(); render(); });
   document.getElementById("dock-tam").addEventListener("click", () => { tocando.grande = !tocando.grande; desenharPlayer(); });
   dlg.addEventListener("keydown", (e) => {
@@ -1768,7 +2238,9 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       S.dias = lista(b.dias).sort((a, c) => str(c.data || c._id).localeCompare(str(a.data || a._id)));
       for (const c of COLS_REV) S[c] = lista(b[c]);
       S.agenda = (b.agenda && b.agenda.atual) || null;
+      S.agArtistas = (b.agenda && b.agenda.artistas && b.agenda.artistas.mapa) || {};
       S.loaded.agenda = true;
+      try { S.comentarios = JSON.parse(localStorage.getItem("fo-comentarios") || "{}") || {}; } catch (e) { S.comentarios = {}; }
       try { S.marcasEm = JSON.parse(localStorage.getItem("fo-marcas-em") || "{}") || {}; } catch (e) { S.marcasEm = {}; }
       for (const k of ["edicoes", "itens", "guias", "semanas", "cultura", "dias", ...COLS_REV]) S.loaded[k] = true;
       S.carregou = true;
@@ -1791,11 +2263,12 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     snapList("dias", "dias", (a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
     for (const c of COLS_REV) snapList(c, c);
     db.doc("agenda/atual").onSnapshot((d) => { S.agenda = d.exists ? d.data() : null; S.loaded.agenda = true; indices = null; render(); }, () => { S.loaded.agenda = true; render(); });
+    db.doc("agenda/artistas").onSnapshot((s) => { S.agArtistas = (s.data() || {}).mapa || {}; render(); }, () => {});
     const user = await window.claude.use("user");
     const uid = user ? await user.id() : null;
     if (uid) {
       S.uid = uid; S.podeMarcar = true;
-      db.doc(`data/users/${uid}/estado`).onSnapshot((d) => { S.marcas = (d.exists && d.data().marcas) || {}; S.marcasEm = (d.exists && d.data().marcas_em) || {}; render(); }, () => {});
+      db.doc(`data/users/${uid}/estado`).onSnapshot((d) => { S.marcas = (d.exists && d.data().marcas) || {}; S.marcasEm = (d.exists && d.data().marcas_em) || {}; S.comentarios = (d.exists && d.data().comentarios) || {}; render(); }, () => {});
     }
     render();
   })();
