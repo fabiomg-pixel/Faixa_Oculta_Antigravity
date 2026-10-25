@@ -17,13 +17,20 @@ Usage:
                                 (omit if_version only when the doc does not exist yet).
             artistas_faltando.json  Artist names in the agenda that have no Spotify id in --mapa yet (resolve them
                                 with the Spotify connector and update `agenda/artistas`).
+            radar_idas.json     {ida_id: body} for idas Fabio created or edited in the magazine (estado.idas_mod), newer
+                                than the radar's copy. radar_idas_del.json: ids he deleted there (estado.idas_del).
+            radar_notas.json    {nota_id: {texto, em}} taste notes he typed in the magazine (estado.notas_novas) that
+                                the radar does not have yet.
+          These are Fabio's own entries typed in the magazine, which replaces the Radar page; the sync only copies
+          them. It never creates, edits or deletes radar idas/notas on its own.
           Comments typed in the magazine's agenda (estado.comentarios {key: {texto, em}}) go back to the radar
           as `nota` in radar_retorno.json when newer than the radar's own.
-Never writes the radar's `idas`, `notas` or `perfil`: they are Fabio's.
+Never writes the radar's `perfil`, and never touches `idas`/`notas` except to copy what Fabio typed in the magazine.
 """
 import argparse, glob, json, os
 
-DECISOES = {"quero", "talvez", "fui", "nao"}
+DECISOES = {"quero", "talvez", "fui", "nao", "naofui"}
+PERFIL = ("musica", "cinema", "artes", "teatro", "livros", "geografia", "evitar", "fontes", "atualizadoEm")
 LIMITE = 230_000
 
 
@@ -48,13 +55,17 @@ def main():
 
     eventos = ler(os.path.join(a.radar, "eventos"))
     retorno = ler(os.path.join(a.radar, "retorno"))
+    notas = ler(os.path.join(a.radar, "notas")) if os.path.isdir(os.path.join(a.radar, "notas")) else {}
+    perfil = ler(os.path.join(a.radar, "perfil")).get("gostos", {}) if os.path.isdir(os.path.join(a.radar, "perfil")) else {}
     idas = ler(os.path.join(a.radar, "idas"))
     rodadas = sorted(ler(os.path.join(a.radar, "rodadas")).values(), key=lambda r: r.get("em", ""))
     playlists = ler(os.path.join(a.radar, "playlists")).get("atual")
 
     agenda = {
         "eventos": [{**d, "id": k} for k, d in eventos.items()],
-        "retorno": {k: {kk: vv for kk, vv in d.items() if kk in ("decisao", "em", "nota")} for k, d in retorno.items()},
+        "retorno": {k: {kk: vv for kk, vv in d.items() if kk in ("decisao", "em", "nota", "snap")} for k, d in retorno.items()},
+        "perfil": {k: perfil[k] for k in PERFIL if k in perfil},
+        "notas": sorted(({"id": k, "texto": d.get("texto", ""), "em": d.get("em", "")} for k, d in notas.items()), key=lambda n: n["em"], reverse=True),
         "idas": [{**d, "id": k} for k, d in idas.items()],
         "rodada": rodadas[-1] if rodadas else None,
         "playlists": playlists,
@@ -70,7 +81,7 @@ def main():
     tamanho = len(json.dumps(agenda, ensure_ascii=False).encode())
     json.dump(agenda, open(os.path.join(a.saida, "agenda_atual.json"), "w", encoding="utf-8"), ensure_ascii=False)
 
-    vindos = {}
+    vindos, idas_vindas, idas_del, notas_vindas = {}, {}, [], {}
     if a.estado and os.path.exists(a.estado):
         est = json.load(open(a.estado, encoding="utf-8"))
         if isinstance(est, dict) and "data" in est and "version" in est:
@@ -85,13 +96,34 @@ def main():
             if atual.get("decisao") == valor or (atual.get("em") and em and atual["em"] >= em):
                 continue
             vindos[rid] = {**atual, "decisao": valor, "em": em or atual.get("em", ""), "origem": "faixa-oculta"}
+        for chave, em in quando.items():
+            if not chave.startswith("radar:") or chave in marcas:
+                continue
+            rid = chave[len("radar:"):]
+            atual = retorno.get(rid, {})
+            if atual.get("decisao") and em and str(atual.get("em", "")) < em:
+                vindos[rid] = {k: v for k, v in atual.items() if k != "decisao"} | {"em": em, "origem": "faixa-oculta"}
         for rid, c in (est.get("comentarios", {}) or {}).items():
             texto, em = str((c or {}).get("texto", "")).strip(), str((c or {}).get("em", ""))
             atual = vindos.get(rid) or retorno.get(rid, {})
             if texto == atual.get("nota", "") or (retorno.get(rid, {}).get("em") and em and retorno[rid]["em"] >= em):
                 continue
             vindos[rid] = {**atual, "nota": texto, "em": max(em, str(atual.get("em", ""))), "origem": "faixa-oculta"}
+        for iid, ida in (est.get("idas_mod", {}) or {}).items():
+            if not isinstance(ida, dict) or not ida.get("titulo") or not ida.get("data"):
+                continue
+            atual = idas.get(iid, {})
+            if atual and str(atual.get("atualizadoEm", "")) >= str(ida.get("atualizadoEm", "")):
+                continue
+            idas_vindas[iid] = {k: v for k, v in ida.items() if k != "id"}
+        idas_del = sorted(i for i in (est.get("idas_del", {}) or {}) if i in idas)
+        for n in (est.get("notas_novas", []) or []):
+            if isinstance(n, dict) and n.get("id") and str(n.get("texto", "")).strip() and n["id"] not in notas:
+                notas_vindas[n["id"]] = {"texto": str(n["texto"]).strip(), "em": n.get("em", "")}
     json.dump(vindos, open(os.path.join(a.saida, "radar_retorno.json"), "w", encoding="utf-8"), ensure_ascii=False)
+    json.dump(idas_vindas, open(os.path.join(a.saida, "radar_idas.json"), "w", encoding="utf-8"), ensure_ascii=False)
+    json.dump(idas_del, open(os.path.join(a.saida, "radar_idas_del.json"), "w", encoding="utf-8"), ensure_ascii=False)
+    json.dump(notas_vindas, open(os.path.join(a.saida, "radar_notas.json"), "w", encoding="utf-8"), ensure_ascii=False)
 
     nomes = set()
     for e in agenda["eventos"]:
@@ -108,7 +140,8 @@ def main():
     faltando = sorted(n for n in nomes if n not in mapa and n not in tentados)
     json.dump(faltando, open(os.path.join(a.saida, "artistas_faltando.json"), "w", encoding="utf-8"), ensure_ascii=False)
     print(f"agenda/atual: {len(agenda['eventos'])} eventos, {len(agenda['idas'])} idas, {tamanho / 1000:.0f} KB; "
-          f"retornos vindos da revista: {len(vindos)}; artistas sem id do Spotify: {len(faltando)}")
+          f"retornos vindos da revista: {len(vindos)}; idas: {len(idas_vindas)} (+{len(idas_del)} apagadas); "
+          f"notas: {len(notas_vindas)}; artistas sem id do Spotify: {len(faltando)}")
     if tamanho > 250_000:
         raise SystemExit("agenda/atual passou de 250 KB: reduza os campos antes de gravar")
 

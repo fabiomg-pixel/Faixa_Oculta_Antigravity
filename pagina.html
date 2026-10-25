@@ -410,15 +410,104 @@ a.ag-ref:hover, a.ag-ref:focus-visible { background: var(--ink); color: var(--pa
 .ao-vivo { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; background: var(--ink); color: var(--paper); padding: 4px 10px; font: 600 11px/1.2 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; align-self: flex-start; max-width: 100%; }
 .ao-vivo::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--red); flex: none; }
 .ao-vivo:focus-visible, .na-revista:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
-.fomos { display: grid; gap: 14px; }
-.ida { display: grid; grid-template-columns: 70px minmax(0, 1fr); border-top: 3px solid var(--ink); padding-top: 10px; gap: 14px; }
+/* Diário "fomos" and the taste profile, ported from the Radar */
+.btn { border: 1.5px solid var(--ink); background: transparent; color: var(--ink); padding: 7px 12px; font: 500 11.5px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; border-radius: 0; }
+.btn.pri { background: var(--ink); color: var(--paper); }
+.btn.del { border-color: var(--red); color: var(--red); }
+.btn.del.conf { background: var(--red); color: var(--on-red); }
+.btn:disabled { opacity: .45; cursor: default; }
+.ag-marcas .ag-reg { border-style: dashed; border-color: var(--red); color: var(--red); }
+.sinc { display: inline-block; font: 500 10px/1.4 var(--f-mono); text-transform: uppercase; letter-spacing: .05em; border: 1px dashed var(--red); color: var(--red); padding: 0 6px; vertical-align: 3px; margin-left: 6px; white-space: nowrap; font-stretch: normal; }
+.ag-pend { border: 1.5px solid var(--ink); box-shadow: 6px 6px 0 var(--red); padding: 14px 16px; margin-bottom: 26px; display: grid; gap: 4px; min-width: 0; }
+.ag-pend h3 { margin: 0; font: 900 34px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
+.ag-pend > p { margin: 0 0 4px; color: var(--muted); font-style: italic; font-size: 15px; }
+.ag-pend-l { display: flex; justify-content: space-between; align-items: center; gap: 10px 16px; flex-wrap: wrap; border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 6px; min-width: 0; }
+.ag-pend-l > div:first-child { min-width: 0; }
+.ag-pend-l b { display: block; font: 800 18px/1.15 var(--f-display); font-stretch: 75%; }
+.ag-pend-l span { font-size: 14px; color: var(--muted); }
+.ag-bt { display: flex; gap: 6px; flex-wrap: wrap; }
+.fo-top { display: flex; justify-content: space-between; align-items: center; gap: 10px 16px; flex-wrap: wrap; margin-bottom: 14px; }
+.fo-filtros { display: grid; gap: 10px; margin-bottom: 18px; }
+.fo-resumo { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 10px; margin: 0 0 8px; }
+.fo-tile { border: 1.5px solid var(--ink); padding: 10px 12px; min-width: 0; }
+.fo-tile b { display: block; font: 900 44px/.85 var(--f-display); font-stretch: 62%; }
+.fo-tile span { display: block; margin-top: 6px; font: 500 11px/1.35 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; }
+.fo-tile.big { background: var(--ink); color: var(--paper); }
+.fo-tile.wide { grid-column: 1 / -1; border-color: var(--rule); }
+.fo-tile.wide p { margin: 4px 0 0; font-size: 16px; overflow-wrap: anywhere; }
+.fo-mes { font: 900 28px/1 var(--f-display); font-stretch: 62%; margin: 28px 0 12px; border-bottom: 3px solid var(--ink); padding-bottom: 4px; text-transform: lowercase; }
+.fomos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 18px 26px; }
+.ida { display: grid; grid-template-columns: 64px minmax(0, 1fr); border: 1.5px solid var(--ink); min-width: 0; }
+.ida .dia { background: var(--tc, var(--ink)); color: #fff; padding: 10px 6px; text-align: center; }
 .ida .dia b { display: block; font: 900 40px/.85 var(--f-display); font-stretch: 62%; }
-.ida .dia span { font: 500 11px var(--f-mono); text-transform: uppercase; color: var(--muted); }
-.ida h4 { margin: 0 0 2px; font: 800 20px/1.1 var(--f-display); font-stretch: 75%; }
-.ida ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; }
-.ida li { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; font-size: 15px; }
-.ida li.nv { color: var(--muted); text-decoration: line-through; }
+.ida .dia span { font: 500 11px var(--f-mono); text-transform: uppercase; }
+.ida-c { padding: 10px 14px 12px; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+.ida h4 { margin: 0; font: 800 20px/1.1 var(--f-display); font-stretch: 75%; overflow-wrap: anywhere; }
+.ida .cred { margin: 0; font: 500 11.5px/1.4 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); overflow-wrap: anywhere; }
+.ida ul { list-style: none; margin: 2px 0 0; padding: 0; display: grid; gap: 4px; }
+.ida li { display: flex; gap: 4px 10px; align-items: baseline; flex-wrap: wrap; font-size: 15px; border-left: 3px solid var(--tc, var(--red)); padding-left: 8px; min-width: 0; }
+.ida li.nv b { color: var(--muted); text-decoration: line-through; }
+.ida li .tag { font: 500 10px var(--f-mono); text-transform: uppercase; border: 1px solid var(--rule); padding: 0 6px; }
+.ida li .ob { flex-basis: 100%; font-size: 14px; color: var(--muted); }
+.ida .com { margin: 0; font-size: 15px; }
+.ida .acts { display: flex; gap: 6px 14px; flex-wrap: wrap; align-items: center; margin-top: 2px; }
+.ida .acts a { font: 500 11.5px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; }
 .estrelas { color: var(--red); letter-spacing: 1px; font-size: 13px; white-space: nowrap; }
+dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
+.ida-ed { padding: 0 clamp(16px, 4vw, 32px) 22px; display: grid; gap: 12px; min-width: 0; }
+.ida-ed .lt-bar { margin-bottom: 4px; }
+.ida-ed h2 { margin: 0; font: 900 32px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
+.ida-ed h3 { margin: 8px 0 -4px; font: 800 19px/1.1 var(--f-display); font-stretch: 75%; }
+.ida-ed .dica { margin: 0; color: var(--muted); font-style: italic; font-size: 14.5px; }
+.fld { display: grid; gap: 4px; min-width: 0; }
+.fld > span { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.ida-ed input[type=text], .ida-ed input[type=date], .ida-ed input[type=url], .ida-ed select, .ida-ed textarea { width: 100%; min-width: 0; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); padding: 8px 10px; font: 400 16px var(--f-body); border-radius: 0; }
+.ida-ed textarea { resize: vertical; min-height: 72px; }
+.ida-ed .g2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+.ed-itens { display: grid; gap: 8px; }
+.ed-item { border: 1.5px solid var(--rule); background: var(--wash); padding: 8px; display: grid; gap: 6px; min-width: 0; }
+.ed-item.nv { opacity: .65; }
+.ed-item .l1 { display: flex; gap: 6px; }
+.ed-item .l1 input { font-weight: 600; }
+.ed-item .l2 { display: flex; gap: 6px 14px; align-items: center; flex-wrap: wrap; }
+.ed-item input.obs { font-size: 14.5px; padding: 6px 8px; border-color: var(--rule); }
+.ed-x { border: 1.5px solid var(--ink); background: transparent; color: var(--ink); width: 38px; flex: none; font-size: 18px; line-height: 1; cursor: pointer; }
+.ed-chk { display: inline-flex; gap: 6px; align-items: center; font: 500 11.5px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; }
+.ed-chk input { width: 20px; height: 20px; accent-color: var(--red); margin: 0; }
+.ed-stars { display: inline-flex; }
+.ed-stars button { border: 0; background: none; font-size: 24px; line-height: 1; padding: 2px 3px; cursor: pointer; color: var(--rule); }
+.ed-stars button[aria-pressed="true"] { color: var(--red); }
+.ed-lnk { all: unset; cursor: pointer; font: 500 11px var(--f-mono); text-transform: uppercase; text-decoration: underline; }
+.ed-lnk:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.ed-sug { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.ed-sug button { border: 1px dashed var(--ink); background: transparent; color: var(--ink); border-radius: 999px; padding: 3px 10px; font: 500 11px var(--f-mono); text-transform: uppercase; cursor: pointer; }
+.ed-add { display: flex; gap: 6px; }
+.ed-add input { flex: 1; }
+.ed-err { color: var(--red); font-weight: 700; margin: 0; }
+.ed-err:empty { display: none; }
+.ed-pe { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.ed-pe > div { display: flex; gap: 6px; flex-wrap: wrap; }
+.ag-gosto { background: var(--wash); padding-block: 36px 44px; margin-top: 8px; }
+.ag-gosto .sec-head { margin-bottom: 22px; }
+.gosto-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 20px 28px; }
+.gosto-grid .cluster ul { margin: 4px 0 0; padding-left: 1.1em; font-size: 15.5px; display: grid; gap: 3px; }
+.gosto-grid .cluster p { font-style: normal; color: var(--ink); }
+.gosto-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px clamp(24px, 4vw, 56px); margin-top: 32px; }
+.gosto-cols h4 { margin: 0 0 10px; font: 800 22px/1.1 var(--f-display); font-stretch: 75%; }
+.gosto-add { display: grid; gap: 8px; }
+.gosto-add textarea { width: 100%; min-height: 84px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); padding: 8px 10px; font: 400 16px/1.45 var(--f-body); border-radius: 0; resize: vertical; }
+.gosto-add .btn { justify-self: start; }
+.gosto-add .ag-salvo:empty { display: none; }
+.gosto-notas { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 8px; }
+.gosto-notas li { border-left: 3px solid var(--red); padding-left: 10px; font-size: 15.5px; overflow-wrap: anywhere; }
+.gosto-notas time { display: block; font: 500 11px var(--f-mono); text-transform: uppercase; color: var(--muted); }
+.gosto-fontes { display: grid; gap: 8px; }
+.gosto-fontes div { border-top: 1px solid var(--rule); padding-top: 8px; min-width: 0; }
+.gosto-fontes b { font: 800 17px/1.1 var(--f-display); font-stretch: 75%; }
+.gosto-fontes .st { font: 500 10px var(--f-mono); text-transform: uppercase; border: 1px solid var(--ink); padding: 0 6px; margin-left: 8px; vertical-align: 2px; }
+.gosto-fontes p { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+@media (max-width: 700px) { .gosto-cols { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 420px) { .ida-ed .g2 { grid-template-columns: minmax(0, 1fr); } }
 .pls { display: grid; gap: 10px; }
 .pl-card { border: 1.5px solid var(--ink); padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
 .pl-card b { font: 800 19px/1.1 var(--f-display); font-stretch: 75%; }
@@ -669,6 +758,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
 
 <dialog class="leitura" id="leitura" aria-label="Página do disco"></dialog>
 <dialog class="texto" id="texto" aria-label="Leitura"></dialog>
+<dialog class="texto ida-dlg" id="dlg-ida" aria-labelledby="dlg-ida-tit"></dialog>
 
 <aside class="dock" id="dock" hidden aria-label="Player">
   <div class="wrap">
@@ -729,7 +819,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     },
   };
   const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias", "leituras"];
-  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agArtistas: {}, comentarios: {}, marcasEm: {}, loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false };
+  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agArtistas: {}, comentarios: {}, marcasEm: {}, idasMod: {}, idasDel: {}, notasNovas: [], fIda: { ano: String(new Date().getFullYear()), tipo: "todos" }, notaMsg: "", loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false };
   const ABAS = [["hoje", "hoje"], ["noticias", "semana"], ["musica", "música"], ["filmes", "filmes"], ["livros", "livros"], ["agenda", "agenda"], ["arquivo", "arquivo"]];
   const DSEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
@@ -1508,9 +1598,10 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   function marcasAgenda(chave, mini) {
     const cur = decisaoRadar(chave);
     const op = mini ? [["quero", "Quero"], ["talvez", "Talvez"], ["fui", "Fui"], ["nao", "Não"]] : [["quero", "Quero ir"], ["talvez", "Talvez"], ["fui", "Fui"], ["nao", "Não é pra mim"]];
-    const aberto = S.agNota === chave;
+    const aberto = S.agNota === chave, ida = idaDeKey(chave);
     return h("div", { class: "ag-marcas" + (mini ? " mini" : "") },
-      op.map(([v, t]) => h("button", { type: "button", "aria-pressed": String(cur === v), disabled: !S.podeMarcar, onclick: () => marcar(`radar:${chave}`, cur === v ? null : v) }, t)),
+      op.map(([v, t]) => h("button", { type: "button", "aria-pressed": String(cur === v), disabled: !S.podeMarcar, "data-ida-op": v === "fui" ? `fui:${chave}` : null, onclick: () => marcarRadar(chave, cur === v ? null : v) }, t)),
+      ida ? h("button", { type: "button", class: "ag-reg", "data-ida-op": `reg:${chave}`, onclick: () => abrirEditor(ida, `reg:${chave}`) }, "Ver registro") : null,
       h("button", { type: "button", class: "ag-com", "aria-expanded": String(aberto), disabled: !S.podeMarcar,
         onclick: () => { S.agNota = aberto ? null : chave; render(); if (!aberto) setTimeout(() => document.getElementById(idNota(chave))?.focus(), 0); } },
       notaRadar(chave) ? "Editar comentário" : "Comentar"));
@@ -1800,7 +1891,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
         h("div", { style: "min-width:0" },
           h("div", { class: "kicker mono" }, "Agenda · Radar cultural"),
           h("h2", null, "o que fazer no Rio"),
-          h("p", { class: "lede" }, "Shows, filmes, exposições, peças e encontros escolhidos pelo radar. O que tem ligação com a revista aparece marcado, e seus botões e comentários voltam para o radar na próxima sincronização."),
+          h("p", { class: "lede" }, "Shows, filmes, exposições, peças e encontros escolhidos pelo radar. O que tem ligação com a revista aparece marcado, e seus botões, comentários, idas e anotações de gosto voltam para o radar na próxima sincronização diária."),
           h("p", { class: "mono", style: "color:var(--muted);margin:0" },
             ag.rodada && ag.rodada.em ? `Última varredura: ${new Date(ag.rodada.em).toLocaleString("pt-BR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}. ${resumo.slice(0, 220)}${resumo.length > 220 ? "…" : ""} ` : "",
             `${futuros} ${futuros === 1 ? "item" : "itens"} no radar.`)),
@@ -1829,20 +1920,409 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
         h("button", { class: "ler", type: "button", "aria-expanded": String(!!S.agDispOpen), onclick: () => { S.agDispOpen = !S.agDispOpen; render(); } },
           `${S.agDispOpen ? "Esconder" : "Mostrar"} ${disp.length} ${disp.length === 1 ? "item dispensado" : "itens dispensados"}`),
         S.agDispOpen ? h("div", { class: "ag-lista" }, disp.map(cardEvento)) : null) : null;
-      const idas = arr(ag.idas).slice().sort((a, b) => str(b.data).localeCompare(str(a.data)));
-      const estrelas = (k) => (k ? h("span", { class: "estrelas", "aria-label": `${k} de 5` }, "★".repeat(k) + "☆".repeat(5 - k)) : null);
-      const fomos = idas.length ? h("section", { class: "wrap secao" },
-        h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, idas.length), h("h3", null, "fomos"), h("p", null, "O diário do que vocês foram ver, com notas. Notas altas viram pauta na revista e prioridade no radar.")),
-        h("div", { class: "fomos" }, idas.map((i) => { const [, mm, dd] = str(i.data).split("-"); return h("article", { class: "ida" },
-          h("div", { class: "dia" }, h("b", null, +dd || ""), h("span", null, MESES[+mm - 1] || "")),
-          h("div", { style: "min-width:0" },
-            h("h4", null, str(i.titulo || i.evento)),
-            h("p", { class: "mono", style: "margin:0;color:var(--muted)" }, [i.local, i.bairro, i.com ? `com ${str(i.com)}` : ""].map(str).filter(Boolean).join(" · "), " ", estrelas(Number(i.nota) || 0)),
-            i.comentario ? h("p", { style: "margin:6px 0 0" }, str(i.comentario)) : null,
-            h("ul", null, arr(i.itens).map((x) => h("li", { class: x.viu === false ? "nv" : "" }, h("b", null, str(x.nome)), estrelas(Number(x.nota) || 0), x.obs ? h("span", null, str(x.obs)) : null, linkRevista(x.nome))))));
-        }))) : null;
-      return [head, ctrl, lista, dispensados, fomos];
+      const pend = qOn ? null : blocoPendentes();
+      return [head, pend ? h("section", { class: "wrap" }, pend) : null, ctrl, lista, dispensados, blocoFomos(), blocoGosto(ag)];
     } finally { AGF = null; }
+  }
+
+  // ---------- Diário "fomos" and the taste profile, ported from the Radar ----------
+  // The magazine cannot write the radar's db. The owner's edits live next to his marks (estado doc, or localStorage
+  // on the site) as idas_mod {id: ida}, idas_del {id: ISO} and notas_novas [{id, texto, em}]; they are merged over the
+  // radar copy here, and tools/sync_radar.py copies them into the radar on the next daily sync.
+  const MESES_L = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+  const ITEM_ROT = { musica: "Bandas e artistas", festival: "Bandas e artistas", cinema: "Filmes", teatro: "Peças e dança", artes: "Exposições", livros: "Livros e encontros", outros: "Outros" };
+  const isoDe = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  const novoItem = (n) => ({ nome: str(n).trim(), viu: true, nota: 0, obs: "" });
+  const estrelasTxt = (k) => (k ? h("span", { class: "estrelas", "aria-label": `nota ${k} de 5` }, "★".repeat(k) + "☆".repeat(5 - k)) : null);
+  const tagSinc = () => h("span", { class: "sinc", title: "Guardado aqui; chega ao radar na próxima sincronização diária" }, "a sincronizar");
+
+  // Radar visits minus deletions, local edits winning when newer, plus visits created here (ids "fo-…").
+  let idasCache = null;
+  function idasTodas() {
+    const base = arr(S.agenda && S.agenda.idas), mod = S.idasMod || {}, del = S.idasDel || {};
+    if (idasCache && idasCache.b === base && idasCache.m === mod && idasCache.d === del) return idasCache.v;
+    const vistos = new Set(), v = [];
+    for (const i of base) {
+      if (!i || !i.id) continue;
+      vistos.add(i.id);
+      if (del[i.id]) continue;
+      const m = mod[i.id];
+      v.push(m && typeof m === "object" && str(m.atualizadoEm) > str(i.atualizadoEm) ? { ...m, id: i.id, _pend: true } : i);
+    }
+    for (const [id, m] of Object.entries(mod)) if (!vistos.has(id) && !del[id] && m && typeof m === "object") v.push({ ...m, id, _pend: true });
+    v.sort((a, b) => (str(b.data) + str(b.hora)).localeCompare(str(a.data) + str(a.hora)));
+    idasCache = { b: base, m: mod, d: del, v };
+    return v;
+  }
+  const idaDeKey = (key) => (key ? idasTodas().find((i) => i.key === key) : null);
+
+  function ctxDeKey(key) {
+    const [evId, resto] = str(key).split("__");
+    const ev = arr(S.agenda && S.agenda.eventos).find((e) => e.id === evId);
+    if (!ev) return {};
+    if (resto && resto.startsWith("dia-")) { const dia = arr(ev.dias).find((d) => d.data === resto.slice(4)); return dia ? { ev, dia } : {}; }
+    if (resto) { const pick = arr(ev.destaques).find((d) => d.id === resto); return pick ? { ev, pick } : {}; }
+    return { ev };
+  }
+  // Band names hidden in a title like "A, B e C" that are not items yet.
+  function sugestoesDe(titulo, nomes, tipo) {
+    if (!["musica", "festival"].includes(tipo)) return [];
+    let t = str(titulo).replace(/\(.*?\)/g, ""); if (t.includes(":")) t = t.split(":").pop();
+    const parts = t.split(/,\s*|\s+e\s+/).map((s) => s.trim()).filter((s) => s.length > 1);
+    if (parts.length < 2) return [];
+    return parts.filter((p) => !nomes.some((n) => { const a = nrm(n), b = nrm(p); return a === b || a.includes(b) || b.includes(a); }));
+  }
+  function dataDoEvento(ev) { const hj = isoHoje(); if (ev.fim && ev.fim < hj) return ev.fim; if (ev.inicio && ev.inicio > hj) return ev.inicio; return hj; }
+  // A visit pre-filled from the event (or from the radar's snapshot when the event left the agenda).
+  function montarIda(key) {
+    const c = ctxDeKey(key), r = (S.agenda && S.agenda.retorno && S.agenda.retorno[key]) || {}, hj = isoHoje();
+    const base = { key, nota: 0, com: "", comentario: "", link: "", origem: "faixa-oculta", criadoEm: new Date().toISOString() };
+    if (!c.ev) {
+      const s = r.snap; if (!s) return null;
+      return { ...base, eventoId: str(s.eventoId), titulo: str(s.titulo), evento: str(s.evento), tipo: s.tipo || "outros", local: str(s.local), bairro: str(s.bairro), regiao: str(s.regiao), data: s.ultima || hj, hora: str(s.hora), itens: (arr(s.itens).length ? arr(s.itens) : [s.titulo]).map(novoItem), sugestoes: arr(s.sugestoes) };
+    }
+    const ev = c.ev, comum = { ...base, eventoId: ev.id, evento: str(ev.titulo), tipo: ev.tipo || "outros", regiao: str(ev.regiao) };
+    if (c.pick) {
+      const p = c.pick, ss = arr(p.sessoes).slice().sort((a, b) => (str(a.data) + str(a.hora)).localeCompare(str(b.data) + str(b.hora)));
+      const passadas = ss.filter((s) => str(s.data) <= hj), s = passadas.length ? passadas[passadas.length - 1] : (ss[0] || {});
+      const nomes = arr(p.artistas).length ? arr(p.artistas) : [p.titulo];
+      return { ...comum, titulo: str(p.titulo), local: str(s.local || p.local || ev.local), bairro: str(s.bairro || ev.bairro), data: s.data || (p.temporada ? hj : dataDoEvento(ev)), hora: str(s.hora), itens: nomes.map(novoItem), sugestoes: sugestoesDe(p.titulo, nomes, ev.tipo) };
+    }
+    if (c.dia) {
+      const d = c.dia, nomes = arr(d.artistas).length ? arr(d.artistas) : arr(d.atracoes).length ? arr(d.atracoes) : [ev.titulo];
+      return { ...comum, titulo: str(ev.titulo), local: str(d.local || ev.local), bairro: str(ev.bairro), data: d.data, hora: str(d.hora), itens: nomes.map(novoItem), sugestoes: [] };
+    }
+    const nomes = arr(ev.artistas).length ? arr(ev.artistas) : [ev.titulo];
+    return { ...comum, titulo: str(ev.titulo), local: str(ev.local), bairro: str(ev.bairro), data: dataDoEvento(ev), hora: "", itens: nomes.map(novoItem), sugestoes: sugestoesDe(ev.titulo, nomes, ev.tipo) };
+  }
+  function idaEmBranco() { return { titulo: "", evento: "", tipo: "musica", local: "", bairro: "", regiao: "", data: isoHoje(), hora: "", itens: [], sugestoes: [], nota: 0, com: "", comentario: "", link: "", origem: "faixa-oculta", criadoEm: new Date().toISOString() }; }
+
+  // Marks from the agenda buttons: "Fui" also opens the visit editor, pre-filled.
+  function marcarRadar(chave, valor) {
+    marcar(`radar:${chave}`, valor);
+    if (valor !== "fui" || !S.podeMarcar) return;
+    const ja = idaDeKey(chave);
+    abrirEditor(ja || montarIda(chave) || { ...idaEmBranco(), key: chave }, `fui:${chave}`);
+  }
+  function setMarca(key, valor) {
+    const novo = { ...S.marcas };
+    if (valor) novo[key] = valor; else delete novo[key];
+    S.marcas = novo; S.marcasEm = { ...S.marcasEm, [key]: new Date().toISOString() };
+  }
+  // One write with every per-viewer field (site: localStorage; claude.ai: the private estado doc).
+  function persistirEstado() {
+    if (S.modo === "site") {
+      try {
+        localStorage.setItem("fo-marcas", JSON.stringify(S.marcas)); localStorage.setItem("fo-marcas-em", JSON.stringify(S.marcasEm));
+        localStorage.setItem("fo-idas-mod", JSON.stringify(S.idasMod)); localStorage.setItem("fo-idas-del", JSON.stringify(S.idasDel));
+        localStorage.setItem("fo-notas-novas", JSON.stringify(S.notasNovas));
+      } catch (e) {}
+      return true;
+    }
+    if (!S.db || !S.uid) return false;
+    gravarEstado();
+    return true;
+  }
+  // Local copies the radar already has (same or newer) are dropped before writing.
+  function podarLocais() {
+    if (!S.agenda) return;
+    const base = new Map(arr(S.agenda.idas).filter((i) => i && i.id).map((i) => [i.id, i]));
+    const mod = {};
+    for (const [id, m] of Object.entries(S.idasMod || {})) { const b = base.get(id); if (!(b && str(b.atualizadoEm) >= str(m && m.atualizadoEm))) mod[id] = m; }
+    S.idasMod = mod;
+    const ids = new Set(arr(S.agenda.notas).map((n) => n && n.id));
+    S.notasNovas = arr(S.notasNovas).filter((n) => n && !ids.has(n.id));
+  }
+
+  // "Vocês foram?": quero/fui marks whose date passed in the last 45 days and still have no visit (Radar rules).
+  function pendentesIdas() {
+    if (!S.agenda || !S.podeMarcar) return [];
+    const hj = isoHoje(), lim = isoDe(new Date(agHoje().getTime() - 45 * 864e5)), out = [];
+    const ret = S.agenda.retorno || {};
+    const chaves = new Set([...Object.keys(ret), ...Object.keys(S.marcas).filter((k) => k.startsWith("radar:")).map((k) => k.slice(6))]);
+    for (const key of chaves) {
+      const dec = decisaoRadar(key);
+      if ((dec !== "quero" && dec !== "fui") || idaDeKey(key)) continue;
+      const c = ctxDeKey(key), r = ret[key] || {};
+      let ultima = null, titulo = null, sub = "";
+      if (c.ev) {
+        if (c.pick) { const ss = arr(c.pick.sessoes); if (!ss.length || ss.some(agSessaoFutura)) continue; ultima = ss.map((s) => str(s.data)).sort().pop(); titulo = c.pick.titulo; sub = c.ev.titulo; }
+        else if (c.dia) { if (str(c.dia.data) >= hj) continue; ultima = c.dia.data; titulo = c.ev.titulo; }
+        else if (key === c.ev.id) {
+          if (arr(c.ev.destaques).length || arr(c.ev.dias).length) continue;
+          const f = str(c.ev.fim || c.ev.inicio); if (!f || f >= hj) continue;
+          ultima = f; titulo = c.ev.titulo; sub = [c.ev.local, c.ev.bairro].map(str).filter(Boolean).join(", ");
+        } else continue;
+      } else if (r.snap) { if (!r.snap.ultima || r.snap.ultima >= hj) continue; ultima = r.snap.ultima; titulo = r.snap.titulo; sub = r.snap.evento || r.snap.local || ""; }
+      else continue;
+      if (!ultima || ultima < lim) continue;
+      out.push({ key, titulo: str(titulo), sub: str(sub), ultima: str(ultima) });
+    }
+    return out.sort((a, b) => b.ultima.localeCompare(a.ultima));
+  }
+  function blocoPendentes() {
+    const ps = pendentesIdas();
+    if (!ps.length) return null;
+    return h("div", { class: "ag-pend", role: "region", "aria-labelledby": "ag-pend-tit" },
+      h("h3", { id: "ag-pend-tit" }, "vocês foram?"),
+      h("p", null, "Marcados como “Quero ir” ou “Fui” que já aconteceram e ainda não estão no diário. Um toque abre o registro; os detalhes ficam para quando quiser."),
+      ps.map((p) => h("div", { class: "ag-pend-l" },
+        h("div", null, h("b", null, p.titulo), h("span", null, [p.sub, agRotulo(p.ultima)].filter(Boolean).join(" · "))),
+        h("div", { class: "ag-bt" },
+          h("button", { type: "button", class: "btn pri", "data-ida-op": `pend:${p.key}`, onclick: () => abrirEditor(montarIda(p.key) || { ...idaEmBranco(), key: p.key, titulo: p.titulo, data: p.ultima }, `pend:${p.key}`) }, "Sim, registrar"),
+          h("button", { type: "button", class: "btn", onclick: () => marcar(`radar:${p.key}`, "naofui") }, "Não fomos")))));
+  }
+
+  // The editor lives in its own dialog, outside the main render, so typing is never lost.
+  let edit = null, editOp = null, editFoco = null;
+  // Closing (save, delete, cancel, Escape) re-renders and returns focus to the button that opened the editor.
+  // Called right after close() and again by the dialog's close event; the second call does nothing.
+  function fecharEditor() { const d = document.getElementById("dlg-ida"); if (d.open) d.close(); aposFecharEditor(); }
+  function aposFecharEditor() {
+    if (!edit) return;
+    edit = null;
+    document.getElementById("dlg-ida").replaceChildren();
+    render();
+    const alvo = (editOp && document.querySelector(`[data-ida-op="${CSS.escape(editOp)}"]`)) || document.getElementById("ag-nova-ida");
+    editOp = null;
+    if (alvo && !alvo.disabled) alvo.focus({ preventScroll: false });
+  }
+  function abrirEditor(ida, op) {
+    edit = JSON.parse(JSON.stringify(ida));
+    delete edit._pend;
+    edit.itens = arr(edit.itens).map((i) => ({ ...novoItem(i.nome), ...i }));
+    edit.sugestoes = arr(edit.sugestoes);
+    edit._apagar = false;
+    editOp = op || null;
+    desenharEditor();
+    const d = document.getElementById("dlg-ida");
+    if (!d.open) d.showModal();
+    d.scrollTop = 0;
+    d.querySelector('[data-f="titulo"]')?.focus({ preventScroll: true });
+  }
+  function estrelasEd(val, onSet, rot, fk) {
+    const g = h("span", { class: "ed-stars", role: "group", "aria-label": rot });
+    const pintar = (v) => [...g.children].forEach((b, i) => b.setAttribute("aria-pressed", String(v >= i + 1)));
+    for (let n = 1; n <= 5; n++) g.append(h("button", { type: "button", "data-f": `${fk}-${n}`, "aria-label": `${n} ${n === 1 ? "estrela" : "estrelas"}`, onclick: () => { val = val === n ? 0 : n; onSet(val); pintar(val); } }, "★"));
+    pintar(val);
+    return g;
+  }
+  function desenharEditor() {
+    const d = document.getElementById("dlg-ida");
+    if (!edit) return;
+    const ae = document.activeElement, fk = editFoco || (ae && d.contains(ae) ? ae.getAttribute("data-f") : null);
+    editFoco = null;
+    const novo = !edit.id;
+    const inp = (k, attrs) => { const i = h("input", { type: "text", id: `ida-${k}`, "data-f": k, ...(attrs || {}) }); i.value = str(edit[k]); i.addEventListener("input", () => { edit[k] = i.value; }); return i; };
+    const campo = (rot, input) => h("label", { class: "fld" }, h("span", null, rot), input);
+    const redesenhar = (foco) => { editFoco = foco; desenharEditor(); };
+    const sel = h("select", { id: "ida-tipo", "data-f": "tipo" }, Object.entries(TIPOS_AG).map(([k, t]) => h("option", { value: k }, t)));
+    sel.value = TIPOS_AG[edit.tipo] ? edit.tipo : "outros";
+    sel.addEventListener("change", () => { edit.tipo = sel.value; });
+    const taCom = h("textarea", { id: "ida-comentario", "data-f": "comentario", rows: "3", placeholder: "Como foi a noite, o som, a casa…" });
+    taCom.value = str(edit.comentario); taCom.addEventListener("input", () => { edit.comentario = taCom.value; });
+    const itens = h("div", { class: "ed-itens" }, edit.itens.map((it, ix) => {
+      const nome = h("input", { type: "text", "data-f": `it${ix}-nome`, "aria-label": `Nome do item ${ix + 1}` });
+      nome.value = str(it.nome); nome.addEventListener("input", () => { it.nome = nome.value; });
+      const obs = h("input", { type: "text", class: "obs", "data-f": `it${ix}-obs`, placeholder: "nota rápida (opcional)", "aria-label": `Observação sobre ${str(it.nome) || "este item"}` });
+      obs.value = str(it.obs); obs.addEventListener("input", () => { it.obs = obs.value; });
+      const viu = h("input", { type: "checkbox", "data-f": `it${ix}-viu` }); viu.checked = it.viu !== false;
+      const stars = estrelasEd(Number(it.nota) || 0, (n) => { it.nota = n; }, `Nota para ${str(it.nome) || "este item"}`, `it${ix}-st`);
+      stars.hidden = it.viu === false;
+      const partes = str(it.nome).split(/,\s*|\s+e\s+/).map((s) => s.trim()).filter(Boolean);
+      const box = h("div", { class: "ed-item" + (it.viu === false ? " nv" : "") },
+        h("div", { class: "l1" }, nome, h("button", { type: "button", class: "ed-x", "data-f": `it${ix}-x`, "aria-label": `Remover ${str(it.nome) || "este item"}`,
+          onclick: () => { edit.itens.splice(ix, 1); redesenhar(edit.itens.length ? `it${Math.min(ix, edit.itens.length - 1)}-nome` : "novo-item"); } }, "×")),
+        h("div", { class: "l2" }, h("label", { class: "ed-chk" }, viu, h("span", null, "vimos")), stars,
+          partes.length > 1 ? h("button", { type: "button", class: "ed-lnk", "data-f": `it${ix}-sep`, onclick: () => { edit.itens.splice(ix, 1, ...partes.map(novoItem)); redesenhar(`it${ix}-nome`); } }, `separar em ${partes.length}`) : null),
+        obs);
+      viu.addEventListener("change", () => { it.viu = viu.checked; box.classList.toggle("nv", !viu.checked); stars.hidden = !viu.checked; });
+      return box;
+    }));
+    const sug = edit.sugestoes.filter((s) => !edit.itens.some((i) => nrm(i.nome) === nrm(s)));
+    const novoNome = h("input", { type: "text", "data-f": "novo-item", placeholder: "Outra banda, filme, obra…", "aria-label": "Adicionar item" });
+    const add = () => { const v = novoNome.value.trim(); if (!v) { novoNome.focus(); return; } edit.itens.push(novoItem(v)); redesenhar("novo-item"); };
+    novoNome.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); add(); } });
+    const err = h("p", { class: "ed-err", role: "alert" });
+    const fechar = fecharEditor;
+    const pode = S.podeMarcar;
+    d.replaceChildren(h("form", { class: "ida-ed", novalidate: true, onsubmit: (e) => { e.preventDefault(); salvarIda(err); } },
+      h("div", { class: "lt-bar" }, h("span", { class: "mono" }, novo ? "Diário · nova ida" : "Diário · registro"),
+        h("button", { class: "l-btn", type: "button", "data-f": "fechar", onclick: fechar, "aria-label": "Fechar sem salvar" }, "Fechar ×")),
+      h("h2", { id: "dlg-ida-tit" }, novo ? "registrar uma ida" : "o que vocês viram"),
+      campo("Ida (título)", inp("titulo", { placeholder: "Ex.: Black Pantera no Circo", required: true, "aria-required": "true" })),
+      edit.evento && edit.evento !== edit.titulo ? h("p", { class: "dica" }, `Dentro de: ${str(edit.evento)}`) : null,
+      h("div", { class: "g2" }, campo("Data", inp("data", { type: "date", required: true, "aria-required": "true" })), campo("Hora", inp("hora", { placeholder: "21h" }))),
+      h("div", { class: "g2" }, campo("Local", inp("local")), campo("Bairro ou cidade", inp("bairro"))),
+      h("div", { class: "g2" }, campo("Com quem", inp("com", { placeholder: "Ex.: com a Carol" })), campo("Tipo", sel)),
+      h("h3", null, `O que vocês viram (${edit.itens.length})`),
+      h("p", { class: "dica" }, "Cada banda, filme ou obra fica separada, com a própria nota. Desmarque “vimos” para quem vocês perderam."),
+      itens,
+      sug.length ? h("div", { class: "ed-sug" }, h("span", { class: "ag-lbl" }, "Também no cartaz"),
+        sug.map((s, k) => h("button", { type: "button", "data-f": `sug-${k}`, onclick: () => { edit.itens.push(novoItem(s)); redesenhar(`it${edit.itens.length - 1}-nome`); } }, `+ ${s}`))) : null,
+      h("div", { class: "ed-add" }, novoNome, h("button", { type: "button", class: "btn", "data-f": "add", onclick: add }, "Adicionar")),
+      h("h3", null, "A noite"),
+      h("div", { class: "fld" }, h("span", null, "Nota geral"), estrelasEd(Number(edit.nota) || 0, (n) => { edit.nota = n; }, "Nota geral", "nota")),
+      campo("Comentário", taCom),
+      campo("Link (setlist, fotos, ingresso)", inp("link", { type: "url", placeholder: "https://", inputmode: "url" })),
+      err,
+      !pode ? h("p", { class: "dica" }, "Entre no claude.ai para guardar o registro.") : null,
+      h("div", { class: "ed-pe" },
+        h("div", null, h("button", { type: "submit", class: "btn pri", "data-f": "salvar", disabled: !pode }, "Salvar"), h("button", { type: "button", class: "btn", "data-f": "cancelar", onclick: fechar }, "Cancelar")),
+        novo ? null : h("button", { type: "button", class: "btn del" + (edit._apagar ? " conf" : ""), "data-f": "apagar", disabled: !pode,
+          onclick: () => { if (!edit._apagar) { edit._apagar = true; redesenhar("apagar"); return; } apagarIda(); } }, edit._apagar ? "Confirmar: apagar o registro" : "Apagar"))));
+    const alvo = fk && d.querySelector(`[data-f="${CSS.escape(fk)}"]`);
+    if (alvo) alvo.focus({ preventScroll: !!(ae && d.contains(ae)) });
+  }
+  function salvarIda(err) {
+    if (!edit || !S.podeMarcar) return;
+    const d = document.getElementById("dlg-ida");
+    const titulo = str(edit.titulo).trim(), data = str(edit.data).trim(), link = str(edit.link).trim();
+    const falha = (msg, k) => { err.textContent = msg; d.querySelector(`[data-f="${k}"]`)?.focus(); };
+    if (!titulo) return falha("Dê um nome para a ida.", "titulo");
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(data)) return falha("Falta a data.", "data");
+    if (link && !safeUrl(link)) return falha("O link precisa começar com https://", "link");
+    const agora = new Date().toISOString();
+    const id = edit.id || `fo-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
+    const { id: _sem, _apagar, ...resto } = edit;
+    const dados = JSON.parse(JSON.stringify({ ...resto, titulo, data, link, hora: str(resto.hora).trim(), local: str(resto.local).trim(), bairro: str(resto.bairro).trim(), com: str(resto.com).trim(), comentario: str(resto.comentario).trim(),
+      nota: Number(resto.nota) || 0, itens: arr(resto.itens).filter((i) => str(i.nome).trim()).map((i) => ({ nome: str(i.nome).trim(), viu: i.viu !== false, nota: i.viu === false ? 0 : Number(i.nota) || 0, obs: str(i.obs).trim() })),
+      criadoEm: resto.criadoEm || agora, origem: resto.origem || "faixa-oculta", atualizadoEm: agora }));
+    const del = { ...S.idasDel }; delete del[id];
+    podarLocais();
+    S.idasMod = { ...S.idasMod, [id]: dados }; S.idasDel = del;
+    if (dados.key && decisaoRadar(dados.key) !== "fui") setMarca(`radar:${dados.key}`, "fui");
+    persistirEstado();
+    if (!dados.key) editOp = `ida:${id}`;
+    fecharEditor();
+  }
+  function apagarIda() {
+    if (!edit || !edit.id || !S.podeMarcar) return;
+    const id = edit.id, mod = { ...S.idasMod };
+    delete mod[id];
+    S.idasMod = mod; S.idasDel = { ...S.idasDel, [id]: new Date().toISOString() };
+    if (edit.key && decisaoRadar(edit.key) === "fui") setMarca(`radar:${edit.key}`, null);
+    persistirEstado();
+    editOp = "nova";
+    fecharEditor();
+  }
+
+  // The diary: merged visits grouped by month, with the Radar's summary tiles and filters.
+  function blocoFomos() {
+    if (!S.agenda) return null;
+    const todas = idasTodas();
+    const anos = [...new Set(todas.map((i) => str(i.data).slice(0, 4)).filter(Boolean))].sort().reverse();
+    const f = S.fIda;
+    if (f.ano !== "tudo" && !anos.includes(f.ano) && anos.length) f.ano = anos[0];
+    const doAno = todas.filter((i) => f.ano === "tudo" || str(i.data).startsWith(f.ano));
+    if (f.tipo !== "todos" && !doAno.some((i) => i.tipo === f.tipo)) f.tipo = "todos";
+    const lista = doAno.filter((i) => f.tipo === "todos" || i.tipo === f.tipo);
+    const chip = (on, txt, fn, tc) => h("button", { class: "chip" + (tc ? " ag-tc" : ""), type: "button", "aria-pressed": String(on), style: tc ? `--tc:var(--t-${tc})` : null, onclick: () => { fn(); render(); } }, txt);
+    const tiposPres = [...new Set(doAno.map((i) => i.tipo))];
+    // Summary, as in the Radar's "Fomos" page.
+    const vistos = lista.flatMap((i) => arr(i.itens).filter((x) => x.viu !== false).map((x) => ({ ...x, tipo: i.tipo })));
+    const porCat = {}; for (const x of vistos) { const r = ITEM_ROT[x.tipo] || "Outros"; porCat[r] = (porCat[r] || 0) + 1; }
+    const casas = {}; for (const i of lista) { const k = str(i.local).split(",")[0].trim(); if (k) casas[k] = (casas[k] || 0) + 1; }
+    const topCasas = Object.entries(casas).sort((a, b) => b[1] - a[1]).slice(0, 3);
+    const rep = {}; for (const i of todas) for (const x of arr(i.itens)) if (x.viu !== false && x.nome) { const k = nrm(x.nome); (rep[k] = rep[k] || { nome: str(x.nome), n: 0 }).n++; }
+    const repetidos = Object.values(rep).filter((r) => r.n > 1).sort((a, b) => b.n - a.n).slice(0, 8);
+    const melhores = vistos.filter((x) => Number(x.nota) >= 5).map((x) => str(x.nome)).slice(0, 6);
+    const notas = lista.map((i) => Number(i.nota) || 0).filter(Boolean);
+    const media = notas.length ? (notas.reduce((a, b) => a + b, 0) / notas.length).toLocaleString("pt-BR", { maximumFractionDigits: 1 }) : null;
+    const resumo = lista.length ? h("div", { class: "fo-resumo" },
+      h("div", { class: "fo-tile big" }, h("b", null, String(lista.length)), h("span", null, lista.length === 1 ? "saída" : "saídas")),
+      Object.entries(porCat).map(([k, n]) => h("div", { class: "fo-tile" }, h("b", null, String(n)), h("span", null, k.toLowerCase()))),
+      media ? h("div", { class: "fo-tile" }, h("b", null, media), h("span", null, "nota média das noites")) : null,
+      topCasas.length ? h("div", { class: "fo-tile wide" }, h("span", { class: "ag-lbl" }, "Casas que mais apareceram"), h("p", null, topCasas.map(([k, n]) => `${k} (${n})`).join(" · "))) : null,
+      melhores.length ? h("div", { class: "fo-tile wide" }, h("span", { class: "ag-lbl" }, "Nota 5"), h("p", null, melhores.join(" · "))) : null,
+      repetidos.length ? h("div", { class: "fo-tile wide" }, h("span", { class: "ag-lbl" }, "Vistos mais de uma vez (desde o início)"), h("p", null, repetidos.map((r) => `${r.nome} (${r.n}×)`).join(" · "))) : null) : null;
+    const corpo = [];
+    let mes = "", grupo = null;
+    for (const i of lista) {
+      const dt = agD(i.data), m = dt ? `${MESES_L[dt.getMonth()]} ${dt.getFullYear()}` : "sem data";
+      if (m !== mes) { mes = m; corpo.push(h("h4", { class: "fo-mes" }, m)); grupo = h("div", { class: "fomos" }); corpo.push(grupo); }
+      grupo.append(cardIda(i));
+    }
+    return h("section", { class: "wrap secao", id: "ag-fomos" },
+      h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, todas.length), h("h3", null, "fomos"),
+        h("p", null, "O diário do que vocês foram ver, com notas por banda, filme ou obra. Notas altas viram pauta na revista e prioridade no radar.")),
+      h("div", { class: "fo-top" },
+        h("button", { type: "button", class: "btn pri", id: "ag-nova-ida", "data-ida-op": "nova", disabled: !S.podeMarcar, onclick: () => abrirEditor(idaEmBranco(), "nova") }, "Registrar uma ida"),
+        !S.podeMarcar ? h("span", { class: "dica mono", style: "color:var(--muted)" }, "Entre no claude.ai para registrar") : null),
+      todas.length ? h("div", { class: "fo-filtros" },
+        h("div", { class: "ag-frow" }, h("span", { class: "mono" }, "Ano"),
+          h("div", { class: "ag-filtros", role: "group", "aria-label": "Ano" }, anos.map((a) => chip(f.ano === a, a, () => { f.ano = a; })), chip(f.ano === "tudo", "Tudo", () => { f.ano = "tudo"; }))),
+        h("div", { class: "ag-frow" }, h("span", { class: "mono" }, "O quê"),
+          h("div", { class: "ag-filtros", role: "group", "aria-label": "Tipo de ida" }, chip(f.tipo === "todos", "Tudo", () => { f.tipo = "todos"; }),
+            Object.entries(TIPOS_AG).filter(([k]) => tiposPres.includes(k)).map(([k, t]) => chip(f.tipo === k, t, () => { f.tipo = k; }, k))))) : null,
+      resumo,
+      corpo.length ? corpo : h("p", { class: "vazio" }, "Nada registrado ainda. Toque em “Fui” num evento da agenda, responda “Vocês foram?” quando aparecer, ou use “Registrar uma ida”."));
+  }
+  function cardIda(i) {
+    const tipo = TIPOS_AG[i.tipo] ? i.tipo : "outros", dt = agD(i.data), nota = Number(i.nota) || 0;
+    return h("article", { class: "ida", style: `--tc:var(--t-${tipo})` },
+      h("div", { class: "dia" }, h("b", null, dt ? String(dt.getDate()) : "?"), h("span", null, dt ? DSEM[dt.getDay()] : "")),
+      h("div", { class: "ida-c" },
+        h("h4", null, str(i.titulo || i.evento), i._pend ? tagSinc() : null),
+        h("p", { class: "cred" }, [i.evento && i.evento !== i.titulo ? i.evento : null, [i.local, i.bairro].map(str).filter(Boolean).join(", "), i.hora, TIPOS_AG[tipo]].map(str).filter(Boolean).join(" · ")),
+        nota ? h("p", { class: "cred" }, "A noite ", estrelasTxt(nota)) : null,
+        arr(i.itens).length ? h("ul", null, arr(i.itens).map((x) => h("li", { class: x.viu === false ? "nv" : "" }, h("b", null, str(x.nome)),
+          x.viu === false ? h("span", { class: "tag" }, "perdemos") : estrelasTxt(Number(x.nota) || 0),
+          x.obs ? h("span", { class: "ob" }, str(x.obs)) : null, x.viu === false ? null : linkRevista(x.nome)))) : null,
+        i.com ? h("p", { class: "cred" }, `Com ${str(i.com).replace(/^com\s+/i, "")}`) : null,
+        i.comentario ? h("p", { class: "com" }, str(i.comentario)) : null,
+        h("div", { class: "acts" }, safeUrl(i.link) ? h("a", { href: safeUrl(i.link), target: "_blank", rel: "noopener" }, "Link") : null,
+          h("button", { type: "button", class: "btn", "data-ida-op": `ida:${i.id}`, onclick: () => abrirEditor(i, `ida:${i.id}`) }, "Ver e editar"))));
+  }
+
+  // "O que o radar entende dos seus gostos": the radar's profile, its sources and the owner's notes.
+  function notasTodas() {
+    const radar = arr(S.agenda && S.agenda.notas).filter((n) => n && str(n.texto).trim());
+    const ids = new Set(radar.map((n) => n.id));
+    const locais = arr(S.notasNovas).filter((n) => n && n.id && !ids.has(n.id)).map((n) => ({ ...n, _pend: true }));
+    return [...locais, ...radar].sort((a, b) => str(b.em).localeCompare(str(a.em)));
+  }
+  function salvarNotaGosto() {
+    const ta = document.getElementById("ag-nova-nota");
+    const txt = str(ta && ta.value).trim();
+    if (!txt) { S.notaMsg = "Escreva a anotação antes de salvar."; render(); ta?.focus(); return; }
+    if (!S.podeMarcar) return;
+    S.notasNovas = [...arr(S.notasNovas), { id: `fo-n-${Date.now().toString(36)}`, texto: txt, em: new Date().toISOString() }];
+    podarLocais();
+    persistirEstado();
+    delete S.agRasc.__nota;
+    S.notaMsg = "Anotação guardada. Ela chega ao radar na próxima sincronização diária.";
+    render();
+    document.getElementById("ag-nova-nota")?.focus({ preventScroll: true });
+  }
+  function blocoGosto(ag) {
+    const p = ag.perfil || null, lista = (v) => (Array.isArray(v) ? v.map(str).filter(Boolean) : str(v) ? [str(v)] : []);
+    const campos = [["Música", "musica"], ["Cinema", "cinema"], ["Artes visuais", "artes"], ["Teatro", "teatro"], ["Livros", "livros"], ["Prioridade geográfica", "geografia"], ["Evitar", "evitar"]]
+      .map(([rot, k]) => [rot, lista(p && p[k])]).filter(([, v]) => v.length);
+    const fontes = arr(p && p.fontes).filter((f) => f && f.nome);
+    const notas = notasTodas();
+    const ta = h("textarea", { id: "ag-nova-nota", rows: "3", placeholder: "Ex.: menos stand-up; quero jazz instrumental; Niterói conta como perto", disabled: !S.podeMarcar,
+      oninput: (e) => { S.agRasc.__nota = e.target.value; if (S.notaMsg) { S.notaMsg = ""; const m = document.getElementById("ag-nota-msg"); if (m) m.textContent = ""; } } });
+    ta.value = S.agRasc.__nota || "";
+    return h("section", { class: "ag-gosto", id: "ag-gosto" }, h("div", { class: "wrap" },
+      h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, "◆"), h("h3", null, "seus gostos"),
+        h("p", null, "O que o radar entende dos seus gostos. A rotina semanal do radar usa este perfil para escolher e ordenar; suas anotações valem mais que qualquer inferência e chegam a ele na próxima sincronização diária.")),
+      campos.length ? h("div", { class: "gosto-grid" }, campos.map(([rot, v]) => h("div", { class: "cluster" }, h("b", null, rot),
+        v.length > 1 ? h("ul", null, v.map((x) => h("li", null, x))) : h("p", null, v[0]))))
+        : h("p", { class: "vazio" }, "O perfil do radar entra aqui na próxima sincronização diária."),
+      p && p.atualizadoEm ? h("p", { class: "fonte-nota mono" }, `Perfil atualizado pelo radar em ${new Date(p.atualizadoEm).toLocaleDateString("pt-BR")}.`) : null,
+      h("div", { class: "gosto-cols" },
+        h("div", { class: "gosto-add" },
+          h("h4", null, h("label", { for: "ag-nova-nota" }, "Corrigir ou acrescentar um gosto")),
+          ta,
+          h("button", { type: "button", class: "btn pri", disabled: !S.podeMarcar, onclick: salvarNotaGosto }, "Salvar anotação"),
+          h("p", { class: "ag-salvo", id: "ag-nota-msg", role: "status" }, S.podeMarcar ? S.notaMsg : "Entre no claude.ai para guardar anotações."),
+          notas.length ? h("ul", { class: "gosto-notas", "aria-label": "Suas anotações" }, notas.map((n) => h("li", null,
+            h("time", { datetime: str(n.em) }, n.em ? new Date(n.em).toLocaleDateString("pt-BR") : "", n._pend ? tagSinc() : null), str(n.texto)))) : null),
+        h("div", null,
+          h("h4", null, "Fontes que alimentam o gosto"),
+          fontes.length ? h("div", { class: "gosto-fontes" }, fontes.map((f) => h("div", null, h("b", null, str(f.nome)), f.status ? h("span", { class: "st" }, str(f.status)) : null, f.uso ? h("p", null, str(f.uso)) : null)))
+            : h("p", { class: "vazio" }, "Nenhuma fonte listada pelo radar ainda.")))));
   }
 
   // ---------- Arquivo: every album, film and book ever published, searchable ----------
@@ -2190,9 +2670,10 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     render();
     gravarEstado();
   }
-  // The whole estado doc is written each time, so marks and comments never overwrite each other.
+  // The whole estado doc is written each time, so marks, comments, visits and notes never overwrite each other.
   function gravarEstado() {
-    gravando = gravando.then(() => S.db.doc(`data/users/${S.uid}/estado`).set({ marcas: S.marcas, marcas_em: S.marcasEm, comentarios: S.comentarios, atualizado: new Date().toISOString() }))
+    gravando = gravando.then(() => S.db.doc(`data/users/${S.uid}/estado`).set({ marcas: S.marcas, marcas_em: S.marcasEm, comentarios: S.comentarios,
+      idas_mod: S.idasMod, idas_del: S.idasDel, notas_novas: S.notasNovas, atualizado: new Date().toISOString() }))
       .catch((e) => { if (e && e.code === "invalid_argument") { S.podeMarcar = false; render(); } });
   }
 
@@ -2210,6 +2691,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   try { const f = localStorage.getItem("fo-filtro"); if (f) S.filtro = f; const a = localStorage.getItem("fo-aba"); if (ABAS.some(([k]) => k === a)) S.aba = a; } catch (e) {}
   try { let hsh = location.hash.slice(1); if (hsh === "temas") hsh = "noticias"; if (ABAS.some(([k]) => k === hsh)) { S.aba = hsh; S.hashLido = true; } } catch (e) {}
   renderAbas();
+  document.getElementById("dlg-ida").addEventListener("close", aposFecharEditor);
   const dlg = document.getElementById("leitura");
   dlg.addEventListener("close", () => { if (S.aberto) { S.aberto = null; abertoAntes = null; voltarAoOpener(); } });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dlg.open) { e.preventDefault(); fecharLeitura(); } });
@@ -2242,6 +2724,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       S.loaded.agenda = true;
       try { S.comentarios = JSON.parse(localStorage.getItem("fo-comentarios") || "{}") || {}; } catch (e) { S.comentarios = {}; }
       try { S.marcasEm = JSON.parse(localStorage.getItem("fo-marcas-em") || "{}") || {}; } catch (e) { S.marcasEm = {}; }
+      const lerLS = (k, vazio) => { try { const v = JSON.parse(localStorage.getItem(k) || "null"); return v && typeof v === "object" && Array.isArray(v) === Array.isArray(vazio) ? v : vazio; } catch (e) { return vazio; } };
+      S.idasMod = lerLS("fo-idas-mod", {}); S.idasDel = lerLS("fo-idas-del", {}); S.notasNovas = lerLS("fo-notas-novas", []);
       for (const k of ["edicoes", "itens", "guias", "semanas", "cultura", "dias", ...COLS_REV]) S.loaded[k] = true;
       S.carregou = true;
       S.modo = "site";
@@ -2268,7 +2752,12 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     const uid = user ? await user.id() : null;
     if (uid) {
       S.uid = uid; S.podeMarcar = true;
-      db.doc(`data/users/${uid}/estado`).onSnapshot((d) => { S.marcas = (d.exists && d.data().marcas) || {}; S.marcasEm = (d.exists && d.data().marcas_em) || {}; S.comentarios = (d.exists && d.data().comentarios) || {}; render(); }, () => {});
+      db.doc(`data/users/${uid}/estado`).onSnapshot((d) => {
+        const e = (d.exists && d.data()) || {}, obj = (v) => (v && typeof v === "object" && !Array.isArray(v) ? v : {});
+        S.marcas = obj(e.marcas); S.marcasEm = obj(e.marcas_em); S.comentarios = obj(e.comentarios);
+        S.idasMod = obj(e.idas_mod); S.idasDel = obj(e.idas_del); S.notasNovas = Array.isArray(e.notas_novas) ? e.notas_novas : [];
+        render();
+      }, () => {});
     }
     render();
   })();
