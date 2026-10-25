@@ -253,6 +253,15 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .ag-lista { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 26px; }
 .b-pl { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 14px; }
 .b-pl a { color: inherit; }
+.jr-capas { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 0 26px; }
+.jr-capas li { display: flex; flex-direction: column; gap: 4px; padding: 12px 0; border-top: 1.5px solid var(--ink); min-width: 0; }
+.jr-jornal { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--red); display: flex; gap: 8px; }
+.jr-jornal i { font-style: normal; color: var(--muted); }
+.jr-capas b { font: 800 20px/1.12 var(--f-display); font-stretch: 75%; }
+.jr-capas small { color: var(--muted); font-size: 14px; line-height: 1.35; }
+.jr-contraste, .jr-leitura { margin-top: 26px; max-width: 760px; }
+.jr-contraste p { font-size: 17px; line-height: 1.55; }
+.jr-nota { color: var(--muted); font-size: 11px; margin-top: 22px; }
 .ag-desc summary { cursor: pointer; color: var(--muted); padding: 6px 0; }
 .ag-desc ul { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
 .ag-desc li { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--rule); padding-bottom: 8px; min-width: 0; }
@@ -978,7 +987,32 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
         f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null))));
     const fim = h("div", { class: "wrap", style: "padding-block:8px 32px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("noticias") }, "A revista da semana: grandes temas, cobertura e vieses"));
-    return [head, grade, fim];
+    return [head, grade, blocoJornais(d.jornais), fim];
+  }
+
+  // The day's printed papers (PDFs from the Telegram groups, kept in a private folder on the Mac): front pages, how each paper played the big stories, what is worth reading in full.
+  function blocoJornais(j) {
+    if (!j || (!arr(j.manchetes).length && !arr(j.destaques).length)) return null;
+    return h("section", { class: "wrap secao jr", id: "jornais" },
+      h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, arr(j.manchetes).length || ""),
+        h("h3", null, "nos jornais do dia"),
+        h("p", null, [j.data_edicao ? `Edições impressas de ${rotuloDia(j.data_edicao)}.` : "", str(j.resumo)].filter(Boolean).join(" "))),
+      arr(j.manchetes).length ? h("ol", { class: "jr-capas" }, arr(j.manchetes).map((m) => h("li", null,
+        h("span", { class: "jr-jornal mono" }, str(m.jornal), m.pais ? h("i", null, str(m.pais)) : null),
+        h("b", null, str(m.manchete)), m.nota ? h("small", null, str(m.nota)) : null))) : null,
+      arr(j.destaques).length ? h("div", { class: "d-notas", style: "margin-top:26px" }, arr(j.destaques).map((n) => h("article", { class: "d-nota" },
+        h("span", { class: "edt" }, str(n.editoria)),
+        h("h3", null, str(n.titulo)),
+        h("p", null, str(n.texto)),
+        n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
+        arr(n.jornais).length ? h("ul", { class: "d-fontes" }, arr(n.jornais).map((f) => h("li", null,
+          h("b", null, str(f.jornal)), f.pagina ? h("span", { class: "mono" }, ` · p. ${str(f.pagina)}`) : null,
+          f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null))) : null,
+      j.contraste ? h("div", { class: "jr-contraste" }, h("h4", null, "Onde os jornais divergem"), h("p", null, str(j.contraste))) : null,
+      arr(j.leitura).length ? h("div", { class: "jr-leitura" }, h("h4", null, "Vale ler inteiro no PDF"),
+        h("ul", { class: "estante" }, arr(j.leitura).map((l) => h("li", null, h("span", { class: "tp" }, str(l.jornal)),
+          h("span", null, str(l.titulo)), h("small", null, [l.pagina ? `p. ${str(l.pagina)}` : "", str(l.nota)].filter(Boolean).join(" · ")))))) : null,
+      h("p", { class: "mono jr-nota" }, "Os PDFs completos ficam na pasta privada Faixa Oculta - Jornais, no seu Mac (abra o index.html)."));
   }
 
   function blocoTemas() {
