@@ -246,11 +246,26 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .radar-card .links a { font-size: 11px; }
 
 /* Agenda (Radar cultural inside the magazine) */
-.ag-head { padding-block: 40px 18px; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 18px clamp(24px, 4vw, 56px); align-items: start; }
-.ag-head h2 { margin: 10px 0 12px; font: 900 clamp(42px, 6.5vw, 84px)/.9 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; }
-.ag-head .lede { margin: 0 0 10px; font-size: 18px; max-width: 36em; }
-.ag-filtros { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-.ag-lista { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 26px; }
+/* Layout: a sticky rail (title, search, filters, shortcuts, playlists) beside a single column of listings. */
+.ag-layout { display: grid; grid-template-columns: minmax(0, 296px) minmax(0, 1fr); gap: 0 28px; align-items: start; padding-block: 18px 8px; }
+.ag-rail { position: sticky; top: 64px; max-height: calc(100vh - 76px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; display: grid; gap: 14px; padding: 0 6px 16px 0; min-width: 0; }
+.ag-main { min-width: 0; display: grid; gap: 12px; align-content: start; }
+.ag-head { display: grid; gap: 6px; min-width: 0; }
+.ag-head h2 { margin: 0; font: 900 46px/.88 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; }
+.ag-head .lede { margin: 0; font-size: 14.5px; line-height: 1.4; }
+.ag-varre { margin: 0; font: 400 10.5px/1.45 var(--f-mono); letter-spacing: .02em; color: var(--muted); }
+.ag-filtros { display: flex; flex-wrap: wrap; gap: 4px; }
+.ag-filtros .chip { padding: 4px 9px; font-size: 11px; gap: 5px; }
+.ag-lista { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.ag-conta { margin: 0; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); border-bottom: 3px solid var(--ink); padding-bottom: 6px; }
+.ag-conta b { font: 900 22px/1 var(--f-display); font-stretch: 62%; color: var(--ink); margin-right: 1px; }
+.ag-atalhos { display: flex; flex-wrap: wrap; gap: 4px 14px; border-top: 1px solid var(--rule); padding-top: 10px; }
+.ag-atalhos a { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: 1.5px solid var(--red); }
+.ag-atalhos a:hover { color: var(--red); }
+.ag-rt { margin: 0; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--red); }
+.ag-tog { all: unset; cursor: pointer; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--red); }
+.ag-tog:hover { color: var(--red); }
+.ag-tog:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
 .b-pl { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 14px; }
 .b-pl a { color: inherit; }
 .jr-capas { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 0 26px; }
@@ -312,105 +327,122 @@ dialog.texto::backdrop { background: rgba(0, 0, 0, .55); }
 .fds { padding-block: 8px 36px; border-top: 1.5px solid var(--ink); }
 .fds > h3 { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 75%; text-transform: lowercase; font-size: clamp(30px, 5vw, 48px); line-height: .95; margin: 6px 0 18px; }
 .fds > h3::after { content: "."; color: var(--red); }
-.fds-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 18px; margin-bottom: 18px; }
+.fds-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 14px 18px; margin-bottom: 18px; align-items: start; }
 .fds-item { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .fds-nota { margin: 0; font-size: 17px; line-height: 1.45; font-style: italic; }
-.ag-ev { display: grid; grid-template-columns: 86px minmax(0, 1fr); border: 1.5px solid var(--ink); min-width: 0; background: var(--paper); scroll-margin-top: 120px; }
-.ag-ev.marcado { box-shadow: 6px 6px 0 var(--tc, var(--red)); }
-.ag-data { background: var(--tc, var(--ink)); color: #fff; padding: 10px 8px; display: flex; flex-direction: column; gap: 4px; }
-.ag-data .k { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .05em; }
-.ag-data b { font: 900 28px/.9 var(--f-display); font-stretch: 62%; overflow-wrap: anywhere; }
-.ag-data span { font: 600 12px/1.2 var(--f-body); }
-.ag-corpo { padding: 12px 14px 14px; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
-.ag-corpo h3 { margin: 0; font: 800 22px/1.05 var(--f-display); font-stretch: 75%; }
+.ag-ev { display: grid; grid-template-columns: 88px minmax(0, 1fr); border: 1.5px solid var(--ink); min-width: 0; background: var(--paper); scroll-margin-top: 120px; }
+.ag-ev.marcado { box-shadow: 5px 5px 0 var(--tc, var(--red)); }
+.ag-ev.d-nao { opacity: .72; }
+.ag-data { background: var(--tc, var(--ink)); color: #fff; padding: 9px 8px 10px; display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; }
+.ag-data .k { margin-bottom: 2px; }
+.ag-data .k { font: 500 10px/1.2 var(--f-mono); text-transform: uppercase; letter-spacing: .05em; }
+.ag-data b { font: 900 27px/.88 var(--f-display); font-stretch: 62%; overflow-wrap: anywhere; }
+.ag-data span { font: 600 11.5px/1.2 var(--f-body); }
+.ag-corpo { padding: 9px 14px 11px; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+.ag-corpo h3 { margin: 0; font: 800 21px/1.05 var(--f-display); font-stretch: 75%; text-wrap: balance; }
 .ag-corpo h3 a { text-decoration: none; }
 .ag-corpo h3 a:hover { color: var(--red); }
-.ag-onde { font-size: 14.5px; font-weight: 600; margin: 0; }
-.ag-onde .mono { color: var(--muted); font-weight: 500; margin-left: 6px; }
-.ag-quando { margin: 0; font-size: 14px; color: var(--muted); }
-.ag-porque { margin: 0; font-size: 15px; border-left: 3px solid var(--tc, var(--red)); padding-left: 10px; }
+.ag-onde { font-size: 14.5px; font-weight: 600; margin: 0; line-height: 1.3; }
+.ag-onde .reg { display: inline-block; font: 500 10px/1.4 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); border: 1px solid var(--rule); padding: 0 5px; margin-left: 7px; vertical-align: 1px; white-space: nowrap; }
+.ag-quando { margin: 0; font-size: 14px; line-height: 1.35; color: var(--muted); }
+.ag-porque { margin: 1px 0 0; font-size: 14.5px; line-height: 1.4; border-left: 3px solid var(--tc, var(--red)); padding: 1px 0 1px 9px; background: linear-gradient(90deg, color-mix(in srgb, var(--tc, var(--red)) 9%, transparent), transparent 70%); }
+.ag-sobre.clamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.ag-det { border-style: dotted !important; }
 .ag-picks { list-style: none; margin: 4px 0 0; padding: 0; border-top: 1px solid var(--rule); }
 .ag-picks li { padding-block: 8px; border-bottom: 1px solid var(--rule); display: grid; gap: 3px; }
 .ag-picks .pt { font: 700 15.5px/1.2 var(--f-body); }
 .ag-picks .ps { font: 500 11.5px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
 .ag-picks .pw { font-size: 14px; margin: 0; }
-.ag-marcas { display: flex; flex-wrap: wrap; gap: 5px; }
-.ag-marcas button { border: 1.5px solid var(--ink); background: transparent; padding: 3px 9px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
+.ag-marcas { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 1px; }
+.ag-marcas button { border: 1.5px solid var(--ink); background: transparent; padding: 2px 8px; font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
 .ag-marcas button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-.ag-marcas.mini button { padding: 2px 7px; font-size: 10px; }
+.ag-marcas.mini button { padding: 1px 6px; font-size: 9.5px; border-width: 1px; }
 .ag-marcas button:disabled { opacity: .45; cursor: default; }
 .ag-marcas .ag-com { border-style: dashed; }
 /* Agenda controls: search and the three filter rows */
-.ag-ctrl { padding-block: 0 26px; display: grid; gap: 14px; }
-.ag-busca label { display: block; color: var(--muted); margin-bottom: 5px; }
-.ag-busca .campo { display: flex; gap: 6px; max-width: 640px; }
-.ag-busca input { flex: 1; min-width: 0; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); padding: 10px 12px; font: 400 17px var(--f-body); border-radius: 0; -webkit-appearance: none; appearance: none; }
+.ag-ctrl { display: grid; gap: 10px; min-width: 0; }
+.ag-busca label { display: block; color: var(--muted); margin-bottom: 3px; font-size: 11px; }
+.ag-busca .campo { display: flex; gap: 4px; }
+.ag-busca input { flex: 1; min-width: 0; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); padding: 7px 10px; font: 400 16px var(--f-body); border-radius: 0; -webkit-appearance: none; appearance: none; }
 .ag-busca input::placeholder { color: var(--muted); }
-.ag-busca button { border: 1.5px solid var(--ink); background: var(--ink); color: var(--paper); font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; padding: 0 14px; cursor: pointer; }
-.ag-res { margin: 6px 0 0; color: var(--muted); font-size: 15px; font-style: italic; max-width: 62ch; }
-.ag-frow { display: grid; gap: 5px; }
-.ag-frow > .mono { color: var(--muted); }
+.ag-busca button { border: 1.5px solid var(--ink); background: var(--ink); color: var(--paper); font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; padding: 0 10px; cursor: pointer; }
+.ag-res { margin: 5px 0 0; color: var(--muted); font-size: 13.5px; line-height: 1.35; font-style: italic; }
+.ag-frow { display: grid; gap: 4px; min-width: 0; }
+.ag-frow > .mono { color: var(--muted); font-size: 10.5px; }
 .ag-frow .ag-filtros { margin-top: 0; }
 .ag-frow.pausado { opacity: .5; }
 .chip.ag-tc::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--tc); flex: none; }
 .chip.ag-tc[aria-pressed="true"] { background: var(--tc); border-color: var(--tc); color: #fff; }
 .chip.ag-tc[aria-pressed="true"]::before { background: #fff; }
 /* Card details mirrored from the Radar */
-.ag-sobre { margin: 0; font-size: 15px; color: var(--muted); max-width: 62ch; }
-.ag-mets { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; min-width: 0; }
-.ag-met { display: flex; flex-wrap: wrap; gap: 5px; }
-.ag-met a, .ag-met span { font: 500 11.5px/1.4 var(--f-mono); border: 1px solid var(--rule); padding: 2px 8px; text-decoration: none; min-width: 0; overflow-wrap: anywhere; }
+.ag-sobre { margin: 0; font-size: 14px; line-height: 1.4; color: var(--muted); max-width: 72ch; }
+.ag-mets { display: grid; grid-template-columns: minmax(0, 1fr); gap: 5px; min-width: 0; }
+.ag-met { display: flex; flex-wrap: wrap; gap: 4px; }
+.ag-met a, .ag-met span { font: 500 10.5px/1.4 var(--f-mono); border: 1px solid var(--rule); padding: 1px 6px; text-decoration: none; min-width: 0; overflow-wrap: anywhere; }
 .ag-met a:hover { border-color: var(--ink); }
 .ag-met b { font-weight: 500; color: var(--muted); margin-right: 5px; text-transform: uppercase; letter-spacing: .03em; }
-.ag-rev { margin: 0; font-size: 15px; max-width: 62ch; }
+.ag-rev { margin: 0; font-size: 14px; line-height: 1.4; max-width: 72ch; }
 .ag-rev { overflow-wrap: anywhere; }
 .ag-rev a { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; margin-left: 8px; }
 .ag-lbl { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-right: 6px; }
 .ag-links { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
-.ag-links a { font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: 1.5px solid var(--red); padding-bottom: 1px; }
+.ag-links a { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: 1.5px solid var(--red); padding-bottom: 1px; }
 .ag-links a:hover { color: var(--red); }
-.ag-links .fonte { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
-.ag-refs, .ag-artistas { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; min-width: 0; }
-.ag-artistas { gap: 8px 16px; }
-a.ag-ref { border: 1px solid var(--ink); border-radius: 999px; padding: 2px 9px; font: 500 11px/1.3 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; text-decoration: none; white-space: nowrap; }
+.ag-links .fonte { font: 500 10px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+.ag-refs, .ag-artistas { display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; min-width: 0; }
+.ag-artistas { gap: 5px 14px; }
+a.ag-ref { border: 1px solid var(--ink); border-radius: 999px; padding: 1px 7px; font: 500 10px/1.35 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; text-decoration: none; white-space: nowrap; }
 a.ag-ref:hover, a.ag-ref:focus-visible { background: var(--ink); color: var(--paper); }
-.ag-art { display: inline-flex; flex-wrap: wrap; gap: 5px 6px; align-items: center; min-width: 0; }
-.ag-art b { font: 800 15.5px/1.1 var(--f-display); font-stretch: 75%; margin-right: 2px; }
-.ouvir.ag-ouvir { padding: 4px 9px 4px 8px; font-size: 11px; gap: 5px; }
+.ag-art { display: inline-flex; flex-wrap: wrap; gap: 4px 5px; align-items: center; min-width: 0; }
+.ag-art b { font: 800 15px/1.1 var(--f-display); font-stretch: 75%; margin-right: 1px; }
+.ouvir.ag-ouvir { padding: 3px 8px 3px 7px; font-size: 10.5px; gap: 5px; }
 .ouvir.ag-ouvir::before { border-left-width: 7px; border-top-width: 5px; border-bottom-width: 5px; }
-.ag-dest { border-top: 1.5px solid var(--ink); margin-top: 4px; padding-top: 10px; display: grid; grid-template-columns: minmax(0, 1fr); min-width: 0; }
-.ag-dt { margin: 4px 0 2px; font: 800 18px/1.1 var(--f-display); font-stretch: 75%; }
-.ag-pick { padding-block: 10px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; min-width: 0; }
-.ag-pick:last-of-type { border-bottom: 0; }
-.ag-pick h5 { margin: 0; font: 700 16.5px/1.2 var(--f-body); }
-.ag-pick .cred { margin: 0; font: 500 11.5px/1.4 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
-.ag-pick .pw { margin: 0; font-size: 15px; }
-.ag-pick .pw a { font: 500 11.5px var(--f-mono); text-transform: uppercase; }
+/* Picks: a grid of tight rows inside the card (two columns when the card is wide). */
+.ag-dest { border-top: 1.5px solid var(--ink); margin-top: 3px; padding-top: 2px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 0 18px; min-width: 0; }
+.ag-dest > .ag-dt, .ag-dest > .ag-mais { grid-column: 1 / -1; }
+.ag-dt { margin: 5px 0 1px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .05em; color: var(--tc, var(--red)); display: flex; gap: 6px; align-items: baseline; }
+.ag-dt .n { font: 900 15px/1 var(--f-display); font-stretch: 62%; color: var(--ink); }
+.ag-pick { padding-block: 6px 7px; border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.ag-pick h5 { margin: 0; font: 700 15px/1.2 var(--f-body); }
+.ag-pick h5 .seu { font: 500 9.5px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; background: var(--tc); color: #fff; padding: 1px 5px; margin-left: 6px; vertical-align: 2px; }
+.ag-pick .cred { margin: 0; font: 500 10.5px/1.35 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+.ag-pick .pw { margin: 0; font-size: 13.5px; line-height: 1.35; }
+.ag-pick .pw a { font: 500 10.5px var(--f-mono); text-transform: uppercase; }
+.ag-pick .ag-sobre { font-size: 13.5px; }
 .ag-pick.nao { opacity: .5; }
-.ag-pick.quero h5::before { content: ""; display: inline-block; width: 9px; height: 9px; background: var(--tc); margin-right: 7px; vertical-align: 1px; }
-.ag-pick.rec { border-left: 5px solid var(--tc); padding-left: 10px; }
-.ag-sess { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
-.ag-sess li { display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: baseline; font-size: 14.5px; min-width: 0; }
-.ag-sess .d { font-weight: 700; min-width: 128px; }
+.ag-pick.quero h5::before { content: ""; display: inline-block; width: 8px; height: 8px; background: var(--tc); margin-right: 6px; vertical-align: 1px; }
+.ag-pick.rec { border-left: 4px solid var(--tc); padding-left: 8px; }
+.ag-sess { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+.ag-sess li { display: flex; flex-wrap: wrap; gap: 0 8px; align-items: baseline; font-size: 13px; line-height: 1.35; min-width: 0; }
+.ag-sess .d { font-weight: 700; white-space: nowrap; }
+.ag-sess .l { min-width: 0; color: var(--muted); }
 .ag-sess .off { color: var(--muted); text-decoration: line-through; }
-.ag-sess .esg { font: 500 11px var(--f-mono); text-transform: uppercase; color: var(--red); }
-.ag-sess a { font: 500 11.5px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; }
+.ag-sess .esg { font: 500 10px var(--f-mono); text-transform: uppercase; color: var(--red); }
+.ag-sess a { font: 500 10px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; }
 .ag-sess a.mapa { color: var(--muted); }
-.ag-mais { justify-self: start; margin-top: 8px; }
+.ag-mais { justify-self: start; margin: 6px 0 2px; }
 .ag-nota { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 6px; align-items: start; }
-.ag-nota textarea { width: 100%; min-height: 54px; border: 1.5px solid var(--ink); background: var(--wash); color: var(--ink); padding: 7px 9px; font: 400 15px/1.4 var(--f-body); resize: vertical; border-radius: 0; }
+.ag-nota textarea { width: 100%; min-height: 48px; border: 1.5px solid var(--ink); background: var(--wash); color: var(--ink); padding: 7px 9px; font: 400 15px/1.4 var(--f-body); resize: vertical; border-radius: 0; }
 .ag-nota button { border: 1.5px solid var(--ink); background: var(--ink); color: var(--paper); font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; padding: 8px 10px; cursor: pointer; }
 .ag-nota button.sec { background: transparent; color: var(--ink); }
-.ag-salvo { margin: 0; font-size: 14.5px; color: var(--muted); font-style: italic; }
-.ag-disp { padding-bottom: 28px; display: grid; gap: 18px; }
-.pls .pl-note { margin: 0; font-size: 14.5px; color: var(--muted); }
+.ag-salvo { margin: 0; font-size: 13.5px; color: var(--muted); font-style: italic; }
+.ag-disp { padding-block: 6px 4px; display: grid; gap: 12px; }
+.pls .pl-note { margin: 0; font-size: 12.5px; line-height: 1.4; color: var(--muted); }
 .pls .pl-old a { margin-right: 10px; }
-.pl-card .acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
-.pl-card details summary { cursor: pointer; color: var(--muted); }
-.pl-card details p { margin: 6px 0 0; font-size: 14.5px; }
+.pls-g { display: grid; gap: 6px; }
+.pl-card .pl-meta { font: 500 10px/1.35 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+.pl-card .acts { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 8px; margin-top: 2px; }
+.pl-card details { flex-basis: 100%; }
+.pl-card details summary { cursor: pointer; color: var(--muted); font: 500 10px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; }
+.pl-card details p { margin: 4px 0 0; font-size: 13px; line-height: 1.4; }
 @media (max-width: 560px) {
-  .ag-ev { grid-template-columns: 74px minmax(0, 1fr); }
-  .ag-data b { font-size: 24px; }
+  /* Phone: the date block becomes a coloured strip across the top, so the text gets the full width. */
+  .ag-ev { grid-template-columns: minmax(0, 1fr); }
+  .ag-data { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 5px 10px 6px; }
+  .ag-data .k { margin: 0; }
+  .ag-data b { font-size: 21px; }
+  .ag-corpo { padding: 8px 10px 10px; }
+  .ag-corpo h3 { font-size: 19px; }
   .ag-nota { grid-template-columns: 1fr 1fr; }
   .ag-nota textarea { grid-column: 1 / -1; }
   .ag-sess .d { min-width: 0; }
@@ -428,40 +460,50 @@ a.ag-ref:hover, a.ag-ref:focus-visible { background: var(--ink); color: var(--pa
 .btn:disabled { opacity: .45; cursor: default; }
 .ag-marcas .ag-reg { border-style: dashed; border-color: var(--red); color: var(--red); }
 .sinc { display: inline-block; font: 500 10px/1.4 var(--f-mono); text-transform: uppercase; letter-spacing: .05em; border: 1px dashed var(--red); color: var(--red); padding: 0 6px; vertical-align: 3px; margin-left: 6px; white-space: nowrap; font-stretch: normal; }
-.ag-pend { border: 1.5px solid var(--ink); box-shadow: 6px 6px 0 var(--red); padding: 14px 16px; margin-bottom: 26px; display: grid; gap: 4px; min-width: 0; }
-.ag-pend h3 { margin: 0; font: 900 34px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
-.ag-pend > p { margin: 0 0 4px; color: var(--muted); font-style: italic; font-size: 15px; }
-.ag-pend-l { display: flex; justify-content: space-between; align-items: center; gap: 10px 16px; flex-wrap: wrap; border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 6px; min-width: 0; }
-.ag-pend-l > div:first-child { min-width: 0; }
-.ag-pend-l b { display: block; font: 800 18px/1.15 var(--f-display); font-stretch: 75%; }
-.ag-pend-l span { font-size: 14px; color: var(--muted); }
+.ag-pend { border: 1.5px solid var(--ink); box-shadow: 5px 5px 0 var(--red); padding: 9px 12px 10px; margin: 0 5px 4px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 0 20px; min-width: 0; }
+.ag-pend > h3, .ag-pend > p { grid-column: 1 / -1; }
+.ag-pend h3 { margin: 0; font: 900 26px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
+.ag-pend > p { margin: 2px 0 4px; color: var(--muted); font-style: italic; font-size: 13.5px; line-height: 1.35; }
+.ag-pend-l { display: flex; justify-content: space-between; align-items: center; gap: 6px 12px; flex-wrap: wrap; border-top: 1px solid var(--rule); padding-block: 6px; min-width: 0; }
+.ag-pend-l > div:first-child { min-width: 0; flex: 1 1 160px; }
+.ag-pend-l b { display: block; font: 800 16px/1.15 var(--f-display); font-stretch: 75%; }
+.ag-pend-l span { font-size: 13px; color: var(--muted); }
+.ag-pend .btn { padding: 4px 8px; font-size: 10.5px; }
 .ag-bt { display: flex; gap: 6px; flex-wrap: wrap; }
-.fo-top { display: flex; justify-content: space-between; align-items: center; gap: 10px 16px; flex-wrap: wrap; margin-bottom: 14px; }
-.fo-filtros { display: grid; gap: 10px; margin-bottom: 18px; }
-.fo-resumo { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 10px; margin: 0 0 8px; }
-.fo-tile { border: 1.5px solid var(--ink); padding: 10px 12px; min-width: 0; }
-.fo-tile b { display: block; font: 900 44px/.85 var(--f-display); font-stretch: 62%; }
-.fo-tile span { display: block; margin-top: 6px; font: 500 11px/1.35 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; }
+#ag-fomos.secao { padding-block: 30px 18px; }
+#ag-fomos .sec-head, .ag-gosto .sec-head { margin-bottom: 12px; padding-bottom: 8px; }
+#ag-fomos .sec-head .num, .ag-gosto .sec-head .num { font-size: clamp(44px, 6vw, 68px); }
+#ag-fomos .sec-head h3, .ag-gosto .sec-head h3 { font-size: clamp(30px, 4vw, 44px); }
+#ag-fomos .sec-head p, .ag-gosto .sec-head p { font-size: 14.5px; line-height: 1.4; max-width: 80ch; }
+.fo-bar { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; margin-bottom: 10px; }
+.fo-top { display: flex; align-items: center; gap: 8px 12px; flex-wrap: wrap; }
+.fo-filtros { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.fo-filtros .ag-frow { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 8px; }
+.fo-resumo { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 112px), 1fr)); gap: 6px; margin: 0 0 4px; }
+.fo-tile { border: 1.5px solid var(--ink); padding: 6px 9px 7px; min-width: 0; }
+.fo-tile b { display: block; font: 900 30px/.85 var(--f-display); font-stretch: 62%; }
+.fo-tile span { display: block; margin-top: 3px; font: 500 10px/1.3 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; }
 .fo-tile.big { background: var(--ink); color: var(--paper); }
-.fo-tile.wide { grid-column: 1 / -1; border-color: var(--rule); }
-.fo-tile.wide p { margin: 4px 0 0; font-size: 16px; overflow-wrap: anywhere; }
-.fo-mes { font: 900 28px/1 var(--f-display); font-stretch: 62%; margin: 28px 0 12px; border-bottom: 3px solid var(--ink); padding-bottom: 4px; text-transform: lowercase; }
-.fomos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 18px 26px; }
-.ida { display: grid; grid-template-columns: 64px minmax(0, 1fr); border: 1.5px solid var(--ink); min-width: 0; }
-.ida .dia { background: var(--tc, var(--ink)); color: #fff; padding: 10px 6px; text-align: center; }
-.ida .dia b { display: block; font: 900 40px/.85 var(--f-display); font-stretch: 62%; }
-.ida .dia span { font: 500 11px var(--f-mono); text-transform: uppercase; }
-.ida-c { padding: 10px 14px 12px; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
-.ida h4 { margin: 0; font: 800 20px/1.1 var(--f-display); font-stretch: 75%; overflow-wrap: anywhere; }
-.ida .cred { margin: 0; font: 500 11.5px/1.4 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); overflow-wrap: anywhere; }
-.ida ul { list-style: none; margin: 2px 0 0; padding: 0; display: grid; gap: 4px; }
-.ida li { display: flex; gap: 4px 10px; align-items: baseline; flex-wrap: wrap; font-size: 15px; border-left: 3px solid var(--tc, var(--red)); padding-left: 8px; min-width: 0; }
+.fo-tile.wide { grid-column: span 3; border-color: var(--rule); }
+.fo-tile.wide p { margin: 2px 0 0; font-size: 14px; line-height: 1.35; overflow-wrap: anywhere; }
+.fo-mes { font: 900 22px/1 var(--f-display); font-stretch: 62%; margin: 16px 0 8px; border-bottom: 2px solid var(--ink); padding-bottom: 3px; text-transform: lowercase; }
+.fomos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap: 8px 12px; align-items: start; }
+.ida { display: grid; grid-template-columns: 50px minmax(0, 1fr); border: 1.5px solid var(--ink); min-width: 0; }
+.ida .dia { background: var(--tc, var(--ink)); color: #fff; padding: 7px 4px; text-align: center; }
+.ida .dia b { display: block; font: 900 30px/.85 var(--f-display); font-stretch: 62%; }
+.ida .dia span { font: 500 10px var(--f-mono); text-transform: uppercase; }
+.ida-c { padding: 7px 10px 8px; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.ida h4 { margin: 0; font: 800 17px/1.1 var(--f-display); font-stretch: 75%; overflow-wrap: anywhere; }
+.ida .cred { margin: 0; font: 500 10.5px/1.35 var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); overflow-wrap: anywhere; }
+.ida ul { list-style: none; margin: 1px 0 0; padding: 0; display: grid; gap: 2px; }
+.ida li { display: flex; gap: 2px 8px; align-items: baseline; flex-wrap: wrap; font-size: 14px; line-height: 1.3; border-left: 3px solid var(--tc, var(--red)); padding-left: 7px; min-width: 0; }
 .ida li.nv b { color: var(--muted); text-decoration: line-through; }
-.ida li .tag { font: 500 10px var(--f-mono); text-transform: uppercase; border: 1px solid var(--rule); padding: 0 6px; }
-.ida li .ob { flex-basis: 100%; font-size: 14px; color: var(--muted); }
-.ida .com { margin: 0; font-size: 15px; }
-.ida .acts { display: flex; gap: 6px 14px; flex-wrap: wrap; align-items: center; margin-top: 2px; }
-.ida .acts a { font: 500 11.5px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; }
+.ida li .tag { font: 500 9.5px var(--f-mono); text-transform: uppercase; border: 1px solid var(--rule); padding: 0 5px; }
+.ida li .ob { flex-basis: 100%; font-size: 13px; color: var(--muted); }
+.ida .com { margin: 0; font-size: 14px; line-height: 1.4; }
+.ida .acts { display: flex; gap: 4px 12px; flex-wrap: wrap; align-items: center; margin-top: 1px; }
+.ida .acts a { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; }
+.ida .acts .btn { padding: 3px 8px; font-size: 10px; }
 .estrelas { color: var(--red); letter-spacing: 1px; font-size: 13px; white-space: nowrap; }
 dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 .ida-ed { padding: 0 clamp(16px, 4vw, 32px) 22px; display: grid; gap: 12px; min-width: 0; }
@@ -497,30 +539,54 @@ dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 .ed-err:empty { display: none; }
 .ed-pe { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
 .ed-pe > div { display: flex; gap: 6px; flex-wrap: wrap; }
-.ag-gosto { background: var(--wash); padding-block: 36px 44px; margin-top: 8px; }
-.ag-gosto .sec-head { margin-bottom: 22px; }
-.gosto-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 20px 28px; }
-.gosto-grid .cluster ul { margin: 4px 0 0; padding-left: 1.1em; font-size: 15.5px; display: grid; gap: 3px; }
-.gosto-grid .cluster p { font-style: normal; color: var(--ink); }
-.gosto-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px clamp(24px, 4vw, 56px); margin-top: 32px; }
-.gosto-cols h4 { margin: 0 0 10px; font: 800 22px/1.1 var(--f-display); font-stretch: 75%; }
-.gosto-add { display: grid; gap: 8px; }
-.gosto-add textarea { width: 100%; min-height: 84px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); padding: 8px 10px; font: 400 16px/1.45 var(--f-body); border-radius: 0; resize: vertical; }
+.ag-gosto { background: var(--wash); padding-block: 24px 28px; margin-top: 4px; }
+.gosto-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 12px 22px; }
+.gosto-grid .cluster { padding-top: 6px; }
+.gosto-grid .cluster b { font-size: 16px; }
+.gosto-grid .cluster ul { margin: 3px 0 0; padding-left: 1em; font-size: 14px; line-height: 1.35; display: grid; gap: 1px; }
+.gosto-grid .cluster p { font-style: normal; color: var(--ink); font-size: 14px; line-height: 1.35; margin: 3px 0 0; }
+.ag-gosto .fonte-nota { margin-top: 10px; }
+.gosto-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px clamp(20px, 3vw, 40px); margin-top: 18px; }
+.gosto-cols h4 { margin: 0 0 6px; font: 800 18px/1.1 var(--f-display); font-stretch: 75%; }
+.gosto-add { display: grid; gap: 6px; align-content: start; }
+.gosto-add textarea { width: 100%; min-height: 64px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); padding: 8px 10px; font: 400 16px/1.45 var(--f-body); border-radius: 0; resize: vertical; }
 .gosto-add .btn { justify-self: start; }
 .gosto-add .ag-salvo:empty { display: none; }
-.gosto-notas { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 8px; }
-.gosto-notas li { border-left: 3px solid var(--red); padding-left: 10px; font-size: 15.5px; overflow-wrap: anywhere; }
+.gosto-notas { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 5px; }
+.gosto-notas li { border-left: 3px solid var(--red); padding-left: 9px; font-size: 14px; line-height: 1.35; overflow-wrap: anywhere; }
 .gosto-notas time { display: block; font: 500 11px var(--f-mono); text-transform: uppercase; color: var(--muted); }
-.gosto-fontes { display: grid; gap: 8px; }
-.gosto-fontes div { border-top: 1px solid var(--rule); padding-top: 8px; min-width: 0; }
-.gosto-fontes b { font: 800 17px/1.1 var(--f-display); font-stretch: 75%; }
+.gosto-fontes { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 4px 16px; }
+.gosto-fontes div { border-top: 1px solid var(--rule); padding-top: 5px; min-width: 0; }
+.gosto-fontes b { font: 800 15px/1.1 var(--f-display); font-stretch: 75%; }
 .gosto-fontes .st { font: 500 10px var(--f-mono); text-transform: uppercase; border: 1px solid var(--ink); padding: 0 6px; margin-left: 8px; vertical-align: 2px; }
-.gosto-fontes p { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+.gosto-fontes p { margin: 1px 0 0; font-size: 13px; line-height: 1.35; color: var(--muted); }
 @media (max-width: 700px) { .gosto-cols { grid-template-columns: minmax(0, 1fr); } }
+/* Agenda below 900px: one column, the rail stacks on top, filter rows and playlists scroll sideways (as in the Radar). */
+@media (max-width: 900px) {
+  .ag-layout { grid-template-columns: minmax(0, 1fr); gap: 14px; padding-top: 14px; }
+  .ag-rail { position: static; max-height: none; overflow: visible; padding: 0; gap: 12px; }
+  .ag-head h2 { font-size: 40px; }
+  .ag-frow { grid-template-columns: 50px minmax(0, 1fr); align-items: center; gap: 6px; }
+  .ag-frow .ag-filtros, .fo-filtros .ag-filtros { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-right: 24px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent); }
+  .ag-frow .ag-filtros::-webkit-scrollbar { display: none; }
+  .fo-filtros { display: grid; gap: 6px; width: 100%; }
+  .fo-filtros .ag-frow { grid-template-columns: 50px minmax(0, 1fr); }
+  .pls-g { grid-auto-flow: column; grid-auto-columns: minmax(250px, 1fr); overflow-x: auto; scrollbar-width: none; }
+  .fo-tile.wide { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .ag-varre, .ag-head .lede { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+  .ag-head .lede { font-size: 14px; }
+  .ag-head h2 { font-size: 36px; }
+  .pls .pl-gerado { display: none; }
+  .ag-atalhos { padding-top: 8px; }
+  .ag-dest { grid-template-columns: minmax(0, 1fr); }
+  .fomos { grid-template-columns: minmax(0, 1fr); }
+}
 @media (max-width: 420px) { .ida-ed .g2 { grid-template-columns: minmax(0, 1fr); } }
 .pls { display: grid; gap: 10px; }
-.pl-card { border: 1.5px solid var(--ink); padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
-.pl-card b { font: 800 19px/1.1 var(--f-display); font-stretch: 75%; }
+.pl-card { border: 1.5px solid var(--ink); padding: 7px 10px 8px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.pl-card b { font: 800 16px/1.1 var(--f-display); font-stretch: 75%; }
 
 /* Daily briefing */
 .d-head { padding-block: 40px 24px; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px clamp(24px, 4vw, 56px); align-items: start; }
@@ -703,7 +769,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
 @media (max-width: 900px) {
   .capa, .capa.capa-obra, .spread .wrap, .l-hero, .l-corpo, .b-in { grid-template-columns: minmax(0, 1fr); }
   .l-hero .l-capa { max-width: 420px; }
-  .n-head, .n-grid, .cult, .d-head, .ag-head, .ag-lista { grid-template-columns: minmax(0, 1fr); }
+  .n-head, .n-grid, .cult, .d-head { grid-template-columns: minmax(0, 1fr); }
   .mgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cob { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .l-aside { border-top: 1px solid var(--rule); }
@@ -829,7 +895,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     },
   };
   const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias", "leituras"];
-  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agArtistas: {}, comentarios: {}, marcasEm: {}, idasMod: {}, idasDel: {}, notasNovas: [], fIda: { ano: String(new Date().getFullYear()), tipo: "todos" }, notaMsg: "", loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false };
+  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agInfo: {}, agPlInfo: false, agArtistas: {}, agArtistasYT: {}, comentarios: {}, marcasEm: {}, idasMod: {}, idasDel: {}, notasNovas: [], fIda: { ano: String(new Date().getFullYear()), tipo: "todos" }, notaMsg: "", loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false };
   const ABAS = [["hoje", "hoje"], ["noticias", "semana"], ["musica", "música"], ["filmes", "filmes"], ["livros", "livros"], ["agenda", "agenda"], ["arquivo", "arquivo"]];
   const DSEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
@@ -867,18 +933,18 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   function links(a) {
     const q = encodeURIComponent(`${str(a.artista)} ${str(a.album)}`.trim());
     return h("div", { class: "links" },
-      h("a", { href: safeUrl(a.spotify_url) || `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener" }, "Spotify"),
       h("a", { href: ytLista(a) ? `https://music.youtube.com/playlist?list=${ytLista(a)}` : `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener" }, "YT Music"),
+      h("a", { href: safeUrl(a.spotify_url) || `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener" }, "Spotify"),
       h("a", { href: safeUrl(a.apple_url) || `https://music.apple.com/br/search?term=${q}`, target: "_blank", rel: "noopener" }, "Apple Music"),
       safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
   }
-  // Embedded player: Spotify album embed when we know the id, else the album's YouTube Music playlist.
+  // Embedded player: the album's YouTube Music playlist first (it plays whole albums without login), Spotify as fallback.
   const tocando = { url: null, grande: false };
   const ytLista = (a) => (/^(OLAK5uy_|PL)[A-Za-z0-9_-]{16,40}$/.test(str(a.youtube_list)) ? str(a.youtube_list) : "");
   function embedUrl(a) {
+    if (ytLista(a)) return `https://www.youtube-nocookie.com/embed/videoseries?list=${ytLista(a)}&rel=0`;
     const sid = str(a.spotify_id) || (str(a.spotify_url).match(/album\/([A-Za-z0-9]{22})/) || [])[1];
     if (sid && /^[A-Za-z0-9]{22}$/.test(sid)) return `https://open.spotify.com/embed/album/${sid}?utm_source=generator&theme=0`;
-    if (ytLista(a)) return `https://www.youtube-nocookie.com/embed/videoseries?list=${ytLista(a)}&rel=0`;
     return null;
   }
   const fonteDe = (url) => (/spotify\.com/.test(url) ? "Spotify" : /list=/.test(url) ? "YouTube Music" : "Trailer");
@@ -1358,7 +1424,6 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           h("h2", { class: "b-nome" }, o.nome, h("span", { class: "dot", "aria-hidden": "true" })),
           o.stats ? h("p", { class: "b-stats mono" }, o.stats) : null,
           o.playlist && safeUrl(o.playlist.url) ? h("div", { class: "b-pl" },
-            S.modo === "site" && /open\.spotify\.com\/playlist\/[A-Za-z0-9]{22}/.test(o.playlist.url) ? h("button", { class: "ouvir", type: "button", onclick: () => tocar(o.playlist.url.replace("open.spotify.com/playlist/", "open.spotify.com/embed/playlist/").split("?")[0], "Faixa Oculta", str(o.playlist.nome || "Playlist da edição"), false) }, "Ouvir a edição") : null,
             h("a", { href: safeUrl(o.playlist.url), target: "_blank", rel: "noopener", class: "mono" }, "Playlist no Spotify ↗")) : null),
         o.toc.length ? h("nav", { class: "b-toc", "aria-label": "Nesta edição" }, h("h3", { class: "mono" }, "Nesta edição"),
           h("ol", null, o.toc.map((t) => h("li", { class: t.guia ? "g" : null }, h("button", { type: "button", onclick: () => ir(t.id) }, h("span", { "aria-hidden": "true" }, t.n), h("span", null, t.titulo)))))) : null));
@@ -1685,24 +1750,30 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     return null;
   }
 
-  // Artists: a chip per name that plays in the dock (site mode, Spotify id known) and opens Spotify / YouTube Music.
-  let artIdx = null, artDe = null;
-  function spotifyIdDe(nome) {
-    const m = S.agArtistas || {};
-    if (artDe !== m) { artDe = m; artIdx = new Map(); for (const [n, v] of Object.entries(m)) { const k = nrm(n); if (k && !artIdx.has(k)) artIdx.set(k, v); } }
-    const id = str(Object.prototype.hasOwnProperty.call(m, nome) ? m[nome] : artIdx.get(nrm(nome)));
-    return /^[A-Za-z0-9]{22}$/.test(id) ? id : null;
+  // Artists: a chip per name that plays in the dock (site mode) and opens YouTube Music / Spotify.
+  // YouTube Music comes first: a known playlist id (channel uploads UU…, album OLAK5uy_…) plays as a video in the dock;
+  // otherwise the Spotify artist embed, when its id is known. Names match exactly first, then loosely (nrm).
+  const artIdxs = new Map();
+  function idArtista(m, nome, ok) {
+    m = m || {};
+    let c = artIdxs.get(ok);
+    if (!c || c.de !== m) { c = { de: m, idx: new Map() }; for (const [n, v] of Object.entries(m)) { const k = nrm(n); if (k && !c.idx.has(k)) c.idx.set(k, v); } artIdxs.set(ok, c); }
+    const id = str(Object.prototype.hasOwnProperty.call(m, nome) ? m[nome] : c.idx.get(nrm(nome))).trim();
+    return ok.test(id) ? id : null;
   }
+  const RE_SP = /^[A-Za-z0-9]{22}$/, RE_YT = /^(UU|OLAK5uy_|PL|RD)[A-Za-z0-9_-]{8,}$/;
+  const spotifyIdDe = (nome) => idArtista(S.agArtistas, nome, RE_SP);
+  const youtubeIdDe = (nome) => idArtista(S.agArtistasYT, nome, RE_YT);
   function chipArtista(nome) {
     nome = str(nome).trim();
     if (!nome) return null;
-    const id = spotifyIdDe(nome), q = encodeURIComponent(nome);
-    const emb = id ? `https://open.spotify.com/embed/artist/${id}?utm_source=generator&theme=0` : null;
+    const yt = youtubeIdDe(nome), sp = spotifyIdDe(nome), q = encodeURIComponent(nome);
+    const emb = yt ? `https://www.youtube-nocookie.com/embed/videoseries?list=${yt}&rel=0` : sp ? `https://open.spotify.com/embed/artist/${sp}?utm_source=generator&theme=0` : null;
     const ativo = !!emb && tocando.url === emb;
     return h("span", { class: "ag-art" }, h("b", null, nome),
-      S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), "aria-label": `${ativo ? "Tocando" : "Ouvir aqui"}: ${nome}`, onclick: () => tocar(emb, nome, "no Spotify", false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
-      h("a", { class: "ag-ref", href: id ? `https://open.spotify.com/artist/${id}` : `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener", title: `${nome} no Spotify` }, "Spotify"),
-      h("a", { class: "ag-ref", href: `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener", title: `Buscar ${nome} no YouTube Music` }, "YouTube Music"));
+      S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), "aria-label": `${ativo ? "Tocando" : "Ouvir aqui"}: ${nome}${yt ? " (YouTube Music)" : " (Spotify)"}`, title: yt ? "Toca aqui pelo YouTube Music" : "Toca aqui pelo Spotify", onclick: () => tocar(emb, nome, yt ? "no YouTube Music" : "no Spotify", false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
+      h("a", { class: "ag-ref", href: yt ? `https://music.youtube.com/playlist?list=${yt}` : `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener", title: yt ? `${nome} no YouTube Music` : `Buscar ${nome} no YouTube Music` }, "YouTube Music"),
+      h("a", { class: "ag-ref", href: sp ? `https://open.spotify.com/artist/${sp}` : `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener", title: `${nome} no Spotify` }, "Spotify"));
   }
   function linhaArtistas(lista) {
     const nomes = arr(lista).map(str).filter((n) => n.trim());
@@ -1772,9 +1843,11 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   }
   function agRotulo(s, hora) { const d = agD(s); if (!d) return str(s); const k = agDias(agHoje(), d); return `${k === 0 ? "hoje" : k === 1 ? "amanhã" : DSEM[d.getDay()]}, ${agCurta(d)}${hora ? " " + str(hora).toLowerCase() : ""}`; }
 
-  // Picks ("O que ver para você") with their sessions, and festival days.
+  // Picks ("O que ver para você") with their sessions, and festival days, laid out as a tight grid of rows.
+  // Secondary detail (synopses, metrics, reviews, film links) waits behind the card's "Detalhes" toggle (S.agInfo).
+  const PICKS_VIS = 4;
   function agDestaques(ev) {
-    const box = h("div", { class: "ag-dest" }), f = agF(), ts = f.ts, t = agHoje();
+    const box = h("div", { class: "ag-dest" }), f = agF(), ts = f.ts, t = agHoje(), info = !!S.agInfo[ev.id];
     if (arr(ev.destaques).length) {
       const rank = (d) => { const r = decisaoRadar(`${ev.id}__${d.id}`); return (r === "quero" ? 100 : 0) + (r === "nao" ? -100 : 0) + (Number(d.afinidade) || 3) * 10; };
       const lista = (f.onde === "tijuca" ? picksTij(ev) : arr(ev.destaques))
@@ -1786,43 +1859,43 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           const pa = agProxSessao(a) - t < 2 * 864e5 ? 60 : 0, pb = agProxSessao(b) - t < 2 * 864e5 ? 60 : 0;
           return rank(b) + pb - (rank(a) + pa);
         });
-      const aberto = !!S.agAbertos[ev.id], mostrar = aberto ? lista : lista.slice(0, 5);
-      if (lista.length) box.append(h("h4", { class: "ag-dt" }, `${str(ev.tituloDestaques) || "O que ver para você"} (${lista.length})`));
+      const aberto = !!S.agAbertos[ev.id], corta = lista.length > PICKS_VIS + 1, mostrar = aberto || !corta ? lista : lista.slice(0, PICKS_VIS);
+      if (lista.length) box.append(h("h4", { class: "ag-dt" }, `${str(ev.tituloDestaques) || "O que ver para você"}`, h("span", { class: "n" }, String(lista.length))));
       for (const d of mostrar) {
-        const key = `${ev.id}__${d.id}`, r = decisaoRadar(key);
+        const key = `${ev.id}__${d.id}`, r = decisaoRadar(key), comArt = Array.isArray(d.artistas);
         box.append(h("div", { class: "ag-pick" + (r ? " " + r : "") },
           h("h5", null, str(d.titulo)),
           (() => { const c = [d.diretor, d.ano, d.origem, d.duracao ? `${str(d.duracao)} min` : null, d.mostra, d.local].map(str).filter(Boolean).join(", "); return c ? h("p", { class: "cred" }, c) : null; })(),
-          d.sobre ? h("p", { class: "ag-sobre" }, str(d.sobre)) : null,
-          blocoMetricas(d),
-          refsDoPick(ev, d),
-          d.temporada ? h("p", { class: "pw" }, h("b", null, "Temporada: "), str(d.temporada), safeUrl(d.link) ? " " : null, safeUrl(d.link) ? h("a", { href: safeUrl(d.link), target: "_blank", rel: "noopener" }, "Ingressos") : null) : null,
+          info && d.sobre ? h("p", { class: "ag-sobre" }, str(d.sobre)) : null,
+          info ? blocoMetricas(d) : null,
           d.porque ? h("p", { class: "pw" }, str(d.porque)) : null,
-          linkRevista(...arr(d.artistas), d.titulo, d.tituloBusca),
+          d.temporada ? h("p", { class: "pw" }, h("b", null, "Temporada: "), str(d.temporada), safeUrl(d.link) ? " " : null, safeUrl(d.link) ? h("a", { href: safeUrl(d.link), target: "_blank", rel: "noopener" }, "Ingressos") : null) : null,
           d.sessoes.length ? h("ul", { class: "ag-sess" }, d.sessoes.map((s) => {
             const esg = s.status === "esgotado";
             return h("li", null,
               h("span", { class: "d" + (esg ? " off" : "") }, agRotulo(s.data, s.hora)),
-              h("span", { class: esg ? "off" : null }, [s.local, s.bairro].map(str).filter(Boolean).join(", ") + (s.obs ? ` (${str(s.obs)})` : "")),
+              h("span", { class: "l" + (esg ? " off" : "") }, [s.local, s.bairro].map(str).filter(Boolean).join(", ") + (s.obs ? ` (${str(s.obs)})` : "")),
               esg ? h("span", { class: "esg" }, "esgotado") : safeUrl(s.link) ? h("a", { href: safeUrl(s.link), target: "_blank", rel: "noopener" }, "Comprar") : null,
               h("a", { class: "mapa", href: AGU.mapa([s.local, s.bairro, cidadeDe(ev)].map(str).filter(Boolean).join(", ")), target: "_blank", rel: "noopener", title: "Ver no mapa" }, "mapa"));
           })) : null,
+          comArt || info ? refsDoPick(ev, d) : null,
+          linkRevista(...arr(d.artistas), d.titulo, d.tituloBusca),
           marcasAgenda(key, true),
           editorNota(key, d.titulo)));
       }
-      if (lista.length > 5) box.append(h("button", { class: "chip ag-mais", type: "button", "aria-expanded": String(aberto), onclick: () => { S.agAbertos[ev.id] = !aberto; render(); } }, aberto ? "Mostrar só os 5 primeiros" : `Ver todos os ${lista.length}`));
+      if (corta) box.append(h("button", { class: "ag-tog ag-mais", type: "button", "aria-expanded": String(aberto), onclick: () => { S.agAbertos[ev.id] = !aberto; render(); } }, aberto ? `Mostrar só os ${PICKS_VIS} primeiros` : `Ver todos os ${lista.length} (mais ${lista.length - PICKS_VIS})`));
     }
     const dias = arr(ev.dias).filter((x) => agD(x.data) >= t && agNaJanela(x.data)).filter((x) => !ts.length || casaDireto(ev) || agCasa(txtDia(x), ts));
     if (dias.length) {
-      box.append(h("h4", { class: "ag-dt" }, "Dias do festival"));
+      box.append(h("h4", { class: "ag-dt" }, "Dias do festival", h("span", { class: "n" }, String(dias.length))));
       for (const d of dias) {
         const key = `${ev.id}__dia-${d.data}`;
         box.append(h("div", { class: "ag-pick dia" + (d.recomendado ? " rec" : "") + (decisaoRadar(key) ? " " + decisaoRadar(key) : "") },
-          h("h5", null, agRotulo(d.data), d.recomendado ? " (o seu dia)" : null),
+          h("h5", null, agRotulo(d.data), d.recomendado ? h("span", { class: "seu" }, "o seu dia") : null),
           arr(d.atracoes).length ? h("p", { class: "cred" }, arr(d.atracoes).map(str).join(", ")) : null,
           d.local || d.hora ? h("p", { class: "cred" }, [d.hora, d.local, d.preco].map(str).filter(Boolean).join(", ")) : null,
-          linhaArtistas(d.artistas),
           d.nota ? h("p", { class: "pw" }, str(d.nota)) : null,
+          linhaArtistas(d.artistas),
           linkRevista(...arr(d.artistas)),
           safeUrl(d.link) || d.local ? h("p", { class: "ag-links" }, safeUrl(d.link) ? h("a", { href: safeUrl(d.link), target: "_blank", rel: "noopener" }, "Ingressos") : null,
             d.local ? h("a", { href: AGU.mapa(`${str(d.local)}, ${cidadeDe(ev)}`), target: "_blank", rel: "noopener" }, "Mapa") : null) : null,
@@ -1833,7 +1906,15 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     return box.childNodes.length ? box : null;
   }
 
+  // Is there anything the "Detalhes" toggle would reveal on this card?
+  function agTemDetalhes(ev) {
+    const det = (x) => arr(x.metricas).length || (x.reviews && x.reviews.texto);
+    return !!(det(ev) || str(ev.sobre).length > 150 || arr(ev.destaques).some((d) => d.sobre || det(d) || (!Array.isArray(d.artistas) && d.refs !== false && ["cinema", "livros", "teatro", "artes", "outros"].includes(ev.tipo))));
+  }
+
   // One event card; also used by the semana tab (where no agenda filter applies).
+  // Listings-guide layout: coloured date block, then title, a where line, a when/price line, the radar's reason,
+  // links and artist chips, marks; the synopsis is clamped to two lines until "Detalhes" opens it.
   function cardEvento(ev) {
     const tipo = TIPOS_AG[ev.tipo] ? ev.tipo : "outros", dec = decisaoRadar(ev.id);
     const t = agHoje(), fim = agD(ev.fim), ini = agD(ev.inicio);
@@ -1842,20 +1923,23 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     else if (fim) { ate = `até ${agCurta(fim)}`; const d = agDias(t, fim); resta = d < 0 ? "encerrado" : d === 0 ? "último dia" : d === 1 ? "acaba amanhã" : `faltam ${d} dias`; }
     else if (ev.emCartaz) { ate = "em cartaz"; resta = "encerramento a confirmar"; }
     else if (ini) { ate = agCurta(ini); resta = "hoje"; }
-    const link = safeUrl(ev.link);
-    return h("article", { class: "ag-ev" + (dec === "quero" ? " marcado" : ""), id: `ev-${ev.id}`, style: `--tc:var(--t-${tipo})` },
+    const link = safeUrl(ev.link), info = !!S.agInfo[ev.id], temDet = agTemDetalhes(ev);
+    const marcas = marcasAgenda(ev.id);
+    if (temDet) marcas.append(h("button", { type: "button", class: "ag-det", "aria-expanded": String(info), onclick: () => { S.agInfo[ev.id] = !info; render(); } }, info ? "Menos detalhes" : "Detalhes"));
+    const onde = [ev.local, ev.bairro].map(str).filter(Boolean).join(", "), quando = [ev.quando, ev.preco].map(str).filter(Boolean).join(". ");
+    return h("article", { class: "ag-ev" + (dec === "quero" ? " marcado" : "") + (dec ? " d-" + dec : ""), id: `ev-${ev.id}`, style: `--tc:var(--t-${tipo})` },
       h("div", { class: "ag-data" }, h("span", { class: "k" }, TIPOS_AG[tipo]), h("b", null, ate), h("span", null, resta)),
       h("div", { class: "ag-corpo" },
         h("h3", null, link ? h("a", { href: link, target: "_blank", rel: "noopener", title: "Abrir a página do evento" }, str(ev.titulo)) : str(ev.titulo)),
-        h("p", { class: "ag-onde" }, [ev.local, ev.bairro].map(str).filter(Boolean).join(", "), REG_AG[ev.regiao] ? h("span", { class: "mono" }, REG_AG[ev.regiao]) : null),
-        h("p", { class: "ag-quando" }, [ev.quando, ev.preco].map(str).filter(Boolean).join(". ")),
-        ev.sobre ? h("p", { class: "ag-sobre" }, str(ev.sobre)) : null,
-        blocoMetricas(ev),
+        onde || REG_AG[ev.regiao] ? h("p", { class: "ag-onde" }, onde, REG_AG[ev.regiao] ? h("span", { class: "reg" }, REG_AG[ev.regiao]) : null) : null,
+        quando ? h("p", { class: "ag-quando" }, quando) : null,
         ev.porque ? h("p", { class: "ag-porque" }, str(ev.porque)) : null,
-        link || ev.fonte ? h("p", { class: "ag-links" }, link ? h("a", { href: link, target: "_blank", rel: "noopener" }, "Ver programação e ingressos") : null, ev.fonte ? h("span", { class: "fonte" }, `Fonte: ${str(ev.fonte)}`) : null) : null,
+        ev.sobre ? h("p", { class: "ag-sobre" + (info ? "" : " clamp") }, str(ev.sobre)) : null,
+        info ? blocoMetricas(ev) : null,
+        link || ev.fonte ? h("p", { class: "ag-links" }, link ? h("a", { href: link, target: "_blank", rel: "noopener" }, "Programação e ingressos") : null, ev.fonte ? h("span", { class: "fonte" }, `Fonte: ${str(ev.fonte)}`) : null) : null,
         refsDoEvento(ev),
         linkRevista(...arr(ev.artistas), ev.titulo),
-        marcasAgenda(ev.id),
+        marcas,
         editorNota(ev.id, ev.titulo),
         agDestaques(ev)));
   }
@@ -1865,24 +1949,29 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     const itens = [["semana", "Esta semana"], ["trinta", "Próximos 30 dias"]].map(([k, rot]) => ({ rot, d: p[k] })).filter((x) => x.d && safeUrl(x.d.url));
     if (!itens.length) return null;
     const ant = arr(p.anteriores).filter((a) => a && safeUrl(a.url));
-    return h("aside", { class: "pls", "aria-label": "Playlists dos shows" },
-      h("h4", { class: "mono", style: "margin:0;color:var(--red)" }, "Playlists dos shows"),
-      p.em ? h("p", { class: "pl-note" }, `Gerado em ${new Date(p.em).toLocaleDateString("pt-BR")}, a cada segunda e quinta. Cada banda vem em bloco, com cinco músicas em sequência.`) : null,
-      itens.map(({ rot, d }) => {
+    const mais = !!(str(p.obs) || ant.length), aberto = !!S.agPlInfo;
+    return h("section", { class: "pls", "aria-labelledby": "ag-pls-tit" },
+      h("h4", { class: "ag-rt", id: "ag-pls-tit" }, "Playlists dos shows"),
+      h("div", { class: "pls-g" }, itens.map(({ rot, d }) => {
         const bandas = arr(d.artistas).map(str).filter(Boolean);
-        const emb = /open\.spotify\.com\/playlist\/[A-Za-z0-9]{22}/.test(d.url) ? d.url.replace("open.spotify.com/playlist/", "open.spotify.com/embed/playlist/").split("?")[0] : null;
+        // These playlists are private to Fabio's Spotify account, and Spotify refuses to embed private playlists: link out only.
+        const emb = null;
         const ativo = !!emb && tocando.url === emb;
         return h("div", { class: "pl-card" }, h("b", null, str(d.nome) || `Radar: ${rot}`),
-          h("span", { class: "mono", style: "color:var(--muted)" }, [rot, d.intervalo].map(str).filter(Boolean).join(", ") + (bandas.length ? ` · ${bandas.length} bandas` : "")),
+          h("span", { class: "pl-meta" }, [rot, d.intervalo].map(str).filter(Boolean).join(", ") + (bandas.length ? ` · ${bandas.length} bandas` : "")),
           h("div", { class: "acts" },
-            S.modo === "site" && emb ? h("button", { class: "ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(emb, "Radar", str(d.nome) || rot, false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
-            h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "mono" }, "Abrir no Spotify")),
-          bandas.length ? h("details", null, h("summary", { class: "mono" }, "Ver as bandas"), h("p", null, bandas.join(", "))) : null);
-      }),
-      p.obs ? h("p", { class: "pl-note" }, str(p.obs)) : null,
-      ant.length ? h("p", { class: "pl-note pl-old" }, "Versões anteriores: ", ant.map((a) => h("a", { href: safeUrl(a.url), target: "_blank", rel: "noopener" }, str(a.nome) || "playlist"))) : null);
+            S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(emb, "Radar", str(d.nome) || rot, false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
+            h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "ag-ref" }, "Spotify"),
+            bandas.length ? h("details", null, h("summary", null, "Bandas"), h("p", null, bandas.join(", "))) : null));
+      })),
+      p.em || mais ? h("p", { class: "pl-note" }, p.em ? h("span", { class: "pl-gerado" }, `Gerado em ${new Date(p.em).toLocaleDateString("pt-BR")}, a cada segunda e quinta; cinco músicas por banda, em bloco. `) : null,
+        mais ? h("button", { type: "button", class: "ag-tog", "aria-expanded": String(aberto), onclick: () => { S.agPlInfo = !aberto; render(); } }, aberto ? "Esconder notas" : "Notas e versões anteriores") : null) : null,
+      aberto && p.obs ? h("p", { class: "pl-note" }, str(p.obs)) : null,
+      aberto && ant.length ? h("p", { class: "pl-note pl-old" }, "Versões anteriores: ", ant.map((a) => h("a", { href: safeUrl(a.url), target: "_blank", rel: "noopener" }, str(a.nome) || "playlist"))) : null);
   }
 
+  // The agenda tab: a sticky rail (title, search, filters, shortcuts, playlists) beside the event list on wide
+  // screens; on phones everything stacks and the filter rows scroll sideways.
   let agTm = null;
   function blocoAgenda() {
     if (!S.loaded.agenda) return [estado("abrindo a agenda", "Os eventos do Radar cultural aparecem aqui assim que o arquivo da revista responder.")];
@@ -1897,41 +1986,48 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       const futuros = arr(ag.eventos).filter((e) => { const f = agD(e.fim) || agD(e.inicio); return !f || f >= agHoje(); }).length;
       const chip = (atual, v, txt, set, tc) => h("button", { class: "chip" + (tc ? " ag-tc" : ""), type: "button", "aria-pressed": String(atual === v), style: tc ? `--tc:var(--t-${tc})` : null, onclick: () => { set(v); render(); } }, txt);
       const resumo = str(ag.rodada && ag.rodada.resumo);
-      const head = h("section", { class: "wrap ag-head" },
-        h("div", { style: "min-width:0" },
-          h("div", { class: "kicker mono" }, "Agenda · Radar cultural"),
-          h("h2", null, "o que fazer no Rio"),
-          h("p", { class: "lede" }, "Shows, filmes, exposições, peças e encontros escolhidos pelo radar. O que tem ligação com a revista aparece marcado, e seus botões, comentários, idas e anotações de gosto voltam para o radar na próxima sincronização diária."),
-          h("p", { class: "mono", style: "color:var(--muted);margin:0" },
-            ag.rodada && ag.rodada.em ? `Última varredura: ${new Date(ag.rodada.em).toLocaleString("pt-BR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}. ${resumo.slice(0, 220)}${resumo.length > 220 ? "…" : ""} ` : "",
-            `${futuros} ${futuros === 1 ? "item" : "itens"} no radar.`)),
-        blocoPlaylists(ag));
+      const head = h("header", { class: "ag-head" },
+        h("div", { class: "kicker mono" }, "Agenda · Radar cultural"),
+        h("h2", null, "o que fazer no Rio"),
+        h("p", { class: "lede" }, "Shows, filmes, exposições, peças e encontros escolhidos pelo radar. O que tem ligação com a revista aparece marcado, e seus botões, comentários, idas e anotações de gosto voltam para o radar na próxima sincronização diária."),
+        h("p", { class: "ag-varre" },
+          ag.rodada && ag.rodada.em ? `Última varredura: ${new Date(ag.rodada.em).toLocaleString("pt-BR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}. ${resumo.slice(0, 220)}${resumo.length > 220 ? "…" : ""} ` : "",
+          `${futuros} ${futuros === 1 ? "item" : "itens"} no radar.`));
       const campo = h("input", { id: "ag-q", type: "search", placeholder: "Banda, filme, local, bairro, livro…", autocomplete: "off", enterkeyhint: "search", "aria-describedby": qOn ? "ag-res" : null,
         oninput: (e) => { S.agQ = e.target.value; clearTimeout(agTm); agTm = setTimeout(render, 150); },
         onkeydown: (e) => { if (e.key === "Escape" && S.agQ) { e.preventDefault(); S.agQ = ""; clearTimeout(agTm); render(); } } });
       campo.value = S.agQ;
       const n = ativos.length + disp.length;
-      const ctrl = h("section", { class: "wrap ag-ctrl" },
+      const frow = (rot, grupo) => h("div", { class: "ag-frow" + (qOn ? " pausado" : "") }, h("span", { class: "mono" }, rot), grupo);
+      const ctrl = h("div", { class: "ag-ctrl" },
         h("div", { class: "ag-busca", role: "search" },
           h("label", { for: "ag-q", class: "mono" }, "Buscar"),
           h("div", { class: "campo" }, campo, qOn ? h("button", { type: "button", "aria-label": "Limpar a busca", onclick: () => { S.agQ = ""; clearTimeout(agTm); render(); setTimeout(() => document.getElementById("ag-q")?.focus(), 0); } }, "Limpar") : null),
           qOn ? h("p", { class: "ag-res", id: "ag-res", role: "status" }, `${n} ${n === 1 ? "evento encontrado" : "eventos encontrados"} em todo o radar (os filtros de data, lugar e tipo ficam pausados enquanto você busca).`) : null),
-        h("div", { class: "ag-frow" + (qOn ? " pausado" : "") }, h("span", { class: "mono" }, "Quando"),
-          h("div", { class: "ag-filtros", role: "group", "aria-label": "Quando" }, QUANDO_AG.map(([v, t]) => chip(S.agQuando, v, t, (x) => (S.agQuando = x))))),
-        h("div", { class: "ag-frow" + (qOn ? " pausado" : "") }, h("span", { class: "mono" }, "Onde"),
-          h("div", { class: "ag-filtros", role: "group", "aria-label": "Onde" }, ONDE_AG.map(([v, t]) => chip(S.agOnde, v, t, (x) => (S.agOnde = x))))),
-        h("div", { class: "ag-frow" + (qOn ? " pausado" : "") }, h("span", { class: "mono" }, "O quê"),
-          h("div", { class: "ag-filtros", role: "group", "aria-label": "O quê" }, chip(S.agTipo, "todos", "Tudo", (x) => (S.agTipo = x)),
-            Object.entries(TIPOS_AG).map(([k, t]) => chip(S.agTipo, k, t, (x) => (S.agTipo = x), k)))),
-        safeUrl(ag.radar_url) ? h("div", { class: "links" }, h("a", { href: safeUrl(ag.radar_url), target: "_blank", rel: "noopener" }, "Abrir o Radar cultural")) : null);
-      const lista = h("section", { class: "wrap", style: "padding-bottom:24px" }, ativos.length ? h("div", { class: "ag-lista" }, ativos.map(cardEvento))
-        : h("p", { class: "vazio" }, qOn ? "Nada no radar com esses termos." : "Nada neste filtro. Amplie “Onde” ou “Quando” para ver mais."));
-      const dispensados = disp.length ? h("section", { class: "wrap ag-disp" },
+        frow("Quando", h("div", { class: "ag-filtros", role: "group", "aria-label": "Quando" }, QUANDO_AG.map(([v, t]) => chip(S.agQuando, v, t, (x) => (S.agQuando = x))))),
+        frow("Onde", h("div", { class: "ag-filtros", role: "group", "aria-label": "Onde" }, ONDE_AG.map(([v, t]) => chip(S.agOnde, v, t, (x) => (S.agOnde = x))))),
+        frow("O quê", h("div", { class: "ag-filtros", role: "group", "aria-label": "O quê" }, chip(S.agTipo, "todos", "Tudo", (x) => (S.agTipo = x)),
+          Object.entries(TIPOS_AG).map(([k, t]) => chip(S.agTipo, k, t, (x) => (S.agTipo = x), k)))));
+      const nIdas = S.agenda ? idasTodas().length : 0;
+      const ir = (id) => (e) => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" }); };
+      const atalhos = h("nav", { class: "ag-atalhos", "aria-label": "Nesta página" },
+        h("a", { href: "#ag-fomos", onclick: ir("ag-fomos") }, `Diário fomos${nIdas ? ` (${nIdas})` : ""}`),
+        h("a", { href: "#ag-gosto", onclick: ir("ag-gosto") }, "Seus gostos"),
+        safeUrl(ag.radar_url) ? h("a", { href: safeUrl(ag.radar_url), target: "_blank", rel: "noopener" }, "Abrir o Radar cultural") : null);
+      const rail = h("div", { class: "ag-rail" }, head, ctrl, atalhos, blocoPlaylists(ag));
+      const rotQ = (QUANDO_AG.find((q) => q[0] === S.agQuando) || [])[1] || "";
+      const conta = h("p", { class: "ag-conta" }, h("b", null, String(ativos.length)), ` ${ativos.length === 1 ? "evento" : "eventos"}`,
+        qOn ? ` para “${S.agQ.trim()}”` : ` · ${rotQ.toLowerCase()} · ${S.agOnde === "todos" ? "qualquer lugar" : ((ONDE_AG.find((o) => o[0] === S.agOnde) || [])[1] || "").toLowerCase()}${S.agTipo !== "todos" ? " · " + TIPOS_AG[S.agTipo].toLowerCase() : ""}`,
+        h("span", null, " · na ordem do radar"));
+      const lista = ativos.length ? h("div", { class: "ag-lista" }, ativos.map(cardEvento))
+        : h("p", { class: "vazio" }, qOn ? "Nada no radar com esses termos." : "Nada neste filtro. Amplie “Onde” ou “Quando” para ver mais.");
+      const dispensados = disp.length ? h("div", { class: "ag-disp" },
         h("button", { class: "ler", type: "button", "aria-expanded": String(!!S.agDispOpen), onclick: () => { S.agDispOpen = !S.agDispOpen; render(); } },
           `${S.agDispOpen ? "Esconder" : "Mostrar"} ${disp.length} ${disp.length === 1 ? "item dispensado" : "itens dispensados"}`),
         S.agDispOpen ? h("div", { class: "ag-lista" }, disp.map(cardEvento)) : null) : null;
       const pend = qOn ? null : blocoPendentes();
-      return [head, pend ? h("section", { class: "wrap" }, pend) : null, ctrl, lista, dispensados, blocoFomos(), blocoGosto(ag)];
+      const main = h("div", { class: "ag-main" }, pend, conta, lista, dispensados);
+      return [h("section", { class: "wrap ag-layout" }, rail, main), blocoFomos(), blocoGosto(ag)];
     } finally { AGF = null; }
   }
 
@@ -2256,7 +2352,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     return h("section", { class: "wrap secao", id: "ag-fomos" },
       h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, todas.length), h("h3", null, "fomos"),
         h("p", null, "O diário do que vocês foram ver, com notas por banda, filme ou obra. Notas altas viram pauta na revista e prioridade no radar.")),
-      h("div", { class: "fo-top" },
+      h("div", { class: "fo-bar" }, h("div", { class: "fo-top" },
         h("button", { type: "button", class: "btn pri", id: "ag-nova-ida", "data-ida-op": "nova", disabled: !S.podeMarcar, onclick: () => abrirEditor(idaEmBranco(), "nova") }, "Registrar uma ida"),
         !S.podeMarcar ? h("span", { class: "dica mono", style: "color:var(--muted)" }, "Entre no claude.ai para registrar") : null),
       todas.length ? h("div", { class: "fo-filtros" },
@@ -2264,7 +2360,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           h("div", { class: "ag-filtros", role: "group", "aria-label": "Ano" }, anos.map((a) => chip(f.ano === a, a, () => { f.ano = a; })), chip(f.ano === "tudo", "Tudo", () => { f.ano = "tudo"; }))),
         h("div", { class: "ag-frow" }, h("span", { class: "mono" }, "O quê"),
           h("div", { class: "ag-filtros", role: "group", "aria-label": "Tipo de ida" }, chip(f.tipo === "todos", "Tudo", () => { f.tipo = "todos"; }),
-            Object.entries(TIPOS_AG).filter(([k]) => tiposPres.includes(k)).map(([k, t]) => chip(f.tipo === k, t, () => { f.tipo = k; }, k))))) : null,
+            Object.entries(TIPOS_AG).filter(([k]) => tiposPres.includes(k)).map(([k, t]) => chip(f.tipo === k, t, () => { f.tipo = k; }, k))))) : null),
       resumo,
       corpo.length ? corpo : h("p", { class: "vazio" }, "Nada registrado ainda. Toque em “Fui” num evento da agenda, responda “Vocês foram?” quando aparecer, ou use “Registrar uma ida”."));
   }
@@ -2731,6 +2827,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       for (const c of COLS_REV) S[c] = lista(b[c]);
       S.agenda = (b.agenda && b.agenda.atual) || null;
       S.agArtistas = (b.agenda && b.agenda.artistas && b.agenda.artistas.mapa) || {};
+      S.agArtistasYT = (b.agenda && b.agenda.artistas && b.agenda.artistas.youtube) || {};
       S.loaded.agenda = true;
       try { S.comentarios = JSON.parse(localStorage.getItem("fo-comentarios") || "{}") || {}; } catch (e) { S.comentarios = {}; }
       try { S.marcasEm = JSON.parse(localStorage.getItem("fo-marcas-em") || "{}") || {}; } catch (e) { S.marcasEm = {}; }
@@ -2757,7 +2854,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     snapList("dias", "dias", (a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
     for (const c of COLS_REV) snapList(c, c);
     db.doc("agenda/atual").onSnapshot((d) => { S.agenda = d.exists ? d.data() : null; S.loaded.agenda = true; indices = null; render(); }, () => { S.loaded.agenda = true; render(); });
-    db.doc("agenda/artistas").onSnapshot((s) => { S.agArtistas = (s.data() || {}).mapa || {}; render(); }, () => {});
+    db.doc("agenda/artistas").onSnapshot((s) => { const a = s.data() || {}; S.agArtistas = a.mapa || {}; S.agArtistasYT = a.youtube || {}; render(); }, () => {});
     const user = await window.claude.use("user");
     const uid = user ? await user.id() : null;
     if (uid) {

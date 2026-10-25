@@ -139,6 +139,10 @@ def main():
         tentados = set()
     faltando = sorted(n for n in nomes if n not in mapa and n not in tentados)
     json.dump(faltando, open(os.path.join(a.saida, "artistas_faltando.json"), "w", encoding="utf-8"), ensure_ascii=False)
+    yt = (m or {}).get("youtube", {}) if a.mapa and os.path.exists(a.mapa) else {}
+    yt_sem = set((m or {}).get("youtube_sem", []) or []) if a.mapa and os.path.exists(a.mapa) else set()
+    faltando_yt = sorted(n for n in nomes if n not in (yt or {}) and n not in yt_sem)
+    json.dump(faltando_yt, open(os.path.join(a.saida, "artistas_faltando_yt.json"), "w", encoding="utf-8"), ensure_ascii=False)
     print(f"agenda/atual: {len(agenda['eventos'])} eventos, {len(agenda['idas'])} idas, {tamanho / 1000:.0f} KB; "
           f"retornos vindos da revista: {len(vindos)}; idas: {len(idas_vindas)} (+{len(idas_del)} apagadas); "
           f"notas: {len(notas_vindas)}; artistas sem id do Spotify: {len(faltando)}")
