@@ -17,6 +17,10 @@
   --spread-fg: #f4f1ec;
   --spread-muted: #a9a19b;
   --spread-rule: rgba(244, 241, 236, .18);
+  --ph-fg: #ffffff; --ph-glow: rgba(255, 255, 255, .13); --ph-rule: rgba(255, 255, 255, .45);
+  --b-fill: rgba(244, 241, 236, .16);
+  --on-red: #ffffff; --spread-red: #ff4b3e; --spread-on-red: #141210;
+  --t-musica: #d42a1f; --t-cinema: #2747c9; --t-artes: #946c08; --t-teatro: #bf4918; --t-festival: #1b7d52; --t-livros: #8a4b14; --t-outros: #5b4bc4;
   --f-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --f-body: "Newsreader", Georgia, "Times New Roman", serif;
   --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -27,6 +31,9 @@
     --paper: #131110; --ink: #f1ede8; --red: #ff4b3e; --muted: #a39b95;
     --rule: rgba(241, 237, 232, .16); --wash: #1d1a18;
     --spread-bg: #f1ede8; --spread-fg: #141210; --spread-muted: #6d6560; --spread-rule: rgba(20, 18, 16, .16);
+    --ph-fg: #ffffff; --ph-glow: rgba(255, 255, 255, .11); --ph-rule: rgba(255, 255, 255, .4);
+    --b-fill: rgba(20, 18, 16, .14);
+    --on-red: #141210; --spread-red: #c0261c; --spread-on-red: #ffffff;
     color-scheme: dark;
   }
 }
@@ -34,6 +41,9 @@
   --paper: #131110; --ink: #f1ede8; --red: #ff4b3e; --muted: #a39b95;
   --rule: rgba(241, 237, 232, .16); --wash: #1d1a18;
   --spread-bg: #f1ede8; --spread-fg: #141210; --spread-muted: #6d6560; --spread-rule: rgba(20, 18, 16, .16);
+  --ph-fg: #ffffff; --ph-glow: rgba(255, 255, 255, .11); --ph-rule: rgba(255, 255, 255, .4);
+  --b-fill: rgba(20, 18, 16, .14);
+  --on-red: #141210; --spread-red: #c0261c; --spread-on-red: #ffffff;
   color-scheme: dark;
 }
 
@@ -43,6 +53,8 @@ a { color: inherit; }
 img { display: block; }
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+/* Spreads, banner and dock invert the page colours, so they take the red tuned for that ground. */
+.banner, .spread, .dock { --red: var(--spread-red); --on-red: var(--spread-on-red); }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 .mono { font-family: var(--f-mono); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
@@ -71,7 +83,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .capa { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 56px); padding-block: 40px 48px; align-items: start; }
 .capa-img { position: relative; }
 .capa-img img, .capa-img .ph { width: 100%; aspect-ratio: 1; object-fit: cover; max-width: 100%; }
-.capa-img .badge { position: absolute; top: -14px; right: -14px; width: 96px; height: 96px; border-radius: 50%; background: var(--red); color: #fff; display: grid; place-items: center; text-align: center; font: 800 13px/1.05 var(--f-display); font-stretch: 75%; text-transform: uppercase; padding: 10px; transform: rotate(8deg); }
+.capa-img .badge { position: absolute; top: -14px; right: -14px; width: 96px; height: 96px; border-radius: 50%; background: var(--red); color: var(--on-red); display: grid; place-items: center; text-align: center; font: 800 13px/1.05 var(--f-display); font-stretch: 75%; text-transform: uppercase; padding: 10px; transform: rotate(8deg); }
 .kicker { color: var(--red); }
 .capa h2 { font-family: var(--f-display); font-stretch: 62%; font-weight: 900; font-size: clamp(44px, 7vw, 92px); line-height: .9; margin: 10px 0 16px; text-wrap: balance; letter-spacing: -.01em; }
 .capa .lede { font-size: 20px; line-height: 1.5; margin: 0 0 22px; max-width: 34em; }
@@ -103,7 +115,22 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .card { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
 .cover { position: relative; }
 .cover img, .ph { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--wash); max-width: 100%; }
-.ph { display: grid; place-items: center; background: var(--red); color: #fff; font: 900 64px/1 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
+.ph { position: relative; overflow: hidden; container-type: inline-size; display: block; background: var(--phc, var(--t-musica)); color: var(--ph-fg); text-align: left; }
+/* Placeholder sleeve: type label, title set big in the display face, a pale disc rising from the corner. */
+.ph-in { position: absolute; inset: 0; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 4cqi; padding: 8cqi 8cqi 9cqi; }
+.ph-in::before { content: ""; position: absolute; width: 120cqi; aspect-ratio: 1; right: -58cqi; bottom: -46cqi; border-radius: 50%; background: var(--ph-glow); box-shadow: 0 0 0 9cqi var(--phc, var(--t-musica)), 0 0 0 10cqi var(--ph-glow); }
+.ph-in > span { position: relative; min-width: 0; }
+.ph[data-v="1"] .ph-in::before { right: -70cqi; bottom: auto; top: -64cqi; }
+.ph[data-v="2"] .ph-in::before { right: auto; left: -62cqi; bottom: -30cqi; width: 104cqi; }
+.ph-k { display: flex; align-items: center; gap: 2.4cqi; font: 500 max(9px, 6.4cqi)/1.1 var(--f-mono); text-transform: uppercase; letter-spacing: .06em; }
+.ph-k::before { content: ""; width: 4.6cqi; height: 4.6cqi; min-width: 5px; min-height: 5px; border-radius: 50%; background: currentColor; flex: none; }
+.ph-t { align-self: end; font: 900 17cqi/.86 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; text-transform: lowercase; text-wrap: balance; overflow-wrap: anywhere; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; overflow: hidden; padding-bottom: .04em; }
+.ph-a { border-top: 1px solid var(--ph-rule); padding-top: 3cqi; font: italic 400 max(10px, 7cqi)/1.2 var(--f-body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@container (max-width: 120px) {
+  .ph-in { padding: 9cqi; }
+  .ph-a, .ph-k { display: none; }
+  .ph-t { font-size: 22cqi; -webkit-line-clamp: 4; }
+}
 .cover .mark-dot { position: absolute; top: 10px; left: 10px; width: 22px; height: 22px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 3px var(--paper); }
 .cover .mark-ok { position: absolute; top: 10px; left: 10px; background: var(--paper); color: var(--ink); padding: 3px 7px; }
 .card .art-name { margin: 4px 0 0; font: 800 24px/1.05 var(--f-display); font-stretch: 75%; }
@@ -120,7 +147,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .marks { display: flex; gap: 6px; }
 .mk { border: 1.5px solid var(--ink); background: transparent; padding: 4px 9px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
 .mk[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-.mk[data-k="quero"][aria-pressed="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+.mk[data-k="quero"][aria-pressed="true"] { background: var(--red); border-color: var(--red); color: var(--on-red); }
 .mk:disabled { opacity: .45; cursor: default; }
 
 /* Guide spreads */
@@ -136,21 +163,21 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .tracks li { display: grid; grid-template-columns: 30px 76px minmax(0, 1fr); gap: 4px 14px; padding-block: 14px; border-top: 1px solid var(--spread-rule); align-items: start; }
 .tracks li:last-child { border-bottom: 1px solid var(--spread-rule); }
 .tracks .tn { font: 900 26px/1 var(--f-display); font-stretch: 62%; color: var(--red); padding-top: 2px; }
-.tracks img, .tracks .ph { width: 76px; height: 76px; aspect-ratio: 1; object-fit: cover; font-size: 28px; }
+.tracks img, .tracks .ph { width: 76px; height: 76px; aspect-ratio: 1; object-fit: cover; }
 .tracks .t-art { font: 800 18px/1.1 var(--f-display); font-stretch: 75%; }
 .tracks .t-alb { font-style: italic; }
 .tracks .t-nota { margin: 3px 0 6px; font-size: 15px; color: var(--spread-muted); }
 .spread .links a { border-color: var(--spread-rule); }
 .spread .mk { border-color: var(--spread-fg); }
 .spread .mk[aria-pressed="true"] { background: var(--spread-fg); color: var(--spread-bg); }
-.spread .mk[data-k="quero"][aria-pressed="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+.spread .mk[data-k="quero"][aria-pressed="true"] { background: var(--red); border-color: var(--red); color: var(--on-red); }
 
 /* Agenda */
 .agenda { list-style: none; margin: 0; padding: 0; }
 .agenda li { display: grid; grid-template-columns: 150px 84px minmax(0, 1fr); gap: 6px 22px; padding-block: 18px; border-top: 1px solid var(--rule); align-items: start; }
 .agenda .quando { font: 900 34px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
 .agenda .quando small { display: block; font: 500 12px var(--f-mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
-.agenda img, .agenda .ph { width: 84px; height: 84px; object-fit: cover; font-size: 32px; }
+.agenda img, .agenda .ph { width: 84px; height: 84px; object-fit: cover; }
 .agenda .art-name { margin: 0; font: 800 22px/1.05 var(--f-display); font-stretch: 75%; }
 .agenda .alb { margin: 0 0 6px; font-style: italic; font-size: 18px; }
 .agenda .txt { margin: 0 0 8px; font-size: 16px; max-width: 62ch; }
@@ -208,6 +235,59 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .radar-card p { margin: 0 0 10px; font-size: 16px; }
 .radar-card .links a { font-size: 11px; }
 
+/* Agenda (Radar cultural inside the magazine) */
+.ag-head { padding-block: 40px 18px; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 18px clamp(24px, 4vw, 56px); align-items: start; }
+.ag-head h2 { margin: 10px 0 12px; font: 900 clamp(42px, 6.5vw, 84px)/.9 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; }
+.ag-head .lede { margin: 0 0 10px; font-size: 18px; max-width: 36em; }
+.ag-filtros { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.ag-lista { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 26px; }
+.fds { padding-block: 8px 36px; border-top: 1.5px solid var(--ink); }
+.fds h3 { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 75%; text-transform: lowercase; font-size: clamp(30px, 5vw, 48px); line-height: .95; margin: 6px 0 18px; }
+.fds h3::after { content: "."; color: var(--red); }
+.fds-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 18px; margin-bottom: 18px; }
+.fds-item { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.fds-nota { margin: 0; font-size: 17px; line-height: 1.45; font-style: italic; }
+.ag-ev { display: grid; grid-template-columns: 86px minmax(0, 1fr); border: 1.5px solid var(--ink); min-width: 0; background: var(--paper); scroll-margin-top: 120px; }
+.ag-ev.marcado { box-shadow: 6px 6px 0 var(--tc, var(--red)); }
+.ag-data { background: var(--tc, var(--ink)); color: #fff; padding: 10px 8px; display: flex; flex-direction: column; gap: 4px; }
+.ag-data .k { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .05em; }
+.ag-data b { font: 900 34px/.85 var(--f-display); font-stretch: 62%; }
+.ag-data span { font: 600 12px/1.2 var(--f-body); }
+.ag-corpo { padding: 12px 14px 14px; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.ag-corpo h3 { margin: 0; font: 800 22px/1.05 var(--f-display); font-stretch: 75%; }
+.ag-corpo h3 a { text-decoration: none; }
+.ag-corpo h3 a:hover { color: var(--red); }
+.ag-onde { font-size: 14.5px; font-weight: 600; margin: 0; }
+.ag-onde .mono { color: var(--muted); font-weight: 500; margin-left: 6px; }
+.ag-quando { margin: 0; font-size: 14px; color: var(--muted); }
+.ag-porque { margin: 0; font-size: 15px; border-left: 3px solid var(--tc, var(--red)); padding-left: 10px; }
+.ag-picks { list-style: none; margin: 4px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.ag-picks li { padding-block: 8px; border-bottom: 1px solid var(--rule); display: grid; gap: 3px; }
+.ag-picks .pt { font: 700 15.5px/1.2 var(--f-body); }
+.ag-picks .ps { font: 500 11.5px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+.ag-picks .pw { font-size: 14px; margin: 0; }
+.ag-marcas { display: flex; flex-wrap: wrap; gap: 5px; }
+.ag-marcas button { border: 1.5px solid var(--ink); background: transparent; padding: 3px 9px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
+.ag-marcas button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.ag-marcas.mini button { padding: 2px 7px; font-size: 10px; }
+.na-revista { all: unset; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; font: 800 12px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; color: var(--red); border-bottom: 2px solid var(--red); padding-bottom: 2px; align-self: flex-start; }
+.na-revista::before { content: "◆"; font-size: 9px; }
+.ao-vivo { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; background: var(--ink); color: var(--paper); padding: 4px 10px; font: 600 11px/1.2 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; align-self: flex-start; max-width: 100%; }
+.ao-vivo::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--red); flex: none; }
+.ao-vivo:focus-visible, .na-revista:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.fomos { display: grid; gap: 14px; }
+.ida { display: grid; grid-template-columns: 70px minmax(0, 1fr); border-top: 3px solid var(--ink); padding-top: 10px; gap: 14px; }
+.ida .dia b { display: block; font: 900 40px/.85 var(--f-display); font-stretch: 62%; }
+.ida .dia span { font: 500 11px var(--f-mono); text-transform: uppercase; color: var(--muted); }
+.ida h4 { margin: 0 0 2px; font: 800 20px/1.1 var(--f-display); font-stretch: 75%; }
+.ida ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; }
+.ida li { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; font-size: 15px; }
+.ida li.nv { color: var(--muted); text-decoration: line-through; }
+.estrelas { color: var(--red); letter-spacing: 1px; font-size: 13px; white-space: nowrap; }
+.pls { display: grid; gap: 10px; }
+.pl-card { border: 1.5px solid var(--ink); padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+.pl-card b { font: 800 19px/1.1 var(--f-display); font-stretch: 75%; }
+
 /* Daily briefing */
 .d-head { padding-block: 40px 24px; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px clamp(24px, 4vw, 56px); align-items: start; }
 .d-head h2 { margin: 10px 0 14px; font: 900 clamp(40px, 6vw, 76px)/.9 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; text-wrap: balance; }
@@ -256,7 +336,7 @@ body.player-video .dock .wrap { padding: 8px 10px 10px; }
 /* Films & books */
 .cult { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 40px; }
 .cult-card { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; align-items: start; }
-.cult-card .poster img, .cult-card .poster .ph { width: 150px; aspect-ratio: 2 / 3; object-fit: cover; max-width: 100%; font-size: 44px; }
+.cult-card .poster img, .cult-card .poster .ph { width: 150px; aspect-ratio: 2 / 3; object-fit: cover; max-width: 100%; }
 .cult-card .tit { margin: 4px 0 2px; font: 800 26px/1.02 var(--f-display); font-stretch: 75%; }
 .cult-card .tempo { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; margin: 6px 0 8px; }
 .cult-card .tempo b { font: 900 24px/1 var(--f-display); font-stretch: 62%; color: var(--red); }
@@ -276,7 +356,7 @@ body.com-player { padding-bottom: 210px; }
 body.com-player.player-grande { padding-bottom: 410px; }
 body.com-player dialog.leitura { padding-bottom: 210px; }
 body.com-player.player-grande dialog.leitura { padding-bottom: 410px; }
-.ouvir { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; background: var(--red); color: #fff; padding: 6px 12px 6px 10px; border-radius: 999px; font: 800 13px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; }
+.ouvir { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; background: var(--red); color: var(--on-red); padding: 6px 12px 6px 10px; border-radius: 999px; font: 800 13px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; }
 .ouvir::before { content: ""; width: 0; height: 0; border-left: 9px solid currentColor; border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
 .ouvir:hover { filter: brightness(1.08); }
 .ouvir:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
@@ -286,6 +366,7 @@ body.com-player.player-grande dialog.leitura { padding-bottom: 410px; }
 /* Openers */
 .abre { all: unset; cursor: pointer; display: block; }
 .abre > span { display: block; }
+.cover > .abre { width: 100%; }
 .tracks .abre > span { display: inline; }
 body:has(dialog.leitura[open]) { overflow: hidden; }
 .abre:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
@@ -309,7 +390,6 @@ dialog.leitura::backdrop { background: rgba(0, 0, 0, .5); }
 .l-ctx { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; flex: 1; text-align: center; }
 .l-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(20px, 4vw, 56px); padding-block: 36px 28px; align-items: end; }
 .l-hero .l-capa img, .l-hero .l-capa .ph { width: 100%; aspect-ratio: 1; object-fit: cover; max-width: 100%; }
-.l-hero .l-capa .ph { font-size: 120px; }
 .l-hero h2 { margin: 10px 0 4px; font: 900 clamp(48px, 8vw, 112px)/.86 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; text-wrap: balance; }
 .l-hero .l-alb { margin: 0 0 22px; font-style: italic; font-size: clamp(24px, 3vw, 34px); line-height: 1.15; }
 .l-olho { margin: 0; font: 800 clamp(22px, 2.6vw, 32px)/1.12 var(--f-display); font-stretch: 75%; text-wrap: balance; display: flex; gap: 12px; align-items: flex-start; }
@@ -329,18 +409,55 @@ dialog.leitura::backdrop { background: rgba(0, 0, 0, .5); }
 .faixas li::before { content: counter(f); font: 900 20px/1 var(--f-display); font-stretch: 62%; color: var(--red); font-style: normal; min-width: 14px; }
 .l-aside .rec { font-size: 15px; }
 
+/* Section banner: a contact sheet of the edition's own covers, printed in black and white
+   with the cover story in colour, then the section's name set like a sleeve title. */
+.banner { background: var(--spread-bg); color: var(--spread-fg); padding-block: 22px 30px; overflow: hidden; }
+.b-tira { display: flex; gap: 6px; height: clamp(118px, 17vw, 228px); margin-bottom: 22px; padding-inline: max(16px, env(safe-area-inset-left, 0px)) 0; overflow: hidden; }
+.b-tira::after { content: ""; flex: 1 0 40px; background: repeating-linear-gradient(90deg, var(--b-fill) 0 1px, transparent 1px 7px); }
+.b-c { position: relative; flex: none; height: 100%; aspect-ratio: 2 / 3; margin: 0; overflow: hidden; background: var(--spread-rule); }
+.b-c.sq { aspect-ratio: 1; }
+.b-c img, .b-c .ph { width: 100%; height: 100%; object-fit: cover; aspect-ratio: auto; }
+.b-c img { filter: grayscale(1) contrast(1.12) brightness(.96); }
+.b-c.cap img { filter: none; }
+.b-c.cap::after { content: ""; position: absolute; top: 8px; right: 8px; width: 16px; height: 16px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 3px var(--spread-bg); }
+.b-c .ph { filter: grayscale(.35); }
+.b-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 540px); gap: 18px clamp(24px, 5vw, 72px); align-items: end; }
+.b-kick { display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--spread-muted); }
+.b-kick b { color: var(--red); font-weight: 500; }
+.b-nome { margin: 8px 0 0; font: 900 clamp(84px, 15vw, 206px)/.78 var(--f-display); font-stretch: 62%; letter-spacing: -.025em; text-transform: lowercase; display: flex; align-items: flex-end; gap: .07em; }
+.b-nome .dot { width: .2em; height: .2em; margin-bottom: .06em; }
+.b-stats { margin: 14px 0 0; color: var(--spread-muted); }
+.b-toc { border-top: 3px solid var(--spread-fg); min-width: 0; }
+.b-toc h3 { margin: 8px 0 4px; color: var(--spread-muted); font-weight: 500; }
+.b-toc ol { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 26px; }
+.b-toc li { break-inside: avoid; }
+.b-toc button { all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; align-items: baseline; width: 100%; padding-block: 6px; border-bottom: 1px solid var(--spread-rule); font: 800 16px/1.15 var(--f-display); font-stretch: 75%; }
+.b-toc button span:first-child { font: 900 21px/1 var(--f-display); font-stretch: 62%; color: var(--red); }
+.b-toc button:hover { color: var(--red); }
+.b-toc button:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.b-toc .g span:last-child::before { content: "guia · "; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--spread-muted); }
+.secao, .spread, #capa { scroll-margin-top: 112px; }
+
+/* Cover story with a 2:3 poster: let the text take the room the poster leaves. */
+.capa.capa-obra { grid-template-columns: minmax(0, 440px) minmax(0, 1fr); }
+/* Guides: the intro rides along while the list scrolls, so short intros don't leave a hole. */
+@media (min-width: 901px) {
+  .spread .wrap > :first-child { position: sticky; top: 132px; align-self: start; }
+}
+
 /* States & footer */
 .estado { padding-block: 80px; text-align: left; }
 .estado h3 { font: 900 44px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; margin: 0 0 10px; }
+.estado h3::after { content: ""; display: inline-block; width: .2em; height: .2em; margin-left: .08em; border-radius: 50%; background: var(--red); }
 .estado p { max-width: 54ch; color: var(--muted); }
 .vazio { color: var(--muted); font-style: italic; padding: 12px 0 30px; }
 footer { border-top: 3px solid var(--ink); margin-top: 40px; padding-block: 24px 48px; color: var(--muted); font-size: 14px; }
 footer p { max-width: 80ch; margin: 0 0 8px; }
 
 @media (max-width: 900px) {
-  .capa, .spread .wrap, .l-hero, .l-corpo { grid-template-columns: minmax(0, 1fr); }
+  .capa, .capa.capa-obra, .spread .wrap, .l-hero, .l-corpo, .b-in { grid-template-columns: minmax(0, 1fr); }
   .l-hero .l-capa { max-width: 420px; }
-  .n-head, .n-grid, .cult, .d-head { grid-template-columns: minmax(0, 1fr); }
+  .n-head, .n-grid, .cult, .d-head, .ag-head, .ag-lista { grid-template-columns: minmax(0, 1fr); }
   .mgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cob { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .l-aside { border-top: 1px solid var(--rule); }
@@ -361,8 +478,15 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   .mgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
   .mcard .tit { font-size: 20px; }
   .cult-card { grid-template-columns: 96px minmax(0, 1fr); gap: 14px; }
-  .cult-card .poster img, .cult-card .poster .ph { width: 96px; font-size: 30px; }
+  .cult-card .poster img, .cult-card .poster .ph { width: 96px; }
   .aba { font-size: 22px; }
+  .nav .abas { padding-right: 44px; gap: 4px 18px !important; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 44px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 44px), transparent); }
+  .banner { padding-block: 16px 24px; }
+  .b-tira { gap: 4px; margin-bottom: 16px; }
+  .b-toc ol { columns: auto; display: flex; flex-wrap: wrap; gap: 2px 16px; padding-top: 4px; }
+  .b-toc button { width: auto; display: inline-flex; gap: 6px; border-bottom: 0; padding-block: 4px; font-size: 15px; }
+  .b-toc button span:first-child { font-size: 17px; }
+  .b-toc .g span:last-child::before { content: none; }
   .l-ctx { display: none; }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -454,8 +578,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     },
   };
   const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias"];
-  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], selRev: {}, loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "musica", filtro: "tudo", podeMarcar: false, falhou: false };
-  const ABAS = [["musica", "música"], ["hoje", "hoje"], ["noticias", "semana"], ["temas", "temas"], ["filmes", "filmes"], ["livros", "livros"]];
+  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], selRev: {}, agenda: null, agQuando: "30", agTipo: "todos", marcasEm: {}, loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "musica", filtro: "tudo", podeMarcar: false, falhou: false };
+  const ABAS = [["musica", "música"], ["hoje", "hoje"], ["agenda", "agenda"], ["noticias", "semana"], ["temas", "temas"], ["filmes", "filmes"], ["livros", "livros"]];
   const DSEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
   // DOM helper: text only, never HTML from data.
@@ -536,7 +660,6 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       f.loading = "eager";
       if (video) f.className = "video";
       f.allow = "autoplay *; clipboard-write; encrypted-media *; fullscreen; picture-in-picture";
-      f.setAttribute("allowfullscreen", "");
       box.replaceChildren(f);
       const t = document.getElementById("dock-tocando");
       t.replaceChildren(document.createTextNode(`${video ? "Trailer · " : ""}${quem} · `), h("em", null, oque));
@@ -560,11 +683,20 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     return h("button", { class: "ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => ouvir(a) }, ativo ? "Tocando" : "Ouvir aqui");
   }
 
+  // Missing covers become a typographic sleeve, coloured by kind (disc, film, series, book...).
+  const PH = { filme: ["filme", "cinema"], serie: ["série", "teatro"], documentario: ["documentário", "festival"], ficcao: ["ficção", "livros"], contos: ["contos", "artes"], nao_ficcao: ["não ficção", "outros"] };
   function capa(a, cls) {
     const src = safeUrl(a.capa);
     const nome = str(a.exibir_artista || a.artista);
     if (src) return h("img", { src, alt: `Capa de ${str(a.album)}, de ${nome}`, loading: "lazy", class: cls || null });
-    return h("div", { class: "ph" + (cls ? " " + cls : ""), role: "img", "aria-label": `${str(a.album)}, de ${nome}` }, nome.split(/\s+/).map((w) => w[0] || "").join("").slice(0, 2).toLowerCase());
+    const [rot, cor] = PH[str(a._tipo)] || [a._tipo ? str(a._tipo) : "disco", a._tipo ? "outros" : "musica"];
+    let v = 0;
+    for (const ch of str(a.album) + nome) v = (v * 31 + ch.charCodeAt(0)) % 997;
+    return h("div", { class: "ph" + (cls ? " " + cls : ""), role: "img", "aria-label": `${str(a.album)}, de ${nome}`, style: `--phc:var(--t-${cor})`, "data-v": v % 3 },
+      h("span", { class: "ph-in", "aria-hidden": "true" },
+        h("span", { class: "ph-k" }, rot),
+        h("span", { class: "ph-t" }, str(a.album) || nome),
+        h("span", { class: "ph-a" }, nome)));
   }
   function marcas(key, rot) {
     const [rQuero, rFeito] = rot || ["Quero ouvir", "Ouvi"];
@@ -594,6 +726,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       it.texto || it.nota ? h("p", { class: "txt" }, str(it.texto || it.nota)) : null,
       it.recepcao ? h("p", { class: "rec" }, str(it.recepcao)) : null,
       it.ponte ? h("p", { class: "ponte" }, "Para quem gosta de ", h("b", null, str(it.ponte))) : null,
+      it._semLeitura ? null : badgeAoVivo(it.exibir_artista, it.artista),
       it._semLeitura ? null : h("button", { class: "ler", type: "button", onclick: abrir }, Array.isArray(it.resenha) && it.resenha.length ? "Ler a resenha" : "Abrir o disco"),
       h("div", { class: "acts" }, it._semLeitura ? null : botaoOuvir(it), marcas(key, it._rot)),
       links(it));
@@ -641,6 +774,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
             h("div", { style: "min-width:0" },
               h("button", { class: "abre", type: "button", onclick: abrir }, h("span", { class: "t-art" }, str(a.artista)), " · ", h("span", { class: "t-alb" }, str(a.album)), a.ano ? h("span", { class: "mono", style: "opacity:.7" }, ` · ${str(a.ano)}`) : null),
               a.nota ? h("p", { class: "t-nota" }, str(a.nota)) : null,
+              badgeAoVivo(a.artista),
               h("div", { class: "acts" }, h("button", { class: "ler", type: "button", onclick: abrir }, Array.isArray(a.resenha) && a.resenha.length ? "Ler a resenha" : "Abrir o disco"), botaoOuvir(a), marcas(key), links(a))));
         }))));
   }
@@ -673,7 +807,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       ed.fontes_perfil ? h("p", { class: "fonte-nota" }, str(ed.fontes_perfil)) : null));
   }
 
-  function blocoFila() {
+  function listaFila() {
     const lista = [];
     for (const it of S.itens) if (S.marcas[it._id] === "quero") lista.push({ ...it, _key: it._id, _de: SECOES[it.secao]?.chip || "" });
     for (const g of S.guias) (g.albuns || []).forEach((a, i) => { const k = `${g._id}~${i}`; if (S.marcas[k] === "quero") lista.push({ ...a, _id: k, _key: k, _de: `Guia: ${str(g.titulo)}` }); });
@@ -686,6 +820,10 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       for (const it of S[cfg.it]) if (S.marcas[it._id] === "quero") lista.push(obra(it, it._id));
       for (const g of S[cfg.gu]) arr(g[cfg.lista]).forEach((o, i) => { const k = `${g._id}~${i}`; if (S.marcas[k] === "quero") lista.push(obra(o, k)); });
     }
+    return lista;
+  }
+  function blocoFila() {
+    const lista = listaFila();
     const head = h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, h("span", { class: "dot" })), h("h3", null, "minha fila"), h("p", null, "Tudo o que você marcou como quero ouvir, ver ou ler, em todas as edições."));
     const corpo = !S.podeMarcar ? h("p", { class: "vazio" }, "Entre no claude.ai para guardar e ver sua fila.")
       : !lista.length ? h("p", { class: "vazio" }, "Sua fila está vazia. Toque em \"Quero ouvir\" em qualquer disco.")
@@ -747,7 +885,15 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           h("small", null, [str(a.autor), str(a.ano)].filter(Boolean).join(", "), a.nota ? ` · ${str(a.nota)}` : ""))))))));
     const fim = h("div", { class: "wrap", style: "padding-block:28px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("temas") }, "Temas fora do radar desta semana"));
-    return [head, ...blocos, fim];
+    const evs = arr(S.agenda && S.agenda.eventos);
+    const fds = arr(s.fim_de_semana).map((x) => ({ x, ev: evs.find((e) => e.id === x.evento) })).filter((o) => o.ev && proximaDoEvento(o.ev));
+    const blocoFds = fds.length ? h("section", { class: "wrap fds", id: "fim-de-semana" },
+      h("div", { class: "kicker mono" }, "Do Radar cultural"),
+      h("h3", null, "Para o fim de semana"),
+      h("div", { class: "fds-lista" }, fds.map(({ x, ev }) => h("div", { class: "fds-item" },
+        x.nota ? h("p", { class: "fds-nota" }, str(x.nota)) : null, cardEvento(ev)))),
+      h("button", { class: "ler", type: "button", onclick: () => trocarAba("agenda") }, "Agenda completa")) : null;
+    return [head, blocoFds, ...blocos, fim];
   }
 
   function diaAtual() { return S.dias.find((d) => d._id === S.selDia) || S.dias[0]; }
@@ -846,15 +992,54 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     const w = document.getElementById("abas");
     w.replaceChildren(...ABAS.map(([k, l]) => h("button", { class: "aba", type: "button", role: "tab", "aria-selected": String(S.aba === k), onclick: () => trocarAba(k) }, l)));
   }
+  // Keep the URL hash in step, so a reload doesn't jump back to a stale #tab.
+  function hashAba(k) {
+    try { if (location.hash && location.hash.slice(1) !== k) history.replaceState(null, "", `#${k}`); } catch (e) {}
+  }
   function trocarAba(k) {
     S.aba = k;
     try { localStorage.setItem("fo-aba", k); } catch (e) {}
+    hashAba(k);
+    // From a link inside the page, land on the new tab's button rather than a random spot in the new content.
+    const deMain = document.getElementById("main").contains(document.activeElement);
+    if (deMain) document.activeElement.blur();
     render();
+    if (deMain) document.querySelector('.aba[aria-selected="true"]')?.focus({ preventScroll: true });
     window.scrollTo({ top: Math.min(window.scrollY, document.querySelector(".nav").offsetTop) });
   }
 
   // ---------- Cinema and books magazines ----------
-  const capaObra = (a) => capa({ capa: a.capa, artista: a.autor, album: a.titulo });
+  const capaObra = (a) => capa({ capa: a.capa, artista: a.autor, album: a.titulo, _tipo: a.tipo || "obra" });
+
+  // Section banner: contact sheet of the edition's covers (cover story in colour) + name, edition, contents.
+  function banner(o) {
+    const vistas = new Set();
+    const comImg = [], semImg = [];
+    for (const c of o.capas) {
+      const k = str(c.a.capa) || str(c.a.album);
+      if (!k || vistas.has(k)) continue;
+      vistas.add(k);
+      (safeUrl(c.a.capa) ? comImg : semImg).push(c);
+    }
+    const tira = comImg.slice(0, 16);
+    for (const c of semImg) { if (tira.length >= 4) break; tira.push(c); }
+    const reduz = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const ir = (id) => document.getElementById(id)?.scrollIntoView({ behavior: reduz ? "auto" : "smooth", block: "start" });
+    return h("section", { class: "banner", "aria-label": `${o.nome}, edição nº ${o.numero}` },
+      tira.length >= 2 ? h("div", { class: "b-tira", "aria-hidden": "true" }, tira.map((c) => {
+        const el = capa(c.a);
+        if (el.tagName === "IMG") { el.alt = ""; el.loading = "eager"; }
+        return h("figure", { class: "b-c" + (o.quadrado ? " sq" : "") + (c.capa ? " cap" : "") }, el);
+      })) : null,
+      h("div", { class: "wrap b-in" },
+        h("div", { style: "min-width:0" },
+          h("p", { class: "b-kick mono", style: "margin:0" }, h("span", null, "Faixa Oculta apresenta"), h("b", null, `Edição nº ${o.numero}${o.mes ? " · " + o.mes : ""}`)),
+          h("h2", { class: "b-nome" }, o.nome, h("span", { class: "dot", "aria-hidden": "true" })),
+          o.stats ? h("p", { class: "b-stats mono" }, o.stats) : null),
+        o.toc.length ? h("nav", { class: "b-toc", "aria-label": "Nesta edição" }, h("h3", { class: "mono" }, "Nesta edição"),
+          h("ol", null, o.toc.map((t) => h("li", { class: t.guia ? "g" : null }, h("button", { type: "button", onclick: () => ir(t.id) }, h("span", { "aria-hidden": "true" }, t.n), h("span", null, t.titulo)))))) : null));
+  }
+  const plural = (n, um, varios) => `${n} ${n === 1 ? um : varios}`;
   const tipoObra = (a) => ({ filme: "filme", serie: "série", documentario: "documentário", ficcao: "ficção", contos: "contos", nao_ficcao: "não ficção" }[str(a.tipo)] || str(a.genero));
   function linksObra(a, cfg) {
     const q = encodeURIComponent(`${str(a.titulo_original || a.titulo)} ${str(a.autor)}`.trim());
@@ -876,6 +1061,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       a.texto ? h("p", { class: "txt" }, str(a.texto)) : null,
       a.recepcao ? h("p", { class: "rec" }, str(a.recepcao)) : null,
       a.ponte ? h("p", { class: "ponte" }, "Para quem gosta de ", h("b", null, str(a.ponte))) : null,
+      badgeAoVivo(a.titulo_original, a.titulo, a.autor),
       h("button", { class: "ler", type: "button", onclick: abrir }, arr(a.resenha).length ? cfg.ler : "Abrir"),
       h("div", { class: "acts" }, botaoTrailer(a), marcas(key, cfg.rot)),
       linksObra(a, cfg));
@@ -900,6 +1086,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
               h("button", { class: "abre", type: "button", onclick: abrir }, h("span", { class: "t-art" }, str(a.titulo)), " · ", h("span", { class: "t-alb" }, str(a.autor)), a.ano ? h("span", { class: "mono", style: "opacity:.7" }, ` · ${str(a.ano)}`) : null),
               a.onde ? h("span", { class: "t-onde" }, str(a.onde)) : null,
               a.nota ? h("p", { class: "t-nota" }, str(a.nota)) : null,
+              badgeAoVivo(a.titulo_original, a.titulo, a.autor),
               h("div", { class: "acts" }, h("button", { class: "ler", type: "button", onclick: abrir }, cfg.ler), botaoTrailer(a), marcas(key, cfg.rot))));
         }))));
   }
@@ -913,7 +1100,30 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     const partes = [];
     const sel = eds.length > 1 ? h("label", { class: "edsel mono" }, "Edição ",
       (() => { const s = h("select", { onchange: (e) => { S.selRev[cfg.nome] = e.target.value; render(); window.scrollTo(0, 0); } }, eds.map((e) => h("option", { value: e._id }, `Nº ${str(e.numero)} · ${str(e.mes)}`))); s.value = ed._id; return s; })()) : null;
-    if (dest) partes.push(h("section", { class: "wrap capa" },
+    {
+      const capas = [], toc = [];
+      let nT = 0, nG = 0, k = 0;
+      if (dest) capas.push({ a: { capa: dest.capa, artista: dest.autor, album: dest.titulo, _tipo: dest.tipo || "obra" }, capa: true });
+      for (const b of arr(ed.layout)) {
+        if (b.tipo === "secao") {
+          k++;
+          const l = itens.filter((i) => i.secao === b.secao && i !== dest);
+          nT += l.length;
+          l.forEach((i) => capas.push({ a: { capa: i.capa, artista: i.autor, album: i.titulo, _tipo: i.tipo || "obra" } }));
+          if (l.length) toc.push({ n: secaoNum(k), titulo: (cfg.secoes[b.secao] || {}).titulo || b.secao, id: `${cfg.nome}-${b.secao}` });
+        } else if (b.tipo === "guia" && guias.get(b.id)) {
+          const g = guias.get(b.id);
+          nG++; nT += arr(g[cfg.lista]).length;
+          arr(g[cfg.lista]).forEach((i) => capas.push({ a: { capa: i.capa, artista: i.autor, album: i.titulo, _tipo: i.tipo || "obra" } }));
+          toc.push({ n: "◆", titulo: str(g.titulo), id: g._id, guia: true });
+        }
+      }
+      if (dest) nT++;
+      const nomeObra = cfg.nome === "livros" ? ["livro", "livros"] : ["título", "títulos"];
+      partes.push(banner({ nome: cfg.nome, numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc,
+        stats: [plural(nT, ...nomeObra), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
+    }
+    if (dest) partes.push(h("section", { class: "wrap capa capa-obra", id: "capa" },
       h("div", { class: "capa-img poster" }, capaObra(dest), h("div", { class: "badge", "aria-hidden": "true" }, "Matéria de capa")),
       h("div", { style: "min-width:0" },
         h("div", { class: "kicker mono" }, `${cfg.edicaoRot} · edição nº ${str(ed.numero)} · ${str(ed.mes)}`),
@@ -954,6 +1164,191 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     return out;
   }
 
+  // ---------- Agenda: the Radar cultural inside the magazine ----------
+  const TIPOS_AG = { musica: "Música", cinema: "Cinema", artes: "Artes visuais", teatro: "Teatro e dança", festival: "Festival", livros: "Livros", outros: "Outros" };
+  const REG_AG = { tijuca: "Grande Tijuca", "zona-sul": "Zona Sul", centro: "Centro", rio: "Rio", "estado-rj": "Estado do RJ", sp: "São Paulo" };
+  const nrm = (t) => str(t).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const isoHoje = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+  const addDias = (iso, n) => { const [y, m, d] = iso.split("-").map(Number); const x = new Date(y, m - 1, d + n); return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`; };
+  function janelaFds() {
+    const t = isoHoje(); const [y, m, d] = t.split("-").map(Number); const w = new Date(y, m - 1, d).getDay();
+    if (w === 0) return [t, t]; if (w === 6) return [t, addDias(t, 1)];
+    const sex = addDias(t, 5 - w); return [w === 5 ? t : sex, addDias(sex, 2)];
+  }
+  function datasDoEvento(ev) {
+    const out = [];
+    for (const p of arr(ev.destaques)) for (const s of arr(p.sessoes)) if (s.data) out.push({ data: s.data, hora: s.hora, local: s.local || p.local, pick: p });
+    for (const d of arr(ev.dias)) if (d.data) out.push({ data: d.data, hora: d.hora, local: d.local, dia: d });
+    return out.sort((a, b) => (a.data + (a.hora || "")).localeCompare(b.data + (b.hora || "")));
+  }
+  function proximaDoEvento(ev) {
+    const hoje = isoHoje();
+    const futuras = datasDoEvento(ev).filter((x) => x.data >= hoje);
+    if (futuras.length) return futuras[0];
+    if (str(ev.inicio) > hoje) return { data: ev.inicio };
+    if (!ev.fim || str(ev.fim) >= hoje) return { data: hoje, emCurso: true };
+    return null;
+  }
+  function decisaoRadar(chave) {
+    const local = S.marcas[`radar:${chave}`];
+    const r = (S.agenda && S.agenda.retorno && S.agenda.retorno[chave]) || {};
+    const emLocal = S.marcasEm[`radar:${chave}`] || "";
+    if (local !== undefined || emLocal) return emLocal >= str(r.em) ? local : r.decisao;
+    return r.decisao;
+  }
+  function marcasAgenda(chave, mini) {
+    const cur = decisaoRadar(chave);
+    const op = mini ? [["quero", "Quero"], ["fui", "Fui"], ["nao", "Não"]] : [["quero", "Quero ir"], ["talvez", "Talvez"], ["fui", "Fui"], ["nao", "Não é pra mim"]];
+    return h("div", { class: "ag-marcas" + (mini ? " mini" : "") }, op.map(([v, t]) => h("button", { type: "button", "aria-pressed": String(cur === v), disabled: !S.podeMarcar, onclick: () => marcar(`radar:${chave}`, cur === v ? null : v) }, t)));
+  }
+
+  // Cross-links: names that appear both in the radar and in a magazine edition.
+  let indices = null;
+  function construirIndices() {
+    const revista = new Map(), aoVivo = new Map();
+    const pos = (nome, ref) => { const k = nrm(nome); if (k.length >= 3 && !revista.has(k)) revista.set(k, ref); };
+    for (const it of S.itens) pos(it.artista, { key: it._id, rot: `${str(it.artista)} · ${str(it.album)}` });
+    for (const g of S.guias) arr(g.albuns).forEach((a, i) => pos(a.artista, { key: `${g._id}~${i}`, rot: `${str(a.artista)} · ${str(a.album)}` }));
+    for (const it of S.cine_itens) { pos(it.titulo, { key: it._id, rot: str(it.titulo) }); pos(it.titulo_original, { key: it._id, rot: str(it.titulo) }); }
+    for (const g of S.cine_guias) arr(g.filmes).forEach((a, i) => { pos(a.titulo, { key: `${g._id}~${i}`, rot: str(a.titulo) }); pos(a.titulo_original, { key: `${g._id}~${i}`, rot: str(a.titulo) }); });
+    for (const it of S.livro_itens) pos(it.autor, { key: it._id, rot: `${str(it.autor)} · ${str(it.titulo)}` });
+    for (const g of S.livro_guias) arr(g.livros).forEach((a, i) => pos(a.autor, { key: `${g._id}~${i}`, rot: `${str(a.autor)} · ${str(a.titulo)}` }));
+    for (const ev of arr(S.agenda && S.agenda.eventos)) {
+      if (!proximaDoEvento(ev)) continue;
+      const nomes = [...arr(ev.artistas)];
+      if (ev.tipo === "musica" && !ev.destaques && !ev.dias) nomes.push(ev.titulo);
+      for (const p of arr(ev.destaques)) nomes.push(...arr(p.artistas), p.titulo, p.tituloBusca);
+      for (const d of arr(ev.dias)) nomes.push(...arr(d.artistas));
+      for (const n of nomes) {
+        const k = nrm(n);
+        if (k.length < 3) continue;
+        const prox = proximaDoEvento(ev);
+        const atual = aoVivo.get(k);
+        if (!atual || prox.data < atual.data) aoVivo.set(k, { ev, data: prox.data, local: prox.local || ev.local });
+      }
+    }
+    return { revista, aoVivo };
+  }
+  function idx() { if (!indices) indices = construirIndices(); return indices; }
+  function irParaEvento(id) {
+    S.aba = "agenda"; S.agQuando = "tudo"; S.agTipo = "todos"; hashAba("agenda");
+    if (S.aberto) fecharLeitura();
+    document.activeElement?.blur?.();
+    render();
+    setTimeout(() => {
+      const el = document.getElementById(`ev-${id}`);
+      if (!el) return;
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.querySelector(FOCAVEIS)?.focus({ preventScroll: true });
+    }, 50);
+  }
+  function badgeAoVivo(...nomes) {
+    if (!S.agenda) return null;
+    for (const n of nomes) {
+      const hit = idx().aoVivo.get(nrm(n));
+      if (hit) return h("button", { class: "ao-vivo", type: "button", onclick: () => irParaEvento(hit.ev.id), title: "Ver na agenda" },
+        `Ao vivo no Rio · ${fmtData(hit.data)}${hit.local ? " · " + str(hit.local).split(",")[0] : ""}`);
+    }
+    return null;
+  }
+  function linkRevista(...nomes) {
+    for (const n of nomes) {
+      const ref = idx().revista.get(nrm(n));
+      if (ref) return h("button", { class: "na-revista", type: "button", onclick: () => abrirLeitura(ref.key) }, `Na revista: ${ref.rot}`);
+    }
+    return null;
+  }
+
+  function cardEvento(ev) {
+    const prox = proximaDoEvento(ev);
+    const dec = decisaoRadar(ev.id);
+    const cor = `var(--t-${TIPOS_AG[ev.tipo] ? ev.tipo : "outros"})`;
+    const [, m, d] = str(prox.data).split("-");
+    const hoje = isoHoje();
+    const picks = arr(ev.destaques).map((p) => ({ p, prox: arr(p.sessoes).filter((s) => s.data >= hoje).sort((a, b) => (a.data + (a.hora || "")).localeCompare(b.data + (b.hora || "")))[0] }))
+      .filter((x) => x.prox || (x.p.temporada && (!x.p.fim || x.p.fim >= hoje)))
+      .sort((a, b) => (decisaoRadar(`${ev.id}__${b.p.id}`) === "quero") - (decisaoRadar(`${ev.id}__${a.p.id}`) === "quero") || str(a.prox && a.prox.data).localeCompare(str(b.prox && b.prox.data)));
+    const dias = arr(ev.dias).filter((x) => x.data >= hoje);
+    const art = h("article", { class: "ag-ev" + (dec === "quero" ? " marcado" : ""), id: `ev-${ev.id}`, style: `--tc:${cor}` },
+      h("div", { class: "ag-data" }, h("span", { class: "k" }, TIPOS_AG[ev.tipo] || "Outros"), h("b", null, prox.emCurso ? "hoje" : `${+d} ${MESES[+m - 1] || ""}`),
+        h("span", null, ev.fim && ev.fim > prox.data ? `até ${fmtData(ev.fim)}` : prox.hora || "")),
+      h("div", { class: "ag-corpo" },
+        h("h3", null, safeUrl(ev.link) ? h("a", { href: safeUrl(ev.link), target: "_blank", rel: "noopener" }, str(ev.titulo)) : str(ev.titulo)),
+        h("p", { class: "ag-onde" }, [ev.local, ev.bairro].map(str).filter(Boolean).join(", "), REG_AG[ev.regiao] ? h("span", { class: "mono" }, REG_AG[ev.regiao]) : null),
+        h("p", { class: "ag-quando" }, [ev.quando, ev.preco].map(str).filter(Boolean).join(" · ")),
+        ev.porque ? h("p", { class: "ag-porque" }, str(ev.porque)) : null,
+        linkRevista(...arr(ev.artistas), ev.titulo),
+        picks.length ? h("ul", { class: "ag-picks" }, picks.slice(0, S.agAberto === ev.id ? 99 : 4).map(({ p, prox: s }) => h("li", null,
+          h("span", { class: "pt" }, str(p.titulo)),
+          h("span", { class: "ps" }, [s ? `${rotuloDia(s.data)}${s.hora ? " " + str(s.hora) : ""}` : str(p.temporada), s ? s.local || s.bairro : p.local, p.diretor, p.ano].map(str).filter(Boolean).join(" · ")),
+          p.porque ? h("p", { class: "pw" }, str(p.porque)) : null,
+          linkRevista(...arr(p.artistas), p.titulo, p.tituloBusca),
+          marcasAgenda(`${ev.id}__${p.id}`, true)))) : null,
+        picks.length > 4 ? h("button", { class: "ler", type: "button", onclick: () => { S.agAberto = S.agAberto === ev.id ? null : ev.id; render(); } }, S.agAberto === ev.id ? "Mostrar menos" : `Ver os ${picks.length} destaques`) : null,
+        dias.length ? h("ul", { class: "ag-picks" }, dias.map((x) => h("li", null,
+          h("span", { class: "pt" }, `${rotuloDia(x.data)}${x.recomendado ? " · o seu dia" : ""}`),
+          h("span", { class: "ps" }, [x.hora, x.local, x.preco].map(str).filter(Boolean).join(" · ")),
+          x.atracoes ? h("p", { class: "pw" }, arr(x.atracoes).map(str).join(", ")) : null,
+          linkRevista(...arr(x.artistas)),
+          marcasAgenda(`${ev.id}__dia-${x.data}`, true)))) : null,
+        marcasAgenda(ev.id),
+        h("div", { class: "links" },
+          safeUrl(ev.link) ? h("a", { href: safeUrl(ev.link), target: "_blank", rel: "noopener" }, "Programação e ingressos") : null,
+          safeUrl(S.agenda.radar_url) ? h("a", { href: safeUrl(S.agenda.radar_url), target: "_blank", rel: "noopener" }, "Abrir no Radar") : null)));
+    return art;
+  }
+
+  function blocoAgenda() {
+    if (!S.loaded.agenda) return [estado("abrindo a agenda", "Os eventos do Radar cultural aparecem aqui assim que o arquivo da revista responder.")];
+    const ag = S.agenda;
+    if (!ag) return [estado("agenda vazia", "A agenda do Radar cultural entra aqui na próxima sincronização diária.")];
+    const hoje = isoHoje();
+    const [fa, fb] = janelaFds();
+    const lim = { fds: fb, "7": addDias(hoje, 7), "30": addDias(hoje, 30), tudo: "9999-12-31" }[S.agQuando];
+    const visiveis = arr(ag.eventos).map((ev) => ({ ev, prox: proximaDoEvento(ev) })).filter(({ ev, prox }) => {
+      if (!prox) return false;
+      if (S.agTipo !== "todos" && ev.tipo !== S.agTipo) return false;
+      if (decisaoRadar(ev.id) === "nao") return false;
+      if (S.agQuando === "fds") {
+        const ds = datasDoEvento(ev).filter((x) => x.data >= fa && x.data <= fb);
+        return ds.length || (prox.emCurso && (!ev.fim || ev.fim >= fa)) || (prox.data >= fa && prox.data <= fb);
+      }
+      return prox.data <= lim;
+    }).sort((a, b) => (decisaoRadar(b.ev.id) === "quero") - (decisaoRadar(a.ev.id) === "quero") || a.prox.data.localeCompare(b.prox.data) || (Number(b.ev.afinidade) || 3) - (Number(a.ev.afinidade) || 3));
+    const tipos = [...new Set(arr(ag.eventos).map((e) => e.tipo).filter(Boolean))];
+    const chip = (atual, v, t, set) => h("button", { class: "chip", type: "button", "aria-pressed": String(atual === v), onclick: () => { set(v); render(); } }, t);
+    const pl = ag.playlists || {};
+    const playlists = [["semana", "Shows desta semana"], ["trinta", "Próximos 30 dias"]].map(([k, t]) => ({ t, d: pl[k] })).filter((x) => x.d && safeUrl(x.d.url));
+    const head = h("section", { class: "wrap ag-head" },
+      h("div", { style: "min-width:0" },
+        h("div", { class: "kicker mono" }, "Agenda · Radar cultural"),
+        h("h2", null, "o que fazer no Rio"),
+        h("p", { class: "lede" }, "Shows, filmes, exposições, peças e encontros escolhidos pelo radar. O que tem ligação com a revista aparece marcado, e seus botões voltam para o radar na próxima sincronização."),
+        ag.rodada ? h("p", { class: "mono", style: "color:var(--muted);margin:0" }, `Última varredura: ${fmtData(str(ag.rodada.em).slice(0, 10))}. ${str(ag.rodada.resumo).slice(0, 220)}${str(ag.rodada.resumo).length > 220 ? "…" : ""}`) : null,
+        h("div", { class: "ag-filtros", role: "group", "aria-label": "Quando" }, [["fds", "Fim de semana"], ["7", "7 dias"], ["30", "30 dias"], ["tudo", "Tudo"]].map(([v, t]) => chip(S.agQuando, v, t, (x) => (S.agQuando = x)))),
+        h("div", { class: "ag-filtros", role: "group", "aria-label": "Tipo" }, [chip(S.agTipo, "todos", "Tudo", (x) => (S.agTipo = x)), ...tipos.map((t) => chip(S.agTipo, t, TIPOS_AG[t] || t, (x) => (S.agTipo = x)))])),
+      playlists.length ? h("aside", { class: "pls" }, h("h4", { class: "mono", style: "margin:0;color:var(--red)" }, "Playlists dos shows"),
+        playlists.map(({ t, d }) => h("div", { class: "pl-card" }, h("b", null, str(d.nome || t)), h("span", { class: "mono", style: "color:var(--muted)" }, [t, d.intervalo].map(str).filter(Boolean).join(" · ")),
+          h("div", { class: "acts" },
+            S.modo === "site" && /open\.spotify\.com\/playlist\/([A-Za-z0-9]{22})/.test(d.url) ? h("button", { class: "ouvir", type: "button", onclick: () => tocar(d.url.replace(/open\.spotify\.com\/playlist\//, "open.spotify.com/embed/playlist/").split("?")[0], "Radar", str(d.nome || t), false) }, "Ouvir aqui") : null,
+            h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "mono" }, "Abrir no Spotify"))))) : null);
+    const lista = h("section", { class: "wrap", style: "padding-bottom:24px" }, visiveis.length ? h("div", { class: "ag-lista" }, visiveis.map(({ ev }) => cardEvento(ev)))
+      : h("p", { class: "vazio" }, "Nada neste filtro. Amplie o período ou o tipo."));
+    const idas = arr(ag.idas).slice().sort((a, b) => str(b.data).localeCompare(str(a.data)));
+    const estrelas = (n) => (n ? h("span", { class: "estrelas", "aria-label": `${n} de 5` }, "★".repeat(n) + "☆".repeat(5 - n)) : null);
+    const fomos = idas.length ? h("section", { class: "wrap secao" },
+      h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, idas.length), h("h3", null, "fomos"), h("p", null, "O diário do que vocês foram ver, com notas. Notas altas viram pauta na revista e prioridade no radar.")),
+      h("div", { class: "fomos" }, idas.map((i) => { const [, mm, dd] = str(i.data).split("-"); return h("article", { class: "ida" },
+        h("div", { class: "dia" }, h("b", null, +dd || ""), h("span", null, MESES[+mm - 1] || "")),
+        h("div", { style: "min-width:0" },
+          h("h4", null, str(i.titulo || i.evento)),
+          h("p", { class: "mono", style: "margin:0;color:var(--muted)" }, [i.local, i.bairro, i.com ? `com ${str(i.com)}` : ""].map(str).filter(Boolean).join(" · "), " ", estrelas(Number(i.nota) || 0)),
+          i.comentario ? h("p", { style: "margin:6px 0 0" }, str(i.comentario)) : null,
+          h("ul", null, arr(i.itens).map((x) => h("li", { class: x.viu === false ? "nv" : "" }, h("b", null, str(x.nome)), estrelas(Number(x.nota) || 0), x.obs ? h("span", null, str(x.obs)) : null, linkRevista(x.nome))))));
+      }))) : null;
+    return [head, lista, fomos];
+  }
+
   // Reading view: every album of an edition in reading order, so prev/next follow the magazine.
   function entradas(ed) {
     const out = [];
@@ -987,13 +1382,39 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     return null;
   }
 
-  let abertoAntes = null, opener = null;
-  function abrirLeitura(key) { opener = document.activeElement; S.aberto = key; renderLeitura(); }
+  // Every render rebuilds the DOM, so keyboard focus is remembered by position and put back afterwards.
+  const FOCAVEIS = "button, a[href], select, input, textarea";
+  function guardarFoco() {
+    const a = document.activeElement;
+    if (!a || a === document.body) return null;
+    for (const id of ["leitura", "abas", "chips", "main"]) {
+      const c = document.getElementById(id);
+      if (!c || !c.contains(a)) continue;
+      const dono = a.parentElement && a.parentElement.closest("[id]");
+      const rel = dono && c.contains(dono) && dono !== c ? dono : null;
+      return { id, i: [...c.querySelectorAll(FOCAVEIS)].indexOf(a), dono: rel && rel.id, j: rel ? [...rel.querySelectorAll(FOCAVEIS)].indexOf(a) : -1 };
+    }
+    return null;
+  }
+  function restaurarFoco(f, forcar) {
+    if (!f || (!forcar && document.activeElement && document.activeElement !== document.body)) return;
+    const dono = f.dono && document.getElementById(f.dono);
+    const c = document.getElementById(f.id);
+    const el = (dono && f.j >= 0 && dono.querySelectorAll(FOCAVEIS)[f.j]) || (c && f.i >= 0 && c.querySelectorAll(FOCAVEIS)[f.i]);
+    if (el && el.offsetParent !== null) el.focus({ preventScroll: true });
+  }
+
+  let abertoAntes = null, opener = null, openerRef = null;
+  function abrirLeitura(key) { opener = document.activeElement; openerRef = guardarFoco(); S.aberto = key; renderLeitura(); }
+  function voltarAoOpener() {
+    if (opener && document.contains(opener)) opener.focus();
+    else restaurarFoco(openerRef, true);
+  }
   function fecharLeitura() {
     S.aberto = null;
     const dlg = document.getElementById("leitura");
     if (dlg.open) dlg.close();
-    if (opener && document.contains(opener)) opener.focus();
+    voltarAoOpener();
   }
 
   function renderLeitura() {
@@ -1042,6 +1463,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           faixas.length ? h("div", null, h("h4", null, "Comece por"), h("ol", { class: "faixas" }, faixas.map((f) => h("li", null, f)))) : null,
           a.recepcao ? h("div", null, h("h4", null, "Recepção"), h("p", { class: "rec" }, str(a.recepcao))) : null,
           ponte ? h("div", null, h("h4", null, "Para quem gosta de"), h("p", { style: "margin:0;font-size:16px" }, str(ponte))) : null,
+          (() => { const b = cfg ? badgeAoVivo(a.titulo_original, a.titulo, a.autor) : badgeAoVivo(a.exibir_artista, a.artista); return b ? h("div", null, h("h4", null, "Na agenda"), b) : null; })(),
           h("div", null, h("h4", null, "Sua fila"), marcas(S.aberto, cfg?.rot)),
           ouca)))
     );
@@ -1053,6 +1475,11 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   }
 
   function render() {
+    const foco = guardarFoco();
+    renderTudo();
+    restaurarFoco(foco);
+  }
+  function renderTudo() {
     renderLeitura();
     if (!S.hashLido && S.carregou && S.itens.length) {
       S.hashLido = true;
@@ -1073,9 +1500,9 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       document.getElementById("edsel-wrap").hidden = true;
       const s = semanaAtual();
       const dd = diaAtual();
-      document.getElementById("edline").textContent = S.aba === "hoje" && dd ? `Boletim de ${rotuloDia(dd.data || dd._id)}`
+      document.getElementById("edline").textContent = S.aba === "hoje" && dd ? `Boletim de ${rotuloDia(dd.data || dd._id)}` : S.aba === "agenda" ? "Agenda do Rio"
         : (S.aba === "noticias" || S.aba === "temas") && s ? `Semana de ${fmtPeriodo(s.inicio, s.fim)}` : "Edição do mês";
-      const partes = S.aba === "hoje" ? blocoHoje() : S.aba === "noticias" ? blocoNoticias() : S.aba === "temas" ? blocoTemas()
+      const partes = S.aba === "hoje" ? blocoHoje() : S.aba === "agenda" ? blocoAgenda() : S.aba === "noticias" ? blocoNoticias() : S.aba === "temas" ? blocoTemas()
         : S.aba === "filmes" ? blocoRevista(REVISTAS.cinema, () => blocoCultura(["filme", "serie"], "filmes e séries", "Poucos e curtos, para caber na semana.", ["Quero ver", "Vi"]))
         : blocoRevista(REVISTAS.livros, () => blocoCultura(["livro"], "livros", "Livros curtos, de ficção e não ficção.", ["Quero ler", "Li"]));
       main.append(...partes.filter(Boolean));
@@ -1108,6 +1535,28 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     const f = S.filtro;
     if (f === "fila") { main.append(blocoFila()); return; }
 
+    if (f === "tudo") {
+      const capas = [], toc = [];
+      let nD = 0, nG = 0, k = 0;
+      if (destaque) capas.push({ a: destaque, capa: true });
+      for (const b of layout) {
+        if (b.tipo === "secao") {
+          k++;
+          const l = itensEd.filter((i) => i.secao === b.secao && !i.destaque);
+          nD += l.length;
+          l.forEach((a) => capas.push({ a }));
+          toc.push({ n: secaoNum(k), titulo: (SECOES[b.secao] || {}).titulo || b.secao, id: b.secao });
+        } else if (b.tipo === "guia" && guiasEd.get(b.id)) {
+          const g = guiasEd.get(b.id);
+          nG++; nD += arr(g.albuns).length;
+          arr(g.albuns).forEach((a) => capas.push({ a }));
+          toc.push({ n: "◆", titulo: str(g.titulo), id: g._id, guia: true });
+        }
+      }
+      if (destaque) nD++;
+      main.append(banner({ nome: "música", numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc, quadrado: true,
+        stats: [plural(nD, "disco", "discos"), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
+    }
     if (f === "tudo") { const c = blocoCapa(ed, destaque); if (c) main.append(c); const p = blocoPerfil(ed); if (p) main.append(p); }
     let n = 0;
     for (const bloco of layout) {
@@ -1127,7 +1576,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
 
   function renderChips(itensEd, guiasEd) {
     const wrap = document.getElementById("chips");
-    const nFila = Object.values(S.marcas).filter((v) => v === "quero").length;
+    // Same list as "Minha fila", so agenda marks (radar:*) and stale keys don't inflate the count.
+    const nFila = listaFila().length;
     const defs = [["tudo", "Edição inteira", null]];
     for (const k of Object.keys(SECOES)) { const c = itensEd.filter((i) => i.secao === k).length; if (c) defs.push([k, SECOES[k].chip, c]); }
     if (guiasEd.size) defs.push(["guias", "Guias", guiasEd.size]);
@@ -1140,19 +1590,21 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
 
   // Per-viewer marks: one write at a time.
   let gravando = Promise.resolve();
+  // marcas_em records when each mark changed, so the radar sync can tell which side is newer.
   function marcar(key, valor) {
     const novo = { ...S.marcas };
+    const em = { ...S.marcasEm, [key]: new Date().toISOString() };
     if (valor) novo[key] = valor; else delete novo[key];
     if (S.modo === "site") {
-      S.marcas = novo;
-      try { localStorage.setItem("fo-marcas", JSON.stringify(novo)); } catch (e) {}
+      S.marcas = novo; S.marcasEm = em;
+      try { localStorage.setItem("fo-marcas", JSON.stringify(novo)); localStorage.setItem("fo-marcas-em", JSON.stringify(em)); } catch (e) {}
       render();
       return;
     }
     if (!S.db || !S.uid) return;
-    S.marcas = novo;
+    S.marcas = novo; S.marcasEm = em;
     render();
-    gravando = gravando.then(() => S.db.doc(`data/users/${S.uid}/estado`).set({ marcas: novo, atualizado: new Date().toISOString() }))
+    gravando = gravando.then(() => S.db.doc(`data/users/${S.uid}/estado`).set({ marcas: novo, marcas_em: em, atualizado: new Date().toISOString() }))
       .catch((e) => { if (e && e.code === "invalid_argument") { S.podeMarcar = false; render(); } });
   }
 
@@ -1161,6 +1613,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       S[alvo] = snap.docs.map((d) => ({ ...d.data(), _id: d.id }));
       if (ordenar) S[alvo].sort(ordenar);
       S.loaded[alvo] = true;
+      indices = null;
       if (alvo === "edicoes") S.carregou = true;
       render();
     }, () => {});
@@ -1170,8 +1623,9 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   try { const hsh = location.hash.slice(1); if (ABAS.some(([k]) => k === hsh)) { S.aba = hsh; S.hashLido = true; } } catch (e) {}
   renderAbas();
   const dlg = document.getElementById("leitura");
-  dlg.addEventListener("close", () => { if (S.aberto) { S.aberto = null; abertoAntes = null; if (opener && document.contains(opener)) opener.focus(); } });
+  dlg.addEventListener("close", () => { if (S.aberto) { S.aberto = null; abertoAntes = null; voltarAoOpener(); } });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dlg.open) { e.preventDefault(); fecharLeitura(); } });
+  window.addEventListener("hashchange", () => { const k = location.hash.slice(1); if (k !== S.aba && ABAS.some(([a]) => a === k)) { if (S.aberto) fecharLeitura(); trocarAba(k); } });
   document.getElementById("dock-fechar").addEventListener("click", () => { tocando.url = null; document.getElementById("dock-frame").replaceChildren(); desenharPlayer(); render(); });
   document.getElementById("dock-tam").addEventListener("click", () => { tocando.grande = !tocando.grande; desenharPlayer(); });
   dlg.addEventListener("keydown", (e) => {
@@ -1195,6 +1649,9 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       S.cultura = lista(b.cultura);
       S.dias = lista(b.dias).sort((a, c) => str(c.data || c._id).localeCompare(str(a.data || a._id)));
       for (const c of COLS_REV) S[c] = lista(b[c]);
+      S.agenda = (b.agenda && b.agenda.atual) || null;
+      S.loaded.agenda = true;
+      try { S.marcasEm = JSON.parse(localStorage.getItem("fo-marcas-em") || "{}") || {}; } catch (e) { S.marcasEm = {}; }
       for (const k of ["edicoes", "itens", "guias", "semanas", "cultura", "dias", ...COLS_REV]) S.loaded[k] = true;
       S.carregou = true;
       S.modo = "site";
@@ -1215,11 +1672,12 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     snapList("cultura", "cultura");
     snapList("dias", "dias", (a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
     for (const c of COLS_REV) snapList(c, c);
+    db.doc("agenda/atual").onSnapshot((d) => { S.agenda = d.exists ? d.data() : null; S.loaded.agenda = true; indices = null; render(); }, () => { S.loaded.agenda = true; render(); });
     const user = await window.claude.use("user");
     const uid = user ? await user.id() : null;
     if (uid) {
       S.uid = uid; S.podeMarcar = true;
-      db.doc(`data/users/${uid}/estado`).onSnapshot((d) => { S.marcas = (d.exists && d.data().marcas) || {}; render(); }, () => {});
+      db.doc(`data/users/${uid}/estado`).onSnapshot((d) => { S.marcas = (d.exists && d.data().marcas) || {}; S.marcasEm = (d.exists && d.data().marcas_em) || {}; render(); }, () => {});
     }
     render();
   })();
