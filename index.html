@@ -251,6 +251,25 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .ag-head .lede { margin: 0 0 10px; font-size: 18px; max-width: 36em; }
 .ag-filtros { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
 .ag-lista { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 26px; }
+.b-pl { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 14px; }
+.b-pl a { color: inherit; }
+.ag-desc summary { cursor: pointer; color: var(--muted); padding: 6px 0; }
+.ag-desc ul { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.ag-desc li { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--rule); padding-bottom: 8px; min-width: 0; }
+.arq { padding-block: 40px 48px; }
+.arq h2 { font-family: var(--f-display, Archivo), sans-serif; font-weight: 900; font-stretch: 75%; text-transform: lowercase; font-size: clamp(40px, 8vw, 88px); line-height: .9; margin: 6px 0 12px; }
+.arq h2::after { content: "."; color: var(--red); }
+.arq-campo { width: 100%; box-sizing: border-box; font: 400 20px var(--f-serif, Newsreader), serif; padding: 12px 14px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); border-radius: 0; margin: 10px 0 18px; }
+.arq-grupo h4 { font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--red); margin: 18px 0 8px; }
+.arq-lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 10px 22px; }
+.arq-lista button { all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; align-items: center; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+.arq-lista button:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.arq-capa { width: 56px; aspect-ratio: 1; overflow: hidden; display: block; }
+.arq-capa > img, .arq-capa > .ph { width: 100%; height: 100%; object-fit: cover; display: block; }
+.arq-txt { display: flex; flex-direction: column; min-width: 0; }
+.arq-txt b { font-size: 17px; line-height: 1.2; }
+.arq-txt span { color: var(--muted); }
+.arq-txt small { color: var(--muted); font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .fds { padding-block: 8px 36px; border-top: 1.5px solid var(--ink); }
 .fds h3 { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 75%; text-transform: lowercase; font-size: clamp(30px, 5vw, 48px); line-height: .95; margin: 6px 0 18px; }
 .fds h3::after { content: "."; color: var(--red); }
@@ -589,7 +608,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   };
   const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias"];
   const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], selRev: {}, agenda: null, agQuando: "30", agTipo: "todos", marcasEm: {}, loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "musica", filtro: "tudo", podeMarcar: false, falhou: false };
-  const ABAS = [["musica", "música"], ["hoje", "hoje"], ["agenda", "agenda"], ["noticias", "semana"], ["temas", "temas"], ["filmes", "filmes"], ["livros", "livros"]];
+  const ABAS = [["musica", "música"], ["hoje", "hoje"], ["agenda", "agenda"], ["noticias", "semana"], ["temas", "temas"], ["filmes", "filmes"], ["livros", "livros"], ["arquivo", "arquivo"]];
   const DSEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
   // DOM helper: text only, never HTML from data.
@@ -1045,7 +1064,10 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
         h("div", { style: "min-width:0" },
           h("p", { class: "b-kick mono", style: "margin:0" }, h("span", null, "Faixa Oculta apresenta"), h("b", null, `Edição nº ${o.numero}${o.mes ? " · " + o.mes : ""}`)),
           h("h2", { class: "b-nome" }, o.nome, h("span", { class: "dot", "aria-hidden": "true" })),
-          o.stats ? h("p", { class: "b-stats mono" }, o.stats) : null),
+          o.stats ? h("p", { class: "b-stats mono" }, o.stats) : null,
+          o.playlist && safeUrl(o.playlist.url) ? h("div", { class: "b-pl" },
+            S.modo === "site" && /open\.spotify\.com\/playlist\/[A-Za-z0-9]{22}/.test(o.playlist.url) ? h("button", { class: "ouvir", type: "button", onclick: () => tocar(o.playlist.url.replace("open.spotify.com/playlist/", "open.spotify.com/embed/playlist/").split("?")[0], "Faixa Oculta", str(o.playlist.nome || "Playlist da edição"), false) }, "Ouvir a edição") : null,
+            h("a", { href: safeUrl(o.playlist.url), target: "_blank", rel: "noopener", class: "mono" }, "Playlist no Spotify ↗")) : null),
         o.toc.length ? h("nav", { class: "b-toc", "aria-label": "Nesta edição" }, h("h3", { class: "mono" }, "Nesta edição"),
           h("ol", null, o.toc.map((t) => h("li", { class: t.guia ? "g" : null }, h("button", { type: "button", onclick: () => ir(t.id) }, h("span", { "aria-hidden": "true" }, t.n), h("span", null, t.titulo)))))) : null));
   }
@@ -1356,7 +1378,46 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           i.comentario ? h("p", { style: "margin:6px 0 0" }, str(i.comentario)) : null,
           h("ul", null, arr(i.itens).map((x) => h("li", { class: x.viu === false ? "nv" : "" }, h("b", null, str(x.nome)), estrelas(Number(x.nota) || 0), x.obs ? h("span", null, str(x.obs)) : null, linkRevista(x.nome))))));
       }))) : null;
-    return [head, lista, fomos];
+    const descartados = arr(ag.eventos).filter((ev) => decisaoRadar(ev.id) === "nao" && proximaDoEvento(ev));
+    const desfazer = descartados.length ? h("section", { class: "wrap", style: "padding-bottom:28px" },
+      h("details", { class: "ag-desc" }, h("summary", { class: "mono" }, `Descartados (${descartados.length})`),
+        h("ul", null, descartados.map((ev) => h("li", null, h("span", null, str(ev.titulo)),
+          h("button", { class: "chip", type: "button", disabled: !S.podeMarcar, onclick: () => marcar(`radar:${ev.id}`, null) }, "Desfazer")))))) : null;
+    return [head, lista, desfazer, fomos];
+  }
+
+  // ---------- Arquivo: every album, film and book ever published, searchable ----------
+  function indiceArquivo() {
+    const out = [];
+    for (const ed of S.edicoes) for (const e of entradas(ed)) out.push({ ...e, rev: "música", ed: `Nº ${str(ed.numero)} · ${str(ed.mes)}`, t1: str(e.a.album), t2: str(e.a.exibir_artista || e.a.artista), cap: e.a });
+    for (const cfg of Object.values(REVISTAS)) for (const ed of S[cfg.ed]) for (const e of entradasRevista(cfg, ed))
+      out.push({ ...e, rev: cfg.nome, ed: `Nº ${str(ed.numero)} · ${str(ed.mes)}`, t1: str(e.a.titulo), t2: [e.a.autor, e.a.ano].map(str).filter(Boolean).join(", "), cap: { capa: e.a.capa, album: e.a.titulo, artista: e.a.autor, _tipo: e.a.tipo } });
+    for (const x of out) x.busca = nrm([x.t1, x.t2, x.a.titulo_original, x.a.genero, arr(x.a.generos).join(" "), x.a.pais, x.a.onde, x.ctx, x.ed, x.rev, arr(x.a.resenha).join(" "), x.a.linha_fina].map(str).join(" "));
+    return out;
+  }
+  function blocoArquivo() {
+    const todos = indiceArquivo();
+    const res = h("div", { class: "arq-res", "aria-live": "polite" });
+    const mostrar = () => {
+      const termos = nrm(S.busca || "").split(" ").filter(Boolean);
+      const achados = termos.length ? todos.filter((x) => termos.every((t) => x.busca.includes(t))) : todos;
+      const grupos = new Map();
+      for (const x of achados) { if (!grupos.has(x.rev)) grupos.set(x.rev, []); grupos.get(x.rev).push(x); }
+      res.replaceChildren(
+        h("p", { class: "mono", style: "color:var(--muted);margin:0 0 14px" }, termos.length ? `${achados.length} de ${todos.length} títulos` : `${todos.length} títulos em todas as edições`),
+        ...(achados.length ? [...grupos].map(([rev, xs]) => h("div", { class: "arq-grupo" }, h("h4", null, rev),
+          h("ul", { class: "arq-lista" }, xs.map((x) => h("li", null, h("button", { type: "button", onclick: () => abrirLeitura(x.key) },
+            h("span", { class: "arq-capa" }, capa(x.cap)),
+            h("span", { class: "arq-txt" }, h("b", null, x.t1), h("span", null, x.t2), h("small", { class: "mono" }, `${x.ed} · ${x.ctx}`)))))))) : [h("p", { class: "vazio" }, "Nada encontrado. Tente um artista, um diretor, um gênero ou um país.")]));
+    };
+    const campo = h("input", { type: "search", class: "arq-campo", placeholder: "Artista, diretor, autor, gênero, tema…", "aria-label": "Buscar no arquivo", value: S.busca || "",
+      oninput: (e) => { S.busca = e.target.value; mostrar(); } });
+    mostrar();
+    return [h("section", { class: "wrap arq" },
+      h("div", { class: "kicker mono" }, "Arquivo"),
+      h("h2", null, "tudo o que já saiu"),
+      h("p", { class: "lede" }, "Discos, filmes, séries e livros de todas as edições, com as resenhas. A busca olha títulos, nomes, gêneros e o texto das críticas."),
+      campo, res)];
   }
 
   // Reading view: every album of an edition in reading order, so prev/next follow the magazine.
@@ -1510,9 +1571,9 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       document.getElementById("edsel-wrap").hidden = true;
       const s = semanaAtual();
       const dd = diaAtual();
-      document.getElementById("edline").textContent = S.aba === "hoje" && dd ? `Boletim de ${rotuloDia(dd.data || dd._id)}` : S.aba === "agenda" ? "Agenda do Rio"
+      document.getElementById("edline").textContent = S.aba === "hoje" && dd ? `Boletim de ${rotuloDia(dd.data || dd._id)}` : S.aba === "agenda" ? "Agenda do Rio" : S.aba === "arquivo" ? "Arquivo"
         : (S.aba === "noticias" || S.aba === "temas") && s ? `Semana de ${fmtPeriodo(s.inicio, s.fim)}` : "Edição do mês";
-      const partes = S.aba === "hoje" ? blocoHoje() : S.aba === "agenda" ? blocoAgenda() : S.aba === "noticias" ? blocoNoticias() : S.aba === "temas" ? blocoTemas()
+      const partes = S.aba === "hoje" ? blocoHoje() : S.aba === "agenda" ? blocoAgenda() : S.aba === "arquivo" ? blocoArquivo() : S.aba === "noticias" ? blocoNoticias() : S.aba === "temas" ? blocoTemas()
         : S.aba === "filmes" ? blocoRevista(REVISTAS.cinema, () => blocoCultura(["filme", "serie"], "filmes e séries", "Poucos e curtos, para caber na semana.", ["Quero ver", "Vi"]))
         : blocoRevista(REVISTAS.livros, () => blocoCultura(["livro"], "livros", "Livros curtos, de ficção e não ficção.", ["Quero ler", "Li"]));
       main.append(...partes.filter(Boolean));
@@ -1564,7 +1625,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
         }
       }
       if (destaque) nD++;
-      main.append(banner({ nome: "música", numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc, quadrado: true,
+      main.append(banner({ nome: "música", numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc, quadrado: true, playlist: ed.playlist,
         stats: [plural(nD, "disco", "discos"), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
     }
     if (f === "tudo") { const c = blocoCapa(ed, destaque); if (c) main.append(c); const p = blocoPerfil(ed); if (p) main.append(p); }
