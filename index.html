@@ -246,12 +246,18 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .radar-card .links a { font-size: 11px; }
 
 /* Agenda (Radar cultural inside the magazine) */
-/* Layout: a sticky rail (title, search, filters, shortcuts, playlists) beside a single column of listings. */
-.ag-layout { display: grid; grid-template-columns: minmax(0, 296px) minmax(0, 1fr); gap: 0 28px; align-items: start; padding-block: 18px 8px; }
-.ag-rail { position: sticky; top: 64px; max-height: calc(100vh - 76px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; display: grid; gap: 14px; padding: 0 6px 16px 0; min-width: 0; }
+/* Layout: header and playlists on top, filters in one band, then the listings packed into columns with no gaps. */
+.ag-layout { display: grid; gap: 14px; padding-block: 22px 8px; }
+.ag-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 380px); gap: 14px 32px; align-items: start; }
+.ag-rail { display: grid; gap: 12px; min-width: 0; }
 .ag-main { min-width: 0; display: grid; gap: 12px; align-content: start; }
+.ag-ctrl { border-block: 1.5px solid var(--ink); padding-block: 12px; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 8px 28px; align-items: start; }
+.ag-ctrl > .ag-busca { grid-row: span 3; }
+.ag-ctrl .ag-frow { grid-template-columns: 56px minmax(0, 1fr); align-items: center; }
+.ag-cols { display: grid; grid-template-columns: repeat(var(--ncol, 2), minmax(0, 1fr)); gap: 14px; align-items: start; }
+.ag-cols > .ag-col { display: grid; gap: 14px; align-content: start; min-width: 0; }
 .ag-head { display: grid; gap: 6px; min-width: 0; }
-.ag-head h2 { margin: 0; font: 900 46px/.88 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; }
+.ag-head h2 { margin: 0; font: 900 clamp(48px, 7vw, 84px)/.86 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; }
 .ag-head .lede { margin: 0; font-size: 14.5px; line-height: 1.4; }
 .ag-varre { margin: 0; font: 400 10.5px/1.45 var(--f-mono); letter-spacing: .02em; color: var(--muted); }
 .ag-filtros { display: flex; flex-wrap: wrap; gap: 4px; }
@@ -563,8 +569,10 @@ dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 @media (max-width: 700px) { .gosto-cols { grid-template-columns: minmax(0, 1fr); } }
 /* Agenda below 900px: one column, the rail stacks on top, filter rows and playlists scroll sideways (as in the Radar). */
 @media (max-width: 900px) {
-  .ag-layout { grid-template-columns: minmax(0, 1fr); gap: 14px; padding-top: 14px; }
-  .ag-rail { position: static; max-height: none; overflow: visible; padding: 0; gap: 12px; }
+  .ag-layout { gap: 14px; padding-top: 14px; }
+  .ag-top { grid-template-columns: minmax(0, 1fr); }
+  .ag-ctrl { grid-template-columns: minmax(0, 1fr); }
+  .ag-ctrl > .ag-busca { grid-row: auto; }
   .ag-head h2 { font-size: 40px; }
   .ag-frow { grid-template-columns: 50px minmax(0, 1fr); align-items: center; gap: 6px; }
   .ag-frow .ag-filtros, .fo-filtros .ag-filtros { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-right: 24px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent); }
@@ -1973,6 +1981,20 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   // The agenda tab: a sticky rail (title, search, filters, shortcuts, playlists) beside the event list on wide
   // screens; on phones everything stacks and the filter rows scroll sideways.
   let agTm = null;
+  // Cards have very different heights, so a plain grid leaves holes. Pack them into columns: each card goes to the
+  // shortest column (by an estimate of its height), which keeps the radar's order reading left to right, top to bottom.
+  const nColsAgenda = () => (window.matchMedia && matchMedia("(min-width: 1500px)").matches ? 3 : window.matchMedia && matchMedia("(min-width: 980px)").matches ? 2 : 1);
+  function alturaEvento(ev) {
+    const picks = Math.min(arr(ev.destaques).length, 4), dias = arr(ev.dias).length;
+    return 190 + picks * 70 + dias * 46 + str(ev.porque).length * 0.35 + str(ev.sobre).length * 0.12 + arr(ev.artistas).length * 18;
+  }
+  function colunasAgenda(evs) {
+    const n = nColsAgenda();
+    if (n === 1) return h("div", { class: "ag-lista" }, evs.map(cardEvento));
+    const cols = Array.from({ length: n }, () => ({ h: 0, els: [] }));
+    for (const ev of evs) { const c = cols.reduce((m, x) => (x.h < m.h ? x : m), cols[0]); c.els.push(cardEvento(ev)); c.h += alturaEvento(ev) + 14; }
+    return h("div", { class: "ag-cols", style: `--ncol:${n}` }, cols.map((c) => h("div", { class: "ag-col" }, c.els)));
+  }
   function blocoAgenda() {
     if (!S.loaded.agenda) return [estado("abrindo a agenda", "Os eventos do Radar cultural aparecem aqui assim que o arquivo da revista responder.")];
     const ag = S.agenda;
@@ -2014,17 +2036,17 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
         h("a", { href: "#ag-fomos", onclick: ir("ag-fomos") }, `Diário fomos${nIdas ? ` (${nIdas})` : ""}`),
         h("a", { href: "#ag-gosto", onclick: ir("ag-gosto") }, "Seus gostos"),
         safeUrl(ag.radar_url) ? h("a", { href: safeUrl(ag.radar_url), target: "_blank", rel: "noopener" }, "Abrir o Radar cultural") : null);
-      const rail = h("div", { class: "ag-rail" }, head, ctrl, atalhos, blocoPlaylists(ag));
+      const rail = h("div", { class: "ag-rail" }, h("div", { class: "ag-top" }, h("div", { style: "min-width:0;display:grid;gap:10px" }, head, atalhos), blocoPlaylists(ag)), ctrl);
       const rotQ = (QUANDO_AG.find((q) => q[0] === S.agQuando) || [])[1] || "";
       const conta = h("p", { class: "ag-conta" }, h("b", null, String(ativos.length)), ` ${ativos.length === 1 ? "evento" : "eventos"}`,
         qOn ? ` para “${S.agQ.trim()}”` : ` · ${rotQ.toLowerCase()} · ${S.agOnde === "todos" ? "qualquer lugar" : ((ONDE_AG.find((o) => o[0] === S.agOnde) || [])[1] || "").toLowerCase()}${S.agTipo !== "todos" ? " · " + TIPOS_AG[S.agTipo].toLowerCase() : ""}`,
         h("span", null, " · na ordem do radar"));
-      const lista = ativos.length ? h("div", { class: "ag-lista" }, ativos.map(cardEvento))
+      const lista = ativos.length ? colunasAgenda(ativos)
         : h("p", { class: "vazio" }, qOn ? "Nada no radar com esses termos." : "Nada neste filtro. Amplie “Onde” ou “Quando” para ver mais.");
       const dispensados = disp.length ? h("div", { class: "ag-disp" },
         h("button", { class: "ler", type: "button", "aria-expanded": String(!!S.agDispOpen), onclick: () => { S.agDispOpen = !S.agDispOpen; render(); } },
           `${S.agDispOpen ? "Esconder" : "Mostrar"} ${disp.length} ${disp.length === 1 ? "item dispensado" : "itens dispensados"}`),
-        S.agDispOpen ? h("div", { class: "ag-lista" }, disp.map(cardEvento)) : null) : null;
+        S.agDispOpen ? colunasAgenda(disp) : null) : null;
       const pend = qOn ? null : blocoPendentes();
       const main = h("div", { class: "ag-main" }, pend, conta, lista, dispensados);
       return [h("section", { class: "wrap ag-layout" }, rail, main), blocoFomos(), blocoGosto(ag)];
@@ -2801,6 +2823,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   const dlg = document.getElementById("leitura");
   dlg.addEventListener("close", () => { if (S.aberto) { S.aberto = null; abertoAntes = null; voltarAoOpener(); } });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dlg.open) { e.preventDefault(); fecharLeitura(); } });
+  let colsAgora = nColsAgenda();
+  window.addEventListener("resize", () => { const n = nColsAgenda(); if (n !== colsAgora) { colsAgora = n; if (S.aba === "agenda") render(); } });
   window.addEventListener("hashchange", () => { let k = location.hash.slice(1); if (k === "temas") k = "noticias"; if (k !== S.aba && ABAS.some(([a]) => a === k)) { if (S.aberto) fecharLeitura(); trocarAba(k); } });
   document.getElementById("dock-fechar").addEventListener("click", () => { tocando.url = null; document.getElementById("dock-frame").replaceChildren(); desenharPlayer(); render(); });
   document.getElementById("dock-tam").addEventListener("click", () => { tocando.grande = !tocando.grande; desenharPlayer(); });
