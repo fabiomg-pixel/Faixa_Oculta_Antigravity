@@ -228,6 +228,31 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .d-fontes .mono { color: var(--muted); font-size: 11px; }
 .d-fontes small { display: block; color: var(--muted); }
 
+/* Cinema & books magazines (poster 2:3) */
+.capa-img.poster { max-width: 440px; }
+.capa-img.poster img, .capa-img.poster .ph { aspect-ratio: 2 / 3; }
+.mgrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px 24px; }
+.mcard .cover img, .mcard .cover .ph { aspect-ratio: 2 / 3; }
+.mcard .tit { display: block; margin: 4px 0 0; font: 800 23px/1.04 var(--f-display); font-stretch: 75%; }
+.mcard .quem { display: block; font-style: italic; font-size: 16px; line-height: 1.3; margin-top: 2px; }
+.mcard .onde-l { font: 500 11.5px/1.4 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--red); }
+.tracks.obras li { grid-template-columns: 30px 64px minmax(0, 1fr); }
+.tracks.obras img, .tracks.obras .ph { width: 64px; height: 96px; aspect-ratio: 2 / 3; }
+.tracks .t-onde { display: block; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--red); margin-top: 3px; }
+.l-hero .l-capa.poster img, .l-hero .l-capa.poster .ph { aspect-ratio: 2 / 3; }
+.l-hero .l-capa.poster { max-width: 380px; }
+.trailer { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; border: 1.5px solid var(--ink); padding: 5px 11px 5px 9px; border-radius: 999px; font: 800 13px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; }
+.trailer::before { content: ""; border-left: 8px solid var(--red); border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.trailer[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.spread .trailer { border-color: var(--spread-fg); }
+/* Trailers float in a corner window so reading continues around them. */
+body.com-player.player-video { padding-bottom: 24px; }
+body.com-player.player-video dialog.leitura { padding-bottom: 24px; }
+body.player-video .dock { left: auto; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(420px, calc(100% - 32px)); border-radius: 14px; padding-bottom: 0; }
+body.player-video .dock .wrap { padding: 8px 10px 10px; }
+.dock iframe.video { aspect-ratio: 16 / 9; width: 100%; height: auto !important; border-radius: 8px; }
+@media (max-width: 1000px) { .mgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
 /* Films & books */
 .cult { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 40px; }
 .cult-card { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; align-items: start; }
@@ -316,6 +341,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   .capa, .spread .wrap, .l-hero, .l-corpo { grid-template-columns: minmax(0, 1fr); }
   .l-hero .l-capa { max-width: 420px; }
   .n-head, .n-grid, .cult, .d-head { grid-template-columns: minmax(0, 1fr); }
+  .mgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cob { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .l-aside { border-top: 1px solid var(--rule); }
   .grid, .perfil-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -332,6 +358,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   .capa-img .badge { width: 76px; height: 76px; right: -6px; font-size: 11px; }
   .l-texto p { font-size: 18px; }
   .cob, .n-duo, .radar-grid, .d-notas { grid-template-columns: minmax(0, 1fr); }
+  .mgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
+  .mcard .tit { font-size: 20px; }
   .cult-card { grid-template-columns: 96px minmax(0, 1fr); gap: 14px; }
   .cult-card .poster img, .cult-card .poster .ph { width: 96px; font-size: 30px; }
   .aba { font-size: 22px; }
@@ -399,7 +427,34 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
   };
   const MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
 
-  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "musica", filtro: "tudo", podeMarcar: false, falhou: false };
+  const REVISTAS = {
+    cinema: {
+      ed: "cine_edicoes", it: "cine_itens", gu: "cine_guias", lista: "filmes", nome: "cinema",
+      secoes: {
+        cartaz: { titulo: "nos cinemas", sub: "Em cartaz ou estreando nos próximos dias." },
+        achados: { titulo: "achados no streaming", sub: "Filmes bons que já estão nas plataformas e talvez tenham passado batido." },
+        series: { titulo: "séries que acabam", sub: "Minisséries e séries limitadas: começo, meio e fim." },
+        pop: { titulo: "cultura pop", sub: "O que todo mundo está vendo e merece seu tempo, com leitura crítica." },
+        brasil: { titulo: "cinema brasileiro", sub: "Filmes nacionais recentes para ver agora." },
+        breve: { titulo: "em breve", sub: "Estreias anunciadas para os próximos meses." },
+      },
+      rot: ["Quero ver", "Vi"], ler: "Ler a crítica", edicaoRot: "Cinema",
+      busca: (q) => [["Onde assistir", `https://www.justwatch.com/br/busca?q=${q}`], ["Letterboxd", `https://letterboxd.com/search/${q}/`]],
+    },
+    livros: {
+      ed: "livro_edicoes", it: "livro_itens", gu: "livro_guias", lista: "livros", nome: "livros",
+      secoes: {
+        lancamentos: { titulo: "lançamentos", sub: "Livros novos no Brasil, escolhidos pela qualidade e não pelo barulho." },
+        brasil: { titulo: "literatura brasileira", sub: "Ficção e crônica contemporâneas." },
+        ideias: { titulo: "ideias", sub: "Não ficção curta: ciência, história, sociedade." },
+        achados: { titulo: "achados", sub: "Pérolas curtas, clássicos esquecidos e pequenas editoras." },
+      },
+      rot: ["Quero ler", "Li"], ler: "Ler a resenha", edicaoRot: "Livros",
+      busca: (q) => [["Amazon", `https://www.amazon.com.br/s?k=${q}`], ["Goodreads", `https://www.goodreads.com/search?q=${q}`]],
+    },
+  };
+  const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias"];
+  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], selRev: {}, loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "musica", filtro: "tudo", podeMarcar: false, falhou: false };
   const ABAS = [["musica", "música"], ["hoje", "hoje"], ["noticias", "semana"], ["temas", "temas"], ["filmes", "filmes"], ["livros", "livros"]];
   const DSEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
@@ -451,34 +506,51 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     if (/^https:\/\/music\.apple\.com\//.test(ap)) return ap.replace("https://music.apple.com/", "https://embed.music.apple.com/");
     return null;
   }
+  function trailerUrl(a) {
+    const u = str(a.trailer_url);
+    const m = u.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+    return m ? `https://www.youtube-nocookie.com/embed/${m[1]}?autoplay=1&rel=0` : null;
+  }
   function desenharPlayer() {
     const dock = document.getElementById("dock");
     const box = document.getElementById("dock-frame");
-    const alto = tocando.grande ? 352 : 152;
     const frame = box.querySelector("iframe");
-    if (frame) frame.style.height = alto + "px";
+    if (frame && !tocando.video) frame.style.height = (tocando.grande ? 352 : 152) + "px";
     document.body.classList.toggle("com-player", !!tocando.url);
-    document.body.classList.toggle("player-grande", !!tocando.url && tocando.grande);
+    document.body.classList.toggle("player-grande", !!tocando.url && tocando.grande && !tocando.video);
+    document.body.classList.toggle("player-video", !!tocando.url && !!tocando.video);
     dock.hidden = !tocando.url;
-    document.getElementById("dock-tam").textContent = tocando.grande ? "Compacto" : "Ver faixas";
+    const tam = document.getElementById("dock-tam");
+    tam.hidden = !!tocando.video;
+    tam.textContent = tocando.grande ? "Compacto" : "Ver faixas";
   }
-  function ouvir(a) {
-    const url = embedUrl(a);
+  function tocar(url, quem, oque, video) {
     if (!url) return;
     const box = document.getElementById("dock-frame");
     if (tocando.url !== url) {
       tocando.url = url;
+      tocando.video = !!video;
       const f = document.createElement("iframe");
       f.src = url;
-      f.title = `Player: ${str(a.album)}`;
+      f.title = `${video ? "Trailer" : "Player"}: ${oque}`;
       f.loading = "eager";
+      if (video) f.className = "video";
       f.allow = "autoplay *; clipboard-write; encrypted-media *; fullscreen; picture-in-picture";
+      f.setAttribute("allowfullscreen", "");
       box.replaceChildren(f);
       const t = document.getElementById("dock-tocando");
-      t.replaceChildren(document.createTextNode(`${str(a.exibir_artista || a.artista)} · `), h("em", null, str(a.album)));
+      t.replaceChildren(document.createTextNode(`${video ? "Trailer · " : ""}${quem} · `), h("em", null, oque));
     }
     desenharPlayer();
     render();
+  }
+  function ouvir(a) { tocar(embedUrl(a), str(a.exibir_artista || a.artista), str(a.album), false); }
+  function botaoTrailer(a) {
+    if (S.modo !== "site") return null;
+    const url = trailerUrl(a);
+    if (!url) return null;
+    const ativo = tocando.url === url;
+    return h("button", { class: "trailer", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(url, str(a.titulo), str(a.autor), true) }, ativo ? "Passando" : "Ver trailer");
   }
   function botaoOuvir(a) {
     if (S.modo !== "site") return null;
@@ -608,6 +680,11 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     for (const c of S.cultura) if (S.marcas[c._id] === "quero") {
       const livro = c.tipo === "livro";
       lista.push({ _id: c._id, artista: c.autor, album: c.titulo, capa: c.capa, texto: c.olho, genero: c.tempo, _semLeitura: true, _de: livro ? "Livro" : c.tipo === "serie" ? "Série" : "Filme", _rot: livro ? ["Quero ler", "Li"] : ["Quero ver", "Vi"] });
+    }
+    for (const cfg of Object.values(REVISTAS)) {
+      const obra = (o, k) => ({ _id: k, artista: o.autor, album: o.titulo, capa: o.capa, texto: o.olho, genero: o.tempo, _de: cfg.edicaoRot, _rot: cfg.rot });
+      for (const it of S[cfg.it]) if (S.marcas[it._id] === "quero") lista.push(obra(it, it._id));
+      for (const g of S[cfg.gu]) arr(g[cfg.lista]).forEach((o, i) => { const k = `${g._id}~${i}`; if (S.marcas[k] === "quero") lista.push(obra(o, k)); });
     }
     const head = h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, h("span", { class: "dot" })), h("h3", null, "minha fila"), h("p", null, "Tudo o que você marcou como quero ouvir, ver ou ler, em todas as edições."));
     const corpo = !S.podeMarcar ? h("p", { class: "vazio" }, "Entre no claude.ai para guardar e ver sua fila.")
@@ -776,6 +853,107 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     window.scrollTo({ top: Math.min(window.scrollY, document.querySelector(".nav").offsetTop) });
   }
 
+  // ---------- Cinema and books magazines ----------
+  const capaObra = (a) => capa({ capa: a.capa, artista: a.autor, album: a.titulo });
+  const tipoObra = (a) => ({ filme: "filme", serie: "série", documentario: "documentário", ficcao: "ficção", contos: "contos", nao_ficcao: "não ficção" }[str(a.tipo)] || str(a.genero));
+  function linksObra(a, cfg) {
+    const q = encodeURIComponent(`${str(a.titulo_original || a.titulo)} ${str(a.autor)}`.trim());
+    return h("div", { class: "links" }, cfg.busca(q).map(([t, u]) => h("a", { href: u, target: "_blank", rel: "noopener" }, t)),
+      safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
+  }
+  function edicaoRevista(cfg) {
+    const eds = [...S[cfg.ed]].sort((a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
+    return { eds, ed: eds.find((e) => e._id === S.selRev[cfg.nome]) || eds[0] };
+  }
+  function cardObra(a, key, cfg) {
+    const abrir = () => abrirLeitura(key);
+    return h("article", { class: "card mcard" },
+      h("div", { class: "cover" }, h("button", { class: "abre", type: "button", onclick: abrir, "aria-label": `Abrir ${str(a.titulo)}` }, capaObra(a)), selo(S.marcas[key])),
+      h("div", null, h("span", { class: "edt" }, tipoObra(a))),
+      h("button", { class: "abre", type: "button", onclick: abrir }, h("span", { class: "tit" }, str(a.titulo)), h("span", { class: "quem" }, [a.autor, a.ano].map(str).filter(Boolean).join(", "))),
+      h("div", { class: "meta mono" }, [a.tempo, a.pais].map(str).filter(Boolean).map((m) => h("span", null, m))),
+      a.onde ? h("div", { class: "onde-l" }, str(a.onde)) : null,
+      a.texto ? h("p", { class: "txt" }, str(a.texto)) : null,
+      a.recepcao ? h("p", { class: "rec" }, str(a.recepcao)) : null,
+      a.ponte ? h("p", { class: "ponte" }, "Para quem gosta de ", h("b", null, str(a.ponte))) : null,
+      h("button", { class: "ler", type: "button", onclick: abrir }, arr(a.resenha).length ? cfg.ler : "Abrir"),
+      h("div", { class: "acts" }, botaoTrailer(a), marcas(key, cfg.rot)),
+      linksObra(a, cfg));
+  }
+  function guiaObra(g, cfg) {
+    const obras = arr(g[cfg.lista]);
+    return h("section", { class: "spread", id: g._id },
+      h("div", { class: "wrap" },
+        h("div", { style: "min-width:0" },
+          h("div", { class: "tipo mono" }, h("span", { class: "dot", "aria-hidden": "true" }), `Guia · ${str(g.tipo)}`),
+          h("h3", null, str(g.titulo)),
+          g.subtitulo ? h("p", { class: "sub" }, str(g.subtitulo)) : null,
+          g.texto ? h("p", { class: "corpo" }, str(g.texto)) : null,
+          g.ponte ? h("p", { class: "ponte" }, "Ponte com o que você gosta: ", h("b", null, str(g.ponte))) : null),
+        h("ol", { class: "tracks obras", "aria-label": `Guia ${str(g.titulo)}` }, obras.map((a, i) => {
+          const key = `${g._id}~${i}`;
+          const abrir = () => abrirLeitura(key);
+          return h("li", null,
+            h("span", { class: "tn", "aria-hidden": "true" }, i + 1),
+            h("button", { class: "abre", type: "button", onclick: abrir, "aria-label": `Abrir ${str(a.titulo)}` }, capaObra(a)),
+            h("div", { style: "min-width:0" },
+              h("button", { class: "abre", type: "button", onclick: abrir }, h("span", { class: "t-art" }, str(a.titulo)), " · ", h("span", { class: "t-alb" }, str(a.autor)), a.ano ? h("span", { class: "mono", style: "opacity:.7" }, ` · ${str(a.ano)}`) : null),
+              a.onde ? h("span", { class: "t-onde" }, str(a.onde)) : null,
+              a.nota ? h("p", { class: "t-nota" }, str(a.nota)) : null,
+              h("div", { class: "acts" }, h("button", { class: "ler", type: "button", onclick: abrir }, cfg.ler), botaoTrailer(a), marcas(key, cfg.rot))));
+        }))));
+  }
+  function blocoRevista(cfg, fallback) {
+    if (!S.loaded[cfg.ed]) return [estado(`abrindo ${cfg.nome}`, "A edição aparece aqui assim que o arquivo da revista responder.")];
+    const { eds, ed } = edicaoRevista(cfg);
+    if (!ed) return fallback();
+    const itens = S[cfg.it].filter((i) => i.edicao === ed._id).sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0));
+    const guias = new Map(S[cfg.gu].filter((g) => g.edicao === ed._id).map((g) => [g._id, g]));
+    const dest = itens.find((i) => i.destaque);
+    const partes = [];
+    const sel = eds.length > 1 ? h("label", { class: "edsel mono" }, "Edição ",
+      (() => { const s = h("select", { onchange: (e) => { S.selRev[cfg.nome] = e.target.value; render(); window.scrollTo(0, 0); } }, eds.map((e) => h("option", { value: e._id }, `Nº ${str(e.numero)} · ${str(e.mes)}`))); s.value = ed._id; return s; })()) : null;
+    if (dest) partes.push(h("section", { class: "wrap capa" },
+      h("div", { class: "capa-img poster" }, capaObra(dest), h("div", { class: "badge", "aria-hidden": "true" }, "Matéria de capa")),
+      h("div", { style: "min-width:0" },
+        h("div", { class: "kicker mono" }, `${cfg.edicaoRot} · edição nº ${str(ed.numero)} · ${str(ed.mes)}`),
+        h("h2", null, str(ed.manchete || dest.titulo)),
+        ed.editorial ? h("p", { class: "lede" }, str(ed.editorial)) : null,
+        h("p", { class: "album-line" }, str(dest.titulo), " — ", h("em", null, [dest.autor, dest.ano].map(str).filter(Boolean).join(", "))),
+        h("div", { class: "meta mono", style: "margin:8px 0 6px" }, [tipoObra(dest), dest.tempo, dest.pais].map(str).filter(Boolean).map((m) => h("span", null, m))),
+        dest.onde ? h("div", { class: "onde-l", style: "margin-bottom:10px" }, str(dest.onde)) : null,
+        dest.texto ? h("p", { class: "txt", style: "margin:0 0 14px" }, str(dest.texto)) : null,
+        h("div", { class: "acts", style: "gap:14px 20px" }, h("button", { class: "ler", type: "button", onclick: () => abrirLeitura(dest._id) }, `${cfg.ler} de capa`), botaoTrailer(dest), marcas(dest._id, cfg.rot)),
+        sel ? h("div", { style: "margin-top:16px" }, sel) : null)));
+    let n = 0;
+    for (const b of arr(ed.layout)) {
+      if (b.tipo === "secao") {
+        n++;
+        const def = cfg.secoes[b.secao] || { titulo: b.secao, sub: "" };
+        const lista = itens.filter((i) => i.secao === b.secao && i !== dest);
+        if (!lista.length) continue;
+        partes.push(h("section", { class: "secao", id: `${cfg.nome}-${b.secao}` }, h("div", { class: "wrap" },
+          h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, secaoNum(n)), h("h3", null, def.titulo), h("p", null, def.sub)),
+          h("div", { class: "mgrid" }, lista.map((a) => cardObra(a, a._id, cfg))))));
+      } else if (b.tipo === "guia" && guias.get(b.id)) partes.push(guiaObra(guias.get(b.id), cfg));
+    }
+    return partes;
+  }
+  function entradasRevista(cfg, ed) {
+    const out = [];
+    const itens = S[cfg.it].filter((i) => i.edicao === ed._id).sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0));
+    const dest = itens.find((i) => i.destaque);
+    if (dest) out.push({ key: dest._id, a: dest, ctx: `${cfg.edicaoRot} · matéria de capa`, cfg });
+    for (const b of arr(ed.layout)) {
+      if (b.tipo === "secao") for (const it of itens) { if (it.secao === b.secao && it !== dest) out.push({ key: it._id, a: it, ctx: `${cfg.edicaoRot} · ${(cfg.secoes[b.secao] || {}).titulo || b.secao}`, cfg }); }
+      else if (b.tipo === "guia") {
+        const g = S[cfg.gu].find((x) => x._id === b.id);
+        if (g) arr(g[cfg.lista]).forEach((a, i) => out.push({ key: `${g._id}~${i}`, a, ctx: `Guia · ${str(g.titulo)} · ${i + 1} de ${arr(g[cfg.lista]).length}`, guia: g, cfg }));
+      }
+    }
+    return out;
+  }
+
   // Reading view: every album of an edition in reading order, so prev/next follow the magazine.
   function entradas(ed) {
     const out = [];
@@ -799,6 +977,13 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       const idx = lista.findIndex((e) => e.key === key);
       if (idx >= 0) return { lista, idx, ed };
     }
+    for (const cfg of Object.values(REVISTAS)) {
+      for (const ed of S[cfg.ed]) {
+        const lista = entradasRevista(cfg, ed);
+        const idx = lista.findIndex((e) => e.key === key);
+        if (idx >= 0) return { lista, idx, ed };
+      }
+    }
     return null;
   }
 
@@ -816,17 +1001,24 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     const achado = S.aberto ? acharEntrada(S.aberto) : null;
     if (!achado) { if (dlg.open) dlg.close(); abertoAntes = null; return; }
     const { lista, idx, ed } = achado;
-    const { a, ctx, guia } = lista[idx];
+    const { a, ctx, guia, cfg } = lista[idx];
     const ir = (d) => { const e = lista[idx + d]; if (e) { S.aberto = e.key; renderLeitura(); } };
     const top = dlg.scrollTop;
-    const nome = str(a.exibir_artista || a.artista);
+    const nome = cfg ? str(a.titulo) : str(a.exibir_artista || a.artista);
+    const subt = cfg ? [a.titulo_original && a.titulo_original !== a.titulo ? a.titulo_original : "", a.autor, a.ano].map(str).filter(Boolean).join(" · ") : str(a.album);
     const resenha = (Array.isArray(a.resenha) ? a.resenha : []).map(str).filter(Boolean);
     const faixas = (Array.isArray(a.faixas) ? a.faixas : []).map(str).filter(Boolean);
     const ponte = a.ponte || guia?.ponte;
-    const ficha = [
+    const ficha = (cfg ? [
+      ["Onde", a.onde], [cfg.nome === "livros" ? "Extensão" : "Duração", a.tempo], ["Tipo", tipoObra(a)], ["País", a.pais], ["Gênero", a.genero],
+      ["Original", a.ano_original ? `${str(a.ano_original)}` : ""],
+    ] : [
       ["Lançamento", a.data ? fmtData(a.data) : a.ano ? str(a.ano) : ""],
       ["Selo", a.selo], ["Formato", a.formato], ["Gênero", a.genero], ["Situação", a.status],
-    ].filter(([, v]) => str(v));
+    ]).filter(([, v]) => str(v));
+    const ouca = cfg
+      ? h("div", null, h("h4", null, cfg.nome === "livros" ? "Onde encontrar" : "Assista"), botaoTrailer(a) ? h("div", { style: "margin-bottom:10px" }, botaoTrailer(a)) : null, linksObra(a, cfg))
+      : h("div", null, h("h4", null, "Ouça"), botaoOuvir(a) ? h("div", { style: "margin-bottom:10px" }, botaoOuvir(a)) : null, links(a));
 
     dlg.replaceChildren(
       h("div", { class: "l-bar" }, h("div", { class: "wrap" },
@@ -836,22 +1028,22 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
           h("button", { class: "l-btn", type: "button", disabled: idx === 0, onclick: () => ir(-1), "aria-label": "Disco anterior" }, "←"),
           h("button", { class: "l-btn", type: "button", disabled: idx === lista.length - 1, onclick: () => ir(1), "aria-label": "Próximo disco" }, "Próximo →")))),
       h("div", { class: "wrap l-hero" },
-        h("div", { class: "l-capa" }, capa(a)),
+        h("div", { class: cfg ? "l-capa poster" : "l-capa" }, cfg ? capaObra(a) : capa(a)),
         h("div", { style: "min-width:0" },
           h("div", { class: "kicker mono" }, `${ctx} · Nº ${str(ed.numero)}`),
           h("h2", null, nome),
-          h("p", { class: "l-alb" }, str(a.album)),
+          h("p", { class: "l-alb" }, subt),
           a.olho ? h("p", { class: "l-olho" }, h("span", { class: "dot", "aria-hidden": "true" }), h("span", null, str(a.olho))) : null)),
       h("div", { class: "wrap" }, h("div", { class: "l-corpo" },
         h("div", { class: /^[\s"'“‘«(\[]/.test(resenha[0] || "") ? "l-texto sem-cap" : "l-texto" }, resenha.length ? resenha.map((p) => h("p", null, p))
-          : [h("p", null, str(a.texto || a.nota || "")), h("p", { class: "l-sem" }, "A resenha completa deste disco entra na próxima atualização.")]),
+          : [h("p", null, str(a.texto || a.nota || "")), h("p", { class: "l-sem" }, "O texto completo entra na próxima atualização.")]),
         h("aside", { class: "l-aside" },
           ficha.length ? h("div", null, h("h4", null, "Ficha"), h("dl", { class: "ficha" }, ficha.flatMap(([k, v]) => [h("dt", null, k), h("dd", null, str(v))]))) : null,
           faixas.length ? h("div", null, h("h4", null, "Comece por"), h("ol", { class: "faixas" }, faixas.map((f) => h("li", null, f)))) : null,
           a.recepcao ? h("div", null, h("h4", null, "Recepção"), h("p", { class: "rec" }, str(a.recepcao))) : null,
           ponte ? h("div", null, h("h4", null, "Para quem gosta de"), h("p", { style: "margin:0;font-size:16px" }, str(ponte))) : null,
-          h("div", null, h("h4", null, "Sua fila"), marcas(S.aberto)),
-          h("div", null, h("h4", null, "Ouça"), botaoOuvir(a) ? h("div", { style: "margin-bottom:10px" }, botaoOuvir(a)) : null, links(a)))))
+          h("div", null, h("h4", null, "Sua fila"), marcas(S.aberto, cfg?.rot)),
+          ouca)))
     );
     // Non-modal so the player dock stays usable while reading.
     if (!dlg.open) dlg.show();
@@ -884,8 +1076,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       document.getElementById("edline").textContent = S.aba === "hoje" && dd ? `Boletim de ${rotuloDia(dd.data || dd._id)}`
         : (S.aba === "noticias" || S.aba === "temas") && s ? `Semana de ${fmtPeriodo(s.inicio, s.fim)}` : "Edição do mês";
       const partes = S.aba === "hoje" ? blocoHoje() : S.aba === "noticias" ? blocoNoticias() : S.aba === "temas" ? blocoTemas()
-        : S.aba === "filmes" ? blocoCultura(["filme", "serie"], "filmes e séries", "Poucos e curtos, para caber na semana.", ["Quero ver", "Vi"])
-        : blocoCultura(["livro"], "livros", "Livros curtos, de ficção e não ficção.", ["Quero ler", "Li"]);
+        : S.aba === "filmes" ? blocoRevista(REVISTAS.cinema, () => blocoCultura(["filme", "serie"], "filmes e séries", "Poucos e curtos, para caber na semana.", ["Quero ver", "Vi"]))
+        : blocoRevista(REVISTAS.livros, () => blocoCultura(["livro"], "livros", "Livros curtos, de ficção e não ficção.", ["Quero ler", "Li"]));
       main.append(...partes.filter(Boolean));
       window.scrollTo(0, y);
       return;
@@ -1002,7 +1194,8 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
       S.semanas = lista(b.semanas).sort((a, c) => str(c.fim).localeCompare(str(a.fim)));
       S.cultura = lista(b.cultura);
       S.dias = lista(b.dias).sort((a, c) => str(c.data || c._id).localeCompare(str(a.data || a._id)));
-      for (const k of ["edicoes", "itens", "guias", "semanas", "cultura", "dias"]) S.loaded[k] = true;
+      for (const c of COLS_REV) S[c] = lista(b[c]);
+      for (const k of ["edicoes", "itens", "guias", "semanas", "cultura", "dias", ...COLS_REV]) S.loaded[k] = true;
       S.carregou = true;
       S.modo = "site";
       S.podeMarcar = true;
@@ -1021,6 +1214,7 @@ footer p { max-width: 80ch; margin: 0 0 8px; }
     snapList("semanas", "semanas", (a, b) => str(b.fim).localeCompare(str(a.fim)));
     snapList("cultura", "cultura");
     snapList("dias", "dias", (a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
+    for (const c of COLS_REV) snapList(c, c);
     const user = await window.claude.use("user");
     const uid = user ? await user.id() : null;
     if (uid) {
