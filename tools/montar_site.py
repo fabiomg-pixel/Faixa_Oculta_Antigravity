@@ -4,7 +4,7 @@ Usage:
   python3 -I tools/montar_site.py --dump DIR --assets DIR [--pagina faixa-oculta.html] [--saida .]
 
 --dump    folder written by ArtifactData list with out_dir: DIR/<collection>/<doc_id>.json
-          (collections: edicoes, itens, guias, semanas, cultura). Never include data/users.
+          (collections: edicoes, itens, guias, semanas, cultura, dias). Never include data/users.
 --assets  folder with the artifact's cover assets, one file per asset id (<id> or <id>.<ext>).
 --pagina  the page source as published on claude.ai (no doctype; the skeleton is added here).
           Defaults to the existing pagina.html in the site root.
@@ -15,7 +15,7 @@ Prints the asset ids referenced by the data but missing from --assets, so they c
 """
 import argparse, glob, json, os, re, shutil, sys
 
-COLECOES = ["edicoes", "itens", "guias", "semanas", "cultura"]
+COLECOES = ["edicoes", "itens", "guias", "semanas", "cultura", "dias"]
 SKELETON_HEAD = """<!doctype html>
 <html lang="pt-BR">
 <head>
