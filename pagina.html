@@ -1,0 +1,975 @@
+<title>Faixa Oculta</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+<style>
+/* Layout: a record-sleeve magazine. Masthead, a cover story, then "faixas" (sections) in reading order,
+   with full-bleed inverted spreads for the guides. Elenco-label palette: paper, ink, one red dot. */
+:root {
+  --paper: #ffffff;
+  --ink: #141210;
+  --red: #d42a1f;
+  --muted: #6d6560;
+  --rule: rgba(20, 18, 16, .14);
+  --wash: #f3f1ee;
+  --spread-bg: #141210;
+  --spread-fg: #f4f1ec;
+  --spread-muted: #a9a19b;
+  --spread-rule: rgba(244, 241, 236, .18);
+  --f-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Newsreader", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --maxw: 1240px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131110; --ink: #f1ede8; --red: #ff4b3e; --muted: #a39b95;
+    --rule: rgba(241, 237, 232, .16); --wash: #1d1a18;
+    --spread-bg: #f1ede8; --spread-fg: #141210; --spread-muted: #6d6560; --spread-rule: rgba(20, 18, 16, .16);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #131110; --ink: #f1ede8; --red: #ff4b3e; --muted: #a39b95;
+  --rule: rgba(241, 237, 232, .16); --wash: #1d1a18;
+  --spread-bg: #f1ede8; --spread-fg: #141210; --spread-muted: #6d6560; --spread-rule: rgba(20, 18, 16, .16);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.5; }
+a { color: inherit; }
+img { display: block; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.mono { font-family: var(--f-mono); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+.dot { display: inline-block; width: .62em; height: .62em; border-radius: 50%; background: var(--red); vertical-align: .05em; flex: none; }
+
+/* Masthead */
+.mast { padding-block: 28px 18px; border-bottom: 3px solid var(--ink); }
+.mast-top { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: var(--muted); }
+.mast h1 { margin: 6px 0 0; font-family: var(--f-display); font-stretch: 62%; font-weight: 900; font-size: clamp(64px, 16vw, 210px); line-height: .8; letter-spacing: -.02em; text-transform: lowercase; display: flex; align-items: flex-end; gap: .08em; flex-wrap: wrap; }
+.mast h1 .dot { width: .22em; height: .22em; margin-bottom: .1em; }
+.mast-sub { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-top: 14px; }
+.mast-sub p { margin: 0; max-width: 46ch; font-style: italic; color: var(--muted); }
+.edsel { display: flex; align-items: center; gap: 8px; }
+.edsel select { font: 500 13px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; background: var(--paper); color: var(--ink); border: 1.5px solid var(--ink); border-radius: 0; padding: 7px 28px 7px 10px; }
+
+/* Nav */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.nav .wrap { display: flex; gap: 6px; overflow-x: auto; padding-block: 10px; scrollbar-width: none; }
+.nav .wrap::-webkit-scrollbar { display: none; }
+.chip { flex: none; display: inline-flex; align-items: center; gap: 7px; border: 1.5px solid var(--ink); background: transparent; padding: 6px 12px; border-radius: 999px; font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.chip .n { opacity: .6; }
+
+/* Cover story */
+.capa { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 56px); padding-block: 40px 48px; align-items: start; }
+.capa-img { position: relative; }
+.capa-img img, .capa-img .ph { width: 100%; aspect-ratio: 1; object-fit: cover; max-width: 100%; }
+.capa-img .badge { position: absolute; top: -14px; right: -14px; width: 96px; height: 96px; border-radius: 50%; background: var(--red); color: #fff; display: grid; place-items: center; text-align: center; font: 800 13px/1.05 var(--f-display); font-stretch: 75%; text-transform: uppercase; padding: 10px; transform: rotate(8deg); }
+.kicker { color: var(--red); }
+.capa h2 { font-family: var(--f-display); font-stretch: 62%; font-weight: 900; font-size: clamp(44px, 7vw, 92px); line-height: .9; margin: 10px 0 16px; text-wrap: balance; letter-spacing: -.01em; }
+.capa .lede { font-size: 20px; line-height: 1.5; margin: 0 0 22px; max-width: 34em; }
+.capa .album-line { font-family: var(--f-display); font-stretch: 75%; font-weight: 800; font-size: 26px; line-height: 1.1; margin: 0; }
+.capa .album-line em { font-family: var(--f-body); font-style: italic; font-weight: 400; font-stretch: normal; }
+
+/* Profile strip */
+.perfil { background: var(--wash); padding-block: 34px; }
+.perfil-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: baseline; margin-bottom: 20px; }
+.perfil-head h3 { margin: 0; font: 900 34px/1 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
+.perfil-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 28px; }
+.cluster { border-top: 2px solid var(--ink); padding-top: 10px; }
+.cluster b { display: block; font: 800 19px/1.1 var(--f-display); font-stretch: 75%; }
+.cluster p { margin: 3px 0 6px; font-size: 15px; font-style: italic; color: var(--muted); }
+.cluster .art { font-size: 15px; line-height: 1.45; }
+.habitos { margin: 22px 0 0; padding: 0; list-style: none; display: flex; gap: 8px 24px; flex-wrap: wrap; font-size: 15px; }
+.habitos li { display: flex; gap: 8px; align-items: baseline; }
+.fonte-nota { margin: 16px 0 0; font-size: 13px; color: var(--muted); max-width: 80ch; }
+
+/* Section heads */
+.secao { padding-block: 48px 24px; }
+.sec-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 18px; align-items: end; border-bottom: 3px solid var(--ink); padding-bottom: 12px; margin-bottom: 28px; }
+.sec-head .num { grid-row: span 2; font: 900 clamp(56px, 9vw, 104px)/.8 var(--f-display); font-stretch: 62%; color: var(--red); }
+.sec-head h3 { margin: 0; font: 900 clamp(32px, 5vw, 56px)/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
+.sec-head p { margin: 0; color: var(--muted); font-style: italic; }
+
+/* Album cards */
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 28px; }
+.card { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.cover { position: relative; }
+.cover img, .ph { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--wash); max-width: 100%; }
+.ph { display: grid; place-items: center; background: var(--red); color: #fff; font: 900 64px/1 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
+.cover .mark-dot { position: absolute; top: 10px; left: 10px; width: 22px; height: 22px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 3px var(--paper); }
+.cover .mark-ok { position: absolute; top: 10px; left: 10px; background: var(--paper); color: var(--ink); padding: 3px 7px; }
+.card .art-name { margin: 4px 0 0; font: 800 24px/1.05 var(--f-display); font-stretch: 75%; }
+.card .alb { margin: 0; font-style: italic; font-size: 19px; line-height: 1.25; }
+.meta { color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.card .txt { margin: 0; font-size: 16px; }
+.rec { margin: 0; font-size: 14px; border-left: 3px solid var(--red); padding-left: 10px; }
+.ponte { margin: 0; font-size: 14px; color: var(--muted); }
+.ponte b { color: var(--ink); font-weight: 600; }
+.acts { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-top: 2px; }
+.links { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.links a { font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 1px; }
+.links a:hover { border-color: var(--red); color: var(--red); }
+.marks { display: flex; gap: 6px; }
+.mk { border: 1.5px solid var(--ink); background: transparent; padding: 4px 9px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+.mk[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.mk[data-k="quero"][aria-pressed="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+.mk:disabled { opacity: .45; cursor: default; }
+
+/* Guide spreads */
+.spread { background: var(--spread-bg); color: var(--spread-fg); padding-block: 56px; margin-block: 32px; }
+.spread .wrap { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(24px, 5vw, 64px); }
+.spread .tipo { color: var(--red); display: flex; gap: 8px; align-items: center; }
+.spread h3 { margin: 12px 0 14px; font: 900 clamp(48px, 7.5vw, 104px)/.86 var(--f-display); font-stretch: 62%; text-transform: lowercase; text-wrap: balance; letter-spacing: -.01em; }
+.spread .sub { font-size: 21px; line-height: 1.4; margin: 0 0 18px; }
+.spread .corpo { margin: 0 0 18px; color: var(--spread-fg); opacity: .86; }
+.spread .ponte { color: var(--spread-muted); }
+.spread .ponte b { color: var(--spread-fg); }
+.tracks { list-style: none; margin: 0; padding: 0; counter-reset: t; }
+.tracks li { display: grid; grid-template-columns: 30px 76px minmax(0, 1fr); gap: 4px 14px; padding-block: 14px; border-top: 1px solid var(--spread-rule); align-items: start; }
+.tracks li:last-child { border-bottom: 1px solid var(--spread-rule); }
+.tracks .tn { font: 900 26px/1 var(--f-display); font-stretch: 62%; color: var(--red); padding-top: 2px; }
+.tracks img, .tracks .ph { width: 76px; height: 76px; aspect-ratio: 1; object-fit: cover; font-size: 28px; }
+.tracks .t-art { font: 800 18px/1.1 var(--f-display); font-stretch: 75%; }
+.tracks .t-alb { font-style: italic; }
+.tracks .t-nota { margin: 3px 0 6px; font-size: 15px; color: var(--spread-muted); }
+.spread .links a { border-color: var(--spread-rule); }
+.spread .mk { border-color: var(--spread-fg); }
+.spread .mk[aria-pressed="true"] { background: var(--spread-fg); color: var(--spread-bg); }
+.spread .mk[data-k="quero"][aria-pressed="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+
+/* Agenda */
+.agenda { list-style: none; margin: 0; padding: 0; }
+.agenda li { display: grid; grid-template-columns: 150px 84px minmax(0, 1fr); gap: 6px 22px; padding-block: 18px; border-top: 1px solid var(--rule); align-items: start; }
+.agenda .quando { font: 900 34px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; }
+.agenda .quando small { display: block; font: 500 12px var(--f-mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.agenda img, .agenda .ph { width: 84px; height: 84px; object-fit: cover; font-size: 32px; }
+.agenda .art-name { margin: 0; font: 800 22px/1.05 var(--f-display); font-stretch: 75%; }
+.agenda .alb { margin: 0 0 6px; font-style: italic; font-size: 18px; }
+.agenda .txt { margin: 0 0 8px; font-size: 16px; max-width: 62ch; }
+.pill { display: inline-block; border: 1.5px solid var(--red); color: var(--red); border-radius: 999px; padding: 1px 8px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; }
+
+/* Tabs */
+.abas { padding-block: 10px 0 !important; gap: 4px 22px !important; border-bottom: 1px solid var(--rule); }
+.aba { all: unset; cursor: pointer; flex: none; font: 900 26px/1 var(--f-display); font-stretch: 62%; text-transform: lowercase; padding: 4px 0 9px; color: var(--muted); border-bottom: 4px solid transparent; display: inline-flex; gap: 7px; align-items: center; }
+.aba[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--red); }
+.aba:hover { color: var(--ink); }
+.aba:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.aba .novo { width: 8px; height: 8px; border-radius: 50%; background: var(--red); }
+
+/* News */
+.n-head { padding-block: 40px 28px; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 20px clamp(24px, 4vw, 56px); align-items: start; }
+.n-head h2 { margin: 10px 0 16px; font: 900 clamp(42px, 6.5vw, 84px)/.9 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; text-wrap: balance; }
+.n-head .panorama p { margin: 0 0 .9em; font-size: 19px; line-height: 1.55; }
+.n-indice { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--ink); counter-reset: n; }
+.n-indice li { counter-increment: n; border-bottom: 1px solid var(--rule); }
+.n-indice button { all: unset; cursor: pointer; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 2px 10px; padding-block: 11px; width: 100%; }
+.n-indice button::before { content: counter(n, decimal-leading-zero); grid-row: span 2; font: 900 26px/1 var(--f-display); font-stretch: 62%; color: var(--red); }
+.n-indice b { font: 800 19px/1.1 var(--f-display); font-stretch: 75%; }
+.n-indice small { font-size: 14px; color: var(--muted); }
+.n-indice button:hover b { color: var(--red); }
+.n-indice button:focus-visible { outline: 2px solid var(--red); }
+.edt { display: inline-block; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .05em; background: var(--ink); color: var(--paper); padding: 2px 7px; margin-right: 6px; vertical-align: .15em; }
+.n-tema { padding-block: 44px 20px; border-top: 3px solid var(--ink); scroll-margin-top: 120px; }
+.n-tema-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 18px; align-items: end; margin-bottom: 22px; }
+.n-tema-head .num { grid-row: span 2; font: 900 clamp(56px, 8vw, 96px)/.8 var(--f-display); font-stretch: 62%; color: var(--red); }
+.n-tema-head h3 { margin: 6px 0 0; font: 900 clamp(32px, 4.6vw, 54px)/.95 var(--f-display); font-stretch: 62%; text-wrap: balance; }
+.n-tema-head p { margin: 0; font-style: italic; color: var(--muted); font-size: 18px; }
+.n-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 48px); align-items: start; }
+.n-grid .resumo p { margin: 0 0 1em; font-size: 18px; line-height: 1.6; max-width: 38em; }
+.importa { background: var(--wash); padding: 18px 20px; border-left: 4px solid var(--red); }
+.importa p { margin: 0; font-size: 16px; }
+.n-tema h4 { margin: 30px 0 12px; font: 500 12px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--red); }
+.cob { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.cob-card { border: 1.5px solid var(--ink); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.cob-card b { font: 800 19px/1.1 var(--f-display); font-stretch: 75%; }
+.cob-card .cob-perfil { color: var(--muted); }
+.cob-card p { margin: 0; font-size: 15px; flex: 1; }
+.cob-card a { font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--red); text-decoration: none; align-self: flex-start; }
+.n-duo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 clamp(20px, 4vw, 48px); }
+.n-duo p { margin: 0; font-size: 16px; }
+.n-duo ul { margin: 0; padding-left: 1.1em; font-size: 16px; }
+.n-duo li { margin-bottom: 6px; }
+.estante { list-style: none; margin: 0; padding: 0; }
+.estante li { padding-block: 9px; border-top: 1px solid var(--rule); font-size: 15px; }
+.estante .tp { display: inline-block; min-width: 82px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--red); }
+.estante a, .estante .tt { font-weight: 600; color: var(--ink); }
+.estante small { display: block; color: var(--muted); margin-top: 2px; }
+.radar-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 28px; }
+.radar-card { border-top: 3px solid var(--ink); padding-top: 12px; min-width: 0; }
+.radar-card h3 { margin: 6px 0 8px; font: 900 32px/.95 var(--f-display); font-stretch: 62%; text-wrap: balance; }
+.radar-card p { margin: 0 0 10px; font-size: 16px; }
+.radar-card .links a { font-size: 11px; }
+
+/* Films & books */
+.cult { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 40px; }
+.cult-card { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; align-items: start; }
+.cult-card .poster img, .cult-card .poster .ph { width: 150px; aspect-ratio: 2 / 3; object-fit: cover; max-width: 100%; font-size: 44px; }
+.cult-card .tit { margin: 4px 0 2px; font: 800 26px/1.02 var(--f-display); font-stretch: 75%; }
+.cult-card .tempo { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; margin: 6px 0 8px; }
+.cult-card .tempo b { font: 900 24px/1 var(--f-display); font-stretch: 62%; color: var(--red); }
+.cult-card .olho { margin: 0 0 8px; font: 800 18px/1.15 var(--f-display); font-stretch: 75%; }
+.cult-card .txt p { margin: 0 0 .7em; font-size: 15.5px; }
+.cult-card .rec, .cult-card .ponte { margin-bottom: 8px; }
+
+/* Player dock (GitHub site only: claude.ai does not allow embeds) */
+.dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--spread-bg); color: var(--spread-fg); box-shadow: 0 -8px 24px rgba(0, 0, 0, .18); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.dock .wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; padding-block: 8px 10px; }
+.dock-top { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.dock-top .tocando { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 800 16px/1.2 var(--f-display); font-stretch: 75%; }
+.dock-top .tocando em { font: italic 400 15px var(--f-body); font-stretch: normal; }
+.dock-btn { border: 1.5px solid var(--spread-fg); background: transparent; color: var(--spread-fg); padding: 3px 10px; border-radius: 999px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; white-space: nowrap; }
+.dock iframe { width: 100%; border: 0; border-radius: 12px; display: block; background: transparent; }
+body.com-player { padding-bottom: 210px; }
+body.com-player.player-grande { padding-bottom: 410px; }
+body.com-player dialog.leitura { padding-bottom: 210px; }
+body.com-player.player-grande dialog.leitura { padding-bottom: 410px; }
+.ouvir { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; background: var(--red); color: #fff; padding: 6px 12px 6px 10px; border-radius: 999px; font: 800 13px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; }
+.ouvir::before { content: ""; width: 0; height: 0; border-left: 9px solid currentColor; border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+.ouvir:hover { filter: brightness(1.08); }
+.ouvir:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.ouvir[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.spread .ouvir[aria-pressed="true"] { background: var(--spread-fg); color: var(--spread-bg); }
+
+/* Openers */
+.abre { all: unset; cursor: pointer; display: block; }
+.abre > span { display: block; }
+.tracks .abre > span { display: inline; }
+body:has(dialog.leitura[open]) { overflow: hidden; }
+.abre:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.abre:hover .art-name, .abre:hover .t-alb { color: var(--red); }
+.cover .abre img, .cover .abre .ph { transition: transform .25s ease; }
+.cover .abre:hover img { transform: scale(1.015); }
+.ler { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font: 800 15px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .03em; border-bottom: 2px solid var(--red); padding-bottom: 3px; align-self: flex-start; }
+.ler::after { content: "→"; color: var(--red); }
+.ler:hover { color: var(--red); }
+.ler:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.spread .ler { color: var(--spread-fg); font-size: 13px; }
+
+/* Reading view */
+dialog.leitura { position: fixed; inset: 0; z-index: 30; border: 0; padding: 0; margin: 0; width: 100%; max-width: 100%; height: 100%; max-height: 100%; background: var(--paper); color: var(--ink); overflow-y: auto; overscroll-behavior: contain; }
+dialog.leitura::backdrop { background: rgba(0, 0, 0, .5); }
+.l-bar { position: sticky; top: 0; z-index: 2; background: var(--paper); border-bottom: 1px solid var(--rule); padding-top: env(safe-area-inset-top, 0px); }
+.l-bar .wrap { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding-block: 10px; }
+.l-bar .nav-l { display: flex; gap: 6px; }
+.l-btn { border: 1.5px solid var(--ink); background: transparent; padding: 6px 12px; border-radius: 999px; font: 500 12px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; white-space: nowrap; }
+.l-btn:disabled { opacity: .35; cursor: default; }
+.l-ctx { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; flex: 1; text-align: center; }
+.l-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(20px, 4vw, 56px); padding-block: 36px 28px; align-items: end; }
+.l-hero .l-capa img, .l-hero .l-capa .ph { width: 100%; aspect-ratio: 1; object-fit: cover; max-width: 100%; }
+.l-hero .l-capa .ph { font-size: 120px; }
+.l-hero h2 { margin: 10px 0 4px; font: 900 clamp(48px, 8vw, 112px)/.86 var(--f-display); font-stretch: 62%; letter-spacing: -.01em; text-wrap: balance; }
+.l-hero .l-alb { margin: 0 0 22px; font-style: italic; font-size: clamp(24px, 3vw, 34px); line-height: 1.15; }
+.l-olho { margin: 0; font: 800 clamp(22px, 2.6vw, 32px)/1.12 var(--f-display); font-stretch: 75%; text-wrap: balance; display: flex; gap: 12px; align-items: flex-start; }
+.l-olho .dot { width: 18px; height: 18px; margin-top: 6px; }
+.l-corpo { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: clamp(24px, 5vw, 72px); padding-block: 12px 64px; border-top: 3px solid var(--ink); }
+.l-texto { padding-top: 26px; }
+.l-texto p { margin: 0 0 1.05em; font-size: 20px; line-height: 1.62; max-width: 36em; }
+.l-texto:not(.sem-cap) p:first-child::first-letter { float: left; font: 900 5.1em/.78 var(--f-display); font-stretch: 62%; color: var(--red); padding: .06em .08em 0 0; }
+.l-texto .l-sem { color: var(--muted); font-style: italic; font-size: 16px; }
+.l-aside { padding-top: 26px; display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.l-aside h4 { margin: 0 0 8px; font: 500 12px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--red); }
+.ficha { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 14px; font-size: 15px; }
+.ficha dt { font: 500 11px/1.9 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.ficha dd { margin: 0; }
+.faixas { margin: 0; padding: 0; list-style: none; counter-reset: f; }
+.faixas li { counter-increment: f; display: flex; gap: 10px; align-items: baseline; padding-block: 6px; border-top: 1px solid var(--rule); font-style: italic; font-size: 17px; }
+.faixas li::before { content: counter(f); font: 900 20px/1 var(--f-display); font-stretch: 62%; color: var(--red); font-style: normal; min-width: 14px; }
+.l-aside .rec { font-size: 15px; }
+
+/* States & footer */
+.estado { padding-block: 80px; text-align: left; }
+.estado h3 { font: 900 44px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; margin: 0 0 10px; }
+.estado p { max-width: 54ch; color: var(--muted); }
+.vazio { color: var(--muted); font-style: italic; padding: 12px 0 30px; }
+footer { border-top: 3px solid var(--ink); margin-top: 40px; padding-block: 24px 48px; color: var(--muted); font-size: 14px; }
+footer p { max-width: 80ch; margin: 0 0 8px; }
+
+@media (max-width: 900px) {
+  .capa, .spread .wrap, .l-hero, .l-corpo { grid-template-columns: minmax(0, 1fr); }
+  .l-hero .l-capa { max-width: 420px; }
+  .n-head, .n-grid, .cult { grid-template-columns: minmax(0, 1fr); }
+  .cob { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .l-aside { border-top: 1px solid var(--rule); }
+  .grid, .perfil-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .capa-img { max-width: 520px; }
+}
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .grid, .perfil-grid { grid-template-columns: minmax(0, 1fr); }
+  .agenda li { grid-template-columns: 64px minmax(0, 1fr); }
+  .agenda .quando { grid-column: 1 / -1; font-size: 28px; }
+  .agenda img, .agenda .ph { width: 64px; height: 64px; }
+  .tracks li { grid-template-columns: 22px 60px minmax(0, 1fr); gap: 4px 10px; }
+  .tracks img, .tracks .ph { width: 60px; height: 60px; }
+  .capa-img .badge { width: 76px; height: 76px; right: -6px; font-size: 11px; }
+  .l-texto p { font-size: 18px; }
+  .cob, .n-duo, .radar-grid { grid-template-columns: minmax(0, 1fr); }
+  .cult-card { grid-template-columns: 96px minmax(0, 1fr); gap: 14px; }
+  .cult-card .poster img, .cult-card .poster .ph { width: 96px; font-size: 30px; }
+  .aba { font-size: 22px; }
+  .l-ctx { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card, .tracks li { animation: in .4s ease both; }
+  @keyframes in { from { transform: translateY(6px); } to { transform: none; } }
+}
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="mast-top mono"><span>Revista de um ouvinte só</span><span id="edline">Edição em carregamento</span></div>
+    <h1>faixa oculta<span class="dot" aria-hidden="true"></span></h1>
+    <div class="mast-sub">
+      <p>Discos, notícias da semana, filmes e livros escolhidos a partir do que você ouve, lê e acompanha.</p>
+      <label class="edsel mono" for="edicao-sel" hidden id="edsel-wrap">Edição
+        <select id="edicao-sel"></select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Seções">
+  <div class="wrap abas" id="abas" role="tablist" aria-label="Seções da revista"></div>
+  <div class="wrap" id="chips"></div>
+</nav>
+
+<main id="main">
+  <div class="wrap estado" id="carregando">
+    <h3>abrindo a edição</h3>
+    <p>A capa, os lançamentos e os guias aparecem aqui assim que o arquivo da revista responder.</p>
+  </div>
+</main>
+
+<dialog class="leitura" id="leitura" aria-label="Página do disco"></dialog>
+
+<aside class="dock" id="dock" hidden aria-label="Player">
+  <div class="wrap">
+    <div class="dock-top">
+      <span class="mono" style="color:var(--red)">Tocando</span>
+      <span class="tocando" id="dock-tocando"></span>
+      <button class="dock-btn" type="button" id="dock-tam">Ver faixas</button>
+      <button class="dock-btn" type="button" id="dock-fechar">Fechar</button>
+    </div>
+    <div id="dock-frame"></div>
+  </div>
+</aside>
+
+<footer>
+  <div class="wrap">
+    <p id="rodape-fontes">Cada disco traz a fonte da informação. Capas e links via Apple Music e Spotify.</p>
+    <p>Os botões "quero ouvir" e "ouvi" ficam guardados só para você e aparecem em "Minha fila".</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const SECOES = {
+    radar: { titulo: "no seu radar", sub: "Discos novos de quem você já ouve.", chip: "Seus artistas" },
+    descobertas: { titulo: "descobertas", sub: "Discos de 2026 bem recebidos pela crítica, de artistas que você ainda não segue.", chip: "Descobertas" },
+    brasil: { titulo: "brasil 2026", sub: "O que a crítica brasileira destacou no ano, perto do seu lado inquieto.", chip: "Brasil" },
+    breve: { titulo: "em breve", sub: "Anunciados e previstos. Fique de olho.", chip: "Agenda" },
+  };
+  const MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+
+  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], loaded: {}, marcas: {}, sel: null, selSem: null, aba: "musica", filtro: "tudo", podeMarcar: false, falhou: false };
+  const ABAS = [["musica", "música"], ["noticias", "notícias"], ["temas", "temas"], ["filmes", "filmes"], ["livros", "livros"]];
+
+  // DOM helper: text only, never HTML from data.
+  function h(tag, attrs, ...kids) {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (v == null || v === false) continue;
+      if (k === "class") e.className = v;
+      else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+      else e.setAttribute(k, v === true ? "" : v);
+    }
+    for (const k of kids.flat()) if (k != null && k !== false) e.append(k.nodeType ? k : String(k));
+    return e;
+  }
+  const str = (v) => (typeof v === "string" ? v : v == null ? "" : String(v));
+  const safeUrl = (u) => { u = str(u); return /^https:\/\//i.test(u) || u.startsWith("/_blob/") || /^capas\/[0-9a-f]{32}\.jpg$/.test(u) ? u : null; };
+
+  function fmtData(d) {
+    d = str(d);
+    let m;
+    if ((m = d.match(/^(\d{4})-(\d{2})-(\d{2})$/))) return `${+m[3]} ${MESES[+m[2] - 1]} ${m[1]}`;
+    if ((m = d.match(/^(\d{4})-(\d{2})$/))) return `${MESES[+m[2] - 1]} ${m[1]}`;
+    return d || "sem data";
+  }
+  function quandoAgenda(d) {
+    d = str(d);
+    let m;
+    if ((m = d.match(/^(\d{4})-(\d{2})-(\d{2})$/))) return [`${+m[3]} ${MESES[+m[2] - 1]}`, m[1]];
+    if ((m = d.match(/^(\d{4})-(\d{2})$/))) return [MESES[+m[2] - 1], m[1]];
+    if (d) return [d, "previsão"];
+    return ["sem data", "a confirmar"];
+  }
+
+  function links(a) {
+    const q = encodeURIComponent(`${str(a.artista)} ${str(a.album)}`.trim());
+    return h("div", { class: "links" },
+      h("a", { href: safeUrl(a.spotify_url) || `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener" }, "Spotify"),
+      h("a", { href: safeUrl(a.apple_url) || `https://music.apple.com/br/search?term=${q}`, target: "_blank", rel: "noopener" }, "Apple Music"),
+      h("a", { href: `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener" }, "YT Music"),
+      safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
+  }
+  // Embedded player: Spotify album embed when we know the id, Apple Music embed as fallback.
+  const tocando = { url: null, grande: false };
+  function embedUrl(a) {
+    const sid = str(a.spotify_id) || (str(a.spotify_url).match(/album\/([A-Za-z0-9]{22})/) || [])[1];
+    if (sid && /^[A-Za-z0-9]{22}$/.test(sid)) return `https://open.spotify.com/embed/album/${sid}?utm_source=generator`;
+    const ap = str(a.apple_url);
+    if (/^https:\/\/music\.apple\.com\//.test(ap)) return ap.replace("https://music.apple.com/", "https://embed.music.apple.com/");
+    return null;
+  }
+  function desenharPlayer() {
+    const dock = document.getElementById("dock");
+    const box = document.getElementById("dock-frame");
+    const alto = tocando.grande ? 352 : 152;
+    const frame = box.querySelector("iframe");
+    if (frame) frame.style.height = alto + "px";
+    document.body.classList.toggle("com-player", !!tocando.url);
+    document.body.classList.toggle("player-grande", !!tocando.url && tocando.grande);
+    dock.hidden = !tocando.url;
+    document.getElementById("dock-tam").textContent = tocando.grande ? "Compacto" : "Ver faixas";
+  }
+  function ouvir(a) {
+    const url = embedUrl(a);
+    if (!url) return;
+    const box = document.getElementById("dock-frame");
+    if (tocando.url !== url) {
+      tocando.url = url;
+      const f = document.createElement("iframe");
+      f.src = url;
+      f.title = `Player: ${str(a.album)}`;
+      f.loading = "eager";
+      f.allow = "autoplay *; clipboard-write; encrypted-media *; fullscreen; picture-in-picture";
+      box.replaceChildren(f);
+      const t = document.getElementById("dock-tocando");
+      t.replaceChildren(document.createTextNode(`${str(a.exibir_artista || a.artista)} · `), h("em", null, str(a.album)));
+    }
+    desenharPlayer();
+    render();
+  }
+  function botaoOuvir(a) {
+    if (S.modo !== "site") return null;
+    const url = embedUrl(a);
+    if (!url) return null;
+    const ativo = tocando.url === url;
+    return h("button", { class: "ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => ouvir(a) }, ativo ? "Tocando" : "Ouvir aqui");
+  }
+
+  function capa(a, cls) {
+    const src = safeUrl(a.capa);
+    const nome = str(a.exibir_artista || a.artista);
+    if (src) return h("img", { src, alt: `Capa de ${str(a.album)}, de ${nome}`, loading: "lazy", class: cls || null });
+    return h("div", { class: "ph" + (cls ? " " + cls : ""), role: "img", "aria-label": `${str(a.album)}, de ${nome}` }, nome.split(/\s+/).map((w) => w[0] || "").join("").slice(0, 2).toLowerCase());
+  }
+  function marcas(key, rot) {
+    const [rQuero, rFeito] = rot || ["Quero ouvir", "Ouvi"];
+    const cur = S.marcas[key];
+    const b = (k, label) => h("button", {
+      class: "mk", type: "button", "data-k": k, "aria-pressed": String(cur === k), disabled: !S.podeMarcar,
+      title: S.podeMarcar ? null : "Entre no claude.ai para guardar marcações",
+      onclick: () => marcar(key, cur === k ? null : k),
+    }, k === "quero" ? h("span", { class: "dot", "aria-hidden": "true" }) : null, label);
+    return h("div", { class: "marks" }, b("quero", rQuero), b("ouvi", rFeito));
+  }
+  function selo(cur, kind) {
+    if (cur === "quero") return h("span", { class: "mark-dot", title: "Na sua fila" });
+    if (cur === "ouvi") return h("span", { class: "mark-ok mono" }, "ouvido");
+    return null;
+  }
+
+  function card(it) {
+    const key = it._id;
+    const meta = [fmtData(it.data || it.ano), it.formato, it.selo, it.genero].map(str).filter(Boolean);
+    const abrir = () => abrirLeitura(key);
+    const nome = str(it.exibir_artista || it.artista);
+    return h("article", { class: "card" },
+      h("div", { class: "cover" }, h("button", { class: "abre", type: "button", onclick: abrir, "aria-label": `Abrir a página de ${str(it.album)}, de ${nome}` }, capa(it)), selo(S.marcas[key])),
+      h("button", { class: "abre", type: "button", onclick: abrir }, h("span", { class: "art-name" }, nome), h("span", { class: "alb" }, str(it.album))),
+      h("div", { class: "meta mono" }, meta.map((m) => h("span", null, m))),
+      it.texto || it.nota ? h("p", { class: "txt" }, str(it.texto || it.nota)) : null,
+      it.recepcao ? h("p", { class: "rec" }, str(it.recepcao)) : null,
+      it.ponte ? h("p", { class: "ponte" }, "Para quem gosta de ", h("b", null, str(it.ponte))) : null,
+      it._semLeitura ? null : h("button", { class: "ler", type: "button", onclick: abrir }, Array.isArray(it.resenha) && it.resenha.length ? "Ler a resenha" : "Abrir o disco"),
+      h("div", { class: "acts" }, it._semLeitura ? null : botaoOuvir(it), marcas(key, it._rot)),
+      links(it));
+  }
+
+  function secaoNum(n) { return String(n).padStart(2, "0"); }
+
+  function blocoSecao(sec, itens, n) {
+    const def = SECOES[sec] || { titulo: sec, sub: "" };
+    const head = h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, secaoNum(n)), h("h3", null, def.titulo), h("p", null, def.sub));
+    let corpo;
+    if (!itens.length) corpo = h("p", { class: "vazio" }, "Nada nesta seção nesta edição.");
+    else if (sec === "breve") {
+      corpo = h("ol", { class: "agenda" }, itens.map((it) => {
+        const [q, sub] = quandoAgenda(it.data);
+        return h("li", null,
+          h("div", { class: "quando" }, q, h("small", null, sub)),
+          capa(it),
+          h("div", { style: "min-width:0" },
+            h("p", { class: "art-name" }, str(it.exibir_artista || it.artista)),
+            h("p", { class: "alb" }, str(it.album), " ", it.status ? h("span", { class: "pill" }, str(it.status)) : null),
+            it.texto ? h("p", { class: "txt" }, str(it.texto)) : null,
+            h("div", { class: "acts" }, h("button", { class: "ler", type: "button", onclick: () => abrirLeitura(it._id) }, "Ler mais"), botaoOuvir(it), marcas(it._id), links(it))));
+      }));
+    } else corpo = h("div", { class: "grid" }, itens.map(card));
+    return h("section", { class: "secao", id: sec }, h("div", { class: "wrap" }, head, corpo));
+  }
+
+  function blocoGuia(g, n) {
+    const albuns = Array.isArray(g.albuns) ? g.albuns : [];
+    return h("section", { class: "spread", id: g._id },
+      h("div", { class: "wrap" },
+        h("div", { style: "min-width:0" },
+          h("div", { class: "tipo mono" }, h("span", { class: "dot", "aria-hidden": "true" }), `Guia · ${str(g.tipo)}`),
+          h("h3", null, str(g.titulo)),
+          g.subtitulo ? h("p", { class: "sub" }, str(g.subtitulo)) : null,
+          g.texto ? h("p", { class: "corpo" }, str(g.texto)) : null,
+          g.ponte ? h("p", { class: "ponte" }, "Ponte com o que você ouve: ", h("b", null, str(g.ponte))) : null),
+        h("ol", { class: "tracks", "aria-label": `Discos do guia ${str(g.titulo)}` }, albuns.map((a, i) => {
+          const key = `${g._id}~${i}`;
+          const abrir = () => abrirLeitura(key);
+          return h("li", null,
+            h("span", { class: "tn", "aria-hidden": "true" }, i + 1),
+            h("button", { class: "abre", type: "button", onclick: abrir, "aria-label": `Abrir a página de ${str(a.album)}, de ${str(a.artista)}` }, capa(a)),
+            h("div", { style: "min-width:0" },
+              h("button", { class: "abre", type: "button", onclick: abrir }, h("span", { class: "t-art" }, str(a.artista)), " · ", h("span", { class: "t-alb" }, str(a.album)), a.ano ? h("span", { class: "mono", style: "opacity:.7" }, ` · ${str(a.ano)}`) : null),
+              a.nota ? h("p", { class: "t-nota" }, str(a.nota)) : null,
+              h("div", { class: "acts" }, h("button", { class: "ler", type: "button", onclick: abrir }, Array.isArray(a.resenha) && a.resenha.length ? "Ler a resenha" : "Abrir o disco"), botaoOuvir(a), marcas(key), links(a))));
+        }))));
+  }
+
+  function blocoCapa(ed, it) {
+    if (!it) return null;
+    return h("section", { class: "wrap capa", id: "capa" },
+      h("div", { class: "capa-img" }, capa(it), h("div", { class: "badge", "aria-hidden": "true" }, "Matéria de capa")),
+      h("div", { style: "min-width:0" },
+        h("div", { class: "kicker mono" }, `Edição nº ${str(ed.numero)} · ${str(ed.mes)}`),
+        h("h2", null, str(ed.manchete || it.album)),
+        ed.editorial ? h("p", { class: "lede" }, str(ed.editorial)) : null,
+        h("p", { class: "album-line" }, str(it.exibir_artista || it.artista), " — ", h("em", null, str(it.album))),
+        h("div", { class: "meta mono", style: "margin:8px 0 10px" }, [fmtData(it.data), it.formato, it.selo].map(str).filter(Boolean).map((m) => h("span", null, m))),
+        it.texto ? h("p", { class: "txt", style: "margin:0 0 10px" }, str(it.texto)) : null,
+        it.recepcao ? h("p", { class: "rec", style: "margin:0 0 14px" }, str(it.recepcao)) : null,
+        h("div", { class: "acts", style: "gap:14px 20px" }, h("button", { class: "ler", type: "button", onclick: () => abrirLeitura(it._id) }, "Ler a matéria de capa"), botaoOuvir(it), marcas(it._id)),
+        h("div", { style: "margin-top:10px" }, links(it))));
+  }
+
+  function blocoPerfil(ed) {
+    const p = Array.isArray(ed.perfil) ? ed.perfil : [];
+    if (!p.length) return null;
+    return h("section", { class: "perfil", id: "perfil" }, h("div", { class: "wrap" },
+      h("div", { class: "perfil-head" }, h("h3", null, "como lemos o seu ouvido"), h("span", { class: "mono", style: "color:var(--muted)" }, `${p.length} territórios`)),
+      h("div", { class: "perfil-grid" }, p.map((c) => h("div", { class: "cluster" },
+        h("b", null, str(c.nome)), c.desc ? h("p", null, str(c.desc)) : null,
+        h("div", { class: "art" }, (Array.isArray(c.artistas) ? c.artistas : []).map(str).join(" · "))))),
+      Array.isArray(ed.habitos) && ed.habitos.length ? h("ul", { class: "habitos" }, ed.habitos.map((x) => h("li", null, h("span", { class: "dot", "aria-hidden": "true" }), str(x)))) : null,
+      ed.fontes_perfil ? h("p", { class: "fonte-nota" }, str(ed.fontes_perfil)) : null));
+  }
+
+  function blocoFila() {
+    const lista = [];
+    for (const it of S.itens) if (S.marcas[it._id] === "quero") lista.push({ ...it, _key: it._id, _de: SECOES[it.secao]?.chip || "" });
+    for (const g of S.guias) (g.albuns || []).forEach((a, i) => { const k = `${g._id}~${i}`; if (S.marcas[k] === "quero") lista.push({ ...a, _id: k, _key: k, _de: `Guia: ${str(g.titulo)}` }); });
+    for (const c of S.cultura) if (S.marcas[c._id] === "quero") {
+      const livro = c.tipo === "livro";
+      lista.push({ _id: c._id, artista: c.autor, album: c.titulo, capa: c.capa, texto: c.olho, genero: c.tempo, _semLeitura: true, _de: livro ? "Livro" : c.tipo === "serie" ? "Série" : "Filme", _rot: livro ? ["Quero ler", "Li"] : ["Quero ver", "Vi"] });
+    }
+    const head = h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, h("span", { class: "dot" })), h("h3", null, "minha fila"), h("p", null, "Tudo o que você marcou como quero ouvir, ver ou ler, em todas as edições."));
+    const corpo = !S.podeMarcar ? h("p", { class: "vazio" }, "Entre no claude.ai para guardar e ver sua fila.")
+      : !lista.length ? h("p", { class: "vazio" }, "Sua fila está vazia. Toque em \"Quero ouvir\" em qualquer disco.")
+      : h("div", { class: "grid" }, lista.map((a) => { const c = card(a); c.insertBefore(h("div", { class: "mono", style: "color:var(--red)" }, a._de), c.children[1]); return c; }));
+    return h("section", { class: "secao", id: "fila" }, h("div", { class: "wrap" }, head, corpo));
+  }
+
+  // ---------- Tabs: news, themes, films, books ----------
+  const arr = (v) => (Array.isArray(v) ? v : []);
+  function estado(titulo, texto) { return h("div", { class: "wrap estado" }, h("h3", null, titulo), h("p", null, texto)); }
+  function fmtPeriodo(a, b) {
+    const pa = str(a).split("-"), pb = str(b).split("-");
+    if (pa.length < 3 || pb.length < 3) return [fmtData(a), fmtData(b)].filter(Boolean).join(" a ");
+    const mesA = MESES[+pa[1] - 1], mesB = MESES[+pb[1] - 1];
+    return mesA === mesB ? `${+pa[2]} a ${+pb[2]} ${mesB} ${pb[0]}` : `${+pa[2]} ${mesA} a ${+pb[2]} ${mesB} ${pb[0]}`;
+  }
+  function semanaAtual() { return S.semanas.find((s) => s._id === S.selSem) || S.semanas[0]; }
+  function seletorSemana(s) {
+    if (S.semanas.length < 2) return null;
+    return h("label", { class: "edsel mono", for: "semana-sel" }, "Semana ",
+      (() => { const sel = h("select", { id: "semana-sel", onchange: (e) => { S.selSem = e.target.value; render(); window.scrollTo(0, 0); } }, S.semanas.map((x) => h("option", { value: x._id }, fmtPeriodo(x.inicio, x.fim)))); sel.value = s._id; return sel; })());
+  }
+  function linkExt(href, txt) { const u = safeUrl(href); return u ? h("a", { href: u, target: "_blank", rel: "noopener" }, txt) : h("span", { class: "tt" }, txt); }
+
+  function blocoNoticias() {
+    if (!S.loaded.semanas) return [estado("abrindo a semana", "Os temas da semana aparecem aqui assim que o arquivo da revista responder.")];
+    const s = semanaAtual();
+    if (!s) return [estado("nenhuma semana ainda", "A primeira análise semanal de notícias aparece aqui quando for publicada.")];
+    const temas = arr(s.temas);
+    const irPara = (id) => document.getElementById(`tema-${id}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const head = h("section", { class: "wrap n-head" },
+      h("div", { style: "min-width:0" },
+        h("div", { class: "kicker mono" }, `Notícias · semana de ${fmtPeriodo(s.inicio, s.fim)}`),
+        h("h2", null, str(s.titulo || "A semana")),
+        h("div", { class: "panorama" }, arr(s.panorama).map((p) => h("p", null, str(p)))),
+        seletorSemana(s)),
+      h("nav", { "aria-label": "Temas da semana", style: "min-width:0" },
+        h("div", { class: "mono", style: "color:var(--muted);margin-bottom:8px" }, `${temas.length} grandes temas`),
+        h("ol", { class: "n-indice" }, temas.map((t) => h("li", null, h("button", { type: "button", onclick: () => irPara(t.id) },
+          h("b", null, h("span", { class: "edt" }, str(t.editoria)), str(t.titulo)), h("small", null, str(t.linha_fina))))))));
+    const blocos = temas.map((t, i) => h("article", { class: "wrap n-tema", id: `tema-${str(t.id)}` },
+      h("header", { class: "n-tema-head" },
+        h("span", { class: "num", "aria-hidden": "true" }, secaoNum(i + 1)),
+        h("h3", null, h("span", { class: "edt" }, str(t.editoria)), str(t.titulo)),
+        h("p", null, str(t.linha_fina))),
+      h("div", { class: "n-grid" },
+        h("div", { class: "resumo" }, arr(t.resumo).map((p) => h("p", null, str(p)))),
+        t.por_que_importa ? h("aside", { class: "importa" }, h("h4", { style: "margin-top:0" }, "Por que importa"), h("p", null, str(t.por_que_importa))) : null),
+      arr(t.cobertura).length ? [h("h4", null, "Como cada um cobriu"), h("div", { class: "cob" }, arr(t.cobertura).map((c) => h("div", { class: "cob-card" },
+        h("b", null, str(c.fonte)), h("span", { class: "cob-perfil mono" }, str(c.perfil)), h("p", null, str(c.enfoque)),
+        safeUrl(c.url) ? h("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener" }, "Ler a matéria →") : null)))] : null,
+      h("div", { class: "n-duo" },
+        h("div", null, h("h4", null, "Os vieses"), h("p", null, str(t.vieses))),
+        h("div", null, h("h4", null, "O que ficou de fora"), h("p", null, str(t.o_que_falta)))),
+      h("div", { class: "n-duo" },
+        h("div", null, h("h4", null, "Para acompanhar"), h("ul", null, arr(t.perguntas).map((q) => h("li", null, str(q))))),
+        h("div", null, h("h4", null, "Para se aprofundar"), h("ul", { class: "estante" }, arr(t.aprofundar).map((a) => h("li", null,
+          h("span", { class: "tp" }, str(a.tipo)), linkExt(a.url, str(a.titulo)),
+          h("small", null, [str(a.autor), str(a.ano)].filter(Boolean).join(", "), a.nota ? ` · ${str(a.nota)}` : ""))))))));
+    const fim = h("div", { class: "wrap", style: "padding-block:28px" },
+      h("button", { class: "ler", type: "button", onclick: () => trocarAba("temas") }, "Temas fora do radar desta semana"));
+    return [head, ...blocos, fim];
+  }
+
+  function blocoTemas() {
+    if (!S.loaded.semanas) return [estado("abrindo os temas", "Os temas aparecem aqui assim que o arquivo da revista responder.")];
+    if (!S.semanas.length) return [estado("nenhum tema ainda", "Os temas fora do radar chegam junto com a primeira análise semanal.")];
+    const s = semanaAtual();
+    const head = h("section", { class: "wrap secao", style: "padding-bottom:8px" }, h("div", { class: "sec-head" },
+      h("span", { class: "num", "aria-hidden": "true" }, h("span", { class: "dot" })),
+      h("h3", null, "fora do radar"),
+      h("p", null, "Assuntos que a imprensa cobriu pouco nesta semana e que conversam com o seu trabalho e os seus interesses.")), seletorSemana(s));
+    const radar = arr(s.fora_do_radar);
+    const grade = h("section", { class: "wrap", style: "padding-bottom:40px" }, radar.length ? h("div", { class: "radar-grid" }, radar.map((r) => h("article", { class: "radar-card" },
+      h("span", { class: "edt" }, str(r.editoria)), h("h3", null, str(r.titulo)), h("p", null, str(r.texto)),
+      h("div", { class: "links" }, arr(r.ler).map((l) => safeUrl(l.url) ? h("a", { href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `${str(l.fonte)}: ${str(l.titulo)}`) : null)))))
+      : h("p", { class: "vazio" }, "Nenhum tema fora do radar nesta semana."));
+    const todos = arr(s.temas).flatMap((t) => arr(t.aprofundar).map((a) => ({ ...a, _tema: t.titulo })));
+    const estante = todos.length ? h("section", { class: "wrap secao" },
+      h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, todos.length), h("h3", null, "estante da semana"), h("p", null, "Livros, relatórios, reportagens e podcasts para ir além das notícias, reunidos num só lugar.")),
+      h("ul", { class: "estante" }, todos.map((a) => h("li", null, h("span", { class: "tp" }, str(a.tipo)), linkExt(a.url, str(a.titulo)),
+        h("small", null, [str(a.autor), str(a.ano)].filter(Boolean).join(", "), ` · tema: ${str(a._tema)}`, a.nota ? ` · ${str(a.nota)}` : ""))))) : null;
+    return [head, grade, estante];
+  }
+
+  function blocoCultura(tipos, titulo, sub, rot) {
+    if (!S.loaded.cultura) return [estado(`abrindo ${titulo}`, "As indicações aparecem aqui assim que o arquivo da revista responder.")];
+    const lista = S.cultura.filter((c) => tipos.includes(c.tipo));
+    if (!lista.length) return [estado(`nenhum item em ${titulo}`, "As indicações chegam junto com a próxima edição.")];
+    const porEd = new Map();
+    for (const c of lista) { const k = str(c.edicao); if (!porEd.has(k)) porEd.set(k, []); porEd.get(k).push(c); }
+    const eds = [...porEd.keys()].sort().reverse();
+    return eds.map((k, n) => {
+      const ed = S.edicoes.find((e) => e._id === k);
+      const itens = porEd.get(k).sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0));
+      return h("section", { class: "wrap secao" },
+        h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, itens.length), h("h3", null, n === 0 ? titulo : `edição anterior`),
+          h("p", null, ed ? `${n === 0 ? sub + " " : ""}Edição nº ${str(ed.numero)} · ${str(ed.mes)}.` : sub)),
+        h("div", { class: "cult" }, itens.map((c) => {
+          const q = encodeURIComponent(`${str(c.titulo_original || c.titulo)} ${str(c.autor)}`.trim());
+          const livro = c.tipo === "livro";
+          return h("article", { class: "cult-card" },
+            h("div", { class: "poster cover" }, capa({ capa: c.capa, artista: c.autor, album: c.titulo }), selo(S.marcas[c._id])),
+            h("div", { style: "min-width:0" },
+              h("span", { class: "edt" }, livro ? "livro" : c.tipo === "serie" ? "série" : "filme"),
+              h("p", { class: "tit" }, str(c.titulo)),
+              h("div", { class: "meta mono" }, [c.titulo_original && c.titulo_original !== c.titulo ? c.titulo_original : "", c.autor, c.ano, c.pais].map(str).filter(Boolean).map((m) => h("span", null, m))),
+              h("div", { class: "tempo" }, h("b", null, str(c.tempo)), h("span", { class: "mono", style: "color:var(--muted)" }, str(c.onde))),
+              c.olho ? h("p", { class: "olho" }, str(c.olho)) : null,
+              h("div", { class: "txt" }, arr(c.texto).map((p) => h("p", null, str(p)))),
+              c.porque_voce ? h("p", { class: "ponte" }, h("b", null, "Por que você: "), str(c.porque_voce)) : null,
+              c.recepcao ? h("p", { class: "rec" }, str(c.recepcao)) : null,
+              h("div", { class: "acts" }, marcas(c._id, rot)),
+              h("div", { class: "links", style: "margin-top:8px" },
+                livro ? h("a", { href: `https://www.amazon.com.br/s?k=${q}`, target: "_blank", rel: "noopener" }, "Amazon")
+                  : h("a", { href: `https://www.justwatch.com/br/busca?q=${q}`, target: "_blank", rel: "noopener" }, "Onde assistir"),
+                livro ? h("a", { href: `https://www.goodreads.com/search?q=${q}`, target: "_blank", rel: "noopener" }, "Goodreads")
+                  : h("a", { href: `https://letterboxd.com/search/${q}/`, target: "_blank", rel: "noopener" }, "Letterboxd"),
+                safeUrl(c.fonte) ? h("a", { href: safeUrl(c.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null)));
+        })));
+    });
+  }
+
+  function renderAbas() {
+    const w = document.getElementById("abas");
+    w.replaceChildren(...ABAS.map(([k, l]) => h("button", { class: "aba", type: "button", role: "tab", "aria-selected": String(S.aba === k), onclick: () => trocarAba(k) }, l)));
+  }
+  function trocarAba(k) {
+    S.aba = k;
+    try { localStorage.setItem("fo-aba", k); } catch (e) {}
+    render();
+    window.scrollTo({ top: Math.min(window.scrollY, document.querySelector(".nav").offsetTop) });
+  }
+
+  // Reading view: every album of an edition in reading order, so prev/next follow the magazine.
+  function entradas(ed) {
+    const out = [];
+    const itensEd = S.itens.filter((i) => i.edicao === ed._id).sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0));
+    const destaque = itensEd.find((i) => i.destaque);
+    if (destaque) out.push({ key: destaque._id, a: destaque, ctx: "Matéria de capa" });
+    for (const bloco of Array.isArray(ed.layout) ? ed.layout : []) {
+      if (bloco.tipo === "secao") {
+        for (const it of itensEd) if (it.secao === bloco.secao && it !== destaque) out.push({ key: it._id, a: it, ctx: SECOES[it.secao]?.titulo || it.secao });
+      } else if (bloco.tipo === "guia") {
+        const g = S.guias.find((x) => x._id === bloco.id);
+        if (g) (g.albuns || []).forEach((a, i) => out.push({ key: `${g._id}~${i}`, a, ctx: `Guia · ${str(g.titulo)} · ${i + 1} de ${g.albuns.length}`, guia: g }));
+      }
+    }
+    return out;
+  }
+  function acharEntrada(key) {
+    const eds = [...S.edicoes].sort((a, b) => (a._id === S.sel ? -1 : b._id === S.sel ? 1 : 0));
+    for (const ed of eds) {
+      const lista = entradas(ed);
+      const idx = lista.findIndex((e) => e.key === key);
+      if (idx >= 0) return { lista, idx, ed };
+    }
+    return null;
+  }
+
+  let abertoAntes = null, opener = null;
+  function abrirLeitura(key) { opener = document.activeElement; S.aberto = key; renderLeitura(); }
+  function fecharLeitura() {
+    S.aberto = null;
+    const dlg = document.getElementById("leitura");
+    if (dlg.open) dlg.close();
+    if (opener && document.contains(opener)) opener.focus();
+  }
+
+  function renderLeitura() {
+    const dlg = document.getElementById("leitura");
+    const achado = S.aberto ? acharEntrada(S.aberto) : null;
+    if (!achado) { if (dlg.open) dlg.close(); abertoAntes = null; return; }
+    const { lista, idx, ed } = achado;
+    const { a, ctx, guia } = lista[idx];
+    const ir = (d) => { const e = lista[idx + d]; if (e) { S.aberto = e.key; renderLeitura(); } };
+    const top = dlg.scrollTop;
+    const nome = str(a.exibir_artista || a.artista);
+    const resenha = (Array.isArray(a.resenha) ? a.resenha : []).map(str).filter(Boolean);
+    const faixas = (Array.isArray(a.faixas) ? a.faixas : []).map(str).filter(Boolean);
+    const ponte = a.ponte || guia?.ponte;
+    const ficha = [
+      ["Lançamento", a.data ? fmtData(a.data) : a.ano ? str(a.ano) : ""],
+      ["Selo", a.selo], ["Formato", a.formato], ["Gênero", a.genero], ["Situação", a.status],
+    ].filter(([, v]) => str(v));
+
+    dlg.replaceChildren(
+      h("div", { class: "l-bar" }, h("div", { class: "wrap" },
+        h("button", { class: "l-btn", type: "button", onclick: fecharLeitura }, "← Edição"),
+        h("span", { class: "l-ctx mono" }, ctx),
+        h("div", { class: "nav-l" },
+          h("button", { class: "l-btn", type: "button", disabled: idx === 0, onclick: () => ir(-1), "aria-label": "Disco anterior" }, "←"),
+          h("button", { class: "l-btn", type: "button", disabled: idx === lista.length - 1, onclick: () => ir(1), "aria-label": "Próximo disco" }, "Próximo →")))),
+      h("div", { class: "wrap l-hero" },
+        h("div", { class: "l-capa" }, capa(a)),
+        h("div", { style: "min-width:0" },
+          h("div", { class: "kicker mono" }, `${ctx} · Nº ${str(ed.numero)}`),
+          h("h2", null, nome),
+          h("p", { class: "l-alb" }, str(a.album)),
+          a.olho ? h("p", { class: "l-olho" }, h("span", { class: "dot", "aria-hidden": "true" }), h("span", null, str(a.olho))) : null)),
+      h("div", { class: "wrap" }, h("div", { class: "l-corpo" },
+        h("div", { class: /^[\s"'“‘«(\[]/.test(resenha[0] || "") ? "l-texto sem-cap" : "l-texto" }, resenha.length ? resenha.map((p) => h("p", null, p))
+          : [h("p", null, str(a.texto || a.nota || "")), h("p", { class: "l-sem" }, "A resenha completa deste disco entra na próxima atualização.")]),
+        h("aside", { class: "l-aside" },
+          ficha.length ? h("div", null, h("h4", null, "Ficha"), h("dl", { class: "ficha" }, ficha.flatMap(([k, v]) => [h("dt", null, k), h("dd", null, str(v))]))) : null,
+          faixas.length ? h("div", null, h("h4", null, "Comece por"), h("ol", { class: "faixas" }, faixas.map((f) => h("li", null, f)))) : null,
+          a.recepcao ? h("div", null, h("h4", null, "Recepção"), h("p", { class: "rec" }, str(a.recepcao))) : null,
+          ponte ? h("div", null, h("h4", null, "Para quem gosta de"), h("p", { style: "margin:0;font-size:16px" }, str(ponte))) : null,
+          h("div", null, h("h4", null, "Sua fila"), marcas(S.aberto)),
+          h("div", null, h("h4", null, "Ouça"), botaoOuvir(a) ? h("div", { style: "margin-bottom:10px" }, botaoOuvir(a)) : null, links(a)))))
+    );
+    // Non-modal so the player dock stays usable while reading.
+    if (!dlg.open) dlg.show();
+    dlg.scrollTop = abertoAntes === S.aberto ? top : 0;
+    if (abertoAntes !== S.aberto) dlg.querySelector(".l-bar .l-btn")?.focus({ preventScroll: true });
+    abertoAntes = S.aberto;
+  }
+
+  function render() {
+    renderLeitura();
+    if (!S.hashLido && S.carregou && S.itens.length) {
+      S.hashLido = true;
+      let k = ""; try { k = decodeURIComponent(location.hash.slice(1)); } catch (e) {}
+      if (k && acharEntrada(k)) { S.aberto = k; renderLeitura(); }
+    }
+    const main = document.getElementById("main");
+    const y = window.scrollY;
+    main.replaceChildren();
+    const sel = document.getElementById("edicao-sel");
+    if (S.falhou) {
+      main.append(h("div", { class: "wrap estado" }, h("h3", null, "revista fora do ar"), h("p", null, "Não consegui carregar as edições. Recarregue a página em alguns instantes.")));
+      return;
+    }
+    renderAbas();
+    document.getElementById("chips").hidden = S.aba !== "musica";
+    if (S.aba !== "musica") {
+      document.getElementById("edsel-wrap").hidden = true;
+      const s = semanaAtual();
+      document.getElementById("edline").textContent = (S.aba === "noticias" || S.aba === "temas") && s ? `Semana de ${fmtPeriodo(s.inicio, s.fim)}` : "Edição atual";
+      const partes = S.aba === "noticias" ? blocoNoticias() : S.aba === "temas" ? blocoTemas()
+        : S.aba === "filmes" ? blocoCultura(["filme", "serie"], "filmes e séries", "Poucos e curtos, para caber na semana.", ["Quero ver", "Vi"])
+        : blocoCultura(["livro"], "livros", "Livros curtos, de ficção e não ficção.", ["Quero ler", "Li"]);
+      main.append(...partes.filter(Boolean));
+      window.scrollTo(0, y);
+      return;
+    }
+    if (!S.carregou) {
+      main.append(h("div", { class: "wrap estado" }, h("h3", null, "abrindo a edição"), h("p", null, "A capa, os lançamentos e os guias aparecem aqui assim que o arquivo da revista responder.")));
+      return;
+    }
+    if (!S.edicoes.length) {
+      main.append(h("div", { class: "wrap estado" }, h("h3", null, "nenhuma edição ainda"), h("p", null, "Quando a primeira edição for publicada, a capa, os lançamentos e os guias aparecem aqui.")));
+      return;
+    }
+    // Edition selector
+    document.getElementById("edsel-wrap").hidden = S.edicoes.length < 2;
+    if (sel.options.length !== S.edicoes.length) {
+      sel.replaceChildren(...S.edicoes.map((e) => h("option", { value: e._id }, `Nº ${str(e.numero)} · ${str(e.mes)}`)));
+    }
+    const ed = S.edicoes.find((e) => e._id === S.sel) || S.edicoes[0];
+    S.sel = ed._id; sel.value = ed._id;
+    document.getElementById("edline").textContent = `Nº ${str(ed.numero)} · ${str(ed.mes)}`;
+
+    const itensEd = S.itens.filter((i) => i.edicao === ed._id).sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0));
+    const guiasEd = new Map(S.guias.filter((g) => g.edicao === ed._id).map((g) => [g._id, g]));
+    const destaque = itensEd.find((i) => i.destaque);
+    const layout = Array.isArray(ed.layout) ? ed.layout : [];
+
+    renderChips(itensEd, guiasEd);
+    const f = S.filtro;
+    if (f === "fila") { main.append(blocoFila()); return; }
+
+    if (f === "tudo") { const c = blocoCapa(ed, destaque); if (c) main.append(c); const p = blocoPerfil(ed); if (p) main.append(p); }
+    let n = 0;
+    for (const bloco of layout) {
+      if (bloco.tipo === "secao") {
+        n++;
+        if (f !== "tudo" && f !== bloco.secao) continue;
+        const lista = itensEd.filter((i) => i.secao === bloco.secao && !(f === "tudo" && i.destaque));
+        main.append(blocoSecao(bloco.secao, lista, n));
+      } else if (bloco.tipo === "guia") {
+        const g = guiasEd.get(bloco.id);
+        if (!g || (f !== "tudo" && f !== "guias")) continue;
+        main.append(blocoGuia(g));
+      }
+    }
+    window.scrollTo(0, y);
+  }
+
+  function renderChips(itensEd, guiasEd) {
+    const wrap = document.getElementById("chips");
+    const nFila = Object.values(S.marcas).filter((v) => v === "quero").length;
+    const defs = [["tudo", "Edição inteira", null]];
+    for (const k of Object.keys(SECOES)) { const c = itensEd.filter((i) => i.secao === k).length; if (c) defs.push([k, SECOES[k].chip, c]); }
+    if (guiasEd.size) defs.push(["guias", "Guias", guiasEd.size]);
+    defs.push(["fila", "Minha fila", nFila]);
+    wrap.replaceChildren(...defs.map(([k, label, c]) => h("button", {
+      class: "chip", type: "button", "aria-pressed": String(S.filtro === k),
+      onclick: () => { S.filtro = k; try { localStorage.setItem("fo-filtro", k); } catch (e) {} render(); window.scrollTo({ top: document.querySelector(".nav").offsetTop, behavior: "smooth" }); },
+    }, k === "fila" ? h("span", { class: "dot", "aria-hidden": "true" }) : null, label, c != null ? h("span", { class: "n" }, c) : null)));
+  }
+
+  // Per-viewer marks: one write at a time.
+  let gravando = Promise.resolve();
+  function marcar(key, valor) {
+    const novo = { ...S.marcas };
+    if (valor) novo[key] = valor; else delete novo[key];
+    if (S.modo === "site") {
+      S.marcas = novo;
+      try { localStorage.setItem("fo-marcas", JSON.stringify(novo)); } catch (e) {}
+      render();
+      return;
+    }
+    if (!S.db || !S.uid) return;
+    S.marcas = novo;
+    render();
+    gravando = gravando.then(() => S.db.doc(`data/users/${S.uid}/estado`).set({ marcas: novo, atualizado: new Date().toISOString() }))
+      .catch((e) => { if (e && e.code === "invalid_argument") { S.podeMarcar = false; render(); } });
+  }
+
+  function snapList(col, alvo, ordenar) {
+    S.db.collection(col).onSnapshot((snap) => {
+      S[alvo] = snap.docs.map((d) => ({ ...d.data(), _id: d.id }));
+      if (ordenar) S[alvo].sort(ordenar);
+      S.loaded[alvo] = true;
+      if (alvo === "edicoes") S.carregou = true;
+      render();
+    }, () => {});
+  }
+
+  try { const f = localStorage.getItem("fo-filtro"); if (f) S.filtro = f; const a = localStorage.getItem("fo-aba"); if (ABAS.some(([k]) => k === a)) S.aba = a; } catch (e) {}
+  try { const hsh = location.hash.slice(1); if (ABAS.some(([k]) => k === hsh)) { S.aba = hsh; S.hashLido = true; } } catch (e) {}
+  renderAbas();
+  const dlg = document.getElementById("leitura");
+  dlg.addEventListener("close", () => { if (S.aberto) { S.aberto = null; abertoAntes = null; if (opener && document.contains(opener)) opener.focus(); } });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dlg.open) { e.preventDefault(); fecharLeitura(); } });
+  document.getElementById("dock-fechar").addEventListener("click", () => { tocando.url = null; document.getElementById("dock-frame").replaceChildren(); desenharPlayer(); render(); });
+  document.getElementById("dock-tam").addEventListener("click", () => { tocando.grande = !tocando.grande; desenharPlayer(); });
+  dlg.addEventListener("keydown", (e) => {
+    if (e.target.closest("input,select,textarea")) return;
+    if (e.key === "ArrowRight") dlg.querySelector('[aria-label="Próximo disco"]:not(:disabled)')?.click();
+    if (e.key === "ArrowLeft") dlg.querySelector('[aria-label="Disco anterior"]:not(:disabled)')?.click();
+  });
+  document.getElementById("edicao-sel").addEventListener("change", (e) => { S.sel = e.target.value; S.filtro = "tudo"; render(); window.scrollTo(0, 0); });
+
+  // Outside claude.ai (the GitHub site) the page reads one static bundle and keeps marks in this browser.
+  async function iniciarEstatico() {
+    try {
+      const r = await fetch("data/revista.json", { cache: "no-cache" });
+      if (!r.ok) throw new Error(r.status);
+      const b = await r.json();
+      const lista = (o) => Object.entries(o || {}).map(([id, d]) => ({ ...d, _id: id }));
+      S.edicoes = lista(b.edicoes).sort((a, c) => str(c.data).localeCompare(str(a.data)));
+      S.itens = lista(b.itens);
+      S.guias = lista(b.guias);
+      S.semanas = lista(b.semanas).sort((a, c) => str(c.fim).localeCompare(str(a.fim)));
+      S.cultura = lista(b.cultura);
+      for (const k of ["edicoes", "itens", "guias", "semanas", "cultura"]) S.loaded[k] = true;
+      S.carregou = true;
+      S.modo = "site";
+      S.podeMarcar = true;
+      try { S.marcas = JSON.parse(localStorage.getItem("fo-marcas") || "{}") || {}; } catch (e) { S.marcas = {}; }
+    } catch (e) { S.falhou = true; }
+    render();
+  }
+
+  (async () => {
+    const db = window.claude?.use ? await window.claude.use("db") : null;
+    if (!db) { await iniciarEstatico(); return; }
+    S.db = db;
+    snapList("edicoes", "edicoes", (a, b) => str(b.data).localeCompare(str(a.data)));
+    snapList("itens", "itens");
+    snapList("guias", "guias");
+    snapList("semanas", "semanas", (a, b) => str(b.fim).localeCompare(str(a.fim)));
+    snapList("cultura", "cultura");
+    const user = await window.claude.use("user");
+    const uid = user ? await user.id() : null;
+    if (uid) {
+      S.uid = uid; S.podeMarcar = true;
+      db.doc(`data/users/${uid}/estado`).onSnapshot((d) => { S.marcas = (d.exists && d.data().marcas) || {}; render(); }, () => {});
+    }
+    render();
+  })();
+})();
+</script>
