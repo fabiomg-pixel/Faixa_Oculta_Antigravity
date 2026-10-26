@@ -349,6 +349,11 @@ dialog.texto::backdrop { background: var(--backdrop); }
 .fl-ler { all: unset; cursor: pointer; font-weight: 700; text-decoration: underline; text-decoration-color: var(--sec); text-underline-offset: 3px; }
 .fl-ler:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
 .fl-orig { font-size: var(--fs-xs); color: var(--muted); text-decoration: none; }
+.stremio-g { display: inline-flex; align-items: center; gap: 6px; }
+.stremio { display: inline-flex; align-items: center; gap: 7px; background: var(--sec-f, var(--ink)); color: var(--on-sec, var(--paper)); padding: 6px 12px 6px 10px; border-radius: 999px; font: 800 13px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; text-decoration: none; }
+.stremio::before { content: ""; border-left: 8px solid currentColor; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.stremio:focus-visible, .stremio-web:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.stremio-web { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
 .ag-desc summary { cursor: pointer; color: var(--muted); padding: var(--sp-1) 0; }
 .ag-desc ul { list-style: none; margin: var(--sp-1) 0 0; padding: 0; display: grid; gap: var(--sp-1); }
 .ag-desc li { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-2); border-bottom: 1px solid var(--rule); padding-bottom: var(--sp-1); min-width: 0; }
@@ -1039,6 +1044,15 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     render();
   }
   function ouvir(a) { tocar(embedUrl(a), str(a.exibir_artista || a.artista), str(a.album), false, a); }
+  // Stremio opens a title by its IMDb id: the app link first, the web version as a fallback (some browsers and the claude.ai frame block app links).
+  function botaoStremio(a) {
+    const id = str(a.imdb);
+    if (!/^tt\d{6,10}$/.test(id)) return null;
+    const tipo = str(a.tipo) === "serie" ? "series" : "movie";
+    return h("span", { class: "stremio-g" },
+      h("a", { class: "stremio", href: `stremio:///detail/${tipo}/${id}`, title: "Abrir no app do Stremio" }, "Assistir no Stremio"),
+      h("a", { class: "stremio-web", href: `https://web.stremio.com/#/detail/${tipo}/${id}`, target: "_blank", rel: "noopener", title: "Abrir no Stremio Web" }, "web"));
+  }
   function botaoTrailer(a) {
     if (S.modo !== "site") return null;
     const url = trailerUrl(a);
@@ -1051,7 +1065,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     const url = embedUrl(a);
     if (!url) return null;
     const ativo = tocando.url === url;
-    return h("button", { class: "ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => ouvir(a) }, ativo ? "Tocando" : "Ouvir aqui", h("small", { class: "ouvir-fonte" }, fonteDe(url) === "Spotify" ? "Spotify" : "YouTube"));
+    return h("button", { class: "ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => ouvir(a) }, ativo ? "Tocando" : "Ouvir aqui", h("small", { class: "ouvir-fonte" }, fonteDe(url) === "Spotify" ? "Spotify" : "YT Music"));
   }
 
   // Missing covers become a typographic sleeve, coloured by kind (disc, film, series, book...).
@@ -1497,7 +1511,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       a.ponte ? h("p", { class: "ponte" }, "Para quem gosta de ", h("b", null, str(a.ponte))) : null,
       badgeAoVivo(a.titulo_original, a.titulo, a.autor),
       h("button", { class: "ler", type: "button", onclick: abrir }, arr(a.resenha).length ? cfg.ler : "Abrir"),
-      h("div", { class: "acts" }, botaoTrailer(a), marcas(key, cfg.rot)),
+      h("div", { class: "acts" }, botaoTrailer(a), botaoStremio(a), marcas(key, cfg.rot)),
       linksObra(a, cfg));
   }
   function guiaObra(g, cfg) {
@@ -1521,7 +1535,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
               a.onde ? h("span", { class: "t-onde" }, str(a.onde)) : null,
               a.nota ? h("p", { class: "t-nota" }, str(a.nota)) : null,
               badgeAoVivo(a.titulo_original, a.titulo, a.autor),
-              h("div", { class: "acts" }, h("button", { class: "ler", type: "button", onclick: abrir }, cfg.ler), botaoTrailer(a), marcas(key, cfg.rot))));
+              h("div", { class: "acts" }, h("button", { class: "ler", type: "button", onclick: abrir }, cfg.ler), botaoTrailer(a), botaoStremio(a), marcas(key, cfg.rot))));
         }))));
   }
   function blocoRevista(cfg, fallback) {
@@ -1567,7 +1581,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         h("div", { class: "meta mono", style: "margin:8px 0 6px" }, [tipoObra(dest), dest.tempo, dest.pais].map(str).filter(Boolean).map((m) => h("span", null, m))),
         dest.onde ? h("div", { class: "onde-l", style: "margin-bottom:10px" }, str(dest.onde)) : null,
         dest.texto ? h("p", { class: "txt", style: "margin:0 0 14px" }, str(dest.texto)) : null,
-        h("div", { class: "acts", style: "gap:14px 20px" }, h("button", { class: "ler", type: "button", onclick: () => abrirLeitura(dest._id) }, `${cfg.ler} de capa`), botaoTrailer(dest), marcas(dest._id, cfg.rot)),
+        h("div", { class: "acts", style: "gap:14px 20px" }, h("button", { class: "ler", type: "button", onclick: () => abrirLeitura(dest._id) }, `${cfg.ler} de capa`), botaoTrailer(dest), botaoStremio(dest), marcas(dest._id, cfg.rot)),
         sel ? h("div", { style: "margin-top:16px" }, sel) : null)));
     let n = 0;
     for (const b of arr(ed.layout)) {
@@ -1817,7 +1831,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     const ativo = !!emb && tocando.url === emb;
     return h("span", { class: "ag-art" }, h("b", null, nome),
       S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), "aria-label": `${ativo ? "Tocando" : "Ouvir aqui"}: ${nome}${yt ? " (YouTube Music)" : " (Spotify)"}`, title: yt ? "Toca aqui pelo YouTube Music" : "Toca aqui pelo Spotify", onclick: () => tocar(emb, nome, yt ? "no YouTube Music" : "no Spotify", false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
-      h("a", { class: "ag-ref", href: yt ? `https://music.youtube.com/playlist?list=${yt}` : `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener", title: yt ? `${nome} no YouTube Music` : `Buscar ${nome} no YouTube Music` }, "YouTube Music"),
+      h("a", { class: "ag-ref", href: yt ? (yt.startsWith("UU") ? `https://music.youtube.com/channel/UC${yt.slice(2)}` : `https://music.youtube.com/playlist?list=${yt}`) : `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener", title: yt ? `${nome} no YouTube Music` : `Buscar ${nome} no YouTube Music` }, "YouTube Music"),
       h("a", { class: "ag-ref", href: sp ? `https://open.spotify.com/artist/${sp}` : `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener", title: `${nome} no Spotify` }, "Spotify"));
   }
   function linhaArtistas(lista) {
@@ -2612,7 +2626,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       ["Selo", a.selo], ["Formato", a.formato], ["Gênero", a.genero], ["Situação", a.status],
     ]).filter(([, v]) => str(v));
     const ouca = cfg
-      ? h("div", null, h("h4", null, cfg.nome === "livros" ? "Onde encontrar" : "Assista"), botaoTrailer(a) ? h("div", { style: "margin-bottom:10px" }, botaoTrailer(a)) : null, linksObra(a, cfg))
+      ? h("div", null, h("h4", null, cfg.nome === "livros" ? "Onde encontrar" : "Assista"), botaoStremio(a) || botaoTrailer(a) ? h("div", { style: "margin-bottom:10px;display:flex;flex-wrap:wrap;gap:8px" }, botaoStremio(a), botaoTrailer(a)) : null, linksObra(a, cfg))
       : h("div", null, h("h4", null, "Ouça"), botaoOuvir(a) ? h("div", { style: "margin-bottom:10px" }, botaoOuvir(a)) : null, links(a));
 
     dlg.replaceChildren(
