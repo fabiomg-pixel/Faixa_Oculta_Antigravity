@@ -12,8 +12,9 @@ O leitor é o Fabio, professor de biofísica na UFRJ, no Rio. Português do Bras
 - Leia o boletim anterior para continuar as histórias (o que mudou desde ontem) e não repetir notas sem novidade.
 
 ## 2. Apurar
-- Use WebSearch (mode "extended" para os temas centrais, "standard" para checagens). Nesta nuvem o WebFetch e o curl
-  para sites de notícias costumam ser bloqueados pela rede; o WebSearch funciona e traz resumo com URLs.
+- Use WebSearch (mode "extended" para os temas centrais, "standard" para checagens) para achar as matérias e
+  WebFetch para abrir as principais e conferir números e falas. Não contorne bloqueios de site (nada de User-Agent
+  falso): se um veículo recusar o acesso, use outro.
 - Cubra, nesta ordem de peso: Brasil (política, economia), Mundo, Ciência e universidades, Clima, Tecnologia.
   Rio de Janeiro quando houver algo relevante para quem mora lá.
 - Cada fato precisa de fonte. Números, nomes e datas só entram se aparecerem numa fonte; quando as fontes divergem,
@@ -48,8 +49,9 @@ O leitor é o Fabio, professor de biofísica na UFRJ, no Rio. Português do Bras
 
 ## 4. Publicar
 Siga `tools/PUBLICAR.md` inteiro (ponte com o Radar, exportação, `montar_site.py`, commit "Boletim de DD/MM", push).
-Na ponte com o Radar, a busca de canais no YouTube (passo 3.d2) precisa de rede aberta; se falhar, pule e registre.
-Leituras limpas (`tools/LEITURAS.md`) exigem abrir as páginas: só faça se o WebFetch funcionar; senão, pule.
+Antes de publicar, faça as leituras limpas das fontes do boletim (`tools/LEITURAS.md`, tipo "noticia", campo `url`
+igual ao do boletim): abra cada página com WebFetch; as que recusarem acesso vão para "pulados". Grave na coleção
+`leituras` e só então exporte e publique. Se o WebFetch não funcionar nesta execução, pule as leituras e registre.
 
 ## 5. Relatório final
 Uma resposta curta: manchete, número de notas, o que foi pulado e por quê, e o hash do commit.
