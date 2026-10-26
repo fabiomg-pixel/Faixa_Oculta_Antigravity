@@ -13,8 +13,10 @@ O leitor é o Fabio, professor de biofísica na UFRJ, no Rio. Português do Bras
 
 ## 2. Apurar
 - Use WebSearch (mode "extended" para os temas centrais, "standard" para checagens) para achar as matérias e
-  WebFetch para abrir as principais e conferir números e falas. Não contorne bloqueios de site (nada de User-Agent
-  falso): se um veículo recusar o acesso, use outro.
+  WebFetch para abrir as principais e conferir números e falas. Se o WebFetch der erro de DNS (já aconteceu nesta
+  nuvem), abra com `curl -sL --max-time 30 URL` simples, uma URL por vez, e confira o link canônico da página baixada.
+  Não contorne bloqueios de site (nada de User-Agent falso nem truques): se um veículo responder 403, captcha ou
+  paywall, use outro.
 - Cubra, nesta ordem de peso: Brasil (política, economia), Mundo, Ciência e universidades, Clima, Tecnologia.
   Rio de Janeiro quando houver algo relevante para quem mora lá.
 - Cada fato precisa de fonte. Números, nomes e datas só entram se aparecerem numa fonte; quando as fontes divergem,
@@ -24,6 +26,9 @@ O leitor é o Fabio, professor de biofísica na UFRJ, no Rio. Português do Bras
   imprensa internacional, especializado). O `enfoque` diz o que aquele veículo destacou.
 
 ## 3. Escrever o documento
+Confira nas páginas abertas os números e as falas de cada nota antes de gravar; o que só aparece em resumo de busca
+vai atribuído ao veículo ("segundo a Reuters...").
+
 ```json
 {
  "data": "AAAA-MM-DD",
@@ -50,8 +55,8 @@ O leitor é o Fabio, professor de biofísica na UFRJ, no Rio. Português do Bras
 ## 4. Publicar
 Siga `tools/PUBLICAR.md` inteiro (ponte com o Radar, exportação, `montar_site.py`, commit "Boletim de DD/MM", push).
 Antes de publicar, faça as leituras limpas das fontes do boletim (`tools/LEITURAS.md`, tipo "noticia", campo `url`
-igual ao do boletim): abra cada página com WebFetch; as que recusarem acesso vão para "pulados". Grave na coleção
-`leituras` e só então exporte e publique. Se o WebFetch não funcionar nesta execução, pule as leituras e registre.
+igual ao do boletim): abra cada página com WebFetch ou curl simples; as que recusarem acesso vão para "pulados". Grave na coleção
+`leituras` e só então exporte e publique. Se nenhum dos dois funcionar nesta execução, pule as leituras e registre.
 
 ## 5. Relatório final
 Uma resposta curta: manchete, número de notas, o que foi pulado e por quê, e o hash do commit.
