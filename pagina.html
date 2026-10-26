@@ -2071,8 +2071,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       const ir = (id) => (e) => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" }); };
       const atalhos = h("nav", { class: "ag-atalhos", "aria-label": "Nesta página" },
         h("a", { href: "#ag-fomos", onclick: ir("ag-fomos") }, `Diário fomos${nIdas ? ` (${nIdas})` : ""}`),
-        h("a", { href: "#ag-gosto", onclick: ir("ag-gosto") }, "Seus gostos"),
-        safeUrl(ag.radar_url) ? h("a", { href: safeUrl(ag.radar_url), target: "_blank", rel: "noopener" }, "Abrir o Radar cultural") : null);
+        h("a", { href: "#ag-gosto", onclick: ir("ag-gosto") }, "Seus gostos"));
       const rail = h("div", { class: "ag-rail" }, h("div", { class: "ag-top" }, h("div", { style: "min-width:0;display:grid;gap:10px" }, head, atalhos), blocoPlaylists(ag)), ctrl);
       const rotQ = (QUANDO_AG.find((q) => q[0] === S.agQuando) || [])[1] || "";
       const conta = h("p", { class: "ag-conta" }, h("b", null, String(ativos.length)), ` ${ativos.length === 1 ? "evento" : "eventos"}`,
