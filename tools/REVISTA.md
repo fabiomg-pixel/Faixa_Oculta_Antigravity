@@ -41,7 +41,7 @@ banco do artefato https://claude.ai/artifact/955jruTrT56VTc12DpqiPS (ferramenta 
   chamada). Cada resultado traz a url do asset; grave no item `"capa": "/_blob/<id>"` e copie o arquivo para
   `$T/assets/<id>.jpg` no passo 5 do PUBLICAR. Sem capa confirmada, deixe o campo de fora (a página desenha um selo).
 - Discos: `spotify_id` pelo conector Spotify (search, só álbum do mesmo artista) e `youtube_list` (playlist `OLAK5uy_`
-  do álbum, conferida com o oEmbed do YouTube como no passo 3d2 do PUBLICAR). Spotify é o player principal (barra compacta), YouTube Music
+  do álbum, conferida com o oEmbed do YouTube como no passo 3d2 do PUBLICAR). YouTube Music é o player principal, Spotify (barra compacta)
   o de reserva; Apple só como link (`apple_url`) quando não houver os outros.
 - Filmes e séries: `imdb` (id `tt…`, conferido na página do IMDb ou da Wikipedia) para o botão do Stremio.
 
