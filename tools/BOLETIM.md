@@ -5,11 +5,19 @@ https://claude.ai/artifact/955jruTrT56VTc12DpqiPS (a fonte de verdade); depois o
 
 O leitor é o Fabio, professor de biofísica na UFRJ, no Rio. Português do Brasil.
 
+## 0. Duas edições por dia
+- **Manhã** (rotina das 5h47): doc_id `AAAA-MM-DD`, campo `"edicao": "manha"`. O que aconteceu desde a noite anterior e o que
+  vem no dia. 7 a 10 notas.
+- **Noite** (rotina das 17h47): doc_id `AAAA-MM-DD-noite`, campo `"edicao": "noite"`, mesmo `data` do dia. O que mudou
+  durante o dia: fechamento do mercado, decisões, falas, desdobramentos das notas da manhã. 4 a 7 notas, sem repetir
+  nota da manhã que não teve novidade. Leia o boletim da manhã antes de apurar.
+- A página mostra as duas edições do dia, a da noite primeiro ("Boletim da noite").
+
 ## 1. Ver o que já existe
-- `date` com TZ=America/Sao_Paulo dá a data de hoje (o doc_id).
-- ArtifactData action "query", collection `dias`, query {"limit": 2, "order_by": {"field": "data", "direction": "desc"}},
-  com out_dir. Se o boletim de hoje já existir, não reescreva: pule para o passo 4 só se o site estiver atrás.
-- Leia o boletim anterior para continuar as histórias (o que mudou desde ontem) e não repetir notas sem novidade.
+- `date` com TZ=America/Sao_Paulo dá a data de hoje (base do doc_id).
+- ArtifactData action "query", collection `dias`, query {"limit": 3, "order_by": {"field": "data", "direction": "desc"}},
+  com out_dir. Se a edição desta rodada já existir, não reescreva: pule para o passo 4 só se o site estiver atrás.
+- Leia as edições anteriores para continuar as histórias e não repetir notas sem novidade.
 
 ## 2. Apurar
 - Use WebSearch (mode "extended" para os temas centrais, "standard" para checagens) para achar as matérias e
@@ -32,6 +40,7 @@ vai atribuído ao veículo ("segundo a Reuters...").
 ```json
 {
  "data": "AAAA-MM-DD",
+ "edicao": "manha ou noite",
  "titulo": "manchete do dia, até ~70 caracteres",
  "resumo_dia": "4 a 7 frases curtas com o essencial",
  "notas": [
@@ -47,13 +56,13 @@ vai atribuído ao veículo ("segundo a Reuters...").
  "agenda": [ { "quando": "hoje, 10h", "o_que": "o que acontece" } ]
 }
 ```
-- 7 a 10 notas. Agenda com 4 a 6 itens dos próximos dias e semanas.
+- Notas: 7 a 10 de manhã, 4 a 7 à noite. Agenda com 4 a 6 itens dos próximos dias e semanas.
 - Voz: clara e direta, frases curtas. Evite travessão para apartes, "não é X, é Y", dois-pontos seguidos de revelação,
   "vale notar", "sem dúvida". Paráfrase sempre; nada copiado das fontes.
-- Valide o JSON com python3 e grave com ArtifactData action "set", collection `dias`, doc_id = data, file_path.
+- Valide o JSON com python3 e grave com ArtifactData action "set", collection `dias`, doc_id da edição, file_path.
 
 ## 4. Publicar
-Siga `tools/PUBLICAR.md` inteiro (ponte com o Radar, exportação, `montar_site.py`, commit "Boletim de DD/MM", push).
+Siga `tools/PUBLICAR.md` inteiro (ponte com o Radar, exportação, `montar_site.py`, commit "Boletim da manhã de DD/MM" ou "Boletim da noite de DD/MM", push).
 Antes de publicar, faça as leituras limpas das fontes do boletim (`tools/LEITURAS.md`, tipo "noticia", campo `url`
 igual ao do boletim): abra cada página com WebFetch ou curl simples; as que recusarem acesso vão para "pulados". Grave na coleção
 `leituras` e só então exporte e publique. Se nenhum dos dois funcionar nesta execução, pule as leituras e registre.
