@@ -125,7 +125,8 @@
       "playlist": {
         "nome": "Faixa Oculta nº 1 · Outubro 2026",
         "url": "https://open.spotify.com/playlist/1W4GJI1q8J4X2jnasazFdI"
-      }
+      },
+      "capa": "capas/0ac9565c17f4ed5ef38bcd605f8620b5.jpg"
     }
   },
   "itens": {
@@ -240,7 +241,8 @@
       "status": "previsto",
       "texto": "Um álbum de músicas novas está sendo gravado, com previsão para o primeiro semestre de 2027. Ainda não confirmado.",
       "ponte": "Bianca Gismonti, Egberto Gismonti, Hermeto Pascoal, violão ibérico e jazz instrumental brasileiro",
-      "recepcao": "Elogiado na imprensa ibérica e brasileira pela síntese camerística entre choro contemporâneo e fado."
+      "recepcao": "Elogiado na imprensa ibérica e brasileira pela síntese camerística entre choro contemporâneo e fado.",
+      "capa": "capas/9caa1e87eaeca58d1973c41a2ff96271.jpg"
     },
     "bill-callahan-my-days-of-58": {
       "edicao": "2026-10",
@@ -252,7 +254,7 @@
       "selo": "Drag City",
       "formato": "Álbum",
       "genero": "folk literário / americana",
-      "capa": "",
+      "capa": "capas/5bed87755e6435bbe3f32334dc599802.jpg",
       "fonte": "https://www.kexp.org/read/2026/3/2/new-music-reviews-32/",
       "faixas": [
         "Why Do Men Sing",
@@ -311,7 +313,7 @@
       "selo": "4AD",
       "formato": "Álbum",
       "genero": "folk-rock / alt-country",
-      "capa": "",
+      "capa": "capas/dd63033bbb18e07034e9c688afcd6f47.jpg",
       "fonte": "https://www.kexp.org/read/2026/3/2/new-music-reviews-32/",
       "faixas": [
         "Gasoline",
@@ -492,7 +494,7 @@
       "selo": "4AD",
       "formato": "Álbum",
       "genero": "post-punk / art-rock",
-      "capa": "",
+      "capa": "capas/e7d6c24f9a8fe75d0bb796ee388dc9c6.jpg",
       "fonte": "https://www.brooklynvegan.com/indie-basement-best-albums-of-2026-so-far-q1/",
       "faixas": [
         "Cruise Ship Designer",
@@ -640,7 +642,7 @@
       "selo": "YB Music",
       "formato": "Álbum",
       "genero": "canção experimental / câmara",
-      "capa": "",
+      "capa": "capas/79bf122e747cc4baa9266008d3c83ff2.jpg",
       "fonte": "https://screamyell.com.br/site/2026/07/23/apca-elenca-os-melhores-discos-do-primeiro-semestre-de-2026/",
       "faixas": [
         "Dessemelhantes",
@@ -714,7 +716,8 @@
       "status": "sem data",
       "texto": "Disco de country e gótico sulista. Em julho ela disse que terminaria o álbum no mês seguinte e só então mandaria este e um disco companheiro para a prensagem. Ainda sem data oficial.",
       "ponte": "Canção americana contemplativa, folk melancólico e texturas acústicas",
-      "recepcao": "Elogiado na Rolling Stone e Guardian pela exploração intimista do country acústico e bluegrass."
+      "recepcao": "Elogiado na Rolling Stone e Guardian pela exploração intimista do country acústico e bluegrass.",
+      "capa": "capas/3f4ff483733721425a3fcc55f2495368.jpg"
     },
     "lily-seabird-lightspheres-on-their-way": {
       "album": "Lightspheres On Their Way",
@@ -772,7 +775,8 @@
       "status": "anunciado",
       "texto": "A estreia dela volta com \"No Thank You, I Love You, Goodbye\", faixa inédita regravada agora. Não é disco novo, mas é a desculpa perfeita para reouvir.",
       "ponte": "Lucy Dacus, boygenius, Phoebe Bridgers, Julia Jacklin e canção confessional crua",
-      "recepcao": "Best New Reissue em portais especializados; celebração da crueza analógica da gravação de 2016."
+      "recepcao": "Best New Reissue em portais especializados; celebração da crueza analógica da gravação de 2016.",
+      "capa": "capas/47bf404cb9163420c99d73078c8028bb.jpg"
     },
     "marcelo-cabral-ramal": {
       "edicao": "2026-10",
@@ -784,7 +788,7 @@
       "selo": "YB Music",
       "formato": "Álbum",
       "genero": "instrumental brasileiro / pós-rock",
-      "capa": "",
+      "capa": "capas/625de5fba2294d510a98ca631341492a.jpg",
       "fonte": "https://screamyell.com.br/site/2026/07/23/apca-elenca-os-melhores-discos-do-primeiro-semestre-de-2026/",
       "faixas": [
         "Ramal",
@@ -841,7 +845,7 @@
       "selo": "Dead Oceans",
       "formato": "Álbum",
       "genero": "indie rock / câmara",
-      "capa": "",
+      "capa": "capas/223ef2a7dffb7a0066dbcc631f40c5f9.jpg",
       "fonte": "https://www.pastemagazine.com/music/best-new-albums/best-new-albums-february-27-2026",
       "faixas": [
         "Nothing's About to Happen to Me",
@@ -1007,7 +1011,8 @@
       "status": "anunciado",
       "texto": "O nono disco. Josh Homme diz que cada música parece vir de um mundo diferente. Um dos singles, \"Easy Street\", tem Nikki Lane.",
       "ponte": "Queens of the Stone Age, Radiohead, guitarras texturizadas e baixo fuzz sem bateria convencional",
-      "recepcao": "Elogiado na NME e Consequence pela desconstrução estética e timbres acústicos viscerais."
+      "recepcao": "Elogiado na NME e Consequence pela desconstrução estética e timbres acústicos viscerais.",
+      "capa": "capas/6ed0ec9e85e566afc81ef246358bbc31.jpg"
     },
     "ratboys-singin-to-an-empty-chair": {
       "album": "Singin' to an Empty Chair",
@@ -1081,7 +1086,7 @@
       "selo": "ANTI-",
       "formato": "Álbum · 13 faixas",
       "genero": "indie rock / alt-country",
-      "capa": "",
+      "capa": "capas/0ac9565c17f4ed5ef38bcd605f8620b5.jpg",
       "fonte": "https://www.theguardian.com/music/2025/oct/31/snocaps-review-katie-allison-crutchfield-mj-lenderman-waxahatchee-brad-cook",
       "faixas": [
         "Coast",
@@ -1173,7 +1178,7 @@
       "selo": "Deck",
       "formato": "Álbum",
       "genero": "rock psicodélico / prog nordestino",
-      "capa": "",
+      "capa": "capas/0ede76de910d491934e14d4b782b1315.jpg",
       "fonte": "https://screamyell.com.br/site/2026/07/23/apca-elenca-os-melhores-discos-do-primeiro-semestre-de-2026/",
       "faixas": [
         "Pedágios",
@@ -1319,7 +1324,7 @@
       "selo": "Sonic Cathedral",
       "formato": "Álbum",
       "genero": "shoegaze / dream pop",
-      "capa": "",
+      "capa": "capas/a610ccae8a91421cde3f21d96e1181ec.jpg",
       "fonte": "https://www.brooklynvegan.com/indie-basement-best-albums-of-2026-so-far-q1/",
       "faixas": [
         "Songbird (Forever)",
@@ -4210,7 +4215,8 @@
       ],
       "manchete": "Recife, 1977: O Agente Secreto",
       "mes": "Outubro de 2026",
-      "numero": 1
+      "numero": 1,
+      "capa": "capas/8a029509c61bd34fa50c9d90788c3ee4.jpg"
     }
   },
   "cine_itens": {
@@ -4339,7 +4345,7 @@
       "pais": "Reino Unido, Nigéria",
       "genero": "drama",
       "onde": "MUBI",
-      "capa": "",
+      "capa": "capas/d07c8b859445402369c57123fbcfa150.jpg",
       "imdb": "",
       "trailer_url": "",
       "fonte": "https://www.omelete.com.br/filmes/melhores-filmes-2026",
@@ -4452,7 +4458,7 @@
       "pais": "Brasil",
       "genero": "thriller dramático",
       "onde": "Aluguel digital no YouTube / Google TV",
-      "capa": "",
+      "capa": "capas/c973e5af0acf5d866132e39881169274.jpg",
       "imdb": "",
       "trailer_url": "",
       "fonte": "https://www.omelete.com.br/filmes/melhores-filmes-2026",
@@ -4646,7 +4652,7 @@
       "pais": "Noruega, Romênia",
       "genero": "drama",
       "onde": "Mostra SP / Previsão Netflix",
-      "capa": "",
+      "capa": "capas/5afcea652e6a23b2b0cee1f58645bec3.jpg",
       "imdb": "",
       "trailer_url": "",
       "fonte": "https://www.omelete.com.br/filmes/melhores-filmes-2026",
@@ -4757,7 +4763,7 @@
       "pais": "Alemanha",
       "genero": "drama de câmara / mistério",
       "onde": "Imovision · Aluguel digital (Apple TV, YouTube e Google TV)",
-      "capa": "",
+      "capa": "capas/173754089e317cd356496501c5e151f8.jpg",
       "imdb": "",
       "trailer_url": "",
       "fonte": "https://www.omelete.com.br/filmes/melhores-filmes-2026",
@@ -4814,7 +4820,7 @@
       "pais": "Brasil, França, Alemanha, Holanda",
       "genero": "thriller político / drama histórico",
       "onde": "Vitrine Filmes · Em exibição especial e circuito de arte",
-      "capa": "",
+      "capa": "capas/8a029509c61bd34fa50c9d90788c3ee4.jpg",
       "imdb": "tt32268075",
       "trailer_url": "",
       "fonte": "https://www.omelete.com.br/filmes/criticas/agente-secreto-wagner-moura",
@@ -4869,7 +4875,7 @@
       "pais": "Japão, França",
       "genero": "drama",
       "onde": "Vitrine Filmes · Destaque da 50ª Mostra SP e pré-estreias",
-      "capa": "",
+      "capa": "capas/9b7be06fcc52c7d5624c2c5fc85f848b.jpg",
       "imdb": "",
       "trailer_url": "",
       "fonte": "https://www.omelete.com.br/filmes/melhores-filmes-2026",
@@ -5646,7 +5652,8 @@
       ],
       "manchete": "Caminhar para ver por dentro: Nan Shepherd",
       "mes": "Outubro de 2026",
-      "numero": 1
+      "numero": 1,
+      "capa": "capas/b1b8c74f05cf1082a0a0182e6eb968e3.jpg"
     }
   },
   "livro_itens": {
@@ -5718,7 +5725,7 @@
       "pais": "Escócia (Reino Unido)",
       "genero": "ensaio da natureza / montanhismo",
       "onde": "Edições 70 (Grupo Almedina), ISBN 978-972-44-2501-6, com prefácio de Robert Macfarlane; impresso",
-      "capa": "",
+      "capa": "capas/b1b8c74f05cf1082a0a0182e6eb968e3.jpg",
       "fonte": "https://www.estantevirtual.com.br/livro/a-montanha-viva-HNV-5987-000-BK",
       "olho": "Escrito durante a Segunda Guerra e guardado na gaveta por trinta anos, o livro que ensinou a caminhar na montanha sem a obsessão pelo cume.",
       "texto": "Ao longo de doze capítulos curtos sobre o platô de Cairngorm, na Escócia, Nan Shepherd junta geologia, botânica, fisiologia dos sentidos e filosofia da caminhada.",
@@ -5771,7 +5778,7 @@
       "pais": "Brasil",
       "genero": "biografia musical",
       "onde": "Todavia; impresso e e-book",
-      "capa": "",
+      "capa": "capas/8c21266323916857e831c1d35805639b.jpg",
       "fonte": "https://www1.folha.uol.com.br/ilustrada/2026/10/belchior-que-completaria-80-anos-tem-interesse-renovado-pela-sua-obra-e-vida.shtml",
       "olho": "Nos 80 anos que Belchior completaria em outubro de 2026, a biografia que reconstrói o filósofo de Sobral, a febre de Alucinação e o sumiço voluntário.",
       "texto": "Revisto no ciclo dos 80 anos de Belchior em outubro de 2026, o livro do jornalista Jotabê Medeiros segue as pistas da formação franciscana no Ceará ao exílio anônimo no Uruguai e no sul do Brasil.",
@@ -5902,7 +5909,7 @@
       "pais": "Alemanha",
       "genero": "diário de travessia / memórias",
       "onde": "Edição em língua portuguesa (2026); impresso",
-      "capa": "",
+      "capa": "capas/6956f9e28d9017e5beb2c533055ea6ed.jpg",
       "fonte": "https://www.fnac.pt/n1262545/Literatura-de-Viagens",
       "olho": "Em novembro de 1974, Werner Herzog calça um par de botas novas, pega uma bússola e vai a pé de Munique a Paris sob neve para impedir que Lotte Eisner morra.",
       "texto": "O diário de bordo de três semanas de caminhada solitária no inverno europeu, anotado em cadernetas enquanto os pés inchavam e a paisagem virava alucinação.",
