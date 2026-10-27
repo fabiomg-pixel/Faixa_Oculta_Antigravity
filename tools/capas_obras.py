@@ -5,6 +5,8 @@ Each batch: {"itens": [...], "guias": [{"filmes"|"livros": [...]}]}. Writes <slu
 import json, os, re, subprocess, sys, time, unicodedata, urllib.parse
 
 UA = "FaixaOculta/1.0 (personal magazine)"
+if len(sys.argv) < 3:
+    raise SystemExit("Uso: python3 -I capas_obras.py <out_dir> <batch.json> [...]")
 out = sys.argv[1]
 os.makedirs(out, exist_ok=True)
 
@@ -77,7 +79,7 @@ def itunes(a, entities):
                 res = get_json("https://itunes.apple.com/search?" + urllib.parse.urlencode({"term": term, "entity": entity, "limit": 15, "country": country}))
                 for r in res.get("results", []):
                     name = norm(r.get("trackName") or r.get("collectionName") or "")
-                    if not (norm(t) and (norm(t) in name or name in norm(t))):
+                    if not (norm(t) and (norm(t) in name or (len(name) >= 4 and name in norm(t)))):
                         continue
                     if entity in ("ebook", "audiobook") and last and last not in norm(r.get("artistName", "")):
                         continue

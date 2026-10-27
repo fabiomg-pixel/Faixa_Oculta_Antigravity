@@ -4,7 +4,7 @@ Usage:
   python3 -I tools/capas_dia.py --data AAAA-MM-DD --saida DIR
 
 For each paper in JORNAIS, opens https://www.vercapas.com.br/capa/<slug>/ and looks for the cover image of that date.
-Writes DIR/capas.json = [{"jornal", "slug", "data", "imagem", "pagina", "site", "arquivo"}] ("pagina" is the dated cover image itself; the vercapas paper page always shows the latest cover) and downloads each cover to
+Writes DIR/capas.json = [{"jornal", "slug", "data", "imagem", "pagina", "site", "arquivo"}] and downloads each cover to
 DIR/<slug>.jpg (only so the routine can look at it and transcribe the headline; the images are not published).
 Papers without a cover for the date are listed in DIR/sem_capa.json. Uses plain curl, no disguise; a refused page is skipped.
 """
@@ -34,7 +34,10 @@ def main():
     ap.add_argument("--saida", required=True)
     a = ap.parse_args()
     os.makedirs(a.saida, exist_ok=True)
-    ano, mes, dia = a.data.split("-")
+    m_data = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", a.data)
+    if not m_data:
+        raise SystemExit(f"Data inválida (use AAAA-MM-DD): {a.data}")
+    ano, mes, dia = m_data.groups()
     marca = f"{dia}{mes}{ano}"
     capas, sem = [], []
     for nome, slug, site in JORNAIS:
@@ -44,7 +47,7 @@ def main():
         except Exception as e:
             sem.append({"jornal": nome, "motivo": f"página não abriu: {e}"})
             continue
-        achadas = re.findall(rf"https://cdn\.vercapas\.com\.br/covers/{slug}/{ano}/capa-jornal-{slug}-{marca}-[0-9a-f]+\.jpg", html)
+        achadas = re.findall(rf"https://cdn\.vercapas\.com\.br/covers/{re.escape(slug)}/\d{{4}}/capa-jornal-{re.escape(slug)}-{marca}-[0-9a-f]+\.(?:jpe?g|webp)", html)
         if not achadas:
             sem.append({"jornal": nome, "motivo": "sem capa desta data"})
             continue
@@ -54,7 +57,7 @@ def main():
             open(arq, "wb").write(baixar(img))
         except Exception as e:
             arq = None
-        capas.append({"jornal": nome, "slug": slug, "data": a.data, "imagem": img, "pagina": img, "site": site, "arquivo": arq})
+        capas.append({"jornal": nome, "slug": slug, "data": a.data, "imagem": img, "pagina": pagina, "site": site, "arquivo": arq})
     json.dump(capas, open(os.path.join(a.saida, "capas.json"), "w"), ensure_ascii=False, indent=1)
     json.dump(sem, open(os.path.join(a.saida, "sem_capa.json"), "w"), ensure_ascii=False, indent=1)
     print(f"capas: {len(capas)}; sem capa: {[s['jornal'] for s in sem]}")

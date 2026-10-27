@@ -61,15 +61,6 @@ vai atribuído ao veículo ("segundo a Reuters...").
   "vale notar", "sem dúvida". Paráfrase sempre; nada copiado das fontes.
 - Valide o JSON com python3 e grave com ArtifactData action "set", collection `dias`, doc_id da edição, file_path.
 
-## 3b. Primeiras páginas (só na edição da manhã)
-- Rode `python3 -I tools/capas_dia.py --data AAAA-MM-DD --saida <pasta>`. Ele acha as capas do dia de sete jornais no
-  vercapas.com.br e baixa cada uma para `<pasta>/<slug>.jpg`.
-- Abra cada imagem (ferramenta Read) e transcreva só a manchete principal, exatamente como impressa, em caixa normal.
-  Nada além da manchete: o texto das capas não é reproduzido.
-- Grave no boletim da manhã o campo `"capas": [{"jornal", "manchete", "imagem", "pagina", "site"}]`, com os valores de
-  `capas.json` (as imagens ficam no VerCapas; não suba as capas para o site nem para o artefato).
-- Jornal sem capa na data fica de fora; diga no relatório.
-
 ## 4. Publicar
 Siga `tools/PUBLICAR.md` inteiro (ponte com o Radar, exportação, `montar_site.py`, commit "Boletim da manhã de DD/MM" ou "Boletim da noite de DD/MM", push).
 Antes de publicar, faça as leituras limpas das fontes do boletim (`tools/LEITURAS.md`, tipo "noticia", campo `url`
