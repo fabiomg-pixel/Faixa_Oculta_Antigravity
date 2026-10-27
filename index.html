@@ -329,6 +329,14 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .jr-jornal i { font-style: normal; color: var(--muted); }
 .jr-capas b { font: 800 20px/1.12 var(--f-display); font-stretch: 75%; }
 .jr-capas small { color: var(--muted); font-size: var(--fs-s); line-height: 1.35; }
+.pp-grade { list-style: none; margin: var(--sp-3) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: var(--sp-3); }
+.pp-grade li { min-width: 0; display: flex; flex-direction: column; gap: 4px; border-top: var(--bw) solid var(--ink); padding-top: var(--sp-2); }
+.pp-capa { color: var(--ink); text-decoration: none; display: flex; flex-direction: column; gap: 6px; }
+.pp-capa img { width: 100%; aspect-ratio: 4 / 7; object-fit: cover; object-position: top; background: var(--card); border: 1px solid var(--rule); }
+.pp-capa b { font: 800 18px/1.12 var(--f-display); font-stretch: 75%; text-wrap: balance; }
+.pp-capa:hover b { text-decoration: underline; }
+.pp-jornal { font-size: var(--fs-xs); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.pp-site { font-size: var(--fs-xs); color: var(--muted); }
 .jr-contraste, .jr-leitura { margin-top: var(--sp-4); max-width: 760px; }
 .jr-contraste p { font-size: var(--fs-m); line-height: 1.6; }
 .jr-nota { color: var(--muted); font-size: var(--fs-xs); margin-top: var(--sp-3); }
@@ -1363,7 +1371,26 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null))));
     const fim = h("div", { class: "wrap", style: "padding-block:8px 32px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("noticias") }, "A revista da semana: grandes temas, cobertura e vieses"));
-    return [head, grade, blocoJornais(d.jornais), fim];
+    return [head, grade, blocoCapas(d.capas), blocoJornais(d.jornais), fim];
+  }
+
+  // Front pages of the day (vercapas.com.br): headline transcribed by the morning routine, cover hotlinked, link to the full page.
+  function blocoCapas(cs) {
+    cs = arr(cs).filter((c) => c && c.jornal && c.manchete);
+    if (!cs.length) return null;
+    return h("section", { class: "wrap secao pp", id: "capas" },
+      h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, cs.length),
+        h("h3", null, "primeiras páginas"),
+        h("p", null, "As manchetes dos jornais impressos do dia. Toque na capa para vê-la inteira no VerCapas.")),
+      h("ol", { class: "pp-grade" }, cs.map((c) => {
+        const pag = safeUrl(c.pagina), img = safeUrl(c.imagem), site = safeUrl(c.site);
+        return h("li", null,
+          h(pag ? "a" : "div", { href: pag, target: pag ? "_blank" : null, rel: pag ? "noopener" : null, class: "pp-capa" },
+            img ? h("img", { src: img, alt: `Capa de ${str(c.jornal)}`, loading: "lazy", referrerpolicy: "no-referrer", onerror: (e) => e.target.remove() }) : null,
+            h("span", { class: "pp-jornal mono" }, str(c.jornal)),
+            h("b", null, str(c.manchete))),
+          site ? h("a", { href: site, target: "_blank", rel: "noopener", class: "pp-site" }, "site do jornal ↗") : null);
+      })));
   }
 
   // The day's printed papers (PDFs from the Telegram groups, kept in a private folder on the Mac): front pages, how each paper played the big stories, what is worth reading in full.
