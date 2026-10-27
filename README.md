@@ -1,6 +1,6 @@
-# Faixa Oculta
+# Faixa Oculta (Antigravity)
 
-Revista pessoal de música, notícias, filmes e livros. Site: https://fabiomg-pixel.github.io/faixa-oculta/
+Revista pessoal de música, notícias, filmes e livros. Site: https://fabiomg-pixel.github.io/Faixa_Oculta_Antigravity/
 
 O conteúdo nasce no artefato do claude.ai (https://claude.ai/artifact/955jruTrT56VTc12DpqiPS), que é a fonte de verdade. Este repositório é a cópia estática publicada no GitHub Pages, com player embutido do Spotify (ou do Apple Music quando o disco não está no Spotify).
 
