@@ -712,13 +712,21 @@ dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 .dock-btn { width: 30px; height: 30px; display: inline-grid; place-items: center; border: var(--bw) solid currentColor; background: transparent; color: var(--band-fg); border-radius: 50%; font: 600 var(--fs-s)/1 var(--f-mono); cursor: pointer; padding: 0; }
 .dock-btn:hover { background: var(--band-fg); color: var(--band); }
 .dock iframe { width: 100%; border: 0; border-radius: 12px; display: block; background: transparent; }
+/* Spotify bar: just the 80px embed (it has its own cover, track and controls) with the dock buttons beside it. */
+.dock.barra { width: min(520px, calc(100% - 32px)); }
+.dock.barra .wrap { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--sp-1); padding: 6px; }
+.dock.barra .dock-top { display: contents; }
+.dock.barra .dock-capa, .dock.barra .dock-txt { display: none; }
+.dock.barra #dock-frame { order: -1; min-width: 0; }
+.dock.barra .dock-acoes { flex-direction: column; }
 body.com-player { padding-bottom: 24px; }
 @media (max-width: 700px) {
   .dock { right: 8px; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); width: calc(100% - 16px); }
-  body.com-player { padding-bottom: 250px; }
+  .dock.barra { width: calc(100% - 16px); }
+  body.com-player { padding-bottom: 120px; }
+  body.com-player dialog.leitura { padding-bottom: 120px; }
   body.com-player.player-grande { padding-bottom: 450px; }
   body.com-player.player-video { padding-bottom: 330px; }
-  body.com-player dialog.leitura { padding-bottom: 250px; }
   body.com-player.player-grande dialog.leitura { padding-bottom: 450px; }
   body.com-player.player-video dialog.leitura { padding-bottom: 330px; }
 }
@@ -996,13 +1004,14 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       h("a", { href: safeUrl(a.apple_url) || `https://music.apple.com/br/search?term=${q}`, target: "_blank", rel: "noopener" }, "Apple Music"),
       safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
   }
-  // Embedded player: the album's YouTube Music playlist first (it plays whole albums without login), Spotify as fallback.
+  // Embedded player: Spotify first, as a slim 80px bar (whole albums when logged in to Spotify); the YouTube Music playlist
+  // as fallback, shown as a video card because YouTube requires a visible player of at least 200x200.
   const tocando = { url: null, grande: false };
   const ytLista = (a) => (/^(OLAK5uy_|PL)[A-Za-z0-9_-]{16,40}$/.test(str(a.youtube_list)) ? str(a.youtube_list) : "");
   function embedUrl(a) {
-    if (ytLista(a)) return `https://www.youtube-nocookie.com/embed/videoseries?list=${ytLista(a)}&rel=0`;
     const sid = str(a.spotify_id) || (str(a.spotify_url).match(/album\/([A-Za-z0-9]{22})/) || [])[1];
     if (sid && /^[A-Za-z0-9]{22}$/.test(sid)) return `https://open.spotify.com/embed/album/${sid}?utm_source=generator&theme=0`;
+    if (ytLista(a)) return `https://www.youtube-nocookie.com/embed/videoseries?list=${ytLista(a)}&rel=0`;
     return null;
   }
   const fonteDe = (url) => (/spotify\.com/.test(url) ? "Spotify" : /list=/.test(url) ? "YouTube Music" : "Trailer");
@@ -1015,7 +1024,8 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     const dock = document.getElementById("dock");
     const box = document.getElementById("dock-frame");
     const frame = box.querySelector("iframe");
-    if (frame && !tocando.video) frame.style.height = (tocando.grande ? 352 : 152) + "px";
+    if (frame && !tocando.video) frame.style.height = (tocando.grande ? 352 : 80) + "px";
+    dock.classList.toggle("barra", !!tocando.url && !tocando.video && !tocando.grande);
     document.body.classList.toggle("com-player", !!tocando.url);
     document.body.classList.toggle("player-grande", !!tocando.url && tocando.grande && !tocando.video);
     document.body.classList.toggle("player-video", !!tocando.url && !!tocando.video);
@@ -1840,8 +1850,8 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   }
 
   // Artists: a chip per name that plays in the dock (site mode) and opens YouTube Music / Spotify.
-  // YouTube Music comes first: a known playlist id (channel uploads UU…, album OLAK5uy_…) plays as a video in the dock;
-  // otherwise the Spotify artist embed, when its id is known. Names match exactly first, then loosely (nrm).
+  // Spotify comes first: the artist embed plays as the slim bar in the dock; otherwise a known YouTube Music playlist id
+  // (channel uploads UU…, album OLAK5uy_…) plays as a video. Names match exactly first, then loosely (nrm).
   const artIdxs = new Map();
   function idArtista(m, nome, ok) {
     m = m || {};
@@ -1857,10 +1867,10 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     nome = str(nome).trim();
     if (!nome) return null;
     const yt = youtubeIdDe(nome), sp = spotifyIdDe(nome), q = encodeURIComponent(nome);
-    const emb = yt ? `https://www.youtube-nocookie.com/embed/videoseries?list=${yt}&rel=0` : sp ? `https://open.spotify.com/embed/artist/${sp}?utm_source=generator&theme=0` : null;
+    const emb = sp ? `https://open.spotify.com/embed/artist/${sp}?utm_source=generator&theme=0` : yt ? `https://www.youtube-nocookie.com/embed/videoseries?list=${yt}&rel=0` : null;
     const ativo = !!emb && tocando.url === emb;
     return h("span", { class: "ag-art" }, h("b", null, nome),
-      S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), "aria-label": `${ativo ? "Tocando" : "Ouvir aqui"}: ${nome}${yt ? " (YouTube Music)" : " (Spotify)"}`, title: yt ? "Toca aqui pelo YouTube Music" : "Toca aqui pelo Spotify", onclick: () => tocar(emb, nome, yt ? "no YouTube Music" : "no Spotify", false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
+      S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), "aria-label": `${ativo ? "Tocando" : "Ouvir aqui"}: ${nome}${sp ? " (Spotify)" : " (YouTube Music)"}`, title: sp ? "Toca aqui pelo Spotify" : "Toca aqui pelo YouTube Music", onclick: () => tocar(emb, nome, sp ? "no Spotify" : "no YouTube Music", false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
       h("a", { class: "ag-ref", href: yt ? (yt.startsWith("UU") ? `https://music.youtube.com/channel/UC${yt.slice(2)}` : `https://music.youtube.com/playlist?list=${yt}`) : `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener", title: yt ? `${nome} no YouTube Music` : `Buscar ${nome} no YouTube Music` }, "YouTube Music"),
       h("a", { class: "ag-ref", href: sp ? `https://open.spotify.com/artist/${sp}` : `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener", title: `${nome} no Spotify` }, "Spotify"));
   }
