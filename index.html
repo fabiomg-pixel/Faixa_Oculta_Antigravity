@@ -1336,18 +1336,21 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     if (!m) return str(iso);
     return `${DSEM[new Date(+m[1], +m[2] - 1, +m[3]).getDay()]} ${+m[3]} ${MESES[+m[2] - 1]}`;
   }
+  function turnoDia(d) { return d && d.edicao === "noite" ? "noite" : d && d.edicao === "manha" ? "manhã" : ""; }
+  function chaveDia(d) { return str(d.data || d._id) + (d.edicao === "noite" ? "~2" : "~1"); }
+  function rotuloBoletim(d) { const t = turnoDia(d); return rotuloDia(d.data || d._id) + (t ? ` · ${t}` : ""); }
   function blocoHoje() {
     if (!S.loaded.dias) return [estado("abrindo o boletim", "As notícias do dia aparecem aqui assim que o arquivo da revista responder.")];
     const d = diaAtual();
-    if (!d) return [estado("nenhum boletim ainda", "O boletim diário aparece aqui todas as manhãs.")];
+    if (!d) return [estado("nenhum boletim ainda", "O boletim aparece aqui de manhã e no fim da tarde.")];
     const notas = arr(d.notas);
     const head = h("section", { class: "wrap d-head" },
       h("div", { style: "min-width:0" },
-        h("div", { class: "kicker mono" }, `Boletim diário · ${rotuloDia(d.data || d._id)}`),
+        h("div", { class: "kicker mono" }, `${d.edicao === "noite" ? "Boletim da noite" : "Boletim diário"} · ${rotuloDia(d.data || d._id)}`),
         h("h2", null, str(d.titulo)),
         d.resumo_dia ? h("p", { class: "lede" }, str(d.resumo_dia)) : null,
-        S.dias.length > 1 ? h("div", { class: "d-dias", role: "group", "aria-label": "Boletins anteriores" }, S.dias.slice(0, 7).map((x) =>
-          h("button", { class: "chip", type: "button", "aria-pressed": String(x._id === d._id), onclick: () => { S.selDia = x._id; render(); window.scrollTo(0, 0); } }, rotuloDia(x.data || x._id)))) : null),
+        S.dias.length > 1 ? h("div", { class: "d-dias", role: "group", "aria-label": "Boletins anteriores" }, S.dias.slice(0, 10).map((x) =>
+          h("button", { class: "chip", type: "button", "aria-pressed": String(x._id === d._id), onclick: () => { S.selDia = x._id; render(); window.scrollTo(0, 0); } }, rotuloBoletim(x)))) : null),
       arr(d.agenda).length ? h("aside", { class: "d-agenda" }, h("h4", null, "Para acompanhar"),
         h("ul", null, arr(d.agenda).map((a) => h("li", null, h("span", { class: "mono" }, str(a.quando)), h("span", null, str(a.o_que)))))) : null);
     const grade = h("section", { class: "wrap", style: "padding-bottom:24px" }, h("div", { class: "d-notas" }, notas.map((n) => h("article", { class: "d-nota" },
@@ -2698,7 +2701,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     const box = document.getElementById("versoes");
     if (!box) return;
     const grupos = [
-      ["Boletins do dia", "dia", S.dias, (x) => `Boletim de ${rotuloDia(x.data || x._id)}`, "hoje"],
+      ["Boletins do dia", "dia", S.dias, (x) => `Boletim de ${rotuloBoletim(x)}`, "hoje"],
       ["Revistas da semana", "sem", S.semanas, (x) => `Semana de ${fmtPeriodo(x.inicio, x.fim)}`, "noticias"],
       ["Música", "mus", S.edicoes, (x) => `Música nº ${str(x.numero)} · ${str(x.mes)}`, "musica"],
       ["Cinema", "cine", S.cine_edicoes, (x) => `Cinema nº ${str(x.numero)} · ${str(x.mes)}`, "filmes"],
@@ -2743,7 +2746,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       document.getElementById("edsel-wrap").hidden = true;
       const s = semanaAtual();
       const dd = diaAtual();
-      document.getElementById("edline").textContent = S.aba === "hoje" && dd ? `Boletim de ${rotuloDia(dd.data || dd._id)}` : S.aba === "agenda" ? "Agenda do Rio" : S.aba === "arquivo" ? "Arquivo"
+      document.getElementById("edline").textContent = S.aba === "hoje" && dd ? `Boletim de ${rotuloBoletim(dd)}` : S.aba === "agenda" ? "Agenda do Rio" : S.aba === "arquivo" ? "Arquivo"
         : (S.aba === "noticias" || S.aba === "temas") && s ? `Semana de ${fmtPeriodo(s.inicio, s.fim)}` : "Edição do mês";
       const partes = S.aba === "hoje" ? blocoHoje() : S.aba === "agenda" ? blocoAgenda() : S.aba === "arquivo" ? blocoArquivo() : S.aba === "noticias" ? blocoNoticias() : S.aba === "temas" ? blocoTemas()
         : S.aba === "filmes" ? blocoRevista(REVISTAS.cinema, () => blocoCultura(["filme", "serie"], "filmes e séries", "Poucos e curtos, para caber na semana.", ["Quero ver", "Vi"]))
@@ -2912,7 +2915,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       S.guias = lista(b.guias);
       S.semanas = lista(b.semanas).sort((a, c) => str(c.fim).localeCompare(str(a.fim)));
       S.cultura = lista(b.cultura);
-      S.dias = lista(b.dias).sort((a, c) => str(c.data || c._id).localeCompare(str(a.data || a._id)));
+      S.dias = lista(b.dias).sort((a, c) => chaveDia(c).localeCompare(chaveDia(a)));
       for (const c of COLS_REV) S[c] = lista(b[c]);
       S.agenda = (b.agenda && b.agenda.atual) || null;
       S.agArtistas = (b.agenda && b.agenda.artistas && b.agenda.artistas.mapa) || {};
@@ -2940,7 +2943,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     snapList("guias", "guias");
     snapList("semanas", "semanas", (a, b) => str(b.fim).localeCompare(str(a.fim)));
     snapList("cultura", "cultura");
-    snapList("dias", "dias", (a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
+    snapList("dias", "dias", (a, b) => chaveDia(b).localeCompare(chaveDia(a)));
     for (const c of COLS_REV) snapList(c, c);
     db.doc("agenda/atual").onSnapshot((d) => { S.agenda = d.exists ? d.data() : null; S.loaded.agenda = true; indices = null; render(); }, () => { S.loaded.agenda = true; render(); });
     db.doc("agenda/artistas").onSnapshot((s) => { const a = s.data() || {}; S.agArtistas = a.mapa || {}; S.agArtistasYT = a.youtube || {}; render(); }, () => {});
