@@ -353,9 +353,23 @@ dialog.texto::backdrop { background: var(--backdrop); }
 .lc .lt-tit { font-size: var(--fs-l); margin-top: var(--sp-2); }
 .lc p { font-size: var(--fs-m); }
 .fl { display: inline-flex; align-items: baseline; gap: var(--sp-1); }
-.fl-ler { all: unset; cursor: pointer; font-weight: 700; text-decoration: underline; text-decoration-color: var(--sec); text-underline-offset: 3px; }
+.fl-ler { all: unset; cursor: pointer; font-weight: 700; text-decoration: underline; text-decoration-color: var(--sec); text-underline-offset: 3px; transition: color .15s ease; }
+.fl-ler:hover { color: var(--sec); }
 .fl-ler:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
 .fl-orig { font-size: var(--fs-xs); color: var(--muted); text-decoration: none; }
+.d-nota-tit { cursor: pointer; transition: color .15s ease; }
+.d-nota-tit:hover { color: var(--sec); }
+.d-nota-tit:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.radar-tit { cursor: pointer; transition: color .15s ease; }
+.radar-tit:hover { color: var(--sec); }
+.radar-tit:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.cob-card { cursor: pointer; transition: transform .15s ease, border-color .15s ease; }
+.cob-card:hover { border-color: var(--sec); transform: translateY(-2px); }
+.est-link { text-align: left; display: inline; text-decoration: underline; text-decoration-color: var(--sec); text-underline-offset: 3px; }
+.est-link:hover { color: var(--sec); }
+.d-nota-acts { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+.lt-fonte-bloco { margin-top: 24px; padding-top: 20px; border-top: var(--bw) solid var(--rule); }
+.lt-fonte-bloco h4 { font: 800 var(--fs-l)/1.15 var(--f-display); font-stretch: 75%; margin: 8px 0 10px; }
 .stremio-g { display: inline-flex; align-items: center; gap: 6px; }
 .stremio { display: inline-flex; align-items: center; gap: 7px; background: var(--sec-f, var(--ink)); color: var(--on-sec, var(--paper)); padding: 6px 12px 6px 10px; border-radius: 999px; font: 800 13px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; text-decoration: none; }
 .stremio::before { content: ""; border-left: 8px solid currentColor; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
@@ -1260,21 +1274,106 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   function abrirTexto(l) {
     const t = document.getElementById("texto");
     t.replaceChildren(h("div", { class: "lt-box" },
-      h("div", { class: "lt-bar" }, h("span", { class: "mono" }, l.tipo === "review" ? "Crítica, em resumo" : "A matéria, em resumo"),
+      h("div", { class: "lt-bar" }, h("span", { class: "mono" }, l.tipo === "review" ? "Crítica, em resumo" : "Modo leitor limpo"),
         h("button", { class: "l-btn", type: "button", onclick: () => t.close(), "aria-label": "Fechar" }, "Fechar ×")),
       ...corpoLeitura(l, true),
-      h("p", { class: "lt-aviso mono" }, "Resumo da Faixa Oculta com base no texto original. Para a íntegra, use o link acima.")));
+      h("p", { class: "lt-aviso mono", style: "margin-top:24px;" }, "Resumo compilado pela redação da Faixa Oculta. Sem anúncios nem rastreadores.")));
     t.showModal();
     t.querySelector(".l-btn").focus({ preventScroll: true });
   }
-  // A source link: opens our clean reading when we have one, else the original site.
-  function fonteLink(url, txt) {
-    const l = leituraDe(url);
-    if (!l) return linkExt(url, txt);
-    return h("span", { class: "fl" }, h("button", { type: "button", class: "fl-ler", onclick: () => abrirTexto(l) }, txt),
-      safeUrl(url) ? h("a", { href: safeUrl(url), target: "_blank", rel: "noopener", class: "fl-orig", "aria-label": `${txt} no site original` }, "↗") : null);
+
+  function abrirNota(n, d) {
+    const t = document.getElementById("texto");
+    const rotulo = d ? rotuloBoletim(d) : "Boletim diário";
+    const fontesLeituras = arr(n.fontes).map((f) => ({ f, leitura: leituraDe(f.url) }));
+    const secaoFontes = fontesLeituras.map(({ f, leitura }) => {
+      if (leitura) {
+        return h("div", { class: "lt-fonte-bloco" },
+          h("div", { class: "lt-meta mono" }, h("b", null, str(f.fonte)), [f.perfil, leitura.autor, leitura.data ? fmtData(leitura.data) : ""].filter(Boolean).join(" · ")),
+          leitura.titulo ? h("h4", null, str(leitura.titulo)) : null,
+          f.enfoque ? h("p", { style: "font-style:italic;color:var(--muted);margin-bottom:10px;" }, `Enfoque da cobertura: ${str(f.enfoque)}`) : null,
+          ...arr(leitura.resumo).map((p) => h("p", null, str(p))),
+          arr(leitura.pontos).length ? h("ul", { class: "lt-pontos" }, arr(leitura.pontos).map((x) => h("li", null, str(x)))) : null,
+          leitura.citacao ? h("blockquote", { class: "lt-cit" }, `“${str(leitura.citacao)}”`) : null,
+          safeUrl(f.url) ? h("a", { class: "lt-orig", href: safeUrl(f.url), target: "_blank", rel: "noopener", style: "margin-top:10px;" }, `Consultar cobertura original em ${str(f.fonte)} (site externo) ↗`) : null);
+      }
+      return h("div", { class: "lt-fonte-bloco" },
+        h("div", { class: "lt-meta mono" }, h("b", null, str(f.fonte)), f.perfil ? ` · ${str(f.perfil)}` : ""),
+        f.enfoque ? h("p", null, str(f.enfoque)) : null,
+        safeUrl(f.url) ? h("a", { class: "lt-orig", href: safeUrl(f.url), target: "_blank", rel: "noopener", style: "margin-top:10px;" }, `Consultar no site original de ${str(f.fonte)} ↗`) : null);
+    });
+
+    t.replaceChildren(h("div", { class: "lt-box" },
+      h("div", { class: "lt-bar" },
+        h("span", { class: "mono" }, `Modo leitor · ${str(n.editoria || "Notícia")}`),
+        h("button", { class: "l-btn", type: "button", onclick: () => t.close(), "aria-label": "Fechar" }, "Fechar ×")),
+      h("div", { class: "lt-meta mono" }, str(rotulo)),
+      h("h3", { class: "lt-tit" }, str(n.titulo)),
+      h("div", { style: "font-size:var(--fs-l);line-height:1.55;margin-bottom:18px;font-weight:500;" }, str(n.texto)),
+      n.por_que_importa ? h("div", { class: "importa", style: "margin:20px 0;padding:16px 20px;background:var(--card);border-left:var(--bw-rule) solid var(--sec);" },
+        h("h4", { style: "margin:0 0 6px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.06em;color:var(--sec);" }, "Por que importa"),
+        h("p", { style: "margin:0;" }, str(n.por_que_importa))) : null,
+      secaoFontes.length ? [
+        h("h4", { style: "margin:32px 0 10px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.06em;color:var(--muted);" }, "Cobertura das fontes apuradas"),
+        ...secaoFontes
+      ] : null,
+      h("p", { class: "lt-aviso mono", style: "margin-top:32px;" }, "Faixa Oculta · Síntese limpa e padronizada. Sem anúncios nem rastreadores.")));
+    t.showModal();
+    t.querySelector(".l-btn").focus({ preventScroll: true });
   }
-  function linkExt(href, txt) { const u = safeUrl(href); return u ? h("a", { href: u, target: "_blank", rel: "noopener" }, txt) : h("span", { class: "tt" }, txt); }
+
+  function abrirTemaRadar(r) {
+    const t = document.getElementById("texto");
+    const leiturasTema = arr(r.ler).map((l) => ({ l, obj: leituraDe(l.url) }));
+    t.replaceChildren(h("div", { class: "lt-box" },
+      h("div", { class: "lt-bar" },
+        h("span", { class: "mono" }, `Fora do radar · ${str(r.editoria || "Ciência / Política")}`),
+        h("button", { class: "l-btn", type: "button", onclick: () => t.close(), "aria-label": "Fechar" }, "Fechar ×")),
+      h("h3", { class: "lt-tit" }, str(r.titulo)),
+      h("p", { style: "font-size:var(--fs-m);line-height:1.6;margin-bottom:20px;" }, str(r.texto)),
+      leiturasTema.length ? [
+        h("h4", { style: "margin:28px 0 10px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.06em;color:var(--muted);" }, "Leituras e fontes deste tema"),
+        ...leiturasTema.map(({ l, obj }) => {
+          if (obj) {
+            return h("div", { class: "lt-fonte-bloco" },
+              h("div", { class: "lt-meta mono" }, h("b", null, str(obj.fonte || l.fonte)), [obj.autor, obj.data ? fmtData(obj.data) : ""].filter(Boolean).join(" · ")),
+              obj.titulo ? h("h4", null, str(obj.titulo)) : null,
+              ...arr(obj.resumo).map((p) => h("p", null, str(p))),
+              arr(obj.pontos).length ? h("ul", { class: "lt-pontos" }, arr(obj.pontos).map((x) => h("li", null, str(x)))) : null,
+              safeUrl(l.url) ? h("a", { class: "lt-orig", href: safeUrl(l.url), target: "_blank", rel: "noopener", style: "margin-top:10px;" }, `Consultar em ${str(l.fonte)} (externo) ↗`) : null);
+          }
+          return h("div", { class: "lt-fonte-bloco" },
+            h("div", { class: "lt-meta mono" }, h("b", null, str(l.fonte))),
+            h("h4", null, str(l.titulo)),
+            safeUrl(l.url) ? h("a", { class: "lt-orig", href: safeUrl(l.url), target: "_blank", rel: "noopener", style: "margin-top:10px;" }, `Consultar em ${str(l.fonte)} (externo) ↗`) : null);
+        })
+      ] : null,
+      h("p", { class: "lt-aviso mono", style: "margin-top:28px;" }, "Faixa Oculta · Modo leitor limpo e padronizado.")));
+    t.showModal();
+    t.querySelector(".l-btn").focus({ preventScroll: true });
+  }
+
+  // A source button: always opens our clean in-app reader.
+  function fonteLink(url, txt, notaContexto) {
+    const l = leituraDe(url);
+    const abrir = () => {
+      if (l) abrirTexto(l);
+      else if (notaContexto) abrirNota(notaContexto);
+      else abrirTexto({
+        fonte: txt || "Fonte",
+        titulo: txt || "Matéria",
+        resumo: ["Síntese compilada pela redação da Faixa Oculta."],
+        url: url
+      });
+    };
+    return h("button", { type: "button", class: "fl-ler", onclick: abrir, title: `Ler matéria de ${txt} no modo leitor` }, txt);
+  }
+  function linkExt(href, txt) {
+    const l = leituraDe(href);
+    if (l) return h("button", { type: "button", class: "fl-ler est-link", onclick: () => abrirTexto(l) }, txt);
+    const u = safeUrl(href);
+    return u ? h("a", { href: u, target: "_blank", rel: "noopener", class: "est-link" }, txt) : h("span", { class: "tt" }, txt);
+  }
 
   function blocoNoticias() {
     if (!S.loaded.semanas) return [estado("abrindo a semana", "Os temas da semana aparecem aqui assim que o arquivo da revista responder.")];
@@ -1300,18 +1399,45 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       h("div", { class: "n-grid" },
         h("div", { class: "resumo" }, arr(t.resumo).map((p) => h("p", null, str(p)))),
         t.por_que_importa ? h("aside", { class: "importa" }, h("h4", { style: "margin-top:0" }, "Por que importa"), h("p", null, str(t.por_que_importa))) : null),
-      arr(t.cobertura).length ? [h("h4", null, "Como cada um cobriu"), h("div", { class: "cob" }, arr(t.cobertura).map((c) => h("div", { class: "cob-card" },
-        h("b", null, str(c.fonte)), h("span", { class: "cob-perfil mono" }, str(c.perfil)), h("p", null, str(c.enfoque)),
-        leituraDe(c.url) ? h("button", { class: "ler", type: "button", onclick: () => abrirTexto(leituraDe(c.url)) }, "Ler aqui") : null,
-        safeUrl(c.url) ? h("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener" }, leituraDe(c.url) ? "Original ↗" : "Ler a matéria →") : null)))] : null,
+      arr(t.cobertura).length ? [h("h4", null, "Como cada um cobriu"), h("div", { class: "cob" }, arr(t.cobertura).map((c) => {
+        const l = leituraDe(c.url);
+        const abrir = () => {
+          if (l) abrirTexto(l);
+          else abrirTexto({
+            fonte: c.fonte,
+            autor: c.perfil,
+            titulo: `${t.titulo} — Cobertura por ${c.fonte}`,
+            resumo: [c.enfoque, ...(t.resumo || [])],
+            url: c.url
+          });
+        };
+        return h("div", { class: "cob-card", onclick: abrir, title: `Ler cobertura de ${c.fonte} no modo leitor` },
+          h("b", null, str(c.fonte)), h("span", { class: "cob-perfil mono" }, str(c.perfil)), h("p", null, str(c.enfoque)),
+          h("button", { class: "ler", type: "button", onclick: (e) => { e.stopPropagation(); abrir(); } }, "Ler no leitor"));
+      }))] : null,
       h("div", { class: "n-duo" },
         h("div", null, h("h4", null, "Os vieses"), h("p", null, str(t.vieses))),
         h("div", null, h("h4", null, "O que ficou de fora"), h("p", null, str(t.o_que_falta)))),
       h("div", { class: "n-duo" },
         h("div", null, h("h4", null, "Para acompanhar"), h("ul", null, arr(t.perguntas).map((q) => h("li", null, str(q))))),
-        h("div", null, h("h4", null, "Para se aprofundar"), h("ul", { class: "estante" }, arr(t.aprofundar).map((a) => h("li", null,
-          h("span", { class: "tp" }, str(a.tipo)), linkExt(a.url, str(a.titulo)),
-          h("small", null, [str(a.autor), str(a.ano)].filter(Boolean).join(", "), a.nota ? ` · ${str(a.nota)}` : ""))))))));
+        h("div", null, h("h4", null, "Para se aprofundar"), h("ul", { class: "estante" }, arr(t.aprofundar).map((a) => {
+          const abrirAprofundar = () => {
+            abrirTexto({
+              fonte: a.tipo ? `Estante · ${a.tipo}` : "Para se aprofundar",
+              autor: [a.autor, a.ano].filter(Boolean).join(", "),
+              titulo: a.titulo,
+              resumo: [
+                a.nota ? a.nota : `Indicação de aprofundamento selecionada para o tema: ${t.titulo}.`,
+                `Contexto da curadoria semanal: Obra contextualiza o debate de "${t.titulo}".`
+              ],
+              url: a.url
+            });
+          };
+          return h("li", { onclick: abrirAprofundar, style: "cursor:pointer", title: "Ver ficha no leitor" },
+            h("span", { class: "tp" }, str(a.tipo)),
+            h("button", { type: "button", class: "fl-ler est-link", onclick: (e) => { e.stopPropagation(); abrirAprofundar(); } }, str(a.titulo)),
+            h("small", null, [str(a.autor), str(a.ano)].filter(Boolean).join(", "), a.nota ? ` · ${str(a.nota)}` : ""));
+        }))))));
     const fim = h("div", { class: "wrap", style: "padding-block:28px" },
       h("button", { class: "ler", type: "button", onclick: () => document.getElementById("fora-do-radar")?.scrollIntoView({ behavior: "smooth", block: "start" }) }, "Temas fora do radar desta semana"));
     const evs = arr(S.agenda && S.agenda.eventos);
@@ -1351,12 +1477,15 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         h("ul", null, arr(d.agenda).map((a) => h("li", null, h("span", { class: "mono" }, str(a.quando)), h("span", null, str(a.o_que)))))) : null);
     const grade = h("section", { class: "wrap", style: "padding-bottom:24px" }, h("div", { class: "d-notas" }, notas.map((n) => h("article", { class: "d-nota" },
       h("span", { class: "edt" }, str(n.editoria)),
-      h("h3", null, str(n.titulo)),
+      h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n, d), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
       h("p", null, str(n.texto)),
       n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
       arr(n.fontes).length ? h("ul", { class: "d-fontes" }, arr(n.fontes).map((f) => h("li", null,
-        fonteLink(f.url, str(f.fonte)), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
-        f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null))));
+        fonteLink(f.url, str(f.fonte), n), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
+        f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
+      h("div", { class: "d-nota-acts" },
+        h("button", { class: "ler", type: "button", onclick: () => abrirNota(n, d) }, "Abrir no leitor"))
+    ))));
     const fim = h("div", { class: "wrap", style: "padding-block:8px 32px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("noticias") }, "A revista da semana: grandes temas, cobertura e vieses"));
     return [head, grade, blocoJornais(d.jornais), fim];
@@ -1372,24 +1501,40 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         h("p", null, [j.data_edicao ? `Edições impressas de ${rotuloDia(j.data_edicao)}.` : "", str(j.resumo)].filter(Boolean).join(" "))),
       arr(j.manchetes).length ? h("ol", { class: "jr-capas" }, arr(j.manchetes).map((m) => {
         const img = safeUrl(m.imagem), link = safeUrl(m.pagina || m.site), site = safeUrl(m.site);
-        return h("li", { class: img ? null : "sem-img" },
-          img ? h("a", { class: "jr-thumb-a", href: link || img, target: "_blank", rel: "noopener", title: `Ver capa de ${str(m.jornal)}` },
+        const abrirJornal = () => {
+          abrirTexto({
+            fonte: m.jornal,
+            autor: m.pais || "Edição impressa",
+            titulo: `${m.jornal}: ${m.manchete}`,
+            resumo: [
+              m.nota ? m.nota : `Manchete principal da edição impressa de ${m.jornal}.`,
+              j.resumo ? `Panorama do dia: ${j.resumo}` : ""
+            ].filter(Boolean),
+            pontos: j.contraste ? [`Divergência entre jornais: ${j.contraste}`] : [],
+            url: m.pagina || m.site || ""
+          });
+        };
+        return h("li", { class: img ? null : "sem-img", onclick: abrirJornal, style: "cursor:pointer" },
+          img ? h("div", { class: "jr-thumb-a", title: `Ver capa de ${str(m.jornal)}` },
             h("img", { class: "jr-thumb", src: img, alt: `Capa de ${str(m.jornal)}`, loading: "lazy", decoding: "async", width: "68", height: "96" })) : null,
           h("div", { class: "jr-txt" },
             h("span", { class: "jr-jornal mono" },
-              link ? h("a", { href: link, target: "_blank", rel: "noopener" }, `${str(m.jornal)} ↗`) : str(m.jornal),
-              site && site !== link ? h("a", { href: site, target: "_blank", rel: "noopener", style: "color:var(--muted)" }, "site") : null,
-              m.pais ? h("i", null, str(m.pais)) : null),
+              h("button", { type: "button", class: "fl-ler", onclick: (e) => { e.stopPropagation(); abrirJornal(); } }, str(m.jornal)),
+              site && site !== link ? h("a", { href: site, target: "_blank", rel: "noopener", style: "color:var(--muted);margin-left:6px;" }, "site") : null,
+              m.pais ? h("i", null, ` (${str(m.pais)})`) : null),
             h("b", null, str(m.manchete)), m.nota ? h("small", null, str(m.nota)) : null));
       })) : null,
       arr(j.destaques).length ? h("div", { class: "d-notas", style: "margin-top:26px" }, arr(j.destaques).map((n) => h("article", { class: "d-nota" },
         h("span", { class: "edt" }, str(n.editoria)),
-        h("h3", null, str(n.titulo)),
+        h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
         h("p", null, str(n.texto)),
         n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
         arr(n.jornais).length ? h("ul", { class: "d-fontes" }, arr(n.jornais).map((f) => h("li", null,
           h("b", null, str(f.jornal)), f.pagina ? h("span", { class: "mono" }, ` · p. ${str(f.pagina)}`) : null,
-          f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null))) : null,
+          f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
+        h("div", { class: "d-nota-acts" },
+          h("button", { class: "ler", type: "button", onclick: () => abrirNota(n) }, "Abrir no leitor"))
+      ))) : null,
       j.contraste ? h("div", { class: "jr-contraste" }, h("h4", null, "Onde os jornais divergem"), h("p", null, str(j.contraste))) : null,
       arr(j.leitura).length ? h("div", { class: "jr-leitura" }, h("h4", null, "Vale ler inteiro no PDF"),
         h("ul", { class: "estante" }, arr(j.leitura).map((l) => h("li", null, h("span", { class: "tp" }, str(l.jornal)),
@@ -1407,14 +1552,33 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       h("p", null, "Assuntos que a imprensa cobriu pouco nesta semana e que conversam com o seu trabalho e os seus interesses.")));
     const radar = arr(s.fora_do_radar);
     const grade = h("section", { class: "wrap", style: "padding-bottom:40px" }, radar.length ? h("div", { class: "radar-grid" }, radar.map((r) => h("article", { class: "radar-card" },
-      h("span", { class: "edt" }, str(r.editoria)), h("h3", null, str(r.titulo)), h("p", null, str(r.texto)),
-      h("div", { class: "links" }, arr(r.ler).map((l) => safeUrl(l.url) ? fonteLink(l.url, `${str(l.fonte)}: ${str(l.titulo)}`) : null)))))
+      h("span", { class: "edt" }, str(r.editoria)),
+      h("h3", { class: "radar-tit", role: "button", tabindex: "0", onclick: () => abrirTemaRadar(r), title: "Abrir tema no modo leitor" }, str(r.titulo)),
+      h("p", null, str(r.texto)),
+      h("div", { class: "links" }, arr(r.ler).map((l) => safeUrl(l.url) ? fonteLink(l.url, `${str(l.fonte)}: ${str(l.titulo)}`, { editoria: r.editoria, titulo: r.titulo, texto: r.texto, fontes: r.ler }) : null)),
+      h("button", { class: "ler", type: "button", style: "margin-top:14px;", onclick: () => abrirTemaRadar(r) }, "Abrir tema no leitor"))))
       : h("p", { class: "vazio" }, "Nenhum tema fora do radar nesta semana."));
     const todos = arr(s.temas).flatMap((t) => arr(t.aprofundar).map((a) => ({ ...a, _tema: t.titulo })));
     const estante = todos.length ? h("section", { class: "wrap secao" },
       h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, todos.length), h("h3", null, "estante da semana"), h("p", null, "Livros, relatórios, reportagens e podcasts para ir além das notícias, reunidos num só lugar.")),
-      h("ul", { class: "estante" }, todos.map((a) => h("li", null, h("span", { class: "tp" }, str(a.tipo)), linkExt(a.url, str(a.titulo)),
-        h("small", null, [str(a.autor), str(a.ano)].filter(Boolean).join(", "), ` · tema: ${str(a._tema)}`, a.nota ? ` · ${str(a.nota)}` : ""))))) : null;
+      h("ul", { class: "estante" }, todos.map((a) => {
+        const abrirAprofundar = () => {
+          abrirTexto({
+            fonte: a.tipo ? `Estante · ${a.tipo}` : "Para se aprofundar",
+            autor: [a.autor, a.ano].filter(Boolean).join(", "),
+            titulo: a.titulo,
+            resumo: [
+              a.nota ? a.nota : `Indicação de aprofundamento selecionada para o tema: ${a._tema}.`,
+              `Contexto da curadoria semanal: Obra contextualiza o debate de "${a._tema}".`
+            ],
+            url: a.url
+          });
+        };
+        return h("li", { onclick: abrirAprofundar, style: "cursor:pointer", title: "Ver ficha no leitor" },
+          h("span", { class: "tp" }, str(a.tipo)),
+          h("button", { type: "button", class: "fl-ler est-link", onclick: (e) => { e.stopPropagation(); abrirAprofundar(); } }, str(a.titulo)),
+          h("small", null, [str(a.autor), str(a.ano)].filter(Boolean).join(", "), ` · tema: ${str(a._tema)}`, a.nota ? ` · ${str(a.nota)}` : ""));
+      }))) : null;
     return [head, grade, estante];
   }
 

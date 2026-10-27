@@ -14312,6 +14312,66 @@
         "Impacto regional na estabilidade dos Bálcãs e suprimento energético"
       ],
       "citacao": "Bulgarian voters head to a decisive second round amid regional geopolitical divisions"
+    },
+    "rev-cell-malaria-crio-em": {
+      "ref": "tema-malaria-crio-em",
+      "ordem": 1,
+      "tipo": "analysis",
+      "fonte": "Cell",
+      "autor": "Chi-Min Ho et al. (Columbia University)",
+      "data": "2026-06-25",
+      "titulo": "Structural basis for host membrane binding and remodeling by invading malaria parasites",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00699-9",
+      "resumo": [
+        "O estudo do laboratório de Chi-Min Ho na Columbia University descreve a base estrutural do complexo juncional que permite ao Plasmodium falciparum romper a barreira mecânica da hemácia.",
+        "Ao contrário do modelo clássico puramente adesivo, as âncoras proteicas operam como maquinário biomecânico ativo, inserindo hélices carregadas na membrana e invertendo a curvatura lipídica hospedeira.",
+        "A elucidação dessa maquinaria molecular permitiu desenhar por inteligência artificial miniproteínas de bloqueio que neutralizaram a entrada do parasita in vitro, inaugurando um alvo promissor contra cepas resistentes."
+      ],
+      "pontos": [
+        "Resolução por crio-microscopia eletrônica da junção móvel AMA1-RON durante a invasão do eritrócito",
+        "Identificação do mecanismo ativo de deformação e inversão da curvatura da bicamada lipídica",
+        "Desenho computacional por IA de miniproteína inibidora que neutralizou a entrada do parasita in vitro"
+      ]
+    },
+    "rev-aip-fyi-arxiv-teto": {
+      "ref": "tema-arxiv-ia-limites",
+      "ordem": 1,
+      "tipo": "analysis",
+      "fonte": "AIP FYI",
+      "autor": "American Institute of Physics",
+      "data": "2026-10-19",
+      "titulo": "Science Policy This Week: Oct 19, 2026",
+      "url": "https://www.aip.org/fyi/the-week-of-october-19-2026",
+      "resumo": [
+        "O boletim de políticas científicas do American Institute of Physics analisa a imposição inédita de cotas numéricas de submissão pelo repositório arXiv a partir de outubro de 2026.",
+        "A medida emergencial foi adotada após o volume mensal ultrapassar 40 mil preprints, com quase 9 mil tíquetes de suporte sobrecarregando os moderadores voluntários diante da proliferação de artigos gerados por modelos de linguagem.",
+        "Pesquisadores das áreas de física biológica e computação manifestaram apreensão sobre os impactos nas publicações colaborativas de grandes laboratórios, enquanto outros consórcios debatem novos padrões de integridade editorial."
+      ],
+      "pontos": [
+        "arXiv estabelece limite mensal de duas submissões por autor e três em processamento ativo",
+        "Disparada de submissões impulsionada por artigos gerados por modelos de IA sobrecarregou moderadores",
+        "Comunidade científica debate impacto em grupos de alta produtividade e risco de regras similares no bioRxiv"
+      ]
+    },
+    "rev-forbes-shamonda-virus": {
+      "ref": "tema-shamonda-virus-franca",
+      "ordem": 1,
+      "tipo": "analysis",
+      "fonte": "Forbes (John Drake)",
+      "autor": "John Drake",
+      "data": "2026-10-23",
+      "titulo": "A Death In France Puts Shamonda Virus Under Scrutiny, But Public Risk Is Low",
+      "url": "https://www.forbes.com/sites/johndrake/2026/10/23/a-death-in-france-puts-shamonda-virus-under-study-but-public-risk-is-low/",
+      "resumo": [
+        "O infectologista e colunista John Drake examina o caso fatal de um morador da região de Lyon infectado pelo vírus Shamonda, marcando a primeira infecção humana documentada em solo europeu.",
+        "Embora o vírus seja historicamente endêmico em rebanhos bovinos na África subsaariana, sua detecção recente em ruminantes em mais de uma dúzia de países da Europa coincide com a expansão territorial de maruins vetores sob temperaturas atípicas.",
+        "A análise conclui que, apesar de não haver risco de transmissão comunitária direta entre humanos, a vigilância sobre arboviroses emergentes e mudanças climáticas exige reforço nos sistemas de monitoramento."
+      ],
+      "pontos": [
+        "Primeiro registro em humano do vírus Shamonda na Europa ocorreu em paciente imunocomprometido na França",
+        "Vetor primário são maruins (Culicoides), cuja distribuição se expandiu com o verão mais quente da história europeia",
+        "Autoridades de saúde reforçam que o risco para a população geral é mínimo, mas cobram vigilância entomológica ativa"
+      ]
     }
   }
 }
