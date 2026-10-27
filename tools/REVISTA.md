@@ -80,7 +80,7 @@ banco do artefato https://claude.ai/artifact/955jruTrT56VTc12DpqiPS (ferramenta 
   `achados`, `brasil`, `pop`, `breve`; 20 a 25 itens e 2 guias. `onde` conferido no JustWatch Brasil ou equivalente na
   semana da rodada.
 - Livros, seções: `lancamentos`, `brasil`, `ideias` (não ficção), `achados`; 15 a 18 itens e 2 guias. Edição brasileira,
-  editora e páginas conferidas.
+  editora e páginas conferidas. Campo `downloads` só com cópias gratuitas autorizadas (regra no brief); nunca acervo pirata.
 - Commit "Cinema: edição de <mês>" ou "Livros: edição de <mês>".
 
 ## 5. Complemento quinzenal (dia 15)

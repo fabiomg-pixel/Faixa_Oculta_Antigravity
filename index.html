@@ -210,6 +210,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .links { display: flex; flex-wrap: wrap; gap: 4px var(--sp-2); }
 .links a { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: 1px solid var(--sec); padding-bottom: 1px; }
 .links a:hover { color: var(--sec); }
+.links a.baixar { font-weight: 800; color: var(--sec); border-bottom-width: 2px; }
 .marks { display: flex; gap: var(--sp-1); }
 .mk { border: var(--bw) solid var(--ink); background: transparent; padding: 4px 9px; border-radius: var(--pill); font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; display: inline-flex; gap: var(--sp-1); align-items: center; }
 .mk[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
@@ -970,7 +971,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         achados: { titulo: "achados", sub: "Pérolas curtas, clássicos esquecidos e pequenas editoras." },
       },
       rot: ["Quero ler", "Li"], ler: "Ler a resenha", edicaoRot: "Livros",
-      busca: (q) => [["Amazon", `https://www.amazon.com.br/s?k=${q}`], ["Goodreads", `https://www.goodreads.com/search?q=${q}`]],
+      busca: (q) => [["Amazon", `https://www.amazon.com.br/s?k=${q}`], ["Google Play Livros", `https://play.google.com/store/search?q=${q}&c=books`], ["Estante Virtual", `https://www.estantevirtual.com.br/busca?q=${q}`], ["Goodreads", `https://www.goodreads.com/search?q=${q}`]],
     },
   };
   const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias", "leituras"];
@@ -1543,9 +1544,15 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   }
   const plural = (n, um, varios) => `${n} ${n === 1 ? um : varios}`;
   const tipoObra = (a) => ({ filme: "filme", serie: "série", documentario: "documentário", ficcao: "ficção", contos: "contos", nao_ficcao: "não ficção" }[str(a.tipo)] || str(a.genero));
+  // Books are searched by the Brazilian title (the stores are Brazilian); films by the original one.
+  // `downloads` lists free, authorized copies only (public domain, open access, official free release), verified by the routine.
   function linksObra(a, cfg) {
-    const q = encodeURIComponent(`${str(a.titulo_original || a.titulo)} ${str(a.autor)}`.trim());
-    return h("div", { class: "links" }, cfg.busca(q).map(([t, u]) => h("a", { href: u, target: "_blank", rel: "noopener" }, t)),
+    const livro = cfg.nome === "livros";
+    const q = encodeURIComponent(`${str(livro ? a.titulo : a.titulo_original || a.titulo)} ${str(a.autor)}`.trim());
+    const dls = arr(a.downloads).filter((d) => d && safeUrl(d.url));
+    return h("div", { class: "links" },
+      dls.map((d) => h("a", { class: "baixar", href: safeUrl(d.url), target: "_blank", rel: "noopener", title: str(d.nota) || null }, `Baixar grátis · ${str(d.fonte) || "link"}`)),
+      cfg.busca(q).map(([t, u]) => h("a", { href: u, target: "_blank", rel: "noopener" }, t)),
       safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
   }
   function edicaoRevista(cfg) {

@@ -12,6 +12,7 @@ A Faixa Oculta é uma revista pessoal, feita para um único leitor: o Fabio, pro
 - `titulo` (título da edição brasileira), `titulo_original` (se diferente), `autor`, `ano` (ano da edição brasileira; se for tradução, ponha o ano original em `ano_original`), `pais`.
 - `tempo`: "~180 páginas, cerca de 3h30 de leitura" (confira o número de páginas da edição brasileira).
 - `onde`: editora brasileira e formatos (ex.: "Todavia; impresso e e-book"). Se só existir em outra língua, diga ("sem edição brasileira; em inglês pela Fitzcarraldo").
+- `downloads`: cópias gratuitas e autorizadas, quando houver, conferidas abrindo a página: lista de {"fonte", "url", "nota"}. Valem obra em domínio público no Brasil (autor morto há mais de 70 anos, contados a partir de 1º de janeiro do ano seguinte à morte, e tradução também livre ou a original) em Domínio Público (dominiopublico.gov.br), Biblioteca Brasiliana Guita e José Mindlin, Wikisource ou Project Gutenberg; livro de acesso aberto (SciELO Livros, editoras universitárias, OAPEN, DOAB, repositório do autor ou da editora); e distribuição gratuita oficial da editora ou do autor. Na `nota`, o porquê ("domínio público; original em alemão", "acesso aberto, SciELO Livros"). Nunca acervos piratas ou não autorizados (Anna's Archive, Z-Library, Library Genesis, sites de PDF). Sem cópia autorizada, deixe a lista vazia.
 - `genero`: etiqueta curta.
 - `texto`: 1 ou 2 frases para o cartão.
 - `olho`: uma frase de impacto, sua, com até 18 palavras.
