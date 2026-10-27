@@ -19,7 +19,7 @@ A Faixa Oculta é a revista pessoal do Fabio (professor de biofísica na UFRJ, R
 }
 
 ## Regras
-- Abra cada página de verdade (WebFetch; se bloquear, tente curl com User-Agent de navegador). Só escreva sobre o que leu. Se a página estiver fechada por paywall, fora do ar ou não abrir, NÃO escreva a leitura: registre em "pulados" com o motivo. Nunca invente conteúdo, autor, data ou nota.
+- Abra cada página de verdade (WebFetch; se ele der erro, `curl -sL --compressed` simples, sem User-Agent falso nem outro truque para passar por bloqueio). Só escreva sobre o que leu. Se a página estiver fechada por paywall, fora do ar ou não abrir, NÃO escreva a leitura: registre em "pulados" com o motivo. Nunca invente conteúdo, autor, data ou nota.
 - Paráfrase sempre, com palavras próprias. Nada de copiar frases ou parágrafos, nem traduzir trechos literalmente. No máximo a "citacao" curta.
 - Notícia: o resumo diz o que aconteceu, com fatos, números, atores e o enquadramento daquele veículo (quem ele ouviu, o que destacou). Neutro.
 - Review: o resumo diz o que o crítico pensa da obra, com os argumentos dele, as faixas/cenas/capítulos que cita, o que elogia e o que critica, e o veredito. Deixe claro que é a opinião do crítico ("para a Pitchfork...", "o crítico acha...").
