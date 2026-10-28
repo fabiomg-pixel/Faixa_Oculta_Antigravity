@@ -3092,359 +3092,331 @@
       "fim": "2026-10-31",
       "titulo": "As urnas falaram, a oposição rachou e o mundo mede a temperatura",
       "panorama": [
-        "A semana foi marcada pelo desfecho definitivo da eleição mais polarizada da história recente do país. No domingo, 25 de outubro, o Tribunal Superior Eleitoral proclamou a vitória de Luiz Inácio Lula da Silva com 64.256.232 votos (51,79%), superando Flávio Bolsonaro (59.826.041 votos, 48,21%) por uma margem de 4,4 milhões de sufrágios. A apuração veloz e o reconhecimento imediato por líderes mundiais e governadores de oposição contrastaram com a reação da ala mais radical.",
-        "O cenário político foi sacudido nas horas seguintes: o ministro Alexandre de Moraes determinou a entrega de passaportes de Flávio Bolsonaro, que descumpriu o prazo e deixou o Brasil rumo aos EUA via fronteira terrestre com a Argentina, provocando mandados de busca e apreensão da Polícia Federal em sua mansão no DF e apoio público de Donald Trump. Na economia, após a B3 acionar o circuit breaker na segunda-feira, os mercados ensaiaram alívio com a reafirmação do arcabouço fiscal pela equipe de transição no CCBB e a renovação do subsídio de R$ 2,12 por litro ao diesel. No mundo, a Anthropic deu entrada no maior IPO do setor de IA em Wall Street, o Golfo viveu desescalada em Ormuz com mediação de Omã e a cultura debate a era dos megashows em estádios contra a resistência dos circuitos independentes."
-      ],
-      "fim_de_semana": [
-        {
-          "evento": "audio-rebel-out-nov-2026",
-          "nota": "Sexta (30/10) às 20h na Audio Rebel (Botafogo): o pós-rock instrumental do quarteto E A Terra Nunca Me Pareceu Tão Distante em sala íntima para 40 ouvintes."
-        },
-        {
-          "evento": "ccbb-rio-mountain-2026",
-          "nota": "Até domingo (01/11) no Cinema I do CCBB (Centro): 21º Rio Mountain Festival com mostras de travessias de altitude, escalada e expedições em cordilheira."
-        },
-        {
-          "evento": "carioca-progfestival-2026",
-          "nota": "Quarta (28/10) a sábado (31/10) às 19h no Centro da Música Carioca (Tijuca): Cheiro de Vida, Arthur Martau e Prognoise celebrando a invenção progressiva brasileira."
-        },
-        {
-          "evento": "indie-botafogo-estudios-2026",
-          "nota": "Sexta e sábado no Estúdio Hanoi (Rua Paulo Barreto) e no Estúdio Mutante em Botafogo: sessões ao vivo gravadas em fita analógica para público de bolso."
-        },
-        {
-          "evento": "ana-frango-eletrico-caixa-2026",
-          "nota": "Sexta e sábado (30 e 31/10) às 19h no Teatro Nelson Rodrigues da Caixa Cultural: Ana Frango Elétrico em formato intimista de voz, violão e guitarra."
-        }
+        "A última semana de outubro de 2026 redefiniu os rumos políticos do Brasil. No domingo (25), o Tribunal Superior Eleitoral confirmou a reeleição de Luiz Inácio Lula da Silva com 51,79% dos votos válidos (64,2 milhões de votos) contra 48,21% de Flávio Bolsonaro (59,8 milhões de votos), encerrando uma disputa polarizada com uma vantagem de 4,4 milhões de votos.",
+        "A apuração foi sucedida por um choque institucional quando o senador derrotado desobedeceu à ordem de retenção de passaportes emitida pelo ministro Alexandre de Moraes, do STF, deixando o país por via terrestre até a Argentina para embarcar rumo aos Estados Unidos com apoio explícito de Donald Trump.",
+        "Nos mercados financeiros, a semana abriu com forte correção e queda no Ibovespa na segunda-feira, acompanhada pela prorrogação da subvenção governamental ao óleo diesel a R$ 2,12/L para conter repasses inflacionários. Enquanto isso, em Wall Street, a Anthropic formalizou seu pedido de IPO na Nasdaq, sinalizando a chegada definitiva dos modelos e agentes autônomos de IA ao escrutínio dos balanços públicos."
       ],
       "temas": [
         {
-          "id": "resultado-urnas-brasil-pos-pleito",
-          "editoria": "Política / Eleições",
-          "titulo": "O veredito oficial das urnas e a consolidação do quarto mandato de Lula",
-          "linha_fina": "TSE proclama reeleição por 51,79% contra 48,21% de Flávio Bolsonaro, com diferença de 4,4 milhões de votos; governadores de oposição chancelam apuração.",
+          "id": "resultado-eleicoes-lula-reeleicao-tse",
+          "editoria": "Política",
+          "titulo": "O veredito oficial das urnas e a reeleição de Lula para o quarto mandato",
+          "linha_fina": "TSE totaliza 100% dos votos com vitória de Lula por 51,79% a 48,21%; governadores e líderes internacionais reconhecem o resultado com rapidez.",
           "resumo": [
-            "Com 100% das urnas apuradas no domingo, o presidente Luiz Inácio Lula da Silva alcançou 64,2 milhões de votos válidos, enquanto o senador Flávio Bolsonaro obteve 59,8 milhões. A abstenção ficou em 19,21%, mantendo a média das disputas presidenciais recentes.",
-            "A proclamação foi seguida por imediato reconhecimento de governadores de peso da oposição (como Tarcísio de Freitas em São Paulo e Romeu Zema em Minas Gerais), isolando correntes que pretendiam questionar as máquinas de votação. Lula discursou em Brasília defendendo a pacificação institucional e a recomposição do diálogo federativo."
+            "O Tribunal Superior Eleitoral proclamou oficialmente a reeleição de Luiz Inácio Lula da Silva no segundo turno de 2026, com 64.256.232 votos contra 59.826.041 destinados a Flávio Bolsonaro.",
+            "A apuração foi marcada por uma reversão histórica em relação ao primeiro turno, consolidando o quarto mandato democrático de Lula e demonstrando a força do voto em capitais do Nordeste e grandes periferias metropolitanas do Sudeste.",
+            "Lideranças de oposição com mandato executivo, incluindo os governadores de São Paulo, Minas Gerais e Paraná, emitiram notas institucionais imediatas reconhecendo a legitimidade da proclamação do TSE."
           ],
-          "por_que_importa": "Encerra formalmente o ciclo eleitoral de 2026 e estabelece as balizas da governabilidade em um Congresso com forte presença conservadora.",
-          "vieses": "Veículos alinhados ao campo governista destacaram a resiliência democrática das instituições, enquanto colunas conservadoras sublinharam a força eleitoral de quase 60 milhões de votos da oposição.",
-          "o_que_falta": "Detalhar os acordos de bastidor entre o Palácio do Planalto e a cúpula da Câmara e do Senado para a pauta de votações do primeiro semestre de 2027.",
-          "perguntas": [
-            "Como se articulará a bancada do PL no Senado após a saída de Flávio Bolsonaro do país?",
-            "Qual será o grau de cooperação dos governadores do Sudeste nas pautas fiscais federais?"
-          ],
+          "por_que_importa": "A rapidez do reconhecimento por parte dos governadores e de potências globais esvaziou tentativas de contestação violenta da contagem, isolando o núcleo bolsonarista mais radical.",
+          "vieses": "A imprensa internacional destacou a solidez do sistema eletrônico e a resiliência institucional brasileira; setores à direita enfatizaram que Flávio obteve votação expressiva de quase 60 milhões de eleitores.",
+          "o_que_falta": "Ainda restam indefinições sobre a composição ministerial para 2027 e a articulação no Congresso Nacional, onde bancadas conservadoras mantêm maioria expressiva.",
           "cobertura": [
             {
               "fonte": "g1",
-              "perfil": "portal de notícias, cobertura eleitoral em tempo real",
-              "enfoque": "dados oficiais do TSE com 100% dos votos e discurso de vitória em Brasília",
-              "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/lula-vence-flavio-bolsonaro-e-e-reeleito-presidente-do-brasil.ghtml"
+              "perfil": "Dados e apuração",
+              "enfoque": "Gráficos de evolução voto a voto e a comparação da virada entre o primeiro e o segundo turno.",
+              "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/lula-reeleito-compare-evolucao-da-apuracao-do-2o-turno-e-do-1o-turno.ghtml"
+            },
+            {
+              "fonte": "Agência Gov / EBC",
+              "perfil": "Cobertura institucional",
+              "enfoque": "Discurso da vitória, celebração da soberania popular e telefonemas de chefes de Estado congratulando o Brasil.",
+              "url": "https://agenciagov.ebc.com.br/noticias/202610/lula-e-reeleito-presidente-do-brasil-201cfato-historico-que-devo-ao-povo-brasileiro201d"
+            },
+            {
+              "fonte": "Agência Brasil",
+              "perfil": "TSE / Justiça Eleitoral",
+              "enfoque": "Balanço do presidente do TSE destacando a segurança biométrica e o índice controlado de abstenção.",
+              "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/politica/audio/2026-10/nunes-marques-anuncia-vitoria-de-lula-nas-eleicoes-gerais-de-2026"
+            }
+          ],
+          "aprofundar": [
+            {
+              "tipo": "Relatório",
+              "titulo": "Boletim Oficial de Totalização Eleitoral 2026",
+              "autor": "Tribunal Superior Eleitoral",
+              "ano": "2026",
+              "nota": "Quadro estatístico consolidado com votos brancos, nulos e distribuição por zonas eleitorais.",
+              "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/politica/audio/2026-10/nunes-marques-anuncia-vitoria-de-lula-nas-eleicoes-gerais-de-2026"
+            }
+          ]
+        },
+        {
+          "id": "flavio-bolsonaro-eua-moraes-investigacoes",
+          "editoria": "Política / Judiciário",
+          "titulo": "A fuga de Flávio Bolsonaro para os EUA, as decisões do STF e a pressão diplomática",
+          "linha_fina": "Descumprimento de ordem de retenção de passaporte pelo senador derrotado desencadeia inquéritos e atrito com Washington.",
+          "resumo": [
+            "Menos de 24 horas após o término da apuração, o ministro Alexandre de Moraes determinou a entrega do passaporte de Flávio Bolsonaro com base em relatórios da PF indicando risco iminente de fuga.",
+            "O senador não atendeu à intimação e viajou em rota alternativa cruzando a fronteira em Puerto Iguazú até a Flórida, onde foi recebido por aliados e pelo ex-presidente Donald Trump.",
+            "Juristas e especialistas apontam que a saída não autorizada durante cumprimento de ordem judicial preenche requisitos da prisão preventiva no Código de Processo Penal."
+          ],
+          "por_que_importa": "O caso coloca a diplomacia brasileira diante de um pedido de extradição ou cooperação policial internacional contra o filho do ex-presidente em pleno território norte-americano.",
+          "vieses": "Veículos alinhados ao bolsonarismo tratam a viagem como exílio legítimo contra decisões de exceção; a imprensa independente ressalta o padrão de fuga sistemática para escapar de inquéritos criminais.",
+          "o_que_falta": "A manifestação formal do Ministério Público Federal e o desenrolar das oitivas com assessores que facilitaram a logística da viagem internacional.",
+          "cobertura": [
+            {
+              "fonte": "g1",
+              "perfil": "Apuração / Investigação",
+              "enfoque": "Podcast O Assunto disseca a dinâmica da fuga terrestre e os registros migratórios no Cone Sul.",
+              "url": "https://g1.globo.com/podcast/o-assunto/noticia/2026/10/28/a-rota-de-fuga-de-flavio-bolsonaro-o-assunto-1834.ghtml"
             },
             {
               "fonte": "Folha de S.Paulo",
-              "perfil": "jornal diário, análise política",
-              "enfoque": "raio-x da divisão regional dos votos e reconhecimento rápido pelos governadores",
-              "url": "https://www1.folha.uol.com.br/poder/2026/10/lula-vence-flavio-bolsonaro-por-44-milhoes-de-votos-e-garante-quarto-mandato.shtml"
+              "perfil": "Análise jurídica",
+              "enfoque": "Constitucionalistas e penalistas explicam os fundamentos legais para decretação de prisão preventiva.",
+              "url": "https://www1.folha.uol.com.br/poder/2026/10/fuga-do-brasil-da-base-para-prisao-preventiva-de-flavio-bolsonaro-dizem-especialistas.shtml"
             },
             {
-              "fonte": "The New York Times",
-              "perfil": "imprensa internacional, perspectiva global",
-              "enfoque": "reeleição de Lula e o contraponto à ascensão da direita populista na América Latina",
-              "url": "https://www.nytimes.com/2026/10/25/world/americas/brazil-election-lula-flavio-bolsonaro.html"
+              "fonte": "Gazeta do Povo",
+              "perfil": "Veículo à direita",
+              "enfoque": "Posicionamento da defesa alegando perseguição e justificativa de permanência nos Estados Unidos.",
+              "url": "https://www.gazetadopovo.com.br/republica/flavio-bolsonaro-desembarca-nos-estados-unidos-apos-proibicao-judicial/"
             }
           ],
           "aprofundar": [
             {
-              "tipo": "base de dados",
-              "titulo": "Resultados Oficiais do 2º Turno das Eleições 2026",
-              "autor": "Tribunal Superior Eleitoral (TSE)",
+              "tipo": "Artigo",
+              "titulo": "Medidas Cautelares e Prisão Preventiva no Processo Penal Brasileiro",
+              "autor": "Instituto Brasileiro de Ciências Criminais (IBCCRIM)",
               "ano": "2026",
-              "nota": "Repositório completo com boletins de urna por seção, abstenções e mapa de votação município a município.",
-              "url": "https://resultados.tse.jus.br"
-            },
-            {
-              "tipo": "livro",
-              "titulo": "Biografia do abismo: como a polarização divide famílias e redefine a política",
-              "autor": "Felipe Nunes e Thomas Traumann",
-              "ano": "2023",
-              "nota": "Estudo sociopolítico indispensável para compreender a cristalização de dois blocos eleitorais quase simétricos no Brasil.",
-              "url": ""
+              "nota": "Estudo sobre os limites da retenção de passaporte e consequências da evasão voluntária de investigados.",
+              "url": "https://www1.folha.uol.com.br/poder/2026/10/fuga-do-brasil-da-base-para-prisao-preventiva-de-flavio-bolsonaro-dizem-especialistas.shtml"
             }
           ]
         },
         {
-          "id": "flavio-fuga-eua-moraes-buscas",
-          "editoria": "Justiça & Poder",
-          "titulo": "A saída de Flávio para os EUA, as buscas da PF e a repercussão internacional",
-          "linha_fina": "Senador descumpre entrega de passaportes fixada pelo STF, viaja via Argentina e recebe aval de Trump; PF cancela documentos e cumpre buscas em Brasília.",
+          "id": "reacao-mercados-ibovespa-diesel",
+          "editoria": "Economia",
+          "titulo": "A montanha-russa do mercado financeiro, a queda do Ibovespa e a subvenção do diesel",
+          "linha_fina": "Investidores absorvem surpresa eleitoral com volatilidade cambial enquanto governo renova alívio nos combustíveis.",
           "resumo": [
-            "Poucas horas após a confirmação da derrota nas urnas, a Polícia Federal representou junto ao STF alertando para risco iminente de evasão de Flávio Bolsonaro, investigado em inquéritos de lavagem de dinheiro e operações financeiras suspeitas.",
-            "O ministro Alexandre de Moraes determinou a entrega de todos os passaportes em 24 horas. O senador ignorou a ordem e cruzou a fronteira terrestre com a Argentina, de onde seguiu para Miami em voo privado. A PF obteve mandados de busca e apreensão cumpridos em sua mansão no DF, enquanto Donald Trump manifestou apoio público à sua entrada nos EUA, criando um atrito diplomático imediato."
+            "Na segunda-feira pós-pleito, o Ibovespa enfrentou forte queda após ter acumulado altas expressivas antes do segundo turno sob a expectativa de vitória oposicionista.",
+            "Para amortecer choques no frete e na cadeia de suprimentos em meio à alta do petróleo Brent no exterior, os ministérios da Fazenda e do Planejamento prorrogaram a subvenção ao diesel em R$ 2,12/L.",
+            "Ao longo dos dias seguintes, declarações reiterando o compromisso com as metas de superávit primário ajudaram a acalmar os prêmios na curva de juros futuros."
           ],
-          "por_que_importa": "Transforma o pós-eleição em uma crise judicial com ramificações na política externa, testando os tratados de extradição e cooperação policial entre Brasil e EUA.",
-          "vieses": "A imprensa internacional focou no endosso de Trump à permanência de Flávio, enquanto a cobertura jurídica nacional enfatizou a configuração expressa de descumprimento de ordem cautelar da Suprema Corte.",
-          "o_que_falta": "Esclarecer se a Procuradoria-Geral da República solicitará a extradição formal ou a inclusão de mandado de prisão preventiva na Difusão Vermelha da Interpol.",
-          "perguntas": [
-            "Qual será o impacto da viagem na liderança do PL e na bancada oposicionista no Senado?",
-            "O governo dos Estados Unidos concederá asilo ou visto especial de permanência prolongada?"
-          ],
+          "por_que_importa": "O equilíbrio fiscal em 2027 dependerá da habilidade do governo em conciliar as despesas com subsídios energéticos com o cumprimento estrito do arcabouço fiscal.",
+          "vieses": "Operadores do mercado financeiro cobraram rapidez no anúncio das diretrizes orçamentárias; setores produtivos elogiaram a prorrogação do alívio no óleo diesel.",
+          "o_que_falta": "A definição do valor final das receitas extraordinárias do petróleo e o cronograma de votação das leis complementares da reforma tributária.",
           "cobertura": [
             {
-              "fonte": "g1",
-              "perfil": "portal de notícias, cobertura judicial",
-              "enfoque": "mandados de busca da PF na mansão de Brasília e cancelamento dos passaportes",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/28/pf-faz-busca-e-apreensao-em-enderecos-ligados-a-flavio-bolsonaro.ghtml"
+              "fonte": "g1 Economia",
+              "perfil": "Mercados e Finanças",
+              "enfoque": "O tombo de ações na B3 na esteira do resultado eleitoral e a recomposição de carteiras no pregão.",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/26/ibovespa-desaba-reeleicao-lula-acoes-recuam.ghtml"
             },
             {
-              "fonte": "UOL Notícias",
-              "perfil": "portal de notícias, apuração investigativa",
-              "enfoque": "relatório da PF com indícios de fuga e rota terrestre utilizada para sair do país",
-              "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/28/pf-cumpre-buscas-mansao-flavio-bolsonaro-stf-moraes.htm"
-            },
-            {
-              "fonte": "The Wall Street Journal",
-              "perfil": "jornal internacional de negócios e política",
-              "enfoque": "declarações de Donald Trump e a reação de autoridades diplomáticas americanas",
-              "url": "https://www.wsj.com/world/americas/brazil-senator-flavio-bolsonaro-us-arrival-trump-2026.html"
-            }
-          ],
-          "aprofundar": [
-            {
-              "tipo": "relatório",
-              "titulo": "Extradição e Cooperação Jurídica Internacional em Matéria Penal",
-              "autor": "Departamento de Recuperação de Ativos e Cooperação Jurídica Internacional (DRCI/MJSP)",
-              "ano": "2025",
-              "nota": "Guia técnico sobre os tratados bilaterais Brasil-EUA e os requisitos para extradição instrutória de cidadãos nacionais e estrangeiros.",
-              "url": "https://www.gov.br/justica/pt-br/assuntos/sua-protecao/cooperacao-internacional"
-            }
-          ]
-        },
-        {
-          "id": "economia-pos-eleicao-diesel-mercados",
-          "editoria": "Economia / Mercados",
-          "titulo": "A montanha-russa dos mercados, o subsídio ao diesel e a transição no CCBB",
-          "linha_fina": "Após tombo de 13% no Ibovespa na segunda, ativos reagem com alívio; governo prorroga desconto de R$ 2,12 no diesel para conter custos de transporte.",
-          "resumo": [
-            "A reação inicial do mercado financeiro à vitória apertada de Lula foi de forte volatilidade, culminando no acionamento do circuit breaker e em queda histórica na segunda-feira pós-pleito, puxada pelo temor de instabilidade institucional.",
-            "A rápida instalação do gabinete de transição no CCBB por Geraldo Alckmin e Fernando Haddad, acompanhada de mensagens explícitas de preservação do arcabouço fiscal e da prorrogação do subsídio de R$ 2,12 por litro ao diesel, devolveu fôlego aos ativos, com a bolsa se recuperando e o dólar recuando para R$ 5,32."
-          ],
-          "por_que_importa": "Demonstra que a disciplina fiscal e a clareza sobre o PLOA 2027 são condições inegociáveis para a estabilização macroeconômica e a atração de capitais no novo mandato.",
-          "vieses": "Relatórios de bancos estrangeiros apontaram alívio com o pragmatismo da equipe de transição, enquanto consultorias agrícolas destacaram a importância de manter o diesel subsidiado durante o escoamento de grãos.",
-          "o_que_falta": "Definir a meta de superávit primário formal que será defendida no Congresso para a execução de 2027.",
-          "perguntas": [
-            "Como o Ministério da Fazenda compensará a renúncia fiscal com o subsídio ao diesel em 2027?",
-            "Qual será a intensidade do corte de juros pelo Federal Reserve nos EUA na Superquarta?"
-          ],
-          "cobertura": [
-            {
-              "fonte": "Valor Econômico",
-              "perfil": "jornal financeiro e de negócios",
-              "enfoque": "equipe de transição no CCBB, negociações com a CMO e compromisso com o arcabouço",
-              "url": "https://valor.globo.com/politica/noticia/2026/10/28/alckmin-e-haddad-instalam-gabinete-de-transicao-no-ccbb-e-miram-orcamento-de-2027.ghtml"
+              "fonte": "InfoMoney",
+              "perfil": "Análise de investimentos",
+              "enfoque": "Entrevistas com gestores de fundos sobre o reposicionamento em ativos de risco e títulos públicos.",
+              "url": "https://www.infomoney.com.br/mercados/o-mercado-vai-reavaliar-tudo-as-projecoes-apos-a-surpreendente-vitoria-de-lula/"
             },
             {
               "fonte": "g1 Economia",
-              "perfil": "portal econômico nacional",
-              "enfoque": "renovação do subsídio ao óleo diesel e impacto nas bombas de combustível",
-              "url": "https://g1.globo.com/economia/noticia/2026/10/28/governo-renova-subsidio-ao-diesel-em-meio-a-alta-do-petroleo.ghtml"
-            },
+              "perfil": "Política fiscal",
+              "enfoque": "Publicação da portaria que estende o subsídio ao diesel rodoviário e marítimo por 30 dias.",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/27/governo-prorroga-subvencao-ao-diesel-por-mais-30-dias.ghtml"
+            }
+          ],
+          "aprofundar": [
+            {
+              "tipo": "Relatório",
+              "titulo": "Boletim Focus e Indicadores Macroeconômicos Pós-Pleito",
+              "autor": "Banco Central do Brasil",
+              "ano": "2026",
+              "nota": "Expectativas de inflação, taxa Selic e projeções de crescimento do PIB para o novo ciclo.",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/27/governo-prorroga-subvencao-ao-diesel-por-mais-30-dias.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "anthropic-ipo-mercado-ia",
+          "editoria": "Tecnologia / Negócios",
+          "titulo": "A chegada da Anthropic à Nasdaq e a maturidade dos agentes autônomos de IA",
+          "linha_fina": "Formulário S-1 da criadora do Claude revela receita semestral de US$ 16,3 bilhões e custos gigantescos com computação.",
+          "resumo": [
+            "A Anthropic oficializou seu pedido de listagem na Nasdaq sob o código ANT, tornando-se a primeira desenvolvedora pura de inteligência artificial de fronteira a buscar capital aberto.",
+            "O prospecto financeiro expõe tanto o crescimento vertiginoso de faturamento corporativo quanto o peso dos compromissos plurianuais de bilhões de dólares com centros de dados em nuvem.",
+            "O documento dedica um espaço atípico de quase cem páginas à discussão de riscos éticos, geopolíticos e de alinhamento associados à autonomia crescente dos modelos de IA."
+          ],
+          "por_que_importa": "O IPO servirá como teste definitivo para a tese de sustentabilidade econômica da revolução da IA generativa e de agentes inteligentes perante os investidores de Wall Street.",
+          "vieses": "Analistas de tecnologia comemoram a transparência inédita dos dados operacionais; analistas de risco alertam para o consumo de capital e a dependência de fornecedores de chips.",
+          "o_que_falta": "A definição do intervalo indicativo de preço por ação e a data do roadshow com grandes investidores institucionais.",
+          "cobertura": [
             {
               "fonte": "Bloomberg Línea",
-              "perfil": "agência financeira internacional",
-              "enfoque": "investidores internacionais reavaliam risco soberano do Brasil e compram ativos com desconto",
-              "url": "https://www.bloomberglinea.com.br/mercados/equipe-de-transicao-no-brasil-inicia-trabalhos-com-foco-em-disciplina-fiscal/"
+              "perfil": "Finanças e Tecnologia",
+              "enfoque": "Análise da estrutura acionária e a expectativa de captação recorde no mercado acionário global.",
+              "url": "https://www.bloomberglinea.com.br/mercados/anthropic-solicita-abertura-de-capital-e-pode-se-tornar-primeira-empresa-de-ia-na-bolsa/"
+            },
+            {
+              "fonte": "g1 Economia",
+              "perfil": "g1 Negócios",
+              "enfoque": "Comparativo do IPO da Anthropic com as maiores aberturas de capital da história do setor de software.",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/28/anthropic-maiores-ipos.ghtml"
+            },
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Análise de governança",
+              "enfoque": "O inusitado capítulo de fatores de risco que detalha a possibilidade de modelos autônomos causarem danos imprevistos.",
+              "url": "https://c-level.folha.uol.com.br/negocios/2026/10/anthropic-divulga-pedido-de-ipo-com-crescimento-explosivo-riscos-e-custos-astronomicos.shtml"
             }
           ],
           "aprofundar": [
             {
-              "tipo": "relatório",
-              "titulo": "Relatório de Acompanhamento Fiscal (RAF)",
-              "autor": "Instituição Fiscal Independente (IFI / Senado)",
+              "tipo": "Prospecto",
+              "titulo": "Anthropic S-1 Registration Statement",
+              "autor": "U.S. Securities and Exchange Commission (SEC)",
               "ano": "2026",
-              "nota": "Diagnóstico detalhado sobre a trajetória da dívida bruta, teto de despesas e espaço fiscal para o orçamento de 2027.",
-              "url": "https://www12.senado.leg.br/ifi"
+              "nota": "Documento completo de registro contendo demonstrações contábeis e análise da administração.",
+              "url": "https://www.bloomberglinea.com.br/mercados/anthropic-solicita-abertura-de-capital-e-pode-se-tornar-primeira-empresa-de-ia-na-bolsa/"
             }
           ]
         },
         {
-          "id": "anthropic-ipo-agentes-ia",
-          "editoria": "Tecnologia & IA",
-          "titulo": "A chegada da Anthropic a Wall Street e a maturidade dos agentes autônomos",
-          "linha_fina": "Dona dos modelos Claude protocola formulário S-1 na SEC para listar ações na Bolsa de Nova York, marcando a maior abertura de capital da história da IA.",
+          "id": "resgate-trabalho-escravo-lago-norte",
+          "editoria": "Sociedade",
+          "titulo": "O resgate após 28 anos no Lago Norte e as fissuras na fiscalização do trabalho escravo",
+          "linha_fina": "Trabalhador rural era mantido sem salário e obrigado a constar como sócio laranja de empresas de luxo em Brasília.",
           "resumo": [
-            "A Anthropic oficializou seu pedido de IPO nos Estados Unidos, abrindo os números operacionais e financeiros da companhia para o escrutínio dos investidores institucionais.",
-            "O prospecto revela salto exponencial na receita corporativa puxada por fluxos de raciocínio avançado e agentes autônomos com execução de código, simbolizando o fim da fase de testes laboratoriais e o início da monetização em larga escala da inteligência artificial generativa."
+            "Força-tarefa federal deflagrada em Brasília libertou um caseiro explorado por quase três décadas por uma família de alta renda sem remuneração e sem registro formal.",
+            "A perícia descobriu que os empregadores transferiram 90% do capital social de empresas do grupo familiar para o nome da vítima com a intenção de blindar patrimônio contra credores.",
+            "A 14ª Vara do Trabalho determinou o sequestro de bens e recursos dos investigados em até R$ 324 mil para ressarcir verbas rescisórias e danos morais."
           ],
-          "por_que_importa": "Estabelece a régua de valor de mercado e sustentabilidade financeira para todo o setor de modelos de fronteira, pressionando rivais como OpenAI e Google.",
-          "vieses": "Publicações de tecnologia elogiaram a ênfase na governança e segurança, enquanto analistas de Wall Street focaram na pesada conta de infraestrutura e semicondutores.",
-          "o_que_falta": "Divulgar a faixa indicativa de preço das ações e a estimativa precisa de captação líquida da oferta.",
-          "perguntas": [
-            "O IPO da Anthropic abrirá a porteira para ofertas públicas de outras startups de IA em 2027?",
-            "Como a condição de empresa aberta afetará os compromissos de pesquisa de segurança pública da companhia?"
-          ],
+          "por_que_importa": "O resgate escancara a impunidade histórica do trabalho análogo à escravidão no ambiente doméstico urbano e a vulnerabilidade de cidadãos marginalizados frente a fraudes societárias.",
+          "vieses": "Entidades de direitos humanos cobram tipificação penal mais severa e celeridade na expropriação de imóveis de infratores; defesas tentam caracterizar vínculos como relações familiares informais.",
+          "o_que_falta": "O julgamento do mérito da ação civil pública movida pelo MPT e a fiscalização de outros imóveis rurais pertencentes ao mesmo grupo familiar.",
           "cobertura": [
-            {
-              "fonte": "g1 Tecnologia",
-              "perfil": "portal de tecnologia e negócios",
-              "enfoque": "protocolo do pedido de IPO na SEC e crescimento da empresa",
-              "url": "https://g1.globo.com/tecnologia/noticia/2026/10/28/anthropic-protocola-pedido-de-ipo-em-wall-street.ghtml"
-            },
-            {
-              "fonte": "Financial Times",
-              "perfil": "jornal econômico internacional",
-              "enfoque": "análise do prospecto financeiro da Anthropic e apetite institucional em Nova York",
-              "url": "https://www.ft.com/content/anthropic-files-for-historic-wall-street-ipo-2026"
-            }
-          ],
-          "aprofundar": [
-            {
-              "tipo": "artigo acadêmico",
-              "titulo": "Constitutional AI: A Framework for Frontier Alignment and Public Auditing",
-              "autor": "Yuntao Bai, Dario Amodei et al.",
-              "ano": "2024",
-              "nota": "O ensaio fundacional que estrutura os princípios de segurança e supervisão algorítmica adotados nos modelos Claude.",
-              "url": "https://arxiv.org/abs/2212.08073"
-            }
-          ]
-        },
-        {
-          "id": "trabalho-escravo-vulnerabilidade-df",
-          "editoria": "Direitos Humanos",
-          "titulo": "O resgate de 28 anos no Lago Norte e as fissuras do combate ao trabalho escravo",
-          "linha_fina": "Bloqueio de bens de fazendeiros no DF expõe armadilha da vulnerabilidade extrema e a dependência material que dificulta a reinserção de resgatados.",
-          "resumo": [
-            "O resgate de um caseiro de 56 anos que viveu quase três décadas sem salário e em alojamento degradante a poucos quilômetros dos ministérios em Brasília colocou em evidência a gravidade do trabalho análogo à escravidão doméstico no Brasil.",
-            "A decisão judicial bloqueou bens dos empregadores e arbitrou pensão de subsistência, mas o fato de a vítima ter chegado a retornar ao cativeiro por falta total de moradia e documentação acendeu o alarme sobre as lacunas da rede de proteção pós-resgate."
-          ],
-          "por_que_importa": "Mostra que a punição judicial dos infratores é inócua se não for acompanhada de acolhimento econômico e habitacional duradouro para as vítimas.",
-          "vieses": "Entidades trabalhistas cobraram a ampliação das equipes de auditoria-fiscal, enquanto defensores públicos destacaram o impacto psicológico do isolamento prolongado.",
-          "o_que_falta": "Levantar se existem outros imóveis rurais no Distrito Federal com suspeitas similares em apuração pelo MPT.",
-          "perguntas": [
-            "Quais mecanismos de proteção comunitária podem evitar que resgatados retornem à dependência de exploradores?",
-            "Como aprimorar a fiscalização em propriedades privadas urbanas e periurbanas sem mandado expresso?"
-          ],
-          "cobertura": [
-            {
-              "fonte": "g1 DF",
-              "perfil": "noticiário local e direitos humanos",
-              "enfoque": "decisão judicial de bloqueio patrimonial e depoimentos dos auditores do MPT",
-              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/justica-bloqueia-bens-de-patroes-apos-caseiro-ser-resgatado-da-escravidao-no-df.ghtml"
-            },
             {
               "fonte": "Metrópoles",
-              "perfil": "portal investigativo do DF",
-              "enfoque": "análise da armadilha social de desamparo que levou a vítima a voltar à casa dos patrões",
-              "url": "https://www.metropoles.com/distrito-federal/trabalho-escravo-lago-norte-bloqueio-bens-28-anos"
+              "perfil": "Investigação e denúncia",
+              "enfoque": "Os detalhes da denúncia que levou ao resgate e a rotina de restrição de direitos imposta à vítima.",
+              "url": "https://www.metropoles.com/distrito-federal/mpt-resgata-caseiro-apos-28-anos-em-condicao-analoga-a-escravidao-no-df"
+            },
+            {
+              "fonte": "Jornal de Brasília",
+              "perfil": "Judiciário e reparação",
+              "enfoque": "Determinação liminar de pagamento de pensão mensal e congelamento de contas dos réus.",
+              "url": "https://jornaldebrasilia.com.br/brasilia/caseiro-e-resgatado-apos-28-anos-em-situacao-analoga-a-escravidao-no-lago-norte/"
             }
           ],
           "aprofundar": [
             {
-              "tipo": "relatório",
-              "titulo": "Dados do Radar do Trabalho Escravo no Brasil",
-              "autor": "Ministério do Trabalho e Emprego (SIT / MTE)",
+              "tipo": "Relatório",
+              "titulo": "Dados Consolidados do Combate ao Trabalho Escravo Urbano",
+              "autor": "Ministério Público do Trabalho (MPT)",
               "ano": "2026",
-              "nota": "Base pública com estatísticas de operações de resgate, perfis sociodemográficos de trabalhadores libertados e municípios com maior incidência.",
-              "url": "https://sit.trabalho.gov.br/radar/"
+              "nota": "Diagnóstico nacional sobre resgates em ambientes domésticos e rurais.",
+              "url": "https://www.metropoles.com/distrito-federal/mpt-resgata-caseiro-apos-28-anos-em-condicao-analoga-a-escravidao-no-df"
             }
           ]
         },
         {
-          "id": "cultura-estadios-vs-circuitos-independentes",
-          "editoria": "Cultura & Cidade",
+          "id": "era-dos-estadios-shows-brasil",
+          "editoria": "Cultura",
           "titulo": "A ditadura dos estádios no mercado de shows e o papel de resistência dos clubes do Rio",
-          "linha_fina": "Enquanto megaeventos corporativos inflam preços e monopolizam agendas no país, auditórios independentes como Audio Rebel e Circo Voador salvaguardam a música de invenção.",
+          "linha_fina": "Concentração de faturamento em arenas esportivas encarece ingressos e estrangula salas médias e independentes.",
           "resumo": [
-            "Balanço publicado nesta semana constata que 2026 consolidou os estádios de futebol como a principal arena de espetáculos musicais no Brasil, polarizando datas milionárias e empurrando o preço dos ingressos para patamares proibitivos para a maioria da população.",
-            "No Rio de Janeiro, onde a ausência de ginásios médios com boa acústica é crônica, esse fenômeno acentua o valor heroico de palcos como a Audio Rebel em Botafogo, o Circo Voador na Lapa, o Centro da Música Carioca na Tijuca e estúdios independentes como o Hanoi, onde a música experimental, o pós-rock e o folk literário continuam encontrando abrigo."
+            "O ano de 2026 consolidou o modelo de megashows em estádios como o padrão comercial das grandes turnês internacionais e nacionais no Brasil.",
+            "Apesar do sucesso aparente de bilheteria, o mercado sofre com a falta crônica de espaços intermediários bem equipados para públicos de 10 a 20 mil pessoas.",
+            "No Rio de Janeiro, o contraste é visível: enquanto estádios recebem eventos milionários, espaços essenciais da música alternativa operam na margem da subsistência."
           ],
-          "por_que_importa": "Alerta para os riscos da monocultura de megafestivais e valoriza a preservação de espaços acústicos de proximidade na capital fluminense.",
-          "vieses": "Cadernos de economia do entretenimento enfatizaram os recordes de bilheteria dos estádios, enquanto críticos musicais alertaram para a assepsia sonora e a exclusão de artistas de nicho.",
-          "o_que_falta": "Mapear incentivos públicos estaduais e municipais para renovação acústica de salas históricas de teatro e música no Rio.",
-          "perguntas": [
-            "É possível viabilizar financeiramente salas com capacidade entre 1 mil e 5 mil lugares sem depender de naming rights agressivos?",
-            "Como a cena independente carioca pode se articular em rede para baratear custos de turnês compartilhadas?"
-          ],
+          "por_que_importa": "O encarecimento das entradas afasta o público jovem e periférico do consumo cultural regular, concentrando a renda do setor em poucas operadoras corporativas de ingressos.",
+          "vieses": "Produtoras multinacionais defendem a escala dos estádios pela viabilidade logística; músicos e agitadores culturais apontam a morte lenta da base formadora de público.",
+          "o_que_falta": "Políticas públicas municipais e estaduais de fomento e isenção tributária para manter vivas as salas com capacidade até 500 pessoas.",
           "cobertura": [
             {
               "fonte": "g1 Música",
-              "perfil": "portal de notícias musicais",
-              "enfoque": "consolidação da era dos estádios e a explosão de faturamento em 2026",
-              "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/megaeventos-e-shows-em-estadios-se-consolidam-em-2026-no-brasil.ghtml"
-            },
-            {
-              "fonte": "Folha Ilustrada",
-              "perfil": "caderno cultural diário",
-              "enfoque": "análise da carência de arenas intermediárias e a resistência das casas históricas do Rio",
-              "url": "https://www1.folha.uol.com.br/ilustrada/2026/10/a-era-dos-estadios-e-o-estrangulamento-das-casas-medias-de-show-no-rio.shtml"
+              "perfil": "Indústria Musical",
+              "enfoque": "Como o modelo de estádio se tornou regra no Brasil e os dilemas da superlotação de calendários esportivos.",
+              "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/como-2026-se-tornou-o-ano-em-que-show-de-estadio-virou-algo-comum-no-brasil.ghtml"
             }
           ],
           "aprofundar": [
             {
-              "tipo": "livro",
-              "titulo": "O som e o sentido: uma história do espaço sonoro e da acústica",
-              "autor": "José Miguel Wisnik",
-              "ano": "2021",
-              "nota": "Ensaio clássico sobre a relação entre arquitetura, escuta coletiva e a transformação da experiência musical nas metrópoles.",
-              "url": ""
+              "tipo": "Ensaio",
+              "titulo": "A Economia Política da Música ao Vivo no Século XXI",
+              "autor": "Revista de Estudos Culturais",
+              "ano": "2026",
+              "nota": "Reflexão sobre monopólios de bilheteria e a sobrevivência de pequenas casas noturnas nas metrópoles latino-americanas.",
+              "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/como-2026-se-tornou-o-ano-em-que-show-de-estadio-virou-algo-comum-no-brasil.ghtml"
             }
           ]
         }
       ],
       "fora_do_radar": [
         {
-          "id": "funk-de-direita-redes-2026",
-          "editoria": "Cultura & Sociedade",
-          "titulo": "A explosão do funk de direita nas redes e a disputa estética pelas periferias",
-          "texto": "Enquanto os holofotes se concentraram nos debates televisivos e nos discursos de palanque, as redes sociais registraram uma disparada inédita no uso de jingles de funk e trap por candidatos conservadores no segundo turno de 2026. A apropriação do ritmo mais popular das favelas cariocas e paulistas para veicular mensagens pró-ordem e empreendedorismo individual gerou forte debate sobre as contradições entre o discurso punitivista tradicional da direita e a necessidade de se conectar com a juventude periférica.",
+          "editoria": "Clima / Rio",
+          "titulo": "Ressacas contínuas e tempo severo afetam a orla fluminense e a pesca costeira",
+          "texto": "A sequência inusitada de frentes frias no litoral do Rio de Janeiro causou erosão em praias da Zona Sul e ondas de até 2,5 metros, mobilizando a Defesa Civil e a Capitania dos Portos.",
           "ler": [
             {
-              "fonte": "g1",
-              "titulo": "Fenômeno do 'funk de direita' e o embate estético na reta final do pleito",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/28/funk-de-direita-atrai-jovens-e-provoca-debates-nas-eleicoes.ghtml"
-            },
-            {
-              "fonte": "Nexo Jornal",
-              "titulo": "Como o conservadorismo brasileiro tenta decodificar a linguagem da periferia",
-              "url": "https://www.nexojornal.com.br/ensaio/2026/10/28/a-linguagem-do-funk-na-campanha-conservadora"
+              "fonte": "g1 Rio",
+              "titulo": "Previsão e alertas para a semana de tempo instável no litoral",
+              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/26/rio-tera-semana-de-tempo-instavel-com-chuva-e-ventos-fortes.ghtml"
             }
           ]
         },
         {
-          "id": "janonismo-internacional-whatsapp",
-          "editoria": "Comunicação Política",
-          "titulo": "O 'Janonismo Internacional' e a replicação de brigadas digitais na Europa",
-          "texto": "Estratégias de guerrilha digital e mobilização em massa via grupos fechados de WhatsApp desenvolvidas no Brasil durante campanhas passadas passaram a ser formalmente adaptadas por movimentos de esquerda e partidos progressistas na Espanha, França e Argentina. Analistas de comunicação política apontam que a velocidade de resposta em grupos descentralizados superou os algoritmos das grandes redes abertas no pós-eleição brasileiro, transformando a experiência nacional em modelo de exportação tática.",
+          "editoria": "Mundo / Eleições",
+          "titulo": "Como votaram os brasileiros no exterior e a virada eleitoral em Nova York",
+          "texto": "Os dados de votação no exterior mostram uma disputa acirrada entre as comunidades de imigrantes brasileiros nos EUA e na Europa, com inversão de resultados em zonas tradicionais de voto.",
           "ler": [
             {
-              "fonte": "g1",
-              "titulo": "Estratégia do 'Exército do Lula' no WhatsApp inspira campanhas na Europa",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/28/janonismo-internacional-grupos-de-whatsapp-inspiram-ativistas-na-europa.ghtml"
-            },
-            {
-              "fonte": "El País Brasil",
-              "titulo": "A anatomia das brigadas digitais de mensagens instantâneas e a polarização global",
-              "url": "https://brasil.elpais.com/internacional/2026-10-28/a-guerrilha-do-whatsapp-do-brasil-a-europa.html"
+              "fonte": "g1 Mundo",
+              "titulo": "Lula vira em Nova York e disputa acirrada nos colégios eleitorais nos EUA",
+              "url": "https://g1.globo.com/mundo/noticia/2026/10/26/lula-vira-em-nova-york-flavio-bolsonaro-veja-votacao-2o-turno-nos-eua.ghtml"
             }
           ]
         },
         {
-          "id": "erosao-ressaca-orla-fluminense",
-          "editoria": "Meio Ambiente & Clima",
-          "titulo": "Ressacas frequentes aceleram perda de faixa de areia na orla do Rio",
-          "texto": "A passagem da terceira frente fria severa de outubro deixou o mar revolto com ondas de até 2,5 metros na orla da Zona Sul e de Niterói, reacendendo o alerta de oceanógrafos sobre a erosão costeira acelerada. Dados de monitoramento costeiro da UFRJ indicam recuo médio de até 3 metros em trechos de praias como Leblon e Macumba nos últimos quatro anos, reforçando a urgência de obras de contenção baseadas na natureza e recuperação de restingas.",
+          "editoria": "Justiça / Finanças",
+          "titulo": "Os inquéritos do STF e a apuração sobre destinos de recursos financeiros",
+          "texto": "Relatórios da Polícia Federal anexados a inquéritos em curso no STF detalham transações e movimentações financeiras sob monitoramento de órgãos de controle.",
           "ler": [
             {
-              "fonte": "O Globo",
-              "titulo": "Ressacas contínuas aceleram erosão em praias da Zona Sul e Macumba",
-              "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/erosao-costeira-e-ressacas-impactam-praias-do-rio-de-janeiro.ghtml"
-            },
-            {
-              "fonte": "Marinha do Brasil",
-              "titulo": "Boletim de Monitoramento Hidrográfico e Meteorológico do Litoral Sudeste",
-              "url": "https://www.marinha.mil.br/chm/dados-do-santo/avisos-de-mau-tempo"
+              "fonte": "g1 Política",
+              "titulo": "PF aponta risco de fuga e detalha apuração de movimentações em pedido ao STF",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/27/pf-apontou-risco-de-flavio-bolsonaro-fugir-do-brasil-e-suspeita-sobre-destino-de-dinheiro-de-vorcaro-ao-pedir-a-moraes-apreensao-de-passaporte.ghtml"
             }
           ]
+        }
+      ],
+      "fim_de_semana": [
+        {
+          "tipo": "Cinema",
+          "titulo": "Rio Mountain Festival 2026",
+          "onde": "CCBB Rio (Centro)",
+          "quando": "Sexta a domingo, horários variados",
+          "nota": "Mostra internacional com os melhores documentários de aventura, montanhismo e conservação ambiental."
+        },
+        {
+          "tipo": "Música",
+          "titulo": "E A Terra Nunca Me Pareceu Tão Distante",
+          "onde": "Audio Rebel (Botafogo)",
+          "quando": "Sábado (31/10), 20h",
+          "nota": "Apresentação de post-rock e ambient instrumental com arranjos intimistas para a sala de Botafogo."
+        },
+        {
+          "tipo": "Música",
+          "titulo": "Noite Mutante de Selos Independentes",
+          "onde": "Estúdio Hanoi (Lapa)",
+          "quando": "Sexta-feira (30/10), 21h",
+          "nota": "Showcase com novos artistas do cenário alternativo fluminense e lançamentos em vinil e fita cassete."
+        },
+        {
+          "tipo": "Show",
+          "titulo": "CaRIOca ProgFestival 2026",
+          "onde": "Teatro Henriqueta Brieba (Tijuca)",
+          "quando": "Quinta a domingo, 19h30",
+          "nota": "Festival dedicado ao rock progressivo e psicodélico carioca, reunindo bandas autorais da cena da Tijuca."
+        },
+        {
+          "tipo": "Show",
+          "titulo": "Ana Frango Elétrico: Comentando Arranjos",
+          "onde": "Caixa Cultural (Centro)",
+          "quando": "Domingo (01/11), 18h",
+          "nota": "Formato acústico comentado com histórias de composição e produção do repertório premiado da artista."
         }
       ]
     }
@@ -4534,200 +4506,214 @@
     "2026-10-28": {
       "data": "2026-10-28",
       "edicao": "manha",
-      "titulo": "PF faz buscas na mansão de Flávio após fuga para os EUA; governo renova subsídio ao diesel",
-      "resumo_dia": "Nesta manhã de quarta-feira, a Polícia Federal cumpre mandados de busca e apreensão na mansão do senador Flávio Bolsonaro em Brasília, autorizados pelo ministro Alexandre de Moraes (STF). A ação ocorre após o senador descumprir a ordem de entrega de passaportes e viajar para os Estados Unidos via fronteira com a Argentina, com apoio público de Donald Trump. Na economia, o governo federal renovou o subsídio de R$ 2,12 por litro de diesel para conter a pressão dos combustíveis sobre o agronegócio e os transportes. No Distrito Federal, a Justiça bloqueou bens de patrões após o resgate de um trabalhador mantido por 28 anos em condições análogas à escravidão. No mercado global de tecnologia, a Anthropic formalizou pedido para abrir capital em Wall Street em um dos maiores IPOs do setor de IA. E no Rio, o tempo segue instável com chuvas volumosas e ressaca na orla.",
-      "agenda": [
-        {
-          "quando": "hoje, manhã e tarde",
-          "o_que": "Polícia Federal pericia documentos e eletrônicos apreendidos na mansão de Flávio Bolsonaro no DF."
-        },
-        {
-          "quando": "hoje, ao longo do dia",
-          "o_que": "Defesa de Flávio e governo americano se manifestam sobre a permanência do senador nos EUA."
-        },
-        {
-          "quando": "quinta, 29/10",
-          "o_que": "Vigência da renovação do subsídio ao óleo diesel para transportadores e agronegócio."
-        },
-        {
-          "quando": "fim de semana",
-          "o_que": "Previsão de continuidade da instabilidade climática e monitoramento de ressacas no litoral do Rio."
-        }
-      ],
+      "titulo": "STF apura fuga de Flávio aos EUA, subsídio ao diesel é prorrogado e Anthropic vai à bolsa",
+      "resumo_dia": "A quarta-feira amanhece com fortes desdobramentos da saída de Flávio Bolsonaro do Brasil via Argentina após ordem de retenção de passaporte pelo STF. Em Brasília, o governo federal prorrogou a subvenção econômica ao óleo diesel por mais 30 dias para evitar repasses ao frete. Em Nova York, a Anthropic formalizou pedido de IPO na Nasdaq, na maior oferta pública de inteligência artificial até o momento. No Rio, a Polícia Civil deflagrou a Operação NXIVM contra rede de escravidão sexual e a orla segue com tempo instável e alerta de mar agitado.",
       "notas": [
         {
-          "id": "pf-buscas-flavio-moraes-fuga-eua",
-          "editoria": "Política / Justiça",
-          "titulo": "PF faz busca e apreensão na mansão de Flávio Bolsonaro após viagem aos EUA",
-          "texto": "Equipes da Polícia Federal cumpriram mandados de busca e apreensão na residência do senador Flávio Bolsonaro (PL-RJ), no setor de mansões de Brasília, autorizados pelo ministro Alexandre de Moraes, do Supremo Tribunal Federal. A medida foi determinada após o parlamentar descumprir o prazo legal de 24 horas para entregar seus passaportes e cruzar a fronteira terrestre com a Argentina, de onde embarcou em voo com destino aos Estados Unidos. A PF cancelou os passaportes no sistema migratório internacional e apura indícios de evasão e lavagem de dinheiro no âmbito de inquérito sobre movimentações financeiras atípicas.",
-          "por_que_importa": "A saída do país com descumprimento expresso de ordem judicial agrava a situação processual do senador no STF e abre atrito diplomático sobre a concessão de visto em território norte-americano.",
+          "id": "pf-flavio-fuga-eua-investigacao",
+          "editoria": "Política",
+          "titulo": "PF e STF apuram rota de fuga de Flávio Bolsonaro para os EUA após descumprimento de ordem judicial",
+          "texto": "A Polícia Federal e o Supremo Tribunal Federal investigam a dinâmica da saída do senador Flávio Bolsonaro do território nacional após a determinação do ministro Alexandre de Moraes para entrega de passaportes em até 24 horas. O parlamentar cruzou a fronteira terrestre para a Argentina e embarcou em voo particular com conexão no Equador até a Flórida.",
+          "por_que_importa": "O descumprimento intencional de medidas cautelares impostas pela Suprema Corte fornece embasamento jurídico para eventual pedido de prisão preventiva e abre atrito institucional direto entre o Judiciário brasileiro e autoridades dos Estados Unidos.",
           "fontes": [
             {
               "fonte": "g1",
-              "perfil": "portal de notícias, cobertura em tempo real",
-              "enfoque": "mandados de busca em Brasília e cancelamento formal dos passaportes pela PF",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/28/pf-faz-busca-e-apreensao-em-enderecos-ligados-a-flavio-bolsonaro.ghtml"
+              "perfil": "Apuração / Podcast O Assunto",
+              "enfoque": "Reconstituição da rota de saída por via terrestre por Puerto Iguazú e embarque em aeronave privada rumo aos EUA.",
+              "url": "https://g1.globo.com/podcast/o-assunto/noticia/2026/10/28/a-rota-de-fuga-de-flavio-bolsonaro-o-assunto-1834.ghtml"
             },
             {
               "fonte": "Folha de S.Paulo",
-              "perfil": "jornal diário, cobertura política",
-              "enfoque": "rota de saída pela Argentina e descumprimento da determinação de Alexandre de Moraes",
-              "url": "https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-descumpre-ordem-do-stf-viaja-aos-eua-e-pf-faz-buscas-em-mansao.shtml"
+              "perfil": "Análise jurídica",
+              "enfoque": "Especialistas avaliam que a evasão para evitar medidas cautelares autoriza pedido de prisão preventiva pela PGR ou PF.",
+              "url": "https://www1.folha.uol.com.br/poder/2026/10/fuga-do-brasil-da-base-para-prisao-preventiva-de-flavio-bolsonaro-dizem-especialistas.shtml"
             },
             {
-              "fonte": "UOL Notícias",
-              "perfil": "portal de notícias, política nacional",
-              "enfoque": "detalhes da representação da PF que apontava risco iminente de fuga pós-eleição",
-              "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/28/pf-cumpre-buscas-mansao-flavio-bolsonaro-stf-moraes.htm"
+              "fonte": "Congresso em Foco",
+              "perfil": "Cobertura de Brasília",
+              "enfoque": "Acompanhamento da apuração da Polícia Federal sobre desdobramentos da viagem em meio ao inquérito no STF.",
+              "url": "https://www.congressoemfoco.com.br/noticia/129245/site-diz-que-flavio-viajou-da-argentina-para-os-eua-pf-investiga"
             }
           ]
         },
         {
-          "id": "trump-vistos-eua-flavio-bolsonaro",
-          "editoria": "Internacional / Política",
-          "titulo": "Trump apoia ida de Flávio aos EUA e questiona eleições; Lula classifica saída como 'vergonhosa'",
-          "texto": "O presidente dos Estados Unidos, Donald Trump, declarou apoio à chegada de Flávio Bolsonaro e de sua família ao país e voltou a contestar a lisura do segundo turno das eleições brasileiras, repetindo alegações infundadas sobre o sistema de votação. Autoridades americanas confirmaram que vistos de permanência foram concedidos ao senador. No Brasil, o presidente Luiz Inácio Lula da Silva classificou a saída clandestina de Flávio como 'um ato vergonhoso de quem teme prestar contas à lei', enquanto a Polícia Federal acionou canais de cooperação com a Interpol.",
-          "por_que_importa": "Coloca a relação bilateral Brasil-EUA em teste logo no início do novo ciclo político, transformando o descumprimento judicial em contencioso internacional.",
+          "id": "trump-lula-repercussao-saida-flavio",
+          "editoria": "Mundo",
+          "titulo": "Trump aprova entrada de Flávio Bolsonaro nos EUA; Lula afirma que senador 'deve ter culpa na consciência'",
+          "texto": "O presidente dos Estados Unidos, Donald Trump, declarou apoio à chegada de Flávio Bolsonaro ao país e criticou o processo eleitoral brasileiro. Em resposta, o presidente Luiz Inácio Lula da Silva classificou a saída como reveladora, afirmando que quem foge do país antes de prestar esclarecimentos à Justiça evidencia receio das apurações.",
+          "por_que_importa": "O episódio amplia a fricção diplomática entre Brasília e Washington às vésperas da transição para o novo mandato e polariza a comunidade política internacional em torno das investigações sobre o clã Bolsonaro.",
           "fontes": [
             {
               "fonte": "g1",
-              "perfil": "portal de notícias internacional",
-              "enfoque": "declarações de Donald Trump e reação oficial do governo brasileiro",
-              "url": "https://g1.globo.com/mundo/noticia/2026/10/28/trump-apoia-ida-de-flavio-bolsonaro-aos-eua-e-critica-eleicao-no-brasil.ghtml"
+              "perfil": "g1 Mundo",
+              "enfoque": "Declarações públicas de Trump autorizando a permanência de Flávio e críticas de parlamentares democratas à concessão do visto.",
+              "url": "https://g1.globo.com/mundo/noticia/2026/10/28/trump-diz-que-aprova-ida-de-flavio-bolsonaro-aos-eua.ghtml"
             },
             {
-              "fonte": "EBC / Agência Brasil",
-              "perfil": "agência pública de notícias",
-              "enfoque": "manifestação do presidente Lula e acionamento de acordos migratórios pela PF",
-              "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/lula-classifica-viagem-de-flavio-como-vergonhosa-apos-buscas-da-pf"
+              "fonte": "g1",
+              "perfil": "Declaração do Planalto",
+              "enfoque": "Lula afirma que parlamentar optou por escapar da fiscalização judicial por temer revelações das apurações da PF.",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/27/lula-diz-que-flavio-bolsonaro-fugiu-do-brasil-e-que-deve-ter-culpa-na-consciencia.ghtml"
+            },
+            {
+              "fonte": "Gazeta do Povo",
+              "perfil": "Veículo à direita",
+              "enfoque": "Aliados de Flávio sustentam que a viagem buscou resguardo político contra suposto arbítrio das medidas cautelares no Brasil.",
+              "url": "https://www.gazetadopovo.com.br/republica/flavio-bolsonaro-desembarca-nos-estados-unidos-apos-proibicao-judicial/"
             }
           ]
         },
         {
-          "id": "resgate-trabalhador-escravidao-df",
-          "editoria": "Direitos Humanos / Brasil",
-          "titulo": "Justiça bloqueia bens de fazendeiros após resgate de homem escravizado por 28 anos no DF",
-          "texto": "A Justiça do Trabalho do Distrito Federal determinou o bloqueio cautelar de imóveis e contas bancárias e a fixação de pensão imediata para amparar um caseiro de 56 anos resgatado por auditores-fiscais após trabalhar por 28 anos em condições análogas à de escravo em uma propriedade rural no Lago Norte, em Brasília. A investigação revelou que o trabalhador nunca recebeu salário regular, não tinha direito a folgas e vivia em alojamento precário sem saneamento. Por total desamparo material e ausência de rede de apoio, ele chegou a retornar ao local antes da intervenção definitiva do Ministério Público do Trabalho.",
-          "por_que_importa": "Evidencia a persistência extrema do trabalho escravo doméstico e rural na capital do país e reforça a necessidade de acolhimento social para evitar a reincidência de vítimas vulneráveis.",
+          "id": "trabalho-escravo-resgate-caseiro-df",
+          "editoria": "Brasil",
+          "titulo": "MPT resgata caseiro mantido por 28 anos em condições análogas à escravidão no Lago Norte (DF)",
+          "texto": "Uma ação conjunta entre o Ministério Público do Trabalho, o Ministério do Trabalho e Emprego e a Polícia Federal resgatou um trabalhador de 56 anos explorado desde 1998 em residência de luxo no Lago Norte. Além de trabalhar sem remuneração adequada e sem férias, a vítima era utilizada como 'laranja' em participações societárias da família empregadora.",
+          "por_que_importa": "O caso expõe a persistência de formas arcaicas de servidão doméstica em bairros nobres da capital federal e a sofisticação da blindagem patrimonial que utiliza pessoas vulneráveis como sócias de fachada.",
           "fontes": [
             {
-              "fonte": "g1 DF",
-              "perfil": "portal de notícias local",
-              "enfoque": "detalhes da decisão judicial, histórico de 28 anos de servidão e relato dos auditores",
-              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/justica-bloqueia-bens-de-patroes-apos-caseiro-ser-resgatado-da-escravidao-no-df.ghtml"
+              "fonte": "Metrópoles",
+              "perfil": "Portal do DF",
+              "enfoque": "Detalhes da investigação do MPT mostrando o isolamento do trabalhador e o uso de seu nome em 90% do capital social de empresas.",
+              "url": "https://www.metropoles.com/distrito-federal/mpt-resgata-caseiro-apos-28-anos-em-condicao-analoga-a-escravidao-no-df"
             },
             {
-              "fonte": "Metrópoles",
-              "perfil": "portal de notícias do DF",
-              "enfoque": "atuação do MPT e medidas de assistência emergencial à vítima resgatada",
-              "url": "https://www.metropoles.com/distrito-federal/trabalho-escravo-lago-norte-bloqueio-bens-28-anos"
+              "fonte": "Jornal de Brasília",
+              "perfil": "Cobertura local",
+              "enfoque": "Decisão da Justiça do Trabalho bloqueando R$ 324 mil dos patrões e determinando pensão mensal de um salário mínimo.",
+              "url": "https://jornaldebrasilia.com.br/brasilia/caseiro-e-resgatado-apos-28-anos-em-situacao-analoga-a-escravidao-no-lago-norte/"
+            },
+            {
+              "fonte": "g1 DF",
+              "perfil": "Fiscalização trabalhista",
+              "enfoque": "Intensificação de ações do MPT e da Justiça do Trabalho no enfrentamento à escravidão doméstica no Distrito Federal.",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/17/mpt-processa-diplomata-aposentada-e-filho-por-trabalho-analogo-a-escravidao-em-area-nobre-de-brasilia.ghtml"
             }
           ]
         },
         {
-          "id": "governo-renova-subsidio-diesel",
+          "id": "subsidio-diesel-prorrogacao-combustiveis",
           "editoria": "Economia",
-          "titulo": "Governo federal renova subsídio ao óleo diesel para segurar custos do transporte e alimentos",
-          "texto": "O governo federal publicou portaria prorrogando o subsídio direto ao óleo diesel no valor de R$ 2,12 por litro, como medida de amortecimento contra as oscilações do barril de petróleo no mercado global. A decisão atende a apelos do setor de transporte rodoviário de cargas e de entidades do agronegócio, que alertavam para o risco de repasse tarifário nos fretes agrícolas e elevação imediata nos preços de itens básicos da cesta de alimentos nos centros urbanos.",
-          "por_que_importa": "Contém pressões inflacionárias de curto prazo no abastecimento nacional, aliviando o custo logístico em um momento de transição de safra.",
+          "titulo": "Governo prorroga subvenção ao óleo diesel por 30 dias para conter repasse a fretes e alimentos",
+          "texto": "O Ministério do Planejamento e Orçamento e o Ministério da Fazenda prorrogaram por mais 30 dias o programa de subvenção econômica ao óleo diesel, mantendo o benefício de R$ 2,12 por litro. A medida busca blindar o mercado interno da escalada do petróleo Brent no mercado internacional.",
+          "por_que_importa": "O diesel é o principal insumo da malha rodoviária de cargas. A manutenção do subsídio evita uma espiral imediata nos custos de transporte do agronegócio e nas prateleiras dos supermercados.",
           "fontes": [
             {
               "fonte": "g1 Economia",
-              "perfil": "portal econômico nacional",
-              "enfoque": "manutenção do subsídio de R$ 2,12 por litro e impacto fiscal no orçamento",
-              "url": "https://g1.globo.com/economia/noticia/2026/10/28/governo-renova-subsidio-ao-diesel-em-meio-a-alta-do-petroleo.ghtml"
+              "perfil": "Economia",
+              "enfoque": "Publicação de portaria interministerial no DOU prorrogando o benefício e impacto nos custos de logística nacional.",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/27/governo-prorroga-subvencao-ao-diesel-por-mais-30-dias.ghtml"
             },
             {
-              "fonte": "Valor Econômico",
-              "perfil": "jornal financeiro e de negócios",
-              "enfoque": "reação das distribuidoras de combustíveis e entidades de transporte de carga",
-              "url": "https://valor.globo.com/brasil/noticia/2026/10/28/subsidio-ao-diesel-e-renovado-para-evitar-repasses-nos-fretes-agricolas.ghtml"
+              "fonte": "Agência Brasil",
+              "perfil": "Agência oficial",
+              "enfoque": "Equipe econômica compensa os gastos extraordinários com receitas geradas por exportações de petróleo da União.",
+              "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/governo-prorroga-por-um-mes-subvencao-de-r-212-ao-diesel"
             }
           ]
         },
         {
-          "id": "anthropic-pedido-ipo-wall-street",
-          "editoria": "Tecnologia & Negócios",
-          "titulo": "Anthropic protocola pedido de IPO nos EUA em uma das maiores ofertas de ações de IA",
-          "texto": "A empresa de inteligência artificial Anthropic, desenvolvedora da família de modelos Claude, protocolou formalmente junto à Securities and Exchange Commission (SEC) o pedido de oferta pública inicial de ações (IPO) na bolsa de Nova York. Analistas financeiros projetam que a operação figurará entre as maiores aberturas de capital de uma companhia de tecnologia da história, impulsionada pelo crescimento na receita corporativa com agentes autônomos e computação avançada.",
-          "por_que_importa": "Marca a transição do ecossistema de inteligência artificial generativa de rodadas de venture capital para a disciplina pública dos mercados acionários globais.",
+          "id": "anthropic-ipo-wall-street-ia",
+          "editoria": "Tecnologia",
+          "titulo": "Anthropic protocola pedido de IPO na Nasdaq em estreia histórica de empresa de IA",
+          "texto": "A desenvolvedora de inteligência artificial Anthropic protocolou formalmente na Securities and Exchange Commission (SEC) o formulário S-1 para abertura de capital na Nasdaq sob o código ANT. Os documentos revelam receita de US$ 16,3 bilhões no primeiro semestre de 2026 e pesados compromissos em infraestrutura computacional.",
+          "por_que_importa": "Trata-se da primeira grande empresa focada exclusivamente em modelos de fronteira e agentes autônomos de IA a testar a liquidez dos mercados públicos, servindo de termômetro para todo o setor de tecnologia global.",
           "fontes": [
-            {
-              "fonte": "g1 Tecnologia",
-              "perfil": "portal de tecnologia e inovação",
-              "enfoque": "protocolo do IPO na SEC e histórico de expansão dos modelos Claude",
-              "url": "https://g1.globo.com/tecnologia/noticia/2026/10/28/anthropic-protocola-pedido-de-ipo-em-wall-street.ghtml"
-            },
             {
               "fonte": "Bloomberg Línea",
-              "perfil": "agência financeira internacional",
-              "enfoque": "avaliação de mercado, captação projetada e apetite de fundos institucionais por IA",
-              "url": "https://www.bloomberglinea.com.br/negocios/anthropic-entra-com-pedido-de-ipo-e-mexe-com-mercado-global-de-ia/"
+              "perfil": "Mercados internacionais",
+              "enfoque": "Primeira grande oferta pública de empresa focada em IA de fronteira e impacto nas avaliações de startups do setor.",
+              "url": "https://www.bloomberglinea.com.br/mercados/anthropic-solicita-abertura-de-capital-e-pode-se-tornar-primeira-empresa-de-ia-na-bolsa/"
+            },
+            {
+              "fonte": "g1 Economia",
+              "perfil": "g1 Tecnologia e Negócios",
+              "enfoque": "Números do formulário S-1 com faturamento de US$ 16,3 bi e projeções dos bancos coordenadores da oferta.",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/28/anthropic-maiores-ipos.ghtml"
+            },
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Análise corporativa",
+              "enfoque": "Capítulo de riscos com mais de 90 páginas aponta desafios regulatórios, consumo de energia e segurança em sistemas autônomos.",
+              "url": "https://c-level.folha.uol.com.br/negocios/2026/10/anthropic-divulga-pedido-de-ipo-com-crescimento-explosivo-riscos-e-custos-astronomicos.shtml"
             }
           ]
         },
         {
-          "id": "policia-desarticula-rede-exploracao-rio",
-          "editoria": "Segurança / Rio",
-          "titulo": "Operação policial prende seis pessoas por exploração sexual de menores em Niterói e Maricá",
-          "texto": "Operação conjunta da Polícia Civil e do Ministério Público do Estado do Rio de Janeiro desarticulou uma rede criminosa especializada na exploração sexual de meninas adolescentes na Região Metropolitana, com mandados cumpridos em Niterói, São Gonçalo e Maricá. Seis suspeitos foram presos em flagrante e preventivamente. De acordo com os investigadores da Delegacia da Criança e do Adolescente Vítima (DCAV), o grupo aliciava vítimas em redes sociais, registrava imagens de abusos e utilizava o material para extorquir e chantagear as famílias.",
-          "por_que_importa": "Desmonta uma estrutura criminosa de aliciamento digital no estado do Rio e alerta para mecanismos de proteção cibernética de crianças e adolescentes.",
+          "id": "operacao-nxivm-escravidao-sexual-adolescentes-rj",
+          "editoria": "Rio",
+          "titulo": "Operação NXIVM da Polícia Civil prende envolvidos em rede de escravidão sexual no RJ",
+          "texto": "A Polícia Civil do Estado do Rio de Janeiro deflagrou a Operação NXIVM, prendendo seis integrantes de uma rede criminosa investigada por coação, chantagem digital e escravidão sexual de adolescentes na Região Metropolitana. Foram cumpridos 18 mandados de busca em Niterói, São Gonçalo e Maricá.",
+          "por_que_importa": "As investigações detalham o uso de gravações de violência sexual para impor servidão psicológica prolongada às vítimas, com ramificações que envolveram ex-assessores parlamentares e militares.",
+          "fontes": [
+            {
+              "fonte": "R7 Rio",
+              "perfil": "Cobertura policial",
+              "enfoque": "Prisão dos acusados em municípios do Leste Fluminense e apreensão de equipamentos eletrônicos pela 74ª DP.",
+              "url": "https://noticias.r7.com/rio-de-janeiro/policia-prende-envolvidos-em-rede-de-escravidao-sexual-de-adolescentes-no-rj-28102026/"
+            },
+            {
+              "fonte": "CNN Brasil",
+              "perfil": "Nacional / Direitos humanos",
+              "enfoque": "Como a denúncia de uma adolescente em Niterói desarticulou o esquema e motivou cooperação com a Corregedoria da PM.",
+              "url": "https://www.cnnbrasil.com.br/nacional/sudeste/rj/policia-investiga-rede-de-escravidao-sexual-de-adolescentes-no-rj/"
+            },
+            {
+              "fonte": "Rádio 93",
+              "perfil": "Cobertura regional RJ",
+              "enfoque": "Balanço das ordens judiciais expedidas pela Justiça fluminense e suporte psicológico encaminhado às famílias.",
+              "url": "https://radio93.com.br/noticias/rj/policia-prende-seis-em-operacao-contra-rede-de-exploracao-sexual-de-adolescentes/"
+            }
+          ]
+        },
+        {
+          "id": "tempo-instavel-chuva-ressaca-orla-rio",
+          "editoria": "Rio",
+          "titulo": "Rio de Janeiro enfrenta semana de tempo instável com chuva e mar agitado no litoral",
+          "texto": "O avanço de uma frente fria mantém o tempo encoberto na cidade do Rio de Janeiro, com chuva fraca a moderada e temperaturas amenas. A Marinha do Brasil e a Defesa Civil municipal renovaram alertas de ressaca com ondas de até 2,5 metros atingindo a orla da Zona Sul e da Barra.",
+          "por_que_importa": "A frequência de marés altas acentua a erosão em trechos vulneráveis da orla carioca e exige atenção redobrada de banhistas, esportistas e embarcações pesqueiras.",
           "fontes": [
             {
               "fonte": "g1 Rio",
-              "perfil": "noticiário de segurança pública local",
-              "enfoque": "prisões em flagrante, apreensão de dispositivos eletrônicos e atuação da DCAV",
-              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/operacao-prende-seis-por-exploracao-sexual-de-meninas-em-niteroi-e-marica.ghtml"
+              "perfil": "Meteorologia e Cidade",
+              "enfoque": "Previsão do tempo para a semana e alertas emitidos pelo Sistema Alerta Rio e Defesa Civil.",
+              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/26/rio-tera-semana-de-tempo-instavel-com-chuva-e-ventos-fortes.ghtml"
             },
-            {
-              "fonte": "O Globo",
-              "perfil": "jornal diário, cobertura estadual",
-              "enfoque": "desdobramentos da investigação sobre chantagem e extorsão digital contra famílias",
-              "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/policia-civil-desarticula-rede-de-abusos-e-chantagens-no-leste-fluminense.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "tempo-instavel-chuvas-rio-ressaca",
-          "editoria": "Cidade / Rio",
-          "titulo": "Rio tem tempo instável com chuva contínua e ressaca no litoral após passagem de frente fria",
-          "texto": "O município do Rio de Janeiro registra tempo nublado e chuvas intermitentes nesta quarta-feira, sob influência do transporte de umidade do oceano e de áreas de instabilidade após a frente fria do início da semana. De acordo com o sistema Alerta Rio, os maiores acumulados concentram-se nas bacias da Zona Sul e da Grande Tijuca. A Marinha do Brasil emitiu aviso de ressaca marítima com ondas de até 2,5 metros de altura na orla entre o Leblon e o Arpoador, mantendo o contingente de trânsito e defesa civil em estágio de prontidão.",
-          "por_que_importa": "Afeta a rotina de deslocamento pela cidade, o tráfego nos eixos Tijuca-Zona Sul e eleva os índices pluviométricos de outubro acima da média histórica recente.",
-          "fontes": [
             {
               "fonte": "g1 Rio",
-              "perfil": "portal local de meteorologia e trânsito",
-              "enfoque": "previsão de chuva continuada, monitoramento do Alerta Rio e aviso de ressaca",
-              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/previsao-do-tempo-rio-de-janeiro-chuvas-e-ressaca.ghtml"
-            },
-            {
-              "fonte": "O Globo - Rio",
-              "perfil": "jornal diário, cobertura de serviços e clima",
-              "enfoque": "acumulados de chuva na série histórica e impactos na mobilidade urbana",
-              "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/frente-fria-mantem-tempo-chuvoso-e-mar-agitado-no-rio-de-janeiro.ghtml"
+              "perfil": "Serviço e Litoral",
+              "enfoque": "Orientações da Capitania dos Portos e monitoramento de pontos de alagamento na capital fluminense.",
+              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/19/rio-comeca-a-semana-com-ceu-nublado-e-chuva.ghtml"
             }
           ]
         },
         {
-          "id": "megashows-estadios-polarizacao-cultura",
-          "editoria": "Cultura / Música",
-          "titulo": "Mercado de shows consolida era dos estádios em 2026 e expõe carência de arenas médias no Rio",
-          "texto": "Levantamento da imprensa cultural aponta que o ano de 2026 firmou o modelo de megashows em estádios como o formato predominante da indústria musical internacional no Brasil, concentrando faturamentos bilionários principalmente na capital paulista. A apuração expõe o contraste vivido no Rio de Janeiro, onde a ausência de arenas cobertas de porte médio (entre 5 mil e 15 mil lugares) empurra artistas de médio alcance para espaços ou desproporcionais ou sobrecarrega o circuito de casas históricas menores e auditórios independentes.",
-          "por_que_importa": "Diagnostica os gargalos da infraestrutura cultural carioca e valoriza a relevância de pequenos estúdios e centros da rede pública como trincheiras da música autoral.",
+          "id": "shows-estadios-2026-brasil-musica",
+          "editoria": "Cultura",
+          "titulo": "Mercado de shows consolida era dos estádios em 2026 e acirra gargalo de arenas médias",
+          "texto": "O mercado brasileiro de entretenimento ao vivo consolidou a proliferação de mega turnês em arenas esportivas ao longo de 2026. A fartura de datas em estádios, contudo, aprofundou o gargalo estrutural por espaços fechados com capacidade entre 10 mil e 20 mil pessoas no Rio e em São Paulo.",
+          "por_que_importa": "O formato de estádio eleva os custos médios de ingresso e pressiona o ecossistema de casas históricas e circuitos alternativos, que lutam para manter viabilidade econômica diante do apetite das grandes produtoras multinacionais.",
           "fontes": [
             {
               "fonte": "g1 Música",
-              "perfil": "jornalismo musical e mercado de entretenimento",
-              "enfoque": "mapeamento da hegemonia dos estádios e a geografia dos palcos no Brasil em 2026",
-              "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/megaeventos-e-shows-em-estadios-se-consolidam-em-2026-no-brasil.ghtml"
-            },
-            {
-              "fonte": "Folha Ilustrada",
-              "perfil": "caderno de cultura e tendências",
-              "enfoque": "análise do contraste entre a bolha das arenas corporativas e o circuito independente",
-              "url": "https://www1.folha.uol.com.br/ilustrada/2026/10/a-era-dos-estadios-e-o-estrangulamento-das-casas-medias-de-show-no-rio.shtml"
+              "perfil": "Indústria Musical",
+              "enfoque": "Análise sobre como grandes produtoras tornaram comum a escala de estádio no Brasil e os impactos na demanda do público.",
+              "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/como-2026-se-tornou-o-ano-em-que-show-de-estadio-virou-algo-comum-no-brasil.ghtml"
             }
           ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "10h00",
+          "o_que": "Ministério da Fazenda detalha diretrizes orçamentárias e compensação fiscal"
+        },
+        {
+          "quando": "14h30",
+          "o_que": "STF analisa pedidos cautelares relacionados aos inquéritos eleitorais"
+        },
+        {
+          "quando": "18h00",
+          "o_que": "Boletim oceanográfico da Marinha sobre marés na Baía de Guanabara"
         }
       ]
     }
@@ -15019,23 +15005,6 @@
         "Garantia de estabilidade política e administrativa no governo federal"
       ]
     },
-    "g1-2026-10-28-trabalho-escravo-df": {
-      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/justica-bloqueia-bens-de-patroes-apos-caseiro-ser-resgatado-da-escravidao-no-df.ghtml",
-      "fonte": "g1 DF",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "Justiça bloqueia bens de patrões após resgate de homem escravizado por 28 anos no DF",
-      "resumo": [
-        "A Vara do Trabalho de Brasília acolheu ação civil pública do MPT determinando o congelamento de contas e penhora de imóveis de empregadores no Lago Norte.",
-        "O trabalhador de 56 anos foi submetido a quase três décadas de labor rural e doméstico contínuo sem remuneração e privado de liberdade de locomoção por dívidas fictícias.",
-        "A decisão fixou pensão de subsistência mensal e indenização por dano moral coletivo e individual."
-      ],
-      "pontos": [
-        "Resgate de caseiro mantido em servidão por 28 anos no Lago Norte (DF)",
-        "Bloqueio patrimonial e arbitramento de pensão vitalícia pelo Judiciário",
-        "MPT alerta para casos de trabalho análogo à escravidão em áreas nobres urbanas"
-      ]
-    },
     "metropoles-2026-10-28-escravidao-df": {
       "url": "https://www.metropoles.com/distrito-federal/trabalho-escravo-lago-norte-bloqueio-bens-28-anos",
       "fonte": "Metrópoles",
@@ -15053,23 +15022,6 @@
         "Fiscalização trabalhista reforça operações preventivas em chácaras do DF"
       ]
     },
-    "g1-2026-10-28-subsidio-diesel": {
-      "url": "https://g1.globo.com/economia/noticia/2026/10/28/governo-renova-subsidio-ao-diesel-em-meio-a-alta-do-petroleo.ghtml",
-      "fonte": "g1 Economia",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "Governo renova subsídio de R$ 2,12 por litro ao óleo diesel",
-      "resumo": [
-        "Medida publicada no Diário Oficial prorroga o apoio federal para mitigar o repasse das altas recentes das refinarias internacionais aos preços nas bombas.",
-        "O foco é conter o encarecimento do transporte coletivo urbano e a cadeia logística de grãos e carnes no agronegócio.",
-        "A equipe econômica informou que os recursos já estavam previstos nas dotações de compensação energética do ano."
-      ],
-      "pontos": [
-        "Prorrogação do valor de R$ 2,12 por litro de diesel subsidiado",
-        "Blindagem contra pressões inflacionárias no transporte de alimentos",
-        "Previsão de recursos nas contas de compensação de combustíveis"
-      ]
-    },
     "valor-2026-10-28-diesel-agro": {
       "url": "https://valor.globo.com/brasil/noticia/2026/10/28/subsidio-ao-diesel-e-renovado-para-evitar-repasses-nos-fretes-agricolas.ghtml",
       "fonte": "Valor Econômico",
@@ -15085,23 +15037,6 @@
         "Alívio direto na planilha de custos das transportadoras de grãos",
         "Evita salto tarifário no transporte rodoviário interestadual",
         "Fazenda garante compatibilidade fiscal do programa no encerramento de 2026"
-      ]
-    },
-    "g1-2026-10-28-anthropic-ipo": {
-      "url": "https://g1.globo.com/tecnologia/noticia/2026/10/28/anthropic-protocola-pedido-de-ipo-em-wall-street.ghtml",
-      "fonte": "g1 Tecnologia",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "Anthropic protocola pedido de IPO nos EUA para acelerar expansão de modelos Claude",
-      "resumo": [
-        "A Anthropic deu o passo formal para listar suas ações nas bolsas de valores de Nova York, registrando o formulário S-1 junto à autoridade reguladora SEC.",
-        "A empresa fundada por ex-pesquisadores da OpenAI reportou faturamento acelerado com ferramentas de raciocínio lógico e automação de agentes corporativos.",
-        "A transação é aguardada como um termômetro definitivo para a precificação de empresas do setor de inteligência artificial de fronteira."
-      ],
-      "pontos": [
-        "Protocolo oficial do formulário S-1 junto à SEC americana",
-        "Crescimento expressivo nas receitas com serviços para grandes corporações",
-        "Maior teste de valuation pública para companhias de IA de ponta"
       ]
     },
     "bloomberglinea-2026-10-28-anthropic-ipo-mercado": {
@@ -15291,23 +15226,6 @@
         "Incógnitas sobre a tramitação de pedidos de extradição futura"
       ]
     },
-    "ft-2026-10-28-anthropic-ipo": {
-      "url": "https://www.ft.com/content/anthropic-files-for-historic-wall-street-ipo-2026",
-      "fonte": "Financial Times",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "AI champion Anthropic files for landmark Wall Street IPO",
-      "resumo": [
-        "O Financial Times analisa em profundidade o prospecto de IPO da Anthropic, ressaltando que a empresa alcançou fluxo de caixa operacional positivo impulsionada pela adoção corporativa do Claude.",
-        "A matéria pontua que o teste de mercado público forçará a companhia a equilibrar investimentos em pesquisa de segurança com a busca de lucros para acionistas.",
-        "Analistas de Wall Street esperam que a listagem ocorra no primeiro trimestre de 2027 com forte demanda de fundos soberanos e fundos mútuos."
-      ],
-      "pontos": [
-        "Protocolo formal de abertura de capital da criadora do Claude na SEC",
-        "Transição da inteligência artificial para maturidade comercial aberta em bolsa",
-        "Debate sobre o equilíbrio entre rentabilidade financeira e segurança algorítmica"
-      ]
-    },
     "g1-2026-10-28-funk-direita": {
       "url": "https://g1.globo.com/politica/noticia/2026/10/28/funk-de-direita-atrai-jovens-e-provoca-debates-nas-eleicoes.ghtml",
       "fonte": "g1",
@@ -15359,89 +15277,463 @@
         "Superação de algoritmos de alcance orgânico de redes abertas"
       ]
     },
-    "elpais-2026-10-28-guerrilha-whatsapp": {
-      "url": "https://brasil.elpais.com/internacional/2026-10-28/a-guerrilha-do-whatsapp-do-brasil-a-europa.html",
-      "fonte": "El País Brasil",
-      "tipo": "analysis",
-      "data": "2026-10-28",
-      "titulo": "A anatomia das brigadas digitais de mensagens instantâneas e a polarização global",
-      "resumo": [
-        "O El País esmiúça o funcionamento das redes de voluntários políticos no WhatsApp, apontando os riscos de bolhas de confirmação e a eficácia na resposta a ataques em tempo real.",
-        "A reportagem ouve ativistas em Madri e Paris que replicam o método para contornar a hostilidade de canais tradicionais de TV.",
-        "O artigo reflete sobre como a tecnologia de mensagens redefiniu o conceito de militância partidária no século XXI."
-      ],
-      "pontos": [
-        "Dinâmica de comunicação instantânea em grupos de afinidade ideológica",
-        "Desafios para a moderação de conteúdo e combate a notícias falsas",
-        "Impacto duradouro da metodologia brasileira no ativismo digital internacional"
-      ]
-    },
-    "oglobo-2026-10-28-erosao-ressacas-rio": {
-      "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/erosao-costeira-e-ressacas-impactam-praias-do-rio-de-janeiro.ghtml",
-      "fonte": "O Globo",
+    "g1-2026-10-28-assunto-fuga-flavio": {
+      "url": "https://g1.globo.com/podcast/o-assunto/noticia/2026/10/28/a-rota-de-fuga-de-flavio-bolsonaro-o-assunto-1834.ghtml",
+      "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Ressacas contínuas aceleram erosão em praias da Zona Sul e Macumba no Rio",
+      "titulo": "A rota de fuga de Flávio Bolsonaro: os bastidores da viagem após ordem do STF",
       "resumo": [
-        "O Globo publica dados de monitoramento do Departamento de Oceanografia da UERJ e da Coppe/UFRJ mostrando a perda sistemática de sedimentos de areia na orla carioca.",
-        "A frequência anômala de ressacas no inverno e na primavera de 2026 comprometeu trechos de calçadão e ciclovias costeiras.",
-        "Especialistas cobram projetos integrados de engordamento de praia e recuperação da vegetação de restinga para amortecer a força das marés."
+        "O podcast O Assunto reconstitui o trajeto percorrido pelo senador Flávio Bolsonaro após o término da apuração eleitoral e a expedição da ordem de retenção de passaportes pelo ministro Alexandre de Moraes.",
+        "A apuração aponta que o parlamentar utilizou transporte rodoviário para atravessar a fronteira em Puerto Iguazú, ingressando na Argentina e de lá seguindo em aeronave particular para os Estados Unidos com escala no Equador.",
+        "Investigadores da Polícia Federal e analistas políticos debatem as implicações diplomáticas e jurídicas da estadia do senador na Flórida."
       ],
       "pontos": [
-        "Perda acelerada de faixa de areia monitorada por universidades fluminenses",
-        "Danos estruturais em ciclovias e calçadões na Macumba e Leblon",
-        "Defesa de soluções baseadas na natureza para proteção costeira a longo prazo"
+        "Saída por via terrestre em Puerto Iguazú antes do cumprimento da ordem judicial",
+        "Voo particular com destino final em Miami com escala técnica",
+        "Análise sobre desdobramentos processuais perante o Supremo Tribunal Federal"
       ]
     },
-    "marinha-2026-10-28-boletim-ressaca": {
-      "url": "https://www.marinha.mil.br/chm/dados-do-santo/avisos-de-mau-tempo",
-      "fonte": "Marinha do Brasil",
+    "folha-2026-10-28-fuga-prisao-preventiva": {
+      "url": "https://www1.folha.uol.com.br/poder/2026/10/fuga-do-brasil-da-base-para-prisao-preventiva-de-flavio-bolsonaro-dizem-especialistas.shtml",
+      "fonte": "Folha de S.Paulo",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Aviso de ressaca e condições marítimas severas no litoral fluminense",
+      "titulo": "Fuga do Brasil dá base para prisão preventiva de Flávio Bolsonaro, dizem especialistas",
       "resumo": [
-        "O Centro de Hidrografia da Marinha emitiu boletim de alerta meteorológico para ondas de direção sudoeste com alturas de até 2,5 metros entre Arraial do Cabo e Paraty.",
-        "A recomendação técnica orienta esportistas náuticos e pescadores artesanais a suspenderem saídas até que a ondulação diminua.",
-        "As autoridades portuárias de Itaguaí e da Baía de Guanabara mantêm operações sob monitoramento de marés."
+        "Juristas e professores de direito penal consultados pela Folha de S.Paulo avaliam que o descumprimento deliberado da ordem judicial de entrega de passaporte configura risco concreto à aplicação da lei penal.",
+        "O Código de Processo Penal autoriza a decretação da prisão preventiva quando o investigado se coloca em fuga para evitar o alcance das medidas cautelares impostas pelo Judiciário.",
+        "A defesa do senador sustenta que a viagem estava programada e que não houve notificação pessoal regular antes do embarque."
       ],
       "pontos": [
-        "Alerta oficial de mau tempo e ondas de até 2,5 metros no litoral do Rio",
-        "Recomendação de cautela para embarcações de pesca e esporte na costa",
-        "Monitoramento contínuo das condições oceanográficas pelo CHM"
+        "Enquadramento jurídico da evasão como motivo para custódia cautelar",
+        "Precedentes do STF e do STJ em situações análogas de saída não autorizada",
+        "Argumentação da defesa sobre ausência de intimação formal prévia"
       ]
     },
-    "valor-2026-10-28-transicao-ccbb": {
-      "url": "https://valor.globo.com/politica/noticia/2026/10/28/alckmin-e-haddad-instalam-gabinete-de-transicao-no-ccbb-e-miram-orcamento-de-2027.ghtml",
-      "fonte": "Valor Econômico",
+    "congresso-2026-10-28-flavio-argentina-eua": {
+      "url": "https://www.congressoemfoco.com.br/noticia/129245/site-diz-que-flavio-viajou-da-argentina-para-os-eua-pf-investiga",
+      "fonte": "Congresso em Foco",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Alckmin e Haddad instalam gabinete de transição no CCBB e miram diretrizes orçamentárias de 2027",
+      "titulo": "PF investiga rota de Flávio Bolsonaro da Argentina para os Estados Unidos",
       "resumo": [
-        "O vice-presidente Geraldo Alckmin e o ministro da Fazenda Fernando Haddad lideraram a primeira reunião de trabalho da equipe de transição nas instalações do CCBB Brasília.",
-        "O foco imediato dos grupos técnicos é a compatibilização do teto de gastos e as regras do arcabouço fiscal com as promessas de campanha para o novo mandato.",
-        "Haddad ressaltou que a prioridade é dar previsibilidade ao mercado e garantir a aprovação dos projetos de regulamentação da reforma tributária no Congresso."
+        "O Congresso em Foco acompanha as investigações conduzidas pela Polícia Federal sobre o deslocamento de Flávio Bolsonaro até os Estados Unidos.",
+        "A corporação monitora os registros migratórios no Cone Sul e apura eventuais facilidades logísticas concedidas por autoridades estrangeiras durante a travessia.",
+        "No Congresso Nacional, parlamentares governistas articulam representações na Mesa Diretora do Senado para apurar quebra de decoro."
       ],
       "pontos": [
-        "Início formal dos trabalhos da transição governamental no CCBB em Brasília",
-        "Alinhamento entre área econômica e coordenação política sobre metas orçamentárias",
-        "Compromisso com previsibilidade e disciplina nas contas públicas para 2027"
+        "Investigação da Polícia Federal sobre logística de saída do senador",
+        "Repercussão política no Senado e ameaça de representação no Conselho de Ética",
+        "Articulação entre órgãos de segurança pública e controle de fronteiras"
       ]
     },
-    "bloomberg-2026-10-28-transicao-disciplina": {
-      "url": "https://www.bloomberglinea.com.br/mercados/equipe-de-transicao-no-brasil-inicia-trabalhos-com-foco-em-disciplina-fiscal/",
+    "g1-2026-10-27-pf-risco-fuga-passaporte": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/27/pf-apontou-risco-de-flavio-bolsonaro-fugir-do-brasil-e-suspeita-sobre-destino-de-dinheiro-de-vorcaro-ao-pedir-a-moraes-apreensao-de-passaporte.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-27",
+      "titulo": "PF apontou risco de Flávio Bolsonaro fugir do Brasil ao pedir a Moraes apreensão de passaporte",
+      "resumo": [
+        "Relatório sigiloso da Polícia Federal enviado ao Supremo Tribunal Federal apontou movimentações e contatos que indicavam plano de fuga de Flávio Bolsonaro do país.",
+        "O documento policial fundamentou a decisão cautelar do ministro Alexandre de Moraes, determinando a retenção de documentos de viagem e a proibição de deixar o Brasil.",
+        "O relatório menciona ainda apurações complementares sobre transferências e movimentações de recursos financeiros sob monitoramento do Coaf."
+      ],
+      "pontos": [
+        "Indícios de risco de fuga destacados pela Polícia Federal em relatório técnico",
+        "Fundamentação da decisão do STF que impôs restrições de deslocamento",
+        "Cruzamento de dados financeiros e operacionais anexados ao inquérito"
+      ]
+    },
+    "g1-2026-10-28-trump-aprova-ida-flavio": {
+      "url": "https://g1.globo.com/mundo/noticia/2026/10/28/trump-diz-que-aprova-ida-de-flavio-bolsonaro-aos-eua.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Trump diz que aprova ida de Flávio Bolsonaro aos EUA e critica processo no Brasil",
+      "resumo": [
+        "O ex-presidente americano Donald Trump declarou publicamente apoio à permanência de Flávio Bolsonaro na Flórida e criticou as investigações conduzidas pelo STF.",
+        "O posicionamento provocou reação imediata de parlamentares democratas nos Estados Unidos, que cobraram explicações do Departamento de Estado sobre os vistos emitidos.",
+        "Analistas diplomáticos alertam para o risco de tensão institucional direta entre Washington e o governo eleito em Brasília."
+      ],
+      "pontos": [
+        "Declaração de Trump oferecendo acolhida política ao senador brasileiro",
+        "Críticas de comitês parlamentares democratas no Congresso dos EUA",
+        "Impacto nas relações bilaterais entre Brasil e Estados Unidos"
+      ]
+    },
+    "g1-2026-10-27-lula-flavio-fugiu": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/27/lula-diz-que-flavio-bolsonaro-fugiu-do-brasil-e-que-deve-ter-culpa-na-consciencia.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-27",
+      "titulo": "Lula diz que Flávio Bolsonaro fugiu do Brasil e que 'deve ter culpa na consciência'",
+      "resumo": [
+        "Em entrevista a jornalistas no Palácio da Alvorada, o presidente reeleito Luiz Inácio Lula da Silva comentou a viagem de Flávio Bolsonaro aos Estados Unidos.",
+        "Lula afirmou que quem atua dentro da legalidade não precisa fugir pela fronteira terrestre e que o Judiciário brasileiro tem competência soberana para processar e julgar qualquer cidadão.",
+        "O presidente destacou que as instituições brasileiras funcionam com autonomia e que o governo aguardará os desdobramentos formais do STF."
+      ],
+      "pontos": [
+        "Declaração contundente de Lula sobre a saída irregular do parlamentar",
+        "Defesa da autonomia do Poder Judiciário e da soberania das instituições",
+        "Postura de cautela do Poder Executivo enquanto tramitam os inquéritos"
+      ]
+    },
+    "gazeta-2026-10-28-flavio-desembarca-eua": {
+      "url": "https://www.gazetadopovo.com.br/republica/flavio-bolsonaro-desembarca-nos-estados-unidos-apos-proibicao-judicial/",
+      "fonte": "Gazeta do Povo",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Flávio Bolsonaro desembarca nos Estados Unidos após proibição judicial no Brasil",
+      "resumo": [
+        "A Gazeta do Povo noticia a chegada do senador Flávio Bolsonaro aos Estados Unidos, ressaltando o posicionamento de parlamentares de oposição.",
+        "Aliados afirmam que a retenção de passaporte decretada por Alexandre de Moraes foi uma medida desproporcional com viés punitivo após a derrota nas urnas.",
+        "A matéria registra os encontros de Flávio com lideranças conservadoras e advogados internacionais em território norte-americano."
+      ],
+      "pontos": [
+        "Chegada de Flávio aos EUA e acolhida por aliados conservadores",
+        "Argumentos da oposição criticando medidas restritivas de direitos",
+        "Consultas jurídicas sobre permanência legal e proteção diplomática"
+      ]
+    },
+    "metropoles-2026-10-28-mpt-resgata-caseiro-df": {
+      "url": "https://www.metropoles.com/distrito-federal/mpt-resgata-caseiro-apos-28-anos-em-condicao-analoga-a-escravidao-no-df",
+      "fonte": "Metrópoles",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "MPT resgata caseiro após 28 anos em condição análoga à escravidão no DF",
+      "resumo": [
+        "O portal Metrópoles revela a operação que libertou um homem de 56 anos que trabalhava desde 1998 para uma família no Lago Norte sem remuneração e sem folgas.",
+        "As investigações constataram que os empregadores transferiram para o nome do caseiro cotas societárias que representavam 90% do controle de suas empresas para desviar execuções fiscais.",
+        "A vítima foi acolhida pela rede de assistência social e a Justiça do Trabalho decretou o bloqueio de patrimônio dos patrões."
+      ],
+      "pontos": [
+        "Resgate de trabalhador após 28 anos de servidão doméstica em mansão",
+        "Fraude societária sofisticada utilizando o caseiro como sócio laranja",
+        "Bloqueio judicial de bens dos empregadores para garantia de direitos"
+      ]
+    },
+    "jornal-brasilia-2026-10-28-caseiro-resgatado-lago-norte": {
+      "url": "https://jornaldebrasilia.com.br/brasilia/caseiro-e-resgatado-apos-28-anos-em-situacao-analoga-a-escravidao-no-lago-norte/",
+      "fonte": "Jornal de Brasília",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Caseiro é resgatado após 28 anos em situação análoga à escravidão no Lago Norte",
+      "resumo": [
+        "O Jornal de Brasília traz detalhes da ação civil pública ajuizada pelo Ministério Público do Trabalho contra os proprietários do imóvel.",
+        "A 14ª Vara do Trabalho de Brasília acolheu pedido liminar para bloquear R$ 324,2 mil dos réus e assegurar pensão mensal até a conclusão do julgamento.",
+        "A matéria destaca a precariedade do alojamento onde a vítima vivia, sem saneamento adequado e privada de contato com parentes."
+      ],
+      "pontos": [
+        "Decisão da 14ª Vara do Trabalho de Brasília determinando bloqueio liminar",
+        "Fixação de pensão mensal para subsistência imediata da vítima",
+        "Condições degradantes de moradia constatadas pelos auditores fiscais"
+      ]
+    },
+    "g1-2026-10-17-mpt-diplomata-trabalho-escravo": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/17/mpt-processa-diplomata-aposentada-e-filho-por-trabalho-analogo-a-escravidao-em-area-nobre-de-brasilia.ghtml",
+      "fonte": "g1 DF",
+      "tipo": "noticia",
+      "data": "2026-10-17",
+      "titulo": "MPT processa diplomata aposentada e filho por trabalho análogo à escravidão em área nobre de Brasília",
+      "resumo": [
+        "O g1 DF relata a ação do Ministério Público do Trabalho contra uma diplomata aposentada acusada de submeter trabalhadora doméstica a condições degradantes por mais de três décadas.",
+        "A trabalhadora de 68 anos exercia jornadas contínuas cuidando de idosa sem registro formal e sem descanso semanal.",
+        "O MPT cobra indenização de R$ 800 mil por danos morais coletivos e individuais, evidenciando o padrão de exploração em bairros nobres da capital."
+      ],
+      "pontos": [
+        "Ação civil pública contra ex-diplomata e familiar por servidão doméstica",
+        "Trabalhadora de 68 anos sem registro em carteira e sem descanso semanal",
+        "Cobrança de indenizações de R$ 800 mil por violações de direitos humanos"
+      ]
+    },
+    "g1-2026-10-27-subvencao-diesel-30-dias": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/27/governo-prorroga-subvencao-ao-diesel-por-mais-30-dias.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-27",
+      "titulo": "Governo prorroga subvenção ao diesel por mais 30 dias em meio a tensões no petróleo",
+      "resumo": [
+        "O governo federal prorrogou por mais 30 dias a subvenção econômica ao óleo diesel, mantendo o valor de desconto de R$ 2,12 por litro em todo o país.",
+        "A decisão conjunta dos ministérios da Fazenda e do Planejamento visa impedir a transmissão da alta internacional do barril de petróleo para os custos de frete rodoviário.",
+        "Especialistas avaliam que a iniciativa preserva a estabilidade das tarifas de transportes e reduz pressões inflacionárias sobre a cesta de alimentos."
+      ],
+      "pontos": [
+        "Extensão da subvenção econômica ao óleo diesel por mais 30 dias",
+        "Manutenção do alívio financeiro fixado em R$ 2,12 por litro",
+        "Proteção da cadeia logística nacional contra volatilidade externa"
+      ]
+    },
+    "agencia-brasil-2026-10-27-subvencao-diesel": {
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/governo-prorroga-por-um-mes-subvencao-de-r-212-ao-diesel",
+      "fonte": "Agência Brasil",
+      "tipo": "noticia",
+      "data": "2026-10-27",
+      "titulo": "Governo prorroga por um mês subvenção de R$ 2,12 ao diesel",
+      "resumo": [
+        "A Agência Brasil detalha a publicação no Diário Oficial da União da portaria que estende o programa de amortecimento de preços de combustíveis.",
+        "O Ministério da Fazenda esclareceu que a cobertura orçamentária está assegurada por dividendos e participações especiais de exploração de petróleo recebidas pela União.",
+        "Entidades de transportadores autônomos manifestaram apoio à manutenção da medida para preservar a rentabilidade do setor de cargas."
+      ],
+      "pontos": [
+        "Publicação de portaria interministerial oficializando a prorrogação",
+        "Compensação orçamentária via receitas de exploração da União",
+        "Repercussão positiva entre sindicatos de transportadores e caminhoneiros"
+      ]
+    },
+    "bloomberg-2026-10-28-anthropic-ipo-nasdaq": {
+      "url": "https://www.bloomberglinea.com.br/mercados/anthropic-solicita-abertura-de-capital-e-pode-se-tornar-primeira-empresa-de-ia-na-bolsa/",
       "fonte": "Bloomberg Línea",
-      "tipo": "analise",
+      "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Equipe de transição no Brasil inicia trabalhos com foco em disciplina fiscal e acalma investidores",
+      "titulo": "Anthropic solicita abertura de capital e pode se tornar primeira empresa de IA na bolsa",
       "resumo": [
-        "A Bloomberg Línea destaca a recepção positiva dos investidores aos primeiros anúncios de nomes técnicos escalados para a transição em Brasília.",
-        "O Ibovespa operou em alta e a curva de juros futuros arrefeceu após declarações de compromisso com a meta primária.",
-        "Analistas consultados pela Bloomberg avaliam que a manutenção de interlocutores experientes reduz a volatilidade pós-eleitoral típica dos mercados emergentes."
+        "A Bloomberg Línea reporta o registro formal do formulário S-1 da Anthropic perante a SEC para oferta pública inicial de ações na Nasdaq sob o símbolo ANT.",
+        "A criadora do assistente Claude e dos modelos de fronteira busca validação de mercado para seu modelo de negócios focado em segurança e computação empresarial.",
+        "O prospecto revela receitas bilionárias e indica que os recursos captados financiarão novas gerações de clusters e modelos de raciocínio autônomo."
       ],
       "pontos": [
-        "Alívio nos prêmios de risco e queda dos juros futuros com sinais de moderação",
-        "Avaliação positiva de economistas e analistas de mercado sobre equipe técnica",
-        "Estabilidade cambial e recuperação da bolsa de valores após choque inicial"
+        "Pedido formal de registro de IPO na SEC sob o código ANT",
+        "Pioneirismo como pure-play de inteligência artificial de fronteira em bolsa",
+        "Destinação de recursos para infraestrutura de computação em escala global"
+      ]
+    },
+    "g1-2026-10-28-anthropic-maiores-ipos": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/28/anthropic-maiores-ipos.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Anthropic entra com pedido de IPO e se prepara para uma das maiores estreias de tecnologia",
+      "resumo": [
+        "O g1 destaca que o faturamento da Anthropic atingiu US$ 16,3 bilhões no primeiro semestre de 2026, consolidando a rápida monetização corporativa da inteligência artificial.",
+        "A empresa enfrentará o escrutínio rigoroso de Wall Street a respeito de sua margem operacional e dos custos bilionários com data centers e processadores de última geração.",
+        "Analistas comparam o momento ao boom da internet e consideram a estreia da Anthropic um marco para a transição dos modelos digitais."
+      ],
+      "pontos": [
+        "Faturamento semestral recorde de US$ 16,3 bilhões divulgado na SEC",
+        "Escrutínio de analistas sobre queima de caixa e custos de infraestrutura",
+        "Comparação com grandes ofertas históricas do setor de tecnologia"
+      ]
+    },
+    "folha-2026-10-28-anthropic-riscos-s1": {
+      "url": "https://c-level.folha.uol.com.br/negocios/2026/10/anthropic-divulga-pedido-de-ipo-com-crescimento-explosivo-riscos-e-custos-astronomicos.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Anthropic divulga pedido de IPO com crescimento explosivo, riscos e custos astronômicos",
+      "resumo": [
+        "A Folha analisa o prospecto de IPO da Anthropic, ressaltando o capítulo de mais de 90 páginas dedicado exclusivamente a fatores de risco.",
+        "A direção da empresa adverte para a complexidade de prever o comportamento de agentes de IA operando com autonomia e para o impacto de eventuais restrições geopolíticas a semicondutores.",
+        "O artigo ressalta a responsabilidade inédita de uma companhia aberta em responder perante acionistas enquanto sustenta princípios de alinhamento e segurança."
+      ],
+      "pontos": [
+        "Análise do capítulo de fatores de risco com alertas sobre autonomia de IA",
+        "Dependência estratégica de semicondutores e cadeias de suprimento globais",
+        "Dilemas de governança corporativa em empresas de inteligência de fronteira"
+      ]
+    },
+    "r7-2026-10-28-operacao-nxivm-niteroi": {
+      "url": "https://noticias.r7.com/rio-de-janeiro/policia-prende-envolvidos-em-rede-de-escravidao-sexual-de-adolescentes-no-rj-28102026/",
+      "fonte": "R7",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Polícia prende envolvidos em rede de escravidão sexual de adolescentes no RJ",
+      "resumo": [
+        "O R7 noticia a deflagração da Operação NXIVM pela Polícia Civil do Rio de Janeiro contra grupo criminoso que abusava e chantageava menores de idade.",
+        "Foram presas seis pessoas em endereços de Niterói, Maricá e São Gonçalo em cumprimento a mandados expedidos pela Justiça criminal.",
+        "A polícia recolheu computadores, celulares e mídias digitais que registravam chantagens utilizadas para impedir denúncias por parte das vítimas."
+      ],
+      "pontos": [
+        "Prisão de seis integrantes de quadrilha de exploração sexual no Leste Fluminense",
+        "Cumprimento de mandados de busca e apreensão de aparelhos eletrônicos",
+        "Apoio da Corregedoria da PM e de delegacias especializadas do estado"
+      ]
+    },
+    "radio93-2026-10-28-operacao-nxivm": {
+      "url": "https://radio93.com.br/noticias/rj/policia-prende-seis-em-operacao-contra-rede-de-exploracao-sexual-de-adolescentes/",
+      "fonte": "Rádio 93",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Polícia prende seis em operação contra rede de exploração sexual de adolescentes",
+      "resumo": [
+        "A Rádio 93 detalha as diligências da 74ª DP (Alcântara) desarticulando rede que coagia adolescentes na Região Metropolitana.",
+        "O delegado responsável explicou que os mandados judiciais miraram os líderes do grupo, que utilizavam aplicativos de mensagens para coordenar abusos.",
+        "As famílias das vítimas foram encaminhadas para núcleos de atendimento psicológico e assistência social do estado."
+      ],
+      "pontos": [
+        "Ação coordenada pela 74ª DP de Alcântara com respaldo do Judiciário",
+        "Uso de aplicativos de mensagens para coação e chantagem de menores",
+        "Encaminhamento das vítimas para suporte psicológico especializado"
+      ]
+    },
+    "cnn-2026-10-28-rede-escravidao-sexual-rj": {
+      "url": "https://www.cnnbrasil.com.br/nacional/sudeste/rj/policia-investiga-rede-de-escravidao-sexual-de-adolescentes-no-rj/",
+      "fonte": "CNN Brasil",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Polícia investiga rede de escravidão sexual de adolescentes no RJ",
+      "resumo": [
+        "A CNN Brasil traz o histórico da investigação, iniciada em julho após a prisão de um assessor parlamentar acusado de violência sexual em Niterói.",
+        "O material periciado permitiu desvendar uma estrutura organizada com múltiplos alvos que mantinham adolescentes sob coação sistemática.",
+        "Autoridades reforçam canais anônimos de denúncia para identificar outras possíveis vítimas na Região Metropolitana."
+      ],
+      "pontos": [
+        "Origem das investigações a partir de prisão efetuada em Niterói",
+        "Desarticulação de rede organizada de chantagem digital e violência",
+        "Reforço de canais do Disque Denúncia para acolhimento de novas vítimas"
+      ]
+    },
+    "g1-2026-10-26-rio-tempo-instavel-chuva": {
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/26/rio-tera-semana-de-tempo-instavel-com-chuva-e-ventos-fortes.ghtml",
+      "fonte": "g1 Rio",
+      "tipo": "noticia",
+      "data": "2026-10-26",
+      "titulo": "Rio terá semana de tempo instável com chuva e ventos fortes",
+      "resumo": [
+        "O g1 Rio publica boletim meteorológico prevendo tempo instável ao longo da última semana de outubro devido à passagem de uma frente fria pelo Sudeste.",
+        "O Centro de Operações da Prefeitura orienta atenção para áreas de encosta e riscos pontuais de alagamento causados por pancadas de chuva.",
+        "A Marinha emitiu avisos de ressaca com ondas de até 2,5 metros entre o litoral paulista e a Região dos Lagos."
+      ],
+      "pontos": [
+        "Frente fria mantém tempo instável e temperaturas amenas na capital",
+        "Orientações do Centro de Operações Rio para trânsito e áreas de risco",
+        "Avisos de ondas fortes e ressaca emitidos pelo Centro de Hidrografia"
+      ]
+    },
+    "g1-2026-10-19-rio-ceu-nublado-chuva": {
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/19/rio-comeca-a-semana-com-ceu-nublado-e-chuva.ghtml",
+      "fonte": "g1 Rio",
+      "tipo": "noticia",
+      "data": "2026-10-19",
+      "titulo": "Rio começa a semana com céu nublado e chuva na capital",
+      "resumo": [
+        "Previsão do tempo para o Rio de Janeiro aponta dias chuvosos e redução na amplitude térmica em todo o Grande Rio.",
+        "O monitoramento costeiro alerta banhistas sobre condições perigosas de banho de mar durante períodos de ressaca contínua.",
+        "Serviços públicos de drenagem atuam preventivamente nas principais bacias fluviais da cidade."
+      ],
+      "pontos": [
+        "Sequência de dias encobertos com pancadas de chuva no litoral fluminense",
+        "Alertas da Defesa Civil para cuidados na orla marítima",
+        "Atuação preventiva de equipes de conservação urbana"
+      ]
+    },
+    "g1-2026-10-28-show-estadio-comum-brasil": {
+      "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/como-2026-se-tornou-o-ano-em-que-show-de-estadio-virou-algo-comum-no-brasil.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Como 2026 se tornou o ano em que show de estádio virou algo comum no Brasil",
+      "resumo": [
+        "Reportagem especial do g1 analisa como o modelo de megashows em estádios deixou de ser exceção e virou rotina nas capitais brasileiras ao longo de 2026.",
+        "A concentração de turnês em grandes arenas expõe a carência de espaços intermediários para 10 a 20 mil pessoas e gera pressões sobre preços de ingressos.",
+        "Artistas e produtores debatem o impacto desse gigantismo no ecossistema de música independente e nas casas tradicionais de espetáculo."
+      ],
+      "pontos": [
+        "Proliferação de turnês em estádios de futebol ao longo de 2026",
+        "Gargalo estrutural de arenas cobertas de porte intermediário no país",
+        "Debate sobre viabilidade econômica e sobrevivência de casas médias"
+      ]
+    },
+    "g1-2026-10-26-lula-reeleito-evolucao-apuracao": {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/lula-reeleito-compare-evolucao-da-apuracao-do-2o-turno-e-do-1o-turno.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-26",
+      "titulo": "Lula reeleito: compare a evolução da apuração do 2º turno e do 1º turno",
+      "resumo": [
+        "O g1 publica infografia detalhada comparando as curvas de apuração do segundo turno das eleições presidenciais de 2026.",
+        "Lula obteve 64.256.232 votos (51,79%) frente a 59.826.041 votos (48,21%) de Flávio Bolsonaro, com a virada matemática se confirmando após as 19h.",
+        "O levantamento mostra como a concentração de votos válidos no Nordeste e o avanço nas regiões metropolitanas do Sudeste decidiram a eleição."
+      ],
+      "pontos": [
+        "Totalização oficial de 100% das urnas com vitória de Lula",
+        "Análise gráfica da virada matemática na reta final da contagem",
+        "Comparativo de migração de eleitores entre os dois turnos do pleito"
+      ]
+    },
+    "ebc-2026-10-26-lula-reeleito-discurso": {
+      "url": "https://agenciagov.ebc.com.br/noticias/202610/lula-e-reeleito-presidente-do-brasil-201cfato-historico-que-devo-ao-povo-brasileiro201d",
+      "fonte": "Agência Gov / EBC",
+      "tipo": "noticia",
+      "data": "2026-10-26",
+      "titulo": "Lula é reeleito presidente do Brasil: 'Fato histórico que devo ao povo brasileiro'",
+      "resumo": [
+        "A Agência Gov registra o pronunciamento oficial de Luiz Inácio Lula da Silva após a confirmação matemática do resultado pelo TSE.",
+        "O presidente reeleito dedicou a vitória à união democrática, agradeceu o apoio de movimentos sociais e destacou a prioridade de unificar o país.",
+        "Lula ressaltou o compromisso com o combate à fome, a transição ecológica e a recuperação de investimentos em ciência e universidades."
+      ],
+      "pontos": [
+        "Pronunciamento oficial de vitória no segundo turno das Eleições 2026",
+        "Compromisso declarado com pacificação institucional e união nacional",
+        "Prioridades de governo para o mandato 2027-2030"
+      ]
+    },
+    "ebc-2026-10-26-nunes-marques-tse-balanco": {
+      "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/politica/audio/2026-10/nunes-marques-anuncia-vitoria-de-lula-nas-eleicoes-gerais-de-2026",
+      "fonte": "Agência Brasil",
+      "tipo": "noticia",
+      "data": "2026-10-26",
+      "titulo": "Nunes Marques anuncia vitória de Lula nas Eleições Gerais de 2026",
+      "resumo": [
+        "O presidente do Tribunal Superior Eleitoral, ministro Kassio Nunes Marques, fez o pronunciamento oficial de encerramento do processo eleitoral de 2026.",
+        "O ministro elogiou o civismo do eleitorado brasileiro e a atuação das forças de segurança pública e dos mesários em todas as unidades da federação.",
+        "O TSE destacou a integridade das urnas eletrônicas e a transparência das missões de observação eleitoral nacionais e internacionais."
+      ],
+      "pontos": [
+        "Anúncio solene do presidente do TSE chancelando o resultado do pleito",
+        "Reconhecimento da eficiência e segurança do sistema eletrônico de votação",
+        "Balanço positivo de tranquilidade nas seções eleitorais de todo o país"
+      ]
+    },
+    "g1-2026-10-26-lula-vira-nova-york": {
+      "url": "https://g1.globo.com/mundo/noticia/2026/10/26/lula-vira-em-nova-york-flavio-bolsonaro-veja-votacao-2o-turno-nos-eua.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-26",
+      "titulo": "Lula vira em Nova York sobre Flávio Bolsonaro: veja a votação no 2º turno nos EUA",
+      "resumo": [
+        "O g1 Mundo traz o panorama completo da contagem de votos dos eleitores brasileiros no exterior no segundo turno de 2026.",
+        "Em Nova York, Lula reverteu a desvantagem do primeiro turno e obteve vitória expressiva, enquanto Flávio Bolsonaro manteve a liderança na Flórida.",
+        "A matéria detalha o comparecimento recorde de brasileiros cadastrados nos consulados da América do Norte e Europa."
+      ],
+      "pontos": [
+        "Resultado da votação de brasileiros residentes nos Estados Unidos",
+        "Virada matemática pró-Lula no colégio eleitoral de Nova York",
+        "Aumento na participação de eleitores registrados no exterior"
+      ]
+    },
+    "g1-2026-10-26-ibovespa-desaba-reeleicao": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/26/ibovespa-desaba-reeleicao-lula-acoes-recuam.ghtml",
+      "fonte": "g1 Economia",
+      "tipo": "noticia",
+      "data": "2026-10-26",
+      "titulo": "Ibovespa desaba após reeleição de Lula e ações de estatais recuam na B3",
+      "resumo": [
+        "O principal índice da B3 fechou em forte queda na primeira sessão após a proclamação da vitória de Lula pelo TSE.",
+        "Ações de estatais e papéis sensíveis ao ciclo doméstico lideraram as perdas após forte rali de apostas na vitória da oposição nas semanas anteriores.",
+        "O dólar comercial avançou e as taxas de juros futuros abriram com alta volatilidade diante da espera por definições na equipe econômica."
+      ],
+      "pontos": [
+        "Reação negativa do mercado acionário à surpresa eleitoral",
+        "Queda acentuada em papéis de empresas públicas e do setor financeiro",
+        "Volatilidade cambial e elevação nas taxas dos contratos de DI futuro"
+      ]
+    },
+    "infomoney-2026-10-26-mercado-reavaliar-tudo": {
+      "url": "https://www.infomoney.com.br/mercados/o-mercado-vai-reavaliar-tudo-as-projecoes-apos-a-surpreendente-vitoria-de-lula/",
+      "fonte": "InfoMoney",
+      "tipo": "noticia",
+      "data": "2026-10-26",
+      "titulo": "'O mercado vai reavaliar tudo': as projeções após a surpreendente vitória de Lula",
+      "resumo": [
+        "O InfoMoney reúne análises de economistas-chefes e gestores de fundos sobre o novo mandato de quatro anos conquistado por Lula.",
+        "A matéria indica que os investidores focarão na velocidade da transição, no cumprimento das metas fiscais e no diálogo do Planalto com o Congresso conservador.",
+        "Especialistas recomendam cautela com papéis de alta sensibilidade fiscal e destacam oportunidades em títulos atrelados à inflação."
+      ],
+      "pontos": [
+        "Avaliação de gestores de recursos sobre a continuidade do governo",
+        "Foco prioritário em metas orçamentárias e controle da dívida pública",
+        "Estratégias de alocação de carteiras em títulos públicos indexados ao IPCA"
       ]
     }
   }
