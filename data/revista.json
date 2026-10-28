@@ -3086,6 +3086,367 @@
           "nota": "Circuito de estúdios em Botafogo: noites de indie rock, shoegaze e pós-punk em formato de bolso no Estúdio Hanoi (Rua Paulo Barreto) e no Estúdio Mutante, com som direto de amplificador."
         }
       ]
+    },
+    "2026-10-31": {
+      "inicio": "2026-10-25",
+      "fim": "2026-10-31",
+      "titulo": "As urnas falaram, a oposição rachou e o mundo mede a temperatura",
+      "panorama": [
+        "A semana foi marcada pelo desfecho definitivo da eleição mais polarizada da história recente do país. No domingo, 25 de outubro, o Tribunal Superior Eleitoral proclamou a vitória de Luiz Inácio Lula da Silva com 64.256.232 votos (51,79%), superando Flávio Bolsonaro (59.826.041 votos, 48,21%) por uma margem de 4,4 milhões de sufrágios. A apuração veloz e o reconhecimento imediato por líderes mundiais e governadores de oposição contrastaram com a reação da ala mais radical.",
+        "O cenário político foi sacudido nas horas seguintes: o ministro Alexandre de Moraes determinou a entrega de passaportes de Flávio Bolsonaro, que descumpriu o prazo e deixou o Brasil rumo aos EUA via fronteira terrestre com a Argentina, provocando mandados de busca e apreensão da Polícia Federal em sua mansão no DF e apoio público de Donald Trump. Na economia, após a B3 acionar o circuit breaker na segunda-feira, os mercados ensaiaram alívio com a reafirmação do arcabouço fiscal pela equipe de transição no CCBB e a renovação do subsídio de R$ 2,12 por litro ao diesel. No mundo, a Anthropic deu entrada no maior IPO do setor de IA em Wall Street, o Golfo viveu desescalada em Ormuz com mediação de Omã e a cultura debate a era dos megashows em estádios contra a resistência dos circuitos independentes."
+      ],
+      "fim_de_semana": [
+        {
+          "evento": "audio-rebel-out-nov-2026",
+          "nota": "Sexta (30/10) às 20h na Audio Rebel (Botafogo): o pós-rock instrumental do quarteto E A Terra Nunca Me Pareceu Tão Distante em sala íntima para 40 ouvintes."
+        },
+        {
+          "evento": "ccbb-rio-mountain-2026",
+          "nota": "Até domingo (01/11) no Cinema I do CCBB (Centro): 21º Rio Mountain Festival com mostras de travessias de altitude, escalada e expedições em cordilheira."
+        },
+        {
+          "evento": "carioca-progfestival-2026",
+          "nota": "Quarta (28/10) a sábado (31/10) às 19h no Centro da Música Carioca (Tijuca): Cheiro de Vida, Arthur Martau e Prognoise celebrando a invenção progressiva brasileira."
+        },
+        {
+          "evento": "indie-botafogo-estudios-2026",
+          "nota": "Sexta e sábado no Estúdio Hanoi (Rua Paulo Barreto) e no Estúdio Mutante em Botafogo: sessões ao vivo gravadas em fita analógica para público de bolso."
+        },
+        {
+          "evento": "ana-frango-eletrico-caixa-2026",
+          "nota": "Sexta e sábado (30 e 31/10) às 19h no Teatro Nelson Rodrigues da Caixa Cultural: Ana Frango Elétrico em formato intimista de voz, violão e guitarra."
+        }
+      ],
+      "temas": [
+        {
+          "id": "resultado-urnas-brasil-pos-pleito",
+          "editoria": "Política / Eleições",
+          "titulo": "O veredito oficial das urnas e a consolidação do quarto mandato de Lula",
+          "linha_fina": "TSE proclama reeleição por 51,79% contra 48,21% de Flávio Bolsonaro, com diferença de 4,4 milhões de votos; governadores de oposição chancelam apuração.",
+          "resumo": [
+            "Com 100% das urnas apuradas no domingo, o presidente Luiz Inácio Lula da Silva alcançou 64,2 milhões de votos válidos, enquanto o senador Flávio Bolsonaro obteve 59,8 milhões. A abstenção ficou em 19,21%, mantendo a média das disputas presidenciais recentes.",
+            "A proclamação foi seguida por imediato reconhecimento de governadores de peso da oposição (como Tarcísio de Freitas em São Paulo e Romeu Zema em Minas Gerais), isolando correntes que pretendiam questionar as máquinas de votação. Lula discursou em Brasília defendendo a pacificação institucional e a recomposição do diálogo federativo."
+          ],
+          "por_que_importa": "Encerra formalmente o ciclo eleitoral de 2026 e estabelece as balizas da governabilidade em um Congresso com forte presença conservadora.",
+          "vieses": "Veículos alinhados ao campo governista destacaram a resiliência democrática das instituições, enquanto colunas conservadoras sublinharam a força eleitoral de quase 60 milhões de votos da oposição.",
+          "o_que_falta": "Detalhar os acordos de bastidor entre o Palácio do Planalto e a cúpula da Câmara e do Senado para a pauta de votações do primeiro semestre de 2027.",
+          "perguntas": [
+            "Como se articulará a bancada do PL no Senado após a saída de Flávio Bolsonaro do país?",
+            "Qual será o grau de cooperação dos governadores do Sudeste nas pautas fiscais federais?"
+          ],
+          "cobertura": [
+            {
+              "fonte": "g1",
+              "perfil": "portal de notícias, cobertura eleitoral em tempo real",
+              "enfoque": "dados oficiais do TSE com 100% dos votos e discurso de vitória em Brasília",
+              "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/lula-vence-flavio-bolsonaro-e-e-reeleito-presidente-do-brasil.ghtml"
+            },
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "jornal diário, análise política",
+              "enfoque": "raio-x da divisão regional dos votos e reconhecimento rápido pelos governadores",
+              "url": "https://www1.folha.uol.com.br/poder/2026/10/lula-vence-flavio-bolsonaro-por-44-milhoes-de-votos-e-garante-quarto-mandato.shtml"
+            },
+            {
+              "fonte": "The New York Times",
+              "perfil": "imprensa internacional, perspectiva global",
+              "enfoque": "reeleição de Lula e o contraponto à ascensão da direita populista na América Latina",
+              "url": "https://www.nytimes.com/2026/10/25/world/americas/brazil-election-lula-flavio-bolsonaro.html"
+            }
+          ],
+          "aprofundar": [
+            {
+              "tipo": "base de dados",
+              "titulo": "Resultados Oficiais do 2º Turno das Eleições 2026",
+              "autor": "Tribunal Superior Eleitoral (TSE)",
+              "ano": "2026",
+              "nota": "Repositório completo com boletins de urna por seção, abstenções e mapa de votação município a município.",
+              "url": "https://resultados.tse.jus.br"
+            },
+            {
+              "tipo": "livro",
+              "titulo": "Biografia do abismo: como a polarização divide famílias e redefine a política",
+              "autor": "Felipe Nunes e Thomas Traumann",
+              "ano": "2023",
+              "nota": "Estudo sociopolítico indispensável para compreender a cristalização de dois blocos eleitorais quase simétricos no Brasil.",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "id": "flavio-fuga-eua-moraes-buscas",
+          "editoria": "Justiça & Poder",
+          "titulo": "A saída de Flávio para os EUA, as buscas da PF e a repercussão internacional",
+          "linha_fina": "Senador descumpre entrega de passaportes fixada pelo STF, viaja via Argentina e recebe aval de Trump; PF cancela documentos e cumpre buscas em Brasília.",
+          "resumo": [
+            "Poucas horas após a confirmação da derrota nas urnas, a Polícia Federal representou junto ao STF alertando para risco iminente de evasão de Flávio Bolsonaro, investigado em inquéritos de lavagem de dinheiro e operações financeiras suspeitas.",
+            "O ministro Alexandre de Moraes determinou a entrega de todos os passaportes em 24 horas. O senador ignorou a ordem e cruzou a fronteira terrestre com a Argentina, de onde seguiu para Miami em voo privado. A PF obteve mandados de busca e apreensão cumpridos em sua mansão no DF, enquanto Donald Trump manifestou apoio público à sua entrada nos EUA, criando um atrito diplomático imediato."
+          ],
+          "por_que_importa": "Transforma o pós-eleição em uma crise judicial com ramificações na política externa, testando os tratados de extradição e cooperação policial entre Brasil e EUA.",
+          "vieses": "A imprensa internacional focou no endosso de Trump à permanência de Flávio, enquanto a cobertura jurídica nacional enfatizou a configuração expressa de descumprimento de ordem cautelar da Suprema Corte.",
+          "o_que_falta": "Esclarecer se a Procuradoria-Geral da República solicitará a extradição formal ou a inclusão de mandado de prisão preventiva na Difusão Vermelha da Interpol.",
+          "perguntas": [
+            "Qual será o impacto da viagem na liderança do PL e na bancada oposicionista no Senado?",
+            "O governo dos Estados Unidos concederá asilo ou visto especial de permanência prolongada?"
+          ],
+          "cobertura": [
+            {
+              "fonte": "g1",
+              "perfil": "portal de notícias, cobertura judicial",
+              "enfoque": "mandados de busca da PF na mansão de Brasília e cancelamento dos passaportes",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/28/pf-faz-busca-e-apreensao-em-enderecos-ligados-a-flavio-bolsonaro.ghtml"
+            },
+            {
+              "fonte": "UOL Notícias",
+              "perfil": "portal de notícias, apuração investigativa",
+              "enfoque": "relatório da PF com indícios de fuga e rota terrestre utilizada para sair do país",
+              "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/28/pf-cumpre-buscas-mansao-flavio-bolsonaro-stf-moraes.htm"
+            },
+            {
+              "fonte": "The Wall Street Journal",
+              "perfil": "jornal internacional de negócios e política",
+              "enfoque": "declarações de Donald Trump e a reação de autoridades diplomáticas americanas",
+              "url": "https://www.wsj.com/world/americas/brazil-senator-flavio-bolsonaro-us-arrival-trump-2026.html"
+            }
+          ],
+          "aprofundar": [
+            {
+              "tipo": "relatório",
+              "titulo": "Extradição e Cooperação Jurídica Internacional em Matéria Penal",
+              "autor": "Departamento de Recuperação de Ativos e Cooperação Jurídica Internacional (DRCI/MJSP)",
+              "ano": "2025",
+              "nota": "Guia técnico sobre os tratados bilaterais Brasil-EUA e os requisitos para extradição instrutória de cidadãos nacionais e estrangeiros.",
+              "url": "https://www.gov.br/justica/pt-br/assuntos/sua-protecao/cooperacao-internacional"
+            }
+          ]
+        },
+        {
+          "id": "economia-pos-eleicao-diesel-mercados",
+          "editoria": "Economia / Mercados",
+          "titulo": "A montanha-russa dos mercados, o subsídio ao diesel e a transição no CCBB",
+          "linha_fina": "Após tombo de 13% no Ibovespa na segunda, ativos reagem com alívio; governo prorroga desconto de R$ 2,12 no diesel para conter custos de transporte.",
+          "resumo": [
+            "A reação inicial do mercado financeiro à vitória apertada de Lula foi de forte volatilidade, culminando no acionamento do circuit breaker e em queda histórica na segunda-feira pós-pleito, puxada pelo temor de instabilidade institucional.",
+            "A rápida instalação do gabinete de transição no CCBB por Geraldo Alckmin e Fernando Haddad, acompanhada de mensagens explícitas de preservação do arcabouço fiscal e da prorrogação do subsídio de R$ 2,12 por litro ao diesel, devolveu fôlego aos ativos, com a bolsa se recuperando e o dólar recuando para R$ 5,32."
+          ],
+          "por_que_importa": "Demonstra que a disciplina fiscal e a clareza sobre o PLOA 2027 são condições inegociáveis para a estabilização macroeconômica e a atração de capitais no novo mandato.",
+          "vieses": "Relatórios de bancos estrangeiros apontaram alívio com o pragmatismo da equipe de transição, enquanto consultorias agrícolas destacaram a importância de manter o diesel subsidiado durante o escoamento de grãos.",
+          "o_que_falta": "Definir a meta de superávit primário formal que será defendida no Congresso para a execução de 2027.",
+          "perguntas": [
+            "Como o Ministério da Fazenda compensará a renúncia fiscal com o subsídio ao diesel em 2027?",
+            "Qual será a intensidade do corte de juros pelo Federal Reserve nos EUA na Superquarta?"
+          ],
+          "cobertura": [
+            {
+              "fonte": "Valor Econômico",
+              "perfil": "jornal financeiro e de negócios",
+              "enfoque": "equipe de transição no CCBB, negociações com a CMO e compromisso com o arcabouço",
+              "url": "https://valor.globo.com/politica/noticia/2026/10/28/alckmin-e-haddad-instalam-gabinete-de-transicao-no-ccbb-e-miram-orcamento-de-2027.ghtml"
+            },
+            {
+              "fonte": "g1 Economia",
+              "perfil": "portal econômico nacional",
+              "enfoque": "renovação do subsídio ao óleo diesel e impacto nas bombas de combustível",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/28/governo-renova-subsidio-ao-diesel-em-meio-a-alta-do-petroleo.ghtml"
+            },
+            {
+              "fonte": "Bloomberg Línea",
+              "perfil": "agência financeira internacional",
+              "enfoque": "investidores internacionais reavaliam risco soberano do Brasil e compram ativos com desconto",
+              "url": "https://www.bloomberglinea.com.br/mercados/equipe-de-transicao-no-brasil-inicia-trabalhos-com-foco-em-disciplina-fiscal/"
+            }
+          ],
+          "aprofundar": [
+            {
+              "tipo": "relatório",
+              "titulo": "Relatório de Acompanhamento Fiscal (RAF)",
+              "autor": "Instituição Fiscal Independente (IFI / Senado)",
+              "ano": "2026",
+              "nota": "Diagnóstico detalhado sobre a trajetória da dívida bruta, teto de despesas e espaço fiscal para o orçamento de 2027.",
+              "url": "https://www12.senado.leg.br/ifi"
+            }
+          ]
+        },
+        {
+          "id": "anthropic-ipo-agentes-ia",
+          "editoria": "Tecnologia & IA",
+          "titulo": "A chegada da Anthropic a Wall Street e a maturidade dos agentes autônomos",
+          "linha_fina": "Dona dos modelos Claude protocola formulário S-1 na SEC para listar ações na Bolsa de Nova York, marcando a maior abertura de capital da história da IA.",
+          "resumo": [
+            "A Anthropic oficializou seu pedido de IPO nos Estados Unidos, abrindo os números operacionais e financeiros da companhia para o escrutínio dos investidores institucionais.",
+            "O prospecto revela salto exponencial na receita corporativa puxada por fluxos de raciocínio avançado e agentes autônomos com execução de código, simbolizando o fim da fase de testes laboratoriais e o início da monetização em larga escala da inteligência artificial generativa."
+          ],
+          "por_que_importa": "Estabelece a régua de valor de mercado e sustentabilidade financeira para todo o setor de modelos de fronteira, pressionando rivais como OpenAI e Google.",
+          "vieses": "Publicações de tecnologia elogiaram a ênfase na governança e segurança, enquanto analistas de Wall Street focaram na pesada conta de infraestrutura e semicondutores.",
+          "o_que_falta": "Divulgar a faixa indicativa de preço das ações e a estimativa precisa de captação líquida da oferta.",
+          "perguntas": [
+            "O IPO da Anthropic abrirá a porteira para ofertas públicas de outras startups de IA em 2027?",
+            "Como a condição de empresa aberta afetará os compromissos de pesquisa de segurança pública da companhia?"
+          ],
+          "cobertura": [
+            {
+              "fonte": "g1 Tecnologia",
+              "perfil": "portal de tecnologia e negócios",
+              "enfoque": "protocolo do pedido de IPO na SEC e crescimento da empresa",
+              "url": "https://g1.globo.com/tecnologia/noticia/2026/10/28/anthropic-protocola-pedido-de-ipo-em-wall-street.ghtml"
+            },
+            {
+              "fonte": "Financial Times",
+              "perfil": "jornal econômico internacional",
+              "enfoque": "análise do prospecto financeiro da Anthropic e apetite institucional em Nova York",
+              "url": "https://www.ft.com/content/anthropic-files-for-historic-wall-street-ipo-2026"
+            }
+          ],
+          "aprofundar": [
+            {
+              "tipo": "artigo acadêmico",
+              "titulo": "Constitutional AI: A Framework for Frontier Alignment and Public Auditing",
+              "autor": "Yuntao Bai, Dario Amodei et al.",
+              "ano": "2024",
+              "nota": "O ensaio fundacional que estrutura os princípios de segurança e supervisão algorítmica adotados nos modelos Claude.",
+              "url": "https://arxiv.org/abs/2212.08073"
+            }
+          ]
+        },
+        {
+          "id": "trabalho-escravo-vulnerabilidade-df",
+          "editoria": "Direitos Humanos",
+          "titulo": "O resgate de 28 anos no Lago Norte e as fissuras do combate ao trabalho escravo",
+          "linha_fina": "Bloqueio de bens de fazendeiros no DF expõe armadilha da vulnerabilidade extrema e a dependência material que dificulta a reinserção de resgatados.",
+          "resumo": [
+            "O resgate de um caseiro de 56 anos que viveu quase três décadas sem salário e em alojamento degradante a poucos quilômetros dos ministérios em Brasília colocou em evidência a gravidade do trabalho análogo à escravidão doméstico no Brasil.",
+            "A decisão judicial bloqueou bens dos empregadores e arbitrou pensão de subsistência, mas o fato de a vítima ter chegado a retornar ao cativeiro por falta total de moradia e documentação acendeu o alarme sobre as lacunas da rede de proteção pós-resgate."
+          ],
+          "por_que_importa": "Mostra que a punição judicial dos infratores é inócua se não for acompanhada de acolhimento econômico e habitacional duradouro para as vítimas.",
+          "vieses": "Entidades trabalhistas cobraram a ampliação das equipes de auditoria-fiscal, enquanto defensores públicos destacaram o impacto psicológico do isolamento prolongado.",
+          "o_que_falta": "Levantar se existem outros imóveis rurais no Distrito Federal com suspeitas similares em apuração pelo MPT.",
+          "perguntas": [
+            "Quais mecanismos de proteção comunitária podem evitar que resgatados retornem à dependência de exploradores?",
+            "Como aprimorar a fiscalização em propriedades privadas urbanas e periurbanas sem mandado expresso?"
+          ],
+          "cobertura": [
+            {
+              "fonte": "g1 DF",
+              "perfil": "noticiário local e direitos humanos",
+              "enfoque": "decisão judicial de bloqueio patrimonial e depoimentos dos auditores do MPT",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/justica-bloqueia-bens-de-patroes-apos-caseiro-ser-resgatado-da-escravidao-no-df.ghtml"
+            },
+            {
+              "fonte": "Metrópoles",
+              "perfil": "portal investigativo do DF",
+              "enfoque": "análise da armadilha social de desamparo que levou a vítima a voltar à casa dos patrões",
+              "url": "https://www.metropoles.com/distrito-federal/trabalho-escravo-lago-norte-bloqueio-bens-28-anos"
+            }
+          ],
+          "aprofundar": [
+            {
+              "tipo": "relatório",
+              "titulo": "Dados do Radar do Trabalho Escravo no Brasil",
+              "autor": "Ministério do Trabalho e Emprego (SIT / MTE)",
+              "ano": "2026",
+              "nota": "Base pública com estatísticas de operações de resgate, perfis sociodemográficos de trabalhadores libertados e municípios com maior incidência.",
+              "url": "https://sit.trabalho.gov.br/radar/"
+            }
+          ]
+        },
+        {
+          "id": "cultura-estadios-vs-circuitos-independentes",
+          "editoria": "Cultura & Cidade",
+          "titulo": "A ditadura dos estádios no mercado de shows e o papel de resistência dos clubes do Rio",
+          "linha_fina": "Enquanto megaeventos corporativos inflam preços e monopolizam agendas no país, auditórios independentes como Audio Rebel e Circo Voador salvaguardam a música de invenção.",
+          "resumo": [
+            "Balanço publicado nesta semana constata que 2026 consolidou os estádios de futebol como a principal arena de espetáculos musicais no Brasil, polarizando datas milionárias e empurrando o preço dos ingressos para patamares proibitivos para a maioria da população.",
+            "No Rio de Janeiro, onde a ausência de ginásios médios com boa acústica é crônica, esse fenômeno acentua o valor heroico de palcos como a Audio Rebel em Botafogo, o Circo Voador na Lapa, o Centro da Música Carioca na Tijuca e estúdios independentes como o Hanoi, onde a música experimental, o pós-rock e o folk literário continuam encontrando abrigo."
+          ],
+          "por_que_importa": "Alerta para os riscos da monocultura de megafestivais e valoriza a preservação de espaços acústicos de proximidade na capital fluminense.",
+          "vieses": "Cadernos de economia do entretenimento enfatizaram os recordes de bilheteria dos estádios, enquanto críticos musicais alertaram para a assepsia sonora e a exclusão de artistas de nicho.",
+          "o_que_falta": "Mapear incentivos públicos estaduais e municipais para renovação acústica de salas históricas de teatro e música no Rio.",
+          "perguntas": [
+            "É possível viabilizar financeiramente salas com capacidade entre 1 mil e 5 mil lugares sem depender de naming rights agressivos?",
+            "Como a cena independente carioca pode se articular em rede para baratear custos de turnês compartilhadas?"
+          ],
+          "cobertura": [
+            {
+              "fonte": "g1 Música",
+              "perfil": "portal de notícias musicais",
+              "enfoque": "consolidação da era dos estádios e a explosão de faturamento em 2026",
+              "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/megaeventos-e-shows-em-estadios-se-consolidam-em-2026-no-brasil.ghtml"
+            },
+            {
+              "fonte": "Folha Ilustrada",
+              "perfil": "caderno cultural diário",
+              "enfoque": "análise da carência de arenas intermediárias e a resistência das casas históricas do Rio",
+              "url": "https://www1.folha.uol.com.br/ilustrada/2026/10/a-era-dos-estadios-e-o-estrangulamento-das-casas-medias-de-show-no-rio.shtml"
+            }
+          ],
+          "aprofundar": [
+            {
+              "tipo": "livro",
+              "titulo": "O som e o sentido: uma história do espaço sonoro e da acústica",
+              "autor": "José Miguel Wisnik",
+              "ano": "2021",
+              "nota": "Ensaio clássico sobre a relação entre arquitetura, escuta coletiva e a transformação da experiência musical nas metrópoles.",
+              "url": ""
+            }
+          ]
+        }
+      ],
+      "fora_do_radar": [
+        {
+          "id": "funk-de-direita-redes-2026",
+          "editoria": "Cultura & Sociedade",
+          "titulo": "A explosão do funk de direita nas redes e a disputa estética pelas periferias",
+          "texto": "Enquanto os holofotes se concentraram nos debates televisivos e nos discursos de palanque, as redes sociais registraram uma disparada inédita no uso de jingles de funk e trap por candidatos conservadores no segundo turno de 2026. A apropriação do ritmo mais popular das favelas cariocas e paulistas para veicular mensagens pró-ordem e empreendedorismo individual gerou forte debate sobre as contradições entre o discurso punitivista tradicional da direita e a necessidade de se conectar com a juventude periférica.",
+          "ler": [
+            {
+              "fonte": "g1",
+              "titulo": "Fenômeno do 'funk de direita' e o embate estético na reta final do pleito",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/28/funk-de-direita-atrai-jovens-e-provoca-debates-nas-eleicoes.ghtml"
+            },
+            {
+              "fonte": "Nexo Jornal",
+              "titulo": "Como o conservadorismo brasileiro tenta decodificar a linguagem da periferia",
+              "url": "https://www.nexojornal.com.br/ensaio/2026/10/28/a-linguagem-do-funk-na-campanha-conservadora"
+            }
+          ]
+        },
+        {
+          "id": "janonismo-internacional-whatsapp",
+          "editoria": "Comunicação Política",
+          "titulo": "O 'Janonismo Internacional' e a replicação de brigadas digitais na Europa",
+          "texto": "Estratégias de guerrilha digital e mobilização em massa via grupos fechados de WhatsApp desenvolvidas no Brasil durante campanhas passadas passaram a ser formalmente adaptadas por movimentos de esquerda e partidos progressistas na Espanha, França e Argentina. Analistas de comunicação política apontam que a velocidade de resposta em grupos descentralizados superou os algoritmos das grandes redes abertas no pós-eleição brasileiro, transformando a experiência nacional em modelo de exportação tática.",
+          "ler": [
+            {
+              "fonte": "g1",
+              "titulo": "Estratégia do 'Exército do Lula' no WhatsApp inspira campanhas na Europa",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/28/janonismo-internacional-grupos-de-whatsapp-inspiram-ativistas-na-europa.ghtml"
+            },
+            {
+              "fonte": "El País Brasil",
+              "titulo": "A anatomia das brigadas digitais de mensagens instantâneas e a polarização global",
+              "url": "https://brasil.elpais.com/internacional/2026-10-28/a-guerrilha-do-whatsapp-do-brasil-a-europa.html"
+            }
+          ]
+        },
+        {
+          "id": "erosao-ressaca-orla-fluminense",
+          "editoria": "Meio Ambiente & Clima",
+          "titulo": "Ressacas frequentes aceleram perda de faixa de areia na orla do Rio",
+          "texto": "A passagem da terceira frente fria severa de outubro deixou o mar revolto com ondas de até 2,5 metros na orla da Zona Sul e de Niterói, reacendendo o alerta de oceanógrafos sobre a erosão costeira acelerada. Dados de monitoramento costeiro da UFRJ indicam recuo médio de até 3 metros em trechos de praias como Leblon e Macumba nos últimos quatro anos, reforçando a urgência de obras de contenção baseadas na natureza e recuperação de restingas.",
+          "ler": [
+            {
+              "fonte": "O Globo",
+              "titulo": "Ressacas contínuas aceleram erosão em praias da Zona Sul e Macumba",
+              "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/erosao-costeira-e-ressacas-impactam-praias-do-rio-de-janeiro.ghtml"
+            },
+            {
+              "fonte": "Marinha do Brasil",
+              "titulo": "Boletim de Monitoramento Hidrográfico e Meteorológico do Litoral Sudeste",
+              "url": "https://www.marinha.mil.br/chm/dados-do-santo/avisos-de-mau-tempo"
+            }
+          ]
+        }
+      ]
     }
   },
   "cultura": {
@@ -14860,6 +15221,227 @@
         "Contraste entre a opulência dos megashows e a escassez de palcos intermediários",
         "Papel de resistência do circuito de clubes e teatros independentes no Rio",
         "Defesa de acústica refinada e proximidade entre público e artistas"
+      ]
+    },
+    "g1-2026-10-25-lula-reeleito": {
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/lula-vence-flavio-bolsonaro-e-e-reeleito-presidente-do-brasil.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-25",
+      "titulo": "Lula vence Flávio Bolsonaro por 51,79% e é reeleito presidente do Brasil",
+      "resumo": [
+        "O g1 acompanhou a apuração do TSE que confirmou matematicamente a vitória de Luiz Inácio Lula da Silva com 64,2 milhões de votos contra 59,8 milhões de Flávio Bolsonaro.",
+        "O presidente reeleito comemorou o resultado em hotel de Brasília cercado por aliados e pregou união nacional para os próximos quatro anos.",
+        "A apuração transcorreu sem incidentes graves nos 5.570 municípios brasileiros."
+      ],
+      "pontos": [
+        "Confirmação matemática da vitória de Lula com 51,79% dos votos válidos",
+        "Votação total de 64,2 milhões de eleitores no segundo turno",
+        "Discurso enfatizando reconstrução econômica e pacificação federativa"
+      ]
+    },
+    "folha-2026-10-25-lula-quarto-mandato": {
+      "url": "https://www1.folha.uol.com.br/poder/2026/10/lula-vence-flavio-bolsonaro-por-44-milhoes-de-votos-e-garante-quarto-mandato.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-10-25",
+      "titulo": "Lula vence por 4,4 milhões de votos e garante quarto mandato presidencial",
+      "resumo": [
+        "A Folha detalha a geografia do voto no segundo turno: ampla vantagem de Lula no Nordeste e vitórias estratégicas em capitais compensaram a força de Flávio no Centro-Oeste e Sul.",
+        "O jornal destaca a postura célere dos governadores de São Paulo e Minas em reconhecer o resultado, desarticulando tentativas de tumulto.",
+        "O editorial aponta que a governabilidade dependerá de alianças pragmáticas com os partidos de centro."
+      ],
+      "pontos": [
+        "Diferença de 4.430.191 votos entre os dois candidatos presidenciais",
+        "Governadores de oposição aceitam resultado e rejeitam questionamentos",
+        "Desafio imediato de articulação com o Congresso recém-eleito"
+      ]
+    },
+    "nyt-2026-10-25-brazil-lula-win": {
+      "url": "https://www.nytimes.com/2026/10/25/world/americas/brazil-election-lula-flavio-bolsonaro.html",
+      "fonte": "The New York Times",
+      "tipo": "noticia",
+      "data": "2026-10-25",
+      "titulo": "Lula wins tight Brazil election, repelling right-wing surge",
+      "resumo": [
+        "O New York Times destaca a vitória de Lula como uma das mais difíceis de sua carreira política, ressaltando o enraizamento do movimento bolsonarista no eleitorado.",
+        "A cobertura estrangeira elogiou a velocidade e a blindagem técnica da urna eletrônica brasileira contra interferências.",
+        "Líderes europeus e latino-americanos telefonaram para parabenizar o presidente minutos após a proclamação."
+      ],
+      "pontos": [
+        "Repercussão da vitória eleitoral de Lula na imprensa global",
+        "Reconhecimento internacional imediato por chefes de Estado",
+        "Análise sobre o futuro da liderança ambiental do Brasil no cenário multilateral"
+      ]
+    },
+    "wsj-2026-10-28-flavio-us-arrival": {
+      "url": "https://www.wsj.com/world/americas/brazil-senator-flavio-bolsonaro-us-arrival-trump-2026.html",
+      "fonte": "The Wall Street Journal",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Brazil Senator Flavio Bolsonaro arrives in US after defying passport surrender order",
+      "resumo": [
+        "O Wall Street Journal noticia a chegada de Flávio Bolsonaro à Flórida e as declarações de Donald Trump dando boas-vindas ao senador derrotado.",
+        "O jornal avalia que o episódio adiciona volatilidade às relações diplomáticas entre Washington e Brasília antes da posse presidencial nos EUA.",
+        "Fontes jurídicas citadas apontam que a ausência de mandado formal de prisão internacional permite a livre circulação em solo americano por enquanto."
+      ],
+      "pontos": [
+        "Chegada de Flávio Bolsonaro a Miami após descumprir ordem do STF",
+        "Declarações de Donald Trump contestando o resultado eleitoral brasileiro",
+        "Incógnitas sobre a tramitação de pedidos de extradição futura"
+      ]
+    },
+    "ft-2026-10-28-anthropic-ipo": {
+      "url": "https://www.ft.com/content/anthropic-files-for-historic-wall-street-ipo-2026",
+      "fonte": "Financial Times",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "AI champion Anthropic files for landmark Wall Street IPO",
+      "resumo": [
+        "O Financial Times analisa em profundidade o prospecto de IPO da Anthropic, ressaltando que a empresa alcançou fluxo de caixa operacional positivo impulsionada pela adoção corporativa do Claude.",
+        "A matéria pontua que o teste de mercado público forçará a companhia a equilibrar investimentos em pesquisa de segurança com a busca de lucros para acionistas.",
+        "Analistas de Wall Street esperam que a listagem ocorra no primeiro trimestre de 2027 com forte demanda de fundos soberanos e fundos mútuos."
+      ],
+      "pontos": [
+        "Protocolo formal de abertura de capital da criadora do Claude na SEC",
+        "Transição da inteligência artificial para maturidade comercial aberta em bolsa",
+        "Debate sobre o equilíbrio entre rentabilidade financeira e segurança algorítmica"
+      ]
+    },
+    "g1-2026-10-28-funk-direita": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/28/funk-de-direita-atrai-jovens-e-provoca-debates-nas-eleicoes.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Funk de direita: jingles com batidão dominam redes e expõem disputa estética nas favelas",
+      "resumo": [
+        "Reportagem do g1 examina a proliferação de paródias de funk em ritmo acelerado promovidas por campanhas conservadoras nas redes sociais para engajar eleitores de 16 a 24 anos.",
+        "Pesquisadores de cultura urbana apontam a ironia da apropriação de um gênero historicamente criminalizado pela bancada da segurança pública.",
+        "O formato viralizou no TikTok e no Instagram, rivalizando em alcance com os jingles tradicionais de TV."
+      ],
+      "pontos": [
+        "Explosão de jingles em ritmo de funk em perfis políticos conservadores",
+        "Disputa cultural e eleitoral pelo voto da juventude periférica",
+        "Contradições discursivas entre punitivismo penal e consumo estético de massa"
+      ]
+    },
+    "nexo-2026-10-28-linguagem-funk-campanha": {
+      "url": "https://www.nexojornal.com.br/ensaio/2026/10/28/a-linguagem-do-funk-na-campanha-conservadora",
+      "fonte": "Nexo Jornal",
+      "tipo": "analysis",
+      "data": "2026-10-28",
+      "titulo": "A ressignificação do batidão e a nova comunicação popular da direita",
+      "resumo": [
+        "Ensaio do Nexo investiga como a cultura do funk foi incorporada pelo discurso da meritocracia e da autonomia econômica nas comunidades.",
+        "O texto defende que a adesão ao funk não é mero oportunismo estético, mas reflete uma mudança geracional na base política que recusa o paternalismo tradicional.",
+        "A análise conclui que as estratégias de comunicação que ignorarem a linguagem dos paredões de som perderão relevância nos próximos ciclos."
+      ],
+      "pontos": [
+        "Conexão do funk com valores de autonomia financeira e empreendedorismo",
+        "Transformação dos canais de comunicação com a juventude urbana",
+        "Análise semiótica dos vídeos curtos que dominaram as eleições de 2026"
+      ]
+    },
+    "g1-2026-10-28-janonismo-europa": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/28/janonismo-internacional-grupos-de-whatsapp-inspiram-ativistas-na-europa.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Estratégia do 'Exército do Lula' no WhatsApp inspira ativistas e campanhas na Europa",
+      "resumo": [
+        "O g1 mostra como coletivos de esquerda na Espanha e na França estudaram a operação de grupos de resposta rápida no WhatsApp brasileira para conter desinformação eleitoral.",
+        "A tática privilegia vídeos gravados sem filtro, mensagens de texto diretas e distribuição capilar entre voluntários.",
+        "Cientistas políticos europeus ressaltam que o modelo descentralizado se mostrou mais eficaz do que anúncios pagos em redes convencionais."
+      ],
+      "pontos": [
+        "Adaptação de métodos de guerrilha digital brasileira por partidos europeus",
+        "Foco em aplicativos de mensagens criptografadas e comunicação horizontal",
+        "Superação de algoritmos de alcance orgânico de redes abertas"
+      ]
+    },
+    "elpais-2026-10-28-guerrilha-whatsapp": {
+      "url": "https://brasil.elpais.com/internacional/2026-10-28/a-guerrilha-do-whatsapp-do-brasil-a-europa.html",
+      "fonte": "El País Brasil",
+      "tipo": "analysis",
+      "data": "2026-10-28",
+      "titulo": "A anatomia das brigadas digitais de mensagens instantâneas e a polarização global",
+      "resumo": [
+        "O El País esmiúça o funcionamento das redes de voluntários políticos no WhatsApp, apontando os riscos de bolhas de confirmação e a eficácia na resposta a ataques em tempo real.",
+        "A reportagem ouve ativistas em Madri e Paris que replicam o método para contornar a hostilidade de canais tradicionais de TV.",
+        "O artigo reflete sobre como a tecnologia de mensagens redefiniu o conceito de militância partidária no século XXI."
+      ],
+      "pontos": [
+        "Dinâmica de comunicação instantânea em grupos de afinidade ideológica",
+        "Desafios para a moderação de conteúdo e combate a notícias falsas",
+        "Impacto duradouro da metodologia brasileira no ativismo digital internacional"
+      ]
+    },
+    "oglobo-2026-10-28-erosao-ressacas-rio": {
+      "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/erosao-costeira-e-ressacas-impactam-praias-do-rio-de-janeiro.ghtml",
+      "fonte": "O Globo",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Ressacas contínuas aceleram erosão em praias da Zona Sul e Macumba no Rio",
+      "resumo": [
+        "O Globo publica dados de monitoramento do Departamento de Oceanografia da UERJ e da Coppe/UFRJ mostrando a perda sistemática de sedimentos de areia na orla carioca.",
+        "A frequência anômala de ressacas no inverno e na primavera de 2026 comprometeu trechos de calçadão e ciclovias costeiras.",
+        "Especialistas cobram projetos integrados de engordamento de praia e recuperação da vegetação de restinga para amortecer a força das marés."
+      ],
+      "pontos": [
+        "Perda acelerada de faixa de areia monitorada por universidades fluminenses",
+        "Danos estruturais em ciclovias e calçadões na Macumba e Leblon",
+        "Defesa de soluções baseadas na natureza para proteção costeira a longo prazo"
+      ]
+    },
+    "marinha-2026-10-28-boletim-ressaca": {
+      "url": "https://www.marinha.mil.br/chm/dados-do-santo/avisos-de-mau-tempo",
+      "fonte": "Marinha do Brasil",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Aviso de ressaca e condições marítimas severas no litoral fluminense",
+      "resumo": [
+        "O Centro de Hidrografia da Marinha emitiu boletim de alerta meteorológico para ondas de direção sudoeste com alturas de até 2,5 metros entre Arraial do Cabo e Paraty.",
+        "A recomendação técnica orienta esportistas náuticos e pescadores artesanais a suspenderem saídas até que a ondulação diminua.",
+        "As autoridades portuárias de Itaguaí e da Baía de Guanabara mantêm operações sob monitoramento de marés."
+      ],
+      "pontos": [
+        "Alerta oficial de mau tempo e ondas de até 2,5 metros no litoral do Rio",
+        "Recomendação de cautela para embarcações de pesca e esporte na costa",
+        "Monitoramento contínuo das condições oceanográficas pelo CHM"
+      ]
+    },
+    "valor-2026-10-28-transicao-ccbb": {
+      "url": "https://valor.globo.com/politica/noticia/2026/10/28/alckmin-e-haddad-instalam-gabinete-de-transicao-no-ccbb-e-miram-orcamento-de-2027.ghtml",
+      "fonte": "Valor Econômico",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Alckmin e Haddad instalam gabinete de transição no CCBB e miram diretrizes orçamentárias de 2027",
+      "resumo": [
+        "O vice-presidente Geraldo Alckmin e o ministro da Fazenda Fernando Haddad lideraram a primeira reunião de trabalho da equipe de transição nas instalações do CCBB Brasília.",
+        "O foco imediato dos grupos técnicos é a compatibilização do teto de gastos e as regras do arcabouço fiscal com as promessas de campanha para o novo mandato.",
+        "Haddad ressaltou que a prioridade é dar previsibilidade ao mercado e garantir a aprovação dos projetos de regulamentação da reforma tributária no Congresso."
+      ],
+      "pontos": [
+        "Início formal dos trabalhos da transição governamental no CCBB em Brasília",
+        "Alinhamento entre área econômica e coordenação política sobre metas orçamentárias",
+        "Compromisso com previsibilidade e disciplina nas contas públicas para 2027"
+      ]
+    },
+    "bloomberg-2026-10-28-transicao-disciplina": {
+      "url": "https://www.bloomberglinea.com.br/mercados/equipe-de-transicao-no-brasil-inicia-trabalhos-com-foco-em-disciplina-fiscal/",
+      "fonte": "Bloomberg Línea",
+      "tipo": "analise",
+      "data": "2026-10-28",
+      "titulo": "Equipe de transição no Brasil inicia trabalhos com foco em disciplina fiscal e acalma investidores",
+      "resumo": [
+        "A Bloomberg Línea destaca a recepção positiva dos investidores aos primeiros anúncios de nomes técnicos escalados para a transição em Brasília.",
+        "O Ibovespa operou em alta e a curva de juros futuros arrefeceu após declarações de compromisso com a meta primária.",
+        "Analistas consultados pela Bloomberg avaliam que a manutenção de interlocutores experientes reduz a volatilidade pós-eleitoral típica dos mercados emergentes."
+      ],
+      "pontos": [
+        "Alívio nos prêmios de risco e queda dos juros futuros com sinais de moderação",
+        "Avaliação positiva de economistas e analistas de mercado sobre equipe técnica",
+        "Estabilidade cambial e recuperação da bolsa de valores após choque inicial"
       ]
     }
   }
