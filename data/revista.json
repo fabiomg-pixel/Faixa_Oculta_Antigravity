@@ -4173,210 +4173,198 @@
     "2026-10-28": {
       "data": "2026-10-28",
       "edicao": "manha",
-      "titulo": "Flávio entrega passaportes, TSE indefere anulação e Lula instala transição no CCBB",
-      "resumo_dia": "Na manhã desta quarta-feira, o cenário político em Brasília entra em fase de acomodação institucional. O senador Flávio Bolsonaro compareceu à Superintendência da Polícia Federal e entregou seus passaportes dentro do prazo legal, enquanto o TSE e o STF rejeitaram por unanimidade o recurso do PL que pedia auditoria extraordinária de urnas. No Centro Cultural Banco do Brasil (CCBB), Geraldo Alckmin e Fernando Haddad abriram formalmente os trabalhos da equipe de transição, definindo como prioridade a interlocução com o Congresso para o Orçamento de 2027. O mercado financeiro ensaia recuperação, com o Ibovespa subindo 2,4% e o dólar recuando para R$ 5,32 antes da decisão sobre juros do Federal Reserve nos EUA. No Rio, começam hoje as sessões do 21º Rio Mountain Festival no CCBB e a abertura do CaRIOca ProgFestival na Tijuca, enquanto o Consuni da UFRJ debate no Fundão o planejamento financeiro para laboratórios de pesquisa.",
+      "titulo": "PF faz buscas na mansão de Flávio após fuga para os EUA; governo renova subsídio ao diesel",
+      "resumo_dia": "Nesta manhã de quarta-feira, a Polícia Federal cumpre mandados de busca e apreensão na mansão do senador Flávio Bolsonaro em Brasília, autorizados pelo ministro Alexandre de Moraes (STF). A ação ocorre após o senador descumprir a ordem de entrega de passaportes e viajar para os Estados Unidos via fronteira com a Argentina, com apoio público de Donald Trump. Na economia, o governo federal renovou o subsídio de R$ 2,12 por litro de diesel para conter a pressão dos combustíveis sobre o agronegócio e os transportes. No Distrito Federal, a Justiça bloqueou bens de patrões após o resgate de um trabalhador mantido por 28 anos em condições análogas à escravidão. No mercado global de tecnologia, a Anthropic formalizou pedido para abrir capital em Wall Street em um dos maiores IPOs do setor de IA. E no Rio, o tempo segue instável com chuvas volumosas e ressaca na orla.",
       "agenda": [
         {
-          "quando": "hoje, 15h",
-          "o_que": "Comitê de Mercado Aberto (FOMC) do Federal Reserve anuncia decisão sobre juros nos Estados Unidos."
+          "quando": "hoje, manhã e tarde",
+          "o_que": "Polícia Federal pericia documentos e eletrônicos apreendidos na mansão de Flávio Bolsonaro no DF."
         },
         {
-          "quando": "hoje, 19h",
-          "o_que": "Abertura do 21º Rio Mountain Festival no Cinema I do CCBB e CaRIOca ProgFestival no Centro da Música Carioca (Tijuca)."
+          "quando": "hoje, ao longo do dia",
+          "o_que": "Defesa de Flávio e governo americano se manifestam sobre a permanência do senador nos EUA."
         },
         {
           "quando": "quinta, 29/10",
-          "o_que": "Gabinete de transição reúne técnicos em Brasília com a Comissão Mista de Orçamento para negociar o PLOA 2027."
+          "o_que": "Vigência da renovação do subsídio ao óleo diesel para transportadores e agronegócio."
         },
         {
-          "quando": "terça, 3/11",
-          "o_que": "Eleições parlamentares de meio de mandato (midterms) nos EUA definem controle da Câmara e do Senado americano."
+          "quando": "fim de semana",
+          "o_que": "Previsão de continuidade da instabilidade climática e monitoramento de ressacas no litoral do Rio."
         }
       ],
       "notas": [
         {
-          "id": "flavio-passaportes-tse-indefere-auditoria",
+          "id": "pf-buscas-flavio-moraes-fuga-eua",
           "editoria": "Política / Justiça",
-          "titulo": "Flávio Bolsonaro entrega passaportes à PF e TSE indefere pedido de auditoria do PL",
-          "texto": "O senador Flávio Bolsonaro compareceu à Superintendência da Polícia Federal em Brasília na manhã desta quarta-feira e entregou seus dois passaportes, cumprindo a determinação cautelar imposta pelo ministro Alexandre de Moraes. Poucas horas depois, a presidência do Tribunal Superior Eleitoral indeferiu liminarmente a petição do PL que solicitava auditoria extraordinária de urnas eletrônicas no Sudeste e Centro-Oeste. O tribunal destacou que o relatório apresentado pela legenda não apontou qualquer vulnerabilidade fática verificável e lembrou que a totalização dos votos já foi chancelada e auditada pelo TCU, OAB e observadores internacionais da OEA e do Carter Center.",
-          "por_que_importa": "O cumprimento da cautelar e a rápida resposta do TSE desidratam a estratégia de contestação judicial do resultado eleitoral, reduzindo o fôlego da ala mais radical da oposição.",
+          "titulo": "PF faz busca e apreensão na mansão de Flávio Bolsonaro após viagem aos EUA",
+          "texto": "Equipes da Polícia Federal cumpriram mandados de busca e apreensão na residência do senador Flávio Bolsonaro (PL-RJ), no setor de mansões de Brasília, autorizados pelo ministro Alexandre de Moraes, do Supremo Tribunal Federal. A medida foi determinada após o parlamentar descumprir o prazo legal de 24 horas para entregar seus passaportes e cruzar a fronteira terrestre com a Argentina, de onde embarcou em voo com destino aos Estados Unidos. A PF cancelou os passaportes no sistema migratório internacional e apura indícios de evasão e lavagem de dinheiro no âmbito de inquérito sobre movimentações financeiras atípicas.",
+          "por_que_importa": "A saída do país com descumprimento expresso de ordem judicial agrava a situação processual do senador no STF e abre atrito diplomático sobre a concessão de visto em território norte-americano.",
           "fontes": [
             {
-              "fonte": "Folha de S.Paulo",
-              "perfil": "jornal diário, centro",
-              "enfoque": "cumprimento do prazo judicial e rejeição unânime da petição do PL no TSE",
-              "url": "https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-entrega-passaportes-a-pf-e-tse-nega-pedido-de-auditoria-do-pl.shtml"
-            },
-            {
-              "fonte": "G1",
+              "fonte": "g1",
               "perfil": "portal de notícias, cobertura em tempo real",
-              "enfoque": "detalhes do comparecimento à Superintendência da PF e certidão de entrega",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/28/flavio-bolsonaro-passaporte-policia-federal-tse.ghtml"
+              "enfoque": "mandados de busca em Brasília e cancelamento formal dos passaportes pela PF",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/28/pf-faz-busca-e-apreensao-em-enderecos-ligados-a-flavio-bolsonaro.ghtml"
             },
             {
-              "fonte": "JOTA",
-              "perfil": "cobertura jurídica especializada",
-              "enfoque": "análise técnica da decisão do TSE que considerou a petição inepta por falta de lastro",
-              "url": "https://www.jota.info/justica/tse-indefere-peticao-do-pl-e-moraes-confirma-entrega-de-passaportes-de-flavio-28102026"
+              "fonte": "Folha de S.Paulo",
+              "perfil": "jornal diário, cobertura política",
+              "enfoque": "rota de saída pela Argentina e descumprimento da determinação de Alexandre de Moraes",
+              "url": "https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-descumpre-ordem-do-stf-viaja-aos-eua-e-pf-faz-buscas-em-mansao.shtml"
+            },
+            {
+              "fonte": "UOL Notícias",
+              "perfil": "portal de notícias, política nacional",
+              "enfoque": "detalhes da representação da PF que apontava risco iminente de fuga pós-eleição",
+              "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/28/pf-cumpre-buscas-mansao-flavio-bolsonaro-stf-moraes.htm"
             }
           ]
         },
         {
-          "id": "transicao-ccbb-orcamento-2027",
-          "editoria": "Economia / Governo",
-          "titulo": "Gabinete de transição é instalado no CCBB com foco nas metas e no Orçamento de 2027",
-          "texto": "O vice-presidente eleito Geraldo Alckmin e o ministro Fernando Haddad coordenaram a abertura formal dos trabalhos da equipe de transição no Centro Cultural Banco do Brasil, em Brasília. A prioridade imediata do grupo é a interlocução com a Comissão Mista de Orçamento para negociar ajustes no Projeto de Lei Orçamentária Anual (PLOA 2027), assegurando recursos para o reajuste do salário mínimo, verbas de custeio para saúde e universidades e a preservação das metas do arcabouço fiscal. Haddad reiterou a interlocutores que a política econômica manterá responsabilidade fiscal e previsibilidade para atrair capitais produtivos.",
-          "por_que_importa": "A rápida instalação do gabinete sinaliza normalidade institucional e abre canal técnico direto com o Congresso para evitar vácuo orçamentário no próximo exercício.",
+          "id": "trump-vistos-eua-flavio-bolsonaro",
+          "editoria": "Internacional / Política",
+          "titulo": "Trump apoia ida de Flávio aos EUA e questiona eleições; Lula classifica saída como 'vergonhosa'",
+          "texto": "O presidente dos Estados Unidos, Donald Trump, declarou apoio à chegada de Flávio Bolsonaro e de sua família ao país e voltou a contestar a lisura do segundo turno das eleições brasileiras, repetindo alegações infundadas sobre o sistema de votação. Autoridades americanas confirmaram que vistos de permanência foram concedidos ao senador. No Brasil, o presidente Luiz Inácio Lula da Silva classificou a saída clandestina de Flávio como 'um ato vergonhoso de quem teme prestar contas à lei', enquanto a Polícia Federal acionou canais de cooperação com a Interpol.",
+          "por_que_importa": "Coloca a relação bilateral Brasil-EUA em teste logo no início do novo ciclo político, transformando o descumprimento judicial em contencioso internacional.",
           "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "portal de notícias internacional",
+              "enfoque": "declarações de Donald Trump e reação oficial do governo brasileiro",
+              "url": "https://g1.globo.com/mundo/noticia/2026/10/28/trump-apoia-ida-de-flavio-bolsonaro-aos-eua-e-critica-eleicao-no-brasil.ghtml"
+            },
+            {
+              "fonte": "EBC / Agência Brasil",
+              "perfil": "agência pública de notícias",
+              "enfoque": "manifestação do presidente Lula e acionamento de acordos migratórios pela PF",
+              "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/lula-classifica-viagem-de-flavio-como-vergonhosa-apos-buscas-da-pf"
+            }
+          ]
+        },
+        {
+          "id": "resgate-trabalhador-escravidao-df",
+          "editoria": "Direitos Humanos / Brasil",
+          "titulo": "Justiça bloqueia bens de fazendeiros após resgate de homem escravizado por 28 anos no DF",
+          "texto": "A Justiça do Trabalho do Distrito Federal determinou o bloqueio cautelar de imóveis e contas bancárias e a fixação de pensão imediata para amparar um caseiro de 56 anos resgatado por auditores-fiscais após trabalhar por 28 anos em condições análogas à de escravo em uma propriedade rural no Lago Norte, em Brasília. A investigação revelou que o trabalhador nunca recebeu salário regular, não tinha direito a folgas e vivia em alojamento precário sem saneamento. Por total desamparo material e ausência de rede de apoio, ele chegou a retornar ao local antes da intervenção definitiva do Ministério Público do Trabalho.",
+          "por_que_importa": "Evidencia a persistência extrema do trabalho escravo doméstico e rural na capital do país e reforça a necessidade de acolhimento social para evitar a reincidência de vítimas vulneráveis.",
+          "fontes": [
+            {
+              "fonte": "g1 DF",
+              "perfil": "portal de notícias local",
+              "enfoque": "detalhes da decisão judicial, histórico de 28 anos de servidão e relato dos auditores",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/justica-bloqueia-bens-de-patroes-apos-caseiro-ser-resgatado-da-escravidao-no-df.ghtml"
+            },
+            {
+              "fonte": "Metrópoles",
+              "perfil": "portal de notícias do DF",
+              "enfoque": "atuação do MPT e medidas de assistência emergencial à vítima resgatada",
+              "url": "https://www.metropoles.com/distrito-federal/trabalho-escravo-lago-norte-bloqueio-bens-28-anos"
+            }
+          ]
+        },
+        {
+          "id": "governo-renova-subsidio-diesel",
+          "editoria": "Economia",
+          "titulo": "Governo federal renova subsídio ao óleo diesel para segurar custos do transporte e alimentos",
+          "texto": "O governo federal publicou portaria prorrogando o subsídio direto ao óleo diesel no valor de R$ 2,12 por litro, como medida de amortecimento contra as oscilações do barril de petróleo no mercado global. A decisão atende a apelos do setor de transporte rodoviário de cargas e de entidades do agronegócio, que alertavam para o risco de repasse tarifário nos fretes agrícolas e elevação imediata nos preços de itens básicos da cesta de alimentos nos centros urbanos.",
+          "por_que_importa": "Contém pressões inflacionárias de curto prazo no abastecimento nacional, aliviando o custo logístico em um momento de transição de safra.",
+          "fontes": [
+            {
+              "fonte": "g1 Economia",
+              "perfil": "portal econômico nacional",
+              "enfoque": "manutenção do subsídio de R$ 2,12 por litro e impacto fiscal no orçamento",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/28/governo-renova-subsidio-ao-diesel-em-meio-a-alta-do-petroleo.ghtml"
+            },
             {
               "fonte": "Valor Econômico",
               "perfil": "jornal financeiro e de negócios",
-              "enfoque": "negociações em torno do PLOA 2027 e compromisso explícito com o arcabouço",
-              "url": "https://valor.globo.com/politica/noticia/2026/10/28/alckmin-e-haddad-instalam-gabinete-de-transicao-no-ccbb-e-miram-orcamento-de-2027.ghtml"
-            },
+              "enfoque": "reação das distribuidoras de combustíveis e entidades de transporte de carga",
+              "url": "https://valor.globo.com/brasil/noticia/2026/10/28/subsidio-ao-diesel-e-renovado-para-evitar-repasses-nos-fretes-agricolas.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "anthropic-pedido-ipo-wall-street",
+          "editoria": "Tecnologia & Negócios",
+          "titulo": "Anthropic protocola pedido de IPO nos EUA em uma das maiores ofertas de ações de IA",
+          "texto": "A empresa de inteligência artificial Anthropic, desenvolvedora da família de modelos Claude, protocolou formalmente junto à Securities and Exchange Commission (SEC) o pedido de oferta pública inicial de ações (IPO) na bolsa de Nova York. Analistas financeiros projetam que a operação figurará entre as maiores aberturas de capital de uma companhia de tecnologia da história, impulsionada pelo crescimento na receita corporativa com agentes autônomos e computação avançada.",
+          "por_que_importa": "Marca a transição do ecossistema de inteligência artificial generativa de rodadas de venture capital para a disciplina pública dos mercados acionários globais.",
+          "fontes": [
             {
-              "fonte": "Exame",
-              "perfil": "revista e portal de negócios",
-              "enfoque": "composição dos primeiros grupos temáticos da transição em Brasília",
-              "url": "https://exame.com/brasil/transicao-lula-ccbb-brasilia-orcamento-2027/"
+              "fonte": "g1 Tecnologia",
+              "perfil": "portal de tecnologia e inovação",
+              "enfoque": "protocolo do IPO na SEC e histórico de expansão dos modelos Claude",
+              "url": "https://g1.globo.com/tecnologia/noticia/2026/10/28/anthropic-protocola-pedido-de-ipo-em-wall-street.ghtml"
             },
             {
               "fonte": "Bloomberg Línea",
               "perfil": "agência financeira internacional",
-              "enfoque": "reação dos investidores internacionais ao início formal da transição no Brasil",
-              "url": "https://www.bloomberglinea.com.br/mercados/equipe-de-transicao-no-brasil-inicia-trabalhos-com-foco-em-disciplina-fiscal/"
+              "enfoque": "avaliação de mercado, captação projetada e apetite de fundos institucionais por IA",
+              "url": "https://www.bloomberglinea.com.br/negocios/anthropic-entra-com-pedido-de-ipo-e-mexe-com-mercado-global-de-ia/"
             }
           ]
         },
         {
-          "id": "mercados-alivio-e-superquarta-fed",
-          "editoria": "Mercados",
-          "titulo": "Ibovespa sobe 2,4% em dia de alívio e investidores aguardam decisão do Federal Reserve",
-          "texto": "Após o tombo histórico do início da semana, a B3 abriu a quarta-feira em consistente recuperação, com o índice Ibovespa registrando alta de 2,4% e o dólar comercial recuando para R$ 5,32. A acomodação dos preços decorre da leitura de que a transição de governo ocorre sob estrita normalidade institucional. No exterior, o foco dos mercados globais está voltado para a Superquarta: o Comitê de Mercado Aberto (FOMC) do Federal Reserve divulga às 15h sua nova taxa de juros, com probabilidade majoritária de redução de 25 pontos-base para escorar o mercado de trabalho americano.",
-          "por_que_importa": "O rumo dos juros nos Estados Unidos dita o fluxo global de capital e define a margem de manobra para a política de juros do Banco Central brasileiro.",
+          "id": "policia-desarticula-rede-exploracao-rio",
+          "editoria": "Segurança / Rio",
+          "titulo": "Operação policial prende seis pessoas por exploração sexual de menores em Niterói e Maricá",
+          "texto": "Operação conjunta da Polícia Civil e do Ministério Público do Estado do Rio de Janeiro desarticulou uma rede criminosa especializada na exploração sexual de meninas adolescentes na Região Metropolitana, com mandados cumpridos em Niterói, São Gonçalo e Maricá. Seis suspeitos foram presos em flagrante e preventivamente. De acordo com os investigadores da Delegacia da Criança e do Adolescente Vítima (DCAV), o grupo aliciava vítimas em redes sociais, registrava imagens de abusos e utilizava o material para extorquir e chantagear as famílias.",
+          "por_que_importa": "Desmonta uma estrutura criminosa de aliciamento digital no estado do Rio e alerta para mecanismos de proteção cibernética de crianças e adolescentes.",
           "fontes": [
             {
-              "fonte": "InfoMoney",
-              "perfil": "portal de investimentos e mercados",
-              "enfoque": "acompanhamento das cotações da B3 e projeções para a decisão do FOMC",
-              "url": "https://www.infomoney.com.br/mercados/ibovespa-e-dolar-em-alta-superquarta-fed-e-transicao-de-governo/"
+              "fonte": "g1 Rio",
+              "perfil": "noticiário de segurança pública local",
+              "enfoque": "prisões em flagrante, apreensão de dispositivos eletrônicos e atuação da DCAV",
+              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/operacao-prende-seis-por-exploracao-sexual-de-meninas-em-niteroi-e-marica.ghtml"
             },
-            {
-              "fonte": "Reuters Brasil",
-              "perfil": "agência internacional de notícias",
-              "enfoque": "comportamento dos títulos da dívida externa e alívio no prêmio de risco país",
-              "url": "https://www.reuters.com/article/brasil-mercados-fomc-transicao-idL1N328001/"
-            }
-          ]
-        },
-        {
-          "id": "nature-biofisica-membrana-car-t-tumores",
-          "editoria": "Ciência / Biofísica",
-          "titulo": "Estudo na Nature decifra barreira biofísica que trava terapias CAR-T em tumores sólidos",
-          "texto": "Pesquisa liderada por equipes do Memorial Sloan Kettering Cancer Center e do Instituto Pasteur, veiculada na edição desta quarta-feira da Nature, revelou que a rigidez viscoelástica da membrana plasmática e a elevada densidade de ácido siálico em tumores sólidos atuam como barreira biofísica contra a sinapse imunológica de células CAR-T. Empregando microscopia de força atômica e modelagem de bicamadas lipídicas, os cientistas demonstraram que a fluidez membranar impedida inviabiliza o agrupamento de receptores. O tratamento prévio com carreadores lipídicos restaurou a mobilidade superficial e multiplicou a taxa de lise tumoral in vitro.",
-          "por_que_importa": "Abre uma fronteira inovadora para a biofísica aplicada à oncologia, abordando a falha de imunoterapias avançadas como um obstáculo biomecânico contornável.",
-          "fontes": [
-            {
-              "fonte": "Nature",
-              "perfil": "periódico científico internacional",
-              "enfoque": "publicação original sobre o papel das propriedades mecânicas da membrana celular",
-              "url": "https://www.nature.com/articles/s41586-026-08112-x"
-            },
-            {
-              "fonte": "STAT News",
-              "perfil": "jornalismo em biotecnologia e medicina",
-              "enfoque": "entrevista com os autores e perspectivas clínicas de adjuvantes de membrana",
-              "url": "https://www.statnews.com/2026/10/28/car-t-solid-tumors-cell-membrane-biophysics/"
-            },
-            {
-              "fonte": "Agência FAPESP",
-              "perfil": "divulgação científica brasileira",
-              "enfoque": "análise dos impactos do achado para grupos brasileiros de pesquisa em bioimagem",
-              "url": "https://agencia.fapesp.br/pesquisa-revela-papel-da-rigidez-de-membrana-em-falhas-de-terapia-celular/54201/"
-            }
-          ]
-        },
-        {
-          "id": "meio-ambiente-tapajos-operacao-ibama",
-          "editoria": "Meio Ambiente",
-          "titulo": "Operação desarticula 14 garimpos no Tapajós e chuvas reduzem queimadas no Amazonas",
-          "texto": "Em ação ostensiva conjunta deflagrada pelo Ibama, Polícia Federal e ICMBio, foram destruídos 14 acampamentos de mineração ilegal e apreendidas 22 dragas e pás-carregadeiras em áreas protegidas da bacia do Rio Tapajós e na Terra Indígena Munduruku, no Pará. Paralelamente, o deslocamento de uma frente fria trouxe chuvas esparsas sobre o sul do estado do Amazonas e Rondônia, provocando uma queda de 42% nos focos de calor monitorados por satélite pelo Inpe e desanuviando a camada de fumaça que cobria a região metropolitana de Manaus.",
-          "por_que_importa": "Demonstra prontidão na fiscalização ambiental em pontos críticos da Amazônia Legal, sinalizando rigor contra ilícitos ambientais durante a transição.",
-          "fontes": [
             {
               "fonte": "O Globo",
-              "perfil": "jornal diário, cobertura nacional",
-              "enfoque": "balanço da operação de desintrusão no Tapajós e chegada das chuvas no Norte",
-              "url": "https://oglobo.globo.com/brasil/meio-ambiente/noticia/2026/10/28/operacao-no-tapajos-apreende-dragas-e-chuvas-reduzem-queimadas-no-amazonas.ghtml"
-            },
-            {
-              "fonte": "InfoAmazonia",
-              "perfil": "jornalismo investigativo socioambiental",
-              "enfoque": "mapeamento territorial das áreas de dragagem ilegal destruídas pela força-tarefa",
-              "url": "https://infoamazonia.org/2026/10/28/ibama-e-pf-desarticulam-garimpos-no-tapajos/"
+              "perfil": "jornal diário, cobertura estadual",
+              "enfoque": "desdobramentos da investigação sobre chantagem e extorsão digital contra famílias",
+              "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/policia-civil-desarticula-rede-de-abusos-e-chantagens-no-leste-fluminense.ghtml"
             }
           ]
         },
         {
-          "id": "ufrj-conselho-fundao-orcamento-pesquisa",
-          "editoria": "Educação / UFRJ",
-          "titulo": "Conselho Universitário da UFRJ debate impacto do câmbio em laboratórios do Fundão",
-          "texto": "O Conselho Universitário (Consuni) da Universidade Federal do Rio de Janeiro promoveu reunião extraordinária no campus da Ilha do Fundão para discutir o balanço de execução orçamentária e os efeitos da recente alta cambial na aquisição de reagentes, lâminas e peças de microscopia para os laboratórios do Centro de Ciências da Saúde (CCS) e do Centro de Tecnologia (CT). A reitoria instituiu grupo de trabalho para articular com parlamentares da bancada fluminense emendas orçamentárias na LOA 2027 que compensem a perda do poder de compra para pesquisa básica.",
-          "por_que_importa": "A estabilidade orçamentária da UFRJ é determinante para a continuidade de linhas de ponta em bioimagem, biofísica molecular e fármacos no Rio de Janeiro.",
+          "id": "tempo-instavel-chuvas-rio-ressaca",
+          "editoria": "Cidade / Rio",
+          "titulo": "Rio tem tempo instável com chuva contínua e ressaca no litoral após passagem de frente fria",
+          "texto": "O município do Rio de Janeiro registra tempo nublado e chuvas intermitentes nesta quarta-feira, sob influência do transporte de umidade do oceano e de áreas de instabilidade após a frente fria do início da semana. De acordo com o sistema Alerta Rio, os maiores acumulados concentram-se nas bacias da Zona Sul e da Grande Tijuca. A Marinha do Brasil emitiu aviso de ressaca marítima com ondas de até 2,5 metros de altura na orla entre o Leblon e o Arpoador, mantendo o contingente de trânsito e defesa civil em estágio de prontidão.",
+          "por_que_importa": "Afeta a rotina de deslocamento pela cidade, o tráfego nos eixos Tijuca-Zona Sul e eleva os índices pluviométricos de outubro acima da média histórica recente.",
           "fontes": [
             {
-              "fonte": "Conexão UFRJ",
-              "perfil": "portal institucional de notícias da universidade",
-              "enfoque": "relatório apresentado pelo colegiado sobre custos de importação científica",
-              "url": "https://conexao.ufrj.br/2026/10/28/consuni-debate-impacto-do-cambio-nos-laboratorios-e-planejamento-para-2027/"
+              "fonte": "g1 Rio",
+              "perfil": "portal local de meteorologia e trânsito",
+              "enfoque": "previsão de chuva continuada, monitoramento do Alerta Rio e aviso de ressaca",
+              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/previsao-do-tempo-rio-de-janeiro-chuvas-e-ressaca.ghtml"
             },
             {
-              "fonte": "FAPERJ Notícias",
-              "perfil": "fundação de amparo à pesquisa do estado do Rio",
-              "enfoque": "medidas de contingência e chamadas de infraestrutura laboratorial",
-              "url": "https://www.faperj.br/?id=5214.2.1"
+              "fonte": "O Globo - Rio",
+              "perfil": "jornal diário, cobertura de serviços e clima",
+              "enfoque": "acumulados de chuva na série histórica e impactos na mobilidade urbana",
+              "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/frente-fria-mantem-tempo-chuvoso-e-mar-agitado-no-rio-de-janeiro.ghtml"
             }
           ]
         },
         {
-          "id": "cultura-rio-mountain-festival-carioca-prog",
-          "editoria": "Cultura / Rio",
-          "titulo": "21º Rio Mountain Festival estreia no CCBB e CaRIOca ProgFestival abre noites na Tijuca",
-          "texto": "A quarta-feira marca a largada de dois importantes polos da programação independente carioca. O Cinema I do Centro Cultural Banco do Brasil, no Centro, recebe a abertura do 21º Rio Mountain Festival, com exibição de documentários e mostras competitivas de escalada, travessias andinas e expedições de altitude. Na Grande Tijuca, o Centro da Música Carioca, na Rua Conde de Bonfim, sedia a primeira noite do CaRIOca ProgFestival 2026, com apresentação do conjunto Cheiro de Vida e participação do guitarrista Arthur Martau, celebrando a música progressiva e instrumental brasileira.",
-          "por_que_importa": "Fortalece o circuito cultural carioca fora dos grandes conglomerados comerciais, conectando documentários de montanha e música de invenção.",
+          "id": "megashows-estadios-polarizacao-cultura",
+          "editoria": "Cultura / Música",
+          "titulo": "Mercado de shows consolida era dos estádios em 2026 e expõe carência de arenas médias no Rio",
+          "texto": "Levantamento da imprensa cultural aponta que o ano de 2026 firmou o modelo de megashows em estádios como o formato predominante da indústria musical internacional no Brasil, concentrando faturamentos bilionários principalmente na capital paulista. A apuração expõe o contraste vivido no Rio de Janeiro, onde a ausência de arenas cobertas de porte médio (entre 5 mil e 15 mil lugares) empurra artistas de médio alcance para espaços ou desproporcionais ou sobrecarrega o circuito de casas históricas menores e auditórios independentes.",
+          "por_que_importa": "Diagnostica os gargalos da infraestrutura cultural carioca e valoriza a relevância de pequenos estúdios e centros da rede pública como trincheiras da música autoral.",
           "fontes": [
             {
-              "fonte": "O Globo - RioShow",
-              "perfil": "guia cultural do Rio de Janeiro",
-              "enfoque": "programação do festival de montanha no CCBB e ingressos populares",
-              "url": "https://oglobo.globo.com/rioshow/noticia/2026/10/28/rio-mountain-festival-no-ccbb-e-progfestival-na-tijuca-abrem-programacao.ghtml"
+              "fonte": "g1 Música",
+              "perfil": "jornalismo musical e mercado de entretenimento",
+              "enfoque": "mapeamento da hegemonia dos estádios e a geografia dos palcos no Brasil em 2026",
+              "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/megaeventos-e-shows-em-estadios-se-consolidam-em-2026-no-brasil.ghtml"
             },
             {
-              "fonte": "Scream & Yell",
-              "perfil": "revista de cultura pop e música independente",
-              "enfoque": "destaque para a cena de rock progressivo e instrumental na Tijuca",
-              "url": "https://screamyell.com.br/site/2026/10/28/carioca-progfestival-2026-tijuca/"
-            }
-          ]
-        },
-        {
-          "id": "geopolitica-omuz-petroleo-estabilidade",
-          "editoria": "Internacional",
-          "titulo": "Negociações em Mascate contêm tensão no Estreito de Ormuz e petróleo opera a US$ 84",
-          "texto": "Conversas diplomáticas preliminares mediadas pelo governo de Omã entre representantes de Teerã, Riad e emissários de potências ocidentais resultaram em compromisso tácito para preservar a livre circulação de navios mercantes pelo Estreito de Ormuz, mitigando o risco de interrupções no trânsito marítimo. Com o recuo nas ameaças de interceptação militar, as cotações futuras do barril de petróleo tipo Brent arrefeceram na Bolsa de Londres, oscilando ao redor de US$ 84,20.",
-          "por_que_importa": "A descompressão no preço da energia afasta choques de oferta globais e alivia a inflação de combustíveis e fretes no comércio exterior.",
-          "fontes": [
-            {
-              "fonte": "Financial Times",
-              "perfil": "jornal econômico internacional",
-              "enfoque": "bastidores diplomáticos em Mascate e impacto nos seguros de transporte naval",
-              "url": "https://www.ft.com/content/hormuz-diplomacy-brent-crude-stability-oct-2026"
-            },
-            {
-              "fonte": "Al Jazeera English",
-              "perfil": "rede internacional de notícias",
-              "enfoque": "declarações de negociadores sobre o pacto de não agressão náutica no Golfo",
-              "url": "https://www.aljazeera.com/news/2026/10/28/oman-talks-ease-gulf-shipping-tensions"
+              "fonte": "Folha Ilustrada",
+              "perfil": "caderno de cultura e tendências",
+              "enfoque": "análise do contraste entre a bolha das arenas corporativas e o circuito independente",
+              "url": "https://www1.folha.uol.com.br/ilustrada/2026/10/a-era-dos-estadios-e-o-estrangulamento-das-casas-medias-de-show-no-rio.shtml"
             }
           ]
         }
@@ -14585,327 +14573,293 @@
         "Autoridades de saúde reforçam que o risco para a população geral é mínimo, mas cobram vigilância entomológica ativa"
       ]
     },
-    "folha-2026-10-28-flavio-passaporte": {
-      "url": "https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-entrega-passaportes-a-pf-e-tse-nega-pedido-de-auditoria-do-pl.shtml",
+    "g1-2026-10-28-pf-flavio-buscas": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/28/pf-faz-busca-e-apreensao-em-enderecos-ligados-a-flavio-bolsonaro.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "PF cumpre busca e apreensão na mansão de Flávio Bolsonaro no DF após viagem aos EUA",
+      "resumo": [
+        "Agentes da Polícia Federal cumpriram mandados autorizados pelo ministro Alexandre de Moraes no setor de mansões de Brasília após o senador deixar o território nacional descumprindo a ordem judicial de entrega de passaportes.",
+        "A PF comunicou formalmente o cancelamento de todos os passaportes de Flávio nos sistemas migratórios do Brasil e de parceiros internacionais.",
+        "O inquérito averigua se houve prática de evasão de divisas e lavagem de capitais em operações recentes envolvendo recursos atípicos."
+      ],
+      "pontos": [
+        "Mandados de busca e apreensão autorizados pelo ministro Alexandre de Moraes",
+        "Cancelamento formal dos passaportes de Flávio Bolsonaro nos sistemas de fronteira",
+        "Apreensão de mídias, computadores e documentos na residência do parlamentar"
+      ]
+    },
+    "folha-2026-10-28-flavio-descumpre-moraes": {
+      "url": "https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-descumpre-ordem-do-stf-viaja-aos-eua-e-pf-faz-buscas-em-mansao.shtml",
       "fonte": "Folha de S.Paulo",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Flávio entrega passaportes à PF e TSE nega auditoria de urnas pedida pelo PL",
+      "titulo": "Flávio viaja aos EUA ignorando determinação do STF e polícia faz buscas em mansão",
       "resumo": [
-        "A Folha de S.Paulo relata o cumprimento da ordem do ministro Alexandre de Moraes pelo senador Flávio Bolsonaro, que depositou seus passaportes na Polícia Federal antes do prazo de 24 horas expirar.",
-        "Na decisão subsequente, o TSE rejeitou o requerimento do PL por ausência de qualquer indício de irregularidade no sistema eletrônico de votação, observando que os testes públicos e a fiscalização de entidades oficiais já ratificaram o resultado de domingo.",
-        "Fontes parlamentares indicam que o gesto de Flávio busca evitar a decretação de medidas mais gravosas e manter sua atuação institucional no Senado a partir de 2027."
+        "A Folha de S.Paulo apurou que o senador utilizou a rota terrestre pela fronteira com a Argentina para viabilizar o embarque aéreo com destino aos Estados Unidos.",
+        "O prazo legal para entrega dos documentos expirou sem manifestação da defesa em juízo, precipitando o pedido cautelar de buscas acolhido pelo relator no STF.",
+        "Lideranças políticas em Brasília avaliam que a saída internacional enfraquece o capital político da oposição no Senado para a próxima legislatura."
       ],
       "pontos": [
-        "Cumprimento rigoroso do prazo cautelar de entrega dos documentos de viagem",
-        "TSE indefere pedido de auditoria por falta de justa causa e fundamentação técnica",
-        "Desmobilização de atos que pretendiam contestar as apurações do segundo turno"
+        "Saída por rota terrestre do Mercosul antes do embarque para Miami",
+        "Descumprimento expresso do prazo de 24 horas fixado pela Suprema Corte",
+        "Reação de isolamento político entre legendas de centro no Congresso"
       ]
     },
-    "g1-2026-10-28-flavio-pf": {
-      "url": "https://g1.globo.com/politica/noticia/2026/10/28/flavio-bolsonaro-passaporte-policia-federal-tse.ghtml",
-      "fonte": "G1",
+    "uol-2026-10-28-pf-moraes-buscas": {
+      "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/28/pf-cumpre-buscas-mansao-flavio-bolsonaro-stf-moraes.htm",
+      "fonte": "UOL Notícias",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Defesa de Flávio entrega passaportes em Brasília após decisão do STF",
+      "titulo": "Representação da PF alertava sobre risco de fuga e estruturação de apoio no exterior",
       "resumo": [
-        "O portal G1 detalha o trâmite formal na Superintendência da PF no Distrito Federal, onde advogados do senador protocolaram os documentos às 9h45 desta quarta-feira.",
-        "A reportagem aponta que a PF já emitiu o termo de guarda judicial e oficiou o Supremo e os postos de imigração nos aeroportos para registro no sistema de alerta de fronteiras.",
-        "A cúpula do Judiciário considerou o ato como encerramento de um foco de atrito institucional pós-pleito."
+        "Documentos da representação policial revelados pelo UOL indicam que a PF já monitorava indícios de fuga baseados em declarações de aliados e rede logística consolidada no exterior.",
+        "O ministro Alexandre de Moraes acolheu a manifestação da PGR que apontava que a evasão frustraria a instrução probatória dos inquéritos criminais em curso.",
+        "Peritos da PF já iniciaram a análise de aparelhos apreendidos para recuperar históricos de mensagens e fluxos bancários."
       ],
       "pontos": [
-        "Entrega confirmada pela certidão de guarda da Polícia Federal",
-        "Comunicação aos sistemas de controle migratório nos aeroportos federais",
-        "Reafirmação do respeito aos limites da jurisdição constitucional"
+        "Relatório de inteligência apontava preparativos prévios de viagem ao exterior",
+        "Manifestação favorável da Procuradoria-Geral da República às medidas de busca",
+        "Início da extração forense em celulares e computadores recolhidos"
       ]
     },
-    "jota-2026-10-28-tse-pl": {
-      "url": "https://www.jota.info/justica/tse-indefere-peticao-do-pl-e-moraes-confirma-entrega-de-passaportes-de-flavio-28102026",
-      "fonte": "JOTA",
+    "g1-2026-10-28-trump-lula-flavio": {
+      "url": "https://g1.globo.com/mundo/noticia/2026/10/28/trump-apoia-ida-de-flavio-bolsonaro-aos-eua-e-critica-eleicao-no-brasil.ghtml",
+      "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "TSE indefere petição do PL sobre auditoria extraordinária por inépcia técnica",
+      "titulo": "Trump apoia acolhida de Flávio Bolsonaro nos EUA e questiona apuração das urnas",
       "resumo": [
-        "O portal jurídico JOTA examina a fundamentação jurídica do despacho da presidência da corte eleitoral, que considerou o pedido do PL inepto por suscitar dúvidas genéricas sem apontar falha fática ou disfuncionalidade nos registros digitais das urnas.",
-        "O tribunal ressaltou a inviolabilidade das assinaturas digitais e a perfeita correspondência dos boletins de urna publicados na internet com as totalizações consolidadas.",
-        "Juristas ouvidos sublinham que a decisão reforça a pacificação jurídica do resultado proclamado no domingo."
+        "Em declarações à imprensa em Palm Beach, Donald Trump confirmou a recepção a Flávio e voltou a pôr em dúvida a vitória de Lula sem demonstrar qualquer elemento comprobatório.",
+        "O Departamento de Estado dos EUA informou que a concessão de vistos seguiu prerrogativas do governo americano.",
+        "Diplomatas brasileiros em Washington acompanham o episódio com cautela para evitar escaladas que prejudiquem acordos comerciais."
       ],
       "pontos": [
-        "Inépcia manifesta por ausência de prova de vulnerabilidade técnica",
-        "Inviolabilidade dos códigos-fonte e boletins de urna chancelados",
-        "Arquivamento liminar da representação sem ensejo para recursos procrastinatórios"
+        "Declarações públicas de Trump acolhendo a permanência de Flávio no país",
+        "Reiteração de ataques infundados à integridade do processo eleitoral brasileiro",
+        "Acompanhamento diplomático em Washington pelo Itamaraty"
       ]
     },
-    "valor-2026-10-28-alckmin-haddad-ccbb": {
-      "url": "https://valor.globo.com/politica/noticia/2026/10/28/alckmin-e-haddad-instalam-gabinete-de-transicao-no-ccbb-e-miram-orcamento-de-2027.ghtml",
+    "ebc-2026-10-28-lula-flavio-vergonhosa": {
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/lula-classifica-viagem-de-flavio-como-vergonhosa-apos-buscas-da-pf",
+      "fonte": "EBC / Agência Brasil",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Lula classifica fuga de Flávio como vergonhosa e diz que a lei vale para todos",
+      "resumo": [
+        "Durante reunião com ministros em Brasília, o presidente Lula afirmou que o cumprimento de decisões judiciais é dever inegociável de qualquer cidadão, em especial de um parlamentar.",
+        "O Ministério da Justiça informou que colocou a PF em contato com as autoridades argentinas para mapear o trajeto exato da travessia de fronteira.",
+        "A Presidência reforçou que os trabalhos de transição e a rotina do país seguem em plena normalidade."
+      ],
+      "pontos": [
+        "Declaração enfática do presidente da República cobrando respeito à jurisdição",
+        "Articulação do Ministério da Justiça para rastreamento da rota migratória",
+        "Garantia de estabilidade política e administrativa no governo federal"
+      ]
+    },
+    "g1-2026-10-28-trabalho-escravo-df": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/justica-bloqueia-bens-de-patroes-apos-caseiro-ser-resgatado-da-escravidao-no-df.ghtml",
+      "fonte": "g1 DF",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Justiça bloqueia bens de patrões após resgate de homem escravizado por 28 anos no DF",
+      "resumo": [
+        "A Vara do Trabalho de Brasília acolheu ação civil pública do MPT determinando o congelamento de contas e penhora de imóveis de empregadores no Lago Norte.",
+        "O trabalhador de 56 anos foi submetido a quase três décadas de labor rural e doméstico contínuo sem remuneração e privado de liberdade de locomoção por dívidas fictícias.",
+        "A decisão fixou pensão de subsistência mensal e indenização por dano moral coletivo e individual."
+      ],
+      "pontos": [
+        "Resgate de caseiro mantido em servidão por 28 anos no Lago Norte (DF)",
+        "Bloqueio patrimonial e arbitramento de pensão vitalícia pelo Judiciário",
+        "MPT alerta para casos de trabalho análogo à escravidão em áreas nobres urbanas"
+      ]
+    },
+    "metropoles-2026-10-28-escravidao-df": {
+      "url": "https://www.metropoles.com/distrito-federal/trabalho-escravo-lago-norte-bloqueio-bens-28-anos",
+      "fonte": "Metrópoles",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Caso do caseiro no Lago Norte expõe armadilha da vulnerabilidade e reincidência",
+      "resumo": [
+        "O Metrópoles reconstitui a trajetória do trabalhador resgatado, pontuando que o retorno temporário à casa dos empregadores decorreu da falta completa de documentos e moradia após o primeiro contato com a fiscalização.",
+        "O Ministério do Desenvolvimento Social foi acionado para incluir o idoso em programas habitacionais e de transferência de renda.",
+        "Os auditores-fiscais destacaram a crueldade do isolamento psicológico imposto à vítima."
+      ],
+      "pontos": [
+        "Diagnóstico da dependência material que dificulta o desvencilhamento de vítimas",
+        "Articulação da rede de assistência e expedição de novos documentos civis",
+        "Fiscalização trabalhista reforça operações preventivas em chácaras do DF"
+      ]
+    },
+    "g1-2026-10-28-subsidio-diesel": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/28/governo-renova-subsidio-ao-diesel-em-meio-a-alta-do-petroleo.ghtml",
+      "fonte": "g1 Economia",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Governo renova subsídio de R$ 2,12 por litro ao óleo diesel",
+      "resumo": [
+        "Medida publicada no Diário Oficial prorroga o apoio federal para mitigar o repasse das altas recentes das refinarias internacionais aos preços nas bombas.",
+        "O foco é conter o encarecimento do transporte coletivo urbano e a cadeia logística de grãos e carnes no agronegócio.",
+        "A equipe econômica informou que os recursos já estavam previstos nas dotações de compensação energética do ano."
+      ],
+      "pontos": [
+        "Prorrogação do valor de R$ 2,12 por litro de diesel subsidiado",
+        "Blindagem contra pressões inflacionárias no transporte de alimentos",
+        "Previsão de recursos nas contas de compensação de combustíveis"
+      ]
+    },
+    "valor-2026-10-28-diesel-agro": {
+      "url": "https://valor.globo.com/brasil/noticia/2026/10/28/subsidio-ao-diesel-e-renovado-para-evitar-repasses-nos-fretes-agricolas.ghtml",
       "fonte": "Valor Econômico",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Alckmin e Haddad instalam gabinete de transição no CCBB e miram Orçamento de 2027",
+      "titulo": "Setor produtivo comemora extensão do subsídio ao diesel frente à volatilidade do petróleo",
       "resumo": [
-        "O Valor Econômico relata a abertura das salas de trabalho no Centro Cultural Banco do Brasil em Brasília, onde Geraldo Alckmin coordenará o diálogo político com partidos e Haddad conduzirá as tratativas com a Comissão Mista de Orçamento.",
-        "O foco é aprovar emendas de consenso no PLOA 2027 que acomodem prioridades sociais e investimentos em tecnologia sem furar os limites de despesas do arcabouço fiscal.",
-        "Haddad indicou que conversará com líderes do Centrão para evitar armadilhas orçamentárias na reta final da legislatura."
+        "Lideranças da Confederação Nacional do Transporte (CNT) e da bancada ruralista consideraram a prorrogação do desconto essencial para a competitividade das exportações.",
+        "O indicador de fretes rodoviários apontava expectativa de alta de até 8% caso o subsídio perdesse validade no final do mês.",
+        "O Ministério da Fazenda reafirmou que a medida tem caráter transitório até a estabilização das cotações marítimas."
       ],
       "pontos": [
-        "Início oficial das operações da transição no CCBB Brasília",
-        "Prioridade na recomposição orçamentária do PLOA 2027 dentro das regras fiscais",
-        "Canal de diálogo aberto com lideranças da Câmara e do Senado"
+        "Alívio direto na planilha de custos das transportadoras de grãos",
+        "Evita salto tarifário no transporte rodoviário interestadual",
+        "Fazenda garante compatibilidade fiscal do programa no encerramento de 2026"
       ]
     },
-    "exame-2026-10-28-transicao-grupos": {
-      "url": "https://exame.com/brasil/transicao-lula-ccbb-brasilia-orcamento-2027/",
-      "fonte": "Exame",
+    "g1-2026-10-28-anthropic-ipo": {
+      "url": "https://g1.globo.com/tecnologia/noticia/2026/10/28/anthropic-protocola-pedido-de-ipo-em-wall-street.ghtml",
+      "fonte": "g1 Tecnologia",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Como funcionará a equipe de transição no CCBB em Brasília",
+      "titulo": "Anthropic protocola pedido de IPO nos EUA para acelerar expansão de modelos Claude",
       "resumo": [
-        "A revista Exame detalha a formatação dos grupos setoriais da transição, divididos em áreas como Economia e Fazenda, Ciência e Tecnologia, Infraestrutura e Meio Ambiente.",
-        "Especialistas de perfil técnico foram convocados para levantar diagnósticos sobre contratos em andamento e evitar qualquer descontinuidade administrativa a partir de 1º de janeiro.",
-        "A postura adotada até aqui foi elogiada por entidades empresariais pela sobriedade e rapidez."
+        "A Anthropic deu o passo formal para listar suas ações nas bolsas de valores de Nova York, registrando o formulário S-1 junto à autoridade reguladora SEC.",
+        "A empresa fundada por ex-pesquisadores da OpenAI reportou faturamento acelerado com ferramentas de raciocínio lógico e automação de agentes corporativos.",
+        "A transação é aguardada como um termômetro definitivo para a precificação de empresas do setor de inteligência artificial de fronteira."
       ],
       "pontos": [
-        "Divisão em grupos temáticos técnicos para auditoria de contratos federais",
-        "Participação de economistas com trânsito junto ao mercado e academia",
-        "Foco em garantir continuidade dos serviços públicos essenciais"
+        "Protocolo oficial do formulário S-1 junto à SEC americana",
+        "Crescimento expressivo nas receitas com serviços para grandes corporações",
+        "Maior teste de valuation pública para companhias de IA de ponta"
       ]
     },
-    "bloomberglinea-2026-10-28-transicao-mercado": {
-      "url": "https://www.bloomberglinea.com.br/mercados/equipe-de-transicao-no-brasil-inicia-trabalhos-com-foco-em-disciplina-fiscal/",
+    "bloomberglinea-2026-10-28-anthropic-ipo-mercado": {
+      "url": "https://www.bloomberglinea.com.br/negocios/anthropic-entra-com-pedido-de-ipo-e-mexe-com-mercado-global-de-ia/",
       "fonte": "Bloomberg Línea",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Equipe de transição no Brasil inicia trabalhos com ênfase em disciplina fiscal",
+      "titulo": "IPO da Anthropic promete agitar Wall Street e redefinir valuations de tecnologia",
       "resumo": [
-        "A Bloomberg Línea analisa a recepção em Wall Street das mensagens emitidas pela coordenação da transição brasileira, destacando a postura pragmática de Haddad e Alckmin.",
-        "Analistas internacionais veem com bons olhos a sinalização de respeito às regras do arcabouço fiscal e a manutenção de nomes de credibilidade técnica nas negociações.",
-        "Os títulos da dívida externa brasileira registraram alta nos mercados europeus e americanos nesta manhã."
+        "Bancos de investimento estimam que a oferta de ações da criadora do Claude pode levantar dezenas de bilhões de dólares, ampliando o capital disponível para centros de processamento.",
+        "A empresa ressalta em seu prospecto os compromissos de segurança e mitigação de riscos sistêmicos em seus modelos fundacionais.",
+        "O mercado de capitais celebrou o pedido como sinal de reabertura para grandes aberturas de capital de empresas de inovação."
       ],
       "pontos": [
-        "Recepção positiva de bancos internacionais aos nomes da transição",
-        "Manutenção das balizas fiscais reduz volatilidade sobre o câmbio",
-        "Projeção de atração de aportes em infraestrutura e transição verde"
+        "Captação bilionária projetada para novos clusters de supercomputação",
+        "Destaque no prospecto para diretrizes de segurança e alinhamento de IA",
+        "Reativação do mercado primário de ações de tecnologia nos EUA"
       ]
     },
-    "infomoney-2026-10-28-ibovespa-fed": {
-      "url": "https://www.infomoney.com.br/mercados/ibovespa-e-dolar-em-alta-superquarta-fed-e-transicao-de-governo/",
-      "fonte": "InfoMoney",
+    "g1-2026-10-28-rio-operacao-dcav": {
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/operacao-prende-seis-por-exploracao-sexual-de-meninas-em-niteroi-e-marica.ghtml",
+      "fonte": "g1 Rio",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Ibovespa sobe e dólar cai em sessão de alívio e expectativa para Fed",
+      "titulo": "Operação da Polícia Civil prende seis por exploração sexual de adolescentes no Leste Fluminense",
       "resumo": [
-        "O InfoMoney reporta a recuperação dos papéis de bancos e estatais na B3, impulsionando o Ibovespa para uma alta de 2,4% e pressionando a cotação do dólar para baixo.",
-        "O mercado aproveitou os preços descontados após o choque de segunda-feira para recompor carteiras, beneficiado pela perda de fôlego do discurso de contestação eleitoral.",
-        "Investidores aguardam a coletiva de Jerome Powell às 15h30 para calibrar apostas na curva de juros futura."
+        "A DCAV e o GAECO deflagraram mandados nas cidades de Niterói, São Gonçalo e Maricá após meses de monitoramento de grupos fechados em redes e aplicativos de mensagens.",
+        "A quadrilha aliciava jovens vulneráveis com promessas financeiras e depois as submetia a chantagens mediante gravações íntimas.",
+        "Dezenas de celulares, cartões de memória e equipamentos de gravação foram apreendidos e serão periciados pelo Instituto de Criminalística."
       ],
       "pontos": [
-        "Ibovespa reage com alta disseminada nas ações de grande liquidez",
-        "Dólar à vista recua para a faixa de R$ 5,32 com entrada de fluxo externo",
-        "Decisão do FOMC ditará ritmo das taxas globais no fechamento do dia"
+        "Desarticulação de rede de exploração com prisões preventivas no Leste Fluminense",
+        "Investigação comprova uso de chantagens digitais contra menores e famílias",
+        "Apreensão massiva de material eletrônico pela Polícia Civil do Rio"
       ]
     },
-    "reuters-2026-10-28-mercados-fomc": {
-      "url": "https://www.reuters.com/article/brasil-mercados-fomc-transicao-idL1N328001/",
-      "fonte": "Reuters Brasil",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "Mercados brasileiros recuperam terreno com transição em curso e alívio externo",
-      "resumo": [
-        "A agência Reuters destaca que a rápida acomodação institucional desarmou o cenário de caos aventado por analistas mais pessimistas no dia do segundo turno.",
-        "O CDS (Credit Default Swap) de 5 anos do Brasil recuou 18 pontos-base, sinalizando diminuição na aversão ao risco soberano.",
-        "A expectativa de redução branda dos juros nos Estados Unidos complementa o quadro de melhora do apetite por emergentes."
-      ],
-      "pontos": [
-        "Queda do risco país (CDS) e retorno da liquidez estrangeira",
-        "Descarte de cenários de ruptura institucional após posicionamento do STF",
-        "Sinergia com o afrouxamento monetário do Federal Reserve"
-      ]
-    },
-    "nature-2026-10-28-biofisica-car-t": {
-      "url": "https://www.nature.com/articles/s41586-026-08112-x",
-      "fonte": "Nature",
-      "tipo": "analysis",
-      "data": "2026-10-28",
-      "titulo": "Biophysical membrane barriers restrict immune synapse formation in solid tumours",
-      "resumo": [
-        "Artigo de capa da Nature desvenda por que linfócitos CAR-T falham ao atacar tumores sólidos: a elevada viscosidade da membrana plasmática e a condensação de lipídios impedem que os receptores se organizem espacialmente.",
-        "A equipe liderada pelo MSKCC utilizou microscopia de força atômica para medir a resistência mecânica da superfície celular e provou que o descolamento de glicanos restaurou a citotoxicidade.",
-        "O achado inaugura uma nova vertente de imunofarmacologia focada na modulação física da membrana do hospedeiro tumoral."
-      ],
-      "pontos": [
-        "Identificação da rigidez viscoelástica como barreira biomecânica à imunoterapia",
-        "Aplicação de microscopia de força atômica para quantificar fluidez de bicamadas",
-        "Abertura de novos alvos para biofísicos e bioquímicos celulares"
-      ]
-    },
-    "statnews-2026-10-28-car-t-membranas": {
-      "url": "https://www.statnews.com/2026/10/28/car-t-solid-tumors-cell-membrane-biophysics/",
-      "fonte": "STAT News",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "How the biophysics of cancer membranes stumped CAR-T cell therapy",
-      "resumo": [
-        "O portal STAT explica para o público biomédico os desdobramentos do estudo sobre a membrana de tumores sólidos, pontuando que o problema não era falta de antígenos, mas pura física de fluidos celulares.",
-        "Biotecnologias que combinam enzimas modificadoras de lipídios a vetores virais já estão em ensaios pré-clínicos com base nessa descoberta.",
-        "Especialistas comparam a barreira tumoral a uma camada de asfalto celular que impede a formação da chave-fechadura biológica."
-      ],
-      "pontos": [
-        "Mudança de paradigma: a falha imunológica tratada como evento biofísico",
-        "Engenharia de partículas lipídicas para amolecer a membrana celular",
-        "Potencial para destravar terapias celulares em cânceres de pâncreas e pulmão"
-      ]
-    },
-    "fapesp-2026-10-28-bioimagem-membrana": {
-      "url": "https://agencia.fapesp.br/pesquisa-revela-papel-da-rigidez-de-membrana-em-falhas-de-terapia-celular/54201/",
-      "fonte": "Agência FAPESP",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "Pesquisa revela papel da rigidez de membrana em falhas de terapia celular",
-      "resumo": [
-        "A Agência FAPESP entrevista biofísicos brasileiros que analisam os resultados internacionais, salientando a importância de técnicas como fluorescência de correlação cruzada e criomicroscopia para o avanço da área.",
-        "Laboratórios da UFRJ e USP com linhas ativas em biofísica de membranas e canais iônicos comemoram a valorização da física biológica nos periódicos de medicina.",
-        "O texto pontua como o intercâmbio científico e a manutenção de equipamentos sofisticados nas universidades são cruciais para esses estudos."
-      ],
-      "pontos": [
-        "Visão de pesquisadores brasileiros sobre os avanços em bioimagem celular",
-        "Interface direta entre física biológica e terapias oncológicas de última geração",
-        "Destaque para a infraestrutura laboratorial de espectrometria e microscopia"
-      ]
-    },
-    "oglobo-2026-10-28-tapajos-chuvas-amazonia": {
-      "url": "https://oglobo.globo.com/brasil/meio-ambiente/noticia/2026/10/28/operacao-no-tapajos-apreende-dragas-e-chuvas-reduzem-queimadas-no-amazonas.ghtml",
+    "oglobo-2026-10-28-rio-policia-abusos": {
+      "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/policia-civil-desarticula-rede-de-abusos-e-chantagens-no-leste-fluminense.ghtml",
       "fonte": "O Globo",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Operação no Tapajós destrói dragas e chuvas reduzem queimadas no Amazonas",
+      "titulo": "Polícia e MP desmantelam esquema de chantagem e abuso contra adolescentes no RJ",
       "resumo": [
-        "O Globo acompanha os resultados da ação emergencial do Ibama e da PF contra balsas de garimpo clandestino que despejavam mercúrio nas águas do Rio Tapajós.",
-        "A apreensão e inutilização do maquinário coincidiu com a passagem de ventos úmidos que trouxeram chuva forte ao sul de Manaus e bacias vizinhas, derrubando a contaminação atmosférica.",
-        "Ambientalistas reforçam que a presença permanente de bases de fiscalização é a única forma de evitar o retorno dos invasores."
+        "O Globo acompanha os depoimentos colhidos na sede da delegacia especializada, destacando que os criminosos também exigiam valores financeiros de familiares sob ameaça de divulgação de vídeos.",
+        "Assistentes sociais e psicólogos do estado prestam atendimento imediato a quatro vítimas já identificadas.",
+        "O Ministério Público solicitou a quebra do sigilo fiscal e telemático dos presos para rastrear eventuais pagamentos de terceiros."
       ],
       "pontos": [
-        "Destruição de maquinário pesado e balsas de garimpo em terras indígenas",
-        "Queda de mais de 40% nos focos de queimada monitorados em 48 horas",
-        "Melhora dos índices de qualidade do ar nas capitais da Região Norte"
+        "Esquema de extorsão e ameaça a familiares de vítimas aliciadas",
+        "Suporte psicossocial imediato às adolescentes identificadas pela DCAV",
+        "Aprofundamento das quebras de sigilo para identificar ramificações da rede"
       ]
     },
-    "infoamazonia-2026-10-28-tapajos": {
-      "url": "https://infoamazonia.org/2026/10/28/ibama-e-pf-desarticulam-garimpos-no-tapajos/",
-      "fonte": "InfoAmazonia",
+    "g1-2026-10-28-rio-tempo-ressaca": {
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/previsao-do-tempo-rio-de-janeiro-chuvas-e-ressaca.ghtml",
+      "fonte": "g1 Rio",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Ibama e PF desarticulam garimpos em áreas protegidas no sudoeste do Pará",
+      "titulo": "Rio registra tempo instável com chuva intermitente e aviso de ressaca na orla",
       "resumo": [
-        "A reportagem da InfoAmazonia apresenta mapas de georreferenciamento das pistas de pouso clandestinas e dragas fluviais neutralizadas pelas equipes ambientais.",
-        "Lideranças Munduruku relatam alívio com a interrupção da poluição dos igarapés, mas cobram monitoramento contínuo das rotas de combustível e suprimentos.",
-        "O Ministério do Meio Ambiente confirmou que o efetivo da Força Nacional permanecerá na região até o fim de novembro."
+        "A passagem de uma frente fria mantém o céu encoberto e chuviscos contínuos na capital fluminense, com temperaturas amenas para a época do ano.",
+        "O sistema Alerta Rio aponta que os volumes pluviométricos de outubro já superam as médias históricas em estações do Maciço da Tijuca e Santa Teresa.",
+        "A Capitania dos Portos recomenda que banhistas e pequenas embarcações evitem a navegação marítima devido a ondas que alcançam 2,5 metros."
       ],
       "pontos": [
-        "Mapeamento detalhado das estruturas logísticas de apoio ao garimpo",
-        "Depoimentos de comunidades tradicionais sobre o impacto na qualidade das águas",
-        "Continuidade das ações com reforço da Força Nacional na floresta"
+        "Chuva fraca a moderada contínua ao longo de toda a quarta-feira no Rio",
+        "Alerta de ondas de até 2,5 metros e ressaca marítima na orla da Zona Sul",
+        "Acumulados de chuva no mês de outubro superam a série histórica recente"
       ]
     },
-    "conexao-ufrj-2026-10-28-consuni-orcamento": {
-      "url": "https://conexao.ufrj.br/2026/10/28/consuni-debate-impacto-do-cambio-nos-laboratorios-e-planejamento-para-2027/",
-      "fonte": "Conexão UFRJ",
+    "oglobo-2026-10-28-rio-chuva-mar-agitado": {
+      "url": "https://oglobo.globo.com/rio/noticia/2026/10/28/frente-fria-mantem-tempo-chuvoso-e-mar-agitado-no-rio-de-janeiro.ghtml",
+      "fonte": "O Globo - Rio",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Consuni debate impacto do câmbio nos laboratórios e planejamento para 2027",
+      "titulo": "Mar agitado e pistas molhadas exigem atenção de motoristas na capital fluminense",
       "resumo": [
-        "O Conexão UFRJ cobre a sessão extraordinária do Conselho Universitário na Cidade Universitária, onde diretores de institutos do CCS, do CT e do IF apresentaram diagnósticos de perda orçamentária.",
-        "A disparada pontual da moeda americana encareceu insumos básicos de importação contínua para biorreatores e espectrômetros, exigindo remanejamentos de custeio emergencial.",
-        "A reitoria aprovou documento que será entregue à equipe de transição em Brasília solicitando suplementação de verbas no início do novo ano letivo."
+        "O Centro de Operações Rio (COR) informou que o trânsito flui com lentidão nos principais acessos entre a Zona Norte e a Zona Sul devido ao asfalto escorregadio nos túneis e vias expressas.",
+        "As ciclovias da orla de São Conrado e Leblon registraram pontos de areia e água lançados pelas ondas de ressaca.",
+        "A instabilidade deve perder força gradualmente apenas a partir da tarde de quinta-feira."
       ],
       "pontos": [
-        "Diagnóstico de insumos importados para laboratórios do Fundão",
-        "Articulação da reitoria junto à equipe de transição e bancada parlamentar",
-        "Compromisso com a manutenção da excelência nos programas de pós-graduação"
+        "Atenção redobrada para pontos de lentidão e pistas molhadas nos eixos viários",
+        "Espraiamento de água e areia nas ciclovias costeiras da orla carioca",
+        "Tendência de melhora e elevação gradual de temperatura a partir de quinta"
       ]
     },
-    "faperj-2026-10-28-infraestrutura": {
-      "url": "https://www.faperj.br/?id=5214.2.1",
-      "fonte": "FAPERJ Notícias",
+    "g1-2026-10-28-mercado-megashows-estadios": {
+      "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/28/megaeventos-e-shows-em-estadios-se-consolidam-em-2026-no-brasil.ghtml",
+      "fonte": "g1 Música",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "FAPERJ analisa medidas de suporte cambial para projetos de pesquisa no estado",
+      "titulo": "A era dos estádios: como 2026 transformou os megaeventos na regra do mercado no Brasil",
       "resumo": [
-        "A diretoria da fundação estadual fluminense anunciou que estuda mecanismos de reajuste em auxílios de importação científica para evitar a paralisação de experimentos que dependem de reagentes no exterior.",
-        "O presidente da FAPERJ destacou a alta densidade de cientistas do Rio em áreas de biofísica, física experimental e materiais sustentáveis, defendendo a proteção dessas matrizes intelectuais.",
-        "O órgão reforçou parcerias com o CNPq e a Finep para garantir celeridade nos desembaraços alfandegários no Aeroporto do Galeão."
+        "Reportagem especial do g1 analisa a migração massiva de artistas internacionais e nacionais para estádios de futebol para viabilizar custos logísticos elevados.",
+        "A apuração destaca que a dependência das grandes arenas encarece o tíquete médio para o fã e sufoca turnês de bandas médias que não enchem 40 mil lugares.",
+        "Produtores apontam a falta de espaços intermediários com acústica adequada como principal desafio estrutural das cidades brasileiras."
       ],
       "pontos": [
-        "Estudo de suplementação cambial para bolsas e projetos em andamento",
-        "Defesa do parque de pesquisa biomédica e tecnológica sediado no Rio",
-        "Acordos para agilizar importações científicas sem retenções tributárias indevidas"
+        "Hegemonia absoluta dos estádios de futebol na rota das turnês de 2026",
+        "Encarecimento dos ingressos e polarização das datas no eixo Rio-São Paulo",
+        "Dificuldades para artistas de porte médio encontrarem salas com infraestrutura"
       ]
     },
-    "oglobo-2026-10-28-rio-mountain-progfestival": {
-      "url": "https://oglobo.globo.com/rioshow/noticia/2026/10/28/rio-mountain-festival-no-ccbb-e-progfestival-na-tijuca-abrem-programacao.ghtml",
-      "fonte": "O Globo - RioShow",
+    "folha-2026-10-28-estadios-casas-medias-rio": {
+      "url": "https://www1.folha.uol.com.br/ilustrada/2026/10/a-era-dos-estadios-e-o-estrangulamento-das-casas-medias-de-show-no-rio.shtml",
+      "fonte": "Folha Ilustrada",
       "tipo": "noticia",
       "data": "2026-10-28",
-      "titulo": "Cinema de montanha no CCBB e rock instrumental na Tijuca agitam a quarta-feira",
+      "titulo": "A bolha dos estádios e o estrangulamento das casas de show médias no Rio",
       "resumo": [
-        "O RioShow destaca a programação que une cinema documental de montanha e rock progressivo independente no Rio.",
-        "No CCBB, o 21º Rio Mountain Festival traz produções internacionais sobre escalada extrema nos Andes e a travessia de grandes cordilheiras, com sessões acessíveis a R$ 10.",
-        "Na Tijuca, o Centro da Música Carioca celebra a abertura do CaRIOca ProgFestival, com o grupo Cheiro de Vida e Arthur Martau revisitando a safra histórica da música autoral brasileira."
+        "A Folha Ilustrada examina o cenário carioca, onde a ausência de ginásios e arenas entre 3 mil e 10 mil pessoas deixa o público dependente ou de festivais gigantescos ou de porões e pequenos estúdios.",
+        "O artigo destaca a vitalidade e a resistência de espaços como a Audio Rebel, o Circo Voador e o Centro da Música Carioca, que sustentam a música autoral contra a pasteurização do modelo de estádio.",
+        "Críticos ressaltam a necessidade de políticas públicas e incentivo tributário para reabertura de teatros e salas musicais de câmara."
       ],
       "pontos": [
-        "Festival de filmes de montanha e travessias no Cinema I do CCBB Rio",
-        "Show de abertura do CaRIOca ProgFestival na Conde de Bonfim (Tijuca)",
-        "Valorização de espaços culturais públicos no Centro e na Zona Norte"
-      ]
-    },
-    "screamyell-2026-10-28-carioca-prog": {
-      "url": "https://screamyell.com.br/site/2026/10/28/carioca-progfestival-2026-tijuca/",
-      "fonte": "Scream & Yell",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "CaRIOca ProgFestival 2026 ocupa Centro da Música Carioca com virtuosismo e invenção",
-      "resumo": [
-        "O Scream & Yell resenha a relevância do festival instrumental que reúne pioneiros e novas vozes do rock progressivo e psicodélico no Rio.",
-        "A noite de estreia com o Cheiro de Vida e convidados destaca a resistência do formato intimista de teatro e auditório, longe das arenas estéreis.",
-        "A matéria elogia a acústica privilegiada do casarão histórico da Tijuca e a integração do público com os músicos."
-      ],
-      "pontos": [
-        "Reunião histórica de instrumentistas no Centro da Música Carioca",
-        "Defesa de apresentações de câmara e formatos acústicos de alta fidelidade",
-        "Continuidade da tradição progressiva brasileira na Grande Tijuca"
-      ]
-    },
-    "ft-2026-10-28-hormuz-petroleo": {
-      "url": "https://www.ft.com/content/hormuz-diplomacy-brent-crude-stability-oct-2026",
-      "fonte": "Financial Times",
-      "tipo": "analysis",
-      "data": "2026-10-28",
-      "titulo": "Oman mediation eases Gulf shipping fears as Brent crude settles near ",
-      "resumo": [
-        "O Financial Times revela que canais diplomáticos discretos estabelecidos em Mascate impediram que incidentes recentes no Estreito de Ormuz evoluíssem para bloqueios marítimos.",
-        "As petroleiras internacionais mantiveram suas rotas convencionais após garantias mútuas de não interferência transmitidas por mediadores regionais.",
-        "O alívio na cotação do petróleo reduz o risco de nova aceleração nos preços de frete marítimo internacional."
-      ],
-      "pontos": [
-        "Mediação exitosa no Sultanato de Omã evita crise de navegação no Golfo",
-        "Estabilização dos preços do petróleo tipo Brent em patamares administráveis",
-        "Redução da pressão sobre custos de transporte e combustíveis globais"
-      ]
-    },
-    "aljazeera-2026-10-28-oman-gulf": {
-      "url": "https://www.aljazeera.com/news/2026/10/28/oman-talks-ease-gulf-shipping-tensions",
-      "fonte": "Al Jazeera English",
-      "tipo": "noticia",
-      "data": "2026-10-28",
-      "titulo": "Diplomatic breakthrough in Muscat prevents escalation in Strait of Hormuz",
-      "resumo": [
-        "A Al Jazeera reporta que representantes das capitais regionais chegaram a um acordo preliminar de desescalada para garantir a segurança dos navios cargueiros no Estreito de Ormuz.",
-        "Líderes árabes saudaram a prudência dos envolvidos em não alimentar retóricas bélicas às vésperas de compromissos multilaterais.",
-        "A normalidade nos portos do Golfo foi mantida sem atrasos significativos nas escalas programadas."
-      ],
-      "pontos": [
-        "Consenso diplomático para garantir a rota de navios petroleiros e cargueiros",
-        "Desescalada em momento sensível para o abastecimento do Hemisfério Norte",
-        "Reconhecimento do papel conciliador da diplomacia de Omã"
+        "Contraste entre a opulência dos megashows e a escassez de palcos intermediários",
+        "Papel de resistência do circuito de clubes e teatros independentes no Rio",
+        "Defesa de acústica refinada e proximidade entre público e artistas"
       ]
     }
   }
