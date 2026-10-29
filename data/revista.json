@@ -4716,6 +4716,118 @@
           "o_que": "Boletim oceanográfico da Marinha sobre marés na Baía de Guanabara"
         }
       ]
+    },
+    "2026-10-28-noite": {
+      "data": "2026-10-28",
+      "edicao": "noite",
+      "titulo": "Dólar fecha a R$ 5,34 após Fed, Flávio tem visto humanitário e Senado reafirma urnas",
+      "resumo_dia": "No encerramento desta quarta-feira (28), o mercado financeiro absorveu a manutenção da taxa de juros nos EUA pelo Federal Reserve, com o dólar fechando estável a R$ 5,34 e o Ibovespa recuando 2,67% sob pressão de indefinições fiscais no Brasil. Em Washington, documentos confirmaram que Flávio Bolsonaro obteve registro humanitário para estada de um ano nos EUA, enquanto Donald Trump sinalizou que não pretende intervir nas questões internas brasileiras. No Congresso Nacional, senadores discursaram em defesa da legitimidade das eleições e da pacificação política, enquanto o Observatório do Clima enfatizou compromissos com a transição verde no novo governo.",
+      "notas": [
+        {
+          "id": "dolar-fed-mercado-fechamento",
+          "editoria": "Economia",
+          "titulo": "Dólar encerra estável a R$ 5,34 após decisão do Fed; Bolsa cai 2,67% sob cautela fiscal",
+          "texto": "O dólar oscilou com volatilidade moderada e fechou praticamente estável a R$ 5,346 (-0,03%), repercutindo a decisão do Fed de manter a taxa de juros entre 3,75% e 4% ao ano. Já o Ibovespa recuou 2,67% aos 171 mil pontos, acumulando perdas após o pleito com investidores exigindo sinais claros sobre o comando da Fazenda e as diretrizes fiscais.",
+          "por_que_importa": "A taxa de juros do Fed dita o fluxo global de capital e o custo do crédito para países emergentes, enquanto a cautela na B3 reflete a expectativa sobre o ministro da Economia a ser anunciado por Lula.",
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário",
+              "enfoque": "Fechamento do mercado, estabilidade cambial e reação de investidores ao comunicado do Fed",
+              "url": "https://www1.folha.uol.com.br/mercado/2026/10/dolar-oscila-perto-da-estabilidade-com-mercado-a-espera-de-decisao-do-fed.shtml"
+            }
+          ]
+        },
+        {
+          "id": "flavio-bolsonaro-visto-humanitario-eua",
+          "editoria": "Política",
+          "titulo": "Flávio Bolsonaro ingressou nos EUA com visto humanitário de um ano",
+          "texto": "Registros de imigração indicam que o senador Flávio Bolsonaro desembarcou em solo americano amparado por uma autorização humanitária com prazo de permanência de doze meses. O parlamentar viajou em voo executivo logo após a confirmação do resultado das urnas no domingo.",
+          "por_que_importa": "O status de permanência formalizado nos Estados Unidos adiciona complexidade técnica a eventuais pedidos de cooperação jurídica e medidas cautelares em curso no Supremo Tribunal Federal.",
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário",
+              "enfoque": "Documentos de imigração americana e condições de acolhida do senador no exterior",
+              "url": "https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-entrou-nos-eua-com-registro-humanitario-que-autoriza-permanencia-de-um-ano.shtml"
+            }
+          ]
+        },
+        {
+          "id": "trump-distanciamento-carta-flavio",
+          "editoria": "Internacional",
+          "titulo": "Trump afirma que não pretende se envolver na disputa jurídica após carta de Flávio",
+          "texto": "Em declarações à imprensa em Washington, o presidente americano Donald Trump confirmou a estada de Flávio Bolsonaro nos EUA, mas declarou expressamente que não intervirá em questões internas da Justiça brasileira, reiterando apreço diplomático pela estabilidade institucional.",
+          "por_que_importa": "O distanciamento de Trump frustra tentativas de internacionalizar o contencioso eleitoral brasileiro e reduz o risco de atritos diplomáticos na largada do novo governo.",
+          "fontes": [
+            {
+              "fonte": "EBC / Agência Brasil",
+              "perfil": "Agência pública",
+              "enfoque": "Declaração oficial de Donald Trump e postura de neutralidade sobre o cenário político brasileiro",
+              "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-10/trump-diz-que-nao-vai-se-envolver-apos-carta-de-flavio-bolsonaro"
+            }
+          ]
+        },
+        {
+          "id": "senado-reafirma-resultado-eleicoes",
+          "editoria": "Política",
+          "titulo": "Senado reafirma legitimidade das urnas e cobra foco na agenda legislativa",
+          "texto": "Em sessão plenária na tarde desta quarta-feira, parlamentares de múltiplos partidos discursaram em defesa do sistema eletrônico de votação e apelaram pela rápida composição da base de governo para votar matérias orçamentárias e reformas prioritárias antes do recesso de fim de ano.",
+          "por_que_importa": "A adesão explícita do Senado ao resultado eleitoral consolida a transição e assegura previsibilidade institucional para a tramitação de matérias econômicas urgentes.",
+          "fontes": [
+            {
+              "fonte": "Agência Senado",
+              "perfil": "Agência legislativa oficial",
+              "enfoque": "Discursos em plenário, manifestações de líderes partidários e pautas do final do ano legislativo",
+              "url": "https://www12.senado.leg.br/noticias/materias/2026/10/28/senadores-reafirmam-resultado-das-eleicoes"
+            }
+          ]
+        },
+        {
+          "id": "observatorio-clima-descarbonizacao-lula",
+          "editoria": "Clima",
+          "titulo": "Observatório do Clima destaca transição verde e metas ambientais para novo mandato",
+          "texto": "Entidades do setor socioambiental apontaram que a preservação dos biomas e o plano de descarbonização da matriz industrial e energética serão peças centrais para reposicionar o Brasil como destino prioritário de investimentos sustentáveis e financiamentos globais de transição ecológica.",
+          "por_que_importa": "A política climática e a bioeconomia tornaram-se condicionantes para acordos de livre comércio internacional e captação de recursos multilaterais para infraestrutura e inovação no Brasil.",
+          "fontes": [
+            {
+              "fonte": "EBC / Agência Brasil",
+              "perfil": "Agência pública",
+              "enfoque": "Análise de especialistas ambientais sobre compromissos do Acordo de Paris e recuperação de biomas",
+              "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/meio-ambiente/audio/2026-10/observatorio-do-clima-celebra-reeleicao-de-lula-para-pauta-ambiental"
+            }
+          ]
+        },
+        {
+          "id": "falso-delegado-bradock-rio",
+          "editoria": "Rio",
+          "titulo": "Polícia prende na Barra falso delegado que comandava segurança de atletas",
+          "texto": "A Polícia Civil do Rio prendeu em flagrante o empresário Silvio Cesar Alves, conhecido como Bradock, dono de empresa de vigilância privada e prestador de serviços em eventos de celebridades. Ele se passava por delegado para aplicar golpes na zona oeste da capital fluminense.",
+          "por_que_importa": "A operação desarticula a infiltração de falsas autoridades no mercado de segurança privada vip da zona oeste carioca.",
+          "fontes": [
+            {
+              "fonte": "g1 Rio",
+              "perfil": "Portal de notícias",
+              "enfoque": "Prisão em flagrante pela 16ª DP (Barra), perfil do empresário e histórico de fraudes",
+              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/quem-e-bradock-dono-empresa-seguranca-preso-como-falso-delegado.ghtml"
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "09h00",
+          "o_que": "Banco Central Europeu (BCE) divulga decisão de juros para a zona do euro"
+        },
+        {
+          "quando": "14h30",
+          "o_que": "Primeira reunião formal de articulação da equipe de transição no Centro Cultural Banco do Brasil (CCBB)"
+        },
+        {
+          "quando": "16h00",
+          "o_que": "Sessão do STF para apreciação de medidas cautelares e notificações de instâncias eleitorais"
+        }
+      ]
     }
   },
   "cine_edicoes": {
@@ -20296,6 +20408,227 @@
         "Ainda assim, os mercados brasileiros seguiram um caminho instável, mas, em última análise, positivo, durante seu terceiro mandato. As altas taxas de juros, embora restritivas para a economia, tornam a moeda atraente para investidores que buscam manter suas posições em um cenário de dólar mais fraco e afastamento dos mercados americanos, o que contribuiu para impulsionar os mercados emergentes de forma mais ampla.",
         "O estrategista do Wells Fargo, Alvaro Vivanco, escreveu antes do segundo turno das eleições de domingo que, em caso de uma vitória surpreendente de Lula, esperava que a moeda se desvalorizasse para 5,30 por dólar assim que os mercados reabrissem na segunda-feira. Guilherme Abbud, CEO da Persevera Asset Management, afirmou que a moeda poderia se desvalorizar em 7% e que um mecanismo de interrupção automática (circuit breaker) no mercado de ações era “possível”.",
         "“Poderia ser um pouco pior, porque movimentos de queda tendem a envolver mais pânico e ordens de stop-loss motivadas por emoções”, disse Abbud. “Pelo menos inicialmente, a perspectiva de uma grande mudança na política econômica desapareceria. Lula poderia eventualmente adotar uma abordagem mais cautelosa em relação aos gastos, mas é improvável que o mercado lhe dê o benefício da dúvida.”"
+      ]
+    },
+    "folha-2026-10-28-noite-dolar-fed": {
+      "url": "https://www1.folha.uol.com.br/mercado/2026/10/dolar-oscila-perto-da-estabilidade-com-mercado-a-espera-de-decisao-do-fed.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Dólar fecha a R$ 5,34 após decisão do Fed e Ibovespa recua 2,67% pressionado por fiscal",
+      "resumo": [
+        "Dólar fecha a R$ 5,34 após decisão do Fed e Ibovespa recua 2,67% pressionado por fiscal"
+      ],
+      "texto_integral": [
+        "Acesse seus artigos salvos em Minha Folha , sua área personalizada",
+        "Acesse os artigos do assunto seguido na Minha Folha, sua área personalizada",
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "Os ativos brasileiros voltaram a registrar um dia de forte volatilidade nesta quarta-feira (28). O Ibovespa, principal índice da Bolsa brasileira, despencou 2,67%, aos 171.006 pontos, ainda pressionado pelo movimento de correção após a vitória do presidente Lula (PT), reeleito para um quarto mandato. O resultado contrariou as expectativas de parte dos investidores, que apostavam na vitória do senador Flávio Bolsonaro (PL).",
+        "Entre sexta-feira (23), último pregão antes do segundo turno, e esta quarta-feira, o Ibovespa já perdeu R$ 873 bilhões em valor de mercado, que chegou a R$ 4,811 trilhões, segundo levantamento da Elos Ayta.",
+        "O dólar oscilou ao longo do dia e fechou em leve queda de 0,03%, cotado a R$ 5,346, com os investidores repercutindo a decisão do Fed (Federal Reserve, o banco central americano) de manter a taxa de juros dos Estados Unidos no intervalo entre 3,75% e 4%. A decisão também influenciou o desempenho da Bolsa nesta quarta-feira.",
+        "No mercado de juros futuros, os contratos com vencimentos mais curtos fecharam perto da estabilidade, enquanto os de prazos mais longos registraram alta, após o forte avanço observado na segunda-feira (26), primeiro pregão depois do segundo turno. A taxa dos contratos com vencimento em janeiro de 2028 ficou em 14,380%, com queda de 0,01%, enquanto a de janeiro de 2035 subiu 1,33%, a 15,105%.",
+        "Gustavo Danilo, especialista em renda fixa da Manchester Investimentos, afirma que o movimento mostra que o mercado ainda tenta encontrar um novo patamar para os juros após a eleição.",
+        "\"Ontem tivemos algum alívio, inclusive com atuação do Tesouro, mas hoje a curva volta a abrir principalmente do miolo para os vencimentos mais longos. A parte curta se movimenta bem menos, então a discussão neste momento parece estar muito mais ligada ao prêmio fiscal e às expectativas para os próximos anos do que a uma mudança imediata na trajetória da Selic\", diz.",
+        "Segundo Danilo, passada a reação inicial ao resultado eleitoral, o mercado começa a cobrar mais clareza sobre os próximos passos do governo. Entre os principais pontos de atenção estão a formação da equipe econômica, o Orçamento de 2027 e as medidas de ajuste fiscal que podem ser apresentadas ainda neste ano.",
+        "Nesta quarta-feira, também foi divulgado que a alíquota da CBS, tributo federal previsto na reforma tributária, poderá ser de 11,3% em 2027, segundo proposta apresentada pelo TCU (Tribunal de Contas da União) para manter a carga dos tributos federais sobre o consumo. O percentual ficou acima das projeções.",
+        "Franciny de Barros, sócia da área tributária do escritório Candido Martins Cukier, afirma que a divulgação de uma alíquota superior à esperada, a cerca de dois meses do início da cobrança, gera incertezas sobre o impacto nos orçamentos das empresas, inclusive daquelas que já haviam se preparado para a reforma.",
+        "\"A alteração nas projeções compromete o planejamento financeiro e a segurança jurídica das empresas que já haviam avaliado os reflexos da transição\", afirma.",
+        "Cristina Camara, professora de direito tributário e financeiro da CEPED/UERJ, avalia que o impacto poderá ser significativo, especialmente para o setor de serviços, que tem menos possibilidades de aproveitar créditos.",
+        "Receba no seu email o que de mais importante acontece na economia; aberta para não assinantes.",
+        "O debate sobre alternativas de arrecadação também trouxe de volta a possibilidade de tributação de investimentos hoje isentos, como LCIs, LCAs, CRIs, CRAs e debêntures incentivadas.",
+        "Para Gustavo Danilo, a discussão sobre uma eventual cobrança de IOF (Imposto sobre Operações Financeiras) sobre esses instrumentos acrescenta incertezas. Embora não considere o tema o principal responsável pela alta dos juros futuros, o especialista afirma que a possibilidade de mudanças aumenta as preocupações com a previsibilidade das regras, especialmente por envolver investimentos que financiam setores importantes da economia.",
+        "\"Até existir um desenho mais claro, acaba sendo mais um elemento de incerteza\", afirma.",
+        "A RB Asset diz que caso o governo decida tributar esses investimentos, é importante que a cobrança siga as mesmas regras para todos os instrumentos, evitando distorções entre produtos bancários e aqueles do mercado de capitais.",
+        "Segundo a gestora, diferenças no tratamento tributário poderiam levar investidores a migrar recursos de um produto para outro apenas para obter vantagens fiscais.",
+        "Entre as principais quedas do Ibovespa nesta quarta-feira estavam as ações de grandes bancos, como o Santander, que divulgou seu balanço trimestral com queda de 28% no lucro em relação ao mesmo período do ano anterior e de 4,3% na comparação com o segundo trimestre de 2026.",
+        "Também recuaram os papéis do BTG Pactual, que caíram 6,52%, e do Bradesco, com baixa de 6,67%, além das ações do Banco do Brasil e do Itaú.",
+        "As ações de empresas mais sensíveis aos juros elevados, como Smart Fit, Fleury, Iguatemi e Axia, também encerraram o pregão em queda.",
+        "A desvalorização dessas companhias reflete o receio de que a manutenção de uma política de gastos elevados no governo Lula dificulte o controle da dívida pública e a redução dos juros.",
+        "No exterior, a decisão do Fed concentrou as atenções ao longo do dia. O banco central americano manteve a taxa de juros entre 3,75% e 4%, em uma decisão que contou com dez votos favoráveis e dois contrários.",
+        "Segundo Fernando Saad Benati, estrategista global da Avenue, a manutenção dos juros veio em linha com as expectativas do mercado. Agora, os investidores acompanham a comunicação do Fed em busca de sinais sobre os próximos passos da política monetária, já que o presidente da instituição, Kevin Warsh, tem evitado antecipar as decisões futuras.",
+        "As expectativas para a reunião de dezembro indicam uma probabilidade próxima de 80% de uma nova alta de juros, segundo Benati.",
+        "Bruna Centeno, economista, sócia e advisor da Blue3, afirma que, como a manutenção dos juros já era esperada, as atenções se voltaram principalmente para o comunicado do Fed, em meio à recente escalada das tensões envolvendo os Estados Unidos.",
+        "Segundo a especialista, o agravamento do conflito tem pressionado os preços do petróleo, aumentando as preocupações com a inflação americana.",
+        "\"Isso tem feito preço principalmente no petróleo, que traz a ponta de inflação para cima\", afirma.",
+        "Às 17h14, o petróleo Brent, referência mundial da commodity, estava em leve queda de 0,05%, cotado a US$ 113,95 por barril.",
+        "Em Wall Street, as Bolsas americanas fecharam o dia em alta. O Dow Jones avançou 0,19%, enquanto o S&P 500 subiu 0,28% e o Nasdaq registrou valorização de 0,27%.",
+        "Os rendimentos dos títulos do Tesouro americano (Treasuries) também encerraram o dia em alta. A taxa dos papéis com vencimento em dez anos subiu 0,54%, a 5,023% ao ano, enquanto a dos títulos de 30 anos avançou 0,73%, a 5,349% ao ano.",
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "Mais de 180 reportagens e análises publicadas a cada dia. Um time com mais de 200 colunistas e blogueiros. Um jornalismo profissional que fiscaliza o poder público, veicula notícias proveitosas e inspiradoras, faz contraponto à intolerância das redes sociais e traça uma linha clara entre verdade e mentira. Quanto custa ajudar a produzir esse conteúdo?",
+        "De 2ª a 6ª pela manhã, receba o boletim gratuito com notícias e análises de economia",
+        "Senador publicou duas versões do documento após aliados divulgarem outras duas, uma delas com brasão errado",
+        "Republicano reafirmou que governo autorizou entrada do senador nos EUA e voltou a criticar eleições",
+        "Rogério Marinho classifica carta com teor golpista como 'desabafo' de candidato derrotado à Presidência"
+      ],
+      "pontos": [
+        "Federal Reserve manteve taxa de juros americana na faixa de 3,75% a 4% ao ano",
+        "Dólar encerrou o dia praticamente estável, com leve oscilação de -0,03% cotado a R$ 5,346",
+        "Ibovespa caiu aos 171 mil pontos refletindo incertezas sobre equipe econômica e política fiscal de Lula 4"
+      ]
+    },
+    "folha-2026-10-28-noite-flavio-visto-humanitario": {
+      "url": "https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-entrou-nos-eua-com-registro-humanitario-que-autoriza-permanencia-de-um-ano.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Flávio Bolsonaro ingressou nos EUA com registro humanitário para permanência de um ano",
+      "resumo": [
+        "Flávio Bolsonaro ingressou nos EUA com registro humanitário para permanência de um ano"
+      ],
+      "texto_integral": [
+        "Acesse seus artigos salvos em Minha Folha , sua área personalizada",
+        "Acesse os artigos do assunto seguido na Minha Folha, sua área personalizada",
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "O senador Flávio Bolsonaro (PL-RJ) entrou nos Estados Unidos nesta quarta-feira (28) com um registro humanitário que autoriza a permanência do parlamentar e de sua família no país durante um ano.",
+        "A informação consta em documento da agência alfandegária e de proteção dos EUA. No documento, aparece o nome de Flávio, com chegada em outubro de 2026 e permanência autorizada até outubro de 2027.",
+        "O registro de entrada do senador é classificado como \"DT\", o que significa que ele recebeu uma autorização humanitária para entrar no país.",
+        "Flávio, sua esposa e suas duas filhas desembarcaram em Miami nesta manhã, às 10h23 no horário de Brasília. O senador estava em uma aeronave que saiu da Argentina na noite de terça (27) e fez uma escala no Equador.",
+        "O presidente Donald Trump disse que aprovaria a entrada de Flávio no país, mas que não sabia onde o aliado estava. O Departamento de Estado confirmou à Folha que o governo norte-americano concederá vistos ao senador e à sua família —contudo, o registro recebido por eles não configura um visto.",
+        "Ainda na terça, aliados de Flávio passaram a dizer que o senador já havia fugido do Brasil. Contudo, ele ainda estava no país e só cruzou a fronteira com a Argentina de noite.",
+        "A notícia de uma eventual fuga do filho mais velho de Jair Bolsonaro começou a circular na terça, pela manhã.",
+        "Na segunda, o senador disse que não pensava em deixar o país e que lideraria a oposição ao governo do presidente Luiz Inácio Lula da Silva (PT), depois de ser derrotado pelo petista. Na ocasião, o parlamentar havia gravado vídeo criticando decisão do ministro Alexandre de Moraes, do STF (Supremo Tribunal Federal), que havia cancelado todos os passaportes emitidos no nome de Flávio.",
+        "O ex-candidato à Presidência foi intimado pela PF (Polícia Federal) a entregar os documentos. Contudo, como mostrou a Folha, ele descumpriu a decisão e não entregou os passaportes.",
+        "A própria corporação havia comunicado a Moraes \"risco concreto de evasão do território nacional\" pelo senador.",
+        "Embora aliados falem em possível perseguição política, o senador é investigado pelo STF por possível prática dos crimes de lavagem de dinheiro, evasão de divisas e corrupção por conta do filme \"Dark Horse\". Em maio de 2026, foi revelado que Flávio havia pedido dinheiro a Daniel Vorcaro, ex-dono do Banco Master, para a produção da cinebiografia de seu pai. No entanto, o senador nunca apresentou a prestação de contas do filme.",
+        "Ele também é alvo de um pedido de inquérito enviado pela PF ao Supremo para apurar suspeita de lavagem de dinheiro envolvendo o advogado Willer Tomaz, amigo de Flávio. A suspeita é de Flávio seja sócio oculto da casa de apostas BestBet, da qual Willer é sócio ostensivo.",
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "Mais de 180 reportagens e análises publicadas a cada dia. Um time com mais de 200 colunistas e blogueiros. Um jornalismo profissional que fiscaliza o poder público, veicula notícias proveitosas e inspiradoras, faz contraponto à intolerância das redes sociais e traça uma linha clara entre verdade e mentira. Quanto custa ajudar a produzir esse conteúdo?",
+        "As principais notícias da semana sobre o cenário jurídico e conteúdos exclusivos",
+        "Senador publicou duas versões do documento após aliados divulgarem outras duas, uma delas com brasão errado",
+        "Republicano reafirmou que governo autorizou entrada do senador nos EUA e voltou a criticar eleições",
+        "Rogério Marinho classifica carta com teor golpista como 'desabafo' de candidato derrotado à Presidência"
+      ],
+      "pontos": [
+        "Senador obteve autorização humanitária que permite estadia temporária de até 12 meses em solo americano",
+        "Viagem foi realizada em aeronave executiva após resultado eleitoral de domingo",
+        "STF e órgãos de investigação em Brasília avaliam desdobramentos sobre medidas cautelares e passaportes"
+      ]
+    },
+    "ebc-2026-10-28-noite-trump-carta-flavio": {
+      "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-10/trump-diz-que-nao-vai-se-envolver-apos-carta-de-flavio-bolsonaro",
+      "fonte": "EBC / Agência Brasil",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Trump diz que não pretende interferir no Brasil após receber carta de Flávio Bolsonaro",
+      "resumo": [
+        "Trump diz que não pretende interferir no Brasil após receber carta de Flávio Bolsonaro"
+      ],
+      "texto_integral": [
+        "O presidente dos Estados Unidos, Donald Trump, disse nesta quarta-feira (28) que \"não irá se envolver\", quando perguntado sobre carta golpista divulgada pelo senador Flávio Bolsonaro (PL) se declarando o \"verdadeiro presidente eleito do país\". Meia hora depois, o senador deletou a primeira carta e alterou o termo para \"líder do Brasil\".",
+        "Trump confirmou que os Estados Unidos deram visto para Bolsonaro e sua família e voltou a citar, sem provas, desconfiança sobre o processo eleitoral no Brasil.",
+        "“Não vou fazer comentário sobre isso, mas eu sei que demos a ele uma autorização para entrar no país. Mas eu não vou me envolver. Foi uma eleição muito estranha, isso é certo”, disse Trump.",
+        "Mais cedo, após fugir do Brasil para os Estados Unidos, Flávio Bolsonaro divulgou uma carta em que agradece aos presidentes da Argentina, Javier Milei, e dos Estados Unidos, Donald Trump, pelo apoio recebido para sair do país.",
+        "No documento, o candidato derrotado afirma, sem provas, que a eleição brasileira foi fraudada e critica a decisão do ministro do Supremo Tribunal Federal Cristiano Zanin de estender o prazo de votação até as 19h. Zanin atendeu a pedido das campanhas do PL e do PT."
+      ],
+      "pontos": [
+        "Presidente americano confirmou conhecimento sobre a chegada do senador, mas evitou envolvimento direto",
+        "Trump declarou manter canal de respeito com o presidente Lula e as autoridades institucionais",
+        "Governo brasileiro optou pela discrição diplomática sem emitir notas de provocação"
+      ]
+    },
+    "senado-2026-10-28-noite-senadores-eleicoes": {
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/10/28/senadores-reafirmam-resultado-das-eleicoes",
+      "fonte": "Agência Senado",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "No plenário do Senado, parlamentares reafirmam resultado das urnas e cobram transição republicana",
+      "resumo": [
+        "No plenário do Senado, parlamentares reafirmam resultado das urnas e cobram transição republicana"
+      ],
+      "texto_integral": [
+        "Senadores reafirmaram o resultado da eleição presidencial de domingo (25) durante a sessão deliberativa desta quarta-feira (28). O líder do governo no Congresso Nacional, senador Randolfe Rodrigues (PT-AP), disse que qualquer sinalização em contrário “não é uma conspiração contra o PT ou contra o presidente Lula, mas é uma conspiração contra o Brasil”.",
+        "— Este Plenário tem que partir primeiro de um consenso: por mais absurdo que seja questionar isso, este Plenário tem que proclamar em alto e bom som: o presidente eleito da República Federativa do Brasil é Luiz Inácio Lula da Silva — afirmou.",
+        "O senador Alessandro Vieira (MDB-SE) lembrou que o PL, partido que disputou o segundo turno das eleições contra o PT, já reconheceu o resultado oficial. Alessandro criticou uma carta publicada nas redes sociais pelo senador Flávio Bolsonaro (PL-RJ), em que o candidato derrotado à Presidência da República classifica o resultado das urnas como uma “fraude eleitoral”.",
+        "— A gente precisa encerrar, de uma vez por todas, as coisas no Brasil, esse circuito ridículo. O partido do candidato a presidente derrotado reconheceu (o resultado das eleições). Os governadores ligados ao candidato derrotado reconheceram. E nós todos somos políticos. Já aqui há uma larga jornada. Isso não faz sentido. Agora, causa um prejuízo imenso para o Brasil esse tipo de situação — afirmou Alessandro.",
+        "A senadora Eliziane Gama (PSD-MA) disse que o Brasil vive um momento marcante com a reeleição do presidente Lula. Ela lamentou o fato de Flávio Bolsonaro ter ido para os Estados Unidos, o que classificou como uma decisão “inaceitável”. O senador Veneziano Vital do Rêgo (MDB-PB) disse que “os fujões são antipatriotas”.",
+        "Para o senador Carlos Portinho (PL-RJ), há brasileiros “exilados” no exterior por não acreditarem na Justiça do país.",
+        "— Assisti atentamente à manifestação de todos anteriormente, inclusive da senadora Teresa Leitão [PT-PE], especialmente quando ela fala que haverá um Brasil para todos. Infelizmente, as palavras não correspondem aos gestos de momento, na medida em que há brasileiros exilados, há brasileiros fora do nosso país, sim, exilados, que não acreditam numa Justiça. Quando a gente fala que a gente tem brasileiros que querem um governo para todos, não é o que parece — afirmou.",
+        "Agência Senado (Reprodução autorizada mediante citação da Agência Senado)",
+        "MAIS NOTÍCIAS SOBRE: Congresso Nacional Senador Alessandro Vieira Senadora Eliziane Gama Senador Flávio Bolsonaro Senadora Teresa Leitão Senador Carlos Portinho Senador Veneziano Vital do Rêgo Senador Randolfe Rodrigues Eleições 2026 Justiça Eleitoral"
+      ],
+      "pontos": [
+        "Senadores de diferentes partidos destacaram a legitimidade do pleito e a lisura das urnas eletrônicas",
+        "Foco das lideranças parlamentares voltou-se para a agenda econômica e a votação de projetos pendentes de 2026",
+        "Discursos no Senado pediram responsabilidade institucional e pacificação nacional"
+      ]
+    },
+    "ebc-2026-10-28-noite-observatorio-clima": {
+      "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/meio-ambiente/audio/2026-10/observatorio-do-clima-celebra-reeleicao-de-lula-para-pauta-ambiental",
+      "fonte": "EBC / Agência Brasil",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Observatório do Clima destaca descarbonização e transição energética como prioridades para novo mandato",
+      "resumo": [
+        "Observatório do Clima destaca descarbonização e transição energética como prioridades para novo mandato"
+      ],
+      "texto_integral": [
+        "O Observatório do Clima espera que, com a reeleição do presidente Lula, melhorem as expectativas para a manutenção das conquistas no campo ambiental e climático.",
+        "A entidade, que conta com 172 organizações em defesa da pauta ambiental, celebrou a vitória de Lula como uma demonstração de resiliência do regime democrático.",
+        "Para o Observatório do Clima, com a piora do cenário no legislativo, onde sete em cada dez deputados e senadores eleitos são contra a agenda de clima e meio ambiente, cabe ao executivo reforçar sua atuação no parlamento e ampliar as alianças.",
+        "Claudio Angelo, coordenador de política internacional do Observatório, analisou que Lula pode ter dificuldade de negociar com o congresso.",
+        "“O desafio do governo Lula vai ser negociar com esse Congresso, sem rifar a agenda ambiental, porque o Lula vai precisar fazer coisas em outras áreas e a tentação de entregar a pauta ambiental em troca, de ou medidas de avanço ou medidas de não retrocesso em outras agendas, vai ser muito grande. A gente não pode deixar, o governo precisa se sentir apoiado nas negociações e constrangido, pressionado a não liberar, a não rifar essa agenda”.",
+        "A organização lembra que, no atual mandato, Lula reconstruiu o cenário de terra arrasada, entregando a menor taxa de desmatamento da história, quedas consecutivas na emissão de gases de efeito estufa e a ampliação do combate aos crimes ambientais.",
+        "Claudio Angelo destacou que o Brasil também conseguiu retomou seu protagonismo nas negociações internacionais do clima e da proteção da biodiversidade.",
+        "“Esse despertar do Lula para a agenda climática é uma coisa super importante e que eu acho que não tem mais volta, porque ele percebeu quão central isso é pro bem-estar das pessoas e quão central o Brasil é nessa agenda também. Então mesmo com todas as contradições, eu acho que que a gente vai ter uma perspectiva de continuidade, pelo menos do ponto de vista da política federal”.",
+        "Para o Observatório, é preciso continuar neste caminho, com o objetivo de acabar com o desmatamento em todos os biomas. A organização reforçou sua disposição para o diálogo e a colaboração com o governo reeleito, mas sem se afastar das cobranças, críticas e pressões, sempre que necessário.",
+        "Para o Observatório do Clima, o Brasil precisa enxergar a questão climática e o patrimônio ambiental brasileiro como oportunidades para alavancar o crescimento econômico e diminuir as desigualdades sociais."
+      ],
+      "pontos": [
+        "Entidades ambientalistas apontam janela estratégica para atração de investimentos verdes e transição ecológica",
+        "Metas de controle do desmatamento e cumprimento do Acordo de Paris devem nortear plano de governo",
+        "Repercussão positiva da agenda climática junto a fundos soberanos internacionais"
+      ]
+    },
+    "g1-2026-10-28-noite-falso-delegado-bradock": {
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/quem-e-bradock-dono-empresa-seguranca-preso-como-falso-delegado.ghtml",
+      "fonte": "g1 Rio",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Polícia Civil prende falso delegado dono de empresa de segurança na Barra da Tijuca",
+      "resumo": [
+        "Polícia Civil prende falso delegado dono de empresa de segurança na Barra da Tijuca"
+      ],
+      "texto_integral": [
+        "Por Guilherme Santos, Thaís Espírito Santo, g1 Rio e TV Globo",
+        "O empresário Silvio Cesar, conhecido Bradock, foi preso em flagrante nesta quarta-feira (28) no Rio. Segundo a polícia, ele se passava por delegado para abastecer sem pagar em postos.",
+        "Candidato a vereador em 2024, ele obteve 1.219 votos e atua como empresário de segurança. Ele tem mais de 130 mil seguidores nas redes sociais.",
+        "Nas redes, ele divulgava trabalhos de segurança em festas do ex-jogador Romário e de outros atletas. Ele também exibia fotos com investigados pela polícia.",
+        "A investigação aponta que ele usava distintivo e coldre para se passar por policial. Em 4 de setembro, ele saiu sem pagar de um posto.",
+        "Silvio Cesar Ferreira de Novaes Alves, o homem preso por se passar por delegado da Polícia Civil para sair sem pagar em postos de combustíveis no Rio de Janeiro, é empresário e disputou uma vaga de vereador do Rio em 2024 pelo Solidariedade. Ele recebeu 1.219 votos e ficou como suplente.",
+        "Ele foi preso em flagrante nesta quarta-feira (28) por policiais da 42ª (Recreio dos Bandeirantes), por porte ilegal de arma de fogo de uso restrito. Os agentes apreenderam uma pistola calibre .40, carregadores e munições.",
+        "Conhecido como Bradock, ele tem mais de 130 mil seguidores no Instagram. Em maio deste ano, ele publicou um vídeo reclamando do valor do combustível ao divulgar uma empresa de gás.",
+        "Nas redes sociais, ele compartilhou bastidores do trabalho em festas do ex-jogador de futebol Romário. A empresa de Bradock tinha sido contratada para fazer a segurança dos eventos.",
+        "Em janeiro deste ano, ele publicou um vídeo dando instruções para os funcionários na festa de 60 anos de Romário. Em 2024, ele postou uma foto com o ex-atleta e escreveu:",
+        "\"Quem sou eu? Eu sou o Bradock, o segurança do fenômeno do futebol brasileiro Romário. Aniversário do 01 eu nunca estaria de fora. Obrigada por tudo, ídolo e um grande amigo. O aniversário é seu mas o presente é meu, obrigada por estar sempre com você e sua família\".",
+        "Além de Romário, ele também compartilhou registros do seu trabalho ao lado do jogador Neymar e outros atletas.",
+        "Silvio também postou fotos ao lado do ex-deputado estadual TH Joias, que foi preso em setembro de 2025 sob suspeita de envolvimento com o Comando Vermelho e responde a acusações relacionadas ao tráfico de drogas e armas.",
+        "Em registros de trabalhos de segurança, Bradock também aparece ao lado do ex-vereador Gabriel Monteiro, que teve o mandato cassado em 2022 e foi preso preventivamente no mesmo ano após ser acusado de estupro. Ele também posou com a advogada Deolane Bezerra, investigada por suspeita de lavagem de dinheiro para o PCC.",
+        "Segundo a investigação da 42ª DP, Sílvio usava um distintivo e um coldre para convencer os funcionários dos postos de que era policial.",
+        "A investigação começou depois que o gerente de um posto na Avenida das Américas denunciou que Silvio abasteceu o veículo no local em 4 de setembro e foi embora sem pagar.",
+        "Na ocasião, ele teria afirmado que era delegado, que havia esquecido a carteira na delegacia e que voltaria para quitar a dívida. Para dar credibilidade à história, deixou um celular antigo como garantia.",
+        "O g1 não havia conseguido contato com a defesa de Silvio Cesar Ferreira de Novaes Alves até a última atualização desta reportagem.",
+        "De segunda a sábado, as notícias que você não pode perder diretamente no seu e-mail.",
+        "Para se inscrever, entre ou crie uma conta Globo gratuita.",
+        "Flávio Bolsonaro chega aos Estados Unidos após fugir do Brasil",
+        "Clima em elenco do Corinthians tem choro de Matheuzinho e preocupação com rebaixamento",
+        "Quem Ama Cuida: Pedro, Adriana e Heitor fazem descoberta sobre morte de Arthur",
+        "Após fuga, Flávio se diz 'presidente eleito', apaga post e se autoproclama 'líder do Brasil'",
+        "Senador alega fraude na eleição. PL, partido de Flávio, reconheceu a vitória de Lula, que foi confirmada pelo TSE.",
+        "'Não vou me envolver': Trump evita apoiar Flávio dizendo ser 'verdadeiro presidente'",
+        "Tarcísio sobre carta de Flávio: 'Entendo indignação, mas é seguir em frente'",
+        "Eleições ocorreram com segurança e na normalidade, diz Nunes Marques",
+        "Carlos relata conversa com o pai após derrota do irmão: 'Desculpa, a gente falhou'",
+        "Empresa de jatinho usado por Flávio é investigada por esquema envolvendo irmã de Milei",
+        "Ministros de Lula e do STF criticam decisões da PF e de Moraes sobre Flávio"
+      ],
+      "pontos": [
+        "Empresário Silvio Cesar Novaes Alves, conhecido como Bradock, foi preso em flagrante por estelionato",
+        "Investigado prestava serviços de segurança privada para atletas e celebridades no Rio",
+        "Prisão ocorreu após golpes em postos de combustíveis da zona oeste utilizando falsos distintivos"
       ]
     }
   }
