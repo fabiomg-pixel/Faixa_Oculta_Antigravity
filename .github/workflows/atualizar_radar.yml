@@ -2,10 +2,14 @@ name: Atualizar Faixa Oculta (Boletim Diário)
 
 on:
   schedule:
-    # 08:47 UTC = 05:47 horário de Brasília (Boletim da Manhã)
-    - cron: '47 8 * * *'
-    # 20:47 UTC = 17:47 horário de Brasília (Boletim da Noite)
-    - cron: '47 20 * * *'
+    # 08:00 UTC = 05:00 BRT (Boletim da Manhã)
+    - cron: '0 8 * * *'
+    # 08:30 UTC = 05:30 BRT (Janela de redundância da manhã)
+    - cron: '30 8 * * *'
+    # 20:00 UTC = 17:00 BRT (Boletim da Noite)
+    - cron: '0 20 * * *'
+    # 20:30 UTC = 17:30 BRT (Janela de redundância da noite)
+    - cron: '30 20 * * *'
   # Permite disparar manualmente pelo botão "Run workflow" no GitHub
   workflow_dispatch:
 
