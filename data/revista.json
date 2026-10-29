@@ -4720,96 +4720,129 @@
     "2026-10-28-noite": {
       "data": "2026-10-28",
       "edicao": "noite",
-      "titulo": "Dólar fecha a R$ 5,34 após Fed, Flávio tem visto humanitário e Senado reafirma urnas",
-      "resumo_dia": "No encerramento desta quarta-feira (28), o mercado financeiro absorveu a manutenção da taxa de juros nos EUA pelo Federal Reserve, com o dólar fechando estável a R$ 5,34 e o Ibovespa recuando 2,67% sob pressão de indefinições fiscais no Brasil. Em Washington, documentos confirmaram que Flávio Bolsonaro obteve registro humanitário para estada de um ano nos EUA, enquanto Donald Trump sinalizou que não pretende intervir nas questões internas brasileiras. No Congresso Nacional, senadores discursaram em defesa da legitimidade das eleições e da pacificação política, enquanto o Observatório do Clima enfatizou compromissos com a transição verde no novo governo.",
+      "titulo": "Tensão pós-eleição: Flávio nos EUA, TCU e articulação do governo",
+      "resumo_dia": "O cenário político do pós-segundo turno segue agitado pela ida de Flávio Bolsonaro aos Estados Unidos e sua contestação do resultado eleitoral, que acabou isolada até mesmo entre aliados próximos como Tarcísio de Freitas e Ricardo Nunes. Paralelamente, a Polícia Federal concluiu o inquérito do Banco Master com 15 indiciamentos por fraudes financeiras. Na economia, o TCU avançou nos parâmetros da reforma tributária propondo alíquota de 11,3% para a CBS em 2027, enquanto o governo federal liberou garantia bilionária para os Correios. Em Brasília, Lula inicia os primeiros passos do desenho ministerial e Hugo Motta projeta debates sobre o sistema eleitoral e redes.",
       "notas": [
         {
-          "id": "dolar-fed-mercado-fechamento",
-          "editoria": "Economia",
-          "titulo": "Dólar encerra estável a R$ 5,34 após decisão do Fed; Bolsa cai 2,67% sob cautela fiscal",
-          "texto": "O dólar oscilou com volatilidade moderada e fechou praticamente estável a R$ 5,346 (-0,03%), repercutindo a decisão do Fed de manter a taxa de juros entre 3,75% e 4% ao ano. Já o Ibovespa recuou 2,67% aos 171 mil pontos, acumulando perdas após o pleito com investidores exigindo sinais claros sobre o comando da Fazenda e as diretrizes fiscais.",
-          "por_que_importa": "A taxa de juros do Fed dita o fluxo global de capital e o custo do crédito para países emergentes, enquanto a cautela na B3 reflete a expectativa sobre o ministro da Economia a ser anunciado por Lula.",
-          "fontes": [
-            {
-              "fonte": "Folha de S.Paulo",
-              "perfil": "Jornal diário",
-              "enfoque": "Fechamento do mercado, estabilidade cambial e reação de investidores ao comunicado do Fed",
-              "url": "https://www1.folha.uol.com.br/mercado/2026/10/dolar-oscila-perto-da-estabilidade-com-mercado-a-espera-de-decisao-do-fed.shtml"
-            }
-          ]
-        },
-        {
-          "id": "flavio-bolsonaro-visto-humanitario-eua",
+          "id": "flavio-bolsonaro-eua-manifesto",
           "editoria": "Política",
-          "titulo": "Flávio Bolsonaro ingressou nos EUA com visto humanitário de um ano",
-          "texto": "Registros de imigração indicam que o senador Flávio Bolsonaro desembarcou em solo americano amparado por uma autorização humanitária com prazo de permanência de doze meses. O parlamentar viajou em voo executivo logo após a confirmação do resultado das urnas no domingo.",
-          "por_que_importa": "O status de permanência formalizado nos Estados Unidos adiciona complexidade técnica a eventuais pedidos de cooperação jurídica e medidas cautelares em curso no Supremo Tribunal Federal.",
+          "titulo": "Flávio Bolsonaro viaja aos EUA, divulga carta contestando eleição e PF cogita preventiva",
+          "texto": "Após ser derrotado no segundo turno, o senador Flávio Bolsonaro deixou o país com destino aos Estados Unidos em voo privado com escala na América do Sul. Em publicação nas redes, chegou a se proclamar 'presidente eleito' alegando fraude, mas apagou o termo logo em seguida, passando a se denominar 'líder do Brasil'. A Polícia Federal avalia pedir a prisão preventiva do parlamentar por descumprimento de medidas cautelares e evasão.",
+          "por_que_importa": "A manobra aprofunda a crise jurídica da família Bolsonaro, que perde capital político institucional e enfrenta risco imediato de ordens de extradição ou mandados de prisão expedidos pelo STF.",
           "fontes": [
             {
-              "fonte": "Folha de S.Paulo",
-              "perfil": "Jornal diário",
-              "enfoque": "Documentos de imigração americana e condições de acolhida do senador no exterior",
-              "url": "https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-entrou-nos-eua-com-registro-humanitario-que-autoriza-permanencia-de-um-ano.shtml"
-            }
-          ]
-        },
-        {
-          "id": "trump-distanciamento-carta-flavio",
-          "editoria": "Internacional",
-          "titulo": "Trump afirma que não pretende se envolver na disputa jurídica após carta de Flávio",
-          "texto": "Em declarações à imprensa em Washington, o presidente americano Donald Trump confirmou a estada de Flávio Bolsonaro nos EUA, mas declarou expressamente que não intervirá em questões internas da Justiça brasileira, reiterando apreço diplomático pela estabilidade institucional.",
-          "por_que_importa": "O distanciamento de Trump frustra tentativas de internacionalizar o contencioso eleitoral brasileiro e reduz o risco de atritos diplomáticos na largada do novo governo.",
-          "fontes": [
-            {
-              "fonte": "EBC / Agência Brasil",
-              "perfil": "Agência pública",
-              "enfoque": "Declaração oficial de Donald Trump e postura de neutralidade sobre o cenário político brasileiro",
-              "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-10/trump-diz-que-nao-vai-se-envolver-apos-carta-de-flavio-bolsonaro"
-            }
-          ]
-        },
-        {
-          "id": "senado-reafirma-resultado-eleicoes",
-          "editoria": "Política",
-          "titulo": "Senado reafirma legitimidade das urnas e cobra foco na agenda legislativa",
-          "texto": "Em sessão plenária na tarde desta quarta-feira, parlamentares de múltiplos partidos discursaram em defesa do sistema eletrônico de votação e apelaram pela rápida composição da base de governo para votar matérias orçamentárias e reformas prioritárias antes do recesso de fim de ano.",
-          "por_que_importa": "A adesão explícita do Senado ao resultado eleitoral consolida a transição e assegura previsibilidade institucional para a tramitação de matérias econômicas urgentes.",
-          "fontes": [
-            {
-              "fonte": "Agência Senado",
-              "perfil": "Agência legislativa oficial",
-              "enfoque": "Discursos em plenário, manifestações de líderes partidários e pautas do final do ano legislativo",
-              "url": "https://www12.senado.leg.br/noticias/materias/2026/10/28/senadores-reafirmam-resultado-das-eleicoes"
-            }
-          ]
-        },
-        {
-          "id": "observatorio-clima-descarbonizacao-lula",
-          "editoria": "Clima",
-          "titulo": "Observatório do Clima destaca transição verde e metas ambientais para novo mandato",
-          "texto": "Entidades do setor socioambiental apontaram que a preservação dos biomas e o plano de descarbonização da matriz industrial e energética serão peças centrais para reposicionar o Brasil como destino prioritário de investimentos sustentáveis e financiamentos globais de transição ecológica.",
-          "por_que_importa": "A política climática e a bioeconomia tornaram-se condicionantes para acordos de livre comércio internacional e captação de recursos multilaterais para infraestrutura e inovação no Brasil.",
-          "fontes": [
-            {
-              "fonte": "EBC / Agência Brasil",
-              "perfil": "Agência pública",
-              "enfoque": "Análise de especialistas ambientais sobre compromissos do Acordo de Paris e recuperação de biomas",
-              "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/meio-ambiente/audio/2026-10/observatorio-do-clima-celebra-reeleicao-de-lula-para-pauta-ambiental"
-            }
-          ]
-        },
-        {
-          "id": "falso-delegado-bradock-rio",
-          "editoria": "Rio",
-          "titulo": "Polícia prende na Barra falso delegado que comandava segurança de atletas",
-          "texto": "A Polícia Civil do Rio prendeu em flagrante o empresário Silvio Cesar Alves, conhecido como Bradock, dono de empresa de vigilância privada e prestador de serviços em eventos de celebridades. Ele se passava por delegado para aplicar golpes na zona oeste da capital fluminense.",
-          "por_que_importa": "A operação desarticula a infiltração de falsas autoridades no mercado de segurança privada vip da zona oeste carioca.",
-          "fontes": [
-            {
-              "fonte": "g1 Rio",
+              "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Prisão em flagrante pela 16ª DP (Barra), perfil do empresário e histórico de fraudes",
-              "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/28/quem-e-bradock-dono-empresa-seguranca-preso-como-falso-delegado.ghtml"
+              "enfoque": "Detalhes da publicação de Flávio se autoproclamando presidente e recuo posterior",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/28/apos-fugir-do-brasil-flavio-fala-em-fraude-na-eleicao-e-se-autoproclama-presidente.ghtml"
+            },
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Bastidores da Polícia Federal avaliando pedido de prisão preventiva após saída do país",
+              "url": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/10/28/pf-flavio-bolsonaro-ordem-judicial.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "isolamento-politico-tarcisio-nunes",
+          "editoria": "Política",
+          "titulo": "Tarcísio e Nunes pregam 'seguir em frente' e isolam discurso extremista de Flávio",
+          "texto": "Principais lideranças eleitas pela direita em São Paulo, o governador Tarcísio de Freitas e o prefeito Ricardo Nunes declararam respeito ao resultado oficial das urnas e afirmaram que o país precisa de estabilidade. Tarcísio declarou compreender a indignação de apoiadores, mas frisou que o único caminho institucional é reconhecer a definição do TSE e avançar.",
+          "por_que_importa": "A reação dos governantes paulistas marca uma dissociação pragmática do núcleo de poder do bolsonarismo tradicional, delimitando fronteiras para manter a governabilidade e diálogo com a União.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Posicionamento de Tarcísio de Freitas sobre necessidade de olhar para a frente",
+              "url": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/28/entendo-indignacao-mas-caminho-e-seguir-em-frente-diz-tarcisio-apos-flavio-bolsonaro-divulgar-carta-em-que-se-declara-presidente-do-brasil.ghtml"
+            },
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Declarações de Ricardo Nunes pedindo serenidade institucional",
+              "url": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/28/ricardo-nunes-diz-que-tse-ja-definiu-o-novo-presidente-apos-carta-em-que-flavio-se-autointula-lider-do-brasil.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "tcu-aliquota-cbs-2027",
+          "editoria": "Economia",
+          "titulo": "TCU propõe alíquota de 11,3% para o imposto federal sobre consumo a partir de 2027",
+          "texto": "O Tribunal de Contas da União apresentou sua proposta técnica estabelecendo em 11,3% a alíquota da Contribuição sobre Bens e Serviços (CBS), que integrará o sistema de IVA dual da reforma tributária. O cálculo visa à neutralidade arrecadatória federal e agora seguirá para análise e votação formal pelo Senado Federal.",
+          "por_que_importa": "A definição precisa do percentual é o pilar que dá previsibilidade ao setor produtivo para o início da transição tributária, balizando o custo de conformidade fiscal nos próximos anos.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Proposta do TCU encaminhada para a deliberação dos senadores",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/28/tcu-propoe-aliquota-de-113percent-para-o-futuro-imposto-sobre-consumo-do-governo-federal-em-2027-senado-tem-que-aprovar-valor.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "caso-master-indiciamento-pf",
+          "editoria": "Economia",
+          "titulo": "PF indicia 15 pessoas no Caso Master por fraudes bancárias envolvendo carteira do BRB",
+          "texto": "O relatório final da Polícia Federal indiciou o banqueiro Daniel Vorcaro, o ex-presidente do Banco de Brasília (BRB) e outras 13 pessoas no inquérito principal sobre desvios e negociações irregulares. A apuração revelou que alertas internos apontavam inconformidades em até 90% dos contratos da carteira negociada entre as instituições já em 2024.",
+          "por_que_importa": "O caso expõe falhas graves de governança no sistema financeiro e atinge em cheio conexões financeiras e políticas que vinham sendo monitoradas por autoridades de controle.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Relação nominal e condutas apontadas pela Polícia Federal no relatório",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/caso-master-veja-os-nomes-e-as-condutas-dos-15-indiciados-no-relatorio-da-pf-lista-inclui-vorcaro-e-ex-presidente-do-brb.ghtml"
+            },
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Alertas ignorados sobre problemas em 90% da carteira do Master",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/diretoria-do-brb-foi-alertada-sobre-falhas-em-90percent-de-carteira-do-master-em-2024-diz-relatorio-da-pf.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "garantia-governo-correios-7-bi",
+          "editoria": "Economia",
+          "titulo": "Governo concede garantia para empréstimo de R$ 7 bilhões de consórcio aos Correios",
+          "texto": "Encerrada a disputa eleitoral, o Ministério da Fazenda autorizou a garantia soberana da União para uma operação de crédito de R$ 7 bilhões contratada pelos Correios junto a um sindicato bancário. O aporte visa equacionar o fluxo de caixa da estatal e financiar compromissos de modernização operacional e logística.",
+          "por_que_importa": "O aval amplia o endividamento contingente do Tesouro Nacional e assegura liquidez para manter a operação da maior empresa pública de logística do país sem necessidade de aporte orçamentário direto.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Concessão do aval da União para pacote de crédito aos Correios",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/28/passadas-eleicoes-governo-federal-concede-garantia-para-emprestimo-de-r-7-bilhoes-de-consorcio-de-bancos-aos-correios.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "motta-reforma-sistema-distrital-redes",
+          "editoria": "Política",
+          "titulo": "Hugo Motta anuncia debate sobre voto distrital misto e regulação de propaganda digital",
+          "texto": "O deputado Hugo Motta afirmou que a Câmara dos Deputados colocará na pauta legislativa a transição para o modelo eleitoral distrital misto e a criação de novas balizas para campanhas em plataformas digitais. O parlamentar reúne amplo apoio partidário para sua recondução ao comando da Casa com suporte de bancadas da situação e oposição.",
+          "por_que_importa": "A reabertura da reforma política pode alterar profundamente a correlação de forças na representação parlamentar e estabelecer marcos vinculantes para o impulsionamento de conteúdo nas redes sociais.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Declarações de Motta sobre prioridades eleitorais e redes na Câmara",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/28/motta-diz-que-camara-vai-debater-mudanca-para-sistema-distrital-misto-e-regras-para-propaganda-eleitoral-nas-redes.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "lincoln-gakiya-seguranca-publica",
+          "editoria": "Política",
+          "titulo": "Promotor Lincoln Gakiya é cotado para assumir pasta da Segurança no novo mandato de Lula",
+          "texto": "O promotor paulista Lincoln Gakiya, histórico integrante do Gaeco e referência nacional no combate a facções criminosas, passou a figurar entre os principais nomes cotados para chefiar a futura pasta dedicada exclusivamente à Segurança Pública. O desenho institucional integra as negociações de transição para acomodar especialistas e ampliar a resposta federal ao crime organizado.",
+          "por_que_importa": "A escolha de um perfil técnico com histórico de enfrentamento ao PCC sinalizaria uma inflexão na política de segurança federal, priorizando inteligência penitenciária e asfixia patrimonial das facções.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Articulações de bastidores sobre a indicação de Gakiya para a Segurança",
+              "url": "https://g1.globo.com/sp/presidente-prudente-e-regiao/noticia/2026/10/28/promotor-lincoln-gakiya-conhecido-por-repressao-ao-pcc-e-cotado-para-ministerio-da-seguranca-de-lula.ghtml"
             }
           ]
         }
@@ -4817,15 +4850,11 @@
       "agenda": [
         {
           "quando": "09h00",
-          "o_que": "Banco Central Europeu (BCE) divulga decisão de juros para a zona do euro"
+          "o_que": "Comissão Diretora do Senado discute tramitação da proposta de alíquota da CBS encaminhada pelo TCU"
         },
         {
-          "quando": "14h30",
-          "o_que": "Primeira reunião formal de articulação da equipe de transição no Centro Cultural Banco do Brasil (CCBB)"
-        },
-        {
-          "quando": "16h00",
-          "o_que": "Sessão do STF para apreciação de medidas cautelares e notificações de instâncias eleitorais"
+          "quando": "14h00",
+          "o_que": "Reuniões da equipe de transição do governo federal sobre a estrutura dos novos ministérios"
         }
       ]
     }
@@ -20629,6 +20658,310 @@
         "Empresário Silvio Cesar Novaes Alves, conhecido como Bradock, foi preso em flagrante por estelionato",
         "Investigado prestava serviços de segurança privada para atletas e celebridades no Rio",
         "Prisão ocorreu após golpes em postos de combustíveis da zona oeste utilizando falsos distintivos"
+      ]
+    },
+    "flavio-bolsonaro-eua-manifesto-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/28/apos-fugir-do-brasil-flavio-fala-em-fraude-na-eleicao-e-se-autoproclama-presidente.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Flávio Bolsonaro viaja aos EUA, divulga carta contestando eleição e PF cogita preventiva",
+      "resumo": [
+        "Após ser derrotado no segundo turno, o senador Flávio Bolsonaro deixou o país com destino aos Estados Unidos em voo privado com escala na América do Sul. Em publicação nas redes, chegou a se proclamar 'presidente eleito' alegando fraude, mas apagou o termo logo em seguida, passando a se denominar 'líder do Brasil'. A Polícia Federal avalia pedir a prisão preventiva do parlamentar por descumprimento de medidas cautelares e evasão."
+      ],
+      "texto_integral": [
+        "Após fugir do Brasil, Flávio Bolsonaro se diz 'presidente eleito' em carta divulgada nas redes sociais",
+        "Em uma carta divulgada após fugir do Brasil rumo aos Estados Unidos, Flávio Bolsonaro (PL) declarou nesta quarta-feira (28) não reconhecer o resultado das urnas no segundo turno da eleição presidencial, acusou suposta fraude eleitoral e afirmou ser o \"verdadeiro presidente do Brasil\", o \"presidente eleito\".",
+        "🔎Após divulgar a primeira carta, em formato de imagens, em uma rede social, Flávio divulgou uma nova carta, também em imagens, em que substituiu as expressões \"verdadeiro presidente do Brasil\" e \"presidente eleito\" por \"líder do Brasil\" e \"líder\".",
+        "As alegações, divulgadas sem apresentação de provas, contrariam a postura do PL, partido de Flávio Bolsonaro, e contrastam com a confirmação da vitória de Luiz Inácio Lula da Silva (PT) pelo Tribunal Superior Eleitoral (TSE). O PL reconheceu o resultado eleitoral, pedindo esclarecimentos da Justiça.",
+        "No documento, Flávio agradeceu a líderes internacionais, como o presidente da Argentina, Javier Milei, e o presidente dos Estados Unidos, Donald Trump, e afirmou que está em território norte-americano com a família e \"em segurança\".",
+        "O parlamentar atacou o Judiciário e alegou a existência de um \"regime de exceção\" e \"perseguição política\" contra a sua família, negando que sua saída represente uma fuga e comparando sua ida ao exterior a episódios de exílio político de figuras históricas.",
+        "Ataques ao sistema eleitoral e contestação do resultado",
+        "O senador afirmou que ter ocorrido uma \"impossibilidade matemática\" na votação e contestou decisões tomadas pela Justiça, especialmente pelo ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), durante a votação.",
+        "O ministro determinou a extensão por duas horas do horário de votação após pedidos – da coligação de Lula e da campanha do próprio Flávio Bolsonaro – de prorrogação em virtude de problemas no transporte público de eleitores e condições climáticas adversas.",
+        "Após as 17h do último domingo (25), menos de 35 mil votos foram registrados nas urnas até as 19h. A vantagem de Lula sobre Flávio Bolsonaro no Brasil foi de 4,4 milhões de votos.",
+        "Flávio Bolsonaro, no documento, defendeu a cassação da chapa eleita, de Lula e Geraldo Alckmin, e disse que vai liderar a oposição a partir dos Estados Unidos.",
+        "\"Quero dizer, não só para os meus 60 milhões de eleitores, mas para o povo brasileiro, que eu sou o presidente eleito e os criminosos que roubaram a eleição do Brasil são parte de uma organização criminosa que implementou uma tirania\", escreveu o senador na primeira versão da carta divulgada.",
+        "Na segunda versão postada por Flávio, ele trocou \"presidente eleito\" por \"líder\" nesse trecho.",
+        "Apesar das declarações de Flávio Bolsonaro, o TSE confirmou a vitória do presidente Lula no pleito. A Corte Eleitoral também afirmou que a eleição transcorreu em segurança.",
+        "Em manifestações após a votação, o tribunal reiterou que o processo eleitoral ocorreu com transparência, sem ocorrência de fraudes ou inconsistências que pudessem comprometer a legitimidade da vontade expressa pelos eleitores.",
+        "Flávio Bolsonaro, no entanto, afirmou que houve uma \"atuação ilegítima e ilegal\" de Zanin, destacando que o ministro do STF já foi advogado do presidente Lula.",
+        "\"A atuação ilegítima e ilegal do ex-advogado do Lula permitiu que uma impossibilidade matemática se concretizasse e Lula acrescentasse mais de 10 milhões de votos do primeiro para o segundo turno\", disse na carta.",
+        "\"Uma decisão do STF, tomada por cima da competência do TSE, estendeu a votação no apagar das luzes, e a ordem só chegou depois do fim do horário legal, quando as urnas já estavam encerradas. Eleitores ficaram submetidos a regras diferentes. Até agora, o TSE se limitou a defender a prorrogação do horário e não há sequer uma única resposta crível\", completou.",
+        "Em nota assinada pelo presidente do PL, Valdemar Costa Neto, o partido afirmou que reconhece o resultado proclamado pelo TSE, presidido por Kassio Nunes Marques, mas disse que \"questionamentos levantados precisam ser devidamente esclarecidos\".",
+        "Após a confirmação do resultado pelo TSE no domingo, Flávio Bolsonaro não reconheceu a vitória de Lula e chegou a dizer que pediria a anulação das eleições.",
+        "Na segunda-feira (26), antes de fugir do Brasil, Flávio mudou de postura e passou a dizer que pediria a cassação da chapa de Lula pelo que chamou de \"abusos\" de poder político e econômico no processo eleitoral. Ele também acusou o petista de usar máquina pública para se reeleger."
+      ],
+      "pontos": [
+        "Detalhes da publicação de Flávio se autoproclamando presidente e recuo posterior"
+      ]
+    },
+    "flavio-bolsonaro-eua-manifesto-g1.globo.com/politica/blog/and": {
+      "url": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/10/28/pf-flavio-bolsonaro-ordem-judicial.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Flávio Bolsonaro viaja aos EUA, divulga carta contestando eleição e PF cogita preventiva",
+      "resumo": [
+        "Após ser derrotado no segundo turno, o senador Flávio Bolsonaro deixou o país com destino aos Estados Unidos em voo privado com escala na América do Sul. Em publicação nas redes, chegou a se proclamar 'presidente eleito' alegando fraude, mas apagou o termo logo em seguida, passando a se denominar 'líder do Brasil'. A Polícia Federal avalia pedir a prisão preventiva do parlamentar por descumprimento de medidas cautelares e evasão."
+      ],
+      "texto_integral": [
+        "PF avalia pedir prisão preventiva de Flávio Bolsonaro após fuga",
+        "Fontes da Polícia Federal ouvidas pelo blog avaliam que a fuga de Flávio Bolsonaro após o descumprimento de uma ordem judicial, pode abrir caminho para um pedido de prisão preventiva.",
+        "Segundo investigadores, as apurações envolvendo o senador continuam em andamento e a saída do país acrescenta um novo elemento à avaliação das medidas judiciais cabíveis.",
+        "De acordo com as autoridades, Flávio Bolsonaro descumpriu ordem judicial e fugiu do país. A PF avalia que estão presentes os requisitos de uma prisão preventiva.",
+        "Na avaliação dos investigadores, a situação pode se enquadrar nas hipóteses previstas no artigo 312 do Código de Processo Penal, especialmente por conveniência da instrução criminal ou para assegurar a aplicação da lei penal.",
+        "🔎 O artigo 312 prevê a possibilidade de prisão preventiva para garantia da ordem pública, da ordem econômica, por conveniência da instrução criminal ou para assegurar a aplicação da lei penal, desde que estejam presentes os requisitos legais.",
+        "Flávio Bolsonaro e família desembarcam em Miami, nos Estados Unidos",
+        "Para investigadores, o descumprimento de uma determinação judicial, seguido da saída do país, reforça os argumentos que poderiam fundamentar um pedido de prisão preventiva.",
+        "A Polícia Federal pode representar pela prisão, mas a decisão de decretar a medida cabe à Justiça.",
+        "Dinheiro do filme e suspeitas sobre recursos nos EUA",
+        "Outro ponto que passou a chamar a atenção dos investigadores é o destino do dinheiro relacionado ao chamado projeto do filme \"Dark Horse\", mencionado nas apurações que envolvem Flávio Bolsonaro.",
+        "Fontes da PF ouvidas pelo blog avaliam que a fuga do país levanta novas suspeitas sobre a finalidade desses recursos e a possibilidade de que tenham permanecido nos Estados Unidos.",
+        "A suspeita, segundo outra avaliação da mesma fonte, é de que os recursos não tenham retornado ao Brasil.",
+        "Investigadores apuram se o dinheiro não voltou ao Brasil e ficou nos EUA para sustentar a família Bolsonaro.",
+        "SAIBA MAIS: Veja quais são as investigações contra Flávio Bolsonaro",
+        "O episódio também coloca sob atenção dos investigadores as movimentações financeiras associadas ao fundo chamado Havengate.",
+        "Para fontes da PF, a saída de Flávio do Brasil pode dar uma nova dimensão às investigações sobre a origem, o destino e a utilização desses recursos.",
+        "Até o momento, não há confirmação de que um pedido de prisão preventiva tenha sido formalizado. A eventual medida dependerá de representação às autoridades judiciais e de decisão da Justiça."
+      ],
+      "pontos": [
+        "Bastidores da Polícia Federal avaliando pedido de prisão preventiva após saída do país"
+      ]
+    },
+    "isolamento-politico-tarcisio-nunes-g1.globo.com/sp/sao-paulo/elei": {
+      "url": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/28/ricardo-nunes-diz-que-tse-ja-definiu-o-novo-presidente-apos-carta-em-que-flavio-se-autointula-lider-do-brasil.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Tarcísio e Nunes pregam 'seguir em frente' e isolam discurso extremista de Flávio",
+      "resumo": [
+        "Principais lideranças eleitas pela direita em São Paulo, o governador Tarcísio de Freitas e o prefeito Ricardo Nunes declararam respeito ao resultado oficial das urnas e afirmaram que o país precisa de estabilidade. Tarcísio declarou compreender a indignação de apoiadores, mas frisou que o único caminho institucional é reconhecer a definição do TSE e avançar."
+      ],
+      "texto_integral": [
+        "O prefeito de São Paulo, Ricardo Nunes (MDB), aliado de Flávio Bolsonaro (PL), deu uma nova declaração após o candidato derrotado nas eleições fugir para os Estados Unidos e divulgar uma carta com teor golpista em que se diz \"líder do Brasil\".",
+        "Nunes disse que é preciso acatar o que o Tribunal Superior Eleitoral (TSE) definiu. O presidente Luiz Inácio Lula da Silva (PT) foi reeleito com 64.256.232 votos (51,79% dos votos válidos).",
+        "\"O TSE ja definiu o novo presidente e precisamos ter serenidade diante do resultado. A quem ganhou, cabe governar o país para melhorar a economia e a qualidade de vida da população. Assim como cabe à oposição, que teve quase 60 milhões de votos, o papel de fiscalizar\".",
+        "O governador de São Paulo, Tarcísio de Freitas (Republicanos), também afirmou que o senador deve respeitar o resultado das urnas e seguir em frente.",
+        "“A eleição acabou e agora é preciso olhar para a frente. Entendo o sentimento de Flávio, entendo sua indignação e sua revolta, e esse sentimento é o de muitos brasileiros também. Mas o caminho é respeitar o resultado das urnas e seguir em frente”, declarou Tarcísio.",
+        "\"O momento exige responsabilidade, serenidade e a construção de uma oposição forte, capaz de exercer seu papel. É assim, respeitando o processo democrático e trabalhando dentro das instituições, que vamos fortalecer o sistema de freios e contrapesos que sustenta a nossa democracia\", completou.",
+        "No documento, Flávio informou que está nos Estados Unidos com a família e afirmou que está em segurança. Sem provas, o senador acusou suposta fraude eleitoral e questionou a legitimidade do resultado das urnas.",
+        "Na primeira versão da carta, divulgada nas redes sociais, Flávio se declarou o “verdadeiro presidente do Brasil” e o “presidente eleito”. Posteriormente, publicou uma segunda versão em que substituiu essas expressões por “líder do Brasil” e “líder”.",
+        "Na carta, Flávio também atacou o Judiciário, alegou a existência de um “regime de exceção” e de “perseguição política” contra sua família. Ele negou que sua saída do Brasil represente uma fuga e comparou sua ida ao exterior a episódios de exílio político de figuras históricas.",
+        "Após fuga, Flávio apaga 1º post e se chama de 'líder do Brasil'",
+        "As declarações do senador contrastam com o reconhecimento do resultado eleitoral pelo PL, partido ao qual é filiado. A legenda reconheceu o resultado das urnas e pediu esclarecimentos à Justiça Eleitoral.",
+        "Ataques ao sistema eleitoral e contestação do resultado",
+        "O senador afirmou que ter ocorrido uma \"impossibilidade matemática\" na votação do último domingo (25) e contestou decisões tomadas pela Justiça, especialmente pelo ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), durante a votação.",
+        "O ministro determinou a extensão por duas horas do horário de votação após pedidos – da coligação de Lula e da campanha do próprio Flávio Bolsonaro – de prorrogação em virtude de problemas no transporte público de eleitores e condições climáticas adversas.",
+        "Após as 17h do último domingo, menos de 35 mil votos foram registrados nas urnas até as 19h. A vantagem de Lula sobre Flávio Bolsonaro no Brasil foi de 4,4 milhões de votos.",
+        "Flávio Bolsonaro, no documento, defendeu a cassação da chapa eleita, de Lula e Geraldo Alckmin, e disse que vai liderar a oposição a partir dos Estados Unidos.",
+        "Trump sobre carta de Flávio Bolsonaro: 'Não vou me envolver'"
+      ],
+      "pontos": [
+        "Declarações de Ricardo Nunes pedindo serenidade institucional"
+      ]
+    },
+    "tcu-aliquota-cbs-2027-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/28/tcu-propoe-aliquota-de-113percent-para-o-futuro-imposto-sobre-consumo-do-governo-federal-em-2027-senado-tem-que-aprovar-valor.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "TCU propõe alíquota de 11,3% para o imposto federal sobre consumo a partir de 2027",
+      "resumo": [
+        "O Tribunal de Contas da União apresentou sua proposta técnica estabelecendo em 11,3% a alíquota da Contribuição sobre Bens e Serviços (CBS), que integrará o sistema de IVA dual da reforma tributária. O cálculo visa à neutralidade arrecadatória federal e agora seguirá para análise e votação formal pelo Senado Federal."
+      ],
+      "texto_integral": [
+        "O plenário do Tribunal de Contas da União (TCU) aprovou nesta quarta-feira (28) uma proposta para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
+        "O cálculo foi feito por técnicos do tribunal com base em dados da Receita Federal. O valor será encaminhado ao Congresso Nacional, que poderá concordar ou não. Caberá ao Senado fixar o valor final da alíquota, que será cobrada a partir de 2027. Se o Senado não aprovar uma alíquota até 15 de dezembro, terá validade o valor calculado pelo TCU.",
+        "▶️Para calcular o valor da CBS, técnicos do tribunal estimaram quanto seria arrecadado com os impostos que estão sendo extintos no fim de 2026 (PIS, Cofins e grande parte do IPI).",
+        "Isso porque, uma das premissas da reforma sobre o consumo, é manter o atual patamar da carga tributária. O governo informou, na proposta de orçamento de 2027, que espera arrecadar R$ 636 bilhões com a CBS no ano que vem.A proposta do TCU também engloba um \"redutor\" de 44,2% na alíquota de referência da CBS, e alíquotas reduzidas para alguns produtos e serviços, nas compras públicas.",
+        "🔎 O TCU é responsável por analisar e homologar os cálculos das alíquotas de referência da CBS e do Imposto sobre Bens e Serviços (IBS), etapas previstas na transição para o novo sistema tributário brasileiro, aprovada pelo Congresso Nacional em 2023.",
+        "🔎A CBS substituirá o PIS, a Contribuição para Financiamento da Seguridade Social (Cofins) e, também, uma parte do Imposto Sobre Produtos Industrializados (IPI).",
+        "🔎 PIS e Cofins serão extintas em 2026, enquanto o IPI permanecerá somente para itens produzidos na Zona Franca de Manaus (ZFM) — mas com tributação efetiva somente no resto do país.",
+        "🔎 Em 2024, o governo estimou que a alíquota da CBS seria de 8,8%. Entretanto, nos meses seguintes foram feitas novas exceções à cobrança do imposto cheio que elevaram a alíquota.",
+        "🔎 A área econômica não fez nova projeção, mas cálculo da consultoria Roit aponta para uma alíquota de 9,43% em 2027.",
+        "🔎 Estimativas divulgadas em julho pelo Comitê Gestor do IBS, dos estados, apontam que a CBS teria uma taxa de cerca de 9,2% no próximo ano.",
+        "Além da CBS do governo federal, a reforma tributária também contempla a cobrança do IBS estadual e municipal, que terá uma alíquota marginal, de 0,1% em 2027 e em 2028.",
+        "A partir de 2029, os estados e municípios começam a aumentar, gradualmente, a cobrança do IBS, até 2032. A cobrança integral começa em 2033.",
+        "Assim que a alíquota cheia estiver sendo cobrada, estimativas apontam que o imposto sobre o consumo do governo federal, estados e municípios, somará cerca de 28% em 2033 — o primeiro ano com tributação cheia — uma das maiores alíquotas do mundo.",
+        "O valor, que supera o teto existente de 26,5%, ficaria acima do registrado nos países ricos.",
+        "Esse será o nível necessário para manter a atual carga tributária sobre o consumo, ou seja, o peso dos impostos sobre essa base de tributação.Tributos altos sobre o consumo, por sua vez, penalizam a população de baixa renda — uma vez que uma parte maior de sua renda é destinada aos impostos.",
+        "➡️O governo federal, por sua vez, alega que, atualmente, os impostos cobrados sobre o consumo no país são ainda maiores, com tributação média de cerca de 34% – há dificuldade em calcular o peso dos impostos pois o sistema é muito complexo, há exceções, e os tributos incidem sobre si mesmos. Com a reforma tributária, eles passarão a ser cobrados por fora (aparecerão separados do valor do produto ou serviço).",
+        "Benefícios elevam alíquota para todos",
+        "A aprovação de exceções à alíquota cheia dos futuros impostos sobre o consumo durante a tramitação da reforma tributária no Congresso Nacional, ou seja, de benefícios para setores e produtos, é uma das responsáveis pelo elevado nível da tributação estimada para os futuros impostos — algo que foi apontado, à época, por exemplo, pela indústria nacional.",
+        "A explicação é que, quanto maior é o número de exceções, ou regimes diferenciados — com tratamento favorecido —, mais alta é a chamada \"alíquota padrão\", ou seja, que os demais setores da economia, não englobados por benefícios, têm de pagar.Isso por conta da determinação da reforma de manter o atual patamar da carga tributária — valor que se arrecada em proporção ao PIB. Com setores e produtos beneficiados por exceções aprovadas pelo Legislativo, com tributação menor, todo os consumidores pagam a mais na alíquota normal (chamada de padrão).",
+        "Entre os benefícios aprovados na tramitação da reforma tributária, estão alíquota zero para a cesta básica, incluindo as proteínas (o que, segundo especialistas, beneficia a população mais rica), para uma lista de medicamentos e dispositivos médicos.",
+        "O Congresso aprovou ainda alíquotas reduzidas para serviços de educação e saúde; medicamentos e dispositivos médicos; produções artísticas, culturais, jornalísticas e audiovisuais nacionais; atividades desportivas; e profissões regulamentadas e fiscalizadas por conselhos profissionais.",
+        "Esses dois novos impostos que serão implementados gradualmente até 2032 funcionarão no modelo de imposto sobre valor agregado (IVA), como acontece no resto do mundo, de maneira não cumulativa.",
+        "Isso significa que, ao longo da cadeia de produção, o imposto é cobrado em cada etapa, mas os contribuintes podem descontar o tributo pago anteriormente.",
+        "Por exemplo: se o IVA for de 20%, um produto vendido ao consumidor final por R$ 100 terá imposto de R$ 20, que, ao final da cadeia, totalizará R$ 20, após os mecanismos de crédito e compensação entre as diferentes empresas da produção e comercialização.",
+        "Outra mudança é que os tributos sobre o consumo (IVA) serão cobrados no \"destino\", ou seja, no local onde os produtos são consumidos, e não mais onde eles são produzidos. A migração da origem para o destino será feita de forma gradual durante décadas.",
+        "Isso contribuirá para combater a chamada \"guerra fiscal\", nome dado a disputa entre os estados para que empresas se instalem em seus territórios. Para isso, intensificam a concessão de benefícios fiscais.",
+        "Além dos tributos não cumulativos do governo, estados e municípios, a reforma tributária prevê, ainda, a cobrança do chamado \"imposto seletivo\", também chamado de imposto do pecado.",
+        "Para que tenha validade, esse novo tributo ainda tem de ser regulamentado. Nesta terça-feira (27), o ministro da Fazenda, Dario Durigan, afirmou que a proposta para o imposto seletivo será enviada ao Congresso Nacional em breve, provavelmente ainda nesta semana.",
+        "O imposto do pecado começará a ser cobrado em 2027 e tem o objetivo de encarecer produtos ou atividades que causam danos à saúde ou ao meio ambiente.",
+        "A lista inclui bebidas alcoólicas, refrigerantes e cigarros. O novo imposto também incidirá sobre alguns veículos, conforme o nível de poluição, sobre a extração de bens minerais e sobre loterias, apostas e jogos de fantasy sports.",
+        "Em junho, o Ministério da Fazenda informou que a ideia é manter, pelo menos em um primeiro momento, a carga tributária atual, sem aumento dos impostos durante a transição. Nesse período, o governo pretende discutir as mudanças com os setores afetados.",
+        "Para 2027, a equipe econômica estima arrecadar R$ 41,9 bilhões com esse tributo, segundo a proposta de Orçamento enviada ao Congresso.",
+        "O TCU informou que essa projeção do governo federal foi considerada para manter a atual carga tributária sobre o consumo.",
+        "No futuro, porém, o objetivo do governo é aumentar a tributação sobre produtos ou atividades que causam danos à saúde ou ao meio ambiente, para desestimular seu consumo."
+      ],
+      "pontos": [
+        "Proposta do TCU encaminhada para a deliberação dos senadores"
+      ]
+    },
+    "caso-master-indiciamento-pf-g1.globo.com/df/distrito-feder": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/diretoria-do-brb-foi-alertada-sobre-falhas-em-90percent-de-carteira-do-master-em-2024-diz-relatorio-da-pf.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "PF indicia 15 pessoas no Caso Master por fraudes bancárias envolvendo carteira do BRB",
+      "resumo": [
+        "O relatório final da Polícia Federal indiciou o banqueiro Daniel Vorcaro, o ex-presidente do Banco de Brasília (BRB) e outras 13 pessoas no inquérito principal sobre desvios e negociações irregulares. A apuração revelou que alertas internos apontavam inconformidades em até 90% dos contratos da carteira negociada entre as instituições já em 2024."
+      ],
+      "texto_integral": [
+        "PF indicia Vorcaro, ex-presidente do BRB e mais 13 no caso Master",
+        "A diretoria do Banco de Brasília (BRB) recebeu, ainda em agosto de 2024, um alerta interno sobre problemas nas carteiras de crédito adquiridas do Banco Master.",
+        "A informação consta no relatório parcial da investigação da Polícia Federal que apura esquemas relacionados ao Banco Master e ao Banco de Brasília (BRB).",
+        "Na ocasião, um gerente informou que aproximadamente 90% da carteira recebida do Master apresentava falhas ou não atendia aos critérios exigidos pelo BRB.",
+        "Apesar dos problemas identificados, as operações entre as duas instituições continuaram posteriormente.",
+        "O dado mostra que questionamentos sobre a qualidade dos ativos negociados já circulavam internamente no banco brasiliense em 2024, envolvendo:",
+        "inconsistências de dados;falhas de governança;deficiências de compliance;e possível irregularidade na originação dos créditos.",
+        "O documento aponta ainda que a presidência do banco pressionou pela aprovação de novas compras.",
+        "PF ouve Vorcaro e ex-presidente do BRB sobre Banco Master",
+        "O BRB – que tem como acionista majoritário o governo do DF – enfrenta uma crise marcada por perdas bilionárias ligadas a operações com o extinto Banco Master. Paulo Henrique Costa, Daniel Vorcaro e Augusto Lima foram alvo de diferentes fases da Operação Compliance Zero, que investiga os negócios do Banco Master. Costa e Vorcaro estão presos.O BRB tentou comprar o Master e chegou a injetar R$ 16,7 bilhões no banco de Vorcaro. A compra foi barrada pelo Banco Central e, depois, o BRB descobriu que parte das carteiras compradas era fraudulenta e sem lastro.",
+        "BRB identificava problemas, mas operações com o Master continuaram",
+        "Em diferentes análises internas, grande parte dos ativos oferecidos pelo Banco Master era eliminada por não atender aos critérios adotados pelo BRB.",
+        "Em alguns casos, apenas uma pequena parte dos créditos passava pelos filtros do banco. Apesar disso, as negociações continuaram e, segundo os investigadores, alguns critérios de avaliação foram posteriormente alterados, aumentando o volume de créditos que poderia ser aceito.",
+        "\"Mesmo diante da reiterada rejeição dos ativos apresentados, a orientação não foi interromper as aquisições, mas exigir que o MASTER encontrasse novos créditos que permitissem a continuidade das operações\", destaca o documento.",
+        "A PF chama atenção para a responsabilidade da diretoria Diretoria Colegiada (DICOL) do BRB de barrar negociações com informações incompletas e inconformidade com as normas. A investigação, no entanto, mostra que 13 das 14 notas executivas — documento que iniciava o processo de aquisição — foram aprovadas antes mesmo da conclusão dos pareceres técnicos.",
+        "Outra informação em destaque no relatório é o fracionamento das aquisições das carteiras. A manobra ocorre porque o DICOL só pode deliberar compra e venda de carteiras com valor máximo de R$ 750 milhões.",
+        "Segundo o relatório, o colegiado aprovou 25 transações, que totalizam R$ 17,5 bilhões. Dessas, 21 foram fixadas em exatos R$ 750 milhões, valor máximo para deliberação. Montante corresponde a 23,3 vezes o limite de negociação da DICOL.",
+        "Veja abaixo quem são os 15 indiciados pela Polícia Federal no relatório desta quarta:",
+        "Daniel Vorcaro, ex-dono do Banco Master;Paulo Henrique Costa, ex-presidente do BRB;Augusto Lima, ex-sócio de Vorcaro no Banco Master;Angelo Antônio Ribeiro da Silva, ex-diretor do Master;Luiz Antônio Bull, ex-diretor do Master;Alberto Félix de Oliveira Neto, ex-diretor do Master;Allan da Silva Machado, ex-procurador do Master;Henrique Souza e Silva Peretto, sócio da Tirreno;André Felipe de Oliveira Seixas Maia, sócio da Tirreno;Daniel Lopes Monteiro, ex-advogado do Master;Dario Oswaldo Garcia Junior, ex-diretor de Finanças e Controladoria do BRB;Luana de Andrade Ribeiro, ex-diretora executiva de Controle e Riscos do BRB;Cristiane Maria Lima Bukowitz, ex-diretora executiva de gestão de pessoas do BRB;Diogo Ilário de Araújo Oliveira, ex-diretor executivo de Atacado e Governo do BRB;José Maria Correa Dias Junior, ex-diretor executivo de Tecnologia do BRB.",
+        "seis ex-sócios ou ex-gestores do Banco Master;dois sócios da Tirreno, firma de consultoria apontada pela PF como empresa de fachada para o esquema;sete ex-gestores do BRB.",
+        "O g1 e a TV Globo tentam contato com as defesas dos citados.",
+        "\"A defesa de Daniel Vorcaro tomou conhecimento do relatório parcial apresentado pela Polícia Federal no Inquérito nº 5026/STF, que promove o indiciamento de Daniel. Trata-se de um ato açodado e afoito, que antecipa conclusões que a própria investigação admite ainda não ter alcançado:",
+        "● Indiciamento antes do fim da investigação: no mesmo documento em que indicia, a autoridade policial pede ao Supremo Tribunal Federal mais 60 dias para prosseguir nas apurações. Reconhece que exames periciais seguem “em elaboração”, que parte do material apreendido não foi analisada e que pessoas relevantes sequer foram ouvidas. Indicia-se primeiro para investigar depois.",
+        "● Inexistência de prejuízo ao BRB: o negócio envolvendo as carteiras da Tirreno não foi concluído. As carteiras foram substituídas por outros ativos, e a troca realizada demonstra que os negócios entre o Banco Master e o BRB geraram resultados positivos para o Banco de Brasília. Nenhuma perícia oficial apurou qualquer prejuízo: os números citados no relatório vêm da petição inicial de uma ação indenizatória movida pelo próprio BRB, que é parte interessada, e a própria Polícia Federal reconhece que não teve acesso ao resultado da auditoria sobre os ativos entregues em substituição. A defesa já pediu, na esfera cível, a perícia que sepultará definitivamente a narrativa fantasiosa de fraude e prejuízo.",
+        "● Lavagem de dinheiro sem rastreamento de recursos: o relatório imputa lavagem de capitais, mas registra que ainda está pendente a análise bancária, fiscal e patrimonial destinada a “identificar eventual proveito econômico” e “rastrear os fluxos financeiros”. Imputa-se a ocultação de valores cujo caminho sequer foi examinado.",
+        "● Indiciamento frágil e absurdo: as conclusões se apoiam em leitura seletiva de mensagens e em hipóteses formuladas “em tese”, e não em demonstração técnica. São operações embasadas em decisões técnicas e colegiadas das instâncias de governança de duas instituições supervisionadas pelo Banco Central. Agora são retratadas como crime sem que se tenha aferido seu resultado econômico.",
+        "● O depoimento que não vazou: Daniel Vorcaro prestou à Polícia Federal esclarecimentos decisivos sobre as operações com o BRB. Foi um depoimento esclarecedor e, curiosamente, justamente ele não foi vazado.",
+        "● Arquivamento do Inquérito e Revogação da Prisão: sem prova técnica de fraude ou de prejuízo, o indiciamento não se sustenta, e o inquérito relativo às operações entre o Banco Master e o BRB deve ser arquivado. Nesse contexto, torna-se urgente e imperativa a revogação da prisão preventiva de Daniel Vorcaro, garantindo-se seu direito de responder em liberdade. Brasília, 28 de outubro de 2026.\"",
+        "\"A defesa de Paulo Henrique Costa, ex-Presidente do BRB, recebeu com surpresa o seu indiciamento pelos crimes de gestão fraudulenta e de organização criminosa. Pesa dizer que o trabalho policial submeteu os fatos às hipóteses acusatórias, quando deveria fazer o inverso.",
+        "As conversas em aplicativos de mensageria nos celulares dos integrantes do ambiente Master mostram às escâncaras que Paulo Henrique não tinha conhecimento das fraudes nas carteiras. As testemunhas, sejam as ligadas ao BRB, sejam ao Master, são convergentes nesse tema. Também foram ignorados todos os documentos carreados aos autos, inclusive por autoridades públicas, como o Banco Central.",
+        "Há prova eloquente de que foi Paulo Henrique a detectar irregularidades nas carteiras; de que ele exigiu, passo contínuo, 25 bilhões de garantias; de que quando o nome da Tirreno vem à lume, as operações são suspensas; há centenas e centenas de mensagens de Paulo Henrique ao Master exigindo a substituição de ativos, na forma dos contratos, inclusive se valendo daqueles dados em garantia. Foi Paulo Henrique quem trouxe o fato ao conhecimento do Banco Central, a quem se participaram todos os passos, antes e depois da detecção da fraude.",
+        "Curiosamente, não se aponta nenhuma vantagem financeira de Paulo Henrique; a fantasiosa versão de recepção de apartamentos, na ordem de 150 milhões de reais, foi amplamente descartada, embora tenham fundamentado a prisão preventiva a que ainda está submetido, já há mais de 180 dias, sem revisão judicial, em ofensa a previsão expressa do Código de Processo Penal. Há pedido de liberdade provisória desde 12 de junho, pendente de opinião da PGR; há habeas corpus impetrado há 20, sem sequer remessa ao MPF.",
+        "Paulo Henrique seguiu as orientações do acionista majoritário de realizar operação societária com o Master, seguiu toda a governança, dividiu todos os passos com o Conselho de Administração e com o Banco Central. Sempre atuou no melhor interesse do BRB. Todas as decisões, importante frisar, eram colegiadas; o Presidente do BRB tinha alçada de zero reais. Nenhuma decisão foi tomada por ele, sozinho.",
+        "As autoridades usam enviesado microscópio na carteira de 12,2 bi - dos quais 10,5 bi foram substituídos por ativos hígidos, até sua remoção do cargo - e esquecem que a relação com o Master gerou 8 bilhões de reais de receitas; e seguem gerando, diga-se.",
+        "Quando Paulo Henrique foi erradamente removido do BRB, o banco era saudável, líquido, rentável, com marca positiva e líder em diversos segmentos; sempre cumpriu seu relevante papel de banco público. Paulo Henrique sempre leal ao BRB e defendeu seu interesse; e seguiu fazendo na relação com o Master.",
+        "Paulo Henrique e sua defesa seguem acreditando na Justiça e que a Procuradoria-Geral da República saberá reconhecer a totalidade dos elementos contidos nos autos; uma leitura idônea levará o Ministério Público Federal a descartar as hipóteses de gestão fraudulenta e a igualmente estapafúrdia conclusão de que Paulo Henrique integraria uma organização criminosa.\"",
+        "A defesa de Augusto Lima rechaça integralmente a conclusão do relatório parcial. A documentação e os esclarecimentos apresentados por Augusto Lima demonstram, de forma veemente, que ele não participou, direta ou indiretamente, da fraude mencionada.",
+        "A conclusão equivocada da Autoridade Policial em relação a Augusto Lima decorre da leitura enviesada de esparsas e aleatórias mensagens de texto, temporalmente desconectadas entre si.",
+        "A defesa ressalta que se trata de conclusão apresentada em relatório parcial de investigação, que não constitui denúncia do Ministério Público nem condenação judicial. A presunção de inocência é uma garantia constitucional e deve ser respeitada, sem antecipação de culpa.",
+        "A defesa reforça que confia no Poder Judiciário e que demonstrará, mais uma vez, o erro de premissa adotado pela Autoridade Policial, o que, inequivocamente, levará à exclusão de Augusto Lima da investigação.",
+        "Leia mais notícias sobre a região no g1 DF."
+      ],
+      "pontos": [
+        "Alertas ignorados sobre problemas em 90% da carteira do Master"
+      ]
+    },
+    "garantia-governo-correios-7-bi-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/28/passadas-eleicoes-governo-federal-concede-garantia-para-emprestimo-de-r-7-bilhoes-de-consorcio-de-bancos-aos-correios.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Governo concede garantia para empréstimo de R$ 7 bilhões de consórcio aos Correios",
+      "resumo": [
+        "Encerrada a disputa eleitoral, o Ministério da Fazenda autorizou a garantia soberana da União para uma operação de crédito de R$ 7 bilhões contratada pelos Correios junto a um sindicato bancário. O aporte visa equacionar o fluxo de caixa da estatal e financiar compromissos de modernização operacional e logística."
+      ],
+      "texto_integral": [
+        "O governo federal concedeu garantia de R$ 7 bilhões para empréstimo de um consórcio de bancos aos Correios, dentro do processo de reestruturação previsto para o período de 2025 a 2027.",
+        "O ato foi formalizado após a conclusão do segundo turno das eleições presidenciais, realizado neste domingo (25), que terminou com a vitória do candidato petista Luiz Inácio Lula da Silva.",
+        "A medida consta em despacho do ministro da Fazenda, Dario Durigan, publicado no Diário Oficial da União.",
+        "O consórcio de bancos, formado por pelo ABC Brasil, Citibank, Deutsche Bank e pelo JP Morgan, com isso, tem a garantia de que vai receber as parcelas do empréstimo do Tesouro Nacional — no caso de os Correios não honrarem o compromisso.",
+        "O novo empréstimo, no valor de R$ 7 bilhões, já havia sido confirmado pelos Correios nas demonstrações financeiras do 1º semestre deste ano, divulgadas no final de agosto.",
+        "Em setembro, os Correios informaram ao g1 que o empréstimo saísse ainda naquele mês, algo que não aconteceu, sendo formalizado apenas após o segundo turno da eleições para presidente da República. Na ocasião, a estatal também confirmou o compromisso firmado com o governo federal para o aporte de R$ 6 bilhões na empresa até o final de 2027.",
+        "Os Correios estão há 15 trimestres seguidos no vermelho. No primeiro semestre deste ano, a empresa fechou com um prejuízo de R$ 5,6 bilhões.",
+        "O prejuízo do 2º trimestre é menor do que o obtido pela empresa nos últimos dois trimestres, o 1º deste ano e o 4º trimestre de 2025, apontando um pequeno movimento de recuperação da saúde financeira dos Correios, que teve um prejuízo recorde no 1º trimestre de 2026.",
+        "O resultado dos Correios tem contribuído para o rombo das estatais federais, que somou R$ 6,51 bilhões nos oito primeiros meses deste ano, segundo dados do Banco Central. O resultado, que é recorde na parcial deste ano, fica próximo do maior rombo já contabilizado para um ano fechado (-R$ 6,73 bilhões em 2024).",
+        "Para enfrentar rombo financeiro, o governo autorizou, em maio deste ano, a estatal a vender seguros, títulos de capitalização e a atuar no mercado de telefonia. A ideia é que a empresa faça convênios com instituições financeiras para ofertar os serviços. De acordo com o Ministério da Gestão, os Correios executam um plano de reequilíbrio financeiro e reestruturação."
+      ],
+      "pontos": [
+        "Concessão do aval da União para pacote de crédito aos Correios"
+      ]
+    },
+    "motta-reforma-sistema-distrital-redes-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/28/motta-diz-que-camara-vai-debater-mudanca-para-sistema-distrital-misto-e-regras-para-propaganda-eleitoral-nas-redes.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Hugo Motta anuncia debate sobre voto distrital misto e regulação de propaganda digital",
+      "resumo": [
+        "O deputado Hugo Motta afirmou que a Câmara dos Deputados colocará na pauta legislativa a transição para o modelo eleitoral distrital misto e a criação de novas balizas para campanhas em plataformas digitais. O parlamentar reúne amplo apoio partidário para sua recondução ao comando da Casa com suporte de bancadas da situação e oposição."
+      ],
+      "texto_integral": [
+        "O presidente da Câmara, Hugo Motta (Republicanos-PB), anunciou nesta quarta-feira (28) que a Casa vai abrir debates para alterar o sistema eleitoral proporcional brasileiro para o modelo distrital misto, com implementação definitiva prevista para 2034.",
+        "🔎O sistema distrital misto combina a escolha de parlamentares por votação majoritária nos distritos locais com a distribuição de vagas por votação em listas partidárias pré-ordenadas.",
+        "🔎No sistema proporcional atual, as cadeiras do Legislativo são distribuídas aos partidos conforme o total de votos recebidos pela legenda e por seus candidatos (quociente eleitoral), sendo ocupadas pelos nomes mais votados de cada sigla.",
+        "Além disso, a Câmara criará um grupo de trabalho para elaborar, em até duas semanas, regras para a propaganda eleitoral em plataformas digitais e redes sociais.",
+        "As diretrizes foram definidas durante reunião com dirigentes e parlamentares de siglas de centro e com a presença dos presidentes do Republicanos, Marcos Pereira; Podemos, Renata Abreu; do União Brasil, Antonio Rueda; e do PSD, Gilberto Kassab. O presidente do PSB, João Campos, também participou.",
+        "A meta é iniciar a discussão e, eventualmente, se houver consenso, realizar a votação no plenário ainda neste ano.",
+        "Segundo Motta, a implementação deve ser feita a médio prazo para vencer \"resistências\" no Congresso:",
+        "Em 2030, a eleição servirá como etapa intermediária com um modelo de transição, cujos detalhes técnicos ainda serão debatidos com as bancadas;Em 2034, vigência plena nas eleições para o Legislativo.",
+        "A mudança, se aprovada, alcançará Câmara dos Deputados, assembleias legislativas e câmaras de vereadores, sem alterações no modelo majoritário, ou seja, as cadeiras da Presidência da República, governos estaduais, prefeituras e Senado.",
+        "🔎O sistema distrital misto busca equilibrar a representação regional e a proporcionalidade partidária.",
+        "\"Nós temos também a consciência de que precisaremos levar em consideração uma Proposta de Emenda à Constituição (PEC). Nós queremos fazer essa construção por PEC, pois ela traz mais segurança jurídica e, claro, mais legitimidade do ponto de vista do Parlamento para fazer uma mudança estruturante\", afirmou Hugo Motta.",
+        "O presidente da Câmara destacou que, a partir do consenso firmado com o bloco de centro, vai procurar os partidos da esquerda — como a federação PT/PCdoB/PV, o PSOL e a Rede — e da direita — como o PL e o Novo.",
+        "Ele também disse que terá uma reunião nesta quarta com o presidente do Senado, Davi Alcolumbre (União-AP), para tratar de um alinhamento prévio. Ele declarou que o fato de a medida se restringir à escolha proporcional, ou seja, não atinge senadores, facilita o entendimento entre as duas Casas.",
+        "Regras eleitorais para redes sociais",
+        "Motta também anunciou a vontade dos partidos de modernizar o Código Eleitoral para disciplinar o uso das redes sociais nas campanhas.",
+        "Um grupo de trabalho com um representante de cada partido terá 15 dias para elaborar um texto final. A intenção é acelerar a discussão para possibilitar a aprovação da matéria na Câmara e no Senado ainda este ano.",
+        "\"Nós sabemos hoje que a propaganda eleitoral tem regra no que diz respeito ao material físico, tem regra no que diz respeito às TVs, às rádios. Entendemos que, nas redes sociais e plataformas, precisamos também ter regras claras que garantam paridade de armas e um sistema transparente e isonômico\", declarou.",
+        "Motta disse que a iniciativa não pretende \"tolher absolutamente ninguém\", nem \"censurar\" manifestações nas plataformas digitais.",
+        "O objetivo, segundo o deputado paraibano, é garantir previsibilidade e transparência para evitar que candidatos ou legendas obtenham vantagens desproporcionais."
+      ],
+      "pontos": [
+        "Declarações de Motta sobre prioridades eleitorais e redes na Câmara"
+      ]
+    },
+    "lincoln-gakiya-seguranca-publica-g1.globo.com/sp/presidente-pru": {
+      "url": "https://g1.globo.com/sp/presidente-prudente-e-regiao/noticia/2026/10/28/promotor-lincoln-gakiya-conhecido-por-repressao-ao-pcc-e-cotado-para-ministerio-da-seguranca-de-lula.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-28",
+      "titulo": "Promotor Lincoln Gakiya é cotado para assumir pasta da Segurança no novo mandato de Lula",
+      "resumo": [
+        "O promotor paulista Lincoln Gakiya, histórico integrante do Gaeco e referência nacional no combate a facções criminosas, passou a figurar entre os principais nomes cotados para chefiar a futura pasta dedicada exclusivamente à Segurança Pública. O desenho institucional integra as negociações de transição para acomodar especialistas e ampliar a resposta federal ao crime organizado."
+      ],
+      "texto_integral": [
+        "Promotor Lincoln Gakiya é cotado para Ministério da Segurança de Lula",
+        "O promotor de Justiça do Grupo de Atuação Especial de Repressão ao Crime Organizado (Gaeco) de Presidente Prudente (SP), Lincoln Gakiya, conhecido pela atuação no combate ao Primeiro Comando da Capital (PCC), está entre os cotados para assumir o Ministério da Segurança Pública, caso a pasta seja criada no governo de Luiz Inácio Lula da Silva (PT).",
+        "O g1 apurou que, na semana passada, dias antes do segundo turno das eleições, Gakiya participou de um jantar na casa do advogado Marco Aurélio de Carvalho, coordenador da campanha de Lula no estado de São Paulo. Durante o encontro, o promotor foi consultado sobre os principais desafios da segurança pública e compartilhou experiências no combate ao crime organizado.",
+        "📲 Participe do canal do g1 Presidente Prudente e Região no WhatsApp",
+        "Procurado pelo g1, Gakiya informou que não houve convite oficial e, por isso, prefere não comentar sobre o assunto.",
+        "A informação foi confirmada por Marco Aurélio de Carvalho, que ressaltou, porém, que não houve convite formal para que o promotor assumisse a pasta. Até o momento, Lula também não autorizou que interlocutores façam convites formais ou informais para o cargo.",
+        "Ainda de acordo com a apuração, Gakiya teria sinalizado, durante o jantar, que estaria à disposição caso recebesse um convite para assumir a missão.",
+        "A criação do Ministério da Segurança Pública depende da aprovação da PEC da Segurança Pública pelo Congresso Nacional. O governo Lula pretende criar a pasta após a conclusão da tramitação da proposta, que teve a votação concluída na Comissão de Constituição e Justiça (CCJ) do Senado e seguiu para análise do plenário.",
+        "No encontro, os participantes também pediram que o promotor compartilhasse sua experiência de cerca de 30 anos no Ministério Público de São Paulo (MP-SP), com atuação dedicada ao combate ao PCC, uma das maiores facções criminosas do país.",
+        "Gakiya é considerado um dos principais investigadores do crime organizado no Brasil. Há anos, ele vive sob escolta armada 24 horas por dia devido às ameaças recebidas em decorrência de suas investigações sobre a facção.",
+        "Além dele, outro nome cotado para o futuro ministério é o do ex-ministro da Educação Camilo Santana (PT). A escolha de Lula poderá recair tanto sobre um nome com perfil técnico, ligado à atuação policial ou ao MP, quanto sobre alguém com maior experiência política.",
+        "Professora do interior de SP transcreverá termo de posse presidencial pela 2ª vez: 'Maior legado'Motociclista com 79 passagens sem pagar pedágio é interceptado e multado no interior de SPMesmo com ordem judicial, ciclofaixa em frente a casas continua pintada em rua da zona norte de Prudente",
+        "O promotor faz parte do Gaeco do Ministério Público de São Paulo em Presidente Prudente, no interior paulista. Gakiya assumiu a Promotoria de Justiça da Comarca da cidade em 1996, para onde foi mandada a cúpula do PCC dez anos depois.",
+        "Em entrevista ao programa Conversa com Bial, exibido pela Rede Globo em julho, Gakiya comparou o isolamento social vivenciado por ele e pelos membros de sua família ao dos integrantes da facção criminosa investigada por ele há 20 anos.",
+        "O representante do MP na região de Presidente Prudente recebeu o primeiro decreto de morte, enquanto usufruía de uma licença-paternidade após o nascimento do segundo filho.",
+        "O episódio mais recente que confrontou a facção e o promotor ocorreu em fevereiro de 2019, quando promoveu a transferência de 22 chefes do PCC para presídios de segurança máxima.",
+        "Quando Moro era ministro da Segurança Pública, os governos federal e de São Paulo transferiram entre os presos, Marcos Willians Herbas Camacho, o Marcola.",
+        "À época, a operação foi realizada depois que o Ministério Público descobriu um plano da facção para resgatar os principais líderes que estão presos na Penitenciária 2 de Presidente Venceslau, no interior do estado. O promotor foi autor do pedido de transferência.",
+        "DESTAQUES G1 PRESIDENTE PRUDENTE E REGIÃO",
+        "Pai atira em filho após discussão por supostas agressões contra cachorro da família no interior de SP",
+        "Eleitor é levado à delegacia após manusear celular na cabine de votação em Martinópolis",
+        "Lula vence por apenas um voto em São João do Pau d'Alho, cidade do interior de SP com 2,2 mil habitantes",
+        "Veja mais notícias no g1 Presidente Prudente e Região",
+        "VÍDEOS: assista às reportagens da TV TEM"
+      ],
+      "pontos": [
+        "Articulações de bastidores sobre a indicação de Gakiya para a Segurança"
       ]
     }
   }
