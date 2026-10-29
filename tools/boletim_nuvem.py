@@ -134,7 +134,7 @@ def extrair_paragrafos_artigo(url):
 
 def chamar_gemini(itens_rss, edicao, data_iso, api_key):
     print(f"Chamando API do Gemini para curadoria da edição {edicao} ({data_iso})...")
-    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={api_key}"
 
     candidatos_txt = "\n".join([
         f"- [{item['canal']}] {item['titulo']} | URL: {item['url']}\n  Resumo: {item['descricao'][:180]}"
@@ -201,7 +201,8 @@ Candidatos apurados nas últimas horas:
     with request.urlopen(req, timeout=40, context=CTX) as resp:
         res_data = json.loads(resp.read().decode("utf-8"))
 
-    texto_resposta = res_data["candidates"][0]["content"]["parts"][0]["text"].strip()
+    parts = res_data["candidates"][0]["content"]["parts"]
+    texto_resposta = next((p["text"] for p in parts if "text" in p), "").strip()
     texto_resposta = re.sub(r"^```json\s*", "", texto_resposta)
     texto_resposta = re.sub(r"\s*```$", "", texto_resposta)
     return json.loads(texto_resposta)
