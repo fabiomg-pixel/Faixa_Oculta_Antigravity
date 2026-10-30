@@ -5271,6 +5271,145 @@
           "o_que": "Ministério da Fazenda e Tesouro Nacional detalham cronograma de planejamento fiscal e interlocução com comissões orçamentárias."
         }
       ]
+    },
+    "2026-10-30-noite": {
+      "data": "2026-10-30",
+      "edicao": "noite",
+      "titulo": "Tensão diplomática com Argentina e pressão fiscal marcam pós-eleição",
+      "resumo_dia": "O cenário político pós-segundo turno segue conflagrado pelos desdobramentos da fuga de Flávio Bolsonaro para os Estados Unidos, levando o Itamaraty a cobrar explicações formais da embaixada argentina sobre a travessia de fronteira. No Congresso, Davi Alcolumbre pautou a votação da PEC da Segurança Pública para conter tensões institucionais, enquanto o presidente da Câmara articula a reforma eleitoral distrital mista. No front econômico, o Banco Central revelou que a dívida bruta alcançou 82,9% do PIB, elevando a urgência de cortes fiscais para a sustentabilidade orçamentária do próximo mandato.",
+      "notas": [
+        {
+          "id": "itamaraty-convoca-argentina-fuga-flavio",
+          "editoria": "Política",
+          "titulo": "Itamaraty convoca diplomata da Argentina após fuga de Flávio Bolsonaro",
+          "texto": "O Ministério das Relações Exteriores convocou o representante da Embaixada da Argentina para prestar esclarecimentos formais sobre a passagem do senador Flávio Bolsonaro pela fronteira terrestre entre os dois países. O parlamentar, derrotado nas urnas no último domingo, descumpriu restrições judiciais e utilizou solo argentino para embarcar rumo aos Estados Unidos. A diplomacia brasileira busca apurar eventuais omissões ou facilitação por parte de autoridades do país vizinho.",
+          "por_que_importa": "O caso abre uma crise bilateral com a administração de Javier Milei e testa a capacidade do governo federal em conter atritos diplomáticos na América do Sul sem desestabilizar acordos comerciais regionais.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Convocação formal de representante diplomático argentino pelo Itamaraty",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "alcolumbre-pec-seguranca-publica",
+          "editoria": "Política",
+          "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública no Senado",
+          "texto": "O presidente do Senado, Davi Alcolumbre, marcou para a próxima terça-feira a votação da Proposta de Emenda à Constituição (PEC) da Segurança Pública no plenário. A matéria pretende reestruturar competências federais e estaduais no combate ao crime organizado e padronizar procedimentos das polícias. A deliberação ocorre em meio a negociações políticas intensas entre governistas e a oposição para a composição das comissões temáticas.",
+          "por_que_importa": "A segurança pública desponta como a primeira grande arena de disputa legislativa pós-eleitoral, exigindo consenso federativo sobre financiamento e diretrizes operacionais de combate às facções.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Inclusão da PEC da Segurança na pauta de votações do Senado",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "divida-publica-recorde-setembro",
+          "editoria": "Economia",
+          "titulo": "Dívida pública atinge 82,9% do PIB após déficit de R$ 5,5 bilhões",
+          "texto": "As contas do setor público consolidado registraram déficit primário de R$ 5,5 bilhões em setembro, puxando a Dívida Bruta do Governo Geral para 82,9% do PIB, o patamar mais alto em cinco anos e meio. No acumulado das empresas estatais federais, o rombo atingiu o recorde de R$ 8,5 bilhões até setembro. Os números divulgados pelo Banco Central aumentam a cobrança do mercado por um ajuste estrutural imediato nos gastos obrigatórios.",
+          "por_que_importa": "A aceleração da trajetória da dívida limita a capacidade de investimento do Estado, pressiona a taxa de juros futura e condiciona os repasses a ministérios e universidades federais.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Divulgação dos dados de endividamento público e déficit consolidado pelo BC",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml"
+            },
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Déficit recorde registrado nas empresas estatais federais",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "concurso-unificado-2027-vagas",
+          "editoria": "Economia",
+          "titulo": "Governo prevê até 3 mil vagas para nova edição do CNU em 2027",
+          "texto": "O Ministério da Gestão e da Inovação informou que planeja ofertar até 3 mil vagas na edição de 2027 do Concurso Nacional Unificado (CNU). A efetivação do certame e o cronograma de provas continuam condicionados à aprovação do Projeto de Lei Orçamentária Anual no Congresso Nacional. A pasta avalia a reposição de quadros técnicos em áreas desidratadas por aposentadorias recentes.",
+          "por_que_importa": "Para instituições de ensino superior e pesquisa, a reposição de servidores técnico-administrativos e analistas é vital para recompor a estrutura operacional do serviço público federal.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Previsão de vagas e vinculação orçamentária do CNU 2027",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "hugo-motta-distrital-misto",
+          "editoria": "Política",
+          "titulo": "Hugo Motta articula votação do sistema distrital misto ainda este ano",
+          "texto": "O deputado Hugo Motta intensificou as negociações com líderes partidários para colocar em votação a proposta que implementa o sistema eleitoral distrital misto no Brasil antes do encerramento do ano legislativo. O modelo combina a eleição majoritária por distritos geográficos menores com a votação proporcional em lista partidária preordenada. A medida divide bancadas e pode alterar profundamente a correlação de forças parlamentares a partir das próximas disputas proporcionais.",
+          "por_que_importa": "Se aprovado, o distrital misto redefine as regras de financiamento partidário, barateamento de campanhas e a representatividade de grandes centros urbanos no Legislativo.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Articulação interna na Câmara dos Deputados para votar o distrital misto",
+              "url": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/30/hugo-motta-quer-votar-sistema-distrital-misto-ainda-neste-ano.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "pf-indicia-cupula-master-brb",
+          "editoria": "Economia",
+          "titulo": "PF indicia 15 investigados por fraudes bilionárias no Caso Master e BRB",
+          "texto": "A Polícia Federal concluiu o inquérito principal sobre desvios financeiros envolvendo o Banco Master e o Banco de Brasília (BRB), indiciando 15 pessoas, entre elas o banqueiro Daniel Vorcaro e o ex-presidente da instituição brasiliense. Relatórios técnicos apontam que dirigentes do BRB ignoraram alertas explícitos de auditoria sobre irregularidades em 90% das carteiras de crédito adquiridas. A defesa dos acusados contesta o relatório e alega que o prejuízo decorreu da repercussão das investigações.",
+          "por_que_importa": "O caso expõe a fragilidade de mecanismos de governança em bancos controlados por entes públicos e pode ensejar sanções regulatórias severas por parte do Banco Central.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Indiciamento de 15 investigados pela Polícia Federal no escândalo BRB-Master",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/pf-indiciamentos-vorcaro-master.ghtml"
+            },
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Alertas ignorados pela diretoria sobre carteiras podres de crédito",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/diretoria-do-brb-foi-alertada-sobre-falhas-em-90percent-de-carteira-do-master-em-2024-diz-relatorio-da-pf.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "estrategia-diplomatica-lula-4",
+          "editoria": "Política",
+          "titulo": "Governo planeja diplomacia pragmática diante de Washington e Buenos Aires",
+          "texto": "A equipe de transição da política externa do governo federal definiu uma estratégia de moderação para desarmar conflitos potenciais com Donald Trump e Javier Milei nos próximos anos. A ordem no Palácio do Planalto é evitar transformar incidentes políticos, como o asilo informal de parlamentares de oposição no exterior, em crises econômicas bilaterais. O foco prioritário recairá sobre pautas ambientais globais, atração de investimentos e manutenção do intercâmbio comercial sul-americano.",
+          "por_que_importa": "Garante estabilidade ao comércio exterior brasileiro e reduz o risco de barreiras tarifárias unilaterais em setores-chave como agronegócio e manufaturados.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Diretrizes de pragmatismo diplomático traçadas para a próxima gestão",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/lula-4-aposta-em-pragmatismo-para-lidar-com-trump-contornar-atritos-com-milei-e-ampliar-aliancas-no-mundo.ghtml"
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "Terça-feira, 03/11",
+          "o_que": "Votação em plenário da PEC da Segurança Pública pautada pela presidência do Senado."
+        },
+        {
+          "quando": "Ao longo da semana",
+          "o_que": "Prazo de 10 dias concedido pelo STF para manifestação da PGR sobre revisão criminal de Bolsonaro."
+        },
+        {
+          "quando": "Novembro/2026",
+          "o_que": "Negociações finais para votação do sistema eleitoral distrital misto na Câmara dos Deputados."
+        }
+      ]
     }
   },
   "cine_edicoes": {
@@ -22833,6 +22972,296 @@
       ],
       "pontos": [
         "Decisão do ministro Fachin no STF sobre atribuições no caso Master"
+      ]
+    },
+    "itamaraty-convoca-argentina-fuga-flavio-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Itamaraty convoca diplomata da Argentina após fuga de Flávio Bolsonaro",
+      "resumo": [
+        "O Ministério das Relações Exteriores convocou o representante da Embaixada da Argentina para prestar esclarecimentos formais sobre a passagem do senador Flávio Bolsonaro pela fronteira terrestre entre os dois países. O parlamentar, derrotado nas urnas no último domingo, descumpriu restrições judiciais e utilizou solo argentino para embarcar rumo aos Estados Unidos. A diplomacia brasileira busca apurar eventuais omissões ou facilitação por parte de autoridades do país vizinho."
+      ],
+      "texto_integral": [
+        "Itamaraty ouve diplomata argentina sobre fuga de Flávio Bolsonaro para os EUA",
+        "O Ministério das Relações Exteriores (Itamaraty) convocou a encarregada de Negócios da Embaixada da Argentina no Brasil, María Emilia Cortés, a prestar esclarecimentos sobre o contexto da fuga do senador Flávio Bolsonaro (PL) para os Estados Unidos nesta semana.",
+        "O governo da Argentina confirmou que o senador embarcou com a família em um avião particular que partiu da Argentina na noite de terça-feira (27).",
+        "María Emilia Cortés foi recebida na tarde desta quinta-feira (29) pelo chefe do Departamento do Mercosul do Itamaraty, João Marcelo Galvão de Queiroz, em Brasília.",
+        "Na conversa, o embaixador pediu a ela informações sobre a fuga do senador e, segundo diplomatas que participaram da reunião, María Emilia ficou de transmitir o que foi debatido ao governo de Javier Milei.",
+        "De acordo com diplomatas, o procedimento é praxe em casos desse tipo e não estão previstos desdobramentos no momento. No entanto, novos passos serão definidos à luz dos desdobramentos das apurações.",
+        "Internamente, o governo brasileiro decidiu fechar a posição de que o Brasil quer virar a página sobre a fuga do senador e não dar mais importância ao assunto.",
+        "Integrantes do governo já decidiram não entrar em discussões públicas com o governo argentino sobre o episódio.",
+        "Segundo o blog do colunista do g1 Valdo Cruz, o presidente Luiz Inácio Lula da Silva (PT) foi aconselhado por interlocutores a não falar mais em Flávio Bolsonaro (PL), focar em seu quarto mandato e deixar claro que o problema do senador é com o Judiciário.",
+        "Flávio Bolsonaro (PL-RJ) desembarcou nos Estados Unidos na quarta-feira (28) após fugir do Brasil com a esposa e as duas filhas.",
+        "A família viajou em um avião particular que partiu da Argentina e fez uma escala no Equador.",
+        "A rota começou ainda na noite de terça-feira (27), quando Flávio e a família entraram na Argentina após cruzarem a Ponte Internacional Tancredo Neves. A via liga Foz do Iguaçu, no Paraná, a Puerto Iguazú, na província argentina de Misiones.",
+        "Segundo a Direção Nacional de Migrações da Argentina, a família cruzou a fronteira às 22h50, pelo horário de Brasília.O órgão afirmou que os quatro apresentaram documentação válida para a viagem e não tinham nenhum impedimento legal para entrar no país.",
+        "Cerca de 40 minutos depois, às 23h30, Flávio e a família embarcaram em um jatinho particular do modelo Gulfstream G400, de matrícula LV-JQW. A aeronave pertence à Baires Fly, empresa argentina que realiza voos privados.",
+        "O avião decolou de Puerto Iguazú às 0h22 de quarta. A aeronave sobrevoou o Paraguai, a Bolívia e o Peru, evitando o espaço aéreo brasileiro. Às 5h46, pelo horário de Brasília, o jatinho pousou no aeroporto de Guayaquil, no Equador.",
+        "Flávio ficou menos de uma hora em solo equatoriano. O avião decolou novamente às 6h22, com destino aos Estados Unidos.",
+        "A viagem terminou às 10h24, horário de Brasília, quando o avião com o senador e a família pousou no Aeroporto Executivo de Fort Lauderdale, na Flórida. O terminal fica na região de Miami.",
+        "Voo de fuga de Flávio foi pago por intermediário a partir dos EUA, diz dono do avião",
+        "Flávio deixou o Brasil após o Supremo Tribunal Federal (STF) determinar que ele entregasse os passaportes à Polícia Federal.",
+        "A decisão foi dada em um processo no qual Flávio e o advogado Willer Tomaz são investigados por lavagem de dinheiro, em um suposto esquema que envolveria empresas de Tomaz e bets.Os dois confirmam que são amigos, mas negam ser sócios e ter cometido qualquer irregularidade.",
+        "Na terça-feira (27), um representante do Departamento de Estado dos EUA informou que o governo americano concederia vistos a Flávio Bolsonaro e à família e permitiria a entrada deles no país.",
+        "Uma consulta ao sistema da Alfândega e Proteção de Fronteiras dos Estados Unidos (CBP, na sigla em inglês) mostra que o senador recebeu autorização para permanecer por um ano no país.",
+        "Os registros mostram que Flávio foi admitido em uma categoria identificada pelo código \"DT\".",
+        "A sigla é usada para autorizações temporárias no país, geralmente ligadas a questões humanitárias.",
+        "O g1 procurou a agência para esclarecer o status migratório do senador, mas não obteve resposta até a última atualização desta reportagem.",
+        "A consulta mostrou ainda que Flávio utilizou um passaporte diplomático que havia sido cancelado para entrar nos Estados Unidos.",
+        "PF investiga como Flávio Bolsonaro descumpriu ordem de não deixar o Brasil",
+        "A Polícia Federal (PF) apontou riscos \"concretos e atuais\" de fuga ao pedir ao ministro Alexandre de Moraes, do STF, a apreensão do passaporte e a proibição de saída do país de Flávio Bolsonaro.",
+        "Na avaliação da PF, três elementos centrais indicavam que Flávio poderia deixar o Brasil sob a justificativa de suposta perseguição política:",
+        "a manifestação pública e direta do deputado cassado Eduardo Bolsonaro, recomendando ao irmão que deixasse o país;o expressivo poder econômico;a existência de estruturas já estabelecidas no exterior que poderiam viabilizar uma permanência prolongada.",
+        "O pedido da PF citou uma declaração de Eduardo Bolsonaro em que ele defendeu que o irmão deixasse o país caso fosse derrotado na disputa pelo Palácio do Planalto.",
+        "\"Em entrevista concedida recentemente nos Estados Unidos, EDUARDO BOLSONARO, irmão do Senador FLÁVIO BOLSONARO, defendeu publicamente que este deixe o país caso não obtenha êxito no pleito eleitoral. Cabe recordar que EDUARDO BOLSONARO foi recentemente condenado pelo crime de coação no curso do processo\", disseram os investigadores."
+      ],
+      "pontos": [
+        "Convocação formal de representante diplomático argentino pelo Itamaraty"
+      ]
+    },
+    "alcolumbre-pec-seguranca-publica-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública no Senado",
+      "resumo": [
+        "O presidente do Senado, Davi Alcolumbre, marcou para a próxima terça-feira a votação da Proposta de Emenda à Constituição (PEC) da Segurança Pública no plenário. A matéria pretende reestruturar competências federais e estaduais no combate ao crime organizado e padronizar procedimentos das polícias. A deliberação ocorre em meio a negociações políticas intensas entre governistas e a oposição para a composição das comissões temáticas."
+      ],
+      "texto_integral": [
+        "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
+        "O presidente Luiz Inácio Lula da Silva (PT) condiciona a criação do Ministério da Segurança Pública à aprovação da PEC no Congresso.",
+        "🔎 Para ser aprovada, uma PEC precisa ter ao menos três quintos dos votos favoráveis em dois turnos de votação. Ou seja, precisa contar com o apoio de 49 senadores.",
+        "'SUS da Segurança' e fim da 'saidinha' para integrantes de facções: o que prevê a PEC da Segurança",
+        "A deliberação estava prevista para acontecer antes do segundo turno das eleições, mas um impasse sobre emendas que preveem a redução da maioridade penal levou Alcolumbre a adiar a votação.",
+        "A dez dias do segundo turno das eleições presidenciais — onde Lula acabou vencendo Flávio Bolsonaro — a oposição apresentou uma emenda para diminuir a maioridade penal para até 14 anos, a depender da gravidade do delito.",
+        "Como reação, o líder do PT no Senado, Camilo Santana (CE), apresentou uma alteração para reduzir para 16 anos em casos de crimes hediondos.",
+        "Aliados de Alcolumbre afirmaram que a retirada de pauta ocorreu porque nem o governo nem a oposição teriam votos suficientes para aprovar suas as emendas – e o cálculo, neste caso, seria de deixar o assunto para depois.",
+        "Apesar da ideia de Camilo neutralizar a proposta da oposição, a emenda apresentada dividiu a bancada do PT. Historicamente, a bancada do PT no Congresso Nacional se posicionou contra a redução da maioridade penal.",
+        "Diante da divisão na bancada governista e da proposta da oposição, Alcolumbre retirou o tema da pauta com o argumento de que nem o governo e nem a oposição teriam votos suficientes para aprovar suas as emendas.",
+        "Lula se posicionou na sabatina da Globo",
+        "No mesmo dia em que a PEC saiu da pauta do Senado em meio ao racha na bancada governista do Senado, o presidente Lula se posicionou a favor da emenda de Camilo Santana ao ser questionado sobre o tema na sabatina da TV Globo.",
+        "\"O meu pensamento, enquanto cidadão brasileiro, todo e qualquer crime hediondo, eu sou favorável a diminuir a pena. Para crimes hediondos. Eu sou a favor, sou a favor\", afirmou o presidente.",
+        "Apesar do posicionamento favorável a mudança sugerida por Camilo, Lula defendeu que esse tema não fosse tratado na PEC da Segurança.",
+        "\"Primeiro você discute a PEC, aprova a PEC e aí você pode discutir a maioridade penal ou não\", disse.",
+        "Essa posição também é defendida por governistas, como a líder do governo no Senado, Teresa Leitão (PT-PE).",
+        "Caso algum trecho sobre maioridade seja aprovado e o texto precise voltar para a Câmara para aprovação dos deputados, governistas falam em \"fatiar\" a PEC.",
+        "Nesse cenário, a parte que já foi aprovada por deputados e senadores segue para promulgação, enquanto as partes que precisam de análise dos deputados (maioridade penal) é enviada à Câmara como um texto separado.",
+        "A PEC estabelece na Constituição o Sistema Único de Segurança Pública (SUSP), com o objetivo de integrar a atuação das forças de segurança no combate ao crime organizado.",
+        "De acordo com o texto, União, estados e Distrito Federal poderão criar leis na área de segurança pública, incluindo forças-tarefa intergovernamentais, a organização das polícias e guardas municipais e o sistema socioeducativo.",
+        "Outro ponto central da PEC da Segurança Pública é o combate a crimes violentos e facções criminosas.",
+        "Entre as medidas está a obrigatoriedade de prisão em estabelecimento penal de segurança máxima ou de natureza especial.",
+        "Também ficam proibidas ou restringidas a progressão de regime, a concessão de liberdade provisória, com ou sem fiança, e de saída temporária.",
+        "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
+      ],
+      "pontos": [
+        "Inclusão da PEC da Segurança na pauta de votações do Senado"
+      ]
+    },
+    "divida-publica-recorde-setembro-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Dívida pública atinge 82,9% do PIB após déficit de R$ 5,5 bilhões",
+      "resumo": [
+        "As contas do setor público consolidado registraram déficit primário de R$ 5,5 bilhões em setembro, puxando a Dívida Bruta do Governo Geral para 82,9% do PIB, o patamar mais alto em cinco anos e meio. No acumulado das empresas estatais federais, o rombo atingiu o recorde de R$ 8,5 bilhões até setembro. Os números divulgados pelo Banco Central aumentam a cobrança do mercado por um ajuste estrutural imediato nos gastos obrigatórios."
+      ],
+      "texto_integral": [
+        "O Banco Central (BC) informou nesta sexta-feira (31) que as empresas estatais federais registraram um déficit de R$ 8,5 bilhões de janeiro a setembro deste ano.",
+        "🔎O termo \"déficit\" significa que o gasto somado dessas estatais foi maior que a receita que elas conseguiram gerar no ano.",
+        "➡️Esse é o pior resultado para o período da série histórica do BC, que tem início em 2002. Até então, o maior rombo para este período havia ocorrido em 2025 (R$ -6,3 bilhões, sem correção pela inflação).",
+        "➡️O resultado, na parcial deste ano, também já supera o resultado negativo recorde para um ano fechado, de 2024, quando foi registrado um déficit de R$ 6,73 bilhões.",
+        "A série do Banco Central não considera a Petrobras, a Eletrobras e nem as empresas do setor financeiro (bancos públicos).O BC lembra que a Petrobras e a Eletrobras foram excluídos do cálculo das estatais federais em 2009, mas explica que a série histórica de anos anteriores foi revisada com base na nova metodologia — sendo válida, portanto, de 2002 em diante.Entram nesse cálculo empresas como Correios, a Emgepron, a Hemobrás, a Casa da Moeda, a Infraero, o Serpro, a Dataprev e a Emgea.O conceito do Banco Central considera apenas a variação da dívida, conceito amplamente utilizado em análises fiscais internacionais, enquanto o governo se utiliza do conceito conhecido por \"acima da linha\" (receitas menos despesas, sem contar juros da dívida).",
+        "➡️No projeto da Lei de Diretrizes Orçamentárias de 2027, encaminhado ao Congresso Nacional em abril deste ano, o governo federal admite que as empresas estatais federais, em déficit desde 2023, continuarão no vermelho até 2030.",
+        "➡️ Segundo a Instituição Fiscal Independente (IFI), ligada ao Senado Federal, os indicadores financeiros confirmam uma \"deterioração perceptível\" da saúde financeira de \"parte relevante\" das empresas estatais federais — o que eleva o risco para o Tesouro Nacional.",
+        "\"Essa deterioração não é uniforme nem decorre de uma única causa, mas os dados levantados pela IFI permitem identificar padrões que merecem atenção do ponto de vista da gestão fiscal\", acrescentou o órgão, por meio do Relatório de Acompanhamento Fiscal de julho.",
+        "➡️O resultado ruim das estatais federais tem sido agravado, principalmente, pela situação dos Correios, que passa por grave crise fiscal, com piora do seu resultado financeiro.",
+        "A estatal está há 15 trimestres seguidos no vermelho. No primeiro semestre deste ano, a empresa fechou com um prejuízo de R$ 5,6 bilhões.",
+        "Para enfrentar rombo financeiro, o governo autorizou, em maio deste ano, a estatal a vender seguros, títulos de capitalização e a atuar no mercado de telefonia.",
+        "A ideia é que a empresa faça convênios com instituições financeiras para ofertar os serviços. De acordo com o Ministério da Gestão, os Correios executam um plano de reequilíbrio financeiro e reestruturação."
+      ],
+      "pontos": [
+        "Déficit recorde registrado nas empresas estatais federais"
+      ]
+    },
+    "concurso-unificado-2027-vagas-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Governo prevê até 3 mil vagas para nova edição do CNU em 2027",
+      "resumo": [
+        "O Ministério da Gestão e da Inovação informou que planeja ofertar até 3 mil vagas na edição de 2027 do Concurso Nacional Unificado (CNU). A efetivação do certame e o cronograma de provas continuam condicionados à aprovação do Projeto de Lei Orçamentária Anual no Congresso Nacional. A pasta avalia a reposição de quadros técnicos em áreas desidratadas por aposentadorias recentes."
+      ],
+      "texto_integral": [
+        "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
+        "A realização do concurso, no entanto, depende da aprovação da proposta de orçamento do próximo ano, enviada ao Congresso Nacional no fim de agosto.",
+        "“Como sempre informamos, a realização de um novo CPNU em 2027 está condicionada à aprovação do PLOA e do espaço fiscal para novas vagas que será aprovado pelo Congresso Nacional”, afirmou o ministério, em nota.",
+        "\"Considerando concursos já autorizados e novos que podem ser definidos (dependendo do PLOA), duas a três mil novas vagas compensam a realização de um CPNU em 2027\", completou a pasta.",
+        "Saiba como se preparar para enfrentar um concurso",
+        "No início desta semana, o MGI já havia informado ao g1 que a realização do certame dependeria da aprovação do orçamento do próximo ano.",
+        "Na ocasião, o ministério também destacou que considera o CPNU uma política pública voltada à renovação, à modernização e à democratização do acesso ao serviço público federal.",
+        "A intenção do governo é consolidar o modelo como um processo permanente de seleção de servidores, com edições em ciclos regulares, preferencialmente a cada dois anos.",
+        "\"Dessa forma, a ideia é que o CPNU se consolide como um processo permanente de seleção de servidores, com edições realizadas em ciclos regulares, idealmente a cada dois anos, de forma a garantir planejamento, recomposição gradual da força de trabalho e maior previsibilidade para os candidatos e para os órgãos públicos\", declarou a pasta.",
+        "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
+      ],
+      "pontos": [
+        "Previsão de vagas e vinculação orçamentária do CNU 2027"
+      ]
+    },
+    "hugo-motta-distrital-misto-g1.globo.com/politica/blog/jul": {
+      "url": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/30/hugo-motta-quer-votar-sistema-distrital-misto-ainda-neste-ano.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Hugo Motta articula votação do sistema distrital misto ainda este ano",
+      "resumo": [
+        "O deputado Hugo Motta intensificou as negociações com líderes partidários para colocar em votação a proposta que implementa o sistema eleitoral distrital misto no Brasil antes do encerramento do ano legislativo. O modelo combina a eleição majoritária por distritos geográficos menores com a votação proporcional em lista partidária preordenada. A medida divide bancadas e pode alterar profundamente a correlação de forças parlamentares a partir das próximas disputas proporcionais."
+      ],
+      "texto_integral": [
+        "Presidente da Câmara quer votar sistema distrital misto ainda neste ano",
+        "Parte dos parlamentares da Câmara dos Deputados quer aproveitar a atual composição da Casa para aprovar mudanças nas regras eleitorais ainda neste fim de ano. A articulação ocorre em meio à discussão sobre a adoção do sistema distrital misto, que pode alterar a forma de escolha dos deputados e reduzir a influência dos chamados puxadores de votos.",
+        "O presidente da Câmara, Hugo Motta (Republicanos), é favorável à proposta, que também conta com o apoio de partidos do Centrão, especialmente do PSD, liderado por Gilberto Kassab.",
+        "🔎No modelo distrital misto, o eleitor participa de uma eleição que combina duas formas de escolha: candidatos disputam vagas diretamente nos distritos, pelo sistema majoritário, e outras cadeiras são definidas conforme a votação em listas previamente organizadas pelos partidos.",
+        "🔎 Já no sistema proporcional atual, o desempenho eleitoral do partido e de seus candidatos determina quantas vagas a legenda terá no Legislativo, por meio do quociente eleitoral. Depois, essas cadeiras ficam com os candidatos mais votados da sigla.",
+        "Entre os principais interessados na mudança estão partidos que perderam cadeiras ou tiveram crescimento pouco expressivo nas últimas eleições. Essas legendas observam o avanço de siglas que se beneficiam do atual sistema proporcional, como o PL, que ampliou sua presença no Congresso graças, em parte, à votação expressiva de alguns candidatos.",
+        "Partidos como PSD e MDB, que possuem forte presença nos municípios e comandam diversas prefeituras, também enxergam vantagens no modelo distrital misto. Nesse sistema, a disputa é dividida por distritos eleitorais, o que pode ampliar a influência dos prefeitos na escolha dos candidatos que concorrerão às vagas de deputado.",
+        "Atualmente, o sistema proporcional permite que candidatos com votação expressiva ajudem a eleger outros integrantes de suas legendas. Conhecidos como puxadores de votos, esses parlamentares conseguem ampliar a representação partidária ao contribuir para que a sigla alcance o quociente eleitoral e partidário necessário para conquistar mais cadeiras.",
+        "Nas últimas eleições, pouco mais de 30 deputados ajudaram a eleger outros parlamentares. Ao todo, cerca de 60 candidatos teriam conquistado uma vaga beneficiados pela votação de nomes mais populares.",
+        "O fenômeno ganhou projeção nacional com Tiririca, eleito em 2010 com uma votação expressiva. Na época, sua votação ajudou a eleger outros candidatos e chamou a atenção dos partidos para o potencial desse mecanismo.",
+        "Atualmente, o cenário é diferente. As redes sociais ampliaram a capacidade de alguns políticos de mobilizar eleitores em todo o estado, transformando nomes populares no ambiente digital em importantes cabos eleitorais de suas próprias legendas. Nicolas Ferreira é um dos exemplos desse fenômeno.",
+        "A possibilidade de mudar as regras também provoca resistência entre partidos que se beneficiam do atual modelo. PT e PL estão entre as principais siglas contrárias à alteração, justamente porque possuem parlamentares com grande capacidade de mobilização eleitoral.",
+        "O debate também envolve mudanças nas regras de propaganda política nas redes sociais, outro tema que deve entrar na pauta dos parlamentares no fim do ano.",
+        "Uma das alternativas discutidas seria estabelecer um limite para a votação considerada válida para efeito de transferência de votos, evitando que candidatos com desempenho eleitoral muito acima da média ampliem excessivamente a bancada de seus partidos. Uma das hipóteses mencionadas seria estabelecer uma trava de até um milhão de votos para os chamados puxadores.",
+        "Apesar da articulação para aprovar a proposta ainda neste ano, a resistência de PT e PL, duas das principais forças políticas do país em número de votos, pode dificultar o avanço da mudança. No caso do PT, a existência de uma federação partidária também é um fator que torna a discussão mais complexa.",
+        "GloboPop: veja os vídeos do palco da Julia Dualibi"
+      ],
+      "pontos": [
+        "Articulação interna na Câmara dos Deputados para votar o distrital misto"
+      ]
+    },
+    "pf-indicia-cupula-master-brb-g1.globo.com/df/distrito-feder": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/diretoria-do-brb-foi-alertada-sobre-falhas-em-90percent-de-carteira-do-master-em-2024-diz-relatorio-da-pf.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "PF indicia 15 investigados por fraudes bilionárias no Caso Master e BRB",
+      "resumo": [
+        "A Polícia Federal concluiu o inquérito principal sobre desvios financeiros envolvendo o Banco Master e o Banco de Brasília (BRB), indiciando 15 pessoas, entre elas o banqueiro Daniel Vorcaro e o ex-presidente da instituição brasiliense. Relatórios técnicos apontam que dirigentes do BRB ignoraram alertas explícitos de auditoria sobre irregularidades em 90% das carteiras de crédito adquiridas. A defesa dos acusados contesta o relatório e alega que o prejuízo decorreu da repercussão das investigações."
+      ],
+      "texto_integral": [
+        "PF indicia Vorcaro, ex-presidente do BRB e mais 13 no caso Master",
+        "A diretoria do Banco de Brasília (BRB) recebeu, ainda em agosto de 2024, um alerta interno sobre problemas nas carteiras de crédito adquiridas do Banco Master.",
+        "A informação consta no relatório parcial da investigação da Polícia Federal que apura esquemas relacionados ao Banco Master e ao Banco de Brasília (BRB).",
+        "Na ocasião, um gerente informou que aproximadamente 90% da carteira recebida do Master apresentava falhas ou não atendia aos critérios exigidos pelo BRB.",
+        "Apesar dos problemas identificados, as operações entre as duas instituições continuaram posteriormente.",
+        "O dado mostra que questionamentos sobre a qualidade dos ativos negociados já circulavam internamente no banco brasiliense em 2024, envolvendo:",
+        "inconsistências de dados;falhas de governança;deficiências de compliance;e possível irregularidade na originação dos créditos.",
+        "O documento aponta ainda que a presidência do banco pressionou pela aprovação de novas compras.",
+        "PF ouve Vorcaro e ex-presidente do BRB sobre Banco Master",
+        "O BRB – que tem como acionista majoritário o governo do DF – enfrenta uma crise marcada por perdas bilionárias ligadas a operações com o extinto Banco Master. Paulo Henrique Costa, Daniel Vorcaro e Augusto Lima foram alvo de diferentes fases da Operação Compliance Zero, que investiga os negócios do Banco Master. Costa e Vorcaro estão presos.O BRB tentou comprar o Master e chegou a injetar R$ 16,7 bilhões no banco de Vorcaro. A compra foi barrada pelo Banco Central e, depois, o BRB descobriu que parte das carteiras compradas era fraudulenta e sem lastro.",
+        "BRB identificava problemas, mas operações com o Master continuaram",
+        "Em diferentes análises internas, grande parte dos ativos oferecidos pelo Banco Master era eliminada por não atender aos critérios adotados pelo BRB.",
+        "Em alguns casos, apenas uma pequena parte dos créditos passava pelos filtros do banco. Apesar disso, as negociações continuaram e, segundo os investigadores, alguns critérios de avaliação foram posteriormente alterados, aumentando o volume de créditos que poderia ser aceito.",
+        "\"Mesmo diante da reiterada rejeição dos ativos apresentados, a orientação não foi interromper as aquisições, mas exigir que o MASTER encontrasse novos créditos que permitissem a continuidade das operações\", destaca o documento.",
+        "A PF chama atenção para a responsabilidade da diretoria Diretoria Colegiada (DICOL) do BRB de barrar negociações com informações incompletas e inconformidade com as normas. A investigação, no entanto, mostra que 13 das 14 notas executivas — documento que iniciava o processo de aquisição — foram aprovadas antes mesmo da conclusão dos pareceres técnicos.",
+        "Outra informação em destaque no relatório é o fracionamento das aquisições das carteiras. A manobra ocorre porque o DICOL só pode deliberar compra e venda de carteiras com valor máximo de R$ 750 milhões.",
+        "Segundo o relatório, o colegiado aprovou 25 transações, que totalizam R$ 17,5 bilhões. Dessas, 21 foram fixadas em exatos R$ 750 milhões, valor máximo para deliberação. Montante corresponde a 23,3 vezes o limite de negociação da DICOL.",
+        "Veja abaixo quem são os 15 indiciados pela Polícia Federal no relatório desta quarta:",
+        "Daniel Vorcaro, ex-dono do Banco Master;Paulo Henrique Costa, ex-presidente do BRB;Augusto Lima, ex-sócio de Vorcaro no Banco Master;Angelo Antônio Ribeiro da Silva, ex-diretor do Master;Luiz Antônio Bull, ex-diretor do Master;Alberto Félix de Oliveira Neto, ex-diretor do Master;Allan da Silva Machado, ex-procurador do Master;Henrique Souza e Silva Peretto, sócio da Tirreno;André Felipe de Oliveira Seixas Maia, sócio da Tirreno;Daniel Lopes Monteiro, ex-advogado do Master;Dario Oswaldo Garcia Junior, ex-diretor de Finanças e Controladoria do BRB;Luana de Andrade Ribeiro, ex-diretora executiva de Controle e Riscos do BRB;Cristiane Maria Lima Bukowitz, ex-diretora executiva de gestão de pessoas do BRB;Diogo Ilário de Araújo Oliveira, ex-diretor executivo de Atacado e Governo do BRB;José Maria Correa Dias Junior, ex-diretor executivo de Tecnologia do BRB.",
+        "seis ex-sócios ou ex-gestores do Banco Master;dois sócios da Tirreno, firma de consultoria apontada pela PF como empresa de fachada para o esquema;sete ex-gestores do BRB.",
+        "O g1 e a TV Globo tentam contato com as defesas dos citados.",
+        "\"A defesa de Daniel Vorcaro tomou conhecimento do relatório parcial apresentado pela Polícia Federal no Inquérito nº 5026/STF, que promove o indiciamento de Daniel. Trata-se de um ato açodado e afoito, que antecipa conclusões que a própria investigação admite ainda não ter alcançado:",
+        "● Indiciamento antes do fim da investigação: no mesmo documento em que indicia, a autoridade policial pede ao Supremo Tribunal Federal mais 60 dias para prosseguir nas apurações. Reconhece que exames periciais seguem “em elaboração”, que parte do material apreendido não foi analisada e que pessoas relevantes sequer foram ouvidas. Indicia-se primeiro para investigar depois.",
+        "● Inexistência de prejuízo ao BRB: o negócio envolvendo as carteiras da Tirreno não foi concluído. As carteiras foram substituídas por outros ativos, e a troca realizada demonstra que os negócios entre o Banco Master e o BRB geraram resultados positivos para o Banco de Brasília. Nenhuma perícia oficial apurou qualquer prejuízo: os números citados no relatório vêm da petição inicial de uma ação indenizatória movida pelo próprio BRB, que é parte interessada, e a própria Polícia Federal reconhece que não teve acesso ao resultado da auditoria sobre os ativos entregues em substituição. A defesa já pediu, na esfera cível, a perícia que sepultará definitivamente a narrativa fantasiosa de fraude e prejuízo.",
+        "● Lavagem de dinheiro sem rastreamento de recursos: o relatório imputa lavagem de capitais, mas registra que ainda está pendente a análise bancária, fiscal e patrimonial destinada a “identificar eventual proveito econômico” e “rastrear os fluxos financeiros”. Imputa-se a ocultação de valores cujo caminho sequer foi examinado.",
+        "● Indiciamento frágil e absurdo: as conclusões se apoiam em leitura seletiva de mensagens e em hipóteses formuladas “em tese”, e não em demonstração técnica. São operações embasadas em decisões técnicas e colegiadas das instâncias de governança de duas instituições supervisionadas pelo Banco Central. Agora são retratadas como crime sem que se tenha aferido seu resultado econômico.",
+        "● O depoimento que não vazou: Daniel Vorcaro prestou à Polícia Federal esclarecimentos decisivos sobre as operações com o BRB. Foi um depoimento esclarecedor e, curiosamente, justamente ele não foi vazado.",
+        "● Arquivamento do Inquérito e Revogação da Prisão: sem prova técnica de fraude ou de prejuízo, o indiciamento não se sustenta, e o inquérito relativo às operações entre o Banco Master e o BRB deve ser arquivado. Nesse contexto, torna-se urgente e imperativa a revogação da prisão preventiva de Daniel Vorcaro, garantindo-se seu direito de responder em liberdade. Brasília, 28 de outubro de 2026.\"",
+        "\"A defesa de Paulo Henrique Costa, ex-Presidente do BRB, recebeu com surpresa o seu indiciamento pelos crimes de gestão fraudulenta e de organização criminosa. Pesa dizer que o trabalho policial submeteu os fatos às hipóteses acusatórias, quando deveria fazer o inverso.",
+        "As conversas em aplicativos de mensageria nos celulares dos integrantes do ambiente Master mostram às escâncaras que Paulo Henrique não tinha conhecimento das fraudes nas carteiras. As testemunhas, sejam as ligadas ao BRB, sejam ao Master, são convergentes nesse tema. Também foram ignorados todos os documentos carreados aos autos, inclusive por autoridades públicas, como o Banco Central.",
+        "Há prova eloquente de que foi Paulo Henrique a detectar irregularidades nas carteiras; de que ele exigiu, passo contínuo, 25 bilhões de garantias; de que quando o nome da Tirreno vem à lume, as operações são suspensas; há centenas e centenas de mensagens de Paulo Henrique ao Master exigindo a substituição de ativos, na forma dos contratos, inclusive se valendo daqueles dados em garantia. Foi Paulo Henrique quem trouxe o fato ao conhecimento do Banco Central, a quem se participaram todos os passos, antes e depois da detecção da fraude.",
+        "Curiosamente, não se aponta nenhuma vantagem financeira de Paulo Henrique; a fantasiosa versão de recepção de apartamentos, na ordem de 150 milhões de reais, foi amplamente descartada, embora tenham fundamentado a prisão preventiva a que ainda está submetido, já há mais de 180 dias, sem revisão judicial, em ofensa a previsão expressa do Código de Processo Penal. Há pedido de liberdade provisória desde 12 de junho, pendente de opinião da PGR; há habeas corpus impetrado há 20, sem sequer remessa ao MPF.",
+        "Paulo Henrique seguiu as orientações do acionista majoritário de realizar operação societária com o Master, seguiu toda a governança, dividiu todos os passos com o Conselho de Administração e com o Banco Central. Sempre atuou no melhor interesse do BRB. Todas as decisões, importante frisar, eram colegiadas; o Presidente do BRB tinha alçada de zero reais. Nenhuma decisão foi tomada por ele, sozinho.",
+        "As autoridades usam enviesado microscópio na carteira de 12,2 bi - dos quais 10,5 bi foram substituídos por ativos hígidos, até sua remoção do cargo - e esquecem que a relação com o Master gerou 8 bilhões de reais de receitas; e seguem gerando, diga-se.",
+        "Quando Paulo Henrique foi erradamente removido do BRB, o banco era saudável, líquido, rentável, com marca positiva e líder em diversos segmentos; sempre cumpriu seu relevante papel de banco público. Paulo Henrique sempre leal ao BRB e defendeu seu interesse; e seguiu fazendo na relação com o Master.",
+        "Paulo Henrique e sua defesa seguem acreditando na Justiça e que a Procuradoria-Geral da República saberá reconhecer a totalidade dos elementos contidos nos autos; uma leitura idônea levará o Ministério Público Federal a descartar as hipóteses de gestão fraudulenta e a igualmente estapafúrdia conclusão de que Paulo Henrique integraria uma organização criminosa.\"",
+        "A defesa de Augusto Lima rechaça integralmente a conclusão do relatório parcial. A documentação e os esclarecimentos apresentados por Augusto Lima demonstram, de forma veemente, que ele não participou, direta ou indiretamente, da fraude mencionada.",
+        "A conclusão equivocada da Autoridade Policial em relação a Augusto Lima decorre da leitura enviesada de esparsas e aleatórias mensagens de texto, temporalmente desconectadas entre si.",
+        "A defesa ressalta que se trata de conclusão apresentada em relatório parcial de investigação, que não constitui denúncia do Ministério Público nem condenação judicial. A presunção de inocência é uma garantia constitucional e deve ser respeitada, sem antecipação de culpa.",
+        "A defesa reforça que confia no Poder Judiciário e que demonstrará, mais uma vez, o erro de premissa adotado pela Autoridade Policial, o que, inequivocamente, levará à exclusão de Augusto Lima da investigação.",
+        "\"O BRB informa que acompanha os desdobramentos das investigações conduzidas pelas autoridades competentes e reafirma seu compromisso com a plena apuração dos fatos relacionados a operações realizadas em gestões anteriores.",
+        "A atual administração renovou integralmente a diretoria executiva, fortaleceu os mecanismos de governança e controles internos e compartilhou com os órgãos competentes os resultados de auditoria independente contratada para aprofundar a investigação dos fatos. O Banco destaca que o trabalho conduzido internamente contribuiu de forma relevante para o avanço das apurações e para os desdobramentos anunciados pelas autoridades.",
+        "O BRB reforça que as condutas sob apuração dizem respeito a atos individuais e não se confundem com a instituição nem com os padrões de integridade que orientam sua atuação. O Banco seguirá adotando todas as medidas cabíveis para proteger seu patrimônio, buscar o ressarcimento de eventuais prejuízos e assegurar a responsabilização dos envolvidos, na forma da lei.\"",
+        "Leia mais notícias sobre a região no g1 DF."
+      ],
+      "pontos": [
+        "Alertas ignorados pela diretoria sobre carteiras podres de crédito"
+      ]
+    },
+    "estrategia-diplomatica-lula-4-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/lula-4-aposta-em-pragmatismo-para-lidar-com-trump-contornar-atritos-com-milei-e-ampliar-aliancas-no-mundo.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Governo planeja diplomacia pragmática diante de Washington e Buenos Aires",
+      "resumo": [
+        "A equipe de transição da política externa do governo federal definiu uma estratégia de moderação para desarmar conflitos potenciais com Donald Trump e Javier Milei nos próximos anos. A ordem no Palácio do Planalto é evitar transformar incidentes políticos, como o asilo informal de parlamentares de oposição no exterior, em crises econômicas bilaterais. O foco prioritário recairá sobre pautas ambientais globais, atração de investimentos e manutenção do intercâmbio comercial sul-americano."
+      ],
+      "texto_integral": [
+        "Antes de encerrar o terceiro mandato, na reta final de 2026, o presidente Luiz Inácio Lula da Silva (PT) ainda terá compromissos importantes na agenda internacional.",
+        "Em novembro, por exemplo, o Brasil deixa a presidência da Conferência das Nações Unidas sobre Mudanças Climáticas, a chamada COP, —principal fórum de negociações internacionais sobre o tema. O país assumiu o posto após sediar o encontro em Belém.",
+        "A presidência será transferida à Turquia — que sediará, na cidade de Antália, a COP31 —, enquanto a Austrália ficará responsável por conduzir as negociações.",
+        "Entre novembro e dezembro, o Brasil também participa de encontros de alguns dos principais fóruns políticos e econômicos internacionais:",
+        "a Associação de Nações do Sudeste Asiático (Asean), que reúne países do Sudeste Asiático; o G20, grupo das maiores economias do mundo; e a Cúpula do Mercosul, bloco formado por Brasil, Argentina, Paraguai, Uruguai e Bolívia.",
+        "Lula responde sobre relação do governo com os Estados Unidos",
+        "No quarto mandato, a política externa do Brasil terá que conduzir as relações com os Estados Unidos e manter o diálogo com países vizinhos governados por lideranças de direita e extrema direita, algumas delas alinhadas ao presidente americano, Donald Trump (entenda mais abaixo).",
+        "O cenário ganhou um novo elemento surpresa após a eleição: o senador Flávio Bolsonaro (PL-RJ), derrotado por Lula no segundo turno, deixou o Brasil, passou pela Argentina e desembarcou nos Estados Unidos.",
+        "Já em território americano, agradeceu publicamente a Trump e ao presidente argentino, Javier Milei, ao contestar, sem apresentar provas, o resultado da eleição. O TSE confirmou a vitória de Lula e afirmou que a votação ocorreu com segurança e transparência.",
+        "Nesse cenário, o governo brasileiro terá o desafio de dar continuidade à estratégia de ampliar a presença do Brasil no cenário internacional, fortalecer a atuação nos organismos multilaterais e preservar espaços de diálogo em um contexto de divergências políticas e geopolíticas.",
+        "A relação com os Estados Unidos é apontada por diplomatas como um dos principais desafios da política externa no quarto mandato do presidente Lula.",
+        "As eleições legislativas americanas, previstas para a próxima semana, devem ajudar a definir o cenário político com o qual o governo brasileiro terá de lidar nos próximos anos.",
+        "Uma eventual maioria democrata no Congresso poderia alterar a correlação de forças em Washington, mas Donald Trump continuará à frente da Casa Branca. As eleições legislativas estão marcadas para 3 de novembro.",
+        "Lula e Trump ainda devem estar juntos em pelo menos dois eventos internacionais neste ano: na cúpula da Asean, nas Filipinas, em novembro, e no G20, na Flórida, em dezembro. Os encontros podem abrir espaço para novos contatos entre os dois presidentes.",
+        "A ida de Flávio Bolsonaro para os Estados Unidos acrescentou um novo componente a essa relação. O governo Trump autorizou a entrada do senador e de sua família no país.",
+        "Segundo o governo americano, Flávio apresentou os passaportes brasileiros comum e diplomático para entrar nos EUA, mesmo depois de os documentos terem sido cancelados pela Polícia Federal.",
+        "O governo Trump informou nesta quinta (29) que concedeu visto humanitário a Flávio. Ao mesmo tempo, Trump afirmou que não pretende se envolver nas alegações sem provas feitas pelo senador brasileiro sobre a eleição.",
+        "Esse episódio se soma às divergências acumuladas ao longo do terceiro mandato. O governo Lula já havia sinalizado a intenção de retomar as negociações com os Estados Unidos, especialmente em relação às tarifas e barreiras comerciais.",
+        "Brasil e Estados Unidos retomaram as conversas sobre o tarifaço depois de uma ligação entre Lula e Trump. Em setembro, os dois países também se reuniram na Organização Mundial do Comércio (OMC) para discutir as tarifas americanas. conversa entre os presidentes ocorreu em 21 de agosto, e a reunião na OMC, em 25 de setembro",
+        "A segurança pública também deve permanecer na agenda entre os dois países. O Brasil não foi convidado e, segundo fontes do governo, não pretende integrar o chamado Escudo das Américas, iniciativa de Trump.",
+        "A avaliação de integrantes do governo brasileiro é de que a proposta carece de um projeto mais amplo para a região e tem forte caráter ideológico.",
+        "Apesar das divergências, o Brasil pretende manter e ampliar os acordos de cooperação com os Estados Unidos e países vizinhos no combate ao crime organizado, especialmente ao tráfico internacional de drogas.",
+        "Dentro do Brasil, uma das promessas de Lula para o quarto mandato é criar o Ministério da Segurança Pública, após a aprovação da PEC da Segurança Pública no Congresso.",
+        "A proposta busca fortalecer a atuação das forças de segurança e ampliar a articulação com os estados.",
+        "O presidente Lula embarca em novembro para participar da cúpula da Associação de Nações do Sudeste Asiático (Asean). É a segunda vez que o Brasil recebe convite para participar do encontro.",
+        "A aproximação com os países asiáticos foi uma das apostas da política externa do terceiro mandato de Lula e deve continuar no quarto governo.",
+        "A estratégia é ampliar a presença brasileira na região, conquistar novos mercados para produtos nacionais e diversificar as relações comerciais.",
+        "Na avaliação do governo, a abertura de novos mercados também é uma forma de reduzir a dependência comercial do Brasil em relação à China e a outras grandes potências, ampliando as alternativas do Brasil.",
+        "Apesar desse movimento, a China continua sendo uma das prioridades da política externa brasileira, que é um dos principais destinos das exportações do país.",
+        "A intenção do governo não é diminuir a parceria com os chineses, mas ampliar as relações com outros países asiáticos.",
+        "O governo brasileiro pretende retomar o diálogo político com o país vizinho, mas avalia que uma reaproximação depende de uma mudança de postura do presidente argentino, Javier Milei.",
+        "A relação entre os dois presidentes é marcada por uma série de atritos. Além dos ataques públicos a Lula, Milei manifestou apoio à candidatura de Flávio Bolsonaro (PL) nas eleições e chegou a vir ao Brasil para participar da convenção que oficializou a candidatura do senador à Presidência. Na ocasião, disse confiar \"plenamente\" em Flávio.",
+        "A passagem de Flávio pela Argentina após deixar o Brasil acrescentou um novo foco de tensão. O senador e sua família cruzaram a fronteira terrestre e embarcaram em Puerto Iguazú em um jatinho particular com destino aos Estados Unidos, com escala no Equador.",
+        "Segundo a Direção Nacional de Migrações da Argentina, os quatro apresentaram documentação válida e não tinham impedimento legal para entrar no país.",
+        "A passagem também provocou reação política dentro da Argentina. Deputados argentinos acusaram Milei de facilitar a fuga e cobraram explicações de integrantes de seu governo, além do reconhecimento formal da vitória de Lula.",
+        "Na carta divulgada já nos Estados Unidos, Flávio agradeceu tanto a Milei quanto a Trump. Na primeira versão do texto, chamou a si próprio de \"presidente eleito\". Depois, apagou a publicação e substituiu essa expressão por \"líder do Brasil\".",
+        "Apesar das divergências políticas e da ausência de um embaixador brasileiro em Buenos Aires, os canais diplomáticos seguem funcionando. As relações comerciais e a cooperação bilateral também continuam, inclusive no Mercosul.",
+        "A avaliação no governo brasileiro é de que a relação com a Argentina precisa ser preservada. No entanto, para que haja uma retomada do diálogo em nível presidencial, interlocutores de Lula consideram necessário que Milei abandone os ataques pessoais.",
+        "LEIA MAIS: Após fuga, Flávio se diz 'presidente eleito', apaga post e passa a se chamar de 'líder do Brasil'",
+        "Apesar das diferenças políticas entre os governos da região, a avaliação da diplomacia brasileira é de ótima relação com a região e de que há espaço para ampliar a cooperação, especialmente na área de segurança pública.",
+        "Segundo interlocutores do governo Lula, é que apesar do alinhamento com Trump, países como Peru, Bolívia e Chile tem dúvidas sobre o que Trump pode, efetivamente, oferecer à região e demonstram interesse em manter uma relação pragmática com o Brasil, que é o maior país da América do Sul.",
+        "A avaliação é de que existem interesses comuns que vão além das divergências ideológicas. Além da cooperação no combate ao narcotráfico, tem a importância estratégica do Brasil que é rota de acesso ao Oceano Atlântico.",
+        "Na segurança pública, a intenção do governo brasileiro é ampliar e fortalecer cooperações já existentes.",
+        "A avaliação que segundo interlocutores do governo, é compartilhada por outros países da região, é de que as divergências ideológicas não devem comprometer os esforços de combate ao crime.",
+        "O Brasil pretende ampliar essa atuação com base na estrutura de inteligência e na capacidade operacional da Polícia Federal. Entre os instrumentos de cooperação estão:",
+        "presença de um delegado brasileiro na Interpol,os centros de inteligência e cooperação na Amazônia e no Rio de Janeiro",
+        "Possível criação de uma nova estrutura em Buenos Aires, que deverá reunir delegados de países da região para fortalecer o combate ao crime organizado transnacional."
+      ],
+      "pontos": [
+        "Diretrizes de pragmatismo diplomático traçadas para a próxima gestão"
       ]
     }
   }
