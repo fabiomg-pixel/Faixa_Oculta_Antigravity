@@ -5137,127 +5137,133 @@
     "2026-10-30": {
       "data": "2026-10-30",
       "edicao": "manha",
-      "titulo": "Isolamento da oposição, contas públicas e transição política",
-      "resumo_dia": "O cenário pós-eleitoral consolida a fragmentação da oposição após a ida de Flávio Bolsonaro aos Estados Unidos e a divulgação de carta contestando as urnas, gerando recuo de aliados históricos. Enquanto o governo eleito desenha uma política externa pragmática com foco em Washington e Buenos Aires, o Senado vira o principal palco de disputas antecipadas sobre a presidência da Casa e a correlação de forças partidárias. No front econômico, o Banco Central e o Tesouro revelam deterioração fiscal em setembro, com a dívida pública atingindo 82,9% do PIB e discussões avançando no TCU sobre as alíquotas da reforma tributária para 2027.",
+      "titulo": "Pragmatismo pós-eleitoral, pressão fiscal e articulações no Congresso",
+      "resumo_dia": "O pós-eleição presidencial de 2026 consolida uma transição de forte pragmatismo diplomático e intensas manobras legislativas. Enquanto o Palácio do Planalto opta por não transformar em atrito internacional a saída de Flávio Bolsonaro para os Estados Unidos, o Congresso Nacional acelera discussões sobre o sistema eleitoral e a correlação de forças na nova legislatura. No front fiscal, a divulgação de déficits expressivos em setembro e o avanço da dívida pública impõem desafios imediatos ao novo ciclo governamental, que também monitora os desdobramentos de investigações financeiras de grande porte.",
       "notas": [
         {
-          "id": "isolamento-flavio-bolsonaro-oposicao",
+          "id": "governo-pragmatismo-fuga-flavio-eua",
           "editoria": "Política",
-          "titulo": "Fuga e carta de Flávio Bolsonaro esvaziam liderança e abrem racha na direita",
-          "texto": "A viagem inesperada de Flávio Bolsonaro aos Estados Unidos e a publicação de uma carta autodeclarando-se líder do país provocaram mal-estar entre aliados de primeira hora e governadores da oposição. Lideranças partidárias do PL e nomes cotados para 2030 buscaram se distanciar do teor golpista do manifesto, temendo perda de capital político e isolamento institucional. A avaliação de correligionários é que o movimento desarticulou a estratégia de liderar a oposição ao novo governo.",
-          "por_que_importa": "O esvaziamento da liderança de Flávio acelera a reorganização interna da direita em torno de governadores e parlamentares mais pragmáticos, alterando o eixo de poder no Congresso.",
+          "titulo": "Governo Lula evita atrito com Casa Branca após saída de Flávio Bolsonaro para os EUA",
+          "texto": "O Palácio do Planalto decidiu adotar postura pragmática e não transformar a autorização e acolhida de Flávio Bolsonaro nos Estados Unidos em um incidente diplomático. Interlocutores do governo destacam a prioridade de manter canais institucionais abertos com Washington e Buenos Aires na transição para o novo mandato. O senador, que deixou o país com passaporte diplomático cancelado e sem autorização judicial, enfrenta isolamento político crescente no próprio campo partidário.",
+          "por_que_importa": "A contenção de danos preserva a estabilidade das relações bilaterais e das agendas multilaterais estratégicas brasileiras no exterior, isolando a crise ao âmbito exclusivamente jurídico-policial.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Repercussão política e distanciamento de aliados",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/30/repercussao-carta-de-flavio-bolsonaro-e-fuga-do-brasil.ghtml"
+              "enfoque": "Avaliação dos bastidores diplomáticos e a diretriz de não retaliação do governo Lula",
+              "url": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/10/30/governo-lula-nao-quer-transformar-em-crise-ajuda-da-casa-branca-para-fuga-de-flavio-bolsonaro.ghtml"
             }
           ]
         },
         {
-          "id": "lula-4-politica-externa-pragmatismo",
+          "id": "camara-sistema-distrital-misto-hugo-motta",
           "editoria": "Política",
-          "titulo": "Lula 4 aposta em pragmatismo para contornar atritos com Trump e Milei",
-          "texto": "A diplomacia do novo mandato de Lula priorizará pontes comerciais e canais institucionais diretos com os Estados Unidos e a Argentina, minimizando atritos ideológicos. O Palácio do Planalto definiu que não responderá a provocações retóricas e buscará preservar parcerias estratégicas em energia, comércio exterior e integração sul-americana. A meta imediata é consolidar acordos bilaterais antes da posse formal.",
-          "por_que_importa": "Para a ciência, transição energética e economia brasileira, a preservação de laços técnicos e comerciais com os dois principais parceiros regionais e globais evita sanções e perda de fluxos de financiamento.",
+          "titulo": "Hugo Motta articula votação do sistema distrital misto na Câmara ainda em 2026",
+          "texto": "A presidência da Câmara dos Deputados articula pautar a reforma do modelo eleitoral para adoção do voto distrital misto ainda no atual período legislativo. A proposta busca combinar a eleição proporcional em listas com a escolha majoritária de representantes por distritos geográficos. O debate também engloba novas regras para propaganda política e monitoramento de campanhas em plataformas digitais.",
+          "por_que_importa": "A eventual alteração no modelo de representação parlamentar redefine as bases de custo de campanha e o peso das bancadas regionais e partidárias a partir das próximas eleições.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Diretrizes pragmáticas do Itamaraty para a nova gestão",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/30/lula-4-aposta-em-pragmatismo-para-lidar-com-trump-contornar-atritos-com-milei-e-ampliar-aliancas-no-mundo.ghtml"
+              "enfoque": "Cronograma de votação e bastidores das negociações na Câmara",
+              "url": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/30/hugo-motta-quer-votar-sistema-distrital-misto-ainda-neste-ano.ghtml"
             }
           ]
         },
         {
-          "id": "senado-estrategia-esquerda-bancada-pl",
+          "id": "senado-articulacao-bancada-pl-anistia",
           "editoria": "Política",
-          "titulo": "Esquerda traça estratégia no Senado para enfrentar bancada recorde do PL",
-          "texto": "Senadores de partidos de esquerda iniciaram rodadas de negociação para coordenar atuações temáticas e barrar pautas de confronto legislativo no plenário. O movimento busca equilibrar a correlação de forças diante do maior contingente já alcançado pela bancada do PL na Casa alta. Entre as prioridades acordadas estão a preservação de indicações ao STF e a defesa de pautas fiscais e sociais prioritárias.",
-          "por_que_importa": "A composição do Senado dita o ritmo de aprovação de orçamentos, marcos regulatórios de ciência e tecnologia e sabatinas de agências e tribunais superiores.",
+          "titulo": "Senado: esquerda estrutura estratégia de contenção à bancada do PL em meio a debate de anistia",
+          "texto": "Bancadas de esquerda no Senado organizam blocos suprapartidários para conter a influência da bancada recorde eleita pelo PL na casa. As negociações cruzam diretamente a disputa pela presidência do Senado, na qual Davi Alcolumbre costura apoios em torno do equilíbrio com o STF e de concessões regimentais. O cenário atrai resistências na ala governista diante de discussões preliminares sobre anistia ou indulto aos condenados pelos atos de 8 de janeiro e a Jair Bolsonaro.",
+          "por_que_importa": "O equilíbrio no Senado é vital para a aprovação de reformas econômicas, indicações de agências e ministros do STF e a garantia de governabilidade do Executivo.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Articulações partidárias para comissões e presidência do Senado",
+              "enfoque": "Mobilização das legendas de esquerda contra o avanço da bancada do PL",
               "url": "https://g1.globo.com/politica/noticia/2026/10/30/senado-esquerda-bancada-recorde-do-pl.ghtml"
+            },
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Articulação de acordos no Senado envolvendo indulto e composição institucional",
+              "url": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/10/29/alcolumbre-acordo-indulto-bolsonaro.ghtml"
             }
           ]
         },
         {
-          "id": "divida-publica-deficit-setembro",
+          "id": "divida-publica-deficit-setembro-2026",
           "editoria": "Economia",
-          "titulo": "Dívida bruta atinge 82,9% do PIB com déficit primário de R$ 5,5 bilhões",
-          "texto": "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, puxando a dívida bruta para 82,9% do PIB, o nível mais elevado em cinco anos e meio. Dados do Banco Central indicam simultaneamente recorde histórico de endividamento e inadimplência das famílias brasileiras. Em contrapartida, as contas isoladas do governo central fecharam o mês com superávit temporário de R$ 4,8 bilhões segundo o Tesouro.",
-          "por_que_importa": "O avanço da dívida soberana pressiona a curva de juros futuros e limita o espaço orçamentário discricionário da União para universidades federais e investimentos em pesquisa.",
+          "titulo": "Dívida pública atinge 82,9% do PIB com déficit consolidado de R$ 5,5 bilhões em setembro",
+          "texto": "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões no mês de setembro, elevando a Dívida Bruta do Governo Geral para 82,9% do PIB, o maior patamar em cinco anos e meio. Embora o Governo Central tenha registrado superávit de R$ 4,8 bilhões isoladamente no mês, a trajetória do endividamento bruto reflete o acúmulo de juros nominais elevados e o avanço de despesas obrigatórias. O endividamento e a inadimplência das famílias também registraram patamares recordes na apuração do Banco Central.",
+          "por_que_importa": "A escalada contínua da dívida sobre o PIB intensifica as pressões do mercado por cortes estruturais de gastos e limita a flexibilidade orçamentária do próximo ciclo governamental.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Indicadores fiscais consolidados do Banco Central",
+              "enfoque": "Dados do Banco Central sobre dívida pública, déficit primário e endividamento",
               "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml"
             }
           ]
         },
         {
-          "id": "reforma-tributaria-aliquota-cbs-tcu",
+          "id": "estatais-deficit-recorde-setembro",
           "editoria": "Economia",
-          "titulo": "TCU propõe alíquota de 11,3% para imposto federal sobre consumo em 2027",
-          "texto": "O Tribunal de Contas da União apresentou estimativa técnica fixando em 11,3% a alíquota de referência para a Contribuição sobre Bens e Serviços (CBS) da União a vigorar em 2027. O parecer subsidiará a regulamentação pelo Senado, balizando o equilíbrio de receitas sem sobrecarregar a cadeia de serviços. O Ministério da Fazenda analisa o cálculo para estruturar as medidas de transição do novo sistema tributário.",
-          "por_que_importa": "A calibragem das alíquotas de consumo afeta diretamente insumos para pesquisa, prestação de serviços educacionais e custos operacionais de instituições sem fins lucrativos.",
+          "titulo": "Déficit das estatais federais atinge recorde de R$ 8,5 bilhões no acumulado até setembro",
+          "texto": "As empresas estatais federais acumularam um déficit de R$ 8,5 bilhões de janeiro a setembro de 2026, estabelecendo nova máxima histórica para a série estatística. O resultado negativo é puxado majoritariamente pelos Correios e pela Empresa Brasileira de Infraestrutura Aeroportuária (Infraero), que registraram aumento de custos operacionais e encargos. O Ministério da Fazenda prepara um plano de contenção para equilibrar os aportes da União no fechamento do ano fiscal.",
+          "por_que_importa": "O rombo das estatais pressiona diretamente o resultado primário do governo central, exigindo compensações fiscais e gerando debates sobre governança corporativa pública.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Proposta técnica do TCU enviada ao Senado",
+              "enfoque": "Balanço divulgado pelo Banco Central detalhando o resultado das empresas públicas",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "tcu-aliquota-federal-reforma-tributaria",
+          "editoria": "Economia",
+          "titulo": "TCU propõe alíquota de 11,3% para a CBS federal no modelo da reforma tributária em 2027",
+          "texto": "O Tribunal de Contas da União apresentou estimativa técnica que fixa em 11,3% a alíquota de referência para a Contribuição sobre Bens e Serviços (CBS), componente federal da reforma tributária. O cálculo visa manter a neutralidade da arrecadação a partir de 2027 na substituição do PIS, da Cofins e do IPI. A definição formal dependerá da fixação final de exceções setoriais e da validação pelo Senado Federal.",
+          "por_que_importa": "A alíquota federal é determinante para a calibragem do novo sistema de imposto sobre valor agregado (IVA), com impacto direto no planejamento tributário e no preço final de bens e serviços ao consumidor.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Cálculos técnicos e nota do TCU encaminhada aos parlamentares",
               "url": "https://g1.globo.com/economia/noticia/2026/10/28/tcu-propoe-aliquota-de-113percent-para-o-futuro-imposto-sobre-consumo-do-governo-federal-em-2027-senado-tem-que-aprovar-valor.ghtml"
             }
           ]
         },
         {
-          "id": "stf-caso-master-vorcaro-brb",
-          "editoria": "Economia",
-          "titulo": "Fachin retém inquérito do Banco Master no STF em meio a acusações de rombo no BRB",
-          "texto": "O presidente do Supremo Tribunal Federal, Edson Fachin, decidiu manter sob sua condução direta o inquérito que apura fraudes e irregularidades envolvendo o Banco Master e o Banco de Brasília (BRB). A investigação da Polícia Federal resultou no indiciamento de 15 pessoas, incluindo Daniel Vorcaro e ex-dirigentes da instituição pública brasiliense, sob acusação de aquisição forçada de carteiras de crédito podres. A defesa dos acusados questiona a integridade de provas digitais apreendidas.",
-          "por_que_importa": "A higidez de bancos regionais e estatais e a governança no sistema financeiro têm impacto direto sobre o crédito público e a estabilidade bancária nacional.",
-          "fontes": [
-            {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Decisão do STF e desdobramentos dos indiciamentos da PF",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/29/fachin-decide-devolver-investigacao-do-inss-a-mendonca-presidente-do-stf-mantem-sob-sua-responsabilidade-caso-master.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "articulacao-senado-anistia-alcolumbre",
+          "id": "caso-master-brb-indiciamento-pf",
           "editoria": "Política",
-          "titulo": "Planalto reage a articulação no Senado que envolve anistia para Jair Bolsonaro",
-          "texto": "O ministro da Casa Civil, Rui Costa, questionou abertamente as articulações em curso no Senado que buscam atrelar apoio à eleição de Davi Alcolumbre a eventuais propostas de anistia ou indulto ao ex-presidente Jair Bolsonaro. Interlocutores do governo alertaram que concessões penais a condenados por atos contra a democracia violam linhas vermelhas institucionais. A movimentação acentuou o diálogo entre a base governista e as lideranças partidárias no Congresso.",
-          "por_que_importa": "O debate sobre anistia testa a autonomia das instituições republicanas e tensiona as relações entre o STF e a futura mesa diretora do Congresso Nacional.",
+          "titulo": "PF indicia 15 investigados no inquérito principal das operações entre Banco Master e BRB",
+          "texto": "A Polícia Federal concluiu o relatório principal do inquérito do Caso Master, formalizando o indiciamento de 15 pessoas, incluindo Daniel Vorcaro e o ex-presidente do Banco de Brasília (BRB). A investigação aponta fraudes na compra de carteiras de crédito, com alertas internos de até R$ 1,1 bilhão em créditos deteriorados que teriam sido ignorados pela cúpula do banco estatal. A defesa dos acusados questiona a integridade de evidências digitais extraídas de aparelhos apreendidos.",
+          "por_que_importa": "O caso expõe fragilidades de governança e fiscalização no sistema financeiro envolvendo bancos públicos regionais e pode resultar em pesadas sanções do Banco Central e da CVM.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Posicionamento do Palácio do Planalto sobre barganhas no Senado",
-              "url": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/29/rui-costa-articulacao-alcolumbre-senado-anistia-indulto-jair-bolsonaro.ghtml"
+              "enfoque": "Conclusão do inquérito da Polícia Federal e detalhes das condutas atribuídas aos investigados",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/pf-indiciamentos-vorcaro-master.ghtml"
             }
           ]
         }
       ],
       "agenda": [
         {
-          "quando": "09h00",
-          "o_que": "Reunião de bancadas partidárias no Senado para negociação das presidências de comissões permanentes e eleições da Mesa."
+          "quando": "09h30",
+          "o_que": "Ministério da Fazenda e Tesouro Nacional detalham cronograma de medidas de contenção de gastos fiscais para a transição"
         },
         {
-          "quando": "10h30",
-          "o_que": "Apresentação detalhada da proposta técnica do TCU sobre a alíquota da CBS da reforma tributária a líderes partidários."
+          "quando": "14h00",
+          "o_que": "Lideranças partidárias no Senado reúnem-se para discutir composição de blocos e comissões da próxima legislatura"
         },
         {
-          "quando": "14h30",
-          "o_que": "Sessão deliberativa extraordinária do STF e análise de procedimentos cautelares remanescentes do período pós-eleitoral."
+          "quando": "16h30",
+          "o_que": "Reunião de líderes da Câmara com Hugo Motta para avaliar calendário da proposta de voto distrital misto"
         }
       ]
     }
@@ -22198,6 +22204,302 @@
       ],
       "pontos": [
         "Posicionamento do Palácio do Planalto sobre barganhas no Senado"
+      ]
+    },
+    "governo-pragmatismo-fuga-flavio-eua-g1.globo.com/politica/blog/val": {
+      "url": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/10/30/governo-lula-nao-quer-transformar-em-crise-ajuda-da-casa-branca-para-fuga-de-flavio-bolsonaro.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Governo Lula evita atrito com Casa Branca após saída de Flávio Bolsonaro para os EUA",
+      "resumo": [
+        "O Palácio do Planalto decidiu adotar postura pragmática e não transformar a autorização e acolhida de Flávio Bolsonaro nos Estados Unidos em um incidente diplomático. Interlocutores do governo destacam a prioridade de manter canais institucionais abertos com Washington e Buenos Aires na transição para o novo mandato. O senador, que deixou o país com passaporte diplomático cancelado e sem autorização judicial, enfrenta isolamento político crescente no próprio campo partidário."
+      ],
+      "texto_integral": [
+        "Depois de revelado que um funcionário da Casa Branca contratou o avião da fuga de Flávio Bolsonaro (PL) para os Estados Unidos, diplomatas e assessores diretos do presidente Luiz Inácio Lula da Silva (PT) avaliam que o melhor caminho é o do pragmatismo, evitando transformar o episódio em uma crise com o presidente Donald Trump.",
+        "A avaliação, inclusive, é que Trump já está sofrendo pressão e cobrança interna pela ajuda na fuga do candidato derrotado do PL, que deve crescer ainda mais diante da pergunta sobre quem pagou o jatinho contratado por Jason Miller, assessor do presidente americano na Casa Branca.",
+        "Trump disse que não tomou lado em eleições brasileiras a pedido de Lula",
+        "Se foi o governo dos Estados Unidos, os democratas vão usar essa informação com munição extra na eleição da semana que vem para renovação do Congresso americano. Trump deve perder maioria na Câmara dos Representantes, e corre o risco de ficar também minoria no Senado.",
+        "Nesta sexta-feira ou sábado (31), o ministro das Relações Exteriores do Brasil, Mauro Vieira, pode se encontrar com seu colega Marco Rubio na reunião dos chanceleres do G20.",
+        "Será uma oportunidade para o brasileiro informar o americano que até o PL, partido de Flávio Bolsonaro, reconheceu a vitória do presidente Lula na eleição do último domingo.",
+        "Em dezembro, será a vez de Lula se encontrar com Trump na reunião dos chefes de Estado do G20.",
+        "A equipe do presidente brasileiro lembra que o americano ainda tem dois anos de mandato pela frente e o Brasil precisa conviver com ele e fazer negociações que possam beneficiar as empresas brasileiras."
+      ],
+      "pontos": [
+        "Avaliação dos bastidores diplomáticos e a diretriz de não retaliação do governo Lula"
+      ]
+    },
+    "camara-sistema-distrital-misto-hugo-motta-g1.globo.com/politica/blog/jul": {
+      "url": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/30/hugo-motta-quer-votar-sistema-distrital-misto-ainda-neste-ano.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Hugo Motta articula votação do sistema distrital misto na Câmara ainda em 2026",
+      "resumo": [
+        "A presidência da Câmara dos Deputados articula pautar a reforma do modelo eleitoral para adoção do voto distrital misto ainda no atual período legislativo. A proposta busca combinar a eleição proporcional em listas com a escolha majoritária de representantes por distritos geográficos. O debate também engloba novas regras para propaganda política e monitoramento de campanhas em plataformas digitais."
+      ],
+      "texto_integral": [
+        "Presidente da Câmara quer votar sistema distrital misto ainda neste ano",
+        "Parte dos parlamentares da Câmara dos Deputados quer aproveitar a atual composição da Casa para aprovar mudanças nas regras eleitorais ainda neste fim de ano. A articulação ocorre em meio à discussão sobre a adoção do sistema distrital misto, que pode alterar a forma de escolha dos deputados e reduzir a influência dos chamados puxadores de votos.",
+        "O presidente da Câmara, Hugo Motta (Republicanos), é favorável à proposta, que também conta com o apoio de partidos do Centrão, especialmente do PSD, liderado por Gilberto Kassab.",
+        "🔎No modelo distrital misto, o eleitor participa de uma eleição que combina duas formas de escolha: candidatos disputam vagas diretamente nos distritos, pelo sistema majoritário, e outras cadeiras são definidas conforme a votação em listas previamente organizadas pelos partidos.",
+        "🔎 Já no sistema proporcional atual, o desempenho eleitoral do partido e de seus candidatos determina quantas vagas a legenda terá no Legislativo, por meio do quociente eleitoral. Depois, essas cadeiras ficam com os candidatos mais votados da sigla.",
+        "Entre os principais interessados na mudança estão partidos que perderam cadeiras ou tiveram crescimento pouco expressivo nas últimas eleições. Essas legendas observam o avanço de siglas que se beneficiam do atual sistema proporcional, como o PL, que ampliou sua presença no Congresso graças, em parte, à votação expressiva de alguns candidatos.",
+        "Partidos como PSD e MDB, que possuem forte presença nos municípios e comandam diversas prefeituras, também enxergam vantagens no modelo distrital misto. Nesse sistema, a disputa é dividida por distritos eleitorais, o que pode ampliar a influência dos prefeitos na escolha dos candidatos que concorrerão às vagas de deputado.",
+        "Atualmente, o sistema proporcional permite que candidatos com votação expressiva ajudem a eleger outros integrantes de suas legendas. Conhecidos como puxadores de votos, esses parlamentares conseguem ampliar a representação partidária ao contribuir para que a sigla alcance o quociente eleitoral e partidário necessário para conquistar mais cadeiras.",
+        "Nas últimas eleições, pouco mais de 30 deputados ajudaram a eleger outros parlamentares. Ao todo, cerca de 60 candidatos teriam conquistado uma vaga beneficiados pela votação de nomes mais populares.",
+        "O fenômeno ganhou projeção nacional com Tiririca, eleito em 2010 com uma votação expressiva. Na época, sua votação ajudou a eleger outros candidatos e chamou a atenção dos partidos para o potencial desse mecanismo.",
+        "Atualmente, o cenário é diferente. As redes sociais ampliaram a capacidade de alguns políticos de mobilizar eleitores em todo o estado, transformando nomes populares no ambiente digital em importantes cabos eleitorais de suas próprias legendas. Nicolas Ferreira é um dos exemplos desse fenômeno.",
+        "A possibilidade de mudar as regras também provoca resistência entre partidos que se beneficiam do atual modelo. PT e PL estão entre as principais siglas contrárias à alteração, justamente porque possuem parlamentares com grande capacidade de mobilização eleitoral.",
+        "O debate também envolve mudanças nas regras de propaganda política nas redes sociais, outro tema que deve entrar na pauta dos parlamentares no fim do ano.",
+        "Uma das alternativas discutidas seria estabelecer um limite para a votação considerada válida para efeito de transferência de votos, evitando que candidatos com desempenho eleitoral muito acima da média ampliem excessivamente a bancada de seus partidos. Uma das hipóteses mencionadas seria estabelecer uma trava de até um milhão de votos para os chamados puxadores.",
+        "Apesar da articulação para aprovar a proposta ainda neste ano, a resistência de PT e PL, duas das principais forças políticas do país em número de votos, pode dificultar o avanço da mudança. No caso do PT, a existência de uma federação partidária também é um fator que torna a discussão mais complexa.",
+        "GloboPop: veja os vídeos do palco da Julia Dualibi"
+      ],
+      "pontos": [
+        "Cronograma de votação e bastidores das negociações na Câmara"
+      ]
+    },
+    "senado-articulacao-bancada-pl-anistia-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/senado-esquerda-bancada-recorde-do-pl.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Senado: esquerda estrutura estratégia de contenção à bancada do PL em meio a debate de anistia",
+      "resumo": [
+        "Bancadas de esquerda no Senado organizam blocos suprapartidários para conter a influência da bancada recorde eleita pelo PL na casa. As negociações cruzam diretamente a disputa pela presidência do Senado, na qual Davi Alcolumbre costura apoios em torno do equilíbrio com o STF e de concessões regimentais. O cenário atrai resistências na ala governista diante de discussões preliminares sobre anistia ou indulto aos condenados pelos atos de 8 de janeiro e a Jair Bolsonaro."
+      ],
+      "texto_integral": [
+        "A bancada recorde do PL no Senado, que assume em 2027, trará um desafio de articulação não só para o presidente reeleito, Luiz Inácio Lula da Silva (PT), mas para os parlamentares petistas e de outros partidos da esquerda. O PL vai ocupar sozinho mais de um terço da Casa.",
+        "O g1 entrevistou senadores eleitos pela primeira vez e reeleitos do PT, PSB e PDT para saber como eles se preparam para lidar com os numerosos colegas do PL, partido de Jair Bolsonaro, e para trabalhar por propostas do governo Lula.",
+        "As estreantes no Senado Marília Arraes (PDT-PE), Samanda de Lula (PT-RN) e Marília Campos (PT-MG) defendem a construção de alianças em pautas específicas, o diálogo com adversários políticos e a mobilização da sociedade para impedir retrocessos em direitos sociais.",
+        "Os senadores reeleitos Cid Gomes (PSB-CE) e Humberto Costa (PT-PE) preveem a tentativa, por parte da direita, de avanço das chamadas pautas de costumes, como projetos que restringem o direito ao aborto nos casos previstos em lei. O tema é alvo frequente de parlamentares da direita.",
+        "🔎 O aborto atualmente é garantido por lei no Brasil em três casos: gestação decorrente de estupro, risco de vida para a pessoa que gesta e fetos anencéfalos.",
+        "A composição do Senado ainda poderá sofrer alterações até fevereiro, quando assumem os eleitos em 2026, já que tanto os candidatos eleitos quanto os senadores em exercício podem trocar de partido ou assumir cargos no Executivo.",
+        "Caso os números atuais se confirmem, o PL terá a maior bancada partidária no início de uma legislatura desde a promulgação da Constituição de 1988. O partido elegeu 19 senadores nas eleições de domingo (4). Com isso, o partido deverá reunir 28 dos 81 integrantes da Casa. O recorde anterior pertencia ao MDB, então PMDB, que iniciou a legislatura de 1999 com 27 senadores.",
+        "Essa também é a primeira vez desde 1988 que um único partido elegeu 19 senadores em uma mesma eleição. Até então, o maior número havia sido de 14, alcançado pelo antigo PMDB em 1994 e 2010 e pelo extinto PFL em 2002.",
+        "Enquanto isso, o PT, PSB, Rede e PDT deverão reunir, somados, 15 senadores a partir de 2027. Outros 37 parlamentares estarão distribuídos entre MDB, PP, União Brasil, PSD, Republicanos, Novo, Podemos e PSDB. Há ainda um senador sem partido.",
+        "O veterano Humberto Costa (PT-PE) foi eleito senador pela terceira vez no pleito de 2026. Acostumado a lidar com os colegas de oposição, avalia que o diálogo, que já é desafiador, deve se tornar ainda mais difícil com a nova composição da Casa.",
+        "Para Costa, os parlamentares eleitos para o mandato que se inicia em 2027 têm um perfil mais “radical e agressivo” do que os atuais integrantes do Senado. Apesar disso, diz que o governo Lula terá maioria para aprovar alguns projetos que devem chegar ao plenário, pois “já estão acertados”. O senador cita como exemplo a proposta de fim da escala de trabalho 6x1.",
+        "“Há diálogo com algumas pessoas, mas a grande maioria segue uma orientação única. Fazem questão de apresentar emendas. Uma bancada muito ativa em apresentar propostas que são maléficas para a população brasileira e fazem um tipo de oposição que é uma oposição sem muito diálogo”, afirmou Humberto Costa.",
+        "O senador aposta que temas prioritários para o governo federal, como a segurança pública, vão dominar os debates na Casa. O senador também acredita que a chegada dos novos parlamentares deve ampliar a discussão de projetos ligados às pautas de costumes, como a criminalização do aborto.",
+        "Sobre a disputa pelo comando do Senado, que elegerá seu presidente em fevereiro de 2027 para um mandato de dois anos, Costa defendeu uma aliança com setores do centrão e disse que há possibilidade de apoio à recondução de Davi Alcolumbre (União Brasil-AP). O petista, porém, condicionou esse entendimento à ausência de concessões à oposição em temas que considera inegociáveis, como a anistia a condenados pelos atos golpistas de 8 de janeiro de 2023.",
+        "A senadora eleita pelo Rio Grande do Norte, Samanda de Lula (PT) avalia que a nova correlação de forças exigirá organização, firmeza e capacidade de articulação. Para a petista, não se deve fazer concessão em pautas que envolvam direitos dos trabalhadores, democracia, direitos sociais, proteção das mulheres, das crianças e das populações mais vulneráveis.",
+        "\"Para evitar retrocessos, será preciso combinar atuação parlamentar, articulação política e mobilização da sociedade\", disse Samanda.",
+        "Marília Arraes (PDT), senadora eleita por Pernambuco, também aposta na articulação entre parlamentares progressistas e no diálogo com setores da sociedade que não se identificam com a esquerda.",
+        "\"Precisamos conversar com quem pensa diferente, ouvir as insatisfações e mostrar como nossas propostas respondem aos problemas reais de segurança, emprego, renda, saúde e oportunidades\", disse Marília.",
+        "Eleito para um segundo mandato no Senado, Cid Gomes (PSB-CE) minimizou o avanço da direita na Casa e disse não ver motivo para “pânico” com a nova composição. Pelas contas do senador, esse grupo, que passou de 19 para 28 integrantes, é número suficiente para pedir a abertura de uma CPI, mas insuficiente para formar maioria.",
+        "Na avaliação dele, o Senado ficará dividido em três grupos: cerca de um terço alinhado à direita, uma parcela um pouco menor de parlamentares progressistas e outra formada por senadores que tendem a apoiar o governo. Apesar de relativizar o crescimento da direita, Cid acredita que haverá mais pautas de costumes na agenda da Casa.",
+        "Sobre a disputa pelo comando do Senado, Cid vê Davi Alcolumbre em condições mais favoráveis para construir uma maioria por meio de acordos entre os partidos. Na avaliação do senador do PSB, as divergências internas da direita dificultam uma candidatura unificada desse campo.",
+        "O senador citou Rogério Marinho e Tereza Cristina como interessados na disputa. “O que eu tô vendo é que eles lá não se entendem. Rogério Marinho (PL-RN) quer ser candidato, Tereza Cristina (PP-MS). Muito mais fácil o Davi conseguir uma maioria pelos partidos”, afirmou.",
+        "Já Marília Campos (PT), eleita por Minas Gerais, pretende usar sua experiência como prefeita de Contagem (MG) para buscar alianças em torno de demandas dos municípios, independentemente da orientação partidária dos demais senadores. A petista lembra que precisou negociar com governos de diferentes orientações políticas para viabilizar projetos.",
+        "\"Retrocesso se evita de dois jeitos. Um é firmeza em direito do trabalhador, das mulheres, na proteção social e na democracia. Não tem negociação. O outro é ter voto, e voto se constrói com relação. Quem conversa com os colegas o ano inteiro tem mais condição de virar uma votação na hora decisiva\", afirmou Marília Campos.",
+        "Ocupar a tribuna e apresentar projetos",
+        "As três senadoras eleitas entrevistadas pelo g1 pretendem combinar a atuação nas comissões e a apresentação de projetos com o uso da tribuna para dar visibilidade a pautas prioritárias e denunciar possíveis retrocessos.",
+        "Samanda de Lula afirma que pretende usar os discursos no plenário como instrumento de diálogo com a sociedade, mas ressalta que a atuação parlamentar não poderá se limitar à oposição às propostas da direita.",
+        "\"Vamos apresentar projetos, construir alianças em torno de pautas concretas e conversar inclusive com senadores que não sejam do nosso campo político quando houver possibilidade de formar maioria para uma medida positiva\", disse Samanda.",
+        "Para Marília Arraes, a defesa dos direitos das mulheres deverá ocupar espaço central nos debates da próxima legislatura. A senadora eleita avalia que a presença feminina no Congresso, por si só, não assegura avanços nas políticas de igualdade e proteção.",
+        "\"Ser mulher, por si só, não garante compromisso com os direitos das mulheres. Precisamos olhar para o que cada parlamentar defende, para os seus votos e para as consequências de suas propostas\", afirmou Marília Arraes.",
+        "Na avaliação da parlamentar, será necessário buscar apoio para propostas voltadas ao enfrentamento da violência, à autonomia feminina e à independência econômica das mulheres. Marília também afirma que pretende levar as demandas do Nordeste para o centro das discussões nacionais.",
+        "Marília Campos, por sua vez, defende que a atuação nas comissões, nas relatorias e nas negociações entre gabinetes terá papel tão importante quanto os pronunciamentos no plenário.",
+        "\"Vou usar a tribuna, sim, sempre que Minas precisar ser ouvida e sempre que houver ataque a direitos. Mas o que muda a vida das pessoas se decide muito nas comissões, nas relatorias, na conversa de gabinete. Prefiro gastar minha energia mais aprovando do que só denunciando. Dá para ser oposição firme e ser propositiva ao mesmo tempo, e é isso que eu pretendo fazer\", afirmou Marília Campos."
+      ],
+      "pontos": [
+        "Mobilização das legendas de esquerda contra o avanço da bancada do PL"
+      ]
+    },
+    "senado-articulacao-bancada-pl-anistia-g1.globo.com/politica/blog/and": {
+      "url": "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/10/29/alcolumbre-acordo-indulto-bolsonaro.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Senado: esquerda estrutura estratégia de contenção à bancada do PL em meio a debate de anistia",
+      "resumo": [
+        "Bancadas de esquerda no Senado organizam blocos suprapartidários para conter a influência da bancada recorde eleita pelo PL na casa. As negociações cruzam diretamente a disputa pela presidência do Senado, na qual Davi Alcolumbre costura apoios em torno do equilíbrio com o STF e de concessões regimentais. O cenário atrai resistências na ala governista diante de discussões preliminares sobre anistia ou indulto aos condenados pelos atos de 8 de janeiro e a Jair Bolsonaro."
+      ],
+      "texto_integral": [
+        "O presidente do Senado, Davi Alcolumbre (União-AP), avalia a possibilidade de negociar um acordo político que envolva conter a pressão por impeachment de ministros do Supremo Tribunal Federal (STF) e discutir um eventual indulto ou então a anistia ao ex-presidente Jair Bolsonaro (PL).",
+        "O foco é o componente de sobrevivência política nessa movimentação: a tentativa de construir um acordo que viabilize sua reeleição à presidência do Senado.",
+        "O indulto, ou seja, o perdão judicial, é competência do presidente da República, de acordo com a Constituição. Já a anistia depende do Congresso Nacional.",
+        "A avaliação feita por esses interlocutores é que, caso Alcolumbre consiga uma aproximação com o grupo de Bolsonaro, sua situação na disputa pelo comando da Casa muda significativamente.",
+        "Isso porque um entendimento com o bolsonarismo poderia dificultar a construção de uma candidatura alternativa, especialmente a de Rogerio Marinho (PL-RN) ou a da senadora Tereza Cristina (PP-MS), nomes considerados por uma ala da direita para a presidência do Senado.",
+        "Na prática, Alcolumbre tentaria neutralizar a resistência do PL à sua permanência no cargo, oferecendo como contrapartida uma negociação em torno de duas pautas sensíveis para o bolsonarismo: a situação judicial de Jair Bolsonaro e a pressão contra ministros do Supremo.",
+        "O discurso público seria o da pacificação institucional.",
+        "Nos bastidores, Alcolumbre tem argumentado que o país precisa de pacificação e que é necessário construir um novo ambiente de diálogo entre os Poderes depois das eleições.",
+        "Nos bastidores, porém, integrantes do próprio PL reconhecem que a negociação também atenderia aos interesses eleitorais de Alcolumbre dentro do Senado.",
+        "O que está na mesa, portanto, é a possibilidade de um acordo político que combine a redução das tensões entre o Congresso e o Supremo com a construção de uma maioria capaz de garantir a reeleição de Alcolumbre.",
+        "Ainda não há acordo fechado. Mas a hipótese já é discutida nos bastidores e expõe como a disputa pelo comando do Senado se mistura às negociações sobre o futuro político e judicial de Bolsonaro."
+      ],
+      "pontos": [
+        "Articulação de acordos no Senado envolvendo indulto e composição institucional"
+      ]
+    },
+    "divida-publica-deficit-setembro-2026-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Dívida pública atinge 82,9% do PIB com déficit consolidado de R$ 5,5 bilhões em setembro",
+      "resumo": [
+        "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões no mês de setembro, elevando a Dívida Bruta do Governo Geral para 82,9% do PIB, o maior patamar em cinco anos e meio. Embora o Governo Central tenha registrado superávit de R$ 4,8 bilhões isoladamente no mês, a trajetória do endividamento bruto reflete o acúmulo de juros nominais elevados e o avanço de despesas obrigatórias. O endividamento e a inadimplência das famílias também registraram patamares recordes na apuração do Banco Central."
+      ],
+      "texto_integral": [
+        "As contas do setor público consolidado apresentaram um déficit primário de R$ 5,5 bilhões em setembro, informou o Banco Central (BC) nesta quinta-feira (29).",
+        "🔎 O déficit primário ocorre quando as receitas com tributos e impostos ficam abaixo das despesas do governo. Se o contrário acontece, o resultado é de superávit primário.",
+        "🔎 O resultado não leva em conta o pagamento dos juros da dívida pública, e abrange o governo federal, os estados, municípios e as empresas estatais.",
+        "Na comparação com setembro do ano passado, houve melhora, uma vez que foi registrado um saldo negativo de R$ 17,5 bilhões naquele mês.",
+        "➡️ O endividamento do setor público, por sua vez, ficou estável continuou em 82,9% do Produto Interno Bruto (PIB) no mês passado — veja mais abaixo nessa reportagem.",
+        "Veja abaixo o desempenho das contas em setembro deste ano:",
+        "governo federal registrou saldo positivo de R$ 3,5 bilhões;estados e municípios tiveram saldo deficitário de R$ 5,6 bilhões;empresas estatais apresentaram déficit de R$ 3,4 bilhões.",
+        "No acumulado dos nove primeiros meses deste ano, ainda segundo dados oficiais, as contas públicas registraram um déficit primário de R$ 94,3 bilhões — o equivalente a 0,93% do Produto Interno Bruto (PIB).",
+        "Com isso, houve piora na comparação com o mesmo período do ano passado, quando foi registrado um saldo negativo de R$ 79,2 bilhões (0,84% do PIB).",
+        "No caso somente do governo federal, o resultado ficou negativo em R$ 93,6 bilhões na parcial deste ano, informou o BC, contra um déficit de R$ 99,6 bilhões nos nove primeiros meses de 2025.",
+        "Para este ano, a meta é de que as contas do governo tenham um saldo negativo de 0,25% do Produto Interno Bruto (PIB), cerca de R$ 34,3 bilhões.De acordo com o arcabouço fiscal, aprovado em 2023, há um intervalo de tolerância de 0,25 ponto percentual em relação à meta central.Ou seja: a meta será considerada formalmente cumprida se o governo tiver saldo zero, ou se chegar a um superávit de R$ 68,6 bilhõesO texto, no entanto, permite que o governo retire desse cálculo R$ 67,3 bilhões em despesas. E use esses recursos para pagar, por exemplo, precatórios (gastos com sentenças judiciais, defesa e educação).",
+        "Quando se incorporam os juros da dívida pública na conta – no conceito conhecido no mercado como resultado nominal, utilizado para comparação internacional –, houve déficit de R$ 113 bilhões nas contas do setor público em setembro.",
+        "➡️ No acumulado em 12 meses até setembro, foi registrado um resultado negativo (déficit) de R$ 1,28 trilhão, ou 9,51% do PIB.",
+        "🔎 Esse número é acompanhado com atenção pelas agências de classificação de risco para a definição da nota de crédito dos países, indicador levado em consideração por investidores.",
+        "O resultado nominal das contas do setor público sofre impacto do resultado mensal das contas, das atuações do BC no câmbio, e dos juros básicos da economia (Selic) fixados pela instituição para conter a inflação. Atualmente, a taxa Selic está em 13,75% ao ano, patamar elevado.",
+        "Segundo o BC, as despesas com juros nominais somaram R$ 1,2 trilhão (8,99% do PIB) em doze meses até setembro deste ano.",
+        "Em setembro, segundo números do Banco Central, a dívida do setor público consolidado ficou estável em 82,9% do PIB em setembro — o equivalente a R$ 11,11 trilhões.",
+        "➡️ Este é o maior nível para a dívida pública desde março de 2021, quando somava 85,1% do PIB, ou seja, é o maior patamar em mais de cinco anos.",
+        "➡️ No acumulado do governo do presidente Luiz Inácio Lula da Silva (PT), ou seja, em pouco mais de três anos, a dívida já avançou 11,2 pontos percentuais.",
+        "🔎 A alta na dívida no governo Lula está relacionada, principalmente, com o aumento de gastos públicos, que gera mais despesas com juros — um ciclo vicioso que se retroalimenta.",
+        "➡️ Para o Fundo Monetário Internacional (FMI), que utiliza de um conceito internacional — englobando os títulos públicos na carteira do BC —, o endividamento brasileiro foi bem maior em setembro: 95,2% do PIB.",
+        "🔎 A proporção com o PIB é considerada por especialistas como o conceito mais apropriado para medir e comparar a dívida das nações. E o formato de cálculo do Fundo Monetário Internacional (FMI) é adotado internacionalmente.",
+        "➡️ Acima de 90% do PIB, o patamar da dívida brasileira está bem acima de nações emergentes e de países da América do Sul, ficando maior, também, do que a média das nações da Zona do Euro (segundo dados do FMI).",
+        "Para tentar conter o crescimento da dívida, em 2023 o governo aprovou o chamado \"arcabouço fiscal\", ou seja, novas regras para as contas públicas em substituição ao teto de gastos.",
+        "A norma prevê crescimento das despesas abaixo das receitas, e um limite para gastos. Entretanto, despesas excluídas desse limite continuam pressionando para cima o endividamento.Analistas pedem um corte robusto de gastos para conter a dívida e proporcionar queda do juro básico.",
+        "Diante do crescimento da dívida pública no atual mandato do presidente Lula, a equipe econômica vem acenando com novas medidas para conter sua expansão na próxima gestão, que tem início em 2027."
+      ],
+      "pontos": [
+        "Dados do Banco Central sobre dívida pública, déficit primário e endividamento"
+      ]
+    },
+    "estatais-deficit-recorde-setembro-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "Déficit das estatais federais atinge recorde de R$ 8,5 bilhões no acumulado até setembro",
+      "resumo": [
+        "As empresas estatais federais acumularam um déficit de R$ 8,5 bilhões de janeiro a setembro de 2026, estabelecendo nova máxima histórica para a série estatística. O resultado negativo é puxado majoritariamente pelos Correios e pela Empresa Brasileira de Infraestrutura Aeroportuária (Infraero), que registraram aumento de custos operacionais e encargos. O Ministério da Fazenda prepara um plano de contenção para equilibrar os aportes da União no fechamento do ano fiscal."
+      ],
+      "texto_integral": [
+        "O Banco Central (BC) informou nesta sexta-feira (31) que as empresas estatais federais registraram um déficit de R$ 8,5 bilhões de janeiro a setembro deste ano.",
+        "🔎O termo \"déficit\" significa que o gasto somado dessas estatais foi maior que a receita que elas conseguiram gerar no ano.",
+        "➡️Esse é o pior resultado para o período da série histórica do BC, que tem início em 2002. Até então, o maior rombo para este período havia ocorrido em 2025 (R$ -6,3 bilhões, sem correção pela inflação).",
+        "➡️O resultado, na parcial deste ano, também já supera o resultado negativo recorde para um ano fechado, de 2024, quando foi registrado um déficit de R$ 6,73 bilhões.",
+        "A série do Banco Central não considera a Petrobras, a Eletrobras e nem as empresas do setor financeiro (bancos públicos).O BC lembra que a Petrobras e a Eletrobras foram excluídos do cálculo das estatais federais em 2009, mas explica que a série histórica de anos anteriores foi revisada com base na nova metodologia — sendo válida, portanto, de 2002 em diante.Entram nesse cálculo empresas como Correios, a Emgepron, a Hemobrás, a Casa da Moeda, a Infraero, o Serpro, a Dataprev e a Emgea.O conceito do Banco Central considera apenas a variação da dívida, conceito amplamente utilizado em análises fiscais internacionais, enquanto o governo se utiliza do conceito conhecido por \"acima da linha\" (receitas menos despesas, sem contar juros da dívida).",
+        "➡️No projeto da Lei de Diretrizes Orçamentárias de 2027, encaminhado ao Congresso Nacional em abril deste ano, o governo federal admite que as empresas estatais federais, em déficit desde 2023, continuarão no vermelho até 2030.",
+        "➡️ Segundo a Instituição Fiscal Independente (IFI), ligada ao Senado Federal, os indicadores financeiros confirmam uma \"deterioração perceptível\" da saúde financeira de \"parte relevante\" das empresas estatais federais — o que eleva o risco para o Tesouro Nacional.",
+        "\"Essa deterioração não é uniforme nem decorre de uma única causa, mas os dados levantados pela IFI permitem identificar padrões que merecem atenção do ponto de vista da gestão fiscal\", acrescentou o órgão, por meio do Relatório de Acompanhamento Fiscal de julho.",
+        "➡️O resultado ruim das estatais federais tem sido agravado, principalmente, pela situação dos Correios, que passa por grave crise fiscal, com piora do seu resultado financeiro.",
+        "A estatal está há 15 trimestres seguidos no vermelho. No primeiro semestre deste ano, a empresa fechou com um prejuízo de R$ 5,6 bilhões.",
+        "Para enfrentar rombo financeiro, o governo autorizou, em maio deste ano, a estatal a vender seguros, títulos de capitalização e a atuar no mercado de telefonia.",
+        "A ideia é que a empresa faça convênios com instituições financeiras para ofertar os serviços. De acordo com o Ministério da Gestão, os Correios executam um plano de reequilíbrio financeiro e reestruturação."
+      ],
+      "pontos": [
+        "Balanço divulgado pelo Banco Central detalhando o resultado das empresas públicas"
+      ]
+    },
+    "tcu-aliquota-federal-reforma-tributaria-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/28/tcu-propoe-aliquota-de-113percent-para-o-futuro-imposto-sobre-consumo-do-governo-federal-em-2027-senado-tem-que-aprovar-valor.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "TCU propõe alíquota de 11,3% para a CBS federal no modelo da reforma tributária em 2027",
+      "resumo": [
+        "O Tribunal de Contas da União apresentou estimativa técnica que fixa em 11,3% a alíquota de referência para a Contribuição sobre Bens e Serviços (CBS), componente federal da reforma tributária. O cálculo visa manter a neutralidade da arrecadação a partir de 2027 na substituição do PIS, da Cofins e do IPI. A definição formal dependerá da fixação final de exceções setoriais e da validação pelo Senado Federal."
+      ],
+      "texto_integral": [
+        "O plenário do Tribunal de Contas da União (TCU) aprovou nesta quarta-feira (28) uma proposta para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
+        "O cálculo foi feito por técnicos do tribunal com base em dados da Receita Federal. O valor será encaminhado ao Congresso Nacional, que poderá concordar ou não. Caberá ao Senado fixar o valor final da alíquota, que será cobrada a partir de 2027. Se o Senado não aprovar uma alíquota até 15 de dezembro, terá validade o valor calculado pelo TCU.",
+        "▶️Para calcular o valor da CBS, técnicos do tribunal estimaram quanto seria arrecadado com os impostos que estão sendo extintos no fim de 2026 (PIS, Cofins e grande parte do IPI).",
+        "Isso porque, uma das premissas da reforma sobre o consumo, é manter o atual patamar da carga tributária. O governo informou, na proposta de orçamento de 2027, que espera arrecadar R$ 636 bilhões com a CBS no ano que vem.A proposta do TCU também engloba um \"redutor\" de 44,2% na alíquota de referência da CBS, e alíquotas reduzidas para alguns produtos e serviços, nas compras públicas.",
+        "🔎 O TCU é responsável por analisar e homologar os cálculos das alíquotas de referência da CBS e do Imposto sobre Bens e Serviços (IBS), etapas previstas na transição para o novo sistema tributário brasileiro, aprovada pelo Congresso Nacional em 2023.",
+        "🔎A CBS substituirá o PIS, a Contribuição para Financiamento da Seguridade Social (Cofins) e, também, uma parte do Imposto Sobre Produtos Industrializados (IPI).",
+        "🔎 PIS e Cofins serão extintas em 2026, enquanto o IPI permanecerá somente para itens produzidos na Zona Franca de Manaus (ZFM) — mas com tributação efetiva somente no resto do país.",
+        "🔎 Em 2024, o governo estimou que a alíquota da CBS seria de 8,8%. Entretanto, nos meses seguintes foram feitas novas exceções à cobrança do imposto cheio que elevaram a alíquota.",
+        "🔎 A área econômica não fez nova projeção, mas cálculo da consultoria Roit aponta para uma alíquota de 9,43% em 2027.",
+        "🔎 Estimativas divulgadas em julho pelo Comitê Gestor do IBS, dos estados, apontam que a CBS teria uma taxa de cerca de 9,2% no próximo ano.",
+        "Além da CBS do governo federal, a reforma tributária também contempla a cobrança do IBS estadual e municipal, que terá uma alíquota marginal, de 0,1% em 2027 e em 2028.",
+        "A partir de 2029, os estados e municípios começam a aumentar, gradualmente, a cobrança do IBS, até 2032. A cobrança integral começa em 2033.",
+        "Assim que a alíquota cheia estiver sendo cobrada, estimativas apontam que o imposto sobre o consumo do governo federal, estados e municípios, somará cerca de 28% em 2033 — o primeiro ano com tributação cheia — uma das maiores alíquotas do mundo.",
+        "O valor, que supera o teto existente de 26,5%, ficaria acima do registrado nos países ricos.",
+        "Esse será o nível necessário para manter a atual carga tributária sobre o consumo, ou seja, o peso dos impostos sobre essa base de tributação.Tributos altos sobre o consumo, por sua vez, penalizam a população de baixa renda — uma vez que uma parte maior de sua renda é destinada aos impostos.",
+        "➡️O governo federal, por sua vez, alega que, atualmente, os impostos cobrados sobre o consumo no país são ainda maiores, com tributação média de cerca de 34% – há dificuldade em calcular o peso dos impostos pois o sistema é muito complexo, há exceções, e os tributos incidem sobre si mesmos. Com a reforma tributária, eles passarão a ser cobrados por fora (aparecerão separados do valor do produto ou serviço).",
+        "Benefícios elevam alíquota para todos",
+        "A aprovação de exceções à alíquota cheia dos futuros impostos sobre o consumo durante a tramitação da reforma tributária no Congresso Nacional, ou seja, de benefícios para setores e produtos, é uma das responsáveis pelo elevado nível da tributação estimada para os futuros impostos — algo que foi apontado, à época, por exemplo, pela indústria nacional.",
+        "A explicação é que, quanto maior é o número de exceções, ou regimes diferenciados — com tratamento favorecido —, mais alta é a chamada \"alíquota padrão\", ou seja, que os demais setores da economia, não englobados por benefícios, têm de pagar.Isso por conta da determinação da reforma de manter o atual patamar da carga tributária — valor que se arrecada em proporção ao PIB. Com setores e produtos beneficiados por exceções aprovadas pelo Legislativo, com tributação menor, todo os consumidores pagam a mais na alíquota normal (chamada de padrão).",
+        "Entre os benefícios aprovados na tramitação da reforma tributária, estão alíquota zero para a cesta básica, incluindo as proteínas (o que, segundo especialistas, beneficia a população mais rica), para uma lista de medicamentos e dispositivos médicos.",
+        "O Congresso aprovou ainda alíquotas reduzidas para serviços de educação e saúde; medicamentos e dispositivos médicos; produções artísticas, culturais, jornalísticas e audiovisuais nacionais; atividades desportivas; e profissões regulamentadas e fiscalizadas por conselhos profissionais.",
+        "Esses dois novos impostos que serão implementados gradualmente até 2032 funcionarão no modelo de imposto sobre valor agregado (IVA), como acontece no resto do mundo, de maneira não cumulativa.",
+        "Isso significa que, ao longo da cadeia de produção, o imposto é cobrado em cada etapa, mas os contribuintes podem descontar o tributo pago anteriormente.",
+        "Por exemplo: se o IVA for de 20%, um produto vendido ao consumidor final por R$ 100 terá imposto de R$ 20, que, ao final da cadeia, totalizará R$ 20, após os mecanismos de crédito e compensação entre as diferentes empresas da produção e comercialização.",
+        "Outra mudança é que os tributos sobre o consumo (IVA) serão cobrados no \"destino\", ou seja, no local onde os produtos são consumidos, e não mais onde eles são produzidos. A migração da origem para o destino será feita de forma gradual durante décadas.",
+        "Isso contribuirá para combater a chamada \"guerra fiscal\", nome dado a disputa entre os estados para que empresas se instalem em seus territórios. Para isso, intensificam a concessão de benefícios fiscais.",
+        "Além dos tributos não cumulativos do governo, estados e municípios, a reforma tributária prevê, ainda, a cobrança do chamado \"imposto seletivo\", também chamado de imposto do pecado.",
+        "Para que tenha validade, esse novo tributo ainda tem de ser regulamentado. Nesta terça-feira (27), o ministro da Fazenda, Dario Durigan, afirmou que a proposta para o imposto seletivo será enviada ao Congresso Nacional em breve, provavelmente ainda nesta semana.",
+        "O imposto do pecado começará a ser cobrado em 2027 e tem o objetivo de encarecer produtos ou atividades que causam danos à saúde ou ao meio ambiente.",
+        "A lista inclui bebidas alcoólicas, refrigerantes e cigarros. O novo imposto também incidirá sobre alguns veículos, conforme o nível de poluição, sobre a extração de bens minerais e sobre loterias, apostas e jogos de fantasy sports.",
+        "Em junho, o Ministério da Fazenda informou que a ideia é manter, pelo menos em um primeiro momento, a carga tributária atual, sem aumento dos impostos durante a transição. Nesse período, o governo pretende discutir as mudanças com os setores afetados.",
+        "Para 2027, a equipe econômica estima arrecadar R$ 41,9 bilhões com esse tributo, segundo a proposta de Orçamento enviada ao Congresso.",
+        "O TCU informou que essa projeção do governo federal foi considerada para manter a atual carga tributária sobre o consumo.",
+        "No futuro, porém, o objetivo do governo é aumentar a tributação sobre produtos ou atividades que causam danos à saúde ou ao meio ambiente, para desestimular seu consumo."
+      ],
+      "pontos": [
+        "Cálculos técnicos e nota do TCU encaminhada aos parlamentares"
+      ]
+    },
+    "caso-master-brb-indiciamento-pf-g1.globo.com/df/distrito-feder": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/10/28/pf-indiciamentos-vorcaro-master.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-30",
+      "titulo": "PF indicia 15 investigados no inquérito principal das operações entre Banco Master e BRB",
+      "resumo": [
+        "A Polícia Federal concluiu o relatório principal do inquérito do Caso Master, formalizando o indiciamento de 15 pessoas, incluindo Daniel Vorcaro e o ex-presidente do Banco de Brasília (BRB). A investigação aponta fraudes na compra de carteiras de crédito, com alertas internos de até R$ 1,1 bilhão em créditos deteriorados que teriam sido ignorados pela cúpula do banco estatal. A defesa dos acusados questiona a integridade de evidências digitais extraídas de aparelhos apreendidos."
+      ],
+      "texto_integral": [
+        "PF indicia Vorcaro, ex-presidente do BRB e mais 13 no caso Master",
+        "A Polícia Federal enviou ao Supremo Tribunal Federal (STF) nesta quarta-feira (28) um relatório parcial do principal inquérito que apura esquemas relacionados ao Banco Master e ao Banco de Brasília (BRB).",
+        "No documento de mais de 700 páginas, a PF indicia 15 suspeitos de participação nas condutas ilegais, incluindo (veja lista completa abaixo):",
+        "Daniel Vorcaro, ex-dono do Banco Master;Augusto Lima, ex-sócio de Daniel Vorcaro;Paulo Henrique Costa, ex-presidente do BRB.",
+        "No mesmo documento, os delegados da Polícia Federal pedem prazo adicional de 60 dias para seguir com as investigações, concluir perícias e apresentar um relatório complementar. O pedido será analisado pelo ministro André Mendonça, relator do caso no Supremo Tribunal Federal (STF).",
+        "Segundo a PF, Daniel Vorcaro e Paulo Henrique Costa compunham o \"núcleo estratégico da organização criminosa\" que tentou viabilizar a compra do Banco Master pelo BRB, entre 2024 e 2025.",
+        "\"Na condição de líder da organização, Daniel Bueno Vorcaro centralizava as decisões relacionadas à produção, aquisição, cessão das carteiras de crédito utilizadas para captação de recursos, além de dirigir a atuação dos demais integrantes vinculados ao Banco Master e às estruturas empresariais associadas ao esquema\", diz o relatório.",
+        "PF ouve Vorcaro e ex-presidente do BRB sobre Banco Master",
+        "O BRB – que tem como acionista majoritário o governo do DF – enfrenta uma crise marcada por perdas bilionárias ligadas a operações com o extinto Banco Master. Paulo Henrique Costa, Daniel Vorcaro e Augusto Lima foram alvo de diferentes fases da Operação Compliance Zero, que investiga os negócios do Banco Master. Costa e Vorcaro estão presos.O BRB tentou comprar o Master e chegou a injetar R$ 16,7 bilhões no banco de Vorcaro. A compra foi barrada pelo Banco Central e, depois, o BRB descobriu que parte das carteiras compradas era fraudulenta e sem lastro.",
+        "Veja abaixo quem são os 15 indiciados pela Polícia Federal no relatório desta quarta:",
+        "Daniel Vorcaro, ex-dono do Banco Master;Paulo Henrique Costa, ex-presidente do BRB;Augusto Lima, ex-sócio de Vorcaro no Banco Master;Angelo Antônio Ribeiro da Silva, ex-diretor do Master;Luiz Antônio Bull, ex-diretor do Master;Alberto Félix de Oliveira Neto, ex-diretor do Master;Allan da Silva Machado, ex-procurador do Master;Henrique Souza e Silva Peretto, sócio da Tirreno;André Felipe de Oliveira Seixas Maia, sócio da Tirreno;Daniel Lopes Monteiro, ex-advogado do Master;Dario Oswaldo Garcia Junior, ex-diretor de Finanças e Controladoria do BRB;Luana de Andrade Ribeiro, ex-diretora executiva de Controle e Riscos do BRB;Cristiane Maria Lima Bukowitz, ex-diretora executiva de gestão de pessoas do BRB;Diogo Ilário de Araújo Oliveira, ex-diretor executivo de Atacado e Governo do BRB;José Maria Correa Dias Junior, ex-diretor executivo de Tecnologia do BRB.",
+        "seis ex-sócios ou ex-gestores do Banco Master;dois sócios da Tirreno, firma de consultoria apontada pela PF como empresa de fachada para o esquema;sete ex-gestores do BRB.",
+        "O g1 e a TV Globo tentam contato com as defesas dos citados.",
+        "\"A defesa de Daniel Vorcaro tomou conhecimento do relatório parcial apresentado pela Polícia Federal no Inquérito nº 5026/STF, que promove o indiciamento de Daniel. Trata-se de um ato açodado e afoito, que antecipa conclusões que a própria investigação admite ainda não ter alcançado:",
+        "● Indiciamento antes do fim da investigação: no mesmo documento em que indicia, a autoridade policial pede ao Supremo Tribunal Federal mais 60 dias para prosseguir nas apurações. Reconhece que exames periciais seguem “em elaboração”, que parte do material apreendido não foi analisada e que pessoas relevantes sequer foram ouvidas. Indicia-se primeiro para investigar depois.",
+        "● Inexistência de prejuízo ao BRB: o negócio envolvendo as carteiras da Tirreno não foi concluído. As carteiras foram substituídas por outros ativos, e a troca realizada demonstra que os negócios entre o Banco Master e o BRB geraram resultados positivos para o Banco de Brasília. Nenhuma perícia oficial apurou qualquer prejuízo: os números citados no relatório vêm da petição inicial de uma ação indenizatória movida pelo próprio BRB, que é parte interessada, e a própria Polícia Federal reconhece que não teve acesso ao resultado da auditoria sobre os ativos entregues em substituição. A defesa já pediu, na esfera cível, a perícia que sepultará definitivamente a narrativa fantasiosa de fraude e prejuízo.",
+        "● Lavagem de dinheiro sem rastreamento de recursos: o relatório imputa lavagem de capitais, mas registra que ainda está pendente a análise bancária, fiscal e patrimonial destinada a “identificar eventual proveito econômico” e “rastrear os fluxos financeiros”. Imputa-se a ocultação de valores cujo caminho sequer foi examinado.",
+        "● Indiciamento frágil e absurdo: as conclusões se apoiam em leitura seletiva de mensagens e em hipóteses formuladas “em tese”, e não em demonstração técnica. São operações embasadas em decisões técnicas e colegiadas das instâncias de governança de duas instituições supervisionadas pelo Banco Central. Agora são retratadas como crime sem que se tenha aferido seu resultado econômico.",
+        "● O depoimento que não vazou: Daniel Vorcaro prestou à Polícia Federal esclarecimentos decisivos sobre as operações com o BRB. Foi um depoimento esclarecedor e, curiosamente, justamente ele não foi vazado.",
+        "● Arquivamento do Inquérito e Revogação da Prisão: sem prova técnica de fraude ou de prejuízo, o indiciamento não se sustenta, e o inquérito relativo às operações entre o Banco Master e o BRB deve ser arquivado. Nesse contexto, torna-se urgente e imperativa a revogação da prisão preventiva de Daniel Vorcaro, garantindo-se seu direito de responder em liberdade. Brasília, 28 de outubro de 2026.\"",
+        "\"A defesa de Paulo Henrique Costa, ex-Presidente do BRB, recebeu com surpresa o seu indiciamento pelos crimes de gestão fraudulenta e de organização criminosa. Pesa dizer que o trabalho policial submeteu os fatos às hipóteses acusatórias, quando deveria fazer o inverso.",
+        "As conversas em aplicativos de mensageria nos celulares dos integrantes do ambiente Master mostram às escâncaras que Paulo Henrique não tinha conhecimento das fraudes nas carteiras. As testemunhas, sejam as ligadas ao BRB, sejam ao Master, são convergentes nesse tema. Também foram ignorados todos os documentos carreados aos autos, inclusive por autoridades públicas, como o Banco Central.",
+        "Há prova eloquente de que foi Paulo Henrique a detectar irregularidades nas carteiras; de que ele exigiu, passo contínuo, 25 bilhões de garantias; de que quando o nome da Tirreno vem à lume, as operações são suspensas; há centenas e centenas de mensagens de Paulo Henrique ao Master exigindo a substituição de ativos, na forma dos contratos, inclusive se valendo daqueles dados em garantia. Foi Paulo Henrique quem trouxe o fato ao conhecimento do Banco Central, a quem se participaram todos os passos, antes e depois da detecção da fraude.",
+        "Curiosamente, não se aponta nenhuma vantagem financeira de Paulo Henrique; a fantasiosa versão de recepção de apartamentos, na ordem de 150 milhões de reais, foi amplamente descartada, embora tenham fundamentado a prisão preventiva a que ainda está submetido, já há mais de 180 dias, sem revisão judicial, em ofensa a previsão expressa do Código de Processo Penal. Há pedido de liberdade provisória desde 12 de junho, pendente de opinião da PGR; há habeas corpus impetrado há 20, sem sequer remessa ao MPF.",
+        "Paulo Henrique seguiu as orientações do acionista majoritário de realizar operação societária com o Master, seguiu toda a governança, dividiu todos os passos com o Conselho de Administração e com o Banco Central. Sempre atuou no melhor interesse do BRB. Todas as decisões, importante frisar, eram colegiadas; o Presidente do BRB tinha alçada de zero reais. Nenhuma decisão foi tomada por ele, sozinho.",
+        "As autoridades usam enviesado microscópio na carteira de 12,2 bi - dos quais 10,5 bi foram substituídos por ativos hígidos, até sua remoção do cargo - e esquecem que a relação com o Master gerou 8 bilhões de reais de receitas; e seguem gerando, diga-se.",
+        "Quando Paulo Henrique foi erradamente removido do BRB, o banco era saudável, líquido, rentável, com marca positiva e líder em diversos segmentos; sempre cumpriu seu relevante papel de banco público. Paulo Henrique sempre leal ao BRB e defendeu seu interesse; e seguiu fazendo na relação com o Master.",
+        "Paulo Henrique e sua defesa seguem acreditando na Justiça e que a Procuradoria-Geral da República saberá reconhecer a totalidade dos elementos contidos nos autos; uma leitura idônea levará o Ministério Público Federal a descartar as hipóteses de gestão fraudulenta e a igualmente estapafúrdia conclusão de que Paulo Henrique integraria uma organização criminosa.\"",
+        "A defesa de Augusto Lima rechaça integralmente a conclusão do relatório parcial. A documentação e os esclarecimentos apresentados por Augusto Lima demonstram, de forma veemente, que ele não participou, direta ou indiretamente, da fraude mencionada.",
+        "A conclusão equivocada da Autoridade Policial em relação a Augusto Lima decorre da leitura enviesada de esparsas e aleatórias mensagens de texto, temporalmente desconectadas entre si.",
+        "A defesa ressalta que se trata de conclusão apresentada em relatório parcial de investigação, que não constitui denúncia do Ministério Público nem condenação judicial. A presunção de inocência é uma garantia constitucional e deve ser respeitada, sem antecipação de culpa.",
+        "A defesa reforça que confia no Poder Judiciário e que demonstrará, mais uma vez, o erro de premissa adotado pela Autoridade Policial, o que, inequivocamente, levará à exclusão de Augusto Lima da investigação.",
+        "\"O BRB informa que acompanha os desdobramentos das investigações conduzidas pelas autoridades competentes e reafirma seu compromisso com a plena apuração dos fatos relacionados a operações realizadas em gestões anteriores.",
+        "A atual administração renovou integralmente a diretoria executiva, fortaleceu os mecanismos de governança e controles internos e compartilhou com os órgãos competentes os resultados de auditoria independente contratada para aprofundar a investigação dos fatos. O Banco destaca que o trabalho conduzido internamente contribuiu de forma relevante para o avanço das apurações e para os desdobramentos anunciados pelas autoridades.",
+        "O BRB reforça que as condutas sob apuração dizem respeito a atos individuais e não se confundem com a instituição nem com os padrões de integridade que orientam sua atuação. O Banco seguirá adotando todas as medidas cabíveis para proteger seu patrimônio, buscar o ressarcimento de eventuais prejuízos e assegurar a responsabilização dos envolvidos, na forma da lei.\"",
+        "Leia mais notícias sobre a região no g1 DF."
+      ],
+      "pontos": [
+        "Conclusão do inquérito da Polícia Federal e detalhes das condutas atribuídas aos investigados"
       ]
     }
   }
