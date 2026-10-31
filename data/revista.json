@@ -5520,6 +5520,129 @@
           "o_que": "Reunião de líderes partidários no Senado para fechar o cronograma da PEC da Segurança Pública"
         }
       ]
+    },
+    "2026-10-31-noite": {
+      "data": "2026-10-31",
+      "edicao": "noite",
+      "titulo": "Pressão fiscal, reforma tributária e desdobramentos pós-eleição",
+      "resumo_dia": "O cenário pós-eleitoral de 2026 é marcado por debates cruciais sobre a regulamentação tributária e o equilíbrio das contas públicas, com a dívida atingindo 82,9% do PIB. No Congresso, articulações avançam para a votação da PEC da Segurança Pública na próxima semana, enquanto o Ministério do Trabalho contabiliza recordes de denúncias de coação eleitoral. Na agenda internacional e administrativa, o Itamaraty alinha encontros prévios à cúpula do G20 e o Executivo programa o dimensionamento do Concurso Nacional Unificado de 2027.",
+      "notas": [
+        {
+          "id": "reforma-tributaria-aliquota-consumo",
+          "editoria": "Economia",
+          "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
+          "texto": "Projeções recentes indicam que a alíquota padrão combinada do novo imposto sobre consumo (IBS e CBS) pode ultrapassar a marca de 30%, superando as médias aplicadas em economias desenvolvidas. A elevação decorre do número de exceções, regimes diferenciados e desonerações setoriais incluídos durante a tramitação legislativa. O Ministério da Fazenda segue defendendo mecanismos de trava para mitigar o impacto final sobre o consumidor.",
+          "por_que_importa": "Uma alíquota sobre valor agregado acima de 30% encarece cadeias produtivas e impacta diretamente os custos operacionais de serviços e bens de consumo, além de influenciar os preços de insumos para a pesquisa científica e o poder de compra da classe média.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Compara alíquotas projetadas com patamares de países membros da OCDE",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "contas-publicas-divida-pib-setembro",
+          "editoria": "Economia",
+          "titulo": "Dívida pública atinge 82,9% do PIB após déficit de R$ 5,5 bilhões em setembro",
+          "texto": "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, impulsionando a Dívida Bruta do Governo Geral para 82,9% do PIB, o maior nível registrado em cinco anos e meio. No acumulado das empresas estatais federais, o déficit alcançou R$ 8,5 bilhões até setembro, estabelecendo novo recorde para a série histórica. Economistas apontam a necessidade de contenção de despesas obrigatórias para estabilizar a trajetória de solvência.",
+          "por_que_importa": "O avanço da relação dívida/PIB restringe a margem fiscal do governo para investimentos estruturantes e exerce pressão ascendente sobre a curva de juros futuros, afetando o crédito e o financiamento de órgãos públicos.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Detalhamento dos números do Banco Central e evolução da dívida bruta",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "assedio-eleitoral-denuncias-mte",
+          "editoria": "Política",
+          "titulo": "MTE registra 4,3 mil denúncias de assédio eleitoral no ambiente de trabalho",
+          "texto": "O Ministério do Trabalho e Emprego recebeu mais de 4,3 mil denúncias de assédio eleitoral em empresas em apenas três dias úteis na reta final e pós-segundo turno. Os relatos envolvem ameaças de demissão, promessas de bonificação atreladas a votos específicos e coação para uso de materiais de campanha. O Ministério Público do Trabalho e auditores fiscais intensificaram as notificações e ajuizamento de termos de ajustamento de conduta.",
+          "por_que_importa": "O volume expressivo de denúncias evidencia a persistência de pressões patronais indevidas sobre direitos cívicos fundamentais, exigindo fiscalização trabalhista rigorosa e atuação punitiva da Justiça do Trabalho.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Balanço das queixas enviadas aos canais oficiais de fiscalização trabalhista",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "cnu-2027-vagas-servico-publico",
+          "editoria": "Ciência",
+          "titulo": "Governo planeja até 3 mil vagas para nova edição do Concurso Nacional Unificado em 2027",
+          "texto": "O Ministério da Gestão e da Inovação em Serviços Públicos informou que estuda ofertar até 3 mil vagas em uma nova rodada do Concurso Nacional Unificado prevista para 2027. A confirmação do certame e o cronograma de aplicação das provas dependerão das dotações autorizadas na Lei Orçamentária Anual correspondente. O foco prioritário recai sobre a reposição de quadros técnicos em agências reguladoras, ministérios e institutos de pesquisa.",
+          "por_que_importa": "A recomposição contínua do corpo técnico federal é vital para a capacidade analítica do Estado, incluindo a gestão de políticas científicas, ambientais e regulatórias no âmbito universitário e tecnológico.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Condicionamento da realização do certame à aprovação orçamentária",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "pec-seguranca-publica-senado",
+          "editoria": "Política",
+          "titulo": "Alcolumbre inclui PEC da Segurança Pública na pauta de votação do Senado",
+          "texto": "O presidente do Senado pautou para a próxima terça-feira a votação da Proposta de Emenda à Constituição voltada à reestruturação da Segurança Pública. O texto propõe conferir status constitucional a diretrizes operacionais de integração entre polícias estaduais e federais, além de ampliar atribuições da Polícia Rodoviária Federal. Governadores têm pressionado por ajustes para preservar a autonomia das gestões estaduais sobre as polícias civil e militar.",
+          "por_que_importa": "A proposta redefine o pacto federativo na coordenação do combate ao crime organizado, tema central para a governança institucional e a segurança nas regiões metropolitanas.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Agendamento da pauta e tensões entre Congresso e governadores estaduais",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "diplomacia-brasil-eua-g20",
+          "editoria": "Política",
+          "titulo": "Mauro Vieira e Marco Rubio realizam encontro bilateral preparatório para o G20",
+          "texto": "O ministro das Relações Exteriores, Mauro Vieira, reuniu-se nos Estados Unidos com o senador Marco Rubio para alinhar pontos de cooperação bilateral antes do encontro de cúpula do G20 em novembro. A diplomacia brasileira busca preservar o pragmatismo e abrir canais diretos de diálogo com alas influentes de Washington, visando acordos comerciais e estabilidade regional. O encontro ocorreu em meio a conversas para mitigar atritos e tensões diplomáticas recentes no continente.",
+          "por_que_importa": "A interlocução direta com lideranças estratégicas norte-americanas é essencial para a política externa brasileira proteger fluxos de comércio e investimento diante da volatilidade geopolítica.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Acerto de reunião bilateral e alinhamento de agenda pré-G20",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/mauro-vieira-e-marco-rubio-se-encontram-no-g20-e-acertam-reuniao-em-novembro.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "patrimonio-imobiliario-angra-rio",
+          "editoria": "Rio",
+          "titulo": "Investigação mapeia cinco imóveis em ilhas de Angra ligados a advogado influente em Brasília",
+          "texto": "Levantamentos cartorários revelaram que o advogado Willer Tomaz detém a posse ou propriedade de ao menos outras cinco residências em ilhas da baía de Angra dos Reis, na Costa Verde fluminense. Os imóveis somam-se à área litorânea que foi objeto de longa disputa judicial envolvendo o jogador de futebol Richarlison. A ocupação de terrenos de marinha e ilhas costeiras na região tem sido alvo de atenção de órgãos de fiscalização patrimonial e ambiental.",
+          "por_que_importa": "O caso expõe a concentração de propriedades em áreas ambientalmente sensíveis do litoral do Rio de Janeiro e a necessária transparência sobre concessões de uso em ilhas da União.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Mapeamento dos imóveis em ilhas e registros documentais no litoral fluminense",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml"
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "Terça-feira (03/11)",
+          "o_que": "Votação em plenário no Senado da PEC da Segurança Pública pautada pela presidência da Casa"
+        },
+        {
+          "quando": "Novembro",
+          "o_que": "Reunião bilateral entre diplomacia do Brasil e representantes dos EUA antecedendo a Cúpula do G20"
+        }
+      ]
     }
   },
   "cine_edicoes": {
@@ -23820,7 +23943,7 @@
       "data": "2026-10-31",
       "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
       "resumo": [
-        "Estudos e comparações internacionais indicam que o novo imposto sobre consumo decorrente da reforma tributária brasileira pode ultrapassar a marca de 30%, superando a média cobrada por países desenvolvidos. O percentual final depende das exceções setoriais e regimes diferenciados mantidos durante as negociações no Congresso Nacional. A equipe econômica monitora as regras de transição para tentar mitigar a sobrecarga direta sobre o consumidor final."
+        "Projeções recentes indicam que a alíquota padrão combinada do novo imposto sobre consumo (IBS e CBS) pode ultrapassar a marca de 30%, superando as médias aplicadas em economias desenvolvidas. A elevação decorre do número de exceções, regimes diferenciados e desonerações setoriais incluídos durante a tramitação legislativa. O Ministério da Fazenda segue defendendo mecanismos de trava para mitigar o impacto final sobre o consumidor."
       ],
       "texto_integral": [
         "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
@@ -23855,7 +23978,7 @@
         "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
       ],
       "pontos": [
-        "Análise da comparação internacional e risco de alíquota acima de 30%"
+        "Compara alíquotas projetadas com patamares de países membros da OCDE"
       ]
     },
     "reconhecimento-eleicoes-partidos-g1.globo.com/politica/noticia/": {
@@ -24530,6 +24653,244 @@
       ],
       "pontos": [
         "Levantamento detalha propriedades e registros de ocupação insular na região de Angra"
+      ]
+    },
+    "contas-publicas-divida-pib-setembro-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Dívida pública atinge 82,9% do PIB após déficit de R$ 5,5 bilhões em setembro",
+      "resumo": [
+        "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, impulsionando a Dívida Bruta do Governo Geral para 82,9% do PIB, o maior nível registrado em cinco anos e meio. No acumulado das empresas estatais federais, o déficit alcançou R$ 8,5 bilhões até setembro, estabelecendo novo recorde para a série histórica. Economistas apontam a necessidade de contenção de despesas obrigatórias para estabilizar a trajetória de solvência."
+      ],
+      "texto_integral": [
+        "As contas do setor público consolidado apresentaram um déficit primário de R$ 5,5 bilhões em setembro, informou o Banco Central (BC) nesta quinta-feira (29).",
+        "🔎 O déficit primário ocorre quando as receitas com tributos e impostos ficam abaixo das despesas do governo. Se o contrário acontece, o resultado é de superávit primário.",
+        "🔎 O resultado não leva em conta o pagamento dos juros da dívida pública, e abrange o governo federal, os estados, municípios e as empresas estatais.",
+        "Na comparação com setembro do ano passado, houve melhora, uma vez que foi registrado um saldo negativo de R$ 17,5 bilhões naquele mês.",
+        "➡️ O endividamento do setor público, por sua vez, ficou estável continuou em 82,9% do Produto Interno Bruto (PIB) no mês passado — veja mais abaixo nessa reportagem.",
+        "Veja abaixo o desempenho das contas em setembro deste ano:",
+        "governo federal registrou saldo positivo de R$ 3,5 bilhões;estados e municípios tiveram saldo deficitário de R$ 5,6 bilhões;empresas estatais apresentaram déficit de R$ 3,4 bilhões.",
+        "No acumulado dos nove primeiros meses deste ano, ainda segundo dados oficiais, as contas públicas registraram um déficit primário de R$ 94,3 bilhões — o equivalente a 0,93% do Produto Interno Bruto (PIB).",
+        "Com isso, houve piora na comparação com o mesmo período do ano passado, quando foi registrado um saldo negativo de R$ 79,2 bilhões (0,84% do PIB).",
+        "No caso somente do governo federal, o resultado ficou negativo em R$ 93,6 bilhões na parcial deste ano, informou o BC, contra um déficit de R$ 99,6 bilhões nos nove primeiros meses de 2025.",
+        "Para este ano, a meta é de que as contas do governo tenham um saldo negativo de 0,25% do Produto Interno Bruto (PIB), cerca de R$ 34,3 bilhões.De acordo com o arcabouço fiscal, aprovado em 2023, há um intervalo de tolerância de 0,25 ponto percentual em relação à meta central.Ou seja: a meta será considerada formalmente cumprida se o governo tiver saldo zero, ou se chegar a um superávit de R$ 68,6 bilhõesO texto, no entanto, permite que o governo retire desse cálculo R$ 67,3 bilhões em despesas. E use esses recursos para pagar, por exemplo, precatórios (gastos com sentenças judiciais, defesa e educação).",
+        "Quando se incorporam os juros da dívida pública na conta – no conceito conhecido no mercado como resultado nominal, utilizado para comparação internacional –, houve déficit de R$ 113 bilhões nas contas do setor público em setembro.",
+        "➡️ No acumulado em 12 meses até setembro, foi registrado um resultado negativo (déficit) de R$ 1,28 trilhão, ou 9,51% do PIB.",
+        "🔎 Esse número é acompanhado com atenção pelas agências de classificação de risco para a definição da nota de crédito dos países, indicador levado em consideração por investidores.",
+        "O resultado nominal das contas do setor público sofre impacto do resultado mensal das contas, das atuações do BC no câmbio, e dos juros básicos da economia (Selic) fixados pela instituição para conter a inflação. Atualmente, a taxa Selic está em 13,75% ao ano, patamar elevado.",
+        "Segundo o BC, as despesas com juros nominais somaram R$ 1,2 trilhão (8,99% do PIB) em doze meses até setembro deste ano.",
+        "Em setembro, segundo números do Banco Central, a dívida do setor público consolidado ficou estável em 82,9% do PIB em setembro — o equivalente a R$ 11,11 trilhões.",
+        "➡️ Este é o maior nível para a dívida pública desde março de 2021, quando somava 85,1% do PIB, ou seja, é o maior patamar em mais de cinco anos.",
+        "➡️ No acumulado do governo do presidente Luiz Inácio Lula da Silva (PT), ou seja, em pouco mais de três anos, a dívida já avançou 11,2 pontos percentuais.",
+        "🔎 A alta na dívida no governo Lula está relacionada, principalmente, com o aumento de gastos públicos, que gera mais despesas com juros — um ciclo vicioso que se retroalimenta.",
+        "➡️ Para o Fundo Monetário Internacional (FMI), que utiliza de um conceito internacional — englobando os títulos públicos na carteira do BC —, o endividamento brasileiro foi bem maior em setembro: 95,2% do PIB.",
+        "🔎 A proporção com o PIB é considerada por especialistas como o conceito mais apropriado para medir e comparar a dívida das nações. E o formato de cálculo do Fundo Monetário Internacional (FMI) é adotado internacionalmente.",
+        "➡️ Acima de 90% do PIB, o patamar da dívida brasileira está bem acima de nações emergentes e de países da América do Sul, ficando maior, também, do que a média das nações da Zona do Euro (segundo dados do FMI).",
+        "Para tentar conter o crescimento da dívida, em 2023 o governo aprovou o chamado \"arcabouço fiscal\", ou seja, novas regras para as contas públicas em substituição ao teto de gastos.",
+        "A norma prevê crescimento das despesas abaixo das receitas, e um limite para gastos. Entretanto, despesas excluídas desse limite continuam pressionando para cima o endividamento.Analistas pedem um corte robusto de gastos para conter a dívida e proporcionar queda do juro básico.",
+        "Diante do crescimento da dívida pública no atual mandato do presidente Lula, a equipe econômica vem acenando com novas medidas para conter sua expansão na próxima gestão, que tem início em 2027."
+      ],
+      "pontos": [
+        "Detalhamento dos números do Banco Central e evolução da dívida bruta"
+      ]
+    },
+    "assedio-eleitoral-denuncias-mte-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "MTE registra 4,3 mil denúncias de assédio eleitoral no ambiente de trabalho",
+      "resumo": [
+        "O Ministério do Trabalho e Emprego recebeu mais de 4,3 mil denúncias de assédio eleitoral em empresas em apenas três dias úteis na reta final e pós-segundo turno. Os relatos envolvem ameaças de demissão, promessas de bonificação atreladas a votos específicos e coação para uso de materiais de campanha. O Ministério Público do Trabalho e auditores fiscais intensificaram as notificações e ajuizamento de termos de ajustamento de conduta."
+      ],
+      "texto_integral": [
+        "O Ministério do Trabalho e Emprego (MTE) recebeu 4.305 denúncias de assédio eleitoral no ambiente de trabalho entre quarta-feira (28) e sexta-feira (30). Os registros foram feitos nos três primeiros dias de funcionamento de um canal específico para esse tipo de ocorrência.",
+        "A região Sudeste concentra quase metade das denúncias, com 2.087 registros, o equivalente a 48,5% do total. São Paulo lidera o ranking nacional, com 1.325 manifestações, seguido pelo Rio de Janeiro (354) e por Minas Gerais (345).",
+        "Os dados foram divulgados pelo Ministério neste sábado (31). Segundo a pasta, as denúncias estão em análise pela Auditoria Fiscal do Trabalho, responsável por avaliar os relatos e apurar possíveis irregularidades.",
+        "🗒️ Tem alguma sugestão de reportagem? Mande para o g1",
+        "O aumento ocorre em meio a uma nova onda de publicações nas redes sociais que incentivam a demissão e a recusa de contratação de trabalhadores por preferência política, além de promover listas de boicote a empresas supostamente apoiadoras do presidente Luiz Inácio Lula da Silva (PT), reeleito no domingo (25).",
+        "Em resposta, o ministro do Trabalho e Emprego, Luiz Marinho, anunciou nesta quarta-feira (28) uma força-tarefa nacional para fiscalizar denúncias de ameaças de demissão, perseguição e outras formas de assédio eleitoral contra trabalhadores.",
+        "➡️ O assédio eleitoral no trabalho ocorre quando o empregador tenta influenciar o voto do funcionário por meio de ameaças, como perda do emprego, redução salarial ou rebaixamento de cargo, ou promove atividades políticas, como distribuição de santinhos e eventos, no ambiente de trabalho.",
+        "O registro de uma denúncia, porém, não significa que o assédio eleitoral tenha sido comprovado. Os casos precisam passar por investigação para verificar se houve constrangimento, ameaça ou discriminação de trabalhadores por suas escolhas políticas.",
+        "Na distribuição por regiões, depois do Sudeste aparecem o Nordeste, com 784 denúncias, e o Sul, com 757. O Centro-Oeste registrou 378 manifestações, enquanto o Norte contabilizou 299. (veja abaixo)",
+        "Sudeste: 2.087 denúncias (48,5%)Nordeste: 784 denúncias (18,2%)Sul: 757 denúncias (17,6%)Centro-Oeste: 378 denúncias (8,8%)Norte: 299 denúncias (6,9%)",
+        "Além de São Paulo, os estados com mais registros são Paraná (268) e Santa Catarina (259). Juntos, os cinco estados com maior número de denúncias concentram 59,2% do total recebido pelo MTE. (veja abaixo)",
+        "São Paulo (SP): 1.325Rio de Janeiro (RJ): 354Minas Gerais (MG): 345Paraná (PR): 268Santa Catarina (SC): 259Rio Grande do Sul (RS): 230Ceará (CE): 172Bahia (BA): 169Goiás (GO): 143Pernambuco (PE): 137Pará (PA): 130Maranhão (MA): 99Mato Grosso (MT): 93Distrito Federal (DF): 91Espírito Santo (ES): 63Rio Grande do Norte (RN): 63Amazonas (AM): 52Mato Grosso do Sul (MS): 51Alagoas (AL): 50Paraíba (PB): 42Piauí (PI): 30Acre (AC): 29Rondônia (RO): 29Amapá (AP): 25Sergipe (SE): 22Roraima (RR): 17Tocantins (TO): 17",
+        "O ministro do Trabalho, Luiz Marinho, afirmou que o governo está atento às ocorrências e que empregadores não podem utilizar sua posição ou poder econômico para interferir na decisão dos funcionários.",
+        "“Não podemos admitir que trabalhadores e trabalhadoras sejam ameaçados, constrangidos ou discriminados por suas escolhas políticas. O voto é livre e secreto, e nenhum empregador pode usar sua posição para interferir na decisão de seus empregados”, declarou em nota.",
+        "Relatos de assédio eleitoral crescem após 2º turno",
+        "A Auditoria Fiscal do Trabalho já realiza ações de fiscalização para verificar as situações relatadas. Quando identifica práticas de assédio ou discriminação, o órgão pode lavrar autos de infração e encaminhar informações a outras instituições públicas.",
+        "Segundo o secretário de Inspeção do Trabalho, Luiz Henrique, os casos identificados também podem ser comunicados a órgãos como o Banco Central, para que sejam avaliadas medidas relacionadas à concessão de financiamentos e empréstimos.",
+        "O Ministério também estuda criar uma ferramenta de transparência para divulgar casos de assédio eleitoral no ambiente de trabalho. A proposta poderá seguir modelo semelhante ao da lista de empregadores responsabilizados por submeter trabalhadores a condições análogas à escravidão.",
+        "Governo anuncia medidas contra assédio eleitoral",
+        "O MTE e outros órgãos públicos anunciaram medidas conjuntas para prevenir e combater o assédio eleitoral nas empresas.",
+        "A iniciativa reúne o Ministério Público do Trabalho (MPT), a Advocacia-Geral da União (AGU), o Tribunal Superior do Trabalho (TST), o Ministério Público Eleitoral (MPE) e o Ministério da Justiça e Segurança Pública (MJSP).",
+        "Entre as ações previstas estão medidas para retirar da internet conteúdos que promovam perseguição ou discriminação por motivação política. Para isso, plataformas digitais, como Google e Meta, poderão receber notificações com base em orientações técnicas da AGU.",
+        "A Carteira de Trabalho Digital também está sendo utilizada para informar os trabalhadores sobre seus direitos e os canais disponíveis para registrar denúncias. As orientações são enviadas por notificações diretamente aos usuários do aplicativo. (veja abaixo)",
+        "O trabalhador pode denunciar? Como fazer?",
+        "Trabalhadores que sofrerem ou presenciarem situações de assédio eleitoral ou discriminação por motivação política no ambiente de trabalho podem registrar denúncias de forma anônima.",
+        "Para facilitar a apuração, é importante fornecer o máximo possível de informações, como o nome da empresa, as pessoas envolvidas, o local, a data e a descrição dos fatos. Também podem ser anexados documentos e evidências, como mensagens, e-mails, fotos e vídeos.",
+        "As denúncias são sigilosas e encaminhadas aos órgãos competentes, responsáveis por analisar os relatos, investigar possíveis irregularidades e adotar as medidas cabíveis para proteger os direitos dos trabalhadores.",
+        "Dependendo da situação, os registros também podem ser encaminhados à Justiça Eleitoral ou ao Ministério Público Eleitoral (MPE), especialmente quando houver indícios de crime eleitoral.",
+        "Ministério do Trabalho e Emprego (MTE): recebe denúncias por meio do canal https://assedioeleitoral.trabalho.gov.br/Ministério Público do Trabalho (MPT): recebe denúncias de irregularidades trabalhistas pelo site do órgão e pelo aplicativo Pardal MPT.Justiça do Trabalho: o Tribunal Superior do Trabalho (TST) e os Tribunais Regionais do Trabalho possuem canais de atendimento e ouvidorias para receber relatos relacionados ao tema.Centrais sindicais: disponibilizam canal para denúncias de pressões políticas, demissões ou cortes de benefícios relacionados à escolha eleitoral.Ministério Público Eleitoral (MPE): pode ser acionado em situações que envolvam possíveis crimes ou irregularidades eleitorais.Sindicato: o sindicato da categoria também pode receber denúncias e orientar o trabalhador sobre seus direitos.Canal de Denúncias para Inspeção do Trabalho: canal online do Ministério do Trabalho para denúncias trabalhistas;Fala.br: plataforma integrada de ouvidoria e acesso à informação da Controladoria-Geral da União;Central Alô Trabalho: o número 158 funciona de segunda a sábado, das 7h às 22h (horário de Brasília). A ligação gratuita de qualquer telefone fixo, mas chamadas por celular serão cobradas;Superintendências Regionais do Trabalho: são responsáveis por executar, supervisionar e monitorar ações relacionadas a políticas públicas de trabalho nos estados;Disque 100: Serviço gratuito e disponível 24 horas por dia, o disque 100 recebe denúncias de violações de direitos humanos, inclusive assédio moral no trabalho."
+      ],
+      "pontos": [
+        "Balanço das queixas enviadas aos canais oficiais de fiscalização trabalhista"
+      ]
+    },
+    "cnu-2027-vagas-servico-publico-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Governo planeja até 3 mil vagas para nova edição do Concurso Nacional Unificado em 2027",
+      "resumo": [
+        "O Ministério da Gestão e da Inovação em Serviços Públicos informou que estuda ofertar até 3 mil vagas em uma nova rodada do Concurso Nacional Unificado prevista para 2027. A confirmação do certame e o cronograma de aplicação das provas dependerão das dotações autorizadas na Lei Orçamentária Anual correspondente. O foco prioritário recai sobre a reposição de quadros técnicos em agências reguladoras, ministérios e institutos de pesquisa."
+      ],
+      "texto_integral": [
+        "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
+        "A realização do concurso, no entanto, depende da aprovação da proposta de orçamento do próximo ano, enviada ao Congresso Nacional no fim de agosto.",
+        "“Como sempre informamos, a realização de um novo CPNU em 2027 está condicionada à aprovação do PLOA e do espaço fiscal para novas vagas que será aprovado pelo Congresso Nacional”, afirmou o ministério, em nota.",
+        "\"Considerando concursos já autorizados e novos que podem ser definidos (dependendo do PLOA), duas a três mil novas vagas compensam a realização de um CPNU em 2027\", completou a pasta.",
+        "Saiba como se preparar para enfrentar um concurso",
+        "No início desta semana, o MGI já havia informado ao g1 que a realização do certame dependeria da aprovação do orçamento do próximo ano.",
+        "Na ocasião, o ministério também destacou que considera o CPNU uma política pública voltada à renovação, à modernização e à democratização do acesso ao serviço público federal.",
+        "A intenção do governo é consolidar o modelo como um processo permanente de seleção de servidores, com edições em ciclos regulares, preferencialmente a cada dois anos.",
+        "\"Dessa forma, a ideia é que o CPNU se consolide como um processo permanente de seleção de servidores, com edições realizadas em ciclos regulares, idealmente a cada dois anos, de forma a garantir planejamento, recomposição gradual da força de trabalho e maior previsibilidade para os candidatos e para os órgãos públicos\", declarou a pasta.",
+        "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
+      ],
+      "pontos": [
+        "Condicionamento da realização do certame à aprovação orçamentária"
+      ]
+    },
+    "pec-seguranca-publica-senado-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Alcolumbre inclui PEC da Segurança Pública na pauta de votação do Senado",
+      "resumo": [
+        "O presidente do Senado pautou para a próxima terça-feira a votação da Proposta de Emenda à Constituição voltada à reestruturação da Segurança Pública. O texto propõe conferir status constitucional a diretrizes operacionais de integração entre polícias estaduais e federais, além de ampliar atribuições da Polícia Rodoviária Federal. Governadores têm pressionado por ajustes para preservar a autonomia das gestões estaduais sobre as polícias civil e militar."
+      ],
+      "texto_integral": [
+        "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
+        "O presidente Luiz Inácio Lula da Silva (PT) condiciona a criação do Ministério da Segurança Pública à aprovação da PEC no Congresso.",
+        "🔎 Para ser aprovada, uma PEC precisa ter ao menos três quintos dos votos favoráveis em dois turnos de votação. Ou seja, precisa contar com o apoio de 49 senadores.",
+        "'SUS da Segurança' e fim da 'saidinha' para integrantes de facções: o que prevê a PEC da Segurança",
+        "A deliberação estava prevista para acontecer antes do segundo turno das eleições, mas um impasse sobre emendas que preveem a redução da maioridade penal levou Alcolumbre a adiar a votação.",
+        "Líder do Governo no Senado, a senadora Teresa Leitão (PT-PE) disse que a posição do governo continua sendo não votar a maioridade penal junto com a PEC da Segurança. Ela lembra que o tema atualmente é discutido na Comissão Especial da Câmara.",
+        "\"A redução da maioridade penal não é objeto da PEC da Segurança. Considera-se o chamado 'jabuti'. É um tema que precisa ser enfrentado com profundidade e ouvindo amplos setores da sociedade\".",
+        "No entanto, a senadora aposta que o tema vai a voto e terão que disputar no plenário, sem acordo por parte deles.",
+        "A dez dias do segundo turno das eleições presidenciais — onde Lula acabou vencendo o senador Flávio Bolsonaro (PL) — a oposição apresentou uma emenda para diminuir a maioridade penal para até 14 anos, a depender da gravidade do delito.",
+        "Como reação, o líder do PT no Senado, Camilo Santana (CE), apresentou uma alteração para reduzir para 16 anos em casos de crimes hediondos.",
+        "Aliados de Alcolumbre afirmaram que a retirada de pauta ocorreu porque nem o governo nem a oposição teriam votos suficientes para aprovar suas as emendas – e o cálculo, neste caso, seria de deixar o assunto para depois.",
+        "Apesar da ideia de Camilo neutralizar a proposta da oposição, a emenda apresentada dividiu a bancada do PT. Historicamente, a bancada do PT no Congresso Nacional se posicionou contra a redução da maioridade penal.",
+        "Diante da divisão na bancada governista e da proposta da oposição, Alcolumbre retirou o tema da pauta com o argumento de que nem o governo e nem a oposição teriam votos suficientes para aprovar suas as emendas.",
+        "Lula se posicionou na sabatina da Globo",
+        "No mesmo dia em que a PEC saiu da pauta do Senado em meio ao racha na bancada governista do Senado, o presidente Lula se posicionou a favor da emenda de Camilo Santana ao ser questionado sobre o tema na sabatina da TV Globo.",
+        "\"O meu pensamento, enquanto cidadão brasileiro, todo e qualquer crime hediondo, eu sou favorável a diminuir a pena. Para crimes hediondos. Eu sou a favor, sou a favor\", afirmou o presidente.",
+        "Apesar do posicionamento favorável a mudança sugerida por Camilo, Lula defendeu que esse tema não fosse tratado na PEC da Segurança.",
+        "\"Primeiro você discute a PEC, aprova a PEC e aí você pode discutir a maioridade penal ou não\", disse.",
+        "Essa posição também é defendida por governistas, como a líder do governo no Senado, Teresa Leitão (PT-PE).",
+        "Caso algum trecho sobre maioridade seja aprovado e o texto precise voltar para a Câmara para aprovação dos deputados, governistas falam em \"fatiar\" a PEC.",
+        "Nesse cenário, a parte que já foi aprovada por deputados e senadores segue para promulgação, enquanto as partes que precisam de análise dos deputados, como a redução da maioridade penal, é enviada à Câmara como um texto separado.",
+        "A PEC estabelece na Constituição o Sistema Único de Segurança Pública (SUSP), com o objetivo de integrar a atuação das forças de segurança no combate ao crime organizado.",
+        "De acordo com o texto, União, estados e Distrito Federal poderão criar leis na área de segurança pública, incluindo forças-tarefa intergovernamentais, a organização das polícias e guardas municipais e o sistema socioeducativo.",
+        "Outro ponto central da PEC da Segurança Pública é o combate a crimes violentos e facções criminosas.",
+        "Entre as medidas está a obrigatoriedade de prisão em estabelecimento penal de segurança máxima ou de natureza especial.",
+        "Também ficam proibidas ou restringidas a progressão de regime, a concessão de liberdade provisória, com ou sem fiança, e de saída temporária.",
+        "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
+      ],
+      "pontos": [
+        "Agendamento da pauta e tensões entre Congresso e governadores estaduais"
+      ]
+    },
+    "diplomacia-brasil-eua-g20-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/mauro-vieira-e-marco-rubio-se-encontram-no-g20-e-acertam-reuniao-em-novembro.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Mauro Vieira e Marco Rubio realizam encontro bilateral preparatório para o G20",
+      "resumo": [
+        "O ministro das Relações Exteriores, Mauro Vieira, reuniu-se nos Estados Unidos com o senador Marco Rubio para alinhar pontos de cooperação bilateral antes do encontro de cúpula do G20 em novembro. A diplomacia brasileira busca preservar o pragmatismo e abrir canais diretos de diálogo com alas influentes de Washington, visando acordos comerciais e estabilidade regional. O encontro ocorreu em meio a conversas para mitigar atritos e tensões diplomáticas recentes no continente."
+      ],
+      "texto_integral": [
+        "O ministro das Relações Exteriores, Mauro Vieira, e o secretário de Estado dos Estados Unidos, Marco Rubio, se encontraram nesta sexta-feira (30). Os dois participam de um encontro de chanceleres do G20, que acontece em Atlanta, no estado da Geórgia, nos Estados Unidos.",
+        "Segundo fontes do Itamaraty ouvidas pela GloboNews, o chanceler brasileiro e o secretário de Estado norte-americano conversaram e acertaram um novo encontro antes da cúpula do G20, marcada para dezembro deste ano.",
+        "O encontro aconteceu durante a recepção de boas-vindas à Reunião de Ministros das Relações Exteriores do G20. Data e local do novo encontro ainda serão definidos.",
+        "O encontro acontece em meio à tensão diplomática provocada pela recusa do presidente Donald Trump em reconhecer o resultado das eleições brasileiras.",
+        "Nesta terça-feira (27) o presidente Donald Trump voltou a insinuar, sem provas, que houve fraude na eleição no Brasil.",
+        "Nesta quinta-feira (29), Trump disse que não tomou partido nas eleições do Brasil a pedido do presidente Luiz Inácio Lula da Silva (PT).",
+        "O presidente norte-americano também afirmou que falará com Lula, mas, novamente não disse se reconhece a vitória do presidente brasileiro. Questionado sobre quem, para ele, havia vencido as eleições no Brasil, ele respondeu que \"não quero comentar isso agora\".",
+        "👉 O resultado do 2º turno foi confirmado pelo presidente do Tribunal Superior Eleitoral (TSE), ministro Kassio Nunes Marques, ainda na noite de domingo (25).",
+        "Lula (PT) derrotou Flávio Bolsonaro (PL), aliado de Trump, no segundo turno da eleição presidencial no último domingo (25). O petista recebeu 51,79% dos votos válidos, contra 48,21% do senador, com uma vantagem de 4,4 milhões de votos.",
+        "Além disso, outro episódio intensificou a instabilidade entre os dois países. O senador Flávio Bolsonaro (PL) deixou o país com a família rumo aos Estados Unidos, contrariando a proibição do Supremo Tribunal Federal (STF).",
+        "Flávio recebeu autorização do governo americano para permanecer por 1 ano no país, segundo aponta consulta ao sistema U.S. Customs and Border Protection - CBP (Alfândega e Proteção de Fronteiras dos Estados Unidos).",
+        "Os registros mostram que o senador foi admitido em uma categoria identificada com o código \"DT\" e que pode ficar no país até 27 de outubro de 2027. O CBP identifica DT como “autorizado a entrar temporariamente” (Paroled). O g1 procurou a agência para esclarecer o status do senador no país, mas não obteve resposta até a última atualização desta reportagem.",
+        "➡️ Em uma operação secreta, Flávio Bolsonaro, derrotado nas eleições de domingo, deixou o Brasil após descumprir a ordem do STF.",
+        "Segundo as autoridades argentinas, Flávio entrou no país na noite de terça-feira (27) por terra. A PF suspeita, porém, que ele tenha entrado na Argentina em um avião privado;No território argentino, o senador embarcou em um jatinho executivo com destino aos EUA;O trajeto evitou o espaço aéreo brasileiro e incluiu uma escala no Equador;Flávio e família desembarcaram em Miami, às 10h24."
+      ],
+      "pontos": [
+        "Acerto de reunião bilateral e alinhamento de agenda pré-G20"
+      ]
+    },
+    "patrimonio-imobiliario-angra-rio-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Investigação mapeia cinco imóveis em ilhas de Angra ligados a advogado influente em Brasília",
+      "resumo": [
+        "Levantamentos cartorários revelaram que o advogado Willer Tomaz detém a posse ou propriedade de ao menos outras cinco residências em ilhas da baía de Angra dos Reis, na Costa Verde fluminense. Os imóveis somam-se à área litorânea que foi objeto de longa disputa judicial envolvendo o jogador de futebol Richarlison. A ocupação de terrenos de marinha e ilhas costeiras na região tem sido alvo de atenção de órgãos de fiscalização patrimonial e ambiental."
+      ],
+      "texto_integral": [
+        "Willer Tomaz tem outras cinco casas em ilhas de Angra além da que disputou com Richarlison",
+        "O advogado Willer Tomaz, investigado no Supremo Tribunal Federal (STF) junto com o senador Flávio Bolsonaro (PL-RJ) por suspeitas de lavagem de dinheiro, tem outras cinco casas em ilhas de Angra dos Reis, na Costa Verde do Rio de Janeiro, além da que virou alvo de disputa com o jogador Richarlison.",
+        "Com exceção de uma, as casas foram compradas entre 2021 e 2022, na mesma época em que Flávio apresentou ao Senado Federal um projeto de lei para estimular empreendimentos em Angra, permitindo a municipalização das unidades de conservação federais e estaduais.",
+        "O objetivo do projeto é flexibilizar as regras para a exploração econômica da área.",
+        "Também no mesmo período, Flávio foi o relator da PEC das Praias no Senado. O texto propõe permitir a privatização das ilhas marítimas do país, hoje pertencentes à União. Os dois projetos continuam em tramitação (leia mais sobre as propostas abaixo).",
+        "Os planos para a Costa Verde do Rio vêm desde o governo de Jair Bolsonaro. Em maio de 2019, o então presidente afirmou que queria fazer de Angra \"uma nova Cancún\".",
+        "\"O nosso estado merece ter uma Cancún. E nós poderemos tê-la. E estamos trabalhando para a região de Angra. Depende de um decreto presidencial. Porque a Estação Ecológica de Tamoios está demais. Não preserva absolutamente nada e faz de uma área rica, que pode trazer bilhões de reais, por ano, em turismo, parada por falta de uma visão mais objetiva, mais progressista nessa questão\", declarou Jair à época.",
+        "🔎 Pela Constituição Federal, as ilhas são bens da União. Empresas e indivíduos podem ocupá-las, mediante processos de aforamento ou de ocupação registrados junto à Secretaria de Patrimônio da União (SPU), órgão responsável pela gestão das ilhas. Essas ocupações podem ser revistas pela SPU.",
+        "Questionado sobre eventuais projetos comerciais previstos para suas ilhas e sobre sua relação com as propostas legislativas elaboradas por Flávio Bolsonaro, Willer Tomaz não se manifestou. O senador não foi localizado pela reportagem.",
+        "Tomaz se mudou para os Estados Unidos em agosto deste ano, depois de ser alvo de uma operação da Polícia Federal. Flávio fugiu para a Flórida dois dias após ser derrotado no segundo turno da eleição presidencial por Luiz Inácio Lula da Silva (PT).",
+        "As casas compradas por empresas de Willer Tomaz em Angra são localizadas na:",
+        "Ilha Comprida: em um terreno de 175,2 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 5,7 milhões;Ilha Comprida: em um terreno de 32,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 2,1 milhões;Ilha Comprida: em um terreno de 181,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 6 milhões;Ilha Comprida: em um terreno de 2,1 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em julho de 2022. Valor patrimonial registrado de R$ 2,9 milhões (imóvel disputado com Richarlison);Ilha do José André: em um terreno de 57,3 mil m², comprada pela empresa Friponor Brasil Turismo, Empreendimentos e Participações, em 2008. Valor patrimonial registrado de R$ 23,7 milhões.",
+        "Os dados são de um levantamento feito nos sistemas da SPU e em registros de cartório.",
+        "Tomaz é dono, também, de cotas de uma sexta casa em Angra, na Ilha do Jorge, registrada em nome da empresa Real Estate Duo 4, pertencente ao grupo Prime You.",
+        "🔎 A Prime You é uma companhia especializada em administrar bens de luxo compartilhados por milionários, como aviões, barcos e mansões. O banqueiro Daniel Vorcaro, do Master, foi sócio da Prime You de setembro de 2021 a setembro de 2025. Vorcaro também costumava usar uma casa na Ilha do Jorge próxima da de Tomaz, como revelou o UOL.",
+        "Ao portal, Tomaz afirmou que adquiriu participação de 25% na casa da Prime You em 2022 e que nunca teve \"qualquer relação pessoal, comercial ou societária\" com Vorcaro.",
+        "O episódio que jogou luz sobre os investimentos de Willer Tomaz em Angra foi a disputa por uma das casas com Richarlison de Andrade, atacante do Tottenham e que já jogou pela Seleção Brasileira.",
+        "O jogador publicou vídeos em 17 e 21 de outubro acusando Flávio Bolsonaro de envolvimento na briga pelo imóvel de luxo. Os vídeos tiveram milhões de visualizações em meio ao processo eleitoral. No debate da Globo, Lula questionou Flávio sobre o caso, e o então candidato respondeu que a Justiça já havia decidido a favor de Tomaz. Na véspera do segundo turno, o petista disse que ia brigar para devolver a Richarlison o direito de ocupação.",
+        "O atacante disse nos vídeos que ocupava a casa na Ilha Comprida desde 2020 e que investiu R$ 10 milhões no local, por meio de uma empresa da qual é sócio, a Sport 70.",
+        "Segundo Richarlison, Flávio visitou sua ilha e demonstrou interesse na propriedade — que tem uma cachoeira que deságua no mar —, mas o jogador se recusou a vendê-la. Na visão do atacante, o senador se aliou a Tomaz, de quem é amigo, para conseguir os direitos sobre o imóvel.",
+        "O g1 analisou os processos da Secretaria de Patrimônio da União (SPU) envolvendo a casa. A empresa Sport 70, de Richarlison, pediu à SPU para regularizar sua utilização do imóvel em 20 de setembro de 2021. O processo administrativo não teve andamento.",
+        "Do lado de Willer Tomaz, o processo de regularização da utilização começou em 5 de maio de 2022. Nessa data, uma empresa de terceiros, a M Locadora de Veículos, solicitou à SPU a regularização de sua situação de ocupante, algo que remontava à década de 1980. O processo teve andamento célere e favorável no órgão.",
+        "Em 11 de julho de 2022, a M Locadora de Veículos pediu à SPU para emitir uma Certidão de Autorização para Transferência (CAT), documento necessário para vender o direito de ocupação. O pedido foi feito às 11h33 e foi atendido pela SPU às 13h13 do mesmo dia.",
+        "Em seguida, a M Locadora passou o imóvel para a WT Administração de Imóveis e Bens, de Willer Tomaz.",
+        "De acordo com um servidor ouvido pela reportagem, a celeridade da tramitação em um caso e a ausência de análise da SPU, em outro, é o ponto mais controverso da disputa no âmbito administrativo. Em 2022, a SPU estava subordinada ao governo de Jair Bolsonaro.",
+        "A poucos dias do segundo turno da eleição presidencial, dois parlamentares adversários de Flávio — Rogério Correia (PT-MG) e Pedro Uczai (PT-SC) — pediram ao STF para investigar o caso da ilha de Richarlison no mesmo inquérito que já apura as relações entre o senador e Willer Tomaz. O relator é o ministro Alexandre de Moraes.",
+        "Tomaz e Flávio confirmam que são amigos, mas negam ter negócios juntos.",
+        "Sobre a disputa com Richarlison, Tomaz sustenta que o jogador \"pagou a posseiros\" quando comprou a casa, \"e não à proprietária de direito\".",
+        "O advogado apresenta escritura registrada do imóvel, certidão da SPU e decisões favoráveis na Justiça, inclusive no Superior Tribunal de Justiça (STJ).",
+        "Na Ilha do José André, localizada dentro da Área de Proteção Ambiental (APA) de Tamoios, o plano de Tomaz era construir um resort de luxo com piscinas, beach club, spa, restaurante, área para eventos, hangar e heliponto, como revelou o RJ2.",
+        "Para expandir a área construída na ilha, o advogado apresentou um pedido ao Instituto Estadual do Ambiente (Inea) do Rio de Janeiro em 20 de março de 2026, no mesmo dia em que o então governador Cláudio Castro publicou um decreto que revogava planos de manejo de áreas de proteção ambiental.",
+        "O decreto de Castro acabou sendo posteriormente derrubado pelo desembargador Ricardo Couto, que assumiu o governo do estado. O empreendimento de Tomaz não avançou.",
+        "Cláudio Castro afirmou que não discutiu previamente o conteúdo do decreto com Willer Tomaz e não recebeu nenhum pedido para editar a medida. Segundo o ex-governador, o decreto tinha caráter geral e técnico. Tomaz informou ao RJ2 que não comentaria esse caso.",
+        "O senador Flávio Bolsonaro apresentou, em 13 de outubro de 2021, o projeto para formar uma Região Administrativa Integrada de Desenvolvimento Sustentável (Rides) com os municípios de Angra dos Reis, Mangaratiba e Paraty.",
+        "O objetivo seria estimular o turismo, a economia e a preservação ambiental. O texto do Projeto de Lei Complementar n° 157/2021 também autoriza municipalizar as unidades de conservação federais e estaduais.",
+        "Em 28 de setembro, Tomaz havia adquirido três casas na Ilha Comprida.",
+        "\"Esse cenário paradisíaco não deixa nada a desejar em relação aos destinos turísticos similares mais procurados do mundo, como por exemplo Tailândia, Filipinas, Cancun, Grécia, Jamaica, Bahamas, Fiji ou República Dominicana\", escreveu Flávio na justificativa do projeto.",
+        "O senador afirmou também que as prefeituras \"aguardam com grande expectativa\" a aprovação do projeto. O texto está para ser analisado na Comissão de Meio Ambiente do Senado desde abril de 2025.",
+        "Já a PEC das Praias foi apresentada inicialmente na Câmara dos Deputados, em 2011. A proposta foi aprovada pelos deputados no plenário somente em fevereiro de 2022, quando seguiu para o Senado, onde aguarda análise na Comissão de Constituição e Justiça (CCJ).",
+        "Em abril de 2022, Flávio foi designado relator. Ele elaborou dois relatórios para a CCJ prevendo excluir da lista de bens da União os chamados \"terrenos de marinha\", incluindo as ilhas. Na prática, elas poderão ser privatizadas pelos ocupantes.",
+        "No atual regime, as ilhas podem ser usadas por pessoas ou empresas, mas essa ocupação pode ser revista pela SPU.",
+        "Em setembro de 2024, já no governo de Lula, a SPU fez uma nota técnica manifestando-se contrária à aprovação da PEC das Praias. Para o órgão, o texto \"favorece amplamente as condições jurídicas para a grilagem de toda costa brasileira em favor da população mais abastada do país\"."
+      ],
+      "pontos": [
+        "Mapeamento dos imóveis em ilhas e registros documentais no litoral fluminense"
       ]
     }
   }
