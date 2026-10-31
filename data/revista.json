@@ -5397,6 +5397,129 @@
           "o_que": "Reunião bilateral preparatória entre o chanceler Mauro Vieira e Marco Rubio antes da cúpula do G20"
         }
       ]
+    },
+    "2026-10-31": {
+      "data": "2026-10-31",
+      "edicao": "manha",
+      "titulo": "Tensão pós-eleitoral, IVA acima de 30% e pressão fiscal marcam o dia",
+      "resumo_dia": "O cenário pós-eleitoral consolida a vitória de Lula com o reconhecimento formal de 27 partidos, em meio ao isolamento do Novo e à crise diplomática deflagrada pela fuga de Flávio Bolsonaro via Argentina. Na economia, projeções alertam que a alíquota padrão da reforma tributária pode superar 30%, no momento em que a dívida bruta atinge 82,9% do PIB. No Legislativo, o Senado articula a pauta da segurança pública, enquanto o Itamaraty abre canal direto com o governo norte-americano antes da cúpula do G20.",
+      "notas": [
+        {
+          "id": "reforma-tributaria-aliquota-consumo",
+          "editoria": "Economia",
+          "titulo": "Reforma tributária: imposto sobre consumo pode superar 30%",
+          "texto": "Estudos e simulações técnicas indicam que a alíquota padrão do Imposto sobre Bens e Serviços (IBS) e da Contribuição sobre Bens e Serviços (CBS) pode ultrapassar a marca de 30% para compensar exceções e regimes diferenciados aprovados pelo Congresso. Caso o patamar se confirme, a taxação brasileira sobre consumo superará a média praticada pelos países desenvolvidos da OCDE. O Ministério da Fazenda segue defendendo mecanismos de trava para tentar conter a alíquota final.",
+          "por_que_importa": "O encarecimento da tributação indireta afeta custos operacionais de serviços, insumos tecnológicos e produtos essenciais, pressionando a inflação e os orçamentos de custeio institucional.",
+          "fontes": [
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Comparações internacionais e o impacto das concessões legislativas sobre a alíquota final do consumo",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "reconhecimento-eleicoes-partidos",
+          "editoria": "Política",
+          "titulo": "27 partidos validam vitória de Lula enquanto Novo segue sem reconhecer",
+          "texto": "Um total de 27 legendas partidárias já reconheceu oficialmente o resultado das urnas no segundo turno, atestando a regularidade do processo conduzido pela Justiça Eleitoral. O partido Novo permanece como a única agremiação com representação que ainda não divulgou manifestação formal de validação do pleito. A postura isola ainda mais correntes que sustentavam teses de contestação eleitoral.",
+          "por_que_importa": "O reconhecimento multipartidário amplo confere estabilidade institucional imediata à transição governamental e esvazia tentativas de deslegitimação das urnas.",
+          "fontes": [
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Levantamento partidário sobre manifestações formais após a homologação dos resultados pelo TSE",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/31/novo-segue-sem-reconhecer-resultado-das-eleicoes-27-partidos-validam-vitoria-de-lula.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "itamaraty-argentina-fuga-flavio",
+          "editoria": "Política",
+          "titulo": "Itamaraty convoca embaixada argentina após saída de Flávio Bolsonaro",
+          "texto": "O Ministério das Relações Exteriores convocou o encarregado de negócios da Embaixada da Argentina para prestar esclarecimentos formais sobre o trânsito de Flávio Bolsonaro pela fronteira terrestre antes de embarcar para os Estados Unidos. O senador viajou utilizando documentação que estava retida por decisão judicial, gerando atritos bilaterais. Fontes do Planalto buscam evitar uma crise diplomática ampliada com Buenos Aires e Washington.",
+          "por_que_importa": "O episódio testa os canais de cooperação jurídica e policial no Cone Sul em um momento de reposicionamento das relações exteriores no início do novo mandato.",
+          "fontes": [
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Ação diplomática do governo brasileiro perante a representação argentina em Brasília",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "mauro-vieira-marco-rubio-g20",
+          "editoria": "Política",
+          "titulo": "Mauro Vieira e Marco Rubio alinham reunião prévia à cúpula do G20",
+          "texto": "O chanceler brasileiro Mauro Vieira esteve reunido com o senador republicano Marco Rubio nos Estados Unidos para acertar um encontro bilateral antes da próxima cúpula do G20. A conversa buscou estabelecer pontes pragmáticas de diálogo institucional com a liderança norte-americana para a agenda de cooperação econômica e transição energética. A diplomacia brasileira adota tom de distensão para blindar o comércio e a cooperação científica de disputas polarizadas.",
+          "por_que_importa": "Manter interlocução fluida com os Estados Unidos é crucial para a governança do G20, parcerias científicas bilaterais e o fluxo de investimentos.",
+          "fontes": [
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Articulação de bastidores da chancelaria brasileira com lideranças políticas em Washington",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/mauro-vieira-e-marco-rubio-se-encontram-no-g20-e-acertam-reuniao-em-novembro.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "alcolumbre-pec-seguranca-publica",
+          "editoria": "Política",
+          "titulo": "Senado pauta PEC da Segurança Pública para votação na terça-feira",
+          "texto": "O presidente da Comissão de Constituição e Justiça do Senado, Davi Alcolumbre, confirmou para a próxima terça-feira a votação da proposta de emenda à Constituição voltada à segurança pública. O texto busca integrar dados de inteligência das polícias estaduais e federais e redefinir o financiamento setorial. A movimentação legislativa ocorre no contexto das negociações para a sucessão das mesas diretoras do Congresso.",
+          "por_que_importa": "A reestruturação constitucional da segurança incide diretamente sobre o pacto federativo, repasses a estados como o Rio de Janeiro e as diretrizes de policiamento urbano.",
+          "fontes": [
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Pauta de votações na CCJ e as articulações políticas de Alcolumbre no Senado",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "deficit-fiscal-divida-publica-setembro",
+          "editoria": "Economia",
+          "titulo": "Dívida bruta atinge 82,9% do PIB com déficit primário em setembro",
+          "texto": "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, elevando a dívida bruta para 82,9% do Produto Interno Bruto, o patamar mais alto em cinco anos e meio. No acumulado das empresas estatais federais, o saldo negativo alcançou o recorde de R$ 8,5 bilhões até setembro. Analistas e consultorias legislativas apontam que o novo mandato terá de acelerar medidas de contenção de gastos obrigatórios para estabilizar a trajetória da dívida.",
+          "por_que_importa": "A elevação da dívida soberana encarece os juros futuros e limita o espaço orçamentário discricionário para investimentos em educação superior e ciência.",
+          "fontes": [
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Divulgação dos dados de estatísticas fiscais e dívida consolidada pelo Banco Central",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "cnu-2027-previsao-vagas",
+          "editoria": "Economia",
+          "titulo": "Governo planeja CNU 2027 com até 3 mil vagas condicionado ao Orçamento",
+          "texto": "O Ministério da Gestão e da Inovação sinalizou que a edição de 2027 do Concurso Nacional Unificado poderá ofertar até 3 mil vagas em órgãos do Executivo federal. A confirmação do certame e a publicação do cronograma oficial dependem estritamente da aprovação do Projeto de Lei Orçamentária Anual pelo Congresso Nacional. A iniciativa foca na reposição de quadros técnicos em agências reguladoras, institutos de pesquisa e carreiras transversais de gestão pública.",
+          "por_que_importa": "A reposição planejada de quadros técnicos federais é determinante para a recomposição institucional do Estado e a retenção de mestres e doutores na administração pública.",
+          "fontes": [
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Previsão orçamentária do MGI para seleção unificada de servidores federais",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "09h30",
+          "o_que": "Ministério da Fazenda e técnicos do Congresso avaliam relatórios de impacto da alíquota padrão da reforma tributária"
+        },
+        {
+          "quando": "14h00",
+          "o_que": "Itamaraty e assessoria internacional do Planalto consolidam subsídios para reuniões bilaterais preparatórias do G20"
+        }
+      ]
     }
   },
   "cine_edicoes": {
@@ -23012,10 +23135,10 @@
       "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
       "fonte": "G1",
       "tipo": "noticia",
-      "data": "2026-10-30",
-      "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública no Senado",
+      "data": "2026-10-31",
+      "titulo": "Senado pauta PEC da Segurança Pública para votação na terça-feira",
       "resumo": [
-        "O presidente do Senado, Davi Alcolumbre, incluiu na ordem do dia da próxima terça-feira a votação da Proposta de Emenda à Constituição da Segurança Pública. A proposta visa reestruturar competências de fiscalização e ampliar a coordenação da União no combate ao crime organizado entre estados e municípios. A pauta ganha urgência em meio às articulações de final de legislatura e à busca de consenso entre as bancadas da Casa."
+        "O presidente da Comissão de Constituição e Justiça do Senado, Davi Alcolumbre, confirmou para a próxima terça-feira a votação da proposta de emenda à Constituição voltada à segurança pública. O texto busca integrar dados de inteligência das polícias estaduais e federais e redefinir o financiamento setorial. A movimentação legislativa ocorre no contexto das negociações para a sucessão das mesas diretoras do Congresso."
       ],
       "texto_integral": [
         "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
@@ -23023,6 +23146,9 @@
         "🔎 Para ser aprovada, uma PEC precisa ter ao menos três quintos dos votos favoráveis em dois turnos de votação. Ou seja, precisa contar com o apoio de 49 senadores.",
         "'SUS da Segurança' e fim da 'saidinha' para integrantes de facções: o que prevê a PEC da Segurança",
         "A deliberação estava prevista para acontecer antes do segundo turno das eleições, mas um impasse sobre emendas que preveem a redução da maioridade penal levou Alcolumbre a adiar a votação.",
+        "Líder do Governo no Senado, a senadora Teresa Leitão (PT-PE) disse que a posição do governo continua sendo não votar a maioridade penal junto com a PEC da Segurança. Ela lembra que o tema atualmente é discutido na Comissão Especial da Câmara.",
+        "\"A redução da maioridade penal não é objeto da PEC da Segurança. Considera-se o chamado 'jabuti'. É um tema que precisa ser enfrentado com profundidade e ouvindo amplos setores da sociedade\".",
+        "No entanto, a senadora aposta que o tema vai a voto e terão que disputar no plenário, sem acordo por parte deles.",
         "A dez dias do segundo turno das eleições presidenciais — onde Lula acabou vencendo o senador Flávio Bolsonaro (PL) — a oposição apresentou uma emenda para diminuir a maioridade penal para até 14 anos, a depender da gravidade do delito.",
         "Como reação, o líder do PT no Senado, Camilo Santana (CE), apresentou uma alteração para reduzir para 16 anos em casos de crimes hediondos.",
         "Aliados de Alcolumbre afirmaram que a retirada de pauta ocorreu porque nem o governo nem a oposição teriam votos suficientes para aprovar suas as emendas – e o cálculo, neste caso, seria de deixar o assunto para depois.",
@@ -23044,7 +23170,7 @@
         "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
       ],
       "pontos": [
-        "Agendamento da sessão de votação no plenário do Senado"
+        "Pauta de votações na CCJ e as articulações políticas de Alcolumbre no Senado"
       ]
     },
     "divida-publica-recorde-setembro-g1.globo.com/economia/noticia/": {
@@ -23327,12 +23453,12 @@
     },
     "cnu-2027-previsao-vagas-g1.globo.com/trabalho-e-carrei": {
       "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
-      "fonte": "g1",
+      "fonte": "G1",
       "tipo": "noticia",
-      "data": "2026-10-30",
-      "titulo": "Governo planeja CNU 2027 com até 3 mil vagas para o serviço público",
+      "data": "2026-10-31",
+      "titulo": "Governo planeja CNU 2027 com até 3 mil vagas condicionado ao Orçamento",
       "resumo": [
-        "O Ministério da Gestão e da Inovação informou que uma nova edição do Concurso Nacional Unificado em 2027 poderá oferecer até 3 mil vagas na administração direta e autarquias federais. A efetivação do certame depende da dotação orçamentária a ser aprovada no Orçamento de 2027 pelo Congresso Nacional. A proposta visa consolidar o modelo unificado de reposição de quadros técnicos, afetados por aposentadorias em universidades federais e agências reguladoras."
+        "O Ministério da Gestão e da Inovação sinalizou que a edição de 2027 do Concurso Nacional Unificado poderá ofertar até 3 mil vagas em órgãos do Executivo federal. A confirmação do certame e a publicação do cronograma oficial dependem estritamente da aprovação do Projeto de Lei Orçamentária Anual pelo Congresso Nacional. A iniciativa foca na reposição de quadros técnicos em agências reguladoras, institutos de pesquisa e carreiras transversais de gestão pública."
       ],
       "texto_integral": [
         "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
@@ -23347,7 +23473,7 @@
         "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
       ],
       "pontos": [
-        "Projeção de vagas e condicionantes orçamentárias do MGI"
+        "Previsão orçamentária do MGI para seleção unificada de servidores federais"
       ]
     },
     "divida-publica-pib-setembro-g1.globo.com/economia/noticia/": {
@@ -23685,6 +23811,215 @@
       ],
       "pontos": [
         "Relatório de indiciamento e alertas de carteiras inadimplentes"
+      ]
+    },
+    "reforma-tributaria-aliquota-consumo-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml",
+      "fonte": "G1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Reforma tributária: imposto sobre consumo pode superar 30%",
+      "resumo": [
+        "Estudos e simulações técnicas indicam que a alíquota padrão do Imposto sobre Bens e Serviços (IBS) e da Contribuição sobre Bens e Serviços (CBS) pode ultrapassar a marca de 30% para compensar exceções e regimes diferenciados aprovados pelo Congresso. Caso o patamar se confirme, a taxação brasileira sobre consumo superará a média praticada pelos países desenvolvidos da OCDE. O Ministério da Fazenda segue defendendo mecanismos de trava para tentar conter a alíquota final."
+      ],
+      "texto_integral": [
+        "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
+        "O cálculo foi feito por técnicos do tribunal com base em dados da Receita Federal. O percentual será encaminhado ao Congresso Nacional, que poderá concordar ou não.",
+        "Caberá ao Senado, até 15 de dezembro, fixar o valor final da alíquota, que será cobrada a partir de 2027.",
+        "▶️Para mensurar o valor da CBS, técnicos do tribunal estimaram quanto seria arrecadado com os impostos que estão sendo extintos no fim de 2026 (PIS, Cofins e grande parte do IPI). Isso porque, uma das premissas da reforma sobre o consumo, é manter o atual patamar da carga tributária.",
+        "TCU propôs alíquota de 11,3% pra imposto sobre o consumo",
+        "🔎 Em 2024, o governo estimou que a alíquota da CBS seria de 8,8%. Cálculo da consultoria Roit apontava para uma alíquota de 9,43% em 2027. Estimativas divulgadas em julho pelo Comitê Gestor do IBS, dos estados, apontam que a CBS teria uma taxa de cerca de 9,2% no próximo ano.",
+        "▶️Além da CBS do governo federal, a reforma tributária também contempla a cobrança do IBS estadual e municipal, que terá uma alíquota marginal de 0,1% até 2028. A partir de 2029, os estados e municípios começam a aumentar, gradualmente, a cobrança do IBS. A cobrança integral começa em 2033.",
+        "▶️Antes de a alíquota da CBS ser proposta pelo TCU, estimativa do Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS) apontava que a alíquota cheia estiver sendo cobrada do imposto sobre o consumo do governo federal, estados e municípios, somaria cerca de 28%.",
+        "▶️Depois da divulgação da proposta do tribunal para a CBS, bem acima do esperado, analistas passaram a apontar que o imposto brasileiro será de ao menos 30% em 2033 — o primeiro ano com tributação cheia. O g1 considerou o patamar de 30% para comparação internacional.",
+        "▶️ Se confirmada, seria maior do que a alíquota de todos os países desenvolvidos, segundo ranking da Tax Foundation — organização sem fins lucrativos que faz avaliações sobre impostos e coleta dados sobre tributos ao redor do mundo.",
+        "▶️De acordo com o levantamento, alíquota média dos impostos gerais sobre o consumo nos países da OCDE foi de 19,4%, bem abaixo do valor estimado para o futuro IVA brasileiro. O ranking, com dados de 2026, foi divulgado em 19 de outubro (veja abaixo).",
+        "➡️O governo federal, por sua vez, alega que, atualmente, os impostos cobrados sobre o consumo no país são ainda maiores, com tributação média de cerca de 34% – mas que há dificuldade em calcular o peso dos impostos pois o sistema é muito complexo, há exceções. Além disso, alguns tributos incidem sobre si mesmos (por dentro, em cascata).",
+        "➡️Este modelo \"por dentro\" torna mais difícil identificar quanto de imposto está efetivamente embutido no preço de um produto ou serviço. Por isso, as notas fiscais trazem apenas uma estimativa \"do valor aproximado de tributos\". Com a reforma tributária, eles passarão a ser cobrados por fora (aparecerão separados do valor do produto ou serviço).",
+        "➡️Um dos problemas que resultaram em um alto imposto sobre o consumo no Brasil foi a decisão do governo do presidente Lula, e de legisladores, de terem proposto e aprovado que o atual peso dos impostos nessa base de tributação fosse mantido.",
+        "🔎A consequência da concentração maior da carga tributária brasileira sobre o consumo no Brasil é o alto grau de \"regressividade\" (se arrecada proporcionalmente mais de quem ganha menos) — prejudicando, dessa forma, os mais pobres.",
+        "Números da Receita mostram que impostos sobre bens e serviços, ou seja, os tributos indiretos embutidos nos preços, representaram 43,5% de toda a carga tributária brasileira em 2024, ficando acima da média da OCDE (países ricos). Ao mesmo tempo, os tributos sobre o lucro, renda e o ganho de capital do brasileiro, focados nos contribuintes mais ricos, estão bem abaixo da média da OCDE, formada por países mais desenvolvidos.",
+        "Para Luís Garcia, advogado tributarista pela USP/SP e sócio do Tax Group, o alto patamar do endividamento do setor público e a rigidez das despesas mantêm a pressão por arrecadação e impedem que a reorganização dos tributos, isoladamente, produza alívio fiscal.",
+        "“A reforma tributária pode significar simplificação, mas jamais redução de carga tributária enquanto o Brasil continuar refém de uma política fiscal irresponsável”, avaliou o tributarista Luís Garcia.",
+        "▶️Outro entrave, este relacionado ao fato de que a alíquota proposta pelo TCU ficou acima do estimado anteriormente por analistas, tem a ver com as exceções aprovadas na tramitação da reforma tributária no Congresso Nacional, ou seja, com os benefícios concedidos na aquisição de determinados produtos e serviços.",
+        "Considerando a premissa básica de que a reforma deve manter o atual nível de arrecadação dos tributos sobre o consumo, os benefícios concedidos a determinados produtos e setores resultam em uma alíquota de referência mais elevada para as atividades que não contam com incentivos fiscais, algo que já havia sido apontado, à época, por representantes da indústria nacional.",
+        "Entre os benefícios aprovados na tramitação da reforma tributária, estão alíquota zero para a cesta básica, incluindo as proteínas (o que, segundo especialistas, beneficia a população mais rica), para uma lista de medicamentos e dispositivos médicos.O Congresso aprovou ainda alíquotas reduzidas para serviços de educação e saúde; medicamentos e dispositivos médicos; produções artísticas, culturais, jornalísticas e audiovisuais nacionais; atividades desportivas; e profissões regulamentadas e fiscalizadas por conselhos profissionais.",
+        "A Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) manifestou preocupação com a alíquota de referência de 11,3% pois ela reforça o risco de aumento da carga tributária para as empresas. A preocupação é especialmente relevante para prestadores de serviços sujeitos atualmente à alíquota conjunta de 3,65% de PIS/Cofins no regime cumulativo.",
+        "\"A substituição por uma CBS com referência de 11,3% representa uma elevação expressiva da alíquota nominal, embora o impacto efetivo dependa dos créditos e do tratamento tributário de cada atividade. Empresas intensivas em mão de obra ficam mais expostas, pois a folha de pagamentos não gera créditos\", avaliou a CNC, por meio de nota.",
+        "A Associação Brasileira da Indústria de Alimentos (ABIA) informou considerar preocupante a proposta de fixação da alíquota de referência de 11,3% para a CBS, bem acima das estimativas anteriores. Avalia que uma diferença dessa magnitude \"ameaça elevar a carga tributária das empresas, com efeitos que podem se refletir nos preços ao consumidor\".",
+        "\"A definição da alíquota não deve ignorar os impactos sobre a produção, os investimentos e o custo dos alimentos. Além de aumentar os preços, uma alíquota elevada da CBS ameaça ampliar a pressão sobre o orçamento das famílias de menor renda, comprometendo seu acesso à alimentação\", acrescentou a ABIA, em nota.",
+        "Paulo Skaf, presidente da Federação das Indústrias do Estado de São Paulo (Fiesp), disse que o patamar de 11,3% estimado pelo TCU quebra a premissa central da reforma tributária de manutenção da carga fiscal.",
+        "Segundo ele, estudos técnicos apontavam equilíbrio em torno de 9% para o imposto, e que a nova projeção retira da economia mais de R$ 100 bilhões em tributos adicionais já em 2027, empurrando o IVA Dual (CBS + IBS) para além de 30% - a maior taxa do mundo.",
+        "\"A produção, os investimentos e o emprego não suportam mais impostos. O reequilíbrio fiscal do Brasil exige corte e controle de gastos públicos, e não aumento de arrecadação sobre quem produz. Esperamos o bom senso do Senado Federal para corrigir essa distorção\", declarou o presidente da Fiesp.",
+        "A Conexis Brasil Digital, Sindicato Nacional das Empresas de Telefonia e de Serviço Móvel, Celular e Pessoal, informou ter recebido com preocupação a proposta de fixação da alíquota de referência de 11,3% para a CBS.",
+        "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
+      ],
+      "pontos": [
+        "Comparações internacionais e o impacto das concessões legislativas sobre a alíquota final do consumo"
+      ]
+    },
+    "reconhecimento-eleicoes-partidos-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/31/novo-segue-sem-reconhecer-resultado-das-eleicoes-27-partidos-validam-vitoria-de-lula.ghtml",
+      "fonte": "G1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "27 partidos validam vitória de Lula enquanto Novo segue sem reconhecer",
+      "resumo": [
+        "Um total de 27 legendas partidárias já reconheceu oficialmente o resultado das urnas no segundo turno, atestando a regularidade do processo conduzido pela Justiça Eleitoral. O partido Novo permanece como a única agremiação com representação que ainda não divulgou manifestação formal de validação do pleito. A postura isola ainda mais correntes que sustentavam teses de contestação eleitoral."
+      ],
+      "texto_integral": [
+        "Logo após o Tribunal Superior Eleitoral (TSE) proclamar Luiz Inácio Lula da Silva (PT) vencedor da disputa com o senador Flávio Bolsonaro (PL), por uma diferença de 4,4 milhões de votos, o presidente do partido Novo, Eduardo Ribeiro, não reconheceu o resultado das urnas e afirmou que \"o Brasil não vive uma democracia\".",
+        "Ao todos, vinte e sete partidos políticos divulgaram manifestações em que reconhecem a vitória do presidente Lula nas eleições deste ano. Até a última atualização desta reportagem, apenas uma legenda não havia se manifestado sobre o resultado das eleições: Mobiliza.",
+        "Em uma publicação nas redes sociais, Ribeiro questionou o resultado alegando uso da máquina pública e do Supremo Tribunal Federal (STF), em uma referência a decisão do ministro Cristiano Zanin, que prorrogou o período de votação até às 19h, pedido que havia sido feito também pelo PL.",
+        "“O resultado da eleição é a prova de que o Brasil não é uma democracia. Como se não bastasse fazer uma campanha cheia de mentiras, o PT usou como nunca a máquina pública e o STF pra se manter no poder. Temos três ações pedindo a cassação da chapa de Lula. Cabe agora à Justiça cumprir seu papel, se ainda existe Justiça nesse país”, afirmou o presidente do partido.",
+        "Carta golpista leva TSE, partidos e até aliados de Flávio a defender resultado das urnas",
+        "O Tribunal Superior Eleitoral (TSE) atestou a regularidade do processo eleitoral e reconheceu a vitória do presidente Lula ainda no domingo (25), após a totalização dos votos. Após o resultado, Flávio disse não reconhecer a vitória de Lula e afirmou que iria pedir a anulação da votação.",
+        "Após perder as eleições, Flávio fugiu do Brasil em direção aos Estados Unidos. Após desembarcar no país norte-americano, o senador divulgou uma carta com teor golpista, na qual afirmou não reconhecer o resultado das urnas no segundo turno da eleição presidencial, acusou suposta fraude eleitoral e afirmou ser o \"verdadeiro presidente do Brasil\", o \"presidente eleito\".",
+        "Depois da divulgação da carta de Flávio, questionando o resultado nas urnas, o presidente da Corte Eleitoral, ministro Kassio Nunes Marques, indicado ao cargo de ministro do Supremo Tribunal Federal (STF) pelo ex-presidente Jair Bolsonaro (PL), afirmou que a Justiça Eleitoral entregou o pleito deste ano com segurança e que as eleições \"transcorreram dentro da mais absoluta normalidade\".",
+        "Entre as siglas que reconheceram a vitória estão o PL — partido do candidato derrotado Flávio Bolsonaro —, União Brasil, MDB, PSD, Republicanos, PSDB, PDT, PSB, PSOL, Podemos, Avante, Democrata, Democracia Cristã (DC), UP e PSTU.",
+        "Ao g1, Ribeiro afirmou que o partido continuará sem reconhecer o resultado das eleições presidenciais por uma questão de coerência.",
+        "“Não vai mudar. Primeiro porque seria contraditório a gente reconhecer a vitória de uma chapa que a gente ainda está contestando na Justiça. O Novo tem três ações contra a chapa Lula-Alckmin, todas elas ajuizadas antes da eleição”, declarou Ribeiro.",
+        "Questionado se o partido mudará o posicionamento caso seja derrotado na Justiça, Ribeiro afirmou que o partido irá avaliar “a decisão e os argumentos”.",
+        "O partido também não se manifestou sobre a carta escrita por Flávio Bolsonaro após fugir do país para os Estados Unidos em que o candidato derrotado, em tom golpista, se autoproclamou presidente eleito do país, voltando atrás minutos depois e trocando a expressão por “líder do Brasil”.",
+        "Apesar de não ter se posicionado, Ribeiro diz que o partido deixou os quadros “livres para cada um se posicionar” e afirmou que, apesar de não reconhecer, o Novo não questiona a lisura das urnas e do pleito.",
+        "“Em nenhum momento a gente questionou as urnas. Nós estamos questionando os meios ilegais, no nosso entendimento, que o Lula usou. Por ser um incumbente, por estar na administração pública, por ter a caneta na mão, que fizeram com que a eleição não fosse justa”, pontuou.",
+        "Segundo o g1 apurou, a postura é parte de uma estratégia do partido que está apostando em “um racha” da direita, principalmente no PL, entre abraçar ou não o discurso golpista de Flávio Bolsonaro de não reconhecer o resultado das eleições presidenciais.",
+        "Buscando atrair esses quadros, o Novo deve continuar não reconhecendo a vitória de Lula.",
+        "Questionado, Ribeiro disse que não há uma estratégia, que o partido não irá entrar em eventuais disputas dentro da direita, mas que está “de portas abertas” para receber quadros da direita que se identifiquem com a legenda.",
+        "“O Novo vai estar de portas abertas a todos aqueles que consideram o Novo como um partido de direita, liberal, conservador, que tem princípios, que tem pessoas decentes. O Novo vai estar sempre de portas aberta, mas nós não temos interesse em entrar em rusgas da direita nesse momento”, afirmou.",
+        "O Novo já havia sinalizado ao bolsonarismo durante a campanha presidencial do ex-governador de Minas Gerais, Romeu Zema.",
+        "Após a revelação dos áudios em que Flávio Bolsonaro pede e cobra dinheiro de Daniel Vorcaro, então dono do Banco Master, para bancar o filme \"Dark Horse\", sobre a vida do ex-presidente Jair Bolsonaro, Zema foi um dos primeiros políticos a criticar a relação entre o senador e o banqueiro.",
+        "“Flávio Bolsonaro, ouvir você cobrando dinheiro do Vorcaro é imperdoável. É um tapa na cara dos brasileiros de bem. Não adianta nada criticar as práticas de Lula e do PT e fazer a mesma coisa”, declarou à época.",
+        "As declarações não caíram bem dentro do partido e Zema foi cobrado por correligionários a baixar o tom contra Flávio para não atrapalhar palanques locais, como Rio Grande do Sul, Santa Catarina e Paraná.",
+        "Zema então passou a falar em união da direita “para derrotar o PT”, mas acabou abandonado por quadros do partido ainda no primeiro turno.",
+        "Um deles foi Marcel Van Hattem, deputado que acabou eleito senador pelo Rio Grande do Sul. A três dias do primeiro turno, o parlamentar declarou em live realizada com Flávio Bolsonaro que “no domingo votaria 22”.",
+        "Nas eleições, o Novo elegeu dez deputados federais, três senadores e rompeu a cláusula de barreira.",
+        "🔎 Também chamada de cláusula de desempenho, a regra estabelece que os partidos precisam atingir um percentual mínimo de votos válidos para a Câmara dos Deputados ou um número mínimo de deputados eleitos para ter acesso a recursos do Fundo Partidário e ao tempo de propaganda na televisão e no rádio.",
+        "Romeu Zema acabou na sexta colocação com apenas 326.488 votos, 0,27% dos votos válidos. A performance foi pior que a de Felipe D’Avila, candidato do partido em 2022, que foi votado por 559.708 eleitores, 0,47% do total."
+      ],
+      "pontos": [
+        "Levantamento partidário sobre manifestações formais após a homologação dos resultados pelo TSE"
+      ]
+    },
+    "itamaraty-argentina-fuga-flavio-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml",
+      "fonte": "G1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Itamaraty convoca embaixada argentina após saída de Flávio Bolsonaro",
+      "resumo": [
+        "O Ministério das Relações Exteriores convocou o encarregado de negócios da Embaixada da Argentina para prestar esclarecimentos formais sobre o trânsito de Flávio Bolsonaro pela fronteira terrestre antes de embarcar para os Estados Unidos. O senador viajou utilizando documentação que estava retida por decisão judicial, gerando atritos bilaterais. Fontes do Planalto buscam evitar uma crise diplomática ampliada com Buenos Aires e Washington."
+      ],
+      "texto_integral": [
+        "Itamaraty ouve diplomata argentina sobre fuga de Flávio Bolsonaro para os EUA",
+        "O Ministério das Relações Exteriores (Itamaraty) convocou a encarregada de Negócios da Embaixada da Argentina no Brasil, María Emilia Cortés, a prestar esclarecimentos sobre o contexto da fuga do senador Flávio Bolsonaro (PL) para os Estados Unidos nesta semana.",
+        "O governo da Argentina confirmou que o senador embarcou com a família em um avião particular que partiu da Argentina na noite de terça-feira (27).",
+        "María Emilia Cortés foi recebida na tarde desta quinta-feira (29) pelo chefe do Departamento do Mercosul do Itamaraty, João Marcelo Galvão de Queiroz, em Brasília.",
+        "Na conversa, o embaixador pediu a ela informações sobre a fuga do senador e, segundo diplomatas que participaram da reunião, María Emilia ficou de transmitir o que foi debatido ao governo de Javier Milei.",
+        "De acordo com diplomatas, o procedimento é praxe em casos desse tipo e não estão previstos desdobramentos no momento. No entanto, novos passos serão definidos à luz dos desdobramentos das apurações.",
+        "Internamente, o governo brasileiro decidiu fechar a posição de que o Brasil quer virar a página sobre a fuga do senador e não dar mais importância ao assunto.",
+        "Integrantes do governo já decidiram não entrar em discussões públicas com o governo argentino sobre o episódio.",
+        "Segundo o blog do colunista do g1 Valdo Cruz, o presidente Luiz Inácio Lula da Silva (PT) foi aconselhado por interlocutores a não falar mais em Flávio Bolsonaro (PL), focar em seu quarto mandato e deixar claro que o problema do senador é com o Judiciário.",
+        "Autoridades argentinas negam que tenha havido pedido de informações",
+        "Em uma rede social, o chanceler argentino, Pablo Quirno, negou que o Brasil tenha pedido explicações à Argentina sobre a fuga de Flávio Bolsonaro (PL-RJ) para os Estados Unidos, passando por território do país.",
+        "\"Falso. Não houve nenhum pedido de explicações\", disse sobre uma publicação do jornal local La Nación.",
+        "O presidente Javier Milei repostou a publicação de Quirno e escreveu: \"La Nación mentindo\".",
+        "Flávio Bolsonaro (PL-RJ) desembarcou nos Estados Unidos na quarta-feira (28) após fugir do Brasil com a esposa e as duas filhas.",
+        "A família viajou em um avião particular que partiu da Argentina e fez uma escala no Equador.",
+        "A rota começou ainda na noite de terça-feira (27), quando Flávio e a família entraram na Argentina após cruzarem a Ponte Internacional Tancredo Neves. A via liga Foz do Iguaçu, no Paraná, a Puerto Iguazú, na província argentina de Misiones.",
+        "Segundo a Direção Nacional de Migrações da Argentina, a família cruzou a fronteira às 22h50, pelo horário de Brasília.O órgão afirmou que os quatro apresentaram documentação válida para a viagem e não tinham nenhum impedimento legal para entrar no país.",
+        "Cerca de 40 minutos depois, às 23h30, Flávio e a família embarcaram em um jatinho particular do modelo Gulfstream G400, de matrícula LV-JQW. A aeronave pertence à Baires Fly, empresa argentina que realiza voos privados.",
+        "O avião decolou de Puerto Iguazú às 0h22 de quarta. A aeronave sobrevoou o Paraguai, a Bolívia e o Peru, evitando o espaço aéreo brasileiro. Às 5h46, pelo horário de Brasília, o jatinho pousou no aeroporto de Guayaquil, no Equador.",
+        "Flávio ficou menos de uma hora em solo equatoriano. O avião decolou novamente às 6h22, com destino aos Estados Unidos.",
+        "A viagem terminou às 10h24, horário de Brasília, quando o avião com o senador e a família pousou no Aeroporto Executivo de Fort Lauderdale, na Flórida. O terminal fica na região de Miami.",
+        "Voo de fuga de Flávio foi pago por intermediário a partir dos EUA, diz dono do avião",
+        "Flávio deixou o Brasil após o Supremo Tribunal Federal (STF) determinar que ele entregasse os passaportes à Polícia Federal.",
+        "A decisão foi dada em um processo no qual Flávio e o advogado Willer Tomaz são investigados por lavagem de dinheiro, em um suposto esquema que envolveria empresas de Tomaz e bets.Os dois confirmam que são amigos, mas negam ser sócios e ter cometido qualquer irregularidade.",
+        "Na terça-feira (27), um representante do Departamento de Estado dos EUA informou que o governo americano concederia vistos a Flávio Bolsonaro e à família e permitiria a entrada deles no país.",
+        "Uma consulta ao sistema da Alfândega e Proteção de Fronteiras dos Estados Unidos (CBP, na sigla em inglês) mostra que o senador recebeu autorização para permanecer por um ano no país.",
+        "Os registros mostram que Flávio foi admitido em uma categoria identificada pelo código \"DT\".",
+        "A sigla é usada para autorizações temporárias no país, geralmente ligadas a questões humanitárias.",
+        "O g1 procurou a agência para esclarecer o status migratório do senador, mas não obteve resposta até a última atualização desta reportagem.",
+        "A consulta mostrou ainda que Flávio utilizou um passaporte diplomático que havia sido cancelado para entrar nos Estados Unidos.",
+        "PF investiga como Flávio Bolsonaro descumpriu ordem de não deixar o Brasil",
+        "A Polícia Federal (PF) apontou riscos \"concretos e atuais\" de fuga ao pedir ao ministro Alexandre de Moraes, do STF, a apreensão do passaporte e a proibição de saída do país de Flávio Bolsonaro.",
+        "Na avaliação da PF, três elementos centrais indicavam que Flávio poderia deixar o Brasil sob a justificativa de suposta perseguição política:",
+        "a manifestação pública e direta do deputado cassado Eduardo Bolsonaro, recomendando ao irmão que deixasse o país;o expressivo poder econômico;a existência de estruturas já estabelecidas no exterior que poderiam viabilizar uma permanência prolongada.",
+        "O pedido da PF citou uma declaração de Eduardo Bolsonaro em que ele defendeu que o irmão deixasse o país caso fosse derrotado na disputa pelo Palácio do Planalto.",
+        "\"Em entrevista concedida recentemente nos Estados Unidos, EDUARDO BOLSONARO, irmão do Senador FLÁVIO BOLSONARO, defendeu publicamente que este deixe o país caso não obtenha êxito no pleito eleitoral. Cabe recordar que EDUARDO BOLSONARO foi recentemente condenado pelo crime de coação no curso do processo\", disseram os investigadores."
+      ],
+      "pontos": [
+        "Ação diplomática do governo brasileiro perante a representação argentina em Brasília"
+      ]
+    },
+    "mauro-vieira-marco-rubio-g20-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/mauro-vieira-e-marco-rubio-se-encontram-no-g20-e-acertam-reuniao-em-novembro.ghtml",
+      "fonte": "G1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Mauro Vieira e Marco Rubio alinham reunião prévia à cúpula do G20",
+      "resumo": [
+        "O chanceler brasileiro Mauro Vieira esteve reunido com o senador republicano Marco Rubio nos Estados Unidos para acertar um encontro bilateral antes da próxima cúpula do G20. A conversa buscou estabelecer pontes pragmáticas de diálogo institucional com a liderança norte-americana para a agenda de cooperação econômica e transição energética. A diplomacia brasileira adota tom de distensão para blindar o comércio e a cooperação científica de disputas polarizadas."
+      ],
+      "texto_integral": [
+        "O ministro das Relações Exteriores, Mauro Vieira, e o secretário de Estado dos Estados Unidos, Marco Rubio, se encontraram nesta sexta-feira (30). Os dois participam de um encontro de chanceleres do G20, que acontece em Atlanta, no estado da Geórgia, nos Estados Unidos.",
+        "Segundo fontes do Itamaraty ouvidas pela GloboNews, o chanceler brasileiro e o secretário de Estado norte-americano conversaram e acertaram um novo encontro antes da cúpula do G20, marcada para dezembro deste ano.",
+        "O encontro aconteceu durante a recepção de boas-vindas à Reunião de Ministros das Relações Exteriores do G20. Data e local do novo encontro ainda serão definidos.",
+        "O encontro acontece em meio à tensão diplomática provocada pela recusa do presidente Donald Trump em reconhecer o resultado das eleições brasileiras.",
+        "Nesta terça-feira (27) o presidente Donald Trump voltou a insinuar, sem provas, que houve fraude na eleição no Brasil.",
+        "Nesta quinta-feira (29), Trump disse que não tomou partido nas eleições do Brasil a pedido do presidente Luiz Inácio Lula da Silva (PT).",
+        "O presidente norte-americano também afirmou que falará com Lula, mas, novamente não disse se reconhece a vitória do presidente brasileiro. Questionado sobre quem, para ele, havia vencido as eleições no Brasil, ele respondeu que \"não quero comentar isso agora\".",
+        "👉 O resultado do 2º turno foi confirmado pelo presidente do Tribunal Superior Eleitoral (TSE), ministro Kassio Nunes Marques, ainda na noite de domingo (25).",
+        "Lula (PT) derrotou Flávio Bolsonaro (PL), aliado de Trump, no segundo turno da eleição presidencial no último domingo (25). O petista recebeu 51,79% dos votos válidos, contra 48,21% do senador, com uma vantagem de 4,4 milhões de votos.",
+        "Além disso, outro episódio intensificou a instabilidade entre os dois países. O senador Flávio Bolsonaro (PL) deixou o país com a família rumo aos Estados Unidos, contrariando a proibição do Supremo Tribunal Federal (STF).",
+        "Flávio recebeu autorização do governo americano para permanecer por 1 ano no país, segundo aponta consulta ao sistema U.S. Customs and Border Protection - CBP (Alfândega e Proteção de Fronteiras dos Estados Unidos).",
+        "Os registros mostram que o senador foi admitido em uma categoria identificada com o código \"DT\" e que pode ficar no país até 27 de outubro de 2027. O CBP identifica DT como “autorizado a entrar temporariamente” (Paroled). O g1 procurou a agência para esclarecer o status do senador no país, mas não obteve resposta até a última atualização desta reportagem.",
+        "➡️ Em uma operação secreta, Flávio Bolsonaro, derrotado nas eleições de domingo, deixou o Brasil após descumprir a ordem do STF.",
+        "Segundo as autoridades argentinas, Flávio entrou no país na noite de terça-feira (27) por terra. A PF suspeita, porém, que ele tenha entrado na Argentina em um avião privado;No território argentino, o senador embarcou em um jatinho executivo com destino aos EUA;O trajeto evitou o espaço aéreo brasileiro e incluiu uma escala no Equador;Flávio e família desembarcaram em Miami, às 10h24."
+      ],
+      "pontos": [
+        "Articulação de bastidores da chancelaria brasileira com lideranças políticas em Washington"
+      ]
+    },
+    "deficit-fiscal-divida-publica-setembro-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml",
+      "fonte": "G1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Dívida bruta atinge 82,9% do PIB com déficit primário em setembro",
+      "resumo": [
+        "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, elevando a dívida bruta para 82,9% do Produto Interno Bruto, o patamar mais alto em cinco anos e meio. No acumulado das empresas estatais federais, o saldo negativo alcançou o recorde de R$ 8,5 bilhões até setembro. Analistas e consultorias legislativas apontam que o novo mandato terá de acelerar medidas de contenção de gastos obrigatórios para estabilizar a trajetória da dívida."
+      ],
+      "texto_integral": [
+        "As contas do setor público consolidado apresentaram um déficit primário de R$ 5,5 bilhões em setembro, informou o Banco Central (BC) nesta quinta-feira (29).",
+        "🔎 O déficit primário ocorre quando as receitas com tributos e impostos ficam abaixo das despesas do governo. Se o contrário acontece, o resultado é de superávit primário.",
+        "🔎 O resultado não leva em conta o pagamento dos juros da dívida pública, e abrange o governo federal, os estados, municípios e as empresas estatais.",
+        "Na comparação com setembro do ano passado, houve melhora, uma vez que foi registrado um saldo negativo de R$ 17,5 bilhões naquele mês.",
+        "➡️ O endividamento do setor público, por sua vez, ficou estável continuou em 82,9% do Produto Interno Bruto (PIB) no mês passado — veja mais abaixo nessa reportagem.",
+        "Veja abaixo o desempenho das contas em setembro deste ano:",
+        "governo federal registrou saldo positivo de R$ 3,5 bilhões;estados e municípios tiveram saldo deficitário de R$ 5,6 bilhões;empresas estatais apresentaram déficit de R$ 3,4 bilhões.",
+        "No acumulado dos nove primeiros meses deste ano, ainda segundo dados oficiais, as contas públicas registraram um déficit primário de R$ 94,3 bilhões — o equivalente a 0,93% do Produto Interno Bruto (PIB).",
+        "Com isso, houve piora na comparação com o mesmo período do ano passado, quando foi registrado um saldo negativo de R$ 79,2 bilhões (0,84% do PIB).",
+        "No caso somente do governo federal, o resultado ficou negativo em R$ 93,6 bilhões na parcial deste ano, informou o BC, contra um déficit de R$ 99,6 bilhões nos nove primeiros meses de 2025.",
+        "Para este ano, a meta é de que as contas do governo tenham um saldo negativo de 0,25% do Produto Interno Bruto (PIB), cerca de R$ 34,3 bilhões.De acordo com o arcabouço fiscal, aprovado em 2023, há um intervalo de tolerância de 0,25 ponto percentual em relação à meta central.Ou seja: a meta será considerada formalmente cumprida se o governo tiver saldo zero, ou se chegar a um superávit de R$ 68,6 bilhõesO texto, no entanto, permite que o governo retire desse cálculo R$ 67,3 bilhões em despesas. E use esses recursos para pagar, por exemplo, precatórios (gastos com sentenças judiciais, defesa e educação).",
+        "Quando se incorporam os juros da dívida pública na conta – no conceito conhecido no mercado como resultado nominal, utilizado para comparação internacional –, houve déficit de R$ 113 bilhões nas contas do setor público em setembro.",
+        "➡️ No acumulado em 12 meses até setembro, foi registrado um resultado negativo (déficit) de R$ 1,28 trilhão, ou 9,51% do PIB.",
+        "🔎 Esse número é acompanhado com atenção pelas agências de classificação de risco para a definição da nota de crédito dos países, indicador levado em consideração por investidores.",
+        "O resultado nominal das contas do setor público sofre impacto do resultado mensal das contas, das atuações do BC no câmbio, e dos juros básicos da economia (Selic) fixados pela instituição para conter a inflação. Atualmente, a taxa Selic está em 13,75% ao ano, patamar elevado.",
+        "Segundo o BC, as despesas com juros nominais somaram R$ 1,2 trilhão (8,99% do PIB) em doze meses até setembro deste ano.",
+        "Em setembro, segundo números do Banco Central, a dívida do setor público consolidado ficou estável em 82,9% do PIB em setembro — o equivalente a R$ 11,11 trilhões.",
+        "➡️ Este é o maior nível para a dívida pública desde março de 2021, quando somava 85,1% do PIB, ou seja, é o maior patamar em mais de cinco anos.",
+        "➡️ No acumulado do governo do presidente Luiz Inácio Lula da Silva (PT), ou seja, em pouco mais de três anos, a dívida já avançou 11,2 pontos percentuais.",
+        "🔎 A alta na dívida no governo Lula está relacionada, principalmente, com o aumento de gastos públicos, que gera mais despesas com juros — um ciclo vicioso que se retroalimenta.",
+        "➡️ Para o Fundo Monetário Internacional (FMI), que utiliza de um conceito internacional — englobando os títulos públicos na carteira do BC —, o endividamento brasileiro foi bem maior em setembro: 95,2% do PIB.",
+        "🔎 A proporção com o PIB é considerada por especialistas como o conceito mais apropriado para medir e comparar a dívida das nações. E o formato de cálculo do Fundo Monetário Internacional (FMI) é adotado internacionalmente.",
+        "➡️ Acima de 90% do PIB, o patamar da dívida brasileira está bem acima de nações emergentes e de países da América do Sul, ficando maior, também, do que a média das nações da Zona do Euro (segundo dados do FMI).",
+        "Para tentar conter o crescimento da dívida, em 2023 o governo aprovou o chamado \"arcabouço fiscal\", ou seja, novas regras para as contas públicas em substituição ao teto de gastos.",
+        "A norma prevê crescimento das despesas abaixo das receitas, e um limite para gastos. Entretanto, despesas excluídas desse limite continuam pressionando para cima o endividamento.Analistas pedem um corte robusto de gastos para conter a dívida e proporcionar queda do juro básico.",
+        "Diante do crescimento da dívida pública no atual mandato do presidente Lula, a equipe econômica vem acenando com novas medidas para conter sua expansão na próxima gestão, que tem início em 2027."
+      ],
+      "pontos": [
+        "Divulgação dos dados de estatísticas fiscais e dívida consolidada pelo Banco Central"
       ]
     }
   }
