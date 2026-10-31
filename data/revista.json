@@ -5401,110 +5401,110 @@
     "2026-10-31": {
       "data": "2026-10-31",
       "edicao": "manha",
-      "titulo": "Reforma tributária sob alerta e tensões pós-eleitorais em Brasília",
-      "resumo_dia": "O cenário pós-eleitoral consolida o reconhecimento institucional da vitória de Lula por 27 partidos, em meio ao isolamento e desdobramentos da fuga de Flávio Bolsonaro. Na frente econômica, projeções alertam que a alíquota padrão sobre o consumo decorrente da reforma tributária pode superar os 30%, patamar recorde internacional. No Congresso, articulações avançam com a pauta da PEC da Segurança Pública no Senado e debates orçamentários que condicionam a realização do CNU 2027. Nas relações exteriores, a diplomacia brasileira ajusta canais pragmáticos de diálogo com Washington antes da cúpula do G20.",
+      "titulo": "Reforma tributária pode elevar IVA a 30% e crise pós-eleição repercute",
+      "resumo_dia": "O cenário econômico é marcado pelas projeções de que a alíquota padrão da reforma tributária sobre o consumo pode ultrapassar 30%, tornando-se uma das mais altas do mundo. No plano político, os desdobramentos da eleição presidencial de 2026 continuam a tensionar as relações institucionais, com o Itamaraty atuando após a saída de Flávio Bolsonaro do país e a quase totalidade dos partidos chancelando o resultado das urnas. Paralelamente, o Congresso Nacional prepara a pauta de votação da PEC da Segurança Pública para a próxima semana. No serviço público federal, o governo condiciona a nova edição do CNU à aprovação orçamentária no Legislativo.",
       "notas": [
         {
-          "id": "reforma-tributaria-aliquota-consumo",
+          "id": "reforma-tributaria-aliquota-consumo-30-por-cento",
           "editoria": "Economia",
-          "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
-          "texto": "Estudos e comparações internacionais indicam que o novo imposto sobre consumo decorrente da reforma tributária brasileira pode ultrapassar a marca de 30%, superando a média cobrada por países desenvolvidos. O percentual final depende das exceções setoriais e regimes diferenciados mantidos durante as negociações no Congresso Nacional. A equipe econômica monitora as regras de transição para tentar mitigar a sobrecarga direta sobre o consumidor final.",
-          "por_que_importa": "Uma alíquota consolidada elevada afeta diretamente o custo operacional das empresas e a renda real das famílias, exigindo vigilância sobre os impactos na inflação e competitividade da indústria nacional.",
+          "titulo": "Alíquota do novo imposto sobre consumo pode superar 30% e liderar ranking global",
+          "texto": "Estudos e estimativas sobre a regulamentação da reforma tributária indicam que o Imposto sobre Bens e Serviços (IBS) e a Contribuição sobre Bens e Serviços (CBS) somados podem ultrapassar a marca de 30%. O percentual superaria a média de países da OCDE e nações desenvolvidas que utilizam o modelo de Imposto sobre Valor Agregado (IVA). O aumento da alíquota de referência decorre de regimes diferenciados e exceções aprovadas ao longo da tramitação legislativa.",
+          "por_que_importa": "Uma alíquota sobre o consumo acima de 30% encarece serviços e cadeias produtivas não desoneradas, exigindo maior controle fiscal e impactando o poder de compra das famílias brasileiras.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Análise da comparação internacional e risco de alíquota acima de 30%",
+              "enfoque": "Compara alíquota projetada do novo imposto sobre consumo brasileiro com os padrões internacionais",
               "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
             }
           ]
         },
         {
-          "id": "cnu-2027-vagas-orcamento",
-          "editoria": "Ciência",
-          "titulo": "Governo prevê até 3 mil vagas para CNU 2027 condicionadas ao Orçamento",
-          "texto": "O Ministério da Gestão e da Inovação sinalizou que a edição de 2027 do Concurso Nacional Unificado poderá ofertar até 3 mil novas vagas no serviço público federal. A efetivação do certame e o cronograma de provas estão estritamente atrelados à aprovação e aos limites fiscais da Lei Orçamentária de 2027. O modelo centralizado busca repor quadros técnicos essenciais de ministérios, agências reguladoras e instituições federais de ensino e pesquisa.",
-          "por_que_importa": "A recomposição planejada do funcionalismo impacta a capacidade operacional das universidades e institutos de pesquisa federais após anos de restrições de pessoal e aposentadorias.",
+          "id": "cnu-2027-previsao-vagas-orcamento",
+          "editoria": "Economia",
+          "titulo": "Governo projeta até 3 mil vagas para o CNU 2027 sob condição orçamentária",
+          "texto": "O Ministério da Gestão e da Inovação sinalizou que uma nova edição do Concurso Nacional Unificado em 2027 poderá oferecer até 3 mil vagas no serviço público federal. Contudo, a realização do certame dependerá expressamente das dotações autorizadas na Lei Orçamentária Anual enviada ao Congresso. O planejamento visa repor quadros de carreiras técnicas e científicas federais desfalcadas nos últimos anos.",
+          "por_que_importa": "A realização de concursos nacionais impacta diretamente a reposição de quadros no serviço público e a estruturação de carreiras federais estratégicas, incluindo agências e institutos de pesquisa.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Estimativa de vagas e vinculação orçamentária para a realização do concurso",
+              "enfoque": "Destaca a dependência da aprovação orçamentária pelo Congresso para a realização da prova",
               "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
             }
           ]
         },
         {
-          "id": "validacao-eleicoes-lula-partidos",
+          "id": "itamaraty-convoca-argentina-fuga-flavio-bolsonaro",
           "editoria": "Política",
-          "titulo": "Com aval de 27 partidos a resultado, Novo é a única legenda sem reconhecer pleito",
-          "texto": "Um balanço do quadro político pós-segundo turno aponta que 27 legendas partidárias já reconheceram publicamente a vitória de Lula nas urnas eletrônicas. O partido Novo permanece como a única agremiação com representação que ainda não validou o resultado proclamado pelo Tribunal Superior Eleitoral. A postura da ampla maioria dos partidos reforça a normalidade institucional e isola discursos que questionam a lisura do processo eleitoral.",
-          "por_que_importa": "A ratificação multipartidária assegura estabilidade inicial para a transição governamental e esvazia contestações judiciais desprovidas de comprovação técnica.",
+          "titulo": "Itamaraty convoca embaixada argentina após rota de saída de Flávio Bolsonaro",
+          "texto": "O Ministério das Relações Exteriores convocou o encarregado de negócios da embaixada da Argentina em Brasília para prestar esclarecimentos sobre a passagem de Flávio Bolsonaro pela fronteira comum antes de seu embarque para os Estados Unidos. O senador viajou utilizando documentação já suspensa pela Justiça brasileira. Apesar da movimentação diplomática, integrantes do governo buscam preservar canais institucionais com Buenos Aires e Washington.",
+          "por_que_importa": "O incidente tensiona o controle migratório regional e exige equilíbrio do corpo diplomático para evitar atritos que afetem acordos bilaterais no Mercosul.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Levantamento das manifestações partidárias sobre o resultado eleitoral",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/31/novo-segue-sem-reconhecer-resultado-das-eleicoes-27-partidos-validam-vitoria-de-lula.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "itamaraty-fronteira-argentina-flavio",
-          "editoria": "Política",
-          "titulo": "Itamaraty convoca embaixada argentina após rota de fuga de Flávio Bolsonaro",
-          "texto": "O Ministério das Relações Exteriores convocou representantes da Embaixada da Argentina para prestar esclarecimentos formais sobre a travessia de Flávio Bolsonaro pela fronteira terrestre comum antes de embarcar para os Estados Unidos. O senador viajou utilizando documentação suspensa por determinações judiciais no Brasil. Paralelamente, o Palácio do Planalto adota postura cautelosa para impedir que o episódio degenere em um impasse diplomático com Buenos Aires ou Washington.",
-          "por_que_importa": "O caso tensiona os protocolos de cooperação policial e controle de fronteiras no Mercosul em um momento de reposicionamento das relações regionais.",
-          "fontes": [
-            {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Convocação diplomática de representantes argentinos pelo Itamaraty",
+              "enfoque": "Relata a convocação diplomática formal e a atuação do Itamaraty no caso",
               "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml"
             }
           ]
         },
         {
-          "id": "senado-pec-seguranca-publica",
+          "id": "reconhecimento-eleicoes-lula-partidos",
           "editoria": "Política",
-          "titulo": "Alcolumbre pauta PEC da Segurança Pública para votação no Senado",
-          "texto": "O presidente do Senado, Davi Alcolumbre, incluiu na ordem do dia da próxima terça-feira a votação da Proposta de Emenda à Constituição da Segurança Pública. O texto propõe mudanças estruturais na integração de bancos de dados policiais, diretrizes do SUSP e atuação das forças federais e estaduais no enfrentamento ao crime organizado. A proposta vinha sendo articulada pelo Ministério da Justiça junto a governadores e lideranças partidárias.",
-          "por_que_importa": "A emenda pode redesenhar as competências constitucionais entre União e estados na segurança, alterando fluxos de financiamento e gestão de inteligência policial.",
+          "titulo": "27 partidos formalizam reconhecimento do resultado eleitoral; Novo mantém recusa",
+          "texto": "Levantamento partidário aponta que 27 legendas já declararam formalmente a validade da vitória eleitoral de Luiz Inácio Lula da Silva, com ampla aceitação do sistema eletrônico de votação. Apenas o Partido Novo permaneceu sem reconhecer oficialmente os dados consolidados pela Justiça Eleitoral. O Tribunal Superior Eleitoral reiterou a integridade e segurança de todo o processo do segundo turno.",
+          "por_que_importa": "A aceitação ampla do resultado por lideranças partidárias esvazia teses contestatórias e garante estabilidade institucional para o período de transição política.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Agendamento da PEC da Segurança Pública na pauta do plenário do Senado",
+              "enfoque": "Mapeia a posição formal de todas as legendas registradas em relação ao resultado das urnas",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/31/novo-segue-sem-reconhecer-resultado-das-eleicoes-27-partidos-validam-vitoria-de-lula.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "alcolumbre-pec-seguranca-publica-senado",
+          "editoria": "Política",
+          "titulo": "Senado pauta votação da PEC da Segurança Pública para a próxima terça-feira",
+          "texto": "O presidente do Senado, Davi Alcolumbre, incluiu na ordem do dia da próxima terça-feira a Proposta de Emenda à Constituição destinada à reestruturação da Segurança Pública. A proposta prevê maior integração entre órgãos de segurança federais e estaduais, além da padronização de protocolos no combate a facções criminosas. O texto tem sido objeto de negociações entre bancadas de centro e o Executivo para assegurar os 49 votos necessários.",
+          "por_que_importa": "A eventual alteração constitucional redefine competências entre União e governos estaduais, com impacto direto no financiamento de operações policiais integradas.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Informa a inclusão da PEC na pauta de votação do plenário do Senado Federal",
               "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
             }
           ]
         },
         {
-          "id": "mauro-vieira-marco-rubio-g20",
+          "id": "mauro-vieira-marco-rubio-reuniao-g20",
           "editoria": "Política",
-          "titulo": "Mauro Vieira e Marco Rubio preparam reunião bilateral pré-G20 em Washington",
-          "texto": "O chanceler brasileiro Mauro Vieira reuniu-se com o senador norte-americano Marco Rubio em território norte-americano, selando um compromisso para um novo encontro bilateral de alto nível em novembro. O alinhamento prévio precede as discussões da cúpula do G20 e visa estabelecer uma ponte de diálogo construtiva sobre comércio, clima e segurança hemisférica. A iniciativa faz parte do esforço de Itamaraty em blindar interesses de Estado contra oscilações de conjuntura partidária.",
-          "por_que_importa": "Manter canais institucionais abertos com figuras-chave da política externa dos EUA é crucial para acordos bilaterais de cooperação tecnológica e investimentos industriais.",
+          "titulo": "Mauro Vieira e Marco Rubio realizam encontro nos EUA e projetam agenda do G20",
+          "texto": "O chanceler brasileiro Mauro Vieira reuniu-se com o representante norte-americano Marco Rubio em território dos Estados Unidos para articular pautas bilaterais de interesse comum. O diálogo alinhou compromissos preparatórios para a reunião de cúpula de líderes que ocorrerá em novembro. Ambos discutiram temas comerciais, energéticos e mecanismos de cooperação diplomática regional.",
+          "por_que_importa": "A aproximação prévia reduz fricções na agenda multilateral do G20 e preserva canais de diálogo direto entre as diplomacias dos dois países.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Encontro prévio e acerto de reunião bilateral antes do G20",
+              "enfoque": "Detalha os temas tratados na agenda bilateral e o cronograma para o encontro de novembro",
               "url": "https://g1.globo.com/politica/noticia/2026/10/30/mauro-vieira-e-marco-rubio-se-encontram-no-g20-e-acertam-reuniao-em-novembro.ghtml"
             }
           ]
         },
         {
-          "id": "rio-willer-tomaz-angra-patrimonio",
+          "id": "patrimonio-imobiliario-ilhas-angra-dos-reis",
           "editoria": "Rio",
-          "titulo": "Advogado Willer Tomaz concentra propriedades em ilhas de Angra dos Reis",
-          "texto": "Apurações imobiliárias e cartorárias revelam que o advogado Willer Tomaz detém ao menos cinco residências situadas em ilhas da baía de Angra dos Reis, além do imóvel sob disputa judicial com o jogador Richarlison. Os registros mostram expressiva concentração patrimonial em áreas litorâneas de preservação ambiental e alto valor na Costa Verde fluminense. O local é frequente ponto de articulação e refúgio de figuras influentes dos poderes Executivo, Legislativo e Judiciário.",
-          "por_que_importa": "A ocupação imobiliária de luxo em ilhas da Costa Verde fluminense levanta recorrentes debates sobre regularização fundiária, fiscalização ambiental e transparência patrimonial no Rio de Janeiro.",
+          "titulo": "Advogado Willer Tomaz reúne cinco propriedades em ilhas de Angra dos Reis",
+          "texto": "Registros cartorários e apurações sobre a ocupação do litoral sul do Rio de Janeiro revelam que o advogado Willer Tomaz possui cinco imóveis em ilhas de Angra dos Reis, além da área litorânea objeto de disputa judicial com o jogador Richarlison. A ocupação de áreas costeiras insulares no estado enfrenta fiscalização ambiental devido a restrições em Áreas de Preservação Permanente e terrenos de marinha. O caso reacende discussões sobre o uso do solo na Costa Verde fluminense.",
+          "por_que_importa": "O caso expõe a fiscalização fundiária e ambiental na Costa Verde, região sensível do litoral fluminense sob forte pressão da ocupação de alto padrão.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Mapeamento das propriedades em ilhas na Costa Verde do RJ",
+              "enfoque": "Levantamento detalha propriedades e registros de ocupação insular na região de Angra",
               "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml"
             }
           ]
@@ -5513,15 +5513,11 @@
       "agenda": [
         {
           "quando": "10h00",
-          "o_que": "Ministério da Fazenda e relatores da reforma tributária refinam simulações da alíquota de referência dos novos tributos de consumo"
+          "o_que": "Ministério da Fazenda e relatores técnicos avaliam propostas de alíquotas de referência da reforma tributária"
         },
         {
           "quando": "14h30",
-          "o_que": "Reunião de líderes do Senado para organizar a tramitação e votação da PEC da Segurança Pública na terça-feira"
-        },
-        {
-          "quando": "16h00",
-          "o_que": "Itamaraty e equipe de transição diplomática realizam alinhamento interno para a agenda preparatória da cúpula do G20"
+          "o_que": "Reunião de líderes partidários no Senado para fechar o cronograma da PEC da Segurança Pública"
         }
       ]
     }
@@ -24242,6 +24238,298 @@
       ],
       "pontos": [
         "Mapeamento das propriedades em ilhas na Costa Verde do RJ"
+      ]
+    },
+    "reforma-tributaria-aliquota-consumo-30-por-cento-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Alíquota do novo imposto sobre consumo pode superar 30% e liderar ranking global",
+      "resumo": [
+        "Estudos e estimativas sobre a regulamentação da reforma tributária indicam que o Imposto sobre Bens e Serviços (IBS) e a Contribuição sobre Bens e Serviços (CBS) somados podem ultrapassar a marca de 30%. O percentual superaria a média de países da OCDE e nações desenvolvidas que utilizam o modelo de Imposto sobre Valor Agregado (IVA). O aumento da alíquota de referência decorre de regimes diferenciados e exceções aprovadas ao longo da tramitação legislativa."
+      ],
+      "texto_integral": [
+        "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
+        "O cálculo foi feito por técnicos do tribunal com base em dados da Receita Federal. O percentual será encaminhado ao Congresso Nacional, que poderá concordar ou não.",
+        "Caberá ao Senado, até 15 de dezembro, fixar o valor final da alíquota, que será cobrada a partir de 2027.",
+        "▶️Para mensurar o valor da CBS, técnicos do tribunal estimaram quanto seria arrecadado com os impostos que estão sendo extintos no fim de 2026 (PIS, Cofins e grande parte do IPI). Isso porque, uma das premissas da reforma sobre o consumo, é manter o atual patamar da carga tributária.",
+        "TCU propôs alíquota de 11,3% pra imposto sobre o consumo",
+        "🔎 Em 2024, o governo estimou que a alíquota da CBS seria de 8,8%. Cálculo da consultoria Roit apontava para uma alíquota de 9,43% em 2027. Estimativas divulgadas em julho pelo Comitê Gestor do IBS, dos estados, apontam que a CBS teria uma taxa de cerca de 9,2% no próximo ano.",
+        "▶️Além da CBS do governo federal, a reforma tributária também contempla a cobrança do IBS estadual e municipal, que terá uma alíquota marginal de 0,1% até 2028. A partir de 2029, os estados e municípios começam a aumentar, gradualmente, a cobrança do IBS. A cobrança integral começa em 2033.",
+        "▶️Antes de a alíquota da CBS ser proposta pelo TCU, estimativa do Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS) apontava que a alíquota cheia estiver sendo cobrada do imposto sobre o consumo do governo federal, estados e municípios, somaria cerca de 28%.",
+        "▶️Depois da divulgação da proposta do tribunal para a CBS, bem acima do esperado, analistas passaram a apontar que o imposto brasileiro será de ao menos 30% em 2033 — o primeiro ano com tributação cheia. O g1 considerou o patamar de 30% para comparação internacional.",
+        "▶️ Se confirmada, seria maior do que a alíquota de todos os países desenvolvidos, segundo ranking da Tax Foundation — organização sem fins lucrativos que faz avaliações sobre impostos e coleta dados sobre tributos ao redor do mundo.",
+        "▶️De acordo com o levantamento, alíquota média dos impostos gerais sobre o consumo nos países da OCDE foi de 19,4%, bem abaixo do valor estimado para o futuro IVA brasileiro. O ranking, com dados de 2026, foi divulgado em 19 de outubro (veja abaixo).",
+        "➡️O governo federal, por sua vez, alega que, atualmente, os impostos cobrados sobre o consumo no país são ainda maiores, com tributação média de cerca de 34% – mas que há dificuldade em calcular o peso dos impostos pois o sistema é muito complexo, há exceções. Além disso, alguns tributos incidem sobre si mesmos (por dentro, em cascata).",
+        "➡️Este modelo \"por dentro\" torna mais difícil identificar quanto de imposto está efetivamente embutido no preço de um produto ou serviço. Por isso, as notas fiscais trazem apenas uma estimativa \"do valor aproximado de tributos\". Com a reforma tributária, eles passarão a ser cobrados por fora (aparecerão separados do valor do produto ou serviço).",
+        "➡️Um dos problemas que resultaram em um alto imposto sobre o consumo no Brasil foi a decisão do governo do presidente Lula, e de legisladores, de terem proposto e aprovado que o atual peso dos impostos nessa base de tributação fosse mantido.",
+        "🔎A consequência da concentração maior da carga tributária brasileira sobre o consumo no Brasil é o alto grau de \"regressividade\" (se arrecada proporcionalmente mais de quem ganha menos) — prejudicando, dessa forma, os mais pobres.",
+        "Números da Receita mostram que impostos sobre bens e serviços, ou seja, os tributos indiretos embutidos nos preços, representaram 43,5% de toda a carga tributária brasileira em 2024, ficando acima da média da OCDE (países ricos). Ao mesmo tempo, os tributos sobre o lucro, renda e o ganho de capital do brasileiro, focados nos contribuintes mais ricos, estão bem abaixo da média da OCDE, formada por países mais desenvolvidos.",
+        "Para Luís Garcia, advogado tributarista pela USP/SP e sócio do Tax Group, o alto patamar do endividamento do setor público e a rigidez das despesas mantêm a pressão por arrecadação e impedem que a reorganização dos tributos, isoladamente, produza alívio fiscal.",
+        "“A reforma tributária pode significar simplificação, mas jamais redução de carga tributária enquanto o Brasil continuar refém de uma política fiscal irresponsável”, avaliou o tributarista Luís Garcia.",
+        "▶️Outro entrave, este relacionado ao fato de que a alíquota proposta pelo TCU ficou acima do estimado anteriormente por analistas, tem a ver com as exceções aprovadas na tramitação da reforma tributária no Congresso Nacional, ou seja, com os benefícios concedidos na aquisição de determinados produtos e serviços.",
+        "Considerando a premissa básica de que a reforma deve manter o atual nível de arrecadação dos tributos sobre o consumo, os benefícios concedidos a determinados produtos e setores resultam em uma alíquota de referência mais elevada para as atividades que não contam com incentivos fiscais, algo que já havia sido apontado, à época, por representantes da indústria nacional.",
+        "Entre os benefícios aprovados na tramitação da reforma tributária, estão alíquota zero para a cesta básica, incluindo as proteínas (o que, segundo especialistas, beneficia a população mais rica), para uma lista de medicamentos e dispositivos médicos.O Congresso aprovou ainda alíquotas reduzidas para serviços de educação e saúde; medicamentos e dispositivos médicos; produções artísticas, culturais, jornalísticas e audiovisuais nacionais; atividades desportivas; e profissões regulamentadas e fiscalizadas por conselhos profissionais.",
+        "A Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) manifestou preocupação com a alíquota de referência de 11,3% pois ela reforça o risco de aumento da carga tributária para as empresas. A preocupação é especialmente relevante para prestadores de serviços sujeitos atualmente à alíquota conjunta de 3,65% de PIS/Cofins no regime cumulativo.",
+        "\"A substituição por uma CBS com referência de 11,3% representa uma elevação expressiva da alíquota nominal, embora o impacto efetivo dependa dos créditos e do tratamento tributário de cada atividade. Empresas intensivas em mão de obra ficam mais expostas, pois a folha de pagamentos não gera créditos\", avaliou a CNC, por meio de nota.",
+        "A Associação Brasileira da Indústria de Alimentos (ABIA) informou considerar preocupante a proposta de fixação da alíquota de referência de 11,3% para a CBS, bem acima das estimativas anteriores. Avalia que uma diferença dessa magnitude \"ameaça elevar a carga tributária das empresas, com efeitos que podem se refletir nos preços ao consumidor\".",
+        "\"A definição da alíquota não deve ignorar os impactos sobre a produção, os investimentos e o custo dos alimentos. Além de aumentar os preços, uma alíquota elevada da CBS ameaça ampliar a pressão sobre o orçamento das famílias de menor renda, comprometendo seu acesso à alimentação\", acrescentou a ABIA, em nota.",
+        "Paulo Skaf, presidente da Federação das Indústrias do Estado de São Paulo (Fiesp), disse que o patamar de 11,3% estimado pelo TCU quebra a premissa central da reforma tributária de manutenção da carga fiscal.",
+        "Segundo ele, estudos técnicos apontavam equilíbrio em torno de 9% para o imposto, e que a nova projeção retira da economia mais de R$ 100 bilhões em tributos adicionais já em 2027, empurrando o IVA Dual (CBS + IBS) para além de 30% - a maior taxa do mundo.",
+        "\"A produção, os investimentos e o emprego não suportam mais impostos. O reequilíbrio fiscal do Brasil exige corte e controle de gastos públicos, e não aumento de arrecadação sobre quem produz. Esperamos o bom senso do Senado Federal para corrigir essa distorção\", declarou o presidente da Fiesp.",
+        "A Conexis Brasil Digital, Sindicato Nacional das Empresas de Telefonia e de Serviço Móvel, Celular e Pessoal, informou ter recebido com preocupação a proposta de fixação da alíquota de referência de 11,3% para a CBS.",
+        "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
+      ],
+      "pontos": [
+        "Compara alíquota projetada do novo imposto sobre consumo brasileiro com os padrões internacionais"
+      ]
+    },
+    "cnu-2027-previsao-vagas-orcamento-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Governo projeta até 3 mil vagas para o CNU 2027 sob condição orçamentária",
+      "resumo": [
+        "O Ministério da Gestão e da Inovação sinalizou que uma nova edição do Concurso Nacional Unificado em 2027 poderá oferecer até 3 mil vagas no serviço público federal. Contudo, a realização do certame dependerá expressamente das dotações autorizadas na Lei Orçamentária Anual enviada ao Congresso. O planejamento visa repor quadros de carreiras técnicas e científicas federais desfalcadas nos últimos anos."
+      ],
+      "texto_integral": [
+        "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
+        "A realização do concurso, no entanto, depende da aprovação da proposta de orçamento do próximo ano, enviada ao Congresso Nacional no fim de agosto.",
+        "“Como sempre informamos, a realização de um novo CPNU em 2027 está condicionada à aprovação do PLOA e do espaço fiscal para novas vagas que será aprovado pelo Congresso Nacional”, afirmou o ministério, em nota.",
+        "\"Considerando concursos já autorizados e novos que podem ser definidos (dependendo do PLOA), duas a três mil novas vagas compensam a realização de um CPNU em 2027\", completou a pasta.",
+        "Saiba como se preparar para enfrentar um concurso",
+        "No início desta semana, o MGI já havia informado ao g1 que a realização do certame dependeria da aprovação do orçamento do próximo ano.",
+        "Na ocasião, o ministério também destacou que considera o CPNU uma política pública voltada à renovação, à modernização e à democratização do acesso ao serviço público federal.",
+        "A intenção do governo é consolidar o modelo como um processo permanente de seleção de servidores, com edições em ciclos regulares, preferencialmente a cada dois anos.",
+        "\"Dessa forma, a ideia é que o CPNU se consolide como um processo permanente de seleção de servidores, com edições realizadas em ciclos regulares, idealmente a cada dois anos, de forma a garantir planejamento, recomposição gradual da força de trabalho e maior previsibilidade para os candidatos e para os órgãos públicos\", declarou a pasta.",
+        "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
+      ],
+      "pontos": [
+        "Destaca a dependência da aprovação orçamentária pelo Congresso para a realização da prova"
+      ]
+    },
+    "itamaraty-convoca-argentina-fuga-flavio-bolsonaro-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Itamaraty convoca embaixada argentina após rota de saída de Flávio Bolsonaro",
+      "resumo": [
+        "O Ministério das Relações Exteriores convocou o encarregado de negócios da embaixada da Argentina em Brasília para prestar esclarecimentos sobre a passagem de Flávio Bolsonaro pela fronteira comum antes de seu embarque para os Estados Unidos. O senador viajou utilizando documentação já suspensa pela Justiça brasileira. Apesar da movimentação diplomática, integrantes do governo buscam preservar canais institucionais com Buenos Aires e Washington."
+      ],
+      "texto_integral": [
+        "Itamaraty ouve diplomata argentina sobre fuga de Flávio Bolsonaro para os EUA",
+        "O Ministério das Relações Exteriores (Itamaraty) convocou a encarregada de Negócios da Embaixada da Argentina no Brasil, María Emilia Cortés, a prestar esclarecimentos sobre o contexto da fuga do senador Flávio Bolsonaro (PL) para os Estados Unidos nesta semana.",
+        "O governo da Argentina confirmou que o senador embarcou com a família em um avião particular que partiu da Argentina na noite de terça-feira (27).",
+        "María Emilia Cortés foi recebida na tarde desta quinta-feira (29) pelo chefe do Departamento do Mercosul do Itamaraty, João Marcelo Galvão de Queiroz, em Brasília.",
+        "Na conversa, o embaixador pediu a ela informações sobre a fuga do senador e, segundo diplomatas que participaram da reunião, María Emilia ficou de transmitir o que foi debatido ao governo de Javier Milei.",
+        "De acordo com diplomatas, o procedimento é praxe em casos desse tipo e não estão previstos desdobramentos no momento. No entanto, novos passos serão definidos à luz dos desdobramentos das apurações.",
+        "Internamente, o governo brasileiro decidiu fechar a posição de que o Brasil quer virar a página sobre a fuga do senador e não dar mais importância ao assunto.",
+        "Integrantes do governo já decidiram não entrar em discussões públicas com o governo argentino sobre o episódio.",
+        "Segundo o blog do colunista do g1 Valdo Cruz, o presidente Luiz Inácio Lula da Silva (PT) foi aconselhado por interlocutores a não falar mais em Flávio Bolsonaro (PL), focar em seu quarto mandato e deixar claro que o problema do senador é com o Judiciário.",
+        "Autoridades argentinas negam que tenha havido pedido de informações",
+        "Em uma rede social, o chanceler argentino, Pablo Quirno, negou que o Brasil tenha pedido explicações à Argentina sobre a fuga de Flávio Bolsonaro (PL-RJ) para os Estados Unidos, passando por território do país.",
+        "\"Falso. Não houve nenhum pedido de explicações\", disse sobre uma publicação do jornal local La Nación.",
+        "O presidente Javier Milei repostou a publicação de Quirno e escreveu: \"La Nación mentindo\".",
+        "Flávio Bolsonaro (PL-RJ) desembarcou nos Estados Unidos na quarta-feira (28) após fugir do Brasil com a esposa e as duas filhas.",
+        "A família viajou em um avião particular que partiu da Argentina e fez uma escala no Equador.",
+        "A rota começou ainda na noite de terça-feira (27), quando Flávio e a família entraram na Argentina após cruzarem a Ponte Internacional Tancredo Neves. A via liga Foz do Iguaçu, no Paraná, a Puerto Iguazú, na província argentina de Misiones.",
+        "Segundo a Direção Nacional de Migrações da Argentina, a família cruzou a fronteira às 22h50, pelo horário de Brasília.O órgão afirmou que os quatro apresentaram documentação válida para a viagem e não tinham nenhum impedimento legal para entrar no país.",
+        "Cerca de 40 minutos depois, às 23h30, Flávio e a família embarcaram em um jatinho particular do modelo Gulfstream G400, de matrícula LV-JQW. A aeronave pertence à Baires Fly, empresa argentina que realiza voos privados.",
+        "O avião decolou de Puerto Iguazú às 0h22 de quarta. A aeronave sobrevoou o Paraguai, a Bolívia e o Peru, evitando o espaço aéreo brasileiro. Às 5h46, pelo horário de Brasília, o jatinho pousou no aeroporto de Guayaquil, no Equador.",
+        "Flávio ficou menos de uma hora em solo equatoriano. O avião decolou novamente às 6h22, com destino aos Estados Unidos.",
+        "A viagem terminou às 10h24, horário de Brasília, quando o avião com o senador e a família pousou no Aeroporto Executivo de Fort Lauderdale, na Flórida. O terminal fica na região de Miami.",
+        "Voo de fuga de Flávio foi pago por intermediário a partir dos EUA, diz dono do avião",
+        "Flávio deixou o Brasil após o Supremo Tribunal Federal (STF) determinar que ele entregasse os passaportes à Polícia Federal.",
+        "A decisão foi dada em um processo no qual Flávio e o advogado Willer Tomaz são investigados por lavagem de dinheiro, em um suposto esquema que envolveria empresas de Tomaz e bets.Os dois confirmam que são amigos, mas negam ser sócios e ter cometido qualquer irregularidade.",
+        "Na terça-feira (27), um representante do Departamento de Estado dos EUA informou que o governo americano concederia vistos a Flávio Bolsonaro e à família e permitiria a entrada deles no país.",
+        "Uma consulta ao sistema da Alfândega e Proteção de Fronteiras dos Estados Unidos (CBP, na sigla em inglês) mostra que o senador recebeu autorização para permanecer por um ano no país.",
+        "Os registros mostram que Flávio foi admitido em uma categoria identificada pelo código \"DT\".",
+        "A sigla é usada para autorizações temporárias no país, geralmente ligadas a questões humanitárias.",
+        "O g1 procurou a agência para esclarecer o status migratório do senador, mas não obteve resposta até a última atualização desta reportagem.",
+        "A consulta mostrou ainda que Flávio utilizou um passaporte diplomático que havia sido cancelado para entrar nos Estados Unidos.",
+        "PF investiga como Flávio Bolsonaro descumpriu ordem de não deixar o Brasil",
+        "A Polícia Federal (PF) apontou riscos \"concretos e atuais\" de fuga ao pedir ao ministro Alexandre de Moraes, do STF, a apreensão do passaporte e a proibição de saída do país de Flávio Bolsonaro.",
+        "Na avaliação da PF, três elementos centrais indicavam que Flávio poderia deixar o Brasil sob a justificativa de suposta perseguição política:",
+        "a manifestação pública e direta do deputado cassado Eduardo Bolsonaro, recomendando ao irmão que deixasse o país;o expressivo poder econômico;a existência de estruturas já estabelecidas no exterior que poderiam viabilizar uma permanência prolongada.",
+        "O pedido da PF citou uma declaração de Eduardo Bolsonaro em que ele defendeu que o irmão deixasse o país caso fosse derrotado na disputa pelo Palácio do Planalto.",
+        "\"Em entrevista concedida recentemente nos Estados Unidos, EDUARDO BOLSONARO, irmão do Senador FLÁVIO BOLSONARO, defendeu publicamente que este deixe o país caso não obtenha êxito no pleito eleitoral. Cabe recordar que EDUARDO BOLSONARO foi recentemente condenado pelo crime de coação no curso do processo\", disseram os investigadores."
+      ],
+      "pontos": [
+        "Relata a convocação diplomática formal e a atuação do Itamaraty no caso"
+      ]
+    },
+    "reconhecimento-eleicoes-lula-partidos-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/31/novo-segue-sem-reconhecer-resultado-das-eleicoes-27-partidos-validam-vitoria-de-lula.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "27 partidos formalizam reconhecimento do resultado eleitoral; Novo mantém recusa",
+      "resumo": [
+        "Levantamento partidário aponta que 27 legendas já declararam formalmente a validade da vitória eleitoral de Luiz Inácio Lula da Silva, com ampla aceitação do sistema eletrônico de votação. Apenas o Partido Novo permaneceu sem reconhecer oficialmente os dados consolidados pela Justiça Eleitoral. O Tribunal Superior Eleitoral reiterou a integridade e segurança de todo o processo do segundo turno."
+      ],
+      "texto_integral": [
+        "Logo após o Tribunal Superior Eleitoral (TSE) proclamar Luiz Inácio Lula da Silva (PT) vencedor da disputa com o senador Flávio Bolsonaro (PL), por uma diferença de 4,4 milhões de votos, o presidente do partido Novo, Eduardo Ribeiro, não reconheceu o resultado das urnas e afirmou que \"o Brasil não vive uma democracia\".",
+        "Ao todos, vinte e sete partidos políticos divulgaram manifestações em que reconhecem a vitória do presidente Lula nas eleições deste ano. Até a última atualização desta reportagem, apenas uma legenda não havia se manifestado sobre o resultado das eleições: Mobiliza.",
+        "Em uma publicação nas redes sociais, Ribeiro questionou o resultado alegando uso da máquina pública e do Supremo Tribunal Federal (STF), em uma referência a decisão do ministro Cristiano Zanin, que prorrogou o período de votação até às 19h, pedido que havia sido feito também pelo PL.",
+        "“O resultado da eleição é a prova de que o Brasil não é uma democracia. Como se não bastasse fazer uma campanha cheia de mentiras, o PT usou como nunca a máquina pública e o STF pra se manter no poder. Temos três ações pedindo a cassação da chapa de Lula. Cabe agora à Justiça cumprir seu papel, se ainda existe Justiça nesse país”, afirmou o presidente do partido.",
+        "Carta golpista leva TSE, partidos e até aliados de Flávio a defender resultado das urnas",
+        "O Tribunal Superior Eleitoral (TSE) atestou a regularidade do processo eleitoral e reconheceu a vitória do presidente Lula ainda no domingo (25), após a totalização dos votos. Após o resultado, Flávio disse não reconhecer a vitória de Lula e afirmou que iria pedir a anulação da votação.",
+        "Após perder as eleições, Flávio fugiu do Brasil em direção aos Estados Unidos. Após desembarcar no país norte-americano, o senador divulgou uma carta com teor golpista, na qual afirmou não reconhecer o resultado das urnas no segundo turno da eleição presidencial, acusou suposta fraude eleitoral e afirmou ser o \"verdadeiro presidente do Brasil\", o \"presidente eleito\".",
+        "Depois da divulgação da carta de Flávio, questionando o resultado nas urnas, o presidente da Corte Eleitoral, ministro Kassio Nunes Marques, indicado ao cargo de ministro do Supremo Tribunal Federal (STF) pelo ex-presidente Jair Bolsonaro (PL), afirmou que a Justiça Eleitoral entregou o pleito deste ano com segurança e que as eleições \"transcorreram dentro da mais absoluta normalidade\".",
+        "Entre as siglas que reconheceram a vitória estão o PL — partido do candidato derrotado Flávio Bolsonaro —, União Brasil, MDB, PSD, Republicanos, PSDB, PDT, PSB, PSOL, Podemos, Avante, Democrata, Democracia Cristã (DC), UP e PSTU.",
+        "Ao g1, Ribeiro afirmou que o partido continuará sem reconhecer o resultado das eleições presidenciais por uma questão de coerência.",
+        "“Não vai mudar. Primeiro porque seria contraditório a gente reconhecer a vitória de uma chapa que a gente ainda está contestando na Justiça. O Novo tem três ações contra a chapa Lula-Alckmin, todas elas ajuizadas antes da eleição”, declarou Ribeiro.",
+        "Questionado se o partido mudará o posicionamento caso seja derrotado na Justiça, Ribeiro afirmou que o partido irá avaliar “a decisão e os argumentos”.",
+        "O partido também não se manifestou sobre a carta escrita por Flávio Bolsonaro após fugir do país para os Estados Unidos em que o candidato derrotado, em tom golpista, se autoproclamou presidente eleito do país, voltando atrás minutos depois e trocando a expressão por “líder do Brasil”.",
+        "Apesar de não ter se posicionado, Ribeiro diz que o partido deixou os quadros “livres para cada um se posicionar” e afirmou que, apesar de não reconhecer, o Novo não questiona a lisura das urnas e do pleito.",
+        "“Em nenhum momento a gente questionou as urnas. Nós estamos questionando os meios ilegais, no nosso entendimento, que o Lula usou. Por ser um incumbente, por estar na administração pública, por ter a caneta na mão, que fizeram com que a eleição não fosse justa”, pontuou.",
+        "Segundo o g1 apurou, a postura é parte de uma estratégia do partido que está apostando em “um racha” da direita, principalmente no PL, entre abraçar ou não o discurso golpista de Flávio Bolsonaro de não reconhecer o resultado das eleições presidenciais.",
+        "Buscando atrair esses quadros, o Novo deve continuar não reconhecendo a vitória de Lula.",
+        "Questionado, Ribeiro disse que não há uma estratégia, que o partido não irá entrar em eventuais disputas dentro da direita, mas que está “de portas abertas” para receber quadros da direita que se identifiquem com a legenda.",
+        "“O Novo vai estar de portas abertas a todos aqueles que consideram o Novo como um partido de direita, liberal, conservador, que tem princípios, que tem pessoas decentes. O Novo vai estar sempre de portas aberta, mas nós não temos interesse em entrar em rusgas da direita nesse momento”, afirmou.",
+        "O Novo já havia sinalizado ao bolsonarismo durante a campanha presidencial do ex-governador de Minas Gerais, Romeu Zema.",
+        "Após a revelação dos áudios em que Flávio Bolsonaro pede e cobra dinheiro de Daniel Vorcaro, então dono do Banco Master, para bancar o filme \"Dark Horse\", sobre a vida do ex-presidente Jair Bolsonaro, Zema foi um dos primeiros políticos a criticar a relação entre o senador e o banqueiro.",
+        "“Flávio Bolsonaro, ouvir você cobrando dinheiro do Vorcaro é imperdoável. É um tapa na cara dos brasileiros de bem. Não adianta nada criticar as práticas de Lula e do PT e fazer a mesma coisa”, declarou à época.",
+        "As declarações não caíram bem dentro do partido e Zema foi cobrado por correligionários a baixar o tom contra Flávio para não atrapalhar palanques locais, como Rio Grande do Sul, Santa Catarina e Paraná.",
+        "Zema então passou a falar em união da direita “para derrotar o PT”, mas acabou abandonado por quadros do partido ainda no primeiro turno.",
+        "Um deles foi Marcel Van Hattem, deputado que acabou eleito senador pelo Rio Grande do Sul. A três dias do primeiro turno, o parlamentar declarou em live realizada com Flávio Bolsonaro que “no domingo votaria 22”.",
+        "Nas eleições, o Novo elegeu dez deputados federais, três senadores e rompeu a cláusula de barreira.",
+        "🔎 Também chamada de cláusula de desempenho, a regra estabelece que os partidos precisam atingir um percentual mínimo de votos válidos para a Câmara dos Deputados ou um número mínimo de deputados eleitos para ter acesso a recursos do Fundo Partidário e ao tempo de propaganda na televisão e no rádio.",
+        "Romeu Zema acabou na sexta colocação com apenas 326.488 votos, 0,27% dos votos válidos. A performance foi pior que a de Felipe D’Avila, candidato do partido em 2022, que foi votado por 559.708 eleitores, 0,47% do total."
+      ],
+      "pontos": [
+        "Mapeia a posição formal de todas as legendas registradas em relação ao resultado das urnas"
+      ]
+    },
+    "alcolumbre-pec-seguranca-publica-senado-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Senado pauta votação da PEC da Segurança Pública para a próxima terça-feira",
+      "resumo": [
+        "O presidente do Senado, Davi Alcolumbre, incluiu na ordem do dia da próxima terça-feira a Proposta de Emenda à Constituição destinada à reestruturação da Segurança Pública. A proposta prevê maior integração entre órgãos de segurança federais e estaduais, além da padronização de protocolos no combate a facções criminosas. O texto tem sido objeto de negociações entre bancadas de centro e o Executivo para assegurar os 49 votos necessários."
+      ],
+      "texto_integral": [
+        "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
+        "O presidente Luiz Inácio Lula da Silva (PT) condiciona a criação do Ministério da Segurança Pública à aprovação da PEC no Congresso.",
+        "🔎 Para ser aprovada, uma PEC precisa ter ao menos três quintos dos votos favoráveis em dois turnos de votação. Ou seja, precisa contar com o apoio de 49 senadores.",
+        "'SUS da Segurança' e fim da 'saidinha' para integrantes de facções: o que prevê a PEC da Segurança",
+        "A deliberação estava prevista para acontecer antes do segundo turno das eleições, mas um impasse sobre emendas que preveem a redução da maioridade penal levou Alcolumbre a adiar a votação.",
+        "Líder do Governo no Senado, a senadora Teresa Leitão (PT-PE) disse que a posição do governo continua sendo não votar a maioridade penal junto com a PEC da Segurança. Ela lembra que o tema atualmente é discutido na Comissão Especial da Câmara.",
+        "\"A redução da maioridade penal não é objeto da PEC da Segurança. Considera-se o chamado 'jabuti'. É um tema que precisa ser enfrentado com profundidade e ouvindo amplos setores da sociedade\".",
+        "No entanto, a senadora aposta que o tema vai a voto e terão que disputar no plenário, sem acordo por parte deles.",
+        "A dez dias do segundo turno das eleições presidenciais — onde Lula acabou vencendo o senador Flávio Bolsonaro (PL) — a oposição apresentou uma emenda para diminuir a maioridade penal para até 14 anos, a depender da gravidade do delito.",
+        "Como reação, o líder do PT no Senado, Camilo Santana (CE), apresentou uma alteração para reduzir para 16 anos em casos de crimes hediondos.",
+        "Aliados de Alcolumbre afirmaram que a retirada de pauta ocorreu porque nem o governo nem a oposição teriam votos suficientes para aprovar suas as emendas – e o cálculo, neste caso, seria de deixar o assunto para depois.",
+        "Apesar da ideia de Camilo neutralizar a proposta da oposição, a emenda apresentada dividiu a bancada do PT. Historicamente, a bancada do PT no Congresso Nacional se posicionou contra a redução da maioridade penal.",
+        "Diante da divisão na bancada governista e da proposta da oposição, Alcolumbre retirou o tema da pauta com o argumento de que nem o governo e nem a oposição teriam votos suficientes para aprovar suas as emendas.",
+        "Lula se posicionou na sabatina da Globo",
+        "No mesmo dia em que a PEC saiu da pauta do Senado em meio ao racha na bancada governista do Senado, o presidente Lula se posicionou a favor da emenda de Camilo Santana ao ser questionado sobre o tema na sabatina da TV Globo.",
+        "\"O meu pensamento, enquanto cidadão brasileiro, todo e qualquer crime hediondo, eu sou favorável a diminuir a pena. Para crimes hediondos. Eu sou a favor, sou a favor\", afirmou o presidente.",
+        "Apesar do posicionamento favorável a mudança sugerida por Camilo, Lula defendeu que esse tema não fosse tratado na PEC da Segurança.",
+        "\"Primeiro você discute a PEC, aprova a PEC e aí você pode discutir a maioridade penal ou não\", disse.",
+        "Essa posição também é defendida por governistas, como a líder do governo no Senado, Teresa Leitão (PT-PE).",
+        "Caso algum trecho sobre maioridade seja aprovado e o texto precise voltar para a Câmara para aprovação dos deputados, governistas falam em \"fatiar\" a PEC.",
+        "Nesse cenário, a parte que já foi aprovada por deputados e senadores segue para promulgação, enquanto as partes que precisam de análise dos deputados, como a redução da maioridade penal, é enviada à Câmara como um texto separado.",
+        "A PEC estabelece na Constituição o Sistema Único de Segurança Pública (SUSP), com o objetivo de integrar a atuação das forças de segurança no combate ao crime organizado.",
+        "De acordo com o texto, União, estados e Distrito Federal poderão criar leis na área de segurança pública, incluindo forças-tarefa intergovernamentais, a organização das polícias e guardas municipais e o sistema socioeducativo.",
+        "Outro ponto central da PEC da Segurança Pública é o combate a crimes violentos e facções criminosas.",
+        "Entre as medidas está a obrigatoriedade de prisão em estabelecimento penal de segurança máxima ou de natureza especial.",
+        "Também ficam proibidas ou restringidas a progressão de regime, a concessão de liberdade provisória, com ou sem fiança, e de saída temporária.",
+        "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
+      ],
+      "pontos": [
+        "Informa a inclusão da PEC na pauta de votação do plenário do Senado Federal"
+      ]
+    },
+    "mauro-vieira-marco-rubio-reuniao-g20-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/mauro-vieira-e-marco-rubio-se-encontram-no-g20-e-acertam-reuniao-em-novembro.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Mauro Vieira e Marco Rubio realizam encontro nos EUA e projetam agenda do G20",
+      "resumo": [
+        "O chanceler brasileiro Mauro Vieira reuniu-se com o representante norte-americano Marco Rubio em território dos Estados Unidos para articular pautas bilaterais de interesse comum. O diálogo alinhou compromissos preparatórios para a reunião de cúpula de líderes que ocorrerá em novembro. Ambos discutiram temas comerciais, energéticos e mecanismos de cooperação diplomática regional."
+      ],
+      "texto_integral": [
+        "O ministro das Relações Exteriores, Mauro Vieira, e o secretário de Estado dos Estados Unidos, Marco Rubio, se encontraram nesta sexta-feira (30). Os dois participam de um encontro de chanceleres do G20, que acontece em Atlanta, no estado da Geórgia, nos Estados Unidos.",
+        "Segundo fontes do Itamaraty ouvidas pela GloboNews, o chanceler brasileiro e o secretário de Estado norte-americano conversaram e acertaram um novo encontro antes da cúpula do G20, marcada para dezembro deste ano.",
+        "O encontro aconteceu durante a recepção de boas-vindas à Reunião de Ministros das Relações Exteriores do G20. Data e local do novo encontro ainda serão definidos.",
+        "O encontro acontece em meio à tensão diplomática provocada pela recusa do presidente Donald Trump em reconhecer o resultado das eleições brasileiras.",
+        "Nesta terça-feira (27) o presidente Donald Trump voltou a insinuar, sem provas, que houve fraude na eleição no Brasil.",
+        "Nesta quinta-feira (29), Trump disse que não tomou partido nas eleições do Brasil a pedido do presidente Luiz Inácio Lula da Silva (PT).",
+        "O presidente norte-americano também afirmou que falará com Lula, mas, novamente não disse se reconhece a vitória do presidente brasileiro. Questionado sobre quem, para ele, havia vencido as eleições no Brasil, ele respondeu que \"não quero comentar isso agora\".",
+        "👉 O resultado do 2º turno foi confirmado pelo presidente do Tribunal Superior Eleitoral (TSE), ministro Kassio Nunes Marques, ainda na noite de domingo (25).",
+        "Lula (PT) derrotou Flávio Bolsonaro (PL), aliado de Trump, no segundo turno da eleição presidencial no último domingo (25). O petista recebeu 51,79% dos votos válidos, contra 48,21% do senador, com uma vantagem de 4,4 milhões de votos.",
+        "Além disso, outro episódio intensificou a instabilidade entre os dois países. O senador Flávio Bolsonaro (PL) deixou o país com a família rumo aos Estados Unidos, contrariando a proibição do Supremo Tribunal Federal (STF).",
+        "Flávio recebeu autorização do governo americano para permanecer por 1 ano no país, segundo aponta consulta ao sistema U.S. Customs and Border Protection - CBP (Alfândega e Proteção de Fronteiras dos Estados Unidos).",
+        "Os registros mostram que o senador foi admitido em uma categoria identificada com o código \"DT\" e que pode ficar no país até 27 de outubro de 2027. O CBP identifica DT como “autorizado a entrar temporariamente” (Paroled). O g1 procurou a agência para esclarecer o status do senador no país, mas não obteve resposta até a última atualização desta reportagem.",
+        "➡️ Em uma operação secreta, Flávio Bolsonaro, derrotado nas eleições de domingo, deixou o Brasil após descumprir a ordem do STF.",
+        "Segundo as autoridades argentinas, Flávio entrou no país na noite de terça-feira (27) por terra. A PF suspeita, porém, que ele tenha entrado na Argentina em um avião privado;No território argentino, o senador embarcou em um jatinho executivo com destino aos EUA;O trajeto evitou o espaço aéreo brasileiro e incluiu uma escala no Equador;Flávio e família desembarcaram em Miami, às 10h24."
+      ],
+      "pontos": [
+        "Detalha os temas tratados na agenda bilateral e o cronograma para o encontro de novembro"
+      ]
+    },
+    "patrimonio-imobiliario-ilhas-angra-dos-reis-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-10-31",
+      "titulo": "Advogado Willer Tomaz reúne cinco propriedades em ilhas de Angra dos Reis",
+      "resumo": [
+        "Registros cartorários e apurações sobre a ocupação do litoral sul do Rio de Janeiro revelam que o advogado Willer Tomaz possui cinco imóveis em ilhas de Angra dos Reis, além da área litorânea objeto de disputa judicial com o jogador Richarlison. A ocupação de áreas costeiras insulares no estado enfrenta fiscalização ambiental devido a restrições em Áreas de Preservação Permanente e terrenos de marinha. O caso reacende discussões sobre o uso do solo na Costa Verde fluminense."
+      ],
+      "texto_integral": [
+        "Willer Tomaz tem outras cinco casas em ilhas de Angra além da que disputou com Richarlison",
+        "O advogado Willer Tomaz, investigado no Supremo Tribunal Federal (STF) junto com o senador Flávio Bolsonaro (PL-RJ) por suspeitas de lavagem de dinheiro, tem outras cinco casas em ilhas de Angra dos Reis, na Costa Verde do Rio de Janeiro, além da que virou alvo de disputa com o jogador Richarlison.",
+        "Com exceção de uma, as casas foram compradas entre 2021 e 2022, na mesma época em que Flávio apresentou ao Senado Federal um projeto de lei para estimular empreendimentos em Angra, permitindo a municipalização das unidades de conservação federais e estaduais.",
+        "O objetivo do projeto é flexibilizar as regras para a exploração econômica da área.",
+        "Também no mesmo período, Flávio foi o relator da PEC das Praias no Senado. O texto propõe permitir a privatização das ilhas marítimas do país, hoje pertencentes à União. Os dois projetos continuam em tramitação (leia mais sobre as propostas abaixo).",
+        "Os planos para a Costa Verde do Rio vêm desde o governo de Jair Bolsonaro. Em maio de 2019, o então presidente afirmou que queria fazer de Angra \"uma nova Cancún\".",
+        "\"O nosso estado merece ter uma Cancún. E nós poderemos tê-la. E estamos trabalhando para a região de Angra. Depende de um decreto presidencial. Porque a Estação Ecológica de Tamoios está demais. Não preserva absolutamente nada e faz de uma área rica, que pode trazer bilhões de reais, por ano, em turismo, parada por falta de uma visão mais objetiva, mais progressista nessa questão\", declarou Jair à época.",
+        "🔎 Pela Constituição Federal, as ilhas são bens da União. Empresas e indivíduos podem ocupá-las, mediante processos de aforamento ou de ocupação registrados junto à Secretaria de Patrimônio da União (SPU), órgão responsável pela gestão das ilhas. Essas ocupações podem ser revistas pela SPU.",
+        "Questionado sobre eventuais projetos comerciais previstos para suas ilhas e sobre sua relação com as propostas legislativas elaboradas por Flávio Bolsonaro, Willer Tomaz não se manifestou. O senador não foi localizado pela reportagem.",
+        "Tomaz se mudou para os Estados Unidos em agosto deste ano, depois de ser alvo de uma operação da Polícia Federal. Flávio fugiu para a Flórida dois dias após ser derrotado no segundo turno da eleição presidencial por Luiz Inácio Lula da Silva (PT).",
+        "As casas compradas por empresas de Willer Tomaz em Angra são localizadas na:",
+        "Ilha Comprida: em um terreno de 175,2 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 5,7 milhões;Ilha Comprida: em um terreno de 32,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 2,1 milhões;Ilha Comprida: em um terreno de 181,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 6 milhões;Ilha Comprida: em um terreno de 2,1 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em julho de 2022. Valor patrimonial registrado de R$ 2,9 milhões (imóvel disputado com Richarlison);Ilha do José André: em um terreno de 57,3 mil m², comprada pela empresa Friponor Brasil Turismo, Empreendimentos e Participações, em 2008. Valor patrimonial registrado de R$ 23,7 milhões.",
+        "Os dados são de um levantamento feito nos sistemas da SPU e em registros de cartório.",
+        "Tomaz é dono, também, de cotas de uma sexta casa em Angra, na Ilha do Jorge, registrada em nome da empresa Real Estate Duo 4, pertencente ao grupo Prime You.",
+        "🔎 A Prime You é uma companhia especializada em administrar bens de luxo compartilhados por milionários, como aviões, barcos e mansões. O banqueiro Daniel Vorcaro, do Master, foi sócio da Prime You de setembro de 2021 a setembro de 2025. Vorcaro também costumava usar uma casa na Ilha do Jorge próxima da de Tomaz, como revelou o UOL.",
+        "Ao portal, Tomaz afirmou que adquiriu participação de 25% na casa da Prime You em 2022 e que nunca teve \"qualquer relação pessoal, comercial ou societária\" com Vorcaro.",
+        "O episódio que jogou luz sobre os investimentos de Willer Tomaz em Angra foi a disputa por uma das casas com Richarlison de Andrade, atacante do Tottenham e que já jogou pela Seleção Brasileira.",
+        "O jogador publicou vídeos em 17 e 21 de outubro acusando Flávio Bolsonaro de envolvimento na briga pelo imóvel de luxo. Os vídeos tiveram milhões de visualizações em meio ao processo eleitoral. No debate da Globo, Lula questionou Flávio sobre o caso, e o então candidato respondeu que a Justiça já havia decidido a favor de Tomaz. Na véspera do segundo turno, o petista disse que ia brigar para devolver a Richarlison o direito de ocupação.",
+        "O atacante disse nos vídeos que ocupava a casa na Ilha Comprida desde 2020 e que investiu R$ 10 milhões no local, por meio de uma empresa da qual é sócio, a Sport 70.",
+        "Segundo Richarlison, Flávio visitou sua ilha e demonstrou interesse na propriedade — que tem uma cachoeira que deságua no mar —, mas o jogador se recusou a vendê-la. Na visão do atacante, o senador se aliou a Tomaz, de quem é amigo, para conseguir os direitos sobre o imóvel.",
+        "O g1 analisou os processos da Secretaria de Patrimônio da União (SPU) envolvendo a casa. A empresa Sport 70, de Richarlison, pediu à SPU para regularizar sua utilização do imóvel em 20 de setembro de 2021. O processo administrativo não teve andamento.",
+        "Do lado de Willer Tomaz, o processo de regularização da utilização começou em 5 de maio de 2022. Nessa data, uma empresa de terceiros, a M Locadora de Veículos, solicitou à SPU a regularização de sua situação de ocupante, algo que remontava à década de 1980. O processo teve andamento célere e favorável no órgão.",
+        "Em 11 de julho de 2022, a M Locadora de Veículos pediu à SPU para emitir uma Certidão de Autorização para Transferência (CAT), documento necessário para vender o direito de ocupação. O pedido foi feito às 11h33 e foi atendido pela SPU às 13h13 do mesmo dia.",
+        "Em seguida, a M Locadora passou o imóvel para a WT Administração de Imóveis e Bens, de Willer Tomaz.",
+        "De acordo com um servidor ouvido pela reportagem, a celeridade da tramitação em um caso e a ausência de análise da SPU, em outro, é o ponto mais controverso da disputa no âmbito administrativo. Em 2022, a SPU estava subordinada ao governo de Jair Bolsonaro.",
+        "A poucos dias do segundo turno da eleição presidencial, dois parlamentares adversários de Flávio — Rogério Correia (PT-MG) e Pedro Uczai (PT-SC) — pediram ao STF para investigar o caso da ilha de Richarlison no mesmo inquérito que já apura as relações entre o senador e Willer Tomaz. O relator é o ministro Alexandre de Moraes.",
+        "Tomaz e Flávio confirmam que são amigos, mas negam ter negócios juntos.",
+        "Sobre a disputa com Richarlison, Tomaz sustenta que o jogador \"pagou a posseiros\" quando comprou a casa, \"e não à proprietária de direito\".",
+        "O advogado apresenta escritura registrada do imóvel, certidão da SPU e decisões favoráveis na Justiça, inclusive no Superior Tribunal de Justiça (STJ).",
+        "Na Ilha do José André, localizada dentro da Área de Proteção Ambiental (APA) de Tamoios, o plano de Tomaz era construir um resort de luxo com piscinas, beach club, spa, restaurante, área para eventos, hangar e heliponto, como revelou o RJ2.",
+        "Para expandir a área construída na ilha, o advogado apresentou um pedido ao Instituto Estadual do Ambiente (Inea) do Rio de Janeiro em 20 de março de 2026, no mesmo dia em que o então governador Cláudio Castro publicou um decreto que revogava planos de manejo de áreas de proteção ambiental.",
+        "O decreto de Castro acabou sendo posteriormente derrubado pelo desembargador Ricardo Couto, que assumiu o governo do estado. O empreendimento de Tomaz não avançou.",
+        "Cláudio Castro afirmou que não discutiu previamente o conteúdo do decreto com Willer Tomaz e não recebeu nenhum pedido para editar a medida. Segundo o ex-governador, o decreto tinha caráter geral e técnico. Tomaz informou ao RJ2 que não comentaria esse caso.",
+        "O senador Flávio Bolsonaro apresentou, em 13 de outubro de 2021, o projeto para formar uma Região Administrativa Integrada de Desenvolvimento Sustentável (Rides) com os municípios de Angra dos Reis, Mangaratiba e Paraty.",
+        "O objetivo seria estimular o turismo, a economia e a preservação ambiental. O texto do Projeto de Lei Complementar n° 157/2021 também autoriza municipalizar as unidades de conservação federais e estaduais.",
+        "Em 28 de setembro, Tomaz havia adquirido três casas na Ilha Comprida.",
+        "\"Esse cenário paradisíaco não deixa nada a desejar em relação aos destinos turísticos similares mais procurados do mundo, como por exemplo Tailândia, Filipinas, Cancun, Grécia, Jamaica, Bahamas, Fiji ou República Dominicana\", escreveu Flávio na justificativa do projeto.",
+        "O senador afirmou também que as prefeituras \"aguardam com grande expectativa\" a aprovação do projeto. O texto está para ser analisado na Comissão de Meio Ambiente do Senado desde abril de 2025.",
+        "Já a PEC das Praias foi apresentada inicialmente na Câmara dos Deputados, em 2011. A proposta foi aprovada pelos deputados no plenário somente em fevereiro de 2022, quando seguiu para o Senado, onde aguarda análise na Comissão de Constituição e Justiça (CCJ).",
+        "Em abril de 2022, Flávio foi designado relator. Ele elaborou dois relatórios para a CCJ prevendo excluir da lista de bens da União os chamados \"terrenos de marinha\", incluindo as ilhas. Na prática, elas poderão ser privatizadas pelos ocupantes.",
+        "No atual regime, as ilhas podem ser usadas por pessoas ou empresas, mas essa ocupação pode ser revista pela SPU.",
+        "Em setembro de 2024, já no governo de Lula, a SPU fez uma nota técnica manifestando-se contrária à aprovação da PEC das Praias. Para o órgão, o texto \"favorece amplamente as condições jurídicas para a grilagem de toda costa brasileira em favor da população mais abastada do país\"."
+      ],
+      "pontos": [
+        "Levantamento detalha propriedades e registros de ocupação insular na região de Angra"
       ]
     }
   }
