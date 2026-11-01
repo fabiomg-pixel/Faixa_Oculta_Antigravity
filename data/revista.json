@@ -5647,123 +5647,141 @@
     "2026-11-01": {
       "data": "2026-11-01",
       "edicao": "manha",
-      "titulo": "Câmara discute reforma eleitoral e alíquota de consumo gera alerta",
-      "resumo_dia": "O Congresso entra em novembro avaliando profundas reformas estruturais, que vão da revisão das regras para a eleição de deputados federais aos impactos fiscais da regulamentação tributária. No campo econômico, projeções apontam que a alíquota geral de consumo pode superar 30%, enquanto o déficit das estatais acumulado até setembro atingiu recorde histórico de R$ 8,5 bilhões. No funcionalismo e na gestão pública, o governo federal estima ofertar 3 mil vagas no CNU 2027 dependendo da aprovação orçamentária. No Judiciário e histórico nacional, a abertura de documentos sobre a morte de Tancredo Neves encerra décadas de sigilo.",
+      "titulo": "Reforma tributária, sistema eleitoral e contas públicas em foco",
+      "resumo_dia": "O pós-eleição traz debates estruturais no Congresso e no campo fiscal. Na Câmara, ganha força a articulação para modificar a eleição de deputados com a adoção do voto distrital misto. Na economia, simulações sobre a regulamentação tributária apontam que o novo imposto sobre consumo pode superar 30%, em meio à divulgação de recordes no endividamento das famílias e no déficit das estatais. No Senado, a pauta da semana foca na PEC da Segurança Pública articulada por Davi Alcolumbre.",
       "notas": [
         {
-          "id": "camara-novo-modelo-eleicao-deputados",
-          "editoria": "Política",
-          "titulo": "Câmara debate novo modelo eleitoral para deputados federais",
-          "texto": "A presidência da Câmara articula a reformulação do sistema eleitoral proporcional em vigor, colocando em pauta modelos alternativos como o distrital misto. A discussão ganha tração com lideranças partidárias que buscam alterar as regras de representação política antes dos próximos ciclos de votação.",
-          "por_que_importa": "Mudanças no sistema proporcional redefinem a dinâmica de representatividade, a força de caciques partidários e a relação direta de parlamentares com suas bases eleitorais regionais.",
-          "fontes": [
-            {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Detalhamento das regras e propostas em debate entre os deputados",
-              "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "reforma-tributaria-aliquota-consumo-30",
+          "id": "reforma-tributaria-aliquota-consumo",
           "editoria": "Economia",
-          "titulo": "Imposto sobre consumo pode passar de 30% na regulamentação",
-          "texto": "Simulações técnicas sobre a regulamentação da reforma tributária indicam que a alíquota padrão do IVA dual brasileiro poderá ultrapassar o patamar de 30%. Esse percentual superaria as maiores cobranças sobre consumo praticadas entre as principais economias da OCDE.",
-          "por_que_importa": "O valor final da alíquota reflete o volume de isenções e regimes diferenciados aprovados, pressionando diretamente o custo de vida e os preços de produtos e serviços essenciais.",
+          "titulo": "Imposto sobre consumo da reforma tributária pode superar 30%",
+          "texto": "Estudos e estimativas sobre a regulamentação da reforma tributária indicam que a alíquota padrão sobre bens e serviços pode ultrapassar os 30%, superando as médias praticadas em países da OCDE. A composição final decorre das exceções e regimes diferenciados aprovados pelo Legislativo. Especialistas alertam para os impactos diretos nos preços finais e nas cadeias de serviços.",
+          "por_que_importa": "A definição da alíquota de consumo afeta diretamente o custo operacional do setor produtivo e o poder de compra da população, reconfigurando a carga tributária brasileira.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Comparativo internacional das alíquotas de imposto sobre consumo",
+              "enfoque": "Análise comparativa da alíquota do IVA brasileiro com tributos de países ricos",
               "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
             }
           ]
         },
         {
-          "id": "deficit-estatais-recorde-setembro",
-          "editoria": "Economia",
-          "titulo": "Déficit de estatais federais bate recorde de R$ 8,5 bilhões",
-          "texto": "As empresas estatais federais registraram um déficit primário acumulado de R$ 8,5 bilhões até setembro, estabelecendo um novo recorde para a série histórica recente. O resultado contrasta com o desempenho do governo central no mesmo mês e reforça a pressão sobre as contas consolidadas do setor público.",
-          "por_que_importa": "O descompasso financeiro de empresas públicas exige aportes do Tesouro Nacional, competindo com o orçamento de áreas prioritárias como ciência, saúde e infraestrutura.",
+          "id": "camara-sistema-distrital-misto",
+          "editoria": "Política",
+          "titulo": "Câmara articula mudança para sistema distrital misto nas eleições",
+          "texto": "A liderança da Câmara dos Deputados intensificou discussões para alterar o modelo proporcional de escolha dos parlamentares ainda no calendário legislativo corrente. A proposta central visa instituir o sistema distrital misto, no qual metade das cadeiras é preenchida por voto distrital majoritário e a outra metade por listas partidárias. O deputado Hugo Motta sinalizou interesse em colocar a matéria em votação.",
+          "por_que_importa": "A eventual troca do modelo proporcional tradicional redefine o equilíbrio das bancadas partidárias e a dinâmica de representação regional nos estados.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Balanço das contas públicas e gastos das estatais federais",
-              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
+              "enfoque": "Detalhamento técnico do modelo de votação proporcional versus distrital misto",
+              "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
+            },
+            {
+              "fonte": "Blog da Júlia Duailibi (g1)",
+              "perfil": "Blog de bastidores políticos",
+              "enfoque": "Articulação de Hugo Motta para levar o distrital misto ao plenário",
+              "url": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/30/hugo-motta-quer-votar-sistema-distrital-misto-ainda-neste-ano.ghtml"
             }
           ]
         },
         {
-          "id": "cnu-2027-vagas-orcamento",
-          "editoria": "Ciência",
-          "titulo": "Governo prevê 3 mil vagas no CNU de 2027 condicionadas ao Orçamento",
-          "texto": "O Ministério da Gestão informou que a próxima edição do Concurso Nacional Unificado pode oferecer até 3 mil vagas no funcionalismo público federal. O cronograma e a execução das provas, no entanto, dependerão expressamente do espaço fiscal garantido na Lei Orçamentária Anual.",
-          "por_que_importa": "A realização contínua do CNU é crucial para a recomposição dos quadros de agências reguladoras, institutos de pesquisa e ministérios estratégicos para o desenvolvimento científico.",
+          "id": "deficit-estatais-e-divida-publica",
+          "editoria": "Economia",
+          "titulo": "Déficit das estatais atinge R$ 8,5 bilhões e dívida pública chega a 82,9% do PIB",
+          "texto": "O déficit acumulado das empresas estatais federais alcançou a marca recorde de R$ 8,5 bilhões até setembro, ampliando a pressão sobre as contas consolidadas do setor público. No mesmo período, o déficit fiscal consolidado foi de R$ 5,5 bilhões no mês, levando a dívida bruta a 82,9% do PIB, o nível mais elevado em cinco anos e meio. Órgãos do Senado apontam necessidade de ajustes mais rigorosos no próximo ciclo.",
+          "por_que_importa": "O avanço da dívida pública limita a margem fiscal para investimentos discricionários em áreas essenciais como infraestrutura, educação e ciência.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Previsão de vagas e condicionantes orçamentárias no MGI",
-              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
+              "enfoque": "Recorde no déficit acumulado das estatais federais até setembro",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
+            },
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Evolução do endividamento público para 82,9% do Produto Interno Bruto",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "denuncias-assedio-eleitoral-trabalho",
+          "editoria": "Política",
+          "titulo": "MTE recebe 4,3 mil denúncias de assédio eleitoral no trabalho",
+          "texto": "O Ministério do Trabalho e Emprego computou 4,3 mil denúncias de assédio eleitoral em ambientes corporativos no intervalo de apenas três dias. O Ministério Público do Trabalho também registrou volume superior a 3,3 mil casos, superando a totalidade de denúncias apuradas nas eleições de 2022. Os relatos envolvem coações explícitas e veladas de empregadores sobre as escolhas de votos dos empregados.",
+          "por_que_importa": "O crescimento vertiginoso do assédio corporativo fere garantias constitucionais de voto livre e mobiliza fiscalizações trabalhistas em âmbito nacional.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Balanço do Ministério do Trabalho sobre volume de denúncias concentradas",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml"
+            },
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Dados do MPT e canais oficiais para notificação de infrações",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/29/denuncias-de-assedio-eleitoral-no-trabalho-veja-como-denunciar.ghtml"
             }
           ]
         },
         {
           "id": "senado-pec-seguranca-publica",
           "editoria": "Política",
-          "titulo": "Senado pauta votação da PEC da Segurança Pública",
-          "texto": "O presidente da Comissão de Constituição e Justiça do Senado incluiu na pauta de terça-feira a Proposta de Emenda à Constituição da Segurança Pública. O texto propõe reestruturar as competências das polícias da União e estabelecer novas diretrizes de cooperação com os estados.",
-          "por_que_importa": "A proposta busca unificar bancos de dados criminais e aumentar a coordenação federal em fronteiras e combate ao crime organizado em áreas urbanas conurbadas.",
+          "titulo": "Senado pauta votação da PEC da Segurança Pública para terça-feira",
+          "texto": "O senador Davi Alcolumbre incluiu na pauta de terça-feira a Proposta de Emenda à Constituição sobre Segurança Pública. O texto propõe reorganizar a coordenação de competências entre a União e os estados, além de institucionalizar o Sistema Único de Segurança Pública. A iniciativa é um dos principais temas federativos do encerramento do calendário legislativo de 2026.",
+          "por_que_importa": "A matéria redefine repasses de verbas federais e diretrizes operacionais entre polícias estaduais e órgãos federais no combate ao crime organizado.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Pauta de votações legislativas no Senado Federal",
+              "enfoque": "Pauta de votação definida pela presidência e líderes do Senado",
               "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
             }
           ]
         },
         {
-          "id": "mte-denuncias-assedio-eleitoral",
-          "editoria": "Política",
-          "titulo": "MTE registra mais de 4,3 mil denúncias de assédio eleitoral",
-          "texto": "O Ministério do Trabalho e Emprego contabilizou 4,3 mil queixas de assédio eleitoral em empresas em apenas três dias após o pleito. O volume já supera os registros de anos anteriores e concentra relatos de constrangimento e ameaças de demissão ligados à opção de voto de empregados.",
-          "por_que_importa": "O salto nas denúncias evidencia tensões trabalhistas decorrentes da polarização política e exige atuação célere de procuradores para garantir a integridade dos direitos civis no emprego.",
+          "id": "concurso-unificado-planejamento-2027",
+          "editoria": "Economia",
+          "titulo": "Governo planeja CNU 2027 com até 3 mil vagas condicionado ao Orçamento",
+          "texto": "O Ministério da Gestão e da Inovação informou que a próxima edição do Concurso Nacional Unificado poderá selecionar até 3 mil novos servidores federais. O cronograma de editais e a confirmação das provas dependem da previsão orçamentária que será debatida na Lei Orçamentária Anual de 2027. O mecanismo unificado busca repor quadros técnicos da administração pública direta e autarquias.",
+          "por_que_importa": "A realização de concursos é decisiva para a recomposição das carreiras públicas federais e de órgãos ligados à gestão, fiscalização e políticas científicas.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Dados das apurações do Ministério do Trabalho",
-              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml"
+              "enfoque": "Condicionamento da oferta de vagas do CNU à aprovação do Orçamento de 2027",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
             }
           ]
         },
         {
-          "id": "quebra-sigilo-morte-tancredo-neves",
-          "editoria": "Política",
-          "titulo": "Justiça autoriza abertura de documentos sobre a morte de Tancredo",
-          "texto": "A Justiça Federal determinou o levantamento do sigilo de prontuários médicos e registros oficiais relativos à internação e morte do presidente eleito Tancredo Neves, ocorrida em 1985. A documentação abrange relatórios hospitalares e laudos que permaneceram inacessíveis por quatro décadas.",
-          "por_que_importa": "O acesso a registros médicos de momentos cruciais da redemocratização fortalece a transparência pública e permite a historiadores e cientistas políticos sanar lacunas documentais da história recente.",
+          "id": "angra-imoveis-willer-tomaz",
+          "editoria": "Rio",
+          "titulo": "Investigação aponta patrimônio de advogado em ilhas de Angra dos Reis",
+          "texto": "Levantamento aponta que o advogado Willer Tomaz é proprietário de outras cinco casas em ilhas na Baía de Angra dos Reis, no litoral fluminense, além do imóvel envolvido em disputa judicial com o jogador Richarlison. Os imóveis de alto padrão ficam localizados em áreas nobres com restrições ambientais da Costa Verde. A concentração de propriedades tem sido alvo de escrutínio patrimonial e documental.",
+          "por_que_importa": "O caso reacende o debate sobre a posse e a ocupação privada em ilhas e áreas de preservação ambiental na Baía da Ilha Grande.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Decisão judicial e o impacto nos arquivos da Nova República",
-              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml"
+              "enfoque": "Identificação de complexo imobiliário privado em ilhas de Angra dos Reis",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml"
             }
           ]
         }
       ],
       "agenda": [
         {
-          "quando": "09h00",
-          "o_que": "Reunião de lideranças partidárias no Congresso Nacional para alinhar pautas prioritárias de novembro e tramitação de PECs."
+          "quando": "10h00",
+          "o_que": "Acompanhamento da reação do mercado aos indicadores fiscais do Banco Central e às projeções da reforma tributária"
         },
         {
-          "quando": "14h30",
-          "o_que": "Ministério da Fazenda e comissão mista do Congresso reavaliam estimativas de arrecadação e alíquota de referência para o IVA."
+          "quando": "14h00",
+          "o_que": "Articulação de líderes partidários no Congresso para definir a tramitação da PEC da Segurança Pública"
         }
       ]
     }
@@ -24063,10 +24081,10 @@
       "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml",
       "fonte": "g1",
       "tipo": "noticia",
-      "data": "2026-10-31",
-      "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
+      "data": "2026-11-01",
+      "titulo": "Imposto sobre consumo da reforma tributária pode superar 30%",
       "resumo": [
-        "Cálculos técnicos recentes indicam que a alíquota padrão dos novos tributos sobre o consumo (IBS e CBS) pode ultrapassar a marca de 30%, superando as médias vigentes em nações da OCDE. O patamar elevado decorre do volume de exceções, regimes diferenciados e benefícios setoriais mantidos durante a tramitação da regulamentação. O Ministério da Fazenda segue defendendo ajustes para calibrar o impacto final sobre o consumidor."
+        "Estudos e estimativas sobre a regulamentação da reforma tributária indicam que a alíquota padrão sobre bens e serviços pode ultrapassar os 30%, superando as médias praticadas em países da OCDE. A composição final decorre das exceções e regimes diferenciados aprovados pelo Legislativo. Especialistas alertam para os impactos diretos nos preços finais e nas cadeias de serviços."
       ],
       "texto_integral": [
         "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
@@ -24101,7 +24119,7 @@
         "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
       ],
       "pontos": [
-        "Análise da alíquota padrão em comparação com padrões internacionais da OCDE"
+        "Análise comparativa da alíquota do IVA brasileiro com tributos de países ricos"
       ]
     },
     "reconhecimento-eleicoes-partidos-g1.globo.com/politica/noticia/": {
@@ -24392,9 +24410,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Senado pauta votação da PEC da Segurança Pública",
+      "titulo": "Senado pauta votação da PEC da Segurança Pública para terça-feira",
       "resumo": [
-        "O presidente da Comissão de Constituição e Justiça do Senado incluiu na pauta de terça-feira a Proposta de Emenda à Constituição da Segurança Pública. O texto propõe reestruturar as competências das polícias da União e estabelecer novas diretrizes de cooperação com os estados."
+        "O senador Davi Alcolumbre incluiu na pauta de terça-feira a Proposta de Emenda à Constituição sobre Segurança Pública. O texto propõe reorganizar a coordenação de competências entre a União e os estados, além de institucionalizar o Sistema Único de Segurança Pública. A iniciativa é um dos principais temas federativos do encerramento do calendário legislativo de 2026."
       ],
       "texto_integral": [
         "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
@@ -24426,7 +24444,7 @@
         "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
       ],
       "pontos": [
-        "Pauta de votações legislativas no Senado Federal"
+        "Pauta de votação definida pela presidência e líderes do Senado"
       ]
     },
     "rio-willer-tomaz-angra-patrimonio-g1.globo.com/politica/noticia/": {
@@ -25342,6 +25360,277 @@
       ],
       "pontos": [
         "Decisão judicial e o impacto nos arquivos da Nova República"
+      ]
+    },
+    "camara-sistema-distrital-misto-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Câmara articula mudança para sistema distrital misto nas eleições",
+      "resumo": [
+        "A liderança da Câmara dos Deputados intensificou discussões para alterar o modelo proporcional de escolha dos parlamentares ainda no calendário legislativo corrente. A proposta central visa instituir o sistema distrital misto, no qual metade das cadeiras é preenchida por voto distrital majoritário e a outra metade por listas partidárias. O deputado Hugo Motta sinalizou interesse em colocar a matéria em votação."
+      ],
+      "texto_integral": [
+        "Centrão tenta frear PL com voto distrital misto",
+        "Líderes da Câmara dos Deputados e presidentes de partido articulam e pretendem retomar a tramitação de uma proposta que altera a forma de escolha dos deputados e institui o chamado sistema distrital misto.",
+        "O principal objetivo é frear a perda de espaço de partidos de centro no parlamento, após o crescimento do Partido Liberal (PL) nas eleições de 2026, que diminuiu o espaço de partidos do Centrão na Câmara e ampliou o espaço da ala bolsonarista.",
+        "A votação da proposta ainda está em negociação, mas a ideia é que as mudanças nas regras eleitorais comecem a valer integralmente nas eleições de 2034, com uma transição nas próximas eleições nacionais.",
+        "A iniciativa começou a ser discutida depois do primeiro turno da disputa, ainda no início de outubro, em uma declaração do presidente da Câmara, Hugo Motta (Republicanos-PB), um representante do Centrão.",
+        "O PL terminou as eleições com 121 deputados, a maior bancada desde a Constituinte. Há quatro anos, o partido havia conseguido 99 deputados. Com o resultado deste ano, a sigla terá 23,6% das 513 cadeiras da Câmara dos Deputados.",
+        "Em contrapartida, o Centrão diminuiu sua presença. Perdeu 22 cadeiras em comparação com as eleições de 2022. Há entre os partidos do centro uma leitura de que mudanças precisam ser feitas para manter o poder dos partidos de centro.",
+        "Hugo Motta afirmou que pretende aprovar uma Proposta de Emenda à Constituição (PEC) instituindo o sistema distrital misto. A expectativa de líderes do centro é aprovar as mudanças ainda em 2026, ainda que admitam que as articulações estão somente no início.",
+        "Motta dialoga ainda com o presidente do Senado Federal, Davi Alcolumbre (União-AP), para agilizar a votação. Líderes esperam o apoio dos senadores porque as mudanças não afetam as eleições para eles. Mas o texto também ainda precisa de acordo na própria Câmara. Motta ainda tenta conseguir apoio do PT e do próprio PL.",
+        "O PL não tem interesse em mudar o sistema. Já entre os petistas, há resistência em alterar regras eleitorais logo depois de uma eleição acirrada. O medo é fornecer aos apoiadores de Flávio Bolsonaro (PL) o argumento de que há cerceamento ao partido bolsonarista.",
+        "Outros parlamentares dizem ainda que a mudança é tardia, que o perfil do Congresso já foi alterado.",
+        "O relator da PEC que ainda será apresentada deve ser o deputado Domingos Neto (PSD-CE), que já é o relator de um projeto de lei sobre o sistema distrital na Câmara.",
+        "Distrital, distritão ou distrital misto",
+        "Um dos pontos que ainda estão sendo negociados entre os líderes partidários é qual modelo será adotado.",
+        "🔎 Atualmente, deputados são escolhidos de acordo com votos que eles e os seus partidos recebem. O Tribunal Superior Eleitoral (TSE) realiza uma conta, chamada de quociente eleitoral, para definir quantos votos cada partido precisa para ter uma cadeira na Câmara dos Deputados. Esse modelo é chamado de sistema proporcional.",
+        "Essa fórmula acaba criando os chamados \"puxadores de votos\" — um candidato que recebe muitos votos e, indiretamente, contribui para a eleição de candidatos que não obtiveram o número suficiente de votos.",
+        "Neste ano, votações expressivas em deputados como Nikolas Ferreira (PL-MG) e Erika Hilton (PSOL-SP) puxaram outros candidatos de seus partidos.",
+        "No sistema distrital, cada estado brasileiro é dividido em distritos. Cada distrito elege um número específico de deputados. Os moradores dessa determinada região poderão votar apenas nos candidatos do distrito em que vivem. São eleitos os candidatos mais votados no distrito.",
+        "Mas, buscando manter uma parte do poder dos partidos no processo eleitoral, os deputados estudam criar um modelo misto:",
+        "metade das vagas do distrito ficaria com os mais votados; a outra metade seria distribuída seguindo uma lista de candidatos definida previamente pelos partidos. As vagas seriam divididas de acordo com a quantidade de votos que as siglas conseguirem. Por exemplo: se um partido obtém votos para eleger quatro deputados, são eleitos os quatro primeiros nomes da lista.",
+        "O distrital misto tem como defensores presidentes de partidos como Gilberto Kassab, do PSD, e Ciro Nogueira, do Progressistas. Mas não há consenso no Congresso Nacional.",
+        "Apesar de defender o modelo, a deputada Adriana Ventura (Novo-SP) aponta algumas preocupações, como o sistema deixar a disputa mais vulnerável ao crime organizado, com candidatos de facções ou milícias controlando alguns distritos.",
+        "Parlamentares do PSOL também são críticos ao distrital misto por entenderem que o modelo prejudicaria o partido. Apontam, ainda, o risco de reduzir a participação de grupos que já são minoria no Congresso, como mulheres e negros.",
+        "Muitos deputados defendem um quarto modelo, o chamado distritão: transformar a eleição da Câmara em majoritária. Ou seja, os deputados mais votados em cada estado são eleitos, sem os chamados \"puxadores de votos\".",
+        "O modelo é criticado por especialistas, que dizem que ele pode facilitar a eleição de candidatos com mais recursos e dificultar a renovação no Congresso Nacional. A Câmara tentou aprovar a mudança para este modelo em 2017 e 2021, mas não houve votos suficientes para aprovar a mudança.",
+        "Deputado mais votado no Rio de Janeiro, o líder do PP, deputado Luizinho, é a favor do modelo e diz que, para não enfraquecer os partidos, a proposta poderia prever que o mandato pertence às legendas, diferentemente de outras eleições majoritárias, e o deputado não poderia trocar de filiação.",
+        "Para angariar apoio, os líderes indicaram que as mudanças não valeriam para as próximas eleições, em 2030. Nela, haveria uma transição. Mas os detalhes de como isso seria feito não foram definidos, segundo o relator Domingos Neto.",
+        "Parlamentares ouvidos pelo g1 e pela GloboNews dizem que existe a ideia de fazer um distritão em 2030 para atender os deputados que defendem esse modelo. Depois, em 2034, entraria em vigor o distrital misto, com a lista fechada dos partidos.",
+        "Domingos Neto afirma que a lista dos partidos deverá seguir as regras de inclusão e cotas de mulheres e negros e pardos para candidaturas. Mas ainda há dúvidas sobre como a diversidade de eleitos seria garantida se os partidos puderem definir a ordem da lista.",
+        "Em 2034, os eleitores votariam assim, somente uma vez, para deputado em cada distrito, para eleger deputados, e esses votos seriam contabilizados no estado para a definição de forma proporcional de quantas vagas cada sigla poderia preencher a partir da lista dos partidos.",
+        "Um dos pontos que levam a mais dúvidas entre os deputados é a divisão dos estados em distritos. Deputados estão preocupados com os votos que hoje são espalhados em várias cidades que podem pertencer a distritos diferentes.",
+        "Domingos Neto afirma que a definição dos distritos seria feita a partir de critérios do Instituto Brasileiro de Geografia e Estatística (IBGE) e uma comissão mista do Congresso acompanharia a implementação.",
+        "Por outro lado, defensores indicam que o processo eleitoral ficaria mais barato, já que o candidato não precisaria fazer campanha em todo o estado, somente em seu distrito.",
+        "Também dizem que o distrital misto aproximaria o candidato dos problemas reais dos eleitores, ao se concentrarem em uma região menor."
+      ],
+      "pontos": [
+        "Detalhamento técnico do modelo de votação proporcional versus distrital misto"
+      ]
+    },
+    "camara-sistema-distrital-misto-g1.globo.com/politica/blog/jul": {
+      "url": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/30/hugo-motta-quer-votar-sistema-distrital-misto-ainda-neste-ano.ghtml",
+      "fonte": "Blog da Júlia Duailibi (g1)",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Câmara articula mudança para sistema distrital misto nas eleições",
+      "resumo": [
+        "A liderança da Câmara dos Deputados intensificou discussões para alterar o modelo proporcional de escolha dos parlamentares ainda no calendário legislativo corrente. A proposta central visa instituir o sistema distrital misto, no qual metade das cadeiras é preenchida por voto distrital majoritário e a outra metade por listas partidárias. O deputado Hugo Motta sinalizou interesse em colocar a matéria em votação."
+      ],
+      "texto_integral": [
+        "Presidente da Câmara quer votar sistema distrital misto ainda neste ano",
+        "Parte dos parlamentares da Câmara dos Deputados quer aproveitar a atual composição da Casa para aprovar mudanças nas regras eleitorais ainda neste fim de ano. A articulação ocorre em meio à discussão sobre a adoção do sistema distrital misto, que pode alterar a forma de escolha dos deputados e reduzir a influência dos chamados puxadores de votos.",
+        "O presidente da Câmara, Hugo Motta (Republicanos), é favorável à proposta, que também conta com o apoio de partidos do Centrão, especialmente do PSD, liderado por Gilberto Kassab.",
+        "🔎No modelo distrital misto, o eleitor participa de uma eleição que combina duas formas de escolha: candidatos disputam vagas diretamente nos distritos, pelo sistema majoritário, e outras cadeiras são definidas conforme a votação em listas previamente organizadas pelos partidos.",
+        "🔎 Já no sistema proporcional atual, o desempenho eleitoral do partido e de seus candidatos determina quantas vagas a legenda terá no Legislativo, por meio do quociente eleitoral. Depois, essas cadeiras ficam com os candidatos mais votados da sigla.",
+        "Entre os principais interessados na mudança estão partidos que perderam cadeiras ou tiveram crescimento pouco expressivo nas últimas eleições. Essas legendas observam o avanço de siglas que se beneficiam do atual sistema proporcional, como o PL, que ampliou sua presença no Congresso graças, em parte, à votação expressiva de alguns candidatos.",
+        "Partidos como PSD e MDB, que possuem forte presença nos municípios e comandam diversas prefeituras, também enxergam vantagens no modelo distrital misto. Nesse sistema, a disputa é dividida por distritos eleitorais, o que pode ampliar a influência dos prefeitos na escolha dos candidatos que concorrerão às vagas de deputado.",
+        "Atualmente, o sistema proporcional permite que candidatos com votação expressiva ajudem a eleger outros integrantes de suas legendas. Conhecidos como puxadores de votos, esses parlamentares conseguem ampliar a representação partidária ao contribuir para que a sigla alcance o quociente eleitoral e partidário necessário para conquistar mais cadeiras.",
+        "Nas últimas eleições, pouco mais de 30 deputados ajudaram a eleger outros parlamentares. Ao todo, cerca de 60 candidatos teriam conquistado uma vaga beneficiados pela votação de nomes mais populares.",
+        "O fenômeno ganhou projeção nacional com Tiririca, eleito em 2010 com uma votação expressiva. Na época, sua votação ajudou a eleger outros candidatos e chamou a atenção dos partidos para o potencial desse mecanismo.",
+        "Atualmente, o cenário é diferente. As redes sociais ampliaram a capacidade de alguns políticos de mobilizar eleitores em todo o estado, transformando nomes populares no ambiente digital em importantes cabos eleitorais de suas próprias legendas. Nicolas Ferreira é um dos exemplos desse fenômeno.",
+        "A possibilidade de mudar as regras também provoca resistência entre partidos que se beneficiam do atual modelo. PT e PL estão entre as principais siglas contrárias à alteração, justamente porque possuem parlamentares com grande capacidade de mobilização eleitoral.",
+        "O debate também envolve mudanças nas regras de propaganda política nas redes sociais, outro tema que deve entrar na pauta dos parlamentares no fim do ano.",
+        "Uma das alternativas discutidas seria estabelecer um limite para a votação considerada válida para efeito de transferência de votos, evitando que candidatos com desempenho eleitoral muito acima da média ampliem excessivamente a bancada de seus partidos. Uma das hipóteses mencionadas seria estabelecer uma trava de até um milhão de votos para os chamados puxadores.",
+        "Apesar da articulação para aprovar a proposta ainda neste ano, a resistência de PT e PL, duas das principais forças políticas do país em número de votos, pode dificultar o avanço da mudança. No caso do PT, a existência de uma federação partidária também é um fator que torna a discussão mais complexa.",
+        "GloboPop: veja os vídeos do palco da Julia Dualibi"
+      ],
+      "pontos": [
+        "Articulação de Hugo Motta para levar o distrital misto ao plenário"
+      ]
+    },
+    "deficit-estatais-e-divida-publica-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Déficit das estatais atinge R$ 8,5 bilhões e dívida pública chega a 82,9% do PIB",
+      "resumo": [
+        "O déficit acumulado das empresas estatais federais alcançou a marca recorde de R$ 8,5 bilhões até setembro, ampliando a pressão sobre as contas consolidadas do setor público. No mesmo período, o déficit fiscal consolidado foi de R$ 5,5 bilhões no mês, levando a dívida bruta a 82,9% do PIB, o nível mais elevado em cinco anos e meio. Órgãos do Senado apontam necessidade de ajustes mais rigorosos no próximo ciclo."
+      ],
+      "texto_integral": [
+        "As contas do setor público consolidado apresentaram um déficit primário de R$ 5,5 bilhões em setembro, informou o Banco Central (BC) nesta quinta-feira (29).",
+        "🔎 O déficit primário ocorre quando as receitas com tributos e impostos ficam abaixo das despesas do governo. Se o contrário acontece, o resultado é de superávit primário.",
+        "🔎 O resultado não leva em conta o pagamento dos juros da dívida pública, e abrange o governo federal, os estados, municípios e as empresas estatais.",
+        "Na comparação com setembro do ano passado, houve melhora, uma vez que foi registrado um saldo negativo de R$ 17,5 bilhões naquele mês.",
+        "➡️ O endividamento do setor público, por sua vez, ficou estável continuou em 82,9% do Produto Interno Bruto (PIB) no mês passado — veja mais abaixo nessa reportagem.",
+        "Veja abaixo o desempenho das contas em setembro deste ano:",
+        "governo federal registrou saldo positivo de R$ 3,5 bilhões;estados e municípios tiveram saldo deficitário de R$ 5,6 bilhões;empresas estatais apresentaram déficit de R$ 3,4 bilhões.",
+        "No acumulado dos nove primeiros meses deste ano, ainda segundo dados oficiais, as contas públicas registraram um déficit primário de R$ 94,3 bilhões — o equivalente a 0,93% do Produto Interno Bruto (PIB).",
+        "Com isso, houve piora na comparação com o mesmo período do ano passado, quando foi registrado um saldo negativo de R$ 79,2 bilhões (0,84% do PIB).",
+        "No caso somente do governo federal, o resultado ficou negativo em R$ 93,6 bilhões na parcial deste ano, informou o BC, contra um déficit de R$ 99,6 bilhões nos nove primeiros meses de 2025.",
+        "Para este ano, a meta é de que as contas do governo tenham um saldo negativo de 0,25% do Produto Interno Bruto (PIB), cerca de R$ 34,3 bilhões.De acordo com o arcabouço fiscal, aprovado em 2023, há um intervalo de tolerância de 0,25 ponto percentual em relação à meta central.Ou seja: a meta será considerada formalmente cumprida se o governo tiver saldo zero, ou se chegar a um superávit de R$ 68,6 bilhõesO texto, no entanto, permite que o governo retire desse cálculo R$ 67,3 bilhões em despesas. E use esses recursos para pagar, por exemplo, precatórios (gastos com sentenças judiciais, defesa e educação).",
+        "Quando se incorporam os juros da dívida pública na conta – no conceito conhecido no mercado como resultado nominal, utilizado para comparação internacional –, houve déficit de R$ 113 bilhões nas contas do setor público em setembro.",
+        "➡️ No acumulado em 12 meses até setembro, foi registrado um resultado negativo (déficit) de R$ 1,28 trilhão, ou 9,51% do PIB.",
+        "🔎 Esse número é acompanhado com atenção pelas agências de classificação de risco para a definição da nota de crédito dos países, indicador levado em consideração por investidores.",
+        "O resultado nominal das contas do setor público sofre impacto do resultado mensal das contas, das atuações do BC no câmbio, e dos juros básicos da economia (Selic) fixados pela instituição para conter a inflação. Atualmente, a taxa Selic está em 13,75% ao ano, patamar elevado.",
+        "Segundo o BC, as despesas com juros nominais somaram R$ 1,2 trilhão (8,99% do PIB) em doze meses até setembro deste ano.",
+        "Em setembro, segundo números do Banco Central, a dívida do setor público consolidado ficou estável em 82,9% do PIB em setembro — o equivalente a R$ 11,11 trilhões.",
+        "➡️ Este é o maior nível para a dívida pública desde março de 2021, quando somava 85,1% do PIB, ou seja, é o maior patamar em mais de cinco anos.",
+        "➡️ No acumulado do governo do presidente Luiz Inácio Lula da Silva (PT), ou seja, em pouco mais de três anos, a dívida já avançou 11,2 pontos percentuais.",
+        "🔎 A alta na dívida no governo Lula está relacionada, principalmente, com o aumento de gastos públicos, que gera mais despesas com juros — um ciclo vicioso que se retroalimenta.",
+        "➡️ Para o Fundo Monetário Internacional (FMI), que utiliza de um conceito internacional — englobando os títulos públicos na carteira do BC —, o endividamento brasileiro foi bem maior em setembro: 95,2% do PIB.",
+        "🔎 A proporção com o PIB é considerada por especialistas como o conceito mais apropriado para medir e comparar a dívida das nações. E o formato de cálculo do Fundo Monetário Internacional (FMI) é adotado internacionalmente.",
+        "➡️ Acima de 90% do PIB, o patamar da dívida brasileira está bem acima de nações emergentes e de países da América do Sul, ficando maior, também, do que a média das nações da Zona do Euro (segundo dados do FMI).",
+        "Para tentar conter o crescimento da dívida, em 2023 o governo aprovou o chamado \"arcabouço fiscal\", ou seja, novas regras para as contas públicas em substituição ao teto de gastos.",
+        "A norma prevê crescimento das despesas abaixo das receitas, e um limite para gastos. Entretanto, despesas excluídas desse limite continuam pressionando para cima o endividamento.Analistas pedem um corte robusto de gastos para conter a dívida e proporcionar queda do juro básico.",
+        "Diante do crescimento da dívida pública no atual mandato do presidente Lula, a equipe econômica vem acenando com novas medidas para conter sua expansão na próxima gestão, que tem início em 2027."
+      ],
+      "pontos": [
+        "Evolução do endividamento público para 82,9% do Produto Interno Bruto"
+      ]
+    },
+    "denuncias-assedio-eleitoral-trabalho-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/29/denuncias-de-assedio-eleitoral-no-trabalho-veja-como-denunciar.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "MTE recebe 4,3 mil denúncias de assédio eleitoral no trabalho",
+      "resumo": [
+        "O Ministério do Trabalho e Emprego computou 4,3 mil denúncias de assédio eleitoral em ambientes corporativos no intervalo de apenas três dias. O Ministério Público do Trabalho também registrou volume superior a 3,3 mil casos, superando a totalidade de denúncias apuradas nas eleições de 2022. Os relatos envolvem coações explícitas e veladas de empregadores sobre as escolhas de votos dos empregados."
+      ],
+      "texto_integral": [
+        "As denúncias de assédio eleitoral recebidas pelo Ministério Público do Trabalho (MPT) chegaram a 3.396 em 2026, até as 10h desta quinta-feira (29), superando o total registrado nas eleições de 2022. (saiba como denunciar)",
+        "Somente em outubro, foram registradas cerca de 2,6 mil denúncias, alta de aproximadamente 371% em relação a setembro, quando o órgão recebeu 552 relatos. O volume representa cerca de 77% de todas as denúncias registradas no ano até o momento.",
+        "🗒️ Tem alguma sugestão de reportagem? Mande para o g1",
+        "Nos 29 dias do mês, a média foi de aproximadamente 90 denúncias por dia. São Paulo lidera o número de registros, com 620 denúncias, seguido por Minas Gerais, com 351, e Rio de Janeiro, com 252. (veja o levantamento completo abaixo)",
+        "O total registrado em 2026 já supera o das eleições de 2022, quando o MPT recebeu mais de 3.373 denúncias. Na comparação com 2018, o aumento foi de 1.600%.",
+        "O aumento ocorre em meio a uma nova onda de publicações nas redes sociais que incentivam a demissão e a recusa de contratação de trabalhadores por preferência política, além de promover listas de boicote a empresas supostamente apoiadoras do presidente Luiz Inácio Lula da Silva (PT), reeleito no domingo (25).",
+        "Em resposta, o ministro do Trabalho e Emprego, Luiz Marinho, anunciou nesta quarta-feira (28) uma força-tarefa nacional para fiscalizar denúncias de ameaças de demissão, perseguição e outras formas de assédio eleitoral contra trabalhadores.",
+        "Segundo o MPT, 991 denúncias foram registradas antes do primeiro turno e 946 entre o primeiro e o segundo turnos. Após o segundo turno, o número chegou a 1.459 denúncias até as 10h de 29 de outubro.",
+        "O órgão ressalta que o painel de dados é dinâmico: os números são atualizados à medida que as denúncias chegam e são cadastradas, podendo variar conforme o horário da consulta.",
+        "➡️ O assédio eleitoral no trabalho ocorre quando o empregador tenta influenciar o voto do funcionário por meio de ameaças, como perda do emprego, redução salarial ou rebaixamento de cargo, ou promove atividades políticas, como distribuição de santinhos e eventos, no ambiente de trabalho.",
+        "Além das denúncias recebidas pelo MPT, dados da Justiça do Trabalho mostram que, desde maio de 2023, foram registrados 863 processos relacionados ao assédio eleitoral no país, sendo 233 somente em 2026.",
+        "Os processos são cadastrados de acordo com o assunto e, por isso, o registro não significa que o assédio eleitoral tenha sido comprovado pela Justiça em todos os casos.",
+        "Os dados fazem parte do Painel Nacional de Monitoramento do Assédio Eleitoral (PNMAE), criado para identificar e acompanhar esses casos na Justiça do Trabalho.",
+        "O número de processos também aumentou entre o primeiro e o segundo turno das eleições. Segundo dados parciais do Centro de Pesquisas Judiciárias da Justiça do Trabalho, foram registrados 135 processos entre janeiro e 4 de outubro, data do primeiro turno.",
+        "Entre 4 e 24 de outubro, o total chegou a 185, com 50 novas ações trabalhistas no período — um aumento de 37%.",
+        "Para que mais casos cheguem às autoridades, o Ministério do Trabalho e Emprego (MTE) está enviando mensagens pela Carteira de Trabalho Digital para incentivar trabalhadores a denunciar situações de assédio eleitoral no ambiente profissional.",
+        "A mensagem alerta para ameaças de demissão e discriminação política relacionadas ao voto. O texto diz: “Você sofreu ameaça de demissão ou discriminação política no trabalho? O Ministério do Trabalho e Emprego existe para te proteger. Denuncie o assédio aqui: https://assedioeleitoral.trabalho.gov.br/”.",
+        "O que é assédio eleitoral no trabalho?",
+        "O assédio eleitoral no trabalho ocorre quando empregadores, gestores ou outras pessoas tentam constranger, pressionar ou influenciar um trabalhador a votar, apoiar ou manifestar preferência por determinado candidato, partido político ou posição ideológica.",
+        "Por exemplo, a prática pode ocorrer por meio de ameaças de demissão, rebaixamento de cargo ou redução salarial caso o empregado vote em determinado candidato.",
+        "Também pode envolver a distribuição de material de campanha ou a realização de eventos políticos no ambiente de trabalho, especialmente quando há pressão ou constrangimento dos trabalhadores.",
+        "A prática é definida pela Resolução CSJT nº 355/2023, da Justiça do Trabalho. Entre as condutas que podem caracterizar assédio estão coação, intimidação, ameaça, humilhação e outras formas de constrangimento usadas para interferir na escolha política ou no direito ao voto livre e secreto.",
+        "Também pode haver assédio quando o trabalhador recebe tratamento diferente por causa de sua opinião ou convicção política, como exclusão, favorecimento ou discriminação no ambiente de trabalho, inclusive em processos seletivos e de contratação.",
+        "Para as eleições de 2026, o Tribunal Superior Eleitoral (TSE) editou a Resolução nº 23.755/2026, que incluiu o § 2º-A no artigo 19 da Resolução nº 23.610/2019.",
+        "A norma passou a proibir expressamente a propaganda eleitoral e o assédio eleitoral em ambientes de trabalho públicos e privados, responsabilizando quem pratica ou permite essas condutas.",
+        "Em agosto, o TSE, a Justiça do Trabalho, o Ministério Público Eleitoral (MPE) e o MPT também firmaram um acordo de cooperação técnica para reforçar ações de prevenção, fiscalização e combate ao assédio eleitoral.",
+        "Entre as situações que podem caracterizar assédio eleitoral estão:",
+        "Ameaçar demitir quem não votar em determinado candidato;Prometer aumento salarial, benefício ou outra vantagem em troca de voto;Exigir participação em campanha eleitoral;Distribuir material de campanha e pressionar os empregados a utilizá-lo;Cobrar o voto ou tentar descobrir em quem o trabalhador votará;Constranger funcionários em reuniões;Retaliar quem manifesta preferência política diferente da do empregador;Impor o uso de símbolos, roupas ou materiais de campanha.",
+        "Pressão também acontece pelas redes",
+        "O uso de ambientes virtuais para a prática de assédio eleitoral no trabalho também foi identificado em uma pesquisa do Centro de Pesquisas Judiciárias (CPJ) do Tribunal Superior do Trabalho (TST) e do Conselho Superior da Justiça do Trabalho (CSJT).",
+        "O levantamento examinou 138 processos ajuizados até dezembro de 2025 e mostrou que a pressão política no ambiente de trabalho ultrapassa os limites físicos das empresas e também ocorre por meio de mensagens, grupos e redes sociais.",
+        "O WhatsApp foi citado em 37% das ações como meio utilizado para a prática, enquanto as redes sociais apareceram em 14,5% dos casos. Os pesquisadores identificaram ainda situações envolvendo manifestações verbais, comunicados, mecanismos psicológicos, mobilizações obrigatórias e ameaças ou vantagens econômicas relacionadas à escolha política.",
+        "A pesquisa também contemplou uma amostra quantitativa ampliada, com 688 processos ajuizados até junho de 2026. Nesse grupo, 32,1% dos casos tinham dois ou mais réus. Em um dos processos, chegaram a ser apontadas 19 pessoas como praticantes de assédio eleitoral.",
+        "Além dos empregadores, apareceram como réus tomadores de serviços, sócios, administradores e gestores. Na amostra qualitativa, 88% das ações foram movidas por trabalhadores, sendo 57% homens e 43% mulheres. O MPT foi responsável por 12% dos processos.",
+        "O Ministério Público do Trabalho (MPT) obteve na Justiça do Trabalho 52 decisões liminares para combater o assédio eleitoral e garantir aos trabalhadores o direito ao voto livre.",
+        "As liminares foram concedidas em 59 ações civis públicas ajuizadas pela instituição, o que corresponde a cerca de 88% do total de ações. A atuação do MPT também resultou na celebração de 53 termos de ajuste de conduta (TACs).",
+        "Segundo o coordenador nacional de Promoção da Igualdade de Oportunidades e Eliminação da Discriminação no Trabalho (Coordigualdade) do MPT, Igor Sousa Gonçalves, os resultados demonstram a importância de uma atuação rápida para impedir práticas de assédio eleitoral.",
+        "“O elevado número de decisões liminares favoráveis demonstra a atuação do MPT na proteção da liberdade política dos trabalhadores. Muitas decisões foram obtidas em plantões eleitorais para impedir constrangimentos e ameaças, reafirmando que o ambiente de trabalho não pode ser usado como instrumento de pressão política”, destacou.",
+        "As consequências para as empresas dependem da conduta e da gravidade do caso. Na esfera trabalhista, os trabalhadores podem buscar indenização pelos danos sofridos.",
+        "Quando a prática atinge um grupo de funcionários ou provoca impactos coletivos, o MPT pode atuar para interromper a conduta e buscar reparação por dano moral coletivo.",
+        "A empresa também pode ser investigada e responsabilizada na esfera eleitoral. Se a conduta configurar um crime previsto na legislação, poderá haver consequências criminais.",
+        "Além disso, o caso pode resultar na celebração de um Termo de Ajustamento de Conduta (TAC), no ajuizamento de uma ação civil pública e na adoção de outras medidas para impedir a continuidade da prática.",
+        "O procurador-geral do Trabalho, Gláucio Araújo Oliveira, afirma que o assédio eleitoral no ambiente profissional representa um risco à democracia.",
+        "“Se nós não frearmos essas condutas, ditadas pelo poder econômico ou pelo domínio na administração pública, isso representa um grave risco à nossa democracia, porque é uma das formas de interferência na vontade popular que se manifesta na hora do voto, nas urnas”, afirmou.",
+        "A prova depende da forma como a conduta ocorreu. Mensagens de WhatsApp, e-mails, comunicados internos, fotografias, vídeos, áudios, documentos, publicações em redes sociais e testemunhos podem ajudar a demonstrar o que aconteceu.",
+        "Em conversas ou reuniões, gravações feitas por uma das pessoas que participa da conversa também podem ser utilizadas como prova, em regra.",
+        "É importante preservar os registros e anotar, sempre que possível, a data, o local, as pessoas envolvidas e o que foi dito ou feito.",
+        "Também não é necessário esperar que uma ameaça se concretize. A própria tentativa de pressionar ou coagir o trabalhador pode ser relevante para a apuração do caso.",
+        "O trabalhador pode denunciar? Como fazer?",
+        "Sim. O assédio eleitoral pode ser denunciado ao Ministério Público do Trabalho (MPT), inclusive por canais eletrônicos. O trabalhador pode fazer a denúncia de forma anônima ou, caso se identifique, solicitar o sigilo de seus dados.",
+        "É importante fornecer o máximo possível de informações, como o nome da empresa, as pessoas envolvidas, o local, a data e a descrição dos fatos. Mensagens, e-mails, fotos, vídeos e outros documentos também podem ser enviados.",
+        "Dependendo do caso, a denúncia pode ser encaminhada à Justiça Eleitoral ou ao Ministério Público Eleitoral (MPE), especialmente quando houver indícios de crime eleitoral.",
+        "Ministério Público do Trabalho (MPT): recebe denúncias de irregularidades trabalhistas pelo site do órgão e pelo aplicativo Pardal MPT.Justiça do Trabalho: o Tribunal Superior do Trabalho (TST) e os Tribunais Regionais do Trabalho possuem canais de atendimento e ouvidorias para receber relatos relacionados ao tema.Centrais sindicais: disponibilizam canal para denúncias de pressões políticas, demissões ou cortes de benefícios relacionados à escolha eleitoral.Ministério Público Eleitoral (MPE): pode ser acionado em situações que envolvam possíveis crimes ou irregularidades eleitorais.Sindicato: o sindicato da categoria também pode receber denúncias e orientar o trabalhador sobre seus direitos.Canal de Denúncias para Inspeção do Trabalho: canal online do Ministério do Trabalho para denúncias trabalhistas;Fala.br: plataforma integrada de ouvidoria e acesso à informação da Controladoria-Geral da União;Central Alô Trabalho: o número 158 funciona de segunda a sábado, das 7h às 22h (horário de Brasília). A ligação gratuita de qualquer telefone fixo, mas chamadas por celular serão cobradas;Superintendências Regionais do Trabalho: são responsáveis por executar, supervisionar e monitorar ações relacionadas a políticas públicas de trabalho nos estados;Disque 100: Serviço gratuito e disponível 24 horas por dia, o disque 100 recebe denúncias de violações de direitos humanos, inclusive assédio moral no trabalho."
+      ],
+      "pontos": [
+        "Dados do MPT e canais oficiais para notificação de infrações"
+      ]
+    },
+    "concurso-unificado-planejamento-2027-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Governo planeja CNU 2027 com até 3 mil vagas condicionado ao Orçamento",
+      "resumo": [
+        "O Ministério da Gestão e da Inovação informou que a próxima edição do Concurso Nacional Unificado poderá selecionar até 3 mil novos servidores federais. O cronograma de editais e a confirmação das provas dependem da previsão orçamentária que será debatida na Lei Orçamentária Anual de 2027. O mecanismo unificado busca repor quadros técnicos da administração pública direta e autarquias."
+      ],
+      "texto_integral": [
+        "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
+        "A realização do concurso, no entanto, depende da aprovação da proposta de orçamento do próximo ano, enviada ao Congresso Nacional no fim de agosto.",
+        "“Como sempre informamos, a realização de um novo CPNU em 2027 está condicionada à aprovação do PLOA e do espaço fiscal para novas vagas que será aprovado pelo Congresso Nacional”, afirmou o ministério, em nota.",
+        "\"Considerando concursos já autorizados e novos que podem ser definidos (dependendo do PLOA), duas a três mil novas vagas compensam a realização de um CPNU em 2027\", completou a pasta.",
+        "Saiba como se preparar para enfrentar um concurso",
+        "No início desta semana, o MGI já havia informado ao g1 que a realização do certame dependeria da aprovação do orçamento do próximo ano.",
+        "Na ocasião, o ministério também destacou que considera o CPNU uma política pública voltada à renovação, à modernização e à democratização do acesso ao serviço público federal.",
+        "A intenção do governo é consolidar o modelo como um processo permanente de seleção de servidores, com edições em ciclos regulares, preferencialmente a cada dois anos.",
+        "\"Dessa forma, a ideia é que o CPNU se consolide como um processo permanente de seleção de servidores, com edições realizadas em ciclos regulares, idealmente a cada dois anos, de forma a garantir planejamento, recomposição gradual da força de trabalho e maior previsibilidade para os candidatos e para os órgãos públicos\", declarou a pasta.",
+        "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
+      ],
+      "pontos": [
+        "Condicionamento da oferta de vagas do CNU à aprovação do Orçamento de 2027"
+      ]
+    },
+    "angra-imoveis-willer-tomaz-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Investigação aponta patrimônio de advogado em ilhas de Angra dos Reis",
+      "resumo": [
+        "Levantamento aponta que o advogado Willer Tomaz é proprietário de outras cinco casas em ilhas na Baía de Angra dos Reis, no litoral fluminense, além do imóvel envolvido em disputa judicial com o jogador Richarlison. Os imóveis de alto padrão ficam localizados em áreas nobres com restrições ambientais da Costa Verde. A concentração de propriedades tem sido alvo de escrutínio patrimonial e documental."
+      ],
+      "texto_integral": [
+        "Willer Tomaz tem outras cinco casas em ilhas de Angra além da que disputou com Richarlison",
+        "O advogado Willer Tomaz, investigado no Supremo Tribunal Federal (STF) junto com o senador Flávio Bolsonaro (PL-RJ) por suspeitas de lavagem de dinheiro, tem outras cinco casas em ilhas de Angra dos Reis, na Costa Verde do Rio de Janeiro, além da que virou alvo de disputa com o jogador Richarlison.",
+        "Com exceção de uma, as casas foram compradas entre 2021 e 2022, na mesma época em que Flávio apresentou ao Senado Federal um projeto de lei para estimular empreendimentos em Angra, permitindo a municipalização das unidades de conservação federais e estaduais.",
+        "O objetivo do projeto é flexibilizar as regras para a exploração econômica da área.",
+        "Também no mesmo período, Flávio foi o relator da PEC das Praias no Senado. O texto propõe permitir a privatização das ilhas marítimas do país, hoje pertencentes à União. Os dois projetos continuam em tramitação (leia mais sobre as propostas abaixo).",
+        "Os planos para a Costa Verde do Rio vêm desde o governo de Jair Bolsonaro. Em maio de 2019, o então presidente afirmou que queria fazer de Angra \"uma nova Cancún\".",
+        "\"O nosso estado merece ter uma Cancún. E nós poderemos tê-la. E estamos trabalhando para a região de Angra. Depende de um decreto presidencial. Porque a Estação Ecológica de Tamoios está demais. Não preserva absolutamente nada e faz de uma área rica, que pode trazer bilhões de reais, por ano, em turismo, parada por falta de uma visão mais objetiva, mais progressista nessa questão\", declarou Jair à época.",
+        "🔎 Pela Constituição Federal, as ilhas são bens da União. Empresas e indivíduos podem ocupá-las, mediante processos de aforamento ou de ocupação registrados junto à Secretaria de Patrimônio da União (SPU), órgão responsável pela gestão das ilhas. Essas ocupações podem ser revistas pela SPU.",
+        "Questionado sobre eventuais projetos comerciais previstos para suas ilhas e sobre sua relação com as propostas legislativas elaboradas por Flávio Bolsonaro, Willer Tomaz não se manifestou. O senador não foi localizado pela reportagem.",
+        "Tomaz se mudou para os Estados Unidos em agosto deste ano, depois de ser alvo de uma operação da Polícia Federal. Flávio fugiu para a Flórida dois dias após ser derrotado no segundo turno da eleição presidencial por Luiz Inácio Lula da Silva (PT).",
+        "As casas compradas por empresas de Willer Tomaz em Angra são localizadas na:",
+        "Ilha Comprida: em um terreno de 175,2 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 5,7 milhões;Ilha Comprida: em um terreno de 32,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 2,1 milhões;Ilha Comprida: em um terreno de 181,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 6 milhões;Ilha Comprida: em um terreno de 2,1 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em julho de 2022. Valor patrimonial registrado de R$ 2,9 milhões (imóvel disputado com Richarlison);Ilha do José André: em um terreno de 57,3 mil m², comprada pela empresa Friponor Brasil Turismo, Empreendimentos e Participações, em 2008. Valor patrimonial registrado de R$ 23,7 milhões.",
+        "Os dados são de um levantamento feito nos sistemas da SPU e em registros de cartório.",
+        "Tomaz é dono, também, de cotas de uma sexta casa em Angra, na Ilha do Jorge, registrada em nome da empresa Real Estate Duo 4, pertencente ao grupo Prime You.",
+        "🔎 A Prime You é uma companhia especializada em administrar bens de luxo compartilhados por milionários, como aviões, barcos e mansões. O banqueiro Daniel Vorcaro, do Master, foi sócio da Prime You de setembro de 2021 a setembro de 2025. Vorcaro também costumava usar uma casa na Ilha do Jorge próxima da de Tomaz, como revelou o UOL.",
+        "Ao portal, Tomaz afirmou que adquiriu participação de 25% na casa da Prime You em 2022 e que nunca teve \"qualquer relação pessoal, comercial ou societária\" com Vorcaro.",
+        "O episódio que jogou luz sobre os investimentos de Willer Tomaz em Angra foi a disputa por uma das casas com Richarlison de Andrade, atacante do Tottenham e que já jogou pela Seleção Brasileira.",
+        "O jogador publicou vídeos em 17 e 21 de outubro acusando Flávio Bolsonaro de envolvimento na briga pelo imóvel de luxo. Os vídeos tiveram milhões de visualizações em meio ao processo eleitoral. No debate da Globo, Lula questionou Flávio sobre o caso, e o então candidato respondeu que a Justiça já havia decidido a favor de Tomaz. Na véspera do segundo turno, o petista disse que ia brigar para devolver a Richarlison o direito de ocupação.",
+        "O atacante disse nos vídeos que ocupava a casa na Ilha Comprida desde 2020 e que investiu R$ 10 milhões no local, por meio de uma empresa da qual é sócio, a Sport 70.",
+        "Segundo Richarlison, Flávio visitou sua ilha e demonstrou interesse na propriedade — que tem uma cachoeira que deságua no mar —, mas o jogador se recusou a vendê-la. Na visão do atacante, o senador se aliou a Tomaz, de quem é amigo, para conseguir os direitos sobre o imóvel.",
+        "O g1 analisou os processos da Secretaria de Patrimônio da União (SPU) envolvendo a casa. A empresa Sport 70, de Richarlison, pediu à SPU para regularizar sua utilização do imóvel em 20 de setembro de 2021. O processo administrativo não teve andamento.",
+        "Do lado de Willer Tomaz, o processo de regularização da utilização começou em 5 de maio de 2022. Nessa data, uma empresa de terceiros, a M Locadora de Veículos, solicitou à SPU a regularização de sua situação de ocupante, algo que remontava à década de 1980. O processo teve andamento célere e favorável no órgão.",
+        "Em 11 de julho de 2022, a M Locadora de Veículos pediu à SPU para emitir uma Certidão de Autorização para Transferência (CAT), documento necessário para vender o direito de ocupação. O pedido foi feito às 11h33 e foi atendido pela SPU às 13h13 do mesmo dia.",
+        "Em seguida, a M Locadora passou o imóvel para a WT Administração de Imóveis e Bens, de Willer Tomaz.",
+        "De acordo com um servidor ouvido pela reportagem, a celeridade da tramitação em um caso e a ausência de análise da SPU, em outro, é o ponto mais controverso da disputa no âmbito administrativo. Em 2022, a SPU estava subordinada ao governo de Jair Bolsonaro.",
+        "A poucos dias do segundo turno da eleição presidencial, dois parlamentares adversários de Flávio — Rogério Correia (PT-MG) e Pedro Uczai (PT-SC) — pediram ao STF para investigar o caso da ilha de Richarlison no mesmo inquérito que já apura as relações entre o senador e Willer Tomaz. O relator é o ministro Alexandre de Moraes.",
+        "Tomaz e Flávio confirmam que são amigos, mas negam ter negócios juntos.",
+        "Sobre a disputa com Richarlison, Tomaz sustenta que o jogador \"pagou a posseiros\" quando comprou a casa, \"e não à proprietária de direito\".",
+        "O advogado apresenta escritura registrada do imóvel, certidão da SPU e decisões favoráveis na Justiça, inclusive no Superior Tribunal de Justiça (STJ).",
+        "Na Ilha do José André, localizada dentro da Área de Proteção Ambiental (APA) de Tamoios, o plano de Tomaz era construir um resort de luxo com piscinas, beach club, spa, restaurante, área para eventos, hangar e heliponto, como revelou o RJ2.",
+        "Para expandir a área construída na ilha, o advogado apresentou um pedido ao Instituto Estadual do Ambiente (Inea) do Rio de Janeiro em 20 de março de 2026, no mesmo dia em que o então governador Cláudio Castro publicou um decreto que revogava planos de manejo de áreas de proteção ambiental.",
+        "O decreto de Castro acabou sendo posteriormente derrubado pelo desembargador Ricardo Couto, que assumiu o governo do estado. O empreendimento de Tomaz não avançou.",
+        "Cláudio Castro afirmou que não discutiu previamente o conteúdo do decreto com Willer Tomaz e não recebeu nenhum pedido para editar a medida. Segundo o ex-governador, o decreto tinha caráter geral e técnico. Tomaz informou ao RJ2 que não comentaria esse caso.",
+        "O senador Flávio Bolsonaro apresentou, em 13 de outubro de 2021, o projeto para formar uma Região Administrativa Integrada de Desenvolvimento Sustentável (Rides) com os municípios de Angra dos Reis, Mangaratiba e Paraty.",
+        "O objetivo seria estimular o turismo, a economia e a preservação ambiental. O texto do Projeto de Lei Complementar n° 157/2021 também autoriza municipalizar as unidades de conservação federais e estaduais.",
+        "Em 28 de setembro, Tomaz havia adquirido três casas na Ilha Comprida.",
+        "\"Esse cenário paradisíaco não deixa nada a desejar em relação aos destinos turísticos similares mais procurados do mundo, como por exemplo Tailândia, Filipinas, Cancun, Grécia, Jamaica, Bahamas, Fiji ou República Dominicana\", escreveu Flávio na justificativa do projeto.",
+        "O senador afirmou também que as prefeituras \"aguardam com grande expectativa\" a aprovação do projeto. O texto está para ser analisado na Comissão de Meio Ambiente do Senado desde abril de 2025.",
+        "Já a PEC das Praias foi apresentada inicialmente na Câmara dos Deputados, em 2011. A proposta foi aprovada pelos deputados no plenário somente em fevereiro de 2022, quando seguiu para o Senado, onde aguarda análise na Comissão de Constituição e Justiça (CCJ).",
+        "Em abril de 2022, Flávio foi designado relator. Ele elaborou dois relatórios para a CCJ prevendo excluir da lista de bens da União os chamados \"terrenos de marinha\", incluindo as ilhas. Na prática, elas poderão ser privatizadas pelos ocupantes.",
+        "No atual regime, as ilhas podem ser usadas por pessoas ou empresas, mas essa ocupação pode ser revista pela SPU.",
+        "Em setembro de 2024, já no governo de Lula, a SPU fez uma nota técnica manifestando-se contrária à aprovação da PEC das Praias. Para o órgão, o texto \"favorece amplamente as condições jurídicas para a grilagem de toda costa brasileira em favor da população mais abastada do país\"."
+      ],
+      "pontos": [
+        "Identificação de complexo imobiliário privado em ilhas de Angra dos Reis"
       ]
     }
   }
