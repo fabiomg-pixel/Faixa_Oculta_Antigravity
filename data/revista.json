@@ -5647,20 +5647,20 @@
     "2026-11-01": {
       "data": "2026-11-01",
       "edicao": "manha",
-      "titulo": "Reforma tributária, sistema eleitoral e contas públicas em foco",
-      "resumo_dia": "O pós-eleição traz debates estruturais no Congresso e no campo fiscal. Na Câmara, ganha força a articulação para modificar a eleição de deputados com a adoção do voto distrital misto. Na economia, simulações sobre a regulamentação tributária apontam que o novo imposto sobre consumo pode superar 30%, em meio à divulgação de recordes no endividamento das famílias e no déficit das estatais. No Senado, a pauta da semana foca na PEC da Segurança Pública articulada por Davi Alcolumbre.",
+      "titulo": "Reforma tributária, contas públicas e reformas no Congresso",
+      "resumo_dia": "O pós-eleição entra em ritmo de definições institucionais e econômicas decisivas em Brasília. Enquanto a equipe econômica analisa o impacto de uma alíquota de consumo que pode superar 30% na reforma tributária, o Congresso articula votações como a PEC da Segurança Pública e a possível mudança no modelo eleitoral para deputados. No campo das contas públicas, a dívida bruta atinge 82,9% do PIB, impondo desafios para o fechamento fiscal e a oferta de novos concursos federais. No Judiciário, a abertura de registros históricos da morte de Tancredo Neves marca a agenda de memória republicana.",
       "notas": [
         {
           "id": "reforma-tributaria-aliquota-consumo",
           "editoria": "Economia",
-          "titulo": "Imposto sobre consumo da reforma tributária pode superar 30%",
-          "texto": "Estudos e estimativas sobre a regulamentação da reforma tributária indicam que a alíquota padrão sobre bens e serviços pode ultrapassar os 30%, superando as médias praticadas em países da OCDE. A composição final decorre das exceções e regimes diferenciados aprovados pelo Legislativo. Especialistas alertam para os impactos diretos nos preços finais e nas cadeias de serviços.",
-          "por_que_importa": "A definição da alíquota de consumo afeta diretamente o custo operacional do setor produtivo e o poder de compra da população, reconfigurando a carga tributária brasileira.",
+          "titulo": "Reforma tributária: alíquota sobre consumo pode ultrapassar 30%",
+          "texto": "Simulações sobre as leis complementares da reforma tributária apontam que a alíquota padrão sobre bens e serviços pode superar os 30%, taxa superior à média verificada em países desenvolvidos. O índice definitivo dependerá da calibragem de regimes diferenciados e incentivos mantidos pelo Congresso. Especialistas alertam para os efeitos da cumulatividade residual sobre setores de serviços e comércio.",
+          "por_que_importa": "O percentual final do novo imposto ditará a carga tributária real sobre o consumo e exigirá rápida adaptação de cadeias produtivas e planejamento fiscal em todo o país.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Análise comparativa da alíquota do IVA brasileiro com tributos de países ricos",
+              "enfoque": "Estimativas de alíquota da reforma tributária e comparação internacional",
               "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
             }
           ]
@@ -5668,108 +5668,90 @@
         {
           "id": "camara-sistema-distrital-misto",
           "editoria": "Política",
-          "titulo": "Câmara articula mudança para sistema distrital misto nas eleições",
-          "texto": "A liderança da Câmara dos Deputados intensificou discussões para alterar o modelo proporcional de escolha dos parlamentares ainda no calendário legislativo corrente. A proposta central visa instituir o sistema distrital misto, no qual metade das cadeiras é preenchida por voto distrital majoritário e a outra metade por listas partidárias. O deputado Hugo Motta sinalizou interesse em colocar a matéria em votação.",
-          "por_que_importa": "A eventual troca do modelo proporcional tradicional redefine o equilíbrio das bancadas partidárias e a dinâmica de representação regional nos estados.",
+          "titulo": "Câmara avalia adoção do sistema distrital misto para deputados",
+          "texto": "Lideranças partidárias na Câmara dos Deputados articulam a discussão de uma mudança profunda nas regras eleitorais para as próximas eleições gerais. O modelo distrital misto em debate combina a escolha direta de parlamentares por circunscrições regionais com a votação proporcional em listas partidárias. A proposta busca baratear campanhas e aproximar os representantes de suas bases territoriais.",
+          "por_que_importa": "A alteração na forma de eleição reconfigura a distribuição de cadeiras partidárias e impacta o peso eleitoral de grandes colégios estaduais no Congresso.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Detalhamento técnico do modelo de votação proporcional versus distrital misto",
+              "enfoque": "Debate interno na Câmara sobre mudança para sistema eleitoral distrital misto",
               "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
-            },
-            {
-              "fonte": "Blog da Júlia Duailibi (g1)",
-              "perfil": "Blog de bastidores políticos",
-              "enfoque": "Articulação de Hugo Motta para levar o distrital misto ao plenário",
-              "url": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/10/30/hugo-motta-quer-votar-sistema-distrital-misto-ainda-neste-ano.ghtml"
             }
           ]
         },
         {
-          "id": "deficit-estatais-e-divida-publica",
-          "editoria": "Economia",
-          "titulo": "Déficit das estatais atinge R$ 8,5 bilhões e dívida pública chega a 82,9% do PIB",
-          "texto": "O déficit acumulado das empresas estatais federais alcançou a marca recorde de R$ 8,5 bilhões até setembro, ampliando a pressão sobre as contas consolidadas do setor público. No mesmo período, o déficit fiscal consolidado foi de R$ 5,5 bilhões no mês, levando a dívida bruta a 82,9% do PIB, o nível mais elevado em cinco anos e meio. Órgãos do Senado apontam necessidade de ajustes mais rigorosos no próximo ciclo.",
-          "por_que_importa": "O avanço da dívida pública limita a margem fiscal para investimentos discricionários em áreas essenciais como infraestrutura, educação e ciência.",
+          "id": "justica-sigilo-morte-tancredo-neves",
+          "editoria": "Política",
+          "titulo": "Justiça retira sigilo de documentos médicos da morte de Tancredo Neves",
+          "texto": "A Justiça autorizou a liberação e o acesso público a laudos, prontuários e relatórios médicos relacionados à internação e morte de Tancredo Neves em 1985. A documentação abrange atendimentos no Hospital de Base de Brasília e no Instituto do Coração em São Paulo. Os papéis devem esclarecer decisões clínicas tomadas nas semanas que antecederam a posse presidencial.",
+          "por_que_importa": "A divulgação promove transparência em relação a um episódio divisor de águas na história da redemocratização e atende a demandas históricas e arquivísticas.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Recorde no déficit acumulado das estatais federais até setembro",
-              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
-            },
+              "enfoque": "Quebra de sigilo judicial de prontuários médicos de Tancredo Neves",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "contas-publicas-divida-pib",
+          "editoria": "Economia",
+          "titulo": "Dívida pública atinge 82,9% do PIB com déficit de R$ 5,5 bilhões",
+          "texto": "O setor público consolidado apurou um déficit primário de R$ 5,5 bilhões em setembro, elevando a dívida bruta ao maior patamar em cinco anos e meio, alcançando 82,9% do PIB. O dado divulgado pelo Banco Central reflete pressões com despesas obrigatórias e o custo da dívida mobiliária. O resultado acentua a urgência de medidas de contenção fiscal no Executivo.",
+          "por_que_importa": "O crescimento contínuo do endividamento eleva os prêmios de risco na curva de juros, encarecendo o crédito e restringindo a capacidade de investimento público.",
+          "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Evolução do endividamento público para 82,9% do Produto Interno Bruto",
+              "enfoque": "Déficit das contas públicas em setembro e evolução da dívida em relação ao PIB",
               "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml"
             }
           ]
         },
         {
-          "id": "denuncias-assedio-eleitoral-trabalho",
+          "id": "mte-denuncias-assedio-eleitoral",
           "editoria": "Política",
-          "titulo": "MTE recebe 4,3 mil denúncias de assédio eleitoral no trabalho",
-          "texto": "O Ministério do Trabalho e Emprego computou 4,3 mil denúncias de assédio eleitoral em ambientes corporativos no intervalo de apenas três dias. O Ministério Público do Trabalho também registrou volume superior a 3,3 mil casos, superando a totalidade de denúncias apuradas nas eleições de 2022. Os relatos envolvem coações explícitas e veladas de empregadores sobre as escolhas de votos dos empregados.",
-          "por_que_importa": "O crescimento vertiginoso do assédio corporativo fere garantias constitucionais de voto livre e mobiliza fiscalizações trabalhistas em âmbito nacional.",
+          "titulo": "MTE soma 4,3 mil queixas de assédio eleitoral corporativo em três dias",
+          "texto": "O Ministério do Trabalho e Emprego computou 4,3 mil denúncias de assédio eleitoral praticado em empresas em um intervalo de apenas 72 horas. Os registros detalham coações sobre voto, ameaças de demissão e exigências indevidas ligadas a preferências político-partidárias de empregados. As notificações foram encaminhadas para auditoria fiscal e para o Ministério Público do Trabalho.",
+          "por_que_importa": "O volume elevado de ocorrências alerta para práticas ilícitas nas relações de trabalho e orienta ações punitivas e indenizatórias nas varas do trabalho.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Balanço do Ministério do Trabalho sobre volume de denúncias concentradas",
+              "enfoque": "Balanço das queixas de assédio eleitoral registradas no Ministério do Trabalho",
               "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml"
-            },
-            {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Dados do MPT e canais oficiais para notificação de infrações",
-              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/29/denuncias-de-assedio-eleitoral-no-trabalho-veja-como-denunciar.ghtml"
             }
           ]
         },
         {
           "id": "senado-pec-seguranca-publica",
           "editoria": "Política",
-          "titulo": "Senado pauta votação da PEC da Segurança Pública para terça-feira",
-          "texto": "O senador Davi Alcolumbre incluiu na pauta de terça-feira a Proposta de Emenda à Constituição sobre Segurança Pública. O texto propõe reorganizar a coordenação de competências entre a União e os estados, além de institucionalizar o Sistema Único de Segurança Pública. A iniciativa é um dos principais temas federativos do encerramento do calendário legislativo de 2026.",
-          "por_que_importa": "A matéria redefine repasses de verbas federais e diretrizes operacionais entre polícias estaduais e órgãos federais no combate ao crime organizado.",
+          "titulo": "Senado pauta votação da PEC da Segurança Pública",
+          "texto": "A presidência do Senado marcou para os próximos dias a votação em plenário da Proposta de Emenda à Constituição da Segurança Pública. O texto estabelece mecanismos formais de coordenação entre as forças policiais estaduais e órgãos federais para o combate às facções. O debate central gira em torno da autonomia dos governos estaduais na gestão de seus contingentes.",
+          "por_que_importa": "A reformulação do pacto federativo de segurança tem impacto direto em estados sob forte crise na área, como o Rio de Janeiro, alterando o repasse de verbas e a integração operacional.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Pauta de votação definida pela presidência e líderes do Senado",
+              "enfoque": "Inclusão da PEC da Segurança Pública na pauta de votações do Senado",
               "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
             }
           ]
         },
         {
-          "id": "concurso-unificado-planejamento-2027",
+          "id": "concurso-unificado-orcamento-2027",
           "editoria": "Economia",
-          "titulo": "Governo planeja CNU 2027 com até 3 mil vagas condicionado ao Orçamento",
-          "texto": "O Ministério da Gestão e da Inovação informou que a próxima edição do Concurso Nacional Unificado poderá selecionar até 3 mil novos servidores federais. O cronograma de editais e a confirmação das provas dependem da previsão orçamentária que será debatida na Lei Orçamentária Anual de 2027. O mecanismo unificado busca repor quadros técnicos da administração pública direta e autarquias.",
-          "por_que_importa": "A realização de concursos é decisiva para a recomposição das carreiras públicas federais e de órgãos ligados à gestão, fiscalização e políticas científicas.",
+          "titulo": "CNU de 2027 pode abrir 3 mil vagas federais se Orçamento for aprovado",
+          "texto": "O Ministério da Gestão e da Inovação em Serviços Públicos prevê oferecer até 3 mil vagas na próxima edição do Concurso Nacional Unificado, projetada para 2027. A concretização da seleção dependerá das dotações autorizadas na Lei Orçamentária Anual em tramitação no Congresso. O certame visa preencher postos em ministérios, autarquias e órgãos executivos federais.",
+          "por_que_importa": "O dimensionamento de vagas públicas federais repercute na recomposição da capacidade técnica de ministérios, agências e carreiras essenciais de regulação e gestão.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Condicionamento da oferta de vagas do CNU à aprovação do Orçamento de 2027",
+              "enfoque": "Previsão de vagas para o CNU e condicionamento orçamentário",
               "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "angra-imoveis-willer-tomaz",
-          "editoria": "Rio",
-          "titulo": "Investigação aponta patrimônio de advogado em ilhas de Angra dos Reis",
-          "texto": "Levantamento aponta que o advogado Willer Tomaz é proprietário de outras cinco casas em ilhas na Baía de Angra dos Reis, no litoral fluminense, além do imóvel envolvido em disputa judicial com o jogador Richarlison. Os imóveis de alto padrão ficam localizados em áreas nobres com restrições ambientais da Costa Verde. A concentração de propriedades tem sido alvo de escrutínio patrimonial e documental.",
-          "por_que_importa": "O caso reacende o debate sobre a posse e a ocupação privada em ilhas e áreas de preservação ambiental na Baía da Ilha Grande.",
-          "fontes": [
-            {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Identificação de complexo imobiliário privado em ilhas de Angra dos Reis",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml"
             }
           ]
         }
@@ -5777,11 +5759,11 @@
       "agenda": [
         {
           "quando": "10h00",
-          "o_que": "Acompanhamento da reação do mercado aos indicadores fiscais do Banco Central e às projeções da reforma tributária"
+          "o_que": "Reunião de líderes partidários para alinhamento da pauta de segurança pública e reformas no Congresso."
         },
         {
-          "quando": "14h00",
-          "o_que": "Articulação de líderes partidários no Congresso para definir a tramitação da PEC da Segurança Pública"
+          "quando": "14h30",
+          "o_que": "Análise técnica de dados da Receita Federal sobre alíquotas do imposto de consumo para a reforma tributária."
         }
       ]
     }
@@ -24082,9 +24064,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Imposto sobre consumo da reforma tributária pode superar 30%",
+      "titulo": "Reforma tributária: alíquota sobre consumo pode ultrapassar 30%",
       "resumo": [
-        "Estudos e estimativas sobre a regulamentação da reforma tributária indicam que a alíquota padrão sobre bens e serviços pode ultrapassar os 30%, superando as médias praticadas em países da OCDE. A composição final decorre das exceções e regimes diferenciados aprovados pelo Legislativo. Especialistas alertam para os impactos diretos nos preços finais e nas cadeias de serviços."
+        "Simulações sobre as leis complementares da reforma tributária apontam que a alíquota padrão sobre bens e serviços pode superar os 30%, taxa superior à média verificada em países desenvolvidos. O índice definitivo dependerá da calibragem de regimes diferenciados e incentivos mantidos pelo Congresso. Especialistas alertam para os efeitos da cumulatividade residual sobre setores de serviços e comércio."
       ],
       "texto_integral": [
         "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
@@ -24119,7 +24101,7 @@
         "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
       ],
       "pontos": [
-        "Análise comparativa da alíquota do IVA brasileiro com tributos de países ricos"
+        "Estimativas de alíquota da reforma tributária e comparação internacional"
       ]
     },
     "reconhecimento-eleicoes-partidos-g1.globo.com/politica/noticia/": {
@@ -24410,9 +24392,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Senado pauta votação da PEC da Segurança Pública para terça-feira",
+      "titulo": "Senado pauta votação da PEC da Segurança Pública",
       "resumo": [
-        "O senador Davi Alcolumbre incluiu na pauta de terça-feira a Proposta de Emenda à Constituição sobre Segurança Pública. O texto propõe reorganizar a coordenação de competências entre a União e os estados, além de institucionalizar o Sistema Único de Segurança Pública. A iniciativa é um dos principais temas federativos do encerramento do calendário legislativo de 2026."
+        "A presidência do Senado marcou para os próximos dias a votação em plenário da Proposta de Emenda à Constituição da Segurança Pública. O texto estabelece mecanismos formais de coordenação entre as forças policiais estaduais e órgãos federais para o combate às facções. O debate central gira em torno da autonomia dos governos estaduais na gestão de seus contingentes."
       ],
       "texto_integral": [
         "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
@@ -24444,7 +24426,7 @@
         "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
       ],
       "pontos": [
-        "Pauta de votação definida pela presidência e líderes do Senado"
+        "Inclusão da PEC da Segurança Pública na pauta de votações do Senado"
       ]
     },
     "rio-willer-tomaz-angra-patrimonio-g1.globo.com/politica/noticia/": {
@@ -25286,9 +25268,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "MTE registra mais de 4,3 mil denúncias de assédio eleitoral",
+      "titulo": "MTE soma 4,3 mil queixas de assédio eleitoral corporativo em três dias",
       "resumo": [
-        "O Ministério do Trabalho e Emprego contabilizou 4,3 mil queixas de assédio eleitoral em empresas em apenas três dias após o pleito. O volume já supera os registros de anos anteriores e concentra relatos de constrangimento e ameaças de demissão ligados à opção de voto de empregados."
+        "O Ministério do Trabalho e Emprego computou 4,3 mil denúncias de assédio eleitoral praticado em empresas em um intervalo de apenas 72 horas. Os registros detalham coações sobre voto, ameaças de demissão e exigências indevidas ligadas a preferências político-partidárias de empregados. As notificações foram encaminhadas para auditoria fiscal e para o Ministério Público do Trabalho."
       ],
       "texto_integral": [
         "O Ministério do Trabalho e Emprego (MTE) recebeu 4.305 denúncias de assédio eleitoral no ambiente de trabalho entre quarta-feira (28) e sexta-feira (30). Os registros foram feitos nos três primeiros dias de funcionamento de um canal específico para esse tipo de ocorrência.",
@@ -25322,7 +25304,7 @@
         "Ministério do Trabalho e Emprego (MTE): recebe denúncias por meio do canal https://assedioeleitoral.trabalho.gov.br/Ministério Público do Trabalho (MPT): recebe denúncias de irregularidades trabalhistas pelo site do órgão e pelo aplicativo Pardal MPT.Justiça do Trabalho: o Tribunal Superior do Trabalho (TST) e os Tribunais Regionais do Trabalho possuem canais de atendimento e ouvidorias para receber relatos relacionados ao tema.Centrais sindicais: disponibilizam canal para denúncias de pressões políticas, demissões ou cortes de benefícios relacionados à escolha eleitoral.Ministério Público Eleitoral (MPE): pode ser acionado em situações que envolvam possíveis crimes ou irregularidades eleitorais.Sindicato: o sindicato da categoria também pode receber denúncias e orientar o trabalhador sobre seus direitos.Canal de Denúncias para Inspeção do Trabalho: canal online do Ministério do Trabalho para denúncias trabalhistas;Fala.br: plataforma integrada de ouvidoria e acesso à informação da Controladoria-Geral da União;Central Alô Trabalho: o número 158 funciona de segunda a sábado, das 7h às 22h (horário de Brasília). A ligação gratuita de qualquer telefone fixo, mas chamadas por celular serão cobradas;Superintendências Regionais do Trabalho: são responsáveis por executar, supervisionar e monitorar ações relacionadas a políticas públicas de trabalho nos estados;Disque 100: Serviço gratuito e disponível 24 horas por dia, o disque 100 recebe denúncias de violações de direitos humanos, inclusive assédio moral no trabalho."
       ],
       "pontos": [
-        "Dados das apurações do Ministério do Trabalho"
+        "Balanço das queixas de assédio eleitoral registradas no Ministério do Trabalho"
       ]
     },
     "quebra-sigilo-morte-tancredo-neves-g1.globo.com/df/distrito-feder": {
@@ -25367,9 +25349,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Câmara articula mudança para sistema distrital misto nas eleições",
+      "titulo": "Câmara avalia adoção do sistema distrital misto para deputados",
       "resumo": [
-        "A liderança da Câmara dos Deputados intensificou discussões para alterar o modelo proporcional de escolha dos parlamentares ainda no calendário legislativo corrente. A proposta central visa instituir o sistema distrital misto, no qual metade das cadeiras é preenchida por voto distrital majoritário e a outra metade por listas partidárias. O deputado Hugo Motta sinalizou interesse em colocar a matéria em votação."
+        "Lideranças partidárias na Câmara dos Deputados articulam a discussão de uma mudança profunda nas regras eleitorais para as próximas eleições gerais. O modelo distrital misto em debate combina a escolha direta de parlamentares por circunscrições regionais com a votação proporcional em listas partidárias. A proposta busca baratear campanhas e aproximar os representantes de suas bases territoriais."
       ],
       "texto_integral": [
         "Centrão tenta frear PL com voto distrital misto",
@@ -25408,7 +25390,7 @@
         "Também dizem que o distrital misto aproximaria o candidato dos problemas reais dos eleitores, ao se concentrarem em uma região menor."
       ],
       "pontos": [
-        "Detalhamento técnico do modelo de votação proporcional versus distrital misto"
+        "Debate interno na Câmara sobre mudança para sistema eleitoral distrital misto"
       ]
     },
     "camara-sistema-distrital-misto-g1.globo.com/politica/blog/jul": {
@@ -25631,6 +25613,109 @@
       ],
       "pontos": [
         "Identificação de complexo imobiliário privado em ilhas de Angra dos Reis"
+      ]
+    },
+    "justica-sigilo-morte-tancredo-neves-g1.globo.com/df/distrito-feder": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Justiça retira sigilo de documentos médicos da morte de Tancredo Neves",
+      "resumo": [
+        "A Justiça autorizou a liberação e o acesso público a laudos, prontuários e relatórios médicos relacionados à internação e morte de Tancredo Neves em 1985. A documentação abrange atendimentos no Hospital de Base de Brasília e no Instituto do Coração em São Paulo. Os papéis devem esclarecer decisões clínicas tomadas nas semanas que antecederam a posse presidencial."
+      ],
+      "texto_integral": [
+        "Justiça determina quebra do sigilo médico sobre morte de Tancredo Neves",
+        "Há pouco mais de 40 anos, o Brasil festejava um momento histórico: a eleição e a futura posse do primeiro presidente civil, após duas décadas do regime militar.",
+        "A internação na véspera da posse – e a morte inesperada do presidente eleito Tancredo Neves em 21 de abril de 1985 – mudou novamente os rumos da política nacional. E, ainda hoje, é cercada de mistérios e até teorias da conspiração.",
+        "Uma decisão dada pela Justiça Federal nesta semana pode começar a solucionar essas dúvidas. O Tribunal Regional Federal da 1ª Região foi unânime ao aprovar que a família de Tancredo tenha acesso a documentos sigilosos sobre a internação no Hospital de Base, em Brasília.",
+        "✅ Clique aqui para seguir o canal do g1 no WhatsApp.",
+        "O objetivo é sanar a dúvida da família --- e de inúmeros eleitores da época --- sobre a suspeita de erro médico.",
+        "Tancredo Neves foi internado na véspera da posse presidencial com quadro de diverticulite – inflamação na região do intestino grosso. Ele morreu um mês depois, em 21 de abril de 1985.",
+        "Com a nova decisão, o Conselho Federal de Medicina (CFM) e o Conselho Regional de Medicina do Distrito Federal (CRM-DF), devem liberar prontuários, relação de médicos e outros documentos.",
+        "Procuradas pelo g1, as entidades afirmaram que ainda não foram oficialmente notificadas.",
+        "Apesar de a decisão ter chegado apenas em 2026, a busca por explicações começou em 2010, com a publicação do livro \"O paciente\", de Luís Mir. Com autorização da família, o escritor pesquisou a fundo o período e encontrou falhas nos procedimentos.",
+        "A advogada Juliana Porcaro explica que a família pediu aos conselhos que liberassem os documentos, mas a demanda foi negada com base no sigilo da relação médico-paciente. Por isso, o caso foi parar na Justiça.",
+        "As hipóteses de erro médico levantadas pelo autor e pelos familiares se sustentam em quatro fatores.",
+        "Cirurgia imediata: especialistas ouvidos pelo escritor questionam a decisão de uma cirurgia de emergência. Isso porque os procedimentos contra diverticulite costumam ser eletivos, ou seja, passíveis de agendamento enquanto o paciente segue com outros tratamentos. Técnicas questionáveis: Mais de 30 acompanhantes estiveram na sala de cirurgia durante o procedimento, o que é proibido por razões de segurança. Advertência: Médicos envolvidos no tratamento receberam advertência do CRM-DF. O motivo da notificação, no entanto, segue como um mistério. Falhas na recuperação: O autor acredita que falhas no protocolo de recuperação podem ter contribuído para complicações.",
+        "Uma das fotos mais emblemáticas da época é a foto de Tancredo Neves sentado ao lado dos médicos (veja abaixo). Por conta da região da cirurgia, no entanto, ele não poderia ter sido colocado naquela posição.",
+        "Após hemorragia e outras complicações, Tancredo foi transferido do Instituto do Coração (Incor) já em estado grave.",
+        "\"Quando ele veio a óbito, os médicos não tiveram coragem de declarar o óbito, eles chamaram o médico americano [Warren Zapol], que veio ao Brasil e avaliou\", conta Juliana.",
+        "Para a advogada e porta-voz da família, a divulgação dos dados não é apenas de interesse das pessoas próximas, mas ajuda a contar a \"história de uma nação\".",
+        "\"Se há uma advertência, é porque houve um processo administrativo no conselho e algo foi considerado errado. E é a esse 'algo' que a família quer ter acesso. Quer entender como os próprios médicos do Conselho entenderam a postura dos médicos responsáveis pelo presidente Tancredo Neves\", afirma.",
+        "Juliana conta que esteve com o ex-presidente José Sarney, que confirma a percepção de que houve negligência por parte da equipe de saúde.",
+        "\"Ele confirmou que teve esse receio de assumir a presidência, porque foi muito delicado. Ninguém sabia se isso ia ser bem aceito\", comenta.",
+        "Com a posse de Sarney, vice na chapa de Tancredo, o Brasil iniciou um novo momento na política com a eleição de civis.",
+        "Leia mais notícias sobre a região no g1 DF."
+      ],
+      "pontos": [
+        "Quebra de sigilo judicial de prontuários médicos de Tancredo Neves"
+      ]
+    },
+    "contas-publicas-divida-pib-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Dívida pública atinge 82,9% do PIB com déficit de R$ 5,5 bilhões",
+      "resumo": [
+        "O setor público consolidado apurou um déficit primário de R$ 5,5 bilhões em setembro, elevando a dívida bruta ao maior patamar em cinco anos e meio, alcançando 82,9% do PIB. O dado divulgado pelo Banco Central reflete pressões com despesas obrigatórias e o custo da dívida mobiliária. O resultado acentua a urgência de medidas de contenção fiscal no Executivo."
+      ],
+      "texto_integral": [
+        "As contas do setor público consolidado apresentaram um déficit primário de R$ 5,5 bilhões em setembro, informou o Banco Central (BC) nesta quinta-feira (29).",
+        "🔎 O déficit primário ocorre quando as receitas com tributos e impostos ficam abaixo das despesas do governo. Se o contrário acontece, o resultado é de superávit primário.",
+        "🔎 O resultado não leva em conta o pagamento dos juros da dívida pública, e abrange o governo federal, os estados, municípios e as empresas estatais.",
+        "Na comparação com setembro do ano passado, houve melhora, uma vez que foi registrado um saldo negativo de R$ 17,5 bilhões naquele mês.",
+        "➡️ O endividamento do setor público, por sua vez, ficou estável continuou em 82,9% do Produto Interno Bruto (PIB) no mês passado — veja mais abaixo nessa reportagem.",
+        "Veja abaixo o desempenho das contas em setembro deste ano:",
+        "governo federal registrou saldo positivo de R$ 3,5 bilhões;estados e municípios tiveram saldo deficitário de R$ 5,6 bilhões;empresas estatais apresentaram déficit de R$ 3,4 bilhões.",
+        "No acumulado dos nove primeiros meses deste ano, ainda segundo dados oficiais, as contas públicas registraram um déficit primário de R$ 94,3 bilhões — o equivalente a 0,93% do Produto Interno Bruto (PIB).",
+        "Com isso, houve piora na comparação com o mesmo período do ano passado, quando foi registrado um saldo negativo de R$ 79,2 bilhões (0,84% do PIB).",
+        "No caso somente do governo federal, o resultado ficou negativo em R$ 93,6 bilhões na parcial deste ano, informou o BC, contra um déficit de R$ 99,6 bilhões nos nove primeiros meses de 2025.",
+        "Para este ano, a meta é de que as contas do governo tenham um saldo negativo de 0,25% do Produto Interno Bruto (PIB), cerca de R$ 34,3 bilhões.De acordo com o arcabouço fiscal, aprovado em 2023, há um intervalo de tolerância de 0,25 ponto percentual em relação à meta central.Ou seja: a meta será considerada formalmente cumprida se o governo tiver saldo zero, ou se chegar a um superávit de R$ 68,6 bilhõesO texto, no entanto, permite que o governo retire desse cálculo R$ 67,3 bilhões em despesas. E use esses recursos para pagar, por exemplo, precatórios (gastos com sentenças judiciais, defesa e educação).",
+        "Quando se incorporam os juros da dívida pública na conta – no conceito conhecido no mercado como resultado nominal, utilizado para comparação internacional –, houve déficit de R$ 113 bilhões nas contas do setor público em setembro.",
+        "➡️ No acumulado em 12 meses até setembro, foi registrado um resultado negativo (déficit) de R$ 1,28 trilhão, ou 9,51% do PIB.",
+        "🔎 Esse número é acompanhado com atenção pelas agências de classificação de risco para a definição da nota de crédito dos países, indicador levado em consideração por investidores.",
+        "O resultado nominal das contas do setor público sofre impacto do resultado mensal das contas, das atuações do BC no câmbio, e dos juros básicos da economia (Selic) fixados pela instituição para conter a inflação. Atualmente, a taxa Selic está em 13,75% ao ano, patamar elevado.",
+        "Segundo o BC, as despesas com juros nominais somaram R$ 1,2 trilhão (8,99% do PIB) em doze meses até setembro deste ano.",
+        "Em setembro, segundo números do Banco Central, a dívida do setor público consolidado ficou estável em 82,9% do PIB em setembro — o equivalente a R$ 11,11 trilhões.",
+        "➡️ Este é o maior nível para a dívida pública desde março de 2021, quando somava 85,1% do PIB, ou seja, é o maior patamar em mais de cinco anos.",
+        "➡️ No acumulado do governo do presidente Luiz Inácio Lula da Silva (PT), ou seja, em pouco mais de três anos, a dívida já avançou 11,2 pontos percentuais.",
+        "🔎 A alta na dívida no governo Lula está relacionada, principalmente, com o aumento de gastos públicos, que gera mais despesas com juros — um ciclo vicioso que se retroalimenta.",
+        "➡️ Para o Fundo Monetário Internacional (FMI), que utiliza de um conceito internacional — englobando os títulos públicos na carteira do BC —, o endividamento brasileiro foi bem maior em setembro: 95,2% do PIB.",
+        "🔎 A proporção com o PIB é considerada por especialistas como o conceito mais apropriado para medir e comparar a dívida das nações. E o formato de cálculo do Fundo Monetário Internacional (FMI) é adotado internacionalmente.",
+        "➡️ Acima de 90% do PIB, o patamar da dívida brasileira está bem acima de nações emergentes e de países da América do Sul, ficando maior, também, do que a média das nações da Zona do Euro (segundo dados do FMI).",
+        "Para tentar conter o crescimento da dívida, em 2023 o governo aprovou o chamado \"arcabouço fiscal\", ou seja, novas regras para as contas públicas em substituição ao teto de gastos.",
+        "A norma prevê crescimento das despesas abaixo das receitas, e um limite para gastos. Entretanto, despesas excluídas desse limite continuam pressionando para cima o endividamento.Analistas pedem um corte robusto de gastos para conter a dívida e proporcionar queda do juro básico.",
+        "Diante do crescimento da dívida pública no atual mandato do presidente Lula, a equipe econômica vem acenando com novas medidas para conter sua expansão na próxima gestão, que tem início em 2027."
+      ],
+      "pontos": [
+        "Déficit das contas públicas em setembro e evolução da dívida em relação ao PIB"
+      ]
+    },
+    "concurso-unificado-orcamento-2027-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "CNU de 2027 pode abrir 3 mil vagas federais se Orçamento for aprovado",
+      "resumo": [
+        "O Ministério da Gestão e da Inovação em Serviços Públicos prevê oferecer até 3 mil vagas na próxima edição do Concurso Nacional Unificado, projetada para 2027. A concretização da seleção dependerá das dotações autorizadas na Lei Orçamentária Anual em tramitação no Congresso. O certame visa preencher postos em ministérios, autarquias e órgãos executivos federais."
+      ],
+      "texto_integral": [
+        "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
+        "A realização do concurso, no entanto, depende da aprovação da proposta de orçamento do próximo ano, enviada ao Congresso Nacional no fim de agosto.",
+        "“Como sempre informamos, a realização de um novo CPNU em 2027 está condicionada à aprovação do PLOA e do espaço fiscal para novas vagas que será aprovado pelo Congresso Nacional”, afirmou o ministério, em nota.",
+        "\"Considerando concursos já autorizados e novos que podem ser definidos (dependendo do PLOA), duas a três mil novas vagas compensam a realização de um CPNU em 2027\", completou a pasta.",
+        "Saiba como se preparar para enfrentar um concurso",
+        "No início desta semana, o MGI já havia informado ao g1 que a realização do certame dependeria da aprovação do orçamento do próximo ano.",
+        "Na ocasião, o ministério também destacou que considera o CPNU uma política pública voltada à renovação, à modernização e à democratização do acesso ao serviço público federal.",
+        "A intenção do governo é consolidar o modelo como um processo permanente de seleção de servidores, com edições em ciclos regulares, preferencialmente a cada dois anos.",
+        "\"Dessa forma, a ideia é que o CPNU se consolide como um processo permanente de seleção de servidores, com edições realizadas em ciclos regulares, idealmente a cada dois anos, de forma a garantir planejamento, recomposição gradual da força de trabalho e maior previsibilidade para os candidatos e para os órgãos públicos\", declarou a pasta.",
+        "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
+      ],
+      "pontos": [
+        "Previsão de vagas para o CNU e condicionamento orçamentário"
       ]
     }
   }
