@@ -5770,110 +5770,110 @@
     "2026-11-01-noite": {
       "data": "2026-11-01",
       "edicao": "noite",
-      "titulo": "Câmara debate distrital misto e contas públicas pressionam agenda",
-      "resumo_dia": "O cenário pós-eleitoral de 2026 abre espaço para articulações de reformas estruturais no Congresso Nacional, lideradas pelas discussões sobre o modelo eleitoral de deputados e a pauta da PEC da Segurança Pública. Na seara econômica, projeções alertam que a alíquota unificada de consumo na reforma tributária pode exceder os 30%, no momento em que as estatais federais registram déficit recorde até setembro. Paralelamente, o Ministério do Trabalho contabiliza recordes de assédio eleitoral em empresas, enquanto o planejamento orçamentário federal condiciona as próximas seleções do CNU.",
+      "titulo": "Boletim Faixa Oculta: Reforma tributária, PEC da Segurança e Congresso",
+      "resumo_dia": "O cenário pós-eleitoral consolida debates cruciais para a agenda institucional e fiscal do país. Na economia, projeções indicam que a nova alíquota de consumo pode superar patamares internacionais, enquanto o Congresso articula mudanças no sistema eleitoral proporcional. Paralelamente, o Senado pauta a PEC da Segurança Pública em meio a movimentações na diplomacia e no Judiciário, acompanhados de perto pelo serviço público com planos para novos certames federais.",
       "notas": [
         {
-          "id": "camara-reforma-sistema-eleitoral-distrital-misto",
-          "editoria": "Política",
-          "titulo": "Câmara articula modelo distrital misto para a eleição de deputados",
-          "texto": "A presidência da Câmara dos Deputados intensificou os debates para alterar a sistemática de representação parlamentar no país, mirando a adoção do sistema distrital misto já para as próximas legislaturas. Pelo modelo avaliado, metade das vagas seria preenchida por votação majoritária distrital e a outra por lista partidária preordenada. A liderança legislativa busca construir consenso partidário para levar o texto a plenário ainda em 2026.",
-          "por_que_importa": "A eventual substituição do sistema proporcional puro altera as regras de fragmentação partidária e o custo das campanhas, redefinindo as pontes entre deputados federais e suas bases territoriais.",
-          "fontes": [
-            {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Detalhamento técnico do modelo distrital misto em debate pelos líderes partidários",
-              "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "reforma-tributaria-aliquota-consumo-estudo",
+          "id": "aliquota-reforma-tributaria-consumo",
           "editoria": "Economia",
-          "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
-          "texto": "Estimativas técnicas sobre a regulamentação da reforma tributária apontam que a alíquota geral sobre o consumo (IBS e CBS) pode romper a barreira dos 30% para compensar exceções e regimes diferenciados aprovados. Caso confirmada, a taxa nominal brasileira figurará entre as mais altas do mundo, superando a média cobrada por países desenvolvidos da OCDE. A equipe econômica monitora a calibragem final das leis complementares que tramitam no Congresso.",
-          "por_que_importa": "O valor da alíquota de referência incide diretamente sobre custos de insumos e produtos do setor produtivo e dita o repasse final aos preços do consumidor.",
+          "titulo": "Imposto sobre consumo da reforma tributária pode superar 30%",
+          "texto": "Estudos e estimativas recentes apontam que a alíquota padrão do novo imposto sobre consumo decorrente da reforma tributária pode ultrapassar o teto de 30%. O patamar colocaria o Brasil com uma das maiores taxas de tributação sobre bens e serviços do mundo, superando países desenvolvidos. O cálculo definitivo dependerá das exceções setoriais e dos regimes favorecidos aprovados na regulamentação.",
+          "por_que_importa": "O valor final da alíquota impactará diretamente o poder de compra da população e os custos operacionais de instituições públicas e privadas, pressionando o orçamento das famílias e de serviços básicos.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Projeções de alíquotas com base nas exceções aprovadas e comparação internacional",
+              "enfoque": "Compara alíquotas projetadas para o Brasil com médias praticadas em países ricos",
               "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
             }
           ]
         },
         {
-          "id": "senado-pec-seguranca-publica-votacao",
+          "id": "camara-sistema-distrital-misto",
           "editoria": "Política",
-          "titulo": "Senado pauta votação da PEC da Segurança Pública para terça-feira",
-          "texto": "O Senado Federal incluiu a proposta de emenda à Constituição sobre segurança pública na pauta deliberativa do plenário para a próxima terça-feira. A matéria visa disciplinar as atribuições constitucionais das forças federais e estaduais e integrar bancos de dados criminais em escala nacional. O movimento reflete o interesse da cúpula legislativa em acelerar temas de apelo popular antes do recesso de fim de ano.",
-          "por_que_importa": "A alteração constitucional pode redistribuir competências operacionais entre a União e os estados, com reflexo direto na gestão do combate a facções no Rio de Janeiro e em outros polos urbanos.",
+          "titulo": "Câmara articula mudança para sistema distrital misto em eleições de deputados",
+          "texto": "A presidência e lideranças da Câmara dos Deputados intensificaram as discussões para alterar o atual modelo proporcional de eleição para o sistema distrital misto. A proposta combina o voto distrital individual com a votação em listas partidárias preordenadas. Lideranças pretendem acelerar o debate legislativo ainda durante os meses finais do ano legislativo.",
+          "por_que_importa": "A adoção do sistema misto redefiniria a representatividade parlamentar e a distribuição de forças entre partidos, alterando a conexão regional dos deputados e a governabilidade federal.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Calendário de votação pautado no plenário e pontos-chave da proposta de segurança",
+              "enfoque": "Explica o funcionamento e a tramitação do modelo distrital misto em debate na Câmara",
+              "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "senado-pec-seguranca-publica",
+          "editoria": "Política",
+          "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública no Senado",
+          "texto": "O presidente da Comissão de Constituição e Justiça do Senado, Davi Alcolumbre, pautou a votação da Proposta de Emenda à Constituição (PEC) da Segurança Pública para a próxima terça-feira. A matéria busca unificar diretrizes nacionais para as polícias e ampliar a atuação da União no combate ao crime organizado. O texto centraliza atribuições e enfrenta debates sobre a autonomia federativa dos estados.",
+          "por_que_importa": "A proposta mexe na estrutura de financiamento e comando das forças de segurança, com repercussões diretas no controle da violência armada em capitais e regiões metropolitanas.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Destaca a estratégia de pautar a votação na comissão e os pontos de atrito federativo",
               "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
             }
           ]
         },
         {
-          "id": "deficit-estatais-recorde-setembro-2026",
+          "id": "governo-cnu-2027-vagas",
           "editoria": "Economia",
-          "titulo": "Déficit primário das estatais federais atinge R$ 8,5 bilhões até setembro",
-          "texto": "O rombo nas contas das empresas estatais federais acumulou R$ 8,5 bilhões entre janeiro e setembro, registrando o pior resultado da série histórica para o período. O dado foi divulgado pelo Banco Central e evidencia o descompasso entre despesas correntes de operação e arrecadação própria dessas companhias. As perdas pressionam a meta fiscal consolidada do setor público no fechamento do ano.",
-          "por_que_importa": "O desempenho financeiro deficitário das estatais obriga o Tesouro Nacional a provisionar aportes adicionais, elevando a trajetória da dívida pública federal.",
+          "titulo": "Governo planeja CNU 2027 com até 3 mil vagas condicionado ao Orçamento",
+          "texto": "O Ministério da Gestão informou que a edição de 2027 do Concurso Nacional Unificado (CNU) poderá disponibilizar até 3 mil vagas no serviço público federal. A efetivação e a data de aplicação das provas permanecem atreladas à aprovação do projeto de lei orçamentária no Congresso Nacional. A iniciativa visa preencher carências estruturais em ministérios e agências reguladoras.",
+          "por_que_importa": "Para servidores públicos e acadêmicos, o ritmo de reposição de quadros federais é determinante para a continuidade operacional de universidades, institutos de pesquisa e órgãos de fiscalização.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Divulgação dos dados fiscais do Banco Central sobre o setor público consolidado",
-              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "concurso-unificado-2027-previsao-vagas",
-          "editoria": "Ciência",
-          "titulo": "Governo prevê até 3 mil vagas para CNU 2027 sob condição orçamentária",
-          "texto": "O Ministério da Gestão e da Inovação em Serviços Públicos informou que uma nova edição do Concurso Nacional Unificado em 2027 poderá oferecer até 3 mil postos no serviço público federal. A execução do certame está formalmente vinculada à aprovação e às margens do Projeto de Lei Orçamentária Anual. Parte substancial das vagas planejadas destina-se à reposição de quadros técnicos em agências reguladoras e carreiras de ciência e tecnologia.",
-          "por_que_importa": "A oxigenação de quadros federais é crucial para a recomposição técnica de órgãos ambientais, universidades e institutos de pesquisa que sofrem com aposentadorias em massa.",
-          "fontes": [
-            {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Condicionantes fiscais da realização das provas e dimensionamento de novas vagas",
+              "enfoque": "Detalha previsão de vagas no Executivo federal condicionadas ao teto orçamentário",
               "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
             }
           ]
         },
         {
-          "id": "denuncias-mte-assedio-eleitoral-pos-pleito",
+          "id": "justica-documentos-tancredo-neves",
           "editoria": "Política",
-          "titulo": "MTE contabiliza 4,3 mil denúncias de assédio eleitoral no ambiente de trabalho",
-          "texto": "O Ministério do Trabalho e Emprego registrou 4,3 mil notificações formais de assédio eleitoral cometidas em ambientes corporativos em apenas três dias no fechamento do segundo turno. A fiscalização trabalhista mobilizou equipes para apurar coações patronais sobre voto e ameaças de demissão em caso de determinados desfechos eleitorais. O Ministério Público do Trabalho também superou o total acumulado do ciclo de 2022 em abertura de termos de ajustamento de conduta.",
-          "por_que_importa": "O volume recorde consolida o assédio político laboral como desafio central para as relações sindicais e a garantia de direitos civis básicos dos trabalhadores assalariados.",
+          "titulo": "Justiça quebra sigilo de documentos médicos e oficiais sobre morte de Tancredo",
+          "texto": "A Justiça Federal determinou o levantamento do sigilo sobre documentos históricos e prontuários médicos ligados à internação e à morte de Tancredo Neves em 1985. A decisão viabiliza o acesso público a laudos e registros do Hospital de Base de Brasília e do Instituto do Coração de São Paulo. Pesquisadores e historiadores aguardavam há décadas a liberação integral do material.",
+          "por_que_importa": "O acesso a arquivos antes confidenciais reforça a transparência histórica sobre um dos episódios mais críticos da redemocratização brasileira, balizando estudos acadêmicos e preservação da memória.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Balanço divulgado pela auditoria fiscal do trabalho com números pós-eleição",
-              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml"
+              "enfoque": "Reporta o teor da decisão judicial e o acervo documental aberto a pesquisadores",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml"
             }
           ]
         },
         {
-          "id": "imoveis-willer-tomaz-litoral-angra-rio",
-          "editoria": "Rio",
-          "titulo": "Investigação aponta complexo de mansões em ilhas de Angra dos Reis",
-          "texto": "Apurações de patrimônio indicam a existência de pelo menos cinco outras propriedades de alto padrão ligadas ao advogado Willer Tomaz em ilhas da baía de Ilha Grande, além do terreno em litígio envolvendo o jogador Richarlison. A ocupação de áreas da União em regiões insulares da Costa Verde do Rio de Janeiro tem sido alvo de fiscalização dos órgãos ambientais e do Ministério Público Federal. O caso reacende a discussão sobre concessões de terrenos de marinha no litoral fluminense.",
-          "por_que_importa": "A proliferação de construções privadas em zonas de preservação costeira no Rio de Janeiro impõe pressões sobre a orla marinha e envolve o cumprimento de normas federais de patrimônio da União.",
+          "id": "itamaraty-embaixada-argentina-fuga-flavio",
+          "editoria": "Política",
+          "titulo": "Itamaraty convoca embaixada argentina após cruzamento de fronteira por Flávio",
+          "texto": "O Ministério das Relações Exteriores convocou formalmente o encarregado de negócios da embaixada da Argentina em Brasília. A pasta cobra esclarecimentos diplomáticos sobre a travessia da fronteira terrestre pelo senador Flávio Bolsonaro rumo a Buenos Aires antes de seu embarque para os Estados Unidos. O senador viajou em meio a ordens restritivas emitidas pelo Judiciário.",
+          "por_que_importa": "O incidente gera atrito no relacionamento bilateral com a Casa Rosada e abre questionamentos sobre a cooperação jurídica e os protocolos de controle fronteiriço do Mercosul.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Mapeamento das propriedades insulares na Costa Verde e conflitos possessórios",
+              "enfoque": "Aborda a cobrança de esclarecimentos pelo Itamaraty junto à representação argentina",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "disputa-patrimonial-ilhas-angra",
+          "editoria": "Rio",
+          "titulo": "Apuração revela patrimônio em ilhas de Angra dos Reis em meio a disputas locais",
+          "texto": "Investigação patrimonial identificou que o advogado Willer Tomaz é proprietário de ao menos cinco outras residências de alto padrão em ilhas de Angra dos Reis, na Costa Verde fluminense. Os imóveis somam-se à propriedade que foi alvo de litígio envolvendo familiares do atacante Richarlison. A ocupação privada do litoral na região é monitorada por órgãos de fiscalização fundiária e ambiental.",
+          "por_que_importa": "Casos de concentração e titularidade em ilhas do Rio de Janeiro expõem conflitos recorrentes sobre acesso a praias públicas e cumprimento de normas ambientais em áreas de preservação.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Mapeia os imóveis insulares em Angra dos Reis e o histórico das contendas judiciais",
               "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml"
             }
           ]
@@ -5881,16 +5881,12 @@
       ],
       "agenda": [
         {
-          "quando": "08h30",
-          "o_que": "Publicação do Relatório Focus pelo Banco Central com revisões para inflação, taxa Selic e câmbio para 2026 e 2027"
+          "quando": "Terça-feira (manhã)",
+          "o_que": "Comissão de Constituição e Justiça do Senado vota a PEC da Segurança Pública pautada por Davi Alcolumbre."
         },
         {
-          "quando": "14h00",
-          "o_que": "Reunião de líderes da Câmara dos Deputados para definir o calendário da reforma do sistema eleitoral proporcional"
-        },
-        {
-          "quando": "16h00",
-          "o_que": "Sessão deliberativa no Senado Federal antecedendo a votação da PEC da Segurança Pública"
+          "quando": "Quarta-feira",
+          "o_que": "Câmara dos Deputados retoma reuniões de líderes para deliberar sobre a tramitação da reforma do sistema eleitoral."
         }
       ]
     }
@@ -24519,9 +24515,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Senado pauta votação da PEC da Segurança Pública",
+      "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública no Senado",
       "resumo": [
-        "A presidência do Senado marcou para os próximos dias a votação em plenário da Proposta de Emenda à Constituição da Segurança Pública. O texto estabelece mecanismos formais de coordenação entre as forças policiais estaduais e órgãos federais para o combate às facções. O debate central gira em torno da autonomia dos governos estaduais na gestão de seus contingentes."
+        "O presidente da Comissão de Constituição e Justiça do Senado, Davi Alcolumbre, pautou a votação da Proposta de Emenda à Constituição (PEC) da Segurança Pública para a próxima terça-feira. A matéria busca unificar diretrizes nacionais para as polícias e ampliar a atuação da União no combate ao crime organizado. O texto centraliza atribuições e enfrenta debates sobre a autonomia federativa dos estados."
       ],
       "texto_integral": [
         "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
@@ -24553,7 +24549,7 @@
         "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
       ],
       "pontos": [
-        "Inclusão da PEC da Segurança Pública na pauta de votações do Senado"
+        "Destaca a estratégia de pautar a votação na comissão e os pontos de atrito federativo"
       ]
     },
     "rio-willer-tomaz-angra-patrimonio-g1.globo.com/politica/noticia/": {
@@ -25476,9 +25472,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Câmara avalia adoção do sistema distrital misto para deputados",
+      "titulo": "Câmara articula mudança para sistema distrital misto em eleições de deputados",
       "resumo": [
-        "Lideranças partidárias na Câmara dos Deputados articulam a discussão de uma mudança profunda nas regras eleitorais para as próximas eleições gerais. O modelo distrital misto em debate combina a escolha direta de parlamentares por circunscrições regionais com a votação proporcional em listas partidárias. A proposta busca baratear campanhas e aproximar os representantes de suas bases territoriais."
+        "A presidência e lideranças da Câmara dos Deputados intensificaram as discussões para alterar o atual modelo proporcional de eleição para o sistema distrital misto. A proposta combina o voto distrital individual com a votação em listas partidárias preordenadas. Lideranças pretendem acelerar o debate legislativo ainda durante os meses finais do ano legislativo."
       ],
       "texto_integral": [
         "Centrão tenta frear PL com voto distrital misto",
@@ -25517,7 +25513,7 @@
         "Também dizem que o distrital misto aproximaria o candidato dos problemas reais dos eleitores, ao se concentrarem em uma região menor."
       ],
       "pontos": [
-        "Debate interno na Câmara sobre mudança para sistema eleitoral distrital misto"
+        "Explica o funcionamento e a tramitação do modelo distrital misto em debate na Câmara"
       ]
     },
     "camara-sistema-distrital-misto-g1.globo.com/politica/blog/jul": {
@@ -26132,6 +26128,221 @@
       ],
       "pontos": [
         "Mapeamento das propriedades insulares na Costa Verde e conflitos possessórios"
+      ]
+    },
+    "aliquota-reforma-tributaria-consumo-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Imposto sobre consumo da reforma tributária pode superar 30%",
+      "resumo": [
+        "Estudos e estimativas recentes apontam que a alíquota padrão do novo imposto sobre consumo decorrente da reforma tributária pode ultrapassar o teto de 30%. O patamar colocaria o Brasil com uma das maiores taxas de tributação sobre bens e serviços do mundo, superando países desenvolvidos. O cálculo definitivo dependerá das exceções setoriais e dos regimes favorecidos aprovados na regulamentação."
+      ],
+      "texto_integral": [
+        "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
+        "O cálculo foi feito por técnicos do tribunal com base em dados da Receita Federal. O percentual será encaminhado ao Congresso Nacional, que poderá concordar ou não.",
+        "Caberá ao Senado, até 15 de dezembro, fixar o valor final da alíquota, que será cobrada a partir de 2027.",
+        "▶️Para mensurar o valor da CBS, técnicos do tribunal estimaram quanto seria arrecadado com os impostos que estão sendo extintos no fim de 2026 (PIS, Cofins e grande parte do IPI). Isso porque, uma das premissas da reforma sobre o consumo, é manter o atual patamar da carga tributária.",
+        "TCU propôs alíquota de 11,3% pra imposto sobre o consumo",
+        "🔎 Em 2024, o governo estimou que a alíquota da CBS seria de 8,8%. Cálculo da consultoria Roit apontava para uma alíquota de 9,43% em 2027. Estimativas divulgadas em julho pelo Comitê Gestor do IBS, dos estados, apontam que a CBS teria uma taxa de cerca de 9,2% no próximo ano.",
+        "▶️Além da CBS do governo federal, a reforma tributária também contempla a cobrança do IBS estadual e municipal, que terá uma alíquota marginal de 0,1% até 2028. A partir de 2029, os estados e municípios começam a aumentar, gradualmente, a cobrança do IBS. A cobrança integral começa em 2033.",
+        "▶️Antes de a alíquota da CBS ser proposta pelo TCU, estimativa do Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS) apontava que a alíquota cheia estiver sendo cobrada do imposto sobre o consumo do governo federal, estados e municípios, somaria cerca de 28%.",
+        "▶️Depois da divulgação da proposta do tribunal para a CBS, bem acima do esperado, analistas passaram a apontar que o imposto brasileiro será de ao menos 30% em 2033 — o primeiro ano com tributação cheia. O g1 considerou o patamar de 30% para comparação internacional.",
+        "▶️ Se confirmada, seria maior do que a alíquota de todos os países desenvolvidos, segundo ranking da Tax Foundation — organização sem fins lucrativos que faz avaliações sobre impostos e coleta dados sobre tributos ao redor do mundo.",
+        "▶️De acordo com o levantamento, alíquota média dos impostos gerais sobre o consumo nos países da OCDE foi de 19,4%, bem abaixo do valor estimado para o futuro IVA brasileiro. O ranking, com dados de 2026, foi divulgado em 19 de outubro (veja abaixo).",
+        "➡️O governo federal, por sua vez, alega que, atualmente, os impostos cobrados sobre o consumo no país são ainda maiores, com tributação média de cerca de 34% – mas que há dificuldade em calcular o peso dos impostos pois o sistema é muito complexo, há exceções. Além disso, alguns tributos incidem sobre si mesmos (por dentro, em cascata).",
+        "➡️Este modelo \"por dentro\" torna mais difícil identificar quanto de imposto está efetivamente embutido no preço de um produto ou serviço. Por isso, as notas fiscais trazem apenas uma estimativa \"do valor aproximado de tributos\". Com a reforma tributária, eles passarão a ser cobrados por fora (aparecerão separados do valor do produto ou serviço).",
+        "➡️Um dos problemas que resultaram em um alto imposto sobre o consumo no Brasil foi a decisão do governo do presidente Lula, e de legisladores, de terem proposto e aprovado que o atual peso dos impostos nessa base de tributação fosse mantido.",
+        "🔎A consequência da concentração maior da carga tributária brasileira sobre o consumo no Brasil é o alto grau de \"regressividade\" (se arrecada proporcionalmente mais de quem ganha menos) — prejudicando, dessa forma, os mais pobres.",
+        "Números da Receita mostram que impostos sobre bens e serviços, ou seja, os tributos indiretos embutidos nos preços, representaram 43,5% de toda a carga tributária brasileira em 2024, ficando acima da média da OCDE (países ricos). Ao mesmo tempo, os tributos sobre o lucro, renda e o ganho de capital do brasileiro, focados nos contribuintes mais ricos, estão bem abaixo da média da OCDE, formada por países mais desenvolvidos.",
+        "Para Luís Garcia, advogado tributarista pela USP/SP e sócio do Tax Group, o alto patamar do endividamento do setor público e a rigidez das despesas mantêm a pressão por arrecadação e impedem que a reorganização dos tributos, isoladamente, produza alívio fiscal.",
+        "“A reforma tributária pode significar simplificação, mas jamais redução de carga tributária enquanto o Brasil continuar refém de uma política fiscal irresponsável”, avaliou o tributarista Luís Garcia.",
+        "▶️Outro entrave, este relacionado ao fato de que a alíquota proposta pelo TCU ficou acima do estimado anteriormente por analistas, tem a ver com as exceções aprovadas na tramitação da reforma tributária no Congresso Nacional, ou seja, com os benefícios concedidos na aquisição de determinados produtos e serviços.",
+        "Considerando a premissa básica de que a reforma deve manter o atual nível de arrecadação dos tributos sobre o consumo, os benefícios concedidos a determinados produtos e setores resultam em uma alíquota de referência mais elevada para as atividades que não contam com incentivos fiscais, algo que já havia sido apontado, à época, por representantes da indústria nacional.",
+        "Entre os benefícios aprovados na tramitação da reforma tributária, estão alíquota zero para a cesta básica, incluindo as proteínas (o que, segundo especialistas, beneficia a população mais rica), para uma lista de medicamentos e dispositivos médicos.O Congresso aprovou ainda alíquotas reduzidas para serviços de educação e saúde; medicamentos e dispositivos médicos; produções artísticas, culturais, jornalísticas e audiovisuais nacionais; atividades desportivas; e profissões regulamentadas e fiscalizadas por conselhos profissionais.",
+        "A Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) manifestou preocupação com a alíquota de referência de 11,3% pois ela reforça o risco de aumento da carga tributária para as empresas. A preocupação é especialmente relevante para prestadores de serviços sujeitos atualmente à alíquota conjunta de 3,65% de PIS/Cofins no regime cumulativo.",
+        "\"A substituição por uma CBS com referência de 11,3% representa uma elevação expressiva da alíquota nominal, embora o impacto efetivo dependa dos créditos e do tratamento tributário de cada atividade. Empresas intensivas em mão de obra ficam mais expostas, pois a folha de pagamentos não gera créditos\", avaliou a CNC, por meio de nota.",
+        "A Associação Brasileira da Indústria de Alimentos (ABIA) informou considerar preocupante a proposta de fixação da alíquota de referência de 11,3% para a CBS, bem acima das estimativas anteriores. Avalia que uma diferença dessa magnitude \"ameaça elevar a carga tributária das empresas, com efeitos que podem se refletir nos preços ao consumidor\".",
+        "\"A definição da alíquota não deve ignorar os impactos sobre a produção, os investimentos e o custo dos alimentos. Além de aumentar os preços, uma alíquota elevada da CBS ameaça ampliar a pressão sobre o orçamento das famílias de menor renda, comprometendo seu acesso à alimentação\", acrescentou a ABIA, em nota.",
+        "Paulo Skaf, presidente da Federação das Indústrias do Estado de São Paulo (Fiesp), disse que o patamar de 11,3% estimado pelo TCU quebra a premissa central da reforma tributária de manutenção da carga fiscal.",
+        "Segundo ele, estudos técnicos apontavam equilíbrio em torno de 9% para o imposto, e que a nova projeção retira da economia mais de R$ 100 bilhões em tributos adicionais já em 2027, empurrando o IVA Dual (CBS + IBS) para além de 30% - a maior taxa do mundo.",
+        "\"A produção, os investimentos e o emprego não suportam mais impostos. O reequilíbrio fiscal do Brasil exige corte e controle de gastos públicos, e não aumento de arrecadação sobre quem produz. Esperamos o bom senso do Senado Federal para corrigir essa distorção\", declarou o presidente da Fiesp.",
+        "A Conexis Brasil Digital, Sindicato Nacional das Empresas de Telefonia e de Serviço Móvel, Celular e Pessoal, informou ter recebido com preocupação a proposta de fixação da alíquota de referência de 11,3% para a CBS.",
+        "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
+      ],
+      "pontos": [
+        "Compara alíquotas projetadas para o Brasil com médias praticadas em países ricos"
+      ]
+    },
+    "governo-cnu-2027-vagas-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Governo planeja CNU 2027 com até 3 mil vagas condicionado ao Orçamento",
+      "resumo": [
+        "O Ministério da Gestão informou que a edição de 2027 do Concurso Nacional Unificado (CNU) poderá disponibilizar até 3 mil vagas no serviço público federal. A efetivação e a data de aplicação das provas permanecem atreladas à aprovação do projeto de lei orçamentária no Congresso Nacional. A iniciativa visa preencher carências estruturais em ministérios e agências reguladoras."
+      ],
+      "texto_integral": [
+        "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
+        "A realização do concurso, no entanto, depende da aprovação da proposta de orçamento do próximo ano, enviada ao Congresso Nacional no fim de agosto.",
+        "“Como sempre informamos, a realização de um novo CPNU em 2027 está condicionada à aprovação do PLOA e do espaço fiscal para novas vagas que será aprovado pelo Congresso Nacional”, afirmou o ministério, em nota.",
+        "\"Considerando concursos já autorizados e novos que podem ser definidos (dependendo do PLOA), duas a três mil novas vagas compensam a realização de um CPNU em 2027\", completou a pasta.",
+        "Saiba como se preparar para enfrentar um concurso",
+        "No início desta semana, o MGI já havia informado ao g1 que a realização do certame dependeria da aprovação do orçamento do próximo ano.",
+        "Na ocasião, o ministério também destacou que considera o CPNU uma política pública voltada à renovação, à modernização e à democratização do acesso ao serviço público federal.",
+        "A intenção do governo é consolidar o modelo como um processo permanente de seleção de servidores, com edições em ciclos regulares, preferencialmente a cada dois anos.",
+        "\"Dessa forma, a ideia é que o CPNU se consolide como um processo permanente de seleção de servidores, com edições realizadas em ciclos regulares, idealmente a cada dois anos, de forma a garantir planejamento, recomposição gradual da força de trabalho e maior previsibilidade para os candidatos e para os órgãos públicos\", declarou a pasta.",
+        "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
+      ],
+      "pontos": [
+        "Detalha previsão de vagas no Executivo federal condicionadas ao teto orçamentário"
+      ]
+    },
+    "justica-documentos-tancredo-neves-g1.globo.com/df/distrito-feder": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Justiça quebra sigilo de documentos médicos e oficiais sobre morte de Tancredo",
+      "resumo": [
+        "A Justiça Federal determinou o levantamento do sigilo sobre documentos históricos e prontuários médicos ligados à internação e à morte de Tancredo Neves em 1985. A decisão viabiliza o acesso público a laudos e registros do Hospital de Base de Brasília e do Instituto do Coração de São Paulo. Pesquisadores e historiadores aguardavam há décadas a liberação integral do material."
+      ],
+      "texto_integral": [
+        "Justiça determina quebra do sigilo médico sobre morte de Tancredo Neves",
+        "Há pouco mais de 40 anos, o Brasil festejava um momento histórico: a eleição e a futura posse do primeiro presidente civil, após duas décadas do regime militar.",
+        "A internação na véspera da posse – e a morte inesperada do presidente eleito Tancredo Neves em 21 de abril de 1985 – mudou novamente os rumos da política nacional. E, ainda hoje, é cercada de mistérios e até teorias da conspiração.",
+        "Uma decisão dada pela Justiça Federal nesta semana pode começar a solucionar essas dúvidas. O Tribunal Regional Federal da 1ª Região foi unânime ao aprovar que a família de Tancredo tenha acesso a documentos sigilosos sobre a internação no Hospital de Base, em Brasília.",
+        "✅ Clique aqui para seguir o canal do g1 no WhatsApp.",
+        "O objetivo é sanar a dúvida da família --- e de inúmeros eleitores da época --- sobre a suspeita de erro médico.",
+        "Tancredo Neves foi internado na véspera da posse presidencial com quadro de diverticulite – inflamação na região do intestino grosso. Ele morreu um mês depois, em 21 de abril de 1985.",
+        "Com a nova decisão, o Conselho Federal de Medicina (CFM) e o Conselho Regional de Medicina do Distrito Federal (CRM-DF), devem liberar prontuários, relação de médicos e outros documentos.",
+        "Procuradas pelo g1, as entidades afirmaram que ainda não foram oficialmente notificadas.",
+        "Apesar de a decisão ter chegado apenas em 2026, a busca por explicações começou em 2010, com a publicação do livro \"O paciente\", de Luís Mir. Com autorização da família, o escritor pesquisou a fundo o período e encontrou falhas nos procedimentos.",
+        "A advogada Juliana Porcaro explica que a família pediu aos conselhos que liberassem os documentos, mas a demanda foi negada com base no sigilo da relação médico-paciente. Por isso, o caso foi parar na Justiça.",
+        "As hipóteses de erro médico levantadas pelo autor e pelos familiares se sustentam em quatro fatores.",
+        "Cirurgia imediata: especialistas ouvidos pelo escritor questionam a decisão de uma cirurgia de emergência. Isso porque os procedimentos contra diverticulite costumam ser eletivos, ou seja, passíveis de agendamento enquanto o paciente segue com outros tratamentos. Técnicas questionáveis: Mais de 30 acompanhantes estiveram na sala de cirurgia durante o procedimento, o que é proibido por razões de segurança. Advertência: Médicos envolvidos no tratamento receberam advertência do CRM-DF. O motivo da notificação, no entanto, segue como um mistério. Falhas na recuperação: O autor acredita que falhas no protocolo de recuperação podem ter contribuído para complicações.",
+        "Uma das fotos mais emblemáticas da época é a foto de Tancredo Neves sentado ao lado dos médicos (veja abaixo). Por conta da região da cirurgia, no entanto, ele não poderia ter sido colocado naquela posição.",
+        "Após hemorragia e outras complicações, Tancredo foi transferido do Instituto do Coração (Incor) já em estado grave.",
+        "\"Quando ele veio a óbito, os médicos não tiveram coragem de declarar o óbito, eles chamaram o médico americano [Warren Zapol], que veio ao Brasil e avaliou\", conta Juliana.",
+        "Para a advogada e porta-voz da família, a divulgação dos dados não é apenas de interesse das pessoas próximas, mas ajuda a contar a \"história de uma nação\".",
+        "\"Se há uma advertência, é porque houve um processo administrativo no conselho e algo foi considerado errado. E é a esse 'algo' que a família quer ter acesso. Quer entender como os próprios médicos do Conselho entenderam a postura dos médicos responsáveis pelo presidente Tancredo Neves\", afirma.",
+        "Juliana conta que esteve com o ex-presidente José Sarney, que confirma a percepção de que houve negligência por parte da equipe de saúde.",
+        "\"Ele confirmou que teve esse receio de assumir a presidência, porque foi muito delicado. Ninguém sabia se isso ia ser bem aceito\", comenta.",
+        "Com a posse de Sarney, vice na chapa de Tancredo, o Brasil iniciou um novo momento na política com a eleição de civis.",
+        "Leia mais notícias sobre a região no g1 DF."
+      ],
+      "pontos": [
+        "Reporta o teor da decisão judicial e o acervo documental aberto a pesquisadores"
+      ]
+    },
+    "itamaraty-embaixada-argentina-fuga-flavio-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Itamaraty convoca embaixada argentina após cruzamento de fronteira por Flávio",
+      "resumo": [
+        "O Ministério das Relações Exteriores convocou formalmente o encarregado de negócios da embaixada da Argentina em Brasília. A pasta cobra esclarecimentos diplomáticos sobre a travessia da fronteira terrestre pelo senador Flávio Bolsonaro rumo a Buenos Aires antes de seu embarque para os Estados Unidos. O senador viajou em meio a ordens restritivas emitidas pelo Judiciário."
+      ],
+      "texto_integral": [
+        "Itamaraty ouve diplomata argentina sobre fuga de Flávio Bolsonaro para os EUA",
+        "O Ministério das Relações Exteriores (Itamaraty) convocou a encarregada de Negócios da Embaixada da Argentina no Brasil, María Emilia Cortés, a prestar esclarecimentos sobre o contexto da fuga do senador Flávio Bolsonaro (PL) para os Estados Unidos nesta semana.",
+        "O governo da Argentina confirmou que o senador embarcou com a família em um avião particular que partiu da Argentina na noite de terça-feira (27).",
+        "María Emilia Cortés foi recebida na tarde desta quinta-feira (29) pelo chefe do Departamento do Mercosul do Itamaraty, João Marcelo Galvão de Queiroz, em Brasília.",
+        "Na conversa, o embaixador pediu a ela informações sobre a fuga do senador e, segundo diplomatas que participaram da reunião, María Emilia ficou de transmitir o que foi debatido ao governo de Javier Milei.",
+        "De acordo com diplomatas, o procedimento é praxe em casos desse tipo e não estão previstos desdobramentos no momento. No entanto, novos passos serão definidos à luz dos desdobramentos das apurações.",
+        "Internamente, o governo brasileiro decidiu fechar a posição de que o Brasil quer virar a página sobre a fuga do senador e não dar mais importância ao assunto.",
+        "Integrantes do governo já decidiram não entrar em discussões públicas com o governo argentino sobre o episódio.",
+        "Segundo o blog do colunista do g1 Valdo Cruz, o presidente Luiz Inácio Lula da Silva (PT) foi aconselhado por interlocutores a não falar mais em Flávio Bolsonaro (PL), focar em seu quarto mandato e deixar claro que o problema do senador é com o Judiciário.",
+        "Autoridades argentinas negam que tenha havido pedido de informações",
+        "Em uma rede social, o chanceler argentino, Pablo Quirno, negou que o Brasil tenha pedido explicações à Argentina sobre a fuga de Flávio Bolsonaro (PL-RJ) para os Estados Unidos, passando por território do país.",
+        "\"Falso. Não houve nenhum pedido de explicações\", disse sobre uma publicação do jornal local La Nación.",
+        "O presidente Javier Milei repostou a publicação de Quirno e escreveu: \"La Nación mentindo\".",
+        "Flávio Bolsonaro (PL-RJ) desembarcou nos Estados Unidos na quarta-feira (28) após fugir do Brasil com a esposa e as duas filhas.",
+        "A família viajou em um avião particular que partiu da Argentina e fez uma escala no Equador.",
+        "A rota começou ainda na noite de terça-feira (27), quando Flávio e a família entraram na Argentina após cruzarem a Ponte Internacional Tancredo Neves. A via liga Foz do Iguaçu, no Paraná, a Puerto Iguazú, na província argentina de Misiones.",
+        "Segundo a Direção Nacional de Migrações da Argentina, a família cruzou a fronteira às 22h50, pelo horário de Brasília.O órgão afirmou que os quatro apresentaram documentação válida para a viagem e não tinham nenhum impedimento legal para entrar no país.",
+        "Cerca de 40 minutos depois, às 23h30, Flávio e a família embarcaram em um jatinho particular do modelo Gulfstream G400, de matrícula LV-JQW. A aeronave pertence à Baires Fly, empresa argentina que realiza voos privados.",
+        "O avião decolou de Puerto Iguazú às 0h22 de quarta. A aeronave sobrevoou o Paraguai, a Bolívia e o Peru, evitando o espaço aéreo brasileiro. Às 5h46, pelo horário de Brasília, o jatinho pousou no aeroporto de Guayaquil, no Equador.",
+        "Flávio ficou menos de uma hora em solo equatoriano. O avião decolou novamente às 6h22, com destino aos Estados Unidos.",
+        "A viagem terminou às 10h24, horário de Brasília, quando o avião com o senador e a família pousou no Aeroporto Executivo de Fort Lauderdale, na Flórida. O terminal fica na região de Miami.",
+        "Voo de fuga de Flávio foi pago por intermediário a partir dos EUA, diz dono do avião",
+        "Flávio deixou o Brasil após o Supremo Tribunal Federal (STF) determinar que ele entregasse os passaportes à Polícia Federal.",
+        "A decisão foi dada em um processo no qual Flávio e o advogado Willer Tomaz são investigados por lavagem de dinheiro, em um suposto esquema que envolveria empresas de Tomaz e bets.Os dois confirmam que são amigos, mas negam ser sócios e ter cometido qualquer irregularidade.",
+        "Na terça-feira (27), um representante do Departamento de Estado dos EUA informou que o governo americano concederia vistos a Flávio Bolsonaro e à família e permitiria a entrada deles no país.",
+        "Uma consulta ao sistema da Alfândega e Proteção de Fronteiras dos Estados Unidos (CBP, na sigla em inglês) mostra que o senador recebeu autorização para permanecer por um ano no país.",
+        "Os registros mostram que Flávio foi admitido em uma categoria identificada pelo código \"DT\".",
+        "A sigla é usada para autorizações temporárias no país, geralmente ligadas a questões humanitárias.",
+        "O g1 procurou a agência para esclarecer o status migratório do senador, mas não obteve resposta até a última atualização desta reportagem.",
+        "A consulta mostrou ainda que Flávio utilizou um passaporte diplomático que havia sido cancelado para entrar nos Estados Unidos.",
+        "PF investiga como Flávio Bolsonaro descumpriu ordem de não deixar o Brasil",
+        "A Polícia Federal (PF) apontou riscos \"concretos e atuais\" de fuga ao pedir ao ministro Alexandre de Moraes, do STF, a apreensão do passaporte e a proibição de saída do país de Flávio Bolsonaro.",
+        "Na avaliação da PF, três elementos centrais indicavam que Flávio poderia deixar o Brasil sob a justificativa de suposta perseguição política:",
+        "a manifestação pública e direta do deputado cassado Eduardo Bolsonaro, recomendando ao irmão que deixasse o país;o expressivo poder econômico;a existência de estruturas já estabelecidas no exterior que poderiam viabilizar uma permanência prolongada.",
+        "O pedido da PF citou uma declaração de Eduardo Bolsonaro em que ele defendeu que o irmão deixasse o país caso fosse derrotado na disputa pelo Palácio do Planalto.",
+        "\"Em entrevista concedida recentemente nos Estados Unidos, EDUARDO BOLSONARO, irmão do Senador FLÁVIO BOLSONARO, defendeu publicamente que este deixe o país caso não obtenha êxito no pleito eleitoral. Cabe recordar que EDUARDO BOLSONARO foi recentemente condenado pelo crime de coação no curso do processo\", disseram os investigadores."
+      ],
+      "pontos": [
+        "Aborda a cobrança de esclarecimentos pelo Itamaraty junto à representação argentina"
+      ]
+    },
+    "disputa-patrimonial-ilhas-angra-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Apuração revela patrimônio em ilhas de Angra dos Reis em meio a disputas locais",
+      "resumo": [
+        "Investigação patrimonial identificou que o advogado Willer Tomaz é proprietário de ao menos cinco outras residências de alto padrão em ilhas de Angra dos Reis, na Costa Verde fluminense. Os imóveis somam-se à propriedade que foi alvo de litígio envolvendo familiares do atacante Richarlison. A ocupação privada do litoral na região é monitorada por órgãos de fiscalização fundiária e ambiental."
+      ],
+      "texto_integral": [
+        "Willer Tomaz tem outras cinco casas em ilhas de Angra além da que disputou com Richarlison",
+        "O advogado Willer Tomaz, investigado no Supremo Tribunal Federal (STF) junto com o senador Flávio Bolsonaro (PL-RJ) por suspeitas de lavagem de dinheiro, tem outras cinco casas em ilhas de Angra dos Reis, na Costa Verde do Rio de Janeiro, além da que virou alvo de disputa com o jogador Richarlison.",
+        "Com exceção de uma, as casas foram compradas entre 2021 e 2022, na mesma época em que Flávio apresentou ao Senado Federal um projeto de lei para estimular empreendimentos em Angra, permitindo a municipalização das unidades de conservação federais e estaduais.",
+        "O objetivo do projeto é flexibilizar as regras para a exploração econômica da área.",
+        "Também no mesmo período, Flávio foi o relator da PEC das Praias no Senado. O texto propõe permitir a privatização das ilhas marítimas do país, hoje pertencentes à União. Os dois projetos continuam em tramitação (leia mais sobre as propostas abaixo).",
+        "Os planos para a Costa Verde do Rio vêm desde o governo de Jair Bolsonaro. Em maio de 2019, o então presidente afirmou que queria fazer de Angra \"uma nova Cancún\".",
+        "\"O nosso estado merece ter uma Cancún. E nós poderemos tê-la. E estamos trabalhando para a região de Angra. Depende de um decreto presidencial. Porque a Estação Ecológica de Tamoios está demais. Não preserva absolutamente nada e faz de uma área rica, que pode trazer bilhões de reais, por ano, em turismo, parada por falta de uma visão mais objetiva, mais progressista nessa questão\", declarou Jair à época.",
+        "🔎 Pela Constituição Federal, as ilhas são bens da União. Empresas e indivíduos podem ocupá-las, mediante processos de aforamento ou de ocupação registrados junto à Secretaria de Patrimônio da União (SPU), órgão responsável pela gestão das ilhas. Essas ocupações podem ser revistas pela SPU.",
+        "Questionado sobre eventuais projetos comerciais previstos para suas ilhas e sobre sua relação com as propostas legislativas elaboradas por Flávio Bolsonaro, Willer Tomaz não se manifestou. O senador não foi localizado pela reportagem.",
+        "Tomaz se mudou para os Estados Unidos em agosto deste ano, depois de ser alvo de uma operação da Polícia Federal. Flávio fugiu para a Flórida dois dias após ser derrotado no segundo turno da eleição presidencial por Luiz Inácio Lula da Silva (PT).",
+        "As casas compradas por empresas de Willer Tomaz em Angra são localizadas na:",
+        "Ilha Comprida: em um terreno de 175,2 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 5,7 milhões;Ilha Comprida: em um terreno de 32,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 2,1 milhões;Ilha Comprida: em um terreno de 181,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 6 milhões;Ilha Comprida: em um terreno de 2,1 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em julho de 2022. Valor patrimonial registrado de R$ 2,9 milhões (imóvel disputado com Richarlison);Ilha do José André: em um terreno de 57,3 mil m², comprada pela empresa Friponor Brasil Turismo, Empreendimentos e Participações, em 2008. Valor patrimonial registrado de R$ 23,7 milhões.",
+        "Os dados são de um levantamento feito nos sistemas da SPU e em registros de cartório.",
+        "Tomaz é dono, também, de cotas de uma sexta casa em Angra, na Ilha do Jorge, registrada em nome da empresa Real Estate Duo 4, pertencente ao grupo Prime You.",
+        "🔎 A Prime You é uma companhia especializada em administrar bens de luxo compartilhados por milionários, como aviões, barcos e mansões. O banqueiro Daniel Vorcaro, do Master, foi sócio da Prime You de setembro de 2021 a setembro de 2025. Vorcaro também costumava usar uma casa na Ilha do Jorge próxima da de Tomaz, como revelou o UOL.",
+        "Ao portal, Tomaz afirmou que adquiriu participação de 25% na casa da Prime You em 2022 e que nunca teve \"qualquer relação pessoal, comercial ou societária\" com Vorcaro.",
+        "O episódio que jogou luz sobre os investimentos de Willer Tomaz em Angra foi a disputa por uma das casas com Richarlison de Andrade, atacante do Tottenham e que já jogou pela Seleção Brasileira.",
+        "O jogador publicou vídeos em 17 e 21 de outubro acusando Flávio Bolsonaro de envolvimento na briga pelo imóvel de luxo. Os vídeos tiveram milhões de visualizações em meio ao processo eleitoral. No debate da Globo, Lula questionou Flávio sobre o caso, e o então candidato respondeu que a Justiça já havia decidido a favor de Tomaz. Na véspera do segundo turno, o petista disse que ia brigar para devolver a Richarlison o direito de ocupação.",
+        "O atacante disse nos vídeos que ocupava a casa na Ilha Comprida desde 2020 e que investiu R$ 10 milhões no local, por meio de uma empresa da qual é sócio, a Sport 70.",
+        "Segundo Richarlison, Flávio visitou sua ilha e demonstrou interesse na propriedade — que tem uma cachoeira que deságua no mar —, mas o jogador se recusou a vendê-la. Na visão do atacante, o senador se aliou a Tomaz, de quem é amigo, para conseguir os direitos sobre o imóvel.",
+        "O g1 analisou os processos da Secretaria de Patrimônio da União (SPU) envolvendo a casa. A empresa Sport 70, de Richarlison, pediu à SPU para regularizar sua utilização do imóvel em 20 de setembro de 2021. O processo administrativo não teve andamento.",
+        "Do lado de Willer Tomaz, o processo de regularização da utilização começou em 5 de maio de 2022. Nessa data, uma empresa de terceiros, a M Locadora de Veículos, solicitou à SPU a regularização de sua situação de ocupante, algo que remontava à década de 1980. O processo teve andamento célere e favorável no órgão.",
+        "Em 11 de julho de 2022, a M Locadora de Veículos pediu à SPU para emitir uma Certidão de Autorização para Transferência (CAT), documento necessário para vender o direito de ocupação. O pedido foi feito às 11h33 e foi atendido pela SPU às 13h13 do mesmo dia.",
+        "Em seguida, a M Locadora passou o imóvel para a WT Administração de Imóveis e Bens, de Willer Tomaz.",
+        "De acordo com um servidor ouvido pela reportagem, a celeridade da tramitação em um caso e a ausência de análise da SPU, em outro, é o ponto mais controverso da disputa no âmbito administrativo. Em 2022, a SPU estava subordinada ao governo de Jair Bolsonaro.",
+        "A poucos dias do segundo turno da eleição presidencial, dois parlamentares adversários de Flávio — Rogério Correia (PT-MG) e Pedro Uczai (PT-SC) — pediram ao STF para investigar o caso da ilha de Richarlison no mesmo inquérito que já apura as relações entre o senador e Willer Tomaz. O relator é o ministro Alexandre de Moraes.",
+        "Tomaz e Flávio confirmam que são amigos, mas negam ter negócios juntos.",
+        "Sobre a disputa com Richarlison, Tomaz sustenta que o jogador \"pagou a posseiros\" quando comprou a casa, \"e não à proprietária de direito\".",
+        "O advogado apresenta escritura registrada do imóvel, certidão da SPU e decisões favoráveis na Justiça, inclusive no Superior Tribunal de Justiça (STJ).",
+        "Na Ilha do José André, localizada dentro da Área de Proteção Ambiental (APA) de Tamoios, o plano de Tomaz era construir um resort de luxo com piscinas, beach club, spa, restaurante, área para eventos, hangar e heliponto, como revelou o RJ2.",
+        "Para expandir a área construída na ilha, o advogado apresentou um pedido ao Instituto Estadual do Ambiente (Inea) do Rio de Janeiro em 20 de março de 2026, no mesmo dia em que o então governador Cláudio Castro publicou um decreto que revogava planos de manejo de áreas de proteção ambiental.",
+        "O decreto de Castro acabou sendo posteriormente derrubado pelo desembargador Ricardo Couto, que assumiu o governo do estado. O empreendimento de Tomaz não avançou.",
+        "Cláudio Castro afirmou que não discutiu previamente o conteúdo do decreto com Willer Tomaz e não recebeu nenhum pedido para editar a medida. Segundo o ex-governador, o decreto tinha caráter geral e técnico. Tomaz informou ao RJ2 que não comentaria esse caso.",
+        "O senador Flávio Bolsonaro apresentou, em 13 de outubro de 2021, o projeto para formar uma Região Administrativa Integrada de Desenvolvimento Sustentável (Rides) com os municípios de Angra dos Reis, Mangaratiba e Paraty.",
+        "O objetivo seria estimular o turismo, a economia e a preservação ambiental. O texto do Projeto de Lei Complementar n° 157/2021 também autoriza municipalizar as unidades de conservação federais e estaduais.",
+        "Em 28 de setembro, Tomaz havia adquirido três casas na Ilha Comprida.",
+        "\"Esse cenário paradisíaco não deixa nada a desejar em relação aos destinos turísticos similares mais procurados do mundo, como por exemplo Tailândia, Filipinas, Cancun, Grécia, Jamaica, Bahamas, Fiji ou República Dominicana\", escreveu Flávio na justificativa do projeto.",
+        "O senador afirmou também que as prefeituras \"aguardam com grande expectativa\" a aprovação do projeto. O texto está para ser analisado na Comissão de Meio Ambiente do Senado desde abril de 2025.",
+        "Já a PEC das Praias foi apresentada inicialmente na Câmara dos Deputados, em 2011. A proposta foi aprovada pelos deputados no plenário somente em fevereiro de 2022, quando seguiu para o Senado, onde aguarda análise na Comissão de Constituição e Justiça (CCJ).",
+        "Em abril de 2022, Flávio foi designado relator. Ele elaborou dois relatórios para a CCJ prevendo excluir da lista de bens da União os chamados \"terrenos de marinha\", incluindo as ilhas. Na prática, elas poderão ser privatizadas pelos ocupantes.",
+        "No atual regime, as ilhas podem ser usadas por pessoas ou empresas, mas essa ocupação pode ser revista pela SPU.",
+        "Em setembro de 2024, já no governo de Lula, a SPU fez uma nota técnica manifestando-se contrária à aprovação da PEC das Praias. Para o órgão, o texto \"favorece amplamente as condições jurídicas para a grilagem de toda costa brasileira em favor da população mais abastada do país\"."
+      ],
+      "pontos": [
+        "Mapeia os imóveis insulares em Angra dos Reis e o histórico das contendas judiciais"
       ]
     }
   }
