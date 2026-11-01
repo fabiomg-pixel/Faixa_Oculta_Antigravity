@@ -5643,6 +5643,129 @@
           "o_que": "Prazo de manifestação da PGR solicitado pelo STF sobre condenação de Jair Bolsonaro"
         }
       ]
+    },
+    "2026-11-01": {
+      "data": "2026-11-01",
+      "edicao": "manha",
+      "titulo": "Câmara discute reforma eleitoral e alíquota de consumo gera alerta",
+      "resumo_dia": "O Congresso entra em novembro avaliando profundas reformas estruturais, que vão da revisão das regras para a eleição de deputados federais aos impactos fiscais da regulamentação tributária. No campo econômico, projeções apontam que a alíquota geral de consumo pode superar 30%, enquanto o déficit das estatais acumulado até setembro atingiu recorde histórico de R$ 8,5 bilhões. No funcionalismo e na gestão pública, o governo federal estima ofertar 3 mil vagas no CNU 2027 dependendo da aprovação orçamentária. No Judiciário e histórico nacional, a abertura de documentos sobre a morte de Tancredo Neves encerra décadas de sigilo.",
+      "notas": [
+        {
+          "id": "camara-novo-modelo-eleicao-deputados",
+          "editoria": "Política",
+          "titulo": "Câmara debate novo modelo eleitoral para deputados federais",
+          "texto": "A presidência da Câmara articula a reformulação do sistema eleitoral proporcional em vigor, colocando em pauta modelos alternativos como o distrital misto. A discussão ganha tração com lideranças partidárias que buscam alterar as regras de representação política antes dos próximos ciclos de votação.",
+          "por_que_importa": "Mudanças no sistema proporcional redefinem a dinâmica de representatividade, a força de caciques partidários e a relação direta de parlamentares com suas bases eleitorais regionais.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Detalhamento das regras e propostas em debate entre os deputados",
+              "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "reforma-tributaria-aliquota-consumo-30",
+          "editoria": "Economia",
+          "titulo": "Imposto sobre consumo pode passar de 30% na regulamentação",
+          "texto": "Simulações técnicas sobre a regulamentação da reforma tributária indicam que a alíquota padrão do IVA dual brasileiro poderá ultrapassar o patamar de 30%. Esse percentual superaria as maiores cobranças sobre consumo praticadas entre as principais economias da OCDE.",
+          "por_que_importa": "O valor final da alíquota reflete o volume de isenções e regimes diferenciados aprovados, pressionando diretamente o custo de vida e os preços de produtos e serviços essenciais.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Comparativo internacional das alíquotas de imposto sobre consumo",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "deficit-estatais-recorde-setembro",
+          "editoria": "Economia",
+          "titulo": "Déficit de estatais federais bate recorde de R$ 8,5 bilhões",
+          "texto": "As empresas estatais federais registraram um déficit primário acumulado de R$ 8,5 bilhões até setembro, estabelecendo um novo recorde para a série histórica recente. O resultado contrasta com o desempenho do governo central no mesmo mês e reforça a pressão sobre as contas consolidadas do setor público.",
+          "por_que_importa": "O descompasso financeiro de empresas públicas exige aportes do Tesouro Nacional, competindo com o orçamento de áreas prioritárias como ciência, saúde e infraestrutura.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Balanço das contas públicas e gastos das estatais federais",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "cnu-2027-vagas-orcamento",
+          "editoria": "Ciência",
+          "titulo": "Governo prevê 3 mil vagas no CNU de 2027 condicionadas ao Orçamento",
+          "texto": "O Ministério da Gestão informou que a próxima edição do Concurso Nacional Unificado pode oferecer até 3 mil vagas no funcionalismo público federal. O cronograma e a execução das provas, no entanto, dependerão expressamente do espaço fiscal garantido na Lei Orçamentária Anual.",
+          "por_que_importa": "A realização contínua do CNU é crucial para a recomposição dos quadros de agências reguladoras, institutos de pesquisa e ministérios estratégicos para o desenvolvimento científico.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Previsão de vagas e condicionantes orçamentárias no MGI",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "senado-pec-seguranca-publica",
+          "editoria": "Política",
+          "titulo": "Senado pauta votação da PEC da Segurança Pública",
+          "texto": "O presidente da Comissão de Constituição e Justiça do Senado incluiu na pauta de terça-feira a Proposta de Emenda à Constituição da Segurança Pública. O texto propõe reestruturar as competências das polícias da União e estabelecer novas diretrizes de cooperação com os estados.",
+          "por_que_importa": "A proposta busca unificar bancos de dados criminais e aumentar a coordenação federal em fronteiras e combate ao crime organizado em áreas urbanas conurbadas.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Pauta de votações legislativas no Senado Federal",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "mte-denuncias-assedio-eleitoral",
+          "editoria": "Política",
+          "titulo": "MTE registra mais de 4,3 mil denúncias de assédio eleitoral",
+          "texto": "O Ministério do Trabalho e Emprego contabilizou 4,3 mil queixas de assédio eleitoral em empresas em apenas três dias após o pleito. O volume já supera os registros de anos anteriores e concentra relatos de constrangimento e ameaças de demissão ligados à opção de voto de empregados.",
+          "por_que_importa": "O salto nas denúncias evidencia tensões trabalhistas decorrentes da polarização política e exige atuação célere de procuradores para garantir a integridade dos direitos civis no emprego.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Dados das apurações do Ministério do Trabalho",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "quebra-sigilo-morte-tancredo-neves",
+          "editoria": "Política",
+          "titulo": "Justiça autoriza abertura de documentos sobre a morte de Tancredo",
+          "texto": "A Justiça Federal determinou o levantamento do sigilo de prontuários médicos e registros oficiais relativos à internação e morte do presidente eleito Tancredo Neves, ocorrida em 1985. A documentação abrange relatórios hospitalares e laudos que permaneceram inacessíveis por quatro décadas.",
+          "por_que_importa": "O acesso a registros médicos de momentos cruciais da redemocratização fortalece a transparência pública e permite a historiadores e cientistas políticos sanar lacunas documentais da história recente.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Decisão judicial e o impacto nos arquivos da Nova República",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml"
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "09h00",
+          "o_que": "Reunião de lideranças partidárias no Congresso Nacional para alinhar pautas prioritárias de novembro e tramitação de PECs."
+        },
+        {
+          "quando": "14h30",
+          "o_que": "Ministério da Fazenda e comissão mista do Congresso reavaliam estimativas de arrecadação e alíquota de referência para o IVA."
+        }
+      ]
     }
   },
   "cine_edicoes": {
@@ -24149,10 +24272,10 @@
       "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
       "fonte": "g1",
       "tipo": "noticia",
-      "data": "2026-10-31",
-      "titulo": "Governo prevê até 3 mil vagas para CNU 2027 condicionadas ao Orçamento",
+      "data": "2026-11-01",
+      "titulo": "Governo prevê 3 mil vagas no CNU de 2027 condicionadas ao Orçamento",
       "resumo": [
-        "O Ministério da Gestão e da Inovação sinalizou que a edição de 2027 do Concurso Nacional Unificado poderá ofertar até 3 mil novas vagas no serviço público federal. A efetivação do certame e o cronograma de provas estão estritamente atrelados à aprovação e aos limites fiscais da Lei Orçamentária de 2027. O modelo centralizado busca repor quadros técnicos essenciais de ministérios, agências reguladoras e instituições federais de ensino e pesquisa."
+        "O Ministério da Gestão informou que a próxima edição do Concurso Nacional Unificado pode oferecer até 3 mil vagas no funcionalismo público federal. O cronograma e a execução das provas, no entanto, dependerão expressamente do espaço fiscal garantido na Lei Orçamentária Anual."
       ],
       "texto_integral": [
         "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
@@ -24167,7 +24290,7 @@
         "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
       ],
       "pontos": [
-        "Estimativa de vagas e vinculação orçamentária para a realização do concurso"
+        "Previsão de vagas e condicionantes orçamentárias no MGI"
       ]
     },
     "validacao-eleicoes-lula-partidos-g1.globo.com/politica/noticia/": {
@@ -24268,10 +24391,10 @@
       "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
       "fonte": "g1",
       "tipo": "noticia",
-      "data": "2026-10-31",
-      "titulo": "Davi Alcolumbre pauta votação da PEC da Segurança Pública para terça-feira",
+      "data": "2026-11-01",
+      "titulo": "Senado pauta votação da PEC da Segurança Pública",
       "resumo": [
-        "A presidência da Comissão de Constituição e Justiça do Senado incluiu na pauta de votação da próxima terça-feira a Proposta de Emenda à Constituição sobre Segurança Pública. O texto propõe padronizar diretrizes operacionais entre polícias estaduais e federais, além de constitucionalizar o Sistema Único de Segurança Pública. A iniciativa busca construir consenso entre bancadas partidárias após o encerramento do calendário eleitoral."
+        "O presidente da Comissão de Constituição e Justiça do Senado incluiu na pauta de terça-feira a Proposta de Emenda à Constituição da Segurança Pública. O texto propõe reestruturar as competências das polícias da União e estabelecer novas diretrizes de cooperação com os estados."
       ],
       "texto_integral": [
         "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
@@ -24303,7 +24426,7 @@
         "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
       ],
       "pontos": [
-        "Agendamento da pauta na CCJ do Senado e articulações legislativas"
+        "Pauta de votações legislativas no Senado Federal"
       ]
     },
     "rio-willer-tomaz-angra-patrimonio-g1.globo.com/politica/noticia/": {
@@ -25023,10 +25146,10 @@
       "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml",
       "fonte": "g1",
       "tipo": "noticia",
-      "data": "2026-10-31",
-      "titulo": "Déficit das estatais federais bate recorde de R$ 8,5 bilhões até setembro",
+      "data": "2026-11-01",
+      "titulo": "Déficit de estatais federais bate recorde de R$ 8,5 bilhões",
       "resumo": [
-        "O rombo acumulado nas contas das empresas estatais federais atingiu R$ 8,5 bilhões nos nove primeiros meses do ano, estabelecendo a pior marca para o período na série histórica. O descompasso decorre do aumento expressivo de despesas de custeio e de investimentos associados a aportes do Tesouro sem a devida contrapartida de receitas operacionais. Os números ampliam a pressão do mercado financeiro por cortes de gastos e rigor fiscal."
+        "As empresas estatais federais registraram um déficit primário acumulado de R$ 8,5 bilhões até setembro, estabelecendo um novo recorde para a série histórica recente. O resultado contrasta com o desempenho do governo central no mesmo mês e reforça a pressão sobre as contas consolidadas do setor público."
       ],
       "texto_integral": [
         "O Banco Central (BC) informou nesta sexta-feira (31) que as empresas estatais federais registraram um déficit de R$ 8,5 bilhões de janeiro a setembro deste ano.",
@@ -25043,7 +25166,182 @@
         "A ideia é que a empresa faça convênios com instituições financeiras para ofertar os serviços. De acordo com o Ministério da Gestão, os Correios executam um plano de reequilíbrio financeiro e reestruturação."
       ],
       "pontos": [
-        "Dados fiscais consolidados do Banco Central e Tesouro sobre estatais"
+        "Balanço das contas públicas e gastos das estatais federais"
+      ]
+    },
+    "camara-novo-modelo-eleicao-deputados-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Câmara debate novo modelo eleitoral para deputados federais",
+      "resumo": [
+        "A presidência da Câmara articula a reformulação do sistema eleitoral proporcional em vigor, colocando em pauta modelos alternativos como o distrital misto. A discussão ganha tração com lideranças partidárias que buscam alterar as regras de representação política antes dos próximos ciclos de votação."
+      ],
+      "texto_integral": [
+        "PL terá maior bancada no Congresso Nacional",
+        "Líderes da Câmara dos Deputados e presidentes de partido articulam e pretendem retomar a tramitação de uma proposta que altera a forma de escolha dos deputados e institui o chamado sistema distrital misto. (Entenda aqui como funciona)",
+        "O principal objetivo é frear a perda de espaço de partidos de centro no parlamento, após o crescimento do Partido Liberal (PL) nas eleições de 2026, que diminuiu o espaço de partidos do Centrão na Câmara e crescimento da ala bolsonarista.",
+        "A votação da proposta ainda está em negociação, mas a ideia é que as mudanças nas regras eleitorais comecem a valer integralmente nas eleições de 2034, com uma transição nas próximas eleições nacionais.",
+        "A iniciativa começou a ser discutida depois do primeiro turno da disputa, ainda no início de outubro, em uma declaração do presidente da Câmara, Hugo Motta (Republicanos-PB), um representante do Centrão.",
+        "O PL terminou as eleições com 121 deputados, a maior bancada desde a Constituinte. Há quatro anos, o partido havia conseguido 99 deputados. Com o resultado deste ano, a sigla terá 23,6% das 513 cadeiras da Câmara dos Deputados.",
+        "Em contrapartida, o Centrão diminuiu sua presença. Perdeu 22 cadeiras em comparação com as eleições de 2022. Há entre os partidos do centro uma leitura de que mudanças precisam ser feitas para manter o poder dos partidos de centro.",
+        "Hugo Motta afirmou que pretende aprovar uma Proposta de Emenda à Constituição (PEC) instituindo o sistema distrital misto. A expectativa de líderes do centro é aprovar as mudanças ainda em 2026, ainda que admitam que as articulações estão somente no início.",
+        "Motta dialoga ainda com o presidente do Senado Federal, Davi Alcolumbre (União-AP), para agilizar a votação. Líderes esperam o apoio dos senadores porque as mudanças não afetam as eleições para eles. Mas o texto também ainda precisa de acordo na própria Câmara. Motta ainda tenta conseguir apoio do PT e do próprio PL.",
+        "O PL não tem interesse em mudar o sistema. Já entre os petistas, há resistência em alterar regras eleitorais logo depois de uma eleição acirrada. O medo é fornecer um aos apoiadores de Flávio Bolsonaro (PL) um discurso de que há cerceamento ao partido bolsonarista.",
+        "Outros parlamentares dizem ainda que a mudança é tardia, que o perfil do Congresso já foi alterado.",
+        "O relator da PEC que ainda será apresentada deve ser o deputado Domingos Neto (PSD-CE), que já é o relator de um projeto de lei sobre o sistema distrital na Câmara.",
+        "Distrital, distritão ou distrital misto",
+        "Um dos pontos que ainda estão sendo negociados entre os líderes partidários qual modelo será adotado.",
+        "🔎 Atualmente, deputados são escolhidos de acordo com votos que eles e os seus partidos recebem. O Tribunal Superior Eleitoral (TSE) realiza uma conta, chamada de quociente eleitoral, para definir quantos votos cada partido precisa para ter uma cadeira na Câmara dos Deputados. Esse modelo é chamado de sistema proporcional.",
+        "Essa fórmula acaba criando os chamados \"puxadores de votos\" — um candidato que recebe muitos votos e ,indiretamente, contribue para a eleição de candidatos que não obtiveram o número suficiente de votos.",
+        "Neste ano, votações expressivas em deputados como Nikolas Ferreira (PL-MG) e Erika Hilton (PSOL-SP) puxaram outros candidatos de seus partidos.",
+        "No sistema distrital, cada estado brasileiro é dividido em distritos. Cada distrito elege um número específico de deputados. Os moradores dessa determinada região poderão votar apenas nos candidatos do distrito em que vivem. São eleitos os candidatos os mais votados no distrito.",
+        "Mas, buscando manter uma parte do poder dos partidos no processo eleitoral, os deputados estudam criar um modelo misto:",
+        "metade das vagas do distrito ficariam com os mais votados; a outra metade distribuída seguindo uma lista de candidatos definida previamente pelos partidos. As vagas seriam dividas de acordo com a quantidade de votos que as siglas conseguirem. Por exemplo: se um partido obtem votos para eleger quatro deputados, são eleitos os quatro primeiros nomes da lista.",
+        "O distrital misto tem como defensores presidentes de partidos como Gilberto Kassab, do PSD, e Ciro Nogueira, do Progressistas. Mas não há consenso no Congresso Nacional.",
+        "Apesar de defender o modelo, a deputada Adriana Ventura (Novo-SP), aponta algumas preocupações, como o sistema deixar a disputa mais vulnerável ao crime organizado, com candidatos de facções ou milícias controlando alguns distritos.",
+        "Parlamentares do PSOL também são críticos ao distrital misto por entenderem que o modelo prejudicaria o partido. Apontam, ainda, o risco de reduzir a participação de grupos que já são minoria no Congresso, como mulheres e negros.",
+        "Muitos deputados defendem um quarto modelo, o chamado distritão: transformar a eleição da Câmara em majoritária. Ou seja, os deputados mais votados em cada estado são eleitos, sem os chamados \"puxadores de votos\".",
+        "O modelo é criticado por especialistas, que dizem que ele pode facilitar a eleição de candidatos com mais recursos e dificultar a renovação no Congresso Nacioanl. A Câmara tentou aprovar a mudança para este modelo em 2017 e 2021, mas não houve votos suficientes para aprovar a mudança.",
+        "Deputado mais votado no Rio de Janeiro, o líder do PP, deputado Luizinho, é a favor do modelo e diz que, para não enfraquecer os partidos, a proposta poderia prever que o mandato pertence às legendas, diferentemente de outras eleições majoritárias, e o deputado não poderia trocar de filiação.",
+        "Para angariar apoio, os líderes indicaram que as mudanças não valeriam para as próximas eleições, em 2030. Nela, haveria uma transição. Mas os detalhes de como isso seria feito não foram definidos, segundo o relator Domingos Neto.",
+        "Parlamentares ouvidos pelo g1 e pela GloboNews, dizem que existe a ideia de fazer um distritão em 2030 para atender os deputados que defendem esse modelo. Depois, em 2034, entraria em vigor o distrital misto, com a lista fechada dos partidos.",
+        "Domingos Neto afirma que a lista dos partidos deverá seguir as regras de inclusão e cotas de mulheres e negros e pardos para candidaturas. Mas ainda há dúvidas sobre como a diversidade de eleitos seria garantida se os partidos puderem definir a ordem da lista.",
+        "Em 2034, os eleitores votariam assim, somente uma vez, para deputado em cada distrito, para eleger deputados, e esses votos seriam contabilizados no estado para a definição de forma proporcional de quantas vagas cada sigla poderia preencher a partir da lista dos partidos.",
+        "Um dos pontos que levam a mais dúvidas entre os deputados é a divisão dos estados em distritos. Deputados estão preocupados com os votos que hoje são espalhados em várias cidades que podem pertencer a distritos diferentes.",
+        "Domingos Neto afirma que a definição dos distritos seria feita a partir de critérios do Instituto Brasileiro de Geografia e Estatística (IBGE) e uma comissão mista do Congresso acompanharia a implementação.",
+        "Por outro lado, defensores indicam que o processo eleitoral ficaria mais barato, já que o candidato não precisaria fazer campanha em todo o estado, somente em seu distrito.",
+        "Também dizem que o distrital misto aproximaria o candidato dos problemas reais dos eleitores, ao se concentrarem em uma região menor."
+      ],
+      "pontos": [
+        "Detalhamento das regras e propostas em debate entre os deputados"
+      ]
+    },
+    "reforma-tributaria-aliquota-consumo-30-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Imposto sobre consumo pode passar de 30% na regulamentação",
+      "resumo": [
+        "Simulações técnicas sobre a regulamentação da reforma tributária indicam que a alíquota padrão do IVA dual brasileiro poderá ultrapassar o patamar de 30%. Esse percentual superaria as maiores cobranças sobre consumo praticadas entre as principais economias da OCDE."
+      ],
+      "texto_integral": [
+        "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
+        "O cálculo foi feito por técnicos do tribunal com base em dados da Receita Federal. O percentual será encaminhado ao Congresso Nacional, que poderá concordar ou não.",
+        "Caberá ao Senado, até 15 de dezembro, fixar o valor final da alíquota, que será cobrada a partir de 2027.",
+        "▶️Para mensurar o valor da CBS, técnicos do tribunal estimaram quanto seria arrecadado com os impostos que estão sendo extintos no fim de 2026 (PIS, Cofins e grande parte do IPI). Isso porque, uma das premissas da reforma sobre o consumo, é manter o atual patamar da carga tributária.",
+        "TCU propôs alíquota de 11,3% pra imposto sobre o consumo",
+        "🔎 Em 2024, o governo estimou que a alíquota da CBS seria de 8,8%. Cálculo da consultoria Roit apontava para uma alíquota de 9,43% em 2027. Estimativas divulgadas em julho pelo Comitê Gestor do IBS, dos estados, apontam que a CBS teria uma taxa de cerca de 9,2% no próximo ano.",
+        "▶️Além da CBS do governo federal, a reforma tributária também contempla a cobrança do IBS estadual e municipal, que terá uma alíquota marginal de 0,1% até 2028. A partir de 2029, os estados e municípios começam a aumentar, gradualmente, a cobrança do IBS. A cobrança integral começa em 2033.",
+        "▶️Antes de a alíquota da CBS ser proposta pelo TCU, estimativa do Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS) apontava que a alíquota cheia estiver sendo cobrada do imposto sobre o consumo do governo federal, estados e municípios, somaria cerca de 28%.",
+        "▶️Depois da divulgação da proposta do tribunal para a CBS, bem acima do esperado, analistas passaram a apontar que o imposto brasileiro será de ao menos 30% em 2033 — o primeiro ano com tributação cheia. O g1 considerou o patamar de 30% para comparação internacional.",
+        "▶️ Se confirmada, seria maior do que a alíquota de todos os países desenvolvidos, segundo ranking da Tax Foundation — organização sem fins lucrativos que faz avaliações sobre impostos e coleta dados sobre tributos ao redor do mundo.",
+        "▶️De acordo com o levantamento, alíquota média dos impostos gerais sobre o consumo nos países da OCDE foi de 19,4%, bem abaixo do valor estimado para o futuro IVA brasileiro. O ranking, com dados de 2026, foi divulgado em 19 de outubro (veja abaixo).",
+        "➡️O governo federal, por sua vez, alega que, atualmente, os impostos cobrados sobre o consumo no país são ainda maiores, com tributação média de cerca de 34% – mas que há dificuldade em calcular o peso dos impostos pois o sistema é muito complexo, há exceções. Além disso, alguns tributos incidem sobre si mesmos (por dentro, em cascata).",
+        "➡️Este modelo \"por dentro\" torna mais difícil identificar quanto de imposto está efetivamente embutido no preço de um produto ou serviço. Por isso, as notas fiscais trazem apenas uma estimativa \"do valor aproximado de tributos\". Com a reforma tributária, eles passarão a ser cobrados por fora (aparecerão separados do valor do produto ou serviço).",
+        "➡️Um dos problemas que resultaram em um alto imposto sobre o consumo no Brasil foi a decisão do governo do presidente Lula, e de legisladores, de terem proposto e aprovado que o atual peso dos impostos nessa base de tributação fosse mantido.",
+        "🔎A consequência da concentração maior da carga tributária brasileira sobre o consumo no Brasil é o alto grau de \"regressividade\" (se arrecada proporcionalmente mais de quem ganha menos) — prejudicando, dessa forma, os mais pobres.",
+        "Números da Receita mostram que impostos sobre bens e serviços, ou seja, os tributos indiretos embutidos nos preços, representaram 43,5% de toda a carga tributária brasileira em 2024, ficando acima da média da OCDE (países ricos). Ao mesmo tempo, os tributos sobre o lucro, renda e o ganho de capital do brasileiro, focados nos contribuintes mais ricos, estão bem abaixo da média da OCDE, formada por países mais desenvolvidos.",
+        "Para Luís Garcia, advogado tributarista pela USP/SP e sócio do Tax Group, o alto patamar do endividamento do setor público e a rigidez das despesas mantêm a pressão por arrecadação e impedem que a reorganização dos tributos, isoladamente, produza alívio fiscal.",
+        "“A reforma tributária pode significar simplificação, mas jamais redução de carga tributária enquanto o Brasil continuar refém de uma política fiscal irresponsável”, avaliou o tributarista Luís Garcia.",
+        "▶️Outro entrave, este relacionado ao fato de que a alíquota proposta pelo TCU ficou acima do estimado anteriormente por analistas, tem a ver com as exceções aprovadas na tramitação da reforma tributária no Congresso Nacional, ou seja, com os benefícios concedidos na aquisição de determinados produtos e serviços.",
+        "Considerando a premissa básica de que a reforma deve manter o atual nível de arrecadação dos tributos sobre o consumo, os benefícios concedidos a determinados produtos e setores resultam em uma alíquota de referência mais elevada para as atividades que não contam com incentivos fiscais, algo que já havia sido apontado, à época, por representantes da indústria nacional.",
+        "Entre os benefícios aprovados na tramitação da reforma tributária, estão alíquota zero para a cesta básica, incluindo as proteínas (o que, segundo especialistas, beneficia a população mais rica), para uma lista de medicamentos e dispositivos médicos.O Congresso aprovou ainda alíquotas reduzidas para serviços de educação e saúde; medicamentos e dispositivos médicos; produções artísticas, culturais, jornalísticas e audiovisuais nacionais; atividades desportivas; e profissões regulamentadas e fiscalizadas por conselhos profissionais.",
+        "A Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) manifestou preocupação com a alíquota de referência de 11,3% pois ela reforça o risco de aumento da carga tributária para as empresas. A preocupação é especialmente relevante para prestadores de serviços sujeitos atualmente à alíquota conjunta de 3,65% de PIS/Cofins no regime cumulativo.",
+        "\"A substituição por uma CBS com referência de 11,3% representa uma elevação expressiva da alíquota nominal, embora o impacto efetivo dependa dos créditos e do tratamento tributário de cada atividade. Empresas intensivas em mão de obra ficam mais expostas, pois a folha de pagamentos não gera créditos\", avaliou a CNC, por meio de nota.",
+        "A Associação Brasileira da Indústria de Alimentos (ABIA) informou considerar preocupante a proposta de fixação da alíquota de referência de 11,3% para a CBS, bem acima das estimativas anteriores. Avalia que uma diferença dessa magnitude \"ameaça elevar a carga tributária das empresas, com efeitos que podem se refletir nos preços ao consumidor\".",
+        "\"A definição da alíquota não deve ignorar os impactos sobre a produção, os investimentos e o custo dos alimentos. Além de aumentar os preços, uma alíquota elevada da CBS ameaça ampliar a pressão sobre o orçamento das famílias de menor renda, comprometendo seu acesso à alimentação\", acrescentou a ABIA, em nota.",
+        "Paulo Skaf, presidente da Federação das Indústrias do Estado de São Paulo (Fiesp), disse que o patamar de 11,3% estimado pelo TCU quebra a premissa central da reforma tributária de manutenção da carga fiscal.",
+        "Segundo ele, estudos técnicos apontavam equilíbrio em torno de 9% para o imposto, e que a nova projeção retira da economia mais de R$ 100 bilhões em tributos adicionais já em 2027, empurrando o IVA Dual (CBS + IBS) para além de 30% - a maior taxa do mundo.",
+        "\"A produção, os investimentos e o emprego não suportam mais impostos. O reequilíbrio fiscal do Brasil exige corte e controle de gastos públicos, e não aumento de arrecadação sobre quem produz. Esperamos o bom senso do Senado Federal para corrigir essa distorção\", declarou o presidente da Fiesp.",
+        "A Conexis Brasil Digital, Sindicato Nacional das Empresas de Telefonia e de Serviço Móvel, Celular e Pessoal, informou ter recebido com preocupação a proposta de fixação da alíquota de referência de 11,3% para a CBS.",
+        "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
+      ],
+      "pontos": [
+        "Comparativo internacional das alíquotas de imposto sobre consumo"
+      ]
+    },
+    "mte-denuncias-assedio-eleitoral-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "MTE registra mais de 4,3 mil denúncias de assédio eleitoral",
+      "resumo": [
+        "O Ministério do Trabalho e Emprego contabilizou 4,3 mil queixas de assédio eleitoral em empresas em apenas três dias após o pleito. O volume já supera os registros de anos anteriores e concentra relatos de constrangimento e ameaças de demissão ligados à opção de voto de empregados."
+      ],
+      "texto_integral": [
+        "O Ministério do Trabalho e Emprego (MTE) recebeu 4.305 denúncias de assédio eleitoral no ambiente de trabalho entre quarta-feira (28) e sexta-feira (30). Os registros foram feitos nos três primeiros dias de funcionamento de um canal específico para esse tipo de ocorrência.",
+        "A região Sudeste concentra quase metade das denúncias, com 2.087 registros, o equivalente a 48,5% do total. São Paulo lidera o ranking nacional, com 1.325 manifestações, seguido pelo Rio de Janeiro (354) e por Minas Gerais (345).",
+        "Os dados foram divulgados pelo Ministério neste sábado (31). Segundo a pasta, as denúncias estão em análise pela Auditoria Fiscal do Trabalho, responsável por avaliar os relatos e apurar possíveis irregularidades.",
+        "🗒️ Tem alguma sugestão de reportagem? Mande para o g1",
+        "O aumento ocorre em meio a uma nova onda de publicações nas redes sociais que incentivam a demissão e a recusa de contratação de trabalhadores por preferência política, além de promover listas de boicote a empresas supostamente apoiadoras do presidente Luiz Inácio Lula da Silva (PT), reeleito no domingo (25).",
+        "Em resposta, o ministro do Trabalho e Emprego, Luiz Marinho, anunciou nesta quarta-feira (28) uma força-tarefa nacional para fiscalizar denúncias de ameaças de demissão, perseguição e outras formas de assédio eleitoral contra trabalhadores.",
+        "➡️ O assédio eleitoral no trabalho ocorre quando o empregador tenta influenciar o voto do funcionário por meio de ameaças, como perda do emprego, redução salarial ou rebaixamento de cargo, ou promove atividades políticas, como distribuição de santinhos e eventos, no ambiente de trabalho.",
+        "O registro de uma denúncia, porém, não significa que o assédio eleitoral tenha sido comprovado. Os casos precisam passar por investigação para verificar se houve constrangimento, ameaça ou discriminação de trabalhadores por suas escolhas políticas.",
+        "Na distribuição por regiões, depois do Sudeste aparecem o Nordeste, com 784 denúncias, e o Sul, com 757. O Centro-Oeste registrou 378 manifestações, enquanto o Norte contabilizou 299. (veja abaixo)",
+        "Sudeste: 2.087 denúncias (48,5%)Nordeste: 784 denúncias (18,2%)Sul: 757 denúncias (17,6%)Centro-Oeste: 378 denúncias (8,8%)Norte: 299 denúncias (6,9%)",
+        "Além de São Paulo, os estados com mais registros são Paraná (268) e Santa Catarina (259). Juntos, os cinco estados com maior número de denúncias concentram 59,2% do total recebido pelo MTE. (veja abaixo)",
+        "São Paulo (SP): 1.325Rio de Janeiro (RJ): 354Minas Gerais (MG): 345Paraná (PR): 268Santa Catarina (SC): 259Rio Grande do Sul (RS): 230Ceará (CE): 172Bahia (BA): 169Goiás (GO): 143Pernambuco (PE): 137Pará (PA): 130Maranhão (MA): 99Mato Grosso (MT): 93Distrito Federal (DF): 91Espírito Santo (ES): 63Rio Grande do Norte (RN): 63Amazonas (AM): 52Mato Grosso do Sul (MS): 51Alagoas (AL): 50Paraíba (PB): 42Piauí (PI): 30Acre (AC): 29Rondônia (RO): 29Amapá (AP): 25Sergipe (SE): 22Roraima (RR): 17Tocantins (TO): 17",
+        "O ministro do Trabalho, Luiz Marinho, afirmou que o governo está atento às ocorrências e que empregadores não podem utilizar sua posição ou poder econômico para interferir na decisão dos funcionários.",
+        "“Não podemos admitir que trabalhadores e trabalhadoras sejam ameaçados, constrangidos ou discriminados por suas escolhas políticas. O voto é livre e secreto, e nenhum empregador pode usar sua posição para interferir na decisão de seus empregados”, declarou em nota.",
+        "Relatos de assédio eleitoral crescem após 2º turno",
+        "A Auditoria Fiscal do Trabalho já realiza ações de fiscalização para verificar as situações relatadas. Quando identifica práticas de assédio ou discriminação, o órgão pode lavrar autos de infração e encaminhar informações a outras instituições públicas.",
+        "Segundo o secretário de Inspeção do Trabalho, Luiz Henrique, os casos identificados também podem ser comunicados a órgãos como o Banco Central, para que sejam avaliadas medidas relacionadas à concessão de financiamentos e empréstimos.",
+        "O Ministério também estuda criar uma ferramenta de transparência para divulgar casos de assédio eleitoral no ambiente de trabalho. A proposta poderá seguir modelo semelhante ao da lista de empregadores responsabilizados por submeter trabalhadores a condições análogas à escravidão.",
+        "Governo anuncia medidas contra assédio eleitoral",
+        "O MTE e outros órgãos públicos anunciaram medidas conjuntas para prevenir e combater o assédio eleitoral nas empresas.",
+        "A iniciativa reúne o Ministério Público do Trabalho (MPT), a Advocacia-Geral da União (AGU), o Tribunal Superior do Trabalho (TST), o Ministério Público Eleitoral (MPE) e o Ministério da Justiça e Segurança Pública (MJSP).",
+        "Entre as ações previstas estão medidas para retirar da internet conteúdos que promovam perseguição ou discriminação por motivação política. Para isso, plataformas digitais, como Google e Meta, poderão receber notificações com base em orientações técnicas da AGU.",
+        "A Carteira de Trabalho Digital também está sendo utilizada para informar os trabalhadores sobre seus direitos e os canais disponíveis para registrar denúncias. As orientações são enviadas por notificações diretamente aos usuários do aplicativo. (veja abaixo)",
+        "O trabalhador pode denunciar? Como fazer?",
+        "Trabalhadores que sofrerem ou presenciarem situações de assédio eleitoral ou discriminação por motivação política no ambiente de trabalho podem registrar denúncias de forma anônima.",
+        "Para facilitar a apuração, é importante fornecer o máximo possível de informações, como o nome da empresa, as pessoas envolvidas, o local, a data e a descrição dos fatos. Também podem ser anexados documentos e evidências, como mensagens, e-mails, fotos e vídeos.",
+        "As denúncias são sigilosas e encaminhadas aos órgãos competentes, responsáveis por analisar os relatos, investigar possíveis irregularidades e adotar as medidas cabíveis para proteger os direitos dos trabalhadores.",
+        "Dependendo da situação, os registros também podem ser encaminhados à Justiça Eleitoral ou ao Ministério Público Eleitoral (MPE), especialmente quando houver indícios de crime eleitoral.",
+        "Ministério do Trabalho e Emprego (MTE): recebe denúncias por meio do canal https://assedioeleitoral.trabalho.gov.br/Ministério Público do Trabalho (MPT): recebe denúncias de irregularidades trabalhistas pelo site do órgão e pelo aplicativo Pardal MPT.Justiça do Trabalho: o Tribunal Superior do Trabalho (TST) e os Tribunais Regionais do Trabalho possuem canais de atendimento e ouvidorias para receber relatos relacionados ao tema.Centrais sindicais: disponibilizam canal para denúncias de pressões políticas, demissões ou cortes de benefícios relacionados à escolha eleitoral.Ministério Público Eleitoral (MPE): pode ser acionado em situações que envolvam possíveis crimes ou irregularidades eleitorais.Sindicato: o sindicato da categoria também pode receber denúncias e orientar o trabalhador sobre seus direitos.Canal de Denúncias para Inspeção do Trabalho: canal online do Ministério do Trabalho para denúncias trabalhistas;Fala.br: plataforma integrada de ouvidoria e acesso à informação da Controladoria-Geral da União;Central Alô Trabalho: o número 158 funciona de segunda a sábado, das 7h às 22h (horário de Brasília). A ligação gratuita de qualquer telefone fixo, mas chamadas por celular serão cobradas;Superintendências Regionais do Trabalho: são responsáveis por executar, supervisionar e monitorar ações relacionadas a políticas públicas de trabalho nos estados;Disque 100: Serviço gratuito e disponível 24 horas por dia, o disque 100 recebe denúncias de violações de direitos humanos, inclusive assédio moral no trabalho."
+      ],
+      "pontos": [
+        "Dados das apurações do Ministério do Trabalho"
+      ]
+    },
+    "quebra-sigilo-morte-tancredo-neves-g1.globo.com/df/distrito-feder": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Justiça autoriza abertura de documentos sobre a morte de Tancredo",
+      "resumo": [
+        "A Justiça Federal determinou o levantamento do sigilo de prontuários médicos e registros oficiais relativos à internação e morte do presidente eleito Tancredo Neves, ocorrida em 1985. A documentação abrange relatórios hospitalares e laudos que permaneceram inacessíveis por quatro décadas."
+      ],
+      "texto_integral": [
+        "Justiça determina quebra do sigilo médico sobre morte de Tancredo Neves",
+        "Há pouco mais de 40 anos, o Brasil festejava um momento histórico: a eleição e a futura posse do primeiro presidente civil, após duas décadas do regime militar.",
+        "A internação na véspera da posse – e a morte inesperada do presidente eleito Tancredo Neves em 21 de abril de 1985 – mudou novamente os rumos da política nacional. E, ainda hoje, é cercada de mistérios e até teorias da conspiração.",
+        "Uma decisão dada pela Justiça Federal nesta semana pode começar a solucionar essas dúvidas. O Tribunal Regional Federal da 1ª Região foi unânime ao aprovar que a família de Tancredo tenha acesso a documentos sigilosos sobre a internação no Hospital de Base, em Brasília.",
+        "✅ Clique aqui para seguir o canal do g1 no WhatsApp.",
+        "O objetivo é sanar a dúvida da família --- e de inúmeros eleitores da época --- sobre a suspeita de erro médico.",
+        "Tancredo Neves foi internado na véspera da posse presidencial com quadro de diverticulite – inflamação na região do intestino grosso. Ele morreu um mês depois, em 21 de abril de 1985.",
+        "Com a nova decisão, o Conselho Federal de Medicina (CFM) e o Conselho Regional de Medicina do Distrito Federal (CRM-DF), devem liberar prontuários, relação de médicos e outros documentos.",
+        "Procuradas pelo g1, as entidades afirmaram que ainda não foram oficialmente notificadas.",
+        "Apesar de a decisão ter chegado apenas em 2026, a busca por explicações começou em 2010, com a publicação do livro \"O paciente\", de Luís Mir. Com autorização da família, o escritor pesquisou a fundo o período e encontrou falhas nos procedimentos.",
+        "A advogada Juliana Porcaro explica que a família pediu aos conselhos que liberassem os documentos, mas a demanda foi negada com base no sigilo da relação médico-paciente. Por isso, o caso foi parar na Justiça.",
+        "As hipóteses de erro médico levantadas pelo autor e pelos familiares se sustentam em quatro fatores.",
+        "Cirurgia imediata: especialistas ouvidos pelo escritor questionam a decisão de uma cirurgia de emergência. Isso porque os procedimentos contra diverticulite costumam ser eletivos, ou seja, passíveis de agendamento enquanto o paciente segue com outros tratamentos. Técnicas questionáveis: Mais de 30 acompanhantes estiveram na sala de cirurgia durante o procedimento, o que é proibido por razões de segurança. Advertência: Médicos envolvidos no tratamento receberam advertência do CRM-DF. O motivo da notificação, no entanto, segue como um mistério. Falhas na recuperação: O autor acredita que falhas no protocolo de recuperação podem ter contribuído para complicações.",
+        "Uma das fotos mais emblemáticas da época é a foto de Tancredo Neves sentado ao lado dos médicos (veja abaixo). Por conta da região da cirurgia, no entanto, ele não poderia ter sido colocado naquela posição.",
+        "Após hemorragia e outras complicações, Tancredo foi transferido do Instituto do Coração (Incor) já em estado grave.",
+        "\"Quando ele veio a óbito, os médicos não tiveram coragem de declarar o óbito, eles chamaram o médico americano [Warren Zapol], que veio ao Brasil e avaliou\", conta Juliana.",
+        "Para a advogada e porta-voz da família, a divulgação dos dados não é apenas de interesse das pessoas próximas, mas ajuda a contar a \"história de uma nação\".",
+        "\"Se há uma advertência, é porque houve um processo administrativo no conselho e algo foi considerado errado. E é a esse 'algo' que a família quer ter acesso. Quer entender como os próprios médicos do Conselho entenderam a postura dos médicos responsáveis pelo presidente Tancredo Neves\", afirma.",
+        "Juliana conta que esteve com o ex-presidente José Sarney, que confirma a percepção de que houve negligência por parte da equipe de saúde.",
+        "\"Ele confirmou que teve esse receio de assumir a presidência, porque foi muito delicado. Ninguém sabia se isso ia ser bem aceito\", comenta.",
+        "Com a posse de Sarney, vice na chapa de Tancredo, o Brasil iniciou um novo momento na política com a eleição de civis.",
+        "Leia mais notícias sobre a região no g1 DF."
+      ],
+      "pontos": [
+        "Decisão judicial e o impacto nos arquivos da Nova República"
       ]
     }
   }
