@@ -5770,35 +5770,35 @@
     "2026-11-01-noite": {
       "data": "2026-11-01",
       "edicao": "noite",
-      "titulo": "Boletim Faixa Oculta: Reforma tributária, PEC da Segurança e Congresso",
-      "resumo_dia": "O cenário pós-eleitoral consolida debates cruciais para a agenda institucional e fiscal do país. Na economia, projeções indicam que a nova alíquota de consumo pode superar patamares internacionais, enquanto o Congresso articula mudanças no sistema eleitoral proporcional. Paralelamente, o Senado pauta a PEC da Segurança Pública em meio a movimentações na diplomacia e no Judiciário, acompanhados de perto pelo serviço público com planos para novos certames federais.",
+      "titulo": "Congresso discute modelo eleitoral e reforma tributária pressiona consumo",
+      "resumo_dia": "O pós-eleição movimenta a agenda legislativa em Brasília com articulações na Câmara para reformular o sistema de votação para deputados e o Senado pautando a PEC da Segurança Pública. No campo fiscal, projeções alertam que a nova alíquota sobre o consumo da reforma tributária pode superar 30%, elevando o debate sobre impactos econômicos. Em âmbito trabalhista, o Ministério do Trabalho contabiliza explosão de denúncias de assédio eleitoral, enquanto o governo federal projeta nova edição do Concurso Nacional Unificado atrelada ao Orçamento de 2027.",
       "notas": [
         {
-          "id": "aliquota-reforma-tributaria-consumo",
+          "id": "reforma-tributaria-aliquota-consumo",
           "editoria": "Economia",
-          "titulo": "Imposto sobre consumo da reforma tributária pode superar 30%",
-          "texto": "Estudos e estimativas recentes apontam que a alíquota padrão do novo imposto sobre consumo decorrente da reforma tributária pode ultrapassar o teto de 30%. O patamar colocaria o Brasil com uma das maiores taxas de tributação sobre bens e serviços do mundo, superando países desenvolvidos. O cálculo definitivo dependerá das exceções setoriais e dos regimes favorecidos aprovados na regulamentação.",
-          "por_que_importa": "O valor final da alíquota impactará diretamente o poder de compra da população e os custos operacionais de instituições públicas e privadas, pressionando o orçamento das famílias e de serviços básicos.",
+          "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
+          "texto": "Estimativas recentes sobre a regulamentação da reforma tributária indicam que o imposto sobre valor agregado (IVA) sobre o consumo pode ultrapassar os 30%, patamar superior ao da maioria dos países desenvolvidos. O aumento projetado reflete as diversas exceções, regimes especiais e desonerações setoriais incluídos durante a tramitação da proposta no Legislativo.",
+          "por_que_importa": "Uma alíquota-padrão muito elevada encarece bens e serviços gerais para a população e pressiona os custos operacionais das empresas, ampliando a necessidade de revisão de privilégios fiscais.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Compara alíquotas projetadas para o Brasil com médias praticadas em países ricos",
+              "enfoque": "Análise da carga tributária prevista para o consumo em comparação internacional",
               "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
             }
           ]
         },
         {
-          "id": "camara-sistema-distrital-misto",
+          "id": "camara-modelo-eleicao-deputados",
           "editoria": "Política",
-          "titulo": "Câmara articula mudança para sistema distrital misto em eleições de deputados",
-          "texto": "A presidência e lideranças da Câmara dos Deputados intensificaram as discussões para alterar o atual modelo proporcional de eleição para o sistema distrital misto. A proposta combina o voto distrital individual com a votação em listas partidárias preordenadas. Lideranças pretendem acelerar o debate legislativo ainda durante os meses finais do ano legislativo.",
-          "por_que_importa": "A adoção do sistema misto redefiniria a representatividade parlamentar e a distribuição de forças entre partidos, alterando a conexão regional dos deputados e a governabilidade federal.",
+          "titulo": "Câmara avança em discussões para alterar modelo eleitoral de deputados",
+          "texto": "Lideranças da Câmara dos Deputados intensificaram os debates para mudar o formato de escolha dos parlamentares já para as próximas eleições gerais. A principal proposta sobre a mesa envolve o sistema distrital misto, combinando votação proporcional partidária com o voto majoritário por distritos geográficos delimitados.",
+          "por_que_importa": "A adoção do voto distrital misto altera profundamente a dinâmica de representatividade partidária, barateia campanhas em tese, mas pode enfraquecer bancadas temáticas e minoritárias no Congresso Nacional.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Explica o funcionamento e a tramitação do modelo distrital misto em debate na Câmara",
+              "enfoque": "Detalhamento da proposta e mobilização das lideranças partidárias na Câmara",
               "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
             }
           ]
@@ -5806,74 +5806,74 @@
         {
           "id": "senado-pec-seguranca-publica",
           "editoria": "Política",
-          "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública no Senado",
-          "texto": "O presidente da Comissão de Constituição e Justiça do Senado, Davi Alcolumbre, pautou a votação da Proposta de Emenda à Constituição (PEC) da Segurança Pública para a próxima terça-feira. A matéria busca unificar diretrizes nacionais para as polícias e ampliar a atuação da União no combate ao crime organizado. O texto centraliza atribuições e enfrenta debates sobre a autonomia federativa dos estados.",
-          "por_que_importa": "A proposta mexe na estrutura de financiamento e comando das forças de segurança, com repercussões diretas no controle da violência armada em capitais e regiões metropolitanas.",
+          "titulo": "Davi Alcolumbre inclui PEC da Segurança Pública na pauta de votação do Senado",
+          "texto": "O presidente do Senado definiu a pauta da próxima terça-feira com destaque para a Proposta de Emenda à Constituição da Segurança Pública. A matéria visa estruturar novas diretrizes de integração entre forças estaduais e federais, além de delimitar o papel da Polícia Rodoviária Federal e do Fundo Nacional de Segurança.",
+          "por_que_importa": "A tramitação abre disputa federativa entre União e governos estaduais sobre competências de investigação e autonomia das polícias militares e civis.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Destaca a estratégia de pautar a votação na comissão e os pontos de atrito federativo",
+              "enfoque": "Definição do calendário deliberativo pelo Senado",
               "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
             }
           ]
         },
         {
-          "id": "governo-cnu-2027-vagas",
-          "editoria": "Economia",
-          "titulo": "Governo planeja CNU 2027 com até 3 mil vagas condicionado ao Orçamento",
-          "texto": "O Ministério da Gestão informou que a edição de 2027 do Concurso Nacional Unificado (CNU) poderá disponibilizar até 3 mil vagas no serviço público federal. A efetivação e a data de aplicação das provas permanecem atreladas à aprovação do projeto de lei orçamentária no Congresso Nacional. A iniciativa visa preencher carências estruturais em ministérios e agências reguladoras.",
-          "por_que_importa": "Para servidores públicos e acadêmicos, o ritmo de reposição de quadros federais é determinante para a continuidade operacional de universidades, institutos de pesquisa e órgãos de fiscalização.",
+          "id": "assedio-eleitoral-denuncias-mte",
+          "editoria": "Política",
+          "titulo": "MTE registra 4,3 mil denúncias de assédio eleitoral no ambiente de trabalho",
+          "texto": "O Ministério do Trabalho e Emprego apurou um volume expressivo de 4,3 mil denúncias de coação e pressão eleitoral nas empresas em um intervalo de apenas três dias. O canal foi aberto para acolher relatos de empregados coagidos por gestores ou proprietários sobre escolhas de voto.",
+          "por_que_importa": "O recorde de queixas sinaliza a interiorização da polarização política nas relações formais de emprego, demandando ações punitivas e fiscalizatórias do MPT e da Justiça do Trabalho.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Detalha previsão de vagas no Executivo federal condicionadas ao teto orçamentário",
+              "enfoque": "Balanço divulgado pelos órgãos fiscalizadores trabalhistas",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "cnu-2027-vagas-orcamento",
+          "editoria": "Ciência",
+          "titulo": "Governo planeja CNU 2027 com até 3 mil vagas sujeito ao Orçamento",
+          "texto": "O Ministério da Gestão e da Inovação em Serviços Públicos comunicou que planeja uma nova edição do Concurso Nacional Unificado para 2027, com projeção de até 3 mil vagas para carreiras públicas federais. O cronograma e o número final de postos permanecem estritamente condicionados à aprovação dos limites orçamentários pelo Congresso.",
+          "por_que_importa": "A reposição de quadros é vital para suprir defasagens críticas em ministérios, autarquias federais e agências reguladoras que fomentam ensino e pesquisa científica.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Planejamento governamental e condicionantes orçamentárias do concurso",
               "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
             }
           ]
         },
         {
-          "id": "justica-documentos-tancredo-neves",
+          "id": "justica-quebra-sigilo-morte-tancredo",
           "editoria": "Política",
-          "titulo": "Justiça quebra sigilo de documentos médicos e oficiais sobre morte de Tancredo",
-          "texto": "A Justiça Federal determinou o levantamento do sigilo sobre documentos históricos e prontuários médicos ligados à internação e à morte de Tancredo Neves em 1985. A decisão viabiliza o acesso público a laudos e registros do Hospital de Base de Brasília e do Instituto do Coração de São Paulo. Pesquisadores e historiadores aguardavam há décadas a liberação integral do material.",
-          "por_que_importa": "O acesso a arquivos antes confidenciais reforça a transparência histórica sobre um dos episódios mais críticos da redemocratização brasileira, balizando estudos acadêmicos e preservação da memória.",
+          "titulo": "Justiça quebra sigilo de documentos médicos sobre a morte de Tancredo Neves",
+          "texto": "A Justiça Federal autorizou a liberação e a abertura pública de relatórios e documentos sigilosos relacionados à internação e ao falecimento de Tancredo Neves em 1985. A documentação inclui boletins clínicos e prontuários médicos da época que permaneceram sob custódia restrita por quatro décadas.",
+          "por_que_importa": "A medida atende ao princípio de transparência e direito à memória histórica sobre um dos episódios mais sensíveis e determinantes da redemocratização nacional.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Reporta o teor da decisão judicial e o acervo documental aberto a pesquisadores",
+              "enfoque": "Decisão judicial e valor documental para a historiografia política",
               "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml"
             }
           ]
         },
         {
-          "id": "itamaraty-embaixada-argentina-fuga-flavio",
-          "editoria": "Política",
-          "titulo": "Itamaraty convoca embaixada argentina após cruzamento de fronteira por Flávio",
-          "texto": "O Ministério das Relações Exteriores convocou formalmente o encarregado de negócios da embaixada da Argentina em Brasília. A pasta cobra esclarecimentos diplomáticos sobre a travessia da fronteira terrestre pelo senador Flávio Bolsonaro rumo a Buenos Aires antes de seu embarque para os Estados Unidos. O senador viajou em meio a ordens restritivas emitidas pelo Judiciário.",
-          "por_que_importa": "O incidente gera atrito no relacionamento bilateral com a Casa Rosada e abre questionamentos sobre a cooperação jurídica e os protocolos de controle fronteiriço do Mercosul.",
-          "fontes": [
-            {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Aborda a cobrança de esclarecimentos pelo Itamaraty junto à representação argentina",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/30/itamaraty-convoca-representante-da-embaixada-da-argentina-apos-flavio-cruzar-fronteira-do-brasil-com-o-pais-vizinho-e-fugir-para-eua.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "disputa-patrimonial-ilhas-angra",
+          "id": "patrimonio-imobiliario-angra-dos-reis",
           "editoria": "Rio",
-          "titulo": "Apuração revela patrimônio em ilhas de Angra dos Reis em meio a disputas locais",
-          "texto": "Investigação patrimonial identificou que o advogado Willer Tomaz é proprietário de ao menos cinco outras residências de alto padrão em ilhas de Angra dos Reis, na Costa Verde fluminense. Os imóveis somam-se à propriedade que foi alvo de litígio envolvendo familiares do atacante Richarlison. A ocupação privada do litoral na região é monitorada por órgãos de fiscalização fundiária e ambiental.",
-          "por_que_importa": "Casos de concentração e titularidade em ilhas do Rio de Janeiro expõem conflitos recorrentes sobre acesso a praias públicas e cumprimento de normas ambientais em áreas de preservação.",
+          "titulo": "Disputa imobiliária em Angra dos Reis revela concentração de imóveis insulares",
+          "texto": "Apuração judicial sobre posse de terrenos no litoral sul fluminense expôs a existência de cinco propriedades de alto padrão pertencentes a um mesmo advogado em ilhas de Angra dos Reis, além do imóvel objeto de litígio judicial com atleta profissional. A região tem sido foco de contestações sobre ocupação de terrenos de marinha e regularidade fundiária.",
+          "por_que_importa": "Evidencia a fragilidade da fiscalização ambiental e patrimonial da União no litoral fluminense em áreas de preservação permanente e acesso restrito.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Mapeia os imóveis insulares em Angra dos Reis e o histórico das contendas judiciais",
+              "enfoque": "Levantamento cartorial e disputas fundiárias em ilhas do litoral do Rio",
               "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml"
             }
           ]
@@ -5881,12 +5881,12 @@
       ],
       "agenda": [
         {
-          "quando": "Terça-feira (manhã)",
-          "o_que": "Comissão de Constituição e Justiça do Senado vota a PEC da Segurança Pública pautada por Davi Alcolumbre."
+          "quando": "09h00",
+          "o_que": "Abertura dos mercados e monitoramento de repercussões fiscais e tributárias em Brasília."
         },
         {
-          "quando": "Quarta-feira",
-          "o_que": "Câmara dos Deputados retoma reuniões de líderes para deliberar sobre a tramitação da reforma do sistema eleitoral."
+          "quando": "14h00",
+          "o_que": "Reunião de líderes partidários no Senado para definir os detalhes da votação da PEC da Segurança Pública."
         }
       ]
     }
@@ -24187,9 +24187,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Reforma tributária: alíquota sobre consumo pode ultrapassar 30%",
+      "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
       "resumo": [
-        "Simulações sobre as leis complementares da reforma tributária apontam que a alíquota padrão sobre bens e serviços pode superar os 30%, taxa superior à média verificada em países desenvolvidos. O índice definitivo dependerá da calibragem de regimes diferenciados e incentivos mantidos pelo Congresso. Especialistas alertam para os efeitos da cumulatividade residual sobre setores de serviços e comércio."
+        "Estimativas recentes sobre a regulamentação da reforma tributária indicam que o imposto sobre valor agregado (IVA) sobre o consumo pode ultrapassar os 30%, patamar superior ao da maioria dos países desenvolvidos. O aumento projetado reflete as diversas exceções, regimes especiais e desonerações setoriais incluídos durante a tramitação da proposta no Legislativo."
       ],
       "texto_integral": [
         "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
@@ -24224,7 +24224,7 @@
         "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
       ],
       "pontos": [
-        "Estimativas de alíquota da reforma tributária e comparação internacional"
+        "Análise da carga tributária prevista para o consumo em comparação internacional"
       ]
     },
     "reconhecimento-eleicoes-partidos-g1.globo.com/politica/noticia/": {
@@ -24396,9 +24396,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Governo prevê 3 mil vagas no CNU de 2027 condicionadas ao Orçamento",
+      "titulo": "Governo planeja CNU 2027 com até 3 mil vagas sujeito ao Orçamento",
       "resumo": [
-        "O Ministério da Gestão informou que a próxima edição do Concurso Nacional Unificado pode oferecer até 3 mil vagas no funcionalismo público federal. O cronograma e a execução das provas, no entanto, dependerão expressamente do espaço fiscal garantido na Lei Orçamentária Anual."
+        "O Ministério da Gestão e da Inovação em Serviços Públicos comunicou que planeja uma nova edição do Concurso Nacional Unificado para 2027, com projeção de até 3 mil vagas para carreiras públicas federais. O cronograma e o número final de postos permanecem estritamente condicionados à aprovação dos limites orçamentários pelo Congresso."
       ],
       "texto_integral": [
         "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
@@ -24413,7 +24413,7 @@
         "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
       ],
       "pontos": [
-        "Previsão de vagas e condicionantes orçamentárias no MGI"
+        "Planejamento governamental e condicionantes orçamentárias do concurso"
       ]
     },
     "validacao-eleicoes-lula-partidos-g1.globo.com/politica/noticia/": {
@@ -24515,9 +24515,9 @@
       "fonte": "g1",
       "tipo": "noticia",
       "data": "2026-11-01",
-      "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública no Senado",
+      "titulo": "Davi Alcolumbre inclui PEC da Segurança Pública na pauta de votação do Senado",
       "resumo": [
-        "O presidente da Comissão de Constituição e Justiça do Senado, Davi Alcolumbre, pautou a votação da Proposta de Emenda à Constituição (PEC) da Segurança Pública para a próxima terça-feira. A matéria busca unificar diretrizes nacionais para as polícias e ampliar a atuação da União no combate ao crime organizado. O texto centraliza atribuições e enfrenta debates sobre a autonomia federativa dos estados."
+        "O presidente do Senado definiu a pauta da próxima terça-feira com destaque para a Proposta de Emenda à Constituição da Segurança Pública. A matéria visa estruturar novas diretrizes de integração entre forças estaduais e federais, além de delimitar o papel da Polícia Rodoviária Federal e do Fundo Nacional de Segurança."
       ],
       "texto_integral": [
         "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
@@ -24549,7 +24549,7 @@
         "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
       ],
       "pontos": [
-        "Destaca a estratégia de pautar a votação na comissão e os pontos de atrito federativo"
+        "Definição do calendário deliberativo pelo Senado"
       ]
     },
     "rio-willer-tomaz-angra-patrimonio-g1.globo.com/politica/noticia/": {
@@ -24946,10 +24946,10 @@
       "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/31/mte-recebe-denuncias-de-assedio-eleitoral-no-trabalho.ghtml",
       "fonte": "g1",
       "tipo": "noticia",
-      "data": "2026-10-31",
+      "data": "2026-11-01",
       "titulo": "MTE registra 4,3 mil denúncias de assédio eleitoral no ambiente de trabalho",
       "resumo": [
-        "O Ministério do Trabalho e Emprego recebeu mais de 4,3 mil denúncias de assédio eleitoral em empresas em apenas três dias úteis na reta final e pós-segundo turno. Os relatos envolvem ameaças de demissão, promessas de bonificação atreladas a votos específicos e coação para uso de materiais de campanha. O Ministério Público do Trabalho e auditores fiscais intensificaram as notificações e ajuizamento de termos de ajustamento de conduta."
+        "O Ministério do Trabalho e Emprego apurou um volume expressivo de 4,3 mil denúncias de coação e pressão eleitoral nas empresas em um intervalo de apenas três dias. O canal foi aberto para acolher relatos de empregados coagidos por gestores ou proprietários sobre escolhas de voto."
       ],
       "texto_integral": [
         "O Ministério do Trabalho e Emprego (MTE) recebeu 4.305 denúncias de assédio eleitoral no ambiente de trabalho entre quarta-feira (28) e sexta-feira (30). Os registros foram feitos nos três primeiros dias de funcionamento de um canal específico para esse tipo de ocorrência.",
@@ -24983,7 +24983,7 @@
         "Ministério do Trabalho e Emprego (MTE): recebe denúncias por meio do canal https://assedioeleitoral.trabalho.gov.br/Ministério Público do Trabalho (MPT): recebe denúncias de irregularidades trabalhistas pelo site do órgão e pelo aplicativo Pardal MPT.Justiça do Trabalho: o Tribunal Superior do Trabalho (TST) e os Tribunais Regionais do Trabalho possuem canais de atendimento e ouvidorias para receber relatos relacionados ao tema.Centrais sindicais: disponibilizam canal para denúncias de pressões políticas, demissões ou cortes de benefícios relacionados à escolha eleitoral.Ministério Público Eleitoral (MPE): pode ser acionado em situações que envolvam possíveis crimes ou irregularidades eleitorais.Sindicato: o sindicato da categoria também pode receber denúncias e orientar o trabalhador sobre seus direitos.Canal de Denúncias para Inspeção do Trabalho: canal online do Ministério do Trabalho para denúncias trabalhistas;Fala.br: plataforma integrada de ouvidoria e acesso à informação da Controladoria-Geral da União;Central Alô Trabalho: o número 158 funciona de segunda a sábado, das 7h às 22h (horário de Brasília). A ligação gratuita de qualquer telefone fixo, mas chamadas por celular serão cobradas;Superintendências Regionais do Trabalho: são responsáveis por executar, supervisionar e monitorar ações relacionadas a políticas públicas de trabalho nos estados;Disque 100: Serviço gratuito e disponível 24 horas por dia, o disque 100 recebe denúncias de violações de direitos humanos, inclusive assédio moral no trabalho."
       ],
       "pontos": [
-        "Balanço das queixas enviadas aos canais oficiais de fiscalização trabalhista"
+        "Balanço divulgado pelos órgãos fiscalizadores trabalhistas"
       ]
     },
     "cnu-2027-vagas-servico-publico-g1.globo.com/trabalho-e-carrei": {
@@ -26343,6 +26343,149 @@
       ],
       "pontos": [
         "Mapeia os imóveis insulares em Angra dos Reis e o histórico das contendas judiciais"
+      ]
+    },
+    "camara-modelo-eleicao-deputados-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Câmara avança em discussões para alterar modelo eleitoral de deputados",
+      "resumo": [
+        "Lideranças da Câmara dos Deputados intensificaram os debates para mudar o formato de escolha dos parlamentares já para as próximas eleições gerais. A principal proposta sobre a mesa envolve o sistema distrital misto, combinando votação proporcional partidária com o voto majoritário por distritos geográficos delimitados."
+      ],
+      "texto_integral": [
+        "Centrão tenta frear PL com voto distrital misto",
+        "Líderes da Câmara dos Deputados e presidentes de partido articulam e pretendem retomar a tramitação de uma proposta que altera a forma de escolha dos deputados e institui o chamado sistema distrital misto.",
+        "O principal objetivo é frear a perda de espaço de partidos de centro no parlamento, após o crescimento do Partido Liberal (PL) nas eleições de 2026, que diminuiu o espaço de partidos do Centrão na Câmara e ampliou o espaço da ala bolsonarista.",
+        "A votação da proposta ainda está em negociação, mas a ideia é que as mudanças nas regras eleitorais comecem a valer integralmente nas eleições de 2034, com uma transição nas próximas eleições nacionais.",
+        "A iniciativa começou a ser discutida depois do primeiro turno da disputa, ainda no início de outubro, em uma declaração do presidente da Câmara, Hugo Motta (Republicanos-PB), um representante do Centrão.",
+        "O PL terminou as eleições com 121 deputados, a maior bancada desde a Constituinte. Há quatro anos, o partido havia conseguido 99 deputados. Com o resultado deste ano, a sigla terá 23,6% das 513 cadeiras da Câmara dos Deputados.",
+        "Em contrapartida, o Centrão diminuiu sua presença. Perdeu 22 cadeiras em comparação com as eleições de 2022. Há entre os partidos do centro uma leitura de que mudanças precisam ser feitas para manter o poder dos partidos de centro.",
+        "Hugo Motta afirmou que pretende aprovar uma Proposta de Emenda à Constituição (PEC) instituindo o sistema distrital misto. A expectativa de líderes do centro é aprovar as mudanças ainda em 2026, ainda que admitam que as articulações estão somente no início.",
+        "Motta dialoga ainda com o presidente do Senado Federal, Davi Alcolumbre (União-AP), para agilizar a votação. Líderes esperam o apoio dos senadores porque as mudanças não afetam as eleições para eles. Mas o texto também ainda precisa de acordo na própria Câmara. Motta ainda tenta conseguir apoio do PT e do próprio PL.",
+        "O PL não tem interesse em mudar o sistema. Já entre os petistas, há resistência em alterar regras eleitorais logo depois de uma eleição acirrada. O medo é fornecer aos apoiadores de Flávio Bolsonaro (PL) o argumento de que há cerceamento ao partido bolsonarista.",
+        "Outros parlamentares dizem ainda que a mudança é tardia, que o perfil do Congresso já foi alterado.",
+        "O relator da PEC que ainda será apresentada deve ser o deputado Domingos Neto (PSD-CE), que já é o relator de um projeto de lei sobre o sistema distrital na Câmara.",
+        "Distrital, distritão ou distrital misto",
+        "Um dos pontos que ainda estão sendo negociados entre os líderes partidários é qual modelo será adotado.",
+        "🔎 Atualmente, deputados são escolhidos de acordo com votos que eles e os seus partidos recebem. O Tribunal Superior Eleitoral (TSE) realiza uma conta, chamada de quociente eleitoral, para definir quantos votos cada partido precisa para ter uma cadeira na Câmara dos Deputados. Esse modelo é chamado de sistema proporcional.",
+        "Essa fórmula acaba criando os chamados \"puxadores de votos\" — um candidato que recebe muitos votos e, indiretamente, contribui para a eleição de candidatos que não obtiveram o número suficiente de votos.",
+        "Neste ano, votações expressivas em deputados como Nikolas Ferreira (PL-MG) e Erika Hilton (PSOL-SP) puxaram outros candidatos de seus partidos.",
+        "No sistema distrital, cada estado brasileiro é dividido em distritos. Cada distrito elege um número específico de deputados. Os moradores dessa determinada região poderão votar apenas nos candidatos do distrito em que vivem. São eleitos os candidatos mais votados no distrito.",
+        "Mas, buscando manter uma parte do poder dos partidos no processo eleitoral, os deputados estudam criar um modelo misto:",
+        "metade das vagas do distrito ficaria com os mais votados; a outra metade seria distribuída seguindo uma lista de candidatos definida previamente pelos partidos. As vagas seriam divididas de acordo com a quantidade de votos que as siglas conseguirem. Por exemplo: se um partido obtém votos para eleger quatro deputados, são eleitos os quatro primeiros nomes da lista.",
+        "O distrital misto tem como defensores presidentes de partidos como Gilberto Kassab, do PSD, e Ciro Nogueira, do Progressistas. Mas não há consenso no Congresso Nacional.",
+        "Apesar de defender o modelo, a deputada Adriana Ventura (Novo-SP) aponta algumas preocupações, como o sistema deixar a disputa mais vulnerável ao crime organizado, com candidatos de facções ou milícias controlando alguns distritos.",
+        "Parlamentares do PSOL também são críticos ao distrital misto por entenderem que o modelo prejudicaria o partido. Apontam, ainda, o risco de reduzir a participação de grupos que já são minoria no Congresso, como mulheres e negros.",
+        "Muitos deputados defendem um quarto modelo, o chamado distritão: transformar a eleição da Câmara em majoritária. Ou seja, os deputados mais votados em cada estado são eleitos, sem os chamados \"puxadores de votos\".",
+        "O modelo é criticado por especialistas, que dizem que ele pode facilitar a eleição de candidatos com mais recursos e dificultar a renovação no Congresso Nacional. A Câmara tentou aprovar a mudança para este modelo em 2017 e 2021, mas não houve votos suficientes para aprovar a mudança.",
+        "Deputado mais votado no Rio de Janeiro, o líder do PP, deputado Luizinho, é a favor do modelo e diz que, para não enfraquecer os partidos, a proposta poderia prever que o mandato pertence às legendas, diferentemente de outras eleições majoritárias, e o deputado não poderia trocar de filiação.",
+        "Para angariar apoio, os líderes indicaram que as mudanças não valeriam para as próximas eleições, em 2030. Nela, haveria uma transição. Mas os detalhes de como isso seria feito não foram definidos, segundo o relator Domingos Neto.",
+        "Parlamentares ouvidos pelo g1 e pela GloboNews dizem que existe a ideia de fazer um distritão em 2030 para atender os deputados que defendem esse modelo. Depois, em 2034, entraria em vigor o distrital misto, com a lista fechada dos partidos.",
+        "Domingos Neto afirma que a lista dos partidos deverá seguir as regras de inclusão e cotas de mulheres e negros e pardos para candidaturas. Mas ainda há dúvidas sobre como a diversidade de eleitos seria garantida se os partidos puderem definir a ordem da lista.",
+        "Em 2034, os eleitores votariam assim, somente uma vez, para deputado em cada distrito, para eleger deputados, e esses votos seriam contabilizados no estado para a definição de forma proporcional de quantas vagas cada sigla poderia preencher a partir da lista dos partidos.",
+        "Um dos pontos que levam a mais dúvidas entre os deputados é a divisão dos estados em distritos. Deputados estão preocupados com os votos que hoje são espalhados em várias cidades que podem pertencer a distritos diferentes.",
+        "Domingos Neto afirma que a definição dos distritos seria feita a partir de critérios do Instituto Brasileiro de Geografia e Estatística (IBGE) e uma comissão mista do Congresso acompanharia a implementação.",
+        "Por outro lado, defensores indicam que o processo eleitoral ficaria mais barato, já que o candidato não precisaria fazer campanha em todo o estado, somente em seu distrito.",
+        "Também dizem que o distrital misto aproximaria o candidato dos problemas reais dos eleitores, ao se concentrarem em uma região menor."
+      ],
+      "pontos": [
+        "Detalhamento da proposta e mobilização das lideranças partidárias na Câmara"
+      ]
+    },
+    "justica-quebra-sigilo-morte-tancredo-g1.globo.com/df/distrito-feder": {
+      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/01/justica-quebra-sigilo-de-documentos-da-morte-de-tancredo-neves-entenda-o-que-pode-vir-a-tona.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Justiça quebra sigilo de documentos médicos sobre a morte de Tancredo Neves",
+      "resumo": [
+        "A Justiça Federal autorizou a liberação e a abertura pública de relatórios e documentos sigilosos relacionados à internação e ao falecimento de Tancredo Neves em 1985. A documentação inclui boletins clínicos e prontuários médicos da época que permaneceram sob custódia restrita por quatro décadas."
+      ],
+      "texto_integral": [
+        "Justiça determina quebra do sigilo médico sobre morte de Tancredo Neves",
+        "Há pouco mais de 40 anos, o Brasil festejava um momento histórico: a eleição e a futura posse do primeiro presidente civil, após duas décadas do regime militar.",
+        "A internação na véspera da posse – e a morte inesperada do presidente eleito Tancredo Neves em 21 de abril de 1985 – mudou novamente os rumos da política nacional. E, ainda hoje, é cercada de mistérios e até teorias da conspiração.",
+        "Uma decisão dada pela Justiça Federal nesta semana pode começar a solucionar essas dúvidas. O Tribunal Regional Federal da 1ª Região foi unânime ao aprovar que a família de Tancredo tenha acesso a documentos sigilosos sobre a internação no Hospital de Base, em Brasília.",
+        "✅ Clique aqui para seguir o canal do g1 no WhatsApp.",
+        "O objetivo é sanar a dúvida da família --- e de inúmeros eleitores da época --- sobre a suspeita de erro médico.",
+        "Tancredo Neves foi internado na véspera da posse presidencial com quadro de diverticulite – inflamação na região do intestino grosso. Ele morreu um mês depois, em 21 de abril de 1985.",
+        "Com a nova decisão, o Conselho Federal de Medicina (CFM) e o Conselho Regional de Medicina do Distrito Federal (CRM-DF), devem liberar prontuários, relação de médicos e outros documentos.",
+        "Procuradas pelo g1, as entidades afirmaram que ainda não foram oficialmente notificadas.",
+        "Apesar de a decisão ter chegado apenas em 2026, a busca por explicações começou em 2010, com a publicação do livro \"O paciente\", de Luís Mir. Com autorização da família, o escritor pesquisou a fundo o período e encontrou falhas nos procedimentos.",
+        "A advogada Juliana Porcaro explica que a família pediu aos conselhos que liberassem os documentos, mas a demanda foi negada com base no sigilo da relação médico-paciente. Por isso, o caso foi parar na Justiça.",
+        "As hipóteses de erro médico levantadas pelo autor e pelos familiares se sustentam em quatro fatores.",
+        "Cirurgia imediata: especialistas ouvidos pelo escritor questionam a decisão de uma cirurgia de emergência. Isso porque os procedimentos contra diverticulite costumam ser eletivos, ou seja, passíveis de agendamento enquanto o paciente segue com outros tratamentos. Técnicas questionáveis: Mais de 30 acompanhantes estiveram na sala de cirurgia durante o procedimento, o que é proibido por razões de segurança. Advertência: Médicos envolvidos no tratamento receberam advertência do CRM-DF. O motivo da notificação, no entanto, segue como um mistério. Falhas na recuperação: O autor acredita que falhas no protocolo de recuperação podem ter contribuído para complicações.",
+        "Uma das fotos mais emblemáticas da época é a foto de Tancredo Neves sentado ao lado dos médicos (veja abaixo). Por conta da região da cirurgia, no entanto, ele não poderia ter sido colocado naquela posição.",
+        "Após hemorragia e outras complicações, Tancredo foi transferido do Instituto do Coração (Incor) já em estado grave.",
+        "\"Quando ele veio a óbito, os médicos não tiveram coragem de declarar o óbito, eles chamaram o médico americano [Warren Zapol], que veio ao Brasil e avaliou\", conta Juliana.",
+        "Para a advogada e porta-voz da família, a divulgação dos dados não é apenas de interesse das pessoas próximas, mas ajuda a contar a \"história de uma nação\".",
+        "\"Se há uma advertência, é porque houve um processo administrativo no conselho e algo foi considerado errado. E é a esse 'algo' que a família quer ter acesso. Quer entender como os próprios médicos do Conselho entenderam a postura dos médicos responsáveis pelo presidente Tancredo Neves\", afirma.",
+        "Juliana conta que esteve com o ex-presidente José Sarney, que confirma a percepção de que houve negligência por parte da equipe de saúde.",
+        "\"Ele confirmou que teve esse receio de assumir a presidência, porque foi muito delicado. Ninguém sabia se isso ia ser bem aceito\", comenta.",
+        "Com a posse de Sarney, vice na chapa de Tancredo, o Brasil iniciou um novo momento na política com a eleição de civis.",
+        "Leia mais notícias sobre a região no g1 DF."
+      ],
+      "pontos": [
+        "Decisão judicial e valor documental para a historiografia política"
+      ]
+    },
+    "patrimonio-imobiliario-angra-dos-reis-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-01",
+      "titulo": "Disputa imobiliária em Angra dos Reis revela concentração de imóveis insulares",
+      "resumo": [
+        "Apuração judicial sobre posse de terrenos no litoral sul fluminense expôs a existência de cinco propriedades de alto padrão pertencentes a um mesmo advogado em ilhas de Angra dos Reis, além do imóvel objeto de litígio judicial com atleta profissional. A região tem sido foco de contestações sobre ocupação de terrenos de marinha e regularidade fundiária."
+      ],
+      "texto_integral": [
+        "Willer Tomaz tem outras cinco casas em ilhas de Angra além da que disputou com Richarlison",
+        "O advogado Willer Tomaz, investigado no Supremo Tribunal Federal (STF) junto com o senador Flávio Bolsonaro (PL-RJ) por suspeitas de lavagem de dinheiro, tem outras cinco casas em ilhas de Angra dos Reis, na Costa Verde do Rio de Janeiro, além da que virou alvo de disputa com o jogador Richarlison.",
+        "Com exceção de uma, as casas foram compradas entre 2021 e 2022, na mesma época em que Flávio apresentou ao Senado Federal um projeto de lei para estimular empreendimentos em Angra, permitindo a municipalização das unidades de conservação federais e estaduais.",
+        "O objetivo do projeto é flexibilizar as regras para a exploração econômica da área.",
+        "Também no mesmo período, Flávio foi o relator da PEC das Praias no Senado. O texto propõe permitir a privatização das ilhas marítimas do país, hoje pertencentes à União. Os dois projetos continuam em tramitação (leia mais sobre as propostas abaixo).",
+        "Os planos para a Costa Verde do Rio vêm desde o governo de Jair Bolsonaro. Em maio de 2019, o então presidente afirmou que queria fazer de Angra \"uma nova Cancún\".",
+        "\"O nosso estado merece ter uma Cancún. E nós poderemos tê-la. E estamos trabalhando para a região de Angra. Depende de um decreto presidencial. Porque a Estação Ecológica de Tamoios está demais. Não preserva absolutamente nada e faz de uma área rica, que pode trazer bilhões de reais, por ano, em turismo, parada por falta de uma visão mais objetiva, mais progressista nessa questão\", declarou Jair à época.",
+        "🔎 Pela Constituição Federal, as ilhas são bens da União. Empresas e indivíduos podem ocupá-las, mediante processos de aforamento ou de ocupação registrados junto à Secretaria de Patrimônio da União (SPU), órgão responsável pela gestão das ilhas. Essas ocupações podem ser revistas pela SPU.",
+        "Questionado sobre eventuais projetos comerciais previstos para suas ilhas e sobre sua relação com as propostas legislativas elaboradas por Flávio Bolsonaro, Willer Tomaz não se manifestou. O senador não foi localizado pela reportagem.",
+        "Tomaz se mudou para os Estados Unidos em agosto deste ano, depois de ser alvo de uma operação da Polícia Federal. Flávio fugiu para a Flórida dois dias após ser derrotado no segundo turno da eleição presidencial por Luiz Inácio Lula da Silva (PT).",
+        "As casas compradas por empresas de Willer Tomaz em Angra são localizadas na:",
+        "Ilha Comprida: em um terreno de 175,2 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 5,7 milhões;Ilha Comprida: em um terreno de 32,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 2,1 milhões;Ilha Comprida: em um terreno de 181,8 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em setembro de 2021. Valor patrimonial registrado de R$ 6 milhões;Ilha Comprida: em um terreno de 2,1 mil m², comprada pela empresa WT Administração de Imóveis e Bens, em julho de 2022. Valor patrimonial registrado de R$ 2,9 milhões (imóvel disputado com Richarlison);Ilha do José André: em um terreno de 57,3 mil m², comprada pela empresa Friponor Brasil Turismo, Empreendimentos e Participações, em 2008. Valor patrimonial registrado de R$ 23,7 milhões.",
+        "Os dados são de um levantamento feito nos sistemas da SPU e em registros de cartório.",
+        "Tomaz é dono, também, de cotas de uma sexta casa em Angra, na Ilha do Jorge, registrada em nome da empresa Real Estate Duo 4, pertencente ao grupo Prime You.",
+        "🔎 A Prime You é uma companhia especializada em administrar bens de luxo compartilhados por milionários, como aviões, barcos e mansões. O banqueiro Daniel Vorcaro, do Master, foi sócio da Prime You de setembro de 2021 a setembro de 2025. Vorcaro também costumava usar uma casa na Ilha do Jorge próxima da de Tomaz, como revelou o UOL.",
+        "Ao portal, Tomaz afirmou que adquiriu participação de 25% na casa da Prime You em 2022 e que nunca teve \"qualquer relação pessoal, comercial ou societária\" com Vorcaro.",
+        "O episódio que jogou luz sobre os investimentos de Willer Tomaz em Angra foi a disputa por uma das casas com Richarlison de Andrade, atacante do Tottenham e que já jogou pela Seleção Brasileira.",
+        "O jogador publicou vídeos em 17 e 21 de outubro acusando Flávio Bolsonaro de envolvimento na briga pelo imóvel de luxo. Os vídeos tiveram milhões de visualizações em meio ao processo eleitoral. No debate da Globo, Lula questionou Flávio sobre o caso, e o então candidato respondeu que a Justiça já havia decidido a favor de Tomaz. Na véspera do segundo turno, o petista disse que ia brigar para devolver a Richarlison o direito de ocupação.",
+        "O atacante disse nos vídeos que ocupava a casa na Ilha Comprida desde 2020 e que investiu R$ 10 milhões no local, por meio de uma empresa da qual é sócio, a Sport 70.",
+        "Segundo Richarlison, Flávio visitou sua ilha e demonstrou interesse na propriedade — que tem uma cachoeira que deságua no mar —, mas o jogador se recusou a vendê-la. Na visão do atacante, o senador se aliou a Tomaz, de quem é amigo, para conseguir os direitos sobre o imóvel.",
+        "O g1 analisou os processos da Secretaria de Patrimônio da União (SPU) envolvendo a casa. A empresa Sport 70, de Richarlison, pediu à SPU para regularizar sua utilização do imóvel em 20 de setembro de 2021. O processo administrativo não teve andamento.",
+        "Do lado de Willer Tomaz, o processo de regularização da utilização começou em 5 de maio de 2022. Nessa data, uma empresa de terceiros, a M Locadora de Veículos, solicitou à SPU a regularização de sua situação de ocupante, algo que remontava à década de 1980. O processo teve andamento célere e favorável no órgão.",
+        "Em 11 de julho de 2022, a M Locadora de Veículos pediu à SPU para emitir uma Certidão de Autorização para Transferência (CAT), documento necessário para vender o direito de ocupação. O pedido foi feito às 11h33 e foi atendido pela SPU às 13h13 do mesmo dia.",
+        "Em seguida, a M Locadora passou o imóvel para a WT Administração de Imóveis e Bens, de Willer Tomaz.",
+        "De acordo com um servidor ouvido pela reportagem, a celeridade da tramitação em um caso e a ausência de análise da SPU, em outro, é o ponto mais controverso da disputa no âmbito administrativo. Em 2022, a SPU estava subordinada ao governo de Jair Bolsonaro.",
+        "A poucos dias do segundo turno da eleição presidencial, dois parlamentares adversários de Flávio — Rogério Correia (PT-MG) e Pedro Uczai (PT-SC) — pediram ao STF para investigar o caso da ilha de Richarlison no mesmo inquérito que já apura as relações entre o senador e Willer Tomaz. O relator é o ministro Alexandre de Moraes.",
+        "Tomaz e Flávio confirmam que são amigos, mas negam ter negócios juntos.",
+        "Sobre a disputa com Richarlison, Tomaz sustenta que o jogador \"pagou a posseiros\" quando comprou a casa, \"e não à proprietária de direito\".",
+        "O advogado apresenta escritura registrada do imóvel, certidão da SPU e decisões favoráveis na Justiça, inclusive no Superior Tribunal de Justiça (STJ).",
+        "Na Ilha do José André, localizada dentro da Área de Proteção Ambiental (APA) de Tamoios, o plano de Tomaz era construir um resort de luxo com piscinas, beach club, spa, restaurante, área para eventos, hangar e heliponto, como revelou o RJ2.",
+        "Para expandir a área construída na ilha, o advogado apresentou um pedido ao Instituto Estadual do Ambiente (Inea) do Rio de Janeiro em 20 de março de 2026, no mesmo dia em que o então governador Cláudio Castro publicou um decreto que revogava planos de manejo de áreas de proteção ambiental.",
+        "O decreto de Castro acabou sendo posteriormente derrubado pelo desembargador Ricardo Couto, que assumiu o governo do estado. O empreendimento de Tomaz não avançou.",
+        "Cláudio Castro afirmou que não discutiu previamente o conteúdo do decreto com Willer Tomaz e não recebeu nenhum pedido para editar a medida. Segundo o ex-governador, o decreto tinha caráter geral e técnico. Tomaz informou ao RJ2 que não comentaria esse caso.",
+        "O senador Flávio Bolsonaro apresentou, em 13 de outubro de 2021, o projeto para formar uma Região Administrativa Integrada de Desenvolvimento Sustentável (Rides) com os municípios de Angra dos Reis, Mangaratiba e Paraty.",
+        "O objetivo seria estimular o turismo, a economia e a preservação ambiental. O texto do Projeto de Lei Complementar n° 157/2021 também autoriza municipalizar as unidades de conservação federais e estaduais.",
+        "Em 28 de setembro, Tomaz havia adquirido três casas na Ilha Comprida.",
+        "\"Esse cenário paradisíaco não deixa nada a desejar em relação aos destinos turísticos similares mais procurados do mundo, como por exemplo Tailândia, Filipinas, Cancun, Grécia, Jamaica, Bahamas, Fiji ou República Dominicana\", escreveu Flávio na justificativa do projeto.",
+        "O senador afirmou também que as prefeituras \"aguardam com grande expectativa\" a aprovação do projeto. O texto está para ser analisado na Comissão de Meio Ambiente do Senado desde abril de 2025.",
+        "Já a PEC das Praias foi apresentada inicialmente na Câmara dos Deputados, em 2011. A proposta foi aprovada pelos deputados no plenário somente em fevereiro de 2022, quando seguiu para o Senado, onde aguarda análise na Comissão de Constituição e Justiça (CCJ).",
+        "Em abril de 2022, Flávio foi designado relator. Ele elaborou dois relatórios para a CCJ prevendo excluir da lista de bens da União os chamados \"terrenos de marinha\", incluindo as ilhas. Na prática, elas poderão ser privatizadas pelos ocupantes.",
+        "No atual regime, as ilhas podem ser usadas por pessoas ou empresas, mas essa ocupação pode ser revista pela SPU.",
+        "Em setembro de 2024, já no governo de Lula, a SPU fez uma nota técnica manifestando-se contrária à aprovação da PEC das Praias. Para o órgão, o texto \"favorece amplamente as condições jurídicas para a grilagem de toda costa brasileira em favor da população mais abastada do país\"."
+      ],
+      "pontos": [
+        "Levantamento cartorial e disputas fundiárias em ilhas do litoral do Rio"
       ]
     }
   }
