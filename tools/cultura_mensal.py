@@ -780,6 +780,11 @@ def main():
     dados = montar_cultura_novembro_2026()
     mes_id = "2026-11"
 
+    forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
+    if not forcar and mes_id in db.get("edicoes", {}) and mes_id in db.get("cine_edicoes", {}) and mes_id in db.get("livro_edicoes", {}):
+        print(f"Edições culturais do mês [{mes_id}] já existem em {revista_path}. Nada a fazer.")
+        return
+
     # 1. Música
     db.setdefault("edicoes", {})[mes_id] = dados["musica_edicao"]
     for k, v in dados["musica_itens"].items():

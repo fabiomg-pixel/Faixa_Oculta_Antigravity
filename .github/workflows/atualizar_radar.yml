@@ -2,14 +2,15 @@ name: Atualizar Faixa Oculta (Boletins e Revistas)
 
 on:
   schedule:
-    # Boletim Diário - Manhã: 08:00 UTC = 05:00 BRT
-    - cron: '0 8 * * *'
-    # Boletim Diário - Noite: 20:00 UTC = 17:00 BRT
-    - cron: '0 20 * * *'
-    # Revista da Semana - Quinta-feira à noite: 23:00 UTC = 20:00 BRT
-    - cron: '0 23 * * 4'
-    # Cultura do Mês (Música, Filmes e Livros) - Todo dia 01: 09:00 UTC = 06:00 BRT
-    - cron: '0 9 1 * *'
+    # Salvaguarda Online (se o computador local atrasar ou estiver fechado):
+    # Boletim Diário - Manhã: 09:30 UTC = 06:30 BRT
+    - cron: '30 9 * * *'
+    # Boletim Diário - Noite: 21:30 UTC = 18:30 BRT
+    - cron: '30 21 * * *'
+    # Revista da Semana - Quinta-feira (online): 01:00 UTC (sexta) = 22:00 BRT (quinta)
+    - cron: '0 1 * * 5'
+    # Cultura do Mês (Música, Filmes e Livros) - Todo dia 01: 11:00 UTC = 08:00 BRT
+    - cron: '0 11 1 * *'
   # Permite disparar manualmente escolhendo a rotina
   workflow_dispatch:
     inputs:

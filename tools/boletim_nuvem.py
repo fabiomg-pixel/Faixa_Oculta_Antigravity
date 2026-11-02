@@ -297,6 +297,11 @@ def main():
     with open(revista_path, "r", encoding="utf-8") as f:
         db = json.load(f)
 
+    forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
+    if not forcar and doc_id in db.get("dias", {}):
+        print(f"Edição [{doc_id}] já existe em {revista_path}. Nada a fazer.")
+        return
+
     # 1. Coleta matérias dos feeds
     itens_rss = coletar_noticias_rss()
     if not itens_rss:
