@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Dados editoriais de Livros e Ideias para a edição Nº 2 (Novembro 2026).
-Contém 22 livros/ensaios nas seções editoriais e 2 guias temáticos completos (10 livros nos guias).
-"""
+"""Dados editoriais de Livros para a edição Nº 2 (Novembro 2026)."""
 
 LIVRO_EDICAO = {
     "id": "2026-11",
@@ -9,36 +7,129 @@ LIVRO_EDICAO = {
     "mes": "Novembro de 2026",
     "data": "2026-11-01",
     "manchete": "Ciência como ensaio vivo, memórias da biologia e o melhor da literatura contemporânea",
-    "editorial": (
-        "Na edição de novembro da Revista de Livros, a curadoria foge das listas comerciais de marketing para selecionar "
-        "obras onde o rigor do conhecimento e a força poética da linguagem caminham juntos. "
-        "Na matéria de capa, 'A Trama da Vida' de Merlin Sheldrake desvela a rede invisível dos fungos que sustenta a biosfera, "
-        "dialogando de perto com as perturbações mentais e matemáticas de 'Maniac' (Benjamín Labatut), "
-        "o humanismo clínico e generoso de Oliver Sacks, a consagração de Han Kang com o Prêmio Nobel de Literatura "
-        "e o vigor telúrico de 'Salvar o Fogo' de Itamar Vieira Junior. Uma travessia densa e fértil para o fim de semana."
-    ),
+    "editorial": "Na edição de novembro da Revista de Livros, a curadoria seleciona obras de 2026 onde o rigor do conhecimento, o debate institucional e a força poética da linguagem caminham juntos. Na matéria de destaque, a histórica estreia da Aleph na ficção científica brasileira com 'Subjetivamente Extinto' de Felipe Castilho, ao lado da densa análise geopolítica em 'A Volta de Trump: Choque Político e Relações Internacionais' (Editora Unesp), o resgate histórico em 'A Máquina do Golpe: 1964' (Heloisa Starling / Cia das Letras) e a adaptação gráfica monumental de 'Torto Arado' na Todavia. Uma leitura viva e indispensável.",
     "layout": [
-        {"tipo": "secao", "secao": "lancamentos"},
-        {"tipo": "guia", "id": "guia-biologia-ensaio-narrativa-2026"},
-        {"tipo": "secao", "secao": "ideias"},
-        {"tipo": "secao", "secao": "brasil"},
-        {"tipo": "guia", "id": "guia-vozes-terra-brasil-2026"},
-        {"tipo": "secao", "secao": "achados"}
-    ]
+        {
+            "tipo": "secao",
+            "secao": "lancamentos"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-biologia-ensaio-narrativa-2026"
+        },
+        {
+            "tipo": "secao",
+            "secao": "ideias"
+        },
+        {
+            "tipo": "secao",
+            "secao": "brasil"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-vozes-terra-brasil-2026"
+        },
+        {
+            "tipo": "secao",
+            "secao": "achados"
+        }
+    ],
+    "capa": "capas/0920094d7b5de4e9ecf34ff4b4fefa6b.jpg",
+    "destaque_autor": {
+        "autor": "Merlin Sheldrake",
+        "obra_atual": "A Trama da Vida: Como os Fungos Constroem Nossos Mundos (Fittipaldi / Edição Revista 2026)",
+        "subtitulo": "A biologia como literatura maior: como o micologista de Cambridge implodiu o individualismo cartesiano e reescreveu a história natural contemporânea",
+        "ensaio": [
+            "Na tradição da ciência ocidental, há uma linhagem nobre e rara de pesquisadores que se recusam a trancar suas descobertas em jargões herméticos: de Alexander von Humboldt a Stephen Jay Gould, passando por Rachel Carson, Primo Levi e Oliver Sacks. Merlin Sheldrake, botânico e micologista doutor por Cambridge com anos de pesquisa de campo no Smithsonian Tropical Research Institute nas florestas do Panamá, é o herdeiro supremo dessa linhagem no século XXI. Sua prosa tem a precisão cirúrgica de quem analisa cromatografias gasosas e microscopia de fluorescência confocal, mas pulsa com a sensibilidade filosófica e o encantamento poético de um grande ensaísta lírico.",
+            "A grande revolução teórica e estética de A Trama da Vida é demonstrar que a ideia ocidental de indivíduo biológico autônomo e isolado é uma ficção insustentável. Todos os organismos — de árvores milenares ao corpo humano — são quimeras biológicas, simbioses ambulantes e redes dinâmicas de microrganismos e fungos em contínua negociação metabólica. Inspirado pelas teses pioneiras de Lynn Margulis sobre a simbiogênese, Sheldrake argumenta que a evolução não é uma arena hobbesiana de guerra cega de todos contra todos, mas uma sofisticada coreografia de cooperação metabólica, onde a imunidade treinada e as redes micorrízicas garantem a sobrevivência mútua.",
+            "Ao descrever o micélio — a teia subterrânea de hifas fúngicas que interliga os sistemas radiculares de florestas inteiras —, Sheldrake oferece uma nova gramática para pensar a cognição e a decisão ecológica. Sem cérebro, sem órgãos centrais e sem comando único, os fungos respondem a estímulos químicos, resolvem labirintos espaciais, distribuem fósforo e carbono de árvores abastadas para mudas na sombra e orquestram a decomposição e a fertilidade de toda a biosfera. O livro força o leitor a um exercício de descentralização radical: abandonar o antropocentrismo arrogante e admitir que o planeta é gerido há mais de um bilhão de anos por inteligências filamentosas invisíveis aos nossos olhos.",
+            "A ressonância monumental de A Trama da Vida ultrapassou os círculos científicos para transformar a filosofia da mente, a teoria política e a literatura de não ficção. Sheldrake não escreve sobre a natureza como um espetáculo externo a ser contemplado ou explorado: ele nos devolve à nossa condição de participantes de um metabolismo planetário comum. Uma obra seminal que educa o olhar, afia a sensibilidade cívica e oferece o melhor antídoto intelectual contra a destruição cega dos biomas da Terra."
+        ],
+        "obras_essenciais": [
+            {
+                "titulo": "A Trama da Vida",
+                "ano": "2020 / 2026",
+                "formato": "Ensaio científico (384 págs.)",
+                "capa": "capas/1dcdab18f72f85a8d1c6627d73f5aeae.jpg",
+                "por_que_ler": "A obra-prima que venceu o Royal Society Science Book Prize e redefiniu a micologia como centro nervoso da ecologia contemporânea; essencial para biólogos, filósofos e leitores da grande prosa.",
+                "link": "https://www.amazon.com.br/dp/8554126922"
+            },
+            {
+                "titulo": "Microcosmos: Quatro Bilhões de Anos de Evolução Microbiana",
+                "ano": "1986",
+                "formato": "Ensaio de biologia (320 págs.)",
+                "projeto": "Lynn Margulis & Dorion Sagan",
+                "capa": "capas/f12d799994d3556f427cea8a01d6c019.jpg",
+                "por_que_ler": "O texto fundacional indispensável sobre a simbiose e a origem bacteriana das células eucarióticas, leitura seminal que moldou a formação teórica e a visão de mundo de Sheldrake.",
+                "link": "https://www.amazon.com.br/s?k=Microcosmos+Lynn+Margulis"
+            },
+            {
+                "titulo": "A Vida das Plantas: Uma Metafísica da Mistura",
+                "ano": "2018",
+                "formato": "Filosofia da natureza (192 págs.)",
+                "projeto": "Emanuele Coccia",
+                "capa": "capas/156520b9505c9fdc7e46555ef3d345fb.jpg",
+                "por_que_ler": "Obra brilhante de filosofia ecológica que investiga a respiração, a fotossíntese e a imersão ontológica dos seres vivos no mundo vegetal, dialogando diretamente com a teia fúngica.",
+                "link": "https://www.amazon.com.br/dp/8569430154"
+            },
+            {
+                "titulo": "O Cogumelo no Fim do Mundo",
+                "ano": "2015",
+                "formato": "Antropologia ecológica (432 págs.)",
+                "projeto": "Anna Lowenhaupt Tsing",
+                "capa": "capas/325a695ebe4be3d3f1e7827a76bd7615.jpg",
+                "por_que_ler": "Ensaio antropológico e ecológico magistral sobre o cogumelo matsutake e a sobrevivência coletiva em paisagens devastadas pelo capitalismo predatório.",
+                "link": "https://www.amazon.com.br/dp/8566970425"
+            }
+        ],
+        "influenciados_e_dialogos": [
+            {
+                "artista": "Ed Yong",
+                "obra": "Um Mundo Imenso (2022, Intrínseca)",
+                "ano": "2022",
+                "capa": "capas/3b35ef4d09fc16c2bca8c2eef883ecc1.jpg",
+                "como_influenciou": "O sucesso retumbante de Sheldrake abriu caminho no mercado editorial para a ciência de desantropocentrização radical, onde a prosa se curva à imensidão dos sentidos não-humanos (eletropercepção, magnetismo, ecolocalização).",
+                "link": "https://www.amazon.com.br/dp/6555606019"
+            },
+            {
+                "artista": "Robin Wall Kimmerer",
+                "obra": "Trançando Grama Sagrada (2020, Roça Nova)",
+                "ano": "2020",
+                "capa": "capas/d5ff691d5436465c2b19caaad29bce93.jpg",
+                "como_influenciou": "A botânica indígena americana estabelece com Sheldrake um diálogo fecundo sobre reciprocidade ecológica: a ciência molecular de ponta e a sabedoria ancestral convergem para a mesma verdade de interdependência vital.",
+                "link": "https://www.amazon.com.br/dp/6586860293"
+            },
+            {
+                "artista": "Suzanne Simard",
+                "obra": "Em Busca da Árvore-Mãe (2021, Zahar)",
+                "ano": "2021",
+                "capa": "capas/2d12aa1ead8a671a740aab9486f26883.jpg",
+                "como_influenciou": "A ecóloga canadense que comprovou experimentalmente a transferência de carbono entre árvores via redes fúngicas; seu trabalho de campo e a síntese teórica de Sheldrake formam os dois pilares da moderna revolução florestal.",
+                "link": "https://www.amazon.com.br/dp/8537819582"
+            },
+            {
+                "artista": "Ailton Krenak",
+                "obra": "A Vida Não É Útil (2020, Companhia das Letras)",
+                "ano": "2020",
+                "capa": "capas/3889a9e8a3f3377b64dad8542e582b8b.jpg",
+                "como_influenciou": "A premissa ameríndia de que as montanhas, os rios e o subsolo são parentes vivos e conscientes encontra na biologia relacional de Sheldrake a sua mais sólida e comovente validação científica e filosófica.",
+                "link": "https://www.amazon.com.br/dp/853593368X"
+            }
+        ]
+    }
 }
 
 LIVRO_ITENS = {
-    # --- SEÇÃO LANÇAMENTOS & DESTAQUES ---
     "2026-11--a-trama-da-vida": {
         "id": "2026-11--a-trama-da-vida",
         "edicao": "2026-11",
         "ordem": 1,
-        "secao": "lancamentos",
-        "destaque": True,
+        "secao": "ideias",
+        "destaque": true,
         "titulo": "A Trama da Vida",
         "titulo_original": "Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures",
         "autor": "Merlin Sheldrake",
-        "ano": 2024,
+        "ano": 2026,
         "ano_original": 2020,
         "pais": "Reino Unido",
         "tempo": "424 páginas",
@@ -54,17 +145,19 @@ LIVRO_ITENS = {
             "Uma leitura essencial, transformadora e indispensável para qualquer pesquisador, estudante de biociências ou amante da literatura de ideias."
         ],
         "ponte": "Oliver Sacks, Lynn Margulis, Michael Pollan e Stefano Mancuso.",
-        "recepcao": "Vencedor do Royal Society Science Book Prize; best-seller internacional traduzido em mais de 20 línguas."
+        "recepcao": "Vencedor do Royal Society Science Book Prize; best-seller internacional traduzido em mais de 20 línguas.",
+        "capa": "capas/0920094d7b5de4e9ecf34ff4b4fefa6b.jpg",
+        "imagem": "capas/0920094d7b5de4e9ecf34ff4b4fefa6b.jpg"
     },
     "2026-11--maniac": {
         "id": "2026-11--maniac",
         "edicao": "2026-11",
         "ordem": 2,
-        "secao": "lancamentos",
+        "secao": "ideias",
         "titulo": "Maniac",
         "titulo_original": "The MANIAC",
         "autor": "Benjamín Labatut",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2023,
         "pais": "Chile, Holanda",
         "tempo": "368 páginas",
@@ -80,17 +173,19 @@ LIVRO_ITENS = {
             "Uma obra-prima literária perturbadora sobre o instante em que a inteligência humana criou as ferramentas de sua própria obsolescência."
         ],
         "ponte": "Quando Deixamos de Entender o Mundo, Robert Oppenheimer, Jorge Luis Borges e W.G. Sebald.",
-        "recepcao": "Aclamação unânime pela crítica global; eleito um dos dez melhores livros do ano pelo The New York Times e The Guardian."
+        "recepcao": "Aclamação unânime pela crítica global; eleito um dos dez melhores livros do ano pelo The New York Times e The Guardian.",
+        "capa": "capas/e9055ba2ca5a573370a81b7917303e63.jpg",
+        "imagem": "capas/e9055ba2ca5a573370a81b7917303e63.jpg"
     },
     "2026-11--nexus": {
         "id": "2026-11--nexus",
         "edicao": "2026-11",
         "ordem": 3,
-        "secao": "lancamentos",
+        "secao": "ideias",
         "titulo": "Nexus: Uma Breve História das Redes de Informação",
         "titulo_original": "Nexus: A Brief History of Information Networks from the Stone Age to AI",
         "autor": "Yuval Noah Harari",
-        "ano": 2024,
+        "ano": 2026,
         "ano_original": 2024,
         "pais": "Israel",
         "tempo": "544 páginas",
@@ -106,43 +201,19 @@ LIVRO_ITENS = {
             "Um alerta lúcido e embasado sobre a urgência de construir mecanismos de autocorreção e prestação de contas antes que os sistemas algorítmicos engulam o tecido democrático."
         ],
         "ponte": "Sapiens, Homo Deus, Shoshana Zuboff (A Era do Capitalismo de Vigilância) e Cathy O'Neil.",
-        "recepcao": "Lançamento global simultâneo; destaque em debates sobre regulação de tecnologia em todo o mundo."
-    },
-    "2026-11--intermezzo": {
-        "id": "2026-11--intermezzo",
-        "edicao": "2026-11",
-        "ordem": 4,
-        "secao": "lancamentos",
-        "titulo": "Intermezzo",
-        "titulo_original": "Intermezzo",
-        "autor": "Sally Rooney",
-        "ano": 2024,
-        "ano_original": 2024,
-        "pais": "Irlanda",
-        "tempo": "448 páginas",
-        "genero": "romance contemporâneo / drama psicológico",
-        "tipo": "livro",
-        "onde": "Companhia das Letras (Tradução de Débora Landsberg); impresso e e-book",
-        "olho": "Sally Rooney amadurece sua prosa com virtuosismo modernista ao investigar o luto e o embate fraterno entre dois irmãos em Dublin.",
-        "texto": "Peter, um advogado bem-sucedido de 32 anos, e Ivan, um mestre de xadrez introvertido de 22, tentam reconstruir a vida após a morte do pai.",
-        "resenha": [
-            "Sally Rooney foi catapultada ao estrelato pop com Conversas entre Amigos e Pessoas Normais, rotulada com frequência como a 'voz da geração millennial'. Em Intermezzo, seu quarto e mais ambicioso romance, ela silencia os céticos ao entregar uma obra de extraordinário fôlego formal que dialoga diretamente com o fluxo de consciência de James Joyce e a precisão filosófica de Ludwig Wittgenstein.",
-            "O enredo acompanha os irmãos Peter e Ivan Koubek nos meses seguintes à morte do pai por câncer em Dublin. Peter é um advogado carismático e atormentado que se divide entre a dependência química de calmantes e o afeto dividido por duas mulheres (sua ex-namorada Sylvia e a jovem Naomi). Ivan, por sua vez, é um prodígio do xadrez socialmente desajeitado que se apaixona por Margaret, uma mulher catorze anos mais velha recém-saída de um divórcio.",
-            "A grande proeza de Rooney está no estilo: a seção de Peter é escrita em frases curtas, sincopadas e telegráficas que mimetizam sua mente febril e ansiosa, enquanto as partes de Ivan fluem com a calma lógica e analítica de quem calcula lances numa abertura de peão.",
-            "Um romance deslumbrante sobre a aspereza do luto, a dificuldade de perdoar os próprios erros e a beleza da vulnerabilidade mútua."
-        ],
-        "ponte": "James Joyce (Ulisses), Pessoas Normais, Virginia Woolf e Rachel Cusk.",
-        "recepcao": "Aclamado pela crítica de língua inglesa como o trabalho mais maduro e impecável da autora até hoje."
+        "recepcao": "Lançamento global simultâneo; destaque em debates sobre regulação de tecnologia em todo o mundo.",
+        "capa": "capas/59bdf4b68c4409deac514331b99eb123.jpg",
+        "imagem": "capas/59bdf4b68c4409deac514331b99eb123.jpg"
     },
     "2026-11--a-vegetariana": {
         "id": "2026-11--a-vegetariana",
         "edicao": "2026-11",
         "ordem": 5,
-        "secao": "lancamentos",
+        "secao": "achados",
         "titulo": "A Vegetariana",
         "titulo_original": "Chaeshikjuuija",
         "autor": "Han Kang",
-        "ano": 2024,
+        "ano": 2026,
         "ano_original": 2007,
         "pais": "Coreia do Sul",
         "tempo": "176 páginas",
@@ -158,17 +229,19 @@ LIVRO_ITENS = {
             "Um livro magnético, perturbador e de economia cirúrgica, que transforma o corpo da mulher no último campo de batalha contra a violência estrutural do mundo."
         ],
         "ponte": "Franz Kafka (A Metamorfose), Han Kang (Atos Humanos), Clarice Lispector e Virginia Woolf.",
-        "recepcao": "Prêmio Nobel de Literatura 2024; International Booker Prize 2016; reconhecimento unânime como um clássico contemporâneo."
+        "recepcao": "Prêmio Nobel de Literatura 2024; International Booker Prize 2016; reconhecimento unânime como um clássico contemporâneo.",
+        "capa": "capas/8c6d804a3ba1dd4aa0db1aa15c4e8e6a.jpg",
+        "imagem": "capas/8c6d804a3ba1dd4aa0db1aa15c4e8e6a.jpg"
     },
     "2026-11--o-ceu-que-nos-protege": {
         "id": "2026-11--o-ceu-que-nos-protege",
         "edicao": "2026-11",
         "ordem": 6,
-        "secao": "lancamentos",
+        "secao": "achados",
         "titulo": "O Céu Que Nos Protege",
         "titulo_original": "The Sheltering Sky",
         "autor": "Paul Bowles",
-        "ano": 2024,
+        "ano": 2026,
         "ano_original": 1949,
         "pais": "EUA, Marrocos",
         "tempo": "288 páginas",
@@ -184,10 +257,10 @@ LIVRO_ITENS = {
             "Um monumento da literatura do século XX que continua a fascinar e apavorar com seu chamado intransigente ao desconhecido."
         ],
         "ponte": "Albert Camus (O Estrangeiro), William S. Burroughs, Joan Didion e Graham Greene.",
-        "recepcao": "Classificado pela Modern Library entre os 100 melhores romances do século XX; adaptado ao cinema por Bernardo Bertolucci."
+        "recepcao": "Classificado pela Modern Library entre os 100 melhores romances do século XX; adaptado ao cinema por Bernardo Bertolucci.",
+        "capa": "capas/602a8c928d18e9175a36d81b6454524c.jpg",
+        "imagem": "capas/602a8c928d18e9175a36d81b6454524c.jpg"
     },
-
-    # --- SEÇÃO IDEIAS & ENSAIOS ---
     "2026-11--o-homem-que-confundiu-sua-mulher": {
         "id": "2026-11--o-homem-que-confundiu-sua-mulher",
         "edicao": "2026-11",
@@ -196,7 +269,7 @@ LIVRO_ITENS = {
         "titulo": "O Homem Que Confundiu Sua Mulher com um Chapéu",
         "titulo_original": "The Man Who Mistook His Wife for a Hat and Other Clinical Tales",
         "autor": "Oliver Sacks",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 1985,
         "pais": "Reino Unido, EUA",
         "tempo": "320 páginas",
@@ -212,7 +285,9 @@ LIVRO_ITENS = {
             "Uma obra-prima indispensável para quem atua em biofísica, neurociência, psicologia ou simplesmente busca compreender a fragilidade do que chamamos de 'eu'."
         ],
         "ponte": "Alexander Luria, Antonio Damasio, Merlin Sheldrake e Stephen Jay Gould.",
-        "recepcao": "Clássico mundial da literatura de divulgação científica e médica, com mais de 30 edições internacionais."
+        "recepcao": "Clássico mundial da literatura de divulgação científica e médica, com mais de 30 edições internacionais.",
+        "capa": "capas/4f74b1ca74a45c44ff00b6b36a189e6a.jpg",
+        "imagem": "capas/4f74b1ca74a45c44ff00b6b36a189e6a.jpg"
     },
     "2026-11--a-ordem-do-tempo": {
         "id": "2026-11--a-ordem-do-tempo",
@@ -222,7 +297,7 @@ LIVRO_ITENS = {
         "titulo": "A Ordem do Tempo",
         "titulo_original": "L'ordine del tempo",
         "autor": "Carlo Rovelli",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2017,
         "pais": "Itália",
         "tempo": "208 páginas",
@@ -238,7 +313,9 @@ LIVRO_ITENS = {
             "Um livro curto, luminoso e profundamente reconfortante sobre nossa efêmera condição de eventos passageiros na teia do universo."
         ],
         "ponte": "Sete Breves Lições de Física, Albert Einstein, Marcelo Gleiser e Jorge Luis Borges.",
-        "recepcao": "Best-seller global elogiado por cientistas e literatos; leitura indispensável sobre as fronteiras da gravidade quântica."
+        "recepcao": "Best-seller global elogiado por cientistas e literatos; leitura indispensável sobre as fronteiras da gravidade quântica.",
+        "capa": "capas/af45e951d52ee4028a97a145de156d09.jpg",
+        "imagem": "capas/af45e951d52ee4028a97a145de156d09.jpg"
     },
     "2026-11--a-queda-do-ceu": {
         "id": "2026-11--a-queda-do-ceu",
@@ -248,7 +325,7 @@ LIVRO_ITENS = {
         "titulo": "A Queda do Céu: Palavras de um Xamã Yanomami",
         "titulo_original": "La chute du ciel",
         "autor": "Davi Kopenawa, Bruce Albert",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2010,
         "pais": "Brasil, França",
         "tempo": "768 páginas",
@@ -264,7 +341,9 @@ LIVRO_ITENS = {
             "Uma leitura que abala certezas ocidentais e transforma para sempre a relação do leitor com o planeta vivo."
         ],
         "ponte": "Eduardo Viveiros de Castro, Ailton Krenak, Claude Lévi-Strauss e Emanuele Coccia.",
-        "recepcao": "Clássico mundial da antropologia moderna; apontado por filósofos e ecologistas de todo o mundo como uma das obras mais decisivas do nosso tempo."
+        "recepcao": "Clássico mundial da antropologia moderna; apontado por filósofos e ecologistas de todo o mundo como uma das obras mais decisivas do nosso tempo.",
+        "capa": "capas/e1838903ae6ce6bbf662420178900b2a.jpg",
+        "imagem": "capas/e1838903ae6ce6bbf662420178900b2a.jpg"
     },
     "2026-11--metamorfoses": {
         "id": "2026-11--metamorfoses",
@@ -274,7 +353,7 @@ LIVRO_ITENS = {
         "titulo": "Metamorfoses",
         "titulo_original": "Métamorphoses",
         "autor": "Emanuele Coccia",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2020,
         "pais": "Itália, França",
         "tempo": "224 páginas",
@@ -290,7 +369,9 @@ LIVRO_ITENS = {
             "Uma obra de filosofia lírica, solar e profundamente generosa que cura o isolamento do homem contemporâneo."
         ],
         "ponte": "A Vida das Plantas (Coccia), Merlin Sheldrake, Donna Haraway e Bruno Latour.",
-        "recepcao": "Aclamado na França e na Itália como uma das vozes mais originais da nova ecologia filosófica europeia."
+        "recepcao": "Aclamado na França e na Itália como uma das vozes mais originais da nova ecologia filosófica europeia.",
+        "capa": "capas/c712c0bd64ecdfaea61ef9bc5188fc5b.jpg",
+        "imagem": "capas/c712c0bd64ecdfaea61ef9bc5188fc5b.jpg"
     },
     "2026-11--vida-3-0": {
         "id": "2026-11--vida-3-0",
@@ -300,7 +381,7 @@ LIVRO_ITENS = {
         "titulo": "Vida 3.0: O Ser Humano na Era da Inteligência Artificial",
         "titulo_original": "Life 3.0: Being Human in the Age of Artificial Intelligence",
         "autor": "Max Tegmark",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2017,
         "pais": "Suécia, EUA",
         "tempo": "448 páginas",
@@ -316,7 +397,9 @@ LIVRO_ITENS = {
             "Leitura obrigatória para qualquer profissional de tecnologia, cientistas de dados e cidadãos que desejam participar conscientemente do debate regulatório atual."
         ],
         "ponte": "Nick Bostrom (Superinteligência), Stuart Russell (Compatibilidade Humana), Yuval Noah Harari e Carl Sagan.",
-        "recepcao": "Recomendado por Elon Musk e Barack Obama; referência seminal nos estudos de segurança e alinhamento de IA."
+        "recepcao": "Recomendado por Elon Musk e Barack Obama; referência seminal nos estudos de segurança e alinhamento de IA.",
+        "capa": "capas/cfb70056364ad36459c62e14cc02746d.jpg",
+        "imagem": "capas/cfb70056364ad36459c62e14cc02746d.jpg"
     },
     "2026-11--a-danca-do-universo": {
         "id": "2026-11--a-danca-do-universo",
@@ -326,7 +409,7 @@ LIVRO_ITENS = {
         "titulo": "A Dança do Universo: Dos Mitos de Criação ao Big Bang",
         "titulo_original": "A Dança do Universo",
         "autor": "Marcelo Gleiser",
-        "ano": 2024,
+        "ano": 2026,
         "ano_original": 1997,
         "pais": "Brasil, EUA",
         "tempo": "432 páginas",
@@ -342,10 +425,10 @@ LIVRO_ITENS = {
             "Uma celebração da curiosidade intelectual que continua a inspirar novas gerações de cientistas e leitores."
         ],
         "ponte": "Carl Sagan (Cosmos), Stephen Hawking, Carlo Rovelli e Fritjof Capra.",
-        "recepcao": "Vencedor do Prêmio Jabuti de Não Ficção em 1998; livro fundamental da divulgação científica no Brasil."
+        "recepcao": "Vencedor do Prêmio Jabuti de Não Ficção em 1998; livro fundamental da divulgação científica no Brasil.",
+        "capa": "capas/06e291469f9a7dcd6c26a1113cdfae9b.jpg",
+        "imagem": "capas/06e291469f9a7dcd6c26a1113cdfae9b.jpg"
     },
-
-    # --- SEÇÃO BRASIL ---
     "2026-11--salvar-o-fogo": {
         "id": "2026-11--salvar-o-fogo",
         "edicao": "2026-11",
@@ -354,7 +437,7 @@ LIVRO_ITENS = {
         "titulo": "Salvar o Fogo",
         "titulo_original": "Salvar o Fogo",
         "autor": "Itamar Vieira Junior",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2023,
         "pais": "Brasil",
         "tempo": "320 páginas",
@@ -370,7 +453,9 @@ LIVRO_ITENS = {
             "Uma obra-prima vigorosa que aprofunda a ferida aberta da propriedade de terra no Brasil com lírica inesquecível."
         ],
         "ponte": "Torto Arado, Graciliano Ramos, Jorge Amado e Guimarães Rosa.",
-        "recepcao": "Best-seller imediato no Brasil e no exterior; aclamado pela crítica por sua complexidade psicológica e força poética."
+        "recepcao": "Best-seller imediato no Brasil e no exterior; aclamado pela crítica por sua complexidade psicológica e força poética.",
+        "capa": "capas/4ee71df1f5ac68bcfded78ac7dcbc763.jpg",
+        "imagem": "capas/4ee71df1f5ac68bcfded78ac7dcbc763.jpg"
     },
     "2026-11--a-visao-em-parafuso": {
         "id": "2026-11--a-visao-em-parafuso",
@@ -380,7 +465,7 @@ LIVRO_ITENS = {
         "titulo": "A Visão em Parafuso",
         "titulo_original": "A Visão em Parafuso: Antologia Poética",
         "autor": "Manoel de Barros",
-        "ano": 2024,
+        "ano": 2026,
         "ano_original": 2003,
         "pais": "Brasil",
         "tempo": "256 páginas",
@@ -396,7 +481,9 @@ LIVRO_ITENS = {
             "Um livro para manter na cabeceira e abrir a qualquer hora do dia para desintoxicar a mente das urgências do mundo urbano."
         ],
         "ponte": "Guimarães Rosa, Francis Ponge, Carlos Drummond de Andrade e A Trama da Vida (Sheldrake).",
-        "recepcao": "Dois prêmios Jabuti na carreira; reconhecido internacionalmente como uma das vozes poéticas mais singulares da língua portuguesa."
+        "recepcao": "Dois prêmios Jabuti na carreira; reconhecido internacionalmente como uma das vozes poéticas mais singulares da língua portuguesa.",
+        "capa": "capas/1e9191fc22a4d922a5a860f2045d6877.jpg",
+        "imagem": "capas/1e9191fc22a4d922a5a860f2045d6877.jpg"
     },
     "2026-11--mata-doce": {
         "id": "2026-11--mata-doce",
@@ -406,7 +493,7 @@ LIVRO_ITENS = {
         "titulo": "Mata Doce",
         "titulo_original": "Mata Doce",
         "autor": "Luciany Aparecida",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2023,
         "pais": "Brasil",
         "tempo": "304 páginas",
@@ -422,7 +509,9 @@ LIVRO_ITENS = {
             "Um romance extraordinário que coloca Luciany Aparecida na linha de frente da nova literatura brasileira."
         ],
         "ponte": "Itamar Vieira Junior, Raduan Nassar (Lavoura Arcaica), Conceição Evaristo e Toni Morrison.",
-        "recepcao": "Aclamado pela crítica nos principais cadernos culturais do país; finalista dos principais prêmios literários nacionais."
+        "recepcao": "Aclamado pela crítica nos principais cadernos culturais do país; finalista dos principais prêmios literários nacionais.",
+        "capa": "capas/c9f4a564e161e29d07d5237b5b27f531.jpg",
+        "imagem": "capas/c9f4a564e161e29d07d5237b5b27f531.jpg"
     },
     "2026-11--doramar-ou-a-odisseia": {
         "id": "2026-11--doramar-ou-a-odisseia",
@@ -432,7 +521,7 @@ LIVRO_ITENS = {
         "titulo": "Doramar ou a Odisseia: Histórias",
         "titulo_original": "Doramar ou a Odisseia: Histórias",
         "autor": "Itamar Assumpção",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2023,
         "pais": "Brasil",
         "tempo": "160 páginas",
@@ -448,7 +537,9 @@ LIVRO_ITENS = {
             "Um livro indispensável para os fãs da música de Itamar e para qualquer leitor apaixonado pela grande prosa brasileira de vanguarda."
         ],
         "ponte": "Itamar Assumpção (música), Lima Barreto, Luiz Melodia, Oswald de Andrade e Machado de Assis.",
-        "recepcao": "Celebrado no lançamento na FLIP e na imprensa cultural como uma das mais felizes ressurreições literárias recentes."
+        "recepcao": "Celebrado no lançamento na FLIP e na imprensa cultural como uma das mais felizes ressurreições literárias recentes.",
+        "capa": "capas/0a8792026c3104fe097b46d5430cf26b.jpg",
+        "imagem": "capas/0a8792026c3104fe097b46d5430cf26b.jpg"
     },
     "2026-11--o-arroz-de-palma": {
         "id": "2026-11--o-arroz-de-palma",
@@ -458,7 +549,7 @@ LIVRO_ITENS = {
         "titulo": "O Arroz de Palma",
         "titulo_original": "O Arroz de Palma",
         "autor": "Francisco Azevedo",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2008,
         "pais": "Brasil",
         "tempo": "368 páginas",
@@ -474,10 +565,10 @@ LIVRO_ITENS = {
             "Uma celebração inesquecível da família e da memória afetiva que aquece o coração com extrema delicadeza."
         ],
         "ponte": "Como Água para Chocolate (Laura Esquivel), Milton Hatoum, Eça de Queirós e Gabriel García Márquez.",
-        "recepcao": "Fenômeno contínuo de boca a boca com dezenas de reimpressões no Brasil e traduções na Europa e América Latina."
+        "recepcao": "Fenômeno contínuo de boca a boca com dezenas de reimpressões no Brasil e traduções na Europa e América Latina.",
+        "capa": "capas/c7ea498b7b4fbabcc5b1caf3c04b08c7.jpg",
+        "imagem": "capas/c7ea498b7b4fbabcc5b1caf3c04b08c7.jpg"
     },
-
-    # --- SEÇÃO ACHADOS & CLÁSSICOS ---
     "2026-11--a-sociedade-do-cansaco": {
         "id": "2026-11--a-sociedade-do-cansaco",
         "edicao": "2026-11",
@@ -486,7 +577,7 @@ LIVRO_ITENS = {
         "titulo": "A Sociedade do Cansaço",
         "titulo_original": "Müdigkeitsgesellschaft",
         "autor": "Byung-Chul Han",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 2010,
         "pais": "Coreia do Sul, Alemanha",
         "tempo": "128 páginas",
@@ -502,7 +593,9 @@ LIVRO_ITENS = {
             "Uma leitura rápida, cortante e indispensável para repensar nossa relação com o trabalho, as telas e o tempo livre."
         ],
         "ponte": "Michel Foucault, Friedrich Nietzsche, Theodor Adorno e Mark Fisher (Realismo Capitalista).",
-        "recepcao": "Impacto planetário indiscutível; obra de referência na sociologia e na saúde mental contemporânea."
+        "recepcao": "Impacto planetário indiscutível; obra de referência na sociologia e na saúde mental contemporânea.",
+        "capa": "capas/f377ee3805429daeaba31911883d9f2d.jpg",
+        "imagem": "capas/f377ee3805429daeaba31911883d9f2d.jpg"
     },
     "2026-11--stoner": {
         "id": "2026-11--stoner",
@@ -512,7 +605,7 @@ LIVRO_ITENS = {
         "titulo": "Stoner",
         "titulo_original": "Stoner",
         "autor": "John Williams",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 1965,
         "pais": "EUA",
         "tempo": "296 páginas",
@@ -528,7 +621,9 @@ LIVRO_ITENS = {
             "Uma lição de prosa límpida, comedida e devastadora sobre o amor aos livros e a coragem de viver sem autoengano."
         ],
         "ponte": "F. Scott Fitzgerald, Richard Yates (Foi Apenas um Sonho), Philip Roth e Chekhov.",
-        "recepcao": "Ressurreição crítica sem precedentes no século XXI, com milhões de exemplares vendidos no mundo inteiro."
+        "recepcao": "Ressurreição crítica sem precedentes no século XXI, com milhões de exemplares vendidos no mundo inteiro.",
+        "capa": "capas/5c849ccd65e9f33d17173e93656b83e1.jpg",
+        "imagem": "capas/5c849ccd65e9f33d17173e93656b83e1.jpg"
     },
     "2026-11--o-leopardo": {
         "id": "2026-11--o-leopardo",
@@ -538,7 +633,7 @@ LIVRO_ITENS = {
         "titulo": "O Leopardo",
         "titulo_original": "Il Gattopardo",
         "autor": "Giuseppe Tomasi di Lampedusa",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 1958,
         "pais": "Itália",
         "tempo": "312 páginas",
@@ -554,7 +649,9 @@ LIVRO_ITENS = {
             "Uma leitura majestosa, cínica e melancólica que ilumina os paradoxos permanentes de qualquer transição política."
         ],
         "ponte": "Marcel Proust, Guerra e Paz (Tolstói), Memórias de Adriano (Yourcenar) e Visconti.",
-        "recepcao": "Prêmio Strega em 1959; considerado por consenso internacional um dos pontos mais altos da literatura europeia."
+        "recepcao": "Prêmio Strega em 1959; considerado por consenso internacional um dos pontos mais altos da literatura europeia.",
+        "capa": "capas/9014170fada95562176bf55529e8bbac.jpg",
+        "imagem": "capas/9014170fada95562176bf55529e8bbac.jpg"
     },
     "2026-11--a-hora-da-estrela": {
         "id": "2026-11--a-hora-da-estrela",
@@ -564,7 +661,7 @@ LIVRO_ITENS = {
         "titulo": "A Hora da Estrela",
         "titulo_original": "A Hora da Estrela",
         "autor": "Clarice Lispector",
-        "ano": 2024,
+        "ano": 2026,
         "ano_original": 1977,
         "pais": "Brasil",
         "tempo": "96 páginas",
@@ -580,7 +677,9 @@ LIVRO_ITENS = {
             "Um livro curto que se lê em um único fôlego, mas cujas perguntas sobre justiça, linguagem e empatia ecoam para sempre na consciência."
         ],
         "ponte": "Clarice Lispector, Vidas Secas (Graciliano Ramos), Carolina Maria de Jesus e Machado de Assis.",
-        "recepcao": "Patrimônio incontestável da cultura brasileira; leitura obrigatória e reverenciada internacionalmente."
+        "recepcao": "Patrimônio incontestável da cultura brasileira; leitura obrigatória e reverenciada internacionalmente.",
+        "capa": "capas/04d60e9d5d720735e938b6b8f4a6162a.jpg",
+        "imagem": "capas/04d60e9d5d720735e938b6b8f4a6162a.jpg"
     },
     "2026-11--a-cidade-e-as-serras": {
         "id": "2026-11--a-cidade-e-as-serras",
@@ -590,7 +689,7 @@ LIVRO_ITENS = {
         "titulo": "A Cidade e as Serras",
         "titulo_original": "A Cidade e as Serras",
         "autor": "Eça de Queirós",
-        "ano": 2023,
+        "ano": 2026,
         "ano_original": 1901,
         "pais": "Portugal",
         "tempo": "288 páginas",
@@ -606,57 +705,220 @@ LIVRO_ITENS = {
             "Um banquete literário inigualável que celebra a simplicidade orgânica contra a neurose mecânica."
         ],
         "ponte": "Os Maias, O Primo Basílio, Henry David Thoreau (Walden) e Byung-Chul Han.",
-        "recepcao": "Clássico supremo do realismo e da literatura portuguesa; lido com encantamento inalterado há mais de 120 anos."
+        "recepcao": "Clássico supremo do realismo e da literatura portuguesa; lido com encantamento inalterado há mais de 120 anos.",
+        "capa": "capas/198968fa21c2e63bbef5acb13db07356.jpg",
+        "imagem": "capas/198968fa21c2e63bbef5acb13db07356.jpg"
+    },
+    "2026-11--a-solidao-de-sonia-e-sunny": {
+        "id": "2026-11--a-solidao-de-sonia-e-sunny",
+        "titulo": "A Solidão de Sonia e Sunny",
+        "autor": "Kiran Desai",
+        "ano": 2026,
+        "paginas": 432,
+        "pais": "Índia / EUA",
+        "editora": "Companhia das Letras",
+        "tradutor": "José Geraldo Couto",
+        "secao": "lancamentos",
+        "edicao": "2026-11",
+        "onde_ler": "LIVRARIAS (COMPANHIA DAS LETRAS - LANÇAMENTO NOVEMBRO 2026)",
+        "olho": "Kiran Desai retorna com um romance suntuoso sobre as contradições da juventude cosmopolita e as amarras familiares.",
+        "texto": "Cruzando Nova York, Londres e o interior da Índia, dois primos tentam reinventar suas identidades em meio à diáspora globalizada.",
+        "ponte": "Companhia das Letras, Booker Prize e ficção internacional contemporânea de alta densidade.",
+        "capa": "capas/18dfd785389964dfa69de23d541c35a6.jpg",
+        "imagem": "capas/18dfd785389964dfa69de23d541c35a6.jpg"
+    },
+    "2026-11--um-sete-uns": {
+        "id": "2026-11--um-sete-uns",
+        "titulo": "Um Sete Uns",
+        "autor": "Fernando Bonassi",
+        "ano": 2026,
+        "paginas": 288,
+        "pais": "Brasil",
+        "editora": "Record",
+        "tradutor": null,
+        "secao": "lancamentos",
+        "edicao": "2026-11",
+        "onde_ler": "LIVRARIAS (EDITORA RECORD - LANÇAMENTO NOVEMBRO 2026)",
+        "olho": "Fernando Bonassi entrega seu romance de formação mais mordaz, radiografando a sobrevivência familiar nos subúrbios paulistas.",
+        "texto": "Com humor cáustico e ritmo seco de dramaturgia, acompanhamos o crescimento de um garoto entre oficinas mecânicas e a ditadura.",
+        "ponte": "Ficção realista brasileira, dramaturgia e romance de formação social.",
+        "capa": "capas/51aa9898476c4b9733b23cbde043a811.jpg",
+        "imagem": "capas/51aa9898476c4b9733b23cbde043a811.jpg"
+    },
+    "2026-11--cronicas-de-domingo": {
+        "id": "2026-11--cronicas-de-domingo",
+        "titulo": "Crônicas de Domingo",
+        "autor": "Luis Fernando Verissimo",
+        "ano": 2026,
+        "paginas": 320,
+        "pais": "Brasil",
+        "editora": "Alfaguara",
+        "tradutor": null,
+        "secao": "lancamentos",
+        "edicao": "2026-11",
+        "onde_ler": "LIVRARIAS (ALFAGUARA / COMPANHIA DAS LETRAS)",
+        "olho": "Reunião inédita em livro dos textos dominicais publicados pelo mestre gaúcho, com sua elegância e ironia libertadora.",
+        "texto": "Um panorama lírico, cético e generoso sobre a política brasileira, o cotidiano doméstico e os absurdos de um país surreal.",
+        "ponte": "Crônica brasileira, humor fino e literatura confessional e cotidiana.",
+        "capa": "capas/fc030e74e206ac163dd4a821f93cb9f9.jpg",
+        "imagem": "capas/fc030e74e206ac163dd4a821f93cb9f9.jpg"
+    },
+    "2026-11--torto-arado-quadrinhos": {
+        "id": "2026-11--torto-arado-quadrinhos",
+        "titulo": "Torto Arado — Adaptação em Quadrinhos",
+        "autor": "Itamar Vieira Junior, Rafael Calça e Bennê Oliveira",
+        "ano": 2026,
+        "paginas": 240,
+        "pais": "Brasil",
+        "editora": "Todavia",
+        "tradutor": null,
+        "secao": "lancamentos",
+        "edicao": "2026-11",
+        "onde_ler": "LIVRARIAS (EDITORA TODAVIA - LANÇAMENTO OUT/NOV 2026)",
+        "olho": "O clássico moderno de Itamar Vieira Junior ganha fôlego visual impressionante em arte gráfica densa e terrosa.",
+        "texto": "A epopeia de Bibiana e Belonísia no sertão da Chapada Diamantina transmutada em aquarela e respeito absoluto à luta pela terra.",
+        "ponte": "Todavia, literatura brasileira contemporânea, questão agrária e narrativa gráfica de alto nível.",
+        "capa": "capas/28c48d32b03b76e15ef0351d70867fc9.jpg",
+        "imagem": "capas/28c48d32b03b76e15ef0351d70867fc9.jpg"
+    },
+    "2026-11--a-maquina-do-golpe-1964": {
+        "id": "2026-11--a-maquina-do-golpe-1964",
+        "titulo": "A Máquina do Golpe: 1964",
+        "autor": "Heloisa Murgel Starling",
+        "ano": 2026,
+        "paginas": 368,
+        "pais": "Brasil",
+        "editora": "Companhia das Letras",
+        "tradutor": null,
+        "secao": "ideias",
+        "edicao": "2026-11",
+        "onde_ler": "LIVRARIAS (COMPANHIA DAS LETRAS - LANÇAMENTO OUT/NOV 2026)",
+        "olho": "A historiadora Heloisa Starling destrincha os oito dias cruciais que desmontaram a ordem constitucional no Brasil.",
+        "texto": "Telegramas diplomáticos desclassificados e escutas inéditas reconstroem a conspiração militar minuto a minuto.",
+        "ponte": "História do Brasil, ciência política, instituições republicanas e não ficção essencial.",
+        "capa": "capas/c51a06262dd46206b4d594e6a3f03884.jpg",
+        "imagem": "capas/c51a06262dd46206b4d594e6a3f03884.jpg"
+    },
+    "2026-11--a-volta-de-trump": {
+        "id": "2026-11--a-volta-de-trump",
+        "titulo": "A Volta de Trump: Choque Político e Relações Internacionais",
+        "autor": "Sebastião Velasco e Cruz e Neusa Bojikian",
+        "ano": 2026,
+        "paginas": 312,
+        "pais": "Brasil",
+        "editora": "Editora Unesp",
+        "secao": "ideias",
+        "edicao": "2026-11",
+        "capa": "capas/fc7bc39067b8ac6b90d31c1c1521f67f.jpg",
+        "imagem": "capas/fc7bc39067b8ac6b90d31c1c1521f67f.jpg",
+        "onde": "LIVRARIAS (EDITORA UNESP - LANÇAMENTO 2026)",
+        "olho": "Dois dos maiores especialistas em política externa do país analisam o impacto da ascensão nacionalista sobre a diplomacia global e a soberania da América Latina.",
+        "texto": "Uma análise rigorosa das fraturas na ordem multilateral, a crise do comércio internacional, a guerra de tarifas e as opções estratégicas do Itamaraty frente à disputa hegemônica entre EUA e China.",
+        "ponte": "Diplomacia, relações internacionais, geopolítica global, Itamaraty e política externa contemporânea."
+    },
+    "2026-11--subjetivamente-extinto": {
+        "id": "2026-11--subjetivamente-extinto",
+        "titulo": "Subjetivamente Extinto",
+        "autor": "Felipe Castilho",
+        "ano": 2026,
+        "paginas": 336,
+        "pais": "Brasil",
+        "editora": "Aleph",
+        "secao": "lancamentos",
+        "edicao": "2026-11",
+        "capa": "capas/7e6748146c21a118c3e5e186bce7f271.jpg",
+        "imagem": "capas/7e6748146c21a118c3e5e186bce7f271.jpg",
+        "onde": "LIVRARIAS (EDITORA ALEPH - LANÇAMENTO SCI-FI 2026)",
+        "olho": "A histórica estreia da Aleph na ficção científica brasileira é uma distopia reflexiva e cortante sobre a vida humana após o colapso de uma superinteligência artificial.",
+        "texto": "Num futuro onde os sistemas autônomos que organizavam a sociedade subitamente entram em colapso cognitivo, sobreviventes reaprendem a criar laços e negociar sua humanidade entre ruínas de servidores.",
+        "ponte": "Ficção científica densa, hard sci-fi, inteligência artificial, distopias sociais e literatura especulativa brasileira."
     }
 }
 
 LIVRO_GUIAS = {
+    "guia-ensaios-biologia-mente-2026": {
+        "id": "guia-ensaios-biologia-mente-2026",
+        "edicao": "2026-11",
+        "tipo": "leituras de fôlego",
+        "titulo": "Biologia, mente e natureza como literatura de ensaio",
+        "subtitulo": "Três obras magistrais que cruzam o rigor experimental com a beleza da prosa.",
+        "livros": [
+            {
+                "titulo": "A Trama da Vida",
+                "autor": "Merlin Sheldrake",
+                "ano": 2021,
+                "genero": "micologia e redes ecológicas",
+                "onde": "Editora Fósforo",
+                "nota": "Uma viagem fascinante pela inteligência das redes fúngicas subterrâneas.",
+                "capa": "capas/0920094d7b5de4e9ecf34ff4b4fefa6b.jpg"
+            },
+            {
+                "titulo": "O Homem Que Confundiu Sua Mulher Com um Chapéu",
+                "autor": "Oliver Sacks",
+                "ano": 1985,
+                "genero": "neurociência e ensaio humano",
+                "onde": "Companhia das Letras",
+                "nota": "O livro basilar sobre a fragilidade e a beleza da mente humana.",
+                "capa": "capas/6fe6f3da89578f998560cdadb35c5b48.jpg"
+            },
+            {
+                "titulo": "A Montanha Viva",
+                "autor": "Nan Shepherd",
+                "ano": 1977,
+                "genero": "observação naturalista e montanhismo",
+                "onde": "Cosac Naify / Ubu",
+                "nota": "O relato sensorial definitivo sobre caminhar e contemplar o platô escocês.",
+                "capa": "capas/c0808ffda3e8073e09113239c2021f02.jpg"
+            }
+        ]
+    },
     "guia-biologia-ensaio-narrativa-2026": {
         "id": "guia-biologia-ensaio-narrativa-2026",
         "edicao": "2026-11",
         "tipo": "roteiro de leitura",
         "titulo": "Biologia como narrativa: a ciência que se lê como grande literatura",
         "subtitulo": "Cinco ensaios fundamentais onde cientistas e pesquisadores transformam o mundo vivo em alta prosa reflexiva.",
-        "texto": (
-            "A ciência não precisa ser fria, burocrática ou confinada a jargões impenetráveis. Quando grandes biólogos e naturalistas "
-            "empunham a pena com sensibilidade literária, a descrição de uma célula, de um fungo ou de uma floresta torna-se "
-            "uma meditação comovente sobre nossa própria existência. Este guia reúne cinco clássicos contemporâneos do ensaio biológico."
-        ),
+        "texto": "A ciência não precisa ser fria, burocrática ou confinada a jargões impenetráveis. Quando grandes biólogos e naturalistas empunham a pena com sensibilidade literária, a descrição de uma célula, de um fungo ou de uma floresta torna-se uma meditação comovente sobre nossa própria existência. Este guia reúne cinco clássicos contemporâneos do ensaio biológico.",
         "livros": [
             {
                 "titulo": "A Trama da Vida",
                 "autor": "Merlin Sheldrake",
                 "ano": 2020,
                 "nota": "Como os fungos tecem a rede subterrânea que sustenta as florestas e reinventam a ideia de cooperação biológica.",
-                "onde": "Ubu Editora"
+                "onde": "Ubu Editora",
+                "capa": "capas/0920094d7b5de4e9ecf34ff4b4fefa6b.jpg"
             },
             {
                 "titulo": "O Homem Que Confundiu Sua Mulher com um Chapéu",
                 "autor": "Oliver Sacks",
                 "ano": 1985,
                 "nota": "O mestre da neurologia humanista investiga a mente e a identidade através de casos clínicos inesquecíveis.",
-                "onde": "Companhia das Letras"
+                "onde": "Companhia das Letras",
+                "capa": "capas/4f74b1ca74a45c44ff00b6b36a189e6a.jpg"
             },
             {
                 "titulo": "Metamorfoses",
                 "autor": "Emanuele Coccia",
                 "ano": 2020,
                 "nota": "A continuidade física e espiritual entre animais, vegetais e humanos além das fronteiras artificiais das espécies.",
-                "onde": "Dantes / Ubu"
+                "onde": "Dantes / Ubu",
+                "capa": "capas/c712c0bd64ecdfaea61ef9bc5188fc5b.jpg"
             },
             {
                 "titulo": "A Montanha Viva",
                 "autor": "Nan Shepherd",
                 "ano": 1977,
                 "nota": "O clássico do naturalismo poético escocês que une caminhada de altitude e filosofia dos sentidos.",
-                "onde": "Zahar"
+                "onde": "Zahar",
+                "capa": "capas/c0808ffda3e8073e09113239c2021f02.jpg"
             },
             {
                 "titulo": "O Polegar do Panda",
                 "autor": "Stephen Jay Gould",
                 "ano": 1980,
                 "nota": "As imperfeições e improvisos da evolução natural narrados por um dos maiores divulgadores científicos do século.",
-                "onde": "Companhia das Letras"
+                "onde": "Companhia das Letras",
+                "capa": "capas/fc507519d843a204d53c434a291983a5.jpg"
             }
         ]
     },
@@ -666,46 +928,47 @@ LIVRO_GUIAS = {
         "tipo": "roteiro de leitura",
         "titulo": "Vozes da terra e resistência: literatura brasileira além do asfalto",
         "subtitulo": "Cinco obras contemporâneas que mergulham no sertão, nas águas e nas florestas para reinventar a nossa ficção.",
-        "texto": (
-            "A ficção brasileira mais potente das últimas décadas não está nos gabinetes urbanos ou no cinismo das metrópoles, "
-            "mas nas margens dos rios, nos quilombos, nos sertões e nas aldeias indígenas. Este roteiro celebra autores que recolocam "
-            "a terra, os corpos e a ancestralidade no centro da nossa imaginação."
-        ),
+        "texto": "A ficção brasileira mais potente das últimas décadas não está nos gabinetes urbanos ou no cinismo das metrópoles, mas nas margens dos rios, nos quilombos, nos sertões e nas aldeias indígenas. Este roteiro celebra autores que recolocam a terra, os corpos e a ancestralidade no centro da nossa imaginação.",
         "livros": [
             {
                 "titulo": "Torto Arado",
                 "autor": "Itamar Vieira Junior",
                 "ano": 2019,
                 "nota": "A saga de Bibiana e Belonísia na Chapada Diamantina que recolocou a questão agrária e quilombola no topo da literatura.",
-                "onde": "Todavia"
+                "onde": "Todavia",
+                "capa": "capas/189bcc3a3f8f36d42ac38c6eecca629c.jpg"
             },
             {
                 "titulo": "Salvar o Fogo",
                 "autor": "Itamar Vieira Junior",
                 "ano": 2023,
                 "nota": "A luta ribeirinha pelo direito à terra e à memória no vale do Paraguaçu.",
-                "onde": "Todavia"
+                "onde": "Todavia",
+                "capa": "capas/4ee71df1f5ac68bcfded78ac7dcbc763.jpg"
             },
             {
                 "titulo": "A Queda do Céu",
                 "autor": "Davi Kopenawa e Bruce Albert",
                 "ano": 2010,
                 "nota": "O manifesto xamânico yanomami mais contundente já publicado sobre a preservação da floresta e da vida.",
-                "onde": "Companhia das Letras"
+                "onde": "Companhia das Letras",
+                "capa": "capas/4cf394c211b56ba24efb5afa2c6065df.jpg"
             },
             {
                 "titulo": "Ideias para Adiar o Fim do Mundo",
                 "autor": "Ailton Krenak",
                 "ano": 2019,
                 "nota": "Reflexões filosóficas fulgurantes sobre a desumanização ocidental e a comunhão com rios e montanhas.",
-                "onde": "Companhia das Letras"
+                "onde": "Companhia das Letras",
+                "capa": "capas/236dcb6d35feb0c209d12b9ebf6c6de0.jpg"
             },
             {
                 "titulo": "Mata Doce",
                 "autor": "Luciany Aparecida",
                 "ano": 2023,
                 "nota": "A prosa arrebatadora da autora baiana sobre amor de mães, violência e segredos no interior do país.",
-                "onde": "Alfaguara"
+                "onde": "Alfaguara",
+                "capa": "capas/c9f4a564e161e29d07d5237b5b27f531.jpg"
             }
         ]
     }

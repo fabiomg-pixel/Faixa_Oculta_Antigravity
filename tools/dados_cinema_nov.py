@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Dados editoriais de Cinema e Séries para a edição Nº 2 (Novembro 2026).
-Contém 34 filmes/séries nas seções editoriais e 3 guias temáticos completos (15 filmes nos guias).
-"""
+"""Dados editoriais de Cinema e Séries para a edição Nº 2 (Novembro 2026)."""
 
 CINE_EDICAO = {
     "id": "2026-11",
@@ -9,61 +7,154 @@ CINE_EDICAO = {
     "mes": "Novembro de 2026",
     "data": "2026-11-01",
     "manchete": "Memória política, silêncio e o melhor do cinema de autor nas telas do Rio",
-    "editorial": (
-        "Novembro no circuito cinematográfico carioca celebra o retorno da força autoral: das salas de rua do Estação Net "
-        "às plataformas de streaming de acervo, a safra deste mês coloca o cinema como instrumento de fricção histórica e sensorial. "
-        "Na matéria de capa, 'O Agente Secreto' de Kleber Mendonça Filho resgata a paranoia e a resistência civil no Recife de 1977, "
-        "cercado pelo triunfo arrebatador de 'Anora' (Sean Baker) em Cannes, a coragem política clandestina de 'A Semente do Figo Sagrado' "
-        "(Mohammad Rasoulof) e a restauração luminosa em 4K de 'Vidas Secas' de Nelson Pereira dos Santos. Uma seleção densa e indispensável."
-    ),
+    "editorial": "Novembro no circuito cinematográfico carioca celebra o auge da maturidade autoral: das salas de rua do Estação Net ao streaming de prestígio, a safra de 2026 coloca o cinema como instrumento de fricção histórica, imaginação política e rigor estético. Na matéria de capa, 'O Agente Secreto' de Kleber Mendonça Filho resgata a memória e a vigilância no Recife de 1977, cercado pelo retorno épico de Denis Villeneuve em 'Duna: Parte 3', a sátira ácida de Karim Aïnouz em 'Rosebush Pruning', a cosmologia visionária de 'A Queda do Céu' de Davi Kopenawa e a revelação luminosa de 'Malu' e 'Vicentina Pede Desculpas'. Uma seleção contemporânea indispensável.",
     "layout": [
-        {"tipo": "secao", "secao": "cartaz"},
-        {"tipo": "guia", "id": "guia-kleber-cinema-nordeste-2026"},
-        {"tipo": "secao", "secao": "achados"},
-        {"tipo": "guia", "id": "guia-suspense-politico-resistencia-2026"},
-        {"tipo": "secao", "secao": "series"},
-        {"tipo": "secao", "secao": "brasil"},
-        {"tipo": "guia", "id": "guia-cinema-autoral-europeu-2026"},
-        {"tipo": "secao", "secao": "pop"},
-        {"tipo": "secao", "secao": "breve"}
-    ]
+        {
+            "tipo": "secao",
+            "secao": "cartaz"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-kleber-cinema-nordeste-2026"
+        },
+        {
+            "tipo": "secao",
+            "secao": "achados"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-suspense-politico-resistencia-2026"
+        },
+        {
+            "tipo": "secao",
+            "secao": "series"
+        },
+        {
+            "tipo": "secao",
+            "secao": "brasil"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-cinema-autoral-europeu-2026"
+        },
+        {
+            "tipo": "secao",
+            "secao": "pop"
+        },
+        {
+            "tipo": "secao",
+            "secao": "breve"
+        }
+    ],
+    "capa": "capas/80f7bcf7cc4ad62fd5f59453751cffd4.jpg",
+    "destaque_autor": {
+        "artista": "Kleber Mendonça Filho",
+        "obra_atual": "O Agente Secreto (Longa-metragem, 2026, com Wagner Moura)",
+        "subtitulo": "O mestre do som e do espaço: como o ex-crítico recifense transformou o cinema brasileiro numa trincheira de memória, arquitetura e resistência política",
+        "ensaio": [
+            "Antes de empunhar a câmera profissionalmente, Kleber Mendonça Filho passou duas décadas na escuridão sagrada das salas de projeção do Recife, escrevendo crítica para o Jornal do Commercio e programando o Cinema da Fundação Joaquim Nabuco. Essa bagagem cinéfila imensa formatou um realizador que não apenas filma, mas pensa a imagem a partir de sua história e de suas reverberações físicas. Dos primeiros curtas experimentais em VHS e película (Vinil Verde, Eletrodoméstica, Recife Frio), despontou uma obsessão raríssima no audiovisual brasileiro: o tratamento do som como personagem vivo e elemento dramático de primeira ordem. Em seus filmes, um ruído distante de betoneira, o rangido de um piso de taco ou o estalo de uma fita cassete contam mais sobre as fraturas do Brasil do que dezenas de diálogos explicativos.",
+            "A obra de Kleber é uma investigação implacável da cidade e de seus fantasmas coloniais. Em O Som ao Redor (2012), a rua de classe média em Boa Viagem é um microcosmo do pacto histórico brasileiro: a servidão doméstica moderna, o medo paranoico da violência e a presença vigilante e ameaçadora dos seguranças privados armados. Em Aquarius (2016), essa batalha ganha corpo físico e moral na resistência intransigente de Clara (Sônia Braga) contra uma construtora predadora disposta a destruir seu prédio histórico. O espaço arquitetônico nos filmes de Kleber nunca é mero cenário: é a própria carne da luta de classes, da gentrificação e da disputa pela memória afetiva.",
+            "Ao contrário do cinema de arte contemplativo que muitas vezes se distancia do grande público por frieza formal, Kleber abraça com paixão o cinema de gênero clássico das décadas de 1970 e 1980 — de John Carpenter e Brian De Palma a Sergio Leone e ao cinema marginal brasileiro. Em Bacurau (2019), codirigido com seu parceiro de longa data Juliano Dornelles, essa fusão atinge o ápice: um sertão nordestino distópico onde o realismo sociológico, o western, a ficção científica e o gore sangrento se unem para celebrar a autodefesa armada de uma comunidade contra invasores estrangeiros e políticos traidores. O filme tornou-se um fenômeno cultural e símbolo de rebelião cívica.",
+            "Com Retratos Fantasmas (2023), Kleber já havia homenageado os templos de rua do centro do Recife que moldaram sua sensibilidade. Agora, em O Agente Secreto (2026), estrelado por Wagner Moura, ele se desloca para o Recife de 1977. Na pele de um professor universitário em fuga que se esconde na capital pernambucana durante os anos mais sufocantes da ditadura militar, o filme articula um suspense claustrofóbico de espionagem, paranoia e fita magnética, reafirmando que a memória brasileira é um território vivo sob constante disputa."
+        ],
+        "obras_essenciais": [
+            {
+                "titulo": "O Som ao Redor",
+                "ano": "2012",
+                "formato": "Longa-metragem (131 min)",
+                "capa": "capas/bf5243369bdd7c21275a51e516cb3802.jpg",
+                "por_que_ver": "Eleito um dos 10 melhores filmes do ano pelo The New York Times, redefiniu a estética do cinema brasileiro recente ao transformar o desenho de som ambiente numa força aterrorizante de opressão social e histórica.",
+                "link": "https://www.justwatch.com/br/filme/o-som-ao-redor"
+            },
+            {
+                "titulo": "Aquarius",
+                "ano": "2016",
+                "formato": "Longa-metragem (145 min)",
+                "capa": "capas/54dba85cf79e9f8002c25d777227e6f3.jpg",
+                "por_que_ver": "Obra-prima com Sônia Braga no papel de sua vida; uma celebração solar da autonomia feminina, da memória táctil dos vinis e da dignidade contra a ganância da especulação imobiliária.",
+                "link": "https://www.justwatch.com/br/filme/aquarius"
+            },
+            {
+                "titulo": "Bacurau",
+                "ano": "2019",
+                "formato": "Longa-metragem (131 min, codir. Juliano Dornelles)",
+                "capa": "capas/7257a2d66752c92989cd63a57f82b6c3.jpg",
+                "por_que_ver": "Prêmio do Júri no Festival de Cannes; faroeste distópico e épico anticolonial que provou a capacidade do cinema nacional de criar mitologias populares inesquecíveis com sangue e poesia sertaneja.",
+                "link": "https://www.justwatch.com/br/filme/bacurau"
+            },
+            {
+                "titulo": "Retratos Fantasmas",
+                "ano": "2023",
+                "formato": "Documentário-ensaio (93 min)",
+                "capa": "capas/dfec05164c1fa8c429db9e2fbabd9410.jpg",
+                "por_que_ver": "Exibido em Cannes com aclamação unânime; um documentário amoroso e investigativo sobre o papel cívico dos grandes palácios de cinema de rua do centro do Recife e sua lenta transformação.",
+                "link": "https://www.justwatch.com/br/filme/retratos-fantasmas"
+            }
+        ],
+        "influenciados_e_dialogos": [
+            {
+                "artista": "Gabriel Mascaro",
+                "obra": "Boi Neon (2015, Vitrine Filmes)",
+                "ano": "2015",
+                "capa": "capas/d66a9759851b7f2544aa66782e7268be.jpg",
+                "como_influenciou": "A efervescência criada por Kleber colocou o cinema pernambucano no epicentro da crítica global; Mascaro expandiu esse rigor formal para o interior nordestino, investigando a sensualidade e o trabalho com fotografia monumental.",
+                "link": "https://www.justwatch.com/br/filme/boi-neon"
+            },
+            {
+                "artista": "Affonso Uchôa & João Dumans",
+                "obra": "Arábia (2017, Embaúba Filmes)",
+                "ano": "2017",
+                "capa": "capas/8dd8d378fa1207c17ba77b84f4368c02.jpg",
+                "como_influenciou": "O cinema de Kleber legitimou uma postura ética de recusa absoluta ao miserabilismo folclórico; Uchôa conferiu a mesma solenidade trágica e literária à rotina dos operários das fundições de Ouro Preto.",
+                "link": "https://www.justwatch.com/br/filme/arabia"
+            },
+            {
+                "artista": "Daniel Bandeira & Juliano Dornelles",
+                "obra": "Propriedade (2022, Boulevard Filmes)",
+                "ano": "2022",
+                "capa": "capas/b4482b10fb5470e09eaac3bdfd3b51f2.jpg",
+                "como_influenciou": "Discípulos e colaboradores diretos de Kleber, levaram o suspense de cerco e invasão a um nível de radicalismo e crueza que debate diretamente com as tensões de classe de O Som ao Redor e Bacurau.",
+                "link": "https://www.justwatch.com/br/filme/propriedade"
+            },
+            {
+                "artista": "Mati Diop",
+                "obra": "Atlantique (2019, Netflix)",
+                "ano": "2019",
+                "capa": "capas/aefe0eff50982ff1213db14f3921bbca.jpg",
+                "como_influenciou": "A cineasta franco-senegalesa opera exatamente na mesma frequência estética de Kleber, utilizando o elemento fantasmagórico dos operários mortos para assombrar as torres espelhadas e canteiros de luxo em Dacar.",
+                "link": "https://www.justwatch.com/br/filme/atlantique"
+            }
+        ]
+    }
 }
 
 CINE_ITENS = {
-    # --- SEÇÃO EM CARTAZ ---
     "2026-11--o-agente-secreto": {
         "id": "2026-11--o-agente-secreto",
-        "edicao": "2026-11",
-        "ordem": 1,
-        "secao": "cartaz",
-        "destaque": True,
         "titulo": "O Agente Secreto",
         "titulo_original": "O Agente Secreto",
-        "autor": "Kleber Mendonça Filho",
         "ano": 2025,
-        "pais": "Brasil, França, Alemanha",
-        "tempo": "2h 38min",
-        "genero": "thriller político / drama histórico",
-        "tipo": "filme",
-        "onde": "Circuito de cinema (Estação Net Rio, Cine Odeon, IMS)",
-        "imdb": "tt27847051",
-        "trailer_url": "https://www.youtube.com/results?search_query=O+Agente+Secreto+Kleber+Mendonca+Filho+trailer",
-        "olho": "Wagner Moura e Kleber Mendonça Filho recriam o Recife de 1977 num thriller sufocante sobre vigilância, tecnologia arcaica e resistência civil.",
-        "texto": "Vencedor de Direção e Melhor Ator em Cannes, o novo longa do diretor de Aquarius e Bacurau é uma obra-prima sobre as cicatrizes da ditadura.",
-        "resenha": [
-            "Em 1977, no auge do governo Geisel, o Recife é uma cidade onde a umidade tropical parece condensar o medo institucionalizado. Marcelo (Wagner Moura), um professor universitário e especialista em computação e telecomunicações formado em São Paulo, retorna à capital pernambucana em fuga de um passado misterioso. Ele aceita um trabalho discreto de consultoria para o setor público, mas logo descobre que se tornou peça central numa teia de escutas clandestinas, dossiês e vigilância militar.",
-            "Kleber Mendonça Filho constrói a narrativa com a maestria arquitetônica que já é sua marca registrada: as frestas das janelas de cobogó, os sons de fitas de rolo girando em gravadores alemães, o ronco surdo dos carros Opala pretos estacionados nas esquinas e os cortes abruptos entre a banalidade do Carnaval de rua e a violência sumária dos porões do DOI-CODI.",
-            "Wagner Moura entrega uma de suas atuações mais sutis e contidas: em vez do herói inflamado, seu Marcelo é um homem comum paralisado pela desconfiança mútua, onde qualquer vizinho ou garçom pode ser um informante a serviço do regime. O elenco estelar conta ainda com Maria Fernanda Cândido e Gabriel Leone, capturados pela fotografia granulada em 35mm de Evgenia Alexandrova.",
-            "Um monumento cinematográfico indispensável que resgata a memória política brasileira sem recorrer a panfletarismos, fazendo do suspense histórico uma experiência sensorial de imensa relevância ética."
-        ],
-        "ponte": "Aquarius, Bacurau, A Conversação (Francis Ford Coppola) e O Homem do Meio (Jean-Pierre Melville).",
-        "recepcao": "Prêmio de Melhor Direção e Melhor Ator para Wagner Moura no Festival de Cannes 2025; ovacionado pela crítica internacional."
+        "direcao": "Kleber Mendonça Filho",
+        "pais": "Brasil",
+        "duracao": "2h 20min",
+        "genero": "thriller político / suspense / cinema brasileiro",
+        "secao": "cartaz",
+        "edicao": "2026-11",
+        "onde_ver": "CINEMAS E FESTIVAIS DE CINEMA",
+        "estreou": "2025-10-15",
+        "trailer_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "olho": "Estrelando Wagner Moura, o novo épico político de Kleber Mendonça Filho investiga o Recife de 1977 sob vigilância, medo e refúgio clandestino.",
+        "texto": "Um professor universitário foge de São Paulo para o Recife para escapar da repressão, encontrando um Carnaval sinistro atravessado por grampos, delações e corrupção.",
+        "recepcao": "Aclamado internacionalmente em Cannes e vencedor dos principais prêmios de cinema brasileiro.",
+        "ponte": "Bacurau, Aquarius, O Som ao Redor e cinema político brasileiro.",
+        "capa": "capas/4e8a2e331ad38b79efe4547ff4c34801.jpg",
+        "imagem": "capas/4e8a2e331ad38b79efe4547ff4c34801.jpg"
     },
     "2026-11--anora": {
         "id": "2026-11--anora",
         "edicao": "2026-11",
         "ordem": 2,
-        "secao": "cartaz",
+        "secao": "achados",
         "titulo": "Anora",
         "titulo_original": "Anora",
         "autor": "Sean Baker",
@@ -84,13 +175,16 @@ CINE_ITENS = {
             "O final, silencioso e devastador no banco de trás de um carro sob a neve de Coney Island, ancora a comédia no desamparo econômico da classe trabalhadora com uma delicadeza que corta como lâmina."
         ],
         "ponte": "Projeto Flórida, Tangerine, Uma Linda Mulher e o cinema dos irmãos Safdie.",
-        "recepcao": "Palma de Ouro no Festival de Cannes 2024; amplo favoritismo nas premiações de cinema autoral do ano."
+        "recepcao": "Palma de Ouro no Festival de Cannes 2024; amplo favoritismo nas premiações de cinema autoral do ano.",
+        "capa": "capas/bd780fc783532d5ca0d923985930d08a.jpg",
+        "onde_ver": "DISPONÍVEL EM STREAMING (MUBI, APPLE TV, PRIME VIDEO) E ARQUIVOS",
+        "imagem": "capas/bd780fc783532d5ca0d923985930d08a.jpg"
     },
     "2026-11--a-semente-do-figo-sagrado": {
         "id": "2026-11--a-semente-do-figo-sagrado",
         "edicao": "2026-11",
         "ordem": 3,
-        "secao": "cartaz",
+        "secao": "achados",
         "titulo": "A Semente do Figo Sagrado",
         "titulo_original": "The Seed of the Sacred Fig",
         "autor": "Mohammad Rasoulof",
@@ -111,13 +205,16 @@ CINE_ITENS = {
             "Um dos filmes políticos mais corajosos, urgentes e cinematograficamente potentes do século XXI."
         ],
         "ponte": "Não Há Mal Algum (Mohammad Rasoulof), Uma Separação (Asghar Farhadi) e O Conformista (Bernardo Bertolucci).",
-        "recepcao": "Prêmio Especial do Júri e Prêmio FIPRESCI em Cannes 2024; representante da Alemanha no Oscar."
+        "recepcao": "Prêmio Especial do Júri e Prêmio FIPRESCI em Cannes 2024; representante da Alemanha no Oscar.",
+        "capa": "capas/cf10fafbbb87878df2f6ed6ac53f3c5a.jpg",
+        "onde_ver": "DISPONÍVEL EM STREAMING (MUBI, APPLE TV, PRIME VIDEO) E ARQUIVOS",
+        "imagem": "capas/cf10fafbbb87878df2f6ed6ac53f3c5a.jpg"
     },
     "2026-11--o-quarto-ao-lado": {
         "id": "2026-11--o-quarto-ao-lado",
         "edicao": "2026-11",
         "ordem": 4,
-        "secao": "cartaz",
+        "secao": "achados",
         "titulo": "O Quarto ao Lado",
         "titulo_original": "The Room Next Door",
         "autor": "Pedro Almodóvar",
@@ -138,13 +235,16 @@ CINE_ITENS = {
             "Swinton e Moore entregam lições de modulação vocal e presença física, construindo uma elegia à vida que se recusa a ceder ao desespero."
         ],
         "ponte": "Dor e Glória, Fale com Ela, Três Cores: Azul e o cinema de Ingmar Bergman.",
-        "recepcao": "Vencedor do Leão de Ouro de Melhor Filme no Festival de Veneza 2024; ovação de 17 minutos de aplausos."
+        "recepcao": "Vencedor do Leão de Ouro de Melhor Filme no Festival de Veneza 2024; ovação de 17 minutos de aplausos.",
+        "capa": "capas/fe9f83798a0a978852084b5a744aaac9.jpg",
+        "onde_ver": "DISPONÍVEL EM STREAMING (MUBI, APPLE TV, PRIME VIDEO) E ARQUIVOS",
+        "imagem": "capas/fe9f83798a0a978852084b5a744aaac9.jpg"
     },
     "2026-11--megalopolis": {
         "id": "2026-11--megalopolis",
         "edicao": "2026-11",
         "ordem": 5,
-        "secao": "cartaz",
+        "secao": "achados",
         "titulo": "Megalópolis",
         "titulo_original": "Megalopolis",
         "autor": "Francis Ford Coppola",
@@ -165,13 +265,16 @@ CINE_ITENS = {
             "Megalópolis é uma obra monumental e imperfeita, que pulsa com a ambição desmedida de um dos últimos gigantes do cinema autoral que ainda ousa apostar tudo na imaginação."
         ],
         "ponte": "Apocalypse Now, Metrópolis (Fritz Lang), Cidadão Kane e O Fundo do Coração.",
-        "recepcao": "Estreia divisiva e histórica em Cannes 2024; abraçado por críticos de vanguarda como um clássico imperfeito e corajoso."
+        "recepcao": "Estreia divisiva e histórica em Cannes 2024; abraçado por críticos de vanguarda como um clássico imperfeito e corajoso.",
+        "capa": "capas/a4ec9dac07633d1f082398c321872a78.jpg",
+        "onde_ver": "DISPONÍVEL EM STREAMING (MUBI, APPLE TV, PRIME VIDEO) E ARQUIVOS",
+        "imagem": "capas/a4ec9dac07633d1f082398c321872a78.jpg"
     },
     "2026-11--a-garota-da-agulha": {
         "id": "2026-11--a-garota-da-agulha",
         "edicao": "2026-11",
         "ordem": 6,
-        "secao": "cartaz",
+        "secao": "achados",
         "titulo": "A Garota da Agulha",
         "titulo_original": "Pigen med nålen",
         "autor": "Magnus von Horn",
@@ -192,13 +295,16 @@ CINE_ITENS = {
             "Um conto de fadas sombrio e magistral sobre a sobrevivência das mulheres nas margens de uma sociedade hipócrita e arruinada."
         ],
         "ponte": "O Homem Elefante (David Lynch), A Fita Branca (Michael Haneke) e O Vampiro de Düsseldorf.",
-        "recepcao": "Compromisso oficial em Cannes 2024; elogiado pelo The Hollywood Reporter e Variety como um triunfo visual sombrio."
+        "recepcao": "Compromisso oficial em Cannes 2024; elogiado pelo The Hollywood Reporter e Variety como um triunfo visual sombrio.",
+        "capa": "capas/22eaa8c38d7d5ac3c58cd5c7f1e2ab04.jpg",
+        "onde_ver": "DISPONÍVEL EM STREAMING (MUBI, APPLE TV, PRIME VIDEO) E ARQUIVOS",
+        "imagem": "capas/22eaa8c38d7d5ac3c58cd5c7f1e2ab04.jpg"
     },
     "2026-11--bird": {
         "id": "2026-11--bird",
         "edicao": "2026-11",
         "ordem": 7,
-        "secao": "cartaz",
+        "secao": "achados",
         "titulo": "Bird",
         "titulo_original": "Bird",
         "autor": "Andrea Arnold",
@@ -219,13 +325,16 @@ CINE_ITENS = {
             "Um filme solar, enérgico e comovente que reafirma Andrea Arnold como uma das vozes mais vitais do cinema mundial."
         ],
         "ponte": "Fish Tank, American Honey, Ken Loach e O Labirinto do Fauno.",
-        "recepcao": "Ovacionado em sua estreia em Cannes 2024; aplaudido pela química enternecedora entre Keoghan e a jovem Nykiya Adams."
+        "recepcao": "Ovacionado em sua estreia em Cannes 2024; aplaudido pela química enternecedora entre Keoghan e a jovem Nykiya Adams.",
+        "capa": "capas/fa977a5f60ecc2c400a9464102e1dd5c.jpg",
+        "onde_ver": "DISPONÍVEL EM STREAMING (MUBI, APPLE TV, PRIME VIDEO) E ARQUIVOS",
+        "imagem": "capas/fa977a5f60ecc2c400a9464102e1dd5c.jpg"
     },
     "2026-11--emilia-perez": {
         "id": "2026-11--emilia-perez",
         "edicao": "2026-11",
         "ordem": 8,
-        "secao": "cartaz",
+        "secao": "achados",
         "titulo": "Emilia Pérez",
         "titulo_original": "Emilia Pérez",
         "autor": "Jacques Audiard",
@@ -246,10 +355,11 @@ CINE_ITENS = {
             "Com números musicais arrojados compostos pela cantora francesa Camille e pelo arranjador Clément Ducol, o filme é uma explosão de energia rítmica, ousadia queer e paixão cinematográfica."
         ],
         "ponte": "O Profeta, Tudo Sobre Minha Mãe (Almodóvar), West Side Story e Sicario.",
-        "recepcao": "Prêmio do Júri e Prêmio de Melhor Atriz para o quarteto de atrizes em Cannes 2024; indicado oficial da França ao Oscar."
+        "recepcao": "Prêmio do Júri e Prêmio de Melhor Atriz para o quarteto de atrizes em Cannes 2024; indicado oficial da França ao Oscar.",
+        "capa": "capas/3e73aac8ab5680338200857b5295e345.jpg",
+        "onde_ver": "DISPONÍVEL EM STREAMING (MUBI, APPLE TV, PRIME VIDEO) E ARQUIVOS",
+        "imagem": "capas/3e73aac8ab5680338200857b5295e345.jpg"
     },
-
-    # --- SEÇÃO ACHADOS & AUTORES ---
     "2026-11--evil-does-not-exist": {
         "id": "2026-11--evil-does-not-exist",
         "edicao": "2026-11",
@@ -275,7 +385,9 @@ CINE_ITENS = {
             "A música em cordas de Eiko Ishibashi e os planos contemplativos das copas das árvores culminam num desfecho enigmático, chocante e aberto, que ecoa na memória por semanas."
         ],
         "ponte": "Drive My Car, Roda do Destino, Andrei Tarkovsky e o cinema de Kenji Mizoguchi.",
-        "recepcao": "Leão de Prata / Grande Prêmio do Júri e Prêmio FIPRESCI no Festival de Veneza; eleito melhor filme do ano pelo BFI/Sight & Sound."
+        "recepcao": "Leão de Prata / Grande Prêmio do Júri e Prêmio FIPRESCI no Festival de Veneza; eleito melhor filme do ano pelo BFI/Sight & Sound.",
+        "capa": "capas/ebf6c3749385eac62333800288835818.jpg",
+        "imagem": "capas/ebf6c3749385eac62333800288835818.jpg"
     },
     "2026-11--la-chimera": {
         "id": "2026-11--la-chimera",
@@ -302,7 +414,9 @@ CINE_ITENS = {
             "Uma celebração pagã e mágica do cinema, onde o riso carnavalesco e a gravidade dos mortos convivem com poesia sem igual."
         ],
         "ponte": "Feliz como Lázaro, Fellini Roma, Pasolini e Carol Duarte.",
-        "recepcao": "Competição oficial de Cannes; vencedor de múltiplos prêmios de direção e fotografia na Europa."
+        "recepcao": "Competição oficial de Cannes; vencedor de múltiplos prêmios de direção e fotografia na Europa.",
+        "capa": "capas/1385b17002a71304003b7382ac1e63e1.jpg",
+        "imagem": "capas/1385b17002a71304003b7382ac1e63e1.jpg"
     },
     "2026-11--do-not-expect-too-much": {
         "id": "2026-11--do-not-expect-too-much",
@@ -329,7 +443,9 @@ CINE_ITENS = {
             "O terceiro ato, filmado em um plano-sequência estático de 40 minutos em preto e branco diante de um galpão industrial, é uma das sequências mais brilhantes e aterrorizantes sobre a crueldade corporativa já filmadas."
         ],
         "ponte": "Má Sorte no Sexo ou Pornô Acidental, Toni Erdmann, Jean-Luc Godard e Ruben Östlund.",
-        "recepcao": "Prêmio Especial do Júri no Festival de Locarno; eleito um dos cinco melhores filmes do ano pela Cahiers du Cinéma."
+        "recepcao": "Prêmio Especial do Júri no Festival de Locarno; eleito um dos cinco melhores filmes do ano pela Cahiers du Cinéma.",
+        "capa": "capas/b91daa855875ef0854afedb860d46dd3.jpg",
+        "imagem": "capas/b91daa855875ef0854afedb860d46dd3.jpg"
     },
     "2026-11--green-border": {
         "id": "2026-11--green-border",
@@ -356,7 +472,9 @@ CINE_ITENS = {
             "Um soco no estômago indispensável sobre a hipocrisia das democracias europeias e a urgência de não normalizar a barbárie."
         ],
         "ponte": "Filhos da Esperança, Terra Queimada, Europa Europa e O Pântano.",
-        "recepcao": "Prêmio Especial do Júri no Festival de Veneza; alvo de ataques inflamados do antigo governo polonês, transformando-se em símbolo de resistência democrática."
+        "recepcao": "Prêmio Especial do Júri no Festival de Veneza; alvo de ataques inflamados do antigo governo polonês, transformando-se em símbolo de resistência democrática.",
+        "capa": "capas/994fed4218b5c88e95038d1ab8b64df8.jpg",
+        "imagem": "capas/994fed4218b5c88e95038d1ab8b64df8.jpg"
     },
     "2026-11--rotting-in-the-sun": {
         "id": "2026-11--rotting-in-the-sun",
@@ -383,7 +501,9 @@ CINE_ITENS = {
             "Um filme corrosivo, hilário e perversamente inteligente sobre a superficialidade contemporânea."
         ],
         "ponte": "A Criada (Sebastián Silva), Parasita (Bong Joon-ho), Festim Diabólico (Hitchcock) e Triangle of Sadness.",
-        "recepcao": "Aclamação nos festivais de Sundance e Locarno; celebrado pelo humor irreverente e pela coragem metaficcional."
+        "recepcao": "Aclamação nos festivais de Sundance e Locarno; celebrado pelo humor irreverente e pela coragem metaficcional.",
+        "capa": "capas/6ce7c3573076b89c77baed27565d7582.jpg",
+        "imagem": "capas/6ce7c3573076b89c77baed27565d7582.jpg"
     },
     "2026-11--totem": {
         "id": "2026-11--totem",
@@ -410,174 +530,10 @@ CINE_ITENS = {
             "Uma joia cinematográfica de rara delicadeza humana que toca a alma com suavidade e verdade."
         ],
         "ponte": "O Espírito da Colmeia, Crepúsculo dos Deuses, A Camareira e Roma (Alfonso Cuarón).",
-        "recepcao": "Prêmio do Júri Ecumênico no Festival de Berlim 2023; representante oficial do México no Oscar."
+        "recepcao": "Prêmio do Júri Ecumênico no Festival de Berlim 2023; representante oficial do México no Oscar.",
+        "capa": "capas/cfb789434e5fcb01307e218324e9ed2b.jpg",
+        "imagem": "capas/cfb789434e5fcb01307e218324e9ed2b.jpg"
     },
-
-    # --- SEÇÃO SÉRIES ---
-    "2026-11--ripley": {
-        "id": "2026-11--ripley",
-        "edicao": "2026-11",
-        "ordem": 15,
-        "secao": "series",
-        "titulo": "Ripley",
-        "titulo_original": "Ripley",
-        "autor": "Steven Zaillian",
-        "ano": 2024,
-        "pais": "EUA",
-        "tempo": "Minissérie (8 episódios)",
-        "genero": "suspense noir / thriller psicológico",
-        "tipo": "serie",
-        "onde": "Netflix",
-        "imdb": "tt11016042",
-        "trailer_url": "https://www.youtube.com/results?search_query=Ripley+Netflix+Zaillian+trailer",
-        "olho": "Andrew Scott e Robert Elswit criam a adaptação definitiva de Patricia Highsmith em uma aula magistral de preto e branco, tensão e arquitetura italiana.",
-        "texto": "Vencedora de múltiplos prêmios Emmy, esta obra-prima formalista transforma o assassinato em estudo sobre luz, sombra e quadros de Caravaggio.",
-        "resenha": [
-            "Esqueça o charme ensolarado de Jude Law e Matt Damon na versão cinematográfica de Anthony Minghella de 1999. O que o roteirista e diretor Steven Zaillian (A Lista de Schindler, The Night Of) realizou na minissérie Ripley da Netflix é uma das experiências estéticas mais rigorosas, frias e visualmente deslumbrantes da história da televisão contemporânea.",
-            "Andrew Scott encarna Tom Ripley com um vazio interior gélido e metódico, operando pequenos golpes de cheque na Nova York chuvosa do início dos anos 1960 até ser contratado por um magnata do transporte marítimo para viajar à Itália e convencer seu filho playboy, Dickie Greenleaf (Johnny Flynn), a retornar para casa. A relação simbiótica e doentia entre Tom, Dickie e Marge Sherwood (Dakota Fanning) é tecida com lentidão calculada.",
-            "O verdadeiro espetáculo da série é a fotografia em preto e branco do mestre Robert Elswit (Sangue Negro): cada escadaria em Atrani, cada estátua barroca em Roma, cada reflexo nas águas de Nápoles e Veneza é enquadrado com a precisão de um gravador renascentista. As pinturas sangrentas de Caravaggio tornam-se o espelho moral no qual Ripley contempla seus próprios crimes.",
-            "Uma aula definitiva de cinema narrativo em oito capítulos que redefine o padrão visual da era do streaming."
-        ],
-        "ponte": "O Talentoso Ripley, Cidadão Kane, O Terceiro Homem e Sangue Negro.",
-        "recepcao": "Vencedor de múltiplos prêmios Emmy, incluindo Melhor Direção para Steven Zaillian e Melhor Fotografia para Robert Elswit."
-    },
-    "2026-11--baby-reindeer": {
-        "id": "2026-11--baby-reindeer",
-        "edicao": "2026-11",
-        "ordem": 16,
-        "secao": "series",
-        "titulo": "Bebê Rena",
-        "titulo_original": "Baby Reindeer",
-        "autor": "Richard Gadd",
-        "ano": 2024,
-        "pais": "Reino Unido",
-        "tempo": "Minissérie (7 episódios)",
-        "genero": "drama psicológico / suspense / comédia negra",
-        "tipo": "serie",
-        "onde": "Netflix",
-        "imdb": "tt13649112",
-        "trailer_url": "https://www.youtube.com/results?search_query=Baby+Reindeer+Netflix+trailer",
-        "olho": "Richard Gadd adapta seu trauma real com perseguição obsessiva em uma minissérie corajosa que conquistou 6 prêmios Emmy.",
-        "texto": "Jessica Gunning assombra no papel de Martha em uma dissecação impiedosa sobre carência afetiva, abuso e cumplicidade moral.",
-        "resenha": [
-            "Poucas produções causaram um terremoto cultural tão profundo nos últimos anos quanto Bebê Rena. Criada, escrita e protagonizada pelo comediante escocês Richard Gadd, a minissérie baseada em sua peça teatral solo no Edinburgh Fringe rejeita o formato convencional de histórias de perseguição (stalking) para realizar uma autópsia perturbadoramente honesta da cumplicidade da própria vítima em sua descida ao inferno.",
-            "Donny Dunn (Gadd) é um aspirante a comediante de stand-up que trabalha atrás do balcão de um pub em Londres. Num dia qualquer, ele oferece uma xícara de chá gratuita a uma mulher solitária e obesa chamada Martha (Jessica Gunning). Esse simples ato de gentileza desencadeia uma obsessão maníaca: Martha envia mais de 41 mil e-mails, 350 horas de mensagens de voz e persegue Donny por anos.",
-            "A grande sacada de Gadd é não transformar Martha num monstro bidimensional: ela é doente e perigosa, mas Donny, profundamente ferido por um abuso sexual anterior sofrido nas mãos de um roteirista de TV mais velho, alimenta a adulação de Martha para preencher o vazio de sua autoestima arruinada.",
-            "O quarto episódio da série, em que Donny revisita o trauma do estupro, é um dos momentos mais devastadores e honestos já exibidos na televisão mundial."
-        ],
-        "ponte": "Louca Obsessão (Misery), Fleabag, I May Destroy You e BoJack Horseman.",
-        "recepcao": "Consagração total com 6 prêmios Emmy em 2024, incluindo Melhor Minissérie, Roteiro, Ator para Gadd e Atriz Coadjuvante para Gunning."
-    },
-    "2026-11--disclaimer": {
-        "id": "2026-11--disclaimer",
-        "edicao": "2026-11",
-        "ordem": 17,
-        "secao": "series",
-        "titulo": "Disclaimer",
-        "titulo_original": "Disclaimer",
-        "autor": "Alfonso Cuarón",
-        "ano": 2024,
-        "pais": "Reino Unido, EUA",
-        "tempo": "Minissérie (7 episódios)",
-        "genero": "suspense psicológico / drama moral",
-        "tipo": "serie",
-        "onde": "Apple TV+",
-        "imdb": "tt16294384",
-        "trailer_url": "https://www.youtube.com/results?search_query=Disclaimer+Alfonso+Cuaron+Apple+TV+trailer",
-        "olho": "Cate Blanchett, Kevin Kline e Alfonso Cuarón unem forças em um thriller sobre reputação, narrativas concorrentes e culpa soterrada.",
-        "texto": "Com fotografia compartilhada por Emmanuel Lubezki e Bruno Delbonnel, a série disseca como as histórias que contamos destroem vidas.",
-        "resenha": [
-            "O cineasta mexicano Alfonso Cuarón (Roma, Filhos da Esperança, Gravidade) escreveu e dirigiu todos os sete episódios de Disclaimer, adaptando o best-seller de Renée Knight com a escala formal de um longa-metragem de cinema de autor de sete horas de duração exibido em Veneza.",
-            "Catherine Ravenscroft (Cate Blanchett, soberba em sua frieza aristocrática) é uma respeitada jornalista investigativa londrina famosa por expor as transgressões de figuras públicas. Sua vida desmorona quando ela recebe pelo correio um livro anônimo intitulado O Estranho Perfeito, apenas para descobrir com horror que a protagonista da história é ela mesma, e que o enredo revela um segredo sombrio de suas férias na Itália há vinte anos que ela jurava estar enterrado para sempre.",
-            "O livro foi publicado pelo aposentado Stephen Brigstocke (Kevin Kline em seu melhor papel em décadas), o pai amargurado do rapaz que morreu naquelas mesmas férias, determinado a arruinar Catherine expondo-a para seu marido (Sacha Baron Cohen) e seu filho adulto.",
-            "A montagem alternada entre três narradores em vozes gramaticais distintas (primeira, segunda e terceira pessoa) e a iluminação monumental de Lubezki e Delbonnel transformam o suspense em uma reflexão fascinante sobre viés de confirmação e mentiras convenientes."
-        ],
-        "ponte": "Tár, Anatomia de uma Queda, Roma e Garota Exemplar.",
-        "recepcao": "Exibição especial aplaudida no Festival de Veneza 2024; aclamado pela crítica por seu rigor formal e duelo de atuações entre Blanchett e Kline."
-    },
-    "2026-11--cem-anos-de-solidao": {
-        "id": "2026-11--cem-anos-de-solidao",
-        "edicao": "2026-11",
-        "ordem": 18,
-        "secao": "series",
-        "titulo": "Cem Anos de Solidão",
-        "titulo_original": "Cien años de soledad",
-        "autor": "Alex García López, Laura Mora",
-        "ano": 2024,
-        "pais": "Colômbia",
-        "tempo": "Série (16 episódios em 2 partes)",
-        "genero": "realismo mágico / drama épico / saga familiar",
-        "tipo": "serie",
-        "onde": "Netflix",
-        "imdb": "tt27878848",
-        "trailer_url": "https://www.youtube.com/results?search_query=Cien+anos+de+soledad+Netflix+trailer",
-        "olho": "Filmada inteiramente na Colômbia com elenco local e bênção dos filhos de Gabo, a adaptação mais aguardada da literatura latino-americana.",
-        "texto": "A fundação mítica de Macondo e a linhagem dos Buendía ganham vida com rigor histórico e deslumbre visual sem precedentes.",
-        "resenha": [
-            "Durante mais de meio século, Gabriel García Márquez recusou todas as ofertas de Hollywood para adaptar Cem Anos de Solidão ao cinema, sob o argumento inegociável de que o livro precisava ser filmado em espanhol, na Colômbia, e com o tempo necessário que apenas uma série épica de televisão de prestígio poderia comportar. Com a produção executiva de seus filhos Rodrigo e Gonzalo García, essa promessa finalmente se cumpre.",
-            "Dirigida pelo cineasta argentino-mexicano Alex García López e pela talentosa diretora colombiana Laura Mora (Os Reis do Mundo), a série recria a lendária aldeia de Macondo desde suas origens, quando José Arcadio Buendía e Úrsula Iguarán desbravaram a selva fugindo de uma maldição ancestral, até a chegada das pedras de gelo trazidas pelo cigano Melquíades.",
-            "O elenco formado exclusivamente por atores colombianos, muitos deles não-profissionais garimpados no interior do país, confere às falas a musicalidade exata do espanhol caribenho de Aracataca. A direção de arte e o design de figurino evitaram o pitoresco barato para construir um mundo telúrico onde mariposas amarelas, chuvas de flores e a febre do sono fluem com naturalidade orgânica.",
-            "Um triunfo do audiovisual sul-americano que faz jus à maior obra literária do continente."
-        ],
-        "ponte": "Gabriel García Márquez, Pedro Páramo, Os Reis do Mundo e Fitzcarraldo.",
-        "recepcao": "Aguardada como o maior evento cultural televisivo de 2024 na América Latina e no mundo hispânico."
-    },
-    "2026-11--slow-horses": {
-        "id": "2026-11--slow-horses",
-        "edicao": "2026-11",
-        "ordem": 19,
-        "secao": "series",
-        "titulo": "Slow Horses",
-        "titulo_original": "Slow Horses (Temporada 4)",
-        "autor": "Will Smith (showrunner), Mick Herron (livros)",
-        "ano": 2024,
-        "pais": "Reino Unido",
-        "tempo": "Série (6 episódios por temporada)",
-        "genero": "espionagem / comédia ácida / suspense",
-        "tipo": "serie",
-        "onde": "Apple TV+",
-        "imdb": "tt10231140",
-        "trailer_url": "https://www.youtube.com/results?search_query=Slow+Horses+Season+4+trailer",
-        "olho": "Gary Oldman em estado de graça como Jackson Lamb, o chefe nojento, brilhante e beberrão dos espiões rejeitados pelo MI5 britânico.",
-        "texto": "A quarta temporada adapta 'Spook Street' com Hugo Weaving no elenco e eleva o humor britânico seco e o suspense de espionagem a patamares magistrais.",
-        "resenha": [
-            "Slow Horses é, sem sombra de dúvida, a série de espionagem mais consistente, inteligente e deliciosamente cáustica da televisão contemporânea. Ao adaptar os romances da série Slough House de Mick Herron, a produção da Apple TV+ desmontou o mito do agente secreto glamouroso à la James Bond para colocar no centro da cena os burocratas caídos em desgraça do serviço secreto britânico que cometem erros estúpidos e são condenados a carimbar papel em um prédio decrépito perto da estação de Barbican.",
-            "Gary Oldman tem aqui um dos papéis de sua vida como Jackson Lamb: um veterano da Guerra Fria de meias furadas, cabelo ensebado e flatulências inoportunas que mascara uma mente tática genial sob uma carapaça de grosseria hilária. Seu desprezo pelos espiões sob seu comando é lendário, mas quando seus 'cavalos lentos' entram na mira de assassinos profissionais, Lamb se revela um predador letal.",
-            "A quarta temporada foca na decadência mental do lendário ex-chefe David Cartwright (Jonathan Pryce), avô do agente River Cartwright (Jack Lowden), desencadeando um atentado com bombas em Londres orquestrado por um mercenário impiedoso vivido por Hugo Weaving.",
-            "Roteiros sem gordura, diálogos que estalam de sarcasmo britânico e cenas de ação secas e brutais fazem de Slow Horses uma maratona irresistível."
-        ],
-        "ponte": "O Espião que Sabia Demais (John le Carré), The Wire e O Alfaiate do Panamá.",
-        "recepcao": "Aclamação unânime com 98% no Rotten Tomatoes; indicações para Gary Oldman e Jack Lowden nos prêmios Emmy e BAFTA."
-    },
-    "2026-11--the-sympathizer": {
-        "id": "2026-11--the-sympathizer",
-        "edicao": "2026-11",
-        "ordem": 20,
-        "secao": "series",
-        "titulo": "O Simpatizante",
-        "titulo_original": "The Sympathizer",
-        "autor": "Park Chan-wook, Don McKellar",
-        "ano": 2024,
-        "pais": "EUA, Vietnã, Coreia do Sul",
-        "tempo": "Minissérie (7 episódios)",
-        "genero": "espionagem satírica / drama histórico / humor negro",
-        "tipo": "serie",
-        "onde": "Max (HBO)",
-        "imdb": "tt14440462",
-        "trailer_url": "https://www.youtube.com/results?search_query=The+Sympathizer+HBO+trailer",
-        "olho": "Dirigida pelo mestre Park Chan-wook, uma sátira cortante sobre identidade dividida pós-Guerra do Vietnã com Robert Downey Jr. em quatro papéis.",
-        "texto": "Adaptação do romance vencedor do Pulitzer de Viet Thanh Nguyen com Hoa Xuande hipnotizante no papel do espião comunista duplo.",
-        "resenha": [
-            "A Guerra do Vietnã foi contada quase exclusivamente pela ótica dos veteranos e do cinema americano, de Apocalypse Now a Platoon. O Simpatizante inverte essa equação com inteligência satírica avassaladora ao adaptar o romance de estreia de Viet Thanh Nguyen, vencedor do Prêmio Pulitzer em 2016.",
-            "O Capitão (Hoa Xuande, uma revelação absoluta) é um espião comunista meio-vietnamita, meio-francês que atua infiltrado no exército do Vietnã do Sul. Quando Saigon cai em abril de 1975, ele é obrigado a fugir para Los Angeles com o General (Toan Le), continuando a espionar a comunidade de refugiados e enviar relatórios codificados para Hanói com tinta invisível.",
-            "Os três primeiros episódios dirigidos pelo cineasta sul-coreano Park Chan-wook (Oldboy, Decisão de Partir) são uma exibição de brilhantismo técnico: transições de câmera acrobáticas, humor mordaz e cores vibrantes. Robert Downey Jr. realiza um tour de force ao interpretar quatro representantes distintos do imperialismo ocidental: um agente cínico da CIA, um professor orientalista da UCLA, um congressista republicano linha-dura e um diretor de cinema megalomaníaco que lembra Francis Ford Coppola.",
-            "Uma reflexão profunda sobre o exílio, a traição ideológica e a impossibilidade de pertencer plenamente a dois mundos em conflito."
-        ],
-        "ponte": "Decisão de Partir (Park Chan-wook), Apocalypse Now, O Americano Tranquilo e M.A.S.H..",
-        "recepcao": "Aclamado pela crítica americana e asiática; indicação de Robert Downey Jr. ao Emmy."
-    },
-
-    # --- SEÇÃO BRASIL ---
     "2026-11--vidas-secas-4k": {
         "id": "2026-11--vidas-secas-4k",
         "edicao": "2026-11",
@@ -603,228 +559,181 @@ CINE_ITENS = {
             "Rever Vidas Secas em tela grande no Rio de Janeiro é um compromisso cívico com a dignidade da nossa história e a beleza do nosso cinema mais corajoso."
         ],
         "ponte": "Graciliano Ramos, Deus e o Diabo na Terra do Sol, Terra em Transe e O Caminho das Nuvens.",
-        "recepcao": "Seleção oficial Cannes Classics 2024; aplaudido de pé por cineastas e preservadores do mundo inteiro."
+        "recepcao": "Seleção oficial Cannes Classics 2024; aplaudido de pé por cineastas e preservadores do mundo inteiro.",
+        "capa": "capas/e681e40cc8d0ab5a98f7287f88790717.jpg",
+        "imagem": "capas/e681e40cc8d0ab5a98f7287f88790717.jpg"
     },
-    "2026-11--motel-destino": {
-        "id": "2026-11--motel-destino",
+    "2026-11--vicentina-pede-desculpas": {
+        "id": "2026-11--vicentina-pede-desculpas",
         "edicao": "2026-11",
-        "ordem": 22,
+        "ordem": 21,
         "secao": "brasil",
-        "titulo": "Motel Destino",
-        "titulo_original": "Motel Destino",
-        "autor": "Karim Aïnouz",
-        "ano": 2024,
-        "pais": "Brasil, França, Alemanha",
+        "titulo": "Vicentina Pede Desculpas",
+        "titulo_original": "Vicentina Pede Desculpas",
+        "autor": "Gabriel Martins",
+        "ano": 2026,
+        "pais": "Brasil",
         "tempo": "1h 55min",
-        "genero": "thriller erótico / noir tropical",
+        "genero": "drama contemporâneo / cinema brasileiro",
         "tipo": "filme",
-        "onde": "Cinemas e plataformas digitais",
-        "imdb": "tt28469812",
-        "trailer_url": "https://www.youtube.com/results?search_query=Motel+Destino+Karim+Ainouz+trailer",
-        "olho": "Neon azul e vermelho, suor e desejo à beira da rodovia cearense na volta de Karim Aïnouz ao cinema de autor rodado no Nordeste.",
-        "texto": "Competição oficial de Cannes 2024, o filme traz Fábio Assunção, Nataly Rocha e Iago Xavier num triângulo perigoso de sexo e fuga.",
+        "onde": "Cinemas (Circuito Nacional - Estreia Nov 2026)",
+        "imdb": "tt31735111",
+        "trailer_url": "https://www.youtube.com/results?search_query=Vicentina+Pede+Desculpas+trailer",
+        "olho": "Estrelando a sublime Rejane Faria, o novo longa do diretor de Marte Um é uma radiografia comovente sobre luto, maternidade e dignidade na periferia de BH.",
+        "texto": "Após uma tragédia rodoviária envolvendo seu filho motorista, uma mãe visita cada uma das famílias atingidas em um périplo silencioso de reconciliação humana.",
         "resenha": [
-            "Após rodar o drama histórico britânico Firebrand com Alicia Vikander e Jude Law, o cineasta cearense Karim Aïnouz (Madame Satã, A Vida Invisível) sentiu a necessidade urgente de voltar para casa e sujar as mãos com a poeira, o calor e a sensualidade crua do litoral do Ceará. Motel Destino é a materialização desse desejo visceral.",
-            "Hélio (o estreante Iago Xavier, de presença magnética), um jovem em fuga de uma gangue da periferia de Fortaleza após uma missão fracassada, encontra refúgio improvável trabalhando como faz-tudo no Motel Destino, um estabelecimento decadente de beira de estrada à beira do mar. Lá, ele se vê enredado numa teia de desejo e violência entre o proprietário violento Elias (Fábio Assunção em atuação ameaçadora) e sua esposa Dayana (Nataly Rocha), uma mulher aprisionada pelo casamento.",
-            "A fotografia exuberante de Hélène Louvart banha os quartos de fórmica e espelhos com cores hipersaturadas de néon, criando uma atmosfera que lembra o cinema noir de James M. Cain transposto para as dunas e o vento quente do Nordeste brasileiro.",
-            "Um thriller febril e carnal que celebra a juventude, a liberdade dos corpos e o poder de reinvenção contra a opressão."
+            "Gabriel Martins e a Filmes de Plástico reafirmam seu domínio na construção de um cinema popular de extrema nobreza ética e delicadeza visual.",
+            "Rejane Faria emociona sem uma gota de melodrama barato."
         ],
-        "ponte": "Madame Satã, O Céu de Suely, O Destino Bate à Sua Porta e Corpos Ardentes.",
-        "recepcao": "Competição Oficial do Festival de Cannes 2024; aclamado pela crítica brasileira pelo frescor sensorial e atuações elétricas."
+        "ponte": "Gabriel Martins, Filmes de Plástico, Marte Um e drama social brasileiro.",
+        "recepcao": "Aclamado no Festival de Gramado e na Première Brasil do Festival do Rio 2026.",
+        "capa": "capas/e1717f689b8a4a9b634bb2a177b326a2.jpg",
+        "imagem": "capas/e1717f689b8a4a9b634bb2a177b326a2.jpg"
     },
-    "2026-11--levante": {
-        "id": "2026-11--levante",
-        "edicao": "2026-11",
-        "ordem": 23,
-        "secao": "brasil",
-        "titulo": "Levante",
-        "titulo_original": "Levante",
-        "autor": "Lillah Halla",
-        "ano": 2023,
-        "pais": "Brasil, França, Uruguai",
-        "tempo": "1h 39min",
-        "genero": "drama / esporte / juventude queer",
-        "tipo": "filme",
-        "onde": "Globoplay e Apple TV",
-        "imdb": "tt26683884",
-        "trailer_url": "https://www.youtube.com/results?search_query=Levante+Lillah+Halla+trailer",
-        "olho": "Vencedor do Prêmio FIPRESCI na Semana da Crítica de Cannes, a energia contagiante de um time de vôlei queer e a luta pelo direito reprodutivo.",
-        "texto": "Sofia (Ayomi Domenica) é uma atleta de 17 anos à beira de uma bolsa profissional que descobre uma gravidez indesejada.",
-        "resenha": [
-            "O filme de estreia da diretora Lillah Halla chegou como um vendaval no cinema nacional: em vez de tratar a gravidez indesejada e o tema do aborto através da tragédia paralisante, Levante aposta na força coletiva, na cumplicidade do esporte e no afeto queer de uma comunidade que se recusa a abandonar seus pares.",
-            "Sofia (Ayomi Domenica, filha do rapper Mano Brown, numa estreia estrondosa) é a capitã talentosa de um time de vôlei juvenil de São Paulo prestes a disputar a final de um campeonato que pode lhe render uma bolsa internacional. Ao descobrir que está grávida num país onde o aborto é criminalizado, ela enfrenta a hostilidade de grupos fundamentalistas que passam a persegui-la dentro e fora das quadras.",
-            "O grande trunfo do filme é o elenco coadjuvante que forma o time de vôlei: corpos dissidentes, negros e LGBTQIA+ que treinam juntos, dançam funk nas lajes e criam uma rede de proteção comunitária invencível contra o linchamento moral.",
-            "Um filme vibrante, político e energizante, que mostra o cinema jovem brasileiro em seu momento de maior vitalidade e coragem."
-        ],
-        "ponte": "Retrato de uma Jovem em Chamas, Garotas (Céline Sciamma) e O Acontecimento (Audrey Diwan).",
-        "recepcao": "Prêmio FIPRESCI da Crítica Internacional na Semana da Crítica de Cannes; premiado nos festivais de Biarritz e Rio."
-    },
-    "2026-11--estranho-caminho": {
-        "id": "2026-11--estranho-caminho",
-        "edicao": "2026-11",
-        "ordem": 24,
-        "secao": "brasil",
-        "titulo": "Estranho Caminho",
-        "titulo_original": "Estranho Caminho",
-        "autor": "Guto Parente",
-        "ano": 2023,
-        "pais": "Brasil, Portugal",
-        "tempo": "1h 23min",
-        "genero": "drama / realismo fantástico / drama familiar",
-        "tipo": "filme",
-        "onde": "MUBI e plataformas digitais",
-        "imdb": "tt27774892",
-        "trailer_url": "https://www.youtube.com/results?search_query=Estranho+Caminho+Guto+Parente+trailer",
-        "olho": "Grande vencedor do Festival de Tribeca com 4 prêmios principais, o reencontro absurdo e terno entre pai e filho confinados em Fortaleza.",
-        "texto": "Lucas Limeira e Carlos Francisco brilham no longa que transforma o confinamento pandêmico em poesia visual sobre o tempo.",
-        "resenha": [
-            "Guto Parente é um dos cineastas mais inventivos e prolíficos da prolífica cena cinematográfica do Ceará. Em Estranho Caminho, consagrado historicamente no Festival de Tribeca em Nova York (onde levou Melhor Filme Internacional, Roteiro, Fotografia e Ator), ele parte da memória do início da pandemia para construir uma narrativa que ultrapassa qualquer conjuntura para falar sobre laços familiares partidos.",
-            "David (Lucas Limeira), um jovem cineasta experimental que vive em Portugal, retorna a Fortaleza em março de 2020 para exibir um curta-metragem num festival. O fechamento repentino do país o impede de voltar a Lisboa, forçando-o a procurar seu pai, Geraldo (Carlos Francisco, de Bacurau e Marte Um), um homem excêntrico e recluso com quem ele não fala há mais de dez anos.",
-            "O confinamento forçado no apartamento poeirento de Geraldo transforma-se num espaço de convivência insólita: barulhos estranhos nos encanamentos, objetos que mudam de lugar e conversas tardias sobre os mistérios da física e do cosmos.",
-            "Um filme de beleza silenciosa e comovente que resgata a reconciliação entre gerações com delicadeza sem igual."
-        ],
-        "ponte": "Marte Um, O Som ao Redor, O Clube dos Canibais e Paterson (Jim Jarmusch).",
-        "recepcao": "Vencedor dos prêmios de Melhor Longa Internacional, Roteiro, Fotografia e Ator (Carlos Francisco) no Festival de Tribeca 2023."
-    },
-    "2026-11--sem-coracao": {
-        "id": "2026-11--sem-coracao",
-        "edicao": "2026-11",
-        "ordem": 25,
-        "secao": "brasil",
-        "titulo": "Sem Coração",
-        "titulo_original": "Sem Coração",
-        "autor": "Nara Normande, Tião",
-        "ano": 2023,
-        "pais": "Brasil, França, Itália",
-        "tempo": "1h 31min",
-        "genero": "drama / amadurecimento / romance juvenil",
-        "tipo": "filme",
-        "onde": "Netflix e plataformas digitais",
-        "imdb": "tt28469800",
-        "trailer_url": "https://www.youtube.com/results?search_query=Sem+Coracao+Nara+Normande+Tiao+trailer",
-        "olho": "O verão de 1996 no litoral de Alagoas filmado com nostalgia mágica, sensualidade e a dor da passagem para a vida adulta.",
-        "texto": "Exibido na seção Orizzonti de Veneza, o longa expande o premiado curta dos diretores com elenco jovem magnético.",
-        "resenha": [
-            "Ambientado no verão de 1996 na vila de pescadores de Guaxuma, em Alagoas, Sem Coração transporta o espectador para aquele instante frágil e inesquecível em que a infância se desfaz para dar lugar aos enigmas do desejo e da vida adulta. Os diretores Nara Normande e Tião expandiram seu aclamado curta-metragem homônimo de 2014 para criar um dos longas mais sensoriais do cinema nordestino contemporâneo.",
-            "Tamara (Maya de Vicq) passa suas últimas semanas na praia com a turma de amigos antes de se mudar para Brasília para cursar o ensino médio. Entre mergulhos no mar verde, partidas de fliperama e festas à beira da fogueira, ela fica fascinada por uma garota local apelidada de 'Sem Coração' (Eduarda Samara), assim chamada por causa de uma cicatriz no peito decorrente de uma cirurgia cardíaca na infância.",
-            "A relação que nasce entre as duas garotas de classes sociais distintas é construída por olhares tímidos, toques desajeitados e o fascínio mútuo pelo mar e pelos mistérios da natureza. A fotografia de Evgenia Alexandrova capta a maresia e o sal na pele com beleza pictórica de cinema de arquivo.",
-            "Uma obra terna e nostálgica que pulsa com o calor das lembranças de um Brasil analógico que não volta mais."
-        ],
-        "ponte": "Guaxuma, Águas Claras, O Céu de Suely e Depois de Lúcia.",
-        "recepcao": "Estreia mundial no Festival de Veneza 2023 (seção Orizzonti); Melhor Direção e Melhor Fotografia no Festival do Rio."
-    },
-    "2026-11--retrato-de-um-certo-oriente": {
-        "id": "2026-11--retrato-de-um-certo-oriente",
+    "2026-11--godzilla-minus-zero": {
+        "id": "2026-11--godzilla-minus-zero",
         "edicao": "2026-11",
         "ordem": 26,
-        "secao": "brasil",
-        "titulo": "Retrato de um Certo Oriente",
-        "titulo_original": "Retrato de um Certo Oriente",
-        "autor": "Marcelo Gomes",
-        "ano": 2024,
-        "pais": "Brasil, Itália, Líbano",
-        "tempo": "1h 48min",
-        "genero": "drama histórico / ensaio poético / adaptação literária",
+        "secao": "pop",
+        "titulo": "Godzilla Minus Zero",
+        "titulo_original": "Godzilla Minus Zero",
+        "autor": "Takashi Yamazaki",
+        "ano": 2026,
+        "pais": "Japão",
+        "tempo": "2h 05min (Estreia: Nov 2026)",
+        "genero": "kaiju / drama histórico / ficção científica épica",
         "tipo": "filme",
-        "onde": "Cinemas (Circuito Estação Net / Cine Joia) e plataformas",
-        "imdb": "tt28469822",
-        "trailer_url": "https://www.youtube.com/results?search_query=Retrato+de+um+Certo+Oriente+Marcelo+Gomes+trailer",
-        "olho": "Marcelo Gomes adapta a obra-prima de Milton Hatoum em uma odisseia visual que une Beirute e a Amazônia nos anos 1940.",
-        "texto": "Fotografado em preto e branco magistral, o filme celebra o encontro entre a imigração libanesa e os rios da floresta.",
+        "onde": "Cinemas (Circuito IMAX e Multiplex)",
+        "imdb": "tt31735999",
+        "trailer_url": "https://www.youtube.com/results?search_query=Godzilla+Minus+Zero+trailer",
+        "olho": "Takashi Yamazaki retorna após o triunfo no Oscar com a aguardada continuação que coloca o Japão do pós-guerra diante de um confronto de monstros titânicos.",
+        "texto": "Aliando efeitos visuais impecáveis a um denso drama humano sobre reconstrução coletiva, o filme aprofunda as cicatrizes deixadas pelo trauma bélico.",
         "resenha": [
-            "O cineasta pernambucano Marcelo Gomes (Cinema, Aspirinas e Urubus, Viajo Porque Preciso, Volto Porque Te Amo) é um dos poetas mais inspirados da geografia afetiva no cinema brasileiro. Em Retrato de um Certo Oriente, ele aceitou o desafio monumental de levar às telas o clássico romance homônimo de Milton Hatoum, construindo uma ponte lírica entre o Mediterrâneo e a floresta amazônica.",
-            "Filmado em um preto e branco exuberante que remete às fotografias históricas de época, o filme acompanha Emilie (Wafa'a Celine Halawi), uma jovem católica libanesa que embarca em 1949 em um navio de refugiados rumo ao Brasil ao lado de seu irmão Emir. Durante a viagem, Emilie se apaixona pelo comerciante muçulmano Omar, provocando uma fúria fratricida que culmina numa tragédia antes mesmo da chegada ao porto de Manaus.",
-            "Gomes filma a chegada à selva com o olhar de estranhamento e assombro dos imigrantes: as águas escuras do Rio Negro, os cantos de pássaros desconhecidos e o choque cultural transformam Manaus numa Babel tropical onde árabes, indígenas e caboclos reescrevem suas identidades.",
-            "Uma celebração audiovisual imensa da miscigenação e da memória que honra a literatura de Hatoum com sensibilidade rara."
+            "Mais do que um espetáculo de destruição de kaijus, a franquia de Yamazaki se consolida como uma reflexão cortante sobre a responsabilidade do Estado e o valor da vida comum.",
+            "A direção de fotografia e o som estrondoso exigem a sala escura e a potência do IMAX."
         ],
-        "ponte": "Milton Hatoum, Cinema Aspirinas e Urubus, Lavoura Arcaica e Dois Irmãos.",
-        "recepcao": "Estreia triunfal no Festival Internacional de Cinema de Roterdã 2024; premiado no Festival de Gramado."
+        "ponte": "Godzilla Minus One, Shin Godzilla, Akira e ficção científica japonesa de autor.",
+        "recepcao": "Líder de bilheterias e recebido com entusiasmo caloroso por cinéfilos.",
+        "capa": "capas/95a774ab9821004a58e311cc92eae99e.jpg",
+        "imagem": "capas/95a774ab9821004a58e311cc92eae99e.jpg"
     },
-
-    # --- SEÇÃO POP & AUTORAL DE GRANDE ESCALA ---
-    "2026-11--duna-parte-2": {
-        "id": "2026-11--duna-parte-2",
+    "2026-11--a-bola-preta": {
+        "id": "2026-11--a-bola-preta",
+        "titulo": "A Bola Preta",
+        "titulo_original": "La Bola Negra",
+        "ano": 2026,
+        "direcao": "Javier Calvo e Javier Ambrossi",
+        "pais": "Espanha",
+        "duracao": "2h 02min",
+        "genero": "drama / cinebiografia experimental",
+        "secao": "cartaz",
+        "edicao": "2026-11",
+        "onde_ver": "CINEMAS DE ARTE (CIRCUITO ESTAÇÃO NET, SALA DE ARTE, CINESESC)",
+        "estreou": "2026-11-01",
+        "trailer_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "olho": "Filme de abertura do 28º Festival do Rio, o novo trabalho dos 'Los Javis' explora os bastidores da contracultura e da criação literária marginal em Madri.",
+        "texto": "A trajetória de um coletivo de artistas sob a fumaça de cabarés clandestinos e a urgência da liberdade nos estertores de um regime autoritário.",
+        "recepcao": "Ovacionado no Festival de Cannes 2026 e consagrado no Festival do Rio como um triunfo visual e sonoro de alta voltagem emocional.",
+        "ponte": "La Mesías, Veneno, Almodóvar e cinema de vanguarda espanhol.",
+        "capa": "capas/3670bcf6ce7567f332458ef2427579d9.jpg",
+        "imagem": "capas/3670bcf6ce7567f332458ef2427579d9.jpg"
+    },
+    "2026-11--jogos-vorazes-amanhecer-na-colheita": {
+        "id": "2026-11--jogos-vorazes-amanhecer-na-colheita",
         "edicao": "2026-11",
         "ordem": 27,
         "secao": "pop",
-        "titulo": "Duna: Parte 2",
-        "titulo_original": "Dune: Part Two",
-        "autor": "Denis Villeneuve",
-        "ano": 2024,
-        "pais": "EUA, Canadá",
-        "tempo": "2h 46min",
-        "genero": "ficção científica / épico / aventura",
+        "titulo": "Jogos Vorazes: Amanhecer na Colheita",
+        "titulo_original": "The Hunger Games: Sunrise on the Reaping",
+        "autor": "Francis Lawrence",
+        "ano": 2026,
+        "pais": "EUA",
+        "tempo": "2h 22min (Estreia: Nov 2026)",
+        "genero": "distopia política / ficção científica / suspense",
         "tipo": "filme",
-        "onde": "Max (HBO), Apple TV e Prime Video",
-        "imdb": "tt15239678",
-        "trailer_url": "https://www.youtube.com/results?search_query=Dune+Part+Two+official+trailer",
-        "olho": "Denis Villeneuve entrega o ápice da ficção científica moderna: um épico brutal sobre o perigo dos mitos messiânicos e do fanatismo religioso.",
-        "texto": "Timothée Chalamet, Zendaya e Austin Butler encabeçam uma experiência cinematográfica avassaladora de escala e design de som.",
+        "onde": "Cinemas do Brasil (Lançamento Nacional)",
+        "imdb": "tt31735888",
+        "trailer_url": "https://www.youtube.com/results?search_query=Sunrise+on+the+Reaping+trailer",
+        "olho": "Adaptação da obra de Suzanne Collins que foca no lendário 50º Massacre Quaternário de Haymitch Abernathy e a máquina de propaganda da Capital.",
+        "texto": "Um thriller político sombrio sobre controle midiático, vigilância e a destruição da inocência pela tirania autoritária.",
         "resenha": [
-            "Se o primeiro Duna (2021) preparou o tabuleiro com paciência e elegância arquitetônica, Duna: Parte 2 é a explosão vulcânica da tragédia imaginada por Frank Herbert em 1965. Denis Villeneuve provou categoricamente que é possível fazer cinema de grande escala para os maiores estúdios de Hollywood sem subestimar a inteligência, a sofisticação moral ou o paladar estético do público.",
-            "Paul Atreides (Timothée Chalamet em atuação assombrosamente madura) é acolhido pelos Fremen no deserto de Arrakis ao lado de sua mãe Lady Jessica (Rebecca Ferguson). Ao aprender os costumes da areia e apaixonar-se pela guerreira Chani (Zendaya), Paul descobre que não pode conter a profecia messiânica plantada pela ordem Bene Gesserit, que o transforma no messias Muad'Dib à custa de uma guerra santa que promete incendiar o cosmos.",
-            "A sequência na arena monocromática de Giedi Prime com o psicopata Feyd-Rautha Harkonnen (Austin Butler irreconhecível e aterrorizante) é uma das realizações visuais mais arrebatadoras da história do cinema de gênero, filmada com câmeras infravermelhas modificadas por Greig Fraser.",
-            "Uma obra-prima incontestável do cinema de entretenimento inteligente que já garantiu seu lugar entre os maiores épicos de todos os tempos."
+            "A franquia ganha seu capítulo mais trágico e político, dissecando as artimanhas do espetáculo como anestésico da revolta social.",
+            "Um blockbuster inteligente que dialoga diretamente com as discussões contemporâneas sobre desinformação."
         ],
-        "ponte": "Lawrence da Arábia, Apocalypse Now, Blade Runner 2049 e Star Wars (Trilogia Original).",
-        "recepcao": "Aclamação crítica global esmagadora; bilheteria de mais de US$ 710 milhões e favorita absoluta às categorias técnicas do Oscar."
+        "ponte": "Jogos Vorazes, 1984, Filhos da Esperança e distopias políticas.",
+        "recepcao": "Maior estreia pop do mês no circuito brasileiro.",
+        "capa": "capas/4e16c99fbd0cc21bde1ceb566bb33158.jpg",
+        "imagem": "capas/4e16c99fbd0cc21bde1ceb566bb33158.jpg"
     },
-    "2026-11--rivais": {
-        "id": "2026-11--rivais",
+    "2026-11--cloud-nuvem": {
+        "id": "2026-11--cloud-nuvem",
+        "titulo": "Cloud (A Nuvem)",
+        "titulo_original": "Kuraudo",
+        "ano": 2026,
+        "direcao": "Kiyoshi Kurosawa",
+        "pais": "Japão",
+        "duracao": "2h 03min",
+        "genero": "thriller psicológico / cinema de autor",
+        "secao": "cartaz",
         "edicao": "2026-11",
-        "ordem": 28,
-        "secao": "pop",
-        "titulo": "Rivais",
-        "titulo_original": "Challengers",
-        "autor": "Luca Guadagnino",
-        "ano": 2024,
-        "pais": "EUA, Itália",
-        "tempo": "2h 11min",
-        "genero": "drama / comédia esportiva / romance erótico",
-        "tipo": "filme",
-        "onde": "Prime Video e Apple TV",
-        "imdb": "tt16426418",
-        "trailer_url": "https://www.youtube.com/results?search_query=Challengers+Luca+Guadagnino+trailer",
-        "olho": "Zendaya, Josh O'Connor e Mike Faist eletrizam a tela num triângulo amoroso em que cada jogada de tênis é puro combate erótico.",
-        "texto": "Com trilha eletrônica arrebatadora de Trent Reznor e Atticus Ross, Guadagnino transforma o esporte no melodrama mais sexy do ano.",
-        "resenha": [
-            "Luca Guadagnino (Me Chame Pelo Seu Nome, Suspiria) é um cineasta do desejo físico e da textura dos corpos em movimento. Em Rivais (Challengers), ele pegou um roteiro afiado de Justin Kuritzkes sobre o circuito profissional de tênis e o transformou em uma ópera eletrônica de suor, cinismo e obsessão triangular.",
-            "Tashi Duncan (Zendaya, em sua melhor e mais autoritária performance no cinema) é uma ex-prodígio do tênis cuja carreira foi precocemente encerrada por uma grave lesão no joelho. Casada com Art Donaldson (Mike Faist), um campeão de Grand Slam em crise de confiança a quem ela treina com punho de ferro, Tashi o inscreve num humilde torneio Challenger na periferia de Nova York. Lá, Art descobre que seu adversário na final será Patrick Zweig (Josh O'Connor), seu melhor amigo de adolescência e antigo amante de Tashi.",
-            "Guadagnino e o diretor de fotografia Sayombhu Mukdeeprom colocam a câmera dentro da própria bola de tênis, voando sobre a rede entre raquetadas cortadas no ritmo alucinante das batidas de house e techno compostas por Trent Reznor e Atticus Ross.",
-            "Um filme pop puríssimo, inteligente e transbordante de vigor carnal que resgata a alegria do cinema de estúdio autoral."
-        ],
-        "ponte": "Match Point (Woody Allen), Me Chame Pelo Seu Nome, Jules e Jim e A Rede Social.",
-        "recepcao": "Sucesso retumbante de público e crítica no mundo inteiro; trilha sonora aclamada como uma das melhores da década."
+        "onde_ver": "CINEMAS DE ARTE (REPESCAGEM 50ª MOSTRA INTERNACIONAL DE SÃO PAULO E ESTAÇÃO NET RIO)",
+        "estreou": "2026-10-28",
+        "trailer_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "olho": "Em cartaz na repescagem da Mostra SP, o mestre Kiyoshi Kurosawa transforma a revenda predatória na internet em um suspense paranoico impecável.",
+        "texto": "Um operador ganancioso de estoques virtuais desperta uma onda de ódio anônima que foge da tela dos computadores e cerca sua casa no mundo real.",
+        "recepcao": "Sucesso absoluto na 50ª Mostra SP e ovacionado no Festival de Veneza pelo rigor e tensão milimétrica.",
+        "ponte": "Cure, Pulse, suspense psicológico minimalista e paranoia da era digital.",
+        "capa": "capas/e3a0d6ec0d26639daeb64147c932403e.jpg",
+        "imagem": "capas/e3a0d6ec0d26639daeb64147c932403e.jpg"
     },
-    "2026-11--furiosa-uma-saga-mad-max": {
-        "id": "2026-11--furiosa-uma-saga-mad-max",
+    "2026-11--i-love-boosters": {
+        "id": "2026-11--i-love-boosters",
+        "titulo": "I Love Boosters",
+        "titulo_original": "I Love Boosters",
+        "ano": 2026,
+        "direcao": "Boots Riley",
+        "pais": "EUA",
+        "duracao": "1h 50min",
+        "genero": "comédia ácida / sátira social / ação",
+        "secao": "cartaz",
         "edicao": "2026-11",
-        "ordem": 29,
-        "secao": "pop",
-        "titulo": "Furiosa: Uma Saga Mad Max",
-        "titulo_original": "Furiosa: A Mad Max Saga",
-        "autor": "George Miller",
-        "ano": 2024,
-        "pais": "Austrália, EUA",
-        "tempo": "2h 28min",
-        "genero": "ação / ficção científica / aventura mitológica",
-        "tipo": "filme",
-        "onde": "Max (HBO), Apple TV e Prime Video",
-        "imdb": "tt12037194",
-        "trailer_url": "https://www.youtube.com/results?search_query=Furiosa+A+Mad+Max+Saga+trailer",
-        "olho": "Aos 79 anos, George Miller dá mais uma aula definitiva de gramática de ação e mitologia operística no deserto australiano.",
-        "texto": "Anya Taylor-Joy e Chris Hemsworth brilham no prelúdio épico que acompanha quinze anos de vingança e sobrevivência no ermo.",
-        "resenha": [
-            "Depois da perfeição cinética de Estrada da Fúria (2015), muitos duvidavam que George Miller pudesse voltar ao mesmo universo sem se repetir. A resposta veio em Furiosa: Uma Saga Mad Max, que em vez de emular a corrida contínua de dois dias do filme anterior, abraça a estrutura de uma tragédia grega em cinco capítulos cobrindo mais de quinze anos na vida da guerreira do deserto.",
-            "Anya Taylor-Joy assume o papel imortalizado por Charlize Theron com uma fúria silenciosa concentrada no olhar, após ser sequestrada ainda criança do Verdejar das Muitas Mães pela horda de motoqueiros liderada pelo carismático e grotesco Dementus (Chris Hemsworth, entregando a melhor e mais desvairada atuação de sua carreira com uma capa vermelha e ursinho de pelúcia pendurado).",
-            "A sequência de defesa do caminhão-tanque War Rig contra invasores com parapentes e motocicletas de esteira dura quase vinte minutos de puro balé de engenharia cinematográfica e cortes cirúrgicos comandados pela montadora Eliot Knapman.",
-            "Um triunfo do cinema purista de ação e mito que comprova a vitalidade infinita de George Miller."
-        ],
-        "ponte": "Mad Max: Estrada da Fúria, Ben-Hur, Rastros de Ódio e O Guerreiro da Estrada.",
-        "recepcao": "Estreia triunfal no Festival de Cannes 2024 com ovação de pé; aclamado pelos críticos como um clássico instantâneo do cinema de ação."
+        "onde_ver": "CINEMAS (ESTREIA EM 19 DE NOVEMBRO DE 2026)",
+        "estreou": "2026-11-19",
+        "trailer_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "olho": "Do diretor de Sorry to Bother You, uma quadrilha de mulheres especializadas em furto de alta costura mira um império da moda corporativa.",
+        "sinopse": "Keke Palmer e Demi Moore estrelam este manifesto satírico sobre um grupo de garotas de periferia que roubam peças de luxo de estilistas inescrupulosos para financiar a autonomia de suas comunidades, desencadeando uma guerra contra bilionários do Vale do Silício.",
+        "recepcao": "Distribuído pela Universal Pictures e elogiado pela audácia rítmica, estética anárquica e trilha sonora vibrante.",
+        "por_que_ver": "Boots Riley segue como a voz mais iconoclasta e inventiva do cinema autoral americano contemporâneo.",
+        "imagem": "capas/f36861210b8545e049cee36aa32f7707.jpg",
+        "capa": "capas/f36861210b8545e049cee36aa32f7707.jpg"
     },
-
-    # --- SEÇÃO EM BREVE ---
+    "2026-11--malu": {
+        "id": "2026-11--malu",
+        "edicao": "2026-11",
+        "ordem": 20,
+        "secao": "brasil",
+        "titulo": "Malu",
+        "titulo_original": "Malu",
+        "autor": "Pedro Freire",
+        "ano": 2026,
+        "pais": "Brasil",
+        "tempo": "1h 43min",
+        "genero": "drama / cinebiografia / cinema de autor",
+        "tipo": "filme",
+        "onde": "Cinemas (Circuito Estação Net) e Festivais",
+        "imdb": "tt30825372",
+        "trailer_url": "https://www.youtube.com/results?search_query=Malu+Pedro+Freire+trailer",
+        "olho": "Yara de Novaes entrega uma das atuações mais vulcânicas do cinema brasileiro recente como uma atriz veterana confrontando o tempo e as filhas em uma casa na favela.",
+        "texto": "Exibido em Sundance e grande vencedor do Festival do Rio 2026, o longa de estreia de Pedro Freire é uma ode lancinante ao teatro e à resistência feminina.",
+        "resenha": [
+            "Baseado na vida real da mãe do diretor, a atriz Malu Rocha, o filme transforma a decadência financeira e física em uma explosão de vitalidade artística e dialética geracional.",
+            "Um dos maiores acontecimentos do cinema nacional em 2026."
+        ],
+        "ponte": "Cinema brasileiro independente, teatro carioca, Sundance e cinema de afeto.",
+        "recepcao": "Melhor Filme, Melhor Atriz e Prêmio da Crítica no Festival do Rio 2026.",
+        "capa": "capas/4e8a2e331ad38b79efe4547ff4c34801.jpg",
+        "imagem": "capas/4e8a2e331ad38b79efe4547ff4c34801.jpg"
+    },
     "2026-11--duna-parte-3": {
         "id": "2026-11--duna-parte-3",
         "edicao": "2026-11",
@@ -924,7 +833,7 @@ CINE_ITENS = {
         "tipo": "filme",
         "onde": "Cinemas e Mostras Nacionais",
         "imdb": "tt31735288",
-        'trailer_url': "https://www.youtube.com/results?search_query=Feito+Pipa+Lazaro+Ramos+Allan+Deberton+trailer",
+        "trailer_url": "https://www.youtube.com/results?search_query=Feito+Pipa+Lazaro+Ramos+Allan+Deberton+trailer",
         "olho": "Lázaro Ramos protagoniza este drama sensível e luminoso gravado no interior do Nordeste sobre reconstrução pessoal, infância e pertencimento comunitário.",
         "texto": "Dirigido por Allan Deberton (Pacarrete), o filme foge dos estereótipos regionais para construir uma crônica humana intimista de profunda delicadeza.",
         "resenha": [
@@ -936,22 +845,217 @@ CINE_ITENS = {
         "recepcao": "Aclamado pelo público e pela crítica nas primeiras mostras nacionais, com destaque para a trilha sonora e o elenco de apoio.",
         "capa": "capas/e1717f689b8a4a9b634bb2a177b326a2.jpg",
         "imagem": "capas/e1717f689b8a4a9b634bb2a177b326a2.jpg"
+    },
+    "2026-11--mother-mary": {
+        "id": "2026-11--mother-mary",
+        "edicao": "2026-11",
+        "ordem": 25,
+        "secao": "pop",
+        "titulo": "Mother Mary",
+        "titulo_original": "Mother Mary",
+        "autor": "David Lowery",
+        "ano": 2026,
+        "pais": "EUA / Alemanha",
+        "tempo": "2h 08min",
+        "genero": "melodrama pop / suspense psicológico / A24",
+        "tipo": "filme",
+        "onde": "Streaming Max (Lançamento Out/Nov 2026)",
+        "imdb": "tt27189196",
+        "trailer_url": "https://www.youtube.com/results?search_query=Mother+Mary+David+Lowery+trailer",
+        "olho": "David Lowery (A Ghost Story) comanda Anne Hathaway e Michaela Coel em uma sátira arrebatadora sobre o culto à fama pop e a paranóia moderna.",
+        "texto": "Com trilha sonora original assinada por Jack Antonoff e Charli XCX, o longa acompanha o colapso emocional de uma superestrela pop durante um retiro isolado.",
+        "resenha": [
+            "A24 entrega seu grande melodrama de autor de 2026. David Lowery constrói uma narrativa hipnótica que oscila entre a suntuosidade de concerto e o terror claustrofóbico de bastidores.",
+            "Anne Hathaway tem uma das atuações mais viscerais de sua carreira, contracenando com a intensidade cirúrgica de Michaela Coel e Hunter Schafer.",
+            "Um espetáculo visual e sonoro que desconstrói a santificação das celebridades na era dos algoritmos."
+        ],
+        "ponte": "David Lowery, A Ghost Story, Tár, O Cavaleiro Verde e melodrama autoral contemporâneo.",
+        "recepcao": "Aclamação unânime de público e crítica no streaming e em festivais.",
+        "capa": "capas/e3a0d6ec0d26639daeb64147c932403e.jpg",
+        "imagem": "capas/e3a0d6ec0d26639daeb64147c932403e.jpg"
+    },
+    "2026-11--o-pinguim": {
+        "id": "2026-11--o-pinguim",
+        "edicao": "2026-11",
+        "ordem": 15,
+        "secao": "series",
+        "titulo": "Pinguim (The Penguin)",
+        "titulo_original": "The Penguin",
+        "autor": "Lauren LeFranc (showrunner), Craig Zobel",
+        "ano": 2026,
+        "pais": "EUA",
+        "tempo": "Minissérie em 8 episódios",
+        "genero": "drama policial / crime noir / tragédia urbana",
+        "tipo": "serie",
+        "onde": "Max (HBO)",
+        "imdb": "tt15474916",
+        "trailer_url": "https://www.youtube.com/results?search_query=The+Penguin+HBO+trailer",
+        "olho": "Colin Farrell e Cristin Milioti entregam performances monumentais em uma tragédia sobre poder, máfia e decadência institucional no submundo de Gotham.",
+        "texto": "Com ecos diretos de Família Soprano e Scarface, a minissérie retrata a guerra sangrenta pelo vácuo de poder na cidade inundada.",
+        "resenha": [
+            "Longe do escapismo tradicional de super-heróis, The Penguin é um estudo de personagem brutal e realista sobre a corrupção da alma humana pelo poder.",
+            "Cristin Milioti brilha no papel de Sofia Falcone em uma atuação cortante e memorável."
+        ],
+        "ponte": "Família Soprano, The Batman, O Poderoso Chefão e drama criminal clássico.",
+        "recepcao": "Elogiada internacionalmente como uma das melhores produções de TV de 2026.",
+        "capa": "capas/7905ffba2938078624aa7df3de8d3f25.jpg",
+        "imagem": "capas/7905ffba2938078624aa7df3de8d3f25.jpg"
+    },
+    "2026-11--senna": {
+        "id": "2026-11--senna",
+        "edicao": "2026-11",
+        "ordem": 16,
+        "secao": "series",
+        "titulo": "Senna",
+        "titulo_original": "Senna",
+        "autor": "Vicente Amorim (direção geral)",
+        "ano": 2026,
+        "pais": "Brasil",
+        "tempo": "Minissérie em 6 episódios",
+        "genero": "biografia / drama esportivo / cinema brasileiro",
+        "tipo": "serie",
+        "onde": "Netflix",
+        "imdb": "tt13000628",
+        "trailer_url": "https://www.youtube.com/results?search_query=Senna+Netflix+trailer",
+        "olho": "Gabriel Leone vive Ayrton Senna na maior superprodução da dramaturgia brasileira recente, cruzando as pistas de Fórmula 1 e a intimidade do mito nacional.",
+        "texto": "Das origens no kart à trágica curva Tamburello em Ímola, a série equilibra precisão técnica, velocidade e comoção humana.",
+        "resenha": [
+            "Com direção vigorosa de Vicente Amorim e elenco de apoio estelar, Senna retrata não apenas as vitórias históricas, mas as pressões políticas da FIA e a obstinação de um atleta ímpar.",
+            "Um marco de escala e excelência para o audiovisual brasileiro em 2026."
+        ],
+        "ponte": "Ayrton Senna, Vicente Amorim, Ford vs Ferrari e cinebiografia nacional.",
+        "recepcao": "Sucesso mundial no catálogo da Netflix com enorme repercussão no Brasil.",
+        "capa": "capas/3c0a08956af15d5cff78b68a99307ca1.jpg",
+        "imagem": "capas/3c0a08956af15d5cff78b68a99307ca1.jpg"
+    },
+    "2026-11--delegado": {
+        "id": "2026-11--delegado",
+        "edicao": "2026-11",
+        "ordem": 17,
+        "secao": "series",
+        "titulo": "Delegado",
+        "titulo_original": "Delegado",
+        "autor": "Kleber Mendonça Filho e Emilie Lesclaux",
+        "ano": 2026,
+        "pais": "Brasil",
+        "tempo": "Minissérie em 4 episódios",
+        "genero": "thriller político / suspense policial / cinema pernambucano",
+        "tipo": "serie",
+        "onde": "Canal Brasil e Globoplay",
+        "imdb": "tt31735777",
+        "trailer_url": "https://www.youtube.com/results?search_query=Delegado+Kleber+Mendonca+Filho+trailer",
+        "olho": "Kleber Mendonça Filho expande o universo do Recife dos anos 1970 em uma minissérie claustrofóbica sobre vigilância, burocracia e repressão policial.",
+        "texto": "Um delegado novato confronta os limites da ordem legal durante as operações obscuras da ditadura militar no Nordeste.",
+        "resenha": [
+            "Complemento perfeito ao longa O Agente Secreto, Delegado traz a fotografia granular e o humor desconfortável característicos da obra de Kleber.",
+            "Uma lição de tensão histórica e crítica institucional que honra a tradição do cinema pernambucano."
+        ],
+        "ponte": "O Agente Secreto, Bacurau, Aquarius e cinema político brasileiro.",
+        "recepcao": "Premiada no Festival de Berlim e ovacionada pela crítica especializada.",
+        "capa": "capas/4e8a2e331ad38b79efe4547ff4c34801.jpg",
+        "imagem": "capas/4e8a2e331ad38b79efe4547ff4c34801.jpg"
+    },
+    "2026-11--sugar": {
+        "id": "2026-11--sugar",
+        "edicao": "2026-11",
+        "ordem": 18,
+        "secao": "series",
+        "titulo": "Sugar",
+        "titulo_original": "Sugar",
+        "autor": "Mark Protosevich, Fernando Meirelles",
+        "ano": 2026,
+        "pais": "EUA",
+        "tempo": "Minissérie em 8 episódios",
+        "genero": "neo-noir / investigação criminal / ficção reflexiva",
+        "tipo": "serie",
+        "onde": "Apple TV+",
+        "imdb": "tt16418808",
+        "trailer_url": "https://www.youtube.com/results?search_query=Sugar+Apple+TV+trailer",
+        "olho": "Fernando Meirelles dirige Colin Farrell em uma elegante desconstrução dos clássicos detetives particulares de Los Angeles.",
+        "texto": "Investigando o desaparecimento da neta de um magnata de Hollywood, um investigador compassivo confronta segredos podres da elite californiana.",
+        "resenha": [
+            "A fotografia solar e os cortes rápidos assinados por Meirelles homenageiam os mestres do film noir (Chinatown, Um Passo na Escuridão) com uma reviravolta desconcertante.",
+            "Uma minissérie estilosa que premia o espectador atento."
+        ],
+        "ponte": "Fernando Meirelles, Colin Farrell, Chinatown e Neo-Noir contemporâneo.",
+        "recepcao": "97% de aprovação crítica, destacando a elegância visual e a trilha sonora.",
+        "capa": "capas/7905ffba2938078624aa7df3de8d3f25.jpg",
+        "imagem": "capas/7905ffba2938078624aa7df3de8d3f25.jpg"
+    },
+    "2026-11--a-queda-do-ceu": {
+        "id": "2026-11--a-queda-do-ceu",
+        "edicao": "2026-11",
+        "ordem": 22,
+        "secao": "brasil",
+        "titulo": "A Queda do Céu",
+        "titulo_original": "A Queda do Céu",
+        "autor": "Eryk Rocha e Gabriela Carneiro da Cunha",
+        "ano": 2026,
+        "pais": "Brasil, França, Itália",
+        "tempo": "1h 50min",
+        "genero": "documentário cósmico / mito e política indígena",
+        "tipo": "filme",
+        "onde": "Cinemas de Arte (Circuito Estação Net) e Festivais",
+        "imdb": "tt31735222",
+        "trailer_url": "https://www.youtube.com/results?search_query=A+Queda+do+Ceu+filme+trailer",
+        "olho": "Inspirado no manifesto xamânico de Davi Kopenawa e Bruce Albert, o filme é uma imersão sensorial monumental na cosmologia do povo Yanomami.",
+        "texto": "Acompanhando o ritual funerário Reahu e a luta contra o garimpo ilegal, a obra denuncia a destruição da floresta como o colapso do teto cósmico que sustenta a Terra.",
+        "resenha": [
+            "Exibido na Quinzena dos Realizadores em Cannes e ovacionado nos maiores festivais mundiais, A Queda do Céu transcende o documentário tradicional para se tornar uma profecia cinematográfica urgente e xamânica.",
+            "O desenho sonoro comovente e a fotografia sublime fazem desta uma das obras audiovisuais mais imponentes da década."
+        ],
+        "ponte": "Davi Kopenawa, Eryk Rocha, Amazônia, cosmologia indígena e saúde pública.",
+        "recepcao": "Destaque internacional em Cannes e Festival do Rio 2026.",
+        "capa": "capas/4e16c99fbd0cc21bde1ceb566bb33158.jpg",
+        "imagem": "capas/4e16c99fbd0cc21bde1ceb566bb33158.jpg"
     }
 }
 
-
 CINE_GUIAS = {
+    "guia-cine-mostras-rio-2026": {
+        "id": "guia-cine-mostras-rio-2026",
+        "edicao": "2026-11",
+        "tipo": "circuito de salas",
+        "titulo": "Salas de rua e festivais imperdíveis no Rio em novembro",
+        "subtitulo": "Três experiências de tela grande para fugir dos multiplex de shopping.",
+        "filmes": [
+            {
+                "titulo": "O Agente Secreto",
+                "autor": "Kleber Mendonça Filho",
+                "ano": 2026,
+                "genero": "thriller político",
+                "imdb": "tt27847051",
+                "onde": "Estação Net Botafogo (Rua Voluntários da Pátria, 88)",
+                "nota": "Ver numa sala de rua com plateia atenta potencializa cada detalhe sonoro e tensão política da obra.",
+                "capa": "capas/80f7bcf7cc4ad62fd5f59453751cffd4.jpg"
+            },
+            {
+                "titulo": "Festival de Cinema Italiano no CCBB",
+                "autor": "Mostra Retrospectiva",
+                "ano": 2026,
+                "genero": "clássicos e inéditos",
+                "onde": "CCBB Rio (Rua Primeiro de Março, 66)",
+                "nota": "Ingressos a R$ 10 para ver cópias restauradas do neorrealismo e novas vozes do cinema peninsular.",
+                "capa": "capas/7c032c594ab77668cf59af19cd474b86.jpg"
+            },
+            {
+                "titulo": "Sessão da Meia-Noite no Estação Net",
+                "autor": "Cinema Cult e Ficção Científica",
+                "ano": 2026,
+                "genero": "cult / meia-noite",
+                "onde": "Estação Net Botafogo (Sextas e sábados às 23h59)",
+                "nota": "O mais tradicional programa noturno carioca com clássicos do terror, sci-fi e pós-punk.",
+                "capa": "capas/557c7bf59c4063281521ea0dbe57aec0.jpg"
+            }
+        ]
+    },
     "guia-kleber-cinema-nordeste-2026": {
         "id": "guia-kleber-cinema-nordeste-2026",
         "edicao": "2026-11",
         "tipo": "roteiro de cinema",
         "titulo": "O cinema de Kleber Mendonça Filho e o novo cinema pernambucano",
         "subtitulo": "Cinco filmes essenciais para entender a renovação estética, política e arquitetônica do Recife nas telas do mundo.",
-        "texto": (
-            "Desde que 'O Som ao Redor' despertou a atenção internacional em 2012, o cinema pernambucano consolidou-se como "
-            "o polo de invenção narrativa mais vigoroso do audiovisual brasileiro. Com o lançamento do consagrado 'O Agente Secreto', "
-            "este roteiro percorre as tensões entre especulação imobiliária, violência de classe e memória histórica que redefiniram nossa cinematografia."
-        ),
+        "texto": "Desde que 'O Som ao Redor' despertou a atenção internacional em 2012, o cinema pernambucano consolidou-se como o polo de invenção narrativa mais vigoroso do audiovisual brasileiro. Com o lançamento do consagrado 'O Agente Secreto', este roteiro percorre as tensões entre especulação imobiliária, violência de classe e memória histórica que redefiniram nossa cinematografia.",
         "filmes": [
             {
                 "titulo": "O Som ao Redor",
@@ -959,7 +1063,8 @@ CINE_GUIAS = {
                 "autor": "Kleber Mendonça Filho",
                 "nota": "O microcosmo de uma rua de classe média em Boa Viagem revela as raízes escravocratas sob o verniz moderno da segurança privada.",
                 "imdb": "tt2190367",
-                "onde": "Netflix e Globoplay"
+                "onde": "Netflix e Globoplay",
+                "capa": "capas/e18dbc135c0addb4b5710e67376ad07f.jpg"
             },
             {
                 "titulo": "Aquarius",
@@ -967,7 +1072,8 @@ CINE_GUIAS = {
                 "autor": "Kleber Mendonça Filho",
                 "nota": "Sônia Braga monumental como Clara, a jornalista que recusa vender seu apartamento diante da chantagem da especulação imobiliária.",
                 "imdb": "tt4990978",
-                "onde": "Netflix e Apple TV"
+                "onde": "Netflix e Apple TV",
+                "capa": "capas/a9762bf262d29658a70260fee777eb09.jpg"
             },
             {
                 "titulo": "Bacurau",
@@ -975,7 +1081,8 @@ CINE_GUIAS = {
                 "autor": "Kleber Mendonça Filho e Juliano Dornelles",
                 "nota": "Um faroeste distópico no sertão que virou manifesto internacional de resistência comunitária e soberania popular.",
                 "imdb": "tt2762506",
-                "onde": "Globoplay e Telecine"
+                "onde": "Globoplay e Telecine",
+                "capa": "capas/8229a4a72ea1fbff47a7ad78f7f6c0fe.jpg"
             },
             {
                 "titulo": "Retratos Fantasmas",
@@ -983,7 +1090,8 @@ CINE_GUIAS = {
                 "autor": "Kleber Mendonça Filho",
                 "nota": "Documentário memorialístico deslumbrante sobre os antigos cinemas de rua do centro do Recife e a transformação da cidade.",
                 "imdb": "tt26451634",
-                "onde": "Netflix"
+                "onde": "Netflix",
+                "capa": "capas/26e99066eb6a7bc6359f88978efba37e.jpg"
             },
             {
                 "titulo": "Tatuagem",
@@ -991,7 +1099,8 @@ CINE_GUIAS = {
                 "autor": "Hilton Lacerda",
                 "nota": "Irandhir Santos e Jesuíta Barbosa no calor do grupo teatral Chão de Estrelas durante a ditadura militar no Recife de 1978.",
                 "imdb": "tt3089408",
-                "onde": "Globoplay e MUBI"
+                "onde": "Globoplay e MUBI",
+                "capa": "capas/bc067015e970bc54ce9a55fd637f5d7e.jpg"
             }
         ]
     },
@@ -1001,10 +1110,7 @@ CINE_GUIAS = {
         "tipo": "roteiro de cinema",
         "titulo": "Vigilância, repressão e o thriller de resistência",
         "subtitulo": "Cinco filmes magistrais sobre indivíduos e famílias que desafiam sistemas autoritários e Estados policiais.",
-        "texto": (
-            "O suspense político ganha sua máxima voltagem dramática quando a câmera sai das salas de governo para registrar "
-            "o impacto do medo nos lares comuns. Este guia reúne cinco obras-primas que investigam os mecanismos da vigilância civil e a coragem da dissidência."
-        ),
+        "texto": "O suspense político ganha sua máxima voltagem dramática quando a câmera sai das salas de governo para registrar o impacto do medo nos lares comuns. Este guia reúne cinco obras-primas que investigam os mecanismos da vigilância civil e a coragem da dissidência.",
         "filmes": [
             {
                 "titulo": "A Conversação",
@@ -1012,7 +1118,8 @@ CINE_GUIAS = {
                 "autor": "Francis Ford Coppola",
                 "nota": "Gene Hackman é Harry Caul, o especialista em escutas que é tragado pela paranoia em uma das obras máximas do cinema americano.",
                 "imdb": "tt0071360",
-                "onde": "Plataformas digitais (Apple TV, MUBI)"
+                "onde": "Plataformas digitais (Apple TV, MUBI)",
+                "capa": "capas/f80d4ecc7c71e4bc5f6519b9322ba63c.jpg"
             },
             {
                 "titulo": "A Vida dos Outros",
@@ -1020,7 +1127,8 @@ CINE_GUIAS = {
                 "autor": "Florian Henckel von Donnersmarck",
                 "nota": "Na Berlim Oriental de 1984, um capitão da Stasi é transformado pela escuta secreta da vida íntima de um dramaturgo e uma atriz.",
                 "imdb": "tt0405094",
-                "onde": "Max e Apple TV"
+                "onde": "Max e Apple TV",
+                "capa": "capas/6fa073eda6653f259097132ff2ffb432.jpg"
             },
             {
                 "titulo": "Z",
@@ -1028,7 +1136,8 @@ CINE_GUIAS = {
                 "autor": "Costa-Gavras",
                 "nota": "O assassinato de um político de oposição desencadeia uma investigação eletrizante contra a junta militar grega.",
                 "imdb": "tt0065234",
-                "onde": "MUBI e Telecine Cult"
+                "onde": "MUBI e Telecine Cult",
+                "capa": "capas/887e7e977dee088c7fd51f957aa9921f.jpg"
             },
             {
                 "titulo": "Não Há Mal Algum",
@@ -1036,7 +1145,8 @@ CINE_GUIAS = {
                 "autor": "Mohammad Rasoulof",
                 "nota": "Urso de Ouro em Berlim, quatro contos devastadores sobre a pena de morte e a desobediência moral no Irã contemporâneo.",
                 "imdb": "tt11756604",
-                "onde": "MUBI"
+                "onde": "MUBI",
+                "capa": "capas/69a6ddeabdb85f7a986ce25b8c41f70c.jpg"
             },
             {
                 "titulo": "Cabra Marcado para Morrer",
@@ -1044,7 +1154,8 @@ CINE_GUIAS = {
                 "autor": "Eduardo Coutinho",
                 "nota": "Interrompido pelo golpe de 1964 e retomado vinte anos depois, o maior documentário político da história do cinema brasileiro.",
                 "imdb": "tt0087023",
-                "onde": "Globoplay e YouTube IMS"
+                "onde": "Globoplay e YouTube IMS",
+                "capa": "capas/98b41b86d380b77ec3e65557cde1d456.jpg"
             }
         ]
     },
@@ -1054,10 +1165,7 @@ CINE_GUIAS = {
         "tipo": "roteiro de cinema",
         "titulo": "O novo cinema de autor europeu: silêncio e fricção social",
         "subtitulo": "Cinco títulos indispensáveis que rejeitam fórmulas fáceis para investigar as fraturas do continente contemporâneo.",
-        "texto": (
-            "Das margens da burocracia romena às florestas da Toscana e à Polônia em preto e branco, os grandes festivais europeus "
-            "têm consagrado realizadores que desafiam a montagem convencional e a pressa contemporânea com rigor sensorial impecável."
-        ),
+        "texto": "Das margens da burocracia romena às florestas da Toscana e à Polônia em preto e branco, os grandes festivais europeus têm consagrado realizadores que desafiam a montagem convencional e a pressa contemporânea com rigor sensorial impecável.",
         "filmes": [
             {
                 "titulo": "Feliz como Lázaro",
@@ -1065,7 +1173,8 @@ CINE_GUIAS = {
                 "autor": "Alice Rohrwacher",
                 "nota": "Uma parábola poética e atemporal sobre a pureza de um camponês que desafia a passagem do tempo na Itália rural.",
                 "imdb": "tt6752992",
-                "onde": "Netflix"
+                "onde": "Netflix",
+                "capa": "capas/58670ebdc21b6abc206a7cb2bebbe7b3.jpg"
             },
             {
                 "titulo": "Toni Erdmann",
@@ -1073,7 +1182,8 @@ CINE_GUIAS = {
                 "autor": "Maren Ade",
                 "nota": "Um pai excêntrico tenta reconectar-se com sua filha corporativa em Bucareste numa das comédias mais geniais do século XXI.",
                 "imdb": "tt4048272",
-                "onde": "MUBI e Apple TV"
+                "onde": "MUBI e Apple TV",
+                "capa": "capas/94f5a1ed54a81b7bfe2cc5cb02dd948e.jpg"
             },
             {
                 "titulo": "Anatomia de uma Queda",
@@ -1081,7 +1191,8 @@ CINE_GUIAS = {
                 "autor": "Justine Triet",
                 "nota": "Palma de Ouro em Cannes, a autópsia de um casamento e dos limites da verdade em um tribunal nos Alpes franceses.",
                 "imdb": "tt17009710",
-                "onde": "Prime Video"
+                "onde": "Prime Video",
+                "capa": "capas/4afdae3808926907ea71e3128698e087.jpg"
             },
             {
                 "titulo": "Guerra Fria",
@@ -1089,7 +1200,8 @@ CINE_GUIAS = {
                 "autor": "Paweł Pawlikowski",
                 "nota": "Uma paixão impossível entre um músico e uma cantora através de duas décadas na Europa dividida pela Cortina de Ferro.",
                 "imdb": "tt6543652",
-                "onde": "MUBI e Prime Video"
+                "onde": "MUBI e Prime Video",
+                "capa": "capas/8a91af8c5ecdb291d01e1ea760b5eec2.jpg"
             },
             {
                 "titulo": "O Acontecimento",
@@ -1097,7 +1209,8 @@ CINE_GUIAS = {
                 "autor": "Audrey Diwan",
                 "nota": "Leão de Ouro em Veneza, a adaptação implacável do relato autobiográfico de Annie Ernaux na França dos anos 1960.",
                 "imdb": "tt13880104",
-                "onde": "Max e Apple TV"
+                "onde": "Max e Apple TV",
+                "capa": "capas/66470d3237ff2f562147f592072e176c.jpg"
             }
         ]
     }

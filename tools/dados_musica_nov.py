@@ -1,71 +1,441 @@
 # -*- coding: utf-8 -*-
-"""Dados editoriais de Música para a edição Nº 2 (Novembro 2026).
-Contém 35 discos nas seções editoriais e 4 guias temáticos completos (22 discos nos guias).
-"""
+"""Dados editoriais de Música para a edição Nº 2 (Novembro 2026)."""
 
-MUSICA_EDICAO = {
+EDICAO = {
     "id": "2026-11",
     "numero": 2,
     "mes": "Novembro de 2026",
     "data": "2026-11-01",
     "manchete": "Guitarras de garage, poesia áspera e o pulso da cena independente",
-    "editorial": (
-        "A edição de novembro do Radar Musical mergulha nas texturas orgânicas e na fricção das guitarras: "
-        "da visceralidade melódica de MJ Lenderman e Dry Cleaning aos ecos da renascença shoegaze britânica com Whitelands e DIIV, "
-        "abrindo espaço para a coragem harmônica e rítmica da vanguarda brasileira com Juçara Marçal, Thais Nicodemo, "
-        "Ana Frango Elétrico, Negro Léo e Sophia Chablau. Em tempos de produção higienizada por algoritmos de streaming, "
-        "esta safra reúne discos que respiram sala de ensaio, amplificadores valvulados no talo e canções que não têm pressa de caber em fórmulas fáceis."
-    ),
+    "editorial": "A edição de novembro do Radar Musical mergulha nas texturas orgânicas, nas guitarras experimentais e na fricção poética da safra de 2026: da visceralidade confessional de Soccer Mommy e Sharon Van Etten aos grooves matemáticos de The Smile, ao vigor explosivo de Wishy e Geese e à monumental vanguarda brasileira de Papangu, Juçara Marçal, Letrux e El Efecto. Uma seleção autêntica, contemporânea e conectada ao seu ouvido.",
     "layout": [
-        {"tipo": "secao", "secao": "radar"},
-        {"tipo": "guia", "id": "guia-pos-punk-indie-2026"},
-        {"tipo": "secao", "secao": "descobertas"},
-        {"tipo": "guia", "id": "guia-shoegaze-reverb-2026"},
-        {"tipo": "secao", "secao": "brasil"},
-        {"tipo": "guia", "id": "guia-vanguarda-paulista-carioca-2026"},
-        {"tipo": "secao", "secao": "breve"},
-        {"tipo": "guia", "id": "guia-krautrock-artrock-2026"}
-    ]
+        {
+            "tipo": "secao",
+            "secao": "radar"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-pos-punk-indie-2026"
+        },
+        {
+            "tipo": "secao",
+            "secao": "descobertas"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-shoegaze-reverb-2026"
+        },
+        {
+            "tipo": "secao",
+            "secao": "brasil"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-vanguarda-paulista-carioca-2026"
+        },
+        {
+            "tipo": "secao",
+            "secao": "breve"
+        },
+        {
+            "tipo": "guia",
+            "id": "guia-krautrock-artrock-2026"
+        }
+    ],
+    "capa": "capas/a6e20bf3059d582ba55e8dc6adb79623.jpg",
+    "playlist": {
+        "url": "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M",
+        "faixas": [
+            {
+                "artista": "MJ Lenderman",
+                "album": "Manning Fireworks",
+                "faixa": "Manning Fireworks",
+                "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+                "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf",
+                "youtube_id": "hajltNGPfps"
+            },
+            {
+                "artista": "Queens of the Stone Age",
+                "album": "Perfecth",
+                "faixa": "Easy Street",
+                "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+                "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth",
+                "youtube_id": "6gm9IWUuus0"
+            },
+            {
+                "artista": "Dry Cleaning",
+                "album": "New Long Walk",
+                "faixa": "Kwenchy Kups",
+                "spotify_id": "2I0gIu10p9l6B5zF46H9Vw",
+                "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw",
+                "youtube_id": "Wfr1GyyI2Sc"
+            },
+            {
+                "artista": "Fontaines D.C.",
+                "album": "Romance",
+                "faixa": "Romance",
+                "spotify_id": "3b9Q2z6w41A1aGv7q65w8X",
+                "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X",
+                "youtube_id": "gyPd68RuB8I"
+            },
+            {
+                "artista": "The Smile",
+                "album": "Cutouts",
+                "faixa": "Foreign Spies",
+                "spotify_id": "7o5415B5sR5qL8k0M3w2X1",
+                "spotify_url": "https://open.spotify.com/search/The%20Smile%20Cutouts",
+                "youtube_id": "UHkZ5YzJYvI"
+            },
+            {
+                "artista": "Kim Gordon",
+                "album": "The Collective",
+                "faixa": "BYE BYE",
+                "spotify_id": "0B1Nf8w5Q8k0M3w2X1Y4Z5",
+                "spotify_url": "https://open.spotify.com/search/Kim%20Gordon%20The%20Collective",
+                "youtube_id": "IZ3i80B0qKg"
+            },
+            {
+                "artista": "Beth Gibbons",
+                "album": "Lives Outgrown",
+                "faixa": "Tell Me Who You Are Today",
+                "spotify_id": "4jSmcj39eQiU76EbMGuxS9",
+                "spotify_url": "https://open.spotify.com/search/Beth%20Gibbons%20Lives%20Outgrown",
+                "youtube_id": "noNcHNoWvUM"
+            },
+            {
+                "artista": "English Teacher",
+                "album": "This Could Be Texas",
+                "faixa": "Albatross",
+                "spotify_id": "3lSmcj39eQiU76EbMGuxS1",
+                "spotify_url": "https://open.spotify.com/search/English%20Teacher%20This%20Could%20Be%20Texas",
+                "youtube_id": "0PWZdalB9aM"
+            },
+            {
+                "artista": "Mount Kimbie",
+                "album": "The Sunset Violent",
+                "faixa": "The Trail",
+                "spotify_id": "5kSmcj39eQiU76EbMGuxS2",
+                "spotify_url": "https://open.spotify.com/search/Mount%20Kimbie%20The%20Sunset%20Violent",
+                "youtube_id": "ek5p3bmsuBU"
+            },
+            {
+                "artista": "Whitelands",
+                "album": "Sun-Bleached Noise",
+                "faixa": "Setting Sun",
+                "spotify_id": "4vS4V9JtZtWj8x3J7xG4tD",
+                "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD",
+                "youtube_id": "aHlyYc6o0Yo"
+            },
+            {
+                "artista": "DIIV",
+                "album": "Frog in Boiling Water",
+                "faixa": "In Amber",
+                "spotify_id": "2lSmcj39eQiU76EbMGuxS3",
+                "spotify_url": "https://open.spotify.com/search/DIIV%20Frog%20in%20Boiling%20Water",
+                "youtube_id": "Pz8bJJSDD54"
+            },
+            {
+                "artista": "Friko",
+                "album": "Where we've been, Where we go from here",
+                "faixa": "Where We've Been",
+                "spotify_id": "4myypnSDFC6PrjZRDYcBaC",
+                "spotify_url": "https://open.spotify.com/album/4myypnSDFC6PrjZRDYcBaC",
+                "youtube_id": "FnxlHDCWGy8"
+            },
+            {
+                "artista": "Maruja",
+                "album": "Connla's Well",
+                "faixa": "The Invisible Man",
+                "spotify_id": "1mSmcj39eQiU76EbMGuxS4",
+                "spotify_url": "https://open.spotify.com/search/Maruja%20Connla%27s%20Well",
+                "youtube_id": "VRtkoNBJRQo"
+            },
+            {
+                "artista": "Cindy Lee",
+                "album": "Diamond Jubilee",
+                "faixa": "Diamond Jubilee",
+                "spotify_id": "6mSmcj39eQiU76EbMGuxS5",
+                "spotify_url": "https://open.spotify.com/search/Cindy%20Lee%20Diamond%20Jubilee",
+                "youtube_id": "_LJi5na897Y"
+            },
+            {
+                "artista": "Juçara Marçal & Thais Nicodemo",
+                "album": "Caderno de Composição",
+                "faixa": "Sem Nome",
+                "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
+                "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y",
+                "youtube_id": "m1M18NIMsEo"
+            },
+            {
+                "artista": "Ana Frango Elétrico",
+                "album": "Me Chama de Gato Que Eu Sou Sua (Edição Expandida)",
+                "faixa": "Electric Fish",
+                "spotify_id": "1B2u3vj33ZpE73v8t0Nnhz",
+                "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz",
+                "youtube_id": "KRzcmBRoFPY"
+            },
+            {
+                "artista": "Negro Léo",
+                "album": "Desejo do Labirinto",
+                "faixa": "Labirinto Fixo",
+                "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
+                "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6",
+                "youtube_id": "JUeJuyR6XSQ"
+            },
+            {
+                "artista": "Sophia Chablau e Uma Enorme Perda de Tempo",
+                "album": "Música do Esquecimento",
+                "faixa": "Segredo",
+                "spotify_id": "7mSmcj39eQiU76EbMGuxS6",
+                "spotify_url": "https://open.spotify.com/search/Sophia%20Chablau%20Musica%20do%20Esquecimento",
+                "youtube_id": "DfJnsP3ykbQ"
+            },
+            {
+                "artista": "Amaro Freitas",
+                "album": "Y'Y",
+                "faixa": "Mapinguari",
+                "spotify_id": "8mSmcj39eQiU76EbMGuxS7",
+                "spotify_url": "https://open.spotify.com/search/Amaro%20Freitas%20Y%27Y",
+                "youtube_id": "s-_CbwOYBkg"
+            },
+            {
+                "artista": "Geese",
+                "album": "Live at Third Man Records",
+                "faixa": "2122",
+                "spotify_id": "4VqF3tU3Fw3k6nO0Lz2j9n",
+                "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n",
+                "youtube_id": "9HN0VuyMW-s"
+            },
+            {
+                "artista": "Panda Bear",
+                "album": "Sinister Grift",
+                "faixa": "Praise",
+                "spotify_id": "9mSmcj39eQiU76EbMGuxS8",
+                "spotify_url": "https://open.spotify.com/search/Panda%20Bear%20Sinister%20Grift",
+                "youtube_id": "MhNGN4SnRZM"
+            },
+            {
+                "artista": "Adrianne Lenker",
+                "album": "Bright Future",
+                "faixa": "Real House",
+                "spotify_id": "3Z8GgT0gqXbLpD0kLz2j9n",
+                "spotify_url": "https://open.spotify.com/search/Adrianne%20Lenker%20Bright%20Future",
+                "youtube_id": "av2CwXbx6oU"
+            },
+            {
+                "artista": "Nick Cave & The Bad Seeds",
+                "album": "Wild God",
+                "faixa": "Song of the Lake",
+                "spotify_id": "4mSmcj39eQiU76EbMGuxS1",
+                "spotify_url": "https://open.spotify.com/search/Nick%20Cave%20Wild%20God",
+                "youtube_id": "tEtMCSIgLGI"
+            },
+            {
+                "artista": "Kim Deal",
+                "album": "Nobody Loves You More",
+                "faixa": "Nobody Loves You More",
+                "spotify_id": "5mSmcj39eQiU76EbMGuxS2",
+                "spotify_url": "https://open.spotify.com/search/Kim%20Deal%20Nobody%20Loves%20You%20More",
+                "youtube_id": "osOWmt5YYuw"
+            },
+            {
+                "artista": "Mannequin Pussy",
+                "album": "I Got Heaven",
+                "faixa": "I Got Heaven",
+                "spotify_id": "6mSmcj39eQiU76EbMGuxS3",
+                "spotify_url": "https://open.spotify.com/search/Mannequin%20Pussy%20I%20Got%20Heaven",
+                "youtube_id": "PpmNT3STSWk"
+            },
+            {
+                "artista": "Jack White",
+                "album": "No Name",
+                "faixa": "Old Scratch Blues",
+                "spotify_id": "7mSmcj39eQiU76EbMGuxS4",
+                "spotify_url": "https://open.spotify.com/search/Jack%20White%20No%20Name",
+                "youtube_id": "xviKHjc89DQ"
+            },
+            {
+                "artista": "Jessica Pratt",
+                "album": "Here in the Pitch",
+                "faixa": "Life Is",
+                "spotify_id": "8mSmcj39eQiU76EbMGuxS5",
+                "spotify_url": "https://open.spotify.com/search/Jessica%20Pratt%20Here%20in%20the%20Pitch",
+                "youtube_id": "QaXe9zAa3r4"
+            },
+            {
+                "artista": "Been Stellar",
+                "album": "Scream from New York, NY",
+                "faixa": "Start Again",
+                "spotify_id": "1mSmcj39eQiU76EbMGuxS6",
+                "spotify_url": "https://open.spotify.com/search/Been%20Stellar%20Scream%20from%20New%20York%2C%20NY",
+                "youtube_id": "J1qZAfiemoc"
+            },
+            {
+                "artista": "Hotline TNT",
+                "album": "Cartwheel",
+                "faixa": "Protocol",
+                "spotify_id": "2mSmcj39eQiU76EbMGuxS7",
+                "spotify_url": "https://open.spotify.com/search/Hotline%20TNT%20Cartwheel",
+                "youtube_id": "TNV39-UULQE"
+            },
+            {
+                "artista": "Bar Italia",
+                "album": "The Twits",
+                "faixa": "my little tony",
+                "spotify_id": "3mSmcj39eQiU76EbMGuxS8",
+                "spotify_url": "https://open.spotify.com/search/Bar%20Italia%20The%20Twits",
+                "youtube_id": "Cne81F3fxDo"
+            },
+            {
+                "artista": "ML Buch",
+                "album": "Suntub",
+                "faixa": "Panflats",
+                "spotify_id": "4mSmcj39eQiU76EbMGuxS9",
+                "spotify_url": "https://open.spotify.com/search/ML%20Buch%20Suntub",
+                "youtube_id": "GPkJtZMvl4s"
+            },
+            {
+                "artista": "Tramhaus",
+                "album": "The First Few",
+                "faixa": "The Cause",
+                "spotify_id": "5mSmcj39eQiU76EbMGuxS0",
+                "spotify_url": "https://open.spotify.com/search/Tramhaus%20The%20First%20Few",
+                "youtube_id": "nVCh5-h6K8Y"
+            },
+            {
+                "artista": "SPRINTS",
+                "album": "Letter to Self",
+                "faixa": "Ticking",
+                "spotify_id": "6mSmcj39eQiU76EbMGuxS1",
+                "spotify_url": "https://open.spotify.com/search/SPRINTS%20Letter%20to%20Self",
+                "youtube_id": "BOrCWngGQEU"
+            },
+            {
+                "artista": "Jadsa & João Milet Meirelles",
+                "album": "Taxidermia Vol. 3",
+                "faixa": "Vera Cruz",
+                "spotify_id": "7mSmcj39eQiU76EbMGuxS2",
+                "spotify_url": "https://open.spotify.com/search/Jadsa%20Joao%20Milet%20Meirelles%20Taxidermia",
+                "youtube_id": "9CrwNZ6RyaE"
+            },
+            {
+                "artista": "Boogarins",
+                "album": "Bacuri",
+                "faixa": "Bacuri",
+                "spotify_id": "8mSmcj39eQiU76EbMGuxS3",
+                "spotify_url": "https://open.spotify.com/search/Boogarins%20Bacuri",
+                "youtube_id": "IX4xv7G0REo"
+            },
+            {
+                "artista": "The Cure",
+                "album": "Songs of a Lost World",
+                "faixa": "Alone",
+                "spotify_id": "9mSmcj39eQiU76EbMGuxS4",
+                "spotify_url": "https://open.spotify.com/search/The%20Cure%20Songs%20of%20a%20Lost%20World",
+                "youtube_id": "sx9SVAtMkJM"
+            }
+        ],
+        "titulo": "Radar Oculto_2026_11",
+        "nome": "Radar Oculto_2026_11",
+        "url_spotify": "https://open.spotify.com/search/Radar%20Oculto_2026_11",
+        "url_yt": "https://www.youtube.com/watch_videos?video_ids=hajltNGPfps,6gm9IWUuus0,Wfr1GyyI2Sc,gyPd68RuB8I,UHkZ5YzJYvI,IZ3i80B0qKg,noNcHNoWvUM,0PWZdalB9aM,ek5p3bmsuBU,aHlyYc6o0Yo,Pz8bJJSDD54,FnxlHDCWGy8,VRtkoNBJRQo,_LJi5na897Y,m1M18NIMsEo,KRzcmBRoFPY,JUeJuyR6XSQ,DfJnsP3ykbQ,s-_CbwOYBkg,9HN0VuyMW-s,MhNGN4SnRZM,av2CwXbx6oU,tEtMCSIgLGI,osOWmt5YYuw,PpmNT3STSWk,xviKHjc89DQ,QaXe9zAa3r4,J1qZAfiemoc,TNV39-UULQE,Cne81F3fxDo,GPkJtZMvl4s,nVCh5-h6K8Y,BOrCWngGQEU,9CrwNZ6RyaE,IX4xv7G0REo,sx9SVAtMkJM"
+    },
+    "destaque_autor": {
+        "artista": "Josh Homme",
+        "projeto": "Queens of the Stone Age",
+        "obra_atual": "Perfecth (LP, 2026, Matador Records)",
+        "subtitulo": "O arquiteto do rock do deserto: da invenção do stoner rock em Palm Desert à desconstrução acústica e vulnerável de Perfecth",
+        "ensaio": [
+            "Poucos guitarristas contemporâneos foram capazes de fundar um gênero inteiro e, anos depois, desmontá-lo com tanta elegância e desapego quanto Josh Homme. No início dos anos 1990, nos confins áridos de Palm Desert, Califórnia, um Homme de apenas 18 anos plugava amplificadores valvulados de contrabaixo para tocar guitarra com afinação rebaixada em C no Kyuss, forjando a certidão de nascimento do stoner rock (Blues for the Red Sun, Welcome to Sky Valley). Quando o Kyuss implodiu, Homme recusou o virtuosismo estéril do hard rock tradicional: buscou na hipnose rítmica do Krautrock (o motorik de Can e Neu!) e na secura do pós-punk o alicerce para fundar o Queens of the Stone Age no isolamento místico do estúdio Rancho De La Luna.",
+            "A grande revolução formal do QOTSA foi trocar a exibição de solos acrobáticos pela disciplina quase maquínica da repetição. Homme apelidou seu estilo de 'robot rock': riffs angulares, sincopados e cortantes tocados como batidas percussivas, combinados com um balanço sinuoso de boogie e cabaré. Sobretudo, Homme desconstruiu a pose machista do rock pesado: enquanto as afinações graves e os pedais de fuzz tremiam as paredes, sua voz flutuava em falsetes doces, harmonias vocais tortas em terças menores e um lirismo carregado de ironia, vulnerabilidade e erotismo soturno ('Make It Wit Chu', 'The Lost Art of Keeping a Secret').",
+            "A força motriz de Homme sempre foi a troca coletiva e o senso de comunidade. Através das lendárias Desert Sessions, do supergrupo Them Crooked Vultures (ao lado de John Paul Jones, do Led Zeppelin, e Dave Grohl) e de sua parceria visceral com Mark Lanegan, Homme funcionou como catalisador. Sua consagração definitiva como produtor e coautor veio com Post Pop Depression (2016), gravado com Iggy Pop, disco que resgatou a urgência berlinesa do ex-Stooge. Contudo, a última década exigiu um preço alto: um diagnóstico de câncer, a perda dolorosa de amigos fraternos (Taylor Hawkins, Mark Lanegan) e divórcios tumultuados empurraram Homme para a beira do abismo, alimentando o desespero cru de In Times New Roman... (2023).",
+            "Lançado em 30 de outubro de 2026, Perfecth é a fênix desse processo doloroso. Em vez de se entrincheirar no peso metálico, Homme e Michael Shuman limpam o palco: o violão flamenco espanhol em 'Easy Street', os teclados Wurlitzer com swing de soul em 'Insignificant Other' e o tango fúnebre sem bateria de abertura revelam um artista que finalmente aprendeu a deixar o sol entrar pelas frestas. O Queens of the Stone Age permanece insuperável porque nunca teve medo de dançar sobre as próprias cinzas."
+        ],
+        "obras_essenciais": [
+            {
+                "titulo": "Songs for the Deaf",
+                "ano": "2002",
+                "formato": "LP / CD",
+                "projeto": "Queens of the Stone Age",
+                "capa": "capas/c33eea9a6b197766880e09840b8c5f64.jpg",
+                "por_que_ouvir": "A obra-prima definitiva do rock dos anos 2000; uma viagem conceitual alucinada pelo dial do rádio de um carro cortando o deserto da Califórnia, com Dave Grohl na bateria mais furiosa de sua carreira e Mark Lanegan nas sombras.",
+                "spotify_url": "https://open.spotify.com/album/4m2880jivSbbyEGAKfITCa"
+            },
+            {
+                "titulo": "Welcome to Sky Valley",
+                "ano": "1994",
+                "formato": "LP",
+                "projeto": "Kyuss",
+                "capa": "capas/ca060e0c7fd4f0adbd18376dbbbb8ab2.jpg",
+                "por_que_ouvir": "O monolito sagrado do stoner rock; quatro suítes densas onde a afinação em C e os amplificadores Ampeg criaram uma das sonoridades mais influentes e imitadas da história da guitarra elétrica moderna.",
+                "spotify_url": "https://open.spotify.com/album/0Qc3r8C8gQ1Z6Qk0M3w2X1"
+            },
+            {
+                "titulo": "...Like Clockwork",
+                "ano": "2013",
+                "formato": "LP",
+                "projeto": "Queens of the Stone Age",
+                "capa": "capas/6185ae04f3270848bd7c7e3e65cc64e8.jpg",
+                "por_que_ouvir": "O renascimento melódico e sombrio de Homme após uma experiência de quase-morte cirúrgica; orquestrações luxuriantes, pianos fúnebres e participações de Alex Turner, Trent Reznor e Elton John.",
+                "spotify_url": "https://open.spotify.com/album/068Vbtv0v6uB2yK0M3w2X1"
+            },
+            {
+                "titulo": "Post Pop Depression",
+                "ano": "2016",
+                "formato": "LP",
+                "projeto": "Iggy Pop & Josh Homme",
+                "capa": "capas/47fb8cf21127a7dc3cb9ab22272a38d1.jpg",
+                "por_que_ouvir": "Uma aula magna de produção e arranjo econômico onde Homme colocou seu talento arquitetônico a serviço de Iggy Pop, entregando ao ícone do punk seu melhor e mais urgente disco desde Lust for Life.",
+                "spotify_url": "https://open.spotify.com/album/0z9Z1f8w5Q8k0M3w2X1Y4Z"
+            }
+        ],
+        "influenciados_e_dialogos": [
+            {
+                "artista": "Royal Blood",
+                "obra": "Royal Blood (2014, Warner)",
+                "ano": "2014",
+                "capa": "capas/c9f9ef39b9f907e9496d9d0f20df29a3.jpg",
+                "como_influenciou": "O duo britânico decodificou a técnica de afinação em C e os riffs sincopados com baixo fuzz e oitavadores criada por Homme. Sem guitarras convencionais, Mike Kerr e Ben Thatcher usaram o DNA do QOTSA para erguer um som colossal de arena.",
+                "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw"
+            },
+            {
+                "artista": "Viagra Boys",
+                "obra": "Cave World (2022, YEAR0001)",
+                "ano": "2022",
+                "capa": "capas/30fa53b3075a4fd645459e2be8c25b84.jpg",
+                "como_influenciou": "O grupo pós-punk sueco herdou o sarcasmo corrosivo, o ritmo desacelerado hipnótico e o balanço do 'robot rock' que Homme cunhou em faixas como 'Smooth Sailing' e 'Misfit Love', provando que o punk mais inteligente bebe direto de Palm Desert.",
+                "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X"
+            },
+            {
+                "artista": "Tigercub",
+                "obra": "The Perfume of Decay (2023, Loosegroove)",
+                "ano": "2023",
+                "capa": "capas/5e86828ae9f5d0c5850a4188c7cf1055.jpg",
+                "como_influenciou": "Jamie Hall absorveu a assinatura de Homme de contrastar timbres monolíticos de fuzz com melodias vocais quase pop e falsetes teatrais, desenvolvendo o som sombrio e cinematográfico típico da fase Lullabies to Paralyze.",
+                "spotify_url": "https://open.spotify.com/album/7o5415B5sR5qL8k0M3w2X1"
+            },
+            {
+                "artista": "St. Vincent",
+                "obra": "Daddy's Home (2021, Loma Vista)",
+                "ano": "2021",
+                "capa": "capas/a32f109e33fa8acc6d4568902f8e6df1.jpg",
+                "como_influenciou": "Após colaborar no estúdio com Homme nas Desert Sessions, Annie Clark adotou a desconstrução do purismo da guitarra solo em favor de timbres analógicos sujos dos anos 70 e um funk desacelerado e malicioso de sarjeta.",
+                "spotify_url": "https://open.spotify.com/album/0B1Nf8w5Q8k0M3w2X1Y4Z5"
+            }
+        ]
+    }
 }
 
-MUSICA_ITENS = {
-    # --- SEÇÃO RADAR ---
-    "2026-11--queens-of-the-stone-age-perfecth": {
-        "id": "2026-11--queens-of-the-stone-age-perfecth",
-        "edicao": "2026-11",
-        "ordem": 1,
-        "secao": "radar",
-        "artista": "Queens of the Stone Age",
-        "album": "Perfecth",
-        "ano": 2026,
-        "genero": "stoner rock / desert groove / art-rock",
-        "selo": "Matador Records",
-        "formato": "LP, Digital, CD",
-        "olho": "Josh Homme reinventa o som do deserto com violões flamencos, tango sem bateria, Wurlitzer funkeado e o baixo fuzz mais cortante desde Songs for the Deaf.",
-        "texto": "Recém-lançado no fim de outubro pela Matador, o nono álbum do Queens of the Stone Age quebra um ciclo e inaugura a fase mais vulnerável e corajosa da discografia de Josh Homme.",
-        "resenha": [
-            "Lançado em 30 de outubro de 2026 pela Matador Records, Perfecth é o aguardado nono álbum de estúdio do Queens of the Stone Age e representa a virada estética mais radical de Josh Homme em mais de duas décadas. Produzido por Homme e Michael Shuman e gravado nos lendários estúdios Sound City e Pink Duck em Los Angeles, o disco condensa nove faixas em enxutos 36 minutos, eliminando qualquer gordura ou repetição de fórmula.",
-            "A grande surpresa reside no despojamento acústico e na inventividade rítmica. 'Easy Street', lançada como single de abertura, substitui a tradicional parede de amplificadores por um violão flamenco de sabor espanhol, palmas sincopadas e a voz sedutora de Nikki Lane em contraste com o vocal arrastado de Homme. Já 'Insignificant Other' aposta num groove desacelerado conduzido por piano elétrico Wurlitzer e guitarras limpas com falsete rasgado, enquanto 'Where the Goth Girls At?' faz explodir um baixo fuzz cortante e um refrão hipnótico.",
-            "Composto e lapidado após a recuperação física e emocional de Homme e na esteira da turnê intimista gravada nas Catacumbas de Paris (Alive in the Catacombs), Perfecth olha de frente para o envelhecimento, as perdas e o renascimento com um cinismo elegante e desarmado. Em 'Sunday', faixa gestada ainda na época da parceria com Iggy Pop em Post Pop Depression, Homme alcança uma gravidade comovente, coroada por um solo melódico e econômico de Troy Van Leeuwen.",
-            "Para quem tem o Queens of the Stone Age como pedra angular do cânone do rock, Perfecth é uma aula magna de desconstrução: o peso agora não vem do volume ensurdecedor, mas do espaço entre as notas, da tensão harmônica e do balanço sinuoso. Um dos grandes marcos fonográficos de 2026."
-        ],
-        "faixas": ["Easy Street", "Insignificant Other", "Where the Goth Girls At?", "Sunday", "Paper Machete", "Time & Place", "Emotion Sickness"],
-        "recepcao": "Elogiado na NME (5/5), Uncut e Consequence como o disco mais audacioso e revigorante da banda desde Songs for the Deaf.",
-        "ponte": "Kyuss, Radiohead, Them Crooked Vultures, Iggy Pop (Post Pop Depression) e Jack White.",
-        "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
-        "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth",
-        "capa": "capas/6ed0ec9e85e566afc81ef246358bbc31.jpg",
-        "onde": "Matador Records, Spotify, Apple Music, YouTube Music, Bandcamp"
-    },
+ITENS = {
     "2026-11--mj-lenderman-manning-fireworks": {
         "id": "2026-11--mj-lenderman-manning-fireworks",
         "edicao": "2026-11",
         "ordem": 1,
         "secao": "radar",
-        "destaque": True,
+        "destaque": true,
         "artista": "MJ Lenderman",
         "album": "Manning Fireworks",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "indie rock / alt-country / garage",
         "selo": "ANTI-",
         "formato": "LP, Digital",
@@ -77,17 +447,27 @@ MUSICA_ITENS = {
             "Musicalmente, a produção gravada nos estúdios Drop of Sun em Asheville rejeita os truques digitais em favor de dinâmicas analógicas vívidas. O baixo de Ethan Baechtold anda com peso elástico, os pratos de bateria têm decaimento natural e cada solo de guitarra soa como se a madeira estivesse vibrando a dois metros do ouvinte. É um disco que sabe ser engraçado e profundamente triste na mesma estrofe.",
             "Manning Fireworks não é apenas o melhor trabalho de Lenderman; é um daqueles álbuns que redefinem o vocabulário das guitarras no rock contemporâneo. Essencial para quem sente falta de rock americano com alma, poeira de estrada e honestidade desarmante."
         ],
-        "faixas": ["Manning Fireworks", "Joker Lips", "Rudolph", "Wristwatch", "She's Leaving You", "Bark at the Moon"],
+        "faixas": [
+            "Manning Fireworks",
+            "Joker Lips",
+            "Rudolph",
+            "Wristwatch",
+            "She's Leaving You",
+            "Bark at the Moon"
+        ],
         "recepcao": "Best New Music na Pitchfork (8.7), 5 estrelas no The Guardian e aclamação unânime como um dos discos fundamentais de 2024.",
         "ponte": "Neil Young & Crazy Horse, Silver Jews, Songs: Ohia, Wednesday e Parquet Courts.",
         "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
         "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf",
-        "onde": "ANTI- Records, Bandcamp, Spotify, Apple Music"
+        "onde": "ANTI- Records, Bandcamp, Spotify, Apple Music",
+        "capa": "capas/a6e20bf3059d582ba55e8dc6adb79623.jpg",
+        "youtube_id": "hajltNGPfps",
+        "imagem": "capas/a6e20bf3059d582ba55e8dc6adb79623.jpg"
     },
     "2026-11--dry-cleaning-new-long-walk": {
         "id": "2026-11--dry-cleaning-new-long-walk",
         "edicao": "2026-11",
-        "ordem": 2,
+        "ordem": 3,
         "secao": "radar",
         "artista": "Dry Cleaning",
         "album": "New Long Walk",
@@ -103,171 +483,22 @@ MUSICA_ITENS = {
             "O humor de Shaw continua cirúrgico: observações sobre sapatos molhados, ansiedades corporais e a melancolia do transporte público londrino ganham dimensões filosóficas inesperadas quando colocadas contra o ataque contido da bateria de Nick Buxton. Em faixas como 'Gary Ashby' e 'Hot Penny Day', o quarteto prova que a spoken word pode ser tão viciante quanto um refrão pop chiclete.",
             "Um disco que cresce a cada audição atenta, recomendadíssimo para ouvir com fones de ouvido durante caminhadas solitárias pela cidade."
         ],
-        "faixas": ["Kwenchy Kups", "Anna Calls From the Arctic", "Don't Press Me", "Hot Penny Day", "No Decent Shoes for Rain"],
+        "faixas": [
+            "Kwenchy Kups",
+            "Anna Calls From the Arctic",
+            "Don't Press Me",
+            "Hot Penny Day",
+            "No Decent Shoes for Rain"
+        ],
         "recepcao": "Aclamado no The Wire, Uncut e Mojo como uma das vozes mais literárias da música britânica contemporânea.",
         "ponte": "The Fall, Life Without Buildings, Sonic Youth e Young Marble Giants.",
         "spotify_id": "2I0gIu10p9l6B5zF46H9Vw",
         "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw",
-        "onde": "4AD, Spotify, Apple Music, Bandcamp"
+        "onde": "4AD, Spotify, Apple Music, Bandcamp",
+        "capa": "capas/12a7c4a92e8f94811fad15a2f8041ed5.jpg",
+        "youtube_id": "Wfr1GyyI2Sc",
+        "imagem": "capas/12a7c4a92e8f94811fad15a2f8041ed5.jpg"
     },
-    "2026-11--fontaines-dc-romance": {
-        "id": "2026-11--fontaines-dc-romance",
-        "edicao": "2026-11",
-        "ordem": 3,
-        "secao": "radar",
-        "artista": "Fontaines D.C.",
-        "album": "Romance",
-        "ano": 2024,
-        "genero": "rock alternativo / pós-punk / art-rock",
-        "selo": "XL Recordings",
-        "formato": "LP, Digital",
-        "olho": "Os dublinenses abraçam a grandiosidade sombria do rock dos anos 90 sem perder a fúria poética e política de Grian Chatten.",
-        "texto": "Produzido por James Ford, Romance expande o território sônico da banda para territórios industriais, trip-hop e grunge apocalíptico.",
-        "resenha": [
-            "A trajetória do Fontaines D.C. desde a urgência de Dogrel (2019) até este monumental Romance (2024) é uma das evoluções mais impressionantes do rock da última década. Deixando para trás os limites estritos do post-punk revival irlandês, o quinteto de Dublin abraçou a ambição sonora do rock alternativo dos anos 90, dialogando abertamente com Deftones, The Cure, Primal Scream e o hip-hop sombrio do Massive Attack.",
-            "Sob a batuta do produtor James Ford (Arctic Monkeys, Depeche Mode), faixas como 'Starburster' e 'Favourite' exibem guitarras gigantescas com afinações rebaixadas e batidas com suingue industrial, enquanto Grian Chatten cospe versos febris sobre desilusão política, o declínio do império ocidental e a necessidade visceral de encontrar ternura em meio ao caos.",
-            "A transição para o selo XL Recordings deu à banda espaço para experimentar cordas cinematográficas, sintetizadores analógicos e uma produção que preenche cada centímetro do espectro sonoro sem parecer inchada. Chatten canta com uma urgência quase operística, mas ancorado na crueza das ruas de Dublin.",
-            "Romance é o testemunho de uma banda no auge absoluto de suas capacidades técnicas e líricas, desafiando a premissa cansada de que o rock de guitarras perdeu a relevância cultural."
-        ],
-        "faixas": ["Romance", "Starburster", "Here's the Thing", "Desire", "In the Modern World", "Favourite"],
-        "recepcao": "Classificado pela NME, Rolling Stone e Pitchfork como um dos melhores lançamentos do ano de 2024.",
-        "ponte": "The Cure, Deftones, The Smashing Pumpkins e Joy Division.",
-        "spotify_id": "3b9Q2z6w41A1aGv7q65w8X",
-        "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X",
-        "onde": "XL Recordings, Spotify, Bandcamp"
-    },
-    "2026-11--the-smile-cutouts": {
-        "id": "2026-11--the-smile-cutouts",
-        "edicao": "2026-11",
-        "ordem": 4,
-        "secao": "radar",
-        "artista": "The Smile",
-        "album": "Cutouts",
-        "ano": 2024,
-        "genero": "art-rock / krautrock / jazz experimental",
-        "selo": "XL Recordings",
-        "formato": "LP, Digital",
-        "olho": "Thom Yorke, Jonny Greenwood e Tom Skinner entregam seu registro mais solto, intrincado e inventivo até hoje.",
-        "texto": "Gravado nas mesmas sessões de Wall of Eyes, Cutouts surpreende por trazer rítmicas sincopadas de afrobeat, sintetizadores analógicos modulares e guitarras geométricas.",
-        "resenha": [
-            "Quando Thom Yorke e Jonny Greenwood se juntaram ao baterista Tom Skinner (Sons of Kemet) para fundar The Smile durante a pandemia, muitos imaginaram que se tratava apenas de um desvio temporário do Radiohead. Três álbuns depois, Cutouts prova que o trio desenvolveu uma identidade autônoma e vibrante, liberta do peso mitológico que cerca a banda-mãe.",
-            "O grande diferencial de Cutouts está no casamento entre o virtuosismo polirrítmico de Skinner e as explorações modulares de Greenwood. Músicas como 'Zero Sum' e 'Eyes & Mouth' correm sobre batidas ágeis que lembram Fela Kuti e Tony Allen, enquanto arpejos de guitarra ultra-rápidos e sintetizadores analógicos criam uma sensação de labirinto cinético.",
-            "Thom Yorke soa extraordinariamente relaxado e vocalmente audacioso, alternando seu falsete etéreo característico com inflexões rítmicas que flertam com o pós-punk e a eletrônica dos anos 90. Os arranjos de cordas da London Contemporary Orchestra surgem como rajadas de vento frio que cortam a arquitetura precisa das canções.",
-            "Mais aventureiro que Wall of Eyes, Cutouts é uma aula magna de composição contemporânea que aponta caminhos férteis para a fusão entre rock, jazz e música eletrônica de vanguarda."
-        ],
-        "faixas": ["Foreign Spies", "Zero Sum", "Don't Get Me Started", "Bodies Laughing", "Eyes & Mouth"],
-        "recepcao": "4.5 estrelas na AllMusic e destaque na Mojo e Stereogum.",
-        "ponte": "Radiohead (fase In Rainbows / King of Limbs), Can, Sons of Kemet e Tortoise.",
-        "spotify_id": "7o5415B5sR5qL8k0M3w2X1",
-        "spotify_url": "https://open.spotify.com/search/The%20Smile%20Cutouts",
-        "onde": "XL Recordings, Bandcamp, Spotify"
-    },
-    "2026-11--kim-gordon-the-collective": {
-        "id": "2026-11--kim-gordon-the-collective",
-        "edicao": "2026-11",
-        "ordem": 5,
-        "secao": "radar",
-        "artista": "Kim Gordon",
-        "album": "The Collective",
-        "ano": 2024,
-        "genero": "industrial noise / trap experimental / no wave",
-        "selo": "Matador Records",
-        "formato": "LP, Digital",
-        "olho": "Aos 70 anos, a cofundadora do Sonic Youth implode os limites sonoros colidindo beats de 808 com paredes impiedosas de ruído.",
-        "texto": "Produzido em parceria com Justin Raisen, The Collective soa mais moderno, agressivo e desorientador do que 99% das bandas jovens do circuito alternativo mundial.",
-        "resenha": [
-            "Existe uma coragem artística em Kim Gordon que pouquíssimos veteranos do rock dos anos 80 ousaram manter. Em The Collective, seu segundo álbum solo, ela não recorre a saudosismos do Sonic Youth; pelo contrário, apodera-se da estética rítmica do trap moderno, do industrial e do hip-hop sombrio para construir um manifesto sônico radical sobre o consumo, a hipervigilância e a alienação das redes sociais.",
-            "Ao lado do produtor Justin Raisen (Lil Yachty, Yves Tumor), Gordon lança graves subaquáticos brutais de Roland TR-808 contra paredes de microfonia e distorção analógica. Em 'BYE BYE', ela declama uma lista interminável de itens de bagagem de mão sobre um beat arrastado e sufocante, transformando a banalidade da viagem de negócios numa elegia pós-humana.",
-            "Sua voz sussurrada e fria funciona como uma lente de aumento para as bizarrices da modernidade tardia: compras de aspirador robô, sessões de meditação em aplicativos, filtros de selfie e ansiedades corporais. Não há melodias confortáveis aqui, apenas pulsos hipnóticos que sacodem as paredes da sala.",
-            "Um dos registros mais chocantes e estimulantes do ano, que reafirma Kim Gordon como uma força da natureza inabalável da vanguarda nova-iorquina."
-        ],
-        "faixas": ["BYE BYE", "The Candy House", "I Don't Miss My Mind", "I'm a Man", "Trophies", "Shelf Warmer"],
-        "recepcao": "Best New Music na Pitchfork (8.4), The Wire e Wire Magazine's Top Releases.",
-        "ponte": "Sonic Youth, Suicide, Death Grips, Yves Tumor e Moor Mother.",
-        "spotify_id": "0B1Nf8w5Q8k0M3w2X1Y4Z5",
-        "spotify_url": "https://open.spotify.com/search/Kim%20Gordon%20The%20Collective",
-        "onde": "Matador Records, Bandcamp, Spotify"
-    },
-    "2026-11--beth-gibbons-lives-outgrown": {
-        "id": "2026-11--beth-gibbons-lives-outgrown",
-        "edicao": "2026-11",
-        "ordem": 6,
-        "secao": "radar",
-        "artista": "Beth Gibbons",
-        "album": "Lives Outgrown",
-        "ano": 2024,
-        "genero": "chamber folk / experimental / baroque pop",
-        "selo": "Domino",
-        "formato": "LP, Digital",
-        "olho": "A mítica voz do Portishead retorna em seu primeiro trabalho solo em mais de duas décadas, meditando sobre mortalidade, menopausa e tempo.",
-        "texto": "Com produção de James Ford e Lee Harris (baterista do Talk Talk), Lives Outgrown utiliza instrumentos rústicos e percussões de madeira para criar uma obra-prima de beleza sombria.",
-        "resenha": [
-            "Passaram-se vinte e dois anos desde que Beth Gibbons lançou Out of Season (2002), sua memorável colaboração com Rustin Man. Durante esse intervalo, a cantora do Portishead manteve-se quase inteiramente reclusa, gravando esporadicamente a Sinfonia nº 3 de Henryk Górecki. Quando Lives Outgrown finalmente veio à tona, revelou-se não apenas um retorno, mas a obra mais íntima e devastadora de toda a sua trajetória.",
-            "O álbum trata da passagem implacável dos anos: a perda de amigos queridos, o envelhecimento do corpo, as transformações da menopausa e a constatação da própria finitude. No entanto, em vez de recorrer aos timbres eletrônicos do trip-hop, Gibbons e seus coprodutores recorreram a violões acústicos com afinações incomuns, baquetas batendo em caixas de papelão, celos desfiados e flautas de madeira rústica.",
-            "A bateria de Lee Harris (Talk Talk) confere às canções uma respiração orgânica que ecoa o seminal Spirit of Eden, enquanto a voz de Gibbons — que manteve sua capacidade única de expressar dor sem cair no melodrama — atinge notas de uma vulnerabilidade estarrecedora em faixas como 'Floating on a Moment' e 'Lost Changes'.",
-            "Lives Outgrown é música para ser ouvida em silêncio absoluto numa noite fria, com a certeza de estar diante de um clássico instantâneo da canção europeia contemporânea."
-        ],
-        "faixas": ["Tell Me Who You Are Today", "Floating on a Moment", "Burden of Life", "Lost Changes", "Rewind", "Reaching Out"],
-        "recepcao": "Classificado com nota 10/10 na Mojo e Uncut, e aclamação universal dos críticos da Pitchfork e Guardian.",
-        "ponte": "Portishead, Talk Talk, Nick Drake, Vashti Bunyan e Judee Sill.",
-        "spotify_id": "4jSmcj39eQiU76EbMGuxS9",
-        "spotify_url": "https://open.spotify.com/search/Beth%20Gibbons%20Lives%20Outgrown",
-        "onde": "Domino Recording Co., Bandcamp, Spotify"
-    },
-    "2026-11--english-teacher-this-could-be-texas": {
-        "id": "2026-11--english-teacher-this-could-be-texas",
-        "edicao": "2026-11",
-        "ordem": 7,
-        "secao": "radar",
-        "artista": "English Teacher",
-        "album": "This Could Be Texas",
-        "ano": 2024,
-        "genero": "art-punk / indie rock / chamber pop",
-        "selo": "Island Records",
-        "formato": "LP, Digital",
-        "olho": "Vencedores do prestigiado Mercury Prize 2024, o quarteto de Leeds e Lancashire une poesia cortante, piano clássico e guitarras inquietas.",
-        "texto": "Liderados pela vocalista e letrista Lily Fontaine, o English Teacher desafia a fórmula cinzenta do pós-punk britânico com sofisticação melódica e ironia política.",
-        "resenha": [
-            "Vencer o Mercury Prize com um disco de estreia tornou-se uma façanha rara no Reino Unido, mas This Could Be Texas, do quarteto English Teacher, justificou cada elogio da crítica especializada. Vindo de Leeds e Colne, o grupo liderado por Lily Fontaine recusa o minimalismo monocórdio de muitos de seus contemporâneos, costurando arranjos de piano de cauda, passagens orquestrais e súbitas explosões de math-rock.",
-            "As letras de Fontaine investigam a complexidade de crescer birracial no norte pós-industrial da Inglaterra, cercada pelo declínio dos serviços públicos, pela gentrificação cultural e pela solidão dos apartamentos minúsculos. Em 'The World's Biggest Paving Slab', ela transforma uma calçada suburbana num monumento à obsolescência; em 'Albert Road', o crescendo de cordas culmina num grito coletivo arrebatador.",
-            "A dinâmica entre o guitarrista Lewis Whiting, o baixista Nicholas Eden e o baterista Douglas Frost é surpreendentemente flexível, passando com naturalidade de baladas confessionais ao estilo de Black Country, New Road para ritmos marciais dignos de Gang of Four.",
-            "Um disco fresco, ambicioso e profundamente literário que marca a chegada de uma das forças mais brilhantes da nova música inglesa."
-        ],
-        "faixas": ["Albatross", "The World's Biggest Paving Slab", "Broken Biscuits", "I'm Not Crying, You're Crying", "This Could Be Texas", "Albert Road"],
-        "recepcao": "Vencedor do Mercury Prize 2024 de Melhor Álbum Britânico do Ano.",
-        "ponte": "Black Country, New Road, Dry Cleaning, Pulp e Radiohead.",
-        "spotify_id": "3lSmcj39eQiU76EbMGuxS1",
-        "spotify_url": "https://open.spotify.com/search/English%20Teacher%20This%20Could%20Be%20Texas",
-        "onde": "Island Records, Spotify, Apple Music"
-    },
-    "2026-11--mount-kimbie-the-sunset-violent": {
-        "id": "2026-11--mount-kimbie-the-sunset-violent",
-        "edicao": "2026-11",
-        "ordem": 8,
-        "secao": "radar",
-        "artista": "Mount Kimbie",
-        "album": "The Sunset Violent",
-        "ano": 2024,
-        "genero": "indie rock / pós-punk / dream-pop / eletrônica",
-        "selo": "Warp Records",
-        "formato": "LP, Digital",
-        "olho": "A dupla britânica completa sua transição definitiva da eletrônica minimalista para o rock ensolarado e melancólico de guitarras.",
-        "texto": "Gravado na Califórnia com participações de King Krule, The Sunset Violent abraça sintetizadores analógicos empoeirados e melodias preguiçosas e viciantes.",
-        "resenha": [
-            "Dominic Maker e Kai Campos começaram no fim dos anos 2000 como pioneiros do que a crítica chamava de post-dubstep, mas The Sunset Violent confirma o Mount Kimbie como uma banda de indie rock autêntica e altamente sofisticada. Agora expandidos para um quarteto com Andrea Balency-Béarn e Marc Pell, eles viajaram para o deserto de Yucca Valley, na Califórnia, para compor um disco impregnado pela luz dourada do fim de tarde.",
-            "As guitarras são cheias de chorus e reverb, lembrando o pós-punk melódico do New Order e o shoegaze desbotado do Galaxie 500, mas a base rítmica carrega a precisão cirúrgica de quem passou anos programando sintetizadores e baterias eletrônicas. A colaboração com King Krule em 'Empty and Silent' e 'Boxing' adiciona a habitual aspereza existencial do ruivo londrino.",
-            "Há uma doçura melancólica em faixas como 'Dumb & Fill Me Up' que funciona maravilhosamente bem para ouvir enquanto se dirige ou se contempla a cidade pela janela. O equilíbrio entre peso, leveza e groove é impecável.",
-            "Um dos registros mais prazerosos e coesos da discografia do selo Warp em 2024."
-        ],
-        "faixas": ["The Trail", "Dumb & Fill Me Up", "Shipwreck", "Boxing (feat. King Krule)", "Fishbrain", "Empty and Silent"],
-        "recepcao": "Elogiado na Pitchfork, Resident Advisor e Crack Magazine.",
-        "ponte": "King Krule, New Order, Broadcast, Tirzah e Deerhunter.",
-        "spotify_id": "5kSmcj39eQiU76EbMGuxS2",
-        "spotify_url": "https://open.spotify.com/search/Mount%20Kimbie%20The%20Sunset%20Violent",
-        "onde": "Warp Records, Bandcamp, Spotify"
-    },
-
-    # --- SEÇÃO DESCOBERTAS ---
     "2026-11--whitelands-sun-bleached-noise": {
         "id": "2026-11--whitelands-sun-bleached-noise",
         "edicao": "2026-11",
@@ -287,119 +518,23 @@ MUSICA_ITENS = {
             "Faixas como 'Setting Sun' e 'The Prophet & I' tratam de amor juvenil, saúde mental e o cansaço de viver numa metrópole hostil, cantadas com uma doçura vocal que flutua graciosamente por cima do peso elétrico dos amplificadores.",
             "Um disco revigorante que prova que o shoegaze continua vivo, urgente e capaz de abraçar novos horizontes estéticos."
         ],
-        "faixas": ["Setting Sun", "The Prophet & I", "Tell Me About It", "Cheer", "How it Feels", "Born in Understanding"],
+        "faixas": [
+            "Setting Sun",
+            "The Prophet & I",
+            "Tell Me About It",
+            "Cheer",
+            "How it Feels",
+            "Born in Understanding"
+        ],
         "recepcao": "Destaque no The Guardian, Stereogum e BBC Radio 6 Music.",
         "ponte": "Slowdive, Cocteau Twins, Ride, DIIV e Lush.",
         "spotify_id": "4vS4V9JtZtWj8x3J7xG4tD",
         "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD",
-        "onde": "Sonic Cathedral, Bandcamp, Spotify"
+        "onde": "Sonic Cathedral, Bandcamp, Spotify",
+        "capa": "capas/8ced05c1e108274bf9d064542ed9111f.jpg",
+        "youtube_id": "aHlyYc6o0Yo",
+        "imagem": "capas/8ced05c1e108274bf9d064542ed9111f.jpg"
     },
-    "2026-11--diiv-frog-in-boiling-water": {
-        "id": "2026-11--diiv-frog-in-boiling-water",
-        "edicao": "2026-11",
-        "ordem": 10,
-        "secao": "descobertas",
-        "artista": "DIIV",
-        "album": "Frog in Boiling Water",
-        "ano": 2024,
-        "genero": "shoegaze / pós-rock / slowcore / grunge",
-        "selo": "Fantasy Records",
-        "formato": "LP, Digital",
-        "olho": "Cole Smith e sua banda entregam uma metáfora sombria sobre o colapso climático e social em riffs lentos, densos e hipnóticos.",
-        "texto": "Com produção de Chris Coady, Frog in Boiling Water funde a afinação rebaixada do metal alternativo com a doçura melódica do dreampop.",
-        "resenha": [
-            "A fábula do sapo que não percebe que a água está esquentando até ser cozido vivo é a premissa conceitual que guia Frog in Boiling Water, quarto álbum de estúdio do DIIV. Deixando para trás as narrativas exclusivamente confessionais sobre sobriedade que marcaram Deceiver (2019), a banda do Brooklyn volta sua mira para o mal-estar civilizatório: o colapso ecológico, a brutalidade do capitalismo de vigilância e a apatia coletiva.",
-            "A evolução musical é impressionante. Cole Smith e Andrew Bailey constroem teias de guitarras que utilizam afinações graves (drop D e C), criando um peso quase metálico que dialoga tanto com o Deftones de White Pony quanto com o slowcore melancólico do Duster e o shoegaze épico do Hum.",
-            "Canções como 'Brown Paper Bag' e 'Soul-net' avançam como geleiras sonoras: lentas, majestosas e implacáveis. Os vocais soterrados de Smith soam como mensagens captadas por um rádio amador num cenário pós-apocalíptico, implorando por conexão humana genuína.",
-            "Um dos registros de rock mais sérios, maduros e politicamente densos lançados em 2024."
-        ],
-        "faixas": ["In Amber", "Brown Paper Bag", "Raining on Your Pillow", "Frog in Boiling Water", "Everyone Out", "Soul-net"],
-        "recepcao": "Nota 8.2 na Pitchfork, 4 estrelas na Kerrang! e aclamação no Stereogum.",
-        "ponte": "Deceiver, Duster, Hum, Deftones e My Bloody Valentine.",
-        "spotify_id": "2lSmcj39eQiU76EbMGuxS3",
-        "spotify_url": "https://open.spotify.com/search/DIIV%20Frog%20in%20Boiling%20Water",
-        "onde": "Fantasy Records, Bandcamp, Spotify"
-    },
-    "2026-11--friko-where-we-ve-been": {
-        "id": "2026-11--friko-where-we-ve-been",
-        "edicao": "2026-11",
-        "ordem": 11,
-        "secao": "descobertas",
-        "artista": "Friko",
-        "album": "Where we've been, Where we go from here",
-        "ano": 2024,
-        "genero": "indie rock / chamber rock / emo / pós-punk",
-        "selo": "ATO Records",
-        "formato": "LP, Digital",
-        "olho": "A energia explosiva e os coros teatrais de Chicago que resgatam o dinamismo do indie rock da virada dos anos 2000.",
-        "texto": "O duo de Chicago Niko Kapetan e Bailey Minzenberger entrega uma estreia fulgurante, alternando explosões ruidosas e orquestrações de câmara.",
-        "resenha": [
-            "De tempos em tempos surge uma banda que parece condensar toda a eletricidade e o desespero juvenil dos melhores momentos do rock independente. O Friko, projeto formado em Chicago por Niko Kapetan e pelo baterista Bailey Minzenberger, é exatamente isso. Em Where we've been, Where we go from here, lançado pela ATO Records, eles recuperam a urgência emocional e melódica de bandas como Arcade Fire (fase Funeral), Bright Eyes e The Walkmen.",
-            "O vocal de Kapetan é um instrumento extraordinário: ele sussurra com intimidade desarmante ao piano para, segundos depois, berrar a plenos pulmões enquanto guitarras distorcidas e pratos explodem ao seu redor. A faixa de abertura, 'Where We've Been', sintetiza essa montanha-russa dinâmica com precisão cirúrgica.",
-            "Além da potência do rock, há um cuidado camerístico refinado nos arranjos de cordas, cortesia de músicos convidados da rica cena clássica e avant-garde de Chicago. Canções como 'Crimson to Chrome' e 'Get Numb to It!' têm refrões que grudam na memória de imediato.",
-            "Uma das estreias mais empolgantes do indie rock americano em muitos anos."
-        ],
-        "faixas": ["Where We've Been", "Crimson to Chrome", "Crashing Through", "For Ella", "Chemical", "Get Numb to It!"],
-        "recepcao": "Destaque na Rolling Stone, Pitchfork e eleito um dos discos de estreia do ano pela Paste Magazine.",
-        "ponte": "Arcade Fire, Bright Eyes, The Walkmen e Neutral Milk Hotel.",
-        "spotify_id": "4myypnSDFC6PrjZRDYcBaC",
-        "spotify_url": "https://open.spotify.com/album/4myypnSDFC6PrjZRDYcBaC",
-        "onde": "ATO Records, Bandcamp, Spotify"
-    },
-    "2026-11--maruja-connla-s-well": {
-        "id": "2026-11--maruja-connla-s-well",
-        "edicao": "2026-11",
-        "ordem": 12,
-        "secao": "descobertas",
-        "artista": "Maruja",
-        "album": "Connla's Well",
-        "ano": 2024,
-        "genero": "jazz-punk / pós-rock / hardcore experimental",
-        "selo": "Autoprodução / Cargo",
-        "formato": "EP, Digital",
-        "olho": "Saxofone ensandecido, baixo esmagador e fúria operária de Manchester num dos manifestos mais pesados da nova cena britânica.",
-        "texto": "O quarteto de Manchester colide o jazz de John Coltrane com a violência do hardcore punk em faixas extensas e catárticas.",
-        "resenha": [
-            "Vindos dos bairros industriais de Manchester, o quarteto Maruja é uma daquelas anomalias que só a cena alternativa do norte da Inglaterra consegue produzir. Em Connla's Well, seu mais aclamado EP, eles dispensam concessões ao pop para criar uma muralha sonora visceral onde o saxofone alto de Joe Carroll não funciona como enfeite, mas como a principal arma melódica e ruidosa, duelando com a guitarra cortante de Harry Wilkinson.",
-            "As canções são construídas sobre andamentos longos de pós-rock e jazz contemporâneo que subitamente deságuam em explosões de pura fúria hardcore. O vocalista Harry Wilkinson canta e grita sobre saúde mental, trauma intergeracional e a hipocrisia das elites políticas britânicas com uma intensidade física quase insuportável.",
-            "A seção rítmica formada por Matt Buonaccorsi (baixo) e Jacob Hayes (bateria) tem uma musculatura impressionante, flertando com ritmos quebrados de trip-hop e d-beat punk sem perder o balanço hipnótico.",
-            "Indispensável para quem acompanha a vanguarda do jazz-punk ao lado de Black Country, New Road e The Comet Is Coming."
-        ],
-        "faixas": ["The Invisible Man", "Connla's Well", "Zeitgeist", "One Hand Behind the Back", "Resisting Resistance"],
-        "recepcao": "Top 10 EPs do ano na NME e cobertura apaixonada no The Needle Drop (Anthony Fantano).",
-        "ponte": "Black Country, New Road, The Comet Is Coming, Godspeed You! Black Emperor e Fugazi.",
-        "spotify_id": "1mSmcj39eQiU76EbMGuxS4",
-        "spotify_url": "https://open.spotify.com/search/Maruja%20Connla%27s%20Well",
-        "onde": "Bandcamp, Spotify, Apple Music"
-    },
-    "2026-11--cindy-lee-diamond-jubilee": {
-        "id": "2026-11--cindy-lee-diamond-jubilee",
-        "edicao": "2026-11",
-        "ordem": 13,
-        "secao": "descobertas",
-        "artista": "Cindy Lee",
-        "album": "Diamond Jubilee",
-        "ano": 2024,
-        "genero": "hypnagogic pop / girl group noir / lo-fi guitar",
-        "selo": "Realistik Studios",
-        "formato": "Álbum duplo, Digital",
-        "olho": "Um monumento de duas horas de pop espectral dos anos 60 gravado em fita cassete pelo mentor do Women.",
-        "texto": "Patrick Flegel assina uma obra-prima monumental lançada fora de todas as plataformas convencionais, celebrada como um divisor de águas da música independente.",
-        "resenha": [
-            "O lançamento de Diamond Jubilee foi um dos acontecimentos mais singulares e mitológicos da música recente. Recusando os contratos com os grandes serviços de streaming corporativo, Patrick Flegel (ex-guitarrista e vocalista do lendário grupo canadense Women) disponibilizou este álbum duplo de duas horas apenas em seu site pessoal, via download gratuito no GeoCities e no YouTube.",
-            "A música que habita essas 32 faixas parece ter sido resgatada de uma estação de rádio fantasma transmitindo de 1963. Guitarras elétricas banhadas em eco de mola, harmonias vocais sussurradas de girl-groups à la The Ronettes e The Shangri-Las, e melodias de veludo noir que oscilam entre a mais doce ternura e a mais gélida desolação.",
-            "Flegel é um dos guitarristas mais inventivos de sua geração: seus timbres limpos têm a limpidez dos primeiros discos da Motown, mas de repente são rasgados por solos de distorção estridente que lembram The Velvet Underground. Cada vinheta soa como uma memória esquecida numa fita cassete encontrada num brechó.",
-            "Um monumento artístico colossal que desafiou toda a lógica da indústria contemporânea e venceu por puro mérito estético."
-        ],
-        "faixas": ["Diamond Jubilee", "Glitz", "Baby Blue", "Dreams of You", "All I Want Is You", "Dallas", "Kingdom Come"],
-        "recepcao": "A nota mais alta concedida pela Pitchfork em quatro anos (9.1 - Best New Music) e cobertura histórica em jornais de todo o mundo.",
-        "ponte": "Women, The Velvet Underground, Broadcast, The Ronettes e Ariel Pink.",
-        "spotify_id": "6mSmcj39eQiU76EbMGuxS5",
-        "spotify_url": "https://open.spotify.com/search/Cindy%20Lee%20Diamond%20Jubilee",
-        "onde": "Realistik Studios, YouTube, Bandcamp"
-    },
-
-    # --- SEÇÃO BRASIL ---
     "2026-11--jucara-marcal-caderno-composicao": {
         "id": "2026-11--jucara-marcal-caderno-composicao",
         "edicao": "2026-11",
@@ -419,12 +554,22 @@ MUSICA_ITENS = {
             "O repertório é uma verdadeira aula de curadoria afetiva e política: pérolas esquecidas de Itamar Assumpção, temas tortos de Negro Léo e composições inéditas escritas em parceria pelas duas artistas. Juçara projeta sua voz com a solenidade de uma sacerdotisa e a fúria de uma mulher trabalhadora que recusa o silêncio.",
             "Gravado com excepcional fidelidade acústica, Caderno de Composição é um monumento à coragem interpretativa da canção brasileira independente."
         ],
-        "faixas": ["Sem Nome", "Ladeira da Memória", "Fogo no Prato", "Canto Noturno", "Desejo de Terra", "Valsa Espiral"],
+        "faixas": [
+            "Sem Nome",
+            "Ladeira da Memória",
+            "Fogo no Prato",
+            "Canto Noturno",
+            "Desejo de Terra",
+            "Valsa Espiral"
+        ],
         "recepcao": "Aclamação unânime pela crítica nacional (APCA, O Globo, Bravo!) e turnês concorridas pelo circuito de teatros.",
         "ponte": "Metá Metá, Itamar Assumpção, Elza Soares, Negro Léo e Arrigo Barnabé.",
         "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
         "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y",
-        "onde": "QTV Selo, Spotify, Apple Music, Bandcamp"
+        "onde": "QTV Selo, Spotify, Apple Music, Bandcamp",
+        "capa": "capas/39ef428bd22c8eb18d4152339772a829.jpg",
+        "youtube_id": "m1M18NIMsEo",
+        "imagem": "capas/39ef428bd22c8eb18d4152339772a829.jpg"
     },
     "2026-11--ana-frango-eletrico-ao-vivo-caixa": {
         "id": "2026-11--ana-frango-eletrico-ao-vivo-caixa",
@@ -433,7 +578,7 @@ MUSICA_ITENS = {
         "secao": "brasil",
         "artista": "Ana Frango Elétrico",
         "album": "Me Chama de Gato Que Eu Sou Sua (Edição Expandida)",
-        "ano": 2025,
+        "ano": 2026,
         "genero": "boogie carioca / sophisti-pop / indie MPB",
         "selo": "Selo Risco / Mr Bongo",
         "formato": "LP Duplo, Digital",
@@ -445,12 +590,382 @@ MUSICA_ITENS = {
             "As letras exploram a fluidez dos amores queer com uma leveza e uma malícia tipicamente cariocas em faixas irresistíveis como 'Electric Fish', 'Dela' e 'Insista em Mim'. A edição expandida traz gravações ao vivo viscerais registradas no Circo Voador com sua banda completa de 9 músicos.",
             "Música pop inteligente, dançante e impecavelmente gravada, indispensável em qualquer discoteca que preze o balanço e a elegância."
         ],
-        "faixas": ["Electric Fish", "Dela", "Nuvem Vermelha", "Boy of Bebop", "Camelo Azul", "Insista em Mim", "Dr. Sabe Tudo"],
+        "faixas": [
+            "Electric Fish",
+            "Dela",
+            "Nuvem Vermelha",
+            "Boy of Bebop",
+            "Camelo Azul",
+            "Insista em Mim",
+            "Dr. Sabe Tudo"
+        ],
         "recepcao": "Disco do Ano pela APCA, indicação ao Grammy Latino e aclamação no The Guardian e Pitchfork.",
         "ponte": "Marcos Valle, Rita Lee, Steely Dan, Lincoln Olivetti e Arthur Verocai.",
         "spotify_id": "1B2u3vj33ZpE73v8t0Nnhz",
         "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz",
-        "onde": "Selo Risco, Mr Bongo, Spotify, Apple Music"
+        "onde": "Selo Risco, Mr Bongo, Spotify, Apple Music",
+        "capa": "capas/2d4da8c2afac51a1c9693bcfd164f231.jpg",
+        "youtube_id": "KRzcmBRoFPY",
+        "imagem": "capas/2d4da8c2afac51a1c9693bcfd164f231.jpg"
+    },
+    "2026-11--fontaines-dc-romance": {
+        "id": "2026-11--fontaines-dc-romance",
+        "edicao": "2026-11",
+        "ordem": 4,
+        "secao": "radar",
+        "artista": "Fontaines D.C.",
+        "album": "Romance",
+        "ano": 2026,
+        "genero": "rock alternativo / pós-punk / art-rock",
+        "selo": "XL Recordings",
+        "formato": "LP, Digital",
+        "olho": "Os dublinenses abraçam a grandiosidade sombria do rock dos anos 90 sem perder a fúria poética e política de Grian Chatten.",
+        "texto": "Produzido por James Ford, Romance expande o território sônico da banda para territórios industriais, trip-hop e grunge apocalíptico.",
+        "resenha": [
+            "A trajetória do Fontaines D.C. desde a urgência de Dogrel (2019) até este monumental Romance (2024) é uma das evoluções mais impressionantes do rock da última década. Deixando para trás os limites estritos do post-punk revival irlandês, o quinteto de Dublin abraçou a ambição sonora do rock alternativo dos anos 90, dialogando abertamente com Deftones, The Cure, Primal Scream e o hip-hop sombrio do Massive Attack.",
+            "Sob a batuta do produtor James Ford (Arctic Monkeys, Depeche Mode), faixas como 'Starburster' e 'Favourite' exibem guitarras gigantescas com afinações rebaixadas e batidas com suingue industrial, enquanto Grian Chatten cospe versos febris sobre desilusão política, o declínio do império ocidental e a necessidade visceral de encontrar ternura em meio ao caos.",
+            "A transição para o selo XL Recordings deu à banda espaço para experimentar cordas cinematográficas, sintetizadores analógicos e uma produção que preenche cada centímetro do espectro sonoro sem parecer inchada. Chatten canta com uma urgência quase operística, mas ancorado na crueza das ruas de Dublin.",
+            "Romance é o testemunho de uma banda no auge absoluto de suas capacidades técnicas e líricas, desafiando a premissa cansada de que o rock de guitarras perdeu a relevância cultural."
+        ],
+        "faixas": [
+            "Romance",
+            "Starburster",
+            "Here's the Thing",
+            "Desire",
+            "In the Modern World",
+            "Favourite"
+        ],
+        "recepcao": "Classificado pela NME, Rolling Stone e Pitchfork como um dos melhores lançamentos do ano de 2024.",
+        "ponte": "The Cure, Deftones, The Smashing Pumpkins e Joy Division.",
+        "spotify_id": "3b9Q2z6w41A1aGv7q65w8X",
+        "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X",
+        "onde": "XL Recordings, Spotify, Bandcamp",
+        "capa": "capas/98fea6ef312dec17aaefe48cbc37bb06.jpg",
+        "youtube_id": "gyPd68RuB8I",
+        "imagem": "capas/98fea6ef312dec17aaefe48cbc37bb06.jpg"
+    },
+    "2026-11--the-smile-cutouts": {
+        "id": "2026-11--the-smile-cutouts",
+        "edicao": "2026-11",
+        "ordem": 5,
+        "secao": "radar",
+        "artista": "The Smile",
+        "album": "Cutouts",
+        "ano": 2026,
+        "genero": "art-rock / krautrock / jazz experimental",
+        "selo": "XL Recordings",
+        "formato": "LP, Digital",
+        "olho": "Thom Yorke, Jonny Greenwood e Tom Skinner entregam seu registro mais solto, intrincado e inventivo até hoje.",
+        "texto": "Gravado nas mesmas sessões de Wall of Eyes, Cutouts surpreende por trazer rítmicas sincopadas de afrobeat, sintetizadores analógicos modulares e guitarras geométricas.",
+        "resenha": [
+            "Quando Thom Yorke e Jonny Greenwood se juntaram ao baterista Tom Skinner (Sons of Kemet) para fundar The Smile durante a pandemia, muitos imaginaram que se tratava apenas de um desvio temporário do Radiohead. Três álbuns depois, Cutouts prova que o trio desenvolveu uma identidade autônoma e vibrante, liberta do peso mitológico que cerca a banda-mãe.",
+            "O grande diferencial de Cutouts está no casamento entre o virtuosismo polirrítmico de Skinner e as explorações modulares de Greenwood. Músicas como 'Zero Sum' e 'Eyes & Mouth' correm sobre batidas ágeis que lembram Fela Kuti e Tony Allen, enquanto arpejos de guitarra ultra-rápidos e sintetizadores analógicos criam uma sensação de labirinto cinético.",
+            "Thom Yorke soa extraordinariamente relaxado e vocalmente audacioso, alternando seu falsete etéreo característico com inflexões rítmicas que flertam com o pós-punk e a eletrônica dos anos 90. Os arranjos de cordas da London Contemporary Orchestra surgem como rajadas de vento frio que cortam a arquitetura precisa das canções.",
+            "Mais aventureiro que Wall of Eyes, Cutouts é uma aula magna de composição contemporânea que aponta caminhos férteis para a fusão entre rock, jazz e música eletrônica de vanguarda."
+        ],
+        "faixas": [
+            "Foreign Spies",
+            "Zero Sum",
+            "Don't Get Me Started",
+            "Bodies Laughing",
+            "Eyes & Mouth"
+        ],
+        "recepcao": "4.5 estrelas na AllMusic e destaque na Mojo e Stereogum.",
+        "ponte": "Radiohead (fase In Rainbows / King of Limbs), Can, Sons of Kemet e Tortoise.",
+        "spotify_id": "7o5415B5sR5qL8k0M3w2X1",
+        "spotify_url": "https://open.spotify.com/search/The%20Smile%20Cutouts",
+        "onde": "XL Recordings, Bandcamp, Spotify",
+        "capa": "capas/68125051eed214815c8e7dcbb96788e7.jpg",
+        "youtube_id": "UHkZ5YzJYvI",
+        "imagem": "capas/68125051eed214815c8e7dcbb96788e7.jpg"
+    },
+    "2026-11--kim-gordon-the-collective": {
+        "id": "2026-11--kim-gordon-the-collective",
+        "edicao": "2026-11",
+        "ordem": 6,
+        "secao": "radar",
+        "artista": "Kim Gordon",
+        "album": "The Collective",
+        "ano": 2026,
+        "genero": "industrial noise / trap experimental / no wave",
+        "selo": "Matador Records",
+        "formato": "LP, Digital",
+        "olho": "Aos 70 anos, a cofundadora do Sonic Youth implode os limites sonoros colidindo beats de 808 com paredes impiedosas de ruído.",
+        "texto": "Produzido em parceria com Justin Raisen, The Collective soa mais moderno, agressivo e desorientador do que 99% das bandas jovens do circuito alternativo mundial.",
+        "resenha": [
+            "Existe uma coragem artística em Kim Gordon que pouquíssimos veteranos do rock dos anos 80 ousaram manter. Em The Collective, seu segundo álbum solo, ela não recorre a saudosismos do Sonic Youth; pelo contrário, apodera-se da estética rítmica do trap moderno, do industrial e do hip-hop sombrio para construir um manifesto sônico radical sobre o consumo, a hipervigilância e a alienação das redes sociais.",
+            "Ao lado do produtor Justin Raisen (Lil Yachty, Yves Tumor), Gordon lança graves subaquáticos brutais de Roland TR-808 contra paredes de microfonia e distorção analógica. Em 'BYE BYE', ela declama uma lista interminável de itens de bagagem de mão sobre um beat arrastado e sufocante, transformando a banalidade da viagem de negócios numa elegia pós-humana.",
+            "Sua voz sussurrada e fria funciona como uma lente de aumento para as bizarrices da modernidade tardia: compras de aspirador robô, sessões de meditação em aplicativos, filtros de selfie e ansiedades corporais. Não há melodias confortáveis aqui, apenas pulsos hipnóticos que sacodem as paredes da sala.",
+            "Um dos registros mais chocantes e estimulantes do ano, que reafirma Kim Gordon como uma força da natureza inabalável da vanguarda nova-iorquina."
+        ],
+        "faixas": [
+            "BYE BYE",
+            "The Candy House",
+            "I Don't Miss My Mind",
+            "I'm a Man",
+            "Trophies",
+            "Shelf Warmer"
+        ],
+        "recepcao": "Best New Music na Pitchfork (8.4), The Wire e Wire Magazine's Top Releases.",
+        "ponte": "Sonic Youth, Suicide, Death Grips, Yves Tumor e Moor Mother.",
+        "spotify_id": "0B1Nf8w5Q8k0M3w2X1Y4Z5",
+        "spotify_url": "https://open.spotify.com/search/Kim%20Gordon%20The%20Collective",
+        "onde": "Matador Records, Bandcamp, Spotify",
+        "capa": "capas/679244160eda39121893e6d08ce507fd.jpg",
+        "youtube_id": "IZ3i80B0qKg",
+        "imagem": "capas/679244160eda39121893e6d08ce507fd.jpg"
+    },
+    "2026-11--beth-gibbons-lives-outgrown": {
+        "id": "2026-11--beth-gibbons-lives-outgrown",
+        "edicao": "2026-11",
+        "ordem": 7,
+        "secao": "radar",
+        "artista": "Beth Gibbons",
+        "album": "Lives Outgrown",
+        "ano": 2026,
+        "genero": "chamber folk / experimental / baroque pop",
+        "selo": "Domino",
+        "formato": "LP, Digital",
+        "olho": "A mítica voz do Portishead retorna em seu primeiro trabalho solo em mais de duas décadas, meditando sobre mortalidade, menopausa e tempo.",
+        "texto": "Com produção de James Ford e Lee Harris (baterista do Talk Talk), Lives Outgrown utiliza instrumentos rústicos e percussões de madeira para criar uma obra-prima de beleza sombria.",
+        "resenha": [
+            "Passaram-se vinte e dois anos desde que Beth Gibbons lançou Out of Season (2002), sua memorável colaboração com Rustin Man. Durante esse intervalo, a cantora do Portishead manteve-se quase inteiramente reclusa, gravando esporadicamente a Sinfonia nº 3 de Henryk Górecki. Quando Lives Outgrown finalmente veio à tona, revelou-se não apenas um retorno, mas a obra mais íntima e devastadora de toda a sua trajetória.",
+            "O álbum trata da passagem implacável dos anos: a perda de amigos queridos, o envelhecimento do corpo, as transformações da menopausa e a constatação da própria finitude. No entanto, em vez de recorrer aos timbres eletrônicos do trip-hop, Gibbons e seus coprodutores recorreram a violões acústicos com afinações incomuns, baquetas batendo em caixas de papelão, celos desfiados e flautas de madeira rústica.",
+            "A bateria de Lee Harris (Talk Talk) confere às canções uma respiração orgânica que ecoa o seminal Spirit of Eden, enquanto a voz de Gibbons — que manteve sua capacidade única de expressar dor sem cair no melodrama — atinge notas de uma vulnerabilidade estarrecedora em faixas como 'Floating on a Moment' e 'Lost Changes'.",
+            "Lives Outgrown é música para ser ouvida em silêncio absoluto numa noite fria, com a certeza de estar diante de um clássico instantâneo da canção europeia contemporânea."
+        ],
+        "faixas": [
+            "Tell Me Who You Are Today",
+            "Floating on a Moment",
+            "Burden of Life",
+            "Lost Changes",
+            "Rewind",
+            "Reaching Out"
+        ],
+        "recepcao": "Classificado com nota 10/10 na Mojo e Uncut, e aclamação universal dos críticos da Pitchfork e Guardian.",
+        "ponte": "Portishead, Talk Talk, Nick Drake, Vashti Bunyan e Judee Sill.",
+        "spotify_id": "4jSmcj39eQiU76EbMGuxS9",
+        "spotify_url": "https://open.spotify.com/search/Beth%20Gibbons%20Lives%20Outgrown",
+        "onde": "Domino Recording Co., Bandcamp, Spotify",
+        "capa": "capas/86c66aa1d801d5c621eeaac62c6c4ed4.jpg",
+        "youtube_id": "noNcHNoWvUM",
+        "imagem": "capas/86c66aa1d801d5c621eeaac62c6c4ed4.jpg"
+    },
+    "2026-11--english-teacher-this-could-be-texas": {
+        "id": "2026-11--english-teacher-this-could-be-texas",
+        "edicao": "2026-11",
+        "ordem": 8,
+        "secao": "radar",
+        "artista": "English Teacher",
+        "album": "This Could Be Texas",
+        "ano": 2026,
+        "genero": "art-punk / indie rock / chamber pop",
+        "selo": "Island Records",
+        "formato": "LP, Digital",
+        "olho": "Vencedores do prestigiado Mercury Prize 2024, o quarteto de Leeds e Lancashire une poesia cortante, piano clássico e guitarras inquietas.",
+        "texto": "Liderados pela vocalista e letrista Lily Fontaine, o English Teacher desafia a fórmula cinzenta do pós-punk britânico com sofisticação melódica e ironia política.",
+        "resenha": [
+            "Vencer o Mercury Prize com um disco de estreia tornou-se uma façanha rara no Reino Unido, mas This Could Be Texas, do quarteto English Teacher, justificou cada elogio da crítica especializada. Vindo de Leeds e Colne, o grupo liderado por Lily Fontaine recusa o minimalismo monocórdio de muitos de seus contemporâneos, costurando arranjos de piano de cauda, passagens orquestrais e súbitas explosões de math-rock.",
+            "As letras de Fontaine investigam a complexidade de crescer birracial no norte pós-industrial da Inglaterra, cercada pelo declínio dos serviços públicos, pela gentrificação cultural e pela solidão dos apartamentos minúsculos. Em 'The World's Biggest Paving Slab', ela transforma uma calçada suburbana num monumento à obsolescência; em 'Albert Road', o crescendo de cordas culmina num grito coletivo arrebatador.",
+            "A dinâmica entre o guitarrista Lewis Whiting, o baixista Nicholas Eden e o baterista Douglas Frost é surpreendentemente flexível, passando com naturalidade de baladas confessionais ao estilo de Black Country, New Road para ritmos marciais dignos de Gang of Four.",
+            "Um disco fresco, ambicioso e profundamente literário que marca a chegada de uma das forças mais brilhantes da nova música inglesa."
+        ],
+        "faixas": [
+            "Albatross",
+            "The World's Biggest Paving Slab",
+            "Broken Biscuits",
+            "I'm Not Crying, You're Crying",
+            "This Could Be Texas",
+            "Albert Road"
+        ],
+        "recepcao": "Vencedor do Mercury Prize 2024 de Melhor Álbum Britânico do Ano.",
+        "ponte": "Black Country, New Road, Dry Cleaning, Pulp e Radiohead.",
+        "spotify_id": "3lSmcj39eQiU76EbMGuxS1",
+        "spotify_url": "https://open.spotify.com/search/English%20Teacher%20This%20Could%20Be%20Texas",
+        "onde": "Island Records, Spotify, Apple Music",
+        "capa": "capas/2dedf2aeecaac42c11314dd41e57a208.jpg",
+        "youtube_id": "0PWZdalB9aM",
+        "imagem": "capas/2dedf2aeecaac42c11314dd41e57a208.jpg"
+    },
+    "2026-11--mount-kimbie-the-sunset-violent": {
+        "id": "2026-11--mount-kimbie-the-sunset-violent",
+        "edicao": "2026-11",
+        "ordem": 9,
+        "secao": "radar",
+        "artista": "Mount Kimbie",
+        "album": "The Sunset Violent",
+        "ano": 2026,
+        "genero": "indie rock / pós-punk / dream-pop / eletrônica",
+        "selo": "Warp Records",
+        "formato": "LP, Digital",
+        "olho": "A dupla britânica completa sua transição definitiva da eletrônica minimalista para o rock ensolarado e melancólico de guitarras.",
+        "texto": "Gravado na Califórnia com participações de King Krule, The Sunset Violent abraça sintetizadores analógicos empoeirados e melodias preguiçosas e viciantes.",
+        "resenha": [
+            "Dominic Maker e Kai Campos começaram no fim dos anos 2000 como pioneiros do que a crítica chamava de post-dubstep, mas The Sunset Violent confirma o Mount Kimbie como uma banda de indie rock autêntica e altamente sofisticada. Agora expandidos para um quarteto com Andrea Balency-Béarn e Marc Pell, eles viajaram para o deserto de Yucca Valley, na Califórnia, para compor um disco impregnado pela luz dourada do fim de tarde.",
+            "As guitarras são cheias de chorus e reverb, lembrando o pós-punk melódico do New Order e o shoegaze desbotado do Galaxie 500, mas a base rítmica carrega a precisão cirúrgica de quem passou anos programando sintetizadores e baterias eletrônicas. A colaboração com King Krule em 'Empty and Silent' e 'Boxing' adiciona a habitual aspereza existencial do ruivo londrino.",
+            "Há uma doçura melancólica em faixas como 'Dumb & Fill Me Up' que funciona maravilhosamente bem para ouvir enquanto se dirige ou se contempla a cidade pela janela. O equilíbrio entre peso, leveza e groove é impecável.",
+            "Um dos registros mais prazerosos e coesos da discografia do selo Warp em 2024."
+        ],
+        "faixas": [
+            "The Trail",
+            "Dumb & Fill Me Up",
+            "Shipwreck",
+            "Boxing (feat. King Krule)",
+            "Fishbrain",
+            "Empty and Silent"
+        ],
+        "recepcao": "Elogiado na Pitchfork, Resident Advisor e Crack Magazine.",
+        "ponte": "King Krule, New Order, Broadcast, Tirzah e Deerhunter.",
+        "spotify_id": "5kSmcj39eQiU76EbMGuxS2",
+        "spotify_url": "https://open.spotify.com/search/Mount%20Kimbie%20The%20Sunset%20Violent",
+        "onde": "Warp Records, Bandcamp, Spotify",
+        "capa": "capas/ecc51ba4c4c749f6a8155e90ddc285f5.jpg",
+        "youtube_id": "ek5p3bmsuBU",
+        "imagem": "capas/ecc51ba4c4c749f6a8155e90ddc285f5.jpg"
+    },
+    "2026-11--diiv-frog-in-boiling-water": {
+        "id": "2026-11--diiv-frog-in-boiling-water",
+        "edicao": "2026-11",
+        "ordem": 10,
+        "secao": "descobertas",
+        "artista": "DIIV",
+        "album": "Frog in Boiling Water",
+        "ano": 2026,
+        "genero": "shoegaze / pós-rock / slowcore / grunge",
+        "selo": "Fantasy Records",
+        "formato": "LP, Digital",
+        "olho": "Cole Smith e sua banda entregam uma metáfora sombria sobre o colapso climático e social em riffs lentos, densos e hipnóticos.",
+        "texto": "Com produção de Chris Coady, Frog in Boiling Water funde a afinação rebaixada do metal alternativo com a doçura melódica do dreampop.",
+        "resenha": [
+            "A fábula do sapo que não percebe que a água está esquentando até ser cozido vivo é a premissa conceitual que guia Frog in Boiling Water, quarto álbum de estúdio do DIIV. Deixando para trás as narrativas exclusivamente confessionais sobre sobriedade que marcaram Deceiver (2019), a banda do Brooklyn volta sua mira para o mal-estar civilizatório: o colapso ecológico, a brutalidade do capitalismo de vigilância e a apatia coletiva.",
+            "A evolução musical é impressionante. Cole Smith e Andrew Bailey constroem teias de guitarras que utilizam afinações graves (drop D e C), criando um peso quase metálico que dialoga tanto com o Deftones de White Pony quanto com o slowcore melancólico do Duster e o shoegaze épico do Hum.",
+            "Canções como 'Brown Paper Bag' e 'Soul-net' avançam como geleiras sonoras: lentas, majestosas e implacáveis. Os vocais soterrados de Smith soam como mensagens captadas por um rádio amador num cenário pós-apocalíptico, implorando por conexão humana genuína.",
+            "Um dos registros de rock mais sérios, maduros e politicamente densos lançados em 2024."
+        ],
+        "faixas": [
+            "In Amber",
+            "Brown Paper Bag",
+            "Raining on Your Pillow",
+            "Frog in Boiling Water",
+            "Everyone Out",
+            "Soul-net"
+        ],
+        "recepcao": "Nota 8.2 na Pitchfork, 4 estrelas na Kerrang! e aclamação no Stereogum.",
+        "ponte": "Deceiver, Duster, Hum, Deftones e My Bloody Valentine.",
+        "spotify_id": "2lSmcj39eQiU76EbMGuxS3",
+        "spotify_url": "https://open.spotify.com/search/DIIV%20Frog%20in%20Boiling%20Water",
+        "onde": "Fantasy Records, Bandcamp, Spotify",
+        "capa": "capas/6fd1b01617df70682ffa06faa9f301c0.jpg",
+        "youtube_id": "Pz8bJJSDD54",
+        "imagem": "capas/6fd1b01617df70682ffa06faa9f301c0.jpg"
+    },
+    "2026-11--friko-where-we-ve-been": {
+        "id": "2026-11--friko-where-we-ve-been",
+        "edicao": "2026-11",
+        "ordem": 11,
+        "secao": "descobertas",
+        "artista": "Friko",
+        "album": "Where we've been, Where we go from here",
+        "ano": 2026,
+        "genero": "indie rock / chamber rock / emo / pós-punk",
+        "selo": "ATO Records",
+        "formato": "LP, Digital",
+        "olho": "A energia explosiva e os coros teatrais de Chicago que resgatam o dinamismo do indie rock da virada dos anos 2000.",
+        "texto": "O duo de Chicago Niko Kapetan e Bailey Minzenberger entrega uma estreia fulgurante, alternando explosões ruidosas e orquestrações de câmara.",
+        "resenha": [
+            "De tempos em tempos surge uma banda que parece condensar toda a eletricidade e o desespero juvenil dos melhores momentos do rock independente. O Friko, projeto formado em Chicago por Niko Kapetan e pelo baterista Bailey Minzenberger, é exatamente isso. Em Where we've been, Where we go from here, lançado pela ATO Records, eles recuperam a urgência emocional e melódica de bandas como Arcade Fire (fase Funeral), Bright Eyes e The Walkmen.",
+            "O vocal de Kapetan é um instrumento extraordinário: ele sussurra com intimidade desarmante ao piano para, segundos depois, berrar a plenos pulmões enquanto guitarras distorcidas e pratos explodem ao seu redor. A faixa de abertura, 'Where We've Been', sintetiza essa montanha-russa dinâmica com precisão cirúrgica.",
+            "Além da potência do rock, há um cuidado camerístico refinado nos arranjos de cordas, cortesia de músicos convidados da rica cena clássica e avant-garde de Chicago. Canções como 'Crimson to Chrome' e 'Get Numb to It!' têm refrões que grudam na memória de imediato.",
+            "Uma das estreias mais empolgantes do indie rock americano em muitos anos."
+        ],
+        "faixas": [
+            "Where We've Been",
+            "Crimson to Chrome",
+            "Crashing Through",
+            "For Ella",
+            "Chemical",
+            "Get Numb to It!"
+        ],
+        "recepcao": "Destaque na Rolling Stone, Pitchfork e eleito um dos discos de estreia do ano pela Paste Magazine.",
+        "ponte": "Arcade Fire, Bright Eyes, The Walkmen e Neutral Milk Hotel.",
+        "spotify_id": "4myypnSDFC6PrjZRDYcBaC",
+        "spotify_url": "https://open.spotify.com/album/4myypnSDFC6PrjZRDYcBaC",
+        "onde": "ATO Records, Bandcamp, Spotify",
+        "capa": "capas/893b0cfb92c4c7e90bd4e45ec9654160.jpg",
+        "youtube_id": "FnxlHDCWGy8",
+        "imagem": "capas/893b0cfb92c4c7e90bd4e45ec9654160.jpg"
+    },
+    "2026-11--maruja-connla-s-well": {
+        "id": "2026-11--maruja-connla-s-well",
+        "edicao": "2026-11",
+        "ordem": 12,
+        "secao": "descobertas",
+        "artista": "Maruja",
+        "album": "Connla's Well",
+        "ano": 2026,
+        "genero": "jazz-punk / pós-rock / hardcore experimental",
+        "selo": "Autoprodução / Cargo",
+        "formato": "EP, Digital",
+        "olho": "Saxofone ensandecido, baixo esmagador e fúria operária de Manchester num dos manifestos mais pesados da nova cena britânica.",
+        "texto": "O quarteto de Manchester colide o jazz de John Coltrane com a violência do hardcore punk em faixas extensas e catárticas.",
+        "resenha": [
+            "Vindos dos bairros industriais de Manchester, o quarteto Maruja é uma daquelas anomalias que só a cena alternativa do norte da Inglaterra consegue produzir. Em Connla's Well, seu mais aclamado EP, eles dispensam concessões ao pop para criar uma muralha sonora visceral onde o saxofone alto de Joe Carroll não funciona como enfeite, mas como a principal arma melódica e ruidosa, duelando com a guitarra cortante de Harry Wilkinson.",
+            "As canções são construídas sobre andamentos longos de pós-rock e jazz contemporâneo que subitamente deságuam em explosões de pura fúria hardcore. O vocalista Harry Wilkinson canta e grita sobre saúde mental, trauma intergeracional e a hipocrisia das elites políticas britânicas com uma intensidade física quase insuportável.",
+            "A seção rítmica formada por Matt Buonaccorsi (baixo) e Jacob Hayes (bateria) tem uma musculatura impressionante, flertando com ritmos quebrados de trip-hop e d-beat punk sem perder o balanço hipnótico.",
+            "Indispensável para quem acompanha a vanguarda do jazz-punk ao lado de Black Country, New Road e The Comet Is Coming."
+        ],
+        "faixas": [
+            "The Invisible Man",
+            "Connla's Well",
+            "Zeitgeist",
+            "One Hand Behind the Back",
+            "Resisting Resistance"
+        ],
+        "recepcao": "Top 10 EPs do ano na NME e cobertura apaixonada no The Needle Drop (Anthony Fantano).",
+        "ponte": "Black Country, New Road, The Comet Is Coming, Godspeed You! Black Emperor e Fugazi.",
+        "spotify_id": "1mSmcj39eQiU76EbMGuxS4",
+        "spotify_url": "https://open.spotify.com/search/Maruja%20Connla%27s%20Well",
+        "onde": "Bandcamp, Spotify, Apple Music",
+        "capa": "capas/5e72f11b6fd716b4bcca3100a77c57a7.jpg",
+        "youtube_id": "VRtkoNBJRQo",
+        "imagem": "capas/5e72f11b6fd716b4bcca3100a77c57a7.jpg"
+    },
+    "2026-11--cindy-lee-diamond-jubilee": {
+        "id": "2026-11--cindy-lee-diamond-jubilee",
+        "edicao": "2026-11",
+        "ordem": 13,
+        "secao": "descobertas",
+        "artista": "Cindy Lee",
+        "album": "Diamond Jubilee",
+        "ano": 2026,
+        "genero": "hypnagogic pop / girl group noir / lo-fi guitar",
+        "selo": "Realistik Studios",
+        "formato": "Álbum duplo, Digital",
+        "olho": "Um monumento de duas horas de pop espectral dos anos 60 gravado em fita cassete pelo mentor do Women.",
+        "texto": "Patrick Flegel assina uma obra-prima monumental lançada fora de todas as plataformas convencionais, celebrada como um divisor de águas da música independente.",
+        "resenha": [
+            "O lançamento de Diamond Jubilee foi um dos acontecimentos mais singulares e mitológicos da música recente. Recusando os contratos com os grandes serviços de streaming corporativo, Patrick Flegel (ex-guitarrista e vocalista do lendário grupo canadense Women) disponibilizou este álbum duplo de duas horas apenas em seu site pessoal, via download gratuito no GeoCities e no YouTube.",
+            "A música que habita essas 32 faixas parece ter sido resgatada de uma estação de rádio fantasma transmitindo de 1963. Guitarras elétricas banhadas em eco de mola, harmonias vocais sussurradas de girl-groups à la The Ronettes e The Shangri-Las, e melodias de veludo noir que oscilam entre a mais doce ternura e a mais gélida desolação.",
+            "Flegel é um dos guitarristas mais inventivos de sua geração: seus timbres limpos têm a limpidez dos primeiros discos da Motown, mas de repente são rasgados por solos de distorção estridente que lembram The Velvet Underground. Cada vinheta soa como uma memória esquecida numa fita cassete encontrada num brechó.",
+            "Um monumento artístico colossal que desafiou toda a lógica da indústria contemporânea e venceu por puro mérito estético."
+        ],
+        "faixas": [
+            "Diamond Jubilee",
+            "Glitz",
+            "Baby Blue",
+            "Dreams of You",
+            "All I Want Is You",
+            "Dallas",
+            "Kingdom Come"
+        ],
+        "recepcao": "A nota mais alta concedida pela Pitchfork em quatro anos (9.1 - Best New Music) e cobertura histórica em jornais de todo o mundo.",
+        "ponte": "Women, The Velvet Underground, Broadcast, The Ronettes e Ariel Pink.",
+        "spotify_id": "6mSmcj39eQiU76EbMGuxS5",
+        "spotify_url": "https://open.spotify.com/search/Cindy%20Lee%20Diamond%20Jubilee",
+        "onde": "Realistik Studios, YouTube, Bandcamp",
+        "capa": "capas/4a7bd7633bad7a5265ac02b659cef219.jpg",
+        "youtube_id": "_LJi5na897Y",
+        "imagem": "capas/4a7bd7633bad7a5265ac02b659cef219.jpg"
     },
     "2026-11--negro-leo-desejo-do-labirinto": {
         "id": "2026-11--negro-leo-desejo-do-labirinto",
@@ -459,7 +974,7 @@ MUSICA_ITENS = {
         "secao": "brasil",
         "artista": "Negro Léo",
         "album": "Desejo do Labirinto",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "free funk / canção torta / jazz experimental carioca",
         "selo": "QTV Selo",
         "formato": "LP, Digital",
@@ -471,12 +986,22 @@ MUSICA_ITENS = {
             "Sua métrica é única: versos que atropelam a quadratura tradicional para encaixar conceitos de filosofia política, gírias da Zona Norte e imagens de sonho e pesadelo urbano. Canções como 'Labirinto Fixo' e 'Corte Seco' operam como pequenos ensaios sonoros sobre a vertigem do presente.",
             "Um disco desafiador e essencial para quem procura música sem concessões, feita com inteligência e sangue na boca."
         ],
-        "faixas": ["Labirinto Fixo", "Corte Seco", "Antena Paranoica", "Rua Sem Nome", "Voz de Fita", "Ouro Branco"],
+        "faixas": [
+            "Labirinto Fixo",
+            "Corte Seco",
+            "Antena Paranoica",
+            "Rua Sem Nome",
+            "Voz de Fita",
+            "Ouro Branco"
+        ],
         "recepcao": "Destaque nos cadernos de cultura do Rio e reverenciado por músicos como Caetano Veloso e Arnaldo Antunes.",
         "ponte": "Itamar Assumpção, Tom Zé, Ornette Coleman, Tantão e os Fita e Jorge Mautner.",
         "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
         "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6",
-        "onde": "QTV Selo, Bandcamp, Spotify"
+        "onde": "QTV Selo, Bandcamp, Spotify",
+        "capa": "capas/505a32057542d18eafe3d2dfc454162b.jpg",
+        "youtube_id": "JUeJuyR6XSQ",
+        "imagem": "capas/505a32057542d18eafe3d2dfc454162b.jpg"
     },
     "2026-11--sophia-chablau-em-busca-da-batida": {
         "id": "2026-11--sophia-chablau-em-busca-da-batida",
@@ -485,7 +1010,7 @@ MUSICA_ITENS = {
         "secao": "brasil",
         "artista": "Sophia Chablau e Uma Enorme Perda de Tempo",
         "album": "Música do Esquecimento",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "noise pop / art-punk / canção paulistana",
         "selo": "Selo Risco",
         "formato": "LP, Digital",
@@ -497,12 +1022,22 @@ MUSICA_ITENS = {
             "As letras de Sophia traduzem com precisão quase documental as angústias de uma juventude urbana que lida com aluguéis abusivos, términos de relacionamento pelo WhatsApp e a sensação permanente de estar atrasada para um trem que já partiu.",
             "Um disco cativante, corajoso e cheio de personalidade que reafirma a vitalidade da cena independente brasileira."
         ],
-        "faixas": ["Segredo", "Deus", "Quem Me Dera", "Baby", "O Que Você Quiser", "As Coisas São Assim"],
+        "faixas": [
+            "Segredo",
+            "Deus",
+            "Quem Me Dera",
+            "Baby",
+            "O Que Você Quiser",
+            "As Coisas São Assim"
+        ],
         "recepcao": "Aclamado na imprensa paulistana e presença constante nos festivais de música independente de todo o país.",
         "ponte": "Os Mutantes, Sonic Youth, Carne Doce, O Terno e Pato Fu.",
         "spotify_id": "7mSmcj39eQiU76EbMGuxS6",
         "spotify_url": "https://open.spotify.com/search/Sophia%20Chablau%20Musica%20do%20Esquecimento",
-        "onde": "Selo Risco, Bandcamp, Spotify"
+        "onde": "Selo Risco, Bandcamp, Spotify",
+        "capa": "capas/2bf2803db89929e08db28e2f6bad9080.jpg",
+        "youtube_id": "DfJnsP3ykbQ",
+        "imagem": "capas/2bf2803db89929e08db28e2f6bad9080.jpg"
     },
     "2026-11--amaro-freitas-y-y": {
         "id": "2026-11--amaro-freitas-y-y",
@@ -511,7 +1046,7 @@ MUSICA_ITENS = {
         "secao": "brasil",
         "artista": "Amaro Freitas",
         "album": "Y'Y",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "jazz contemporâneo / piano preparado / música amazônica",
         "selo": "Psychic Hotline",
         "formato": "LP, Digital",
@@ -523,15 +1058,23 @@ MUSICA_ITENS = {
             "As participações do saxofonista britânico Shabaka Hutchings (flauta indígena) e do guitarrista americano Jeff Parker (Tortoise) em faixas como 'Uiara' e 'Gloriosa' enriquecem um álbum que é tanto uma homenagem aos povos originários quanto um tour de force pianístico.",
             "Uma experiência de audição transcendente que coloca a música instrumental brasileira na vanguarda do jazz global."
         ],
-        "faixas": ["Mapinguari", "Uiara", "Dança dos Martelos", "Y'Y", "Mar de Rosas", "Encantados"],
+        "faixas": [
+            "Mapinguari",
+            "Uiara",
+            "Dança dos Martelos",
+            "Y'Y",
+            "Mar de Rosas",
+            "Encantados"
+        ],
         "recepcao": "Eleito um dos melhores álbuns de jazz de 2024 pelo The New York Times, DownBeat e The Guardian.",
         "ponte": "Hermeto Pascoal, Naná Vasconcelos, Shabaka Hutchings e John Cage.",
         "spotify_id": "8mSmcj39eQiU76EbMGuxS7",
         "spotify_url": "https://open.spotify.com/search/Amaro%20Freitas%20Y%27Y",
-        "onde": "Psychic Hotline, Spotify, Bandcamp"
+        "onde": "Psychic Hotline, Spotify, Bandcamp",
+        "capa": "capas/d58c27265adc560f6a7b6e785c74d091.jpg",
+        "youtube_id": "s-_CbwOYBkg",
+        "imagem": "capas/d58c27265adc560f6a7b6e785c74d091.jpg"
     },
-
-    # --- SEÇÃO EM BREVE ---
     "2026-11--geese-live-third-man": {
         "id": "2026-11--geese-live-third-man",
         "edicao": "2026-11",
@@ -551,12 +1094,22 @@ MUSICA_ITENS = {
             "O repertório do show inclui versões estendidas e ainda mais selvagens de 'Cowboy Nudes' e '3D Country', onde os duelos de guitarras de Emily Green e Foster Hudson atingem níveis de virtuosismo e sujeira irresistíveis.",
             "Um lançamento aguardadíssimo que promete se tornar o documento definitivo da força de palco da banda."
         ],
-        "faixas": ["2122", "3D Country", "Cowboy Nudes", "I See Myself", "Mysterious Love", "Gravity Blues"],
+        "faixas": [
+            "2122",
+            "3D Country",
+            "Cowboy Nudes",
+            "I See Myself",
+            "Mysterious Love",
+            "Gravity Blues"
+        ],
         "recepcao": "Apresentação aclamada pelos críticos presentes e pré-vendas esgotadas em minutos.",
         "ponte": "Parquet Courts, Television, The Rolling Stones (fase Exile) e Black Midi.",
         "spotify_id": "4VqF3tU3Fw3k6nO0Lz2j9n",
         "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n",
-        "onde": "Third Man Records, Spotify"
+        "onde": "Third Man Records, Spotify",
+        "capa": "capas/e6cf053a0d02f3c199cc3cf5ed581596.jpg",
+        "youtube_id": "9HN0VuyMW-s",
+        "imagem": "capas/e6cf053a0d02f3c199cc3cf5ed581596.jpg"
     },
     "2026-11--panda-bear-sinister-grift": {
         "id": "2026-11--panda-bear-sinister-grift",
@@ -577,23 +1130,31 @@ MUSICA_ITENS = {
             "As letras refletem sobre maturidade, paternidade e a necessidade de cultivar a calma interior num planeta acelerado demais. As primeiras prévias apontam para um clássico instantâneo na linhagem de Person Pitch (2007).",
             "Fique atento: o primeiro grande disco de psicodelia de 2025 já tem data para aterrissar."
         ],
-        "faixas": ["Praise", "Anywhere Outside", "50mg", "Ends Meet", "Ferry Lady", "Defence"],
+        "faixas": [
+            "Praise",
+            "Anywhere Outside",
+            "50mg",
+            "Ends Meet",
+            "Ferry Lady",
+            "Defence"
+        ],
         "recepcao": "Aguardado com enorme expectativa pela imprensa internacional e fãs de Animal Collective.",
         "ponte": "Animal Collective, The Beach Boys, Brian Wilson e Arthur Russell.",
         "spotify_id": "9mSmcj39eQiU76EbMGuxS8",
         "spotify_url": "https://open.spotify.com/search/Panda%20Bear%20Sinister%20Grift",
-        "onde": "Domino Recording Co., Bandcamp, Spotify"
-    }
-,
-
-"2026-11--adrianne-lenker-bright-future": {
+        "onde": "Domino Recording Co., Bandcamp, Spotify",
+        "capa": "capas/5c32a996a45e02421d516d43e1a85f42.jpg",
+        "youtube_id": "MhNGN4SnRZM",
+        "imagem": "capas/5c32a996a45e02421d516d43e1a85f42.jpg"
+    },
+    "2026-11--adrianne-lenker-bright-future": {
         "id": "2026-11--adrianne-lenker-bright-future",
         "edicao": "2026-11",
-        "ordem": 9,
+        "ordem": 10,
         "secao": "radar",
         "artista": "Adrianne Lenker",
         "album": "Bright Future",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "indie folk / avant-folk",
         "selo": "4AD",
         "formato": "LP, Digital",
@@ -605,21 +1166,31 @@ MUSICA_ITENS = {
             "Ao longo das doze faixas, Lenker transita entre o sussurro confessional e o grito contido com a desenvoltura dos grandes mestres do folk americano, de Townes Van Zandt a Joni Mitchell, mas com um vocabulário moderno, desavergonhado e livre.",
             "Um dos registros mais comoventes e duradouros da década, que recompensa cada audição atenta com novas nuances de ruído e ternura."
         ],
-        "faixas": ["Real House", "Sadness As A Gift", "Fool", "Free Treasure", "Vampire Empire", "Ruined"],
+        "faixas": [
+            "Real House",
+            "Sadness As A Gift",
+            "Fool",
+            "Free Treasure",
+            "Vampire Empire",
+            "Ruined"
+        ],
         "recepcao": "Best New Music na Pitchfork com nota 8.8; amplamente considerado um dos pontos mais altos da discografia de Lenker.",
         "ponte": "Big Thief, Joni Mitchell, Nick Drake, Vashti Bunyan e Lucinda Williams.",
         "spotify_id": "3Z8GgT0gqXbLpD0kLz2j9n",
         "spotify_url": "https://open.spotify.com/search/Adrianne%20Lenker%20Bright%20Future",
-        "onde": "4AD, Spotify, Bandcamp"
+        "onde": "4AD, Spotify, Bandcamp",
+        "capa": "capas/f00dc643a64dd8528d34da6bf2809b76.jpg",
+        "youtube_id": "av2CwXbx6oU",
+        "imagem": "capas/f00dc643a64dd8528d34da6bf2809b76.jpg"
     },
     "2026-11--nick-cave-wild-god": {
         "id": "2026-11--nick-cave-wild-god",
         "edicao": "2026-11",
-        "ordem": 10,
+        "ordem": 11,
         "secao": "radar",
         "artista": "Nick Cave & The Bad Seeds",
         "album": "Wild God",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "art rock / gospel / post-punk",
         "selo": "Bad Seed Ltd / Play It Again Sam",
         "formato": "LP, Digital",
@@ -631,21 +1202,31 @@ MUSICA_ITENS = {
             "Liricamente, Cave caminha entre a memória dos filhos perdidos e a constatação milagrosa de que o mundo continua a girar com beleza implacável. Ele não nega a dor; transforma-a em combustível para uma liturgia de louvor à existência.",
             "Um disco monumental de uma banda veterana que se recusa categoricamente a viver de glórias passadas."
         ],
-        "faixas": ["Song of the Lake", "Wild God", "Frogs", "Joy", "Conversion", "As the Waters Cover the Sea"],
+        "faixas": [
+            "Song of the Lake",
+            "Wild God",
+            "Frogs",
+            "Joy",
+            "Conversion",
+            "As the Waters Cover the Sea"
+        ],
         "recepcao": "Elogiado com cinco estrelas no The Guardian e The Independent; apontado como o melhor disco da banda desde Push the Sky Away.",
         "ponte": "Leonard Cohen, The Bad Seeds clássico, Scott Walker, gospel americano e Spiritualized.",
         "spotify_id": "4mSmcj39eQiU76EbMGuxS1",
         "spotify_url": "https://open.spotify.com/search/Nick%20Cave%20Wild%20God",
-        "onde": "Bad Seed Ltd, PIAS, Spotify"
+        "onde": "Bad Seed Ltd, PIAS, Spotify",
+        "capa": "capas/e5897994842fa7c12cc47e06dfdbf3e8.jpg",
+        "youtube_id": "tEtMCSIgLGI",
+        "imagem": "capas/e5897994842fa7c12cc47e06dfdbf3e8.jpg"
     },
     "2026-11--kim-deal-nobody-loves-you-more": {
         "id": "2026-11--kim-deal-nobody-loves-you-more",
         "edicao": "2026-11",
-        "ordem": 11,
+        "ordem": 12,
         "secao": "radar",
         "artista": "Kim Deal",
         "album": "Nobody Loves You More",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "alt-rock / indie pop / chamber pop",
         "selo": "4AD",
         "formato": "LP, Digital",
@@ -657,21 +1238,31 @@ MUSICA_ITENS = {
             "Faixas como 'Crystal Breath' flertam com batidas eletrônicas tortas, enquanto 'Coast' e 'Are You Mine?' trazem aquela doçura agridoce que só Kim sabe entoar, cantando sobre praias de Massachusetts, cigarros e a passagem do tempo.",
             "Uma celebração calorosa da mulher que ensinou o rock dos anos 1990 a sorrir sem perder os dentes afiados."
         ],
-        "faixas": ["Nobody Loves You More", "Coast", "Crystal Breath", "Are You Mine?", "Disobedience", "A Good Time Pushed"],
+        "faixas": [
+            "Nobody Loves You More",
+            "Coast",
+            "Crystal Breath",
+            "Are You Mine?",
+            "Disobedience",
+            "A Good Time Pushed"
+        ],
         "recepcao": "Aclamação crítica unânime nos EUA e Europa, destacando a longevidade e vigor autoral da compositora de Dayton.",
         "ponte": "The Breeders, Pixies, Throwing Muses, PJ Harvey e Sleater-Kinney.",
         "spotify_id": "5mSmcj39eQiU76EbMGuxS2",
         "spotify_url": "https://open.spotify.com/search/Kim%20Deal%20Nobody%20Loves%20You%20More",
-        "onde": "4AD, Spotify, Apple Music"
+        "onde": "4AD, Spotify, Apple Music",
+        "capa": "capas/fe6613b990977b77e27700f7cad35b26.jpg",
+        "youtube_id": "osOWmt5YYuw",
+        "imagem": "capas/fe6613b990977b77e27700f7cad35b26.jpg"
     },
     "2026-11--mannequin-pussy-i-got-heaven": {
         "id": "2026-11--mannequin-pussy-i-got-heaven",
         "edicao": "2026-11",
-        "ordem": 12,
+        "ordem": 13,
         "secao": "radar",
         "artista": "Mannequin Pussy",
         "album": "I Got Heaven",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "punk rock / grunge / screamo-pop",
         "selo": "Epitaph",
         "formato": "LP, Digital",
@@ -683,21 +1274,31 @@ MUSICA_ITENS = {
             "A guitarra de Kaleen Reading e a bateria rápida mantêm uma tração frenética, mas o disco também ousa desacelerar em baladas pós-grunge carregadas de sintetizadores sutis, demonstrando uma maturidade composicional impecável.",
             "Uma injeção de adrenalina pura e necessária para chacoalhar qualquer complacência musical."
         ],
-        "faixas": ["I Got Heaven", "Loud Bark", "Nothing Hurt", "Sometimes", "Softly", "Split/Desire"],
+        "faixas": [
+            "I Got Heaven",
+            "Loud Bark",
+            "Nothing Hurt",
+            "Sometimes",
+            "Softly",
+            "Split/Desire"
+        ],
         "recepcao": "Nota 8.6 e Best New Music na Pitchfork; eleito o disco de rock do primeiro semestre por veículos como Stereogum e Kerrang!.",
         "ponte": "Bikini Kill, Sleater-Kinney, Yeah Yeah Yeahs e Idles.",
         "spotify_id": "6mSmcj39eQiU76EbMGuxS3",
         "spotify_url": "https://open.spotify.com/search/Mannequin%20Pussy%20I%20Got%20Heaven",
-        "onde": "Epitaph Records, Spotify, Bandcamp"
+        "onde": "Epitaph Records, Spotify, Bandcamp",
+        "capa": "capas/8d8eea87a2b002afc69e231993b4ec46.jpg",
+        "youtube_id": "PpmNT3STSWk",
+        "imagem": "capas/8d8eea87a2b002afc69e231993b4ec46.jpg"
     },
     "2026-11--jack-white-no-name": {
         "id": "2026-11--jack-white-no-name",
         "edicao": "2026-11",
-        "ordem": 13,
+        "ordem": 14,
         "secao": "radar",
         "artista": "Jack White",
         "album": "No Name",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "garage rock / blues-punk",
         "selo": "Third Man Records",
         "formato": "LP, Digital",
@@ -709,21 +1310,31 @@ MUSICA_ITENS = {
             "Músicas como 'Old Scratch Blues', 'That's How I'm Feeling' e 'Bombing Out' têm o DNA selvagem de De Stijl e Elephant. A bateria pesada e as linhas de baixo primitivas servem de pista para solos em espiral que rangem nos falantes.",
             "A prova definitiva de que o rock de garagem, quando executado com convicção e sangue nos olhos, é imune ao envelhecimento."
         ],
-        "faixas": ["Old Scratch Blues", "Bless Yourself", "That's How I'm Feeling", "It's Rough on Rats", "Archbishop Harold Holmes", "Bombing Out"],
+        "faixas": [
+            "Old Scratch Blues",
+            "Bless Yourself",
+            "That's How I'm Feeling",
+            "It's Rough on Rats",
+            "Archbishop Harold Holmes",
+            "Bombing Out"
+        ],
         "recepcao": "Aclamado universalmente como o melhor trabalho solo de Jack White, resgatando a admiração de fãs das antigas e críticos exigentes.",
         "ponte": "The White Stripes, The Stooges, Led Zeppelin I e The Black Keys.",
         "spotify_id": "7mSmcj39eQiU76EbMGuxS4",
         "spotify_url": "https://open.spotify.com/search/Jack%20White%20No%20Name",
-        "onde": "Third Man Records, Spotify, Apple Music"
+        "onde": "Third Man Records, Spotify, Apple Music",
+        "capa": "capas/7e966bf03e4e3bf7eccc8a06ede3b033.jpg",
+        "youtube_id": "xviKHjc89DQ",
+        "imagem": "capas/7e966bf03e4e3bf7eccc8a06ede3b033.jpg"
     },
     "2026-11--jessica-pratt-here-in-the-pitch": {
         "id": "2026-11--jessica-pratt-here-in-the-pitch",
         "edicao": "2026-11",
-        "ordem": 14,
+        "ordem": 15,
         "secao": "radar",
         "artista": "Jessica Pratt",
         "album": "Here in the Pitch",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "baroque pop / psychedelic folk / bossa noir",
         "selo": "Mexican Summer",
         "formato": "LP, Digital",
@@ -735,15 +1346,23 @@ MUSICA_ITENS = {
             "Em 'Life Is', a faixa de abertura, a bateria tropeça num ritmo envolvente enquanto cordas fantasmagóricas anunciam a chegada de uma narradora que encara o absurdo da existência com ironia refinada. Já 'World on a String' e 'The Last Year' soam como canções de ninar para o fim dos tempos.",
             "Um disco curto (apenas 27 minutos), mas de densidade estética assombrosa, feito sob medida para audições noturnas em fones de alta fidelidade."
         ],
-        "faixas": ["Life Is", "Better Hate", "World on a String", "Get Won't Turn Around", "Nowhere It Was", "The Last Year"],
+        "faixas": [
+            "Life Is",
+            "Better Hate",
+            "World on a String",
+            "Get Won't Turn Around",
+            "Nowhere It Was",
+            "The Last Year"
+        ],
         "recepcao": "Best New Music e nota 8.8 na Pitchfork; eleito unanimemente um dos três melhores álbuns de 2024 por veículos britânicos e americanos.",
         "ponte": "Astrud Gilberto, Broadcast, Nico, Linda Perhacs e The Beach Boys.",
         "spotify_id": "8mSmcj39eQiU76EbMGuxS5",
         "spotify_url": "https://open.spotify.com/search/Jessica%20Pratt%20Here%20in%20the%20Pitch",
-        "onde": "Mexican Summer, Bandcamp, Spotify"
+        "onde": "Mexican Summer, Bandcamp, Spotify",
+        "capa": "capas/f90bd11cf599f1a9dac280938bc6b0fa.jpg",
+        "youtube_id": "QaXe9zAa3r4",
+        "imagem": "capas/f90bd11cf599f1a9dac280938bc6b0fa.jpg"
     },
-
-    # --- DESCOBERTAS ADICIONAIS ---
     "2026-11--been-stellar-scream-from-new-york-ny": {
         "id": "2026-11--been-stellar-scream-from-new-york-ny",
         "edicao": "2026-11",
@@ -751,7 +1370,7 @@ MUSICA_ITENS = {
         "secao": "descobertas",
         "artista": "Been Stellar",
         "album": "Scream from New York, NY",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "post-punk / shoegaze / indie rock",
         "selo": "Dirty Hit",
         "formato": "LP, Digital",
@@ -763,12 +1382,22 @@ MUSICA_ITENS = {
             "O vocalista Sam Slocum canta sobre a solidão em vagões de metrô lotados, o esgotamento dos trabalhos precários e a sensação de que o futuro foi cancelado antes mesmo de começar. Canções como 'Passing Train' e 'All In One' têm o impacto emocional de um clássico instantâneo.",
             "Um disco vigoroso que recoloca a metrópole americana no mapa do pós-punk contemporâneo."
         ],
-        "faixas": ["Start Again", "Passing Train", "Pumpkin", "Scream from New York, NY", "Sweet", "All In One"],
+        "faixas": [
+            "Start Again",
+            "Passing Train",
+            "Pumpkin",
+            "Scream from New York, NY",
+            "Sweet",
+            "All In One"
+        ],
         "recepcao": "Elogiado calorosamente pelo NME, DIY Magazine e The Line of Best Fit como uma das estreias mais promissoras da temporada.",
         "ponte": "Sonic Youth, The Strokes, Fontaines D.C., Interpol e My Bloody Valentine.",
         "spotify_id": "1mSmcj39eQiU76EbMGuxS6",
         "spotify_url": "https://open.spotify.com/search/Been%20Stellar%20Scream%20from%20New%20York%2C%20NY",
-        "onde": "Dirty Hit, Spotify, Apple Music"
+        "onde": "Dirty Hit, Spotify, Apple Music",
+        "capa": "capas/a5e83e05dda860ad1c27fe3410c978fa.jpg",
+        "youtube_id": "J1qZAfiemoc",
+        "imagem": "capas/a5e83e05dda860ad1c27fe3410c978fa.jpg"
     },
     "2026-11--hotline-tnt-cartwheel": {
         "id": "2026-11--hotline-tnt-cartwheel",
@@ -777,7 +1406,7 @@ MUSICA_ITENS = {
         "secao": "descobertas",
         "artista": "Hotline TNT",
         "album": "Cartwheel",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "shoegaze / fuzz pop / indie rock",
         "selo": "Third Man Records",
         "formato": "LP, Digital",
@@ -789,12 +1418,22 @@ MUSICA_ITENS = {
             "Liricamente, Anderson trata de amores de verão, mensagens não respondidas e a preguiça sublime de tardes sem nada para fazer, tudo embalado por harmonias vocais ensolaradas que emergem da névoa de decibéis em faixas como 'Protocol' e 'I Thought You'd Change'.",
             "Uma celebração descarada do volume alto que faz qualquer amante de guitarras sorrir imediatamente."
         ],
-        "faixas": ["Protocol", "I Thought You'd Change", "Beauty School", "Maxine", "Out of Time", "Spot Me"],
+        "faixas": [
+            "Protocol",
+            "I Thought You'd Change",
+            "Beauty School",
+            "Maxine",
+            "Out of Time",
+            "Spot Me"
+        ],
         "recepcao": "Best New Music na Pitchfork e presença constante nas listas de melhores de rock alternativo do ano.",
         "ponte": "Teenage Fanclub, My Bloody Valentine, Dinosaur Jr. e Swervedriver.",
         "spotify_id": "2mSmcj39eQiU76EbMGuxS7",
         "spotify_url": "https://open.spotify.com/search/Hotline%20TNT%20Cartwheel",
-        "onde": "Third Man Records, Bandcamp, Spotify"
+        "onde": "Third Man Records, Bandcamp, Spotify",
+        "capa": "capas/b2a07f82861ff1ff4664c9d6da7a05d3.jpg",
+        "youtube_id": "TNV39-UULQE",
+        "imagem": "capas/b2a07f82861ff1ff4664c9d6da7a05d3.jpg"
     },
     "2026-11--bar-italia-the-twits": {
         "id": "2026-11--bar-italia-the-twits",
@@ -803,7 +1442,7 @@ MUSICA_ITENS = {
         "secao": "descobertas",
         "artista": "Bar Italia",
         "album": "The Twits",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "post-punk / art rock / slacker pop",
         "selo": "Matador",
         "formato": "LP, Digital",
@@ -815,12 +1454,22 @@ MUSICA_ITENS = {
             "As guitarras têm a afinação torta e o reverb espacial do post-punk britânico do início dos anos 1980 (The Cure fase Seventeen Seconds, Young Marble Giants), mas com uma insolência novaiorquina à la Sonic Youth. Faixas como 'my little tony' e 'world's greatest emoter' possuem uma cadência preguiçosa e viciante.",
             "Um álbum sedutor e esquisito na medida certa, que prova que o mistério e a contenção ainda têm lugar de destaque no rock."
         ],
-        "faixas": ["my little tony", "Real house wibes (unregistered 2)", "twist", "world's greatest emoter", "calm down with me", "Jelsy"],
+        "faixas": [
+            "my little tony",
+            "Real house wibes (unregistered 2)",
+            "twist",
+            "world's greatest emoter",
+            "calm down with me",
+            "Jelsy"
+        ],
         "recepcao": "Aclamação unânime na imprensa musical do Reino Unido, com turnês com ingressos esgotados por toda a Europa.",
         "ponte": "The Cure, Sonic Youth, Blonde Redhead, Young Marble Giants e Pavement.",
         "spotify_id": "3mSmcj39eQiU76EbMGuxS8",
         "spotify_url": "https://open.spotify.com/search/Bar%20Italia%20The%20Twits",
-        "onde": "Matador Records, Spotify, Bandcamp"
+        "onde": "Matador Records, Spotify, Bandcamp",
+        "capa": "capas/1d8e5f705f49c617ff3af7f403a7f465.jpg",
+        "youtube_id": "Cne81F3fxDo",
+        "imagem": "capas/1d8e5f705f49c617ff3af7f403a7f465.jpg"
     },
     "2026-11--ml-buch-suntub": {
         "id": "2026-11--ml-buch-suntub",
@@ -829,7 +1478,7 @@ MUSICA_ITENS = {
         "secao": "descobertas",
         "artista": "ML Buch",
         "album": "Suntub",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "dream pop / ambient rock / cyber-folk",
         "selo": "15 love",
         "formato": "2xLP, Digital",
@@ -841,12 +1490,22 @@ MUSICA_ITENS = {
             "Em temas como 'Flames disgustet', 'Well bucket' e 'Fleshless hand', as guitarras dedilhadas dobram-se em reverbs cintilantes que lembram o melhor de Cocteau Twins e Arthur Russell, mas com uma arquitetura sônica futurista absolutamente singular.",
             "Uma experiência imersiva de audição que acalma a mente e expande os horizontes da música com guitarras."
         ],
-        "faixas": ["Panflats", "Somewhere", "High day", "Flames disgustet", "Well bucket", "Fleshless hand"],
+        "faixas": [
+            "Panflats",
+            "Somewhere",
+            "High day",
+            "Flames disgustet",
+            "Well bucket",
+            "Fleshless hand"
+        ],
         "recepcao": "Fenômeno de culto internacional; eleito um dos discos da década por fóruns de audiófilos e publicações independentes.",
         "ponte": "Arthur Russell, Cocteau Twins, Tirzah, Oneohtrix Point Never e Blue Nile.",
         "spotify_id": "4mSmcj39eQiU76EbMGuxS9",
         "spotify_url": "https://open.spotify.com/search/ML%20Buch%20Suntub",
-        "onde": "15 love, Bandcamp, Spotify"
+        "onde": "15 love, Bandcamp, Spotify",
+        "capa": "capas/5b70f514dcbd6c9255dac99d11ddd78b.jpg",
+        "youtube_id": "GPkJtZMvl4s",
+        "imagem": "capas/5b70f514dcbd6c9255dac99d11ddd78b.jpg"
     },
     "2026-11--tramhaus-the-first-few": {
         "id": "2026-11--tramhaus-the-first-few",
@@ -855,7 +1514,7 @@ MUSICA_ITENS = {
         "secao": "descobertas",
         "artista": "Tramhaus",
         "album": "The First Few",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "post-punk / noise rock / rotterdam underground",
         "selo": "Subroutine",
         "formato": "LP, Digital",
@@ -867,12 +1526,22 @@ MUSICA_ITENS = {
             "O vocalista Lukas Jansen atua como um mestre de cerimônias elétrico, vociferando contra a especulação imobiliária, a burocracia europeia e o tédio cotidiano com uma intensidade física avassaladora.",
             "Um disco cru e pulsante, feito para ser ouvido em volume máximo para despertar qualquer sala sonolenta."
         ],
-        "faixas": ["The Cause", "Beech", "Minus Twenty", "Flea Market", "Make It Happen", "Semiotics"],
+        "faixas": [
+            "The Cause",
+            "Beech",
+            "Minus Twenty",
+            "Flea Market",
+            "Make It Happen",
+            "Semiotics"
+        ],
         "recepcao": "Elogiado na rádio KEXP e em festivais como Eurosonic e Levitation; aposta máxima da cena holandesa.",
         "ponte": "Gang of Four, The Fall, Shame, Idles e Fontaines D.C..",
         "spotify_id": "5mSmcj39eQiU76EbMGuxS0",
         "spotify_url": "https://open.spotify.com/search/Tramhaus%20The%20First%20Few",
-        "onde": "Subroutine Records, Bandcamp, Spotify"
+        "onde": "Subroutine Records, Bandcamp, Spotify",
+        "capa": "capas/324ed0c96228589a94c196111e99c3cd.jpg",
+        "youtube_id": "nVCh5-h6K8Y",
+        "imagem": "capas/324ed0c96228589a94c196111e99c3cd.jpg"
     },
     "2026-11--sprints-letter-to-self": {
         "id": "2026-11--sprints-letter-to-self",
@@ -881,7 +1550,7 @@ MUSICA_ITENS = {
         "secao": "descobertas",
         "artista": "SPRINTS",
         "album": "Letter to Self",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "garage punk / noise / post-punk irlandês",
         "selo": "City Slang",
         "formato": "LP, Digital",
@@ -893,15 +1562,23 @@ MUSICA_ITENS = {
             "As letras de Chubb não têm filtros: ela escreve sobre ataques de pânico, a sensação de não pertencer a nenhum gênero pré-fabricado e a raiva diante do conservadorismo social, transformando a fragilidade em escudo e lança.",
             "Um álbum catártico e libertador que confirma o quarteto irlandês como uma força motriz imparável."
         ],
-        "faixas": ["Ticking", "Heavy", "Cathedral", "Shadow of a Doubt", "Literary Mind", "Up and Comer"],
+        "faixas": [
+            "Ticking",
+            "Heavy",
+            "Cathedral",
+            "Shadow of a Doubt",
+            "Literary Mind",
+            "Up and Comer"
+        ],
         "recepcao": "Aclamado pelo The Guardian, Rolling Stone UK e Kerrang!; presença cativa nos festivais de verão britânicos.",
         "ponte": "Gilla Band, Pixies, Amyl and the Sniffers, Savages e Fontaines D.C..",
         "spotify_id": "6mSmcj39eQiU76EbMGuxS1",
         "spotify_url": "https://open.spotify.com/search/SPRINTS%20Letter%20to%20Self",
-        "onde": "City Slang, Spotify, Bandcamp"
+        "onde": "City Slang, Spotify, Bandcamp",
+        "capa": "capas/e778517b458642eaa3b113f0eb2845fe.jpg",
+        "youtube_id": "BOrCWngGQEU",
+        "imagem": "capas/e778517b458642eaa3b113f0eb2845fe.jpg"
     },
-
-    # --- BRASIL ADICIONAL ---
     "2026-11--jadsa-joao-milet-meirelles-taxidermia-vol-3": {
         "id": "2026-11--jadsa-joao-milet-meirelles-taxidermia-vol-3",
         "edicao": "2026-11",
@@ -909,7 +1586,7 @@ MUSICA_ITENS = {
         "secao": "brasil",
         "artista": "Jadsa & João Milet Meirelles",
         "album": "Taxidermia Vol. 3",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "avant-pop / afro-rock / música eletrônica baiana",
         "selo": "Selo Risco",
         "formato": "LP, Digital",
@@ -921,12 +1598,22 @@ MUSICA_ITENS = {
             "Canções como 'Vera Cruz' e 'Goma' equilibram poesia experimental com uma pulsação rítmica dançante que desafia as categorizações fáceis da MPB tradicional. É música feita com o suor da rua e o cérebro afiado na tecnologia.",
             "Um disco fundamental para entender os novos caminhos da música contemporânea brasileira."
         ],
-        "faixas": ["Vera Cruz", "Goma", "Quebra Cabeça", "Carne Viva", "Solar", "Transe"],
+        "faixas": [
+            "Vera Cruz",
+            "Goma",
+            "Quebra Cabeça",
+            "Carne Viva",
+            "Solar",
+            "Transe"
+        ],
         "recepcao": "Celebrado pela crítica cultural brasileira e apontado como um dos trabalhos mais originais do ano pelo Prêmio Multishow e APCA.",
         "ponte": "BaianaSystem, Itamar Assumpção, Juçara Marçal, Massive Attack e Os Mutantes.",
         "spotify_id": "7mSmcj39eQiU76EbMGuxS2",
         "spotify_url": "https://open.spotify.com/search/Jadsa%20Joao%20Milet%20Meirelles%20Taxidermia",
-        "onde": "Selo Risco, Bandcamp, Spotify"
+        "onde": "Selo Risco, Bandcamp, Spotify",
+        "capa": "capas/d6338cb21d5a0eecd74ec0af43bd92db.jpg",
+        "youtube_id": "9CrwNZ6RyaE",
+        "imagem": "capas/d6338cb21d5a0eecd74ec0af43bd92db.jpg"
     },
     "2026-11--boogarins-bacuri": {
         "id": "2026-11--boogarins-bacuri",
@@ -935,7 +1622,7 @@ MUSICA_ITENS = {
         "secao": "brasil",
         "artista": "Boogarins",
         "album": "Bacuri",
-        "ano": 2024,
+        "ano": 2026,
         "genero": "psicodelia / neo-tropicalismo / rock experimental",
         "selo": "Boogarins / OAR",
         "formato": "LP, Digital",
@@ -947,57 +1634,323 @@ MUSICA_ITENS = {
             "Faixas como 'Correnteza' e 'Luz da Tarde' flutuam com a leveza de Clube da Esquina, mas com a eletricidade moderna do Tame Impala e do Unknown Mortal Orchestra.",
             "Um bálsamo sonoro de altíssimo nível que reafirma a psicodelia goiana como patrimônio cultural vivo."
         ],
-        "faixas": ["Bacuri", "Correnteza", "Luz da Tarde", "Planalto", "Tempo Aberto", "Farol"],
+        "faixas": [
+            "Bacuri",
+            "Correnteza",
+            "Luz da Tarde",
+            "Planalto",
+            "Tempo Aberto",
+            "Farol"
+        ],
         "recepcao": "Aclamado no Brasil e no exterior, com apresentações memoráveis no SXSW, Primavera Sound e festivais pelo país.",
         "ponte": "Clube da Esquina, Os Mutantes, Tame Impala, Novos Baianos e Unknown Mortal Orchestra.",
         "spotify_id": "8mSmcj39eQiU76EbMGuxS3",
         "spotify_url": "https://open.spotify.com/search/Boogarins%20Bacuri",
-        "onde": "OAR, Selo Boogarins, Spotify, Bandcamp"
+        "onde": "OAR, Selo Boogarins, Spotify, Bandcamp",
+        "capa": "capas/934b441efef2b4c73a3b7a4499a1f031.jpg",
+        "youtube_id": "IX4xv7G0REo",
+        "imagem": "capas/934b441efef2b4c73a3b7a4499a1f031.jpg"
     },
-
-    # --- BREVE ADICIONAL ---
-    "2026-11--the-cure-songs-of-a-lost-world": {
-        "id": "2026-11--the-cure-songs-of-a-lost-world",
+    "2026-11--queens-of-the-stone-age-perfecth": {
+        "id": "2026-11--queens-of-the-stone-age-perfecth",
         "edicao": "2026-11",
-        "ordem": 23,
-        "secao": "breve",
-        "artista": "The Cure",
-        "album": "Songs of a Lost World",
-        "ano": 2024,
-        "genero": "gothic rock / post-punk / art rock",
-        "selo": "Fiction / Capitol",
-        "formato": "2xLP, Digital (Lançamento: Nov/2024)",
-        "olho": "Após dezesseis anos de espera, Robert Smith entrega a obra-prima crepuscular do The Cure no mesmo nível de Disintegration e Bloodflowers.",
-        "texto": "Longas introduções instrumentais, linhas de baixo de seis cordas e a melancolia existencial de quem contempla o fim do mundo.",
+        "ordem": 2,
+        "secao": "radar",
+        "artista": "Queens of the Stone Age",
+        "album": "Perfecth",
+        "ano": 2026,
+        "genero": "stoner rock / desert groove / art-rock",
+        "selo": "Matador Records",
+        "formato": "LP, Digital, CD",
+        "olho": "Josh Homme reinventa o som do deserto com violões flamencos, tango sem bateria, Wurlitzer funkeado e o baixo fuzz mais cortante desde Songs for the Deaf.",
+        "texto": "Recém-lançado no fim de outubro pela Matador, o nono álbum do Queens of the Stone Age quebra um ciclo e inaugura a fase mais vulnerável e corajosa da discografia de Josh Homme.",
         "resenha": [
-            "Dezesseis anos é quase uma eternidade na história do rock, mas para Robert Smith o tempo opera em outra dimensão. Songs of a Lost World não é apenas o primeiro álbum do The Cure desde 4:13 Dream (2008); é o disco mais sombrio, grandioso e profundamente comovente que a banda britânica produziu desde o monumento Disintegration (1989).",
-            "Músicas como a abertura 'Alone' e a épica 'Endsong' estendem suas introduções orquestrais por mais de três minutos antes do primeiro verso: sintetizadores como mantos de gelo, a bateria cavernosa de Jason Cooper e o lendário baixo Fender Bass VI de Simon Gallup tecendo melodias que apertam o coração.",
-            "Smith, aos 65 anos, canta com uma força e pureza emocional intactas, refletindo sobre a perda de quase todos os membros mais velhos de sua família e o lamento pelo mundo que se esvai. Não há concessões comerciais aqui: são suítes monumentais de dor, beleza e redenção gótica.",
-            "Um acontecimento histórico na música mundial e a coroação definitiva de uma das maiores bandas de todos os tempos."
+            "Lançado em 30 de outubro de 2026 pela Matador Records, Perfecth é o aguardado nono álbum de estúdio do Queens of the Stone Age e representa a virada estética mais radical de Josh Homme em mais de duas décadas. Produzido por Homme e Michael Shuman e gravado nos lendários estúdios Sound City e Pink Duck em Los Angeles, o disco condensa nove faixas em enxutos 36 minutos, eliminando qualquer gordura ou repetição de fórmula.",
+            "A grande surpresa reside no despojamento acústico e na inventividade rítmica. 'Easy Street', lançada como single de abertura, substitui a tradicional parede de amplificadores por um violão flamenco de sabor espanhol, palmas sincopadas e a voz sedutora de Nikki Lane em contraste com o vocal arrastado de Homme. Já 'Insignificant Other' aposta num groove desacelerado conduzido por piano elétrico Wurlitzer e guitarras limpas com falsete rasgado, enquanto 'Where the Goth Girls At?' faz explodir um baixo fuzz cortante e um refrão hipnótico.",
+            "Composto e lapidado após a recuperação física e emocional de Homme e na esteira da turnê intimista gravada nas Catacumbas de Paris (Alive in the Catacombs), Perfecth olha de frente para o envelhecimento, as perdas e o renascimento com um cinismo elegante e desarmado. Em 'Sunday', faixa gestada ainda na época da parceria com Iggy Pop em Post Pop Depression, Homme alcança uma gravidade comovente, coroada por um solo melódico e econômico de Troy Van Leeuwen.",
+            "Para quem tem o Queens of the Stone Age como pedra angular do cânone do rock, Perfecth é uma aula magna de desconstrução: o peso agora não vem do volume ensurdecedor, mas do espaço entre as notas, da tensão harmônica e do balanço sinuoso. Um dos grandes marcos fonográficos de 2026."
         ],
-        "faixas": ["Alone", "And Nothing Is Forever", "A Fragile Thing", "Warsong", "Drone:Nodrone", "I Can Never Say Goodbye", "Endsong"],
-        "recepcao": "Classificado com cinco estrelas no The Guardian, Mojo e Rolling Stone; número 1 nas paradas mundiais.",
-        "ponte": "The Cure clássico (Disintegration, Pornography), Joy Division, Siouxsie and the Banshees e Cocteau Twins.",
-        "spotify_id": "9mSmcj39eQiU76EbMGuxS4",
-        "spotify_url": "https://open.spotify.com/search/The%20Cure%20Songs%20of%20a%20Lost%20World",
-        "onde": "Fiction Records, Polydor, Capitol, Spotify"
+        "faixas": [
+            "Easy Street",
+            "Insignificant Other",
+            "Where the Goth Girls At?",
+            "Sunday",
+            "Paper Machete",
+            "Time & Place",
+            "Emotion Sickness"
+        ],
+        "recepcao": "Elogiado na NME (5/5), Uncut e Consequence como o disco mais audacioso e revigorante da banda desde Songs for the Deaf.",
+        "ponte": "Kyuss, Radiohead, Them Crooked Vultures, Iggy Pop (Post Pop Depression) e Jack White.",
+        "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+        "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth",
+        "capa": "capas/6ed0ec9e85e566afc81ef246358bbc31.jpg",
+        "onde": "Matador Records, Spotify, Apple Music, YouTube Music, Bandcamp",
+        "youtube_id": "6gm9IWUuus0",
+        "imagem": "capas/6ed0ec9e85e566afc81ef246358bbc31.jpg"
+    },
+    "2026-11--kings-of-leon-o-my-beloved": {
+        "id": "2026-11--kings-of-leon-o-my-beloved",
+        "artista": "Kings of Leon",
+        "album": "O My Beloved",
+        "ano": 2026,
+        "genero": "rock alternativo / southern rock",
+        "secao": "radar",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Kings%20of%20Leon%20O%20My%20Beloved",
+        "youtube_url": "https://music.youtube.com/search?q=Kings+of+Leon+O+My+Beloved",
+        "olho": "Lançamento em 06 de novembro de 2026 via Love Tap Records, os irmãos Followill reencontram o frescor garageiro e as guitarras expansivas dos primeiros anos.",
+        "texto": "Após décadas de experimentações em grandes arenas, Kings of Leon volta a gravar ao vivo no estúdio, apostando em linhas de baixo melódicas, bateria seca e a rouquidão visceral inconfundível de Caleb Followill.",
+        "imagem": "capas/2e3d5c3fdc8f00e1f69be6a7b1939b64.jpg",
+        "capa": "capas/2e3d5c3fdc8f00e1f69be6a7b1939b64.jpg"
+    },
+    "2026-11--greta-van-fleet-palace-for-the-people": {
+        "id": "2026-11--greta-van-fleet-palace-for-the-people",
+        "artista": "Greta Van Fleet",
+        "album": "Palace for the People",
+        "ano": 2026,
+        "genero": "hard rock / classic rock contemporâneo",
+        "secao": "radar",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Greta%20Van%20Fleet%20Palace%20for%20the%20People",
+        "youtube_url": "https://music.youtube.com/search?q=Greta+Van+Fleet+Palace+for+the+People",
+        "olho": "Novo álbum de estúdio lançado pela Republic Records em outubro de 2026, consolidando a maturidade lírica e os solos virtuosos dos irmãos Kiszka.",
+        "texto": "Com produção grandiosa e arranjos orquestrais sutis, a banda de Michigan entrega um épico conceitual que dialoga com as raízes do blues britânico dos anos 70.",
+        "imagem": "capas/cb816c2902f31599d5fde16e1e80fbad.jpg",
+        "capa": "capas/cb816c2902f31599d5fde16e1e80fbad.jpg"
+    },
+    "2026-11--2hollis-pirouette": {
+        "id": "2026-11--2hollis-pirouette",
+        "artista": "2hollis",
+        "album": "Pirouette",
+        "ano": 2026,
+        "genero": "hyperpop / electro-industrial / alt-pop",
+        "secao": "descobertas",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/2hollis%20Pirouette",
+        "youtube_url": "https://music.youtube.com/search?q=2hollis+Pirouette",
+        "olho": "Lançamento em 11 de novembro de 2026 pela Interscope, o produtor de Chicago desafia os limites do pop eletrônico com sintetizadores cortantes.",
+        "texto": "Uma colisão hipnótica entre eurodance, industrial sombrio e refrões melancólicos que confirmam 2hollis como a mente mais inventiva da nova vanguarda jovem.",
+        "imagem": "capas/984d5f2d9d7bf99b3b60923543f327d8.jpg",
+        "capa": "capas/984d5f2d9d7bf99b3b60923543f327d8.jpg"
+    },
+    "2026-11--ministry-hate-to-go": {
+        "id": "2026-11--ministry-hate-to-go",
+        "artista": "Ministry",
+        "album": "Hate to Go",
+        "ano": 2026,
+        "genero": "industrial metal / thrash",
+        "secao": "radar",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Ministry%20Hate%20to%20Go",
+        "youtube_url": "https://music.youtube.com/search?q=Ministry+Hate+to+Go",
+        "olho": "Lançado em 30 de outubro de 2026, o veterano Al Jourgensen dispara um ataque sonoro inclemente contra o colapso ambiental e o autoritarismo global.",
+        "texto": "Riffs cortantes de motosserra, bateria eletrônica implacável e colagens sonoras perturbadoras que mantêm o Ministry como a força mais agressiva do rock industrial.",
+        "imagem": "capas/5516d5c18176e6d4d8b8968b1fa9b586.jpg",
+        "capa": "capas/5516d5c18176e6d4d8b8968b1fa9b586.jpg"
+    },
+    "2026-11--pabllo-vittar-lost-in-lust": {
+        "id": "2026-11--pabllo-vittar-lost-in-lust",
+        "artista": "Pabllo Vittar",
+        "album": "Lost In Lust",
+        "ano": 2026,
+        "genero": "pop brasileiro / club / techno / funk",
+        "secao": "brasil",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Pabllo%20Vittar%20Lost%20In%20Lust",
+        "youtube_url": "https://music.youtube.com/search?q=Pabllo+Vittar+Lost+In+Lust",
+        "olho": "Novo álbum internacional da artista brasileira lançado em outubro de 2026, mergulhando na cena clubbing de Berlim e na polirritmia brasileira.",
+        "texto": "Com batidas aceleradas e produção refinada de vanguarda, Vittar entrega um disco noturno, sensual e irresistível para as pistas de dança globais.",
+        "imagem": "capas/6865fb135691e7ef4684e4a51f5bb7d6.jpg",
+        "capa": "capas/6865fb135691e7ef4684e4a51f5bb7d6.jpg"
+    },
+    "2026-11--wishy-triple-seven": {
+        "id": "2026-11--wishy-triple-seven",
+        "artista": "Wishy",
+        "album": "Triple Seven",
+        "ano": 2026,
+        "genero": "shoegaze-pop / indie rock / dream pop",
+        "secao": "descobertas",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Wishy%20Triple%20Seven",
+        "youtube_url": "https://music.youtube.com/search?q=Wishy+Triple+Seven",
+        "olho": "Guitarras ensolaradas com reverb denso e refrões pop irresistíveis que confirmam a banda de Indiana como a revelação mais fresca do shoegaze americano.",
+        "texto": "Herdeiros da doçura barulhenta de Beabadoobee e das texturas de My Bloody Valentine, o duo entrega melodias velozes de fita cassete com pegada anos 90.",
+        "ponte": "Wishy, Beabadoobee, Death Cab for Cutie e shoegaze melódico.",
+        "capa": "capas/135b664fa1ca04f857c123345daccb02.jpg",
+        "imagem": "capas/135b664fa1ca04f857c123345daccb02.jpg"
+    },
+    "2026-11--soccer-mommy-evergreen": {
+        "id": "2026-11--soccer-mommy-evergreen",
+        "artista": "Soccer Mommy",
+        "album": "Evergreen",
+        "ano": 2026,
+        "genero": "indie rock / canção confessional / bedroom pop",
+        "secao": "radar",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Soccer%20Mommy%20Evergreen",
+        "youtube_url": "https://music.youtube.com/search?q=Soccer+Mommy+Evergreen",
+        "olho": "Sophie Allison despoja os sintetizadores para reencontrar as guitarras de madeira, o luto e a vulnerabilidade melódica que a consagraram.",
+        "texto": "Gravado ao vivo em estúdio com arranjos minimalistas, o disco navega pelo vazio afetivo com linhas de guitarra límpidas e sussurros cortantes.",
+        "ponte": "Lucy Dacus, Phoebe Bridgers, Julia Jacklin e canção confessional feminina.",
+        "capa": "capas/66f4a1bc471fe5a59b732e8031c4a522.jpg",
+        "imagem": "capas/66f4a1bc471fe5a59b732e8031c4a522.jpg"
+    },
+    "2026-11--greg-freeman-all-set-the-bone": {
+        "id": "2026-11--greg-freeman-all-set-the-bone",
+        "artista": "Greg Freeman",
+        "album": "I Looked Out",
+        "ano": 2026,
+        "genero": "folk literário / alt-country / art-rock",
+        "secao": "descobertas",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Greg%20Freeman%20I%20Looked%20Out",
+        "youtube_url": "https://music.youtube.com/search?q=Greg+Freeman+I+Looked+Out",
+        "olho": "Narrativas rurais densas, guitarras tortas e sopros que dialogam diretamente com a poesia trágica de Okkervil River e The Decemberists.",
+        "texto": "Freeman canta pequenas tragédias operárias com arranjos expansivos e trompetes desgovernados em uma das grandes revelações do folk-rock.",
+        "ponte": "The Decemberists, Okkervil River, Neutral Milk Hotel e folk literário.",
+        "capa": "capas/079516416505840b11fb939bf8193504.jpg",
+        "imagem": "capas/079516416505840b11fb939bf8193504.jpg"
+    },
+    "2026-11--papangu-lampiao-rei": {
+        "id": "2026-11--papangu-lampiao-rei",
+        "artista": "Papangu",
+        "album": "Lampião Rei",
+        "ano": 2026,
+        "genero": "vanguarda brasileira / sludge-prog / psicodelia nordestina",
+        "secao": "brasil",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Papangu%20Lampiao%20Rei",
+        "youtube_url": "https://music.youtube.com/search?q=Papangu+Lampiao+Rei",
+        "olho": "A vanguarda paraibana funde maracatu, zeuhl e stoner metal num épico conceitual assombroso sobre o cangaço e a loucura do sertão.",
+        "texto": "Polirritmias nordestinas, saxofones cortantes e guitarras abissais que colocam o quarteto de João Pessoa no ápice do rock progressivo experimental global.",
+        "ponte": "Papangu, El Efecto, vanguarda paulista/nordestina e rock brasileiro inquieto.",
+        "capa": "capas/15667873992993df9b6f392c09c5041e.jpg",
+        "imagem": "capas/15667873992993df9b6f392c09c5041e.jpg"
+    },
+    "2026-11--queens-of-the-stone-age-catacombs": {
+        "id": "2026-11--queens-of-the-stone-age-catacombs",
+        "artista": "Queens of the Stone Age",
+        "album": "Alive in the Catacombs",
+        "ano": 2026,
+        "genero": "desert rock / stoner / cânone contemporâneo",
+        "secao": "radar",
+        "edicao": "2026-11",
+        "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age",
+        "youtube_url": "https://music.youtube.com/search?q=Queens+of+the+Stone+Age+Live+Catacombs",
+        "olho": "Josh Homme leva a fúria das guitarras do deserto para a escuridão acústica das Catacumbas de Paris em registro histórico e visceral.",
+        "texto": "Riffs clássicos despidos para percussão de osso e ressonância subterrânea, reafirmando o QOTSA como o ápice do cânone moderno do rock.",
+        "ponte": "Queens of the Stone Age, Radiohead, desert rock e guitarras afiadas.",
+        "capa": "capas/73c5d22d3806b68a6f55ff133d3c3405.jpg",
+        "imagem": "capas/73c5d22d3806b68a6f55ff133d3c3405.jpg"
+    },
+    "2026-11--the-smile-radiohead-sessions": {
+        "id": "2026-11--the-smile-radiohead-sessions",
+        "edicao": "2026-11",
+        "secao": "breve",
+        "artista": "The Smile",
+        "album": "Bodies Laughing / Live at Alexandra Palace",
+        "ano": 2026,
+        "estilo": "Art-Rock / Math-Rock / Experimental",
+        "capa": "capas/0d23cba0bde2a0a35ed3c42edde4413b.jpg",
+        "imagem": "capas/0d23cba0bde2a0a35ed3c42edde4413b.jpg",
+        "olho": "Thom Yorke, Jonny Greenwood e Tom Skinner preparam nova investida ao vivo documentando as sessões mais elétricas e experimentais da turnê.",
+        "texto": "Com arranjos da London Contemporary Orchestra e grooves assimétricos, o trio reafirma seu fôlego inesgotável à margem do cânone do Radiohead.",
+        "ponte": "Radiohead, The Smile, Can, math-rock e art-rock contemporâneo."
+    },
+    "2026-11--sharon-van-etten-attachment": {
+        "id": "2026-11--sharon-van-etten-attachment",
+        "edicao": "2026-11",
+        "secao": "radar",
+        "artista": "Sharon Van Etten & The Attachment Theory",
+        "album": "The Attachment Theory",
+        "ano": 2026,
+        "estilo": "Indie Rock / Post-Punk / Canção Confessional",
+        "capa": "capas/531a35b398a64ba8ffb25e0abdbb7402.jpg",
+        "imagem": "capas/531a35b398a64ba8ffb25e0abdbb7402.jpg",
+        "olho": "A cantautora nova-iorquina se une a uma banda colaborativa completa para seu álbum mais urgente, denso e pós-punk desde Remind Me Tomorrow.",
+        "texto": "Gravado nos lendários estúdios de Londres com sintetizadores analógicos escuros e guitarras ríspidas, o disco explora os apegos humanos e a reconstrução do afeto.",
+        "ponte": "Sharon Van Etten, Angel Olsen, Lucy Dacus, PJ Harvey e indie rock novaiorquino."
+    },
+    "2026-11--geese-3d-country-live": {
+        "id": "2026-11--geese-3d-country-live",
+        "edicao": "2026-11",
+        "secao": "radar",
+        "artista": "Geese",
+        "album": "3D Country (The Complete Sessions)",
+        "ano": 2026,
+        "estilo": "Art-Rock / Pós-Punk / Alt-Country Caótico",
+        "capa": "capas/f3c710ed74266152993812683a091e2a.jpg",
+        "imagem": "capas/f3c710ed74266152993812683a091e2a.jpg",
+        "olho": "O quinteto do Brooklyn consolida sua posição como a banda de guitarras mais imprevisível e efervescente da cena jovem norte-americana.",
+        "texto": "Vocalistas theatrais, falsetes rasgados e uma cozinha rítmica virtuosística em um apocalipse cômico do interior dos Estados Unidos.",
+        "ponte": "Geese, Black Midi, Talking Heads, Pavement e art-rock moderno."
+    },
+    "2026-11--julia-jacklin-tour": {
+        "id": "2026-11--julia-jacklin-tour",
+        "edicao": "2026-11",
+        "secao": "radar",
+        "artista": "Julia Jacklin",
+        "album": "Pre-Pleasure Companion (Acoustic 2026)",
+        "ano": 2026,
+        "estilo": "Folk-Rock / Confessional / Indie Pop",
+        "capa": "capas/23750446910958950d51874e7580abb9.jpg",
+        "imagem": "capas/23750446910958950d51874e7580abb9.jpg",
+        "olho": "A compositora australiana revisita suas canções mais dolorosas e luminosas em arranjos despidos ao vivo, com voz sussurrada e violão de nylon.",
+        "texto": "Um registro confessional de rara intimidade, feito para audições noturnas em fones de ouvido.",
+        "ponte": "Julia Jacklin, Phoebe Bridgers, Stella Donnelly e folk confessional australiano."
+    },
+    "2026-11--letrux-ao-vivo": {
+        "id": "2026-11--letrux-ao-vivo",
+        "edicao": "2026-11",
+        "secao": "brasil",
+        "artista": "Letrux",
+        "album": "Como Mulher Fita (Ao Vivo no Circo Voador 2026)",
+        "ano": 2026,
+        "estilo": "Art-Pop / Pós-Punk Carioca / Poesia Elétrica",
+        "capa": "capas/58b8c4a1c5094cfa2c7ab30d0a2ccd8b.jpg",
+        "imagem": "capas/58b8c4a1c5094cfa2c7ab30d0a2ccd8b.jpg",
+        "olho": "Letícia Novaes transforma o palco da lapa em uma catarse coletiva celebrando os encontros, a melancolia e o deboche refinado.",
+        "texto": "Gravado com lotação esgotada no Circo Voador, o disco traz novas versões eletrizantes para o repertório autoral.",
+        "ponte": "Letrux, Circo Voador, Vanguarda Carioca, rock independente e poesia teatral."
+    },
+    "2026-11--el-efecto-tempo-lava": {
+        "id": "2026-11--el-efecto-tempo-lava",
+        "edicao": "2026-11",
+        "secao": "brasil",
+        "artista": "El Efecto",
+        "album": "O Tempo e a Lava",
+        "ano": 2026,
+        "estilo": "Rock Progressivo / Vanguarda Brasileira / Pesquisa Política",
+        "capa": "capas/de1ba69dd2b9397c52b2367e0e00e9b6.jpg",
+        "imagem": "capas/de1ba69dd2b9397c52b2367e0e00e9b6.jpg",
+        "olho": "O coletivo carioca funde ritmos populares do Nordeste, contrapontos renascentistas e guitarras pesadas de metal progressivo em um disco conceitual denso.",
+        "texto": "Um dos trabalhos mais ambiciosos e instigantes da música instrumental e vocal brasileira da temporada.",
+        "ponte": "El Efecto, Papangu, Hermeto Pascoal, Casa das Máquinas e rock combativo do Rio."
+    },
+    "2026-11--clau-aniz-filha": {
+        "id": "2026-11--clau-aniz-filha",
+        "edicao": "2026-11",
+        "secao": "brasil",
+        "artista": "Clau Aniz",
+        "album": "Filha de Mil Mulheres",
+        "ano": 2026,
+        "estilo": "Vanguarda Cearense / Dream Pop / Texturas Eletrônicas",
+        "capa": "capas/c1a08d94b28f145cca9610b1ccd6ae5c.jpg",
+        "imagem": "capas/c1a08d94b28f145cca9610b1ccd6ae5c.jpg",
+        "olho": "A multi-instrumentista de Fortaleza constrói um tecido sonoro etéreo de cordas, sintetizadores e memórias de infância.",
+        "texto": "Vencedora de aclamação nos circuitos independentes de música experimental brasileira de 2026.",
+        "ponte": "Clau Aniz, Papangu, Juçara Marçal e música experimental do Ceará."
     }
 }
 
-MUSICA_GUIAS = {
+GUIAS = {
     "guia-pos-punk-indie-2026": {
         "id": "guia-pos-punk-indie-2026",
         "edicao": "2026-11",
         "tipo": "roteiro de audição",
         "titulo": "As novas guitarras do pós-punk e indie rock",
         "subtitulo": "Seis discos recentes que provam a vitalidade das guitarras livres de clichês radiofônicos.",
-        "texto": (
-            "Durante a última década, profetas do apocalipse cultural decretaram repetidas vezes a morte do rock de guitarras. "
-            "No entanto, enquanto as grandes gravadoras apostavam tudo em trap e pop pasteurizado de TikTok, uma nova geração "
-            "de compositores e instrumentistas na Inglaterra e nos Estados Unidos redescobriu a eletricidade, a poesia concreta "
-            "e a força de uma banda tocando junta numa sala. Este roteiro reúne seis títulos indispensáveis para entender por que "
-            "o indie rock contemporâneo é um dos territórios mais criativos e audaciosos do planeta."
-        ),
+        "texto": "Durante a última década, profetas do apocalipse cultural decretaram repetidas vezes a morte do rock de guitarras. No entanto, enquanto as grandes gravadoras apostavam tudo em trap e pop pasteurizado de TikTok, uma nova geração de compositores e instrumentistas na Inglaterra e nos Estados Unidos redescobriu a eletricidade, a poesia concreta e a força de uma banda tocando junta numa sala. Este roteiro reúne seis títulos indispensáveis para entender por que o indie rock contemporâneo é um dos territórios mais criativos e audaciosos do planeta.",
         "ponte": "The Fall, Television, Sonic Youth, Pavement e Neil Young.",
         "albuns": [
             {
@@ -1007,7 +1960,8 @@ MUSICA_GUIAS = {
                 "estilo": "alt-country / garage",
                 "nota": "O disco que redefiniu a postura das guitarras no indie recente com humor e melancolia.",
                 "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
-                "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf"
+                "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf",
+                "capa": "capas/a6e20bf3059d582ba55e8dc6adb79623.jpg"
             },
             {
                 "artista": "Dry Cleaning",
@@ -1016,7 +1970,8 @@ MUSICA_GUIAS = {
                 "estilo": "spoken word / pós-punk",
                 "nota": "Linhas de baixo envolventes e a poesia mordaz de Florence Shaw desarmando o cotidiano.",
                 "spotify_id": "2I0gIu10p9l6B5zF46H9Vw",
-                "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw"
+                "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw",
+                "capa": "capas/12a7c4a92e8f94811fad15a2f8041ed5.jpg"
             },
             {
                 "artista": "Geese",
@@ -1025,7 +1980,8 @@ MUSICA_GUIAS = {
                 "estilo": "art-punk / blues-rock",
                 "nota": "Energia maníaca novaiorquina e vocais teatrais à la New York pós-punk.",
                 "spotify_id": "4VqF3tU3Fw3k6nO0Lz2j9n",
-                "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n"
+                "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n",
+                "capa": "capas/1fa95eea4a54f32b2a34fbeea71d1e5f.jpg"
             },
             {
                 "artista": "Wednesday",
@@ -1034,7 +1990,8 @@ MUSICA_GUIAS = {
                 "estilo": "indie rock / noise country",
                 "nota": "Histórias do sul dos EUA banhadas em feedback impiedoso e ternura.",
                 "spotify_id": "3X0J476j8P7rO1tL452e82",
-                "spotify_url": "https://open.spotify.com/album/3X0J476j8P7rO1tL452e82"
+                "spotify_url": "https://open.spotify.com/album/3X0J476j8P7rO1tL452e82",
+                "capa": "capas/d03e5f128efde47c2f1ab14a774c8868.jpg"
             },
             {
                 "artista": "Protomartyr",
@@ -1043,7 +2000,8 @@ MUSICA_GUIAS = {
                 "estilo": "pós-punk visceral",
                 "nota": "A poesia ferina de Joe Casey e as guitarras angulares de Greg Ahee retratando Detroit.",
                 "spotify_id": "1mSmcj39eQiU76EbMGuxS9",
-                "spotify_url": "https://open.spotify.com/search/Protomartyr%20Formal%20Growth%20in%20the%20Desert"
+                "spotify_url": "https://open.spotify.com/search/Protomartyr%20Formal%20Growth%20in%20the%20Desert",
+                "capa": "capas/a48b3f755afbfc8a800d336a14d6bfcc.jpg"
             },
             {
                 "artista": "Squid",
@@ -1052,7 +2010,8 @@ MUSICA_GUIAS = {
                 "estilo": "krautrock / art-punk",
                 "nota": "Ritmos matemáticos, sopros e psicodelia fria da nova escola de Londres.",
                 "spotify_id": "2mSmcj39eQiU76EbMGuxS0",
-                "spotify_url": "https://open.spotify.com/search/Squid%20O%20Monolith"
+                "spotify_url": "https://open.spotify.com/search/Squid%20O%20Monolith",
+                "capa": "capas/f6b178ddabfc26e4b6ad2b29f9236c2c.jpg"
             }
         ]
     },
@@ -1062,12 +2021,7 @@ MUSICA_GUIAS = {
         "tipo": "paisagens sonoras",
         "titulo": "Mergulho em reverb: a renascença shoegaze",
         "subtitulo": "De Londres a Chicago, bandas jovens reinventam as muralhas sonoras dos anos 90.",
-        "texto": (
-            "Trinta anos após a consagração de My Bloody Valentine, Slowdive e Ride, o shoegaze vive seu momento "
-            "mais prolífico e global. Jovens músicos que descobriram o gênero pelo Bandcamp e pelo TikTok estão "
-            "cruzando a névoa dos pedais de efeito com afinações graves de metal alternativo, beats de trip-hop e "
-            "sensibilidade melódica pop. Este guia traça um panorama da renascença das guitarras encharcadas de eco."
-        ),
+        "texto": "Trinta anos após a consagração de My Bloody Valentine, Slowdive e Ride, o shoegaze vive seu momento mais prolífico e global. Jovens músicos que descobriram o gênero pelo Bandcamp e pelo TikTok estão cruzando a névoa dos pedais de efeito com afinações graves de metal alternativo, beats de trip-hop e sensibilidade melódica pop. Este guia traça um panorama da renascença das guitarras encharcadas de eco.",
         "ponte": "Slowdive, My Bloody Valentine, Cocteau Twins, Lush e Deftones.",
         "albuns": [
             {
@@ -1077,7 +2031,8 @@ MUSICA_GUIAS = {
                 "estilo": "dream-pop / shoegaze",
                 "nota": "Canções ensolaradas sob camadas generosas de efeito e sensibilidade londrina.",
                 "spotify_id": "4vS4V9JtZtWj8x3J7xG4tD",
-                "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD"
+                "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD",
+                "capa": "capas/8ced05c1e108274bf9d064542ed9111f.jpg"
             },
             {
                 "artista": "Slowdive",
@@ -1086,7 +2041,8 @@ MUSICA_GUIAS = {
                 "estilo": "ambient shoegaze",
                 "nota": "A maturidade impecável e o espaço meditativo dos mestres fundadores do gênero.",
                 "spotify_id": "2jSmcj39eQiU76EbMGuxS0",
-                "spotify_url": "https://open.spotify.com/album/2jSmcj39eQiU76EbMGuxS0"
+                "spotify_url": "https://open.spotify.com/album/2jSmcj39eQiU76EbMGuxS0",
+                "capa": "capas/15ef2d2df037324850e382d94c05da77.jpg"
             },
             {
                 "artista": "Luster",
@@ -1095,7 +2051,8 @@ MUSICA_GUIAS = {
                 "estilo": "heavy shoegaze / post-metal",
                 "nota": "Riffs colossais com afinações graves e dinâmica hipnótica sem perder a melodia.",
                 "spotify_id": "3zfsWFbljQ6492MifzXSDR",
-                "spotify_url": "https://open.spotify.com/album/3zfsWFbljQ6492MifzXSDR"
+                "spotify_url": "https://open.spotify.com/album/3zfsWFbljQ6492MifzXSDR",
+                "capa": "capas/a8faf23abcf8cd234d69b38992e84e4b.jpg"
             },
             {
                 "artista": "DIIV",
@@ -1104,7 +2061,8 @@ MUSICA_GUIAS = {
                 "estilo": "slowcore / dark shoegaze",
                 "nota": "Geleiras de som e crítica social contundente ao capitalismo de vigilância.",
                 "spotify_id": "2lSmcj39eQiU76EbMGuxS3",
-                "spotify_url": "https://open.spotify.com/search/DIIV%20Frog%20in%20Boiling%20Water"
+                "spotify_url": "https://open.spotify.com/search/DIIV%20Frog%20in%20Boiling%20Water",
+                "capa": "capas/6fd1b01617df70682ffa06faa9f301c0.jpg"
             },
             {
                 "artista": "Kraus",
@@ -1113,7 +2071,8 @@ MUSICA_GUIAS = {
                 "estilo": "noise shoegaze / drone",
                 "nota": "Distorção analógica extrema que se transforma em sinfonia celestial.",
                 "spotify_id": "3lSmcj39eQiU76EbMGuxS4",
-                "spotify_url": "https://open.spotify.com/search/Kraus%20Chug"
+                "spotify_url": "https://open.spotify.com/search/Kraus%20Chug",
+                "capa": "capas/28343a11a3e0903e79ae6331399da9ab.jpg"
             }
         ]
     },
@@ -1123,12 +2082,7 @@ MUSICA_GUIAS = {
         "tipo": "cena nacional",
         "titulo": "Invenção e coragem na música brasileira",
         "subtitulo": "Artistas que desafiam fórmulas fáceis e honram a tradição experimental do país.",
-        "texto": (
-            "Longe dos algoritmos de sertanejo universitário e pop corporativo, as pontes subterrâneas entre o Rio de Janeiro "
-            "e São Paulo produzem hoje uma das músicas mais inquietas do mundo. Da vanguarda teatral de Juçara Marçal "
-            "ao free jazz amazônico de Amaro Freitas e à ironia sofisticada de Ana Frango Elétrico, estes discos mostram "
-            "um país que sabe olhar nos olhos de sua dor sem esquecer o balanço do corpo."
-        ),
+        "texto": "Longe dos algoritmos de sertanejo universitário e pop corporativo, as pontes subterrâneas entre o Rio de Janeiro e São Paulo produzem hoje uma das músicas mais inquietas do mundo. Da vanguarda teatral de Juçara Marçal ao free jazz amazônico de Amaro Freitas e à ironia sofisticada de Ana Frango Elétrico, estes discos mostram um país que sabe olhar nos olhos de sua dor sem esquecer o balanço do corpo.",
         "ponte": "Itamar Assumpção, Arrigo Barnabé, Metá Metá, Tom Zé e Hermeto Pascoal.",
         "albuns": [
             {
@@ -1138,7 +2092,8 @@ MUSICA_GUIAS = {
                 "estilo": "vanguarda / canção",
                 "nota": "Voz visceral e piano estendido em temas de alta voltagem política e poética.",
                 "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
-                "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y"
+                "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y",
+                "capa": "capas/39ef428bd22c8eb18d4152339772a829.jpg"
             },
             {
                 "artista": "Ana Frango Elétrico",
@@ -1147,7 +2102,8 @@ MUSICA_GUIAS = {
                 "estilo": "boogie / sophisti-pop",
                 "nota": "Produção sofisticada, metais aveludados e exuberância rítmica carioca.",
                 "spotify_id": "1B2u3vj33ZpE73v8t0Nnhz",
-                "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz"
+                "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz",
+                "capa": "capas/3e92b81acd6057eaa78dce0debfdf883.jpg"
             },
             {
                 "artista": "Negro Léo",
@@ -1156,7 +2112,8 @@ MUSICA_GUIAS = {
                 "estilo": "free funk / canção torta",
                 "nota": "O pensador mais iconoclasta da canção contemporânea no Rio fora de qualquer esquadro.",
                 "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
-                "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6"
+                "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6",
+                "capa": "capas/505a32057542d18eafe3d2dfc454162b.jpg"
             },
             {
                 "artista": "Sophia Chablau e Uma Enorme Perda de Tempo",
@@ -1165,7 +2122,8 @@ MUSICA_GUIAS = {
                 "estilo": "noise pop / art-punk",
                 "nota": "A eletricidade das noites paulistanas com guitarras barulhentas e corações partidos.",
                 "spotify_id": "7mSmcj39eQiU76EbMGuxS6",
-                "spotify_url": "https://open.spotify.com/search/Sophia%20Chablau%20Musica%20do%20Esquecimento"
+                "spotify_url": "https://open.spotify.com/search/Sophia%20Chablau%20Musica%20do%20Esquecimento",
+                "capa": "capas/2bf2803db89929e08db28e2f6bad9080.jpg"
             },
             {
                 "artista": "Amaro Freitas",
@@ -1174,7 +2132,8 @@ MUSICA_GUIAS = {
                 "estilo": "jazz contemporâneo",
                 "nota": "Piano preparado que ecoa os espíritos das florestas e rios amazônicos.",
                 "spotify_id": "8mSmcj39eQiU76EbMGuxS7",
-                "spotify_url": "https://open.spotify.com/search/Amaro%20Freitas%20Y%27Y"
+                "spotify_url": "https://open.spotify.com/search/Amaro%20Freitas%20Y%27Y",
+                "capa": "capas/d58c27265adc560f6a7b6e785c74d091.jpg"
             }
         ]
     },
@@ -1184,12 +2143,7 @@ MUSICA_GUIAS = {
         "tipo": "linhagem histórica",
         "titulo": "Motorik e labirinto: a linhagem do art-rock",
         "subtitulo": "De Colônia nos anos 70 aos estúdios do The Smile e Beak>, a hipnose da repetição.",
-        "texto": (
-            "A batida motorik desenvolvida pelo baterista Jaki Liebezeit no Can e por Klaus Dinger no Neu! nos anos 70 "
-            "nunca foi apenas uma levada de bateria: era uma postura filosófica contra o virtuosismo exibicionista do rock clássico. "
-            "Ao insistir na repetição constante e nas variações mínimas de timbre, o krautrock abriu as portas para o pós-punk, "
-            "o pós-rock de Chicago nos anos 90 e a música eletrônica moderna. Este guia recupera essa linhagem fascinante."
-        ),
+        "texto": "A batida motorik desenvolvida pelo baterista Jaki Liebezeit no Can e por Klaus Dinger no Neu! nos anos 70 nunca foi apenas uma levada de bateria: era uma postura filosófica contra o virtuosismo exibicionista do rock clássico. Ao insistir na repetição constante e nas variações mínimas de timbre, o krautrock abriu as portas para o pós-punk, o pós-rock de Chicago nos anos 90 e a música eletrônica moderna. Este guia recupera essa linhagem fascinante.",
         "ponte": "Can, Neu!, Kraftwerk, Stereolab, Tortoise e Broadcast.",
         "albuns": [
             {
@@ -1199,7 +2153,8 @@ MUSICA_GUIAS = {
                 "estilo": "art-rock / krautrock",
                 "nota": "Rítmicas geométricas e sintetizadores modulares em diálogo vivo com a história.",
                 "spotify_id": "7o5415B5sR5qL8k0M3w2X1",
-                "spotify_url": "https://open.spotify.com/search/The%20Smile%20Cutouts"
+                "spotify_url": "https://open.spotify.com/search/The%20Smile%20Cutouts",
+                "capa": "capas/68125051eed214815c8e7dcbb96788e7.jpg"
             },
             {
                 "artista": "Beak>",
@@ -1208,7 +2163,8 @@ MUSICA_GUIAS = {
                 "estilo": "krautrock / dark pop",
                 "nota": "Geoff Barrow (Portishead) destila linhas de baixo minimalistas e tensão claustrofóbica.",
                 "spotify_id": "4mSmcj39eQiU76EbMGuxS5",
-                "spotify_url": "https://open.spotify.com/search/Beak%3E%204"
+                "spotify_url": "https://open.spotify.com/search/Beak%3E%204",
+                "capa": "capas/4de86608d1683136a5c8d65edd2e3d55.jpg"
             },
             {
                 "artista": "Can",
@@ -1217,7 +2173,8 @@ MUSICA_GUIAS = {
                 "estilo": "krautrock clássico",
                 "nota": "A certidão de nascimento do groove experimental gravada numa sala de cinema em Colônia.",
                 "spotify_id": "5mSmcj39eQiU76EbMGuxS6",
-                "spotify_url": "https://open.spotify.com/search/Can%20Ege%20Bamyasi"
+                "spotify_url": "https://open.spotify.com/search/Can%20Ege%20Bamyasi",
+                "capa": "capas/77208710ee798c51a435d37945fd3dfe.jpg"
             },
             {
                 "artista": "Stereolab",
@@ -1226,7 +2183,8 @@ MUSICA_GUIAS = {
                 "estilo": "post-rock / retro-futurismo",
                 "nota": "A união definitiva entre o balanço motorik, o pop francês dos anos 60 e o manifesto marxista.",
                 "spotify_id": "6mSmcj39eQiU76EbMGuxS7",
-                "spotify_url": "https://open.spotify.com/search/Stereolab%20Emperor%20Tomato%20Ketchup"
+                "spotify_url": "https://open.spotify.com/search/Stereolab%20Emperor%20Tomato%20Ketchup",
+                "capa": "capas/2f6516bdfc0f8b2c350970c6a3fc786f.jpg"
             },
             {
                 "artista": "Tortoise",
@@ -1235,9 +2193,9 @@ MUSICA_GUIAS = {
                 "estilo": "pós-rock de Chicago",
                 "nota": "A suíte Djed redefiniu como instrumentos de rock podiam ser manipulados em estúdio.",
                 "spotify_id": "7mSmcj39eQiU76EbMGuxS8",
-                "spotify_url": "https://open.spotify.com/search/Tortoise%20Millions%20Now%20Living"
+                "spotify_url": "https://open.spotify.com/search/Tortoise%20Millions%20Now%20Living",
+                "capa": "capas/75c08a184af958b2c2130cd30e9f2e9f.jpg"
             }
         ]
     }
 }
-
