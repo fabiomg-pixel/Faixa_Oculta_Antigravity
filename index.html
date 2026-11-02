@@ -1481,7 +1481,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   // Missing covers become a typographic sleeve, coloured by kind (disc, film, series, book...).
   const PH = { filme: ["filme", "cinema"], serie: ["série", "teatro"], documentario: ["documentário", "festival"], ficcao: ["ficção", "livros"], contos: ["contos", "artes"], nao_ficcao: ["não ficção", "outros"] };
   function capa(a, cls) {
-    const src = safeUrl(a.capa);
+    const src = safeUrl(a.capa || a.imagem);
     const nome = str(a.exibir_artista || a.artista);
     if (src) return h("img", { src, alt: `Capa de ${str(a.album)}, de ${nome}`, loading: "lazy", class: cls || null });
     const [rot, cor] = PH[str(a._tipo)] || [a._tipo ? str(a._tipo) : "disco", a._tipo ? "outros" : "musica"];
@@ -2446,17 +2446,17 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   }
 
   // ---------- Cinema and books magazines ----------
-  const capaObra = (a) => capa({ capa: a.capa, artista: a.autor, album: a.titulo, _tipo: a.tipo || "obra" });
+  const capaObra = (a) => capa({ capa: a.capa || a.imagem, artista: a.autor, album: a.titulo, _tipo: a.tipo || "obra" });
 
   // Section banner: contact sheet of the edition's covers (cover story in colour) + name, edition, contents.
   function banner(o) {
     const vistas = new Set();
     const comImg = [], semImg = [];
     for (const c of o.capas) {
-      const k = str(c.a.capa) || str(c.a.album);
+      const k = str(c.a.capa || c.a.imagem) || str(c.a.album);
       if (!k || vistas.has(k)) continue;
       vistas.add(k);
-      (safeUrl(c.a.capa) ? comImg : semImg).push(c);
+      (safeUrl(c.a.capa || c.a.imagem) ? comImg : semImg).push(c);
     }
     const tira = comImg.slice(0, 16);
     for (const c of semImg) { if (tira.length >= 4) break; tira.push(c); }
@@ -2544,18 +2544,18 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     {
       const capas = [], toc = [];
       let nT = 0, nG = 0, k = 0;
-      if (dest) capas.push({ a: { capa: dest.capa, artista: dest.autor, album: dest.titulo, _tipo: dest.tipo || "obra" }, capa: true });
+      if (dest) capas.push({ a: { capa: dest.capa || dest.imagem, artista: dest.autor, album: dest.titulo, _tipo: dest.tipo || "obra" }, capa: true });
       for (const b of arr(ed.layout)) {
         if (b.tipo === "secao") {
           k++;
           const l = itens.filter((i) => i.secao === b.secao && i !== dest);
           nT += l.length;
-          l.forEach((i) => capas.push({ a: { capa: i.capa, artista: i.autor, album: i.titulo, _tipo: i.tipo || "obra" } }));
+          l.forEach((i) => capas.push({ a: { capa: i.capa || i.imagem, artista: i.autor, album: i.titulo, _tipo: i.tipo || "obra" } }));
           if (l.length) toc.push({ n: secaoNum(k), titulo: (cfg.secoes[b.secao] || {}).titulo || b.secao, id: `${cfg.nome}-${b.secao}` });
         } else if (b.tipo === "guia" && guias.get(b.id)) {
           const g = guias.get(b.id);
           nG++; nT += arr(g[cfg.lista]).length;
-          arr(g[cfg.lista]).forEach((i) => capas.push({ a: { capa: i.capa, artista: i.autor, album: i.titulo, _tipo: i.tipo || "obra" } }));
+          arr(g[cfg.lista]).forEach((i) => capas.push({ a: { capa: i.capa || i.imagem, artista: i.autor, album: i.titulo, _tipo: i.tipo || "obra" } }));
           toc.push({ n: "◆", titulo: str(g.titulo), id: g._id, guia: true });
         }
       }
@@ -3516,7 +3516,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     const out = [];
     for (const ed of S.edicoes) for (const e of entradas(ed)) out.push({ ...e, rev: "música", ed: `Nº ${str(ed.numero)} · ${str(ed.mes)}`, t1: str(e.a.album), t2: str(e.a.exibir_artista || e.a.artista), cap: e.a });
     for (const cfg of Object.values(REVISTAS)) for (const ed of S[cfg.ed]) for (const e of entradasRevista(cfg, ed))
-      out.push({ ...e, rev: cfg.nome, ed: `Nº ${str(ed.numero)} · ${str(ed.mes)}`, t1: str(e.a.titulo), t2: [e.a.autor, e.a.ano].map(str).filter(Boolean).join(", "), cap: { capa: e.a.capa, album: e.a.titulo, artista: e.a.autor, _tipo: e.a.tipo } });
+      out.push({ ...e, rev: cfg.nome, ed: `Nº ${str(ed.numero)} · ${str(ed.mes)}`, t1: str(e.a.titulo), t2: [e.a.autor, e.a.ano].map(str).filter(Boolean).join(", "), cap: { capa: e.a.capa || e.a.imagem, album: e.a.titulo, artista: e.a.autor, _tipo: e.a.tipo } });
     for (const x of out) x.busca = nrm([x.t1, x.t2, x.a.titulo_original, x.a.genero, arr(x.a.generos).join(" "), x.a.pais, x.a.onde, x.ctx, x.ed, x.rev, arr(x.a.resenha).join(" "), x.a.linha_fina].map(str).join(" "));
     return out;
   }
