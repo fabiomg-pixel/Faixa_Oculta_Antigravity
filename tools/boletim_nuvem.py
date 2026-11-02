@@ -28,14 +28,27 @@ HEADERS = {
 }
 
 FEEDS = [
-    ("g1_politica", "https://g1.globo.com/rss/g1/politica/"),
-    ("g1_economia", "https://g1.globo.com/rss/g1/economia/"),
-    ("g1_mundo", "https://g1.globo.com/rss/g1/mundo/"),
-    ("g1_rio", "https://g1.globo.com/rss/g1/rio-de-janeiro/"),
-    ("g1_tecnologia", "https://g1.globo.com/rss/g1/tecnologia/"),
-    ("agencia_brasil", "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml"),
-    ("folha_poder", "https://feeds.folha.uol.com.br/poder/rss091.xml"),
-    ("folha_mercado", "https://feeds.folha.uol.com.br/mercado/rss091.xml")
+    # Folha de S.Paulo
+    ("Folha de S.Paulo - Poder", "https://feeds.folha.uol.com.br/poder/rss091.xml"),
+    ("Folha de S.Paulo - Mercado", "https://feeds.folha.uol.com.br/mercado/rss091.xml"),
+    ("Folha de S.Paulo - Mundo", "https://feeds.folha.uol.com.br/mundo/rss091.xml"),
+    ("Folha de S.Paulo - Cotidiano", "https://feeds.folha.uol.com.br/cotidiano/rss091.xml"),
+    # Agência Brasil / EBC
+    ("Agência Brasil - Últimas", "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml"),
+    ("Agência Brasil - Política", "https://agenciabrasil.ebc.com.br/rss/politica/feed.xml"),
+    ("Agência Brasil - Economia", "https://agenciabrasil.ebc.com.br/rss/economia/feed.xml"),
+    # BBC News Brasil
+    ("BBC News Brasil", "https://feeds.bbci.co.uk/portuguese/rss.xml"),
+    # Poder360 e Metrópoles
+    ("Poder360", "https://www.poder360.com.br/feed/"),
+    ("Metrópoles", "https://www.metropoles.com/feed"),
+    # g1
+    ("g1 - Política", "https://g1.globo.com/rss/g1/politica/"),
+    ("g1 - Economia", "https://g1.globo.com/rss/g1/economia/"),
+    ("g1 - Rio de Janeiro", "https://g1.globo.com/rss/g1/rio-de-janeiro/"),
+    ("g1 - Mundo", "https://g1.globo.com/rss/g1/mundo/"),
+    ("g1 - Ciência e Saúde", "https://g1.globo.com/rss/g1/ciencia-e-saude/"),
+    ("g1 - Tecnologia", "https://g1.globo.com/rss/g1/tecnologia/"),
 ]
 
 SKELETON_HEAD = """<!doctype html>
@@ -66,14 +79,36 @@ def url_chave(u):
     return u
 
 
+def veiculo_de_canal(canal):
+    c = canal.lower()
+    if "folha" in c:
+        return "Folha de S.Paulo"
+    if "agência brasil" in c or "agencia brasil" in c or "ebc" in c:
+        return "Agência Brasil / EBC"
+    if "bbc" in c:
+        return "BBC News Brasil"
+    if "poder360" in c:
+        return "Poder360"
+    if "metrópoles" in c or "metropoles" in c:
+        return "Metrópoles"
+    if "g1" in c:
+        return "g1"
+    return canal
+
+
 def coletar_noticias_rss():
     itens_coletados = []
-    print("Coletando manchetes dos feeds RSS...")
+    print("Coletando manchetes dos feeds RSS de múltiplos portais...")
     for canal, feed_url in FEEDS:
         try:
             req = request.Request(feed_url, headers=HEADERS)
-            with request.urlopen(req, timeout=8, context=CTX) as resp:
+            with request.urlopen(req, timeout=10, context=CTX) as resp:
                 conteudo = resp.read()
+                if conteudo[:2] == b"\x1f\x8b" or resp.headers.get("Content-Encoding") == "gzip":
+                    try:
+                        conteudo = gzip.decompress(conteudo)
+                    except Exception:
+                        pass
             root = ET.fromstring(conteudo)
             for it in root.findall(".//item"):
                 tit = it.find("title")
@@ -83,6 +118,7 @@ def coletar_noticias_rss():
                 if tit is not None and lnk is not None and tit.text and lnk.text:
                     itens_coletados.append({
                         "canal": canal,
+                        "veiculo": veiculo_de_canal(canal),
                         "titulo": tit.text.strip(),
                         "url": lnk.text.strip(),
                         "descricao": (desc.text or "").strip() if desc is not None else "",
@@ -92,6 +128,34 @@ def coletar_noticias_rss():
             print(f"Aviso: falha ao ler feed {canal} ({e})")
     print(f"Total de itens coletados nos feeds: {len(itens_coletados)}")
     return itens_coletados
+
+
+def preparar_candidatos_balanceados(itens_rss, max_por_veiculo=12, total_max=72):
+    """Garante que nenhum portal monopolize os candidatos enviados ao Gemini."""
+    por_veiculo = {}
+    for item in itens_rss:
+        v = item.get("veiculo", "Outro")
+        por_veiculo.setdefault(v, []).append(item)
+
+    print("Distribuição de notícias por veículo apuradas:")
+    for v, lista in por_veiculo.items():
+        print(f"  - {v}: {len(lista)} matérias disponíveis")
+
+    balanceados = []
+    round_idx = 0
+    while len(balanceados) < total_max:
+        adicionou = False
+        for v in list(por_veiculo.keys()):
+            if round_idx < len(por_veiculo[v]) and round_idx < max_por_veiculo:
+                balanceados.append(por_veiculo[v][round_idx])
+                adicionou = True
+                if len(balanceados) >= total_max:
+                    break
+        if not adicionou:
+            break
+        round_idx += 1
+
+    return balanceados
 
 
 def extrair_paragrafos_artigo(url):
@@ -136,9 +200,11 @@ def chamar_gemini(itens_rss, edicao, data_iso, api_key):
     print(f"Chamando API do Gemini para curadoria da edição {edicao} ({data_iso})...")
     endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={api_key}"
 
+    candidatos_balanceados = preparar_candidatos_balanceados(itens_rss)
+
     candidatos_txt = "\n".join([
-        f"- [{item['canal']}] {item['titulo']} | URL: {item['url']}\n  Resumo: {item['descricao'][:180]}"
-        for item in itens_rss[:80]
+        f"- [{item['veiculo']}] {item['titulo']} | URL: {item['url']}\n  Resumo: {item['descricao'][:180]}"
+        for item in candidatos_balanceados
     ])
 
     instrucoes = f"""Você é o editor do Faixa Oculta / Radar Cultural, um jornal e boletim pessoal para o Fabio, professor de biofísica na UFRJ, no Rio de Janeiro.
@@ -146,13 +212,17 @@ Hoje é {data_iso}. Você está gerando o Boletim Diário ({edicao}).
 
 Critérios editoriais rigorosos:
 1. Pautas prioritárias: Política brasileira, Economia, Ciência e Universidades, Meio Ambiente/Clima, Tecnologia/IA e Rio de Janeiro.
-2. Selecione entre 6 a 8 notas essenciais a partir dos links reais fornecidos abaixo. NUNCA invente notícias nem fatos.
-3. Use estritamente as URLs reais fornecidas na lista de candidatos para cada fonte citada.
-4. Para cada nota:
+2. DIVERSIDADE DE FONTES É OBRIGATÓRIA:
+   - É expressamente PROIBIDO selecionar notícias de um único veículo. O boletim NÃO PODE ser só do g1.
+   - Você DEVE distribuir as 6 a 8 notas entre múltiplos veículos diferentes presentes na lista (Folha de S.Paulo, Agência Brasil / EBC, BBC News Brasil, Metrópoles, Poder360 e g1).
+   - O boletim deve contemplar pelo menos 3 ou 4 veículos distintos nas suas notas.
+3. Selecione entre 6 a 8 notas essenciais a partir dos links reais fornecidos abaixo. NUNCA invente notícias nem fatos.
+4. Use estritamente as URLs reais fornecidas na lista de candidatos para cada fonte citada.
+5. Para cada nota:
    - 'titulo': Manchete informativa, sem clickbait, direta e clara.
    - 'texto': 2 a 3 frases explicando o acontecimento com fatos e números precisos.
    - 'por_que_importa': 1 a 2 frases explicando a consequência prática institucional, econômica ou social.
-   - 'fontes': 1 a 3 fontes com 'fonte' (nome do veículo), 'perfil' (ex: 'Portal de notícias', 'Jornal de centro'), 'enfoque' (o que destacou) e 'url' (a URL exata do candidato).
+   - 'fontes': 1 a 3 fontes com 'fonte' (nome do veículo exato: 'Folha de S.Paulo', 'Agência Brasil / EBC', 'BBC News Brasil', 'Metrópoles', 'Poder360', 'g1'), 'perfil' (ex: 'Jornal diário', 'Agência pública', 'Portal de notícias'), 'enfoque' (o que destacou) e 'url' (a URL exata do candidato).
 
 Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no seguinte formato:
 {{
@@ -167,8 +237,8 @@ Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no s
       "por_que_importa": "Por que esta notícia é relevante.",
       "fontes": [
         {{
-          "fonte": "g1",
-          "perfil": "Portal de notícias",
+          "fonte": "Nome do Veículo (ex: Folha de S.Paulo, Agência Brasil / EBC, BBC News Brasil, Metrópoles, g1)",
+          "perfil": "Jornal diário / Agência pública / Portal de notícias",
           "enfoque": "Destaque da apuração",
           "url": "https://..."
         }}
@@ -180,7 +250,7 @@ Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no s
   ]
 }}
 
-Candidatos apurados nas últimas horas:
+Candidatos apurados nas últimas horas (distribuídos equilibradamente entre veículos):
 {candidatos_txt}
 """
 
@@ -198,7 +268,7 @@ Candidatos apurados nas últimas horas:
         headers={"Content-Type": "application/json"}
     )
 
-    with request.urlopen(req, timeout=40, context=CTX) as resp:
+    with request.urlopen(req, timeout=45, context=CTX) as resp:
         res_data = json.loads(resp.read().decode("utf-8"))
 
     parts = res_data["candidates"][0]["content"]["parts"]

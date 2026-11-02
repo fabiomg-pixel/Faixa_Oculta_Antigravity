@@ -5893,129 +5893,135 @@
     "2026-11-02": {
       "data": "2026-11-02",
       "edicao": "manha",
-      "titulo": "Disputa no Senado e alerta fiscal marcam início de novembro",
-      "resumo_dia": "O cenário pós-eleitoral consolida articulações intensas no Congresso Nacional para a sucessão legislativa e a votação de pautas prioritárias, como a PEC da Segurança Pública. No campo econômico, estimativas apontam que a alíquota da reforma tributária sobre o consumo pode ultrapassar 30%, enquanto a dívida pública alcança 82,9% do PIB sob pressão de déficits recorrentes. Na gestão pública e carreiras federais, o Ministério da Gestão projeta novo CNU com até 3 mil vagas em 2027, condicionado à peça orçamentária.",
+      "titulo": "Ciência articula ministério e Congresso debate regras eleitorais",
+      "resumo_dia": "O meio acadêmico e científico se mobiliza para emplacar a liderança da SBPC na Esplanada, enquanto a Câmara dos Deputados discute alterações no sistema eleitoral proporcional. No front econômico e do consumidor, entra em vigor a exigência de atendimento humano nos serviços de suporte. O cenário ambiental registra nova alta nos focos de queimadas em outubro, e o Judiciário amplia as partes envolvidas no debate sobre o impacto das apostas virtuais.",
       "notas": [
         {
-          "id": "presidencia-senado-candidatura-pl",
+          "id": "comunidade-cientifica-sbpc-ministerio",
+          "editoria": "Ciência",
+          "titulo": "Cientistas articulam indicação da presidência da SBPC para o Ministério da Ciência",
+          "texto": "Integrantes de diferentes setores da comunidade acadêmica brasileira organizam uma campanha conjunta para emplacar a presidência da Sociedade Brasileira para o Progresso da Ciência (SBPC) no comando do Ministério da Ciência, Tecnologia e Inovação. A mobilização busca assegurar uma gestão com forte representatividade técnica e interlocução direta com as universidades federais e institutos de pesquisa.",
+          "por_que_importa": "A escolha ministerial impacta diretamente a dotação orçamentária do FNDCT, o reajuste e oferta de bolsas de pós-graduação e a autonomia dos projetos de pesquisa científica no país.",
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário",
+              "enfoque": "Articulação de lideranças acadêmicas para o primeiro escalão do governo federal",
+              "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/cientistas-articulam-campanha-para-indicar-presidente-da-sbpc-ao-ministerio-da-ciencia.shtml"
+            }
+          ]
+        },
+        {
+          "id": "reforma-eleitoral-camara-deputados",
           "editoria": "Política",
-          "titulo": "PL articula candidatura própria ao Senado e desafia favoritismo de Alcolumbre",
-          "texto": "Apesar das investidas de Davi Alcolumbre para atrair alas da oposição com promessas de anistia e presidência de comissões, o Partido Liberal deve formalizar um candidato próprio para o comando da Casa Alta. A bancada, que atingiu número expressivo no Congresso, busca assegurar protagonismo institucional independente no bloco de oposição. A movimentação acirra as negociações entre o Palácio do Planalto e as lideranças do Centrão antes da posse dos novos parlamentares.",
-          "por_que_importa": "A presidência do Senado é o posto-chave para pautar reformas orçamentárias do Executivo, indicar membros para agências reguladoras e deliberar sobre pedidos de impeachment de ministros do STF.",
+          "titulo": "Câmara debate novos modelos proporcionais para conter puxadores de voto",
+          "texto": "Deputados federais intensificam negociações sobre uma proposta de reforma eleitoral que visa alterar as regras de distribuição de vagas na Câmara. A iniciativa busca conter distorções causadas por candidaturas com hipervotação nominal que arrastam bancadas expressivas sem representatividade média proporcional.",
+          "por_que_importa": "Qualquer alteração no quociente eleitoral redistribui as forças partidárias no Legislativo federal e redefine a dinâmica de governabilidade de coalizões futuras.",
           "fontes": [
             {
-              "fonte": "g1 Política",
-              "perfil": "Portal de notícias",
-              "enfoque": "Detalhamento da resistência do PL ao avanço de Alcolumbre e exigência de candidatura própria",
-              "url": "https://g1.globo.com/politica/noticia/2026/11/02/presidencia-do-senado-pl-deve-ter-candidato-proprio-mesmo-com-aproximacao-de-alcolumbre.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "alcolumbre-pec-seguranca-publica",
-          "editoria": "Política",
-          "titulo": "PEC da Segurança Pública é pautada no Senado em meio à transição legislativa",
-          "texto": "Davi Alcolumbre incluiu a Proposta de Emenda à Constituição da Segurança Pública na pauta de votações do Senado. O texto busca padronizar protocolos federativos de combate a facções criminosas e integrar bancos de dados entre estados e União. A proposta chega ao plenário sob pressão de governadores contrários à centralização de diretrizes policiais em Brasília.",
-          "por_que_importa": "O endurecimento e a integração do arcabouço de segurança pública impactam diretamente o Rio de Janeiro e a gestão orçamentária dos fundos de segurança estaduais.",
-          "fontes": [
-            {
-              "fonte": "g1 Política",
-              "perfil": "Portal de notícias",
-              "enfoque": "Agendamento da PEC para votação imediata no plenário do Senado",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "aliquota-reforma-tributaria-consumo",
-          "editoria": "Economia",
-          "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
-          "texto": "Simulações técnicas e projeções econômicas apontam que a alíquota padrão da Contribuição sobre Bens e Serviços (CBS) e do Imposto sobre Bens e Serviços (IBS) pode ultrapassar a marca de 30%. O aumento do teto é decorrente do excesso de exceções setoriais, regimes favorecidos e desonerações incluídos na regulamentação aprovada pelo Legislativo. Caso o patamar se confirme, o Brasil terá o maior imposto sobre valor agregado do mundo, superando países europeus como Hungria e Dinamarca.",
-          "por_que_importa": "A elevação da tributação média sobre o consumo encarece serviços de tecnologia e insumos de pesquisa, além de aumentar o peso proporcional de impostos sobre as classes de menor renda.",
-          "fontes": [
-            {
-              "fonte": "g1 Economia",
-              "perfil": "Portal de notícias",
-              "enfoque": "Comparação internacional das alíquotas do IVA após acréscimo de setores beneficiados",
-              "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "divida-publica-deficit-setembro",
-          "editoria": "Economia",
-          "titulo": "Dívida pública atinge 82,9% do PIB e estatais acumulam rombo recorde",
-          "texto": "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, elevando a Dívida Bruta do Governo Geral para 82,9% do PIB, o patamar mais alto em cinco anos e meio. No acumulado do ano, as empresas estatais federais somaram um déficit de R$ 8,5 bilhões até o nono mês, pressionadas por gastos de custeio e subsídios. O Tesouro Nacional avalia medidas de contenção de despesas antes do início do próximo ciclo orçamentário.",
-          "por_que_importa": "A escalada da relação dívida/PIB restringe o espaço fiscal para investimentos federais em infraestrutura científica e eleva o prêmio de risco dos juros de longo prazo.",
-          "fontes": [
-            {
-              "fonte": "g1 Economia",
-              "perfil": "Portal de notícias",
-              "enfoque": "Divulgação dos dados de endividamento pelo Banco Central e déficit consolidado",
-              "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml"
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário",
+              "enfoque": "Divisão entre partidos sobre modelos para conter crescimento de siglas extremadas",
+              "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/camara-discute-reforma-eleitoral-para-frear-puxadores-de-voto-como-nikolas-veja-modelos-e-debates.shtml"
             },
             {
-              "fonte": "g1 Economia",
+              "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Resultado fiscal das empresas estatais federais até setembro",
-              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "cnu-2027-planejamento-vagas",
-          "editoria": "Ciência",
-          "titulo": "Governo planeja edição do CNU para 2027 com até 3 mil vagas federais",
-          "texto": "O Ministério da Gestão e da Inovação informou que uma nova edição do Concurso Nacional Unificado está em planejamento para 2027, com previsão de até 3 mil postos no Executivo. A aplicação efetiva do certame dependerá das dotações autorizadas no Projeto de Lei Orçamentária Anual correspondente. O modelo centralizado busca repor quadros de agências reguladoras, institutos de pesquisa e órgãos de formulação de políticas públicas.",
-          "por_que_importa": "A renovação dos quadros de carreira de Estado é vital para a recomposição do corpo técnico em órgãos de fomento à ciência, inovação e regulação sanitária.",
-          "fontes": [
-            {
-              "fonte": "g1 Trabalho e Carreira",
-              "perfil": "Portal de notícias",
-              "enfoque": "Planejamento orçamentário do Ministério da Gestão para novos concursos federais",
-              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
-            }
-          ]
-        },
-        {
-          "id": "reforma-eleitoral-distrital-misto",
-          "editoria": "Política",
-          "titulo": "Câmara acelera debate para implementar sistema distrital misto em eleições futuras",
-          "texto": "A cúpula da Câmara dos Deputados intensificou os debates para alterar a sistemática de escolha dos parlamentares proporcionais no país. O modelo em discussão introduz o sistema distrital misto, no qual metade das cadeiras é preenchida por votação majoritária distrital e a outra por listas partidárias preordenadas. Lideranças partidárias articulam votar a mudança ainda no atual período legislativo para valer nos próximos ciclos eleitorais.",
-          "por_que_importa": "A mudança no sistema de representação altera a relação entre eleitores e bancadas regionais, além de impactar diretamente o financiamento partidário e a fragmentação partidária no Congresso.",
-          "fontes": [
-            {
-              "fonte": "g1 Política",
-              "perfil": "Portal de notícias",
-              "enfoque": "Explicação técnica do modelo de votação e cronograma de votação na Câmara",
+              "enfoque": "Modelos legislativos em pauta na comissão e propostas de transição",
               "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
             }
           ]
         },
         {
-          "id": "angra-imoveis-willer-tomaz",
-          "editoria": "Rio",
-          "titulo": "Apuração revela patrimônio de mansões em ilhas de Angra dos Reis ligadas a advogado",
-          "texto": "Levantamentos fundiários revelaram que o advogado Willer Tomaz possui pelo menos outras cinco propriedades em ilhas de Angra dos Reis, no litoral sul do Rio de Janeiro. A região ganhou notoriedade após disputas judiciais envolvendo terrenos e residências ocupadas anteriormente por personalidades e desportistas. As aquisições atraíram a atenção dos órgãos de fiscalização ambiental e patrimonial devido às restrições de ocupação na Baía de Ilha Grande.",
-          "por_que_importa": "A ocupação imobiliária de luxo em áreas de preservação no litoral fluminense tensiona a governança ambiental do estado e expõe conflitos de regularização fundiária marítima.",
+          "id": "stf-fux-regulamentacao-apostas-bets",
+          "editoria": "Economia",
+          "titulo": "STF inclui ministérios e setor de serviços em audiências sobre apostas virtuais",
+          "texto": "O ministro Luiz Fux, do Supremo Tribunal Federal, atendeu a pedido da Advocacia-Geral da União (AGU) e determinou a inclusão de pastas ministeriais e da Associação Brasileira de Bares e Restaurantes (Abras) nas audiências sobre o mercado de bets. O objetivo é aprofundar os impactos econômicos e na saúde mental do consumidor provocados pela proliferação das plataformas online.",
+          "por_que_importa": "A regulamentação definitiva das apostas pelo Judiciário afeta o comércio varejista, o endividamento das famílias de baixa renda e o fluxo de arrecadação fiscal da União.",
           "fontes": [
             {
-              "fonte": "g1 Política",
+              "fonte": "Agência Brasil / EBC",
+              "perfil": "Agência pública",
+              "enfoque": "Decisão do STF que amplia participantes em audiência sobre impactos sociais e econômicos",
+              "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/fux-atende-agu-e-inclui-ministerios-e-abras-em-debate-sobre-bets"
+            }
+          ]
+        },
+        {
+          "id": "queimadas-outubro-brasil-alta",
+          "editoria": "Clima",
+          "titulo": "Brasil registra 32,4 mil focos de incêndio em outubro, alta anual de 13,2%",
+          "texto": "Dados de monitoramento por satélite apontaram 32.454 focos de queimada em território nacional durante o mês de outubro, o que representa um aumento de 13,2% em comparação ao mesmo mês de 2025. Apesar da pressão mensal, o balanço acumulado do ano de 2026 apresenta ligeira retração de 1,6%.",
+          "por_que_importa": "A persistência de focos em biomas vulneráveis compromete metas climáticas nacionais, intensifica a degradação da qualidade do ar nos centros urbanos e exige respostas orçamentárias de órgãos federais de fiscalização.",
+          "fontes": [
+            {
+              "fonte": "Poder360",
               "perfil": "Portal de notícias",
-              "enfoque": "Mapeamento das propriedades em ilhas do litoral fluminense",
-              "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml"
+              "enfoque": "Estatísticas de queimadas por bioma e comparativo anual do monitoramento",
+              "url": "https://www.poder360.com.br/poder-sustentavel/brasil-tem-32-454-focos-de-incendio-em-outubro-alta-anual-de-132/"
+            }
+          ]
+        },
+        {
+          "id": "nova-regra-atendimento-humano-sac",
+          "editoria": "Economia",
+          "titulo": "Empresas são obrigadas a ofertar atendimento humano ao consumidor a partir de hoje",
+          "texto": "Começam a valer nesta segunda-feira as novas diretrizes de relacionamento com clientes que obrigam fornecedores de serviços e grandes empresas a oferecer opção de atendimento por operadores humanos. A norma busca combater a frustração e a ineficácia de fluxos exclusivamente robotizados em canais de SAC.",
+          "por_que_importa": "A resolução altera custos operacionais e estruturas de teleatendimento corporativo, restabelecendo garantias de defesa do consumidor contra retenções abusivas por bots.",
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Portal de notícias",
+              "enfoque": "Entrada em vigor das exigências e regras de fiscalização para call centers",
+              "url": "https://g1.globo.com/politica/noticia/2026/11/02/empresas-devem-oferecer-atendimento-humano-para-o-consumidor-a-partir-desta-segunda-feira.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "ataque-hacker-sistemas-alerta-guerra",
+          "editoria": "Tecnologia",
+          "titulo": "Ataques cibernéticos violam aplicativos de alertas de emergência na Ucrânia e na Rússia",
+          "texto": "Invasões hacker a sistemas civis de notificação dispararam alertas falsos sobre bombardeios iminentes, contaminação química e ameaças de radiação nuclear para usuários na Rússia e na Ucrânia. Especialistas em segurança apontam o avanço de táticas de guerra híbrida com o intuito de semear pânico generalizado na população urbana.",
+          "por_que_importa": "O comprometimento de infraestruturas críticas civis evidencia a fragilidade de protocolos de defesa cibernética em momentos de saturação de canais de segurança pública.",
+          "fontes": [
+            {
+              "fonte": "BBC News Brasil",
+              "perfil": "Portal de notícias",
+              "enfoque": "Relatos de alertas falsificados de ataques aéreos e nucleares em aplicativos civis",
+              "url": "https://www.bbc.com/portuguese/articles/cwrky5dm77dxo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "fonte": "Metrópoles",
+              "perfil": "Portal de notícias",
+              "enfoque": "Desdobramentos técnicos e o pânico gerado por invasão a canais digitais de defesa",
+              "url": "https://www.metropoles.com/mundo/hackers-invadiram-apps-de-alertas-de-guerra-da-russia-e-da-ucrania"
+            }
+          ]
+        },
+        {
+          "id": "plataforma-online-analise-dados-geneticos",
+          "editoria": "Ciência",
+          "titulo": "Ferramenta digital gratuita simplifica análise de expressão gênica em células individuais",
+          "texto": "Pesquisadores lançaram uma nova plataforma acessível via navegador que permite a exploração e visualização de dados de sequenciamento de RNA em nível de célula única sem necessidade de domínio avançado em linguagens de programação. A solução busca democratizar o processamento bioinformático em laboratórios de biologia molecular e genética.",
+          "por_que_importa": "A diminuição da barreira computacional acelera triagens funcionais em pesquisas translacionais e de biologia celular em universidades e centros de pesquisa biomédica.",
+          "fontes": [
+            {
+              "fonte": "Poder360",
+              "perfil": "Portal de notícias",
+              "enfoque": "Lançamento de software científico sem custo para análises de transcriptômica",
+              "url": "https://www.poder360.com.br/poder-saude/ferramenta-on-line-gratuita-facilita-a-analise-de-dados-geneticos-complexos/"
             }
           ]
         }
       ],
       "agenda": [
         {
-          "quando": "10h00",
-          "o_que": "Reunião de líderes partidários no Senado para fechar o calendário de votação da PEC da Segurança Pública"
+          "quando": "08h00",
+          "o_que": "Entrada em vigor em âmbito nacional da obrigatoriedade de canais com atendimento humano no SAC de empresas"
         },
         {
-          "quando": "14h30",
-          "o_que": "Comissão de Constituição e Justiça da Câmara debate parecer sobre alteração no sistema de votação para deputados"
+          "quando": "14h00",
+          "o_que": "Reunião de lideranças partidárias na Câmara para calibrar o calendário da reforma das regras eleitorais"
         }
       ]
     }
@@ -26682,6 +26688,309 @@
       ],
       "pontos": [
         "Planejamento orçamentário do Ministério da Gestão para novos concursos federais"
+      ]
+    },
+    "comunidade-cientifica-sbpc-ministerio-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/cientistas-articulam-campanha-para-indicar-presidente-da-sbpc-ao-ministerio-da-ciencia.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Cientistas articulam indicação da presidência da SBPC para o Ministério da Ciência",
+      "resumo": [
+        "Integrantes de diferentes setores da comunidade acadêmica brasileira organizam uma campanha conjunta para emplacar a presidência da Sociedade Brasileira para o Progresso da Ciência (SBPC) no comando do Ministério da Ciência, Tecnologia e Inovação. A mobilização busca assegurar uma gestão com forte representatividade técnica e interlocução direta com as universidades federais e institutos de pesquisa."
+      ],
+      "texto_integral": [
+        "Editado por Fábio Zanini, espaço traz notícias e bastidores da política. Com Carlos Petrocilo e Gabriela Echenique",
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "Receba no seu email as informações exclusivas da coluna Painel",
+        "Integrantes da comunidade científica articulam uma campanha para levar Francilene Procópio Garcia ao comando do Ministério da Ciência, Tecnologia e Inovação (MCTI) no próximo governo Lula. Ela preside a Sociedade Brasileira para o Progresso da Ciência (SBPC) desde julho de 2025.",
+        "A pasta é comandada pela ministra Luciana Santos, do PCdoB.",
+        "Um dos entusiastas da indicação, o pesquisador emérito da Fiocruz Renato Cordeiro exalta o currículo de Francilene e a sua gestão à frente da SBPC. Também endossam o nome acadêmicos da Academia Brasileira de Ciências (ABC), pesquisadores da Fiocruz e de diversas universidades brasileiras.",
+        "A indicação tem sido articulada por cientistas e pesquisadores, e não representa posição institucional destas entidades.",
+        "\"Francilene é amplamente admirada pela comunidade científica. Possui sólida trajetória na gestão de programas de CT&I [ciência, tecnologia e inovação], com ênfase em planejamento e avaliação de políticas públicas, empreendimentos inovadores e no impacto da TI em sistemas produtivos\", diz Cordeiro.",
+        "Francilene é graduada em Ciência da Computação (1987), mestre em Ciência da Computação (1994) e doutora em Engenharia Elétrica (1999), todos os títulos pela Universidade Federal da Paraíba. Ela também atuou como secretária executiva de CT&I no Governo da Paraíba.",
+        "LINK PRESENTE: Gostou deste texto? Assinante pode liberar sete acessos gratuitos de qualquer link por dia. Basta clicar no F azul abaixo.",
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "sua assinatura pode valer ainda mais",
+        "Mais de 180 reportagens e análises publicadas a cada dia. Um time com mais de 200 colunistas e blogueiros. Um jornalismo profissional que fiscaliza o poder público, veicula notícias proveitosas e inspiradoras, faz contraponto à intolerância das redes sociais e traça uma linha clara entre verdade e mentira. Quanto custa ajudar a produzir esse conteúdo?"
+      ],
+      "pontos": [
+        "Articulação de lideranças acadêmicas para o primeiro escalão do governo federal"
+      ]
+    },
+    "reforma-eleitoral-camara-deputados-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/camara-discute-reforma-eleitoral-para-frear-puxadores-de-voto-como-nikolas-veja-modelos-e-debates.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Câmara debate novos modelos proporcionais para conter puxadores de voto",
+      "resumo": [
+        "Deputados federais intensificam negociações sobre uma proposta de reforma eleitoral que visa alterar as regras de distribuição de vagas na Câmara. A iniciativa busca conter distorções causadas por candidaturas com hipervotação nominal que arrastam bancadas expressivas sem representatividade média proporcional."
+      ],
+      "texto_integral": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "A reforma eleitoral em discussão na Câmara dos Deputados divide partidos e parlamentares sobre qual modelo deve ser adotado. O presidente da Casa, Hugo Motta (Republicanos-PB), costurou um acordo com dirigentes do centrão para adotar o voto distrital misto a partir de 2034.",
+        "Como mostrou a Folha, a proposta enfrenta resistências dentro das próprias legendas que participaram das negociações, e ainda não há consenso sobre o modelo a ser seguido.",
+        "A mudança tem como pano de fundo o avanço do PL na Câmara. No sistema atual, candidatos com votação expressiva ajudam a eleger outros integrantes da mesma legenda, mesmo que tenham recebido menos votos. Foi o caso de Nikolas Ferreira (PL-MG) e Lucas Pavanato (PL-SP), que ultrapassaram 3 milhões de votos cada um e contribuíram para a eleição de outros parlamentares do partido.",
+        "A estratégia de Motta para aprovar o distrital misto é jogar a implantação para frente, a partir de 2034, de modo a diluir o receio dos parlamentares sobre seus próprios mandatos. Um modelo de transição deve ser adotado na eleição de 2030, mas também não houve consenso sobre o formato.",
+        "Entenda os modelos e debates sobre reforma eleitoral na Câmara.",
+        "Como é: Modelo atual, no qual candidatos muito bem votados puxam outros. O número de votos de todos os candidatos de cada partido ou federação é somado para definir quantas cadeiras cada sigla terá no Legislativo. A partir daí, as vagas são ocupadas pelos mais votados, desde que tenham no mínimo 10% do quociente eleitoral do estado.",
+        "O quociente eleitoral é o resultado da divisão do número de votos válidos pela quantidade de vagas para aquele cargo em cada estado.",
+        "Interesses envolvidos: Partidos do centrão são contra o modelo porque atribuem a ele o crescimento de candidatos bem posicionados nas redes sociais e que puxam muitos votos para legendas como o PL. O grupo argumenta que a eleição de deputados com votação muito alta acaba levando ao Congresso outros nomes com desempenho eleitoral bastante inferior.",
+        "Como é: O eleitor vota apenas no partido, e não em um candidato específico. As vagas são proporcionais à quantidade de votos de cada sigla e preenchidas seguindo a ordem escolhida pela direção da legenda.",
+        "Interesses envolvidos: Defensores do fortalecimento dos partidos e da organização coletiva das candidaturas são favoráveis ao modelo. Já parlamentares que defendem a escolha direta dos representantes pelo eleitor criticam a concentração de poder nas direções partidárias.",
+        "Receba no seu email destaques das campanhas, pesquisas e disputas nos estados",
+        "Como é: Eleitor escolhe um candidato para representar sua região, em votação majoritária.",
+        "Interesses envolvidos: Dizem preferir o modelo aqueles que defendem uma conexão da disputa eleitoral com questões locais. Para eles, o desenho poderia facilitar a cobrança sobre os representantes. Já candidatos com atuação em temas específicos, representantes de categorias profissionais e de grupos ideológicos, ou com eleitorado espalhado pelo estado, podem ter mais dificuldade para conquistar uma cadeira.",
+        "Como é: Metade das cadeiras vai para os mais votados num determinado território; a outra metade é distribuída entre os partidos mais votados e preenchida de acordo com uma lista escolhida pela sigla.",
+        "Interesses envolvidos: Hugo Motta e dirigentes do centrão tentam aprovar este modelo, que conteria os puxadores de votos. O líder da oposição na Câmara, deputado cabo Gilberto (PL-PB), declarou que os deputados do PL e Novo se reuniram e decidiram votar contra a alteração. Até uma ala do próprio centrão resiste ao distrital misto. Esse grupo, majoritariamente formado por integrantes do baixo clero ou de partidos menores, teme perder espaço para lideranças locais, como prefeitos populares.",
+        "Parte dos integrantes do PT afirma que é possível debater um sistema misto, enquanto outros rejeitam completamente sob o argumento de que o voto distrital pode fazer com que o partido perca grande parte de seus deputados. O domínio de facçõess sobre parte dos territórios também é citado como argumento contra esse desenho.",
+        "Como é: Candidatos a deputado que receberem mais votos no estado serão eleitos, sem precisar depender dos votos do resto do partido para atingir o quociente eleitoral.",
+        "Interesses envolvidos: É criticado por enfraquecer os partidos, estimular campanhas personalistas e impedir a renovação do Parlamento. Uma consequência também pode ser criar campanhas milionárias, em detrimento da diversidade da representação política.",
+        "Como é: Metade das cadeiras é definida pelos mais votados do estado; a outra metade é distribuída entre os partidos mais votados e preenchida com base em uma lista escolhida pela direção da sigla.",
+        "Interesses envolvidos: Partidos como Podemos e Solidariedade, que participaram das articulações em torno da reforma, se dizem favoráveis ao modelo.",
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "sua assinatura pode valer ainda mais",
+        "Mais de 180 reportagens e análises publicadas a cada dia. Um time com mais de 200 colunistas e blogueiros. Um jornalismo profissional que fiscaliza o poder público, veicula notícias proveitosas e inspiradoras, faz contraponto à intolerância das redes sociais e traça uma linha clara entre verdade e mentira. Quanto custa ajudar a produzir esse conteúdo?",
+        "As principais notícias da semana sobre o cenário jurídico e conteúdos exclusivos"
+      ],
+      "pontos": [
+        "Divisão entre partidos sobre modelos para conter crescimento de siglas extremadas"
+      ]
+    },
+    "reforma-eleitoral-camara-deputados-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Câmara debate novos modelos proporcionais para conter puxadores de voto",
+      "resumo": [
+        "Deputados federais intensificam negociações sobre uma proposta de reforma eleitoral que visa alterar as regras de distribuição de vagas na Câmara. A iniciativa busca conter distorções causadas por candidaturas com hipervotação nominal que arrastam bancadas expressivas sem representatividade média proporcional."
+      ],
+      "texto_integral": [
+        "Centrão tenta frear PL com voto distrital misto",
+        "Líderes da Câmara dos Deputados e presidentes de partido articulam e pretendem retomar a tramitação de uma proposta que altera a forma de escolha dos deputados e institui o chamado sistema distrital misto.",
+        "O principal objetivo é frear a perda de espaço de partidos de centro no parlamento, após o crescimento do Partido Liberal (PL) nas eleições de 2026, que diminuiu o espaço de partidos do Centrão na Câmara e ampliou o espaço da ala bolsonarista.",
+        "A votação da proposta ainda está em negociação, mas a ideia é que as mudanças nas regras eleitorais comecem a valer integralmente nas eleições de 2034, com uma transição nas próximas eleições nacionais.",
+        "A iniciativa começou a ser discutida depois do primeiro turno da disputa, ainda no início de outubro, em uma declaração do presidente da Câmara, Hugo Motta (Republicanos-PB), um representante do Centrão.",
+        "O PL terminou as eleições com 121 deputados, a maior bancada desde a Constituinte. Há quatro anos, o partido havia conseguido 99 deputados. Com o resultado deste ano, a sigla terá 23,6% das 513 cadeiras da Câmara dos Deputados.",
+        "Em contrapartida, o Centrão diminuiu sua presença. Perdeu 22 cadeiras em comparação com as eleições de 2022. Há entre os partidos do centro uma leitura de que mudanças precisam ser feitas para manter o poder dos partidos de centro.",
+        "Hugo Motta afirmou que pretende aprovar uma Proposta de Emenda à Constituição (PEC) instituindo o sistema distrital misto. A expectativa de líderes do centro é aprovar as mudanças ainda em 2026, ainda que admitam que as articulações estão somente no início.",
+        "Motta dialoga ainda com o presidente do Senado Federal, Davi Alcolumbre (União-AP), para agilizar a votação. Líderes esperam o apoio dos senadores porque as mudanças não afetam as eleições para eles. Mas o texto também ainda precisa de acordo na própria Câmara. Motta ainda tenta conseguir apoio do PT e do próprio PL.",
+        "O PL não tem interesse em mudar o sistema. Já entre os petistas, há resistência em alterar regras eleitorais logo depois de uma eleição acirrada. O medo é fornecer aos apoiadores de Flávio Bolsonaro (PL) o argumento de que há cerceamento ao partido bolsonarista.",
+        "Outros parlamentares dizem ainda que a mudança é tardia, que o perfil do Congresso já foi alterado.",
+        "O relator da PEC que ainda será apresentada deve ser o deputado Domingos Neto (PSD-CE), que já é o relator de um projeto de lei sobre o sistema distrital na Câmara.",
+        "Distrital, distritão ou distrital misto",
+        "Um dos pontos que ainda estão sendo negociados entre os líderes partidários é qual modelo será adotado.",
+        "🔎 Atualmente, deputados são escolhidos de acordo com votos que eles e os seus partidos recebem. O Tribunal Superior Eleitoral (TSE) realiza uma conta, chamada de quociente eleitoral, para definir quantos votos cada partido precisa para ter uma cadeira na Câmara dos Deputados. Esse modelo é chamado de sistema proporcional.",
+        "Essa fórmula acaba criando os chamados \"puxadores de votos\" — um candidato que recebe muitos votos e, indiretamente, contribui para a eleição de candidatos que não obtiveram o número suficiente de votos.",
+        "Neste ano, votações expressivas em deputados como Nikolas Ferreira (PL-MG) e Erika Hilton (PSOL-SP) puxaram outros candidatos de seus partidos.",
+        "No sistema distrital, cada estado brasileiro é dividido em distritos. Cada distrito elege um número específico de deputados. Os moradores dessa determinada região poderão votar apenas nos candidatos do distrito em que vivem. São eleitos os candidatos mais votados no distrito.",
+        "Mas, buscando manter uma parte do poder dos partidos no processo eleitoral, os deputados estudam criar um modelo misto:",
+        "metade das vagas do distrito ficaria com os mais votados; a outra metade seria distribuída seguindo uma lista de candidatos definida previamente pelos partidos. As vagas seriam divididas de acordo com a quantidade de votos que as siglas conseguirem. Por exemplo: se um partido obtém votos para eleger quatro deputados, são eleitos os quatro primeiros nomes da lista.",
+        "O distrital misto tem como defensores presidentes de partidos como Gilberto Kassab, do PSD, e Ciro Nogueira, do Progressistas. Mas não há consenso no Congresso Nacional.",
+        "Apesar de defender o modelo, a deputada Adriana Ventura (Novo-SP) aponta algumas preocupações, como o sistema deixar a disputa mais vulnerável ao crime organizado, com candidatos de facções ou milícias controlando alguns distritos.",
+        "Parlamentares do PSOL também são críticos ao distrital misto por entenderem que o modelo prejudicaria o partido. Apontam, ainda, o risco de reduzir a participação de grupos que já são minoria no Congresso, como mulheres e negros.",
+        "Muitos deputados defendem um quarto modelo, o chamado distritão: transformar a eleição da Câmara em majoritária. Ou seja, os deputados mais votados em cada estado são eleitos, sem os chamados \"puxadores de votos\".",
+        "O modelo é criticado por especialistas, que dizem que ele pode facilitar a eleição de candidatos com mais recursos e dificultar a renovação no Congresso Nacional. A Câmara tentou aprovar a mudança para este modelo em 2017 e 2021, mas não houve votos suficientes para aprovar a mudança.",
+        "Deputado mais votado no Rio de Janeiro, o líder do PP, deputado Luizinho, é a favor do modelo e diz que, para não enfraquecer os partidos, a proposta poderia prever que o mandato pertence às legendas, diferentemente de outras eleições majoritárias, e o deputado não poderia trocar de filiação.",
+        "Para angariar apoio, os líderes indicaram que as mudanças não valeriam para as próximas eleições, em 2030. Nela, haveria uma transição. Mas os detalhes de como isso seria feito não foram definidos, segundo o relator Domingos Neto.",
+        "Parlamentares ouvidos pelo g1 e pela GloboNews dizem que existe a ideia de fazer um distritão em 2030 para atender os deputados que defendem esse modelo. Depois, em 2034, entraria em vigor o distrital misto, com a lista fechada dos partidos.",
+        "Domingos Neto afirma que a lista dos partidos deverá seguir as regras de inclusão e cotas de mulheres e negros e pardos para candidaturas. Mas ainda há dúvidas sobre como a diversidade de eleitos seria garantida se os partidos puderem definir a ordem da lista.",
+        "Em 2034, os eleitores votariam assim, somente uma vez, para deputado em cada distrito, para eleger deputados, e esses votos seriam contabilizados no estado para a definição de forma proporcional de quantas vagas cada sigla poderia preencher a partir da lista dos partidos.",
+        "Um dos pontos que levam a mais dúvidas entre os deputados é a divisão dos estados em distritos. Deputados estão preocupados com os votos que hoje são espalhados em várias cidades que podem pertencer a distritos diferentes.",
+        "Domingos Neto afirma que a definição dos distritos seria feita a partir de critérios do Instituto Brasileiro de Geografia e Estatística (IBGE) e uma comissão mista do Congresso acompanharia a implementação.",
+        "Por outro lado, defensores indicam que o processo eleitoral ficaria mais barato, já que o candidato não precisaria fazer campanha em todo o estado, somente em seu distrito.",
+        "Também dizem que o distrital misto aproximaria o candidato dos problemas reais dos eleitores, ao se concentrarem em uma região menor."
+      ],
+      "pontos": [
+        "Modelos legislativos em pauta na comissão e propostas de transição"
+      ]
+    },
+    "stf-fux-regulamentacao-apostas-bets-agenciabrasil.ebc.com.br/justi": {
+      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/fux-atende-agu-e-inclui-ministerios-e-abras-em-debate-sobre-bets",
+      "fonte": "Agência Brasil / EBC",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "STF inclui ministérios e setor de serviços em audiências sobre apostas virtuais",
+      "resumo": [
+        "O ministro Luiz Fux, do Supremo Tribunal Federal, atendeu a pedido da Advocacia-Geral da União (AGU) e determinou a inclusão de pastas ministeriais e da Associação Brasileira de Bares e Restaurantes (Abras) nas audiências sobre o mercado de bets. O objetivo é aprofundar os impactos econômicos e na saúde mental do consumidor provocados pela proliferação das plataformas online."
+      ],
+      "texto_integral": [
+        "A pedido da Advocacia-Geral da União (AGU), o ministro Luiz Fux, do Supremo Tribunal Federal (STF), decidiu neste domingo (1°) convocar representantes dos ministérios da Saúde e da Justiça e Segurança Pública para a audiência em que vão ser discutidos os impactos da Medida Provisória nº 1.394/2026, que proíbe o funcionamento das empresas de apostas online no Brasil, as chamadas bets.",
+        "A audiência pública está agendada para esta terça-feira (3) em Brasília (DF), a partir das 10h, e será transmitida pela TV e pela Rádio Justiça, e também pelo canal do STF no YouTube.",
+        "Além dos representantes das duas pastas, Fux decidiu convocar a Associação Brasileira de Supermercados (Abras); o Comitê Paralímpico do Brasil; a Federação Nacional dos Atletas Profissionais de Futebol (Fenapaf); e o Grêmio Futebol Clube.",
+        "Com isso, a relação de participantes agora chega a 34 entidades, órgãos e associações.",
+        "Foi no âmbito da ADI que o ministro decidiu convocar a audiência pública desta terça-feira. Em seu primeiro despacho, de 26 de outubro, Fux convocou 26 entidades, entre representantes do Poder Executivo, clubes de futebol, organizações esportivas, associações e institutos ligados ao tema.",
+        "Na sequência, o ministro publicou uma nova convocatória, incluindo a participação de representantes do Comitê Olímpico do Brasil (COB) e do Ministério dos Esportes.",
+        "Foi então que a AGU requereu ao ministro que ampliasse o rol de participantes do evento, por entender que “o total dos atores convocados parece formar um quadro predominantemente integrado por entidades esportivas e representantes de operadoras de apostas”.",
+        "Até aquele momento, só os clubes de futebol e os representantes das casas de apostas, que defendem a volta da liberação das bets, totalizavam 17 participantes, dos 26 convocados.",
+        "“Composição que, com a devida vênia, pode vir a dificultar a vocalização equilibrada das diversas correntes de opinião e de exposição de expertises e dados técnicos pertinentes ao debate posto nesta ação direta”, assinalou a AGU em seu requerimento.",
+        "Ao analisar a manifestação da AGU, Fux destacou que, em novembro de 2024, ele próprio conduziu duas audiências públicas durante as quais diferentes entidades contrárias à permissão das bets apontaram as “consequências sociais nocivas da atividade”.",
+        "Entre as organizações que participaram das duas audiências anteriores estavam a Associação Brasileira de Psiquiatria (ABP), a Associação Brasileira de Estudos do Álcool e outras Drogas (Abead), o Instituto Alana, o Instituto Brasileiro de Defesa do Consumidor (IDEC), a Associação Nacional dos Aposentados, Pessoas com Deficiência, Idosos, Pensionistas e dos Segurados da Previdência (Anadips), entre outras – nenhuma delas convocada para o evento desta terça-feira.",
+        "“Os malefícios sociais das apostas já são de conhecimento desta Corte, tendo sido, inclusive, utilizados para embasar votos meus em outros julgados sobre o tema”, destaca Fux em sua mais recente decisão, divulgada neste domingo, na qual se refere aos impactos das bets na saúde e economia.",
+        "Saiba quem são os participantes da audiência pública, que será aberta pelo ministro Luiz Fux, as 10 horas, e o horário da participação de cada um deles:"
+      ],
+      "pontos": [
+        "Decisão do STF que amplia participantes em audiência sobre impactos sociais e econômicos"
+      ]
+    },
+    "queimadas-outubro-brasil-alta-poder360.com.br/poder-sustenta": {
+      "url": "https://www.poder360.com.br/poder-sustentavel/brasil-tem-32-454-focos-de-incendio-em-outubro-alta-anual-de-132/",
+      "fonte": "Poder360",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Brasil registra 32,4 mil focos de incêndio em outubro, alta anual de 13,2%",
+      "resumo": [
+        "Dados de monitoramento por satélite apontaram 32.454 focos de queimada em território nacional durante o mês de outubro, o que representa um aumento de 13,2% em comparação ao mesmo mês de 2025. Apesar da pressão mensal, o balanço acumulado do ano de 2026 apresenta ligeira retração de 1,6%."
+      ],
+      "texto_integral": [
+        "Apesar da alta no mês, houve queda anual de 1,6% no acumulado de 2026",
+        "O Brasil registrou 32.454 focos de incêndio em outubro de 2026. Houve alta de 13,2% em relação ao mesmo mês de 2025, quando o país teve 28.678 ocorrências do tipo. Os dados são do sistema BDQueimadas do Instituto Nacional de Pesquisas Espaciais.",
+        "O Pará foi o Estado mais atingido, com 12.457 focos de incêndio –o correspondente a 38,4% do total. Na sequência estão Maranhão (4.225), Bahia (3.308) e Amazonas (2.271).",
+        "São Paulo, com 26 registros, Distrito Federal, com 11, Rio de Janeiro, com 5, aparecem no fim do ranking.",
+        "Todos os biomas brasileiros registraram focos de incêndio. A Amazônia concentra a maior parcela, com 18.907.",
+        "No acumulado de 2026, o Brasil teve 102.804 focos de incêndio, queda de 1,6% com relação ao mesmo período do ano passado, quando o país registrou 104.423 ocorrências do tipo."
+      ],
+      "pontos": [
+        "Estatísticas de queimadas por bioma e comparativo anual do monitoramento"
+      ]
+    },
+    "nova-regra-atendimento-humano-sac-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/11/02/empresas-devem-oferecer-atendimento-humano-para-o-consumidor-a-partir-desta-segunda-feira.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Empresas são obrigadas a ofertar atendimento humano ao consumidor a partir de hoje",
+      "resumo": [
+        "Começam a valer nesta segunda-feira as novas diretrizes de relacionamento com clientes que obrigam fornecedores de serviços e grandes empresas a oferecer opção de atendimento por operadores humanos. A norma busca combater a frustração e a ineficácia de fluxos exclusivamente robotizados em canais de SAC."
+      ],
+      "texto_integral": [
+        "A partir desta segunda-feira (2), empresas deverão oferecer atendimento humano para o consumidor",
+        "Começam a valer nesta segunda-feira (2) as mudanças nas regras de funcionamento dos serviços de atendimento aos consumidores, os SACs, mantidos por empresas. A principal alteração é a exigência de atendimento humano, todos os dias, entre as 8h e as 20h.",
+        "O decreto do governo federal com as mudanças foi publicado em 13 de outubro, com prazo de 20 dias para começar a valer.",
+        "As medidas são apenas para empresas cujos serviços são regulados pelo governo. Entram nessa categoria operadoras de telefonia e de planos de saúde, empresas aéreas, concessionárias de energia e empresas do setor financeiro, como bancos e fintechs.",
+        "O decreto também determina que empresas de transporte individual ou de encomendas, como a Uber, cujos serviços não são regulados, prestem informações ao governo sobre o atendimento aos consumidores.",
+        "A principal medida é a que garante que os consumidores consigam ser atendidos por um humano, entre as 8h e as 20h, todos os dias, em canais eletrônicos, como os chats, e por ligação telefônica.",
+        "De acordo com o governo, essa exigência corrige uma flexibilização nas regras dos SACs feita durante a pandemia, que permitiu a ampliação do uso de ferramentas digitais e reduziu o atendimento feito por pessoas.",
+        "O decreto diz que as empresas deverão assegurar aos consumidores o acesso imediato à opção de cancelamento dos contratos e ao atendimento por humano, seja nos canais digitais ou nas chamadas telefônicas.",
+        "E que não poderão utilizar mais que cinco níveis de atendimento para finalizar a demanda dos consumidores.",
+        "Em relação aos canais telefônicos, o texto diz que as empresas deverão retornar ao consumidor quando uma chamada for interrompida antes da conclusão do atendimento. O prazo máximo para o contato é de 300 segundos, ou seja, cinco minutos."
+      ],
+      "pontos": [
+        "Entrada em vigor das exigências e regras de fiscalização para call centers"
+      ]
+    },
+    "ataque-hacker-sistemas-alerta-guerra-bbc.com/portuguese/articles/cw": {
+      "url": "https://www.bbc.com/portuguese/articles/cwrky5dm77dxo?at_medium=RSS&at_campaign=rss",
+      "fonte": "BBC News Brasil",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Ataques cibernéticos violam aplicativos de alertas de emergência na Ucrânia e na Rússia",
+      "resumo": [
+        "Invasões hacker a sistemas civis de notificação dispararam alertas falsos sobre bombardeios iminentes, contaminação química e ameaças de radiação nuclear para usuários na Rússia e na Ucrânia. Especialistas em segurança apontam o avanço de táticas de guerra híbrida com o intuito de semear pânico generalizado na população urbana."
+      ],
+      "texto_integral": [
+        "A Ucrânia e a Rússia alegaram que seus aplicativos de alerta de emergência foram invadidos no domingo (1/11) à noite e passaram a enviar alertas falsos aos moradores, avisando sobre ataques aéreos e outros tipos de ataques, incluindo nucleares.",
+        "Pouco antes das 23h do horário local (18h no horário de Brasília), o aplicativo de alerta de ataques aéreos mais utilizado na Ucrânia enviou avisos de nível vermelho para todo o país — com alertas adicionais de radiação, ataques químicos e agitação civil enviados a moradores de áreas como Kiev.",
+        "Um alerta enviado depois pelo Telegram dizia: \"O aplicativo Air Alarm provavelmente sofreu uma interferência hostil. Não há ameaça de radiação! Mantenha a calma e acompanhe nossas atualizações em nosso canal.\"",
+        "Algumas horas depois, as autoridades russas disseram que seu aplicativo havia sido hackeado. Um grupo secreto ucraniano na Crimeia (anexada pela Rússia), que espiona atividade russa, alegou que falsos alertas de ataques nucleares dentro da Rússia haviam sido enviados aos usuários.",
+        "Na Ucrânia, a Agência Central de Inteligência afirmou que houve uma falha no aplicativo e pediu à população que utilizasse outras fontes de informação para esclarecer a situação sobre a ameaça de ataques aéreos.",
+        "Os alertas começaram por volta das 22h47, com o primeiro aviso emitido em Kiev, que dizia: \"Ameaça de radiação. Ameaça de radiação declarada em Kiev.\"",
+        "A próxima mensagem, escrita em russo, chegou às 22h48 e dizia: \"Olá! Haverá um alerta nuclear em toda a Ucrânia. Não se preocupem, é o Oreshnik voando\".",
+        "Oreshnik é o nome de um míssil balístico russo de alcance intermediário capaz de transportar ogivas nucleares ou convencionais.",
+        "A Rússia possui o maior arsenal nuclear do mundo, e o presidente Vladimir Putin tem sugerido em diversas ocasiões a abertura para o uso de todas as armas à disposição da Rússia.",
+        "Um terceiro alerta, às 22h49, em ucraniano, dizia: \"Ameaça química. Há uma ameaça de ataque químico em Kiev. Não saia de casa.\"",
+        "Às 22h49, um quarto alerta informou sobre uma \"Ameaça de confrontos de rua. Há confrontos de rua ocorrendo em Kiev. Não saia de casa.\"",
+        "Às 23h53, uma série de mensagens de \"tudo resolvido\" foi enviada aos telefones dos usuários que haviam recebido os alertas anteriores de Kiev, declarando que cada ameaça havia sido eliminada.",
+        "A Agência Central de Inteligência informou no Telegram que os alertas acionaram um aviso de risco radiológico em alto-falantes na região de Lviv, mas acrescentou que não havia qualquer ameaça de radiação.",
+        "O aplicativo Air Alert, mantido pelo Ministério da Transformação Digital da Ucrânia, informa instantaneamente aos usuários o início e o fim de alertas de defesa. O ministério afirmou que desativou temporariamente o aplicativo para manutenção após ele \"aparentemente ter sido comprometido\".",
+        "Embora os falsos alarmes tenham sido rapidamente contidos, especialistas em segurança cibernética sugeriram que se tratava de uma nova linha de aparentes ciberataques russos.",
+        "\"Acho que é a primeira vez que isso acontece com um aplicativo oficial de informações ucraniano, mas suspeito que não será a última\", disse Herbert Lin, pesquisador de política e segurança cibernética da Universidade Stanford, à BBC.",
+        "Oleksander Merezhko, presidente da comissão de relações exteriores do Parlamento ucraniano e membro do partido Servo do Povo, do presidente Volodymyr Zelensky, disse à BBC que o ataque não causou pânico nem reações extremas. Merezhko afirmou que os ucranianos, especialmente em Kiev, estão acostumados a \"alertas praticamente ininterruptos\".",
+        "\"Em segundo lugar, esta mensagem estava em russo, o que imediatamente despertou suspeitas\", disse ele.",
+        "\"É um fato muito desagradável, mas faz parte da guerra cibernética e as pessoas na Ucrânia entendem isso. É possível e estamos bastante preparados para tais possibilidades.\"",
+        "Caso o aplicativo de alertas não esteja funcionando, o Centro Ucraniano de Combate à Desinformação aconselha o público a ativar as notificações em seus smartphones, prestar atenção às sirenes e consultar apenas fontes oficiais.",
+        "Diversos líderes de outras regiões também publicaram no Telegram que o aplicativo aparentemente havia sido hackeado e que não havia ameaça local.",
+        "\"Por enquanto, tudo está calmo na região\", disse Svitlana Onyshchuk, chefe da região de Ivano-Frankivsk. O aplicativo havia emitido um alerta vermelho de ataque aéreo para a região leste da Ucrânia, entre 22h50 e 23h57.",
+        "A chefe regional de Vinnytsia, Natalya Zabolotna, afirmou que houve um ataque cibernético ao aplicativo Air Alert e publicou um aviso no Telegram para que as pessoas não clicassem no link da mensagem, que poderia ser uma tentativa de phishing.",
+        "Poucas horas após os falsos alertas na Ucrânia, o Ministério de Situações de Emergência da Rússia afirmou que seu aplicativo havia sido alvo de um \"ataque cibernético massivo\", que enviou \"informações falsas ao público\".",
+        "A agência de notícias ucraniana UNN informou que o ataque cibernético enviou alertas falsos de ameaça nuclear dentro da Rússia, citando o Atesh, o grupo ucraniano que opera em território controlado pela Rússia.",
+        "Uma suposta captura de tela do alerta falso, compartilhada por Atesh no Telegram, avisava os usuários que \"ogivas nucleares montadas em drones P1-Sun [um drone de ataque ucraniano] haviam sido lançadas contra todas as regiões da Rússia\".",
+        "O alerta, que incluía palavrões, começava com uma mensagem dizendo aos moradores que havia um \"risco de tumulto\" e os aconselhava a \"estocar urgentemente comida para três semanas e se esconder\".",
+        "Em um comunicado posterior, o Ministério de Situações de Emergência da Rússia afirmou que especialistas ainda estavam trabalhando para restabelecer o funcionamento normal do aplicativo, mas que o ataque cibernético não afetou o sistema de alerta geral do país.",
+        "O comunicado afirmava que os cidadãos eram informados sobre os alertas por meio de múltiplos canais, incluindo sirenes e alto-falantes, mensagens de texto e transmissões de TV e rádio, e que o aplicativo era \"apenas um serviço de notícias adicional e complementar\".",
+        "\"A invasão do aplicativo móvel não teve, e não pode ter, qualquer impacto no funcionamento do sistema de alerta público\", afirmou o ministério em seu canal no Telegram.",
+        "Os alertas ocorreram poucos minutos antes do fim de um cessar-fogo localizado na região de Kherson, na linha de frente da Ucrânia, que foi implementado na terça-feira passada e terminou oficialmente às 23h de domingo.",
+        "Os combates continuaram em outros locais enquanto o cessar-fogo em Kherson estava em vigor, para permitir que civis evacuassem a cidade de Oleshky, ocupada pela Rússia.",
+        "A Rússia lançou uma invasão em grande escala da Ucrânia em fevereiro de 2022."
+      ],
+      "pontos": [
+        "Relatos de alertas falsificados de ataques aéreos e nucleares em aplicativos civis"
+      ]
+    },
+    "ataque-hacker-sistemas-alerta-guerra-metropoles.com/mundo/hackers-i": {
+      "url": "https://www.metropoles.com/mundo/hackers-invadiram-apps-de-alertas-de-guerra-da-russia-e-da-ucrania",
+      "fonte": "Metrópoles",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Ataques cibernéticos violam aplicativos de alertas de emergência na Ucrânia e na Rússia",
+      "resumo": [
+        "Invasões hacker a sistemas civis de notificação dispararam alertas falsos sobre bombardeios iminentes, contaminação química e ameaças de radiação nuclear para usuários na Rússia e na Ucrânia. Especialistas em segurança apontam o avanço de táticas de guerra híbrida com o intuito de semear pânico generalizado na população urbana."
+      ],
+      "texto_integral": [
+        "A Ucrânia e a Rússia relataram que seus sistemas de alerta via aplicativo foram alvos de ataques cibernéticos durante a noite desse domingo (1º/11). São aplicativos móveis que enviam avisos e alertas de ataques aéreos, informando os cidadãos sobre a aproximação de mísseis e drones (orientando, assim, que os moradores busquem abrigo ou se dirijam a um bunker).",
+        "Esta parece ser a primeira invasão hacker nessa escala desde o início da guerra, inutilizando diretamente um dos canais de comunicação mais importantes de que as autoridades dispõem para orientar a população. Em Kiev, os moradores receberam uma série de alertas incomuns na noite desse domingo, ao longo de aproximadamente uma hora.",
+        "Normalmente, as pessoas recebem vários alertas por dia sobre a aproximação de drones ou mísseis russos; após quatro anos vivendo em uma zona de guerra, os moradores já estão acostumados a ouvir seus celulares tocarem, muitas vezes seguidos pelo som de sirenes nas ruas.",
+        "Ucranianos recebem alerta nuclear em celulares, mas governo desmente ameaça",
+        "Ucrânia ataca fábricas e alvos militares em diferentes regiões da Rússia",
+        "Putin diz que Rússia está pronta para retomar negociações com Ucrânia e EUA",
+        "Rússia diz ter atingido maior siderúrgica da Ucrânia",
+        "No entanto, essas mensagens alertavam para ameaças completamente diferentes: risco de radiação nuclear, ataque químico e até mesmo combates nas ruas de Kiev.",
+        "Uma das mensagens foi enviada em russo, um sinal claro de que algo estava, no mínimo, estranho.",
+        "Em menos de uma hora, as autoridades ucranianas divulgaram mensagens no Telegram informando que acreditavam que o sistema dos aplicativos havia sido comprometido.",
+        "O canal de alertas de ataques aéreos informou que “partes não autorizadas” interferiram no sistema, que foi temporariamente retirado do ar. As autoridades orientaram os usuários a não clicarem em links presentes em “notificações suspeitas”.",
+        "A Força Aérea escreveu no Telegram: “O aplicativo de alerta aéreo provavelmente sofreu uma interferência hostil. Não há ameaça de radiação! Mantenham a calma e acompanhem nossas atualizações em nosso canal”.",
+        "Na Rússia, as autoridades informaram, nesta segunda-feira (2/11), que hackers obtiveram acesso ao aplicativo móvel do Ministério de Situações de Emergência para envirar as informações falsas.",
+        "O Ministério de Situações de Emergência comunicou que precisou tirar o aplicativo do ar temporariamente, mas tranquilizou a população ao afirmar que o sistema de alerta mais amplo — que inclui mensagens SMS, transmissões, sirenes nas ruas e alto-falantes — continua em funcionamento.",
+        "O ministério russo não indicou os responsáveis ​​pelo ataque. No entanto, a mídia ucraniana relatou alegações do grupo cibernético ucraniano Atesh de que eles teriam sido os autores do envio das mensagens, as quais também continham ameaças nucleares.",
+        "Com informações do jornal britânico The Guardian."
+      ],
+      "pontos": [
+        "Desdobramentos técnicos e o pânico gerado por invasão a canais digitais de defesa"
+      ]
+    },
+    "plataforma-online-analise-dados-geneticos-poder360.com.br/poder-saude/fe": {
+      "url": "https://www.poder360.com.br/poder-saude/ferramenta-on-line-gratuita-facilita-a-analise-de-dados-geneticos-complexos/",
+      "fonte": "Poder360",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Ferramenta digital gratuita simplifica análise de expressão gênica em células individuais",
+      "resumo": [
+        "Pesquisadores lançaram uma nova plataforma acessível via navegador que permite a exploração e visualização de dados de sequenciamento de RNA em nível de célula única sem necessidade de domínio avançado em linguagens de programação. A solução busca democratizar o processamento bioinformático em laboratórios de biologia molecular e genética."
+      ],
+      "texto_integral": [
+        "Plataforma permite analisar dados de expressão gênica em células individuais sem conhecimentos de programação",
+        "Pesquisadores da Universidade Estadual de Campinas e colaboradores desenvolveram uma ferramenta on-line gratuita para facilitar a análise de informações genéticas complexas. O software, chamado CellForgeR, permite que pesquisadores sem experiência em programação analisem dados de expressão gênica em células individuais. A expectativa é que a plataforma, a 1ª do tipo desenvolvida no país, amplie a capacidade de investigação nas áreas de saúde e biologia.",
+        "A metodologia por trás do CellForgeR, o sequenciamento de RNA de célula única (single-cell RNA-seq), tem mudado a forma como cientistas estudam tumores, o cérebro e outros órgãos do corpo humano e animal. Em vez de analisar um conjunto de células que formam um tecido, como nas técnicas tradicionais de sequenciamento genético, ela identifica quais genes estão expressos em cada célula individualmente.",
+        "“Essa metodologia nos permite enxergar as células num nível de detalhes inédito. Assim, descobriu-se, por exemplo, que os macrófagos [células que atuam na linha de frente do sistema imune], antes divididos simplificadamente em M1 e M2, formam um verdadeiro mosaico de estados celulares. O mesmo ocorreu em relação aos adipócitos [células de gordura]. Acreditava-se que estavam divididos entre brancos, marrons ou beges, quando, na verdade, há um espectro maior. Esse detalhamento é essencial para compreender doenças metabólicas de forma mais precisa”, diz Marcelo Mori, professor do Instituto de Biologia da Unicamp e um dos envolvidos no desenvolvimento do CellForgeR.",
+        "Com base nesses e em outros exemplos, Mori afirma que o impacto dessa tecnologia é comparável ao salto que o microscópio eletrônico trouxe à biologia. “Ambos nos permitiram enxergar amostras biológicas com maior definição e mudaram a forma como fazemos investigações e formulamos perguntas e hipóteses”, declara.",
+        "Pesquisadores podem escolher parâmetros, tipos celulares e genes de interesse usando menus e botões, sem precisar programar.",
+        "Trabalhar com uma quantidade monumental de dados exige conhecimento avançado em bioinformática e acesso a computadores com alto poder de processamento. “Nos Estados Unidos, por exemplo, as universidades estimulam a criação de softwares que facilitem esse tipo de análise. Lá, os laboratórios têm acesso a ferramentas internas ou a programas de empresas especializadas, computadores muito potentes, que costumam ser caros”, diz Diogo de Moraes, pesquisador da Universidade Estadual Paulista e um dos criadores do CellForgeR, que passou um período na Harvard Medical School durante o doutorado, apoiado pela Fapesp.",
+        "Nesse período, Moraes desenvolveu sozinho uma plataforma voltada à análise de RNA-Seq tradicional. “Quando voltei para o Brasil, pensei: ‘Por que não criar uma plataforma aqui também?’”, declara.",
+        "Por ser mais complexo, o CellForgeR foi desenvolvido em colaboração com outros especialistas em bioinformática da Unicamp, da Unesp e da Universidade de São Paulo .",
+        "“Diferentemente dos programas tradicionais, a plataforma não precisa ser instalada no computador do usuário. Ela funciona diretamente em um data center da Unicamp, o Cluster Científico do Instituto de Biologia. O pesquisador acessa tudo pelo navegador, usa dados que ele produziu ou que já estão disponíveis na internet, escolhe parâmetros, tipos celulares e genes de interesse usando menus e botões, sem precisar programar uma linha de código. Se o pesquisador sabe usar uma planilha de Excel, agora também consegue analisar dados de células únicas”, diz Moraes.",
+        "Com a nova ferramenta, perguntas que antes exigiam várias etapas de programação e um computador de alto desempenho podem ser respondidas em minutos. “Um pesquisador interessado em câncer, por exemplo, pode selecionar os dados referentes aos macrófagos de um tumor, investigar a expressão de um gene específico e comparar com outros tipos celulares”, afirma Mori. “A ideia, portanto, é ampliar a capacidade de análise e estimular que mais cientistas revisitem dados públicos, eliminando as barreiras técnica e financeira e ampliando a possibilidade de novas descobertas.”",
+        "O CellForgeR integra uma estratégia maior desse grupo de cientistas: formar recursos humanos para a pesquisa. “Atualmente, buscamos capacitar pesquisadores tanto nas técnicas de bancada de laboratório quanto no manuseio de dados de sequenciamento de células únicas. A programação e a manipulação de dados brutos têm sido uma das maiores barreiras para médicos e cientistas”, diz Mori.",
+        "Os laboratórios envolvidos também planejam realizar treinamentos para cientistas de diferentes áreas interessados em se aprofundar na análise de dados de single-cell RNA-seq.",
+        "Este texto foi publicado originalmente pela Agência Fapesp, em 22 de outubro de 2026. O conteúdo é livre para republicação, citada a fonte, e foi adaptado para o padrão do Poder360."
+      ],
+      "pontos": [
+        "Lançamento de software científico sem custo para análises de transcriptômica"
       ]
     }
   }
