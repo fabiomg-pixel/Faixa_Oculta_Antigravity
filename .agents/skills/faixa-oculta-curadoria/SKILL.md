@@ -136,3 +136,15 @@ Em cada edição mensal (Música, Cinema e Livros), deve ser produzido um módul
 * **Livros Novos:** Lançamentos editoriais devem ser apurados online junto às editoras brasileiras (Companhia das Letras, Todavia, Record, Zahar, Bazar do Tempo) e portais literários (*PublishNews*, *Quatro Cinco Um*).
 * **Música e Álbuns:** Discos novos contemporâneos devem ser apurados via portais e APIs de música (Pitchfork, Billboard Brasil, Rolling Stone, Deezer, iTunes).
 * **Varredor Automático:** O script `tools/varredura_cultural_online.py` integra a orquestração do sistema (`tools/orquestrador_nuvem.py` e `tools/sentinela_boletim.py`), garantindo que 100% dos dados e das capas oficiais sejam sincronizados ao vivo das APIs externas.
+
+---
+
+## 11. Perfil Editorial Personalizado do Leitor (Fabio Gomes / UFRJ)
+
+A curadoria da Faixa Oculta foi desenhada especificamente para seu leitor-alvo, professor e pesquisador de biofísica na UFRJ. Todos os pilares editoriais devem refletir esse horizonte:
+
+1. **Ciência, Saúde Pública & Amazônia:** Pesquisas de ponta em biofísica, imunometabolismo, arboviroses e vetores; mobilização acadêmica (SBPC, ABC, UFRJ, Fiocruz, FAPESP); clima, sustentabilidade e a Amazônia (Davi Kopenawa, Sumaúma).
+2. **Política & Diplomacia:** Geopolítica internacional e política externa brasileira (Itamaraty, CEBRI, multilateralismo, BRICS, transição global); política nacional plural, reformas institucionais, STF e memória histórica democrática.
+3. **Ficção Científica (Sci-Fi) & Fantasia:** Hard sci-fi, especulação sobre inteligência artificial, colapso tecnológico e ecologia (Editora Aleph, Morro Branco, Todavia); alta fantasia mitológica, cosmologias indígenas e realismo mágico de autor.
+4. **Música:** Indie rock/folk e canção confessional (Lucy Dacus, Phoebe Bridgers, Julia Jacklin, Soccer Mommy, Sharon Van Etten); art-rock e pós-punk (Geese, bar italia); shoegaze-pop (Wishy, beabadoobee); folk literário (The Decemberists, Okkervil River, Greg Freeman); rock e vanguarda brasileira (Papangu, Letrux, El Efecto, Clau Aniz, Marcelo Cabral); cânone moderno (Radiohead, Blur, Queens of the Stone Age).
+5. **Cinema:** Cinema autoral e de festivais internacionais (Cannes, Veneza, Festival do Rio, Mostra SP); cinema brasileiro independente (Gabriel Martins, Kleber Mendonça Filho, Filmes de Plástico, Pedro Freire); documentários reflexivos e cosmologias visuais.

@@ -42,6 +42,11 @@ FEEDS = [
     # Judiciário e Direito Constitucional
     ("ConJur", "https://www.conjur.com.br/feed/"),
 
+    # Diplomacia, Geopolítica e Política Internacional
+    ("Le Monde Diplomatique Brasil", "https://diplomatique.org.br/feed/"),
+    ("Agência Brasil - Internacional", "https://agenciabrasil.ebc.com.br/rss/internacional/feed.xml"),
+    ("Folha de S.Paulo - Mundo", "https://feeds.folha.uol.com.br/mundo/rss091.xml"),
+
     # Política, Economia e Sociedade (Visões Plurais e Independentes)
     ("CartaCapital", "https://www.cartacapital.com.br/feed/"),
     ("Brasil de Fato", "https://www.brasildefato.com.br/feed"),

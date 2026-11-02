@@ -13366,6 +13366,40 @@
       "ponte": "História do Brasil, ciência política, instituições republicanas e não ficção essencial.",
       "capa": "capas/c51a06262dd46206b4d594e6a3f03884.jpg",
       "imagem": "capas/c51a06262dd46206b4d594e6a3f03884.jpg"
+    },
+    "2026-11--a-volta-de-trump": {
+      "id": "2026-11--a-volta-de-trump",
+      "titulo": "A Volta de Trump: Choque Político e Relações Internacionais",
+      "autor": "Sebastião Velasco e Cruz e Neusa Bojikian",
+      "ano": 2026,
+      "paginas": 312,
+      "pais": "Brasil",
+      "editora": "Editora Unesp",
+      "secao": "ideias",
+      "edicao": "2026-11",
+      "capa": "capas/fc7bc39067b8ac6b90d31c1c1521f67f.jpg",
+      "imagem": "capas/fc7bc39067b8ac6b90d31c1c1521f67f.jpg",
+      "onde": "LIVRARIAS (EDITORA UNESP - LANÇAMENTO 2026)",
+      "olho": "Dois dos maiores especialistas em política externa do país analisam o impacto da ascensão nacionalista sobre a diplomacia global e a soberania da América Latina.",
+      "texto": "Uma análise rigorosa das fraturas na ordem multilateral, a crise do comércio internacional, a guerra de tarifas e as opções estratégicas do Itamaraty frente à disputa hegemônica entre EUA e China.",
+      "ponte": "Diplomacia, relações internacionais, geopolítica global, Itamaraty e política externa contemporânea."
+    },
+    "2026-11--subjetivamente-extinto": {
+      "id": "2026-11--subjetivamente-extinto",
+      "titulo": "Subjetivamente Extinto",
+      "autor": "Felipe Castilho",
+      "ano": 2026,
+      "paginas": 336,
+      "pais": "Brasil",
+      "editora": "Aleph",
+      "secao": "lancamentos",
+      "edicao": "2026-11",
+      "capa": "capas/7e6748146c21a118c3e5e186bce7f271.jpg",
+      "imagem": "capas/7e6748146c21a118c3e5e186bce7f271.jpg",
+      "onde": "LIVRARIAS (EDITORA ALEPH - LANÇAMENTO SCI-FI 2026)",
+      "olho": "A histórica estreia da Aleph na ficção científica brasileira é uma distopia reflexiva e cortante sobre a vida humana após o colapso de uma superinteligência artificial.",
+      "texto": "Num futuro onde os sistemas autônomos que organizavam a sociedade subitamente entram em colapso cognitivo, sobreviventes reaprendem a criar laços e negociar sua humanidade entre ruínas de servidores.",
+      "ponte": "Ficção científica densa, hard sci-fi, inteligência artificial, distopias sociais e literatura especulativa brasileira."
     }
   },
   "livro_guias": {

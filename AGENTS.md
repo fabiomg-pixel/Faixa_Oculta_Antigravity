@@ -42,3 +42,10 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - É estritamente proibido utilizar a memória interna estática (cutoff 2024) do modelo de IA para inventar ou reciclar safras culturais contemporâneas.
    - Todo e qualquer filme em cartaz nos cinemas, álbum recém-lançado e livro novo no Brasil DEVE ser apurado através de varredura eficiente online (`tools/varredura_cultural_online.py`, APIs do iTunes, Deezer, Wikipedia e portais de estreias/festivais).
    - Filmes e obras de safras passadas (ex: 2024) devem figurar em seções de acervo/streaming/achados e NUNCA como 'em cartaz ou estreando nos cinemas' em edições de anos posteriores.
+
+10. **Perfil de Interesses e Pilares de Rastreamento (Fabio Gomes / UFRJ):**
+   - **Ciência, Saúde & Universidades:** Biofísica, imunometabolismo, arboviroses, UFRJ, Fiocruz, FAPESP, SBPC, Amazônia, clima e saúde pública.
+   - **Política & Diplomacia:** Política externa brasileira, Itamaraty, geopolítica global, multilateralismo, BRICS, STF, Congresso e teoria política.
+   - **Ficção Científica (Sci-Fi) & Fantasia:** Hard sci-fi, IA, distopias sociais e especulativas (Editoras Aleph, Morro Branco, Todavia), alta fantasia mitológica e realismo mágico de autor.
+   - **Música:** Indie rock/folk, canção confessional (Lucy Dacus, Phoebe Bridgers, Soccer Mommy), art-rock/pós-punk (Geese, bar italia), shoegaze (Wishy), vanguarda e rock brasileiro (Papangu, Letrux, El Efecto), cânone (Radiohead, QOTSA).
+   - **Cinema:** Cinema de autor contemporâneo (festivais de Cannes, Mostra SP, Festival do Rio) e cinema brasileiro independente (Gabriel Martins, Kleber Mendonça Filho, Filmes de Plástico).
