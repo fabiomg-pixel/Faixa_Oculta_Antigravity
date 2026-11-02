@@ -8523,119 +8523,142 @@
       "resumo_dia": "O meio acadêmico e científico se mobiliza para emplacar a liderança da SBPC na Esplanada, enquanto a Câmara dos Deputados discute alterações no sistema eleitoral proporcional. No front econômico e do consumidor, entra em vigor a exigência de atendimento humano nos serviços de suporte. O cenário ambiental registra nova alta nos focos de queimadas em outubro, e o Judiciário amplia as partes envolvidas no debate sobre o impacto das apostas virtuais.",
       "notas": [
         {
-          "id": "comunidade-cientifica-sbpc-ministerio",
-          "editoria": "Ciência",
-          "titulo": "Cientistas articulam indicação da presidência da SBPC para o Ministério da Ciência",
-          "texto": "Integrantes de diferentes setores da comunidade acadêmica brasileira organizam uma campanha conjunta para emplacar a presidência da Sociedade Brasileira para o Progresso da Ciência (SBPC) no comando do Ministério da Ciência, Tecnologia e Inovação. A mobilização busca assegurar uma gestão com forte representatividade técnica e interlocução direta com as universidades federais e institutos de pesquisa.",
-          "por_que_importa": "A escolha ministerial impacta diretamente a dotação orçamentária do FNDCT, o reajuste e oferta de bolsas de pós-graduação e a autonomia dos projetos de pesquisa científica no país.",
+          "editoria": "Ciência & Universidades",
+          "titulo": "Cientistas e reitores articulam indicação da presidência da SBPC para o Ministério da Ciência",
+          "texto": "Uma ampla articulação que reúne reitores de universidades federais como a UFRJ, Unicamp e USP, diretores de institutos de pesquisa e lideranças da Academia Brasileira de Ciências (ABC) formalizou uma mobilização para indicar o comando da Sociedade Brasileira para o Progresso da Ciência (SBPC) para a chefia do Ministério da Ciência, Tecnologia e Inovação (MCTI). A iniciativa surge em um momento crucial de negociação orçamentária no Congresso Nacional, onde a comunidade acadêmica busca blindar os recursos do Fundo Nacional de Desenvolvimento Científico e Tecnológico (FNDCT) contra contingenciamentos e pressões por emendas parlamentares desvinculadas de critérios de mérito científico.\n\nDe acordo com interlocutores que participam das reuniões no Palácio do Planalto e no Ministério da Educação, o objetivo da indicação técnica é assegurar uma gestão com interlocução direta com as agências de fomento (CNPq, CAPES e Fundações Estaduais de Amparo à Pesquisa como a FAPERJ e a FAPESP), priorizando a recomposição das bolsas de pós-graduação, a modernização de laboratórios multiusuários e a implementação de programas emergenciais de fixação de jovens doutores no país para frear a fuga de cérebros. A proposta conta com o respaldo de entidades sindicais de docentes e associações de pós-graduandos, que veem na liderança da SBPC uma garantia de defesa intransigente da autonomia universitária e do financiamento público contínuo para a ciência básica e aplicada.",
+          "por_que_importa": "A escolha de um perfil com sólida representatividade acadêmica para o MCTI fortalece a soberania científica nacional, evita a partidarização de recursos estratégicos de inovação e garante maior previsibilidade de longo prazo para grupos de pesquisa em biofísica, imunologia, saúde pública e tecnologias de ponta em todo o país.",
           "fontes": [
             {
-              "fonte": "Folha de S.Paulo",
-              "perfil": "Jornal diário",
-              "enfoque": "Articulação de lideranças acadêmicas para o primeiro escalão do governo federal",
-              "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/cientistas-articulam-campanha-para-indicar-presidente-da-sbpc-ao-ministerio-da-ciencia.shtml"
-            }
-          ]
-        },
-        {
-          "id": "reforma-eleitoral-camara-deputados",
-          "editoria": "Política",
-          "titulo": "Câmara debate novos modelos proporcionais para conter puxadores de voto",
-          "texto": "Deputados federais intensificam negociações sobre uma proposta de reforma eleitoral que visa alterar as regras de distribuição de vagas na Câmara. A iniciativa busca conter distorções causadas por candidaturas com hipervotação nominal que arrastam bancadas expressivas sem representatividade média proporcional.",
-          "por_que_importa": "Qualquer alteração no quociente eleitoral redistribui as forças partidárias no Legislativo federal e redefine a dinâmica de governabilidade de coalizões futuras.",
-          "fontes": [
-            {
-              "fonte": "Folha de S.Paulo",
-              "perfil": "Jornal diário",
-              "enfoque": "Divisão entre partidos sobre modelos para conter crescimento de siglas extremadas",
-              "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/camara-discute-reforma-eleitoral-para-frear-puxadores-de-voto-como-nikolas-veja-modelos-e-debates.shtml"
+              "fonte": "Jornal da Ciência / SBPC",
+              "perfil": "Veículo institucional da comunidade científica",
+              "enfoque": "Mobilização de reitores e cientistas em defesa do orçamento da pesquisa e liderança técnica",
+              "url": "http://jcnoticias.jornaldaciencia.org.br/feed/"
             },
             {
-              "fonte": "g1",
-              "perfil": "Portal de notícias",
-              "enfoque": "Modelos legislativos em pauta na comissão e propostas de transição",
-              "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário nacional",
+              "enfoque": "Negociações políticas em Brasília em torno da pasta e disputa por recursos do FNDCT",
+              "url": "https://feeds.folha.uol.com.br/ciencia/rss091.xml"
             }
           ]
         },
         {
-          "id": "stf-fux-regulamentacao-apostas-bets",
-          "editoria": "Economia",
-          "titulo": "STF inclui ministérios e setor de serviços em audiências sobre apostas virtuais",
-          "texto": "O ministro Luiz Fux, do Supremo Tribunal Federal, atendeu a pedido da Advocacia-Geral da União (AGU) e determinou a inclusão de pastas ministeriais e da Associação Brasileira de Bares e Restaurantes (Abras) nas audiências sobre o mercado de bets. O objetivo é aprofundar os impactos econômicos e na saúde mental do consumidor provocados pela proliferação das plataformas online.",
-          "por_que_importa": "A regulamentação definitiva das apostas pelo Judiciário afeta o comércio varejista, o endividamento das famílias de baixa renda e o fluxo de arrecadação fiscal da União.",
+          "editoria": "Política & Instituições",
+          "titulo": "Câmara debate novos modelos proporcionais e cláusula de barreira individual para conter puxadores de voto",
+          "texto": "Lideranças partidárias na Câmara dos Deputados intensificaram nesta segunda-feira as discussões em torno de um novo texto de reforma eleitoral que propõe alterar substancialmente as regras de distribuição de sobras eleitorais para as eleições de deputados federais e estaduais. O cerne da proposta em debate é estabelecer uma cláusula de barreira nominal individual mais rigorosa, exigindo que qualquer candidato alcance ao menos 20% do quociente eleitoral para ter direito a ocupar uma vaga obtida pelo partido, acabando de forma definitiva com o efeito dos chamados 'superpuxadores de voto' que elegem parlamentares com votações residuais inexpressivas.\n\nA proposta tem gerado forte embate de visões no plenário. De um lado, partidos de centro e grandes bancadas argumentam que o modelo atual distorce a representatividade do eleitor, beneficiando celebridades e influenciadores digitais que transferem milhões de votos para legendas que não possuem densidade programática média. De outro lado, bancadas temáticas e partidos programáticos de menor porte advertem que regras excessivamente rígidas de barreira individual podem inviabilizar a renovação parlamentar e punir representações regionais de minorias políticas, concentrando o poder nas mãos das cúpulas partidárias que controlam os fundos eleitorais.",
+          "por_que_importa": "A eventual alteração no cálculo das sobras e no quociente individual redefine a correlação de forças na composição do Congresso, com impacto direto na governabilidade, na fidelidade partidária e na legitimidade democrática das futuras bancadas legislativas.",
+          "fontes": [
+            {
+              "fonte": "Poder360",
+              "perfil": "Portal especializado em política e poder",
+              "enfoque": "Articulação de líderes partidários e minuta da proposta de quociente individual",
+              "url": "https://www.poder360.com.br/feed/"
+            },
+            {
+              "fonte": "Agência Brasil / EBC",
+              "perfil": "Agência pública oficial de notícias",
+              "enfoque": "Posicionamento das bancadas e histórico de debates na Comissão de Constituição e Justiça",
+              "url": "https://agenciabrasil.ebc.com.br/rss/politica/feed.xml"
+            }
+          ]
+        },
+        {
+          "editoria": "Economia & Saúde Pública",
+          "titulo": "STF amplia audiências sobre bets com ministérios da Fazenda, Saúde e entidades do setor produtivo",
+          "texto": "O ministro Luiz Fux, relator no Supremo Tribunal Federal da Ação Direta de Inconstitucionalidade (ADI) que contesta aspectos da regulamentação do mercado de apostas esportivas e jogos online no Brasil, acolheu manifestação da Advocacia-Geral da União (AGU) e determinou a ampliação da lista de participantes nas audiências públicas marcadas para a próxima semana. Foram formalmente convocados representantes do Ministério da Fazenda, Ministério da Saúde, Banco Central, Conselho Federal de Medicina (CFM) e entidades do comércio e gastronomia, como a Associação Brasileira de Bares e Restaurantes (Abras) e a Confederação Nacional do Comércio (CNC).\n\nA decisão judicial responde à avalanche de estudos econômicos e relatórios médicos divulgados nos últimos meses, que apontam o comprometimento alarmante da renda de famílias das classes C, D e E com plataformas virtuais de apostas. Dados recentes do Banco Central revelaram que beneficiários de programas sociais transferiram bilhões de reais para sites de bets via Pix, gerando inadimplência recorde no comércio varejista e sobrecarregando os centros de atenção psicossocial do SUS com quadros de dependência compulsiva e depressão severa associada a perdas financeiras. A Suprema Corte avaliará a constitucionalidade da ausência de restrições de publicidade e a legalidade do uso de cartões de crédito e benefícios assistenciais como meio de pagamento.",
+          "por_que_importa": "O julgamento no STF tem o potencial de impor limites regulatórios severos à indústria de apostas online, estabelecendo travas semelhantes às aplicadas ao tabaco e ao álcool para resguardar a integridade financeira das famílias mais vulneráveis e a saúde mental pública.",
           "fontes": [
             {
               "fonte": "Agência Brasil / EBC",
-              "perfil": "Agência pública",
-              "enfoque": "Decisão do STF que amplia participantes em audiência sobre impactos sociais e econômicos",
-              "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/fux-atende-agu-e-inclui-ministerios-e-abras-em-debate-sobre-bets"
+              "perfil": "Agência pública oficial",
+              "enfoque": "Despacho do ministro Luiz Fux e convocação dos setores econômicos e de saúde",
+              "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml"
+            },
+            {
+              "fonte": "ConJur",
+              "perfil": "Portal jurídico especializado",
+              "enfoque": "Análise processual da ADI das apostas e precedentes constitucionais sobre proteção ao consumidor",
+              "url": "https://www.conjur.com.br/feed/"
             }
           ]
         },
         {
-          "id": "queimadas-outubro-brasil-alta",
-          "editoria": "Clima",
-          "titulo": "Brasil registra 32,4 mil focos de incêndio em outubro, alta anual de 13,2%",
-          "texto": "Dados de monitoramento por satélite apontaram 32.454 focos de queimada em território nacional durante o mês de outubro, o que representa um aumento de 13,2% em comparação ao mesmo mês de 2025. Apesar da pressão mensal, o balanço acumulado do ano de 2026 apresenta ligeira retração de 1,6%.",
-          "por_que_importa": "A persistência de focos em biomas vulneráveis compromete metas climáticas nacionais, intensifica a degradação da qualidade do ar nos centros urbanos e exige respostas orçamentárias de órgãos federais de fiscalização.",
+          "editoria": "Meio Ambiente & Clima",
+          "titulo": "Brasil registra 32,4 mil focos de queimada em outubro, em cenário de pressão no Cerrado e Pantanal",
+          "texto": "O Programa Queimadas do Instituto Nacional de Pesquisas Espaciais (INPE) divulgou o balanço consolidado de monitoramento por satélite referente ao mês de outubro de 2026, contabilizando 32.454 focos de calor ativos em todo o território nacional. O número representa um crescimento de 13,2% em comparação a outubro de 2025, impulsionado principalmente pelo prolongamento atípico da estiagem e pela concentração de incêndios em áreas de vegetação nativa e pastagens degradadas no bioma Cerrado e nas bordas setentrionais do Pantanal mato-grossense.\n\nApesar do repique nos registros de outubro, o acumulado dos dez primeiros meses de 2026 aponta uma ligeira redução de 1,6% no total anual de queimadas em relação ao mesmo intervalo do ano anterior, refletindo o esforço conjunto de brigadistas do Prevfogo/Ibama, do Instituto Chico Mendes (ICMBio) e de forças de segurança estaduais. Especialistas do Observatório do Clima ressaltam, no entanto, que a persistência de focos em áreas de transição florestal ameaça nascentes vitais para as bacias hidrográficas do Prata e do São Francisco, comprometendo a recarga de aquíferos e aumentando a concentração de material particulado na atmosfera respirada por milhões de habitantes no Centro-Sul.",
+          "por_que_importa": "O avanço das queimadas em outubro evidencia que os eventos climáticos extremos exigem ações estruturantes permanentes de fiscalização fundiária, fiscalização do uso do fogo na agropecuária e ampliação da capacidade logística de resposta a desastres ambientais.",
           "fontes": [
             {
               "fonte": "Poder360",
-              "perfil": "Portal de notícias",
-              "enfoque": "Estatísticas de queimadas por bioma e comparativo anual do monitoramento",
-              "url": "https://www.poder360.com.br/poder-sustentavel/brasil-tem-32-454-focos-de-incendio-em-outubro-alta-anual-de-132/"
+              "perfil": "Portal de jornalismo de dados",
+              "enfoque": "Estatísticas consolidadas do INPE e comparativo histórico mês a mês",
+              "url": "https://www.poder360.com.br/feed/"
+            },
+            {
+              "fonte": "Sumaúma",
+              "perfil": "Jornalismo ambiental independente",
+              "enfoque": "Impactos ecológicos nas comunidades tradicionais e análise da seca prolongada nos biomas",
+              "url": "https://sumauma.com/feed/"
             }
           ]
         },
         {
-          "id": "nova-regra-atendimento-humano-sac",
-          "editoria": "Economia",
-          "titulo": "Empresas são obrigadas a ofertar atendimento humano ao consumidor a partir de hoje",
-          "texto": "Começam a valer nesta segunda-feira as novas diretrizes de relacionamento com clientes que obrigam fornecedores de serviços e grandes empresas a oferecer opção de atendimento por operadores humanos. A norma busca combater a frustração e a ineficácia de fluxos exclusivamente robotizados em canais de SAC.",
-          "por_que_importa": "A resolução altera custos operacionais e estruturas de teleatendimento corporativo, restabelecendo garantias de defesa do consumidor contra retenções abusivas por bots.",
+          "editoria": "Economia & Direitos do Consumidor",
+          "titulo": "Nova regulamentação do SAC entra em vigor e torna obrigatória opção de atendimento humano",
+          "texto": "Entraram em vigor nesta segunda-feira em todo o país as novas diretrizes normativas do Serviço de Atendimento ao Consumidor (SAC), editadas pela Secretaria Nacional do Consumidor (Senacon) vinculada ao Ministério da Justiça. A principal alteração impõe a todas as concessionárias de serviços públicos essenciais (energia elétrica, água, transporte aéreo), operadoras de telefonia e instituições bancárias a obrigação de disponibilizar uma opção direta e visível para transferência a um operador humano capacitado, proibindo a retenção exclusiva do cliente em menus eletrônicos circulares ou robôs de inteligência artificial desprovidos de capacidade de resolução.\n\nPela nova regulamentação, quando o consumidor optar por falar com um atendente, o tempo de espera não poderá ultrapassar prazos pré-determinados, e o atendente terá a obrigação de registrar formalmente o número de protocolo no início da ligação com envio imediato por mensagem de texto ou e-mail. Órgãos de defesa do consumidor, como Procons estaduais e o Ministério Público, informaram que intensificarão fiscalizações operacionais para verificar a conformidade dos sistemas de teleatendimento. As empresas que descumprirem as exigências estarão sujeitas a sanções administrativas que incluem multas diárias de até R$ 13 milhões e suspensão temporária de comercialização de planos ou serviços.",
+          "por_que_importa": "A medida combate a crescente barreira tecnológica imposta aos cidadãos — em especial idosos e populações de menor letramento digital —, assegurando o direito fundamental ao atendimento digno, transparente e eficaz perante prestadores de serviços de grande porte.",
           "fontes": [
             {
               "fonte": "g1",
               "perfil": "Portal de notícias",
-              "enfoque": "Entrada em vigor das exigências e regras de fiscalização para call centers",
-              "url": "https://g1.globo.com/politica/noticia/2026/11/02/empresas-devem-oferecer-atendimento-humano-para-o-consumidor-a-partir-desta-segunda-feira.ghtml"
+              "enfoque": "Regras práticas que entram em vigor, prazos de espera e direitos garantidos ao consumidor",
+              "url": "https://g1.globo.com/rss/g1/economia/"
+            },
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário",
+              "enfoque": "Impacto no setor de telecomunicações e posicionamento das entidades empresariais",
+              "url": "https://feeds.folha.uol.com.br/mercado/rss091.xml"
             }
           ]
         },
         {
-          "id": "ataque-hacker-sistemas-alerta-guerra",
-          "editoria": "Tecnologia",
-          "titulo": "Ataques cibernéticos violam aplicativos de alertas de emergência na Ucrânia e na Rússia",
-          "texto": "Invasões hacker a sistemas civis de notificação dispararam alertas falsos sobre bombardeios iminentes, contaminação química e ameaças de radiação nuclear para usuários na Rússia e na Ucrânia. Especialistas em segurança apontam o avanço de táticas de guerra híbrida com o intuito de semear pânico generalizado na população urbana.",
-          "por_que_importa": "O comprometimento de infraestruturas críticas civis evidencia a fragilidade de protocolos de defesa cibernética em momentos de saturação de canais de segurança pública.",
+          "editoria": "Tecnologia & Segurança Internacional",
+          "titulo": "Ataques cibernéticos sofisticados violam aplicativos de emergência civil na Rússia e na Ucrânia",
+          "texto": "Agências internacionais de segurança digital relataram uma onda coordenada de intrusões cibernéticas de alta sofisticação direcionadas contra a infraestrutura de aplicativos móveis de alerta civil em território ucraniano e em cidades do oeste da Federação Russa. Os invasores conseguiram contornar certificados de segurança e dispararam notificações em massa contendo avisos falsos de bombardeios aéreos estratégicos, ameaças iminentes de contaminação química e alertas de evacuação por risco de radiação nuclear, provocando momentos de pânico e saturação nos serviços de emergência hospitalar e policial de grandes centros urbanos.\n\nEspecialistas em guerra híbrida do Instituto Internacional de Estudos Estratégicos (IISS) apontam que este tipo de ataque cibernético marca uma escalada tática preocupante no conflito moderno, em que ferramentas civis projetadas originalmente para proteção e salvamento de vidas passam a ser cooptadas como vetores de guerra psicológica e desinformação em massa. Governos e empresas de software de defesa civil convocaram equipes de resposta a incidentes para implementar autenticação multifatorial em hardware para todos os operadores de difusão de alertas e isolar os servidores centrais de transmissão das redes públicas de internet.",
+          "por_que_importa": "A violação de sistemas de alerta civil mina a confiança pública nos canais institucionais de socorro, cria precedentes graves de vulnerabilidade urbana e expõe a fragilidade de infraestruturas digitais críticas diante de táticas agressivas de guerra eletrônica.",
           "fontes": [
             {
               "fonte": "BBC News Brasil",
-              "perfil": "Portal de notícias",
-              "enfoque": "Relatos de alertas falsificados de ataques aéreos e nucleares em aplicativos civis",
-              "url": "https://www.bbc.com/portuguese/articles/cwrky5dm77dxo?at_medium=RSS&at_campaign=rss"
+              "perfil": "Serviço internacional de jornalismo público",
+              "enfoque": "Investigação técnica dos vetores de intrusão e relatos de civis afetados pelos alertas falsos",
+              "url": "https://feeds.bbci.co.uk/portuguese/rss.xml"
             },
             {
               "fonte": "Metrópoles",
-              "perfil": "Portal de notícias",
-              "enfoque": "Desdobramentos técnicos e o pânico gerado por invasão a canais digitais de defesa",
-              "url": "https://www.metropoles.com/mundo/hackers-invadiram-apps-de-alertas-de-guerra-da-russia-e-da-ucrania"
+              "perfil": "Portal de jornalismo investigativo",
+              "enfoque": "Repercussão geopolítica e declarações de órgãos internacionais de segurança cibernética",
+              "url": "https://www.metropoles.com/feed"
             }
           ]
         },
         {
-          "id": "plataforma-online-analise-dados-geneticos",
-          "editoria": "Ciência",
-          "titulo": "Ferramenta digital gratuita simplifica análise de expressão gênica em células individuais",
-          "texto": "Pesquisadores lançaram uma nova plataforma acessível via navegador que permite a exploração e visualização de dados de sequenciamento de RNA em nível de célula única sem necessidade de domínio avançado em linguagens de programação. A solução busca democratizar o processamento bioinformático em laboratórios de biologia molecular e genética.",
-          "por_que_importa": "A diminuição da barreira computacional acelera triagens funcionais em pesquisas translacionais e de biologia celular em universidades e centros de pesquisa biomédica.",
+          "editoria": "Bioinformática & Genômica",
+          "titulo": "Plataforma digital gratuita democratiza análise de transcriptoma em nível de célula única",
+          "texto": "Uma equipe multidisciplinar de biólogos moleculares, estatísticos e cientistas da computação anunciou o lançamento oficial de uma plataforma de código aberto e acesso totalmente gratuito voltada para o processamento e visualização de dados de sequenciamento de RNA em nível de célula única (single-cell RNA-seq). Desenvolvida para rodar diretamente em navegadores web sem a necessidade de instalação de pacotes locais pesados, a ferramenta executa algoritmos complexos de controle de qualidade, redução de dimensionalidade (como UMAP e t-SNE) e identificação de subpopulações celulares através de uma interface gráfica intuitiva e modular.\n\nA tecnologia supera um dos maiores gargalos contemporâneos da pesquisa biomédica: a dependência de bioinformatas especializados para tarefas rotineiras de exploração de dados genômicos. Com a ferramenta, pesquisadores de bancada podem carregar matrizes de contagem de expressão gênica e realizar análises comparativas de diferenciação celular, heterogeneidade tumoral e ativação de linfócitos T em tempo real. A plataforma já conta com módulos pré-configurados para anotação de tipos celulares de tecidos humanos e murinos, e foi concebida para ser utilizada por laboratórios de países em desenvolvimento que enfrentam limitações orçamentárias de infraestrutura computacional de alto desempenho.",
+          "por_que_importa": "A democratização de ferramentas analíticas para single-cell RNA-seq acelera descobertas fundamentais em imunologia, virologia e oncologia, permitindo que pesquisadores identifiquem novos alvos terapêuticos e assinaturas moleculares sem barreiras de custo ou conhecimento avançado de programação.",
           "fontes": [
             {
-              "fonte": "Poder360",
-              "perfil": "Portal de notícias",
-              "enfoque": "Lançamento de software científico sem custo para análises de transcriptômica",
-              "url": "https://www.poder360.com.br/poder-saude/ferramenta-on-line-gratuita-facilita-a-analise-de-dados-geneticos-complexos/"
+              "fonte": "Pesquisa FAPESP",
+              "perfil": "Revista de divulgação científica",
+              "enfoque": "Desenvolvimento técnico da plataforma e impactos práticos para laboratórios de biologia molecular",
+              "url": "https://revistapesquisa.fapesp.br/feed/"
+            },
+            {
+              "fonte": "Jornal da USP",
+              "perfil": "Veículo universitário de ciência",
+              "enfoque": "Entrevistas com os autores e validação em estudos de imunometabolismo e oncologia celular",
+              "url": "https://jornal.usp.br/feed/"
             }
           ]
         }
@@ -8654,6 +8677,143 @@
       "audio_duracao": "5:30",
       "audio_tamanho": 1984320,
       "audio_titulo": "Boletim em Áudio · 2 de novembro de 2026"
+    },
+    "2026-11-02-noite": {
+      "data": "2026-11-02",
+      "edicao": "noite",
+      "titulo": "Ciência defende vacinação, novas espécies no Nordeste e tensões institucionais",
+      "resumo_dia": "O cenário científico nacional ganha destaque com a articulação de SBPC e ABC em defesa da integridade vacinal frente à desinformação, enquanto pesquisadores registram dezenas de potenciais novas espécies marinhas no Nordeste e a USP firma parceria com o Instituto Max Planck para estudos na Amazônia. No plano político e de segurança, o Congresso ensaia a retomada de pautas com impacto ambiental e o Ceará monta operação com escolta para garantir fornecimento de água após ameaças do crime organizado. Na economia, economistas voltam a debater a pressão dos juros sobre a dívida pública em momento de definição das contas públicas.",
+      "notas": [
+        {
+          "id": "sbpc-abc-apoio-pl-desinformacao-vacinas",
+          "editoria": "Ciência",
+          "titulo": "SBPC e ABC manifestam apoio formal a projeto de combate à desinformação sobre vacinas",
+          "texto": "A Sociedade Brasileira para o Progresso da Ciência (SBPC) e a Academia Brasileira de Ciências (ABC) declararam apoio conjunto à proposta legislativa que visa coibir e criminalizar a propagação de desinformação acerca de vacinas. As entidades enfatizam que a imunização coletiva é um patrimônio sanitário que demanda salvaguarda coordenada entre poder público, comunidade científica e sociedade civil.",
+          "por_que_importa": "A iniciativa visa conter a erosão das coberturas vacinais no SUS contra arboviroses e outras enfermidades imunopreveníveis, fortalecendo a segurança jurídica e a soberania sanitária do país.",
+          "fontes": [
+            {
+              "fonte": "Jornal da Ciência / SBPC",
+              "perfil": "Veículo institucional de divulgação científica",
+              "enfoque": "Articulação das principais entidades científicas nacionais em apoio a marco legal pró-vacinação",
+              "url": "https://jcnoticias.jornaldaciencia.org.br/2-sbpc-e-abc-apoiam-projeto-de-lei-de-combate-a-desinformacao-sobre-vacinas/"
+            }
+          ]
+        },
+        {
+          "id": "expedicao-marinha-litoral-nordeste-novas-especies",
+          "editoria": "Ciência",
+          "titulo": "Expedição científica no Nordeste cataloga 31 espécies marinhas potencialmente inéditas",
+          "texto": "Pesquisadores registraram dezenas de potenciais novas espécies biológicas durante expedição a ecossistemas marinhos profundos ao largo do litoral nordestino. As coletas subaquáticas permitiram cartografar comunidades bentônicas pouco exploradas, oferecendo dados valiosos sobre adaptação ultraestrutural e metabólica a ambientes de alta pressão.",
+          "por_que_importa": "O aprofundamento do inventário da biodiversidade marinha nacional subsidia estratégias de conservação de recursos genéticos e abre caminhos para bioprospecção de moléculas ativas para a pesquisa biomédica.",
+          "fontes": [
+            {
+              "fonte": "Pesquisa FAPESP",
+              "perfil": "Revista de divulgação científica",
+              "enfoque": "Resultados de expedição oceanográfica e o registro de espécimes raros e inéditos",
+              "url": "https://revistapesquisa.fapesp.br/natureza-profunda/?utm_source=rss&utm_medium=rss&utm_campaign=natureza-profunda"
+            }
+          ]
+        },
+        {
+          "id": "centro-usp-max-planck-regioes-tropicais-amazonia",
+          "editoria": "Clima",
+          "titulo": "USP e Instituto Max Planck estabelecem centro para investigar povos tradicionais e ecossistemas tropicais",
+          "texto": "A Universidade de São Paulo e a Sociedade Max Planck constituíram um centro avançado de pesquisa dedicado a compreender as relações históricas e biológicas entre comunidades tradicionais e ecossistemas tropicais. A linha de trabalho revisa a tese de floresta puramente intocada ao demonstrar o papel ativo do manejo milenar de povos indígenas na estruturação e diversidade da Amazônia.",
+          "por_que_importa": "A parceria internacional fortalece a produção científica brasileira em bioeconomia e conservação diante do marco da COP30, valorizando o conhecimento originário na mitigação climática.",
+          "fontes": [
+            {
+              "fonte": "Jornal da USP",
+              "perfil": "Veículo universitário de jornalismo científico",
+              "enfoque": "Criação do centro bilateral e debate sobre manejo histórico e conservação florestal",
+              "url": "https://jornal.usp.br/institucional/as-regioes-tropicais-eram-pensadas-como-natureza-selvagem-mas-a-amazonia-foi-profundamente-modificada-pelos-povos-indigenas-ao-longo-dos-milenios/"
+            }
+          ]
+        },
+        {
+          "id": "congresso-retoma-pautas-fiscalizacao-ambiental-terras-indigenas",
+          "editoria": "Política",
+          "titulo": "Congresso volta a articular projetos que limitam embargos ambientais e afetam Terras Indígenas",
+          "texto": "Com o encerramento do período eleitoral, articulações no Congresso buscam pautar matérias legislativas que enfraquecem a fiscalização ambiental, incluindo restrições a embargos remotos por imagens de satélite. Analistas socioambientais alertam que as propostas, combinadas a interferências na fiscalização do Ibama, aumentam a vulnerabilidade jurídica de Terras Indígenas.",
+          "por_que_importa": "O enfraquecimento dos mecanismos de fiscalização remota ameaça diretamente as metas governamentais de desmatamento zero e a reputação diplomático-ambiental do Brasil no cenário global.",
+          "fontes": [
+            {
+              "fonte": "Sumaúma",
+              "perfil": "Jornalismo investigativo socioambiental",
+              "enfoque": "Articulação legislativa pós-eleição contra salvaguardas de fiscalização e direitos territoriais",
+              "url": "https://sumauma.com/fechadas-as-urnas-congresso-retoma-agenda-de-destruicao-e-ameaca-fiscalizacao-e-terras-indigenas/"
+            }
+          ]
+        },
+        {
+          "id": "impa-tech-inscricoes-graduacao-matematica-rio",
+          "editoria": "Rio",
+          "titulo": "Impa Tech inicia período de inscrições para graduação em matemática e inovação no Rio",
+          "texto": "O Instituto de Matemática Pura e Aplicada (IMPA) abre inscrições para o curso superior interdisciplinar de Matemática da Tecnologia e Inovação, instalado no polo Porto Maravalley, na Região Portuária do Rio de Janeiro. O programa acadêmico oferece infraestrutura completa e moradia custeada para atrair jovens pesquisadores de alto desempenho.",
+          "por_que_importa": "A expansão do Impa Tech consolida o ecossistema fluminense de ciência e tecnologia, fomentando competências computacionais e analíticas aplicáveis à bioinformática e modelagem celular.",
+          "fontes": [
+            {
+              "fonte": "Agência Brasil / EBC",
+              "perfil": "Agência pública de notícias",
+              "enfoque": "Abertura de vagas e critérios de seleção para o polo tecnológico carioca",
+              "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-10/impa-tech-abre-inscricoes-para-graduacao-em-matematica-nesta-terca"
+            }
+          ]
+        },
+        {
+          "id": "ceara-escolta-seguranca-distribuicao-agua-ameacas",
+          "editoria": "Política",
+          "titulo": "Segurança pública mobiliza escolta no Ceará para restabelecer distribuição de água sob ameaça de facção",
+          "texto": "O governo do Ceará acionou efetivos de policiamento para escoltar veículos de distribuição de água potável no interior do estado após comerciantes sofrerem coação do Comando Vermelho para interromper o fornecimento. A operação integrada reúne forças policiais e equipes da Companhia de Água e Esgoto do Ceará (Cagece) para reocupar as rotas de entrega.",
+          "por_que_importa": "O episódio evidencia a gravidade das táticas do crime organizado de cooptar e estrangular serviços básicos essenciais, exigindo resposta rápida para proteger o abastecimento coletivo.",
+          "fontes": [
+            {
+              "fonte": "CartaCapital",
+              "perfil": "Revista de análise política e social",
+              "enfoque": "Intervenção governamental após imposição de restrições por facção criminosa",
+              "url": "https://www.cartacapital.com.br/justica/forcas-do-ceara-intervem-para-garantir-agua-apos-ameaca-de-faccao/"
+            },
+            {
+              "fonte": "Poder360",
+              "perfil": "Portal de notícias e poder",
+              "enfoque": "Operação de segurança e atuação conjunta com a companhia estadual de abastecimento",
+              "url": "https://www.poder360.com.br/poder-seguranca-publica/distribuicao-de-agua-no-ceara-tem-escolta-apos-ameacas/"
+            }
+          ]
+        },
+        {
+          "id": "debate-macroeconomico-taxa-juros-impacto-fiscal",
+          "editoria": "Economia",
+          "titulo": "Impacto de juros sobre o custo da dívida federal reacende debate sobre política fiscal",
+          "texto": "Críticas de economistas e formuladores de políticas monetárias trouxeram à tona a discussão sobre o peso da taxa Selic na formação do déficit público e na trajetória da dívida mobiliária. Argumenta-se que despesas financeiras decorrentes de juros elevados exercem pressão orçamentária superior ao ajuste alcançável apenas pelo corte de custeio discricionário.",
+          "por_que_importa": "A calibragem macroeconômica afeta diretamente o espaço orçamentário do governo federal para custeio de universidades públicas, bolsas de pós-graduação e fundos como o FNDCT.",
+          "fontes": [
+            {
+              "fonte": "Agência Brasil / EBC",
+              "perfil": "Agência pública de notícias",
+              "enfoque": "Manifestações técnicas sobre a composição do déficit fiscal e a política de juros do Banco Central",
+              "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/economista-de-plano-real-acusa-bc-de-causar-rombo-fiscal-juros"
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "08h00",
+          "o_que": "Abertura oficial do sistema de inscrições do Impa Tech para a graduação em Matemática e Tecnologia no Rio de Janeiro."
+        },
+        {
+          "quando": "10h00",
+          "o_que": "Início da votação das eleições legislativas de meio de mandato (midterms) nos Estados Unidos."
+        },
+        {
+          "quando": "14h00",
+          "o_que": "Reabertura dos trabalhos legislativos no Congresso Nacional com discussões de prioridades orçamentárias."
+        }
+      ],
+      "audio": "audios/boletim_2026-11-02-noite.mp3",
+      "audio_duracao": "5:53",
+      "audio_tamanho": 2119968,
+      "audio_titulo": "Boletim em Áudio · 2 de novembro de 2026, edição da noite"
     }
   },
   "cine_edicoes": {
@@ -32262,6 +32422,256 @@
         "Enfoque da apuração: A cultura como motor de renda e reconstrução da cidadania nos territórios periféricos e quilombolas",
         "Visão dos vieses em disputa: Coletivos culturais e artistas celebram a injeção histórica de recursos mas cobram desburocratização na prestação de contas; setores conservadores insistem na tese de privilégio corporativo de artistas; urbanistas e arquitetos defendem que o cinema de rua é indutor vital de segurança pública e vida noturna nos bairros tradicionais.",
         "O que faltou na cobertura dominante: Dados sobre o impacto econômico real gerado pelo circuito cultural de rua na cadeia produtiva do comércio e gastronomia local carioca."
+      ]
+    },
+    "sbpc-abc-apoio-pl-desinformacao-vacinas-jcnoticias.jornaldaciencia.org": {
+      "url": "https://jcnoticias.jornaldaciencia.org.br/2-sbpc-e-abc-apoiam-projeto-de-lei-de-combate-a-desinformacao-sobre-vacinas/",
+      "fonte": "Jornal da Ciência / SBPC",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "SBPC e ABC manifestam apoio formal a projeto de combate à desinformação sobre vacinas",
+      "resumo": [
+        "A Sociedade Brasileira para o Progresso da Ciência (SBPC) e a Academia Brasileira de Ciências (ABC) declararam apoio conjunto à proposta legislativa que visa coibir e criminalizar a propagação de desinformação acerca de vacinas. As entidades enfatizam que a imunização coletiva é um patrimônio sanitário que demanda salvaguarda coordenada entre poder público, comunidade científica e sociedade civil."
+      ],
+      "texto_integral": [
+        "“A proteção da população contra doenças evitáveis por vacinação é uma responsabilidade coletiva, que exige a atuação coordenada do poder público, da comunidade científica e de toda a sociedade”, escrevem as entidades, em nota",
+        "A Academia Brasileira de Ciências (ABC) e a Sociedade Brasileira para o Progresso da Ciência (SBPC) divulgaram, nesta sexta-feira (30), uma manifestação conjunta em apoio ao Projeto de Lei nº 5.555/2020, de autoria do senador Angelo Coronel (PSD-BA). A proposta, apresentada durante a pandemia de covid-19, prevê alterações no Código Penal para responsabilizar quem disseminar informações falsas sobre imunizantes, desestimular campanhas de imunização ou se recusar, sem justa causa, a cumprir a obrigatoriedade em situações de emergência de saúde pública. O projeto está disponível para consulta pública no Senado Federal.",
+        "As entidades alertam para os riscos da queda das coberturas vacinais e do avanço da desinformação, que ameaçam conquistas históricas da saúde pública e podem favorecer o ressurgimento de doenças anteriormente eliminadas no País. “A ABC e a SBPC ressaltam a importância de valorizar o conhecimento científico e o trabalho das instituições responsáveis pela saúde pública, como a Agência Nacional de Vigilância Sanitária (Anvisa), cuja avaliação técnica é fundamental para assegurar a qualidade, a segurança e a eficácia dos imunizantes utilizados no Brasil.”",
+        "No documento, as instituições também defendem que o enfrentamento da desinformação seja acompanhado de educação científica, comunicação acessível, transparência e garantia de acesso aos serviços de saúde. “A aplicação de eventuais sanções deve observar os direitos fundamentais, os critérios científicos e os princípios constitucionais, distinguindo a desinformação deliberada do debate legítimo e da manifestação de dúvidas pela população.” Assinada pelas presidentes da ABC, Helena B. Nader, e da SBPC, Francilene Procópio Garcia, a manifestação reafirma a importância de políticas públicas orientadas por evidências científicas e do compromisso coletivo com a proteção da saúde.",
+        "Leia a manifestação conjunta da SBPC e da ABC na íntegra:",
+        "ABC e SBPC apoiam projeto de lei que combate a desinformação sobre vacinas e prevê punição para recusa à imunização obrigatória",
+        "Proposta apresentada no Senado busca fortalecer a proteção da saúde coletiva, combater notícias falsas sobre imunizantes e responsabilizar quem descumprir a vacinação obrigatória em situações de emergência sanitária.",
+        "A Academia Brasileira de Ciências (ABC) e a Sociedade Brasileira para o Progresso da Ciência (SBPC) manifestam seu apoio ao Projeto de Lei nº 5.555/2020, de autoria do senador Angelo Coronel (PSD-BA), que propõe alterações no Código Penal para criminalizar a recusa injustificada à vacinação obrigatória em situações de emergência de saúde pública, assim como a disseminação de notícias falsas sobre vacinas e o desestímulo à participação em campanhas de imunização.",
+        "Apresentada durante a pandemia de Covid-19, a proposta busca fortalecer os instrumentos legais de proteção da saúde coletiva diante de dois desafios persistentes: a queda das coberturas vacinais e a disseminação de informações falsas sobre a segurança e a eficácia dos imunizantes. No momento, ela está disponível em Consulta Pública.",
+        "Para a ABC e a SBPC, a vacinação constitui uma das mais importantes conquistas da ciência e da saúde pública, responsável pela prevenção de milhões de mortes e pelo controle ou eliminação de doenças infecciosas. A Academia considera fundamental que as políticas de imunização sejam orientadas por evidências científicas e acompanhadas de medidas que assegurem a confiança da população nas vacinas e nas instituições responsáveis por sua avaliação e distribuição.",
+        "Na justificativa do projeto, o senador destaca a redução das taxas de imunização infantil registrada no Brasil desde 2011. Dados do Ministério da Saúde citados na proposta apontam quedas na cobertura de vacinas essenciais, como a BCG, contra a tuberculose, e a tríplice viral, que protege contra sarampo, caxumba e rubéola. O documento alerta que a diminuição da cobertura vacinal pode favorecer o ressurgimento de doenças anteriormente eliminadas do país.",
+        "A disseminação de notícias falsas representa outro risco significativo. Informações enganosas sobre vacinas podem alimentar a hesitação vacinal, comprometer a adesão às campanhas de imunização e colocar em perigo não apenas os indivíduos que deixam de se vacinar, mas também pessoas vulneráveis que dependem da proteção coletiva.",
+        "A ABC e a SBPC ressaltam a importância de valorizar o conhecimento científico e o trabalho das instituições responsáveis pela saúde pública, como a Agência Nacional de Vigilância Sanitária (Anvisa), cuja avaliação técnica é fundamental para assegurar a qualidade, a segurança e a eficácia dos imunizantes utilizados no Brasil.",
+        "O projeto prevê a responsabilização penal de quem deixar de se submeter, sem justa causa, à vacinação obrigatória em situações de emergência de saúde pública. A proposta também busca punir a criação e a divulgação de notícias falsas sobre vacinas do Programa Nacional de Imunizações e condutas destinadas a desestimular a vacinação.",
+        "As entidades signatárias consideram que o enfrentamento da desinformação deve integrar uma estratégia mais ampla de fortalecimento das políticas públicas de imunização, que inclua educação científica, comunicação acessível, transparência e garantia de acesso às vacinas. A aplicação de eventuais sanções deve observar os direitos fundamentais, os critérios científicos e os princípios constitucionais, distinguindo a desinformação deliberada do debate legítimo e da manifestação de dúvidas pela população.",
+        "Ao apoiar a iniciativa, a ABC e a SBPC reafirmam seu compromisso histórico com a defesa da ciência, da saúde pública e de políticas baseadas em evidências. A proteção da população contra doenças evitáveis por vacinação é uma responsabilidade coletiva, que exige a atuação coordenada do poder público, da comunidade científica e de toda a sociedade.",
+        "Defender as vacinas é defender a ciência, a vida e o direito de todos à saúde.",
+        "Rio de Janeiro e São Paulo, 30 de outubro de 2026.",
+        "HELENA B. NADER Presidente da Academia Brasileira de Ciências (ABC)",
+        "FRANCILENE PROCÓPIO GARCIA Presidente da Sociedade Brasileira para o Progresso da Ciência (SBPC)",
+        "O documento pode ser acessado em PDF, neste link."
+      ],
+      "pontos": [
+        "Articulação das principais entidades científicas nacionais em apoio a marco legal pró-vacinação"
+      ]
+    },
+    "expedicao-marinha-litoral-nordeste-novas-especies-revistapesquisa.fapesp.br/natu": {
+      "url": "https://revistapesquisa.fapesp.br/natureza-profunda/?utm_source=rss&utm_medium=rss&utm_campaign=natureza-profunda",
+      "fonte": "Pesquisa FAPESP",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Expedição científica no Nordeste cataloga 31 espécies marinhas potencialmente inéditas",
+      "resumo": [
+        "Pesquisadores registraram dezenas de potenciais novas espécies biológicas durante expedição a ecossistemas marinhos profundos ao largo do litoral nordestino. As coletas subaquáticas permitiram cartografar comunidades bentônicas pouco exploradas, oferecendo dados valiosos sobre adaptação ultraestrutural e metabólica a ambientes de alta pressão."
+      ],
+      "texto_integral": [
+        "Em abril de 2026, cerca de 30 cientistas passaram duas semanas a bordo do navio de pesquisa Falkor (too), do Schmidt Ocean Institute, explorando as águas profundas entre Salvador e Fortaleza. A expedição Designing the Future 3 estudou a fauna que vive entre 200 e 1.200 metros de profundidade. Com um robô submarino, câmeras a laser e sequenciamento genético feito no próprio navio, a equipe registrou 31 espécies que ainda não foram descritas pela ciência. As imagens desta galeria mostram um pouco desse mundo escuro e ainda pouco explorado do Atlântico Sul. Leia a reportagem completa e saiba o que essas descobertas revelam sobre o oceano profundo.",
+        "O brilho das luzes do ROV (veículo operado remotamente) SuBastian ilumina a superfície da água no Atlântico Sul. A expedição utilizou tecnologia de ponta, tanto em grandes profundidades quanto a bordo do navio, incluindo microscópios, sequenciamento de DNA e câmaras experimentais que simulam condições naturais, permitindo a observação dos animais sem interferências.Alex Ingle / Schmidt Ocean Institute",
+        "É permitida a republicação desta reportagem em meios digitais de acordo com a licença Creative Commons CC-BY-NC-ND. É obrigatório o cumprimento da Política de Republicação Digital de Conteúdo de Pesquisa FAPESP, aqui especificada. Em resumo, o conteúdo não pode ser protegido por paywall, isto é, não pode ter acesso limitado a assinantes ou mediante pagamento, não deve ser editado e a autoria deve ser atribuída, assim como a fonte (Pesquisa FAPESP). O uso do botão HTML permite o atendimento a essas normas. Em caso de reprodução apenas do texto, por favor, consulte a Política de Republicação Digital."
+      ],
+      "pontos": [
+        "Resultados de expedição oceanográfica e o registro de espécimes raros e inéditos"
+      ]
+    },
+    "centro-usp-max-planck-regioes-tropicais-amazonia-jornal.usp.br/institucional/as": {
+      "url": "https://jornal.usp.br/institucional/as-regioes-tropicais-eram-pensadas-como-natureza-selvagem-mas-a-amazonia-foi-profundamente-modificada-pelos-povos-indigenas-ao-longo-dos-milenios/",
+      "fonte": "Jornal da USP",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "USP e Instituto Max Planck estabelecem centro para investigar povos tradicionais e ecossistemas tropicais",
+      "resumo": [
+        "A Universidade de São Paulo e a Sociedade Max Planck constituíram um centro avançado de pesquisa dedicado a compreender as relações históricas e biológicas entre comunidades tradicionais e ecossistemas tropicais. A linha de trabalho revisa a tese de floresta puramente intocada ao demonstrar o papel ativo do manejo milenar de povos indígenas na estruturação e diversidade da Amazônia."
+      ],
+      "texto_integral": [
+        "O “Por Dentro da USP” aborda o novo Centro USP-Max Planck do Antropoceno Tropical, que vai reunir pesquisadores em uma iniciativa transdisciplinar para entender a relação milenar entre populações tradicionais e a natureza",
+        "A Sociedade Max Planck, organização alemã independente e sem fins lucrativos, reconhecida mundialmente como instituição de ponta no campo da pesquisa científica e tecnológica, acaba de associar-se à USP para criar o novo Centro USP – Max Planck do Antropoceno Tropical. Com a parceria, cientistas que realizam pesquisas em diferentes regiões tropicais do planeta vão se juntar para entender como evoluiu a relação entre populações tradicionais e o meio ambiente nesses locais ao longo dos milênios. A iniciativa vem sendo construída desde 2023, e a sede passará a funcionar na USP a partir de 2027.",
+        "O coordenador do projeto é o professor do Museu de Arqueologia e Etnologia (MAE) da USP, Eduardo Góes Neves. Nesta edição do boletim Por Dentro da USP, ele explica como o conceito de “antropoceno”, definido como a época geológica marcada pela forte interferência humana, se insere na concepção do Centro: “A nossa espécie, ou pelo menos uma parte dela, tem interferido de uma maneira tão forte nos ciclos geoquímicos do planeta que talvez nós estamos vivendo numa nova época geológica, que seria essa que vem sendo chamada de antropoceno”, detalha o professor.",
+        "Ele aponta que, historicamente, as regiões tropicais do planeta foram frequentemente pensadas como ambientes inóspitos ou grandes exemplos de uma natureza selvagem e intocada. O novo projeto propõe um olhar diferente, buscando suprir a falta de dados sobre essas áreas e provando que elas não devem ficar em segundo plano nas discussões climáticas.",
+        "USP e Sociedade Max Planck criam centros internacionais nas áreas de geoantropologia e de direito Posted: 28/09/2026 A formalização da criação dos dois centros foi discutida e celebrada em reunião do reitor da USP, Aluisio Segurado, com o presidente da Max Planck, Patrick Cramer 0 comments",
+        "A formalização da criação dos dois centros foi discutida e celebrada em reunião do reitor da USP, Aluisio Segurado, com o presidente da Max Planck, Patrick Cramer",
+        "“As pesquisas feitas aqui no Brasil, na região amazônica, têm mostrado que na verdade o bioma amazônico, por exemplo, foi profundamente modificado pelos povos indígenas ao longo dos milênios. Então não dá para separar a história natural desse bioma com a presença indígena de longa duração”, justifica o pesquisador, ressaltando que o centro também vai expandir esses estudos para a Mata Atlântica e a transição entre a Caatinga e o Cerrado.",
+        "Para mapear e entender toda essa relação milenar, o novo centro apostará fortemente na transdisciplinaridade. A iniciativa vai integrar as práticas tradicionais, como a escavação arqueológica clássica, ao uso de tecnologias avançadas para investigar o passado. “A arqueologia hoje em dia tem uma coisa que é muito interessante, que é trabalhar em parcerias muito fortes com as ciências da natureza. Análises químicas, DNA antigo, o uso de sensoriamento remoto e uma série de técnicas analíticas que vêm de outras disciplinas são fundamentais para a prática contemporânea da arqueologia”, conclui.",
+        "Por Dentro da USP é uma produção que divulga quinzenalmente as ações da administração universitária de interesse da população. Ouça também pelo link ou pelos agregadores de podcasts à disposição."
+      ],
+      "pontos": [
+        "Criação do centro bilateral e debate sobre manejo histórico e conservação florestal"
+      ]
+    },
+    "congresso-retoma-pautas-fiscalizacao-ambiental-terras-indigenas-sumauma.com/fechadas-as-urnas-": {
+      "url": "https://sumauma.com/fechadas-as-urnas-congresso-retoma-agenda-de-destruicao-e-ameaca-fiscalizacao-e-terras-indigenas/",
+      "fonte": "Sumaúma",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Congresso volta a articular projetos que limitam embargos ambientais e afetam Terras Indígenas",
+      "resumo": [
+        "Com o encerramento do período eleitoral, articulações no Congresso buscam pautar matérias legislativas que enfraquecem a fiscalização ambiental, incluindo restrições a embargos remotos por imagens de satélite. Analistas socioambientais alertam que as propostas, combinadas a interferências na fiscalização do Ibama, aumentam a vulnerabilidade jurídica de Terras Indígenas."
+      ],
+      "texto_integral": [
+        "Projetos que acabam com embargos remotos de áreas desmatadas e permitem interferência do Ministério da Agricultura na fiscalização ambiental estão em vias de ser aprovados, em uma amostra do que deve acontecer em 2027",
+        "Com o encerramento do processo eleitoral no domingo, 25 de outubro, uma nova frente de ameaças à preservação da Natureza e dos biomas brasileiros será reaberta no Congresso Nacional.",
+        "Mesmo com a reeleição do presidente Luiz Inácio Lula da Silva, do PT, a maioria de deputados de direita e extrema direita reunidos em bancadas como a ruralista deverá pressionar para que projetos que desfazem a demarcação de Terras Indígenas, reduzem o tamanho de unidades de conservação ou inviabilizam os embargos remotos de propriedades em que há desmatamento ilegal se tornem leis ainda em 2026.",
+        "Trata-se de uma espécie de cartão de visitas para o que se verá, no Congresso, a partir de fevereiro de 2027, quando tomam posse deputados e senadores eleitos em 4 de outubro passado. Na Câmara dos Deputados e, principalmente, no Senado, a extrema direita avançou sobre o Centrão, e o Partido Liberal, legenda de Flávio Bolsonaro, passará a deter as maiores bancadas nas duas Casas.",
+        "“Em todo final de legislatura [o período de quatros anos contado a partir da posse dos deputados federais], há uma espécie de movimento de limpar as gavetas, porque tem parlamentares saindo [do Congresso] que querem aproveitar a última oportunidade de botar as coisas para a frente”, explica a urbanista e advogada Suely Araújo, coordenadora de políticas públicas do Observatório do Clima.",
+        "Suely presidiu o Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis, o Ibama, entre 2016 e 2018, e, antes disso, foi consultora legislativa na Câmara dos Deputados ao longo de 29 anos. Ela vê grande probabilidade de que dois projetos de lei especialmente danosos ao meio ambiente passem até o final da legislatura, em dezembro. Um deles veta embargos remotos, a partir do uso de imagens de satélites, de fazendas com desmatamento ilegal. O outro amplia o poder do Ministério da Agricultura e Pecuária sobre a legislação ambiental. Os dois já foram aprovados pela Câmara dos Deputados e precisam apenas da chancela do Senado para se tornarem leis.",
+        "Esses dois projetos passaram rapidamente no primeiro semestre, na Câmara dos Deputados, depois de serem incluídos, em maio passado, no rol de prioridades da Frente Parlamentar da Agropecuária durante o que se chamou de “semana do agro” – fruto do lobby ruralista sobre o presidente da Casa, Hugo Motta, do Republicanos da Paraíba, que também é integrante da bancada. “Ao chancelar esse pacote de retrocessos, a FPA igualou o criminoso ambiental ao produtor legalizado”, criticaram, à época, Alice Dandara e Mariana Lyrio, respectivamente advogada do Instituto Socioambiental e assessora de políticas públicas do Observatório do Clima. “Fica uma pergunta incômoda: se perdem o clima, a sociedade e quem produz dentro da lei, quem ganhou com a semana do agronegócio?”",
+        "O embargo remoto de propriedades rurais com desmatamento ilegal foi uma das principais ferramentas de combate ao crime ambiental utilizadas pelo Ibama desde 2016, paralisado no governo do extremista de direita Jair Bolsonaro e retomado a partir de 2023. Apenas no primeiro ano do terceiro mandato de Lula, o Ibama embargou cerca de 350 mil hectares – quase duas vezes e meia a área da cidade de São Paulo – de terras com desmatamento ilegal na Amazônia. Uma vez embargada, a fazenda fica impedida de obter financiamento até que regularize a situação. “É um trabalho rápido, barato e de grande impacto”, disse, à época, o então diretor de Proteção Ambiental do Ibama, Jair Schmitt – atualmente, ele preside a autarquia. Foi justamente a eficiência da ferramenta que a colocou na mira dos ruralistas.",
+        "Apresentado pelo deputado ruralista Lucio Mosquini, do MDB de Rondônia, com outros dois colegas, o PL 2564/2025 – número do texto que acaba com o embargo remoto – foi colocado no Senado sob os cuidados de Jaques Wagner, do PT baiano. Wagner, amigo pessoal de Lula e governista, pouco se opôs a outras matérias que atentam contra a conservação dos biomas – por exemplo, o PL da Devastação.",
+        "Já o PL 5900/2025 é assinado por Pedro Lupion, do Republicanos paranaense, presidente da Frente Parlamentar da Agropecuária – que era apontado como provável ministro da Agricultura e Pecuária caso o extremista de direita Flávio Bolsonaro, do PL, tivesse vencido a eleição. O texto exige “manifestação técnica prévia do órgão federal responsável pela agricultura, pecuária, pesca, aquicultura ou florestas plantadas na edição de ato normativo que afete espécie utilizada em atividade produtiva”. Na prática, isso quer dizer que qualquer norma de proteção à Natureza exigiria aval prévio de quem zela, no governo, pelos interesses do ruralismo. Ele ainda não teve um relator escolhido pelo presidente do Senado, Davi Alcolumbre, do União Brasil do Amapá.",
+        "Além deles, há um projeto de decreto legislativo – uma ferramenta que passou a ser usada por parlamentares, nos últimos anos, para se contrapor a decisões que são prerrogativa constitucional do Poder Executivo – que precisa apenas ser votado pelo plenário da Câmara para ser aprovado e ferir gravemente os direitos dos povos indígenas ao desfazer a demarcação de duas Terras Indígenas em Santa Catarina. Mais grave, o texto contém um parágrafo que na prática interfere na regulamentação do processo demarcatório e paralisaria novas demarcações.",
+        "Organizações ambientalistas também monitoram a tramitação de outras matérias potencialmente danosas ao meio ambiente ainda em 2026. Casos, por exemplo, do PL 957/2024, do deputado federal paranaense Filipe Barros, do PL, eleito senador em 4 de outubro. O texto faz uma série de alterações na legislação brasileira para “possibilitar maior agilidade ao processo minerário” e abre a porteira para que o garimpo possa atuar com “aumento expressivo da capacidade produtiva”. A matéria vai tramitar sob regime de urgência – isto é, sem passar por comissões na Câmara. Ou do PL 364/2019, proposto pelo ruralista Alceu Moreira, do MDB gaúcho, que enfraquece a proteção de campos nativos não florestais – por exemplo, o pampa ou os chamados campos de altitude. Ele aguarda apenas a redação final em uma comissão da Câmara para ser enviado ao Senado.",
+        "A possível aprovação desses textos é uma espécie de aviso sobre o que se verá no Congresso a partir de fevereiro de 2027. Embora as bancadas de legendas progressistas não tenham se reduzido, a extrema direita avançou sobre o que se convencionou chamar de Centrão – partidos como MDB, União Brasil e PSD, que reúnem políticos da direita tradicional, mais preocupados com o envio de emendas às bases eleitorais do que com a barulheira em redes sociais do bolsonarismo.",
+        "A cruzada para liberar a mineração em Terras Indígenas “será um dos grandes temas de 2027” no Congresso, afirma Suely Araújo, do Observatório do Clima. Em fevereiro de 2026, o ministro Flávio Dino, do Supremo Tribunal Federal, deu ao Congresso um prazo de 24 meses para produzir uma lei sobre o assunto. O Senado já tem, desde 2025, um grupo de trabalho para discutir a regulamentação da exploração do subsolo das Terras Indígenas, presidido pela senadora Tereza Cristina, do PP de Mato Grosso do Sul, vice-presidenta da Frente Parlamentar da Agropecuária – e que também foi cotada para um eventual ministério de Flávio Bolsonaro.",
+        "Suely também espera “um monte de novidades” para as semanas seguintes à posse do novo Congresso e o início da nova legislatura, em 1o de fevereiro. É habitual, ela diz, que os novatos na Câmara e no Senado apresentem uma enxurrada de propostas. “Os temas são recorrentes: flexibilização da legislação de proteção [ambiental]”, prevê a coordenadora do Observatório do Clima.",
+        "Há apreensão com o que vai acontecer no Senado, Casa em que ambientalistas conseguiram frear – ainda que no varejo – alguns retrocessos ambientais nos últimos anos e que, a partir de 2027, será amplamente dominada pela extrema direita. “A bancada que vota com o meio ambiente praticamente desapareceu no Senado, [sobrou] meia dúzia. A gente usava o Senado para corrigir problemas que a Câmara tinha colocado nos projetos. Porque é uma Casa menor, é mais fácil, em tese, convencer 81 [senadores] do que 513 [deputados]”, Suely explica.",
+        "É dado como certo que a estratégia terá de ser alterada. “A [próxima composição da] Câmara tem parlamentares [progressistas] jovens, novas lideranças, com votações expressivas que podem nos ajudar a fazer barulho”, ela espera. Será preciso. Porque é improvável que a defesa da Natureza siga a contar com o Supremo Tribunal Federal – fundamental, nos últimos anos, para barrar (ainda que de maneira controversa) a lei flagrantemente inconstitucional que impôs um marco temporal para a demarcação de Terras Indígenas. Agora, emparedado pela votação esmagadora da extrema direita ao Senado e pela crise produzida pelas suspeitas da corrupção de alguns ministros pelo ex-banqueiro Daniel Vorcaro, o Supremo terá de cuidar da sobrevivência de alguns de seus integrantes – e da do seu papel institucional.",
+        "Reportagem e texto: Rafael Moro Martins Edição: Talita Bedinelli Edição de arte: Cacao Sousa Edição de fotografia: Lela Beltrão Checagem: Plínio Lopes e Soraia Joffely Revisão ortográfica (português): Valquíria Della Pozza Tradução para o castelhano: Meritxell Almarza Tradução para o inglês: Sarah J. Johnson Edição em inglês: Jonathan Watts Montagem de página e acabamento: Flávia Coimbra Coordenação de fluxo editorial: Viviane Zandonadi Editora-chefa: Talita Bedinelli Diretora de redação: Eliane Brum",
+        "Estadunidenses, franceses e espanhóis ligam resultados às eleições que enfrentarão, e latino-americanos veem início da reversão da onda reacionária na região",
+        "Depois da mais espetacular virada desde o início da redemocratização, o bolsonarismo foi derrotado nas urnas e o país ganha algum fôlego para enfrentar a extrema direita que seguirá avançando",
+        "A vitória apertada contra o fascismo aconteceu porque as ruas se mobilizaram; é preciso evitar a sedução de se aliar com os inimigos pela governabilidade e partir para recuperar os fronts perdidos",
+        "Em ação no Supremo, servidores relatam assédios e perseguições durante governo do ex-presidente",
+        "© Direitos reservados. Não reproduza o conteúdo desta página em qualquer meio de comunicação sem autorização escrita de SUMAÚMA",
+        "This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.",
+        "Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings."
+      ],
+      "pontos": [
+        "Articulação legislativa pós-eleição contra salvaguardas de fiscalização e direitos territoriais"
+      ]
+    },
+    "impa-tech-inscricoes-graduacao-matematica-rio-agenciabrasil.ebc.com.br/educa": {
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-10/impa-tech-abre-inscricoes-para-graduacao-em-matematica-nesta-terca",
+      "fonte": "Agência Brasil / EBC",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Impa Tech inicia período de inscrições para graduação em matemática e inovação no Rio",
+      "resumo": [
+        "O Instituto de Matemática Pura e Aplicada (IMPA) abre inscrições para o curso superior interdisciplinar de Matemática da Tecnologia e Inovação, instalado no polo Porto Maravalley, na Região Portuária do Rio de Janeiro. O programa acadêmico oferece infraestrutura completa e moradia custeada para atrair jovens pesquisadores de alto desempenho."
+      ],
+      "texto_integral": [
+        "O período de inscrição para o curso de graduação em matemática da tecnologia e inovação do Impa Tech começa nesta terça-feira (3).",
+        "Para esta edição serão ofertadas, pela primeira vez, vagas na unidade Impa Tech Nordeste, no Tech Park Piauí, em Teresina, além da unidade Impa Tech Rio, no Rio de Janeiro.",
+        "Ao todo, serão disponibilizadas 150 vagas para 2027, distribuídas entre medalhistas de olimpíadas científicas e estudantes com bom desempenho na prova de matemática do Exame Nacional do Ensino Médio (Enem).",
+        "Para se candidatar, não há restrições de idade, mas é preciso ter concluído o ensino médio.",
+        "As inscrições abrem em 3 de novembro às 9h, no horário de Brasília, no site do Impa Tech, e podem ser feitas até o dia 23 de dezembro, às 12h.",
+        "Além de considerar o desempenho, o processo seletivo terá ainda uma segunda fase, com atividades em grupo e entrevistas individuais (on-line).",
+        "A publicação da lista com os 360 candidatos selecionados para segunda fase está prevista para 18 de janeiro de 2027.",
+        "Mais detalhes estão disponíveis no edital do processo seletivo, na página do Impa Tech.",
+        "O Impa Tech é voltado a estudantes de todo o país. A instituição oferece bolsa alimentação, auxílio financeiro e alojamento estudantil aos maiores de 18 anos.",
+        "Além disso, os jovens aprovados terão a passagem aérea para o início do ano letivo custeada pelo Instituto.",
+        "O bacharelado de quatro anos é totalmente gratuito, em horário integral e presencial.",
+        "Após um ciclo básico, os alunos escolhem entre as ênfases em matemática; inteligência artificial e ciência de dados; ciência da computação, disponíveis nas duas unidades; e física, oferecida exclusivamente no Rio de Janeiro.",
+        "Fundado em 2024, o Impa Tech é o primeiro programa de graduação do Impa, centro de pesquisa matemática e pós-graduação de renome internacional, com doutorado, mestrado e mestrado profissional.",
+        "O Impa organiza a Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP), a maior olimpíada científica do mundo em número de participantes."
+      ],
+      "pontos": [
+        "Abertura de vagas e critérios de seleção para o polo tecnológico carioca"
+      ]
+    },
+    "ceara-escolta-seguranca-distribuicao-agua-ameacas-cartacapital.com.br/justica/fo": {
+      "url": "https://www.cartacapital.com.br/justica/forcas-do-ceara-intervem-para-garantir-agua-apos-ameaca-de-faccao/",
+      "fonte": "CartaCapital",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Segurança pública mobiliza escolta no Ceará para restabelecer distribuição de água sob ameaça de facção",
+      "resumo": [
+        "O governo do Ceará acionou efetivos de policiamento para escoltar veículos de distribuição de água potável no interior do estado após comerciantes sofrerem coação do Comando Vermelho para interromper o fornecimento. A operação integrada reúne forças policiais e equipes da Companhia de Água e Esgoto do Ceará (Cagece) para reocupar as rotas de entrega."
+      ],
+      "texto_integral": [
+        "Comerciantes teriam sido ameaçados por integrantes do Comando Vermelho",
+        "Comerciantes teriam sido ameaçados por integrantes do Comando Vermelho",
+        "As forças de segurança do Ceará tiveram que ser mobilizadas para garantir o fornecimento de água mineral para a população de Banabuiú, após criminosos ameaçarem comerciantes locais que, com medo de represálias, suspenderam a venda de garrafões d´água na cidade.",
+        "Desde a última sexta-feira 30, policiais militares vêm escoltando servidores da Companhia de Água e Esgoto do Ceará (Cagece) encarregados de auxiliar na distribuição de água para os moradores da cidade de cerca de 17 mil habitantes do Sertão Central do estado, a cerca de 220 quilômetros de Fortaleza.",
+        "“A Cagece realiza a coleta dos garrafões com água nos fornecedores e os transporta até o município de Banabuiú, onde estão sendo comercializados”, informou a Secretaria da Segurança Pública e Defesa Social, em nota.",
+        "As ameaças aos comerciantes começaram a circular na cidade há duas semanas. Identificando-se como integrantes do Comando Vermelho, os criminosos condicionaram a continuidade da venda de água na cidade a uma autorização do grupo, mediante o pagamento de uma taxa. Quem não aceitasse pagar a quantia cobrada sofreria as consequências, o que assustou donos de estabelecimentos.",
+        "Vídeos que circulam nas redes sociais expõem filas de moradores à espera do momento de encher garrafões d´água na Praça da Igreja Matriz, no último fim de semana.",
+        "Ainda de acordo com a secretaria estadual, o patrulhamento policial foi reforçado. Três suspeitos de integrar o braço local de uma facção criminosa com atuação de âmbito nacional foram detidos no último dia 22. Com eles, foram apreendidos um revólver calibre .38, munições, dinheiro em espécie, seis aparelhos celulares e um notebook.",
+        "Além disso, investigadores da Polícia Civil identificaram o suposto mandante das ameaças feitas a comerciantes da cidade. O homem, cujo identidade não foi divulgada, estaria no Rio de Janeiro e as autoridades cearenses estão trabalhando em conjunto com a Polícia Civil fluminense para detê-lo. A reportagem da Agência Brasil também entrou em contato com a prefeitura da cidade, mas não obteve retorno.",
+        "Defesa de Vorcaro recorre a comissão internacional e alega violações em prisão preventiva",
+        "Ex-agente do governo israelense é investigado por participação na fuga de Flávio Bolsonaro para os EUA",
+        "Ação Popular pede suspensão de salário do senador Flávio Bolsonaro",
+        "Agência Brasil Agência de notícias brasileira, pública e de acesso livre, gerida pela Empresa Brasil de Comunicação (EBC).",
+        "Às vésperas das eleições de 2026, o País volta a encarar um ponto de inflexão: o futuro democrático está novamente em jogo.",
+        "A ameaça bolsonarista não foi derrotada, apenas recuou. No Congresso, forças conservadoras seguem ditando o ritmo. Lá fora, o avanço da extrema-direita e os conflitos em Gaza, no Irã e na Ucrânia agravam a instabilidade global.",
+        "Se você valoriza o jornalismo crítico, independente e comprometido com a democracia, este é o momento de agir.",
+        "Assine ou contribua com o quanto puder.",
+        "‘Dark Horse’ pode ter recebido recursos do PCC, afirma Durigan",
+        "AGU busca recuperar R$ 190 milhões de integrantes do PCC e do CV",
+        "Países da América Latina e Caribe seguem EUA e classificam PCC e CV como terroristas"
+      ],
+      "pontos": [
+        "Intervenção governamental após imposição de restrições por facção criminosa"
+      ]
+    },
+    "ceara-escolta-seguranca-distribuicao-agua-ameacas-poder360.com.br/poder-seguranc": {
+      "url": "https://www.poder360.com.br/poder-seguranca-publica/distribuicao-de-agua-no-ceara-tem-escolta-apos-ameacas/",
+      "fonte": "Poder360",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Segurança pública mobiliza escolta no Ceará para restabelecer distribuição de água sob ameaça de facção",
+      "resumo": [
+        "O governo do Ceará acionou efetivos de policiamento para escoltar veículos de distribuição de água potável no interior do estado após comerciantes sofrerem coação do Comando Vermelho para interromper o fornecimento. A operação integrada reúne forças policiais e equipes da Companhia de Água e Esgoto do Ceará (Cagece) para reocupar as rotas de entrega."
+      ],
+      "texto_integral": [
+        "Facção levou comerciantes a suspender vendas no interior do Estado; operação conta com apoio da Cagece e da polícia",
+        "A distribuição de água mineral em Banabuiú, no Sertão Central do Ceará, passou a ser feita sob escolta policial no sábado (31.out.2026). A medida foi adotada depois de ameaças de uma facção criminosa levarem os comerciantes da cidade a suspender a venda de garrafões.",
+        "Moradores formaram filas para comprar água na manhã de sábado. A operação conta com o apoio da Cagece (Companhia de Água e Esgoto do Ceará) e das Forças de Segurança, conforme informou a SSPDS (Secretaria da Segurança Pública e Defesa Social).",
+        "“A Cagece realiza a coleta dos garrafões com água nos fornecedores e os transporta até o município de Banabuiú. Essa logística conta com o aporte das Forças de Segurança para que essa comercialização seja feita com tranquilidade”, afirmou a SSPDS em nota.",
+        "Para garantir o acesso da população à água potável, a operação com escolta deve continuar nos próximos dias. O abastecimento seguirá nesse modelo até que as condições de segurança para a comercialização local sejam consideradas normalizadas.",
+        "O esquema de segurança conta com viaturas do POG (Policiamento Ostensivo Geral), da FT (Força Tática) e do Motopatrulhamento, além da intensificação do patrulhamento na região.",
+        "Segundo reportagem do portal g1, as intimidações aos comerciantes partiram do Comando Vermelho, facção de origem carioca. Mensagens de extorsão identificadas como Edital Banabuiú e assinadas pela Diretoria de Banabuiú começaram a circular em 19 de outubro de 2026.",
+        "Os textos condicionavam a venda e a distribuição de água à autorização da organização criminosa e advertiam que quem descumprisse as ordens “sofreria as consequências”. Há relatos de cobranças de R$ 750 semanais por estabelecimento.",
+        "Em resposta às extorsões, policiais prenderam 3 homens em 22 de outubro de 2026. Ainda de acordo com a reportagem, os suspeitos foram identificados como Cícero Kevin Gomes Farias, Francisco das Chagas de Lima da Silva e Carlos Fernando da Silva Andrade. Segundo a polícia, eles atuavam como agiotas e eram responsáveis por recolher os valores para a organização criminosa.",
+        "Com o trio, foram apreendidos um revólver calibre 38, munições, 6 celulares, um notebook e dinheiro. As investigações têm o apoio da Polícia Civil do Rio de Janeiro, e novos mandados de prisão estão em aberto."
+      ],
+      "pontos": [
+        "Operação de segurança e atuação conjunta com a companhia estadual de abastecimento"
+      ]
+    },
+    "debate-macroeconomico-taxa-juros-impacto-fiscal-agenciabrasil.ebc.com.br/econo": {
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/economista-de-plano-real-acusa-bc-de-causar-rombo-fiscal-juros",
+      "fonte": "Agência Brasil / EBC",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Impacto de juros sobre o custo da dívida federal reacende debate sobre política fiscal",
+      "resumo": [
+        "Críticas de economistas e formuladores de políticas monetárias trouxeram à tona a discussão sobre o peso da taxa Selic na formação do déficit público e na trajetória da dívida mobiliária. Argumenta-se que despesas financeiras decorrentes de juros elevados exercem pressão orçamentária superior ao ajuste alcançável apenas pelo corte de custeio discricionário."
+      ],
+      "texto_integral": [
+        "O artigo de um dos economistas da equipe que elaborou o Plano Real, professor André Lara Resende, tem ganhado destaque nos últimos dias por acusar o Banco Central (BC) de causar desequilíbrio fiscal no Brasil por meio das altas taxas de juros. O especialista defende novas regras para as despesas e os juros no país.",
+        "“Acuso o Banco Central de sustentar, em nome de uma teoria anacrônica, a taxa de juros que é a principal causa do desequilíbrio fiscal que diz combater.”",
+        "Formado pela PUC do Rio de Janeiro, André Lara Resende tem PhD em economia pelo Massachusetts Institute of Technology (MIT), nos Estados Unidos, além de ter atuado em instituições financeiras no Brasil.",
+        "O especialista questiona a teoria econômica defendida pelo mercado financeiro e pelo BC para justificar a taxa Selic em 13,75% ao ano. Segundo ranking da Moneyou, o Brasil tem a taxa de juros real mais alta do mundo.",
+        "“Acuso a grande imprensa de repetir, sem exame, que o problema está no gasto primário, quando está nos juros. Acuso os analistas do mercado financeiro de confundir o interesse dos rentistas com a racionalidade econômica.”",
+        "Escrito às vésperas do primeiro turno eleitoral, o artigo de André Lara Resende ainda acusou “todos os que, sabendo que juros absurdos inviabilizam o país, preferem o conforto do consenso ao incômodo da verdade”.",
+        "O Banco Central justifica os juros elevados, entre outros motivos, devido às pressões inflacionárias e aos déficits fiscais primários nas contas públicas, que é quando as despesas superam as receitas, excluindo os gastos com a dívida.",
+        "Segundo a autoridade monetária, os gastos primários maiores que arrecadação pressionam a inflação.",
+        "Apesar de reconhecer que o Brasil gasta mal e aloca recursos de forma “irracional”, como nos casos das emendas parlamentares, das vantagens salariais do Judiciário e das isenções tributárias “de toda ordem”, André Lara Resende demonstra que o Brasil tem um déficit fiscal pequeno, entre os menores do mundo.",
+        "“Quando se exclui o serviço da dívida, as contas estão praticamente equilibradas. A grande despesa do Estado é com os juros sobre a dívida”, escreveu.",
+        "A dívida pública brasileira cresceu de 71,7% do Produto Interno Bruto (PIB) em 2022 para cerca de 82,9% do PIB em agosto de 2026. Para combater esse aumento, analistas do mercado financeiro tem cobrado corte de despesas da União, o que tende a afetar as políticas sociais.",
+        "O professor André Lara Resende reconhece que o crescimento da dívida é insustentável, mas destaca que o problema não está nos “gastos primários”, que são as despesas com serviços públicos que o mercado financeiro cobra para reduzir.",
+        "“Nos últimos anos, exceto durante a Covid, o resultado primário foi apenas ligeiramente negativo; já o déficit nominal, puxado pelos juros, foi sempre alto e agora aproxima-se de 10% do PIB”, explicou.",
+        "“O equilíbrio das contas públicas não é uma condição necessária e nem suficiente para o bom funcionamento da política econômica”, afirmou no artigo publicado no Substack.",
+        "André Lara Resende concluiu que a redução da taxa de juros é a solução para o desequilíbrio fiscal no Brasil. Nos últimos 12 meses, os juros consumiram mais de R$ 1,1 trilhão do orçamento ou 8,9% do PIB.",
+        "“A economia tem um problema básico: a extraordinariamente alta taxa básica de juros. Um problema que tem solução clara. Só é preciso vencer os preconceitos associados a uma teoria monetária e fiscal anacrônica”, concluiu.",
+        "O Banco Central sustenta que a atual taxa de juros é necessária para manter a inflação sob controle uma vez que a Selic elevada inibe o crescimento econômico e a demanda, forçando uma queda dos preços.",
+        "Os comunicados oficiais do Comitê de Política Monetária (Copom) do BC, responsável por definir a Selic, apontam como fatores que contribuem para inflação e, por isso, justificam os juros altos: o aquecimento da economia e do mercado de trabalho e a trajetória dos gastos públicos.",
+        "“O Comitê reafirma a visão de que o esmorecimento no esforço de reformas estruturais e disciplina fiscal, o aumento de crédito direcionado e as incertezas sobre a estabilização da dívida pública têm o potencial de elevar a taxa de juros”, diz a última ata do Copom.",
+        "No artigo, Lara Resende questiona a tese de que o BC não tem alternativa para controlar a inflação além dos juros elevados. Para ele, não há mais uma relação inversa entre desemprego e inflação que sugere que o aumento do desemprego, um dos resultados dos juros altos, reduz a inflação.",
+        "“A fragilidade conceitual e empírica deste modelo macro convencional que pauta a política dos BCs é tão flagrante que, apesar de ainda dominante e repetido na mídia como verdade incontestável, passou a ser criticado até mesmo pelos economistas mais conservadores”, diz.",
+        "Por outro lado, o economista reconhece que a redução dos juros traz um aumento da inflação, mas sustenta que essa é uma relação de “curto prazo” e transitória.",
+        ">> Clique aqui e leia a íntegra do texto Eu Acuso: Uma Proposta para Eliminar os Juros Absurdos do ex-diretor do Banco Central e ex-presidente do Banco Nacional de Desenvolvimento Social (BNDES).",
+        "O especialista que ajudou a elaborar o Plano Real durante o governo de Fernando Henrique Cardoso (FHC) aponta que não há corte de gastos possível que interrompa o crescimento da dívida em relação ao PIB sem uma redução do juro para “em torno da taxa de crescimento nominal da economia”.",
+        "Como proposta, André Lara Resende sugere um novo regime fiscal e monetário para o Brasil com um planejamento de metas fiscais e de juros por um período mais longo, de quarto a cinco anos, a serem anunciadas de forma conjunta.",
+        "“As metas de inflação seriam anunciadas em conjunto com metas para a taxa básica de juros. O BC se comprometeria a manter a taxa básica num intervalo entre a meta de inflação, 3%, e taxa de crescimento nominal potencial”, explicou.",
+        "O especialista acrescenta que a intervenção do BC no mercado de câmbio deve ser necessária para evitar qualquer depreciação mais intensa do real.",
+        "“Com reservas internacionais de mais de US$ 350 bilhões, o BC tem munição de sobra para isso”, escreveu."
+      ],
+      "pontos": [
+        "Manifestações técnicas sobre a composição do déficit fiscal e a política de juros do Banco Central"
       ]
     }
   }

@@ -779,6 +779,42 @@ dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 .d-audio-tts-btn:hover { background: var(--card); border-color: var(--sec); }
 .d-audio-tts-btn.falando { background: var(--sec); color: #fff; border-color: var(--sec); }
 
+/* Dropdown de edições do mês e notícias salvas */
+.d-edsel-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: var(--sp-2) 0 var(--sp-3); }
+.d-edsel-label { display: inline-flex; align-items: center; gap: 8px; font-size: var(--fs-xs); color: var(--muted); }
+.d-edsel-txt { font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--ink); }
+.d-edsel-select { font: 500 var(--fs-xs) var(--f-mono); background: var(--card); color: var(--ink); border: 1px solid var(--rule); border-radius: var(--pill); padding: 6px 14px; cursor: pointer; outline: none; transition: border-color .15s; }
+.d-edsel-select:hover, .d-edsel-select:focus { border-color: var(--sec); }
+.d-btn-filtro-salvas { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 14px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all .15s; }
+.d-btn-filtro-salvas:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-filtro-salvas.ativo { background: var(--sec); color: #fff; border-color: var(--sec); }
+
+.d-nota-acts { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.d-btn-salvar { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 12px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all .15s; }
+.d-btn-salvar:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-salvar.salva { background: var(--sec); color: #fff; border-color: var(--sec); }
+.d-btn-ouvir-nota { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 12px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all .15s; }
+.d-btn-ouvir-nota:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-ouvir-nota.falando { background: var(--sec); color: #fff; border-color: var(--sec); }
+
+/* Dropdown de edições do mês e notícias salvas */
+.d-edsel-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: var(--sp-2) 0 var(--sp-3); }
+.d-edsel-label { display: inline-flex; align-items: center; gap: 8px; font-size: var(--fs-xs); color: var(--muted); }
+.d-edsel-txt { font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--ink); }
+.d-edsel-select { font: 500 var(--fs-xs) var(--f-mono); background: var(--card); color: var(--ink); border: 1px solid var(--rule); border-radius: var(--pill); padding: 6px 14px; cursor: pointer; outline: none; transition: border-color .15s; }
+.d-edsel-select:hover, .d-edsel-select:focus { border-color: var(--sec); }
+.d-btn-filtro-salvas { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 14px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all .15s; }
+.d-btn-filtro-salvas:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-filtro-salvas.ativo { background: var(--sec); color: #fff; border-color: var(--sec); }
+
+.d-nota-acts { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.d-btn-salvar { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 12px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all .15s; }
+.d-btn-salvar:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-salvar.salva { background: var(--sec); color: #fff; border-color: var(--sec); }
+.d-btn-ouvir-nota { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 12px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all .15s; }
+.d-btn-ouvir-nota:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-ouvir-nota.falando { background: var(--sec); color: #fff; border-color: var(--sec); }
+
 /* Cinema & books magazines (poster 2:3) */
 .capa-img.poster { max-width: 440px; }
 .capa-img.poster img, .capa-img.poster .ph { aspect-ratio: 2 / 3; }
