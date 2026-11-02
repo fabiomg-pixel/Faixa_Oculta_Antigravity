@@ -5889,6 +5889,135 @@
           "o_que": "Reunião de líderes partidários no Senado para definir os detalhes da votação da PEC da Segurança Pública."
         }
       ]
+    },
+    "2026-11-02": {
+      "data": "2026-11-02",
+      "edicao": "manha",
+      "titulo": "Disputa no Senado e alerta fiscal marcam início de novembro",
+      "resumo_dia": "O cenário pós-eleitoral consolida articulações intensas no Congresso Nacional para a sucessão legislativa e a votação de pautas prioritárias, como a PEC da Segurança Pública. No campo econômico, estimativas apontam que a alíquota da reforma tributária sobre o consumo pode ultrapassar 30%, enquanto a dívida pública alcança 82,9% do PIB sob pressão de déficits recorrentes. Na gestão pública e carreiras federais, o Ministério da Gestão projeta novo CNU com até 3 mil vagas em 2027, condicionado à peça orçamentária.",
+      "notas": [
+        {
+          "id": "presidencia-senado-candidatura-pl",
+          "editoria": "Política",
+          "titulo": "PL articula candidatura própria ao Senado e desafia favoritismo de Alcolumbre",
+          "texto": "Apesar das investidas de Davi Alcolumbre para atrair alas da oposição com promessas de anistia e presidência de comissões, o Partido Liberal deve formalizar um candidato próprio para o comando da Casa Alta. A bancada, que atingiu número expressivo no Congresso, busca assegurar protagonismo institucional independente no bloco de oposição. A movimentação acirra as negociações entre o Palácio do Planalto e as lideranças do Centrão antes da posse dos novos parlamentares.",
+          "por_que_importa": "A presidência do Senado é o posto-chave para pautar reformas orçamentárias do Executivo, indicar membros para agências reguladoras e deliberar sobre pedidos de impeachment de ministros do STF.",
+          "fontes": [
+            {
+              "fonte": "g1 Política",
+              "perfil": "Portal de notícias",
+              "enfoque": "Detalhamento da resistência do PL ao avanço de Alcolumbre e exigência de candidatura própria",
+              "url": "https://g1.globo.com/politica/noticia/2026/11/02/presidencia-do-senado-pl-deve-ter-candidato-proprio-mesmo-com-aproximacao-de-alcolumbre.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "alcolumbre-pec-seguranca-publica",
+          "editoria": "Política",
+          "titulo": "PEC da Segurança Pública é pautada no Senado em meio à transição legislativa",
+          "texto": "Davi Alcolumbre incluiu a Proposta de Emenda à Constituição da Segurança Pública na pauta de votações do Senado. O texto busca padronizar protocolos federativos de combate a facções criminosas e integrar bancos de dados entre estados e União. A proposta chega ao plenário sob pressão de governadores contrários à centralização de diretrizes policiais em Brasília.",
+          "por_que_importa": "O endurecimento e a integração do arcabouço de segurança pública impactam diretamente o Rio de Janeiro e a gestão orçamentária dos fundos de segurança estaduais.",
+          "fontes": [
+            {
+              "fonte": "g1 Política",
+              "perfil": "Portal de notícias",
+              "enfoque": "Agendamento da PEC para votação imediata no plenário do Senado",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "aliquota-reforma-tributaria-consumo",
+          "editoria": "Economia",
+          "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
+          "texto": "Simulações técnicas e projeções econômicas apontam que a alíquota padrão da Contribuição sobre Bens e Serviços (CBS) e do Imposto sobre Bens e Serviços (IBS) pode ultrapassar a marca de 30%. O aumento do teto é decorrente do excesso de exceções setoriais, regimes favorecidos e desonerações incluídos na regulamentação aprovada pelo Legislativo. Caso o patamar se confirme, o Brasil terá o maior imposto sobre valor agregado do mundo, superando países europeus como Hungria e Dinamarca.",
+          "por_que_importa": "A elevação da tributação média sobre o consumo encarece serviços de tecnologia e insumos de pesquisa, além de aumentar o peso proporcional de impostos sobre as classes de menor renda.",
+          "fontes": [
+            {
+              "fonte": "g1 Economia",
+              "perfil": "Portal de notícias",
+              "enfoque": "Comparação internacional das alíquotas do IVA após acréscimo de setores beneficiados",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "divida-publica-deficit-setembro",
+          "editoria": "Economia",
+          "titulo": "Dívida pública atinge 82,9% do PIB e estatais acumulam rombo recorde",
+          "texto": "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, elevando a Dívida Bruta do Governo Geral para 82,9% do PIB, o patamar mais alto em cinco anos e meio. No acumulado do ano, as empresas estatais federais somaram um déficit de R$ 8,5 bilhões até o nono mês, pressionadas por gastos de custeio e subsídios. O Tesouro Nacional avalia medidas de contenção de despesas antes do início do próximo ciclo orçamentário.",
+          "por_que_importa": "A escalada da relação dívida/PIB restringe o espaço fiscal para investimentos federais em infraestrutura científica e eleva o prêmio de risco dos juros de longo prazo.",
+          "fontes": [
+            {
+              "fonte": "g1 Economia",
+              "perfil": "Portal de notícias",
+              "enfoque": "Divulgação dos dados de endividamento pelo Banco Central e déficit consolidado",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml"
+            },
+            {
+              "fonte": "g1 Economia",
+              "perfil": "Portal de notícias",
+              "enfoque": "Resultado fiscal das empresas estatais federais até setembro",
+              "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "cnu-2027-planejamento-vagas",
+          "editoria": "Ciência",
+          "titulo": "Governo planeja edição do CNU para 2027 com até 3 mil vagas federais",
+          "texto": "O Ministério da Gestão e da Inovação informou que uma nova edição do Concurso Nacional Unificado está em planejamento para 2027, com previsão de até 3 mil postos no Executivo. A aplicação efetiva do certame dependerá das dotações autorizadas no Projeto de Lei Orçamentária Anual correspondente. O modelo centralizado busca repor quadros de agências reguladoras, institutos de pesquisa e órgãos de formulação de políticas públicas.",
+          "por_que_importa": "A renovação dos quadros de carreira de Estado é vital para a recomposição do corpo técnico em órgãos de fomento à ciência, inovação e regulação sanitária.",
+          "fontes": [
+            {
+              "fonte": "g1 Trabalho e Carreira",
+              "perfil": "Portal de notícias",
+              "enfoque": "Planejamento orçamentário do Ministério da Gestão para novos concursos federais",
+              "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "reforma-eleitoral-distrital-misto",
+          "editoria": "Política",
+          "titulo": "Câmara acelera debate para implementar sistema distrital misto em eleições futuras",
+          "texto": "A cúpula da Câmara dos Deputados intensificou os debates para alterar a sistemática de escolha dos parlamentares proporcionais no país. O modelo em discussão introduz o sistema distrital misto, no qual metade das cadeiras é preenchida por votação majoritária distrital e a outra por listas partidárias preordenadas. Lideranças partidárias articulam votar a mudança ainda no atual período legislativo para valer nos próximos ciclos eleitorais.",
+          "por_que_importa": "A mudança no sistema de representação altera a relação entre eleitores e bancadas regionais, além de impactar diretamente o financiamento partidário e a fragmentação partidária no Congresso.",
+          "fontes": [
+            {
+              "fonte": "g1 Política",
+              "perfil": "Portal de notícias",
+              "enfoque": "Explicação técnica do modelo de votação e cronograma de votação na Câmara",
+              "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "angra-imoveis-willer-tomaz",
+          "editoria": "Rio",
+          "titulo": "Apuração revela patrimônio de mansões em ilhas de Angra dos Reis ligadas a advogado",
+          "texto": "Levantamentos fundiários revelaram que o advogado Willer Tomaz possui pelo menos outras cinco propriedades em ilhas de Angra dos Reis, no litoral sul do Rio de Janeiro. A região ganhou notoriedade após disputas judiciais envolvendo terrenos e residências ocupadas anteriormente por personalidades e desportistas. As aquisições atraíram a atenção dos órgãos de fiscalização ambiental e patrimonial devido às restrições de ocupação na Baía de Ilha Grande.",
+          "por_que_importa": "A ocupação imobiliária de luxo em áreas de preservação no litoral fluminense tensiona a governança ambiental do estado e expõe conflitos de regularização fundiária marítima.",
+          "fontes": [
+            {
+              "fonte": "g1 Política",
+              "perfil": "Portal de notícias",
+              "enfoque": "Mapeamento das propriedades em ilhas do litoral fluminense",
+              "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml"
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "10h00",
+          "o_que": "Reunião de líderes partidários no Senado para fechar o calendário de votação da PEC da Segurança Pública"
+        },
+        {
+          "quando": "14h30",
+          "o_que": "Comissão de Constituição e Justiça da Câmara debate parecer sobre alteração no sistema de votação para deputados"
+        }
+      ]
     }
   },
   "cine_edicoes": {
@@ -22672,44 +22801,30 @@
       ]
     },
     "divida-publica-deficit-setembro-g1.globo.com/economia/noticia/": {
-      "url": "https://g1.globo.com/economia/noticia/2026/10/29/contas-publicas-tem-deficit-de-r-55-bilhoes-em-setembro-divida-segue-em-829percent-do-pib-maior-nivel-desde-2021.ghtml",
-      "fonte": "g1",
+      "url": "https://g1.globo.com/economia/noticia/2026/10/29/deficit-das-estatais-federais-sobe-para-r-85-bilhoes-ate-setembro-e-bate-novo-recorde.ghtml",
+      "fonte": "g1 Economia",
       "tipo": "noticia",
-      "data": "2026-10-30",
-      "titulo": "Dívida bruta atinge 82,9% do PIB com déficit primário de R$ 5,5 bilhões",
+      "data": "2026-11-02",
+      "titulo": "Dívida pública atinge 82,9% do PIB e estatais acumulam rombo recorde",
       "resumo": [
-        "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, puxando a dívida bruta para 82,9% do PIB, o nível mais elevado em cinco anos e meio. Dados do Banco Central indicam simultaneamente recorde histórico de endividamento e inadimplência das famílias brasileiras. Em contrapartida, as contas isoladas do governo central fecharam o mês com superávit temporário de R$ 4,8 bilhões segundo o Tesouro."
+        "O setor público consolidado registrou déficit primário de R$ 5,5 bilhões em setembro, elevando a Dívida Bruta do Governo Geral para 82,9% do PIB, o patamar mais alto em cinco anos e meio. No acumulado do ano, as empresas estatais federais somaram um déficit de R$ 8,5 bilhões até o nono mês, pressionadas por gastos de custeio e subsídios. O Tesouro Nacional avalia medidas de contenção de despesas antes do início do próximo ciclo orçamentário."
       ],
       "texto_integral": [
-        "As contas do setor público consolidado apresentaram um déficit primário de R$ 5,5 bilhões em setembro, informou o Banco Central (BC) nesta quinta-feira (29).",
-        "🔎 O déficit primário ocorre quando as receitas com tributos e impostos ficam abaixo das despesas do governo. Se o contrário acontece, o resultado é de superávit primário.",
-        "🔎 O resultado não leva em conta o pagamento dos juros da dívida pública, e abrange o governo federal, os estados, municípios e as empresas estatais.",
-        "Na comparação com setembro do ano passado, houve melhora, uma vez que foi registrado um saldo negativo de R$ 17,5 bilhões naquele mês.",
-        "➡️ O endividamento do setor público, por sua vez, ficou estável continuou em 82,9% do Produto Interno Bruto (PIB) no mês passado — veja mais abaixo nessa reportagem.",
-        "Veja abaixo o desempenho das contas em setembro deste ano:",
-        "governo federal registrou saldo positivo de R$ 3,5 bilhões;estados e municípios tiveram saldo deficitário de R$ 5,6 bilhões;empresas estatais apresentaram déficit de R$ 3,4 bilhões.",
-        "No acumulado dos nove primeiros meses deste ano, ainda segundo dados oficiais, as contas públicas registraram um déficit primário de R$ 94,3 bilhões — o equivalente a 0,93% do Produto Interno Bruto (PIB).",
-        "Com isso, houve piora na comparação com o mesmo período do ano passado, quando foi registrado um saldo negativo de R$ 79,2 bilhões (0,84% do PIB).",
-        "No caso somente do governo federal, o resultado ficou negativo em R$ 93,6 bilhões na parcial deste ano, informou o BC, contra um déficit de R$ 99,6 bilhões nos nove primeiros meses de 2025.",
-        "Para este ano, a meta é de que as contas do governo tenham um saldo negativo de 0,25% do Produto Interno Bruto (PIB), cerca de R$ 34,3 bilhões.De acordo com o arcabouço fiscal, aprovado em 2023, há um intervalo de tolerância de 0,25 ponto percentual em relação à meta central.Ou seja: a meta será considerada formalmente cumprida se o governo tiver saldo zero, ou se chegar a um superávit de R$ 68,6 bilhõesO texto, no entanto, permite que o governo retire desse cálculo R$ 67,3 bilhões em despesas. E use esses recursos para pagar, por exemplo, precatórios (gastos com sentenças judiciais, defesa e educação).",
-        "Quando se incorporam os juros da dívida pública na conta – no conceito conhecido no mercado como resultado nominal, utilizado para comparação internacional –, houve déficit de R$ 113 bilhões nas contas do setor público em setembro.",
-        "➡️ No acumulado em 12 meses até setembro, foi registrado um resultado negativo (déficit) de R$ 1,28 trilhão, ou 9,51% do PIB.",
-        "🔎 Esse número é acompanhado com atenção pelas agências de classificação de risco para a definição da nota de crédito dos países, indicador levado em consideração por investidores.",
-        "O resultado nominal das contas do setor público sofre impacto do resultado mensal das contas, das atuações do BC no câmbio, e dos juros básicos da economia (Selic) fixados pela instituição para conter a inflação. Atualmente, a taxa Selic está em 13,75% ao ano, patamar elevado.",
-        "Segundo o BC, as despesas com juros nominais somaram R$ 1,2 trilhão (8,99% do PIB) em doze meses até setembro deste ano.",
-        "Em setembro, segundo números do Banco Central, a dívida do setor público consolidado ficou estável em 82,9% do PIB em setembro — o equivalente a R$ 11,11 trilhões.",
-        "➡️ Este é o maior nível para a dívida pública desde março de 2021, quando somava 85,1% do PIB, ou seja, é o maior patamar em mais de cinco anos.",
-        "➡️ No acumulado do governo do presidente Luiz Inácio Lula da Silva (PT), ou seja, em pouco mais de três anos, a dívida já avançou 11,2 pontos percentuais.",
-        "🔎 A alta na dívida no governo Lula está relacionada, principalmente, com o aumento de gastos públicos, que gera mais despesas com juros — um ciclo vicioso que se retroalimenta.",
-        "➡️ Para o Fundo Monetário Internacional (FMI), que utiliza de um conceito internacional — englobando os títulos públicos na carteira do BC —, o endividamento brasileiro foi bem maior em setembro: 95,2% do PIB.",
-        "🔎 A proporção com o PIB é considerada por especialistas como o conceito mais apropriado para medir e comparar a dívida das nações. E o formato de cálculo do Fundo Monetário Internacional (FMI) é adotado internacionalmente.",
-        "➡️ Acima de 90% do PIB, o patamar da dívida brasileira está bem acima de nações emergentes e de países da América do Sul, ficando maior, também, do que a média das nações da Zona do Euro (segundo dados do FMI).",
-        "Para tentar conter o crescimento da dívida, em 2023 o governo aprovou o chamado \"arcabouço fiscal\", ou seja, novas regras para as contas públicas em substituição ao teto de gastos.",
-        "A norma prevê crescimento das despesas abaixo das receitas, e um limite para gastos. Entretanto, despesas excluídas desse limite continuam pressionando para cima o endividamento.Analistas pedem um corte robusto de gastos para conter a dívida e proporcionar queda do juro básico.",
-        "Diante do crescimento da dívida pública no atual mandato do presidente Lula, a equipe econômica vem acenando com novas medidas para conter sua expansão na próxima gestão, que tem início em 2027."
+        "O Banco Central (BC) informou nesta sexta-feira (31) que as empresas estatais federais registraram um déficit de R$ 8,5 bilhões de janeiro a setembro deste ano.",
+        "🔎O termo \"déficit\" significa que o gasto somado dessas estatais foi maior que a receita que elas conseguiram gerar no ano.",
+        "➡️Esse é o pior resultado para o período da série histórica do BC, que tem início em 2002. Até então, o maior rombo para este período havia ocorrido em 2025 (R$ -6,3 bilhões, sem correção pela inflação).",
+        "➡️O resultado, na parcial deste ano, também já supera o resultado negativo recorde para um ano fechado, de 2024, quando foi registrado um déficit de R$ 6,73 bilhões.",
+        "A série do Banco Central não considera a Petrobras, a Eletrobras e nem as empresas do setor financeiro (bancos públicos).O BC lembra que a Petrobras e a Eletrobras foram excluídos do cálculo das estatais federais em 2009, mas explica que a série histórica de anos anteriores foi revisada com base na nova metodologia — sendo válida, portanto, de 2002 em diante.Entram nesse cálculo empresas como Correios, a Emgepron, a Hemobrás, a Casa da Moeda, a Infraero, o Serpro, a Dataprev e a Emgea.O conceito do Banco Central considera apenas a variação da dívida, conceito amplamente utilizado em análises fiscais internacionais, enquanto o governo se utiliza do conceito conhecido por \"acima da linha\" (receitas menos despesas, sem contar juros da dívida).",
+        "➡️No projeto da Lei de Diretrizes Orçamentárias de 2027, encaminhado ao Congresso Nacional em abril deste ano, o governo federal admite que as empresas estatais federais, em déficit desde 2023, continuarão no vermelho até 2030.",
+        "➡️ Segundo a Instituição Fiscal Independente (IFI), ligada ao Senado Federal, os indicadores financeiros confirmam uma \"deterioração perceptível\" da saúde financeira de \"parte relevante\" das empresas estatais federais — o que eleva o risco para o Tesouro Nacional.",
+        "\"Essa deterioração não é uniforme nem decorre de uma única causa, mas os dados levantados pela IFI permitem identificar padrões que merecem atenção do ponto de vista da gestão fiscal\", acrescentou o órgão, por meio do Relatório de Acompanhamento Fiscal de julho.",
+        "➡️O resultado ruim das estatais federais tem sido agravado, principalmente, pela situação dos Correios, que passa por grave crise fiscal, com piora do seu resultado financeiro.",
+        "A estatal está há 15 trimestres seguidos no vermelho. No primeiro semestre deste ano, a empresa fechou com um prejuízo de R$ 5,6 bilhões.",
+        "Para enfrentar rombo financeiro, o governo autorizou, em maio deste ano, a estatal a vender seguros, títulos de capitalização e a atuar no mercado de telefonia.",
+        "A ideia é que a empresa faça convênios com instituições financeiras para ofertar os serviços. De acordo com o Ministério da Gestão, os Correios executam um plano de reequilíbrio financeiro e reestruturação."
       ],
       "pontos": [
-        "Indicadores fiscais consolidados do Banco Central"
+        "Resultado fiscal das empresas estatais federais até setembro"
       ]
     },
     "reforma-tributaria-aliquota-cbs-tcu-g1.globo.com/economia/noticia/": {
@@ -23237,37 +23352,52 @@
       ]
     },
     "reforma-eleitoral-distrital-misto-g1.globo.com/politica/noticia/": {
-      "url": "https://g1.globo.com/politica/noticia/2026/10/28/motta-diz-que-camara-vai-debater-mudanca-para-sistema-distrital-misto-e-regras-para-propaganda-eleitoral-nas-redes.ghtml",
+      "url": "https://g1.globo.com/politica/noticia/2026/11/01/camara-quer-mudar-a-forma-de-eleicao-dos-deputados-entenda-o-novo-modelo-em-discussao.ghtml",
       "fonte": "g1 Política",
       "tipo": "noticia",
-      "data": "2026-10-30",
-      "titulo": "Hugo Motta articula votação do distrital misto na Câmara ainda em 2026",
+      "data": "2026-11-02",
+      "titulo": "Câmara acelera debate para implementar sistema distrital misto em eleições futuras",
       "resumo": [
-        "O deputado Hugo Motta afirmou ter intenção de pautar a alteração do sistema eleitoral brasileiro para o modelo distrital misto antes do recesso legislativo deste ano. A proposta visa modificar o cálculo de representação para deputados federais e estaduais, além de introduzir novas diretrizes para propaganda eleitoral em plataformas digitais. O tema já vinha sendo discutido por líderes partidários e volta a ganhar tração após o segundo turno."
+        "A cúpula da Câmara dos Deputados intensificou os debates para alterar a sistemática de escolha dos parlamentares proporcionais no país. O modelo em discussão introduz o sistema distrital misto, no qual metade das cadeiras é preenchida por votação majoritária distrital e a outra por listas partidárias preordenadas. Lideranças partidárias articulam votar a mudança ainda no atual período legislativo para valer nos próximos ciclos eleitorais."
       ],
       "texto_integral": [
-        "O presidente da Câmara, Hugo Motta (Republicanos-PB), anunciou nesta quarta-feira (28) que a Casa vai abrir debates para alterar o sistema eleitoral proporcional brasileiro para o modelo distrital misto, com implementação definitiva prevista para 2034.",
-        "🔎O sistema distrital misto combina a escolha de parlamentares por votação majoritária nos distritos locais com a distribuição de vagas por votação em listas partidárias pré-ordenadas.",
-        "🔎No sistema proporcional atual, as cadeiras do Legislativo são distribuídas aos partidos conforme o total de votos recebidos pela legenda e por seus candidatos (quociente eleitoral), sendo ocupadas pelos nomes mais votados de cada sigla.",
-        "Além disso, a Câmara criará um grupo de trabalho para elaborar, em até duas semanas, regras para a propaganda eleitoral em plataformas digitais e redes sociais.",
-        "As diretrizes foram definidas durante reunião com dirigentes e parlamentares de siglas de centro e com a presença dos presidentes do Republicanos, Marcos Pereira; Podemos, Renata Abreu; do União Brasil, Antonio Rueda; e do PSD, Gilberto Kassab. O presidente do PSB, João Campos, também participou.",
-        "A meta é iniciar a discussão e, eventualmente, se houver consenso, realizar a votação no plenário ainda neste ano.",
-        "Segundo Motta, a implementação deve ser feita a médio prazo para vencer \"resistências\" no Congresso:",
-        "Em 2030, a eleição servirá como etapa intermediária com um modelo de transição, cujos detalhes técnicos ainda serão debatidos com as bancadas;Em 2034, vigência plena nas eleições para o Legislativo.",
-        "A mudança, se aprovada, alcançará Câmara dos Deputados, assembleias legislativas e câmaras de vereadores, sem alterações no modelo majoritário, ou seja, as cadeiras da Presidência da República, governos estaduais, prefeituras e Senado.",
-        "🔎O sistema distrital misto busca equilibrar a representação regional e a proporcionalidade partidária.",
-        "\"Nós temos também a consciência de que precisaremos levar em consideração uma Proposta de Emenda à Constituição (PEC). Nós queremos fazer essa construção por PEC, pois ela traz mais segurança jurídica e, claro, mais legitimidade do ponto de vista do Parlamento para fazer uma mudança estruturante\", afirmou Hugo Motta.",
-        "O presidente da Câmara destacou que, a partir do consenso firmado com o bloco de centro, vai procurar os partidos da esquerda — como a federação PT/PCdoB/PV, o PSOL e a Rede — e da direita — como o PL e o Novo.",
-        "Ele também disse que terá uma reunião nesta quarta com o presidente do Senado, Davi Alcolumbre (União-AP), para tratar de um alinhamento prévio. Ele declarou que o fato de a medida se restringir à escolha proporcional, ou seja, não atinge senadores, facilita o entendimento entre as duas Casas.",
-        "Regras eleitorais para redes sociais",
-        "Motta também anunciou a vontade dos partidos de modernizar o Código Eleitoral para disciplinar o uso das redes sociais nas campanhas.",
-        "Um grupo de trabalho com um representante de cada partido terá 15 dias para elaborar um texto final. A intenção é acelerar a discussão para possibilitar a aprovação da matéria na Câmara e no Senado ainda este ano.",
-        "\"Nós sabemos hoje que a propaganda eleitoral tem regra no que diz respeito ao material físico, tem regra no que diz respeito às TVs, às rádios. Entendemos que, nas redes sociais e plataformas, precisamos também ter regras claras que garantam paridade de armas e um sistema transparente e isonômico\", declarou.",
-        "Motta disse que a iniciativa não pretende \"tolher absolutamente ninguém\", nem \"censurar\" manifestações nas plataformas digitais.",
-        "O objetivo, segundo o deputado paraibano, é garantir previsibilidade e transparência para evitar que candidatos ou legendas obtenham vantagens desproporcionais."
+        "Centrão tenta frear PL com voto distrital misto",
+        "Líderes da Câmara dos Deputados e presidentes de partido articulam e pretendem retomar a tramitação de uma proposta que altera a forma de escolha dos deputados e institui o chamado sistema distrital misto.",
+        "O principal objetivo é frear a perda de espaço de partidos de centro no parlamento, após o crescimento do Partido Liberal (PL) nas eleições de 2026, que diminuiu o espaço de partidos do Centrão na Câmara e ampliou o espaço da ala bolsonarista.",
+        "A votação da proposta ainda está em negociação, mas a ideia é que as mudanças nas regras eleitorais comecem a valer integralmente nas eleições de 2034, com uma transição nas próximas eleições nacionais.",
+        "A iniciativa começou a ser discutida depois do primeiro turno da disputa, ainda no início de outubro, em uma declaração do presidente da Câmara, Hugo Motta (Republicanos-PB), um representante do Centrão.",
+        "O PL terminou as eleições com 121 deputados, a maior bancada desde a Constituinte. Há quatro anos, o partido havia conseguido 99 deputados. Com o resultado deste ano, a sigla terá 23,6% das 513 cadeiras da Câmara dos Deputados.",
+        "Em contrapartida, o Centrão diminuiu sua presença. Perdeu 22 cadeiras em comparação com as eleições de 2022. Há entre os partidos do centro uma leitura de que mudanças precisam ser feitas para manter o poder dos partidos de centro.",
+        "Hugo Motta afirmou que pretende aprovar uma Proposta de Emenda à Constituição (PEC) instituindo o sistema distrital misto. A expectativa de líderes do centro é aprovar as mudanças ainda em 2026, ainda que admitam que as articulações estão somente no início.",
+        "Motta dialoga ainda com o presidente do Senado Federal, Davi Alcolumbre (União-AP), para agilizar a votação. Líderes esperam o apoio dos senadores porque as mudanças não afetam as eleições para eles. Mas o texto também ainda precisa de acordo na própria Câmara. Motta ainda tenta conseguir apoio do PT e do próprio PL.",
+        "O PL não tem interesse em mudar o sistema. Já entre os petistas, há resistência em alterar regras eleitorais logo depois de uma eleição acirrada. O medo é fornecer aos apoiadores de Flávio Bolsonaro (PL) o argumento de que há cerceamento ao partido bolsonarista.",
+        "Outros parlamentares dizem ainda que a mudança é tardia, que o perfil do Congresso já foi alterado.",
+        "O relator da PEC que ainda será apresentada deve ser o deputado Domingos Neto (PSD-CE), que já é o relator de um projeto de lei sobre o sistema distrital na Câmara.",
+        "Distrital, distritão ou distrital misto",
+        "Um dos pontos que ainda estão sendo negociados entre os líderes partidários é qual modelo será adotado.",
+        "🔎 Atualmente, deputados são escolhidos de acordo com votos que eles e os seus partidos recebem. O Tribunal Superior Eleitoral (TSE) realiza uma conta, chamada de quociente eleitoral, para definir quantos votos cada partido precisa para ter uma cadeira na Câmara dos Deputados. Esse modelo é chamado de sistema proporcional.",
+        "Essa fórmula acaba criando os chamados \"puxadores de votos\" — um candidato que recebe muitos votos e, indiretamente, contribui para a eleição de candidatos que não obtiveram o número suficiente de votos.",
+        "Neste ano, votações expressivas em deputados como Nikolas Ferreira (PL-MG) e Erika Hilton (PSOL-SP) puxaram outros candidatos de seus partidos.",
+        "No sistema distrital, cada estado brasileiro é dividido em distritos. Cada distrito elege um número específico de deputados. Os moradores dessa determinada região poderão votar apenas nos candidatos do distrito em que vivem. São eleitos os candidatos mais votados no distrito.",
+        "Mas, buscando manter uma parte do poder dos partidos no processo eleitoral, os deputados estudam criar um modelo misto:",
+        "metade das vagas do distrito ficaria com os mais votados; a outra metade seria distribuída seguindo uma lista de candidatos definida previamente pelos partidos. As vagas seriam divididas de acordo com a quantidade de votos que as siglas conseguirem. Por exemplo: se um partido obtém votos para eleger quatro deputados, são eleitos os quatro primeiros nomes da lista.",
+        "O distrital misto tem como defensores presidentes de partidos como Gilberto Kassab, do PSD, e Ciro Nogueira, do Progressistas. Mas não há consenso no Congresso Nacional.",
+        "Apesar de defender o modelo, a deputada Adriana Ventura (Novo-SP) aponta algumas preocupações, como o sistema deixar a disputa mais vulnerável ao crime organizado, com candidatos de facções ou milícias controlando alguns distritos.",
+        "Parlamentares do PSOL também são críticos ao distrital misto por entenderem que o modelo prejudicaria o partido. Apontam, ainda, o risco de reduzir a participação de grupos que já são minoria no Congresso, como mulheres e negros.",
+        "Muitos deputados defendem um quarto modelo, o chamado distritão: transformar a eleição da Câmara em majoritária. Ou seja, os deputados mais votados em cada estado são eleitos, sem os chamados \"puxadores de votos\".",
+        "O modelo é criticado por especialistas, que dizem que ele pode facilitar a eleição de candidatos com mais recursos e dificultar a renovação no Congresso Nacional. A Câmara tentou aprovar a mudança para este modelo em 2017 e 2021, mas não houve votos suficientes para aprovar a mudança.",
+        "Deputado mais votado no Rio de Janeiro, o líder do PP, deputado Luizinho, é a favor do modelo e diz que, para não enfraquecer os partidos, a proposta poderia prever que o mandato pertence às legendas, diferentemente de outras eleições majoritárias, e o deputado não poderia trocar de filiação.",
+        "Para angariar apoio, os líderes indicaram que as mudanças não valeriam para as próximas eleições, em 2030. Nela, haveria uma transição. Mas os detalhes de como isso seria feito não foram definidos, segundo o relator Domingos Neto.",
+        "Parlamentares ouvidos pelo g1 e pela GloboNews dizem que existe a ideia de fazer um distritão em 2030 para atender os deputados que defendem esse modelo. Depois, em 2034, entraria em vigor o distrital misto, com a lista fechada dos partidos.",
+        "Domingos Neto afirma que a lista dos partidos deverá seguir as regras de inclusão e cotas de mulheres e negros e pardos para candidaturas. Mas ainda há dúvidas sobre como a diversidade de eleitos seria garantida se os partidos puderem definir a ordem da lista.",
+        "Em 2034, os eleitores votariam assim, somente uma vez, para deputado em cada distrito, para eleger deputados, e esses votos seriam contabilizados no estado para a definição de forma proporcional de quantas vagas cada sigla poderia preencher a partir da lista dos partidos.",
+        "Um dos pontos que levam a mais dúvidas entre os deputados é a divisão dos estados em distritos. Deputados estão preocupados com os votos que hoje são espalhados em várias cidades que podem pertencer a distritos diferentes.",
+        "Domingos Neto afirma que a definição dos distritos seria feita a partir de critérios do Instituto Brasileiro de Geografia e Estatística (IBGE) e uma comissão mista do Congresso acompanharia a implementação.",
+        "Por outro lado, defensores indicam que o processo eleitoral ficaria mais barato, já que o candidato não precisaria fazer campanha em todo o estado, somente em seu distrito.",
+        "Também dizem que o distrital misto aproximaria o candidato dos problemas reais dos eleitores, ao se concentrarem em uma região menor."
       ],
       "pontos": [
-        "Debate da Câmara sobre regras para redes e sistema proporcional"
+        "Explicação técnica do modelo de votação e cronograma de votação na Câmara"
       ]
     },
     "divida-publica-e-deficit-setembro-g1.globo.com/economia/noticia/": {
@@ -23502,12 +23632,12 @@
     },
     "alcolumbre-pec-seguranca-publica-g1.globo.com/politica/noticia/": {
       "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
-      "fonte": "G1",
+      "fonte": "g1 Política",
       "tipo": "noticia",
-      "data": "2026-10-31",
-      "titulo": "Senado pauta PEC da Segurança Pública para votação na terça-feira",
+      "data": "2026-11-02",
+      "titulo": "PEC da Segurança Pública é pautada no Senado em meio à transição legislativa",
       "resumo": [
-        "O presidente da Comissão de Constituição e Justiça do Senado, Davi Alcolumbre, confirmou para a próxima terça-feira a votação da proposta de emenda à Constituição voltada à segurança pública. O texto busca integrar dados de inteligência das polícias estaduais e federais e redefinir o financiamento setorial. A movimentação legislativa ocorre no contexto das negociações para a sucessão das mesas diretoras do Congresso."
+        "Davi Alcolumbre incluiu a Proposta de Emenda à Constituição da Segurança Pública na pauta de votações do Senado. O texto busca padronizar protocolos federativos de combate a facções criminosas e integrar bancos de dados entre estados e União. A proposta chega ao plenário sob pressão de governadores contrários à centralização de diretrizes policiais em Brasília."
       ],
       "texto_integral": [
         "O presidente do Senado, Davi Alcolumbre (União-AP), incluiu na pauta da próxima terça-feira (3) a votação da proposta de emenda à Constituição (PEC) da Segurança Pública.",
@@ -23539,7 +23669,7 @@
         "A PEC também permite a expropriação de todo e qualquer bem, direito ou valor econômico envolvidos com as atividades criminosas. As regras valem para organizações criminosas, paramilitares e de milícia privada."
       ],
       "pontos": [
-        "Pauta de votações na CCJ e as articulações políticas de Alcolumbre no Senado"
+        "Agendamento da PEC para votação imediata no plenário do Senado"
       ]
     },
     "divida-publica-recorde-setembro-g1.globo.com/economia/noticia/": {
@@ -25683,12 +25813,12 @@
     },
     "angra-imoveis-willer-tomaz-g1.globo.com/politica/noticia/": {
       "url": "https://g1.globo.com/politica/noticia/2026/10/31/advogado-willer-tomaz-tem-outras-cinco-casas-em-ilhas-de-angra-alem-da-que-disputou-com-richarlison.ghtml",
-      "fonte": "g1",
+      "fonte": "g1 Política",
       "tipo": "noticia",
-      "data": "2026-11-01",
-      "titulo": "Investigação aponta patrimônio de advogado em ilhas de Angra dos Reis",
+      "data": "2026-11-02",
+      "titulo": "Apuração revela patrimônio de mansões em ilhas de Angra dos Reis ligadas a advogado",
       "resumo": [
-        "Levantamento aponta que o advogado Willer Tomaz é proprietário de outras cinco casas em ilhas na Baía de Angra dos Reis, no litoral fluminense, além do imóvel envolvido em disputa judicial com o jogador Richarlison. Os imóveis de alto padrão ficam localizados em áreas nobres com restrições ambientais da Costa Verde. A concentração de propriedades tem sido alvo de escrutínio patrimonial e documental."
+        "Levantamentos fundiários revelaram que o advogado Willer Tomaz possui pelo menos outras cinco propriedades em ilhas de Angra dos Reis, no litoral sul do Rio de Janeiro. A região ganhou notoriedade após disputas judiciais envolvendo terrenos e residências ocupadas anteriormente por personalidades e desportistas. As aquisições atraíram a atenção dos órgãos de fiscalização ambiental e patrimonial devido às restrições de ocupação na Baía de Ilha Grande."
       ],
       "texto_integral": [
         "Willer Tomaz tem outras cinco casas em ilhas de Angra além da que disputou com Richarlison",
@@ -25735,7 +25865,7 @@
         "Em setembro de 2024, já no governo de Lula, a SPU fez uma nota técnica manifestando-se contrária à aprovação da PEC das Praias. Para o órgão, o texto \"favorece amplamente as condições jurídicas para a grilagem de toda costa brasileira em favor da população mais abastada do país\"."
       ],
       "pontos": [
-        "Identificação de complexo imobiliário privado em ilhas de Angra dos Reis"
+        "Mapeamento das propriedades em ilhas do litoral fluminense"
       ]
     },
     "justica-sigilo-morte-tancredo-neves-g1.globo.com/df/distrito-feder": {
@@ -26132,12 +26262,12 @@
     },
     "aliquota-reforma-tributaria-consumo-g1.globo.com/economia/noticia/": {
       "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml",
-      "fonte": "g1",
+      "fonte": "g1 Economia",
       "tipo": "noticia",
-      "data": "2026-11-01",
-      "titulo": "Imposto sobre consumo da reforma tributária pode superar 30%",
+      "data": "2026-11-02",
+      "titulo": "Alíquota do imposto sobre consumo da reforma tributária pode superar 30%",
       "resumo": [
-        "Estudos e estimativas recentes apontam que a alíquota padrão do novo imposto sobre consumo decorrente da reforma tributária pode ultrapassar o teto de 30%. O patamar colocaria o Brasil com uma das maiores taxas de tributação sobre bens e serviços do mundo, superando países desenvolvidos. O cálculo definitivo dependerá das exceções setoriais e dos regimes favorecidos aprovados na regulamentação."
+        "Simulações técnicas e projeções econômicas apontam que a alíquota padrão da Contribuição sobre Bens e Serviços (CBS) e do Imposto sobre Bens e Serviços (IBS) pode ultrapassar a marca de 30%. O aumento do teto é decorrente do excesso de exceções setoriais, regimes favorecidos e desonerações incluídos na regulamentação aprovada pelo Legislativo. Caso o patamar se confirme, o Brasil terá o maior imposto sobre valor agregado do mundo, superando países europeus como Hungria e Dinamarca."
       ],
       "texto_integral": [
         "O Tribunal de Contas da União (TCU) aprovou nesta semana uma sugestão para que a alíquota de referência da Contribuição sobre Bens e Serviços (CBS), novo tributo aprovado na reforma tributária sobre o consumo, seja de 11,3% em 2027.",
@@ -26172,7 +26302,7 @@
         "\"A alíquota proposta é bem superior à alíquota neutra do setor de telecomunicações. Isso representará aumento da carga tributária de telecom, prejudicando investimentos em inovação e expansão da rede, com impacto no custo do serviço para o consumidor”, disse Marcos Ferrari, presidente-executivo da Conexis Brasil Digital."
       ],
       "pontos": [
-        "Compara alíquotas projetadas para o Brasil com médias praticadas em países ricos"
+        "Comparação internacional das alíquotas do IVA após acréscimo de setores beneficiados"
       ]
     },
     "governo-cnu-2027-vagas-g1.globo.com/trabalho-e-carrei": {
@@ -26486,6 +26616,72 @@
       ],
       "pontos": [
         "Levantamento cartorial e disputas fundiárias em ilhas do litoral do Rio"
+      ]
+    },
+    "presidencia-senado-candidatura-pl-g1.globo.com/politica/noticia/": {
+      "url": "https://g1.globo.com/politica/noticia/2026/11/02/presidencia-do-senado-pl-deve-ter-candidato-proprio-mesmo-com-aproximacao-de-alcolumbre.ghtml",
+      "fonte": "g1 Política",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "PL articula candidatura própria ao Senado e desafia favoritismo de Alcolumbre",
+      "resumo": [
+        "Apesar das investidas de Davi Alcolumbre para atrair alas da oposição com promessas de anistia e presidência de comissões, o Partido Liberal deve formalizar um candidato próprio para o comando da Casa Alta. A bancada, que atingiu número expressivo no Congresso, busca assegurar protagonismo institucional independente no bloco de oposição. A movimentação acirra as negociações entre o Palácio do Planalto e as lideranças do Centrão antes da posse dos novos parlamentares."
+      ],
+      "texto_integral": [
+        "Apesar das tratativas do presidente do Senado, Davi Alcolumbre (União-AP), com senadores de todos os partidos, o PL deve anunciar, na próxima quarta-feira (4), Rogério Marinho (RN) como candidato à presidência do Senado em fevereiro de 2027.",
+        "O partido terá a maior bancada do Senado a partir dos novos senadores, eleitos em outubro. Serão 28 parlamentares.",
+        "Presidência do Senado: eleição será só em 2027, mas já movimenta articulações em Brasília; saiba por quê",
+        "Alcolumbre tenta se reeleger ao cargo. A estratégia do amapaense passa por conseguir votos mesmo de senadores de partidos da oposição, como PL, PP e Republicanos.",
+        "🔎 Para ser eleito, o candidato à presidência do Senado precisa conquistar a maioria absoluta dos votos, ou seja, 41 de 80 votos.",
+        "Na última semana, Alcolumbre tem discutido com parlamentares a possibilidade de pautar um projeto para anistiar os condenados pelo 8 de janeiro, incluindo o ex-presidente Jair Bolsonaro.",
+        "Desta forma, o presidente do Senado poderia angariar apoio da oposição para uma eventual reeleição e ainda conter a pressão por impeachment de ministros do Supremo Tribunal Federal (STF).",
+        "O último levantamento do STF, de abril, informa que, dos condenados pela tentativa de golpe, há ainda 190 presos. Desses, 70 estão em prisão domiciliar.",
+        "Em abril desde ano, o Congresso deu aval a uma proposta que permite a redução das penas, que será avaliada caso a caso pelo STF.",
+        "Congresso retoma revisão de penas, mas redução não é automática e terá de passar pelo STF; entenda",
+        "Uma liderança importante do PL dentro do Senado afirmou, nos bastidores, que essa tese da anistia poderia servir tanto para os condenados quanto para quem os julgou, em referência ao relator do caso, ministro Alexandre de Moraes.",
+        "Desta forma, uma apuração relativa à conduta do ministro na condução do processo não seria aberta pelo Senado.",
+        "Esse senador também afirmou que defendeu, para os colegas de partido, que talvez não valha para o PL o \"desgaste\" de apostar numa candidatura própria para disputar a presidência do Senado e, em caso de derrota, a legenda ficar sem o comando de comissões importantes. A exemplo do que aconteceu em 2023, quando Rogério Marinho, candidato pelo PL, foi derrotado por Rodrigo Pacheco.",
+        "O parlamentar do PL argumenta ser contrário a uma \"radicalização\" na eleição da Mesa, ou seja, que o PL lance candidato sem antes tentar compor um acordo com Alcolumbre.",
+        "Mesmo com a tentativa de aproximação, o PL, de forma majoritária, não aceitou um acordo com o presidente do Senado e pretende colocar Marinho em campanha a partir da próxima semana.",
+        "“A candidatura com mais força e votos hoje é a de Rogério Marinho”, afirmou o senador eleito Carlos Jordy (PL-RJ).",
+        "Além de Marinho, a senadora Tereza Cristina (PP-MS) é outro quadro da oposição que deseja disputar o comando da Casa.",
+        "Mesmo com o PL lançando Rogério Marinho, Tereza mantém o desejo de concorrer à presidência do Senado. “Eu mantenho meu desejo de concorrer, de ser a primeira mulher presidente do Senado. Temos 90 dias até a eleição. Tem muita água pra rolar”, declarou Tereza ao g1.",
+        "Entre os parlamentares de oposição, há uma avaliação de que a carta escrita pelo senador Flávio Bolsonaro (PL-RJ) em que se autodeclarou “presidente eleito” e depois mudou para líder do Brasil, enfraqueceu a candidatura de Rogério Marinho.",
+        "Senadores acreditam que Marinho, que foi coordenador da campanha de Flávio à presidência da República, comandaria o Senado sem autoridade e “precisando ligar para os Estados Unidos” para definir o rumo da Casa.",
+        "Na quarta-feira (28), Marinho confirmou que deverá ser o candidato da legenda.",
+        "Neste mesmo dia, quando questionado sobre a carta redigida por Flávio Bolsonaro, Alcolumbre sinalizou esta aproximação que tenta com o grupo de oposicionistas: \"Eu estou falando todo dia de pacificação do Brasil. Tudo que eu comentar para vocês pode ser contrário à minha tese\", disse.",
+        "Um interlocutor do presidente do Senado, Davi Alcolumbre (União-AP), avaliou que o amapaense já reúne os votos suficientes para sua reeleição, ou seja, ao menos 41 e que, diante da fuga de Flávio Bolsonaro do país, Marinho virou o candidato ideal para enfrentar em fevereiro.",
+        "Esse interlocutor confirmou que ele já possui votos dentro do próprio PL, mas ponderou que o presidente do Senado ainda não dialogou com a ala dita mais \"radical\" do bolsonarismo, composta pelos senadores eleitos como Guilherme Derrite (PP-SP) e Carol de Toni (PL-SC).",
+        "Além disso, afirmou que Alcolumbre ainda espera conversar nas próximas semanas com a senadora eleita pelo Distrito Federal, Michelle Bolsonaro (PL), que hoje apoia a candidatura de Tereza Cristina.",
+        "Apesar de alguns governistas, como o senador Otto Alencar (PSD-BA), defenderem o projeto de anistia, siglas como o MDB já estão se posicionando contra essa possibilidade."
+      ],
+      "pontos": [
+        "Detalhamento da resistência do PL ao avanço de Alcolumbre e exigência de candidatura própria"
+      ]
+    },
+    "cnu-2027-planejamento-vagas-g1.globo.com/trabalho-e-carrei": {
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/30/governo-diz-que-cnu-2027-pode-ofertar-ate-3-mil-vagas-realizacao-do-de-provas-depende-da-aprovacao-do-orcamento-de-2027.ghtml",
+      "fonte": "g1 Trabalho e Carreira",
+      "tipo": "noticia",
+      "data": "2026-11-02",
+      "titulo": "Governo planeja edição do CNU para 2027 com até 3 mil vagas federais",
+      "resumo": [
+        "O Ministério da Gestão e da Inovação informou que uma nova edição do Concurso Nacional Unificado está em planejamento para 2027, com previsão de até 3 mil postos no Executivo. A aplicação efetiva do certame dependerá das dotações autorizadas no Projeto de Lei Orçamentária Anual correspondente. O modelo centralizado busca repor quadros de agências reguladoras, institutos de pesquisa e órgãos de formulação de políticas públicas."
+      ],
+      "texto_integral": [
+        "O Ministério da Gestão e da Inovação (MGI) informou que uma eventual edição do Concurso Público Nacional Unificado (CPNU) em 2027 poderá ofertar entre 2 mil e 3 mil vagas.",
+        "A realização do concurso, no entanto, depende da aprovação da proposta de orçamento do próximo ano, enviada ao Congresso Nacional no fim de agosto.",
+        "“Como sempre informamos, a realização de um novo CPNU em 2027 está condicionada à aprovação do PLOA e do espaço fiscal para novas vagas que será aprovado pelo Congresso Nacional”, afirmou o ministério, em nota.",
+        "\"Considerando concursos já autorizados e novos que podem ser definidos (dependendo do PLOA), duas a três mil novas vagas compensam a realização de um CPNU em 2027\", completou a pasta.",
+        "Saiba como se preparar para enfrentar um concurso",
+        "No início desta semana, o MGI já havia informado ao g1 que a realização do certame dependeria da aprovação do orçamento do próximo ano.",
+        "Na ocasião, o ministério também destacou que considera o CPNU uma política pública voltada à renovação, à modernização e à democratização do acesso ao serviço público federal.",
+        "A intenção do governo é consolidar o modelo como um processo permanente de seleção de servidores, com edições em ciclos regulares, preferencialmente a cada dois anos.",
+        "\"Dessa forma, a ideia é que o CPNU se consolide como um processo permanente de seleção de servidores, com edições realizadas em ciclos regulares, idealmente a cada dois anos, de forma a garantir planejamento, recomposição gradual da força de trabalho e maior previsibilidade para os candidatos e para os órgãos públicos\", declarou a pasta.",
+        "Segundo o governo, o modelo despertou interesse de estados e municípios, \"o que abre a possibilidade de utilizar a experiência acumulada pelo governo federal na realização de concursos públicos em larga escala e trabahar em parceria com entes federados\"."
+      ],
+      "pontos": [
+        "Planejamento orçamentário do Ministério da Gestão para novos concursos federais"
       ]
     }
   }
