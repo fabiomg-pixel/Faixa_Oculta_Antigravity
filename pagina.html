@@ -766,6 +766,24 @@ dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 .d-audio-tts-btn:hover { background: var(--card); border-color: var(--sec); }
 .d-audio-tts-btn.falando { background: var(--sec); color: #fff; border-color: var(--sec); }
 
+/* Dropdown de edições do mês e notícias salvas */
+.d-edsel-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: var(--sp-2) 0 var(--sp-3); }
+.d-edsel-label { display: inline-flex; align-items: center; gap: 8px; font-size: var(--fs-xs); color: var(--muted); }
+.d-edsel-txt { font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--ink); }
+.d-edsel-select { font: 500 var(--fs-xs) var(--f-mono); background: var(--card); color: var(--ink); border: 1px solid var(--rule); border-radius: var(--pill); padding: 6px 14px; cursor: pointer; outline: none; transition: border-color .15s; }
+.d-edsel-select:hover, .d-edsel-select:focus { border-color: var(--sec); }
+.d-btn-filtro-salvas { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 14px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all .15s; }
+.d-btn-filtro-salvas:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-filtro-salvas.ativo { background: var(--sec); color: #fff; border-color: var(--sec); }
+
+.d-nota-acts { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.d-btn-salvar { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 12px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all .15s; }
+.d-btn-salvar:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-salvar.salva { background: var(--sec); color: #fff; border-color: var(--sec); }
+.d-btn-ouvir-nota { font: 600 var(--fs-xs) var(--f-mono); padding: 6px 12px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all .15s; }
+.d-btn-ouvir-nota:hover { border-color: var(--sec); background: var(--card); }
+.d-btn-ouvir-nota.falando { background: var(--sec); color: #fff; border-color: var(--sec); }
+
 /* Cinema & books magazines (poster 2:3) */
 .capa-img.poster { max-width: 440px; }
 .capa-img.poster img, .capa-img.poster .ph { aspect-ratio: 2 / 3; }
@@ -1140,7 +1158,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     },
   };
   const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias", "leituras"];
-  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agInfo: {}, agPlInfo: false, agArtistas: {}, agArtistasYT: {}, comentarios: {}, marcasEm: {}, idasMod: {}, idasDel: {}, notasNovas: [], fIda: { ano: String(new Date().getFullYear()), tipo: "todos" }, notaMsg: "", loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false };
+  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agInfo: {}, agPlInfo: false, agArtistas: {}, agArtistasYT: {}, comentarios: {}, marcasEm: {}, idasMod: {}, idasDel: {}, notasNovas: [], fIda: { ano: String(new Date().getFullYear()), tipo: "todos" }, notaMsg: "", loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false, noticiasSalvas: {}, filtroSalvas: false };
   const ABAS = [["hoje", "hoje"], ["noticias", "semana"], ["musica", "música"], ["filmes", "filmes"], ["livros", "livros"], ["agenda", "agenda"], ["arquivo", "arquivo"]];
   const DSEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
@@ -2029,6 +2047,75 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   }
   function turnoDia(d) { return d && (d.edicao === "noite" || str(d._id).endsWith("-noite")) ? "noite" : d && (d.edicao === "manha" || S.dias.some((x) => x !== d && str(x.data || x._id).replace(/-noite$/, "") === str(d.data || d._id).replace(/-noite$/, ""))) ? "manhã" : ""; }
   function chaveDia(d) { const noite = d && (d.edicao === "noite" || str(d._id).endsWith("-noite")); return str(d.data || str(d._id).replace(/-noite$/, "")) + (noite ? "~2" : "~1"); }
+  function chaveNota(n, d) {
+    const dt = str(d && (d.data || d._id));
+    const tit = str(n && n.titulo);
+    return `${dt}:::${tit}`;
+  }
+  function isNotaSalva(n, d) {
+    const k = chaveNota(n, d);
+    return Boolean(S.noticiasSalvas && S.noticiasSalvas[k]);
+  }
+  function toggleSalvarNoticia(n, d) {
+    const k = chaveNota(n, d);
+    if (!S.noticiasSalvas) S.noticiasSalvas = {};
+    if (S.noticiasSalvas[k]) {
+      delete S.noticiasSalvas[k];
+    } else {
+      S.noticiasSalvas[k] = {
+        chave: k,
+        data_boletim: d ? (d.data || d._id) : "",
+        rotulo_boletim: d ? rotuloBoletim(d) : "",
+        salvo_em: new Date().toISOString(),
+        nota: n,
+        boletim: d ? { _id: d._id, data: d.data, edicao: d.edicao, titulo: d.titulo } : null
+      };
+    }
+    try {
+      localStorage.setItem("faixa_noticias_salvas", JSON.stringify(S.noticiasSalvas));
+    } catch (e) {}
+    render();
+  }
+  function toggleVozNota(n, btn) {
+    if (!('speechSynthesis' in window)) {
+      alert("Seu navegador não possui suporte para síntese de voz (Web Speech API).");
+      return;
+    }
+    if (speechSynthesis.speaking) {
+      speechSynthesis.cancel();
+      if (btn && btn.classList.contains("falando")) {
+        btn.classList.remove("falando");
+        btn.textContent = "🔊 Ouvir matéria";
+        return;
+      }
+    }
+    const partes = [];
+    if (n.editoria) partes.push(n.editoria + ".");
+    if (n.titulo) partes.push(n.titulo + ".");
+    if (n.texto) partes.push(n.texto);
+    if (n.por_que_importa) partes.push(`Por que importa: ${n.por_que_importa}`);
+    const txt = partes.join(" \n ");
+    const utter = new SpeechSynthesisUtterance(txt);
+    utter.lang = "pt-BR";
+    utter.rate = 1.03;
+    const voices = speechSynthesis.getVoices().filter((v) => v.lang && v.lang.startsWith("pt"));
+    if (voices.length) utter.voice = voices[0];
+    const resetBtns = () => {
+      document.querySelectorAll(".d-btn-ouvir-nota.falando").forEach((b) => {
+        b.classList.remove("falando");
+        b.textContent = "🔊 Ouvir matéria";
+      });
+    };
+    resetBtns();
+    utter.onend = () => resetBtns();
+    utter.onerror = () => resetBtns();
+    if (btn) {
+      btn.classList.add("falando");
+      btn.textContent = "⏹ Parar áudio";
+    }
+    speechSynthesis.speak(utter);
+  }
+
   let audioNarracaoAtiva = false;
   function toggleVozNavegador(d, btn) {
     if (!('speechSynthesis' in window)) {
@@ -2067,13 +2154,14 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   function blocoAudioBoletim(d) {
     if (!d) return null;
     const audioUrl = safeUrl(d.audio);
-    const dur = str(d.audio_duracao) || (audioUrl ? "5:30" : "");
+    const dur = str(d.audio_duracao) || (audioUrl ? "13:09" : "");
+    const titAudio = dur ? `Ouça a edição completa na íntegra das notícias do dia (${dur})` : "Ouça a edição completa na íntegra das notícias do dia";
     return h("section", { class: "wrap", style: "padding-bottom:14px" },
       h("div", { class: "d-audio-card" },
         h("div", { class: "d-audio-head" },
-          h("div", { class: "d-audio-kicker" }, h("span", { class: "dot" }), "Boletim em Áudio · Síntese do Dia"),
+          h("div", { class: "d-audio-kicker" }, h("span", { class: "dot" }), "Boletim em Áudio · Edição Completa na Íntegra"),
           dur ? h("span", { class: "d-audio-dur mono" }, dur) : null),
-        h("h4", { class: "d-audio-tit" }, "Ouça a transcrição narrada das notícias do dia"),
+        h("h4", { class: "d-audio-tit" }, titAudio),
         h("div", { class: "d-audio-player-wrap" },
           audioUrl ? h("audio", { controls: true, preload: "metadata", src: audioUrl, title: `Boletim em Áudio · ${d.data || d._id}` }) : null,
           h("button", { class: "d-audio-tts-btn mono", type: "button", onclick: (e) => toggleVozNavegador(d, e.currentTarget) }, "🔊 Ouvir com voz do navegador"))));
@@ -2084,27 +2172,112 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     if (!S.loaded.dias) return [estado("abrindo o boletim", "As notícias do dia aparecem aqui assim que o arquivo da revista responder.")];
     const d = diaAtual();
     if (!d) return [estado("nenhum boletim ainda", "O boletim aparece aqui de manhã e no fim da tarde.")];
-    const notas = arr(d.notas);
+
+    // Dropdown elegante com todas as edições do mês (e meses anteriores)
+    const totalSalvas = Object.keys(S.noticiasSalvas || {}).length;
+    const gruposMes = {};
+    for (const x of S.dias) {
+      const m = str(x.data || x._id).slice(0, 7);
+      if (!gruposMes[m]) gruposMes[m] = [];
+      gruposMes[m].push(x);
+    }
+    const chavesMes = Object.keys(gruposMes).sort().reverse();
+    const optKids = [];
+    if (chavesMes.length <= 1) {
+      for (const x of S.dias) {
+        optKids.push(h("option", { value: x._id, selected: x._id === d._id }, rotuloBoletim(x)));
+      }
+    } else {
+      for (const m of chavesMes) {
+        const rotMes = fmtData(m).toUpperCase();
+        optKids.push(h("optgroup", { label: `Edições de ${rotMes}` },
+          gruposMes[m].map((x) => h("option", { value: x._id, selected: x._id === d._id }, rotuloBoletim(x)))
+        ));
+      }
+    }
+
+    const seletorEdicoes = S.dias.length > 1 ? h("div", { class: "d-edsel-box" },
+      h("label", { class: "d-edsel-label mono" },
+        h("span", { class: "d-edsel-txt" }, "Edições do mês:"),
+        h("select", {
+          class: "d-edsel-select mono",
+          "aria-label": "Selecionar edição do boletim",
+          onchange: (e) => {
+            S.selDia = e.target.value;
+            S.filtroSalvas = false;
+            render();
+            window.scrollTo(0, 0);
+          }
+        }, optKids)),
+      h("button", {
+        class: `d-btn-filtro-salvas mono ${S.filtroSalvas ? "ativo" : ""}`,
+        type: "button",
+        title: "Ver matérias que você salvou",
+        onclick: () => {
+          S.filtroSalvas = !S.filtroSalvas;
+          render();
+        }
+      }, `🔖 Notícias salvas (${totalSalvas})`)
+    ) : null;
+
     const head = h("section", { class: "wrap d-head" },
       h("div", { style: "min-width:0" },
         h("div", { class: "kicker mono" }, `${d.edicao === "noite" ? "Boletim da noite" : "Boletim diário"} · ${rotuloDia(d.data || d._id)}`),
         h("h2", null, str(d.titulo)),
         d.resumo_dia ? h("p", { class: "lede" }, str(d.resumo_dia)) : null,
-        S.dias.length > 1 ? h("div", { class: "d-dias", role: "group", "aria-label": "Boletins anteriores" }, S.dias.slice(0, 10).map((x) =>
-          h("button", { class: "chip", type: "button", "aria-pressed": String(x._id === d._id), onclick: () => { S.selDia = x._id; render(); window.scrollTo(0, 0); } }, rotuloBoletim(x)))) : null),
+        seletorEdicoes),
       arr(d.agenda).length ? h("aside", { class: "d-agenda" }, h("h4", null, "Para acompanhar"),
         h("ul", null, arr(d.agenda).map((a) => h("li", null, h("span", { class: "mono" }, str(a.quando)), h("span", null, str(a.o_que)))))) : null);
-    const grade = h("section", { class: "wrap", style: "padding-bottom:24px" }, h("div", { class: "d-notas" }, notas.map((n) => h("article", { class: "d-nota" },
-      h("span", { class: "edt" }, str(n.editoria)),
-      h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n, d), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
-      h("p", null, str(n.texto)),
-      n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
-      arr(n.fontes).length ? h("ul", { class: "d-fontes" }, arr(n.fontes).map((f) => h("li", null,
-        fonteLink(f.url, str(f.fonte), n), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
-        f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
-      h("div", { class: "d-nota-acts" },
-        h("button", { class: "ler", type: "button", onclick: () => abrirNota(n, d) }, "Abrir no leitor"))
-    ))));
+
+    let notasParaExibir = [];
+    if (S.filtroSalvas) {
+      const salvasObj = S.noticiasSalvas || {};
+      const listaSalvas = Object.values(salvasObj);
+      if (!listaSalvas.length) {
+        return [
+          head,
+          h("section", { class: "wrap", style: "padding: 40px 0 64px;" },
+            estado("nenhuma matéria salva", "Clique em '🔖 Salvar' em qualquer notícia do boletim para guardá-la para leitura posterior."))
+        ];
+      }
+      notasParaExibir = listaSalvas.map((s) => ({
+        nota: s.nota,
+        boletim: s.boletim || d,
+        rotulo: s.rotulo_boletim || (s.boletim ? rotuloBoletim(s.boletim) : "")
+      }));
+    } else {
+      notasParaExibir = arr(d.notas).map((n) => ({ nota: n, boletim: d, rotulo: "" }));
+    }
+
+    const grade = h("section", { class: "wrap", style: "padding-bottom:24px" },
+      S.filtroSalvas ? h("div", { style: "display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;border-bottom:1px solid var(--rule);padding-bottom:8px;" },
+        h("h3", { style: "margin:0;font-size:var(--fs-m);font-weight:700;" }, `Suas matérias salvas (${notasParaExibir.length})`),
+        h("button", { class: "d-btn-filtro-salvas mono", type: "button", onclick: () => { S.filtroSalvas = false; render(); } }, "Voltar ao boletim do dia ✕")
+      ) : null,
+      h("div", { class: "d-notas" }, notasParaExibir.map(({ nota: n, boletim: bol, rotulo }) => h("article", { class: "d-nota" },
+        h("div", { style: "display:flex;align-items:center;justify-content:space-between;gap:8px;" },
+          h("span", { class: "edt" }, str(n.editoria)),
+          rotulo ? h("span", { class: "mono", style: "font-size:var(--fs-xs);color:var(--muted);" }, rotulo) : null),
+        h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n, bol), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
+        h("p", null, str(n.texto)),
+        n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
+        arr(n.fontes).length ? h("ul", { class: "d-fontes" }, arr(n.fontes).map((f) => h("li", null,
+          fonteLink(f.url, str(f.fonte), n), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
+          f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
+        h("div", { class: "d-nota-acts" },
+          h("button", { class: "ler", type: "button", onclick: () => abrirNota(n, bol) }, "Abrir no leitor"),
+          h("button", {
+            class: `d-btn-salvar mono ${isNotaSalva(n, bol) ? "salva" : ""}`,
+            type: "button",
+            onclick: () => toggleSalvarNoticia(n, bol)
+          }, isNotaSalva(n, bol) ? "✓ Salva" : "🔖 Salvar"),
+          h("button", {
+            class: "d-btn-ouvir-nota mono",
+            type: "button",
+            onclick: (e) => toggleVozNota(n, e.currentTarget)
+          }, "🔊 Ouvir matéria")
+        )
+      ))));
     const fim = h("div", { class: "wrap", style: "padding-block:8px 32px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("noticias") }, "A revista da semana: grandes temas, cobertura e vieses"));
     return [head, blocoAudioBoletim(d), grade, blocoJornais(d.jornais), fim];
@@ -3782,6 +3955,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     db.doc("agenda/artistas").onSnapshot((s) => { const a = s.data() || {}; S.agArtistas = a.mapa || {}; S.agArtistasYT = a.youtube || {}; render(); }, () => {});
     const user = await window.claude.use("user");
     const uid = user ? await user.id() : null;
+    try { S.noticiasSalvas = JSON.parse(localStorage.getItem("faixa_noticias_salvas") || "{}") || {}; } catch (e) { S.noticiasSalvas = {}; }
     if (uid) {
       S.uid = uid; S.podeMarcar = true;
       db.doc(`data/users/${uid}/estado`).onSnapshot((d) => {
