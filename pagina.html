@@ -3153,7 +3153,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   // Outside claude.ai (the GitHub site) the page reads one static bundle and keeps marks in this browser.
   async function iniciarEstatico() {
     try {
-      const r = await fetch("data/revista.json", { cache: "no-cache" });
+      const r = await fetch("data/revista.json?t=" + Date.now(), { cache: "no-cache" });
       if (!r.ok) throw new Error(r.status);
       const b = await r.json();
       const lista = (o) => Object.entries(o || {}).map(([id, d]) => ({ ...d, _id: id }));
