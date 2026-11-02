@@ -28,26 +28,36 @@ HEADERS = {
 }
 
 FEEDS = [
-    # Folha de S.Paulo
-    ("Folha de S.Paulo - Poder", "https://feeds.folha.uol.com.br/poder/rss091.xml"),
-    ("Folha de S.Paulo - Mercado", "https://feeds.folha.uol.com.br/mercado/rss091.xml"),
-    ("Folha de S.Paulo - Mundo", "https://feeds.folha.uol.com.br/mundo/rss091.xml"),
-    ("Folha de S.Paulo - Cotidiano", "https://feeds.folha.uol.com.br/cotidiano/rss091.xml"),
-    # Agência Brasil / EBC
-    ("Agência Brasil - Últimas", "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml"),
-    ("Agência Brasil - Política", "https://agenciabrasil.ebc.com.br/rss/politica/feed.xml"),
-    ("Agência Brasil - Economia", "https://agenciabrasil.ebc.com.br/rss/economia/feed.xml"),
-    # BBC News Brasil
-    ("BBC News Brasil", "https://feeds.bbci.co.uk/portuguese/rss.xml"),
-    # Poder360 e Metrópoles
+    # Ciência, Saúde e Universidades (Perfil Fábio Gomes - UFRJ / Fiocruz / SBPC / FAPESP)
+    ("Pesquisa FAPESP", "https://revistapesquisa.fapesp.br/feed/"),
+    ("Fiocruz Notícias", "https://portal.fiocruz.br/rss.xml"),
+    ("Jornal da Ciência - SBPC", "http://jcnoticias.jornaldaciencia.org.br/feed/"),
+    ("Jornal da USP", "https://jornal.usp.br/feed/"),
+    ("Folha de S.Paulo - Ciência", "https://feeds.folha.uol.com.br/ciencia/rss091.xml"),
+    ("g1 - Ciência e Saúde", "https://g1.globo.com/rss/g1/ciencia-e-saude/"),
+
+    # Meio Ambiente, Clima e Amazônia
+    ("Sumaúma", "https://sumauma.com/feed/"),
+
+    # Judiciário e Direito Constitucional
+    ("ConJur", "https://www.conjur.com.br/feed/"),
+
+    # Política, Economia e Sociedade (Visões Plurais e Independentes)
+    ("CartaCapital", "https://www.cartacapital.com.br/feed/"),
+    ("Brasil de Fato", "https://www.brasildefato.com.br/feed"),
     ("Poder360", "https://www.poder360.com.br/feed/"),
     ("Metrópoles", "https://www.metropoles.com/feed"),
-    # g1
+    ("BBC News Brasil", "https://feeds.bbci.co.uk/portuguese/rss.xml"),
+    ("Agência Brasil - Últimas", "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml"),
+    ("Agência Brasil - Política", "https://agenciabrasil.ebc.com.br/rss/politica/feed.xml"),
+    ("Folha de S.Paulo - Poder", "https://feeds.folha.uol.com.br/poder/rss091.xml"),
+    ("Folha de S.Paulo - Mercado", "https://feeds.folha.uol.com.br/mercado/rss091.xml"),
+    ("Folha de S.Paulo - Cotidiano", "https://feeds.folha.uol.com.br/cotidiano/rss091.xml"),
+
+    # g1 (com teto estrito de apuração para evitar monopólio)
     ("g1 - Política", "https://g1.globo.com/rss/g1/politica/"),
     ("g1 - Economia", "https://g1.globo.com/rss/g1/economia/"),
     ("g1 - Rio de Janeiro", "https://g1.globo.com/rss/g1/rio-de-janeiro/"),
-    ("g1 - Mundo", "https://g1.globo.com/rss/g1/mundo/"),
-    ("g1 - Ciência e Saúde", "https://g1.globo.com/rss/g1/ciencia-e-saude/"),
     ("g1 - Tecnologia", "https://g1.globo.com/rss/g1/tecnologia/"),
 ]
 
@@ -81,6 +91,22 @@ def url_chave(u):
 
 def veiculo_de_canal(canal):
     c = canal.lower()
+    if "pesquisa fapesp" in c:
+        return "Pesquisa FAPESP"
+    if "fiocruz" in c:
+        return "Fiocruz Notícias"
+    if "jornal da ciência" in c or "sbpc" in c:
+        return "Jornal da Ciência / SBPC"
+    if "jornal da usp" in c:
+        return "Jornal da USP"
+    if "sumaúma" in c or "sumauma" in c:
+        return "Sumaúma"
+    if "conjur" in c:
+        return "ConJur"
+    if "cartacapital" in c:
+        return "CartaCapital"
+    if "brasil de fato" in c:
+        return "Brasil de Fato"
     if "folha" in c:
         return "Folha de S.Paulo"
     if "agência brasil" in c or "agencia brasil" in c or "ebc" in c:
@@ -104,12 +130,21 @@ def coletar_noticias_rss():
             req = request.Request(feed_url, headers=HEADERS)
             with request.urlopen(req, timeout=10, context=CTX) as resp:
                 conteudo = resp.read()
-                if conteudo[:2] == b"\x1f\x8b" or resp.headers.get("Content-Encoding") == "gzip":
+                if conteudo[:2] == b"\x1f\x8b" or "gzip" in str(resp.headers.get("Content-Encoding", "")).lower():
                     try:
                         conteudo = gzip.decompress(conteudo)
                     except Exception:
                         pass
-            root = ET.fromstring(conteudo)
+            try:
+                root = ET.fromstring(conteudo)
+            except Exception:
+                try:
+                    texto = conteudo.decode("utf-8", errors="replace")
+                except Exception:
+                    texto = conteudo.decode("latin-1", errors="replace")
+                texto = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD]", "", texto)
+                root = ET.fromstring(texto)
+
             for it in root.findall(".//item"):
                 tit = it.find("title")
                 lnk = it.find("link")
@@ -130,8 +165,8 @@ def coletar_noticias_rss():
     return itens_coletados
 
 
-def preparar_candidatos_balanceados(itens_rss, max_por_veiculo=12, total_max=72):
-    """Garante que nenhum portal monopolize os candidatos enviados ao Gemini."""
+def preparar_candidatos_balanceados(itens_rss, max_por_veiculo=5, total_max=75):
+    """Garante diversidade plural e presença de ciência/universidades, com teto estrito para g1."""
     por_veiculo = {}
     for item in itens_rss:
         v = item.get("veiculo", "Outro")
@@ -141,12 +176,18 @@ def preparar_candidatos_balanceados(itens_rss, max_por_veiculo=12, total_max=72)
     for v, lista in por_veiculo.items():
         print(f"  - {v}: {len(lista)} matérias disponíveis")
 
+    # Tetos específicos por veículo para assegurar diversidade plural
+    tetos = {
+        "g1": 3,  # Teto estrito: máximo 3 candidatos do g1 para evitar monopólio
+    }
+
     balanceados = []
     round_idx = 0
     while len(balanceados) < total_max:
         adicionou = False
         for v in list(por_veiculo.keys()):
-            if round_idx < len(por_veiculo[v]) and round_idx < max_por_veiculo:
+            limite = tetos.get(v, max_por_veiculo)
+            if round_idx < len(por_veiculo[v]) and round_idx < limite:
                 balanceados.append(por_veiculo[v][round_idx])
                 adicionou = True
                 if len(balanceados) >= total_max:
@@ -207,22 +248,36 @@ def chamar_gemini(itens_rss, edicao, data_iso, api_key):
         for item in candidatos_balanceados
     ])
 
-    instrucoes = f"""Você é o editor do Faixa Oculta / Radar Cultural, um jornal e boletim pessoal para o Fabio, professor de biofísica na UFRJ, no Rio de Janeiro.
+    instrucoes = f"""Você é o editor sênior do Faixa Oculta / Radar Cultural, um jornal e boletim pessoal de alto nível para o Fabio, professor e pesquisador de Biofísica da Universidade Federal do Rio de Janeiro (IBCCF - UFRJ) e vice-diretor da Unidade de Microscopia Avançada do CENABIO (UFRJ).
 Hoje é {data_iso}. Você está gerando o Boletim Diário ({edicao}).
 
-Critérios editoriais rigorosos:
-1. Pautas prioritárias: Política brasileira, Economia, Ciência e Universidades, Meio Ambiente/Clima, Tecnologia/IA e Rio de Janeiro.
-2. DIVERSIDADE DE FONTES É OBRIGATÓRIA:
-   - É expressamente PROIBIDO selecionar notícias de um único veículo. O boletim NÃO PODE ser só do g1.
-   - Você DEVE distribuir as 6 a 8 notas entre múltiplos veículos diferentes presentes na lista (Folha de S.Paulo, Agência Brasil / EBC, BBC News Brasil, Metrópoles, Poder360 e g1).
-   - O boletim deve contemplar pelo menos 3 ou 4 veículos distintos nas suas notas.
+PERFIL DO LEITOR (FÁBIO) & TEMAS PRIORITÁRIOS:
+1. Ciência, Universidades & Pesquisa Biomédica:
+   - Biofísica, biologia celular e ultraestrutura (criomicroscopia, microscopia eletrônica e confocal).
+   - Arboviroses e imunologia (Aedes aegypti, Dengue, Zika, Febre Amarela, Chikungunya, imunidade celular/treinada, imunometabolismo, corpos lipídicos).
+   - Financiamento da ciência e universidades públicas no Brasil (CNPq, CAPES, FAPERJ, FNDCT, retenção de jovens doutores, orçamento das federais como a UFRJ).
+   - Soberania sanitária e biotecnologia pública no SUS (vacinas nacionais de mRNA, terapias avançadas/CAR-T, produção nacional de insumos e burocracia de importação Anvisa/Receita).
+2. Meio Ambiente & Clima:
+   - Amazônia, transição ecológica, bioeconomia e marco da COP30.
+3. Política Nacional, Economia & Instituições:
+   - Pautas do Congresso, STF, decisões econômicas estruturais e o cenário político nacional analisados de forma crítica, plural e sem sensacionalismo.
+4. Mobilidade Urbana & Rio de Janeiro:
+   - Infraestrutura, transporte público e saúde coletiva na região metropolitana do Rio.
+
+DIRETRIZES EDITORIAIS E DE DIVERSIDADE RIGOROSA:
+1. É EXPRESSAMENTE PROIBIDO O MONOPÓLIO DE UMA ÚNICA FONTE:
+   - O boletim JAMAIS pode ter maioria de notas de um único veículo.
+   - O veículo 'g1' pode ter no MÁXIMO 1 ou 2 notas no boletim (ou zero se outros veículos tiverem notícias mais qualificadas).
+   - O boletim com 6 a 8 notas DEVE contemplar pelo menos 4 ou 5 VEÍCULOS DISTINTOS entre:
+     Pesquisa FAPESP, Fiocruz Notícias, Jornal da Ciência / SBPC, Jornal da USP, Sumaúma, ConJur, CartaCapital, Brasil de Fato, Folha de S.Paulo, BBC News Brasil, Poder360, Agência Brasil / EBC, Metrópoles, g1.
+2. OBRIGATÓRIO: Pelo menos 1 a 2 notas devem ser dedicadas à Ciência, Saúde, Pesquisa Biomédica ou Universidades Públicas (priorizando fontes como Pesquisa FAPESP, Fiocruz, Jornal da Ciência, Jornal da USP ou seções científicas).
 3. Selecione entre 6 a 8 notas essenciais a partir dos links reais fornecidos abaixo. NUNCA invente notícias nem fatos.
 4. Use estritamente as URLs reais fornecidas na lista de candidatos para cada fonte citada.
 5. Para cada nota:
    - 'titulo': Manchete informativa, sem clickbait, direta e clara.
    - 'texto': 2 a 3 frases explicando o acontecimento com fatos e números precisos.
-   - 'por_que_importa': 1 a 2 frases explicando a consequência prática institucional, econômica ou social.
-   - 'fontes': 1 a 3 fontes com 'fonte' (nome do veículo exato: 'Folha de S.Paulo', 'Agência Brasil / EBC', 'BBC News Brasil', 'Metrópoles', 'Poder360', 'g1'), 'perfil' (ex: 'Jornal diário', 'Agência pública', 'Portal de notícias'), 'enfoque' (o que destacou) e 'url' (a URL exata do candidato).
+   - 'por_que_importa': 1 a 2 frases explicando a consequência prática institucional, econômica, acadêmica ou social.
+   - 'fontes': 1 a 3 fontes com 'fonte' (nome do veículo exato: 'Pesquisa FAPESP', 'Fiocruz Notícias', 'Jornal da Ciência / SBPC', 'Jornal da USP', 'Sumaúma', 'ConJur', 'CartaCapital', 'Brasil de Fato', 'Folha de S.Paulo', 'Agência Brasil / EBC', 'BBC News Brasil', 'Poder360', 'Metrópoles', 'g1'), 'perfil' (ex: 'Revista de divulgação científica', 'Agência pública de saúde', 'Jornal diário', 'Portal de notícias'), 'enfoque' (o que destacou) e 'url' (a URL exata do candidato).
 
 Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no seguinte formato:
 {{
@@ -237,8 +292,8 @@ Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no s
       "por_que_importa": "Por que esta notícia é relevante.",
       "fontes": [
         {{
-          "fonte": "Nome do Veículo (ex: Folha de S.Paulo, Agência Brasil / EBC, BBC News Brasil, Metrópoles, g1)",
-          "perfil": "Jornal diário / Agência pública / Portal de notícias",
+          "fonte": "Nome do Veículo exato",
+          "perfil": "Perfil do veículo",
           "enfoque": "Destaque da apuração",
           "url": "https://..."
         }}

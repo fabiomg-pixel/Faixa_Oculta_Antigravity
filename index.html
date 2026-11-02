@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Faixa Oculta / Radar Cultural</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <link rel="icon" type="image/svg+xml" href="icone.svg">
@@ -412,6 +411,29 @@ dialog.texto::backdrop { background: var(--backdrop); }
 .stremio-nuvio { font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: #7B3FE4; border-bottom: 1px dotted currentColor; padding-bottom: 1px; text-decoration: none; }
 .stremio-nuvio:hover { color: var(--ink); }
 .bloco-pl-mes { background: var(--card); border: var(--bw) solid var(--rule); border-top: var(--bw-rule) solid var(--sec); padding: var(--sp-3) var(--sp-3) var(--sp-4); margin-bottom: var(--sp-4); }
+.bloco-pl-mes.recolhido { padding: 14px 18px; margin-bottom: var(--sp-3); }
+.pl-barra-resumo { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.pl-header-info { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.pl-badge-ico { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: var(--sec); color: var(--paper); font-weight: 800; font-size: 16px; flex-shrink: 0; }
+.pl-textos { min-width: 0; }
+.pl-linha-tit { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.pl-titulo { font: 800 17px/1.2 var(--f-display); margin: 0; }
+.pl-tag-qtd { font-size: 11px; padding: 2px 7px; background: rgba(0,0,0,0.06); border-radius: 4px; color: var(--muted); vertical-align: middle; }
+.pl-subtitulo { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
+.pl-acoes-botoes { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.btn-pl-app { font-size: 12px; padding: 6px 14px; border-radius: 999px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: filter .15s ease, transform .1s ease; border: none; cursor: pointer; }
+.btn-pl-app:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.btn-pl-app.btn-spot { background: #1DB954; color: #fff; }
+.btn-pl-app.btn-yt { background: #FF0000; color: #fff; }
+.btn-pl-app.btn-play-seq { background: var(--ink); color: var(--paper); }
+.ico-app { font-size: 10px; line-height: 1; }
+.pl-detalhes { margin-top: 12px; border-top: 1px dashed var(--rule); padding-top: 8px; }
+.pl-summary { cursor: pointer; font-size: 12px; font-weight: 700; color: var(--sec); display: flex; align-items: center; justify-content: space-between; padding: 8px 4px; user-select: none; }
+.pl-summary:hover { color: var(--ink); }
+.pl-detalhes[open] .pl-sum-seta { transform: rotate(180deg); }
+.pl-dica-aviso { font-size: 11px; color: var(--muted); margin: 6px 0 12px; padding: 6px 10px; background: rgba(0,0,0,0.03); border-radius: 4px; border-left: 3px solid var(--sec); }
+.pl-link-disco { font-size: 11px; color: var(--sec); text-decoration: underline; text-underline-offset: 2px; padding: 2px 4px; }
+.pl-link-disco:hover { color: var(--ink); }
 .pl-acoes-topo { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; margin: var(--sp-2) 0 var(--sp-3); }
 .pl-btn-play { font-size: 14px; padding: 10px 18px; font-weight: 800; cursor: pointer; }
 .links-pl { font-size: var(--fs-xs); color: var(--sec); text-decoration: underline; text-underline-offset: 2px; }
@@ -796,6 +818,13 @@ dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 .dock-acoes { display: flex; gap: var(--sp-1); }
 .dock-btn { width: 30px; height: 30px; display: inline-grid; place-items: center; border: var(--bw) solid currentColor; background: transparent; color: var(--band-fg); border-radius: 50%; font: 600 var(--fs-s)/1 var(--f-mono); cursor: pointer; padding: 0; }
 .dock-btn:hover { background: var(--band-fg); color: var(--band); }
+.dock-ext-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 10px; background: rgba(0,0,0,0.22); border-top: 1px solid var(--band-rule); border-bottom: 1px solid var(--band-rule); font-size: 11px; }
+.dock-aviso-previa { color: var(--band-muted); font-size: 10px; font-family: var(--f-mono); text-transform: uppercase; letter-spacing: .04em; }
+.dock-ext-links { display: flex; gap: 6px; align-items: center; }
+.dock-pill-btn { display: inline-flex; align-items: center; padding: 3px 9px; border-radius: 999px; font-weight: 700; text-decoration: none; font-size: 11px; font-family: var(--f-mono); transition: filter .15s ease; }
+.dock-pill-btn:hover { filter: brightness(1.15); }
+.dock-pill-btn.spot { background: #1DB954; color: #fff; }
+.dock-pill-btn.yt { background: #FF0000; color: #fff; }
 .dock iframe { width: 100%; border: 0; border-radius: 12px; display: block; background: transparent; }
 body.com-player { padding-bottom: 24px; }
 @media (max-width: 700px) {
@@ -991,6 +1020,13 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         <button class="dock-btn" type="button" id="dock-fechar" aria-label="Fechar o player" title="Fechar">×</button>
       </span>
     </div>
+    <div class="dock-ext-bar" id="dock-ext-bar" hidden>
+      <span class="dock-aviso-previa">Ouvir completo no app:</span>
+      <span class="dock-ext-links">
+        <a id="dock-link-spot" class="dock-pill-btn spot" target="_blank" rel="noopener" title="Ouvir álbum completo no app do Spotify">Spotify ↗</a>
+        <a id="dock-link-yt" class="dock-pill-btn yt" target="_blank" rel="noopener" title="Ouvir no YouTube Music">YT Music ↗</a>
+      </span>
+    </div>
     <div id="dock-frame"></div>
   </div>
 </aside>
@@ -1077,10 +1113,12 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
 
   function links(a) {
     const q = encodeURIComponent(`${str(a.artista)} ${str(a.album)}`.trim());
+    const spotUrl = safeUrl(a.spotify_url) || (a.spotify_id ? `https://open.spotify.com/album/${a.spotify_id}` : `https://open.spotify.com/search/${q}`);
+    const ytUrl = ytLista(a) ? `https://music.youtube.com/playlist?list=${ytLista(a)}` : `https://music.youtube.com/search?q=${q}`;
     return h("div", { class: "links" },
-      h("a", { href: ytLista(a) ? `https://music.youtube.com/playlist?list=${ytLista(a)}` : `https://music.youtube.com/search?q=${q}`, target: "_blank", rel: "noopener" }, "YT Music"),
-      h("a", { href: safeUrl(a.spotify_url) || `https://open.spotify.com/search/${q}`, target: "_blank", rel: "noopener" }, "Spotify"),
-      h("a", { href: safeUrl(a.apple_url) || `https://music.apple.com/br/search?term=${q}`, target: "_blank", rel: "noopener" }, "Apple Music"),
+      h("a", { href: ytUrl, target: "_blank", rel: "noopener", title: "Ouvir no YouTube Music sem limite de prévia" }, "YT Music ↗"),
+      h("a", { href: spotUrl, target: "_blank", rel: "noopener", title: "Ouvir álbum completo no Spotify" }, "Spotify ↗"),
+      h("a", { href: safeUrl(a.apple_url) || `https://music.apple.com/br/search?term=${q}`, target: "_blank", rel: "noopener" }, "Apple Music ↗"),
       safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
   }
   // Embedded player: the album's YouTube Music playlist first (it plays whole albums without login), Spotify as fallback.
@@ -1178,55 +1216,90 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     tocarAlbumDaPlaylist(0);
   }
 
-  function blocoPlaylistMes(ed, itensEd, guiasEd) {
+  function blocoPlaylistMes(ed, itensEd, guiasEd, expandidoInicial = false) {
     const albuns = extrairAlbunsDaEdicao(ed, itensEd, guiasEd);
     if (!albuns.length) return null;
     const pl = ed.playlist || {};
-    const tit = str(pl.titulo) || `Playlist do Mês · ${str(ed.mes)}`;
-    const sub = str(pl.subtitulo) || `Todos os ${albuns.length} álbuns recomendados da edição reunidos em ordem sequencial para audição contínua.`;
+    const codPl = `Radar Oculto_${str(ed._id || "2026_11").replace(/-/g, "_")}`;
+    const tit = str(pl.titulo || pl.nome) || codPl;
+    const sub = str(pl.subtitulo) || `Todos os ${albuns.length} álbuns recomendados da edição reunidos para audição contínua sem cortes no seu app favorito.`;
 
-    const qGeral = encodeURIComponent(albuns.slice(0, 4).map((a) => `${a.artista} ${a.album}`).join(" "));
-    const linkSpotify = safeUrl(pl.url_spotify) || `https://open.spotify.com/search/${qGeral}`;
+    const qGeral = encodeURIComponent(codPl);
+    const linkSpotify = safeUrl(pl.url_spotify || pl.url) || `https://open.spotify.com/search/${qGeral}`;
     const linkYT = safeUrl(pl.url_yt) || `https://music.youtube.com/search?q=${qGeral}`;
 
-    return h("section", { class: "wrap secao bloco-pl-mes", id: "playlist-do-mes" },
-      h("div", { class: "sec-head" },
-        h("span", { class: "num", "aria-hidden": "true" }, "♬"),
-        h("h3", null, tit),
-        h("p", null, sub)),
-      h("div", { class: "pl-acoes-topo" },
-        h("button", {
-          class: "ouvir pl-btn-play", type: "button",
-          onclick: () => iniciarPlaylistSequencial(albuns, tit),
-        }, playlistSeq.ativa ? `▶ Tocando [${playlistSeq.indice + 1}/${albuns.length}]` : `▶ Ouvir Playlist do Mês em sequência (${albuns.length} álbuns)`),
-        h("a", { class: "links-pl mono", href: linkSpotify, target: "_blank", rel: "noopener" }, "Buscar no Spotify ↗"),
-        h("a", { class: "links-pl mono", href: linkYT, target: "_blank", rel: "noopener" }, "Buscar no YouTube Music ↗")),
-      h("ol", { class: "pl-lista-albuns", "aria-label": "Faixas e álbuns da playlist" }, albuns.map((a, i) => {
-        const tocandoEste = playlistSeq.ativa && playlistSeq.indice === i;
-        const key = a.id || a._id || `pl~${ed._id}~${i}`;
-        const nome = str(a.exibir_artista || a.artista);
-        return h("li", { class: "pl-item-alb" + (tocandoEste ? " tocando-agora" : "") },
-          h("span", { class: "pl-num mono", "aria-hidden": "true" }, String(i + 1).padStart(2, "0")),
-          h("div", { class: "pl-capa" }, capa(a)),
-          h("div", { class: "pl-info" },
-            h("div", { class: "pl-tit-linha" },
-              h("b", { class: "pl-art" }, nome),
-              " — ",
-              h("span", { class: "pl-alb" }, str(a.album)),
-              a.ano ? h("span", { class: "mono", style: "opacity:.7;margin-left:6px" }, `(${str(a.ano)})`) : null),
-            a.genero || a.estilo ? h("div", { class: "mono pl-gen" }, str(a.genero || a.estilo)) : null,
-            a.nota || a.olho ? h("p", { class: "pl-desc" }, str(a.nota || a.olho)) : null),
-          h("div", { class: "pl-acts" },
-            h("button", {
-              class: "ouvir mini", type: "button", "aria-pressed": String(tocandoEste),
-              onclick: () => {
-                playlistSeq.albuns = albuns;
-                playlistSeq.nome = tit;
-                tocarAlbumDaPlaylist(i);
-              }
-            }, tocandoEste ? "Tocando" : "Ouvir"),
-            marcas(key, ["Quero ouvir", "Ouvi"])));
-      })));
+    return h("section", { class: "wrap secao bloco-pl-mes" + (expandidoInicial ? " expandido" : " recolhido"), id: "playlist-do-mes" },
+      h("div", { class: "pl-barra-resumo" },
+        h("div", { class: "pl-header-info" },
+          h("span", { class: "pl-badge-ico", "aria-hidden": "true" }, "♬"),
+          h("div", { class: "pl-textos" },
+            h("div", { class: "pl-linha-tit" },
+              h("h3", { class: "pl-titulo" }, `Playlist do Mês · ${tit}`),
+              h("span", { class: "pl-tag-qtd mono" }, `${albuns.length} álbuns`)),
+            h("p", { class: "pl-subtitulo" }, sub))),
+        h("div", { class: "pl-acoes-botoes" },
+          h("a", { class: "btn-pl-app btn-spot mono", href: linkSpotify, target: "_blank", rel: "noopener", title: `Abrir playlist ${tit} no app do Spotify` },
+            h("span", { class: "ico-app" }, "🟢"), `Abrir no Spotify (${tit}) ↗`),
+          h("a", { class: "btn-pl-app btn-yt mono", href: linkYT, target: "_blank", rel: "noopener", title: `Buscar ${tit} no YouTube Music` },
+            h("span", { class: "ico-app" }, "🔴"), "YouTube Music ↗"),
+          h("button", {
+            class: "btn-pl-app btn-play-seq mono", type: "button",
+            onclick: () => iniciarPlaylistSequencial(albuns, tit),
+          }, playlistSeq.ativa ? `▶ Tocando [${playlistSeq.indice + 1}/${albuns.length}]` : `▶ Tocar no Player Embutido`))),
+      h("details", { class: "pl-detalhes", open: expandidoInicial },
+        h("summary", { class: "pl-summary mono" },
+          h("span", { class: "pl-sum-txt" }, `Ver lista completa dos ${albuns.length} álbuns da edição`),
+          h("span", { class: "pl-sum-seta", "aria-hidden": "true" }, "▾")),
+        h("p", { class: "pl-dica-aviso mono" }, "Dica: Para ouvir o disco completo na íntegra sem limite de 30 segundos dos players web, use os botões 'Spotify ↗' ou 'YT Music ↗' de cada álbum para abrir diretamente no seu aplicativo."),
+        h("ol", { class: "pl-lista-albuns", "aria-label": "Faixas e álbuns da playlist" }, albuns.map((a, i) => {
+          const tocandoEste = playlistSeq.ativa && playlistSeq.indice === i;
+          const key = a.id || a._id || `pl~${ed._id}~${i}`;
+          const nome = str(a.exibir_artista || a.artista);
+          const spotItem = safeUrl(a.spotify_url) || (a.spotify_id ? `https://open.spotify.com/album/${a.spotify_id}` : `https://open.spotify.com/search/${encodeURIComponent(nome + " " + a.album)}`);
+          const ytItem = ytLista(a) ? `https://music.youtube.com/playlist?list=${ytLista(a)}` : `https://music.youtube.com/search?q=${encodeURIComponent(nome + " " + a.album)}`;
+          return h("li", { class: "pl-item-alb" + (tocandoEste ? " tocando-agora" : "") },
+            h("span", { class: "pl-num mono", "aria-hidden": "true" }, String(i + 1).padStart(2, "0")),
+            h("div", { class: "pl-capa" }, capa(a)),
+            h("div", { class: "pl-info" },
+              h("div", { class: "pl-tit-linha" },
+                h("b", { class: "pl-art" }, nome),
+                " — ",
+                h("span", { class: "pl-alb" }, str(a.album)),
+                a.ano ? h("span", { class: "mono", style: "opacity:.7;margin-left:6px" }, `(${str(a.ano)})`) : null),
+              a.genero || a.estilo ? h("div", { class: "mono pl-gen" }, str(a.genero || a.estilo)) : null,
+              a.nota || a.olho ? h("p", { class: "pl-desc" }, str(a.nota || a.olho)) : null),
+            h("div", { class: "pl-acts" },
+              h("a", { class: "mono pl-link-disco", href: spotItem, target: "_blank", rel: "noopener", title: "Abrir álbum completo no app do Spotify" }, "Spotify ↗"),
+              h("a", { class: "mono pl-link-disco", href: ytItem, target: "_blank", rel: "noopener", title: "Abrir no YouTube Music" }, "YT Music ↗"),
+              h("button", {
+                class: "ouvir mini", type: "button", "aria-pressed": String(tocandoEste),
+                onclick: () => {
+                  playlistSeq.albuns = albuns;
+                  playlistSeq.nome = tit;
+                  tocarAlbumDaPlaylist(i);
+                }
+              }, tocandoEste ? "Tocando" : "Ouvir"),
+              marcas(key, ["Quero ouvir", "Ouvi"])));
+        }))));
+  }
+
+  function atualizarLinksDock(capaDe, quem, oque, video) {
+    const extBar = document.getElementById("dock-ext-bar");
+    const linkSpot = document.getElementById("dock-link-spot");
+    const linkYt = document.getElementById("dock-link-yt");
+    if (!extBar || !linkSpot || !linkYt) return;
+    if (video || !capaDe) {
+      extBar.hidden = true;
+      return;
+    }
+    const nome = str(capaDe.exibir_artista || capaDe.artista || quem);
+    const alb = str(capaDe.album || oque);
+    const q = encodeURIComponent(`${nome} ${alb}`.trim());
+    const spotUrl = safeUrl(capaDe.spotify_url) || (capaDe.spotify_id ? `https://open.spotify.com/album/${capaDe.spotify_id}` : `https://open.spotify.com/search/${q}`);
+    const ytUrl = ytLista(capaDe) ? `https://music.youtube.com/playlist?list=${ytLista(capaDe)}` : `https://music.youtube.com/search?q=${q}`;
+    linkSpot.href = spotUrl;
+    linkYt.href = ytUrl;
+    extBar.hidden = false;
   }
 
   function desenharPlayer() {
@@ -1267,6 +1340,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       const t = document.getElementById("dock-tocando");
       t.replaceChildren(document.createTextNode(quem), h("em", null, oque));
     }
+    atualizarLinksDock(capaDe, quem, oque, video);
     desenharPlayer();
     render();
   }
@@ -3231,7 +3305,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     const f = S.filtro;
     if (f === "fila") { main.append(blocoFila()); return; }
     if (f === "playlist") {
-      const pl = blocoPlaylistMes(ed, itensEd, guiasEd);
+      const pl = blocoPlaylistMes(ed, itensEd, guiasEd, true);
       if (pl) main.append(pl);
       return;
     }
@@ -3257,7 +3331,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       if (destaque) nD++;
       main.append(banner({ nome: "música", numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc, quadrado: true, playlist: ed.playlist,
         stats: [plural(nD, "disco", "discos"), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
-      const pl = blocoPlaylistMes(ed, itensEd, guiasEd);
+      const pl = blocoPlaylistMes(ed, itensEd, guiasEd, false);
       if (pl) main.append(pl);
       const c = blocoCapa(ed, destaque); if (c) main.append(c);
       const p = blocoPerfil(ed); if (p) main.append(p);

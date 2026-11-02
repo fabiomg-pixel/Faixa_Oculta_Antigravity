@@ -123,8 +123,11 @@
         }
       ],
       "playlist": {
-        "nome": "Faixa Oculta nº 1 · Outubro 2026",
-        "url": "https://open.spotify.com/playlist/1W4GJI1q8J4X2jnasazFdI"
+        "nome": "Radar Oculto_2026_10",
+        "url": "https://open.spotify.com/playlist/1W4GJI1q8J4X2jnasazFdI",
+        "titulo": "Radar Oculto_2026_10",
+        "url_spotify": "https://open.spotify.com/search/Radar%20Oculto_2026_10",
+        "url_yt": "https://music.youtube.com/search?q=Radar+Oculto_2026_10"
       },
       "capa": "capas/0ac9565c17f4ed5ef38bcd605f8620b5.jpg"
     },
@@ -418,7 +421,11 @@
             "spotify_id": "9mSmcj39eQiU76EbMGuxS4",
             "spotify_url": "https://open.spotify.com/search/The%20Cure%20Songs%20of%20a%20Lost%20World"
           }
-        ]
+        ],
+        "titulo": "Radar Oculto_2026_11",
+        "nome": "Radar Oculto_2026_11",
+        "url_spotify": "https://open.spotify.com/search/Radar%20Oculto_2026_11",
+        "url_yt": "https://music.youtube.com/search?q=Radar+Oculto_2026_11"
       }
     }
   },
