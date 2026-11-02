@@ -967,57 +967,24 @@ def montar_cultura_novembro_2026():
 
 def main():
     print("=== INICIANDO ATUALIZAÇÃO DA REVISTA CULTURAL (NOVEMBRO 2026) ===")
-    revista_path = "data/revista.json"
+    try:
+        import tools.gerar_cultura_novembro_total as g
+        g.main()
+    except Exception:
+        import gerar_cultura_novembro_total as g
+        g.main()
 
+    # Garantir preservação da agenda cultural
+    revista_path = "data/revista.json"
     with open(revista_path, "r", encoding="utf-8") as f:
         db = json.load(f)
-
     dados = montar_cultura_novembro_2026()
-    mes_id = "2026-11"
-
-    forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
-    if not forcar and mes_id in db.get("edicoes", {}) and mes_id in db.get("cine_edicoes", {}) and mes_id in db.get("livro_edicoes", {}):
-        print(f"Edições culturais do mês [{mes_id}] já existem em {revista_path}. Nada a fazer.")
-        return
-
-    # 1. Música
-    db.setdefault("edicoes", {})[mes_id] = dados["musica_edicao"]
-    for k, v in dados["musica_itens"].items():
-        db.setdefault("itens", {})[k] = v
-    for k, v in dados["musica_guias"].items():
-        db.setdefault("guias", {})[k] = v
-
-    # 2. Cinema
-    db.setdefault("cine_edicoes", {})[mes_id] = dados["cine_edicao"]
-    for k, v in dados["cine_itens"].items():
-        db.setdefault("cine_itens", {})[k] = v
-    for k, v in dados["cine_guias"].items():
-        db.setdefault("cine_guias", {})[k] = v
-
-    # 3. Livros
-    db.setdefault("livro_edicoes", {})[mes_id] = dados["livro_edicao"]
-    for k, v in dados["livro_itens"].items():
-        db.setdefault("livro_itens", {})[k] = v
-    for k, v in dados["livro_guias"].items():
-        db.setdefault("livro_guias", {})[k] = v
-
-    # 4. Agenda Cultural
-    if "agenda" not in db:
-        db["agenda"] = {}
-    if "atual" not in db["agenda"]:
-        db["agenda"]["atual"] = {}
-    db["agenda"]["atual"]["eventos"] = dados["agenda_eventos"]
-
+    db.setdefault("agenda", {}).setdefault("atual", {})["eventos"] = dados["agenda_eventos"]
     with open(revista_path, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
 
-    with open("pagina.html", "r", encoding="utf-8") as f:
-        src = f.read()
+    print("=== SUCESSO: Cultura Mensal de 2026-11 atualizada com escala total e agenda preservada! ===")
 
-    with open("index.html", "w", encoding="utf-8") as f:
-        f.write(SKELETON_HEAD + src + SKELETON_TAIL)
-
-    print(f"=== SUCESSO: Cultura Mensal de {mes_id} atualizada com Música, Cinema, Livros e Agenda Rock/Underground! ===")
 
 
 if __name__ == "__main__":
