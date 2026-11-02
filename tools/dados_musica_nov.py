@@ -30,6 +30,33 @@ MUSICA_EDICAO = {
 
 MUSICA_ITENS = {
     # --- SEÇÃO RADAR ---
+    "2026-11--queens-of-the-stone-age-perfecth": {
+        "id": "2026-11--queens-of-the-stone-age-perfecth",
+        "edicao": "2026-11",
+        "ordem": 1,
+        "secao": "radar",
+        "artista": "Queens of the Stone Age",
+        "album": "Perfecth",
+        "ano": 2026,
+        "genero": "stoner rock / desert groove / art-rock",
+        "selo": "Matador Records",
+        "formato": "LP, Digital, CD",
+        "olho": "Josh Homme reinventa o som do deserto com violões flamencos, tango sem bateria, Wurlitzer funkeado e o baixo fuzz mais cortante desde Songs for the Deaf.",
+        "texto": "Recém-lançado no fim de outubro pela Matador, o nono álbum do Queens of the Stone Age quebra um ciclo e inaugura a fase mais vulnerável e corajosa da discografia de Josh Homme.",
+        "resenha": [
+            "Lançado em 30 de outubro de 2026 pela Matador Records, Perfecth é o aguardado nono álbum de estúdio do Queens of the Stone Age e representa a virada estética mais radical de Josh Homme em mais de duas décadas. Produzido por Homme e Michael Shuman e gravado nos lendários estúdios Sound City e Pink Duck em Los Angeles, o disco condensa nove faixas em enxutos 36 minutos, eliminando qualquer gordura ou repetição de fórmula.",
+            "A grande surpresa reside no despojamento acústico e na inventividade rítmica. 'Easy Street', lançada como single de abertura, substitui a tradicional parede de amplificadores por um violão flamenco de sabor espanhol, palmas sincopadas e a voz sedutora de Nikki Lane em contraste com o vocal arrastado de Homme. Já 'Insignificant Other' aposta num groove desacelerado conduzido por piano elétrico Wurlitzer e guitarras limpas com falsete rasgado, enquanto 'Where the Goth Girls At?' faz explodir um baixo fuzz cortante e um refrão hipnótico.",
+            "Composto e lapidado após a recuperação física e emocional de Homme e na esteira da turnê intimista gravada nas Catacumbas de Paris (Alive in the Catacombs), Perfecth olha de frente para o envelhecimento, as perdas e o renascimento com um cinismo elegante e desarmado. Em 'Sunday', faixa gestada ainda na época da parceria com Iggy Pop em Post Pop Depression, Homme alcança uma gravidade comovente, coroada por um solo melódico e econômico de Troy Van Leeuwen.",
+            "Para quem tem o Queens of the Stone Age como pedra angular do cânone do rock, Perfecth é uma aula magna de desconstrução: o peso agora não vem do volume ensurdecedor, mas do espaço entre as notas, da tensão harmônica e do balanço sinuoso. Um dos grandes marcos fonográficos de 2026."
+        ],
+        "faixas": ["Easy Street", "Insignificant Other", "Where the Goth Girls At?", "Sunday", "Paper Machete", "Time & Place", "Emotion Sickness"],
+        "recepcao": "Elogiado na NME (5/5), Uncut e Consequence como o disco mais audacioso e revigorante da banda desde Songs for the Deaf.",
+        "ponte": "Kyuss, Radiohead, Them Crooked Vultures, Iggy Pop (Post Pop Depression) e Jack White.",
+        "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+        "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth",
+        "capa": "capas/6ed0ec9e85e566afc81ef246358bbc31.jpg",
+        "onde": "Matador Records, Spotify, Apple Music, YouTube Music, Bandcamp"
+    },
     "2026-11--mj-lenderman-manning-fireworks": {
         "id": "2026-11--mj-lenderman-manning-fireworks",
         "edicao": "2026-11",

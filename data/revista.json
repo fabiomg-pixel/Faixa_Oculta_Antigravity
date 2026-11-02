@@ -184,6 +184,13 @@
             "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf"
           },
           {
+            "artista": "Queens of the Stone Age",
+            "album": "Perfecth",
+            "faixa": "Easy Street",
+            "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+            "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth"
+          },
+          {
             "artista": "Dry Cleaning",
             "album": "New Long Walk",
             "faixa": "Kwenchy Kups",
@@ -426,6 +433,90 @@
         "nome": "Radar Oculto_2026_11",
         "url_spotify": "https://open.spotify.com/search/Radar%20Oculto_2026_11",
         "url_yt": "https://music.youtube.com/search?q=Radar+Oculto_2026_11"
+      },
+      "destaque_autor": {
+        "artista": "Josh Homme",
+        "projeto": "Queens of the Stone Age",
+        "obra_atual": "Perfecth (LP, 2026, Matador Records)",
+        "subtitulo": "O arquiteto do rock do deserto: da invenção do stoner rock em Palm Desert à desconstrução acústica e vulnerável de Perfecth",
+        "ensaio": [
+          "Poucos guitarristas contemporâneos foram capazes de fundar um gênero inteiro e, anos depois, desmontá-lo com tanta elegância e desapego quanto Josh Homme. No início dos anos 1990, nos confins áridos de Palm Desert, Califórnia, um Homme de apenas 18 anos plugava amplificadores valvulados de contrabaixo para tocar guitarra com afinação rebaixada em C no Kyuss, forjando a certidão de nascimento do stoner rock (Blues for the Red Sun, Welcome to Sky Valley). Quando o Kyuss implodiu, Homme recusou o virtuosismo estéril do hard rock tradicional: buscou na hipnose rítmica do Krautrock (o motorik de Can e Neu!) e na secura do pós-punk o alicerce para fundar o Queens of the Stone Age no isolamento místico do estúdio Rancho De La Luna.",
+          "A grande revolução formal do QOTSA foi trocar a exibição de solos acrobáticos pela disciplina quase maquínica da repetição. Homme apelidou seu estilo de 'robot rock': riffs angulares, sincopados e cortantes tocados como batidas percussivas, combinados com um balanço sinuoso de boogie e cabaré. Sobretudo, Homme desconstruiu a pose machista do rock pesado: enquanto as afinações graves e os pedais de fuzz tremiam as paredes, sua voz flutuava em falsetes doces, harmonias vocais tortas em terças menores e um lirismo carregado de ironia, vulnerabilidade e erotismo soturno ('Make It Wit Chu', 'The Lost Art of Keeping a Secret').",
+          "A força motriz de Homme sempre foi a troca coletiva e o senso de comunidade. Através das lendárias Desert Sessions, do supergrupo Them Crooked Vultures (ao lado de John Paul Jones, do Led Zeppelin, e Dave Grohl) e de sua parceria visceral com Mark Lanegan, Homme funcionou como catalisador. Sua consagração definitiva como produtor e coautor veio com Post Pop Depression (2016), gravado com Iggy Pop, disco que resgatou a urgência berlinesa do ex-Stooge. Contudo, a última década exigiu um preço alto: um diagnóstico de câncer, a perda dolorosa de amigos fraternos (Taylor Hawkins, Mark Lanegan) e divórcios tumultuados empurraram Homme para a beira do abismo, alimentando o desespero cru de In Times New Roman... (2023).",
+          "Lançado em 30 de outubro de 2026, Perfecth é a fênix desse processo doloroso. Em vez de se entrincheirar no peso metálico, Homme e Michael Shuman limpam o palco: o violão flamenco espanhol em 'Easy Street', os teclados Wurlitzer com swing de soul em 'Insignificant Other' e o tango fúnebre sem bateria de abertura revelam um artista que finalmente aprendeu a deixar o sol entrar pelas frestas. O Queens of the Stone Age permanece insuperável porque nunca teve medo de dançar sobre as próprias cinzas."
+        ],
+        "obras_essenciais": [
+          {
+            "titulo": "Songs for the Deaf",
+            "ano": "2002",
+            "formato": "LP / CD",
+            "projeto": "Queens of the Stone Age",
+            "capa": "capas/c33eea9a6b197766880e09840b8c5f64.jpg",
+            "por_que_ouvir": "A obra-prima definitiva do rock dos anos 2000; uma viagem conceitual alucinada pelo dial do rádio de um carro cortando o deserto da Califórnia, com Dave Grohl na bateria mais furiosa de sua carreira e Mark Lanegan nas sombras.",
+            "spotify_url": "https://open.spotify.com/album/4m2880jivSbbyEGAKfITCa"
+          },
+          {
+            "titulo": "Welcome to Sky Valley",
+            "ano": "1994",
+            "formato": "LP",
+            "projeto": "Kyuss",
+            "capa": "capas/ca060e0c7fd4f0adbd18376dbbbb8ab2.jpg",
+            "por_que_ouvir": "O monolito sagrado do stoner rock; quatro suítes densas onde a afinação em C e os amplificadores Ampeg criaram uma das sonoridades mais influentes e imitadas da história da guitarra elétrica moderna.",
+            "spotify_url": "https://open.spotify.com/album/0Qc3r8C8gQ1Z6Qk0M3w2X1"
+          },
+          {
+            "titulo": "...Like Clockwork",
+            "ano": "2013",
+            "formato": "LP",
+            "projeto": "Queens of the Stone Age",
+            "capa": "capas/6185ae04f3270848bd7c7e3e65cc64e8.jpg",
+            "por_que_ouvir": "O renascimento melódico e sombrio de Homme após uma experiência de quase-morte cirúrgica; orquestrações luxuriantes, pianos fúnebres e participações de Alex Turner, Trent Reznor e Elton John.",
+            "spotify_url": "https://open.spotify.com/album/068Vbtv0v6uB2yK0M3w2X1"
+          },
+          {
+            "titulo": "Post Pop Depression",
+            "ano": "2016",
+            "formato": "LP",
+            "projeto": "Iggy Pop & Josh Homme",
+            "capa": "capas/47fb8cf21127a7dc3cb9ab22272a38d1.jpg",
+            "por_que_ouvir": "Uma aula magna de produção e arranjo econômico onde Homme colocou seu talento arquitetônico a serviço de Iggy Pop, entregando ao ícone do punk seu melhor e mais urgente disco desde Lust for Life.",
+            "spotify_url": "https://open.spotify.com/album/0z9Z1f8w5Q8k0M3w2X1Y4Z"
+          }
+        ],
+        "influenciados_e_dialogos": [
+          {
+            "artista": "Royal Blood",
+            "obra": "Royal Blood (2014, Warner)",
+            "ano": "2014",
+            "capa": "capas/c9f9ef39b9f907e9496d9d0f20df29a3.jpg",
+            "como_influenciou": "O duo britânico decodificou a técnica de afinação em C e os riffs sincopados com baixo fuzz e oitavadores criada por Homme. Sem guitarras convencionais, Mike Kerr e Ben Thatcher usaram o DNA do QOTSA para erguer um som colossal de arena.",
+            "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw"
+          },
+          {
+            "artista": "Viagra Boys",
+            "obra": "Cave World (2022, YEAR0001)",
+            "ano": "2022",
+            "capa": "capas/30fa53b3075a4fd645459e2be8c25b84.jpg",
+            "como_influenciou": "O grupo pós-punk sueco herdou o sarcasmo corrosivo, o ritmo desacelerado hipnótico e o balanço do 'robot rock' que Homme cunhou em faixas como 'Smooth Sailing' e 'Misfit Love', provando que o punk mais inteligente bebe direto de Palm Desert.",
+            "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X"
+          },
+          {
+            "artista": "Tigercub",
+            "obra": "The Perfume of Decay (2023, Loosegroove)",
+            "ano": "2023",
+            "capa": "capas/5e86828ae9f5d0c5850a4188c7cf1055.jpg",
+            "como_influenciou": "Jamie Hall absorveu a assinatura de Homme de contrastar timbres monolíticos de fuzz com melodias vocais quase pop e falsetes teatrais, desenvolvendo o som sombrio e cinematográfico típico da fase Lullabies to Paralyze.",
+            "spotify_url": "https://open.spotify.com/album/7o5415B5sR5qL8k0M3w2X1"
+          },
+          {
+            "artista": "St. Vincent",
+            "obra": "Daddy's Home (2021, Loma Vista)",
+            "ano": "2021",
+            "capa": "capas/a32f109e33fa8acc6d4568902f8e6df1.jpg",
+            "como_influenciou": "Após colaborar no estúdio com Homme nas Desert Sessions, Annie Clark adotou a desconstrução do purismo da guitarra solo em favor de timbres analógicos sujos dos anos 70 e um funk desacelerado e malicioso de sarjeta.",
+            "spotify_url": "https://open.spotify.com/album/0B1Nf8w5Q8k0M3w2X1Y4Z5"
+          }
+        ]
       }
     }
   },
@@ -1740,7 +1831,7 @@
     "2026-11--dry-cleaning-new-long-walk": {
       "id": "2026-11--dry-cleaning-new-long-walk",
       "edicao": "2026-11",
-      "ordem": 2,
+      "ordem": 3,
       "secao": "radar",
       "artista": "Dry Cleaning",
       "album": "New Long Walk",
@@ -1876,7 +1967,7 @@
     "2026-11--fontaines-dc-romance": {
       "id": "2026-11--fontaines-dc-romance",
       "edicao": "2026-11",
-      "ordem": 3,
+      "ordem": 4,
       "secao": "radar",
       "artista": "Fontaines D.C.",
       "album": "Romance",
@@ -1910,7 +2001,7 @@
     "2026-11--the-smile-cutouts": {
       "id": "2026-11--the-smile-cutouts",
       "edicao": "2026-11",
-      "ordem": 4,
+      "ordem": 5,
       "secao": "radar",
       "artista": "The Smile",
       "album": "Cutouts",
@@ -1943,7 +2034,7 @@
     "2026-11--kim-gordon-the-collective": {
       "id": "2026-11--kim-gordon-the-collective",
       "edicao": "2026-11",
-      "ordem": 5,
+      "ordem": 6,
       "secao": "radar",
       "artista": "Kim Gordon",
       "album": "The Collective",
@@ -1977,7 +2068,7 @@
     "2026-11--beth-gibbons-lives-outgrown": {
       "id": "2026-11--beth-gibbons-lives-outgrown",
       "edicao": "2026-11",
-      "ordem": 6,
+      "ordem": 7,
       "secao": "radar",
       "artista": "Beth Gibbons",
       "album": "Lives Outgrown",
@@ -2011,7 +2102,7 @@
     "2026-11--english-teacher-this-could-be-texas": {
       "id": "2026-11--english-teacher-this-could-be-texas",
       "edicao": "2026-11",
-      "ordem": 7,
+      "ordem": 8,
       "secao": "radar",
       "artista": "English Teacher",
       "album": "This Could Be Texas",
@@ -2045,7 +2136,7 @@
     "2026-11--mount-kimbie-the-sunset-violent": {
       "id": "2026-11--mount-kimbie-the-sunset-violent",
       "edicao": "2026-11",
-      "ordem": 8,
+      "ordem": 9,
       "secao": "radar",
       "artista": "Mount Kimbie",
       "album": "The Sunset Violent",
@@ -2385,7 +2476,7 @@
     "2026-11--adrianne-lenker-bright-future": {
       "id": "2026-11--adrianne-lenker-bright-future",
       "edicao": "2026-11",
-      "ordem": 9,
+      "ordem": 10,
       "secao": "radar",
       "artista": "Adrianne Lenker",
       "album": "Bright Future",
@@ -2419,7 +2510,7 @@
     "2026-11--nick-cave-wild-god": {
       "id": "2026-11--nick-cave-wild-god",
       "edicao": "2026-11",
-      "ordem": 10,
+      "ordem": 11,
       "secao": "radar",
       "artista": "Nick Cave & The Bad Seeds",
       "album": "Wild God",
@@ -2453,7 +2544,7 @@
     "2026-11--kim-deal-nobody-loves-you-more": {
       "id": "2026-11--kim-deal-nobody-loves-you-more",
       "edicao": "2026-11",
-      "ordem": 11,
+      "ordem": 12,
       "secao": "radar",
       "artista": "Kim Deal",
       "album": "Nobody Loves You More",
@@ -2487,7 +2578,7 @@
     "2026-11--mannequin-pussy-i-got-heaven": {
       "id": "2026-11--mannequin-pussy-i-got-heaven",
       "edicao": "2026-11",
-      "ordem": 12,
+      "ordem": 13,
       "secao": "radar",
       "artista": "Mannequin Pussy",
       "album": "I Got Heaven",
@@ -2521,7 +2612,7 @@
     "2026-11--jack-white-no-name": {
       "id": "2026-11--jack-white-no-name",
       "edicao": "2026-11",
-      "ordem": 13,
+      "ordem": 14,
       "secao": "radar",
       "artista": "Jack White",
       "album": "No Name",
@@ -2555,7 +2646,7 @@
     "2026-11--jessica-pratt-here-in-the-pitch": {
       "id": "2026-11--jessica-pratt-here-in-the-pitch",
       "edicao": "2026-11",
-      "ordem": 14,
+      "ordem": 15,
       "secao": "radar",
       "artista": "Jessica Pratt",
       "album": "Here in the Pitch",
@@ -2892,6 +2983,41 @@
       "spotify_url": "https://open.spotify.com/search/The%20Cure%20Songs%20of%20a%20Lost%20World",
       "onde": "Fiction Records, Polydor, Capitol, Spotify",
       "capa": "capas/cbd3826ef3b93e89045cb0c15f1a95dd.jpg"
+    },
+    "2026-11--queens-of-the-stone-age-perfecth": {
+      "id": "2026-11--queens-of-the-stone-age-perfecth",
+      "edicao": "2026-11",
+      "ordem": 2,
+      "secao": "radar",
+      "artista": "Queens of the Stone Age",
+      "album": "Perfecth",
+      "ano": 2026,
+      "genero": "stoner rock / desert groove / art-rock",
+      "selo": "Matador Records",
+      "formato": "LP, Digital, CD",
+      "olho": "Josh Homme reinventa o som do deserto com violões flamencos, tango sem bateria, Wurlitzer funkeado e o baixo fuzz mais cortante desde Songs for the Deaf.",
+      "texto": "Recém-lançado no fim de outubro pela Matador, o nono álbum do Queens of the Stone Age quebra um ciclo e inaugura a fase mais vulnerável e corajosa da discografia de Josh Homme.",
+      "resenha": [
+        "Lançado em 30 de outubro de 2026 pela Matador Records, Perfecth é o aguardado nono álbum de estúdio do Queens of the Stone Age e representa a virada estética mais radical de Josh Homme em mais de duas décadas. Produzido por Homme e Michael Shuman e gravado nos lendários estúdios Sound City e Pink Duck em Los Angeles, o disco condensa nove faixas em enxutos 36 minutos, eliminando qualquer gordura ou repetição de fórmula.",
+        "A grande surpresa reside no despojamento acústico e na inventividade rítmica. 'Easy Street', lançada como single de abertura, substitui a tradicional parede de amplificadores por um violão flamenco de sabor espanhol, palmas sincopadas e a voz sedutora de Nikki Lane em contraste com o vocal arrastado de Homme. Já 'Insignificant Other' aposta num groove desacelerado conduzido por piano elétrico Wurlitzer e guitarras limpas com falsete rasgado, enquanto 'Where the Goth Girls At?' faz explodir um baixo fuzz cortante e um refrão hipnótico.",
+        "Composto e lapidado após a recuperação física e emocional de Homme e na esteira da turnê intimista gravada nas Catacumbas de Paris (Alive in the Catacombs), Perfecth olha de frente para o envelhecimento, as perdas e o renascimento com um cinismo elegante e desarmado. Em 'Sunday', faixa gestada ainda na época da parceria com Iggy Pop em Post Pop Depression, Homme alcança uma gravidade comovente, coroada por um solo melódico e econômico de Troy Van Leeuwen.",
+        "Para quem tem o Queens of the Stone Age como pedra angular do cânone do rock, Perfecth é uma aula magna de desconstrução: o peso agora não vem do volume ensurdecedor, mas do espaço entre as notas, da tensão harmônica e do balanço sinuoso. Um dos grandes marcos fonográficos de 2026."
+      ],
+      "faixas": [
+        "Easy Street",
+        "Insignificant Other",
+        "Where the Goth Girls At?",
+        "Sunday",
+        "Paper Machete",
+        "Time & Place",
+        "Emotion Sickness"
+      ],
+      "recepcao": "Elogiado na NME (5/5), Uncut e Consequence como o disco mais audacioso e revigorante da banda desde Songs for the Deaf.",
+      "ponte": "Kyuss, Radiohead, Them Crooked Vultures, Iggy Pop (Post Pop Depression) e Jack White.",
+      "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+      "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth",
+      "capa": "capas/6ed0ec9e85e566afc81ef246358bbc31.jpg",
+      "onde": "Matador Records, Spotify, Apple Music, YouTube Music, Bandcamp"
     }
   },
   "guias": {
@@ -5868,7 +5994,8 @@
       ],
       "tipo": "serie",
       "titulo": "A Noite em que Logan Despertou",
-      "titulo_original": "La nuit où Laurier Gaudreault s'est réveillé"
+      "titulo_original": "La nuit où Laurier Gaudreault s'est réveillé",
+      "capa": "capas/d2d2c8a5dbf9eb9fe140ab8bea642b97.jpg"
     },
     "2026-10--a-terra-do-meu-pai": {
       "ano": "2026",
@@ -8545,7 +8672,86 @@
           "secao": "breve"
         }
       ],
-      "capa": "capas/80f7bcf7cc4ad62fd5f59453751cffd4.jpg"
+      "capa": "capas/80f7bcf7cc4ad62fd5f59453751cffd4.jpg",
+      "destaque_autor": {
+        "artista": "Kleber Mendonça Filho",
+        "obra_atual": "O Agente Secreto (Longa-metragem, 2026, com Wagner Moura)",
+        "subtitulo": "O mestre do som e do espaço: como o ex-crítico recifense transformou o cinema brasileiro numa trincheira de memória, arquitetura e resistência política",
+        "ensaio": [
+          "Antes de empunhar a câmera profissionalmente, Kleber Mendonça Filho passou duas décadas na escuridão sagrada das salas de projeção do Recife, escrevendo crítica para o Jornal do Commercio e programando o Cinema da Fundação Joaquim Nabuco. Essa bagagem cinéfila imensa formatou um realizador que não apenas filma, mas pensa a imagem a partir de sua história e de suas reverberações físicas. Dos primeiros curtas experimentais em VHS e película (Vinil Verde, Eletrodoméstica, Recife Frio), despontou uma obsessão raríssima no audiovisual brasileiro: o tratamento do som como personagem vivo e elemento dramático de primeira ordem. Em seus filmes, um ruído distante de betoneira, o rangido de um piso de taco ou o estalo de uma fita cassete contam mais sobre as fraturas do Brasil do que dezenas de diálogos explicativos.",
+          "A obra de Kleber é uma investigação implacável da cidade e de seus fantasmas coloniais. Em O Som ao Redor (2012), a rua de classe média em Boa Viagem é um microcosmo do pacto histórico brasileiro: a servidão doméstica moderna, o medo paranoico da violência e a presença vigilante e ameaçadora dos seguranças privados armados. Em Aquarius (2016), essa batalha ganha corpo físico e moral na resistência intransigente de Clara (Sônia Braga) contra uma construtora predadora disposta a destruir seu prédio histórico. O espaço arquitetônico nos filmes de Kleber nunca é mero cenário: é a própria carne da luta de classes, da gentrificação e da disputa pela memória afetiva.",
+          "Ao contrário do cinema de arte contemplativo que muitas vezes se distancia do grande público por frieza formal, Kleber abraça com paixão o cinema de gênero clássico das décadas de 1970 e 1980 — de John Carpenter e Brian De Palma a Sergio Leone e ao cinema marginal brasileiro. Em Bacurau (2019), codirigido com seu parceiro de longa data Juliano Dornelles, essa fusão atinge o ápice: um sertão nordestino distópico onde o realismo sociológico, o western, a ficção científica e o gore sangrento se unem para celebrar a autodefesa armada de uma comunidade contra invasores estrangeiros e políticos traidores. O filme tornou-se um fenômeno cultural e símbolo de rebelião cívica.",
+          "Com Retratos Fantasmas (2023), Kleber já havia homenageado os templos de rua do centro do Recife que moldaram sua sensibilidade. Agora, em O Agente Secreto (2026), estrelado por Wagner Moura, ele se desloca para o Recife de 1977. Na pele de um professor universitário em fuga que se esconde na capital pernambucana durante os anos mais sufocantes da ditadura militar, o filme articula um suspense claustrofóbico de espionagem, paranoia e fita magnética, reafirmando que a memória brasileira é um território vivo sob constante disputa."
+        ],
+        "obras_essenciais": [
+          {
+            "titulo": "O Som ao Redor",
+            "ano": "2012",
+            "formato": "Longa-metragem (131 min)",
+            "capa": "capas/bf5243369bdd7c21275a51e516cb3802.jpg",
+            "por_que_ver": "Eleito um dos 10 melhores filmes do ano pelo The New York Times, redefiniu a estética do cinema brasileiro recente ao transformar o desenho de som ambiente numa força aterrorizante de opressão social e histórica.",
+            "link": "https://www.justwatch.com/br/filme/o-som-ao-redor"
+          },
+          {
+            "titulo": "Aquarius",
+            "ano": "2016",
+            "formato": "Longa-metragem (145 min)",
+            "capa": "capas/54dba85cf79e9f8002c25d777227e6f3.jpg",
+            "por_que_ver": "Obra-prima com Sônia Braga no papel de sua vida; uma celebração solar da autonomia feminina, da memória táctil dos vinis e da dignidade contra a ganância da especulação imobiliária.",
+            "link": "https://www.justwatch.com/br/filme/aquarius"
+          },
+          {
+            "titulo": "Bacurau",
+            "ano": "2019",
+            "formato": "Longa-metragem (131 min, codir. Juliano Dornelles)",
+            "capa": "capas/7257a2d66752c92989cd63a57f82b6c3.jpg",
+            "por_que_ver": "Prêmio do Júri no Festival de Cannes; faroeste distópico e épico anticolonial que provou a capacidade do cinema nacional de criar mitologias populares inesquecíveis com sangue e poesia sertaneja.",
+            "link": "https://www.justwatch.com/br/filme/bacurau"
+          },
+          {
+            "titulo": "Retratos Fantasmas",
+            "ano": "2023",
+            "formato": "Documentário-ensaio (93 min)",
+            "capa": "capas/dfec05164c1fa8c429db9e2fbabd9410.jpg",
+            "por_que_ver": "Exibido em Cannes com aclamação unânime; um documentário amoroso e investigativo sobre o papel cívico dos grandes palácios de cinema de rua do centro do Recife e sua lenta transformação.",
+            "link": "https://www.justwatch.com/br/filme/retratos-fantasmas"
+          }
+        ],
+        "influenciados_e_dialogos": [
+          {
+            "artista": "Gabriel Mascaro",
+            "obra": "Boi Neon (2015, Vitrine Filmes)",
+            "ano": "2015",
+            "capa": "capas/d66a9759851b7f2544aa66782e7268be.jpg",
+            "como_influenciou": "A efervescência criada por Kleber colocou o cinema pernambucano no epicentro da crítica global; Mascaro expandiu esse rigor formal para o interior nordestino, investigando a sensualidade e o trabalho com fotografia monumental.",
+            "link": "https://www.justwatch.com/br/filme/boi-neon"
+          },
+          {
+            "artista": "Affonso Uchôa & João Dumans",
+            "obra": "Arábia (2017, Embaúba Filmes)",
+            "ano": "2017",
+            "capa": "capas/8dd8d378fa1207c17ba77b84f4368c02.jpg",
+            "como_influenciou": "O cinema de Kleber legitimou uma postura ética de recusa absoluta ao miserabilismo folclórico; Uchôa conferiu a mesma solenidade trágica e literária à rotina dos operários das fundições de Ouro Preto.",
+            "link": "https://www.justwatch.com/br/filme/arabia"
+          },
+          {
+            "artista": "Daniel Bandeira & Juliano Dornelles",
+            "obra": "Propriedade (2022, Boulevard Filmes)",
+            "ano": "2022",
+            "capa": "capas/b4482b10fb5470e09eaac3bdfd3b51f2.jpg",
+            "como_influenciou": "Discípulos e colaboradores diretos de Kleber, levaram o suspense de cerco e invasão a um nível de radicalismo e crueza que debate diretamente com as tensões de classe de O Som ao Redor e Bacurau.",
+            "link": "https://www.justwatch.com/br/filme/propriedade"
+          },
+          {
+            "artista": "Mati Diop",
+            "obra": "Atlantique (2019, Netflix)",
+            "ano": "2019",
+            "capa": "capas/aefe0eff50982ff1213db14f3921bbca.jpg",
+            "como_influenciou": "A cineasta franco-senegalesa opera exatamente na mesma frequência estética de Kleber, utilizando o elemento fantasmagórico dos operários mortos para assombrar as torres espelhadas e canteiros de luxo em Dacar.",
+            "link": "https://www.justwatch.com/br/filme/atlantique"
+          }
+        ]
+      }
     }
   },
   "cine_itens": {
@@ -10859,7 +11065,8 @@
           "genero": "thriller político",
           "imdb": "tt27847051",
           "onde": "Estação Net Botafogo (Rua Voluntários da Pátria, 88)",
-          "nota": "Ver numa sala de rua com plateia atenta potencializa cada detalhe sonoro e tensão política da obra."
+          "nota": "Ver numa sala de rua com plateia atenta potencializa cada detalhe sonoro e tensão política da obra.",
+          "capa": "capas/80f7bcf7cc4ad62fd5f59453751cffd4.jpg"
         },
         {
           "titulo": "Festival de Cinema Italiano no CCBB",
@@ -10867,7 +11074,8 @@
           "ano": 2026,
           "genero": "clássicos e inéditos",
           "onde": "CCBB Rio (Rua Primeiro de Março, 66)",
-          "nota": "Ingressos a R$ 10 para ver cópias restauradas do neorrealismo e novas vozes do cinema peninsular."
+          "nota": "Ingressos a R$ 10 para ver cópias restauradas do neorrealismo e novas vozes do cinema peninsular.",
+          "capa": "capas/7c032c594ab77668cf59af19cd474b86.jpg"
         },
         {
           "titulo": "Sessão da Meia-Noite no Estação Net",
@@ -10875,7 +11083,8 @@
           "ano": 2026,
           "genero": "cult / meia-noite",
           "onde": "Estação Net Botafogo (Sextas e sábados às 23h59)",
-          "nota": "O mais tradicional programa noturno carioca com clássicos do terror, sci-fi e pós-punk."
+          "nota": "O mais tradicional programa noturno carioca com clássicos do terror, sci-fi e pós-punk.",
+          "capa": "capas/557c7bf59c4063281521ea0dbe57aec0.jpg"
         }
       ]
     },
@@ -11113,7 +11322,89 @@
           "secao": "achados"
         }
       ],
-      "capa": "capas/0920094d7b5de4e9ecf34ff4b4fefa6b.jpg"
+      "capa": "capas/0920094d7b5de4e9ecf34ff4b4fefa6b.jpg",
+      "destaque_autor": {
+        "autor": "Merlin Sheldrake",
+        "obra_atual": "A Trama da Vida: Como os Fungos Constroem Nossos Mundos (Fittipaldi / Edição Revista 2026)",
+        "subtitulo": "A biologia como literatura maior: como o micologista de Cambridge implodiu o individualismo cartesiano e reescreveu a história natural contemporânea",
+        "ensaio": [
+          "Na tradição da ciência ocidental, há uma linhagem nobre e rara de pesquisadores que se recusam a trancar suas descobertas em jargões herméticos: de Alexander von Humboldt a Stephen Jay Gould, passando por Rachel Carson, Primo Levi e Oliver Sacks. Merlin Sheldrake, botânico e micologista doutor por Cambridge com anos de pesquisa de campo no Smithsonian Tropical Research Institute nas florestas do Panamá, é o herdeiro supremo dessa linhagem no século XXI. Sua prosa tem a precisão cirúrgica de quem analisa cromatografias gasosas e microscopia de fluorescência confocal, mas pulsa com a sensibilidade filosófica e o encantamento poético de um grande ensaísta lírico.",
+          "A grande revolução teórica e estética de A Trama da Vida é demonstrar que a ideia ocidental de indivíduo biológico autônomo e isolado é uma ficção insustentável. Todos os organismos — de árvores milenares ao corpo humano — são quimeras biológicas, simbioses ambulantes e redes dinâmicas de microrganismos e fungos em contínua negociação metabólica. Inspirado pelas teses pioneiras de Lynn Margulis sobre a simbiogênese, Sheldrake argumenta que a evolução não é uma arena hobbesiana de guerra cega de todos contra todos, mas uma sofisticada coreografia de cooperação metabólica, onde a imunidade treinada e as redes micorrízicas garantem a sobrevivência mútua.",
+          "Ao descrever o micélio — a teia subterrânea de hifas fúngicas que interliga os sistemas radiculares de florestas inteiras —, Sheldrake oferece uma nova gramática para pensar a cognição e a decisão ecológica. Sem cérebro, sem órgãos centrais e sem comando único, os fungos respondem a estímulos químicos, resolvem labirintos espaciais, distribuem fósforo e carbono de árvores abastadas para mudas na sombra e orquestram a decomposição e a fertilidade de toda a biosfera. O livro força o leitor a um exercício de descentralização radical: abandonar o antropocentrismo arrogante e admitir que o planeta é gerido há mais de um bilhão de anos por inteligências filamentosas invisíveis aos nossos olhos.",
+          "A ressonância monumental de A Trama da Vida ultrapassou os círculos científicos para transformar a filosofia da mente, a teoria política e a literatura de não ficção. Sheldrake não escreve sobre a natureza como um espetáculo externo a ser contemplado ou explorado: ele nos devolve à nossa condição de participantes de um metabolismo planetário comum. Uma obra seminal que educa o olhar, afia a sensibilidade cívica e oferece o melhor antídoto intelectual contra a destruição cega dos biomas da Terra."
+        ],
+        "obras_essenciais": [
+          {
+            "titulo": "A Trama da Vida",
+            "ano": "2020 / 2026",
+            "formato": "Ensaio científico (384 págs.)",
+            "capa": "capas/1dcdab18f72f85a8d1c6627d73f5aeae.jpg",
+            "por_que_ler": "A obra-prima que venceu o Royal Society Science Book Prize e redefiniu a micologia como centro nervoso da ecologia contemporânea; essencial para biólogos, filósofos e leitores da grande prosa.",
+            "link": "https://www.amazon.com.br/dp/8554126922"
+          },
+          {
+            "titulo": "Microcosmos: Quatro Bilhões de Anos de Evolução Microbiana",
+            "ano": "1986",
+            "formato": "Ensaio de biologia (320 págs.)",
+            "projeto": "Lynn Margulis & Dorion Sagan",
+            "capa": "capas/f12d799994d3556f427cea8a01d6c019.jpg",
+            "por_que_ler": "O texto fundacional indispensável sobre a simbiose e a origem bacteriana das células eucarióticas, leitura seminal que moldou a formação teórica e a visão de mundo de Sheldrake.",
+            "link": "https://www.amazon.com.br/s?k=Microcosmos+Lynn+Margulis"
+          },
+          {
+            "titulo": "A Vida das Plantas: Uma Metafísica da Mistura",
+            "ano": "2018",
+            "formato": "Filosofia da natureza (192 págs.)",
+            "projeto": "Emanuele Coccia",
+            "capa": "capas/156520b9505c9fdc7e46555ef3d345fb.jpg",
+            "por_que_ler": "Obra brilhante de filosofia ecológica que investiga a respiração, a fotossíntese e a imersão ontológica dos seres vivos no mundo vegetal, dialogando diretamente com a teia fúngica.",
+            "link": "https://www.amazon.com.br/dp/8569430154"
+          },
+          {
+            "titulo": "O Cogumelo no Fim do Mundo",
+            "ano": "2015",
+            "formato": "Antropologia ecológica (432 págs.)",
+            "projeto": "Anna Lowenhaupt Tsing",
+            "capa": "capas/325a695ebe4be3d3f1e7827a76bd7615.jpg",
+            "por_que_ler": "Ensaio antropológico e ecológico magistral sobre o cogumelo matsutake e a sobrevivência coletiva em paisagens devastadas pelo capitalismo predatório.",
+            "link": "https://www.amazon.com.br/dp/8566970425"
+          }
+        ],
+        "influenciados_e_dialogos": [
+          {
+            "artista": "Ed Yong",
+            "obra": "Um Mundo Imenso (2022, Intrínseca)",
+            "ano": "2022",
+            "capa": "capas/3b35ef4d09fc16c2bca8c2eef883ecc1.jpg",
+            "como_influenciou": "O sucesso retumbante de Sheldrake abriu caminho no mercado editorial para a ciência de desantropocentrização radical, onde a prosa se curva à imensidão dos sentidos não-humanos (eletropercepção, magnetismo, ecolocalização).",
+            "link": "https://www.amazon.com.br/dp/6555606019"
+          },
+          {
+            "artista": "Robin Wall Kimmerer",
+            "obra": "Trançando Grama Sagrada (2020, Roça Nova)",
+            "ano": "2020",
+            "capa": "capas/d5ff691d5436465c2b19caaad29bce93.jpg",
+            "como_influenciou": "A botânica indígena americana estabelece com Sheldrake um diálogo fecundo sobre reciprocidade ecológica: a ciência molecular de ponta e a sabedoria ancestral convergem para a mesma verdade de interdependência vital.",
+            "link": "https://www.amazon.com.br/dp/6586860293"
+          },
+          {
+            "artista": "Suzanne Simard",
+            "obra": "Em Busca da Árvore-Mãe (2021, Zahar)",
+            "ano": "2021",
+            "capa": "capas/2d12aa1ead8a671a740aab9486f26883.jpg",
+            "como_influenciou": "A ecóloga canadense que comprovou experimentalmente a transferência de carbono entre árvores via redes fúngicas; seu trabalho de campo e a síntese teórica de Sheldrake formam os dois pilares da moderna revolução florestal.",
+            "link": "https://www.amazon.com.br/dp/8537819582"
+          },
+          {
+            "artista": "Ailton Krenak",
+            "obra": "A Vida Não É Útil (2020, Companhia das Letras)",
+            "ano": "2020",
+            "capa": "capas/3889a9e8a3f3377b64dad8542e582b8b.jpg",
+            "como_influenciou": "A premissa ameríndia de que as montanhas, os rios e o subsolo são parentes vivos e conscientes encontra na biologia relacional de Sheldrake a sua mais sólida e comovente validação científica e filosófica.",
+            "link": "https://www.amazon.com.br/dp/853593368X"
+          }
+        ]
+      }
     }
   },
   "livro_itens": {
@@ -12581,7 +12872,8 @@
           "ano": 2021,
           "genero": "micologia e redes ecológicas",
           "onde": "Editora Fósforo",
-          "nota": "Uma viagem fascinante pela inteligência das redes fúngicas subterrâneas."
+          "nota": "Uma viagem fascinante pela inteligência das redes fúngicas subterrâneas.",
+          "capa": "capas/0920094d7b5de4e9ecf34ff4b4fefa6b.jpg"
         },
         {
           "titulo": "O Homem Que Confundiu Sua Mulher Com um Chapéu",
@@ -12589,7 +12881,8 @@
           "ano": 1985,
           "genero": "neurociência e ensaio humano",
           "onde": "Companhia das Letras",
-          "nota": "O livro basilar sobre a fragilidade e a beleza da mente humana."
+          "nota": "O livro basilar sobre a fragilidade e a beleza da mente humana.",
+          "capa": "capas/6fe6f3da89578f998560cdadb35c5b48.jpg"
         },
         {
           "titulo": "A Montanha Viva",
@@ -12597,7 +12890,8 @@
           "ano": 1977,
           "genero": "observação naturalista e montanhismo",
           "onde": "Cosac Naify / Ubu",
-          "nota": "O relato sensorial definitivo sobre caminhar e contemplar o platô escocês."
+          "nota": "O relato sensorial definitivo sobre caminhar e contemplar o platô escocês.",
+          "capa": "capas/c0808ffda3e8073e09113239c2021f02.jpg"
         }
       ]
     },

@@ -916,6 +916,55 @@ dialog.leitura::backdrop { background: var(--backdrop); }
   .spread .wrap > :first-child { position: sticky; top: 132px; align-self: start; }
 }
 
+/* Grande Destaque do Mês · Retrato de Autor */
+.bloco-autor-destaque {
+  margin-block: 44px 36px;
+  padding: 38px 0;
+  border-top: 2px solid var(--rule);
+  border-bottom: 2px solid var(--rule);
+  background: var(--card);
+}
+.ad-header { margin-bottom: 24px; }
+.ad-kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--sec); font-weight: 600; margin-bottom: 10px; }
+.ad-kicker .dot { width: 7px; height: 7px; background: var(--sec); border-radius: 50%; display: inline-block; }
+.ad-titulo { font-family: var(--f-display); font-size: clamp(28px, 4vw, 40px); line-height: 1.1; font-weight: 700; margin: 0 0 6px; letter-spacing: -0.02em; }
+.ad-projeto { font-family: var(--f-display); font-weight: 400; color: var(--muted); font-size: .85em; }
+.ad-obra-atual { font-size: 13px; color: var(--sec); margin-bottom: 12px; font-weight: 600; }
+.ad-subtitulo { font-family: var(--f-body); font-size: 19px; line-height: 1.4; color: var(--ink); font-style: italic; max-width: 860px; margin: 0 0 20px; }
+.ad-ensaio { font-family: var(--f-body); font-size: 16px; line-height: 1.68; color: var(--ink); column-count: 2; column-gap: 36px; margin-bottom: 32px; text-align: justify; }
+.ad-ensaio p { margin: 0 0 16px; text-indent: 1.5em; }
+.ad-ensaio p:first-child { text-indent: 0; }
+.ad-ensaio p:first-child::first-letter { font-family: var(--f-display); font-size: 3.2em; float: left; line-height: .8; margin: 4px 8px 0 0; color: var(--sec); font-weight: 700; }
+.ad-sec-divider { border: 0; border-top: 1px dashed var(--rule); margin: 32px 0 24px; }
+.ad-sec-head { margin-bottom: 18px; }
+.ad-sec-head h3 { font-family: var(--f-display); font-size: 19px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 4px; text-transform: uppercase; }
+.ad-sec-head p { font-size: 13.5px; color: var(--muted); margin: 0; }
+.ad-grid-obras { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-bottom: 8px; }
+.ad-card-obra { background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 14px; display: flex; flex-direction: column; gap: 8px; transition: transform .15s ease, box-shadow .15s ease; }
+.ad-card-obra:hover { transform: translateY(-2px); box-shadow: 0 4px 12px var(--shadow-2); }
+.ad-card-capa-wrap { width: 100%; aspect-ratio: 1; overflow: hidden; border-radius: 2px; background: var(--band); display: flex; align-items: center; justify-content: center; }
+.ad-card-capa-wrap.poster { aspect-ratio: 2 / 3; }
+.ad-card-capa-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ad-card-capa-wrap .ph { width: 100%; height: 100%; }
+.ad-card-meta { font-size: 11px; color: var(--sec); text-transform: uppercase; letter-spacing: .04em; }
+.ad-card-titulo { font-family: var(--f-display); font-size: 15px; font-weight: 700; line-height: 1.25; margin: 0; }
+.ad-card-ano { font-weight: normal; color: var(--muted); font-size: 12.5px; }
+.ad-card-razao { font-size: 13px; line-height: 1.45; color: var(--ink); margin: 0; flex-grow: 1; }
+.ad-como-inf { background: rgba(0, 0, 0, .03); border-left: 3px solid var(--sec); padding: 8px 10px; margin-top: 4px; border-radius: 0 3px 3px 0; flex-grow: 1; }
+[data-theme="dark"] .ad-como-inf, :root:not([data-theme="light"]) .ad-como-inf { background: rgba(255, 255, 255, .04); }
+.ad-como-tag { display: block; font-size: 10px; font-weight: 700; letter-spacing: .06em; color: var(--sec); margin-bottom: 4px; }
+.ad-como-inf p { font-size: 12px; line-height: 1.42; color: var(--ink); margin: 0; }
+.ad-card-acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: auto; padding-top: 6px; }
+.ad-btn-link { display: inline-flex; align-items: center; justify-content: center; gap: 5px; font-size: 11px; padding: 5px 9px; background: var(--card); color: var(--ink); border: 1px solid var(--rule); border-radius: 3px; text-decoration: none; font-weight: 500; transition: all .15s ease; }
+.ad-btn-link:hover { background: var(--sec-f); color: var(--on-sec); border-color: var(--sec-f); }
+@media (max-width: 900px) {
+  .ad-ensaio { column-count: 1; }
+  .ad-grid-obras { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .ad-grid-obras { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* States & footer */
 .estado { padding-block: calc(var(--sp-4) * 2); text-align: left; }
 .estado h3 { font: 900 44px/.95 var(--f-display); font-stretch: 62%; text-transform: lowercase; margin: 0 0 var(--sp-2); }
@@ -1493,6 +1542,75 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         h("div", { class: "art" }, (Array.isArray(c.artistas) ? c.artistas : []).map(str).join(" · "))))),
       Array.isArray(ed.habitos) && ed.habitos.length ? h("ul", { class: "habitos" }, ed.habitos.map((x) => h("li", null, h("span", { class: "dot", "aria-hidden": "true" }), str(x)))) : null,
       ed.fontes_perfil ? h("p", { class: "fonte-nota" }, str(ed.fontes_perfil)) : null));
+  }
+
+  function blocoAutorDestaque(ed, categoria) {
+    const ad = ed?.destaque_autor;
+    if (!ad) return null;
+    const nomeAutor = str(ad.artista || ad.autor);
+    const isPoster = categoria === "cinema" || categoria === "livros";
+    const tipo = categoria === "cinema" ? "filme" : categoria === "livros" ? "livro" : "disco";
+
+    const essenciais = arr(ad.obras_essenciais).map((o) => {
+      const linkSpotify = o.spotify_url ? h("a", { class: "ad-btn-link mono", href: o.spotify_url, target: "_blank", rel: "noopener" }, "Spotify ↗") : null;
+      const linkYt = categoria === "musica" ? h("a", { class: "ad-btn-link mono", href: `https://music.youtube.com/search?q=${encodeURIComponent((o.projeto || nomeAutor) + " " + o.titulo)}`, target: "_blank", rel: "noopener" }, "YT Music ↗") : null;
+      const btnStremio = categoria === "cinema" ? botaoStremio({ titulo: o.titulo, tipo: "filme", imdb: o.imdb }) : null;
+      const linkJustWatch = categoria === "cinema" && !btnStremio ? h("a", { class: "ad-btn-link mono", href: o.link || `https://www.justwatch.com/br/busca?q=${encodeURIComponent(o.titulo)}`, target: "_blank", rel: "noopener" }, "Onde Assistir ↗") : null;
+      const linkLivro = categoria === "livros" ? h("a", { class: "ad-btn-link mono", href: o.link || `https://www.google.com/search?q=${encodeURIComponent(o.titulo + " " + nomeAutor)}`, target: "_blank", rel: "noopener" }, "Buscar Livro ↗") : null;
+
+      const cap = capa({ capa: o.capa, album: o.titulo, artista: o.projeto || nomeAutor, _tipo: tipo });
+      return h("article", { class: "ad-card-obra" },
+        h("div", { class: `ad-card-capa-wrap${isPoster ? " poster" : ""}` }, cap),
+        h("div", { class: "ad-card-meta mono" }, [o.projeto, o.formato].map(str).filter(Boolean).join(" · ")),
+        h("h4", { class: "ad-card-titulo" }, str(o.titulo), o.ano ? h("span", { class: "mono ad-card-ano" }, ` (${str(o.ano)})`) : null),
+        h("p", { class: "ad-card-razao" }, str(o.por_que_ouvir || o.por_que_ver || o.por_que_ler)),
+        h("div", { class: "ad-card-acts" }, linkSpotify, linkYt, btnStremio, linkJustWatch, linkLivro)
+      );
+    });
+
+    const influencias = arr(ad.influenciados_e_dialogos).map((i) => {
+      const art = str(i.artista || i.autor);
+      const linkSpotify = i.spotify_url ? h("a", { class: "ad-btn-link mono", href: i.spotify_url, target: "_blank", rel: "noopener" }, "Spotify ↗") : null;
+      const linkYt = categoria === "musica" ? h("a", { class: "ad-btn-link mono", href: `https://music.youtube.com/search?q=${encodeURIComponent(art + " " + i.obra)}`, target: "_blank", rel: "noopener" }, "YT Music ↗") : null;
+      const btnStremio = categoria === "cinema" ? botaoStremio({ titulo: i.obra, tipo: "filme", imdb: i.imdb }) : null;
+      const linkJustWatch = categoria === "cinema" && !btnStremio ? h("a", { class: "ad-btn-link mono", href: i.link || `https://www.justwatch.com/br/busca?q=${encodeURIComponent(i.obra)}`, target: "_blank", rel: "noopener" }, "Ver Obra ↗") : null;
+      const linkLivro = categoria === "livros" ? h("a", { class: "ad-btn-link mono", href: i.link || `https://www.google.com/search?q=${encodeURIComponent(i.obra + " " + art)}`, target: "_blank", rel: "noopener" }, "Buscar Livro ↗") : null;
+
+      const cap = capa({ capa: i.capa, album: i.obra, artista: art, _tipo: tipo });
+      return h("article", { class: "ad-card-obra" },
+        h("div", { class: `ad-card-capa-wrap${isPoster ? " poster" : ""}` }, cap),
+        h("h4", { class: "ad-card-titulo" }, art, " — ", h("em", null, str(i.obra)), i.ano ? h("span", { class: "mono ad-card-ano" }, ` (${str(i.ano)})`) : null),
+        h("div", { class: "ad-como-inf" },
+          h("span", { class: "ad-como-tag mono" }, "COMO FOI INFLUENCIADO"),
+          h("p", null, str(i.como_influenciou))
+        ),
+        h("div", { class: "ad-card-acts" }, linkSpotify, linkYt, btnStremio, linkJustWatch, linkLivro)
+      );
+    });
+
+    return h("section", { class: "bloco-autor-destaque", id: `destaque-autor-${categoria}` },
+      h("div", { class: "wrap" },
+        h("div", { class: "ad-header" },
+          h("div", { class: "ad-kicker mono" }, h("span", { class: "dot" }), "Grande Destaque do Mês · Retrato de Autor"),
+          h("h2", { class: "ad-titulo" }, nomeAutor, ad.projeto ? h("span", { class: "ad-projeto" }, ` / ${str(ad.projeto)}`) : null),
+          ad.obra_atual ? h("div", { class: "ad-obra-atual mono" }, `Obra em foco: ${str(ad.obra_atual)}`) : null,
+          ad.subtitulo ? h("p", { class: "ad-subtitulo" }, str(ad.subtitulo)) : null
+        ),
+        arr(ad.ensaio).length ? h("div", { class: "ad-ensaio" }, arr(ad.ensaio).map((p) => h("p", null, str(p)))) : null,
+        h("hr", { class: "ad-sec-divider" }),
+        h("div", { class: "ad-sec-head" },
+          h("h3", null, "Para mergulhar na obra · Catálogo essencial"),
+          h("p", null, "Títulos fundamentais para compreender a trajetória e a linguagem estética do autor.")
+        ),
+        h("div", { class: "ad-grid-obras" }, ...essenciais),
+        h("hr", { class: "ad-sec-divider" }),
+        h("div", { class: "ad-sec-head" },
+          h("h3", null, "Árvore de influências & diálogos"),
+          h("p", null, "Artistas e obras contemporâneas que beberam dessa fonte — com análise técnica e conceitual de como foram influenciados.")
+        ),
+        h("div", { class: "ad-grid-obras" }, ...influencias)
+      )
+    );
   }
 
   function listaFila() {
@@ -2082,6 +2200,9 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         }
       }
       if (dest) nT++;
+      if (ed.destaque_autor) {
+        toc.push({ n: "★", titulo: `Retrato: ${str(ed.destaque_autor.artista || ed.destaque_autor.autor)}`, id: `destaque-autor-${cfg.nome}` });
+      }
       const nomeObra = cfg.nome === "livros" ? ["livro", "livros"] : ["título", "títulos"];
       partes.push(banner({ nome: cfg.nome, numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc,
         stats: [plural(nT, ...nomeObra), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
@@ -2098,6 +2219,8 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         dest.texto ? h("p", { class: "txt", style: "margin:0 0 14px" }, str(dest.texto)) : null,
         h("div", { class: "acts", style: "gap:14px 20px" }, h("button", { class: "ler", type: "button", onclick: () => abrirLeitura(dest._id) }, `${cfg.ler} de capa`), botaoTrailer(dest), botaoStremio(dest), marcas(dest._id, cfg.rot)),
         sel ? h("div", { style: "margin-top:16px" }, sel) : null)));
+    const ad = blocoAutorDestaque(ed, cfg.nome);
+    if (ad) partes.push(ad);
     let n = 0;
     for (const b of arr(ed.layout)) {
       if (b.tipo === "secao") {
@@ -3316,12 +3439,16 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         }
       }
       if (destaque) nD++;
+      if (ed.destaque_autor) {
+        toc.push({ n: "★", titulo: `Retrato: ${str(ed.destaque_autor.artista || ed.destaque_autor.autor)}`, id: "destaque-autor-musica" });
+      }
       main.append(banner({ nome: "música", numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc, quadrado: true, playlist: ed.playlist,
         stats: [plural(nD, "disco", "discos"), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
       const pl = blocoPlaylistMes(ed, itensEd, guiasEd, false);
       if (pl) main.append(pl);
       const c = blocoCapa(ed, destaque); if (c) main.append(c);
       const p = blocoPerfil(ed); if (p) main.append(p);
+      const ad = blocoAutorDestaque(ed, "musica"); if (ad) main.append(ad);
     }
     let n = 0;
     for (const bloco of layout) {
