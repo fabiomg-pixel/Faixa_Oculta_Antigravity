@@ -55,7 +55,149 @@ def montar_cultura_novembro_2026():
             {"tipo": "secao", "secao": "brasil"},
             {"tipo": "guia", "id": "guia-vanguarda-paulista-carioca-2026"},
             {"tipo": "secao", "secao": "breve"}
-        ]
+        ],
+        "playlist": {
+            "titulo": "Playlist do Mês · Novembro 2026",
+            "subtitulo": "Todos os 11 álbuns recomendados da edição organizados em sequência contínua para sua audição.",
+            "url": "https://open.spotify.com/search/MJ%20Lenderman%20Dry%20Cleaning%20Fontaines%20DC%20Ana%20Frango%20Eletrico",
+            "url_spotify": "https://open.spotify.com/search/MJ%20Lenderman%20Dry%20Cleaning%20Fontaines%20DC%20Ana%20Frango%20Eletrico",
+            "url_yt": "https://music.youtube.com/search?q=MJ+Lenderman+Manning+Fireworks+Dry+Cleaning+Fontaines+DC",
+            "faixas_total": 11,
+            "albuns": [
+                {
+                    "ordem": 1,
+                    "artista": "MJ Lenderman",
+                    "album": "Manning Fireworks",
+                    "ano": 2024,
+                    "genero": "indie rock / alt-country",
+                    "secao": "radar",
+                    "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+                    "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf",
+                    "youtube_url": "https://music.youtube.com/search?q=MJ+Lenderman+Manning+Fireworks",
+                    "olho": "Guitarras cruas, lirismo agridoce e o pulso mais autêntico do indie americano."
+                },
+                {
+                    "ordem": 2,
+                    "artista": "Dry Cleaning",
+                    "album": "New Long Walk",
+                    "ano": 2026,
+                    "genero": "pós-punk / spoken word / art-rock",
+                    "secao": "radar",
+                    "spotify_id": "2I0gIu10p9l6B5zF46H9Vw",
+                    "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw",
+                    "youtube_url": "https://music.youtube.com/search?q=Dry+Cleaning+New+Long+Walk",
+                    "olho": "Baixo cortante e a poesia sarcástica e hipnótica de Florence Shaw."
+                },
+                {
+                    "ordem": 3,
+                    "artista": "Whitelands",
+                    "album": "Sun-Bleached Noise",
+                    "ano": 2026,
+                    "genero": "shoegaze / dream-pop",
+                    "secao": "descobertas",
+                    "spotify_id": "4vS4V9JtZtWj8x3J7xG4tD",
+                    "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD",
+                    "youtube_url": "https://music.youtube.com/search?q=Whitelands+Sun-Bleached+Noise",
+                    "olho": "Paredes de som em reverb com melodias ensolaradas e sensibilidade londrina."
+                },
+                {
+                    "ordem": 4,
+                    "artista": "Juçara Marçal & Thais Nicodemo",
+                    "album": "Caderno de Composição",
+                    "ano": 2026,
+                    "genero": "vanguarda paulista / canção",
+                    "secao": "brasil",
+                    "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
+                    "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y",
+                    "youtube_url": "https://music.youtube.com/search?q=Jucara+Marcal+Caderno+de+Composicao",
+                    "olho": "Voz vulcânica e piano contemporâneo reinventando canções raras."
+                },
+                {
+                    "ordem": 5,
+                    "artista": "Ana Frango Elétrico",
+                    "album": "Me Chama de Gato Que Eu Sou Sua",
+                    "ano": 2025,
+                    "genero": "boogie carioca / sophisti-pop",
+                    "secao": "brasil",
+                    "spotify_id": "1B2u3vj33ZpE73v8t0Nnhz",
+                    "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz",
+                    "youtube_url": "https://music.youtube.com/search?q=Ana+Frango+Eletrico+Me+Chama+de+Gato",
+                    "olho": "Groove setentista sofisticado, metais vibrantes e lirismo carioca."
+                },
+                {
+                    "ordem": 6,
+                    "artista": "Fontaines D.C.",
+                    "album": "Romance",
+                    "ano": 2024,
+                    "genero": "pós-punk / rock alternativo",
+                    "secao": "breve",
+                    "spotify_id": "3b9Q2z6w41A1aGv7q65w8X",
+                    "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X",
+                    "youtube_url": "https://music.youtube.com/search?q=Fontaines+DC+Romance",
+                    "olho": "Fúria melódica irlandesa em roupagem sombria e cinematográfica dos anos 90."
+                },
+                {
+                    "ordem": 7,
+                    "artista": "Geese",
+                    "album": "3D Country",
+                    "ano": 2023,
+                    "genero": "art-punk / blues-rock",
+                    "secao": "guia: guitarras",
+                    "spotify_id": "4VqF3tU3Fw3k6nO0Lz2j9n",
+                    "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n",
+                    "youtube_url": "https://music.youtube.com/search?q=Geese+3D+Country",
+                    "olho": "Energia maníaca novaiorquina e vocais teatrais à la New York pós-punk."
+                },
+                {
+                    "ordem": 8,
+                    "artista": "Wednesday",
+                    "album": "Rat Saw God",
+                    "ano": 2023,
+                    "genero": "indie rock / noise country",
+                    "secao": "guia: guitarras",
+                    "spotify_id": "3X0J476j8P7rO1tL452e82",
+                    "spotify_url": "https://open.spotify.com/album/3X0J476j8P7rO1tL452e82",
+                    "youtube_url": "https://music.youtube.com/search?q=Wednesday+Rat+Saw+God",
+                    "olho": "Histórias do sul dos EUA banhadas em feedback e ternura."
+                },
+                {
+                    "ordem": 9,
+                    "artista": "Slowdive",
+                    "album": "everything is alive",
+                    "ano": 2023,
+                    "genero": "ambient shoegaze",
+                    "secao": "guia: shoegaze",
+                    "spotify_id": "2jSmcj39eQiU76EbMGuxS0",
+                    "spotify_url": "https://open.spotify.com/album/2jSmcj39eQiU76EbMGuxS0",
+                    "youtube_url": "https://music.youtube.com/search?q=Slowdive+everything+is+alive",
+                    "olho": "A precisão etérea e maturidade sônica dos arquitetos do shoegaze."
+                },
+                {
+                    "ordem": 10,
+                    "artista": "Luster",
+                    "album": "Dopamine",
+                    "ano": 2025,
+                    "genero": "heavy shoegaze / post-metal",
+                    "secao": "guia: shoegaze",
+                    "spotify_id": "3zfsWFbljQ6492MifzXSDR",
+                    "spotify_url": "https://open.spotify.com/album/3zfsWFbljQ6492MifzXSDR",
+                    "youtube_url": "https://music.youtube.com/search?q=Luster+Dopamine",
+                    "olho": "Riffs colossais com afinações graves e dinâmica hipnótica."
+                },
+                {
+                    "ordem": 11,
+                    "artista": "Negro Léo",
+                    "album": "Desejo do Labirinto",
+                    "ano": 2024,
+                    "genero": "free funk / canção torta",
+                    "secao": "guia: vanguarda",
+                    "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
+                    "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6",
+                    "youtube_url": "https://music.youtube.com/search?q=Negro+Leo+Desejo+do+Labirinto",
+                    "olho": "O pensador mais iconoclasta da canção contemporânea no Rio."
+                }
+            ]
+        }
     }
 
     musica_itens = {
@@ -69,6 +211,9 @@ def montar_cultura_novembro_2026():
             "album": "Manning Fireworks",
             "ano": 2024,
             "genero": "indie rock / alt-country",
+            "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+            "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf",
+            "youtube_url": "https://music.youtube.com/search?q=MJ+Lenderman+Manning+Fireworks",
             "olho": "Guitarras cruas, lirismo agridoce e refrões tortos que confirmam o compositor da Carolina do Norte como a voz mais singular do indie rock americano contemporâneo.",
             "texto": "Com Manning Fireworks, MJ Lenderman (também guitarrista do Wednesday) equilibra com precisão rara o humor autodepreciativo, a vulnerabilidade e os amplificadores valvulados no limite do feedback. Cada faixa parece uma história curta contada no balcão de um bar esquecido de beira de estrada.",
             "faixas": ["Manning Fireworks", "Joker Lips", "Wristwatch", "She's Leaving You", "Bark at the Moon"],
@@ -83,6 +228,9 @@ def montar_cultura_novembro_2026():
             "album": "New Long Walk",
             "ano": 2026,
             "genero": "pós-punk / spoken word / art-rock",
+            "spotify_id": "2I0gIu10p9l6B5zF46H9Vw",
+            "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw",
+            "youtube_url": "https://music.youtube.com/search?q=Dry+Cleaning+New+Long+Walk",
             "olho": "O quarteto do sul de Londres afia ainda mais suas linhas de baixo elásticas e guitarras cortantes em diálogo com a voz inexpressiva e hipnótica de Florence Shaw.",
             "texto": "Registrado com produção analógica, New Long Walk transforma o tédio urbano e os fragmentos de conversas cotidianas em crônicas de absurdo e elegância. O diálogo entre a rítmica marcial de Tom Dowse e os devaneios de Florence cria uma tensão viciante do início ao fim.",
             "faixas": ["Gary Ashby", "Anna Calls From the Arctic", "Don't Press Me", "Hot Penny Day"],
@@ -97,6 +245,9 @@ def montar_cultura_novembro_2026():
             "album": "Sun-Bleached Noise",
             "ano": 2026,
             "genero": "shoegaze / dream-pop / ethereal wave",
+            "spotify_id": "4vS4V9JtZtWj8x3J7xG4tD",
+            "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD",
+            "youtube_url": "https://music.youtube.com/search?q=Whitelands+Sun-Bleached+Noise",
             "olho": "Camadas espessas de chorus e distorção com sensibilidade pop luminosa na melhor tradição de Cocteau Twins e Slowdive.",
             "texto": "Formado em Londres, o Whitelands injeta frescor e diversidade na cena shoegaze britânica. Suas canções flutuam entre o peso físico das guitarras e harmonias vocais etéreas que envolvem o ouvinte sem sufocar.",
             "faixas": ["Setting Sun", "The Prophet & I", "Tell Me About It", "Cheer"],
@@ -111,6 +262,9 @@ def montar_cultura_novembro_2026():
             "album": "Caderno de Composição",
             "ano": 2026,
             "genero": "vanguarda paulista / canção contemporânea",
+            "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
+            "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y",
+            "youtube_url": "https://music.youtube.com/search?q=Jucara+Marcal+Caderno+de+Composicao",
             "olho": "Voz e piano despontam como forças vulcânicas recriando canções raras de Itamar Assumpção, Negro Léo e temas autorais.",
             "texto": "Um dos registros mais densos e comoventes da música brasileira em 2026. A pianista Thais Nicodemo explora técnicas estendidas e harmonias arrojadas enquanto Juçara imprime a dramaticidade cortante que a consagrou no Metá Metá.",
             "faixas": ["Sem Nome", "Ladeira da Memória", "Fogo no Prato", "Canto Noturno"],
@@ -125,6 +279,9 @@ def montar_cultura_novembro_2026():
             "album": "Me Chama de Gato Que Eu Sou Sua (Edição Expandida)",
             "ano": 2025,
             "genero": "boogie carioca / sophisti-pop / indie MPB",
+            "spotify_id": "1B2u3vj33ZpE73v8t0Nnhz",
+            "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz",
+            "youtube_url": "https://music.youtube.com/search?q=Ana+Frango+Eletrico+Me+Chama+de+Gato",
             "olho": "Metais aveludados, groove dos anos 70 e ironia carioca em arranjos que dialogam com Marcos Valle e Steely Dan.",
             "texto": "Após turnês consagradas na Europa e no Japão, a multi-instrumentista carioca apresenta novas versões ao vivo gravadas no Rio de Janeiro, reafirmando seu papel como uma das produtoras e compositoras mais brilhantes da sua geração.",
             "faixas": ["Electric Fish", "Dela", "Boy of Bebop", "Insista em Mim", "Camelo Azul"],
@@ -139,6 +296,9 @@ def montar_cultura_novembro_2026():
             "album": "Romance",
             "ano": 2024,
             "genero": "pós-punk / rock alternativo",
+            "spotify_id": "3b9Q2z6w41A1aGv7q65w8X",
+            "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X",
+            "youtube_url": "https://music.youtube.com/search?q=Fontaines+DC+Romance",
             "olho": "Os dublinenses abraçam a grandiosidade sombria do rock dos anos 90 sem perder a fúria poética de Grian Chatten.",
             "texto": "Produzido por James Ford, Romance expande o território sônico da banda para territórios industriais, trip-hop e grunge apocalíptico.",
             "faixas": ["Starburster", "Favourite", "Here's the Thing", "In the Modern World"],
@@ -159,6 +319,9 @@ def montar_cultura_novembro_2026():
                     "album": "Manning Fireworks",
                     "ano": 2024,
                     "estilo": "alt-country / garage",
+                    "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
+                    "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf",
+                    "youtube_url": "https://music.youtube.com/search?q=MJ+Lenderman+Manning+Fireworks",
                     "nota": "O disco que redefiniu a postura das guitarras no indie recente."
                 },
                 {
@@ -166,6 +329,9 @@ def montar_cultura_novembro_2026():
                     "album": "New Long Walk",
                     "ano": 2026,
                     "estilo": "spoken word / pós-punk",
+                    "spotify_id": "2I0gIu10p9l6B5zF46H9Vw",
+                    "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw",
+                    "youtube_url": "https://music.youtube.com/search?q=Dry+Cleaning+New+Long+Walk",
                     "nota": "Linhas de baixo envolventes e poesia mordaz britânica."
                 },
                 {
@@ -173,6 +339,9 @@ def montar_cultura_novembro_2026():
                     "album": "3D Country",
                     "ano": 2023,
                     "estilo": "art-punk / blues-rock",
+                    "spotify_id": "4VqF3tU3Fw3k6nO0Lz2j9n",
+                    "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n",
+                    "youtube_url": "https://music.youtube.com/search?q=Geese+3D+Country",
                     "nota": "Energia maníaca e vocais teatrais à la New York pós-punk."
                 },
                 {
@@ -180,6 +349,9 @@ def montar_cultura_novembro_2026():
                     "album": "Rat Saw God",
                     "ano": 2023,
                     "estilo": "indie rock / noise country",
+                    "spotify_id": "3X0J476j8P7rO1tL452e82",
+                    "spotify_url": "https://open.spotify.com/album/3X0J476j8P7rO1tL452e82",
+                    "youtube_url": "https://music.youtube.com/search?q=Wednesday+Rat+Saw+God",
                     "nota": "Histórias do sul dos EUA banhadas em feedback e ternura."
                 }
             ]
@@ -196,6 +368,9 @@ def montar_cultura_novembro_2026():
                     "album": "Sun-Bleached Noise",
                     "ano": 2026,
                     "estilo": "dream-pop / shoegaze",
+                    "spotify_id": "4vS4V9JtZtWj8x3J7xG4tD",
+                    "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD",
+                    "youtube_url": "https://music.youtube.com/search?q=Whitelands+Sun-Bleached+Noise",
                     "nota": "Canções ensolaradas sob camadas generosas de efeito e eco."
                 },
                 {
@@ -203,6 +378,9 @@ def montar_cultura_novembro_2026():
                     "album": "everything is alive",
                     "ano": 2023,
                     "estilo": "ambient shoegaze",
+                    "spotify_id": "2jSmcj39eQiU76EbMGuxS0",
+                    "spotify_url": "https://open.spotify.com/album/2jSmcj39eQiU76EbMGuxS0",
+                    "youtube_url": "https://music.youtube.com/search?q=Slowdive+everything+is+alive",
                     "nota": "A maturidade impecável dos mestres do gênero."
                 },
                 {
@@ -210,6 +388,9 @@ def montar_cultura_novembro_2026():
                     "album": "Dopamine",
                     "ano": 2025,
                     "estilo": "heavy shoegaze / post-metal",
+                    "spotify_id": "3zfsWFbljQ6492MifzXSDR",
+                    "spotify_url": "https://open.spotify.com/album/3zfsWFbljQ6492MifzXSDR",
+                    "youtube_url": "https://music.youtube.com/search?q=Luster+Dopamine",
                     "nota": "Riffs colossais com afinações graves e dinâmica hipnótica."
                 }
             ]
@@ -226,6 +407,9 @@ def montar_cultura_novembro_2026():
                     "album": "Caderno de Composição",
                     "ano": 2026,
                     "estilo": "vanguarda / canção",
+                    "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
+                    "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y",
+                    "youtube_url": "https://music.youtube.com/search?q=Jucara+Marcal+Caderno+de+Composicao",
                     "nota": "Voz visceral e piano estendido em temas de alta voltagem."
                 },
                 {
@@ -233,6 +417,9 @@ def montar_cultura_novembro_2026():
                     "album": "Me Chama de Gato Que Eu Sou Sua",
                     "ano": 2023,
                     "estilo": "boogie / sophisti-pop",
+                    "spotify_id": "1B2u3vj33ZpE73v8t0Nnhz",
+                    "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz",
+                    "youtube_url": "https://music.youtube.com/search?q=Ana+Frango+Eletrico+Me+Chama+de+Gato",
                     "nota": "Produção sofisticada e exuberância rítmica carioca."
                 },
                 {
@@ -240,6 +427,9 @@ def montar_cultura_novembro_2026():
                     "album": "Desejo do Labirinto",
                     "ano": 2024,
                     "estilo": "free funk / canção torta",
+                    "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
+                    "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6",
+                    "youtube_url": "https://music.youtube.com/search?q=Negro+Leo+Desejo+do+Labirinto",
                     "nota": "O pensador mais iconoclasta da canção contemporânea no Rio."
                 }
             ]
@@ -279,6 +469,7 @@ def montar_cultura_novembro_2026():
             "genero": "thriller político / drama de época",
             "pais": "Brasil / França",
             "tempo": "148 min",
+            "imdb": "tt27847051",
             "olho": "Wagner Moura vive um professor universitário e pesquisador de tecnologia que foge de São Paulo para o Recife em 1977, cercado pela paranoia da ditadura militar.",
             "texto": "Vencedor de direção e atuação em festivais internacionais, o novo longa de Kleber Mendonça Filho é uma aula magna de reconstrução de época e tensão psicológica. Ao focar no ambiente acadêmico e na vigilância cotidiana de vizinhança, o filme constrói uma metáfora cortante sobre as feridas abertas da história brasileira.",
             "onde": "Em cartaz no Estação Net Botafogo, Estação Net Gávea e Reserva Cultural",
@@ -296,6 +487,7 @@ def montar_cultura_novembro_2026():
             "genero": "drama / mistério psicológico",
             "pais": "Alemanha",
             "tempo": "104 min",
+            "imdb": "tt13358590",
             "olho": "Com Paula Beer, Petzold conclui sua trilogia sobre elementos naturais com uma reflexão magnética sobre culpa, reencontros e arquitetura berlinense.",
             "texto": "Filmado com a costumeira economia de gestos e rigor visual de Petzold, Mirrors No. 3 investiga o luto e a farsa das identidades burguesas. Uma obra de câmara que cresce a cada silêncio.",
             "onde": "MUBI / Aluguel digital no Apple TV e Google Play",
@@ -313,6 +505,7 @@ def montar_cultura_novembro_2026():
             "genero": "clássico do Cinema Novo / drama",
             "pais": "Brasil",
             "tempo": "103 min",
+            "imdb": "tt0057654",
             "olho": "A obra-prima baseada em Graciliano Ramos ganha nova vida em restauração fotoquímica e digital supervisionada pela Cinemateca Brasileira.",
             "texto": "A luz estourada de Luiz Carlos Barreto e o som árido dos passos no chão crestado voltam às telas dos cinemas de rua cariocas, reafirmando por que este é um dos pilares estéticos fundamentais da identidade cinematográfica do país.",
             "onde": "Sessões especiais na Cinemateca do MAM e Estação Net Botafogo",
@@ -330,6 +523,7 @@ def montar_cultura_novembro_2026():
             "genero": "minissérie noir / thriller de câmara",
             "pais": "EUA",
             "tempo": "8 episódios (série limitada)",
+            "imdb": "tt11016042",
             "olho": "Fotografia deslumbrante em preto e branco de Robert Elswit e atuação contida de Andrew Scott adaptando o romance clássico de Patricia Highsmith.",
             "texto": "Ao contrário das adaptações solares anteriores, o Ripley de Zaillian é gélido, meticuloso e claustrofóbico. Cada enquadramento parece uma gravura de Caravaggio, transformando a falsificação e o assassinato em estudos de solidão e vaidade.",
             "onde": "Netflix / Disponível em 4K HDR",
@@ -350,6 +544,7 @@ def montar_cultura_novembro_2026():
                     "autor": "Kleber Mendonça Filho",
                     "ano": 2026,
                     "genero": "thriller político",
+                    "imdb": "tt27847051",
                     "onde": "Estação Net Botafogo (Rua Voluntários da Pátria, 88)",
                     "nota": "Ver numa sala de rua com plateia atenta potencializa cada detalhe sonoro e tensão política da obra."
                 },
