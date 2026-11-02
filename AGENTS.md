@@ -37,3 +37,8 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
 
 8. **Boletim em Áudio das Notícias do Dia:**
    - Todo boletim diário deve contar com transcrição em áudio narrado (`tools/gerar_audio_boletim.py`), disponibilizado via player embutido no card `.d-audio-card` e narração integrada via Web Speech API.
+
+9. **Varredura Online Obrigatória e Dados 100% Contemporâneos (Anti-Cutoff):**
+   - É estritamente proibido utilizar a memória interna estática (cutoff 2024) do modelo de IA para inventar ou reciclar safras culturais contemporâneas.
+   - Todo e qualquer filme em cartaz nos cinemas, álbum recém-lançado e livro novo no Brasil DEVE ser apurado através de varredura eficiente online (`tools/varredura_cultural_online.py`, APIs do iTunes, Deezer, Wikipedia e portais de estreias/festivais).
+   - Filmes e obras de safras passadas (ex: 2024) devem figurar em seções de acervo/streaming/achados e NUNCA como 'em cartaz ou estreando nos cinemas' em edições de anos posteriores.

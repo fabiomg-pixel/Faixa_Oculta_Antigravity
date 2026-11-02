@@ -41,12 +41,16 @@ def main():
         executar_script("tools/gerar_audio_boletim.py", extra_args)
     elif rotina == "revista_semana":
         executar_script("tools/revista_semanal.py", extra_args)
-    elif rotina == "cultura_mensal":
+    elif rotina in ("cultura_mensal", "cultura"):
+        executar_script("tools/varredura_cultural_online.py", extra_args)
         executar_script("tools/cultura_mensal.py", extra_args)
+    elif rotina == "varredura":
+        executar_script("tools/varredura_cultural_online.py", extra_args)
     elif rotina == "tudo":
         executar_script("tools/boletim_nuvem.py", extra_args)
         executar_script("tools/gerar_audio_boletim.py", extra_args)
         executar_script("tools/revista_semanal.py", extra_args)
+        executar_script("tools/varredura_cultural_online.py", extra_args)
         executar_script("tools/cultura_mensal.py", extra_args)
     elif rotina == "auto":
         # 1. Boletim Diário roda em todas as chamadas
@@ -61,6 +65,7 @@ def main():
         # 3. Cultura do Mês: Todo dia 01
         if dia_mes == 1:
             log("Dia 01 do mês detectado: atualizando edições de Música, Filmes e Livros...")
+            executar_script("tools/varredura_cultural_online.py", extra_args)
             executar_script("tools/cultura_mensal.py", extra_args)
     else:
         log(f"Rotina desconhecida: '{rotina}'. Executando boletim diário padrão.")

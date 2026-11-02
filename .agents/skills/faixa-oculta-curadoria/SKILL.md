@@ -124,3 +124,15 @@ Em cada edição mensal (Música, Cinema e Livros), deve ser produzido um módul
 * **Interface do Usuário:** O topo da aba "Hoje" exibe o card `.d-audio-card` com:
   * Player de áudio embutido para reprodução imediata do briefing do dia.
   * Botão de narração ao vivo integrada via **Web Speech API** (`window.speechSynthesis`), permitindo ouvir qualquer boletim diretamente pelo navegador com a voz do sistema.
+
+---
+
+## 10. Varredura Online Obrigatória e Dados Contemporâneos (Anti-Cutoff)
+
+> [!IMPORTANT]
+> A Faixa Oculta NUNCA deve utilizar a memória interna estática (cutoff 2024) do modelo de IA para inventar ou reciclar safras culturais contemporâneas. Toda e qualquer edição cultural DEVE ser apurada por varredura eficiente online.
+
+* **Cinema em Cartaz:** Os filmes na seção "Em cartaz ou estreando nos próximos dias" DEVEM ser lançamentos reais contemporâneos ao calendário da edição (novembro de 2026), apurados via festivais (Festival do Rio, Mostra SP), distribuidoras brasileiras e programações das salas de cinema (CineSesc, Estação Net, Salas de Arte, IMAX). Filmes de safras passadas (ex: 2024) devem figurar em seções de acervo/streaming/achados e NUNCA como "em cartaz".
+* **Livros Novos:** Lançamentos editoriais devem ser apurados online junto às editoras brasileiras (Companhia das Letras, Todavia, Record, Zahar, Bazar do Tempo) e portais literários (*PublishNews*, *Quatro Cinco Um*).
+* **Música e Álbuns:** Discos novos contemporâneos devem ser apurados via portais e APIs de música (Pitchfork, Billboard Brasil, Rolling Stone, Deezer, iTunes).
+* **Varredor Automático:** O script `tools/varredura_cultural_online.py` integra a orquestração do sistema (`tools/orquestrador_nuvem.py` e `tools/sentinela_boletim.py`), garantindo que 100% dos dados e das capas oficiais sejam sincronizados ao vivo das APIs externas.
