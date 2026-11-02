@@ -34,3 +34,6 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
 
 7. **Prioridade Local:**
    - O sentinela local no Mac tem prioridade para rodar as edições. O GitHub Actions atua como salvaguarda na nuvem.
+
+8. **Boletim em Áudio das Notícias do Dia:**
+   - Todo boletim diário deve contar com transcrição em áudio narrado (`tools/gerar_audio_boletim.py`), disponibilizado via player embutido no card `.d-audio-card` e narração integrada via Web Speech API.

@@ -114,3 +114,13 @@ Em cada edição mensal (Música, Cinema e Livros), deve ser produzido um módul
 1. **Prioridade Local (Mac):** A execução prioritária é na máquina local quando você estiver operando (`tools/sentinela_boletim.py` / `tools/orquestrador_nuvem.py`).
 2. **Salvaguarda Automática (GitHub Actions):** Se a máquina estiver desligada ou houver atraso, a nuvem assume via cron às 05h e 17h BRT com a API Gemini.
 3. **Cache-Busting:** Toda requisição a `data/revista.json` deve incluir timestamp dinâmico (`?t=` + `Date.now()`) para garantir propagação instantânea.
+
+---
+
+## 9. Boletim em Áudio · Transcrição Narrada das Notícias do Dia
+
+* **Geração Automática de Áudio:** Sempre que uma nova edição do boletim diário for gerada (manhã ou noite), o script `tools/gerar_audio_boletim.py` deve ser acionado.
+* **Motor de Voz Neural:** Utiliza `edge-tts` com a voz `pt-BR-AntonioNeural` (taxa de locução natural de rádio/podcast), gerando um arquivo de áudio de alta fidelidade em `audios/boletim_<dia>.mp3` (~5 minutos).
+* **Interface do Usuário:** O topo da aba "Hoje" exibe o card `.d-audio-card` com:
+  * Player de áudio embutido para reprodução imediata do briefing do dia.
+  * Botão de narração ao vivo integrada via **Web Speech API** (`window.speechSynthesis`), permitindo ouvir qualquer boletim diretamente pelo navegador com a voz do sistema.

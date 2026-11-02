@@ -754,6 +754,18 @@ dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 .d-fontes .mono { color: var(--muted); }
 .d-fontes small { display: block; color: var(--muted); }
 
+/* Audio Briefing do Boletim Diário */
+.d-audio-card { background: var(--card); border: 1px solid var(--rule); border-left: 3px solid var(--sec); padding: 14px 18px; margin: 0 0 20px; display: grid; gap: 8px; border-radius: var(--pill-s, 4px); }
+.d-audio-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.d-audio-kicker { font: 600 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--sec); display: flex; align-items: center; gap: 6px; }
+.d-audio-dur { font: 500 var(--fs-xs) var(--f-mono); color: var(--muted); background: var(--paper); padding: 2px 8px; border-radius: var(--pill); border: 1px solid var(--rule); }
+.d-audio-tit { font: 700 var(--fs-m)/1.3 var(--f-display); margin: 0; color: var(--ink); }
+.d-audio-player-wrap { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding-top: 4px; }
+.d-audio-player-wrap audio { flex: 1; min-width: 240px; height: 38px; accent-color: var(--sec); border-radius: var(--pill); }
+.d-audio-tts-btn { font: 600 var(--fs-xs) var(--f-mono); padding: 8px 14px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background .15s, border-color .15s; }
+.d-audio-tts-btn:hover { background: var(--card); border-color: var(--sec); }
+.d-audio-tts-btn.falando { background: var(--sec); color: #fff; border-color: var(--sec); }
+
 /* Cinema & books magazines (poster 2:3) */
 .capa-img.poster { max-width: 440px; }
 .capa-img.poster img, .capa-img.poster .ph { aspect-ratio: 2 / 3; }
@@ -1145,7 +1157,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     return e;
   }
   const str = (v) => (typeof v === "string" ? v : v == null ? "" : String(v));
-  const safeUrl = (u) => { u = str(u); return /^https:\/\//i.test(u) || u.startsWith("/_blob/") || /^capas\/[0-9a-f]{32}\.jpg$/.test(u) ? u : null; };
+  const safeUrl = (u) => { u = str(u); return /^https:\/\//i.test(u) || u.startsWith("/_blob/") || /^capas\/[0-9a-f]{32}\.jpg$/.test(u) || /^audios\/[a-zA-Z0-9_\-]+\.mp3$/.test(u) ? u : null; };
 
   function fmtData(d) {
     d = str(d);
@@ -2017,6 +2029,56 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   }
   function turnoDia(d) { return d && (d.edicao === "noite" || str(d._id).endsWith("-noite")) ? "noite" : d && (d.edicao === "manha" || S.dias.some((x) => x !== d && str(x.data || x._id).replace(/-noite$/, "") === str(d.data || d._id).replace(/-noite$/, ""))) ? "manhã" : ""; }
   function chaveDia(d) { const noite = d && (d.edicao === "noite" || str(d._id).endsWith("-noite")); return str(d.data || str(d._id).replace(/-noite$/, "")) + (noite ? "~2" : "~1"); }
+  let audioNarracaoAtiva = false;
+  function toggleVozNavegador(d, btn) {
+    if (!('speechSynthesis' in window)) {
+      alert("Seu navegador não possui suporte para síntese de voz (Web Speech API).");
+      return;
+    }
+    if (speechSynthesis.speaking) {
+      speechSynthesis.cancel();
+      audioNarracaoAtiva = false;
+      if (btn) { btn.classList.remove("falando"); btn.textContent = "🔊 Ouvir com voz do navegador"; }
+      return;
+    }
+    const partes = [];
+    partes.push(`Faixa Oculta apresenta o boletim diário de notícias. ${rotuloBoletim(d)}.`);
+    if (d.titulo) partes.push(d.titulo + ".");
+    if (d.resumo_dia) partes.push(d.resumo_dia);
+    for (const n of arr(d.notas)) {
+      if (n.editoria) partes.push(n.editoria + ".");
+      if (n.titulo) partes.push(n.titulo + ".");
+      if (n.texto) partes.push(n.texto);
+      if (n.por_que_importa) partes.push(`Por que importa: ${n.por_que_importa}`);
+    }
+    const txtCompleto = partes.join(" \n ");
+    const utter = new SpeechSynthesisUtterance(txtCompleto);
+    utter.lang = "pt-BR";
+    utter.rate = 1.03;
+    const voices = speechSynthesis.getVoices().filter((v) => v.lang && v.lang.startsWith("pt"));
+    if (voices.length) utter.voice = voices[0];
+    utter.onend = () => { audioNarracaoAtiva = false; if (btn) { btn.classList.remove("falando"); btn.textContent = "🔊 Ouvir com voz do navegador"; } };
+    utter.onerror = () => { audioNarracaoAtiva = false; if (btn) { btn.classList.remove("falando"); btn.textContent = "🔊 Ouvir com voz do navegador"; } };
+    audioNarracaoAtiva = true;
+    if (btn) { btn.classList.add("falando"); btn.textContent = "⏹ Parar narração de voz"; }
+    speechSynthesis.speak(utter);
+  }
+
+  function blocoAudioBoletim(d) {
+    if (!d) return null;
+    const audioUrl = safeUrl(d.audio);
+    const dur = str(d.audio_duracao) || (audioUrl ? "5:30" : "");
+    return h("section", { class: "wrap", style: "padding-bottom:14px" },
+      h("div", { class: "d-audio-card" },
+        h("div", { class: "d-audio-head" },
+          h("div", { class: "d-audio-kicker" }, h("span", { class: "dot" }), "Boletim em Áudio · Síntese do Dia"),
+          dur ? h("span", { class: "d-audio-dur mono" }, dur) : null),
+        h("h4", { class: "d-audio-tit" }, "Ouça a transcrição narrada das notícias do dia"),
+        h("div", { class: "d-audio-player-wrap" },
+          audioUrl ? h("audio", { controls: true, preload: "metadata", src: audioUrl, title: `Boletim em Áudio · ${d.data || d._id}` }) : null,
+          h("button", { class: "d-audio-tts-btn mono", type: "button", onclick: (e) => toggleVozNavegador(d, e.currentTarget) }, "🔊 Ouvir com voz do navegador"))));
+  }
+
   function rotuloBoletim(d) { const t = turnoDia(d); return rotuloDia(d.data || d._id) + (t ? ` · ${t}` : ""); }
   function blocoHoje() {
     if (!S.loaded.dias) return [estado("abrindo o boletim", "As notícias do dia aparecem aqui assim que o arquivo da revista responder.")];
@@ -2045,7 +2107,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     ))));
     const fim = h("div", { class: "wrap", style: "padding-block:8px 32px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("noticias") }, "A revista da semana: grandes temas, cobertura e vieses"));
-    return [head, grade, blocoJornais(d.jornais), fim];
+    return [head, blocoAudioBoletim(d), grade, blocoJornais(d.jornais), fim];
   }
 
   // The day's printed papers (PDFs from the Telegram groups, kept in a private folder on the Mac): front pages, how each paper played the big stories, what is worth reading in full.

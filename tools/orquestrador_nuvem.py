@@ -38,17 +38,20 @@ def main():
 
     if rotina == "boletim":
         executar_script("tools/boletim_nuvem.py", extra_args)
+        executar_script("tools/gerar_audio_boletim.py", extra_args)
     elif rotina == "revista_semana":
         executar_script("tools/revista_semanal.py", extra_args)
     elif rotina == "cultura_mensal":
         executar_script("tools/cultura_mensal.py", extra_args)
     elif rotina == "tudo":
         executar_script("tools/boletim_nuvem.py", extra_args)
+        executar_script("tools/gerar_audio_boletim.py", extra_args)
         executar_script("tools/revista_semanal.py", extra_args)
         executar_script("tools/cultura_mensal.py", extra_args)
     elif rotina == "auto":
         # 1. Boletim Diário roda em todas as chamadas
         executar_script("tools/boletim_nuvem.py", extra_args)
+        executar_script("tools/gerar_audio_boletim.py", extra_args)
 
         # 2. Revista da Semana: Quinta-feira a partir das 18h BRT
         if dia_semana == 3 and hora >= 18:
