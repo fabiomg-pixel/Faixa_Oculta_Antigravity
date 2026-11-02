@@ -441,12 +441,24 @@ dialog.texto::backdrop { background: var(--backdrop); }
 .ag-picks .pt { font: 700 15px/1.2 var(--f-body); }
 .ag-picks .ps { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
 .ag-picks .pw { font-size: var(--fs-s); margin: 0; }
-.ag-marcas { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 1px; }
-.ag-marcas button { border: var(--bw) solid var(--ink); background: transparent; padding: 2px 8px; border-radius: var(--pill); font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
+.ag-marcas { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; align-items: center; }
+.ag-marcas button { border: var(--bw) solid var(--ink); background: transparent; padding: 3px 9px; border-radius: var(--pill); font: 600 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; transition: all .15s ease; }
 .ag-marcas button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.ag-marcas .v-pos { border-color: var(--verde-f); color: var(--verde-f); }
+.ag-marcas .v-pos[aria-pressed="true"] { background: var(--verde-f) !important; color: #fff !important; border-color: var(--verde-f) !important; }
+.ag-marcas .v-neg { border-color: #8C2D19; color: #8C2D19; }
+.ag-marcas .v-neg[aria-pressed="true"] { background: #8C2D19 !important; color: #fff !important; border-color: #8C2D19 !important; }
 .ag-marcas.mini button { padding: 1px 6px; font-size: 11px; border-width: 1px; }
 .ag-marcas button:disabled { opacity: .45; cursor: default; }
 .ag-marcas .ag-com { border-style: dashed; }
+.ag-selo-status { display: inline-flex; align-items: center; gap: 4px; font: 600 11px/1.3 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; padding: 2px 8px; border-radius: var(--pill); margin-bottom: 6px; }
+.ag-selo-status.pos { background: rgba(62, 95, 74, .12); color: var(--verde-f); border: 1px solid var(--verde-f); }
+.ag-selo-status.neg { background: rgba(140, 45, 25, .08); color: #8C2D19; border: 1px solid #8C2D19; opacity: .85; }
+.ag-ev.d-nao { opacity: .52; transition: opacity .2s; }
+.ag-ev.d-nao:hover { opacity: .9; }
+.ag-ev.d-quero { box-shadow: 0 0 0 2px var(--verde-f); border-radius: 2px; }
+.ag-gosto-banner { background: var(--card); border: 1px solid var(--rule); padding: 8px 14px; margin: 0 0 16px; border-radius: var(--pill); font-size: var(--fs-xs); color: var(--muted); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.ag-gosto-banner b { color: var(--ink); }
 /* Agenda controls: search and the three filter rows */
 .ag-ctrl { display: grid; gap: 10px; min-width: 0; }
 .ag-busca label { display: block; color: var(--muted); margin-bottom: 3px; font-size: var(--fs-xs); }
@@ -1493,14 +1505,28 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     const fim = h("div", { class: "wrap", style: "padding-block:28px" },
       h("button", { class: "ler", type: "button", onclick: () => document.getElementById("fora-do-radar")?.scrollIntoView({ behavior: "smooth", block: "start" }) }, "Temas fora do radar desta semana"));
     const evs = arr(S.agenda && S.agenda.eventos);
-    const fds = arr(s.fim_de_semana).map((x) => ({ x, ev: evs.find((e) => e.id === x.evento) })).filter((o) => o.ev && proximaDoEvento(o.ev));
+    const fds = arr(s.fim_de_semana).map((x) => ({ x, ev: evs.find((e) => e.id === x.evento) || (x.titulo ? x : null) })).filter((o) => o.ev);
     const blocoFds = fds.length ? h("section", { class: "wrap fds", id: "fim-de-semana" },
-      h("div", { class: "kicker mono" }, "Do Radar cultural"),
-      h("h3", null, "Para o fim de semana"),
+      h("div", { class: "kicker mono" }, "Do Radar cultural · Rock, Underground & Cena Independente"),
+      h("h3", null, "Para o fim de semana no Rio"),
+      h("p", { class: "lede", style: "margin-bottom:14px" }, "Eventos selecionados para as suas noites de sexta a domingo. Marque 👍 ou 👎 para afinar o seu gosto cultural."),
       h("div", { class: "fds-lista" }, fds.map(({ x, ev }) => h("div", { class: "fds-item" },
         x.nota ? h("p", { class: "fds-nota" }, str(x.nota)) : null, cardEvento(ev)))),
-      h("button", { class: "ler", type: "button", onclick: () => trocarAba("agenda") }, "Agenda completa")) : null;
-    return [head, blocoFds, ...blocos, fim, ...blocoTemas()];
+      h("button", { class: "ler", type: "button", onclick: () => trocarAba("agenda") }, "Ver agenda cultural completa do Rio")) : null;
+    const blocoTrilha = s.trilha_sugerida ? h("section", { class: "wrap", style: "border-top:1px solid var(--rule);padding-block:24px;margin-top:10px" },
+      h("div", { class: "kicker mono" }, "Música para o fim de semana"),
+      h("h3", null, str(s.trilha_sugerida.titulo || "Trilha sonora para a leitura da revista")),
+      s.trilha_sugerida.descricao ? h("p", { class: "lede" }, str(s.trilha_sugerida.descricao)) : null,
+      h("div", { class: "trilha-grid", style: "display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px;" },
+        arr(s.trilha_sugerida.albuns).map((alb) => h("div", { class: "card", style: "padding:12px;background:var(--card);border:1px solid var(--rule);" },
+          h("b", { style: "display:block;font-size:15px;margin-bottom:3px;" }, str(alb.artista)),
+          h("p", { style: "font-style:italic;margin:0 0 6px;color:var(--muted);font-size:13px;" }, str(alb.album), alb.ano ? ` (${alb.ano})` : ""),
+          alb.estilo ? h("span", { class: "mono", style: "font-size:11px;color:var(--sec);display:block;margin-bottom:6px;" }, str(alb.estilo)) : null,
+          alb.por_que_ouvir ? h("p", { style: "font-size:13px;line-height:1.35;margin:0 0 8px;" }, str(alb.por_que_ouvir)) : null,
+          h("button", { type: "button", class: "btn pri", style: "padding:3px 9px;font-size:11px;", onclick: () => trocarAba("musica") }, "Ouvir na revista de música ↗")
+        ))
+      )) : null;
+    return [head, blocoTrilha, blocoFds, ...blocos, fim, ...blocoTemas()];
   }
 
   function diaAtual() { return S.dias.find((d) => d._id === S.selDia) || S.dias[0]; }
@@ -1969,10 +1995,12 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   const idNota = (k) => "ag-nota-" + str(k).replace(/[^A-Za-z0-9_-]/g, "-");
   function marcasAgenda(chave, mini) {
     const cur = decisaoRadar(chave);
-    const op = mini ? [["quero", "Quero"], ["talvez", "Talvez"], ["fui", "Fui"], ["nao", "Não"]] : [["quero", "Quero ir"], ["talvez", "Talvez"], ["fui", "Fui"], ["nao", "Não é pra mim"]];
+    const op = mini
+      ? [["quero", "👍 Curti", "v-pos"], ["nao", "👎 Descartar", "v-neg"], ["talvez", "Talvez", ""], ["fui", "Fui", ""]]
+      : [["quero", "👍 Quero ir", "v-pos"], ["nao", "👎 Não é pra mim", "v-neg"], ["talvez", "Talvez", ""], ["fui", "Fui", ""]];
     const aberto = S.agNota === chave, ida = idaDeKey(chave);
     return h("div", { class: "ag-marcas" + (mini ? " mini" : "") },
-      op.map(([v, t]) => h("button", { type: "button", "aria-pressed": String(cur === v), disabled: !S.podeMarcar, "data-ida-op": v === "fui" ? `fui:${chave}` : null, onclick: () => marcarRadar(chave, cur === v ? null : v) }, t)),
+      op.map(([v, t, cls]) => h("button", { type: "button", class: (cls || "") + (cur === v ? " ativo" : ""), "aria-pressed": String(cur === v), disabled: !S.podeMarcar, "data-ida-op": v === "fui" ? `fui:${chave}` : null, onclick: () => marcarRadar(chave, cur === v ? null : v) }, t)),
       ida ? h("button", { type: "button", class: "ag-reg", "data-ida-op": `reg:${chave}`, onclick: () => abrirEditor(ida, `reg:${chave}`) }, "Ver registro") : null,
       h("button", { type: "button", class: "ag-com", "aria-expanded": String(aberto), disabled: !S.podeMarcar,
         onclick: () => { S.agNota = aberto ? null : chave; render(); if (!aberto) setTimeout(() => document.getElementById(idNota(chave))?.focus(), 0); } },
@@ -2213,20 +2241,23 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   // Listings-guide layout: coloured date block, then title, a where line, a when/price line, the radar's reason,
   // links and artist chips, marks; the synopsis is clamped to two lines until "Detalhes" opens it.
   function cardEvento(ev) {
-    const tipo = TIPOS_AG[ev.tipo] ? ev.tipo : "outros", dec = decisaoRadar(ev.id);
+    if (!ev) return null;
+    const evId = ev.id || ev._id || (ev.titulo ? str(ev.titulo).toLowerCase().replace(/[^a-z0-9]+/g, "-") : "ev");
+    const tipo = TIPOS_AG[ev.tipo] ? ev.tipo : "outros", dec = decisaoRadar(evId);
     const t = agHoje(), fim = agD(ev.fim), ini = agD(ev.inicio);
     let ate = "", resta = "";
     if (ini && ini > t) { ate = agCurta(ini); const d = agDias(t, ini); resta = d === 1 ? "começa amanhã" : `começa em ${d} dias`; }
     else if (fim) { ate = `até ${agCurta(fim)}`; const d = agDias(t, fim); resta = d < 0 ? "encerrado" : d === 0 ? "último dia" : d === 1 ? "acaba amanhã" : `faltam ${d} dias`; }
     else if (ev.emCartaz) { ate = "em cartaz"; resta = "encerramento a confirmar"; }
     else if (ini) { ate = agCurta(ini); resta = "hoje"; }
-    const link = safeUrl(ev.link), info = !!S.agInfo[ev.id], temDet = agTemDetalhes(ev);
-    const marcas = marcasAgenda(ev.id);
-    if (temDet) marcas.append(h("button", { type: "button", class: "ag-det", "aria-expanded": String(info), onclick: () => { S.agInfo[ev.id] = !info; render(); } }, info ? "Menos detalhes" : "Detalhes"));
-    const onde = [ev.local, ev.bairro].map(str).filter(Boolean).join(", "), quando = [ev.quando, ev.preco].map(str).filter(Boolean).join(". ");
-    return h("article", { class: "ag-ev" + (dec === "quero" ? " marcado" : "") + (dec ? " d-" + dec : ""), id: `ev-${ev.id}`, style: `--tc:var(--t-${tipo});--tcl:var(--tl-${tipo})` },
-      h("div", { class: "ag-data" }, h("span", { class: "k" }, TIPOS_AG[tipo]), h("b", null, ate), h("span", null, resta)),
+    const link = safeUrl(ev.link), info = !!S.agInfo[evId], temDet = agTemDetalhes(ev);
+    const marcas = marcasAgenda(evId);
+    if (temDet) marcas.append(h("button", { type: "button", class: "ag-det", "aria-expanded": String(info), onclick: () => { S.agInfo[evId] = !info; render(); } }, info ? "Menos detalhes" : "Detalhes"));
+    const onde = [ev.local, ev.bairro, ev.onde].map(str).filter(Boolean).join(", "), quando = [ev.quando, ev.preco].map(str).filter(Boolean).join(". ");
+    return h("article", { class: "ag-ev" + (dec === "quero" ? " marcado" : "") + (dec ? " d-" + dec : ""), id: `ev-${evId}`, style: `--tc:var(--t-${tipo});--tcl:var(--tl-${tipo})` },
+      h("div", { class: "ag-data" }, h("span", { class: "k" }, TIPOS_AG[tipo]), h("b", null, ate || "rio"), h("span", null, resta || "radar")),
       h("div", { class: "ag-corpo" },
+        dec === "quero" ? h("span", { class: "ag-selo-status pos" }, "👍 Recomendação aprovada") : dec === "nao" ? h("span", { class: "ag-selo-status neg" }, "👎 Descartado") : null,
         h("h3", null, link ? h("a", { href: link, target: "_blank", rel: "noopener", title: "Abrir a página do evento" }, str(ev.titulo)) : str(ev.titulo)),
         onde || REG_AG[ev.regiao] ? h("p", { class: "ag-onde" }, onde, REG_AG[ev.regiao] ? h("span", { class: "reg" }, REG_AG[ev.regiao]) : null) : null,
         quando ? h("p", { class: "ag-quando" }, quando) : null,
@@ -2237,7 +2268,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         refsDoEvento(ev),
         linkRevista(...arr(ev.artistas), ev.titulo),
         marcas,
-        editorNota(ev.id, ev.titulo),
+        editorNota(evId, ev.titulo),
         agDestaques(ev)));
   }
 
@@ -2335,8 +2366,13 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
         h("button", { class: "ler", type: "button", "aria-expanded": String(!!S.agDispOpen), onclick: () => { S.agDispOpen = !S.agDispOpen; render(); } },
           `${S.agDispOpen ? "Esconder" : "Mostrar"} ${disp.length} ${disp.length === 1 ? "item dispensado" : "itens dispensados"}`),
         S.agDispOpen ? colunasAgenda(disp) : null) : null;
+      const nPos = Object.values(S.marcas).filter((v) => v === "quero").length;
+      const nNeg = Object.values(S.marcas).filter((v) => v === "nao").length;
+      const gostoBanner = h("div", { class: "ag-gosto-banner mono" },
+        h("span", null, h("b", null, "Radar Cultural de Eventos"), ` · ${nPos} recomendações curtidas 👍 · ${nNeg} descartadas 👎`),
+        h("small", null, "Seus votos afinam as recomendações de rock, indie e underground no Rio."));
       const pend = qOn ? null : blocoPendentes();
-      const main = h("div", { class: "ag-main" }, pend, conta, lista, dispensados);
+      const main = h("div", { class: "ag-main" }, gostoBanner, pend, conta, lista, dispensados);
       return [h("section", { class: "wrap ag-layout" }, rail, main), blocoFomos(), blocoGosto(ag)];
     } finally { AGF = null; }
   }
