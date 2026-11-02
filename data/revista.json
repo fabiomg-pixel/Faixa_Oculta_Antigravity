@@ -181,258 +181,294 @@
             "album": "Manning Fireworks",
             "faixa": "Manning Fireworks",
             "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
-            "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf"
+            "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf",
+            "youtube_id": "hajltNGPfps"
           },
           {
             "artista": "Queens of the Stone Age",
             "album": "Perfecth",
             "faixa": "Easy Street",
             "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
-            "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth"
+            "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth",
+            "youtube_id": "6gm9IWUuus0"
           },
           {
             "artista": "Dry Cleaning",
             "album": "New Long Walk",
             "faixa": "Kwenchy Kups",
             "spotify_id": "2I0gIu10p9l6B5zF46H9Vw",
-            "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw"
+            "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw",
+            "youtube_id": "Wfr1GyyI2Sc"
           },
           {
             "artista": "Fontaines D.C.",
             "album": "Romance",
             "faixa": "Romance",
             "spotify_id": "3b9Q2z6w41A1aGv7q65w8X",
-            "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X"
+            "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X",
+            "youtube_id": "gyPd68RuB8I"
           },
           {
             "artista": "The Smile",
             "album": "Cutouts",
             "faixa": "Foreign Spies",
             "spotify_id": "7o5415B5sR5qL8k0M3w2X1",
-            "spotify_url": "https://open.spotify.com/search/The%20Smile%20Cutouts"
+            "spotify_url": "https://open.spotify.com/search/The%20Smile%20Cutouts",
+            "youtube_id": "UHkZ5YzJYvI"
           },
           {
             "artista": "Kim Gordon",
             "album": "The Collective",
             "faixa": "BYE BYE",
             "spotify_id": "0B1Nf8w5Q8k0M3w2X1Y4Z5",
-            "spotify_url": "https://open.spotify.com/search/Kim%20Gordon%20The%20Collective"
+            "spotify_url": "https://open.spotify.com/search/Kim%20Gordon%20The%20Collective",
+            "youtube_id": "IZ3i80B0qKg"
           },
           {
             "artista": "Beth Gibbons",
             "album": "Lives Outgrown",
             "faixa": "Tell Me Who You Are Today",
             "spotify_id": "4jSmcj39eQiU76EbMGuxS9",
-            "spotify_url": "https://open.spotify.com/search/Beth%20Gibbons%20Lives%20Outgrown"
+            "spotify_url": "https://open.spotify.com/search/Beth%20Gibbons%20Lives%20Outgrown",
+            "youtube_id": "noNcHNoWvUM"
           },
           {
             "artista": "English Teacher",
             "album": "This Could Be Texas",
             "faixa": "Albatross",
             "spotify_id": "3lSmcj39eQiU76EbMGuxS1",
-            "spotify_url": "https://open.spotify.com/search/English%20Teacher%20This%20Could%20Be%20Texas"
+            "spotify_url": "https://open.spotify.com/search/English%20Teacher%20This%20Could%20Be%20Texas",
+            "youtube_id": "0PWZdalB9aM"
           },
           {
             "artista": "Mount Kimbie",
             "album": "The Sunset Violent",
             "faixa": "The Trail",
             "spotify_id": "5kSmcj39eQiU76EbMGuxS2",
-            "spotify_url": "https://open.spotify.com/search/Mount%20Kimbie%20The%20Sunset%20Violent"
+            "spotify_url": "https://open.spotify.com/search/Mount%20Kimbie%20The%20Sunset%20Violent",
+            "youtube_id": "ek5p3bmsuBU"
           },
           {
             "artista": "Whitelands",
             "album": "Sun-Bleached Noise",
             "faixa": "Setting Sun",
             "spotify_id": "4vS4V9JtZtWj8x3J7xG4tD",
-            "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD"
+            "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD",
+            "youtube_id": "aHlyYc6o0Yo"
           },
           {
             "artista": "DIIV",
             "album": "Frog in Boiling Water",
             "faixa": "In Amber",
             "spotify_id": "2lSmcj39eQiU76EbMGuxS3",
-            "spotify_url": "https://open.spotify.com/search/DIIV%20Frog%20in%20Boiling%20Water"
+            "spotify_url": "https://open.spotify.com/search/DIIV%20Frog%20in%20Boiling%20Water",
+            "youtube_id": "Pz8bJJSDD54"
           },
           {
             "artista": "Friko",
             "album": "Where we've been, Where we go from here",
             "faixa": "Where We've Been",
             "spotify_id": "4myypnSDFC6PrjZRDYcBaC",
-            "spotify_url": "https://open.spotify.com/album/4myypnSDFC6PrjZRDYcBaC"
+            "spotify_url": "https://open.spotify.com/album/4myypnSDFC6PrjZRDYcBaC",
+            "youtube_id": "FnxlHDCWGy8"
           },
           {
             "artista": "Maruja",
             "album": "Connla's Well",
             "faixa": "The Invisible Man",
             "spotify_id": "1mSmcj39eQiU76EbMGuxS4",
-            "spotify_url": "https://open.spotify.com/search/Maruja%20Connla%27s%20Well"
+            "spotify_url": "https://open.spotify.com/search/Maruja%20Connla%27s%20Well",
+            "youtube_id": "VRtkoNBJRQo"
           },
           {
             "artista": "Cindy Lee",
             "album": "Diamond Jubilee",
             "faixa": "Diamond Jubilee",
             "spotify_id": "6mSmcj39eQiU76EbMGuxS5",
-            "spotify_url": "https://open.spotify.com/search/Cindy%20Lee%20Diamond%20Jubilee"
+            "spotify_url": "https://open.spotify.com/search/Cindy%20Lee%20Diamond%20Jubilee",
+            "youtube_id": "_LJi5na897Y"
           },
           {
             "artista": "Juçara Marçal & Thais Nicodemo",
             "album": "Caderno de Composição",
             "faixa": "Sem Nome",
             "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
-            "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y"
+            "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y",
+            "youtube_id": "m1M18NIMsEo"
           },
           {
             "artista": "Ana Frango Elétrico",
             "album": "Me Chama de Gato Que Eu Sou Sua (Edição Expandida)",
             "faixa": "Electric Fish",
             "spotify_id": "1B2u3vj33ZpE73v8t0Nnhz",
-            "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz"
+            "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz",
+            "youtube_id": "KRzcmBRoFPY"
           },
           {
             "artista": "Negro Léo",
             "album": "Desejo do Labirinto",
             "faixa": "Labirinto Fixo",
             "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
-            "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6"
+            "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6",
+            "youtube_id": "JUeJuyR6XSQ"
           },
           {
             "artista": "Sophia Chablau e Uma Enorme Perda de Tempo",
             "album": "Música do Esquecimento",
             "faixa": "Segredo",
             "spotify_id": "7mSmcj39eQiU76EbMGuxS6",
-            "spotify_url": "https://open.spotify.com/search/Sophia%20Chablau%20Musica%20do%20Esquecimento"
+            "spotify_url": "https://open.spotify.com/search/Sophia%20Chablau%20Musica%20do%20Esquecimento",
+            "youtube_id": "DfJnsP3ykbQ"
           },
           {
             "artista": "Amaro Freitas",
             "album": "Y'Y",
             "faixa": "Mapinguari",
             "spotify_id": "8mSmcj39eQiU76EbMGuxS7",
-            "spotify_url": "https://open.spotify.com/search/Amaro%20Freitas%20Y%27Y"
+            "spotify_url": "https://open.spotify.com/search/Amaro%20Freitas%20Y%27Y",
+            "youtube_id": "s-_CbwOYBkg"
           },
           {
             "artista": "Geese",
             "album": "Live at Third Man Records",
             "faixa": "2122",
             "spotify_id": "4VqF3tU3Fw3k6nO0Lz2j9n",
-            "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n"
+            "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n",
+            "youtube_id": "9HN0VuyMW-s"
           },
           {
             "artista": "Panda Bear",
             "album": "Sinister Grift",
             "faixa": "Praise",
             "spotify_id": "9mSmcj39eQiU76EbMGuxS8",
-            "spotify_url": "https://open.spotify.com/search/Panda%20Bear%20Sinister%20Grift"
+            "spotify_url": "https://open.spotify.com/search/Panda%20Bear%20Sinister%20Grift",
+            "youtube_id": "MhNGN4SnRZM"
           },
           {
             "artista": "Adrianne Lenker",
             "album": "Bright Future",
             "faixa": "Real House",
             "spotify_id": "3Z8GgT0gqXbLpD0kLz2j9n",
-            "spotify_url": "https://open.spotify.com/search/Adrianne%20Lenker%20Bright%20Future"
+            "spotify_url": "https://open.spotify.com/search/Adrianne%20Lenker%20Bright%20Future",
+            "youtube_id": "av2CwXbx6oU"
           },
           {
             "artista": "Nick Cave & The Bad Seeds",
             "album": "Wild God",
             "faixa": "Song of the Lake",
             "spotify_id": "4mSmcj39eQiU76EbMGuxS1",
-            "spotify_url": "https://open.spotify.com/search/Nick%20Cave%20Wild%20God"
+            "spotify_url": "https://open.spotify.com/search/Nick%20Cave%20Wild%20God",
+            "youtube_id": "tEtMCSIgLGI"
           },
           {
             "artista": "Kim Deal",
             "album": "Nobody Loves You More",
             "faixa": "Nobody Loves You More",
             "spotify_id": "5mSmcj39eQiU76EbMGuxS2",
-            "spotify_url": "https://open.spotify.com/search/Kim%20Deal%20Nobody%20Loves%20You%20More"
+            "spotify_url": "https://open.spotify.com/search/Kim%20Deal%20Nobody%20Loves%20You%20More",
+            "youtube_id": "osOWmt5YYuw"
           },
           {
             "artista": "Mannequin Pussy",
             "album": "I Got Heaven",
             "faixa": "I Got Heaven",
             "spotify_id": "6mSmcj39eQiU76EbMGuxS3",
-            "spotify_url": "https://open.spotify.com/search/Mannequin%20Pussy%20I%20Got%20Heaven"
+            "spotify_url": "https://open.spotify.com/search/Mannequin%20Pussy%20I%20Got%20Heaven",
+            "youtube_id": "PpmNT3STSWk"
           },
           {
             "artista": "Jack White",
             "album": "No Name",
             "faixa": "Old Scratch Blues",
             "spotify_id": "7mSmcj39eQiU76EbMGuxS4",
-            "spotify_url": "https://open.spotify.com/search/Jack%20White%20No%20Name"
+            "spotify_url": "https://open.spotify.com/search/Jack%20White%20No%20Name",
+            "youtube_id": "xviKHjc89DQ"
           },
           {
             "artista": "Jessica Pratt",
             "album": "Here in the Pitch",
             "faixa": "Life Is",
             "spotify_id": "8mSmcj39eQiU76EbMGuxS5",
-            "spotify_url": "https://open.spotify.com/search/Jessica%20Pratt%20Here%20in%20the%20Pitch"
+            "spotify_url": "https://open.spotify.com/search/Jessica%20Pratt%20Here%20in%20the%20Pitch",
+            "youtube_id": "QaXe9zAa3r4"
           },
           {
             "artista": "Been Stellar",
             "album": "Scream from New York, NY",
             "faixa": "Start Again",
             "spotify_id": "1mSmcj39eQiU76EbMGuxS6",
-            "spotify_url": "https://open.spotify.com/search/Been%20Stellar%20Scream%20from%20New%20York%2C%20NY"
+            "spotify_url": "https://open.spotify.com/search/Been%20Stellar%20Scream%20from%20New%20York%2C%20NY",
+            "youtube_id": "J1qZAfiemoc"
           },
           {
             "artista": "Hotline TNT",
             "album": "Cartwheel",
             "faixa": "Protocol",
             "spotify_id": "2mSmcj39eQiU76EbMGuxS7",
-            "spotify_url": "https://open.spotify.com/search/Hotline%20TNT%20Cartwheel"
+            "spotify_url": "https://open.spotify.com/search/Hotline%20TNT%20Cartwheel",
+            "youtube_id": "TNV39-UULQE"
           },
           {
             "artista": "Bar Italia",
             "album": "The Twits",
             "faixa": "my little tony",
             "spotify_id": "3mSmcj39eQiU76EbMGuxS8",
-            "spotify_url": "https://open.spotify.com/search/Bar%20Italia%20The%20Twits"
+            "spotify_url": "https://open.spotify.com/search/Bar%20Italia%20The%20Twits",
+            "youtube_id": "Cne81F3fxDo"
           },
           {
             "artista": "ML Buch",
             "album": "Suntub",
             "faixa": "Panflats",
             "spotify_id": "4mSmcj39eQiU76EbMGuxS9",
-            "spotify_url": "https://open.spotify.com/search/ML%20Buch%20Suntub"
+            "spotify_url": "https://open.spotify.com/search/ML%20Buch%20Suntub",
+            "youtube_id": "GPkJtZMvl4s"
           },
           {
             "artista": "Tramhaus",
             "album": "The First Few",
             "faixa": "The Cause",
             "spotify_id": "5mSmcj39eQiU76EbMGuxS0",
-            "spotify_url": "https://open.spotify.com/search/Tramhaus%20The%20First%20Few"
+            "spotify_url": "https://open.spotify.com/search/Tramhaus%20The%20First%20Few",
+            "youtube_id": "nVCh5-h6K8Y"
           },
           {
             "artista": "SPRINTS",
             "album": "Letter to Self",
             "faixa": "Ticking",
             "spotify_id": "6mSmcj39eQiU76EbMGuxS1",
-            "spotify_url": "https://open.spotify.com/search/SPRINTS%20Letter%20to%20Self"
+            "spotify_url": "https://open.spotify.com/search/SPRINTS%20Letter%20to%20Self",
+            "youtube_id": "BOrCWngGQEU"
           },
           {
             "artista": "Jadsa & João Milet Meirelles",
             "album": "Taxidermia Vol. 3",
             "faixa": "Vera Cruz",
             "spotify_id": "7mSmcj39eQiU76EbMGuxS2",
-            "spotify_url": "https://open.spotify.com/search/Jadsa%20Joao%20Milet%20Meirelles%20Taxidermia"
+            "spotify_url": "https://open.spotify.com/search/Jadsa%20Joao%20Milet%20Meirelles%20Taxidermia",
+            "youtube_id": "9CrwNZ6RyaE"
           },
           {
             "artista": "Boogarins",
             "album": "Bacuri",
             "faixa": "Bacuri",
             "spotify_id": "8mSmcj39eQiU76EbMGuxS3",
-            "spotify_url": "https://open.spotify.com/search/Boogarins%20Bacuri"
+            "spotify_url": "https://open.spotify.com/search/Boogarins%20Bacuri",
+            "youtube_id": "IX4xv7G0REo"
           },
           {
             "artista": "The Cure",
             "album": "Songs of a Lost World",
             "faixa": "Alone",
             "spotify_id": "9mSmcj39eQiU76EbMGuxS4",
-            "spotify_url": "https://open.spotify.com/search/The%20Cure%20Songs%20of%20a%20Lost%20World"
+            "spotify_url": "https://open.spotify.com/search/The%20Cure%20Songs%20of%20a%20Lost%20World",
+            "youtube_id": "sx9SVAtMkJM"
           }
         ],
         "titulo": "Radar Oculto_2026_11",
         "nome": "Radar Oculto_2026_11",
         "url_spotify": "https://open.spotify.com/search/Radar%20Oculto_2026_11",
-        "url_yt": "https://music.youtube.com/search?q=Radar+Oculto_2026_11"
+        "url_yt": "https://www.youtube.com/watch_videos?video_ids=hajltNGPfps,6gm9IWUuus0,Wfr1GyyI2Sc,gyPd68RuB8I,UHkZ5YzJYvI,IZ3i80B0qKg,noNcHNoWvUM,0PWZdalB9aM,ek5p3bmsuBU,aHlyYc6o0Yo,Pz8bJJSDD54,FnxlHDCWGy8,VRtkoNBJRQo,_LJi5na897Y,m1M18NIMsEo,KRzcmBRoFPY,JUeJuyR6XSQ,DfJnsP3ykbQ,s-_CbwOYBkg,9HN0VuyMW-s,MhNGN4SnRZM,av2CwXbx6oU,tEtMCSIgLGI,osOWmt5YYuw,PpmNT3STSWk,xviKHjc89DQ,QaXe9zAa3r4,J1qZAfiemoc,TNV39-UULQE,Cne81F3fxDo,GPkJtZMvl4s,nVCh5-h6K8Y,BOrCWngGQEU,9CrwNZ6RyaE,IX4xv7G0REo,sx9SVAtMkJM"
       },
       "destaque_autor": {
         "artista": "Josh Homme",
@@ -1826,7 +1862,8 @@
       "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
       "spotify_url": "https://open.spotify.com/album/5bwWqW9LN9wcyyNiOtqhFf",
       "onde": "ANTI- Records, Bandcamp, Spotify, Apple Music",
-      "capa": "capas/a6e20bf3059d582ba55e8dc6adb79623.jpg"
+      "capa": "capas/a6e20bf3059d582ba55e8dc6adb79623.jpg",
+      "youtube_id": "hajltNGPfps"
     },
     "2026-11--dry-cleaning-new-long-walk": {
       "id": "2026-11--dry-cleaning-new-long-walk",
@@ -1859,7 +1896,8 @@
       "spotify_id": "2I0gIu10p9l6B5zF46H9Vw",
       "spotify_url": "https://open.spotify.com/album/2I0gIu10p9l6B5zF46H9Vw",
       "onde": "4AD, Spotify, Apple Music, Bandcamp",
-      "capa": "capas/12a7c4a92e8f94811fad15a2f8041ed5.jpg"
+      "capa": "capas/12a7c4a92e8f94811fad15a2f8041ed5.jpg",
+      "youtube_id": "Wfr1GyyI2Sc"
     },
     "2026-11--whitelands-sun-bleached-noise": {
       "id": "2026-11--whitelands-sun-bleached-noise",
@@ -1893,7 +1931,8 @@
       "spotify_id": "4vS4V9JtZtWj8x3J7xG4tD",
       "spotify_url": "https://open.spotify.com/album/4vS4V9JtZtWj8x3J7xG4tD",
       "onde": "Sonic Cathedral, Bandcamp, Spotify",
-      "capa": "capas/8ced05c1e108274bf9d064542ed9111f.jpg"
+      "capa": "capas/8ced05c1e108274bf9d064542ed9111f.jpg",
+      "youtube_id": "aHlyYc6o0Yo"
     },
     "2026-11--jucara-marcal-caderno-composicao": {
       "id": "2026-11--jucara-marcal-caderno-composicao",
@@ -1927,7 +1966,8 @@
       "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
       "spotify_url": "https://open.spotify.com/album/43YyE328A9L8sC5f2F4B3Y",
       "onde": "QTV Selo, Spotify, Apple Music, Bandcamp",
-      "capa": "capas/39ef428bd22c8eb18d4152339772a829.jpg"
+      "capa": "capas/39ef428bd22c8eb18d4152339772a829.jpg",
+      "youtube_id": "m1M18NIMsEo"
     },
     "2026-11--ana-frango-eletrico-ao-vivo-caixa": {
       "id": "2026-11--ana-frango-eletrico-ao-vivo-caixa",
@@ -1962,7 +2002,8 @@
       "spotify_id": "1B2u3vj33ZpE73v8t0Nnhz",
       "spotify_url": "https://open.spotify.com/album/1B2u3vj33ZpE73v8t0Nnhz",
       "onde": "Selo Risco, Mr Bongo, Spotify, Apple Music",
-      "capa": "capas/2d4da8c2afac51a1c9693bcfd164f231.jpg"
+      "capa": "capas/2d4da8c2afac51a1c9693bcfd164f231.jpg",
+      "youtube_id": "KRzcmBRoFPY"
     },
     "2026-11--fontaines-dc-romance": {
       "id": "2026-11--fontaines-dc-romance",
@@ -1996,7 +2037,8 @@
       "spotify_id": "3b9Q2z6w41A1aGv7q65w8X",
       "spotify_url": "https://open.spotify.com/album/3b9Q2z6w41A1aGv7q65w8X",
       "onde": "XL Recordings, Spotify, Bandcamp",
-      "capa": "capas/98fea6ef312dec17aaefe48cbc37bb06.jpg"
+      "capa": "capas/98fea6ef312dec17aaefe48cbc37bb06.jpg",
+      "youtube_id": "gyPd68RuB8I"
     },
     "2026-11--the-smile-cutouts": {
       "id": "2026-11--the-smile-cutouts",
@@ -2029,7 +2071,8 @@
       "spotify_id": "7o5415B5sR5qL8k0M3w2X1",
       "spotify_url": "https://open.spotify.com/search/The%20Smile%20Cutouts",
       "onde": "XL Recordings, Bandcamp, Spotify",
-      "capa": "capas/68125051eed214815c8e7dcbb96788e7.jpg"
+      "capa": "capas/68125051eed214815c8e7dcbb96788e7.jpg",
+      "youtube_id": "UHkZ5YzJYvI"
     },
     "2026-11--kim-gordon-the-collective": {
       "id": "2026-11--kim-gordon-the-collective",
@@ -2063,7 +2106,8 @@
       "spotify_id": "0B1Nf8w5Q8k0M3w2X1Y4Z5",
       "spotify_url": "https://open.spotify.com/search/Kim%20Gordon%20The%20Collective",
       "onde": "Matador Records, Bandcamp, Spotify",
-      "capa": "capas/679244160eda39121893e6d08ce507fd.jpg"
+      "capa": "capas/679244160eda39121893e6d08ce507fd.jpg",
+      "youtube_id": "IZ3i80B0qKg"
     },
     "2026-11--beth-gibbons-lives-outgrown": {
       "id": "2026-11--beth-gibbons-lives-outgrown",
@@ -2097,7 +2141,8 @@
       "spotify_id": "4jSmcj39eQiU76EbMGuxS9",
       "spotify_url": "https://open.spotify.com/search/Beth%20Gibbons%20Lives%20Outgrown",
       "onde": "Domino Recording Co., Bandcamp, Spotify",
-      "capa": "capas/86c66aa1d801d5c621eeaac62c6c4ed4.jpg"
+      "capa": "capas/86c66aa1d801d5c621eeaac62c6c4ed4.jpg",
+      "youtube_id": "noNcHNoWvUM"
     },
     "2026-11--english-teacher-this-could-be-texas": {
       "id": "2026-11--english-teacher-this-could-be-texas",
@@ -2131,7 +2176,8 @@
       "spotify_id": "3lSmcj39eQiU76EbMGuxS1",
       "spotify_url": "https://open.spotify.com/search/English%20Teacher%20This%20Could%20Be%20Texas",
       "onde": "Island Records, Spotify, Apple Music",
-      "capa": "capas/2dedf2aeecaac42c11314dd41e57a208.jpg"
+      "capa": "capas/2dedf2aeecaac42c11314dd41e57a208.jpg",
+      "youtube_id": "0PWZdalB9aM"
     },
     "2026-11--mount-kimbie-the-sunset-violent": {
       "id": "2026-11--mount-kimbie-the-sunset-violent",
@@ -2165,7 +2211,8 @@
       "spotify_id": "5kSmcj39eQiU76EbMGuxS2",
       "spotify_url": "https://open.spotify.com/search/Mount%20Kimbie%20The%20Sunset%20Violent",
       "onde": "Warp Records, Bandcamp, Spotify",
-      "capa": "capas/ecc51ba4c4c749f6a8155e90ddc285f5.jpg"
+      "capa": "capas/ecc51ba4c4c749f6a8155e90ddc285f5.jpg",
+      "youtube_id": "ek5p3bmsuBU"
     },
     "2026-11--diiv-frog-in-boiling-water": {
       "id": "2026-11--diiv-frog-in-boiling-water",
@@ -2199,7 +2246,8 @@
       "spotify_id": "2lSmcj39eQiU76EbMGuxS3",
       "spotify_url": "https://open.spotify.com/search/DIIV%20Frog%20in%20Boiling%20Water",
       "onde": "Fantasy Records, Bandcamp, Spotify",
-      "capa": "capas/6fd1b01617df70682ffa06faa9f301c0.jpg"
+      "capa": "capas/6fd1b01617df70682ffa06faa9f301c0.jpg",
+      "youtube_id": "Pz8bJJSDD54"
     },
     "2026-11--friko-where-we-ve-been": {
       "id": "2026-11--friko-where-we-ve-been",
@@ -2233,7 +2281,8 @@
       "spotify_id": "4myypnSDFC6PrjZRDYcBaC",
       "spotify_url": "https://open.spotify.com/album/4myypnSDFC6PrjZRDYcBaC",
       "onde": "ATO Records, Bandcamp, Spotify",
-      "capa": "capas/893b0cfb92c4c7e90bd4e45ec9654160.jpg"
+      "capa": "capas/893b0cfb92c4c7e90bd4e45ec9654160.jpg",
+      "youtube_id": "FnxlHDCWGy8"
     },
     "2026-11--maruja-connla-s-well": {
       "id": "2026-11--maruja-connla-s-well",
@@ -2266,7 +2315,8 @@
       "spotify_id": "1mSmcj39eQiU76EbMGuxS4",
       "spotify_url": "https://open.spotify.com/search/Maruja%20Connla%27s%20Well",
       "onde": "Bandcamp, Spotify, Apple Music",
-      "capa": "capas/5e72f11b6fd716b4bcca3100a77c57a7.jpg"
+      "capa": "capas/5e72f11b6fd716b4bcca3100a77c57a7.jpg",
+      "youtube_id": "VRtkoNBJRQo"
     },
     "2026-11--cindy-lee-diamond-jubilee": {
       "id": "2026-11--cindy-lee-diamond-jubilee",
@@ -2301,7 +2351,8 @@
       "spotify_id": "6mSmcj39eQiU76EbMGuxS5",
       "spotify_url": "https://open.spotify.com/search/Cindy%20Lee%20Diamond%20Jubilee",
       "onde": "Realistik Studios, YouTube, Bandcamp",
-      "capa": "capas/4a7bd7633bad7a5265ac02b659cef219.jpg"
+      "capa": "capas/4a7bd7633bad7a5265ac02b659cef219.jpg",
+      "youtube_id": "_LJi5na897Y"
     },
     "2026-11--negro-leo-desejo-do-labirinto": {
       "id": "2026-11--negro-leo-desejo-do-labirinto",
@@ -2335,7 +2386,8 @@
       "spotify_id": "43YyE328A9L8sC5f2F4B3Y",
       "spotify_url": "https://open.spotify.com/artist/6UKn12Sg5H3SyiFX5GalB6",
       "onde": "QTV Selo, Bandcamp, Spotify",
-      "capa": "capas/505a32057542d18eafe3d2dfc454162b.jpg"
+      "capa": "capas/505a32057542d18eafe3d2dfc454162b.jpg",
+      "youtube_id": "JUeJuyR6XSQ"
     },
     "2026-11--sophia-chablau-em-busca-da-batida": {
       "id": "2026-11--sophia-chablau-em-busca-da-batida",
@@ -2369,7 +2421,8 @@
       "spotify_id": "7mSmcj39eQiU76EbMGuxS6",
       "spotify_url": "https://open.spotify.com/search/Sophia%20Chablau%20Musica%20do%20Esquecimento",
       "onde": "Selo Risco, Bandcamp, Spotify",
-      "capa": "capas/2bf2803db89929e08db28e2f6bad9080.jpg"
+      "capa": "capas/2bf2803db89929e08db28e2f6bad9080.jpg",
+      "youtube_id": "DfJnsP3ykbQ"
     },
     "2026-11--amaro-freitas-y-y": {
       "id": "2026-11--amaro-freitas-y-y",
@@ -2403,7 +2456,8 @@
       "spotify_id": "8mSmcj39eQiU76EbMGuxS7",
       "spotify_url": "https://open.spotify.com/search/Amaro%20Freitas%20Y%27Y",
       "onde": "Psychic Hotline, Spotify, Bandcamp",
-      "capa": "capas/d58c27265adc560f6a7b6e785c74d091.jpg"
+      "capa": "capas/d58c27265adc560f6a7b6e785c74d091.jpg",
+      "youtube_id": "s-_CbwOYBkg"
     },
     "2026-11--geese-live-third-man": {
       "id": "2026-11--geese-live-third-man",
@@ -2437,7 +2491,8 @@
       "spotify_id": "4VqF3tU3Fw3k6nO0Lz2j9n",
       "spotify_url": "https://open.spotify.com/album/4VqF3tU3Fw3k6nO0Lz2j9n",
       "onde": "Third Man Records, Spotify",
-      "capa": "capas/e6cf053a0d02f3c199cc3cf5ed581596.jpg"
+      "capa": "capas/e6cf053a0d02f3c199cc3cf5ed581596.jpg",
+      "youtube_id": "9HN0VuyMW-s"
     },
     "2026-11--panda-bear-sinister-grift": {
       "id": "2026-11--panda-bear-sinister-grift",
@@ -2471,7 +2526,8 @@
       "spotify_id": "9mSmcj39eQiU76EbMGuxS8",
       "spotify_url": "https://open.spotify.com/search/Panda%20Bear%20Sinister%20Grift",
       "onde": "Domino Recording Co., Bandcamp, Spotify",
-      "capa": "capas/5c32a996a45e02421d516d43e1a85f42.jpg"
+      "capa": "capas/5c32a996a45e02421d516d43e1a85f42.jpg",
+      "youtube_id": "MhNGN4SnRZM"
     },
     "2026-11--adrianne-lenker-bright-future": {
       "id": "2026-11--adrianne-lenker-bright-future",
@@ -2505,7 +2561,8 @@
       "spotify_id": "3Z8GgT0gqXbLpD0kLz2j9n",
       "spotify_url": "https://open.spotify.com/search/Adrianne%20Lenker%20Bright%20Future",
       "onde": "4AD, Spotify, Bandcamp",
-      "capa": "capas/f00dc643a64dd8528d34da6bf2809b76.jpg"
+      "capa": "capas/f00dc643a64dd8528d34da6bf2809b76.jpg",
+      "youtube_id": "av2CwXbx6oU"
     },
     "2026-11--nick-cave-wild-god": {
       "id": "2026-11--nick-cave-wild-god",
@@ -2539,7 +2596,8 @@
       "spotify_id": "4mSmcj39eQiU76EbMGuxS1",
       "spotify_url": "https://open.spotify.com/search/Nick%20Cave%20Wild%20God",
       "onde": "Bad Seed Ltd, PIAS, Spotify",
-      "capa": "capas/e5897994842fa7c12cc47e06dfdbf3e8.jpg"
+      "capa": "capas/e5897994842fa7c12cc47e06dfdbf3e8.jpg",
+      "youtube_id": "tEtMCSIgLGI"
     },
     "2026-11--kim-deal-nobody-loves-you-more": {
       "id": "2026-11--kim-deal-nobody-loves-you-more",
@@ -2573,7 +2631,8 @@
       "spotify_id": "5mSmcj39eQiU76EbMGuxS2",
       "spotify_url": "https://open.spotify.com/search/Kim%20Deal%20Nobody%20Loves%20You%20More",
       "onde": "4AD, Spotify, Apple Music",
-      "capa": "capas/fe6613b990977b77e27700f7cad35b26.jpg"
+      "capa": "capas/fe6613b990977b77e27700f7cad35b26.jpg",
+      "youtube_id": "osOWmt5YYuw"
     },
     "2026-11--mannequin-pussy-i-got-heaven": {
       "id": "2026-11--mannequin-pussy-i-got-heaven",
@@ -2607,7 +2666,8 @@
       "spotify_id": "6mSmcj39eQiU76EbMGuxS3",
       "spotify_url": "https://open.spotify.com/search/Mannequin%20Pussy%20I%20Got%20Heaven",
       "onde": "Epitaph Records, Spotify, Bandcamp",
-      "capa": "capas/8d8eea87a2b002afc69e231993b4ec46.jpg"
+      "capa": "capas/8d8eea87a2b002afc69e231993b4ec46.jpg",
+      "youtube_id": "PpmNT3STSWk"
     },
     "2026-11--jack-white-no-name": {
       "id": "2026-11--jack-white-no-name",
@@ -2641,7 +2701,8 @@
       "spotify_id": "7mSmcj39eQiU76EbMGuxS4",
       "spotify_url": "https://open.spotify.com/search/Jack%20White%20No%20Name",
       "onde": "Third Man Records, Spotify, Apple Music",
-      "capa": "capas/7e966bf03e4e3bf7eccc8a06ede3b033.jpg"
+      "capa": "capas/7e966bf03e4e3bf7eccc8a06ede3b033.jpg",
+      "youtube_id": "xviKHjc89DQ"
     },
     "2026-11--jessica-pratt-here-in-the-pitch": {
       "id": "2026-11--jessica-pratt-here-in-the-pitch",
@@ -2675,7 +2736,8 @@
       "spotify_id": "8mSmcj39eQiU76EbMGuxS5",
       "spotify_url": "https://open.spotify.com/search/Jessica%20Pratt%20Here%20in%20the%20Pitch",
       "onde": "Mexican Summer, Bandcamp, Spotify",
-      "capa": "capas/f90bd11cf599f1a9dac280938bc6b0fa.jpg"
+      "capa": "capas/f90bd11cf599f1a9dac280938bc6b0fa.jpg",
+      "youtube_id": "QaXe9zAa3r4"
     },
     "2026-11--been-stellar-scream-from-new-york-ny": {
       "id": "2026-11--been-stellar-scream-from-new-york-ny",
@@ -2709,7 +2771,8 @@
       "spotify_id": "1mSmcj39eQiU76EbMGuxS6",
       "spotify_url": "https://open.spotify.com/search/Been%20Stellar%20Scream%20from%20New%20York%2C%20NY",
       "onde": "Dirty Hit, Spotify, Apple Music",
-      "capa": "capas/a5e83e05dda860ad1c27fe3410c978fa.jpg"
+      "capa": "capas/a5e83e05dda860ad1c27fe3410c978fa.jpg",
+      "youtube_id": "J1qZAfiemoc"
     },
     "2026-11--hotline-tnt-cartwheel": {
       "id": "2026-11--hotline-tnt-cartwheel",
@@ -2743,7 +2806,8 @@
       "spotify_id": "2mSmcj39eQiU76EbMGuxS7",
       "spotify_url": "https://open.spotify.com/search/Hotline%20TNT%20Cartwheel",
       "onde": "Third Man Records, Bandcamp, Spotify",
-      "capa": "capas/b2a07f82861ff1ff4664c9d6da7a05d3.jpg"
+      "capa": "capas/b2a07f82861ff1ff4664c9d6da7a05d3.jpg",
+      "youtube_id": "TNV39-UULQE"
     },
     "2026-11--bar-italia-the-twits": {
       "id": "2026-11--bar-italia-the-twits",
@@ -2777,7 +2841,8 @@
       "spotify_id": "3mSmcj39eQiU76EbMGuxS8",
       "spotify_url": "https://open.spotify.com/search/Bar%20Italia%20The%20Twits",
       "onde": "Matador Records, Spotify, Bandcamp",
-      "capa": "capas/1d8e5f705f49c617ff3af7f403a7f465.jpg"
+      "capa": "capas/1d8e5f705f49c617ff3af7f403a7f465.jpg",
+      "youtube_id": "Cne81F3fxDo"
     },
     "2026-11--ml-buch-suntub": {
       "id": "2026-11--ml-buch-suntub",
@@ -2811,7 +2876,8 @@
       "spotify_id": "4mSmcj39eQiU76EbMGuxS9",
       "spotify_url": "https://open.spotify.com/search/ML%20Buch%20Suntub",
       "onde": "15 love, Bandcamp, Spotify",
-      "capa": "capas/5b70f514dcbd6c9255dac99d11ddd78b.jpg"
+      "capa": "capas/5b70f514dcbd6c9255dac99d11ddd78b.jpg",
+      "youtube_id": "GPkJtZMvl4s"
     },
     "2026-11--tramhaus-the-first-few": {
       "id": "2026-11--tramhaus-the-first-few",
@@ -2845,7 +2911,8 @@
       "spotify_id": "5mSmcj39eQiU76EbMGuxS0",
       "spotify_url": "https://open.spotify.com/search/Tramhaus%20The%20First%20Few",
       "onde": "Subroutine Records, Bandcamp, Spotify",
-      "capa": "capas/324ed0c96228589a94c196111e99c3cd.jpg"
+      "capa": "capas/324ed0c96228589a94c196111e99c3cd.jpg",
+      "youtube_id": "nVCh5-h6K8Y"
     },
     "2026-11--sprints-letter-to-self": {
       "id": "2026-11--sprints-letter-to-self",
@@ -2879,7 +2946,8 @@
       "spotify_id": "6mSmcj39eQiU76EbMGuxS1",
       "spotify_url": "https://open.spotify.com/search/SPRINTS%20Letter%20to%20Self",
       "onde": "City Slang, Spotify, Bandcamp",
-      "capa": "capas/e778517b458642eaa3b113f0eb2845fe.jpg"
+      "capa": "capas/e778517b458642eaa3b113f0eb2845fe.jpg",
+      "youtube_id": "BOrCWngGQEU"
     },
     "2026-11--jadsa-joao-milet-meirelles-taxidermia-vol-3": {
       "id": "2026-11--jadsa-joao-milet-meirelles-taxidermia-vol-3",
@@ -2913,7 +2981,8 @@
       "spotify_id": "7mSmcj39eQiU76EbMGuxS2",
       "spotify_url": "https://open.spotify.com/search/Jadsa%20Joao%20Milet%20Meirelles%20Taxidermia",
       "onde": "Selo Risco, Bandcamp, Spotify",
-      "capa": "capas/d6338cb21d5a0eecd74ec0af43bd92db.jpg"
+      "capa": "capas/d6338cb21d5a0eecd74ec0af43bd92db.jpg",
+      "youtube_id": "9CrwNZ6RyaE"
     },
     "2026-11--boogarins-bacuri": {
       "id": "2026-11--boogarins-bacuri",
@@ -2947,7 +3016,8 @@
       "spotify_id": "8mSmcj39eQiU76EbMGuxS3",
       "spotify_url": "https://open.spotify.com/search/Boogarins%20Bacuri",
       "onde": "OAR, Selo Boogarins, Spotify, Bandcamp",
-      "capa": "capas/934b441efef2b4c73a3b7a4499a1f031.jpg"
+      "capa": "capas/934b441efef2b4c73a3b7a4499a1f031.jpg",
+      "youtube_id": "IX4xv7G0REo"
     },
     "2026-11--the-cure-songs-of-a-lost-world": {
       "id": "2026-11--the-cure-songs-of-a-lost-world",
@@ -2982,7 +3052,8 @@
       "spotify_id": "9mSmcj39eQiU76EbMGuxS4",
       "spotify_url": "https://open.spotify.com/search/The%20Cure%20Songs%20of%20a%20Lost%20World",
       "onde": "Fiction Records, Polydor, Capitol, Spotify",
-      "capa": "capas/cbd3826ef3b93e89045cb0c15f1a95dd.jpg"
+      "capa": "capas/cbd3826ef3b93e89045cb0c15f1a95dd.jpg",
+      "youtube_id": "sx9SVAtMkJM"
     },
     "2026-11--queens-of-the-stone-age-perfecth": {
       "id": "2026-11--queens-of-the-stone-age-perfecth",
@@ -3017,7 +3088,8 @@
       "spotify_id": "5bwWqW9LN9wcyyNiOtqhFf",
       "spotify_url": "https://open.spotify.com/search/Queens%20of%20the%20Stone%20Age%20Perfecth",
       "capa": "capas/6ed0ec9e85e566afc81ef246358bbc31.jpg",
-      "onde": "Matador Records, Spotify, Apple Music, YouTube Music, Bandcamp"
+      "onde": "Matador Records, Spotify, Apple Music, YouTube Music, Bandcamp",
+      "youtube_id": "6gm9IWUuus0"
     }
   },
   "guias": {

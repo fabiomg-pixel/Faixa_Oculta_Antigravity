@@ -408,12 +408,9 @@ dialog.texto::backdrop { background: var(--backdrop); }
 .pl-tag-qtd { font-size: 11px; padding: 2px 7px; background: rgba(0,0,0,0.06); border-radius: 4px; color: var(--muted); vertical-align: middle; }
 .pl-subtitulo { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
 .pl-acoes-botoes { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.btn-pl-app { font-size: 12px; padding: 6px 14px; border-radius: 999px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: filter .15s ease, transform .1s ease; border: none; cursor: pointer; }
-.btn-pl-app:hover { filter: brightness(1.1); transform: translateY(-1px); }
-.btn-pl-app.btn-spot { background: #1DB954; color: #fff; }
-.btn-pl-app.btn-yt { background: #FF0000; color: #fff; }
-.btn-pl-app.btn-play-seq { background: var(--ink); color: var(--paper); }
-.ico-app { font-size: 10px; line-height: 1; }
+.pl-link-app, .pl-btn-ouvir { font-family: var(--f-mono); font-size: var(--fs-xs); letter-spacing: .04em; padding: 5px 12px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--card); color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all .15s ease; font-weight: 600; text-transform: uppercase; }
+.pl-link-app:hover, .pl-btn-ouvir:hover { border-color: var(--sec); color: var(--sec); background: var(--paper); }
+.pl-btn-ouvir.ativo, .pl-btn-ouvir:active { background: var(--sec-f); color: var(--on-sec); border-color: var(--sec-f); }
 .pl-detalhes { margin-top: 12px; border-top: 1px dashed var(--rule); padding-top: 8px; }
 .pl-summary { cursor: pointer; font-size: 12px; font-weight: 700; color: var(--sec); display: flex; align-items: center; justify-content: space-between; padding: 8px 4px; user-select: none; }
 .pl-summary:hover { color: var(--ink); }
@@ -808,11 +805,9 @@ dialog.texto.ida-dlg { width: min(640px, calc(100% - 24px)); }
 .dock-ext-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 10px; background: rgba(0,0,0,0.22); border-top: 1px solid var(--band-rule); border-bottom: 1px solid var(--band-rule); font-size: 11px; }
 .dock-aviso-previa { color: var(--band-muted); font-size: 10px; font-family: var(--f-mono); text-transform: uppercase; letter-spacing: .04em; }
 .dock-ext-links { display: flex; gap: 6px; align-items: center; }
-.dock-pill-btn { display: inline-flex; align-items: center; padding: 3px 9px; border-radius: 999px; font-weight: 700; text-decoration: none; font-size: 11px; font-family: var(--f-mono); transition: filter .15s ease; }
-.dock-pill-btn:hover { filter: brightness(1.15); }
-.dock-pill-btn.spot { background: #1DB954; color: #fff; }
-.dock-pill-btn.yt { background: #FF0000; color: #fff; }
-.dock iframe { width: 100%; border: 0; border-radius: 12px; display: block; background: transparent; }
+.dock-pill-btn { display: inline-flex; align-items: center; padding: 3px 9px; border-radius: var(--pill); font-weight: 600; text-decoration: none; font-size: 11px; font-family: var(--f-mono); background: var(--band-rule); color: var(--band-fg); border: 1px solid var(--band-rule); transition: all .15s ease; letter-spacing: .03em; }
+.dock-pill-btn:hover { background: var(--sec); color: var(--paper); border-color: var(--sec); }
+.dock iframe { width: 100%; border: 0; border-radius: 6px; display: block; background: transparent; }
 body.com-player { padding-bottom: 24px; }
 @media (max-width: 700px) {
   .dock { right: 8px; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); width: calc(100% - 16px); }
@@ -957,6 +952,27 @@ dialog.leitura::backdrop { background: var(--backdrop); }
 .ad-card-acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: auto; padding-top: 6px; }
 .ad-btn-link { display: inline-flex; align-items: center; justify-content: center; gap: 5px; font-size: 11px; padding: 5px 9px; background: var(--card); color: var(--ink); border: 1px solid var(--rule); border-radius: 3px; text-decoration: none; font-weight: 500; transition: all .15s ease; }
 .ad-btn-link:hover { background: var(--sec-f); color: var(--on-sec); border-color: var(--sec-f); }
+
+/* Hero card da obra em foco no Retrato de Autor */
+.ad-obra-foco-card { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 24px; background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 20px; margin-bottom: 28px; align-items: center; }
+.ad-foco-capa { position: relative; width: 100%; aspect-ratio: 1; overflow: hidden; border-radius: 2px; background: var(--band); }
+.ad-foco-capa.poster { aspect-ratio: 2 / 3; }
+.ad-foco-capa img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ad-foco-capa .badge { position: absolute; top: 8px; left: 8px; background: var(--sec); color: var(--on-sec); font: 700 9px/1.2 var(--f-mono); letter-spacing: .06em; padding: 3px 6px; border-radius: 2px; }
+.ad-foco-body { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.ad-foco-tit { font-family: var(--f-display); font-size: clamp(20px, 2.5vw, 26px); font-weight: 800; line-height: 1.15; margin: 0; }
+.ad-foco-meta { font-size: 11px; color: var(--sec); letter-spacing: .05em; font-weight: 600; }
+.ad-foco-txt { font-size: 14px; line-height: 1.5; color: var(--ink); margin: 4px 0 10px; }
+.ad-foco-acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.ad-btn-ouvir, .ad-btn-ler, .ad-link-app { font-family: var(--f-mono); font-size: 11px; padding: 6px 12px; border-radius: var(--pill); border: 1px solid var(--rule); background: var(--card); color: var(--ink); text-decoration: none; cursor: pointer; transition: all .15s ease; font-weight: 600; letter-spacing: .03em; display: inline-flex; align-items: center; gap: 5px; }
+.ad-btn-ouvir { background: var(--sec-f); color: var(--on-sec); border-color: var(--sec-f); }
+.ad-btn-ouvir:hover { filter: brightness(1.1); }
+.ad-btn-ler:hover, .ad-link-app:hover { border-color: var(--sec); color: var(--sec); background: var(--paper); }
+@media (max-width: 700px) {
+  .ad-obra-foco-card { grid-template-columns: minmax(0, 1fr); }
+  .ad-foco-capa { max-width: 200px; }
+}
+
 @media (max-width: 900px) {
   .ad-ensaio { column-count: 1; }
   .ad-grid-obras { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1161,14 +1177,21 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
   const tocando = { url: null, grande: false, video: false };
   const ytLista = (a) => (/^(OLAK5uy_|PL)[A-Za-z0-9_-]{16,40}$/.test(str(a.youtube_list)) ? str(a.youtube_list) : "");
   function embedUrl(a) {
-    if (ytLista(a)) return `https://www.youtube-nocookie.com/embed/videoseries?list=${ytLista(a)}&rel=0`;
-    const sid = str(a.spotify_id) || (str(a.spotify_url).match(/album\/([A-Za-z0-9]{22})/) || [])[1];
-    if (sid && /^[A-Za-z0-9]{22}$/.test(sid)) return `https://open.spotify.com/embed/album/${sid}?utm_source=generator&theme=0`;
+    if (!a) return null;
+    if (ytLista(a)) return `https://www.youtube-nocookie.com/embed/videoseries?list=${ytLista(a)}&rel=0&autoplay=1`;
     const yid = str(a.youtube_id) || (str(a.youtube_url).match(/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|youtu\.be\/)([A-Za-z0-9_-]{11})/) || [])[1];
     if (yid) return `https://www.youtube-nocookie.com/embed/${yid}?autoplay=1&rel=0`;
+    const nome = str(a.exibir_artista || a.artista || a.autor);
+    const tit = str(a.faixa || a.album || a.titulo);
+    if (nome || tit) {
+      const q = encodeURIComponent(`${nome} ${tit}`.trim());
+      return `https://www.youtube-nocookie.com/embed?listType=search&list=${q}&autoplay=1`;
+    }
+    const sid = str(a.spotify_id) || (str(a.spotify_url).match(/album\/([A-Za-z0-9]{22})/) || [])[1];
+    if (sid && /^[A-Za-z0-9]{22}$/.test(sid)) return `https://open.spotify.com/embed/album/${sid}?utm_source=generator&theme=0`;
     return null;
   }
-  const fonteDe = (url) => (/spotify\.com/.test(url) ? "Spotify" : /list=/.test(url) ? "YouTube Music" : "Trailer");
+  const fonteDe = (url) => (/youtube/.test(url) ? "YouTube Music" : /spotify/.test(url) ? "Spotify" : "Trailer");
   function trailerUrl(a) {
     const u = str(a.trailer_url);
     const m = u.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
@@ -1274,25 +1297,23 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
               h("span", { class: "pl-tag-qtd mono" }, `${albuns.length} álbuns`)),
             h("p", { class: "pl-subtitulo" }, sub))),
         h("div", { class: "pl-acoes-botoes" },
-          h("a", { class: "btn-pl-app btn-spot mono", href: linkSpotify, target: "_blank", rel: "noopener", title: `Abrir playlist ${tit} no app do Spotify` },
-            h("span", { class: "ico-app" }, "🟢"), `Abrir no Spotify (${tit}) ↗`),
-          h("a", { class: "btn-pl-app btn-yt mono", href: linkYT, target: "_blank", rel: "noopener", title: `Buscar ${tit} no YouTube Music` },
-            h("span", { class: "ico-app" }, "🔴"), "YouTube Music ↗"),
           h("button", {
-            class: "btn-pl-app btn-play-seq mono", type: "button",
+            class: "pl-btn-ouvir mono" + (playlistSeq.ativa ? " ativo" : ""), type: "button",
             onclick: () => iniciarPlaylistSequencial(albuns, tit),
-          }, playlistSeq.ativa ? `▶ Tocando [${playlistSeq.indice + 1}/${albuns.length}]` : `▶ Tocar no Player Embutido`))),
+          }, playlistSeq.ativa ? `▶ Tocando [${playlistSeq.indice + 1}/${albuns.length}]` : `▶ Tocar playlist no player`),
+          h("a", { class: "pl-link-app mono", href: linkYT, target: "_blank", rel: "noopener", title: `Abrir playlist completa da edição no YouTube / YouTube Music` }, "YouTube Music (playlist) ↗"),
+          h("a", { class: "pl-link-app mono", href: linkSpotify, target: "_blank", rel: "noopener", title: `Abrir no Spotify` }, "Spotify ↗"))),
       h("details", { class: "pl-detalhes", open: expandidoInicial },
         h("summary", { class: "pl-summary mono" },
           h("span", { class: "pl-sum-txt" }, `Ver lista completa dos ${albuns.length} álbuns da edição`),
           h("span", { class: "pl-sum-seta", "aria-hidden": "true" }, "▾")),
-        h("p", { class: "pl-dica-aviso mono" }, "Dica: Para ouvir o disco completo na íntegra sem limite de 30 segundos dos players web, use os botões 'Spotify ↗' ou 'YT Music ↗' de cada álbum para abrir diretamente no seu aplicativo."),
+        h("p", { class: "pl-dica-aviso mono" }, "Dica: O player embutido toca álbuns e faixas completas via YouTube Music sem cortes. Use 'YT Music ↗' ou 'Spotify ↗' para abrir no seu app preferido."),
         h("ol", { class: "pl-lista-albuns", "aria-label": "Faixas e álbuns da playlist" }, albuns.map((a, i) => {
           const tocandoEste = playlistSeq.ativa && playlistSeq.indice === i;
           const key = a.id || a._id || `pl~${ed._id}~${i}`;
           const nome = str(a.exibir_artista || a.artista);
           const spotItem = safeUrl(a.spotify_url) || (a.spotify_id ? `https://open.spotify.com/album/${a.spotify_id}` : `https://open.spotify.com/search/${encodeURIComponent(nome + " " + a.album)}`);
-          const ytItem = ytLista(a) ? `https://music.youtube.com/playlist?list=${ytLista(a)}` : `https://music.youtube.com/search?q=${encodeURIComponent(nome + " " + a.album)}`;
+          const ytItem = ytLista(a) ? `https://music.youtube.com/playlist?list=${ytLista(a)}` : a.youtube_id ? `https://www.youtube.com/watch?v=${a.youtube_id}` : `https://music.youtube.com/search?q=${encodeURIComponent(nome + " " + a.album)}`;
           return h("li", { class: "pl-item-alb" + (tocandoEste ? " tocando-agora" : "") },
             h("span", { class: "pl-num mono", "aria-hidden": "true" }, String(i + 1).padStart(2, "0")),
             h("div", { class: "pl-capa" }, capa(a)),
@@ -1588,6 +1609,96 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
       );
     });
 
+    let cardObraFoco = null;
+    let itemFoco = null;
+    if (categoria === "musica") {
+      itemFoco = (S.itens || []).find((i) => i.edicao === ed._id && (
+        (i.artista && /queens of the stone age/i.test(i.artista)) ||
+        (i.album && /perfecth/i.test(i.album)) ||
+        (i._id && i._id.includes("perfecth")) ||
+        (i.id && i.id.includes("perfecth"))
+      ));
+      if (!itemFoco && ad.obra_atual) {
+        itemFoco = (S.itens || []).find((i) => i.edicao === ed._id && (i.destaque || (i.artista && new RegExp(nomeAutor, "i").test(i.artista))));
+      }
+      if (itemFoco) {
+        const linkYt = safeUrl(itemFoco.youtube_id ? `https://www.youtube.com/watch?v=${itemFoco.youtube_id}` : itemFoco.youtube_url) || `https://music.youtube.com/search?q=${encodeURIComponent(itemFoco.artista + " " + itemFoco.album)}`;
+        const linkSpot = safeUrl(itemFoco.spotify_url) || (itemFoco.spotify_id ? `https://open.spotify.com/album/${itemFoco.spotify_id}` : `https://open.spotify.com/search/${encodeURIComponent(itemFoco.artista + " " + itemFoco.album)}`);
+        cardObraFoco = h("div", { class: "ad-obra-foco-card" },
+          h("div", { class: "ad-foco-capa" },
+            capa(itemFoco),
+            h("div", { class: "badge mono" }, "Lançamento em Foco")
+          ),
+          h("div", { class: "ad-foco-body" },
+            h("div", { class: "ad-foco-meta mono" }, [itemFoco.selo, itemFoco.formato, itemFoco.genero].map(str).filter(Boolean).join(" · ")),
+            h("h3", { class: "ad-foco-tit" }, str(itemFoco.artista), " — ", h("em", null, str(itemFoco.album)), itemFoco.ano ? h("span", { class: "mono", style: "font-size:16px;font-weight:400;opacity:.7" }, ` (${itemFoco.ano})`) : null),
+            itemFoco.olho ? h("p", { class: "ad-foco-txt" }, str(itemFoco.olho)) : (itemFoco.texto ? h("p", { class: "ad-foco-txt" }, str(itemFoco.texto)) : null),
+            h("div", { class: "ad-foco-acts" },
+              h("button", { class: "ad-btn-ouvir mono", type: "button", onclick: () => ouvir(itemFoco) }, "▶ Tocar álbum no player"),
+              h("a", { class: "ad-link-app mono", href: linkYt, target: "_blank", rel: "noopener" }, "YouTube Music ↗"),
+              h("a", { class: "ad-link-app mono", href: linkSpot, target: "_blank", rel: "noopener" }, "Spotify ↗"),
+              arr(itemFoco.resenha).length ? h("button", { class: "ad-btn-ler mono", type: "button", onclick: () => abrirLeitura(itemFoco._id || itemFoco.id) }, "Ler resenha crítica") : null,
+              marcas(itemFoco._id || itemFoco.id)
+            )
+          )
+        );
+      }
+    } else if (categoria === "cinema") {
+      itemFoco = (S.cine_itens || []).find((i) => i.edicao === ed._id && (
+        (i.titulo && /agente secreto/i.test(i.titulo)) ||
+        (i.destaque) ||
+        (i._id && i._id.includes("agente-secreto"))
+      ));
+      if (itemFoco) {
+        const linkJw = `https://www.justwatch.com/br/busca?q=${encodeURIComponent(itemFoco.titulo)}`;
+        cardObraFoco = h("div", { class: "ad-obra-foco-card" },
+          h("div", { class: "ad-foco-capa poster" },
+            capa({ capa: itemFoco.capa, artista: itemFoco.autor || itemFoco.diretor, album: itemFoco.titulo, _tipo: "filme" }),
+            h("div", { class: "badge mono" }, "Obra em Foco")
+          ),
+          h("div", { class: "ad-foco-body" },
+            h("div", { class: "ad-foco-meta mono" }, [itemFoco.tipo || "filme", itemFoco.tempo, itemFoco.pais].map(str).filter(Boolean).join(" · ")),
+            h("h3", { class: "ad-foco-tit" }, str(itemFoco.titulo), itemFoco.ano ? h("span", { class: "mono", style: "font-size:16px;font-weight:400;opacity:.7" }, ` (${itemFoco.ano})`) : null),
+            itemFoco.olho ? h("p", { class: "ad-foco-txt" }, str(itemFoco.olho)) : null,
+            h("div", { class: "ad-foco-acts" },
+              botaoTrailer(itemFoco),
+              botaoStremio(itemFoco),
+              h("a", { class: "ad-link-app mono", href: linkJw, target: "_blank", rel: "noopener" }, "Onde Assistir ↗"),
+              arr(itemFoco.resenha).length ? h("button", { class: "ad-btn-ler mono", type: "button", onclick: () => abrirLeitura(itemFoco._id || itemFoco.id) }, "Ler crítica de capa") : null,
+              marcas(itemFoco._id || itemFoco.id, ["Quero ver", "Vi"])
+            )
+          )
+        );
+      }
+    } else if (categoria === "livros") {
+      itemFoco = (S.livro_itens || []).find((i) => i.edicao === ed._id && (
+        (i.titulo && /trama da vida/i.test(i.titulo)) ||
+        (i.destaque) ||
+        (i._id && i._id.includes("trama-da-vida"))
+      ));
+      if (itemFoco) {
+        const linkGl = `https://www.google.com.br/books/edition/_/${encodeURIComponent(itemFoco.titulo + " " + (itemFoco.autor || ""))}`;
+        const linkEv = `https://www.estantevirtual.com.br/busca?q=${encodeURIComponent(itemFoco.titulo + " " + (itemFoco.autor || ""))}`;
+        cardObraFoco = h("div", { class: "ad-obra-foco-card" },
+          h("div", { class: "ad-foco-capa poster" },
+            capa({ capa: itemFoco.capa, artista: itemFoco.autor, album: itemFoco.titulo, _tipo: "livro" }),
+            h("div", { class: "badge mono" }, "Obra em Foco")
+          ),
+          h("div", { class: "ad-foco-body" },
+            h("div", { class: "ad-foco-meta mono" }, [itemFoco.onde, itemFoco.tempo, itemFoco.genero].map(str).filter(Boolean).join(" · ")),
+            h("h3", { class: "ad-foco-tit" }, str(itemFoco.titulo), itemFoco.ano ? h("span", { class: "mono", style: "font-size:16px;font-weight:400;opacity:.7" }, ` (${itemFoco.ano})`) : null),
+            itemFoco.olho ? h("p", { class: "ad-foco-txt" }, str(itemFoco.olho)) : null,
+            h("div", { class: "ad-foco-acts" },
+              h("a", { class: "ad-link-app mono", href: linkGl, target: "_blank", rel: "noopener" }, "Google Livros ↗"),
+              h("a", { class: "ad-link-app mono", href: linkEv, target: "_blank", rel: "noopener" }, "Estante Virtual ↗"),
+              arr(itemFoco.resenha).length ? h("button", { class: "ad-btn-ler mono", type: "button", onclick: () => abrirLeitura(itemFoco._id || itemFoco.id) }, "Ler ensaio de capa") : null,
+              marcas(itemFoco._id || itemFoco.id, ["Quero ler", "Li"])
+            )
+          )
+        );
+      }
+    }
+
     return h("section", { class: "bloco-autor-destaque", id: `destaque-autor-${categoria}` },
       h("div", { class: "wrap" },
         h("div", { class: "ad-header" },
@@ -1597,6 +1708,7 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
           ad.subtitulo ? h("p", { class: "ad-subtitulo" }, str(ad.subtitulo)) : null
         ),
         arr(ad.ensaio).length ? h("div", { class: "ad-ensaio" }, arr(ad.ensaio).map((p) => h("p", null, str(p)))) : null,
+        cardObraFoco,
         h("hr", { class: "ad-sec-divider" }),
         h("div", { class: "ad-sec-head" },
           h("h3", null, "Para mergulhar na obra · Catálogo essencial"),
@@ -3414,36 +3526,39 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
     renderChips(itensEd, guiasEd, ed);
     const f = S.filtro;
     if (f === "fila") { main.append(blocoFila()); return; }
+
+    const capas = [], toc = [];
+    let nD = 0, nG = 0, k = 0;
+    if (destaque) capas.push({ a: destaque, capa: true });
+    for (const b of layout) {
+      if (b.tipo === "secao") {
+        k++;
+        const l = itensEd.filter((i) => i.secao === b.secao && !i.destaque);
+        nD += l.length;
+        l.forEach((a) => capas.push({ a }));
+        toc.push({ n: secaoNum(k), titulo: (SECOES[b.secao] || {}).titulo || b.secao, id: b.secao });
+      } else if (b.tipo === "guia" && guiasEd.get(b.id)) {
+        const g = guiasEd.get(b.id);
+        nG++; nD += arr(g.albuns).length;
+        arr(g.albuns).forEach((a) => capas.push({ a }));
+        toc.push({ n: "◆", titulo: str(g.titulo), id: g._id, guia: true });
+      }
+    }
+    if (destaque) nD++;
+    if (ed.destaque_autor) {
+      toc.push({ n: "★", titulo: `Retrato: ${str(ed.destaque_autor.artista || ed.destaque_autor.autor)}`, id: "destaque-autor-musica" });
+    }
+    main.append(banner({ nome: "música", numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc, quadrado: true, playlist: ed.playlist,
+      stats: [plural(nD, "disco", "discos"), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
+
     if (f === "playlist") {
       const pl = blocoPlaylistMes(ed, itensEd, guiasEd, true);
       if (pl) main.append(pl);
+      window.scrollTo(0, y);
       return;
     }
 
     if (f === "tudo") {
-      const capas = [], toc = [];
-      let nD = 0, nG = 0, k = 0;
-      if (destaque) capas.push({ a: destaque, capa: true });
-      for (const b of layout) {
-        if (b.tipo === "secao") {
-          k++;
-          const l = itensEd.filter((i) => i.secao === b.secao && !i.destaque);
-          nD += l.length;
-          l.forEach((a) => capas.push({ a }));
-          toc.push({ n: secaoNum(k), titulo: (SECOES[b.secao] || {}).titulo || b.secao, id: b.secao });
-        } else if (b.tipo === "guia" && guiasEd.get(b.id)) {
-          const g = guiasEd.get(b.id);
-          nG++; nD += arr(g.albuns).length;
-          arr(g.albuns).forEach((a) => capas.push({ a }));
-          toc.push({ n: "◆", titulo: str(g.titulo), id: g._id, guia: true });
-        }
-      }
-      if (destaque) nD++;
-      if (ed.destaque_autor) {
-        toc.push({ n: "★", titulo: `Retrato: ${str(ed.destaque_autor.artista || ed.destaque_autor.autor)}`, id: "destaque-autor-musica" });
-      }
-      main.append(banner({ nome: "música", numero: str(ed.numero), mes: str(ed.mes).toLowerCase(), capas, toc, quadrado: true, playlist: ed.playlist,
-        stats: [plural(nD, "disco", "discos"), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
       const pl = blocoPlaylistMes(ed, itensEd, guiasEd, false);
       if (pl) main.append(pl);
       const c = blocoCapa(ed, destaque); if (c) main.append(c);
