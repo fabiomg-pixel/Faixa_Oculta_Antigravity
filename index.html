@@ -2174,22 +2174,32 @@ dialog.texto, dialog.leitura {
       paras = String(n.texto).split("\n\n").filter(Boolean);
     }
 
-    // Fontes apuradas com botão destacado para abrir site original
+        // Seção de Reportagens Completas por Veículo (Notícias na íntegra no modo leitor)
     const secaoFontes = arr(n.fontes).map((f) => {
       const leitura = leituraDe(f.url);
-      const parasFonte = leitura ? arr(leitura.texto_integral && leitura.texto_integral.length ? leitura.texto_integral : leitura.resumo) : [];
-      return h("div", { class: "lt-fonte-bloco", style: "border-top:1px solid var(--lt-rule, var(--rule));padding-top:14px;margin-top:16px;" },
-        h("div", { style: "display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;" },
-          h("div", { class: "lt-meta mono" }, h("b", null, str(f.fonte)), f.perfil ? ` · ${str(f.perfil)}` : ""),
-          safeUrl(f.url) ? h("a", { class: "lt-orig-btn mono", href: safeUrl(f.url), target: "_blank", rel: "noopener" }, `Acessar no site original de ${str(f.fonte)} ↗`) : null
-        ),
-        f.enfoque ? h("p", { class: "lt-enfoque", style: "margin:8px 0 6px;font-style:italic;" }, `Enfoque da apuração: ${str(f.enfoque)}`) : null,
-        parasFonte.length ? h("div", { style: "margin-top:8px;" }, parasFonte.map((p) => h("p", null, str(p)))) : null,
-        leitura && arr(leitura.pontos).length ? [
-          h("h5", { style: "margin:14px 0 6px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.05em;color:var(--muted);" }, "Pontos centrais destacados"),
-          h("ul", { class: "lt-pontos" }, arr(leitura.pontos).map((x) => h("li", null, str(x))))
-        ] : null,
-        leitura && leitura.citacao ? h("blockquote", { class: "lt-cit" }, `“${str(leitura.citacao)}”`) : null
+      const parasFonte = Array.isArray(f.texto_integral) && f.texto_integral.length
+        ? f.texto_integral
+        : (leitura ? arr(leitura.texto_integral && leitura.texto_integral.length ? leitura.texto_integral : leitura.resumo) : (f.enfoque ? [f.enfoque] : []));
+      const pontosFonte = arr(f.pontos && f.pontos.length ? f.pontos : (leitura ? leitura.pontos : []));
+      const citacaoFonte = f.citacao || (leitura ? leitura.citacao : "");
+      const titFonte = f.titulo || (leitura ? leitura.titulo : `${n.titulo} — Apuração por ${f.fonte}`);
+
+      return h("div", { class: "lt-fonte-bloco", style: "border-top:2px solid var(--lt-rule, var(--rule));padding:22px 0 16px;margin-top:24px;" },
+        h("div", { class: "lt-meta mono", style: "margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;" },
+          h("span", null, h("b", null, str(f.fonte)), f.perfil ? ` · ${str(f.perfil)}` : "", f.autor ? ` · ${str(f.autor)}` : ""),
+          h("span", { class: "badge mono", style: "font-size:10px;text-transform:uppercase;padding:2px 6px;border:1px solid var(--lt-rule, var(--rule));border-radius:2px;" }, "Reportagem na íntegra")),
+        h("h3", { class: "lt-tit", style: "font-size:clamp(17px,2.2vw,22px);margin:8px 0 12px;line-height:1.22;" }, str(titFonte)),
+        f.enfoque && f.enfoque !== titFonte ? h("p", { class: "lt-enfoque", style: "margin:0 0 14px;font-style:italic;color:var(--lt-muted);" }, `Enfoque da apuração: ${str(f.enfoque)}`) : null,
+        h("div", { class: "lt-corpo-completo", style: "margin:14px 0;" }, parasFonte.map((p) => h("p", null, str(p)))),
+        pontosFonte.length ? h("div", { style: "margin:18px 0 12px;padding:12px 16px;background:var(--lt-card, var(--card));border-left:3px solid var(--sec, var(--red));" },
+          h("h5", { style: "margin:0 0 8px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.05em;color:var(--lt-muted);" }, "Pontos centrais destacados por este veículo:"),
+          h("ul", { class: "lt-pontos", style: "margin:0;padding-left:18px;" }, pontosFonte.map((x) => h("li", null, str(x))))
+        ) : null,
+        citacaoFonte ? h("blockquote", { class: "lt-cit", style: "margin:16px 0;padding:12px 18px;border-left:4px solid var(--ocre, #B5862C);font-style:italic;" }, `“${str(citacaoFonte)}”`) : null,
+        safeUrl(f.url) ? h("div", { style: "display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:10px;border-top:1px dashed var(--lt-rule, var(--rule));" },
+          h("span", { class: "mono", style: "font-size:11px;color:var(--lt-muted);" }, `Publicado originalmente em ${str(f.fonte)}`),
+          h("a", { class: "lt-orig-btn mono", href: safeUrl(f.url), target: "_blank", rel: "noopener", title: `Conferir matéria original em ${str(f.fonte)}` }, `Conferir no site original ↗`)
+        ) : null
       );
     });
 
@@ -2223,7 +2233,7 @@ dialog.texto, dialog.leitura {
 
       // Fontes verificadas com links diretos
       secaoFontes.length ? [
-        h("h4", { class: "lt-divisor-tit", style: "margin:28px 0 10px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.05em;color:var(--muted);" }, "Fontes verificadas & Cobertura original"),
+        h("h4", { class: "lt-divisor-tit", style: "margin:36px 0 12px;text-transform:uppercase;font-size:12px;letter-spacing:.06em;color:var(--sec, var(--red));" }, "Cobertura Completa por Veículo · Notícias na Íntegra"),
         ...secaoFontes
       ] : null,
 
@@ -2281,19 +2291,33 @@ dialog.texto, dialog.leitura {
   }
 
   // A source button: always opens our clean in-app reader.
-  function fonteLink(url, txt, notaContexto) {
+    function fonteLink(url, txt, notaContexto, fObj) {
     const l = leituraDe(url);
     const abrir = () => {
-      if (l) abrirTexto(l);
-      else if (notaContexto) abrirNota(notaContexto);
-      else abrirTexto({
-        fonte: txt || "Fonte",
-        titulo: txt || "Matéria",
-        resumo: ["Síntese compilada pela redação da Faixa Oculta."],
-        url: url
-      });
+      if (l) {
+        abrirTexto(l);
+      } else if (fObj && Array.isArray(fObj.texto_integral) && fObj.texto_integral.length) {
+        abrirTexto({
+          fonte: fObj.fonte || txt || "Fonte",
+          autor: [fObj.perfil, fObj.autor].filter(Boolean).join(" · "),
+          titulo: fObj.titulo || `${notaContexto?.titulo || txt} — Apuração por ${fObj.fonte || txt}`,
+          resumo: fObj.texto_integral,
+          pontos: fObj.pontos || [],
+          citacao: fObj.citacao || "",
+          url: fObj.url || url
+        });
+      } else if (notaContexto) {
+        abrirNota(notaContexto);
+      } else {
+        abrirTexto({
+          fonte: txt || "Fonte",
+          titulo: txt || "Matéria",
+          resumo: ["Síntese compilada pela redação da Faixa Oculta."],
+          url: url
+        });
+      }
     };
-    return h("button", { type: "button", class: "fl-ler", onclick: abrir, title: `Ler matéria de ${txt} no modo leitor` }, txt);
+    return h("button", { type: "button", class: "fl-ler", onclick: (e) => { e.stopPropagation(); abrir(); }, title: `Ler reportagem completa de ${txt} no modo leitor` }, txt);
   }
   function linkExt(href, txt) {
     const l = leituraDe(href);
@@ -2734,7 +2758,7 @@ dialog.texto, dialog.leitura {
         h("p", null, str(n.texto)),
         n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
         arr(n.fontes).length ? h("ul", { class: "d-fontes" }, arr(n.fontes).map((f) => h("li", null,
-          fonteLink(f.url, str(f.fonte), n), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
+          fonteLink(f.url, str(f.fonte), n, f), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
           f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
         h("div", { class: "d-nota-acts", onclick: (e) => e.stopPropagation() },
           h("button", { class: "ler", type: "button", onclick: () => abrirNota(n, bol) }, "Abrir no leitor"),
