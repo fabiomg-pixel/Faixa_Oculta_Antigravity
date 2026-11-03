@@ -50,8 +50,9 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - **Música:** Indie rock/folk, canção confessional (Lucy Dacus, Phoebe Bridgers, Soccer Mommy), art-rock/pós-punk (Geese, bar italia), shoegaze (Wishy), vanguarda e rock brasileiro (Papangu, Letrux, El Efecto), cânone (Radiohead, QOTSA).
    - **Cinema:** Cinema de autor contemporâneo (festivais de Cannes, Mostra SP, Festival do Rio) e cinema brasileiro independente (Gabriel Martins, Kleber Mendonça Filho, Filmes de Plástico).
 
-11. **Prioridade Editorial do Boletim Diário (Economia, Política e Diplomacia Primeiro):**
-   - As notícias duras e estruturais de Economia (corte de gastos, juros Selic, câmbio, reforma tributária), Política Nacional (STF, Congresso, governabilidade) e Diplomacia / Política Internacional (geopolítica global, eleições EUA, BRICS, G20, Itamaraty) são prioridade máxima e DEVEM sempre aparecer primeiro no topo do boletim.
+11. **Prioridade Editorial e Volume do Boletim Diário (Ao menos 10 notícias por edição):**
+   - O boletim diário (manhã e noite) DEVE conter obrigatoriamente **AO MENOS 10 NOTÍCIAS DENSAS E ANALÍTICAS**, nunca resumos rasos ou edições com volume reduzido.
+   - As notícias duras e estruturais de Economia (corte de gastos, juros Selic, câmbio, dívida pública, reforma tributária), Política Nacional (STF, Congresso, governabilidade) e Diplomacia / Política Internacional (geopolítica global, eleições EUA, BRICS, G20, Itamaraty) são prioridade máxima e DEVEM sempre aparecer primeiro no topo do boletim.
    - Pautas de Ciência e Saúde (UFRJ, Fiocruz, SBPC) e Clima/Amazônia integram a edição sem jamais soterrar o noticiário nacional e internacional de primeira linha.
    - Cada nota do boletim DEVE contar com: múltiplas fontes plurais, síntese das diferentes visões da imprensa (`resumo_visoes`), reportagem completa de 3 a 4 parágrafos para o Modo Leitor (`texto_completo`), contexto de aprofundamento (`aprofundamento`) e link direto para o site original.
 

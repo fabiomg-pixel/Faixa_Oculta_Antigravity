@@ -159,15 +159,16 @@ A curadoria da Faixa Oculta foi desenhada para seu leitor-alvo, professor e pesq
 ## 12. Prioridade Editorial do Boletim Diário (Economia, Política e Diplomacia Primeiro)
 
 > [!IMPORTANT]
+> **Volume Editorial Mandatório:** O boletim diário (manhã e noite) DEVE conter obrigatoriamente **AO MENOS 10 NOTÍCIAS DENSAS E ANALÍTICAS** (10 a 12 matérias). Edições com 5 ou 6 notas são consideradas incompletas.
 > As pautas de nicho acadêmico e pessoal NÃO devem canibalizar o noticiário duro nacional e internacional. Economia e Política estruturais têm prioridade máxima de abertura.
 
-1. **Hierarquia Editorial Obrigatória do Boletim:**
-   - **1º e 2º:** **Economia & Contas Públicas** (corte de gastos, juros Selic, câmbio, inflação, meta fiscal, reforma tributária).
-   - **3º:** **Política Nacional & Instituições** (STF, Congresso, governabilidade, regras de emendas, equilíbrio entre Poderes).
-   - **4º:** **Diplomacia & Geopolítica Internacional** (eleições globais, BRICS, G20, Itamaraty, multilateralismo e conflitos).
-   - **5º:** **Economia Setorial & Regulação** (impactos sociais de apostas/bets, energia, regulação de IA).
-   - **6º:** **Ciência, Saúde Pública & Universidades** (FNDCT, UFRJ, Fiocruz, SBPC, CNPq).
-   - **7º:** **Clima & Amazônia** (bacias hidrográficas, estiagem, queimadas, COP30).
+1. **Hierarquia Editorial Obrigatória do Boletim (Mínimo de 10 Notas):**
+   - **1º e 2º:** **Economia & Contas Públicas** (corte de gastos, juros Selic, câmbio, inflação, meta fiscal, reforma tributária, dívida pública, estatais).
+   - **3º e 4º:** **Política Nacional & Instituições** (STF, Congresso, governabilidade, regras de emendas, equilíbrio entre Poderes, segurança pública).
+   - **5º e 6º:** **Diplomacia & Geopolítica Internacional** (eleições globais, BRICS, G20, Itamaraty, multilateralismo e conflitos).
+   - **7º:** **Economia Setorial, Energia & Regulação** (impactos sociais de apostas/bets, malha elétrica, data centers, regulação de IA).
+   - **8º e 9º:** **Ciência, Saúde Pública & Universidades** (FNDCT, UFRJ, Fiocruz, SBPC, CNPq, arboviroses, soberania vacinal no SUS).
+   - **10º e 11º:** **Clima & Amazônia** (bacias hidrográficas, estiagem, terras indígenas, queimadas, COP30, transição ecológica).
 2. **Estrutura Mandatória de Cada Nota (`dias[dia].notas`):**
    - `texto_completo`: 3 a 4 parágrafos densos e analíticos para leitura integral direta.
    - `resumo_visoes`: Síntese contrastando as diferentes linhas editoriais e posições políticas da imprensa (*mercado vs independente vs governamental*).

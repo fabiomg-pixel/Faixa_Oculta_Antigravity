@@ -272,7 +272,7 @@ HIERARQUIA EDITORIAL MANDATÓRIA (A ORDEM DAS NOTÍCIAS DEVE SEGUIR RIGOROSAMENT
 
 DIRETRIZES EDITORIAIS E DE DIVERSIDADE RIGOROSA:
 1. É EXPRESSAMENTE PROIBIDO O MONOPÓLIO DE UMA ÚNICA FONTE:
-   - O boletim com 6 a 8 notas DEVE contemplar pelo menos 5 VEÍCULOS DISTINTOS entre:
+   - O boletim DEVE conter OBRIGATORIAMENTE AO MENOS 10 NOTÍCIAS DENSAS E ANALÍTICAS (10 a 12 matérias) contemplando pelo menos 6 VEÍCULOS DISTINTOS entre:
      Valor Econômico, Folha de S.Paulo, BBC News Brasil, Poder360, ConJur, CartaCapital, Brasil de Fato, Agência Brasil / EBC, Le Monde Diplomatique Brasil, Pesquisa FAPESP, Fiocruz, Jornal da Ciência / SBPC, Sumaúma, g1.
 2. Cada matéria deve ser completa e conter:
    - 'titulo': Manchete informativa, clara e sem sensacionalismo.
@@ -372,7 +372,19 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
                 break
 
     notas_selecionadas = []
-    ordem_prioridade = ["Economia", "Política", "Internacional", "Economia", "Ciência", "Clima"]
+    ordem_prioridade = [
+        "Economia",       # 1. Contas Públicas / Dívida / Fiscal
+        "Economia",       # 2. Inflação / Juros / Crédito / Mercado
+        "Política",       # 3. Congresso / Senado / PECs
+        "Política",       # 4. STF / Judiciário / Constitucionalidade
+        "Internacional",  # 5. Geopolítica global / Eleições / Organismos Internacionais
+        "Internacional",  # 6. Diplomacia brasileira / BRICS / América Latina
+        "Economia",       # 7. Regulação setorial / Cibersegurança / Energia
+        "Ciência",        # 8. Universidades / FNDCT / Pesquisa / SBPC / ABC
+        "Ciência",        # 9. Saúde Pública / Fiocruz / SUS / Biotecnologia
+        "Clima",          # 10. Amazônia / Territórios Indígenas / PPCDAm
+        "Clima"           # 11. Crise hídrica / Transição verde / Biodiversidade
+    ]
 
     for cat in ordem_prioridade:
         cands = candidatos_por_cat.get(cat, [])
