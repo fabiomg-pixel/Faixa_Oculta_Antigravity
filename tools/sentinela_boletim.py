@@ -46,19 +46,19 @@ GIT_BIN = "/usr/bin/git"
 
 
 def obter_chave_gemini():
-    """Carrega chave do ambiente ou do arquivo protegido ~/.faixaoculta/.env."""
+    """Carrega chave do ambiente ou dos arquivos protegidos ~/.faixaoculta/.env ou ~/.env."""
     if os.environ.get("GEMINI_API_KEY"):
         return os.environ.get("GEMINI_API_KEY")
-    env_file = os.path.expanduser("~/.faixaoculta/.env")
-    if os.path.exists(env_file):
-        try:
-            with open(env_file, "r", encoding="utf-8") as f:
-                for line in f:
-                    line = line.strip()
-                    if line.startswith("GEMINI_API_KEY="):
-                        return line.split("=", 1)[1].strip().strip('"').strip("'")
-        except Exception:
-            pass
+    for env_file in [os.path.expanduser("~/.faixaoculta/.env"), os.path.expanduser("~/.env")]:
+        if os.path.exists(env_file):
+            try:
+                with open(env_file, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if line.startswith("GEMINI_API_KEY="):
+                            return line.split("=", 1)[1].strip().strip('"').strip("'")
+            except Exception:
+                pass
     return None
 
 

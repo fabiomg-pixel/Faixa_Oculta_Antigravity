@@ -1253,26 +1253,70 @@ footer p { max-width: 80ch; margin: 0 0 var(--sp-1); }
 }
 
 /* Modo Leitor Avançado (Controles de Fonte, Tamanho e Tema) */
+/* ========================================================
+   MODO LEITOR DEFINITIVO (Tipografia, Tamanho, Temas e Contraste)
+   ======================================================== */
 dialog.texto, dialog.leitura {
-  background: var(--lt-bg, var(--paper));
-  color: var(--lt-fg, var(--ink));
-  border: var(--bw) solid var(--lt-rule, var(--ink));
+  background: var(--lt-bg, #F3EEE4) !important;
+  color: var(--lt-fg, #1C1A17) !important;
+  border-color: var(--lt-rule, #D4CBBA) !important;
   transition: background .2s ease, color .2s ease;
 }
-.lt-box {
-  background: var(--lt-bg, var(--paper));
-  color: var(--lt-fg, var(--ink));
+
+dialog.texto .lt-box,
+dialog.leitura,
+dialog.leitura .l-bar,
+dialog.leitura .l-corpo,
+dialog.leitura .l-hero,
+dialog.leitura .l-aside,
+dialog.leitura .l-criticas {
+  background: var(--lt-bg, #F3EEE4) !important;
+  color: var(--lt-fg, #1C1A17) !important;
 }
-.lt-corpo-completo, .l-texto {
-  font-family: var(--lt-font, var(--f-body));
-  font-size: var(--lt-size, 17px) !important;
-  line-height: var(--lt-lh, 1.65) !important;
-  color: var(--lt-fg, var(--ink));
+
+/* Forçar TODAS as cores de texto nos modais do leitor para respeitar o tema */
+dialog.texto h1, dialog.texto h2, dialog.texto h3, dialog.texto h4,
+dialog.texto p, dialog.texto span:not(.fl-ler):not(.edt):not(.mono):not(.lt-meta),
+dialog.texto b, dialog.texto strong,
+dialog.texto li, dialog.texto blockquote,
+dialog.leitura h1, dialog.leitura h2, dialog.leitura h3,
+dialog.leitura p, dialog.leitura span:not(.dot):not(.badge):not(.mono):not(.kicker):not(.l-ctx),
+dialog.leitura b, dialog.leitura strong,
+dialog.leitura li, dialog.leitura dd,
+dialog.leitura .l-alb, dialog.leitura .l-olho {
+  color: var(--lt-fg, #1C1A17) !important;
 }
-.lt-corpo-completo p, .l-texto p {
-  margin: 0 0 1.25em;
-  text-align: justify;
+
+dialog.texto .mono, dialog.texto .lt-meta,
+dialog.leitura .mono, dialog.leitura .kicker, dialog.leitura .l-ctx,
+dialog.leitura .ficha dt, dialog.leitura .lt-aviso {
+  color: var(--lt-muted, #666055) !important;
 }
+
+/* Linhas e bordas nos leitores */
+dialog.leitura .l-bar,
+dialog.leitura .l-corpo,
+dialog.leitura .ficha dt, dialog.leitura .ficha dd,
+dialog.leitura .l-criticas,
+dialog.leitura .l-criticas .lc,
+dialog.texto .lt-link-rodape {
+  border-color: var(--lt-rule, #D4CBBA) !important;
+}
+
+/* Botões nos leitores */
+dialog.leitura .l-btn,
+dialog.texto .l-btn {
+  border: var(--bw) solid var(--lt-fg, #1C1A17) !important;
+  color: var(--lt-fg, #1C1A17) !important;
+  background: transparent !important;
+}
+dialog.leitura .l-btn:hover:not([disabled]),
+dialog.texto .l-btn:hover:not([disabled]) {
+  background: var(--lt-fg, #1C1A17) !important;
+  color: var(--lt-bg, #F3EEE4) !important;
+}
+
+/* Controles de leitura */
 .lt-controles {
   display: flex;
   align-items: center;
@@ -1280,8 +1324,8 @@ dialog.texto, dialog.leitura {
   gap: 10px;
   flex-wrap: wrap;
   padding: 8px 12px;
-  background: var(--lt-card, var(--card));
-  border: var(--bw) solid var(--lt-rule, var(--rule));
+  background: var(--lt-card, #EAE3D2) !important;
+  border: var(--bw) solid var(--lt-rule, #D4CBBA) !important;
   margin: 12px 0 20px;
   font-size: var(--fs-xs);
 }
@@ -1292,15 +1336,15 @@ dialog.texto, dialog.leitura {
 }
 .lt-lbl-ctrl {
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--lt-muted, #666055) !important;
   font-size: 11px;
   letter-spacing: .05em;
   margin-right: 2px;
 }
 .lt-btn-ctrl {
-  border: var(--bw) solid var(--lt-rule, var(--ink));
-  background: transparent;
-  color: var(--lt-fg, var(--ink));
+  border: var(--bw) solid var(--lt-rule, #1C1A17) !important;
+  background: transparent !important;
+  color: var(--lt-fg, #1C1A17) !important;
   padding: 4px 9px;
   cursor: pointer;
   font-family: inherit;
@@ -1310,8 +1354,8 @@ dialog.texto, dialog.leitura {
   transition: all .15s ease;
 }
 .lt-btn-ctrl.ativo, .lt-btn-ctrl:hover:not([disabled]) {
-  background: var(--lt-fg, var(--ink));
-  color: var(--lt-bg, var(--paper));
+  background: var(--lt-fg, #1C1A17) !important;
+  color: var(--lt-bg, #F3EEE4) !important;
 }
 .lt-btn-ctrl[disabled] {
   opacity: .35;
@@ -1321,24 +1365,58 @@ dialog.texto, dialog.leitura {
   font-weight: 700;
   min-width: 38px;
   text-align: center;
+  color: var(--lt-fg, #1C1A17) !important;
+}
+
+/* Caixas de destaque e cards de críticas */
+dialog.texto .importa,
+dialog.texto .lt-visoes-box,
+dialog.texto .lt-aprofunda-box,
+dialog.texto .cob-card,
+dialog.leitura .l-criticas .lc {
+  background: var(--lt-card, #EAE3D2) !important;
+  color: var(--lt-fg, #1C1A17) !important;
+  border-color: var(--lt-rule, #D4CBBA) !important;
 }
 .lt-visoes-box {
   margin: 22px 0;
   padding: 16px 20px;
-  background: var(--lt-card, var(--card));
-  border-left: 4px solid var(--ocre, #B5862C);
+  border-left: 4px solid var(--ocre, #B5862C) !important;
 }
 .lt-aprofunda-box {
   margin: 22px 0;
   padding: 16px 20px;
-  background: var(--lt-card, var(--card));
-  border-left: 4px solid var(--anil, #2F4F6F);
+  border-left: 4px solid var(--anil, #2F4F6F) !important;
 }
+
+/* TAMANHO E FONTE DINÂMICOS DO TEXTO (com especificidade sobre 'p') */
+dialog.texto .lt-corpo-completo,
+dialog.texto .lt-corpo-completo p,
+dialog.texto .lt-box p,
+dialog.leitura .l-texto,
+dialog.leitura .l-texto p,
+dialog.leitura .l-criticas .lc p,
+dialog.texto .lt-visoes-box p,
+dialog.texto .lt-aprofunda-box p,
+dialog.texto .importa p {
+  font-family: var(--lt-font, var(--f-body, "Newsreader", Georgia, serif)) !important;
+  font-size: var(--lt-size, 17px) !important;
+  line-height: var(--lt-lh, 1.65) !important;
+  color: var(--lt-fg, #1C1A17) !important;
+}
+
+/* Espaçamento e alinhamento elegante para leitura fluida */
+dialog.texto .lt-corpo-completo p,
+dialog.leitura .l-texto p {
+  margin: 0 0 1.25em !important;
+  text-align: justify !important;
+}
+
 .lt-orig-btn {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border: var(--bw) solid var(--sec, var(--red));
   color: var(--sec, var(--red));
   font-size: var(--fs-xs);
@@ -1349,7 +1427,7 @@ dialog.texto, dialog.leitura {
 }
 .lt-orig-btn:hover {
   background: var(--sec, var(--red));
-  color: var(--on-sec, #fff);
+  color: var(--on-sec, #fff) !important;
 }
 
 </style>
