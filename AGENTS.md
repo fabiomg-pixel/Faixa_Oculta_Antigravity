@@ -49,3 +49,14 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - **Ficção Científica (Sci-Fi) & Fantasia:** Hard sci-fi, IA, distopias sociais e especulativas (Editoras Aleph, Morro Branco, Todavia), alta fantasia mitológica e realismo mágico de autor.
    - **Música:** Indie rock/folk, canção confessional (Lucy Dacus, Phoebe Bridgers, Soccer Mommy), art-rock/pós-punk (Geese, bar italia), shoegaze (Wishy), vanguarda e rock brasileiro (Papangu, Letrux, El Efecto), cânone (Radiohead, QOTSA).
    - **Cinema:** Cinema de autor contemporâneo (festivais de Cannes, Mostra SP, Festival do Rio) e cinema brasileiro independente (Gabriel Martins, Kleber Mendonça Filho, Filmes de Plástico).
+
+11. **Prioridade Editorial do Boletim Diário (Economia, Política e Diplomacia Primeiro):**
+   - As notícias duras e estruturais de Economia (corte de gastos, juros Selic, câmbio, reforma tributária), Política Nacional (STF, Congresso, governabilidade) e Diplomacia / Política Internacional (geopolítica global, eleições EUA, BRICS, G20, Itamaraty) são prioridade máxima e DEVEM sempre aparecer primeiro no topo do boletim.
+   - Pautas de Ciência e Saúde (UFRJ, Fiocruz, SBPC) e Clima/Amazônia integram a edição sem jamais soterrar o noticiário nacional e internacional de primeira linha.
+   - Cada nota do boletim DEVE contar com: múltiplas fontes plurais, síntese das diferentes visões da imprensa (`resumo_visoes`), reportagem completa de 3 a 4 parágrafos para o Modo Leitor (`texto_completo`), contexto de aprofundamento (`aprofundamento`) e link direto para o site original.
+
+12. **Zero Placeholders de Resenha ("O texto completo entra na próxima atualização"):**
+   - É estritamente proibido exibir a frase 'O texto completo entra na próxima atualização.' no leitor. 100% dos lançamentos, álbuns, filmes e livros devem ter o array `resenha` com 3 a 4 parágrafos densos de crítica aprofundada, além de ficha técnica, faixas/capítulos e recepção crítica.
+
+13. **Modo Leitor Imersivo com Controles Tipográficos:**
+   - O Modo Leitor (`#texto` e `#leitura`) deve obrigatoriamente fornecer controles interativos de família de fonte (Serifada / Sans-serif / Monospaçada), tamanho de fonte (A- / A+) e tema de contraste (Papel / Escuro / Branco), com preferências salvas em `localStorage`.

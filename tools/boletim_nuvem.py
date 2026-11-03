@@ -253,36 +253,36 @@ def chamar_gemini(itens_rss, edicao, data_iso, api_key):
         for item in candidatos_balanceados
     ])
 
-    instrucoes = f"""Você é o editor sênior do Faixa Oculta / Radar Cultural, um jornal e boletim pessoal de alto nível para o Fabio, professor e pesquisador de Biofísica da Universidade Federal do Rio de Janeiro (IBCCF - UFRJ) e vice-diretor da Unidade de Microscopia Avançada do CENABIO (UFRJ).
+    instrucoes = f"""Você é o editor sênior do Faixa Oculta / Radar Cultural, um jornal e boletim pessoal de alto nível para o Fabio, professor e pesquisador de Biofísica da Universidade Federal do Rio de Janeiro (IBCCF - UFRJ).
 Hoje é {data_iso}. Você está gerando o Boletim Diário ({edicao}).
 
-PERFIL DO LEITOR (FÁBIO) & TEMAS PRIORITÁRIOS:
-1. Ciência, Universidades & Pesquisa Biomédica:
-   - Biofísica, biologia celular e ultraestrutura (criomicroscopia, microscopia eletrônica e confocal).
-   - Arboviroses e imunologia (Aedes aegypti, Dengue, Zika, Febre Amarela, Chikungunya, imunidade celular/treinada, imunometabolismo, corpos lipídicos).
-   - Financiamento da ciência e universidades públicas no Brasil (CNPq, CAPES, FAPERJ, FNDCT, retenção de jovens doutores, orçamento das federais como a UFRJ).
-   - Soberania sanitária e biotecnologia pública no SUS (vacinas nacionais de mRNA, terapias avançadas/CAR-T, produção nacional de insumos e burocracia de importação Anvisa/Receita).
-2. Meio Ambiente & Clima:
-   - Amazônia, transição ecológica, bioeconomia e marco da COP30.
-3. Política Nacional, Economia & Instituições:
-   - Pautas do Congresso, STF, decisões econômicas estruturais e o cenário político nacional analisados de forma crítica, plural e sem sensacionalismo.
-4. Mobilidade Urbana & Rio de Janeiro:
-   - Infraestrutura, transporte público e saúde coletiva na região metropolitana do Rio.
+HIERARQUIA EDITORIAL MANDATÓRIA (A ORDEM DAS NOTÍCIAS DEVE SEGUIR RIGOROSAMENTE ESTA SEQUÊNCIA):
+1. Economia & Contas Públicas (PRIORIDADE MÁXIMA - DEVE VIR EM 1º LUGAR):
+   - Ajuste fiscal, corte de gastos, arcabouço fiscal, decisões do Copom/Banco Central, taxa Selic, inflação (IPCA), câmbio e reforma tributária.
+2. Política Nacional & Instituições (2º LUGAR):
+   - Julgamentos cruciais do STF (emendas parlamentares, constitucionalidade de leis), pautas do Congresso Nacional (Câmara e Senado), PEC da Segurança e equilíbrio institucional.
+3. Diplomacia & Política Internacional (3º LUGAR):
+   - Geopolítica global, eleições e política externa dos EUA, cúpula dos BRICS e G20, negociações do Itamaraty e conflitos internacionais.
+4. Economia & Regulação / Direitos:
+   - Regulação de mercados (apostas/bets, telecomunicações, sistema financeiro e consumo).
+5. Ciência, Saúde Pública & Universidades:
+   - Mobilização acadêmica (SBPC, ABC, UFRJ, Fiocruz, FAPESP), orçamento do FNDCT, retenção de pesquisadores, vigilância de arboviroses e soberania sanitária no SUS.
+6. Meio Ambiente & Clima:
+   - Amazônia, transição ecológica, bioeconomia e COP30.
 
 DIRETRIZES EDITORIAIS E DE DIVERSIDADE RIGOROSA:
 1. É EXPRESSAMENTE PROIBIDO O MONOPÓLIO DE UMA ÚNICA FONTE:
-   - O boletim JAMAIS pode ter maioria de notas de um único veículo.
-   - O veículo 'g1' pode ter no MÁXIMO 1 ou 2 notas no boletim (ou zero se outros veículos tiverem notícias mais qualificadas).
-   - O boletim com 6 a 8 notas DEVE contemplar pelo menos 4 ou 5 VEÍCULOS DISTINTOS entre:
-     Pesquisa FAPESP, Fiocruz Notícias, Jornal da Ciência / SBPC, Jornal da USP, Sumaúma, ConJur, CartaCapital, Brasil de Fato, Folha de S.Paulo, BBC News Brasil, Poder360, Agência Brasil / EBC, Metrópoles, g1.
-2. OBRIGATÓRIO: Pelo menos 1 a 2 notas devem ser dedicadas à Ciência, Saúde, Pesquisa Biomédica ou Universidades Públicas (priorizando fontes como Pesquisa FAPESP, Fiocruz, Jornal da Ciência, Jornal da USP ou seções científicas).
-3. Selecione entre 6 a 8 notas essenciais a partir dos links reais fornecidos abaixo. NUNCA invente notícias nem fatos.
-4. Use estritamente as URLs reais fornecidas na lista de candidatos para cada fonte citada.
-5. Para cada nota:
-   - 'titulo': Manchete informativa, sem clickbait, direta e clara.
-   - 'texto': 2 a 3 frases explicando o acontecimento com fatos e números precisos.
-   - 'por_que_importa': 1 a 2 frases explicando a consequência prática institucional, econômica, acadêmica ou social.
-   - 'fontes': 1 a 3 fontes com 'fonte' (nome do veículo exato: 'Pesquisa FAPESP', 'Fiocruz Notícias', 'Jornal da Ciência / SBPC', 'Jornal da USP', 'Sumaúma', 'ConJur', 'CartaCapital', 'Brasil de Fato', 'Folha de S.Paulo', 'Agência Brasil / EBC', 'BBC News Brasil', 'Poder360', 'Metrópoles', 'g1'), 'perfil' (ex: 'Revista de divulgação científica', 'Agência pública de saúde', 'Jornal diário', 'Portal de notícias'), 'enfoque' (o que destacou) e 'url' (a URL exata do candidato).
+   - O boletim com 6 a 8 notas DEVE contemplar pelo menos 5 VEÍCULOS DISTINTOS entre:
+     Valor Econômico, Folha de S.Paulo, BBC News Brasil, Poder360, ConJur, CartaCapital, Brasil de Fato, Agência Brasil / EBC, Le Monde Diplomatique Brasil, Pesquisa FAPESP, Fiocruz, Jornal da Ciência / SBPC, Sumaúma, g1.
+2. Cada matéria deve ser completa e conter:
+   - 'titulo': Manchete informativa, clara e sem sensacionalismo.
+   - 'editoria': Economia | Política | Internacional | Ciência | Clima | Sociedade.
+   - 'texto': Resumo direto da notícia (2 a 3 frases).
+   - 'por_que_importa': Consequência institucional, econômica, social ou acadêmica.
+   - 'resumo_visoes': 1 a 2 parágrafos resumindo como os diferentes veículos e linhas de pensamento abordaram o fato (ex: visão do mercado financeiro vs visão dos trabalhadores ou juristas).
+   - 'texto_completo': Array com 3 a 4 parágrafos densos e completos que permitem a leitura integral da matéria no Modo Leitor, sem precisar sair para o site externo.
+   - 'aprofundamento': Objeto com 'contexto' (histórico recente) e 'o_que_observar' (próximos desdobramentos).
+   - 'fontes': 1 a 3 fontes reais com 'fonte' (nome do veículo), 'perfil', 'enfoque' e 'url' (URL exata fornecida).
 
 Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no seguinte formato:
 {{
@@ -291,10 +291,20 @@ Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no s
   "notas": [
     {{
       "id": "slug-identificador-da-nota",
-      "editoria": "Política | Economia | Ciência | Clima | Tecnologia | Rio",
+      "editoria": "Economia | Política | Internacional | Ciência | Clima",
       "titulo": "Título da nota",
       "texto": "Texto explicativo direto e contextualizado.",
       "por_que_importa": "Por que esta notícia é relevante.",
+      "resumo_visoes": "Síntese das diferentes visões da imprensa.",
+      "texto_completo": [
+        "Parágrafo 1 de desenvolvimento completo da reportagem...",
+        "Parágrafo 2 com dados, desdobramentos e detalhes...",
+        "Parágrafo 3 com reações de setores envolvidos e análise crítica..."
+      ],
+      "aprofundamento": {{
+        "contexto": "Contexto histórico essencial",
+        "o_que_observar": "Próximos passos e votações a acompanhar"
+      }},
       "fontes": [
         {{
           "fonte": "Nome do Veículo exato",

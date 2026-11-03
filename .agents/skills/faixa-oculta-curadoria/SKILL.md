@@ -148,3 +148,22 @@ A curadoria da Faixa Oculta foi desenhada especificamente para seu leitor-alvo, 
 3. **Ficção Científica (Sci-Fi) & Fantasia:** Hard sci-fi, especulação sobre inteligência artificial, colapso tecnológico e ecologia (Editora Aleph, Morro Branco, Todavia); alta fantasia mitológica, cosmologias indígenas e realismo mágico de autor.
 4. **Música:** Indie rock/folk e canção confessional (Lucy Dacus, Phoebe Bridgers, Julia Jacklin, Soccer Mommy, Sharon Van Etten); art-rock e pós-punk (Geese, bar italia); shoegaze-pop (Wishy, beabadoobee); folk literário (The Decemberists, Okkervil River, Greg Freeman); rock e vanguarda brasileira (Papangu, Letrux, El Efecto, Clau Aniz, Marcelo Cabral); cânone moderno (Radiohead, Blur, Queens of the Stone Age).
 5. **Cinema:** Cinema autoral e de festivais internacionais (Cannes, Veneza, Festival do Rio, Mostra SP); cinema brasileiro independente (Gabriel Martins, Kleber Mendonça Filho, Filmes de Plástico, Pedro Freire); documentários reflexivos e cosmologias visuais.
+
+---
+
+## 12. Prioridade Editorial do Boletim Diário & Modo Leitor
+
+1. **Hierarquia Estrita do Boletim:**
+   - **1º e 2º:** Economia & Contas Públicas (corte de gastos, juros Selic, câmbio, inflação, reforma tributária).
+   - **3º e 4º:** Política Nacional & Instituições (STF, Congresso, governabilidade).
+   - **5º:** Diplomacia & Geopolítica Internacional (eleições EUA, BRICS, G20, Itamaraty, conflitos globais).
+   - **6º:** Ciência, Saúde Pública & Universidades (UFRJ, Fiocruz, SBPC, FAPESP).
+   - **7º:** Clima & Amazônia (secas, queimadas, COP30).
+2. **Estrutura Completa de Cada Nota:**
+   - `texto_completo`: 3 a 4 parágrafos densos disponíveis diretamente no Modo Leitor.
+   - `resumo_visoes`: Síntese contrastando as diferentes linhas editoriais e posições políticas da imprensa.
+   - `aprofundamento`: Contexto histórico e próximos passos a acompanhar.
+   - `fontes`: Múltiplas fontes com links diretos para o site original.
+3. **Modo Leitor Imersivo:**
+   - Controles de tipografia (Serif, Sans, Mono), tamanho (A- / A+) e tema (Papel, Escuro, Branco) com persistência em `localStorage`.
+   - 100% dos lançamentos com `resenha` crítica completa de 3-4 parágrafos. É proibido exibir placeholders como 'O texto completo entra na próxima atualização.'.
