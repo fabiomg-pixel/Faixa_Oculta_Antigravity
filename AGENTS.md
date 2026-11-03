@@ -58,11 +58,16 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
 12. **Zero Placeholders de Resenha ("O texto completo entra na próxima atualização"):**
    - É estritamente proibido exibir a frase 'O texto completo entra na próxima atualização.' no leitor. 100% dos lançamentos, álbuns, filmes e livros devem ter o array `resenha` com 3 a 4 parágrafos densos de crítica aprofundada, além de ficha técnica, faixas/capítulos e recepção crítica.
 
-13. **Modo Leitor Imersivo com Controles Tipográficos:**
+13. **Modo Leitor Imersivo com Controles Tipográficos e Temas Contrastantes:**
    - O Modo Leitor (`#texto` e `#leitura`) deve obrigatoriamente fornecer controles interativos de família de fonte (Serifada / Sans-serif / Monospaçada), tamanho de fonte (A- / A+) e tema de contraste (Papel / Escuro / Branco), com preferências salvas em `localStorage`.
+   - No tema Escuro, o fundo escuro (`#161513`) DEVE obrigatoriamente vir acompanhado de texto claro e legível (`#EAE5DB`), sendo proibido texto preto invisível. O controle de tamanho deve atuar diretamente sobre os parágrafos (`p`) para surtir efeito imediato.
 
 14. **Navegação Temporal Limpa e Notícias Salvas:**
    - No topo do boletim ("Hoje"), substituir o acúmulo de pílulas/botões de datas por um menu dropdown (`<select>`) elegante com as edições agrupadas por mês via `<optgroup>`, acompanhado do botão `🔖 Notícias salvas` para resgate imediato de artigos marcados para ler depois.
 
 15. **Áudio Completo das Notícias (Narração Integral):**
    - O áudio narrado do boletim (`tools/gerar_audio_boletim.py`) e a síntese de voz integrada DEVEM narrar o texto completo das reportagens (`texto_completo`), proporcionando um jornal falado / podcast aprofundado e completo (~5-8 minutos), sem resumos telegráficos rasos.
+
+16. **Prioridade do Modo Leitor e 2 a 3 Análises Críticas Especializadas:**
+   - Ao clicar em notícias ou obras culturais, a plataforma DEVE abrir prioritariamente o Modo Leitor interno antes de qualquer redirecionamento para o site original (o link externo fica acessível dentro do leitor).
+   - Todo material de mídia cultural (álbuns, filmes e livros) DEVE carregar 2 a 3 análises críticas aprofundadas extraídas de publicações especializadas (*Pitchfork, The Guardian, RogerEbert.com, The New York Times, Quatro Cinco Um, etc.*), com notas, citações e parágrafos de ensaio crítico.

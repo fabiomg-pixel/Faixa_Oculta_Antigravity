@@ -201,16 +201,30 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
    * **Mono:** `IBM Plex Mono`, monospace (leitura técnica e de pesquisa).
 2. **Tamanho do Texto (`--lt-size` e `--lt-lh`):**
    * Botões interativos `A−` e `A+` com variação de 14px a 24px e indicador numérico central.
-   * Ajuste automático de altura de linha (`1.65` para padrão, `1.75` para tamanhos grandes).
-3. **Temas de Contraste (`--lt-bg`, `--lt-fg`, `--lt-card`, `--lt-rule`):**
+   * As regras CSS aplicam `!important` diretamente sobre os parágrafos (`dialog.texto .lt-corpo-completo p`, `dialog.leitura .l-texto p`, etc.) para assegurar que a alteração seja instantânea e visível em qualquer navegador.
+3. **Temas de Contraste e Legibilidade (`--lt-bg`, `--lt-fg`, `--lt-card`, `--lt-rule`):**
    * **Papel (Creme):** Fundo clássico de papel de imprensa (`#F3EEE4`), tinta grafite (`#1C1A17`).
-   * **Escuro:** Fundo noturno escuro elegante (`#1C1A17`), tipografia creme suave (`#ECE5D8`).
+   * **Escuro:** Fundo noturno escuro elegante (`#161513`), tipografia creme suave de alto contraste (`#EAE5DB`). **Nunca manter fontes pretas sobre fundo preto.**
    * **Branco:** Fundo alvo puro (`#FFFFFF`), contraste editorial tradicional (`#111111`).
 4. **Persistência das Escolhas:** Todas as preferências de fonte, tamanho e tema DEVEM ser salvas automaticamente em `localStorage` sob a chave `fo_leitor_prefs` para persistirem nas sessões subsequentes.
 
 ---
 
-## 15. Navegação Temporal Limpa (Dropdown por Mês) e Notícias Salvas
+## 15. Prioridade do Modo Leitor e Análises Críticas Especializadas
+
+> [!IMPORTANT]
+> A Faixa Oculta prioriza a imersão de leitura dentro da própria plataforma. Nenhum clique em notícia ou obra deve redirecionar o usuário externamente sem antes apresentar a experiência completa no leitor.
+
+1. **Abertura Imediata no Leitor:**
+   * Clicar sobre qualquer cartão de notícia (`.d-nota`), matéria semanal ou obra cultural (`.card`, `.mcard`) aciona diretamente o diálogo de leitura (`#texto` ou `#leitura`).
+   * O botão "Fonte" nos cards abre a análise/crítica no modo leitor; o acesso ao site original é mantido como ação secundária interna via botão `Acessar no site original ↗`.
+2. **2 a 3 Análises Críticas por Obra Cultural:**
+   * Todo álbum, filme ou livro cadastrado deve contar com 2 a 3 resenhas críticas detalhadas extraídas de publicações respeitadas (*Pitchfork, The Guardian, RogerEbert.com, The New York Times, Stereogum, Folha de S.Paulo, Quatro Cinco Um, etc.*).
+   * As análises são exibidas no módulo "O que a crítica especializada disse" (`.l-criticas`), trazendo autor, data, veículo, cotação/nota, pontos essenciais e citações reflexivas.
+
+---
+
+## 16. Navegação Temporal Limpa (Dropdown por Mês) e Notícias Salvas
 
 * **Dropdown de Edições com `<optgroup>`:** No topo da aba "Hoje", é proibido acumular dezenas de pílulas/botões soltos de datas. A navegação DEVE ser implementada através de um `<select class="d-edsel-select">`, agrupando as edições por mês (`optgroup label="Edições de ..."`) em ordem cronológica decrescente.
 * **Sistema de Notícias Salvas:**
@@ -220,7 +234,7 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
 
 ---
 
-## 16. Ferramentas e Scripts de Suporte
+## 17. Ferramentas e Scripts de Suporte
 
 Ao manipular a base ou realizar manutenções, utilize os utilitários já homologados em `tools/`:
 
@@ -228,7 +242,8 @@ Ao manipular a base ou realizar manutenções, utilize os utilitários já homol
 | :--- | :--- |
 | `tools/varredura_cultural_online.py` | Apuração em tempo real de novos filmes, álbuns e livros via APIs externas (anti-cutoff). |
 | `tools/popular_resenhas_completas.py` | Geração de resenhas críticas densas de 4 parágrafos e erradicação de placeholders. |
+| `tools/gerar_analises_criticas_2026_11.py` | Geração de 2 a 3 análises críticas de veículos especializados por obra (música, cinema e livros). |
 | `tools/atualizar_boletim_prioridades.py` | Reestruturação de edições com a hierarquia estrita de Economia e Política Nacional/Internacional. |
-| `tools/atualizar_modo_leitor.py` | Injeção da toolbar tipográfica (Serif/Sans/Mono, A-/A+, Papel/Escuro/Branco) e persistência. |
+| `tools/aprimorar_leitor_e_analises.py` | Atualização do modo leitor com controle de tamanho, contraste correto no tema escuro e abertura prioritária. |
 | `tools/gerar_audio_boletim.py` | Síntese de áudio da notícia completa via `edge-tts` (pt-BR-AntonioNeural) e fallback local. |
 | `tools/orquestrador_nuvem.py` / `sentinela_boletim.py` | Orquestração periódica matinal e noturna das edições. |

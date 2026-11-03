@@ -10,26 +10,70 @@
 <meta name="theme-color" content="#F3EEE4">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}
 /* Modo Leitor Avançado (Controles de Fonte, Tamanho e Tema) */
+/* ========================================================
+   MODO LEITOR DEFINITIVO (Tipografia, Tamanho, Temas e Contraste)
+   ======================================================== */
 dialog.texto, dialog.leitura {
-  background: var(--lt-bg, var(--paper));
-  color: var(--lt-fg, var(--ink));
-  border: var(--bw) solid var(--lt-rule, var(--ink));
+  background: var(--lt-bg, #F3EEE4) !important;
+  color: var(--lt-fg, #1C1A17) !important;
+  border-color: var(--lt-rule, #D4CBBA) !important;
   transition: background .2s ease, color .2s ease;
 }
-.lt-box {
-  background: var(--lt-bg, var(--paper));
-  color: var(--lt-fg, var(--ink));
+
+dialog.texto .lt-box,
+dialog.leitura,
+dialog.leitura .l-bar,
+dialog.leitura .l-corpo,
+dialog.leitura .l-hero,
+dialog.leitura .l-aside,
+dialog.leitura .l-criticas {
+  background: var(--lt-bg, #F3EEE4) !important;
+  color: var(--lt-fg, #1C1A17) !important;
 }
-.lt-corpo-completo, .l-texto {
-  font-family: var(--lt-font, var(--f-body));
-  font-size: var(--lt-size, 17px) !important;
-  line-height: var(--lt-lh, 1.65) !important;
-  color: var(--lt-fg, var(--ink));
+
+/* Forçar TODAS as cores de texto nos modais do leitor para respeitar o tema */
+dialog.texto h1, dialog.texto h2, dialog.texto h3, dialog.texto h4,
+dialog.texto p, dialog.texto span:not(.fl-ler):not(.edt):not(.mono):not(.lt-meta),
+dialog.texto b, dialog.texto strong,
+dialog.texto li, dialog.texto blockquote,
+dialog.leitura h1, dialog.leitura h2, dialog.leitura h3,
+dialog.leitura p, dialog.leitura span:not(.dot):not(.badge):not(.mono):not(.kicker):not(.l-ctx),
+dialog.leitura b, dialog.leitura strong,
+dialog.leitura li, dialog.leitura dd,
+dialog.leitura .l-alb, dialog.leitura .l-olho {
+  color: var(--lt-fg, #1C1A17) !important;
 }
-.lt-corpo-completo p, .l-texto p {
-  margin: 0 0 1.25em;
-  text-align: justify;
+
+dialog.texto .mono, dialog.texto .lt-meta,
+dialog.leitura .mono, dialog.leitura .kicker, dialog.leitura .l-ctx,
+dialog.leitura .ficha dt, dialog.leitura .lt-aviso {
+  color: var(--lt-muted, #666055) !important;
 }
+
+/* Linhas e bordas nos leitores */
+dialog.leitura .l-bar,
+dialog.leitura .l-corpo,
+dialog.leitura .ficha dt, dialog.leitura .ficha dd,
+dialog.leitura .l-criticas,
+dialog.leitura .l-criticas .lc,
+dialog.texto .lt-link-rodape {
+  border-color: var(--lt-rule, #D4CBBA) !important;
+}
+
+/* Botões nos leitores */
+dialog.leitura .l-btn,
+dialog.texto .l-btn {
+  border: var(--bw) solid var(--lt-fg, #1C1A17) !important;
+  color: var(--lt-fg, #1C1A17) !important;
+  background: transparent !important;
+}
+dialog.leitura .l-btn:hover:not([disabled]),
+dialog.texto .l-btn:hover:not([disabled]) {
+  background: var(--lt-fg, #1C1A17) !important;
+  color: var(--lt-bg, #F3EEE4) !important;
+}
+
+/* Controles de leitura */
 .lt-controles {
   display: flex;
   align-items: center;
@@ -37,8 +81,8 @@ dialog.texto, dialog.leitura {
   gap: 10px;
   flex-wrap: wrap;
   padding: 8px 12px;
-  background: var(--lt-card, var(--card));
-  border: var(--bw) solid var(--lt-rule, var(--rule));
+  background: var(--lt-card, #EAE3D2) !important;
+  border: var(--bw) solid var(--lt-rule, #D4CBBA) !important;
   margin: 12px 0 20px;
   font-size: var(--fs-xs);
 }
@@ -49,15 +93,15 @@ dialog.texto, dialog.leitura {
 }
 .lt-lbl-ctrl {
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--lt-muted, #666055) !important;
   font-size: 11px;
   letter-spacing: .05em;
   margin-right: 2px;
 }
 .lt-btn-ctrl {
-  border: var(--bw) solid var(--lt-rule, var(--ink));
-  background: transparent;
-  color: var(--lt-fg, var(--ink));
+  border: var(--bw) solid var(--lt-rule, #1C1A17) !important;
+  background: transparent !important;
+  color: var(--lt-fg, #1C1A17) !important;
   padding: 4px 9px;
   cursor: pointer;
   font-family: inherit;
@@ -67,8 +111,8 @@ dialog.texto, dialog.leitura {
   transition: all .15s ease;
 }
 .lt-btn-ctrl.ativo, .lt-btn-ctrl:hover:not([disabled]) {
-  background: var(--lt-fg, var(--ink));
-  color: var(--lt-bg, var(--paper));
+  background: var(--lt-fg, #1C1A17) !important;
+  color: var(--lt-bg, #F3EEE4) !important;
 }
 .lt-btn-ctrl[disabled] {
   opacity: .35;
@@ -78,24 +122,58 @@ dialog.texto, dialog.leitura {
   font-weight: 700;
   min-width: 38px;
   text-align: center;
+  color: var(--lt-fg, #1C1A17) !important;
+}
+
+/* Caixas de destaque e cards de críticas */
+dialog.texto .importa,
+dialog.texto .lt-visoes-box,
+dialog.texto .lt-aprofunda-box,
+dialog.texto .cob-card,
+dialog.leitura .l-criticas .lc {
+  background: var(--lt-card, #EAE3D2) !important;
+  color: var(--lt-fg, #1C1A17) !important;
+  border-color: var(--lt-rule, #D4CBBA) !important;
 }
 .lt-visoes-box {
   margin: 22px 0;
   padding: 16px 20px;
-  background: var(--lt-card, var(--card));
-  border-left: 4px solid var(--ocre, #B5862C);
+  border-left: 4px solid var(--ocre, #B5862C) !important;
 }
 .lt-aprofunda-box {
   margin: 22px 0;
   padding: 16px 20px;
-  background: var(--lt-card, var(--card));
-  border-left: 4px solid var(--anil, #2F4F6F);
+  border-left: 4px solid var(--anil, #2F4F6F) !important;
 }
+
+/* TAMANHO E FONTE DINÂMICOS DO TEXTO (com especificidade sobre 'p') */
+dialog.texto .lt-corpo-completo,
+dialog.texto .lt-corpo-completo p,
+dialog.texto .lt-box p,
+dialog.leitura .l-texto,
+dialog.leitura .l-texto p,
+dialog.leitura .l-criticas .lc p,
+dialog.texto .lt-visoes-box p,
+dialog.texto .lt-aprofunda-box p,
+dialog.texto .importa p {
+  font-family: var(--lt-font, var(--f-body, "Newsreader", Georgia, serif)) !important;
+  font-size: var(--lt-size, 17px) !important;
+  line-height: var(--lt-lh, 1.65) !important;
+  color: var(--lt-fg, #1C1A17) !important;
+}
+
+/* Espaçamento e alinhamento elegante para leitura fluida */
+dialog.texto .lt-corpo-completo p,
+dialog.leitura .l-texto p {
+  margin: 0 0 1.25em !important;
+  text-align: justify !important;
+}
+
 .lt-orig-btn {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border: var(--bw) solid var(--sec, var(--red));
   color: var(--sec, var(--red));
   font-size: var(--fs-xs);
@@ -106,7 +184,7 @@ dialog.texto, dialog.leitura {
 }
 .lt-orig-btn:hover {
   background: var(--sec, var(--red));
-  color: var(--on-sec, #fff);
+  color: var(--on-sec, #fff) !important;
 }
 
 </style>
@@ -1416,7 +1494,7 @@ dialog.texto, dialog.leitura {
       h("a", { href: ytUrl, target: "_blank", rel: "noopener", title: "Ouvir no YouTube Music sem limite de prévia" }, "YT Music ↗"),
       h("a", { href: spotUrl, target: "_blank", rel: "noopener", title: "Ouvir álbum completo no Spotify" }, "Spotify ↗"),
       h("a", { href: safeUrl(a.apple_url) || `https://music.apple.com/br/search?term=${q}`, target: "_blank", rel: "noopener" }, "Apple Music ↗"),
-      safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
+      safeUrl(a.fonte) ? h("button", { type: "button", class: "fl-ler", style: "font-size:11px;", onclick: (e) => { e.stopPropagation(); abrirTexto({ fonte: "Fonte Oficial", titulo: `${str(a.album || a.titulo)} — Cobertura e Análise`, resumo: Array.isArray(a.resenha) && a.resenha.length ? a.resenha : [a.texto || a.nota || ""], url: a.fonte }); }, title: "Abrir fonte no modo leitor" }, "Fonte") : null);
   }
   // Embedded player: the album's YouTube Music playlist first (it plays whole albums without login), Spotify as fallback.
   const tocando = { url: null, grande: false, video: false };
@@ -1722,7 +1800,7 @@ dialog.texto, dialog.leitura {
     const meta = [fmtData(it.data || it.ano), it.formato, it.selo, it.genero].map(str).filter(Boolean);
     const abrir = () => abrirLeitura(key);
     const nome = str(it.exibir_artista || it.artista);
-    return h("article", { class: clsCard },
+    return h("article", { class: clsCard, onclick: abrir, style: "cursor:pointer" },
       h("div", { class: "cover" }, h("button", { class: "abre", type: "button", onclick: abrir, "aria-label": `Abrir a página de ${str(it.album)}, de ${nome}` }, capa(it)), selo(cur)),
       h("button", { class: "abre", type: "button", onclick: abrir }, h("span", { class: "art-name" }, nome), h("span", { class: "alb" }, str(it.album))),
       h("div", { class: "meta mono" }, meta.map((m) => h("span", null, m))),
@@ -1731,7 +1809,7 @@ dialog.texto, dialog.leitura {
       it.ponte ? h("p", { class: "ponte" }, "Para quem gosta de ", h("b", null, str(it.ponte))) : null,
       it._semLeitura ? null : badgeAoVivo(it.exibir_artista, it.artista),
       it._semLeitura ? null : h("button", { class: "ler", type: "button", onclick: abrir }, Array.isArray(it.resenha) && it.resenha.length ? "Ler a resenha" : "Abrir o disco"),
-      h("div", { class: "acts" }, it._semLeitura ? null : botaoOuvir(it), marcas(key, it._rot)),
+      h("div", { class: "acts", onclick: (e) => e.stopPropagation() }, it._semLeitura ? null : botaoOuvir(it), marcas(key, it._rot)),
       links(it));
   }
 
@@ -2017,7 +2095,21 @@ dialog.texto, dialog.leitura {
     if (!idxLeituras) { idxLeituras = new Map(); for (const l of S.leituras) if (l.url) idxLeituras.set(urlChave(l.url), l); }
     return url ? idxLeituras.get(urlChave(url)) : null;
   }
-  const criticasDe = (ref) => S.leituras.filter((l) => l.ref === ref).sort((a, b) => (Number(a.ordem) || 9) - (Number(b.ordem) || 9));
+  function criticasDe(ref, item) {
+    const chaveItem = item ? (item._id || item.id || ref) : ref;
+    const slugLimpo = str(ref).replace(/^\d{4}-\d{2}--/, "");
+    const slugItem = item ? str(item._id || item.id || "").replace(/^\d{4}-\d{2}--/, "") : "";
+    const lista = (S.leituras || []).filter((l) => {
+      if (!l.ref) return false;
+      return l.ref === ref || l.ref === chaveItem || l.ref === slugLimpo || (slugItem && l.ref === slugItem);
+    }).sort((a, b) => (Number(a.ordem) || 9) - (Number(b.ordem) || 9));
+
+    if (lista.length) return lista;
+    if (item && Array.isArray(item.analises_criticas) && item.analises_criticas.length) {
+      return item.analises_criticas;
+    }
+    return [];
+  }
   function corpoLeitura(l, comTitulo) {
     const paras = arr(l.texto_integral && l.texto_integral.length ? l.texto_integral : l.resumo);
     return [
@@ -2039,13 +2131,31 @@ dialog.texto, dialog.leitura {
     ];
   }
   function abrirTexto(l) {
+    aplicarLeitorPrefs();
     const t = document.getElementById("texto");
     t.replaceChildren(h("div", { class: "lt-box" },
       h("div", { class: "lt-bar" },
-        h("span", { class: "mono" }, l.tipo === "review" ? "Modo Leitor · Crítica" : "Modo Leitor · Conteúdo na íntegra"),
+        h("span", { class: "mono" }, l.tipo === "review" ? "Modo Leitor · Crítica Especializada" : "Modo Leitor · Conteúdo na Íntegra"),
         h("button", { class: "l-btn", type: "button", onclick: () => t.close(), "aria-label": "Fechar" }, "Fechar ×")),
-      ...corpoLeitura(l, true),
-      h("p", { class: "lt-aviso mono", style: "margin-top:28px;" }, "Faixa Oculta · Conteúdo na íntegra em formato leitor padronizado, sem anúncios nem rastreadores.")));
+      barraControlesLeitor(() => abrirTexto(l)),
+      h("div", { class: "lt-meta mono" },
+        h("b", null, str(l.fonte)),
+        [l.autor, l.data ? fmtData(l.data) : ""].map(str).filter(Boolean).join(" · "),
+        l.nota ? h("span", { class: "lt-nota" }, str(l.nota)) : null),
+      l.titulo ? h("h2", { class: "lt-tit", style: "margin:10px 0 16px;line-height:1.18;" }, str(l.titulo)) : null,
+      safeUrl(l.url) ? h("div", { class: "lt-link-topo", style: "margin-bottom:18px;" },
+        h("a", { class: "lt-orig-btn", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Acessar no site original de ${str(l.fonte) || "origem"} ↗`)) : null,
+      h("div", { class: "lt-corpo-completo" },
+        arr(l.texto_integral && l.texto_integral.length ? l.texto_integral : l.resumo).map((p) => h("p", null, str(p)))),
+      arr(l.pontos).length ? [
+        h("h4", { style: "margin:24px 0 10px;font-size:var(--fs-xs);text-transform:uppercase;color:var(--muted);letter-spacing:.05em;" }, "Pontos centrais da reportagem"),
+        h("ul", { class: "lt-pontos" }, arr(l.pontos).map((x) => h("li", null, str(x))))
+      ] : null,
+      l.citacao ? h("blockquote", { class: "lt-cit", style: "margin:20px 0;padding:12px 18px;border-left:4px solid var(--sec, var(--red));font-style:italic;" }, `“${str(l.citacao)}”`) : null,
+      safeUrl(l.url) ? h("div", { class: "lt-link-rodape", style: "margin-top:28px;padding-top:16px;border-top:1px solid var(--lt-rule, var(--rule));display:flex;align-items:center;justify-content:space-between;" },
+        h("a", { class: "lt-orig-btn", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Acessar no site original de ${str(l.fonte) || "origem"} ↗`),
+        h("span", { class: "mono lt-aviso" }, "Texto carregado previamente no modo leitor")) : null,
+      h("p", { class: "lt-aviso mono", style: "margin-top:20px;" }, "Faixa Oculta · Conteúdo na íntegra em formato leitor padronizado, sem anúncios nem rastreadores.")));
     t.showModal();
     t.querySelector(".l-btn").focus({ preventScroll: true });
   }
@@ -2317,9 +2427,9 @@ dialog.texto, dialog.leitura {
       mono: 'var(--f-mono, "IBM Plex Mono", monospace)'
     };
     const temasMap = {
-      creme: { bg: "var(--paper)", fg: "var(--ink)", card: "var(--card)", rule: "var(--rule)" },
-      escuro: { bg: "#1C1A17", fg: "#ECE5D8", card: "#26231F", rule: "#3E3933" },
-      alvo: { bg: "#FFFFFF", fg: "#111111", card: "#F7F7F7", rule: "#E0E0E0" }
+      creme: { bg: "#F3EEE4", fg: "#1C1A17", card: "#EAE3D2", rule: "#D4CBBA", muted: "#666055" },
+      escuro: { bg: "#161513", fg: "#EAE5DB", card: "#22201C", rule: "#3E3830", muted: "#9C9588" },
+      alvo: { bg: "#FFFFFF", fg: "#111111", card: "#F5F5F5", rule: "#E0E0E0", muted: "#666666" }
     };
 
     const root = document.documentElement;
@@ -2332,6 +2442,7 @@ dialog.texto, dialog.leitura {
     root.style.setProperty("--lt-fg", t.fg);
     root.style.setProperty("--lt-card", t.card);
     root.style.setProperty("--lt-rule", t.rule);
+    root.style.setProperty("--lt-muted", t.muted);
   }
 
   function barraControlesLeitor(aoMudar) {
@@ -2615,7 +2726,7 @@ dialog.texto, dialog.leitura {
         h("h3", { style: "margin:0;font-size:var(--fs-m);font-weight:700;" }, `Suas matérias salvas (${notasParaExibir.length})`),
         h("button", { class: "d-btn-filtro-salvas mono", type: "button", onclick: () => { S.filtroSalvas = false; render(); } }, "Voltar ao boletim do dia ✕")
       ) : null,
-      h("div", { class: "d-notas" }, notasParaExibir.map(({ nota: n, boletim: bol, rotulo }) => h("article", { class: "d-nota" },
+      h("div", { class: "d-notas" }, notasParaExibir.map(({ nota: n, boletim: bol, rotulo }) => h("article", { class: "d-nota", onclick: () => abrirNota(n, bol), style: "cursor:pointer" },
         h("div", { style: "display:flex;align-items:center;justify-content:space-between;gap:8px;" },
           h("span", { class: "edt" }, str(n.editoria)),
           rotulo ? h("span", { class: "mono", style: "font-size:var(--fs-xs);color:var(--muted);" }, rotulo) : null),
@@ -2625,7 +2736,7 @@ dialog.texto, dialog.leitura {
         arr(n.fontes).length ? h("ul", { class: "d-fontes" }, arr(n.fontes).map((f) => h("li", null,
           fonteLink(f.url, str(f.fonte), n), f.perfil ? h("span", { class: "mono" }, ` · ${str(f.perfil)}`) : null,
           f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
-        h("div", { class: "d-nota-acts" },
+        h("div", { class: "d-nota-acts", onclick: (e) => e.stopPropagation() },
           h("button", { class: "ler", type: "button", onclick: () => abrirNota(n, bol) }, "Abrir no leitor"),
           h("button", {
             class: `d-btn-salvar mono ${isNotaSalva(n, bol) ? "salva" : ""}`,
@@ -2677,7 +2788,7 @@ dialog.texto, dialog.leitura {
               m.pais ? h("i", null, ` (${str(m.pais)})`) : null),
             h("b", null, str(m.manchete)), m.nota ? h("small", null, str(m.nota)) : null));
       })) : null,
-      arr(j.destaques).length ? h("div", { class: "d-notas", style: "margin-top:26px" }, arr(j.destaques).map((n) => h("article", { class: "d-nota" },
+      arr(j.destaques).length ? h("div", { class: "d-notas", style: "margin-top:26px" }, arr(j.destaques).map((n) => h("article", { class: "d-nota", onclick: () => abrirNota(n, bol), style: "cursor:pointer" },
         h("span", { class: "edt" }, str(n.editoria)),
         h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
         h("p", null, str(n.texto)),
@@ -2685,7 +2796,7 @@ dialog.texto, dialog.leitura {
         arr(n.jornais).length ? h("ul", { class: "d-fontes" }, arr(n.jornais).map((f) => h("li", null,
           h("b", null, str(f.jornal)), f.pagina ? h("span", { class: "mono" }, ` · p. ${str(f.pagina)}`) : null,
           f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
-        h("div", { class: "d-nota-acts" },
+        h("div", { class: "d-nota-acts", onclick: (e) => e.stopPropagation() },
           h("button", { class: "ler", type: "button", onclick: () => abrirNota(n) }, "Abrir no leitor"))
       ))) : null,
       j.contraste ? h("div", { class: "jr-contraste" }, h("h4", null, "Onde os jornais divergem"), h("p", null, str(j.contraste))) : null,
@@ -2831,7 +2942,7 @@ dialog.texto, dialog.leitura {
   function linksObra(a, cfg) {
     const q = encodeURIComponent(`${str(a.titulo_original || a.titulo)} ${str(a.autor)}`.trim());
     return h("div", { class: "links" }, cfg.busca(q).map(([t, u]) => h("a", { href: u, target: "_blank", rel: "noopener" }, t)),
-      safeUrl(a.fonte) ? h("a", { href: safeUrl(a.fonte), target: "_blank", rel: "noopener" }, "Fonte") : null);
+      safeUrl(a.fonte) ? h("button", { type: "button", class: "fl-ler", style: "font-size:11px;", onclick: (e) => { e.stopPropagation(); abrirTexto({ fonte: "Fonte Oficial", titulo: `${str(a.album || a.titulo)} — Cobertura e Análise`, resumo: Array.isArray(a.resenha) && a.resenha.length ? a.resenha : [a.texto || a.nota || ""], url: a.fonte }); }, title: "Abrir fonte no modo leitor" }, "Fonte") : null);
   }
   function edicaoRevista(cfg) {
     const eds = [...S[cfg.ed]].sort((a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
@@ -2841,7 +2952,7 @@ dialog.texto, dialog.leitura {
     const cur = S.marcas[key];
     const clsCard = "card mcard" + (cur === "nao" ? " d-nao" : cur === "quero" ? " d-quero" : "");
     const abrir = () => abrirLeitura(key);
-    return h("article", { class: clsCard },
+    return h("article", { class: clsCard, onclick: abrir, style: "cursor:pointer" },
       h("div", { class: "cover" }, h("button", { class: "abre", type: "button", onclick: abrir, "aria-label": `Abrir ${str(a.titulo)}` }, capaObra(a)), selo(cur)),
       h("div", null, h("span", { class: "edt" }, tipoObra(a))),
       h("button", { class: "abre", type: "button", onclick: abrir }, h("span", { class: "tit" }, str(a.titulo)), h("span", { class: "quem" }, [a.autor, a.ano].map(str).filter(Boolean).join(", "))),
@@ -2852,7 +2963,7 @@ dialog.texto, dialog.leitura {
       a.ponte ? h("p", { class: "ponte" }, "Para quem gosta de ", h("b", null, str(a.ponte))) : null,
       badgeAoVivo(a.titulo_original, a.titulo, a.autor),
       h("button", { class: "ler", type: "button", onclick: abrir }, arr(a.resenha).length ? cfg.ler : "Abrir"),
-      h("div", { class: "acts" }, botaoTrailer(a), botaoStremio(a), marcas(key, cfg.rot)),
+      h("div", { class: "acts", onclick: (e) => e.stopPropagation() }, botaoTrailer(a), botaoStremio(a), marcas(key, cfg.rot)),
       linksObra(a, cfg));
   }
   function guiaObra(g, cfg) {
@@ -3949,7 +4060,7 @@ dialog.texto, dialog.leitura {
   }
 
   let abertoAntes = null, opener = null, openerRef = null;
-  function abrirLeitura(key) { opener = document.activeElement; openerRef = guardarFoco(); S.aberto = key; renderLeitura(); }
+  function abrirLeitura(key) { opener = document.activeElement; openerRef = guardarFoco(); S.aberto = key; aplicarLeitorPrefs(); renderLeitura(); }
   function voltarAoOpener() {
     if (opener && document.contains(opener)) opener.focus();
     else restaurarFoco(openerRef, true);
@@ -3962,6 +4073,7 @@ dialog.texto, dialog.leitura {
   }
 
   function renderLeitura() {
+    aplicarLeitorPrefs();
     const dlg = document.getElementById("leitura");
     const achado = S.aberto ? acharEntrada(S.aberto) : null;
     if (!achado) { if (dlg.open) dlg.close(); abertoAntes = null; return; }
@@ -3992,7 +4104,7 @@ dialog.texto, dialog.leitura {
         h("div", { class: "nav-l" },
           h("button", { class: "l-btn", type: "button", disabled: idx === 0, onclick: () => ir(-1), "aria-label": "Disco anterior" }, "←"),
           h("button", { class: "l-btn", type: "button", disabled: idx === lista.length - 1, onclick: () => ir(1), "aria-label": "Próximo disco" }, "Próximo →")))),
-      h("div", { class: "wrap" }, barraControlesLeitor(() => renderAberto())),
+      h("div", { class: "wrap" }, barraControlesLeitor(() => renderLeitura())),
       h("div", { class: "wrap l-hero" },
         h("div", { class: cfg ? "l-capa poster" : "l-capa" }, cfg ? capaObra(a) : capa(a)),
         h("div", { style: "min-width:0" },
@@ -4016,7 +4128,7 @@ dialog.texto, dialog.leitura {
           h("div", null, h("h4", null, "Sua fila"), marcas(S.aberto, cfg?.rot)),
           ouca))),
       (() => {
-        const cs = criticasDe(S.aberto);
+        const cs = criticasDe(S.aberto, a);
         return cs.length ? h("section", { class: "wrap l-criticas" },
           h("h3", null, "o que a crítica disse"),
           h("p", { class: "mono lt-aviso" }, "Resumos da Faixa Oculta, com o link para cada texto original."),
