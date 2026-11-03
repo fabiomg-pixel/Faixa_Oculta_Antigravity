@@ -34,7 +34,7 @@ Este documento estabelece as diretrizes permanentes de qualidade, integridade vi
 ## 2. Áudio, Streaming e Playlists: Sem Cortes de 30 Segundos
 
 > [!IMPORTANT]
-> A experiência de áudio foi concebida para audição contínua e imersiva de fim de semana. Prévias truncadas de 30 segundos inviabilizam o produto.
+> A experiência de áudio foi concebida para audição contínua e imersiva. Prévias truncadas de 30 segundos inviabilizam o produto.
 
 * **Player Principal Embutido:** O player iframe oficial é o **YouTube Music** (`https://www.youtube-nocookie.com/embed/...`). Nunca volte para o player embutido do Spotify que limita a 30s.
 * **Botões de Acesso Nativo:** Cada recomendação musical e a obra em foco devem conter links discretos em estilo editorial para abrir no aplicativo instalado: `Spotify ↗` e `YT Music ↗`.
@@ -74,7 +74,7 @@ Este documento estabelece as diretrizes permanentes de qualidade, integridade vi
 ## 5. Densidade Editorial e Calendário de Rodadas
 
 * **Quinta-feira à Noite — Revista Semanal (Semana):**
-  * Deve constituir uma **leitura rica e profunda de fim de semana**.
+  * Leitura rica e aprofundada de fim de semana.
   * **Pluralidade Mandatória de Fontes:** A síntese DEVE cruzar pelo menos 6 a 8 veículos de diferentes inclinações e perfis editoriais (*Folha de S.Paulo, O Globo, g1, BBC News Brasil, Poder360, Metrópoles, Valor Econômico, EBC/Agência Brasil*).
   * Explicitar claramente nos eixos temáticos os pontos de divergência ou ênfase entre os veículos.
 * **Dia 01 do Mês — Cultura Mensal (Música, Cinema, Livros):**
@@ -87,7 +87,7 @@ Este documento estabelece as diretrizes permanentes de qualidade, integridade vi
   * Circuitos: Botafogo (Audio Rebel, etc.), Estúdio Hanoi, Circo Voador, Centro e Tijuca.
 * **Boletins Diários (Hoje):**
   * Duas edições: Manhã (05h BRT) e Noite (17h BRT).
-  * Modo Leitor limpo na íntegra para todas as notas, sem anúncios, sem popups e sem redirecionamentos externos indesejados.
+  * Modo Leitor limpo na íntegra para todas as notas, sem anúncios e sem redirecionamentos externos indesejados.
 
 ---
 
@@ -117,10 +117,14 @@ Em cada edição mensal (Música, Cinema e Livros), deve ser produzido um módul
 
 ---
 
-## 9. Boletim em Áudio · Transcrição Narrada das Notícias do Dia
+## 9. Boletim em Áudio · Narração Integral da Notícia Completa (Não Resumo)
+
+> [!IMPORTANT]
+> O boletim em áudio é uma experiência de jornal falado / podcast diário imersivo. A locução DEVE cobrir o texto completo e aprofundado das reportagens, e nunca apenas resumos telegráficos rasos.
 
 * **Geração Automática de Áudio:** Sempre que uma nova edição do boletim diário for gerada (manhã ou noite), o script `tools/gerar_audio_boletim.py` deve ser acionado.
-* **Motor de Voz Neural:** Utiliza `edge-tts` com a voz `pt-BR-AntonioNeural` (taxa de locução natural de rádio/podcast), gerando um arquivo de áudio de alta fidelidade em `audios/boletim_<dia>.mp3` (~5 minutos).
+* **Roteiro Longo e Substancial:** Cada notícia é narrada com seus parágrafos analíticos integrais (`texto_completo`), contexto político/econômico e desdobramentos práticos (~5 a 8 minutos de duração).
+* **Motor de Voz Neural:** Utiliza `edge-tts` com a voz `pt-BR-AntonioNeural` (taxa de locução natural de rádio/podcast), gerando arquivo de alta fidelidade em `audios/boletim_<dia>.mp3`. Possui fallback transparente para voz local macOS `say` em caso de instabilidade na API externa.
 * **Interface do Usuário:** O topo da aba "Hoje" exibe o card `.d-audio-card` com:
   * Player de áudio embutido para reprodução imediata do briefing do dia.
   * Botão de narração ao vivo integrada via **Web Speech API** (`window.speechSynthesis`), permitindo ouvir qualquer boletim diretamente pelo navegador com a voz do sistema.
@@ -132,7 +136,8 @@ Em cada edição mensal (Música, Cinema e Livros), deve ser produzido um módul
 > [!IMPORTANT]
 > A Faixa Oculta NUNCA deve utilizar a memória interna estática (cutoff 2024) do modelo de IA para inventar ou reciclar safras culturais contemporâneas. Toda e qualquer edição cultural DEVE ser apurada por varredura eficiente online.
 
-* **Cinema em Cartaz:** Os filmes na seção "Em cartaz ou estreando nos próximos dias" DEVEM ser lançamentos reais contemporâneos ao calendário da edição (novembro de 2026), apurados via festivais (Festival do Rio, Mostra SP), distribuidoras brasileiras e programações das salas de cinema (CineSesc, Estação Net, Salas de Arte, IMAX). Filmes de safras passadas (ex: 2024) devem figurar em seções de acervo/streaming/achados e NUNCA como "em cartaz".
+* **Cinema em Cartaz:** Os filmes na seção "Em cartaz ou estreando nos próximos dias" DEVEM ser lançamentos reais contemporâneos ao calendário da edição (ex: novembro de 2026), apurados via festivais (Festival do Rio, Mostra SP), distribuidoras brasileiras e programações das salas de cinema (CineSesc, Estação Net, Salas de Arte, IMAX).
+* **Separação Rígida entre Lançamentos e Acervo:** Filmes e obras de safras passadas (ex: 2024, 2023) devem figurar em seções de acervo/streaming/achados (`[achados]`) e NUNCA como "em cartaz" (`[cartaz]`).
 * **Livros Novos:** Lançamentos editoriais devem ser apurados online junto às editoras brasileiras (Companhia das Letras, Todavia, Record, Zahar, Bazar do Tempo) e portais literários (*PublishNews*, *Quatro Cinco Um*).
 * **Música e Álbuns:** Discos novos contemporâneos devem ser apurados via portais e APIs de música (Pitchfork, Billboard Brasil, Rolling Stone, Deezer, iTunes).
 * **Varredor Automático:** O script `tools/varredura_cultural_online.py` integra a orquestração do sistema (`tools/orquestrador_nuvem.py` e `tools/sentinela_boletim.py`), garantindo que 100% dos dados e das capas oficiais sejam sincronizados ao vivo das APIs externas.
@@ -141,7 +146,7 @@ Em cada edição mensal (Música, Cinema e Livros), deve ser produzido um módul
 
 ## 11. Perfil Editorial Personalizado do Leitor (Fabio Gomes / UFRJ)
 
-A curadoria da Faixa Oculta foi desenhada especificamente para seu leitor-alvo, professor e pesquisador de biofísica na UFRJ. Todos os pilares editoriais devem refletir esse horizonte:
+A curadoria da Faixa Oculta foi desenhada para seu leitor-alvo, professor e pesquisador de biofísica na UFRJ. Todos os pilares editoriais devem refletir esse horizonte:
 
 1. **Ciência, Saúde Pública & Amazônia:** Pesquisas de ponta em biofísica, imunometabolismo, arboviroses e vetores; mobilização acadêmica (SBPC, ABC, UFRJ, Fiocruz, FAPESP); clima, sustentabilidade e a Amazônia (Davi Kopenawa, Sumaúma).
 2. **Política & Diplomacia:** Geopolítica internacional e política externa brasileira (Itamaraty, CEBRI, multilateralismo, BRICS, transição global); política nacional plural, reformas institucionais, STF e memória histórica democrática.
@@ -151,19 +156,79 @@ A curadoria da Faixa Oculta foi desenhada especificamente para seu leitor-alvo, 
 
 ---
 
-## 12. Prioridade Editorial do Boletim Diário & Modo Leitor
+## 12. Prioridade Editorial do Boletim Diário (Economia, Política e Diplomacia Primeiro)
 
-1. **Hierarquia Estrita do Boletim:**
-   - **1º e 2º:** Economia & Contas Públicas (corte de gastos, juros Selic, câmbio, inflação, reforma tributária).
-   - **3º e 4º:** Política Nacional & Instituições (STF, Congresso, governabilidade).
-   - **5º:** Diplomacia & Geopolítica Internacional (eleições EUA, BRICS, G20, Itamaraty, conflitos globais).
-   - **6º:** Ciência, Saúde Pública & Universidades (UFRJ, Fiocruz, SBPC, FAPESP).
-   - **7º:** Clima & Amazônia (secas, queimadas, COP30).
-2. **Estrutura Completa de Cada Nota:**
-   - `texto_completo`: 3 a 4 parágrafos densos disponíveis diretamente no Modo Leitor.
-   - `resumo_visoes`: Síntese contrastando as diferentes linhas editoriais e posições políticas da imprensa.
-   - `aprofundamento`: Contexto histórico e próximos passos a acompanhar.
-   - `fontes`: Múltiplas fontes com links diretos para o site original.
-3. **Modo Leitor Imersivo:**
-   - Controles de tipografia (Serif, Sans, Mono), tamanho (A- / A+) e tema (Papel, Escuro, Branco) com persistência em `localStorage`.
-   - 100% dos lançamentos com `resenha` crítica completa de 3-4 parágrafos. É proibido exibir placeholders como 'O texto completo entra na próxima atualização.'.
+> [!IMPORTANT]
+> As pautas de nicho acadêmico e pessoal NÃO devem canibalizar o noticiário duro nacional e internacional. Economia e Política estruturais têm prioridade máxima de abertura.
+
+1. **Hierarquia Editorial Obrigatória do Boletim:**
+   - **1º e 2º:** **Economia & Contas Públicas** (corte de gastos, juros Selic, câmbio, inflação, meta fiscal, reforma tributária).
+   - **3º:** **Política Nacional & Instituições** (STF, Congresso, governabilidade, regras de emendas, equilíbrio entre Poderes).
+   - **4º:** **Diplomacia & Geopolítica Internacional** (eleições globais, BRICS, G20, Itamaraty, multilateralismo e conflitos).
+   - **5º:** **Economia Setorial & Regulação** (impactos sociais de apostas/bets, energia, regulação de IA).
+   - **6º:** **Ciência, Saúde Pública & Universidades** (FNDCT, UFRJ, Fiocruz, SBPC, CNPq).
+   - **7º:** **Clima & Amazônia** (bacias hidrográficas, estiagem, queimadas, COP30).
+2. **Estrutura Mandatória de Cada Nota (`dias[dia].notas`):**
+   - `texto_completo`: 3 a 4 parágrafos densos e analíticos para leitura integral direta.
+   - `resumo_visoes`: Síntese contrastando as diferentes linhas editoriais e posições políticas da imprensa (*mercado vs independente vs governamental*).
+   - `por_que_importa`: Impacto institucional e cotidiano direto.
+   - `aprofundamento`: Contexto histórico, desdobramentos legislativos e o que observar adiante.
+   - `fontes`: Múltiplas fontes com links reais diretos para consulta externa.
+
+---
+
+## 13. Zero Placeholders de Resenha ("O texto completo entra na próxima atualização")
+
+> [!CAUTION]
+> **É TERMINANTEMENTE PROIBIDO exibir no modo leitor a mensagem: *"O texto completo entra na próxima atualização."* ou equivalentes de pendência.**
+
+* **100% dos Itens Devem Conter Resenha Crítica:** Todo álbum, filme ou livro cadastrado em `itens`, `cine_itens` e `livro_itens` DEVE conter o array `resenha` populado com 3 a 4 parágrafos substanciais de ensaio crítico, contextualização estética, análise das faixas/cenas/capítulos e recepção pela crítica especializada.
+* **Ficha Técnica e Informações do Artista:**
+  * Música: Ficha com selo, gênero, data, formação da banda, faixas essenciais (`faixas`), álbum ponte (`ponte`) e recepção crítica (`recepcao`).
+  * Cinema: Ficha com direção, elenco principal, fotografia, trilha, país, duração, onde assistir e prêmios.
+  * Livros: Ficha com autor, tradutor brasileiro, editora nacional, número de páginas, temas e recepção.
+* **Script Utilitário de Higienização:** Caso novos itens sejam importados sem resenhas completas, execute obrigatoriamente `python3 tools/popular_resenhas_completas.py` antes de qualquer commit ou publicação.
+
+---
+
+## 14. Modo Leitor Avançado com Controles Tipográficos e Temas
+
+O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais) deve obrigatoriamente incluir a toolbar de controles `.lt-controles`:
+
+1. **Família de Fonte (`--lt-font`):**
+   * **Serif:** `Newsreader`, Georgia, serif (leitura editorial e ensaística).
+   * **Sans:** `-apple-system`, `Inter`, `Segoe UI`, sans-serif (leitura rápida e dinâmica).
+   * **Mono:** `IBM Plex Mono`, monospace (leitura técnica e de pesquisa).
+2. **Tamanho do Texto (`--lt-size` e `--lt-lh`):**
+   * Botões interativos `A−` e `A+` com variação de 14px a 24px e indicador numérico central.
+   * Ajuste automático de altura de linha (`1.65` para padrão, `1.75` para tamanhos grandes).
+3. **Temas de Contraste (`--lt-bg`, `--lt-fg`, `--lt-card`, `--lt-rule`):**
+   * **Papel (Creme):** Fundo clássico de papel de imprensa (`#F3EEE4`), tinta grafite (`#1C1A17`).
+   * **Escuro:** Fundo noturno escuro elegante (`#1C1A17`), tipografia creme suave (`#ECE5D8`).
+   * **Branco:** Fundo alvo puro (`#FFFFFF`), contraste editorial tradicional (`#111111`).
+4. **Persistência das Escolhas:** Todas as preferências de fonte, tamanho e tema DEVEM ser salvas automaticamente em `localStorage` sob a chave `fo_leitor_prefs` para persistirem nas sessões subsequentes.
+
+---
+
+## 15. Navegação Temporal Limpa (Dropdown por Mês) e Notícias Salvas
+
+* **Dropdown de Edições com `<optgroup>`:** No topo da aba "Hoje", é proibido acumular dezenas de pílulas/botões soltos de datas. A navegação DEVE ser implementada através de um `<select class="d-edsel-select">`, agrupando as edições por mês (`optgroup label="Edições de ..."`) em ordem cronológica decrescente.
+* **Sistema de Notícias Salvas:**
+  * Cada nota do boletim possui o botão interativo `🔖 Salvar`.
+  * As notícias salvas são guardadas em `localStorage` sob a chave `fo_noticias_salvas`.
+  * O cabeçalho exibe o botão `🔖 Notícias salvas (${totalSalvas})`, permitindo ao leitor ativar um filtro instantâneo (`S.filtroSalvas`) para ler todas as matérias guardadas em uma lista dedicada.
+
+---
+
+## 16. Ferramentas e Scripts de Suporte
+
+Ao manipular a base ou realizar manutenções, utilize os utilitários já homologados em `tools/`:
+
+| Script | Função Principal |
+| :--- | :--- |
+| `tools/varredura_cultural_online.py` | Apuração em tempo real de novos filmes, álbuns e livros via APIs externas (anti-cutoff). |
+| `tools/popular_resenhas_completas.py` | Geração de resenhas críticas densas de 4 parágrafos e erradicação de placeholders. |
+| `tools/atualizar_boletim_prioridades.py` | Reestruturação de edições com a hierarquia estrita de Economia e Política Nacional/Internacional. |
+| `tools/atualizar_modo_leitor.py` | Injeção da toolbar tipográfica (Serif/Sans/Mono, A-/A+, Papel/Escuro/Branco) e persistência. |
+| `tools/gerar_audio_boletim.py` | Síntese de áudio da notícia completa via `edge-tts` (pt-BR-AntonioNeural) e fallback local. |
+| `tools/orquestrador_nuvem.py` / `sentinela_boletim.py` | Orquestração periódica matinal e noturna das edições. |

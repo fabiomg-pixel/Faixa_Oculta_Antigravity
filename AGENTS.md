@@ -60,3 +60,9 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
 
 13. **Modo Leitor Imersivo com Controles Tipográficos:**
    - O Modo Leitor (`#texto` e `#leitura`) deve obrigatoriamente fornecer controles interativos de família de fonte (Serifada / Sans-serif / Monospaçada), tamanho de fonte (A- / A+) e tema de contraste (Papel / Escuro / Branco), com preferências salvas em `localStorage`.
+
+14. **Navegação Temporal Limpa e Notícias Salvas:**
+   - No topo do boletim ("Hoje"), substituir o acúmulo de pílulas/botões de datas por um menu dropdown (`<select>`) elegante com as edições agrupadas por mês via `<optgroup>`, acompanhado do botão `🔖 Notícias salvas` para resgate imediato de artigos marcados para ler depois.
+
+15. **Áudio Completo das Notícias (Narração Integral):**
+   - O áudio narrado do boletim (`tools/gerar_audio_boletim.py`) e a síntese de voz integrada DEVEM narrar o texto completo das reportagens (`texto_completo`), proporcionando um jornal falado / podcast aprofundado e completo (~5-8 minutos), sem resumos telegráficos rasos.
