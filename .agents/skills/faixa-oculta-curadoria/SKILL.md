@@ -235,7 +235,23 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
 
 ---
 
-## 17. Ferramentas e Scripts de Suporte
+## 17. Equivalência da Mídia Internacional com Tradução Integral
+
+> [!IMPORTANT]
+> **Paridade Editorial Mandatória:** O boletim diário da Faixa Oculta não se limita à imprensa brasileira. Toda edição deve obrigatoriamente trazer um **material equivalente dos principais veículos da mídia internacional** (*The New York Times, The Guardian, Financial Times, Le Monde, El País, Scientific American, MIT Technology Review, BBC World, Al Jazeera*).
+
+1. **Tradução Fiel e Rigorosa nas Caixas e no Modo Leitor:**
+   * **Cartão da Notícia (`.d-nota`):** Título, texto resumo, editoria e "Por que importa" traduzidos para o português com redação jornalística de alto nível.
+   * **Modo Leitor (`abrirNota` e `#texto`):** Reportagem completa de 3 a 4 parágrafos densos (`texto_completo`), síntese de visões e pontos-chave traduzidos na íntegra para o português.
+2. **Preservação dos Links Originais na Língua Materna:**
+   * O link externo de conferência (`f.url`) deve apontar **obrigatoriamente para a URL original no site da publicação estrangeira**, na língua original em que foi escrita (*inglês, francês, espanhol, etc.*).
+   * No rodapé do leitor, o botão deve explicitar o idioma: `Acessar no site original de The Guardian (EN) ↗`.
+3. **Filtro de Navegação e Alternância de Eixos:**
+   * O topo do boletim deve fornecer a alternância de eixos: `[ Todas ]`, `[ 🇧🇷 Mídia Nacional ]` e `[ 🌍 Mídia Internacional Traduzida ]`, permitindo ao leitor focar no cenário nacional, no panorama global ou em ambos integrados.
+
+---
+
+## 18. Ferramentas e Scripts de Suporte
 
 Ao manipular a base ou realizar manutenções, utilize os utilitários já homologados em `tools/`:
 

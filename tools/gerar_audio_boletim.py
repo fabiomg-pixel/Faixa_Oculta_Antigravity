@@ -40,27 +40,40 @@ def montar_roteiro_transcricao(d):
     
     if d.get("resumo_dia"):
         partes.append(d["resumo_dia"].strip())
+
+    notas_todas = d.get("notas", [])
+    notas_nac = [n for n in notas_todas if n.get("escopo") != "internacional" and n.get("pais") != "Internacional"]
+    notas_int = [n for n in notas_todas if n.get("escopo") == "internacional" or n.get("pais") == "Internacional" or n.get("titulo_original")]
+
+    if notas_nac:
+        partes.append("Iniciamos com o bloco de Mídia Nacional, destacando as pautas estruturais de economia, política e ciência no Brasil.")
+        for n in notas_nac:
+            ed = n.get("editoria", "").strip()
+            tit = n.get("titulo", "").strip()
+            txt = n.get("texto", "").strip()
+            pqi = n.get("por_que_importa", "").strip()
+            bloco = []
+            if ed: bloco.append(f"{ed}.")
+            if tit: bloco.append(f"{tit}.")
+            if txt: bloco.append(txt)
+            if pqi: bloco.append(f"Por que importa: {pqi}")
+            partes.append(" ".join(bloco))
+
+    if notas_int:
+        partes.append("Passamos agora ao bloco de Mídia Internacional, com as principais coberturas dos grandes veículos mundiais traduzidas integralmente pela redação da Faixa Oculta.")
+        for n in notas_int:
+            ed = n.get("editoria", "").strip()
+            tit = n.get("titulo", "").strip()
+            txt = n.get("texto", "").strip()
+            pqi = n.get("por_que_importa", "").strip()
+            bloco = []
+            if ed: bloco.append(f"{ed}.")
+            if tit: bloco.append(f"{tit}.")
+            if txt: bloco.append(txt)
+            if pqi: bloco.append(f"Por que importa: {pqi}")
+            partes.append(" ".join(bloco))
         
-    partes.append("A seguir, os principais destaques apurados do dia.")
-    
-    for n in d.get("notas", []):
-        ed = n.get("editoria", "").strip()
-        tit = n.get("titulo", "").strip()
-        txt = n.get("texto", "").strip()
-        pqi = n.get("por_que_importa", "").strip()
-        
-        bloco = []
-        if ed:
-            bloco.append(f"{ed}.")
-        if tit:
-            bloco.append(f"{tit}.")
-        if txt:
-            bloco.append(txt)
-        if pqi:
-            bloco.append(f"Por que importa: {pqi}")
-        partes.append(" ".join(bloco))
-        
-    partes.append("Este foi o boletim diário de notícias da Faixa Oculta. Você pode ler todas as matérias na íntegra e consultar as fontes verificadas no modo leitor.")
+    partes.append("Este foi o boletim diário de notícias da Faixa Oculta. Você pode ler todas as reportagens na íntegra no nosso Modo Leitor imersivo, alternando entre os eixos nacional e internacional.")
     return "\n\n".join(partes)
 
 def obter_duracao(audio_path):

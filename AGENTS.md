@@ -72,3 +72,9 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
 16. **Prioridade do Modo Leitor e 2 a 3 Análises Críticas Especializadas:**
    - Ao clicar em notícias ou obras culturais, a plataforma DEVE abrir prioritariamente o Modo Leitor interno antes de qualquer redirecionamento para o site original (o link externo fica acessível dentro do leitor).
    - Todo material de mídia cultural (álbuns, filmes e livros) DEVE carregar 2 a 3 análises críticas aprofundadas extraídas de publicações especializadas (*Pitchfork, The Guardian, RogerEbert.com, The New York Times, Quatro Cinco Um, etc.*), com notas, citações e parágrafos de ensaio crítico.
+
+17. **Equivalência da Mídia Internacional com Tradução Integral:**
+   - O boletim diário DEVE incorporar obrigatoriamente um material equivalente de cobertura dos principais veículos da mídia internacional (*The New York Times, The Guardian, Financial Times, Le Monde, El País, Scientific American, MIT Technology Review, BBC World, Al Jazeera*).
+   - Nas caixas/cartões (`.d-nota`) e no Modo Leitor (`#texto`), todo o material DEVE ser traduzido com rigor analítico para o português (título, resumo, texto completo, pontos centrais e citações).
+   - Os links para consulta externa (`f.url`) DEVEM direcionar obrigatoriamente para a matéria original no idioma de origem (*inglês, francês, espanhol, etc.*).
+   - A interface deve oferecer alternância fluida entre os eixos de apuração (`Todas`, `🇧🇷 Mídia Nacional` e `🌍 Mídia Internacional Traduzida`).

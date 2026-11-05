@@ -1238,6 +1238,82 @@ dialog.leitura .l-texto p {
   color: var(--on-sec, #fff) !important;
 }
 
+
+/* Filtros de Mídia: Nacional vs Internacional */
+.d-midia-filtro-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 16px 0 20px;
+  padding: 10px 14px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+.d-btn-filtro-midia {
+  font: 600 var(--fs-xs) var(--f-mono);
+  padding: 5px 12px;
+  border-radius: var(--pill);
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .15s ease;
+}
+.d-btn-filtro-midia:hover {
+  border-color: var(--sec, var(--red));
+  color: var(--ink);
+}
+.d-btn-filtro-midia.ativo {
+  background: var(--sec, var(--red));
+  color: var(--on-sec, #fff) !important;
+  border-color: var(--sec, var(--red));
+  font-weight: 700;
+}
+.badge-int {
+  background: rgba(47, 79, 111, .12);
+  color: #2F4F6F;
+  border: 1px solid rgba(47, 79, 111, .3);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: 2px 7px;
+  border-radius: 2px;
+  font-weight: 700;
+}
+.badge-nac {
+  background: rgba(62, 95, 74, .12);
+  color: var(--verde-f);
+  border: 1px solid rgba(62, 95, 74, .3);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: 2px 7px;
+  border-radius: 2px;
+  font-weight: 700;
+}
+.lt-aviso-traducao {
+  margin: 12px 0 18px;
+  padding: 10px 16px;
+  background: rgba(47, 79, 111, .07);
+  border-left: 3px solid #2F4F6F;
+  font-size: var(--fs-xs);
+  color: var(--lt-muted, var(--muted));
+  line-height: 1.45;
+  border-radius: 0 4px 4px 0;
+}
+.d-nota-subtit-orig {
+  font-size: var(--fs-xs);
+  font-style: italic;
+  color: var(--muted);
+  margin: -4px 0 10px;
+  line-height: 1.35;
+}
+
 </style>
 
 <header class="mast">
@@ -2004,8 +2080,7 @@ dialog.leitura .l-texto p {
         [l.autor, l.data ? fmtData(l.data) : ""].map(str).filter(Boolean).join(" · "),
         l.nota ? h("span", { class: "lt-nota" }, str(l.nota)) : null),
       comTitulo && l.titulo ? h("h3", { class: "lt-tit" }, str(l.titulo)) : null,
-      safeUrl(l.url) ? h("div", { class: "lt-link-topo" },
-        h("a", { class: "lt-orig", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Acessar no site original de ${str(l.fonte) || "origem"} ↗`)) : null,
+      /* Removido link do topo em favor da leitura integral */
       ...paras.map((p) => h("p", null, str(p))),
       arr(l.pontos).length ? [
         h("h4", { style: "margin:28px 0 10px;font-size:var(--fs-xs);text-transform:uppercase;color:var(--muted);letter-spacing:.05em;" }, "Pontos centrais da reportagem"),
@@ -2029,8 +2104,7 @@ dialog.leitura .l-texto p {
         [l.autor, l.data ? fmtData(l.data) : ""].map(str).filter(Boolean).join(" · "),
         l.nota ? h("span", { class: "lt-nota" }, str(l.nota)) : null),
       l.titulo ? h("h2", { class: "lt-tit", style: "margin:10px 0 16px;line-height:1.18;" }, str(l.titulo)) : null,
-      safeUrl(l.url) ? h("div", { class: "lt-link-topo", style: "margin-bottom:18px;" },
-        h("a", { class: "lt-orig-btn", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Acessar no site original de ${str(l.fonte) || "origem"} ↗`)) : null,
+      /* Removido link do topo em favor da leitura integral */
       h("div", { class: "lt-corpo-completo" },
         arr(l.texto_integral && l.texto_integral.length ? l.texto_integral : l.resumo).map((p) => h("p", null, str(p)))),
       arr(l.pontos).length ? [
@@ -2096,6 +2170,11 @@ dialog.leitura .l-texto p {
       barraControlesLeitor(redesenharNota),
       h("div", { class: "lt-meta mono" }, str(rotulo)),
       h("h2", { class: "lt-tit", style: "margin:10px 0 16px;line-height:1.18;" }, str(n.titulo)),
+      n.titulo_original && n.titulo_original !== n.titulo ? h("p", { class: "d-nota-subtit-orig mono", style: "margin:-8px 0 16px;font-size:14px;" }, `Original em língua estrangeira: “${str(n.titulo_original)}”`) : null,
+      (n.escopo === "internacional" || n.pais === "Internacional" || n.titulo_original) ? h("div", { class: "lt-aviso-traducao mono" },
+        h("b", null, "🌍 Mídia Internacional Traduzida: "),
+        "Reportagem apurada pelos correspondentes internacionais e traduzida integralmente para o português culto pela Faixa Oculta. Os links de conferência no rodapé levam diretamente ao site original no idioma de origem."
+      ) : null,
       
       // Conteúdo completo na íntegra
       h("div", { class: "lt-corpo-completo" }, paras.map((p) => h("p", null, str(p)))),
@@ -2154,8 +2233,7 @@ dialog.leitura .l-texto p {
                 h("b", null, str(obj.fonte || l.fonte)),
                 [obj.autor, obj.data ? fmtData(obj.data) : ""].filter(Boolean).join(" · ")),
               obj.titulo ? h("h4", { class: "lt-art-tit" }, str(obj.titulo)) : null,
-              safeUrl(l.url) ? h("div", { class: "lt-link-topo" },
-                h("a", { class: "lt-orig", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Acessar no site original de ${str(l.fonte)} ↗`)) : null,
+              /* Removido link do topo em favor da leitura integral */
               ...paras.map((p) => h("p", null, str(p))),
               arr(obj.pontos).length ? [
                 h("h5", { style: "margin:18px 0 6px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.05em;color:var(--muted);" }, "Pontos centrais destacados"),
@@ -2611,6 +2689,31 @@ dialog.leitura .l-texto p {
       arr(d.agenda).length ? h("aside", { class: "d-agenda" }, h("h4", null, "Para acompanhar"),
         h("ul", null, arr(d.agenda).map((a) => h("li", null, h("span", { class: "mono" }, str(a.quando)), h("span", null, str(a.o_que)))))) : null);
 
+    // Filtros de Mídia: Nacional vs Internacional
+    S.filtroEscopo = S.filtroEscopo || "todas";
+    const totalTodas = arr(d.notas).length;
+    const totalNac = arr(d.notas).filter((n) => n.escopo !== "internacional" && n.pais !== "Internacional").length;
+    const totalInt = arr(d.notas).filter((n) => n.escopo === "internacional" || n.pais === "Internacional" || n.titulo_original).length;
+
+    const barraFiltroMidia = totalInt > 0 && !S.filtroSalvas ? h("div", { class: "d-midia-filtro-box" },
+      h("span", { class: "mono", style: "font-size:var(--fs-xs);color:var(--muted);margin-right:6px;" }, "Eixo de apuração:"),
+      h("button", {
+        class: `d-btn-filtro-midia mono ${S.filtroEscopo === "todas" ? "ativo" : ""}`,
+        type: "button",
+        onclick: () => { S.filtroEscopo = "todas"; render(); }
+      }, `Todas (${totalTodas})`),
+      h("button", {
+        class: `d-btn-filtro-midia mono ${S.filtroEscopo === "nacional" ? "ativo" : ""}`,
+        type: "button",
+        onclick: () => { S.filtroEscopo = "nacional"; render(); }
+      }, `🇧🇷 Mídia Nacional (${totalNac})`),
+      h("button", {
+        class: `d-btn-filtro-midia mono ${S.filtroEscopo === "internacional" ? "ativo" : ""}`,
+        type: "button",
+        onclick: () => { S.filtroEscopo = "internacional"; render(); }
+      }, `🌍 Mídia Internacional Traduzida (${totalInt})`)
+    ) : null;
+
     let notasParaExibir = [];
     if (S.filtroSalvas) {
       const salvasObj = S.noticiasSalvas || {};
@@ -2628,19 +2731,32 @@ dialog.leitura .l-texto p {
         rotulo: s.rotulo_boletim || (s.boletim ? rotuloBoletim(s.boletim) : "")
       }));
     } else {
-      notasParaExibir = arr(d.notas).map((n) => ({ nota: n, boletim: d, rotulo: "" }));
+      let listaNotas = arr(d.notas);
+      if (S.filtroEscopo === "nacional") {
+        listaNotas = listaNotas.filter((n) => n.escopo !== "internacional" && n.pais !== "Internacional");
+      } else if (S.filtroEscopo === "internacional") {
+        listaNotas = listaNotas.filter((n) => n.escopo === "internacional" || n.pais === "Internacional" || n.titulo_original);
+      }
+      notasParaExibir = listaNotas.map((n) => ({ nota: n, boletim: d, rotulo: "" }));
     }
 
     const grade = h("section", { class: "wrap", style: "padding-bottom:24px" },
+      barraFiltroMidia,
       S.filtroSalvas ? h("div", { style: "display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;border-bottom:1px solid var(--rule);padding-bottom:8px;" },
         h("h3", { style: "margin:0;font-size:var(--fs-m);font-weight:700;" }, `Suas matérias salvas (${notasParaExibir.length})`),
         h("button", { class: "d-btn-filtro-salvas mono", type: "button", onclick: () => { S.filtroSalvas = false; render(); } }, "Voltar ao boletim do dia ✕")
       ) : null,
-      h("div", { class: "d-notas" }, notasParaExibir.map(({ nota: n, boletim: bol, rotulo }) => h("article", { class: "d-nota", onclick: () => abrirNota(n, bol), style: "cursor:pointer" },
-        h("div", { style: "display:flex;align-items:center;justify-content:space-between;gap:8px;" },
-          h("span", { class: "edt" }, str(n.editoria)),
-          rotulo ? h("span", { class: "mono", style: "font-size:var(--fs-xs);color:var(--muted);" }, rotulo) : null),
-        h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n, bol), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
+      h("div", { class: "d-notas" }, notasParaExibir.map(({ nota: n, boletim: bol, rotulo }) => {
+        const ehInt = n.escopo === "internacional" || n.pais === "Internacional" || n.titulo_original;
+        return h("article", { class: `d-nota ${ehInt ? "d-nota-int" : ""}`, onclick: () => abrirNota(n, bol), style: "cursor:pointer" },
+          h("div", { style: "display:flex;align-items:center;justify-content:space-between;gap:8px;" },
+            h("div", { style: "display:flex;align-items:center;gap:6px;flex-wrap:wrap;" },
+              h("span", { class: "edt" }, str(n.editoria)),
+              ehInt ? h("span", { class: "badge-int mono" }, "🌍 Internacional") : null
+            ),
+            rotulo ? h("span", { class: "mono", style: "font-size:var(--fs-xs);color:var(--muted);" }, rotulo) : null),
+          h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n, bol), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
+          n.titulo_original && n.titulo_original !== n.titulo ? h("p", { class: "d-nota-subtit-orig mono" }, `Original: “${str(n.titulo_original)}”`) : null,
         h("p", null, str(n.texto)),
         n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
         arr(n.fontes).length ? h("ul", { class: "d-fontes" }, arr(n.fontes).map((f) => h("li", null,
@@ -2658,8 +2774,8 @@ dialog.leitura .l-texto p {
             type: "button",
             onclick: (e) => toggleVozNota(n, e.currentTarget)
           }, "🔊 Ouvir matéria")
-        )
-      ))));
+        ));
+      })));
     const fim = h("div", { class: "wrap", style: "padding-block:8px 32px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("noticias") }, "A revista da semana: grandes temas, cobertura e vieses"));
     return [head, blocoAudioBoletim(d), grade, blocoJornais(d.jornais), fim];

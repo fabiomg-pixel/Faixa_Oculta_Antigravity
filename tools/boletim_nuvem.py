@@ -64,6 +64,18 @@ FEEDS = [
     ("g1 - Economia", "https://g1.globo.com/rss/g1/economia/"),
     ("g1 - Rio de Janeiro", "https://g1.globo.com/rss/g1/rio-de-janeiro/"),
     ("g1 - Tecnologia", "https://g1.globo.com/rss/g1/tecnologia/"),
+
+    # Mídia Internacional de Referência (Equivalência Editorial com Tradução Integral)
+    ("The Guardian - World", "https://www.theguardian.com/world/rss"),
+    ("The Guardian - Science", "https://www.theguardian.com/science/rss"),
+    ("The New York Times - World", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"),
+    ("Financial Times - World", "https://www.ft.com/world?format=rss"),
+    ("BBC World News", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("Le Monde - International", "https://www.lemonde.fr/international/rss_full.xml"),
+    ("El País - Internacional", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada"),
+    ("Scientific American", "https://www.scientificamerican.com/feed/"),
+    ("MIT Technology Review", "https://www.technologyreview.com/feed/"),
+    ("Al Jazeera English", "https://www.aljazeera.com/xml/rss/all.xml"),
 ]
 
 SKELETON_HEAD = """<!doctype html>
@@ -271,18 +283,31 @@ HIERARQUIA EDITORIAL MANDATÓRIA (A ORDEM DAS NOTÍCIAS DEVE SEGUIR RIGOROSAMENT
    - Amazônia, transição ecológica, bioeconomia e COP30.
 
 DIRETRIZES EDITORIAIS E DE DIVERSIDADE RIGOROSA:
-1. É EXPRESSAMENTE PROIBIDO O MONOPÓLIO DE UMA ÚNICA FONTE:
-   - O boletim DEVE conter OBRIGATORIAMENTE AO MENOS 10 NOTÍCIAS DENSAS E ANALÍTICAS (10 a 12 matérias) contemplando pelo menos 6 VEÍCULOS DISTINTOS entre:
-     Valor Econômico, Folha de S.Paulo, BBC News Brasil, Poder360, ConJur, CartaCapital, Brasil de Fato, Agência Brasil / EBC, Le Monde Diplomatique Brasil, Pesquisa FAPESP, Fiocruz, Jornal da Ciência / SBPC, Sumaúma, g1.
-2. Cada matéria deve ser completa e conter:
+1. EQUIVALÊNCIA EDITORIAL: MÍDIA NACIONAL E MÍDIA INTERNACIONAL:
+   - O boletim DEVE conter OBRIGATORIAMENTE DOIS BLOCOS EQUIVALENTES:
+     a) Ao menos 10 notícias densas de Mídia Nacional (Economia fiscal, Copom, Política, STF, Ciência/Saúde SUS, Clima).
+     b) Material equivalente de ao menos 10 notícias densas de Mídia Internacional traduzidas com rigor analítico para o português culto.
+     Total por edição: 20 a 22 reportagens completas.
+   - Para matérias internacionais:
+     - 'escopo': 'internacional'
+     - 'titulo_original': título exato no idioma de origem (inglês, francês, espanhol).
+     - 'titulo', 'texto', 'texto_completo', 'resumo_visoes' e 'aprofundamento': TUDO traduzido com máxima precisão e elegância para o português.
+     - As 'fontes' devem conter a URL real no idioma original.
+   - Para matérias nacionais:
+     - 'escopo': 'nacional'
+2. É EXPRESSAMENTE PROIBIDO O MONOPÓLIO DE UMA ÚNICA FONTE:
+   - Contemplar fontes plurais: Valor Econômico, Folha de S.Paulo, BBC News Brasil, Poder360, ConJur, CartaCapital, Brasil de Fato, Agência Brasil / EBC, Le Monde Diplomatique Brasil, Pesquisa FAPESP, Fiocruz, Jornal da Ciência / SBPC, Sumaúma, g1, The Guardian, The New York Times, Financial Times, Le Monde, El País, Scientific American, MIT Technology Review, Al Jazeera.
+3. Cada matéria deve ser completa e conter:
    - 'titulo': Manchete informativa, clara e sem sensacionalismo.
-   - 'editoria': Economia | Política | Internacional | Ciência | Clima | Sociedade.
+   - 'escopo': 'nacional' ou 'internacional'.
+   - 'titulo_original': Título original se internacional.
+   - 'editoria': Economia | Política | Internacional | Ciência | Clima | Tecnologia | Saúde.
    - 'texto': Resumo direto da notícia (2 a 3 frases).
    - 'por_que_importa': Consequência institucional, econômica, social ou acadêmica.
-   - 'resumo_visoes': 1 a 2 parágrafos resumindo como os diferentes veículos e linhas de pensamento abordaram o fato (ex: visão do mercado financeiro vs visão dos trabalhadores ou juristas).
+   - 'resumo_visoes': 1 a 2 parágrafos resumindo como os diferentes veículos abordaram o fato.
    - 'texto_completo': Array com 3 a 4 parágrafos densos e completos que permitem a leitura integral da matéria no Modo Leitor, sem precisar sair para o site externo.
    - 'aprofundamento': Objeto com 'contexto' (histórico recente) e 'o_que_observar' (próximos desdobramentos).
-   - 'fontes': 1 a 3 fontes reais com 'fonte' (nome do veículo), 'perfil', 'enfoque' e 'url' (URL exata fornecida).
+   - 'fontes': 1 a 3 fontes reais com 'fonte' (nome do veículo), 'perfil', 'enfoque', 'texto_integral' (array de parágrafos) e 'url' (URL exata fornecida).
 
 Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no seguinte formato:
 {{
@@ -291,8 +316,10 @@ Retorne EXCLUSIVAMENTE um objeto JSON válido (sem blocos markdown ```json) no s
   "notas": [
     {{
       "id": "slug-identificador-da-nota",
-      "editoria": "Economia | Política | Internacional | Ciência | Clima",
-      "titulo": "Título da nota",
+      "escopo": "nacional | internacional",
+      "titulo_original": "Título original se internacional",
+      "editoria": "Economia | Política | Internacional | Ciência | Clima | Tecnologia",
+      "titulo": "Título da nota em português",
       "texto": "Texto explicativo direto e contextualizado.",
       "por_que_importa": "Por que esta notícia é relevante.",
       "resumo_visoes": "Síntese das diferentes visões da imprensa.",
