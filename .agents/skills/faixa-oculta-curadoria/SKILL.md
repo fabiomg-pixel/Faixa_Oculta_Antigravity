@@ -260,15 +260,18 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
 ## 18. Especificação Detalhada de Eventos e Bandas nas Pequenas Casas (Agenda Cultural do Rio)
 
 > [!CAUTION]
-> **Proibição de Eventos Genéricos ou Guarda-Chuva:** É expressamente proibido cadastrar eventos genéricos nas casas de shows com títulos vagos e `artistas: None`.
+> **Proibição de Eventos Genéricos ou Guarda-Chuva:** É expressamente proibido cadastrar eventos genéricos nas casas de shows com títulos vagos e `artistas: None`. Da mesma forma, é inaceitável omitir atrações relevantes da cena indie em turnê ou lançando álbum no dia de hoje ou no fim de semana nas casas prioritárias.
 
 1. **Shows com Identificação Individual de Bandas e Artistas:**
    * Cada casa da cena independente (Audio Rebel, Saloon 79, Estúdio Hanoi, Garage Grindhouse, Circo Voador, Bar Bukowski) deve possuir atrações individuais no array `destaques`.
    * Cada destaque DEVE explicitar as bandas participantes no array `artistas: ["Banda A", "Banda B"]`.
-2. **Suporte Completo a Áudio sem Cortes (YouTube Music e Spotify):**
+2. **Varredura Fina da Programação do Dia e Fim de Semana (Sem Omissões de Turnês):**
+   * Ao apurar ou atualizar a agenda, o curador DEVE rastrear ativamente os shows agendados para a data exata da edição e para o fim de semana imediato nos portais e bilheterias oficiais (*audiorebel.com.br/agenda*, Sympla, Shotgun, Instagram das casas).
+   * Bandas em turnê de lançamento de discos nacionais elogiados (ex.: *Flerte Flamingo com a 'Dói Tour' na Audio Rebel*, *Ploho no Garage Grindhouse*, *The Baggios no Saloon 79*, *Ana Frango Elétrico no Circo Voador*) DEVEM ser cadastradas com destaque máximo no topo da programação da respectiva casa, acompanhadas de datas, horários e atrações de abertura (ex.: *VALLADA*).
+3. **Suporte Completo a Áudio sem Cortes (YouTube Music e Spotify):**
    * 100% dos artistas listados na Agenda DEVEM ser cadastrados nos dicionários `agenda.artistas.mapa` (Spotify ID) e `agenda.artistas.youtube` (ID de playlist/canal no YouTube Music).
    * Com esse mapeamento, o card e o leitor geram nativamente o botão `▶ Ouvir agora` (player embed no topo sem cortes de 30 segundos) e links diretos para YouTube Music e Spotify.
-3. **Ficha do Show e Sessões Futuras Reais:**
+4. **Ficha do Show e Sessões Futuras Reais:**
    * Cada destaque deve conter o array `sessoes` com datas reais de sexta, sábado ou domingo no mês (ex: `2026-11-06`, `2026-11-07`, `2026-11-08`), horários (`20h`, `21h`), preços dos ingressos (`obs`) e links de bilheteria (`link`).
    * Deve incluir a justificativa curatorial (`porque`), reviews de veículos especializados (*Popload, Tenho Mais Discos Que Amigos, Scream & Yell, Trabalho Sujo*) e links de vídeo/trailer ao vivo no YouTube (`trailer`).
 

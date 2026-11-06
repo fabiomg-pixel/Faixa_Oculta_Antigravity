@@ -81,10 +81,11 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - A interface deve oferecer alternância fluida entre os eixos de apuração (`Todas`, `🇧🇷 Mídia Nacional` e `🌍 Mídia Internacional Traduzida`).
 
 18. **Especificação Detalhada de Bandas nas Pequenas Casas (Agenda Cultural do Rio):**
-   - É estritamente proibido cadastrar eventos guarda-chuva ou genéricos sem atrações específicas.
-   - Cada casa de shows da cena alternativa (Audio Rebel, Saloon 79, Estúdio Hanoi, Garage Grindhouse, Circo Voador, Bar Bukowski) DEVE trazer os shows desmembrados em `destaques` com as bandas identificadas em `artistas: ["Banda A", "Banda B"]`.
+   - É estritamente proibido cadastrar eventos guarda-chuva ou genéricos sem atrações específicas, bem como omitir turnês e lançamentos relevantes agendados para o dia ou fim de semana.
+   - Cada casa de shows da cena alternativa (Audio Rebel, Saloon 79, Estúdio Hanoi, Garage Grindhouse, Circo Voador, Bar Bukowski) DEVE trazer os shows desmembrados em `destaques` com as bandas identificadas em `artistas: ["Banda A", "Banda B"]` (ex.: *Flerte Flamingo com VALLADA na Audio Rebel*, *Ploho no Garage Grindhouse*).
    - 100% das bandas devem estar cadastradas em `agenda.artistas.mapa` (Spotify ID) e `agenda.artistas.youtube` (YouTube ID/Playlist) para permitir execução imediata no player sem cortes de 30 segundos (`Ouvir aqui`) e links diretos para os aplicativos.
    - Cada show deve detalhar data futura real no mês, horários, ingressos, resenha crítica (`porque`) e citações de veículos musicais especializados.
+
 
 19. **Botão e Diálogo de Convite Compartilhável para Cada Evento:**
    - Todo card de evento (`cardEvento`) e todo show individual (`agDestaques`) DEVE fornecer o botão `✉️ Convidar`.

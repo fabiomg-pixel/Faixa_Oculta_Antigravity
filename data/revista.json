@@ -26045,7 +26045,9 @@
         "Sophia Chablau e Uma Enorme Perda de Tempo": "115593472",
         "Plastique Noir": "364477",
         "Gangue Morcego": "13572045",
-        "Pic-Nic": "1zX8t7Y2uO5p6q7r8s9t0U"
+        "Pic-Nic": "1zX8t7Y2uO5p6q7r8s9t0U",
+        "Flerte Flamingo": "6hl5k4gLl1p3sjhHcb57t2",
+        "VALLADA": "7A8jDbiTiYGXeKBCUeAySj"
       },
       "sem": [
         "30 Dias em Guarulhos",
@@ -26145,7 +26147,9 @@
         "Surra": "UUf8mK_vN1_xQwUUJHorwYL",
         "Sophia Chablau e Uma Enorme Perda de Tempo": "UU9v-K_t1L5_ZAUULLO7edJG",
         "Plastique Noir": "UU3vM_tK1_5zGAUUJHorwYL",
-        "Gangue Morcego": "UU7s8d9f0g1h2UUMEysL_jfA"
+        "Gangue Morcego": "UU7s8d9f0g1h2UUMEysL_jfA",
+        "Flerte Flamingo": "UU-FlerteFlamingo",
+        "VALLADA": "UU7A8jDbiTiYGXeKBCUeAyS"
       },
       "youtube_sem": [
         "Anima Dominum",
@@ -26186,6 +26190,44 @@
           "sobre": "Localizada no início de Botafogo, a Audio Rebel reúne estúdio, casa de shows e bar. Suas apresentações acontecem a menos de um metro do público, gerando uma experiência de imersão sonora e acústica incomparável.",
           "destaques": [
             {
+              "id": "flerte-flamingo-audio-rebel-2026",
+              "titulo": "Flerte Flamingo: Dói Tour (Lançamento do álbum 'Dói Ter')",
+              "artistas": [
+                "Flerte Flamingo",
+                "VALLADA"
+              ],
+              "sessoes": [
+                {
+                  "data": "2026-11-06",
+                  "hora": "20h",
+                  "local": "Audio Rebel",
+                  "bairro": "Botafogo",
+                  "obs": "R$ 35 antecipado, R$ 45 na hora (portas 19h)",
+                  "link": "https://audiorebel.com.br/agenda/flerte-flamingo-doi-tour",
+                  "status": "disponível"
+                },
+                {
+                  "data": "2026-11-07",
+                  "hora": "20h",
+                  "local": "Audio Rebel",
+                  "bairro": "Botafogo",
+                  "obs": "Data extra com abertura de VALLADA · R$ 35 antecipado",
+                  "link": "https://audiorebel.com.br/agenda/flerte-flamingo-data-extra",
+                  "status": "disponível"
+                }
+              ],
+              "porque": "O quarteto de indie rock e psicodelia tropical desembarca no palco intimista da Audio Rebel com a turnê do aclamado álbum 'Dói Ter', mesclando melodias confessionais, guitarras suingadas e refrões cativantes em duas noites quentes em Botafogo.",
+              "reviews": {
+                "texto": "Um dos espetáculos mais contagiantes e solares do indie brasileiro contemporâneo, equilibrando a leveza do groove com letras afiadas e arranjos ricos de guitarras.",
+                "fontes": [
+                  "Tenho Mais Discos Que Amigos",
+                  "Popload",
+                  "Rock On Stage"
+                ]
+              },
+              "trailer": "https://www.youtube.com/watch?v=kYv_Z_qM1X8"
+            },
+            {
               "id": "terraplana-gorduratrans-rebel",
               "titulo": "Terraplana & Gorduratrans: Paredões de Fuzz, Shoegaze e Slowcore",
               "artistas": [
@@ -26194,11 +26236,11 @@
               ],
               "sessoes": [
                 {
-                  "data": "2026-11-06",
-                  "hora": "20h",
+                  "data": "2026-11-08",
+                  "hora": "19h30",
                   "local": "Audio Rebel",
                   "bairro": "Botafogo",
-                  "obs": "R$ 35 antecipado, R$ 45 na hora (portas 19h30)",
+                  "obs": "R$ 35 antecipado, R$ 45 na hora (sessão de domingo)",
                   "link": "https://shotgun.live/pt-br/events/terraplana-gorduratrans-rebel",
                   "status": "disponível"
                 }
