@@ -73,8 +73,21 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - Ao clicar em notícias ou obras culturais, a plataforma DEVE abrir prioritariamente o Modo Leitor interno antes de qualquer redirecionamento para o site original (o link externo fica acessível dentro do leitor).
    - Todo material de mídia cultural (álbuns, filmes e livros) DEVE carregar 2 a 3 análises críticas aprofundadas extraídas de publicações especializadas (*Pitchfork, The Guardian, RogerEbert.com, The New York Times, Quatro Cinco Um, etc.*), com notas, citações e parágrafos de ensaio crítico.
 
-17. **Equivalência da Mídia Internacional com Tradução Integral:**
-   - O boletim diário DEVE incorporar obrigatoriamente um material equivalente de cobertura dos principais veículos da mídia internacional (*The New York Times, The Guardian, Financial Times, Le Monde, El País, Scientific American, MIT Technology Review, BBC World, Al Jazeera*).
-   - Nas caixas/cartões (`.d-nota`) e no Modo Leitor (`#texto`), todo o material DEVE ser traduzido com rigor analítico para o português (título, resumo, texto completo, pontos centrais e citações).
+17. **Equivalência da Mídia Internacional com Tradução Integral e Paridade Mandatória:**
+   - O boletim diário (manhã e noite) DEVE incorporar obrigatoriamente um material equivalente de cobertura dos principais veículos da mídia internacional (*The New York Times, The Guardian, Financial Times, Le Monde, El País, Scientific American, MIT Technology Review, BBC World, Al Jazeera*).
+   - O piso mínimo obrigatório é de **ao menos 10 notícias de Mídia Nacional + 10 notícias de Mídia Internacional traduzidas na íntegra** (20 a 22 matérias por dia), com o atributo `"escopo": "nacional"` ou `"escopo": "internacional"` em 100% dos itens.
+   - Nas caixas/cartões (`.d-nota`) e no Modo Leitor (`#texto`), todo o material internacional DEVE ser traduzido com rigor analítico para o português (título, resumo, texto completo de 3 a 4 parágrafos, pontos centrais e citações).
    - Os links para consulta externa (`f.url`) DEVEM direcionar obrigatoriamente para a matéria original no idioma de origem (*inglês, francês, espanhol, etc.*).
    - A interface deve oferecer alternância fluida entre os eixos de apuração (`Todas`, `🇧🇷 Mídia Nacional` e `🌍 Mídia Internacional Traduzida`).
+
+18. **Especificação Detalhada de Bandas nas Pequenas Casas (Agenda Cultural do Rio):**
+   - É estritamente proibido cadastrar eventos guarda-chuva ou genéricos sem atrações específicas.
+   - Cada casa de shows da cena alternativa (Audio Rebel, Saloon 79, Estúdio Hanoi, Garage Grindhouse, Circo Voador, Bar Bukowski) DEVE trazer os shows desmembrados em `destaques` com as bandas identificadas em `artistas: ["Banda A", "Banda B"]`.
+   - 100% das bandas devem estar cadastradas em `agenda.artistas.mapa` (Spotify ID) e `agenda.artistas.youtube` (YouTube ID/Playlist) para permitir execução imediata no player sem cortes de 30 segundos (`Ouvir aqui`) e links diretos para os aplicativos.
+   - Cada show deve detalhar data futura real no mês, horários, ingressos, resenha crítica (`porque`) e citações de veículos musicais especializados.
+
+19. **Botão e Diálogo de Convite Compartilhável para Cada Evento:**
+   - Todo card de evento (`cardEvento`) e todo show individual (`agDestaques`) DEVE fornecer o botão `✉️ Convidar`.
+   - Ao clicar, abre o modal `#dlg-convite` contendo: cabeçalho com selo e chamada de convite, grade prática (Onde com Google Maps, Quando com datas/horas, Ingressos com valores e link de compra), sinopse curatorial, line-up de bandas com player de áudio e links externos, resenha crítica, trailer/vídeo e botões de compartilhamento (Copiar Link com deep link `#convite=<id>`, envio formatado para WhatsApp e compartilhamento nativo).
+   - A plataforma DEVE abrir o convite automaticamente caso a página seja acessada com `#convite=<id>` ou `?convite=<id>`.
+

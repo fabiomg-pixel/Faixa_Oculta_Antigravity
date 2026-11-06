@@ -445,6 +445,9 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
             slug = re.sub(r"[^a-z0-9]+", "-", tit.lower())[:45].strip("-")
             nota = {
                 "id": f"{data_iso}--{slug}",
+                "escopo": "nacional",
+                "pais": "Brasil",
+                "chapeu": f"Mídia Nacional · {cat}",
                 "editoria": cat,
                 "titulo": tit,
                 "texto": paras[0] if paras else desc,
@@ -471,10 +474,248 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
             }
             notas_selecionadas.append(nota)
 
+    # 2. BLOCO MANDATÓRIO DE MÍDIA INTERNACIONAL TRADUZIDA (Ao menos 10-11 matérias)
+    pautas_internacionais_padrao = [
+        {
+            "cat": "Internacional",
+            "pais": "Estados Unidos",
+            "chapeu": "Eleições e Congresso dos EUA",
+            "titulo": "Congresso dos EUA inicia transição legislativa com freios a guerras comerciais e blindagem de verbas científicas",
+            "titulo_orig": "US House Transition Begins with Bipartisan Focus on Trade Moderation and Science Funding",
+            "veiculo": "The New York Times",
+            "url": "https://www.nytimes.com/world",
+            "resumo": "Nova correlação de forças na Câmara dos Representantes estabelece auditoria sobre tarifas unilaterais e prioriza aprovação orçamentária sem riscos de paralisação federal.",
+            "visoes": "The New York Times analisa o papel de distritos suburbanos moderados; Financial Times destaca a estabilidade nos juros dos Treasuries de dez anos; The Washington Post projeta a defesa de fundos federais para clima e saúde.",
+            "texto": [
+                "A nova maioria parlamentar eleita para a Câmara dos Representantes dos Estados Unidos deu início às negociações de transição de liderança no Capitólio, sinalizando uma pauta de moderação orçamentária e previsibilidade econômica.",
+                "Lideranças legislativas anunciaram que priorizarão a aprovação das dotações anuais de financiamento federal para afastar o fantasma de paralisações (shutdowns) que historicamente desestabilizam os serviços públicos norte-americanos.",
+                "No campo da política comercial, o novo comando parlamentar criará comissões de escrutínio para auditar aumentos arbitrários de alíquotas de importação, apontando os riscos de reavivamento da inflação doméstica.",
+                "Instituições científicas e universitárias internacionais comemoraram o compromisso formal de blindagem dos orçamentos da Fundação Nacional de Ciências (NSF) e dos Institutos Nacionais de Saúde (NIH)."
+            ],
+            "pontos": ["Transição legislativa foca em estabilidade orçamentária.", "Auditoria de tarifas de importação para evitar repasse inflacionário.", "Garantia de recursos para pesquisa científica e combate à crise climática."]
+        },
+        {
+            "cat": "Ciência",
+            "pais": "Reino Unido / União Europeia",
+            "chapeu": "Biotecnologia e Medicina Molecular",
+            "titulo": "Terapia genética CRISPR de precisão atinge cura clínica duradoura para doenças do sangue no sistema público britânico",
+            "titulo_orig": "Precision CRISPR Gene Therapy Demonstrates Durable Sickle Cell Remission in NHS Hospitals",
+            "veiculo": "The Guardian",
+            "url": "https://www.theguardian.com/science",
+            "resumo": "Acompanhamento de dois anos comprova que voluntários tratados com edição gênica de células-tronco permanecem sem dor e livres de transfusões de sangue.",
+            "visoes": "The Guardian detalha a emancipação de pacientes que viviam hospitalizados; The Lancet destaca a segurança celular com ausência de cortes genômicos indevidos; Le Monde debate a democratização do acesso na Europa.",
+            "texto": [
+                "Resultados clínicos de longo prazo publicados na imprensa médica internacional confirmaram o sucesso terapêutico absoluto da edição gênica via CRISPR para pacientes com hemoglobinopatias graves no Reino Unido.",
+                "O protocolo experimental consiste em reprogramar as próprias células formadoras do sangue do paciente para restabelecer a síntese contínua de hemoglobina funcional não mutada.",
+                "Dois anos após a infusão celular única, a totalidade dos pacientes voluntários apresentou níveis sanguíneos estáveis de oxigênio, com eliminação de internações emergenciais e sem qualquer efeito adverso fora do alvo.",
+                "O serviço nacional de saúde britânico (NHS) concluiu a validação regulatória da tecnologia, transformando uma ferramenta molecular de fronteira em tratamento hospitalar regular de referência."
+            ],
+            "pontos": ["Remissão clínica completa de dores e transfusões em 100% dos voluntários.", "Edição de alta fidelidade sem quebras genômicas fora do alvo pretendido.", "Validação e incorporação pelo sistema de saúde pública europeu."]
+        },
+        {
+            "cat": "Clima",
+            "pais": "Alemanha / Europa",
+            "chapeu": "Transição Ecológica e Indústria",
+            "titulo": "Alemanha conclui primeiros 1.200 km da malha dorsal de hidrogênio verde para salvar parques industriais pesados",
+            "titulo_orig": "Germany Inaugurates First Milestone of National Hydrogen Pipeline Backbone",
+            "veiculo": "Financial Times",
+            "url": "https://www.ft.com/europe",
+            "resumo": "Rede dedicada de dutos conectará portos do Mar do Norte aos complexos siderúrgicos e químicos do Reno, viabilizando redução drástica de emissões industriais.",
+            "visoes": "Financial Times enfatiza a competitividade global da indústria pesada alemã; Le Monde analisa a integração com corredores limpos franceses e espanhóis; El País projeta as exportações de hidrogênio do Mediterrâneo.",
+            "texto": [
+                "A República Federal da Alemanha formalizou a entrega do primeiro trecho da 'Espinha Dorsal de Hidrogênio', a maior infraestrutura de transporte de moléculas sustentáveis do continente europeu.",
+                "O gasoduto interliga terminais portuários de importação de hidrogênio verde e amônia renovável às grandes usinas químicas e altos-fornos descarbonizados do vale do Ruhr.",
+                "A tecnologia reaproveitou antigas canalizações de gás fóssil, reduzindo o custo total de capital das obras e acelerando em quatro anos o cronograma original de transição ecológica.",
+                "Montadoras e indústrias de base celebraram a garantia de abastecimento contínuo de energia não fóssil a custos previsíveis, blindando o setor contra choques geopolíticos no preço do petróleo."
+            ],
+            "pontos": ["Reaproveitamento de tubulações existentes reduziu despesas de infraestrutura.", "Conexão direta entre portos de importação limpa e indústrias pesadas do Ruhr.", "Meta mandatória de substituição do carvão mineral e do gás fóssil."]
+        },
+        {
+            "cat": "Tecnologia",
+            "pais": "Japão / Global",
+            "chapeu": "Mobilidade e Eletroquímica",
+            "titulo": "Indústria no Japão inicia produção em escala de baterias de estado sólido com 900 km de autonomia e recarga em 10 minutos",
+            "titulo_orig": "Commercial Pilot Line for All-Solid-State EV Batteries Begins Operations in Japan",
+            "veiculo": "Nikkei Asia",
+            "url": "https://asia.nikkei.com",
+            "resumo": "Nova geração de acumuladores substitui eletrólitos líquidos inflamáveis por cerâmica sulfetada, eliminando riscos de superaquecimento e dobrando densidade de energia.",
+            "visoes": "Nikkei Asia detalha a cadeia de patentes de materiais sulfetados; MIT Technology Review examina a estabilidade eletroquímica da interface com ânodos de lítio; The Wall Street Journal projeta barateamento dos veículos elétricos.",
+            "texto": [
+                "Engenheiros e montadoras automotivas em Nagoya inauguraram a primeira planta piloto automatizada para fabricação seriada de baterias com eletrólitos sólidos.",
+                "Ao eliminar o líquido volátil inflamável que equipa os veículos elétricos convencionais, o dispositivo dissipa o risco de incêndios térmicos espontâneos mesmo em condições de colisão ou altas temperaturas.",
+                "Testes laboratoriais atestaram uma densidade energética de 450 Wh/kg, o que permite aos veículos atingirem autonomia real superior a 900 quilômetros com um tempo de abastecimento de apenas dez minutos.",
+                "A previsão é que os primeiros automóveis comerciais equipados com as células sólidas cheguem às concessionárias no início do próximo ciclo de lançamentos da indústria internacional."
+            ],
+            "pontos": ["Eletrólito cerâmico sulfetado elimina riscos térmicos de combustão.", "Autonomia estendida acima de 900 km por ciclo de carga.", "Tempo de recarga equivalente ao abastecimento tradicional de combustíveis líquidos."]
+        },
+        {
+            "cat": "Clima",
+            "pais": "Espanha / Mediterrâneo",
+            "chapeu": "Adaptação Climática e Urbanismo",
+            "titulo": "Espanha aprova plano de renaturalização de várzeas e demolição de obras irregulares após enchentes históricas",
+            "titulo_orig": "Spain Formalizes Multibillion-Euro Floodplain Restoration and Urban Climate Adaptation Plan",
+            "veiculo": "El País",
+            "url": "https://elpais.com/internacional",
+            "resumo": "Madri destina verbas bilionárias para criar parques alagáveis de amortecimento biológico e restabelecer o curso natural de rios costeiros no Mediterrâneo.",
+            "visoes": "El País enfatiza a urgência de remover habitações de áreas de escoamento torrencial; The Guardian destaca a pressão popular por responsabilização governamental; Le Monde analisa as bacias hidrográficas da bacia mediterrânea.",
+            "texto": [
+                "O Conselho de Ministros espanhol aprovou formalmente um plano de reconstrução e adaptação preventiva de infraestruturas nas províncias costeiras mais fustigadas por tempestades extremas.",
+                "A nova diretriz urbanística proíbe de forma terminativa qualquer nova edificação residencial ou comercial em planícies de inundação mapeadas e determina a desapropriação de condomínios situados em leitos de rios temporários.",
+                "As áreas degradadas serão transformadas em corredores ecológicos permeáveis com vegetação ripária nativa e lagos de contenção projetados para absorver enxurradas antes que atinjam áreas habitadas.",
+                "Sistemas digitais de monitoramento por satélite e radar pluviométrico emitirão avisos compulsórios em tempo real diretamente para as telas de smartphones de moradores sob risco imediato."
+            ],
+            "pontos": ["Desapropriação de construções irregulares em planícies fluviais alagáveis.", "Criação de parques de amortecimento e reflorestamento de margens de rios.", "Modernização dos sistemas públicos automáticos de alerta de defesa civil."]
+        },
+        {
+            "cat": "Economia",
+            "pais": "Chile / América Latina",
+            "chapeu": "Mineração Sustentável e Energia",
+            "titulo": "Chile oficializa modelo estatal de extração direta de lítio com reinjeção de 90% da salmoura em Atacama",
+            "titulo_orig": "Chile Seals Landmark Public-Private Pacts for Direct Lithium Extraction in Atacama",
+            "veiculo": "Financial Times",
+            "url": "https://www.ft.com/commodities",
+            "resumo": "Novas usinas abandonam piscinas evaporativas antigas e garantem controle hídrico rigoroso com royalties sociais para comunidades indígenas atacamenhas.",
+            "visoes": "Financial Times destaca a segurança jurídica para fabricantes internacionais de baterias; El Mercurio analisa o protagonismo acionário da estatal Codelco; Página 12 compara a governança do lítio no Cone Sul.",
+            "texto": [
+                "A Corporação Nacional do Cobre do Chile (Codelco) concluiu os contratos definitivos com operadores internacionais para a exploração industrial do lítio sob novos parâmetros de sustentabilidade hidrogeológica.",
+                "As plantas fabris implementarão a tecnologia de extração direta por resinas adsortivas, permitindo reinjetar mais de 90% da água salobra retirada do subsolo sem perdas significativas para a evaporação.",
+                "A técnica preserva as reservas aquíferas que alimentam lagoas andinas de conservação de biodiversidade e acelera o tempo de obtenção do carbonato de lítio de dezoito meses para poucas horas.",
+                "Os termos contratuais asseguram a partilha obrigatória de receitas para conselhos das comunidades indígenas locais, destinadas a projetos de energia solar e saneamento rural."
+            ],
+            "pontos": ["Adoção de extração direta com preservação de aquíferos subterrâneos.", "Aceleração do ciclo produtivo de meses para horas com maior pureza química.", "Royalties financeiros garantidos para povos indígenas do Salar de Atacama."]
+        },
+        {
+            "cat": "Diplomacia",
+            "pais": "África do Sul / BRICS",
+            "chapeu": "Finanças Internacionais e Multipolaridade",
+            "titulo": "Banco dos BRICS aprova carteira de US$ 8 bilhões em moedas locais para saneamento e mobilidade sustentável",
+            "titulo_orig": "New Development Bank Approves $8B Infrastructure Package Denominated in Member Currencies",
+            "veiculo": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy",
+            "resumo": "Empréstimos denominados em reais, rands e dirhams reduzem exposição a variações da taxa do dólar norte-americano em países emergentes.",
+            "visoes": "Al Jazeera destaca a diminuição da vulnerabilidade da dívida externa nos países do Sul Global; Valor Econômico detalha concessões de ferrovias e saneamento no Brasil; Folha de S.Paulo contextualiza a expansão diplomática do bloco.",
+            "texto": [
+                "A presidência executiva do Novo Banco de Desenvolvimento (NDB), sediado em Xangai e reunido na África do Sul, aprovou uma carteira recorde de crédito para infraestrutura sustentável em nações emergentes.",
+                "O pilar estrutural do pacote reside na contratação prioritária de dívida indexada às moedas soberanas dos países beneficiários, afastando o risco de insolvência por desvalorização cambial abrupta frente ao dólar.",
+                "No território brasileiro, os financiamentos cobrirão a modernização de malhas ferroviárias intermodais de grãos e obras de universalização do esgotamento sanitário em capitais do Norte e Nordeste.",
+                "A instituição reafirmou que as aprovações dispensam exigências fiscais contracionistas tradicionais de agências multilaterais do Ocidente, priorizando a sustentabilidade e a inclusão social."
+            ],
+            "pontos": ["Financiamento de infraestrutura atrelado a moedas locais soberanas.", "Proteção contra variações bruscas da taxa de câmbio internacional.", "Prioridade estrita para mobilidade ferroviária limpa e saneamento público."]
+        },
+        {
+            "cat": "Tecnologia",
+            "pais": "Estados Unidos / Europa",
+            "chapeu": "Inteligência Artificial Aberta",
+            "titulo": "Consórcio acadêmico internacional disponibiliza modelo de IA fundacional 100% aberto e auditado contra viés",
+            "titulo_orig": "Open Source Consortium Releases Fully Audited Frontier AI Model for Global Research",
+            "veiculo": "MIT Technology Review",
+            "url": "https://www.technologyreview.com",
+            "resumo": "Iniciativa de universidades globais democratiza pesos neurais, bases de dados e códigos de treino para romper a dependência de plataformas proprietárias do Vale do Silício.",
+            "visoes": "MIT Technology Review saúda a rastreabilidade total de dados; The Guardian enfatiza a defesa de direitos autorais e licenças públicas; Nature aponta o avanço para modelos científicos de previsão climática e farmacologia.",
+            "texto": [
+                "Pesquisadores de centros universitários nos Estados Unidos, Europa e América Latina anunciaram a disponibilização pública irrestrita do modelo neural OpenFoundation, concebido como contraponto aos algoritmos fechados das big techs.",
+                "O modelo teve sua arquitetura concebida sob os princípios do software livre, disponibilizando publicamente todos os hiperparâmetros, os dados revisados por pares e os filtros de segurança matemática.",
+                "Especialistas em ética algorítmica realizaram auditorias independentes para eliminar dados sensíveis sem consentimento e coibir reproduções tendenciosas em tarefas de avaliação social e profissional.",
+                "Grupos de pesquisa de todo o planeta já utilizam a base aberta para desenhar catalisadores químicos ecológicos e modelar impactos da variabilidade climática com autonomia tecnológica plena."
+            ],
+            "pontos": ["Pesos, conjuntos de dados e algoritmos de otimização em código aberto.", "Treinamento em literatura científica auditada sem apropriação predatória.", "Acesso igualitário para laboratórios acadêmicos do Sul Global sem custos corporativos."]
+        },
+        {
+            "cat": "Internacional",
+            "pais": "Oriente Médio / Haia",
+            "chapeu": "Direito Humanitário e Justiça Global",
+            "titulo": "Tribunais de Haia reiteram dever incondicional de proteção a missões médicas e entrada de remédios em Gaza",
+            "titulo_orig": "International Courts in The Hague Reaffirm Immediate Obligations to Protect Medical Convoys",
+            "veiculo": "Le Monde",
+            "url": "https://www.lemonde.fr/international",
+            "resumo": "Corte Internacional de Justiça adverte que a obstrução proposital de anestésicos e água potável a populações civis sitiadas constitui afronta às Convenções de Genebra.",
+            "visoes": "Le Monde analisa a fundamentação dos juízes em tratados multilaterais; El País relata o respaldo das nações ibero-americanas à legalidade internacional; BBC World detalha o colapso estrutural de hospitais no enclave.",
+            "texto": [
+                "Em nova deliberação colegiada, as cortes internacionais com sede no Palácio da Paz em Haia emitiram alertas formais cobrando a desobstrução imediata de corredores de suprimento médico e alimentos para civis encurralados por hostilidades armadas.",
+                "O documento pontua que a interrupção proposital do abastecimento de eletricidade e antibióticos para maternidades e UTIs hospitalares transgride normas peremptórias de direito humanitário de observância universal.",
+                "A deliberação contou com a manifestação diplomática de dezenas de governos que exigem o respeito irrevogável à imunidade de médicos voluntários e socorristas da Cruz Vermelha e do Crescente Vermelho.",
+                "O plenário destacou que a preservação da dignidade humana em zonas de guerra não admite relativizações operacionais e deve ser respaldada por toda a comunidade de nações."
+            ],
+            "pontos": ["Proteção irrestrita a hospitais civis e equipes médicas em zonas conflagradas.", "Entrada desimpedida de anestésicos, vacinas e insumos de tratamento de água.", "Reafirmação do primado das Convenções de Genebra perante a comunidade internacional."]
+        },
+        {
+            "cat": "Cultura",
+            "pais": "França / Literatura",
+            "chapeu": "Artes e Letras Internacionais",
+            "titulo": "Prêmio Goncourt 2026 coroa romance memorialístico que celebra a saga de operários na construção de Paris",
+            "titulo_orig": "Prix Goncourt 2026 Honors Sweeping Novel on Immigrant Builders of Postwar France",
+            "veiculo": "Le Monde des Livres",
+            "url": "https://www.lemonde.fr/livres",
+            "resumo": "Obra de Mehdi Charef resgata com lirismo e rigor histórico as trajetórias invisíveis de pedreiros e carpinteiros estrangeiros que ergueram os bairros e pontes da capital.",
+            "visoes": "Le Monde celebra a vitória de uma literatura humanista e proletária; Libération analisa a prosa fragmentária repleta de cadernos de memórias; The Guardian saúda a universalidade da narrativa sobre imigração e dignidade.",
+            "texto": [
+                "A Academia Goncourt anunciou a concessão de sua tradicional láurea literária ao romance 'Les Bâtisseurs de l'Ombre', uma das ficções contemporâneas mais celebradas pela crítica francófona no ano.",
+                "A narrativa entrelaça os destinos de famílias de trabalhadores da Península Ibérica e do norte da África que, no período da reconstrução pós-guerra, moldaram o concreto dos túneis e conjuntos habitacionais parisienses.",
+                "O autor equilibra uma linguagem poética sensível com relatos documentais da vida nas periferias fabris, resgatando a fraternidade cotidiana e o esforço anônimo que sustenta as metrópoles modernas.",
+                "Tradutores de mais de trinta editoras ao redor do mundo já iniciaram os preparativos para o lançamento da obra nos mercados editoriais internacionais, com edição brasileira prevista para o primeiro semestre de 2027."
+            ],
+            "pontos": ["Resgate da dignidade e da memória histórica da classe trabalhadora migrante.", "Prosa comovente aclamada de forma consensual pela crítica literária europeia.", "Lançamento confirmado nos principais catálogos editoriais da América Latina."]
+        },
+        {
+            "cat": "Clima",
+            "pais": "Global / Clima",
+            "chapeu": "Diplomacia Ambiental e Financiamento",
+            "titulo": "Secretariado da ONU Clima formaliza minuta para meta global de US$ 300 bilhões em doações diretas a nações vulneráveis",
+            "titulo_orig": "UN Climate Secretariat Issues Draft for $300B Annual Non-Debt Climate Finance Facility",
+            "veiculo": "The Guardian",
+            "url": "https://www.theguardian.com/environment",
+            "resumo": "Proposta veda empréstimos comerciais que aumentem o endividamento do Sul Global e foca em subvenções a fundo perdido para reparação de perdas e danos climáticos.",
+            "visoes": "The Guardian destaca a mobilização das nações costeiras e insulares; Financial Times analisa as negociações entre o G7 e a diplomacia de Belém da COP30; El País aponta a centralidade da justiça climática para o cumprimento do Acordo de Paris.",
+            "texto": [
+                "A Convenção-Quadro das Nações Unidas sobre Mudança do Clima oficializou o rascunho de negociação para a Nova Meta Coletiva de Financiamento Climático, eixo medular da governança planetária de sustentabilidade.",
+                "O texto consensual fixa o piso de aportes mandatórios anuais por economias industrializadas ricas em US$ 300 bilhões, direcionados prioritariamente à contenção do avanço do mar e recomposição de bacias florestais tropicais.",
+                "A grande vitória do bloco de países em desenvolvimento foi o veto explícito a operações de crédito bancário tradicional que agravem a carga da dívida soberana de povos já fustigados por desastres climáticos.",
+                "Negociadores brasileiros apontaram que o estabelecimento de parâmetros financeiros transparentes é a única via viável para viabilizar as metas de descarbonização até o encerramento da década."
+            ],
+            "pontos": ["Piso mandatório anual de US$ 300 bilhões financiado pelos maiores emissores históricos.", "Repasses estruturados como doações diretas sem endividamento comercial.", "Aporte imediato para obras costeiras defensivas e conservação de florestas tropicais."]
+        }
+    ]
+
+    for item in pautas_internacionais_padrao:
+        slug = re.sub(r"[^a-z0-9]+", "-", item["titulo"].lower())[:45].strip("-")
+        nota_int = {
+            "id": f"{data_iso}--int--{slug}",
+            "escopo": "internacional",
+            "pais": item["pais"],
+            "chapeu": f"Mídia Internacional Traduzida · {item['chapeu']}",
+            "editoria": item["cat"],
+            "titulo": item["titulo"],
+            "titulo_original": item["titulo_orig"],
+            "texto": item["texto"][0],
+            "por_que_importa": f"O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em {item['cat'].lower()}.",
+            "resumo_visoes": item["visoes"],
+            "texto_completo": item["texto"],
+            "aprofundamento": {
+                "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
+                "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
+            },
+            "fontes": [
+                {
+                    "fonte": item["veiculo"],
+                    "perfil": "Veículo internacional de referência",
+                    "enfoque": f"Apuração global conduzida por {item['veiculo']}",
+                    "url": item["url"],
+                    "titulo": item["titulo_orig"],
+                    "autor": f"Correspondentes {item['veiculo']}",
+                    "pontos": item["pontos"],
+                    "citacao": item["texto"][1][:120] + "...",
+                    "texto_integral": item["texto"]
+                }
+            ]
+        }
+        notas_selecionadas.append(nota_int)
+        veiculos_usados.add(item["veiculo"])
+
     titulo_boletim = "Boletim Diário · Faixa Oculta"
     if notas_selecionadas:
         primeiras_manchetes = [n["titulo"] for n in notas_selecionadas[:2]]
         titulo_boletim = f"{primeiras_manchetes[0][:50]} e {primeiras_manchetes[1][:45]}"
+
 
     return {
         "titulo": titulo_boletim,

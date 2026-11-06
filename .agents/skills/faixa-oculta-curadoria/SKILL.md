@@ -235,23 +235,69 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
 
 ---
 
-## 17. Equivalência da Mídia Internacional com Tradução Integral
+## 17. Equivalência da Mídia Internacional com Tradução Integral e Paridade Mandatória
 
 > [!IMPORTANT]
-> **Paridade Editorial Mandatória:** O boletim diário da Faixa Oculta não se limita à imprensa brasileira. Toda edição deve obrigatoriamente trazer um **material equivalente dos principais veículos da mídia internacional** (*The New York Times, The Guardian, Financial Times, Le Monde, El País, Scientific American, MIT Technology Review, BBC World, Al Jazeera*).
+> **Paridade Editorial Mandatória (20 a 22 matérias por dia):** O boletim diário da Faixa Oculta não se limita à imprensa brasileira. Toda edição (manhã e noite) DEVE obrigatoriamente trazer **ao menos 10 notícias densas de Mídia Nacional + ao menos 10 notícias equivalentes dos principais veículos da mídia internacional** (*The New York Times, The Guardian, Financial Times, Le Monde, El País, Scientific American, MIT Technology Review, BBC World, Al Jazeera*).
 
-1. **Tradução Fiel e Rigorosa nas Caixas e no Modo Leitor:**
+1. **Atributo `escopo` Obrigatório em 100% das Notas:**
+   * Toda nota nacional DEVE ter `"escopo": "nacional"` e `"pais": "Brasil"`.
+   * Toda nota internacional DEVE ter `"escopo": "internacional"` e `"pais"` explicitado (ex: `"Estados Unidos"`, `"Reino Unido"`, `"Alemanha"`, `"Oriente Médio"`, `"América Latina"`).
+   * A interface em `pagina.html` depende desse atributo para ativar a barra de filtros fluida (`Todas`, `🇧🇷 Mídia Nacional`, `🌍 Mídia Internacional Traduzida`).
+2. **Tradução Fiel e Rigorosa nas Caixas e no Modo Leitor:**
    * **Cartão da Notícia (`.d-nota`):** Título, texto resumo, editoria e "Por que importa" traduzidos para o português com redação jornalística de alto nível.
    * **Modo Leitor (`abrirNota` e `#texto`):** Reportagem completa de 3 a 4 parágrafos densos (`texto_completo`), síntese de visões e pontos-chave traduzidos na íntegra para o português.
-2. **Preservação dos Links Originais na Língua Materna:**
+3. **Preservação dos Links Originais na Língua Materna:**
    * O link externo de conferência (`f.url`) deve apontar **obrigatoriamente para a URL original no site da publicação estrangeira**, na língua original em que foi escrita (*inglês, francês, espanhol, etc.*).
    * No rodapé do leitor, o botão deve explicitar o idioma: `Acessar no site original de The Guardian (EN) ↗`.
-3. **Filtro de Navegação e Alternância de Eixos:**
+4. **Filtro de Navegação e Alternância de Eixos:**
    * O topo do boletim deve fornecer a alternância de eixos: `[ Todas ]`, `[ 🇧🇷 Mídia Nacional ]` e `[ 🌍 Mídia Internacional Traduzida ]`, permitindo ao leitor focar no cenário nacional, no panorama global ou em ambos integrados.
+5. **Resiliência do Pipeline (Nenhum Fallback sem Internacionais):**
+   * Tanto a chamada da API do Gemini quanto o fallback algorítmico (`curadoria_algoritmica_resiliente` em `tools/boletim_nuvem.py`) DEVEM estruturar sempre os dois blocos equivalentes de 11 matérias nacionais e 11 internacionais.
 
 ---
 
-## 18. Ferramentas e Scripts de Suporte
+## 18. Especificação Detalhada de Eventos e Bandas nas Pequenas Casas (Agenda Cultural do Rio)
+
+> [!CAUTION]
+> **Proibição de Eventos Genéricos ou Guarda-Chuva:** É expressamente proibido cadastrar eventos genéricos nas casas de shows com títulos vagos e `artistas: None`.
+
+1. **Shows com Identificação Individual de Bandas e Artistas:**
+   * Cada casa da cena independente (Audio Rebel, Saloon 79, Estúdio Hanoi, Garage Grindhouse, Circo Voador, Bar Bukowski) deve possuir atrações individuais no array `destaques`.
+   * Cada destaque DEVE explicitar as bandas participantes no array `artistas: ["Banda A", "Banda B"]`.
+2. **Suporte Completo a Áudio sem Cortes (YouTube Music e Spotify):**
+   * 100% dos artistas listados na Agenda DEVEM ser cadastrados nos dicionários `agenda.artistas.mapa` (Spotify ID) e `agenda.artistas.youtube` (ID de playlist/canal no YouTube Music).
+   * Com esse mapeamento, o card e o leitor geram nativamente o botão `▶ Ouvir agora` (player embed no topo sem cortes de 30 segundos) e links diretos para YouTube Music e Spotify.
+3. **Ficha do Show e Sessões Futuras Reais:**
+   * Cada destaque deve conter o array `sessoes` com datas reais de sexta, sábado ou domingo no mês (ex: `2026-11-06`, `2026-11-07`, `2026-11-08`), horários (`20h`, `21h`), preços dos ingressos (`obs`) e links de bilheteria (`link`).
+   * Deve incluir a justificativa curatorial (`porque`), reviews de veículos especializados (*Popload, Tenho Mais Discos Que Amigos, Scream & Yell, Trabalho Sujo*) e links de vídeo/trailer ao vivo no YouTube (`trailer`).
+
+---
+
+## 19. Botão e Diálogo de Convite Compartilhável para Cada Evento Cultural
+
+> [!IMPORTANT]
+> **Convite Cultural Integrado:** Todo evento e toda atração individual da Agenda deve fornecer a opção de criar um convite compartilhável com um clique.
+
+1. **Botão de Ação nos Cards:**
+   * No card geral (`cardEvento`) e em cada atração individual (`agDestaques`), exibir o botão sóbrio `✉️ Convidar`.
+2. **Modal Interativo de Convite (`#dlg-convite`):**
+   * Ao clicar, abre o diálogo com:
+     * Selo mono do evento e chamada de convite (*"Você foi convidado(a) para este evento pelo Radar Cultural Faixa Oculta"*).
+     * Grade de informações práticas: 📍 Onde (com link para Google Maps), 📅 Quando (datas e horários formatados), 🎟️ Ingressos (preço e link de compra).
+     * Sinopse curatorial "Por que ir / O que esperar".
+     * Line-up completo com botões `▶ Ouvir agora` (player sem cortes), YouTube Music e Spotify para cada banda.
+     * Recepção crítica e citação de reviews especializados.
+     * Trailer / vídeo de apresentação.
+3. **Compartilhamento e Deep Link:**
+   * **Copiar Link de Convite:** Gera e copia para o clipboard o deep link exclusivo `...#convite=<id_do_evento>`.
+   * **WhatsApp:** Gera mensagem pré-formatada pronta para envio: *"Bora nesse show? 🎵 [Título] no [Local], [Data] às [Hora]..."*.
+   * **Compartilhar Nativo:** Aciona `navigator.share` em dispositivos móveis.
+   * **Deep Link Automático:** Se a URL for acessada com `#convite=<id>` ou `?convite=<id>`, a página abre o modal do evento instantaneamente no carregamento.
+
+---
+
+## 20. Ferramentas e Scripts de Suporte
 
 Ao manipular a base ou realizar manutenções, utilize os utilitários já homologados em `tools/`:
 
@@ -260,7 +306,8 @@ Ao manipular a base ou realizar manutenções, utilize os utilitários já homol
 | `tools/varredura_cultural_online.py` | Apuração em tempo real de novos filmes, álbuns e livros via APIs externas (anti-cutoff). |
 | `tools/popular_resenhas_completas.py` | Geração de resenhas críticas densas de 4 parágrafos e erradicação de placeholders. |
 | `tools/gerar_analises_criticas_2026_11.py` | Geração de 2 a 3 análises críticas de veículos especializados por obra (música, cinema e livros). |
-| `tools/atualizar_boletim_prioridades.py` | Reestruturação de edições com a hierarquia estrita de Economia e Política Nacional/Internacional. |
-| `tools/aprimorar_leitor_e_analises.py` | Atualização do modo leitor com controle de tamanho, contraste correto no tema escuro e abertura prioritária. |
+| `tools/gerar_edicoes_diarias.py` | Estruturação e injeção de edições com paridade estrita (11 nacionais + 11 internacionais traduzidas). |
+| `tools/atualizar_radar_edicoes.py` | Mapeamento de artistas para Spotify/YouTube e detalhamento da Agenda do Rio. |
+| `tools/atualizar_filtros_convite.py` | Injeção do modal de convite compartilhável e botões da agenda em `pagina.html` e `index.html`. |
 | `tools/gerar_audio_boletim.py` | Síntese de áudio da notícia completa via `edge-tts` (pt-BR-AntonioNeural) e fallback local. |
 | `tools/orquestrador_nuvem.py` / `sentinela_boletim.py` | Orquestração periódica matinal e noturna das edições. |
