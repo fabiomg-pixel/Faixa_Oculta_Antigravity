@@ -243,26 +243,36 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
 ## 17. Equivalência da Mídia Internacional com Tradução Integral e Paridade Mandatória
 
 > [!IMPORTANT]
-> **Paridade Editorial Mandatória (20 a 22 matérias por dia):** O boletim diário da Faixa Oculta não se limita à imprensa brasileira. Toda edição (manhã e noite) DEVE obrigatoriamente trazer **ao menos 10 notícias densas de Mídia Nacional + ao menos 10 notícias equivalentes dos principais veículos da mídia internacional** (*The New York Times, The Guardian, Financial Times, Le Monde, El País, Scientific American, MIT Technology Review, BBC World, Al Jazeera*).
+> **Paridade Editorial Mandatória (20 a 22 matérias por dia):** O boletim diário da Faixa Oculta não se limita à imprensa brasileira. Toda edição (manhã e noite) DEVE obrigatoriamente trazer **ao menos 10 notícias densas de Mídia Nacional + ao menos 10 notícias equivalentes dos principais veículos da mídia internacional generalista e diplomática** (*The New York Times, The Guardian, Financial Times, BBC World News, Le Monde, El País, Al Jazeera*).
 
 1. **Atributo `escopo` Obrigatório em 100% das Notas:**
    * Toda nota nacional DEVE ter `"escopo": "nacional"` e `"pais": "Brasil"`.
    * Toda nota internacional DEVE ter `"escopo": "internacional"` e `"pais"` explicitado (ex: `"Estados Unidos"`, `"Reino Unido"`, `"Alemanha"`, `"Oriente Médio"`, `"América Latina"`).
    * A interface em `pagina.html` depende desse atributo para ativar a barra de filtros fluida (`Todas`, `🇧🇷 Mídia Nacional`, `🌍 Mídia Internacional Traduzida`).
 2. **Tradução Fiel e Rigorosa nas Caixas e no Modo Leitor:**
-   * **Cartão da Notícia (`.d-nota`):** Título, texto resumo, editoria e "Por que importa" traduzidos para o português com redação jornalística de alto nível.
-   * **Modo Leitor (`abrirNota` e `#texto`):** Reportagem completa de 3 a 4 parágrafos densos (`texto_completo`), síntese de visões e pontos-chave traduzidos na íntegra para o português.
+   * **Cartão da Notícia (`.d-nota`):** Título, texto resumo, editoria e "Por que importa" traduzidos para o português culto com redação jornalística de alto nível.
+   * **Modo Leitor (`abrirNota` e `#texto`):** Reportagem completa de 3 a 4 parágrafos densos (`texto_completo`), síntese de visões e pontos-chave traduzidos na íntegra para o português, preservando o título estrangeiro original em `titulo_original`.
 3. **Preservação dos Links Originais na Língua Materna:**
-   * O link externo de conferência (`f.url`) deve apontar **obrigatoriamente para a URL original no site da publicação estrangeira**, na língua original em que foi escrita (*inglês, francês, espanhol, etc.*).
-   * No rodapé do leitor, o botão deve explicitar o idioma: `Acessar no site original de The Guardian (EN) ↗`.
+   * O link externo de conferência (`f.url`) deve apontar **obrigatoriamente para a URL original no site da publicação estrangeira**, na língua original em que foi escrita (*inglês, francês, espanhol, etc.*) através do deep-link específico do artigo (ex.: `.../artigo.html`), sendo proibidas URLs genéricas de capa.
 4. **Filtro de Navegação e Alternância de Eixos:**
    * O topo do boletim deve fornecer a alternância de eixos: `[ Todas ]`, `[ 🇧🇷 Mídia Nacional ]` e `[ 🌍 Mídia Internacional Traduzida ]`, permitindo ao leitor focar no cenário nacional, no panorama global ou em ambos integrados.
-5. **Resiliência do Pipeline (Nenhum Fallback sem Internacionais):**
-   * Tanto a chamada da API do Gemini quanto o fallback algorítmico (`curadoria_algoritmica_resiliente` em `tools/boletim_nuvem.py`) DEVEM estruturar sempre os dois blocos equivalentes de 11 matérias nacionais e 11 internacionais.
+5. **Resiliência do Pipeline (100% Notícias Reais em Todos os Modos):**
+   * Tanto a chamada da API do Gemini quanto o fallback algorítmico (`curadoria_algoritmica_resiliente` em `tools/boletim_nuvem.py`) DEVEM estruturar sempre os dois blocos equivalentes de 11 matérias nacionais e 11 internacionais baseadas exclusivamente em matérias reais contemporâneas das últimas 48 horas.
 
 ---
 
-## 18. Especificação Detalhada de Eventos e Bandas nas Pequenas Casas (Agenda Cultural do Rio)
+## 18. Veracidade Absoluta e Proibição Terminativa de Notícias Sintéticas (Anti-Fake / Anti-Placeholder)
+
+> [!CAUTION]
+> **Proibição Absoluta de Fabricação de Notícias ou Templates Simulados:**
+> É estritamente proibido inventar notícias, simular manchetes de ficção ou utilizar templates/listas hardcoded de fatos fictícios com URLs genéricas de capa (`nytimes.com/world`, `theguardian.com/science`).
+> - **100% de Fontes Reais Contemporâneas:** Toda e qualquer matéria (Nacional ou Internacional) DEVE ser extraída diretamente de reportagens reais apuradas nos feeds RSS e portais de jornalismo profissional nas últimas 48 horas (validado via `pubDate`).
+> - **Deep-Link Real do Artigo:** Cada notícia deve manter a URL autêntica do artigo original específico na internet para verificação e conferência externa pelo leitor.
+> - **Fidelidade Factual na Tradução:** O processo de tradução e síntese de matérias internacionais deve ser fiel ao fato apurado pelos correspondentes no exterior, proibindo extrapolações ficcionais ou datas defasadas.
+
+---
+
+## 19. Especificação Detalhada de Eventos e Bandas nas Pequenas Casas (Agenda Cultural do Rio)
 
 > [!CAUTION]
 > **Proibição de Eventos Genéricos ou Guarda-Chuva:** É expressamente proibido cadastrar eventos genéricos nas casas de shows com títulos vagos e `artistas: None`. Da mesma forma, é inaceitável omitir atrações relevantes da cena indie em turnê ou lançando álbum no dia de hoje ou no fim de semana nas casas prioritárias.
