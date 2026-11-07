@@ -146,35 +146,40 @@ Em cada edição mensal (Música, Cinema e Livros), deve ser produzido um módul
 
 ## 11. Perfil Editorial Personalizado do Leitor (Fabio Gomes / UFRJ)
 
-A curadoria da Faixa Oculta foi desenhada para seu leitor-alvo, professor e pesquisador de biofísica na UFRJ. Todos os pilares editoriais devem refletir esse horizonte:
+A curadoria da Faixa Oculta foi desenhada para um leitor de alto capital cultural e intelectual, professor e pesquisador de biofísica na UFRJ.
 
-1. **Ciência, Saúde Pública & Amazônia:** Pesquisas de ponta em biofísica, imunometabolismo, arboviroses e vetores; mobilização acadêmica (SBPC, ABC, UFRJ, Fiocruz, FAPESP); clima, sustentabilidade e a Amazônia (Davi Kopenawa, Sumaúma).
-2. **Política & Diplomacia:** Geopolítica internacional e política externa brasileira (Itamaraty, CEBRI, multilateralismo, BRICS, transição global); política nacional plural, reformas institucionais, STF e memória histórica democrática.
-3. **Ficção Científica (Sci-Fi) & Fantasia:** Hard sci-fi, especulação sobre inteligência artificial, colapso tecnológico e ecologia (Editora Aleph, Morro Branco, Todavia); alta fantasia mitológica, cosmologias indígenas e realismo mágico de autor.
-4. **Música:** Indie rock/folk e canção confessional (Lucy Dacus, Phoebe Bridgers, Julia Jacklin, Soccer Mommy, Sharon Van Etten); art-rock e pós-punk (Geese, bar italia); shoegaze-pop (Wishy, beabadoobee); folk literário (The Decemberists, Okkervil River, Greg Freeman); rock e vanguarda brasileira (Papangu, Letrux, El Efecto, Clau Aniz, Marcelo Cabral); cânone moderno (Radiohead, Blur, Queens of the Stone Age).
-5. **Cinema:** Cinema autoral e de festivais internacionais (Cannes, Veneza, Festival do Rio, Mostra SP); cinema brasileiro independente (Gabriel Martins, Kleber Mendonça Filho, Filmes de Plástico, Pedro Freire); documentários reflexivos e cosmologias visuais.
+> [!CAUTION]
+> **Separação Rigorosa: Noticiário Diário vs. Leituras da Semana:**
+> O leitor busca a Faixa Oculta pelo seu **interesse pessoal, cultural e cívico, e NÃO como extensão de rotina de trabalho ou de laboratório**.
+> - **No 'Hoje' (Boletim Diário):** Estritamente **NOTÍCIAS CLÁSSICAS DE PRIMEIRA LINHA** (Economia dura, Política Nacional, Geopolítica/Internacional e Sociedade). É TERMINANTEMENTE PROIBIDO entupir o boletim diário com assuntos de trabalho/laboratório (editais burocráticos de fomento a biotérios, compras de insumos para bancada, feiras de recrutamento de estudantes, comunicados de pós-graduação ou notas departamentais).
+> - **Na 'Semana' (Revista da Semana):** Espaço adequado para ensaios reflexivos, grandes debates de ideias, filosofia da ciência, fronteiras do conhecimento e reflexão humanística sobre tecnologia e cosmologia — como leitura prazerosa e descompromissada de fim de semana.
+
+1. **Economia, Política & Diplomacia (Diário):** Macroeconomia, contas públicas, inflação, juros, câmbio, emprego, indústria, comércio exterior; reformas institucionais, Congresso, STF, governabilidade; geopolítica internacional, eleições globais, multilateralismo (BRICS, G20, ONU, Itamaraty).
+2. **Sociedade, Cidades & Cidadania (Diário):** Segurança pública e pacto federativo, regulação e direitos do consumidor, infraestrutura urbana, eventos climáticos extremos e Defesa Civil.
+3. **Ficção Científica (Sci-Fi), Fantasia & Ensaios (Semanal / Mensal):** Hard sci-fi, especulação sobre inteligência artificial, colapso tecnológico e ecologia (Editora Aleph, Morro Branco, Todavia); alta fantasia mitológica, cosmologias indígenas e realismo mágico de autor.
+4. **Música (Mensal / Agenda):** Indie rock/folk e canção confessional (Lucy Dacus, Phoebe Bridgers, Julia Jacklin, Soccer Mommy, Sharon Van Etten); art-rock e pós-punk (Geese, bar italia); shoegaze-pop (Wishy, beabadoobee); folk literário (The Decemberists, Okkervil River, Greg Freeman); rock e vanguarda brasileira (Papangu, Letrux, El Efecto, Clau Aniz, Marcelo Cabral); cânone moderno (Radiohead, Blur, Queens of the Stone Age).
+5. **Cinema (Mensal):** Cinema autoral e de festivais internacionais (Cannes, Veneza, Festival do Rio, Mostra SP); cinema brasileiro independente (Gabriel Martins, Kleber Mendonça Filho, Filmes de Plástico, Pedro Freire); documentários reflexivos e cosmologias visuais.
 
 ---
 
-## 12. Prioridade Editorial do Boletim Diário (Economia, Política e Diplomacia Primeiro)
+## 12. Prioridade Editorial do Boletim Diário ('Hoje': Noticiário Clássico de Alta Densidade)
 
 > [!IMPORTANT]
-> **Volume Editorial Mandatório:** O boletim diário (manhã e noite) DEVE conter obrigatoriamente **AO MENOS 10 NOTÍCIAS DENSAS E ANALÍTICAS** (10 a 12 matérias). Edições com 5 ou 6 notas são consideradas incompletas.
-> As pautas de nicho acadêmico e pessoal NÃO devem canibalizar o noticiário duro nacional e internacional. Economia e Política estruturais têm prioridade máxima de abertura.
+> **Volume e Perfil Editorial Mandatório:** O boletim diário (manhã e noite) DEVE conter obrigatoriamente **AO MENOS 10 NOTÍCIAS DENSAS NACIONAIS + 10 INTERNACIONAIS TRADUZIDAS** (20 a 22 matérias por edição).
+> O noticiário diário deve ser **CLÁSSICO, SÓBRIO E INDISPENSÁVEL**. ZERO matérias de rotina de trabalho/laboratório ou curiosidades menores (feiras universitárias de estudantes, cadeados de naufrágios, etc.).
 
-1. **Hierarquia Editorial Obrigatória do Boletim (Mínimo de 10 Notas):**
-   - **1º e 2º:** **Economia & Contas Públicas** (corte de gastos, juros Selic, câmbio, inflação, meta fiscal, reforma tributária, dívida pública, estatais).
-   - **3º e 4º:** **Política Nacional & Instituições** (STF, Congresso, governabilidade, regras de emendas, equilíbrio entre Poderes, segurança pública).
-   - **5º e 6º:** **Diplomacia & Geopolítica Internacional** (eleições globais, BRICS, G20, Itamaraty, multilateralismo e conflitos).
-   - **7º:** **Economia Setorial, Energia & Regulação** (impactos sociais de apostas/bets, malha elétrica, data centers, regulação de IA).
-   - **8º e 9º:** **Ciência, Saúde Pública & Universidades** (FNDCT, UFRJ, Fiocruz, SBPC, CNPq, arboviroses, soberania vacinal no SUS).
-   - **10º e 11º:** **Clima & Amazônia** (bacias hidrográficas, estiagem, terras indígenas, queimadas, COP30, transição ecológica).
+1. **Hierarquia Editorial Obrigatória do 'Hoje':**
+   - **1º:** **Economia & Contas Públicas** (corte de gastos, juros Selic, câmbio/dólar, inflação IPCA, meta fiscal, dívida pública, pacote fiscal, reforma tributária).
+   - **2º:** **Política Nacional & Instituições** (Congresso Nacional, Câmara, Senado, STF, decisões judiciais estruturantes, governabilidade, eleições).
+   - **3º:** **Geopolítica & Política Internacional** (eleições nos EUA, cúpulas G20/BRICS/ONU, diplomacia, relações internacionais, conflitos e comércio global).
+   - **4º:** **Emprego, Indústria & Comércio Exterior** (mercado de trabalho, PNAD Contínua, produção fabril, balança comercial, logística e concessões de transporte).
+   - **5º:** **Sociedade, Cidades & Cidadania** (segurança pública e inteligência federativa, defesa do consumidor, crédito, apostas/bets, Defesa Civil em eventos climáticos).
 2. **Estrutura Mandatória de Cada Nota (`dias[dia].notas`):**
-   - `texto_completo`: 3 a 4 parágrafos densos e analíticos para leitura integral direta.
+   - `texto_completo`: 3 a 4 parágrafos densos e analíticos para leitura integral direta sem nenhum placeholder.
    - `resumo_visoes`: Síntese contrastando as diferentes linhas editoriais e posições políticas da imprensa (*mercado vs independente vs governamental*).
-   - `por_que_importa`: Impacto institucional e cotidiano direto.
-   - `aprofundamento`: Contexto histórico, desdobramentos legislativos e o que observar adiante.
-   - `fontes`: Múltiplas fontes com links reais diretos para consulta externa.
+   - `por_que_importa`: Impacto institucional e econômico direto.
+   - `aprofundamento`: Contexto estrutural, desdobramentos legislativos e o que observar adiante.
+   - `fontes`: Múltiplas fontes com links reais diretos para o site original.
 
 ---
 

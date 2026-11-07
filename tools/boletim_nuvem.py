@@ -270,17 +270,20 @@ Hoje é {data_iso}. Você está gerando o Boletim Diário ({edicao}).
 
 HIERARQUIA EDITORIAL MANDATÓRIA (A ORDEM DAS NOTÍCIAS DEVE SEGUIR RIGOROSAMENTE ESTA SEQUÊNCIA):
 1. Economia & Contas Públicas (PRIORIDADE MÁXIMA - DEVE VIR EM 1º LUGAR):
-   - Ajuste fiscal, corte de gastos, arcabouço fiscal, decisões do Copom/Banco Central, taxa Selic, inflação (IPCA), câmbio e reforma tributária.
+   - Ajuste fiscal, corte de gastos, arcabouço fiscal, decisões do Copom/Banco Central, taxa Selic, inflação (IPCA), dívida pública e reforma tributária.
 2. Política Nacional & Instituições (2º LUGAR):
-   - Julgamentos cruciais do STF (emendas parlamentares, constitucionalidade de leis), pautas do Congresso Nacional (Câmara e Senado), PEC da Segurança e equilíbrio institucional.
-3. Diplomacia & Política Internacional (3º LUGAR):
-   - Geopolítica global, eleições e política externa dos EUA, cúpula dos BRICS e G20, negociações do Itamaraty e conflitos internacionais.
-4. Economia & Regulação / Direitos:
-   - Regulação de mercados (apostas/bets, telecomunicações, sistema financeiro e consumo).
-5. Ciência, Saúde Pública & Universidades:
-   - Mobilização acadêmica (SBPC, ABC, UFRJ, Fiocruz, FAPESP), orçamento do FNDCT, retenção de pesquisadores, vigilância de arboviroses e soberania sanitária no SUS.
-6. Meio Ambiente & Clima:
-   - Amazônia, transição ecológica, bioeconomia e COP30.
+   - Julgamentos cruciais do STF (emendas parlamentares, constitucionalidade de leis), pautas do Congresso Nacional (Câmara e Senado), PEC da Segurança Pública e governabilidade.
+3. Geopolítica & Relações Internacionais (3º LUGAR):
+   - Geopolítica global, eleições e política externa dos EUA, cúpula dos BRICS e G20, negociações do Itamaraty, diplomacia e conflitos internacionais.
+4. Emprego, Indústria & Comércio Exterior (4º LUGAR):
+   - Mercado de trabalho (PNAD Contínua, desemprego, massa salarial real), produção industrial, balança comercial e concessões de infraestrutura/transportes.
+5. Sociedade, Cidades & Cidadania (5º LUGAR):
+   - Segurança cidadã, defesa do consumidor (regulação de crédito e apostas digitais/bets), eventos climáticos extremos e infraestrutura energética.
+
+REGRA EXPLÍCITA SOBRE O NOTICIÁRIO CLÁSSICO NO 'HOJE':
+- O boletim diário ('Hoje') é estritamente de NOTÍCIAS CLÁSSICAS DE PRIMEIRA LINHA.
+- É TERMINANTEMENTE PROIBIDO entupir o boletim com rotinas de trabalho/laboratório do leitor (editais de compras para biotérios, feiras de recrutamento universitário de estudantes, avisos de pós-graduação ou notas departamentais).
+- Os grandes debates intelectuais, ensaios de fronteiras da ciência e reflexões conceituais pertencem exclusivamente à Revista da Semana ('aba da semana'). No 'Hoje', entregue um jornal clássico, denso e indispensável.
 
 DIRETRIZES EDITORIAIS E DE DIVERSIDADE RIGOROSA:
 1. EQUIVALÊNCIA EDITORIAL: MÍDIA NACIONAL E MÍDIA INTERNACIONAL:
@@ -376,23 +379,48 @@ Candidatos apurados nas últimas horas (distribuídos equilibradamente entre ve�
 
 
 def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
-    """Fallback editorial autônomo resiliente: apura e estrutura o boletim diretamente dos RSS caso a API externa falhe."""
-    print("Iniciando curadoria editorial algorítmica de alta fidelidade...")
+    """Fallback editorial autônomo resiliente: apura notícias clássicas de alta densidade diretamente dos RSS."""
+    print("Iniciando curadoria editorial algorítmica de notícias clássicas (Economia, Política, Internacional e Sociedade)...")
     
+    # Termos a evitar expressamente no 'Hoje' (rotinas de trabalho/laboratório, feiras, editais burocráticos e curiosidades)
+    termos_ignorar = [
+        "feira de recrutamento", "recrutamento", "estudantes de veterinária", "veterinária",
+        "cadeado", "naufrágio", "vestibular", "concurso", "biotério", "edital fndct",
+        "estágio", "estagiário", "horóscopo", "famosos", "reality", "futebol"
+    ]
+
     categorias = {
-        "Economia": ["mercado", "dívida", "divida", "pib", "selic", "juros", "déficit", "deficit", "inflação", "inflacao", "contas públicas", "estatais", "banco central", "criptomoedas", "cripto", "bolsa", "fazenda", "orçamento"],
-        "Política": ["stf", "congresso", "senado", "câmara", "camara", "pec", "segurança", "alcolumbre", "lula", "governo", "eleições", "eleicao", "ministério", "partidos"],
-        "Internacional": ["eua", "tpi", "brics", "guerra", "internacional", "onu", "midterms", "trump", "europa", "china", "haia", "chanceler", "itamaraty"],
-        "Ciência": ["sbpc", "fapesp", "ufrj", "fiocruz", "sirius", "pesquisa", "ciência", "ciencia", "usp", "mcti", "fndct", "carolina bori", "mulheres na ciência"],
-        "Clima": ["indígena", "indigena", "floresta", "amazônia", "amazonia", "clima", "cop30", "águas", "aguas", "seca", "cerrado", "desmatamento", "biodiversidade", "quilombola"]
+        "Economia": [
+            "mercado", "dívida", "divida", "pib", "selic", "juros", "déficit", "deficit",
+            "inflação", "inflacao", "contas públicas", "banco central", "bolsa", "fazenda",
+            "orçamento", "orcamento", "câmbio", "cambio", "dólar", "dolar", "emprego",
+            "desemprego", "renda", "salário", "salario", "indústria", "industria", "balança comercial"
+        ],
+        "Política": [
+            "stf", "supremo", "congresso", "senado", "câmara", "camara", "pec", "segurança pública",
+            "seguranca publica", "polícia federal", "policia federal", "governo", "eleições",
+            "eleicoes", "ministério", "ministerio", "partidos", "tributária", "tributaria"
+        ],
+        "Internacional": [
+            "eua", "tpi", "brics", "g20", "guerra", "internacional", "onu", "midterms",
+            "europa", "china", "haia", "chanceler", "itamaraty", "diplomacia", "oriente médio",
+            "oriente medio", "uruguai", "américa latina", "america latina"
+        ],
+        "Sociedade": [
+            "segurança", "seguranca", "consumidor", "energia", "saneamento", "transporte",
+            "defesa civil", "seca", "estiagem", "calor", "amazônia", "amazonia", "cop30",
+            "crédito", "credito", "bets", "regulação"
+        ]
     }
 
-    # Separar itens por categoria prioritária
+    # Separar itens por categoria prioritária, descartando termos irrelevantes
     candidatos_por_cat = {c: [] for c in categorias}
     veiculos_usados = set()
 
     for it in itens_rss:
         tit_desc = f"{it.get('titulo', '')} {it.get('descricao', '')}".lower()
+        if any(ign in tit_desc for ign in termos_ignorar):
+            continue
         for cat, termos in categorias.items():
             if any(t in tit_desc for t in termos):
                 candidatos_por_cat[cat].append(it)
@@ -400,22 +428,21 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
 
     notas_selecionadas = []
     ordem_prioridade = [
-        "Economia",       # 1. Contas Públicas / Dívida / Fiscal
-        "Economia",       # 2. Inflação / Juros / Crédito / Mercado
-        "Política",       # 3. Congresso / Senado / PECs
-        "Política",       # 4. STF / Judiciário / Constitucionalidade
-        "Internacional",  # 5. Geopolítica global / Eleições / Organismos Internacionais
-        "Internacional",  # 6. Diplomacia brasileira / BRICS / América Latina
-        "Economia",       # 7. Regulação setorial / Cibersegurança / Energia
-        "Ciência",        # 8. Universidades / FNDCT / Pesquisa / SBPC / ABC
-        "Ciência",        # 9. Saúde Pública / Fiocruz / SUS / Biotecnologia
-        "Clima",          # 10. Amazônia / Territórios Indígenas / PPCDAm
-        "Clima"           # 11. Crise hídrica / Transição verde / Biodiversidade
+        ("Economia", "Contas Públicas e Ajuste Fiscal"),
+        ("Economia", "Política Monetária, Selic e Câmbio"),
+        ("Economia", "Emprego, Indústria e Balança Comercial"),
+        ("Política", "Congresso Nacional e Votações"),
+        ("Política", "STF e Decisões Judiciais Estruturantes"),
+        ("Política", "Governo Federal e Articulação Política"),
+        ("Política", "Segurança Pública e Inteligência Federativa"),
+        ("Internacional", "Diplomacia e Relações Internacionais"),
+        ("Sociedade", "Infraestrutura, Energia e Transportes"),
+        ("Sociedade", "Meio Ambiente em Escala Macro e Defesa Civil"),
+        ("Sociedade", "Defesa do Consumidor e Mercado Digital")
     ]
 
-    for cat in ordem_prioridade:
+    for cat, subtema in ordem_prioridade:
         cands = candidatos_por_cat.get(cat, [])
-        # Preferir veículos ainda não usados
         escolhido = None
         for cand in cands:
             if cand.get("veiculo") not in veiculos_usados:
@@ -433,13 +460,12 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
             url = escolhido.get("url", "")
             desc = escolhido.get("descricao", "")
             
-            # Extrair parágrafos reais do artigo
             paras = extrair_paragrafos_artigo(url) if url else []
             if len(paras) < 3:
                 paras = [
                     desc or tit,
-                    f"A matéria apurada por {v} destaca os desdobramentos operacionais e o impacto direto do tema no cenário nacional contemporâneo.",
-                    f"Acompanhamento analítico realizado pela redação da Faixa Oculta com base nos registros documentais de {v}."
+                    f"A matéria apurada por {v} destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional contemporâneo.",
+                    f"Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais de {v}."
                 ]
             
             slug = re.sub(r"[^a-z0-9]+", "-", tit.lower())[:45].strip("-")
@@ -447,12 +473,12 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
                 "id": f"{data_iso}--{slug}",
                 "escopo": "nacional",
                 "pais": "Brasil",
-                "chapeu": f"Mídia Nacional · {cat}",
+                "chapeu": f"Mídia Nacional · {subtema}",
                 "editoria": cat,
                 "titulo": tit,
                 "texto": paras[0] if paras else desc,
-                "por_que_importa": f"O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em {cat.lower()}.",
-                "resumo_visoes": f"A apuração de {v} enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
+                "por_que_importa": f"O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+                "resumo_visoes": f"A apuração de {v} enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
                 "texto_completo": paras[:4],
                 "aprofundamento": {
                     "contexto": f"Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",

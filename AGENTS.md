@@ -43,17 +43,15 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - Todo e qualquer filme em cartaz nos cinemas, álbum recém-lançado e livro novo no Brasil DEVE ser apurado através de varredura eficiente online (`tools/varredura_cultural_online.py`, APIs do iTunes, Deezer, Wikipedia e portais de estreias/festivais).
    - Filmes e obras de safras passadas (ex: 2024) devem figurar em seções de acervo/streaming/achados e NUNCA como 'em cartaz ou estreando nos cinemas' em edições de anos posteriores.
 
-10. **Perfil de Interesses e Pilares de Rastreamento (Fabio Gomes / UFRJ):**
-   - **Ciência, Saúde & Universidades:** Biofísica, imunometabolismo, arboviroses, UFRJ, Fiocruz, FAPESP, SBPC, Amazônia, clima e saúde pública.
-   - **Política & Diplomacia:** Política externa brasileira, Itamaraty, geopolítica global, multilateralismo, BRICS, STF, Congresso e teoria política.
-   - **Ficção Científica (Sci-Fi) & Fantasia:** Hard sci-fi, IA, distopias sociais e especulativas (Editoras Aleph, Morro Branco, Todavia), alta fantasia mitológica e realismo mágico de autor.
-   - **Música:** Indie rock/folk, canção confessional (Lucy Dacus, Phoebe Bridgers, Soccer Mommy), art-rock/pós-punk (Geese, bar italia), shoegaze (Wishy), vanguarda e rock brasileiro (Papangu, Letrux, El Efecto), cânone (Radiohead, QOTSA).
-   - **Cinema:** Cinema de autor contemporâneo (festivais de Cannes, Mostra SP, Festival do Rio) e cinema brasileiro independente (Gabriel Martins, Kleber Mendonça Filho, Filmes de Plástico).
+10. **Perfil de Interesses e Separação Editorial (Interesse Pessoal vs. Rotina de Trabalho):**
+   - O leitor busca a Faixa Oculta pelo seu **interesse pessoal, cívico e cultural**, e **NÃO como extensão de trabalho ou de laboratório**.
+   - **No 'Hoje' (Boletim Diário):** Noticiário estritamente **CLÁSSICO DE PRIMEIRA LINHA** (Economia, Política Nacional, Internacional/Geopolítica e Sociedade). É TERMINANTEMENTE PROIBIDO incluir rotinas de trabalho/laboratório (editais de biotérios/compras, feiras universitárias de recrutamento de estudantes, notas departamentais).
+   - **Na 'Semana' (Revista da Semana):** Espaço para grandes ensaios reflexivos, ideias, debates de fronteiras do conhecimento e filosofia da ciência como leitura e deleite intelectual de fim de semana.
+   - **Música & Cinema (Mensal / Agenda):** Indie rock, pós-punk, vanguarda brasileira, cinema autoral e independente.
 
-11. **Prioridade Editorial e Volume do Boletim Diário (Ao menos 10 notícias por edição):**
-   - O boletim diário (manhã e noite) DEVE conter obrigatoriamente **AO MENOS 10 NOTÍCIAS DENSAS E ANALÍTICAS**, nunca resumos rasos ou edições com volume reduzido.
-   - As notícias duras e estruturais de Economia (corte de gastos, juros Selic, câmbio, dívida pública, reforma tributária), Política Nacional (STF, Congresso, governabilidade) e Diplomacia / Política Internacional (geopolítica global, eleições EUA, BRICS, G20, Itamaraty) são prioridade máxima e DEVEM sempre aparecer primeiro no topo do boletim.
-   - Pautas de Ciência e Saúde (UFRJ, Fiocruz, SBPC) e Clima/Amazônia integram a edição sem jamais soterrar o noticiário nacional e internacional de primeira linha.
+11. **Prioridade Editorial e Volume do Boletim Diário ('Hoje' - Notícias Clássicas):**
+   - O boletim diário (manhã e noite) DEVE conter obrigatoriamente **AO MENOS 10 NOTÍCIAS DENSAS NACIONAIS + 10 INTERNACIONAIS TRADUZIDAS** (20 a 22 matérias por dia).
+   - As notícias duras e estruturais de Economia (corte de gastos, juros Selic, câmbio/dólar, dívida pública, reforma tributária, emprego, indústria), Política Nacional (STF, Congresso, governabilidade) e Diplomacia / Política Internacional (geopolítica global, eleições EUA, BRICS, G20, Itamaraty, conflitos) são a espinha dorsal e DEVEM compor a totalidade do boletim diário.
    - Cada nota do boletim DEVE contar com: múltiplas fontes plurais, síntese das diferentes visões da imprensa (`resumo_visoes`), reportagem completa de 3 a 4 parágrafos para o Modo Leitor (`texto_completo`), contexto de aprofundamento (`aprofundamento`) e link direto para o site original.
 
 12. **Zero Placeholders de Resenha ("O texto completo entra na próxima atualização"):**

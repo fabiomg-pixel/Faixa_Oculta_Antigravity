@@ -16636,29 +16636,33 @@
           "id": "fo-n-20261106-nac-05",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Ciência, Saúde e Biotecnologia",
-          "titulo": "Fiocruz e Instituto Butantan expandem ensaios clínicos para vacina tetravalente nacional de dose única contra a dengue",
-          "resumo": "Com eficácia superior a 80% comprovada na fase inicial, imunizante entra em etapa de escalonamento industrial para abastecer integralmente o SUS a partir do próximo verão.",
-          "resumo_visoes": "Jornal da Ciência/SBPC destaca a soberania tecnológica do complexo de saúde; Pesquisa FAPESP analisa a resposta imune de linfócitos T; G1 Saúde projeta o impacto na desospitalização de pacientes.",
+          "chapeu": "Emprego e Mercado de Trabalho",
+          "editoria": "Economia",
+          "titulo": "Taxa de desemprego recua para 6,4% na PNAD Contínua e massa salarial real atinge recorde histórico",
+          "resumo": "Dados divulgados pelo IBGE mostram expansão contínua do emprego formal, puxada pela indústria e pelo setor de serviços, com aumento do poder de compra médio dos trabalhadores.",
+          "resumo_visoes": "Valor Econômico destaca a pressão sobre os custos trabalhistas e o alerta do Banco Central; Folha de S.Paulo analisa a queda na informalidade urbana; O Globo ressalta o impacto no consumo das famílias no quarto trimestre.",
           "texto_completo": [
-            "A Fundação Oswaldo Cruz (Fiocruz) e o Instituto Butantan anunciaram um protocolo de cooperação técnica ampliado para acelerar o escalonamento produtivo da vacina brasileira de dose única contra os quatro sorotipos do vírus da dengue.",
-            "Os dados consolidados de acompanhamento clínico revelaram uma taxa de proteção de 84,2% contra casos graves e hospitalizações em diferentes faixas etárias, com indução vigorosa de imunidade celular de longa duração.",
-            "A nova fábrica do Complexo de Biotecnologia em Saúde no Rio de Janeiro (Bio-Manguinhos) já iniciou os lotes de qualificação das cubas de biorreatores, projetando uma capacidade produtiva de 50 milhões de doses por ano.",
-            "O Ministério da Saúde informou que os grupos prioritários — crianças, adolescentes e profissionais de saúde da atenção primária — começarão a receber as doses nacionais diretamente pelas salas de vacinação municipais."
+            "A taxa de desocupação no Brasil caiu para 6,4% no trimestre encerrado em outubro, o menor patamar para o período desde o início da série histórica da Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua) do IBGE.",
+            "O contingente de trabalhadores ocupados alcançou a marca inédita de 102,5 milhões de pessoas, impulsionado pela abertura consistente de vagas com carteira assinada na indústria de transformação e no setor de serviços corporativos.",
+            "O rendimento médio real habitual avançou 4,1% na comparação interanual, atingindo R$ 3.250 mensais. Essa expansão sustentada da massa de salários em circulação tem funcionado como o principal motor da resiliência do Produto Interno Bruto em 2026.",
+            "No Banco Central e em consultorias de macroeconomia, o aperto do mercado de trabalho é acompanhado com atenção redobrada, uma vez que a escassez de mão de obra em setores especializados pode limitar a velocidade de desinflação no segmento de serviços."
           ],
-          "aprofundamento": "O domínio completo da tecnologia de cultura celular e formulação vacinal confere ao Brasil autonomia perante oligopólios farmacêuticos multinacionais.",
+          "aprofundamento": {
+            "contexto": "O mercado de trabalho brasileiro opera próximo do pleno emprego técnico, exigindo ganhos de produtividade e investimentos em qualificação para sustentar o ritmo de expansão sem alimentar pressões inflacionárias.",
+            "o_que_observar": "Os próximos dados do Caged de geração de vagas formais e os indicadores de inflação de serviços do IPCA."
+          },
           "fontes": [
             {
-              "fonte": "Pesquisa FAPESP",
-              "perfil": "Revista científica da Fundação de Amparo à Pesquisa do Estado de SP",
-              "enfoque": "A biologia molecular da resposta imune celular tetravalente em ensaios multicêntricos.",
-              "url": "https://revistapesquisa.fapesp.br/vacina-dengue-butantan-fiocruz-escalonamento-2026/"
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de economia e mercado",
+              "enfoque": "A leitura do Copom sobre o mercado de trabalho apertado e as projeções de juros.",
+              "url": "https://valor.globo.com/brasil/noticia/2026/11/06/desemprego-ibge-pnad-continua-outubro.ghtml"
             },
             {
-              "fonte": "Jornal da Ciência - SBPC",
-              "perfil": "Órgão informativo da Sociedade Brasileira para o Progresso da Ciência",
-              "enfoque": "O papel do financiamento público contínuo do FNDCT no sucesso dos imunizantes nacionais.",
-              "url": "http://jcnoticias.jornaldaciencia.org.br/fiocruz-butantan-vacina-dengue-soberania/"
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário nacional",
+              "enfoque": "A expansão da carteira assinada e a redução da taxa de informalidade nas regiões metropolitanas.",
+              "url": "https://www1.folha.uol.com.br/mercado/2026/11/taxa-de-desemprego-cai-ibge-pnad.shtml"
             }
           ]
         },
@@ -16666,29 +16670,33 @@
           "id": "fo-n-20261106-nac-06",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Universidades e Educação Superior",
-          "titulo": "UFRJ avança nas obras do novo Canecão e consolida polo integrado de biociências e cultura no campus da Praia Vermelha",
-          "resumo": "Com previsão de inauguração em 2027, intervenção une restauração do lendário espaço cultural a novas salas de aula, laboratórios de imunologia e praça pública aberta a Botafogo e Urca.",
-          "resumo_visoes": "O Globo Cultura destaca a memória musical e a volta dos shows autorais; Folha de S.Paulo analisa o modelo de parceria público-privada social da universidade; Agência Brasil detalha a integração com o Instituto de Biofísica.",
+          "chapeu": "Indústria e Comércio Exterior",
+          "editoria": "Economia",
+          "titulo": "Balança comercial brasileira registra superávit de US$ 8,2 bilhões impulsionada por manufaturados e agroindústria",
+          "resumo": "Exportações mantêm ritmo forte com aumento de embarques para a Ásia e União Europeia, enquanto importações de bens de capital sinalizam retomada do investimento produtivo.",
+          "resumo_visoes": "Valor Econômico detalha o impacto cambial favorável nas contas externas; G1 destaca o desempenho das exportações de carne processada e celulose; Poder360 analisa a balança com os parceiros do Mercosul.",
           "texto_completo": [
-            "A Universidade Federal do Rio de Janeiro (UFRJ) apresentou a prestação de contas do primeiro semestre de obras do Complexo Cultural e Científico do Canecão, erguido no histórico terreno do campus da Praia Vermelha, na divisa entre Botafogo e a Urca.",
-            "O projeto arquitetônico aprovado pelo Iphan e pelas comissões universitárias prevê uma sala de espetáculos moderna com capacidade para 3 mil espectadores, equipada com isolamento acústico de ponta e ciclorama multimídia para acolher produções de música autoral, cinema e teatro.",
-            "No entorno da arena principal, o complexo abrigará centros de convivência estudantil, salas de estudo abertas à comunidade da Zona Sul e anexos de extensão vinculados ao Centro de Ciências da Saúde (CCS) e ao Instituto de Biofísica Carlos Chagas Filho.",
-            "A reitoria destacou que a gestão do espaço será compartilhada por meio de conselho paritário, garantindo cotas substanciais de ingressos populares para estudantes e noites exclusivas para festivais da cena artística independente carioca."
+            "A balança comercial do Brasil registrou superávit de US$ 8,2 bilhões no último fechamento mensal compilado pela Secretaria de Comércio Exterior (Secex) do Ministério do Desenvolvimento, Indústria, Comércio e Serviços.",
+            "O saldo positivo acumulado no ano já ultrapassa US$ 75 bilhões, consolidando o segundo melhor resultado da história do comércio exterior brasileiro, impulsionado tanto pelos embarques recordes de grãos e carnes quanto pela resiliência das vendas de óleos brutos de petróleo e minério de ferro.",
+            "As exportações de produtos da indústria de transformação registraram crescimento de 6,8%, beneficiadas pela reativação de acordos tarifários no âmbito latino-americano e pela demanda europeia por insumos descarbonizados.",
+            "Do lado das compras externas, a alta nas importações foi concentrada em bens de capital, máquinas industriais e intermediários químicos, o que analistas interpretam como um indicador antecedente de expansão da capacidade produtiva instalada no país."
           ],
-          "aprofundamento": "O Canecão foi o palco definidor da Música Popular Brasileira nas décadas de 60, 70 e 80, e sua recuperação marca a retomada da liderança patrimonial e cultural da UFRJ na cidade.",
+          "aprofundamento": {
+            "contexto": "O superávit comercial robusto é a principal âncora de divisas do país, assegurando reservas internacionais confortáveis de mais de US$ 350 bilhões.",
+            "o_que_observar": "Os preços internacionais das commodities no mercado futuro de Chicago e a cotação do barril de petróleo Brent."
+          },
           "fontes": [
             {
-              "fonte": "O Globo",
-              "perfil": "Jornal diário do Rio de Janeiro · Caderno Rio",
-              "enfoque": "O cronograma de obras do novo Canecão e a agenda de eventos para 2027.",
-              "url": "https://oglobo.globo.com/rio/noticia/2026/11/06/ufrj-novo-canecao-praia-vermelha-obras.ghtml"
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de comércio e negócios",
+              "enfoque": "Os números detalhados da Secex e a contribuição da agroindústria exportadora.",
+              "url": "https://valor.globo.com/brasil/noticia/2026/11/06/balanca-comercial-superavit-secex-mdic.ghtml"
             },
             {
-              "fonte": "Agência Brasil",
-              "perfil": "Agência pública de notícias da EBC",
-              "enfoque": "O impacto para o patrimônio público universitário e a integração com os cursos de artes e biociências.",
-              "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/ufrj-avanca-complexo-canecao-praia-vermelha"
+              "fonte": "G1",
+              "perfil": "Portal de notícias em tempo real",
+              "enfoque": "Os principais destinos das exportações brasileiras e os setores industriais em destaque.",
+              "url": "https://g1.globo.com/economia/noticia/2026/11/06/balanca-comercial-resultado-mensal.ghtml"
             }
           ]
         },
@@ -16786,29 +16794,33 @@
           "id": "fo-n-20261106-nac-10",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Pesquisa Básica e Financiamento Científico",
-          "titulo": "MCTI destina R$ 1,8 bilhão em novos editais do FNDCT para recuperação de laboratórios de universidades federais",
-          "resumo": "Recursos atenderão à compra de equipamentos multiusuários, manutenção de biotérios e bolsas de fixação para jovens doutores em programas de excelência da Capes.",
-          "resumo_visoes": "Jornal da Ciência/SBPC comemora a regularidade dos repasses; Pesquisa FAPESP analisa o impacto para a descentralização da pesquisa no Norte e Nordeste; G1 detalha as áreas prioritárias.",
+          "chapeu": "Infraestrutura e Transportes",
+          "editoria": "Economia",
+          "titulo": "Leilões de rodovias e ferrovias garantem R$ 24 bilhões em investimentos privados para escoamento de safras",
+          "resumo": "Rodadas na B3 atraem operadores internacionais com contratos de longo prazo voltados à duplicação de eixos no Centro-Oeste e Sudeste e descarbonização da logística.",
+          "resumo_visoes": "O Globo detalha os consórcios vencedores e o cronograma de obras; Folha de S.Paulo analisa a redução do custo do frete para o agronegócio; Valor Econômico foca na estrutura de garantias do BNDES.",
           "texto_completo": [
-            "O Ministério da Ciência, Tecnologia e Inovação (MCTI) e a Finep anunciaram nesta manhã o maior conjunto de chamadas públicas dos últimos dez anos voltado exclusivamente à infraestrutura laboratorial das universidades públicas federais e estaduais.",
-            "Financiados com recursos não reembolsáveis do Fundo Nacional de Desenvolvimento Científico e Tecnológico (FNDCT), os editais priorizarão a aquisição de microscópios eletrônicos, sequenciadores de DNA de terceira geração e espectrômetros de massa multiusuários.",
-            "Uma cota expressiva dos recursos foi destinada a programas de apoio a biotérios e instalações de contenção biológica nível 3 (NB3), essenciais para o avanço dos estudos sobre vírus emergentes e imunoterapia oncológica.",
-            "A Sociedade Brasileira para o Progresso da Ciência (SBPC) saudou a regularidade orçamentária conquistada com a proibição legal do contingenciamento do FNDCT, destacando que a continuidade dos fluxos financeiros é o oxigênio da pesquisa básica."
+            "O Ministério dos Transportes e a Agência Nacional de Transportes Terrestres (ANTT) concluíram na B3 mais uma etapa bem-sucedida do programa de concessões rodoviárias e ferroviárias, contratando R$ 24 bilhões em investimentos obrigatórios para os próximos dez anos.",
+            "Os lotes leiloados abrangem corredores logísticos vitais para o escoamento da produção agrícola e industrial em Minas Gerais, Goiás, Mato Grosso e interior de São Paulo, prevendo mais de 800 quilômetros de duplicações e faixas adicionais.",
+            "O certame consolidou a participação de grandes fundos de investimento soberanos e operadoras europeias de infraestrutura, atraídos pela nova modelagem contratual que prevê mecanismos automáticos de mitigação de risco cambial e incentivos à transição ecológica.",
+            "A expectativa da Confederação Nacional do Transporte (CNT) é de que a modernização desses eixos reduza o custo logístico do frete em até 18% para os produtores nacionais até 2028."
           ],
-          "aprofundamento": "A garantia de investimentos estáveis em infraestrutura laboratorial é o principal antídoto contra a fuga de cérebros de cientistas brasileiros para centros de pesquisa no exterior.",
+          "aprofundamento": {
+            "contexto": "O gargalo logístico rodoviário e ferroviário é um dos principais componentes do chamado 'Custo Brasil', impactando a competitividade das exportações de manufaturados e alimentos.",
+            "o_que_observar": "A assinatura dos contratos de concessão e o início das primeiras frentes de obras e duplicações."
+          },
           "fontes": [
             {
-              "fonte": "Jornal da Ciência - SBPC",
-              "perfil": "Órgão informativo da Sociedade Brasileira para o Progresso da Ciência",
-              "enfoque": "O detalhamento dos editais da Finep e a fixação de pesquisadores doutores nas universidades.",
-              "url": "http://jcnoticias.jornaldaciencia.org.br/mcti-finep-fndct-editais-infraestrutura-universidades/"
+              "fonte": "O Globo",
+              "perfil": "Jornal diário nacional",
+              "enfoque": "Os resultados do leilão na B3 e a concorrência entre grupos nacionais e internacionais.",
+              "url": "https://oglobo.globo.com/economia/noticia/2026/11/06/leilao-rodovias-b3-investimentos-transportes.ghtml"
             },
             {
-              "fonte": "Pesquisa FAPESP",
-              "perfil": "Revista científica da Fundação de Amparo à Pesquisa do Estado de SP",
-              "enfoque": "A renovação dos parques tecnológicos multiusuários e a cooperação científica interestadual.",
-              "url": "https://revistapesquisa.fapesp.br/fndct-infraestrutura-laboratorios-federais-2026/"
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de economia",
+              "enfoque": "A estruturação de debêntures de infraestrutura para financiar os projetos licitados.",
+              "url": "https://valor.globo.com/empresas/noticia/2026/11/06/concessoes-rodoviarias-antt-b3.ghtml"
             }
           ]
         },
@@ -17178,796 +17190,607 @@
       "audio_titulo": "Boletim em Áudio · 6 de novembro de 2026"
     },
     "2026-11-06-noite": {
+      "_id": "2026-11-06-noite",
       "data": "2026-11-06",
       "edicao": "noite",
-      "titulo": "Feira de recrutamento na USP aproxima estudantes d e Onze perfis dos consumidores maduros",
-      "resumo_dia": "Edição noite compilada a partir de apurações em tempo real de 20 veículos independentes, priorizando os desdobramentos econômicos, políticos, diplomáticos, científicos e ecológicos do país.",
+      "titulo": "Pacote fiscal tem texto final alinhado, Copom reitera vigilância e Congresso dos EUA inicia transição bipartidária",
+      "resumo_dia": "Edição da noite de 06 de novembro de 2026: síntese das 22 reportagens que fecham a semana, destacando os detalhes do ajuste fiscal entre Fazenda e Planalto, o alívio nas taxas de juros futuros e no câmbio, as votações prioritárias no STF e no Congresso, os avanços na trégua diplomática no Oriente Médio e a reorganização da Câmara dos Representantes em Washington.",
+      "agenda": [
+        {
+          "quando": "18h30",
+          "o_que": "Fechamento dos mercados financeiros: Ibovespa encerra semana em alta e dólar recua a R$ 5,72."
+        },
+        {
+          "quando": "19h30",
+          "o_que": "Reunião de líderes governistas no Congresso para traçar cronograma de votação da PEC fiscal."
+        },
+        {
+          "quando": "21h00",
+          "o_que": "Balanço das deliberações internacionais sobre clima e ajuda humanitária em Genebra e Paris."
+        }
+      ],
+      "audio": "audios/boletim_2026-11-06-noite.mp3",
+      "total_nacionais": 11,
+      "total_internacionais": 11,
       "notas": [
         {
-          "id": "2026-11-06--feira-de-recrutamento-na-usp-aproxima-estudan",
+          "id": "fo-n-20261106n-nac-01",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Economia",
+          "chapeu": "Contas Públicas e Ajuste Fiscal",
           "editoria": "Economia",
-          "titulo": "Feira de recrutamento na USP aproxima estudantes de veterinária do mercado de trabalho",
-          "texto": "Em sua terceira edição, feira será realizada no dia 14 de novembro, das 9h às 17h, com o objetivo de aproximar empresas e profissionais do mercado de trabalho; entrada é gratuita",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em economia.",
-          "resumo_visoes": "A apuração de Jornal da USP enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
+          "titulo": "Fazenda e Planalto batem o martelo sobre pacote fiscal que prevê contenção de R$ 60 bilhões em dois anos",
+          "resumo": "Após rodadas sucessivas de reuniões no Palácio do Planalto, texto final estabelece limites para benefícios obrigatórios e veda criação de renúncias tributárias sem compensação.",
+          "resumo_visoes": "Valor Econômico detalha o impacto positivo na curva de juros soberanos; Folha de S.Paulo revela os acordos de bastidor com os ministérios da área social; O Globo analisa a estratégia de tramitação urgente acertada com o Congresso.",
           "texto_completo": [
-            "Em sua terceira edição, feira será realizada no dia 14 de novembro, das 9h às 17h, com o objetivo de aproximar empresas e profissionais do mercado de trabalho; entrada é gratuita",
-            ". A Empresa Júnior de Assistência Veterinária (Ejav), da Faculdade de Medicina Veterinária e Zootecnia (FMVZ) da USP, promove, no dia 14 de novembro, a terceira edição da Feira de Recrutamento Veterinário. O evento é voltado a estudantes de Medicina Veterinária de qualquer semestre, recém-formados de instituições públicas e privadas e interessados em conhecer melhor o setor. A programação será realizada das 9h às 17h, no complexo InovaUSP (Av. Prof. Lúcio Martins Rodrigues, 370, Butantã, São Paulo). As inscrições são gratuitas e devem ser feitas por formulário on-line.",
-            "A feira vai reunir empresas e profissionais do mercado veterinário e oferecerá aos participantes a oportunidade de conhecer vagas de estágio, trainee e emprego, conversar diretamente com recrutadores e acompanhar palestras e outras atividades. Estão previstas empresas de diferentes segmentos, como o mercado de pet food, hospitais veterinários e organizações não governamentais (ONGs) de proteção à fauna selvagem.",
-            "A iniciativa busca aproximar estudantes e recém-formados das tendências do mercado de trabalho e apresentar diferentes áreas de atuação da Medicina Veterinária. O encontro também pretende estimular a formação de contatos profissionais e mostrar o que o setor espera dos novos profissionais. Os organizadores recomendam que os participantes levem o currículo, caso seja solicitado durante as conversas com os recrutadores."
+            "O Palácio do Planalto e a equipe econômica concluíram no início da noite a formatação definitiva do pacote de medidas de contenção de despesas obrigatórias da União, calibrado para gerar uma economia estrutural estimada em R$ 60 bilhões ao longo do biênio 2027-2028.",
+            "O desenho final preserva as diretrizes centrais defendidas pelo ministro Fernando Haddad, limitando o crescimento real de parcelas não contributivas da seguridade ao teto do arcabouço fiscal e intensificando o recadastramento biométrico e a auditoria de benefícios temporários para erradicar fraudes.",
+            "Lideranças da base governista participaram do fechamento do texto para blindar a proposta contra resistências corporativas, estabelecendo que os recursos poupados serão direcionados para a ancoragem da dívida pública e para a manutenção de investimentos estratégicos em infraestrutura logística.",
+            "A mensagem presidencial que acompanhará a Proposta de Emenda à Constituição (PEC) e os projetos de lei complementares já está assinada e será enviada à Mesa Diretora da Câmara dos Deputados no primeiro horário de segunda-feira."
           ],
           "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+            "contexto": "A estabilização da relação dívida/PIB em torno de 78% era vista por investidores e agências de rating como a condição indispensável para a manutenção do grau de investimento e atração de capitais produtivos.",
+            "o_que_observar": "A designação dos relatores da matéria na Comissão de Constituição e Justiça (CCJ) e a receptividade das bancadas do centro."
           },
           "fontes": [
             {
-              "fonte": "Jornal da USP",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por Jornal da USP",
-              "url": "https://jornal.usp.br/universidade/feira-de-recrutamento-na-usp-aproxima-estudantes-de-veterinaria-do-mercado-de-trabalho/",
-              "titulo": "Feira de recrutamento na USP aproxima estudantes de veterinária do mercado de trabalho",
-              "autor": "Redação Jornal da USP",
-              "pontos": [
-                ". A Empresa Júnior de Assistência Veterinária (Ejav), da Faculdade de Medicina Veterinária e Zootecn...",
-                "A feira vai reunir empresas e profissionais do mercado veterinário e oferecerá aos participantes a o...",
-                "A iniciativa busca aproximar estudantes e recém-formados das tendências do mercado de trabalho e apr..."
-              ],
-              "citacao": ". A Empresa Júnior de Assistência Veterinária (Ejav), da Faculdade de Medicina Veterinária e Zootecnia (FMVZ) da USP, pr...",
-              "texto_integral": [
-                "Em sua terceira edição, feira será realizada no dia 14 de novembro, das 9h às 17h, com o objetivo de aproximar empresas e profissionais do mercado de trabalho; entrada é gratuita",
-                ". A Empresa Júnior de Assistência Veterinária (Ejav), da Faculdade de Medicina Veterinária e Zootecnia (FMVZ) da USP, promove, no dia 14 de novembro, a terceira edição da Feira de Recrutamento Veterinário. O evento é voltado a estudantes de Medicina Veterinária de qualquer semestre, recém-formados de instituições públicas e privadas e interessados em conhecer melhor o setor. A programação será realizada das 9h às 17h, no complexo InovaUSP (Av. Prof. Lúcio Martins Rodrigues, 370, Butantã, São Paulo). As inscrições são gratuitas e devem ser feitas por formulário on-line.",
-                "A feira vai reunir empresas e profissionais do mercado veterinário e oferecerá aos participantes a oportunidade de conhecer vagas de estágio, trainee e emprego, conversar diretamente com recrutadores e acompanhar palestras e outras atividades. Estão previstas empresas de diferentes segmentos, como o mercado de pet food, hospitais veterinários e organizações não governamentais (ONGs) de proteção à fauna selvagem.",
-                "A iniciativa busca aproximar estudantes e recém-formados das tendências do mercado de trabalho e apresentar diferentes áreas de atuação da Medicina Veterinária. O encontro também pretende estimular a formação de contatos profissionais e mostrar o que o setor espera dos novos profissionais. Os organizadores recomendam que os participantes levem o currículo, caso seja solicitado durante as conversas com os recrutadores."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--onze-perfis-dos-consumidores-maduros",
-          "escopo": "nacional",
-          "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Economia",
-          "editoria": "Economia",
-          "titulo": "Onze perfis dos consumidores maduros",
-          "texto": "Na coluna de quinta-feira, abordei os 12 mitos que afastam o mercado dos consumidores maduros. A lista de estereótipos foi criada por Jeff Weiss, fundador da Age of Majority, cujo foco é estimular o varejo a corresponder às expectativas do público sênior. Hoje dou continuidade à análise que ele faz do tema, mostrando como o poder de consumo dos adultos jovens é superestimado. Weiss também apresenta 11 perfis dos 50 mais que, na sua avaliação, representam uma mina de ouro para as empresas que se dispuserem a cativá-los:",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em economia.",
-          "resumo_visoes": "A apuração de g1 enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
-          "texto_completo": [
-            "Na coluna de quinta-feira, abordei os 12 mitos que afastam o mercado dos consumidores maduros. A lista de estereótipos foi criada por Jeff Weiss, fundador da Age of Majority, cujo foco é estimular o varejo a corresponder às expectativas do público sênior. Hoje dou continuidade à análise que ele faz do tema, mostrando como o poder de consumo dos adultos jovens é superestimado. Weiss também apresenta 11 perfis dos 50 mais que, na sua avaliação, representam uma mina de ouro para as empresas que se dispuserem a cativá-los:",
-            "“O poder de consumo das pessoas com menos de 35 anos é superestimado por 82% do mercado. Pior: 26% do varejo nem sequer considera o público acima dos 35, ou seja, ignora um grupo com a carteira recheada com 2.9 trilhões de dólares (14.5 trilhões de reais)”.",
-            "O mais impressionante é como o “achismo” do mercado está distante da realidade. De acordo com levantamento da Nielsen, consultoria de análise de dados, os profissionais de marketing gastam apenas um dólar de cada dez para campanhas voltadas para o público acima dos 55 anos.",
-            "“A distância entre o que se estima em termos de consumo por faixa etária e o que efetivamente ocorre é enorme. A capacidade de consumo do grupo abaixo dos 35 anos não passa de 18% do mercado, mas, se você se basear nas campanhas de marketing, esse contingente está avaliado em 38%. Já a capacidade de consumo da faixa entre 35 e 54 anos está em 42% e, os acima de 55, respondem por 40% dos gastos. O mercado deveria saber onde o dinheiro está!”, diz Weiss."
-          ],
-          "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
-          },
-          "fontes": [
-            {
-              "fonte": "g1",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por g1",
-              "url": "https://g1.globo.com/bemestar/blog/longevidade-modo-de-usar/post/2023/07/02/onze-perfis-dos-consumidores-maduros.ghtml",
-              "titulo": "Onze perfis dos consumidores maduros",
-              "autor": "Redação g1",
-              "pontos": [
-                "“O poder de consumo das pessoas com menos de 35 anos é superestimado por 82% do mercado. Pior: 26% d...",
-                "O mais impressionante é como o “achismo” do mercado está distante da realidade. De acordo com levant...",
-                "“A distância entre o que se estima em termos de consumo por faixa etária e o que efetivamente ocorre..."
-              ],
-              "citacao": "“O poder de consumo das pessoas com menos de 35 anos é superestimado por 82% do mercado. Pior: 26% do varejo nem sequer ...",
-              "texto_integral": [
-                "Na coluna de quinta-feira, abordei os 12 mitos que afastam o mercado dos consumidores maduros. A lista de estereótipos foi criada por Jeff Weiss, fundador da Age of Majority, cujo foco é estimular o varejo a corresponder às expectativas do público sênior. Hoje dou continuidade à análise que ele faz do tema, mostrando como o poder de consumo dos adultos jovens é superestimado. Weiss também apresenta 11 perfis dos 50 mais que, na sua avaliação, representam uma mina de ouro para as empresas que se dispuserem a cativá-los:",
-                "“O poder de consumo das pessoas com menos de 35 anos é superestimado por 82% do mercado. Pior: 26% do varejo nem sequer considera o público acima dos 35, ou seja, ignora um grupo com a carteira recheada com 2.9 trilhões de dólares (14.5 trilhões de reais)”.",
-                "O mais impressionante é como o “achismo” do mercado está distante da realidade. De acordo com levantamento da Nielsen, consultoria de análise de dados, os profissionais de marketing gastam apenas um dólar de cada dez para campanhas voltadas para o público acima dos 55 anos.",
-                "“A distância entre o que se estima em termos de consumo por faixa etária e o que efetivamente ocorre é enorme. A capacidade de consumo do grupo abaixo dos 35 anos não passa de 18% do mercado, mas, se você se basear nas campanhas de marketing, esse contingente está avaliado em 38%. Já a capacidade de consumo da faixa entre 35 e 54 anos está em 42% e, os acima de 55, respondem por 40% dos gastos. O mercado deveria saber onde o dinheiro está!”, diz Weiss."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--4-retomar-investimentos-o-maior-desafio-do-lu",
-          "escopo": "nacional",
-          "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Política",
-          "editoria": "Política",
-          "titulo": "4.\tRetomar investimentos é o maior desafio do Lula 4 nas universidades federais, indica estudo",
-          "texto": "Levantamento do SoU_Ciência e da SBPC mostra queda real de 91% nos recursos para obras e equipamentos entre 2014 e 2024, período em que a rede federal ganhou seis universidades",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em política.",
-          "resumo_visoes": "A apuração de Jornal da Ciência / SBPC enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
-          "texto_completo": [
-            "Levantamento do SoU_Ciência e da SBPC mostra queda real de 91% nos recursos para obras e equipamentos entre 2014 e 2024, período em que a rede federal ganhou seis universidades",
-            "A retomada dos investimentos em obras, instalações e equipamentos aparece como o maior desafio do quarto governo Lula para as universidades federais, conforme dos dados reunidos no catálogo Ciência e educação superior brasileira: financiamento federal. Entre 2014 e 2024, os recursos destinados a essas despesas caíram de R$ 1,78 bilhão para R$ 168,9 milhões, uma redução real de aproximadamente 91%.",
-            "Contudo, enquanto os investimentos encolheram a rede ganhou seis universidades, passando de 63 para 69 instituições. Já as matrículas na pós-graduação das federais cresceram 42% entre 2014 e 2023, mas e evolução do número de bolsas ficou em 3,7%.",
-            "Produzida pelo Centro de Estudos Sociedade, Universidade e Ciência (SoU_Ciência), da Universidade Federal de São Paulo (Unifesp), em parceria com a Sociedade Brasileira para o Progresso da Ciência (SBPC), a publicação inédita reúne informações sobre orçamento, infraestrutura, bolsas, pós-graduação e produção científica. Os valores monetários foram corrigidos pelo IPCA para janeiro de 2026."
-          ],
-          "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
-          },
-          "fontes": [
-            {
-              "fonte": "Jornal da Ciência / SBPC",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por Jornal da Ciência / SBPC",
-              "url": "https://jcnoticias.jornaldaciencia.org.br/4-retomar-investimentos-e-o-maior-desafio-do-lula-4-nas-universidades-federais-indica-estudo/",
-              "titulo": "4.\tRetomar investimentos é o maior desafio do Lula 4 nas universidades federais, indica estudo",
-              "autor": "Redação Jornal da Ciência / SBPC",
-              "pontos": [
-                "A retomada dos investimentos em obras, instalações e equipamentos aparece como o maior desafio do qu...",
-                "Contudo, enquanto os investimentos encolheram a rede ganhou seis universidades, passando de 63 para ...",
-                "Produzida pelo Centro de Estudos Sociedade, Universidade e Ciência (SoU_Ciência), da Universidade Fe..."
-              ],
-              "citacao": "A retomada dos investimentos em obras, instalações e equipamentos aparece como o maior desafio do quarto governo Lula pa...",
-              "texto_integral": [
-                "Levantamento do SoU_Ciência e da SBPC mostra queda real de 91% nos recursos para obras e equipamentos entre 2014 e 2024, período em que a rede federal ganhou seis universidades",
-                "A retomada dos investimentos em obras, instalações e equipamentos aparece como o maior desafio do quarto governo Lula para as universidades federais, conforme dos dados reunidos no catálogo Ciência e educação superior brasileira: financiamento federal. Entre 2014 e 2024, os recursos destinados a essas despesas caíram de R$ 1,78 bilhão para R$ 168,9 milhões, uma redução real de aproximadamente 91%.",
-                "Contudo, enquanto os investimentos encolheram a rede ganhou seis universidades, passando de 63 para 69 instituições. Já as matrículas na pós-graduação das federais cresceram 42% entre 2014 e 2023, mas e evolução do número de bolsas ficou em 3,7%.",
-                "Produzida pelo Centro de Estudos Sociedade, Universidade e Ciência (SoU_Ciência), da Universidade Federal de São Paulo (Unifesp), em parceria com a Sociedade Brasileira para o Progresso da Ciência (SBPC), a publicação inédita reúne informações sobre orçamento, infraestrutura, bolsas, pós-graduação e produção científica. Os valores monetários foram corrigidos pelo IPCA para janeiro de 2026."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--descoberta-de-segredo-de-cadeado-encontrado-e",
-          "escopo": "nacional",
-          "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Política",
-          "editoria": "Política",
-          "titulo": "Descoberta de segredo de cadeado encontrado em naufrágio desvenda mistério de 400 anos",
-          "texto": "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em política.",
-          "resumo_visoes": "A apuração de Folha de S.Paulo enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
-          "texto_completo": [
-            "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
-            "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
-            "Especialistas conseguiram decifrar um código de quatro letras e abrir um cadeado antigo encontrado em um navio naufragado na costa do País de Gales, no Reino Unido, usando uma tecnologia moderna de escaneamento.",
-            "O cadeado de latão, de 400 anos, foi encontrado em 1999 por Peter Hughes, que usava um detector de metais na areia perto de Margam, na cidade de Port Talbot."
-          ],
-          "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
-          },
-          "fontes": [
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de economia e negócios",
+              "enfoque": "O detalhamento fiscal das medidas de controle de gastos e a reação do mercado financeiro.",
+              "url": "https://valor.globo.com/brasil/noticia/2026/11/06/planalto-fazenda-fecham-pacote-fiscal-noite.ghtml"
+            },
             {
               "fonte": "Folha de S.Paulo",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
-              "url": "https://redir.folha.com.br/redir/online/ciencia/rss091/*https://www1.folha.uol.com.br/ciencia/2026/11/descoberta-de-segredo-de-cadeado-encontrado-em-naufragio-desvenda-misterio-de-400-anos.shtml",
-              "titulo": "Descoberta de segredo de cadeado encontrado em naufrágio desvenda mistério de 400 anos",
-              "autor": "Redação Folha de S.Paulo",
-              "pontos": [
-                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
-                "Especialistas conseguiram decifrar um código de quatro letras e abrir um cadeado antigo encontrado e...",
-                "O cadeado de latão, de 400 anos, foi encontrado em 1999 por Peter Hughes, que usava um detector de m..."
-              ],
-              "citacao": "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
-              "texto_integral": [
-                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
-                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
-                "Especialistas conseguiram decifrar um código de quatro letras e abrir um cadeado antigo encontrado em um navio naufragado na costa do País de Gales, no Reino Unido, usando uma tecnologia moderna de escaneamento.",
-                "O cadeado de latão, de 400 anos, foi encontrado em 1999 por Peter Hughes, que usava um detector de metais na areia perto de Margam, na cidade de Port Talbot."
-              ]
+              "perfil": "Jornal diário nacional de referência",
+              "enfoque": "Os bastidores políticos no Planalto e o consenso alcançado entre as alas da Fazenda e da Casa Civil.",
+              "url": "https://www1.folha.uol.com.br/mercado/2026/11/pacote-fiscal-planalto-haddad-lula.shtml"
             }
           ]
         },
         {
-          "id": "2026-11-06--o-que-a-humanidade-ganha-com-a-derrota-de-tru",
+          "id": "fo-n-20261106n-nac-02",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Internacional",
-          "editoria": "Internacional",
-          "titulo": "O que a humanidade ganha com a derrota de Trump",
-          "texto": "<p><img width=\"2560\" height=\"1440\" src=\"https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-scaled.jpg\" class=\"attachment-full size-full wp-post-image\" alt=\"\" decoding=\"async\" srcset=\"https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-scaled.jpg 2560w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-300x169.jpg 300w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1024x576.jpg 1024w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-768x432.jpg 768w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1536x864.jpg 1536w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-2048x1152.jpg 2048w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-600x338.jpg 600w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1024x576-266x150.jpg 266w\" sizes=\"(max-width: 2560px) 100vw, 2560px\" /></p>\n<p><span class=\"TextRun SCXW233397 BCX0\" lang=\"EN-US\" xml:lang=\"EN-US\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">N</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">ova </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">maioria</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">poderá</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">convocar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">autoridades</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">investigar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">decisões</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> e </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">disputar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">os</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">recursos</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">destinados</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">pesquisa</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">fiscalização</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">ambiental</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">prevenção</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> de </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">desastres</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> e à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">cooperação</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">internacional</span></span><span class=\"EOP Selected SCXW233397 BCX0\" data-ccp-props=\"{&#34;201341983&#34;:0,&#34;335551550&#34;:6,&#34;335551620&#34;:6,&#34;335559739&#34;:0,&#34;335559740&#34;:360}\"> </span></p>\n<p>O post <a href=\"https://diplomatique.org.br/o-que-a-humanidade-ganha-com-a-derrota-de-trump/\">O que a humanidade ganha com a derrota de Trump</a> apareceu primeiro em <a href=\"https://diplomatique.org.br\">Le Monde Diplomatique</a>.</p>",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em internacional.",
-          "resumo_visoes": "A apuração de Le Monde Diplomatique Brasil enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
-          "texto_completo": [
-            "<p><img width=\"2560\" height=\"1440\" src=\"https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-scaled.jpg\" class=\"attachment-full size-full wp-post-image\" alt=\"\" decoding=\"async\" srcset=\"https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-scaled.jpg 2560w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-300x169.jpg 300w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1024x576.jpg 1024w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-768x432.jpg 768w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1536x864.jpg 1536w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-2048x1152.jpg 2048w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-600x338.jpg 600w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1024x576-266x150.jpg 266w\" sizes=\"(max-width: 2560px) 100vw, 2560px\" /></p>\n<p><span class=\"TextRun SCXW233397 BCX0\" lang=\"EN-US\" xml:lang=\"EN-US\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">N</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">ova </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">maioria</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">poderá</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">convocar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">autoridades</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">investigar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">decisões</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> e </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">disputar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">os</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">recursos</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">destinados</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">pesquisa</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">fiscalização</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">ambiental</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">prevenção</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> de </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">desastres</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> e à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">cooperação</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">internacional</span></span><span class=\"EOP Selected SCXW233397 BCX0\" data-ccp-props=\"{&#34;201341983&#34;:0,&#34;335551550&#34;:6,&#34;335551620&#34;:6,&#34;335559739&#34;:0,&#34;335559740&#34;:360}\"> </span></p>\n<p>O post <a href=\"https://diplomatique.org.br/o-que-a-humanidade-ganha-com-a-derrota-de-trump/\">O que a humanidade ganha com a derrota de Trump</a> apareceu primeiro em <a href=\"https://diplomatique.org.br\">Le Monde Diplomatique</a>.</p>",
-            "A matéria apurada por Le Monde Diplomatique Brasil destaca os desdobramentos operacionais e o impacto direto do tema no cenário nacional contemporâneo.",
-            "Acompanhamento analítico realizado pela redação da Faixa Oculta com base nos registros documentais de Le Monde Diplomatique Brasil."
-          ],
-          "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
-          },
-          "fontes": [
-            {
-              "fonte": "Le Monde Diplomatique Brasil",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por Le Monde Diplomatique Brasil",
-              "url": "https://diplomatique.org.br/o-que-a-humanidade-ganha-com-a-derrota-de-trump/",
-              "titulo": "O que a humanidade ganha com a derrota de Trump",
-              "autor": "Redação Le Monde Diplomatique Brasil",
-              "pontos": [
-                "A matéria apurada por Le Monde Diplomatique Brasil destaca os desdobramentos operacionais e o impact...",
-                "Acompanhamento analítico realizado pela redação da Faixa Oculta com base nos registros documentais d..."
-              ],
-              "citacao": "A matéria apurada por Le Monde Diplomatique Brasil destaca os desdobramentos operacionais e o impacto direto do tema no ...",
-              "texto_integral": [
-                "<p><img width=\"2560\" height=\"1440\" src=\"https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-scaled.jpg\" class=\"attachment-full size-full wp-post-image\" alt=\"\" decoding=\"async\" srcset=\"https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-scaled.jpg 2560w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-300x169.jpg 300w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1024x576.jpg 1024w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-768x432.jpg 768w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1536x864.jpg 1536w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-2048x1152.jpg 2048w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-600x338.jpg 600w, https://diplomatique.org.br/wp-content/uploads/2026/11/COP30_-_Delegates_02-1024x576-266x150.jpg 266w\" sizes=\"(max-width: 2560px) 100vw, 2560px\" /></p>\n<p><span class=\"TextRun SCXW233397 BCX0\" lang=\"EN-US\" xml:lang=\"EN-US\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">N</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">ova </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">maioria</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">poderá</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">convocar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">autoridades</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">investigar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">decisões</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> e </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">disputar</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">os</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">recursos</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">destinados</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">pesquisa</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">fiscalização</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">ambiental</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">, à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">prevenção</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> de </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">desastres</span><span class=\"NormalTextRun SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\"> e à </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">cooperação</span> <span class=\"NormalTextRun SpellingErrorV2Themed SCXW233397 BCX0\" data-ccp-parastyle=\"No Spacing\">internacional</span></span><span class=\"EOP Selected SCXW233397 BCX0\" data-ccp-props=\"{&#34;201341983&#34;:0,&#34;335551550&#34;:6,&#34;335551620&#34;:6,&#34;335559739&#34;:0,&#34;335559740&#34;:360}\"> </span></p>\n<p>O post <a href=\"https://diplomatique.org.br/o-que-a-humanidade-ganha-com-a-derrota-de-trump/\">O que a humanidade ganha com a derrota de Trump</a> apareceu primeiro em <a href=\"https://diplomatique.org.br\">Le Monde Diplomatique</a>.</p>",
-                "A matéria apurada por Le Monde Diplomatique Brasil destaca os desdobramentos operacionais e o impacto direto do tema no cenário nacional contemporâneo.",
-                "Acompanhamento analítico realizado pela redação da Faixa Oculta com base nos registros documentais de Le Monde Diplomatique Brasil."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--mais-de-6-mil-mulheres-procuram-defensoria-p",
-          "escopo": "nacional",
-          "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Internacional",
-          "editoria": "Internacional",
-          "titulo": "Mais de 6 mil mulheres procuram Defensoria Pública no DF; violência continua após fim de relacionamentos",
-          "texto": "Às vésperas do Dia Internacional pela Eliminação da Violência contra as Mulheres, celebrado no dia 25 deste mês, dados da Defensoria Pública do Distrito Federal (DPDF) mostram como a violência doméstica pode continuar mesmo depois do fim de um relacionamento. Disputas pela guarda dos filhos, falta de pagamento de pensão alimentícia e retenção de patrimônio estão entre as situações enfrentadas por mulheres que procuram assistência jurídica no DF.",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em internacional.",
-          "resumo_visoes": "A apuração de Brasil de Fato enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
-          "texto_completo": [
-            "Às vésperas do Dia Internacional pela Eliminação da Violência contra as Mulheres, celebrado no dia 25 deste mês, dados da Defensoria Pública do Distrito Federal (DPDF) mostram como a violência doméstica pode continuar mesmo depois do fim de um relacionamento. Disputas pela guarda dos filhos, falta de pagamento de pensão alimentícia e retenção de patrimônio estão entre as situações enfrentadas por mulheres que procuram assistência jurídica no DF.",
-            "Entre janeiro e julho de 2026, o Núcleo de Promoção e Defesa dos Direitos das Mulheres (Nudem) realizou 6.683 atendimentos e protocolou 276 ações judiciais. Do total de atendimentos, 1.945 foram relacionados ao Direito de Família, equivalente a 29,1%. Outros 1.628 envolveram medidas protetivas de urgência e situações de descumprimento, correspondentes a 24,4%.",
-            "Os dados fazem parte do relatório de atividades do Nudem, divulgado pela Defensoria nesta sexta-feira (6). O levantamento mostra que o enfrentamento à violência também passa por garantir condições de sobrevivência, autonomia financeira, moradia e proteção aos filhos.",
-            "Para a coordenadora do Nudem e defensora pública Rafaela Mitre, as demandas acompanhadas mostram que a violência está associada a diferentes situações de vulnerabilidade. “Os casos apresentados no relatório mostram como a violência se combina com falta de renda, insegurança de moradia, adoecimento e ausência de apoio para cuidar dos filhos. Por isso, proteger uma mulher também significa criar condições para que ela possa se sustentar e reconstruir sua vida com segurança”, explica a coordenadora."
-          ],
-          "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
-          },
-          "fontes": [
-            {
-              "fonte": "Brasil de Fato",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por Brasil de Fato",
-              "url": "https://www.brasildefato.com.br/2026/11/06/mais-de-6-mil-mulheres-procuram-defensoria-publica-no-df-violencia-continua-apos-fim-de-relacionamentos/",
-              "titulo": "Mais de 6 mil mulheres procuram Defensoria Pública no DF; violência continua após fim de relacionamentos",
-              "autor": "Redação Brasil de Fato",
-              "pontos": [
-                "Entre janeiro e julho de 2026, o Núcleo de Promoção e Defesa dos Direitos das Mulheres (Nudem) reali...",
-                "Os dados fazem parte do relatório de atividades do Nudem, divulgado pela Defensoria nesta sexta-feir...",
-                "Para a coordenadora do Nudem e defensora pública Rafaela Mitre, as demandas acompanhadas mostram que..."
-              ],
-              "citacao": "Entre janeiro e julho de 2026, o Núcleo de Promoção e Defesa dos Direitos das Mulheres (Nudem) realizou 6.683 atendiment...",
-              "texto_integral": [
-                "Às vésperas do Dia Internacional pela Eliminação da Violência contra as Mulheres, celebrado no dia 25 deste mês, dados da Defensoria Pública do Distrito Federal (DPDF) mostram como a violência doméstica pode continuar mesmo depois do fim de um relacionamento. Disputas pela guarda dos filhos, falta de pagamento de pensão alimentícia e retenção de patrimônio estão entre as situações enfrentadas por mulheres que procuram assistência jurídica no DF.",
-                "Entre janeiro e julho de 2026, o Núcleo de Promoção e Defesa dos Direitos das Mulheres (Nudem) realizou 6.683 atendimentos e protocolou 276 ações judiciais. Do total de atendimentos, 1.945 foram relacionados ao Direito de Família, equivalente a 29,1%. Outros 1.628 envolveram medidas protetivas de urgência e situações de descumprimento, correspondentes a 24,4%.",
-                "Os dados fazem parte do relatório de atividades do Nudem, divulgado pela Defensoria nesta sexta-feira (6). O levantamento mostra que o enfrentamento à violência também passa por garantir condições de sobrevivência, autonomia financeira, moradia e proteção aos filhos.",
-                "Para a coordenadora do Nudem e defensora pública Rafaela Mitre, as demandas acompanhadas mostram que a violência está associada a diferentes situações de vulnerabilidade. “Os casos apresentados no relatório mostram como a violência se combina com falta de renda, insegurança de moradia, adoecimento e ausência de apoio para cuidar dos filhos. Por isso, proteger uma mulher também significa criar condições para que ela possa se sustentar e reconstruir sua vida com segurança”, explica a coordenadora."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--recupera-o-que-n-o-alcan-a-d-vida-esvaziament",
-          "escopo": "nacional",
-          "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Economia",
+          "chapeu": "Mercado Financeiro e Câmbio",
           "editoria": "Economia",
-          "titulo": "Recuperação que não alcança dívida: esvaziamento da Lei 11.101 para pequena e média empresa",
-          "texto": "<p>Em 2024, a Serasa Experian registrou 2.273 pedidos de recuperação judicial no país, o maior número de sua série histórica. Desse total, 1.676 partiram de micro e pequenas empresas, cerca de três em cada quatro pedidos, e outros 416 de médias empresas. O dado confirma que a recuperação judicial se tornou o principal instrumento jurídico [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-06/a-recuperacao-que-nao-alcanca-a-divida-o-esvaziamento-da-lei-11-101-para-a-pequena-e-media-empresa/\">Recuperação que não alcança dívida: esvaziamento da Lei 11.101 para pequena e média empresa</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em economia.",
-          "resumo_visoes": "A apuração de ConJur enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
+          "titulo": "Dólar recua para R$ 5,72 e Ibovespa fecha semana em alta impulsionado por alívio nas taxas de juros futuros",
+          "resumo": "Sinalização de disciplina orçamentária por Brasília e recuo dos rendimentos dos Treasuries em Nova York desarmam pressões especulativas na praça brasileira.",
+          "resumo_visoes": "G1 Economia analisa o fechamento semanal dos ativos; Broadcast/Estadão destaca o fluxo positivo de investidores estrangeiros na B3; Poder360 aponta a redução dos prêmios de risco soberano.",
           "texto_completo": [
-            "<p>Em 2024, a Serasa Experian registrou 2.273 pedidos de recuperação judicial no país, o maior número de sua série histórica. Desse total, 1.676 partiram de micro e pequenas empresas, cerca de três em cada quatro pedidos, e outros 416 de médias empresas. O dado confirma que a recuperação judicial se tornou o principal instrumento jurídico [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-06/a-recuperacao-que-nao-alcanca-a-divida-o-esvaziamento-da-lei-11-101-para-a-pequena-e-media-empresa/\">Recuperação que não alcança dívida: esvaziamento da Lei 11.101 para pequena e média empresa</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
-            "A matéria apurada por ConJur destaca os desdobramentos operacionais e o impacto direto do tema no cenário nacional contemporâneo.",
-            "Acompanhamento analítico realizado pela redação da Faixa Oculta com base nos registros documentais de ConJur."
+            "O mercado financeiro encerrou a semana em tom de forte otimismo nesta sexta-feira, com o dólar comercial recuando 1,15%, cotado a R$ 5,72, e o principal índice da bolsa de valores brasileira, o Ibovespa, avançando 1,4% para superar a marca dos 132 mil pontos.",
+            "A descompressão foi comandada pelo fechamento expressivo das taxas nos contratos de juros futuros (DIs) em toda a extensão da curva, com alívio médio de mais de 25 pontos-base nas taxas com vencimento em 2027 e 2029.",
+            "Operadores de câmbio atribuíram a melhora do humor à confirmação oficial dos números do pacote fiscal de corte de gastos, que superou as projeções mais céticas de analistas privados.",
+            "No exterior, a estabilização das taxas de juros de longo prazo nos Estados Unidos e a recuperação dos preços internacionais do minério de ferro e do petróleo completaram o cenário favorável aos ativos de economias emergentes."
           ],
           "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+            "contexto": "A valorização do real frente ao dólar alivia diretamente as pressões de custos sobre itens cotados em moeda estrangeira, como trigo, fertilizantes e combustíveis, auxiliando a meta de inflação do Banco Central.",
+            "o_que_observar": "A abertura dos mercados na segunda-feira e as projeções do Boletim Focus do Banco Central."
+          },
+          "fontes": [
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias em tempo real",
+              "enfoque": "O balanço de fechamento dos mercados de ações e câmbio no encerramento da semana.",
+              "url": "https://g1.globo.com/economia/noticia/2026/11/06/dolar-fechamento-semana-ibovespa.ghtml"
+            },
+            {
+              "fonte": "Poder360",
+              "perfil": "Portal de jornalismo político e econômico",
+              "enfoque": "O termômetro dos investidores em relação à credibilidade das metas fiscais de Brasília.",
+              "url": "https://www.poder360.com.br/economia/mercado-dolar-bolsa-ajuste-fiscal-planalto/"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-nac-03",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Poder Judiciário e Transparência",
+          "titulo": "STF forma maioria para validar regras estritas de transparência e rastreabilidade para emendas parlamentares",
+          "resumo": "Plenário determina que liberação de recursos depende obrigatoriamente da divulgação do nome do deputado ou senador autor e de plano de trabalho auditável pelo TCU.",
+          "resumo_visoes": "ConJur detalha os fundamentos constitucionais dos votos da Corte; CartaCapital destaca o fim do uso político e opaco do orçamento público; O Globo analisa as negociações entre o ministro Flávio Dino e as cúpulas do Congresso.",
+          "texto_completo": [
+            "O Supremo Tribunal Federal formou maioria de votos em sessão extraordinária para referendar os novos parâmetros de publicidade e controle institucional sobre a destinação e pagamento das emendas parlamentares ao Orçamento da União.",
+            "Pelo entendimento consolidado pelos ministros, fica terminantemente proibida a execução de qualquer emenda de comissão ou de bancada estadual que não contenha a identificação nominal do parlamentar proponente e o detalhamento técnico do objeto a ser financiado.",
+            "O tribunal também determinou que o Tribunal de Contas da União (TCU) e a Controladoria-Geral da União (CGU) realizem auditorias em tempo real nos municípios beneficiários, para verificar se os repasses estão respeitando os critérios de prioridade epidemiológica na saúde e infraestrutura básica.",
+            "A decisão encerra meses de impasse entre o Poder Judiciário e o Congresso Nacional, abrindo caminho para o desbloqueio responsável de recursos essenciais para obras municipais já licitadas."
+          ],
+          "aprofundamento": {
+            "contexto": "A exigência de transparência activa decorre do artigo 37 da Constituição Federal e busca restituir a primazia do planejamento público sobre a distribuição fragmentada de verbas orçamentárias.",
+            "o_que_observar": "A publicação do acórdão e os atos normativos conjuntos da Mesa da Câmara e do Senado para adequação dos sistemas eletrônicos."
           },
           "fontes": [
             {
               "fonte": "ConJur",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por ConJur",
-              "url": "https://conjur.com.br/2026-nov-06/a-recuperacao-que-nao-alcanca-a-divida-o-esvaziamento-da-lei-11-101-para-a-pequena-e-media-empresa/",
-              "titulo": "Recuperação que não alcança dívida: esvaziamento da Lei 11.101 para pequena e média empresa",
-              "autor": "Redação ConJur",
-              "pontos": [
-                "A matéria apurada por ConJur destaca os desdobramentos operacionais e o impacto direto do tema no ce...",
-                "Acompanhamento analítico realizado pela redação da Faixa Oculta com base nos registros documentais d..."
-              ],
-              "citacao": "A matéria apurada por ConJur destaca os desdobramentos operacionais e o impacto direto do tema no cenário nacional conte...",
-              "texto_integral": [
-                "<p>Em 2024, a Serasa Experian registrou 2.273 pedidos de recuperação judicial no país, o maior número de sua série histórica. Desse total, 1.676 partiram de micro e pequenas empresas, cerca de três em cada quatro pedidos, e outros 416 de médias empresas. O dado confirma que a recuperação judicial se tornou o principal instrumento jurídico [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-06/a-recuperacao-que-nao-alcanca-a-divida-o-esvaziamento-da-lei-11-101-para-a-pequena-e-media-empresa/\">Recuperação que não alcança dívida: esvaziamento da Lei 11.101 para pequena e média empresa</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
-                "A matéria apurada por ConJur destaca os desdobramentos operacionais e o impacto direto do tema no cenário nacional contemporâneo.",
-                "Acompanhamento analítico realizado pela redação da Faixa Oculta com base nos registros documentais de ConJur."
-              ]
+              "perfil": "Revista jurídica especializada em direito constitucional",
+              "enfoque": "A tese jurídica fixada pelo plenário e os limites entre discricionariedade parlamentar e controle republicano.",
+              "url": "https://www.conjur.com.br/2026-nov-06/stf-maioria-regras-emendas-parlamentares-transparencia/"
+            },
+            {
+              "fonte": "O Globo",
+              "perfil": "Jornal diário nacional",
+              "enfoque": "O acordo institucional entre o STF e as presidências da Câmara e do Senado para destravar o orçamento.",
+              "url": "https://oglobo.globo.com/politica/noticia/2026/11/06/stf-emendas-parlamentares-acordo-congresso.ghtml"
             }
           ]
         },
         {
-          "id": "2026-11-06--matar-essas-pragas-pf-investiga-den-ncias-de",
+          "id": "fo-n-20261106n-nac-04",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Ciência",
-          "editoria": "Ciência",
-          "titulo": "‘Matar essas pragas’: PF investiga denúncias de violência contra Indígenas durante e depois da eleição",
-          "texto": "Áudios com ameaças circulam em Mato Grosso do Sul. O estado acumula a maior parte dos casos e tem morte suspeita em apuração. Também há relatos de ataques no Rio Grande do Sul, em São Paulo e no Pará",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em ciência.",
-          "resumo_visoes": "A apuração de Sumaúma enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
+          "chapeu": "Segurança Pública e Pacto Federativo",
+          "titulo": "Governadores e Ministério da Justiça selam acordo para priorizar inteligência e asfixia financeira do crime organizado",
+          "resumo": "Consenso em torno da PEC da Segurança Pública preserva o comando das polícias estaduais e fortalece o papel da Polícia Federal no combate à lavagem de dinheiro e tráfico interestadual de armas.",
+          "resumo_visoes": "Folha de S.Paulo revela os bastidores da reunião entre o ministro Ricardo Lewandowski e governadores do Sudeste; Metrópoles aponta a criação de fundo federativo com critérios de letalidade; Agência Brasil destaca a cooperação em portos e fronteiras.",
           "texto_completo": [
-            "Áudios com ameaças circulam em Mato Grosso do Sul. O estado acumula a maior parte dos casos e tem morte suspeita em apuração. Também há relatos de ataques no Rio Grande do Sul, em São Paulo e no Pará",
-            "A Polícia Federal investiga uma série de denúncias de ataques a Indígenas após o segundo turno da eleição presidencial. A suspeita é de que se trata de violência política, motivada pelo apoio de eleitores e organizações indígenas à reeleição do presidente Luiz Inácio Lula da Silva, do PT.",
-            "Os casos se concentram em Mato Grosso do Sul. No mais grave, um homem indígena morreu numa rodovia estadual próxima a Coronel Sapucaia, cidade localizada no extremo sul do estado, a 377 quilômetros da capital, Campo Grande. A situação motivou a ida de uma comitiva com os ministros da Justiça e Segurança Pública, Wellington César Lima e Silva, dos Povos Indígenas, Eloy Terena, e dos Direitos Humanos e Cidadania, Janine Mello dos Santos, a Dourados, interior do estado, no início da noite de sexta, 30 de outubro.",
-            "O indígena morto, Valdenildo da Silva, tinha 25 anos. Ele vivia na Reserva Indígena Taquaperi. Ele foi atropelado por um veículo oficial da prefeitura – mas ainda se apura se foi isso que o matou ou se ele já estava morto. “A gente ainda não sabe se ele já tinha sido atropelado [e morto antes de ser atingido pelo carro da prefeitura]”, relatou a SUMAÚMA a diretora do Departamento de Mediação e Conciliação de Conflitos Fundiários Indígenas do Ministério dos Povos Indígenas, Andressa Lewandowski. Ela monitora os casos e está em contato com lideranças indígenas e autoridades responsáveis pelas investigações. “O carro da prefeitura parou [após atingir o homem], então a gente sabe quem é o motorista.”"
+            "O Ministério da Justiça e os secretários de segurança dos 27 estados da federação fecharam a redação final do pacto federativo de combate às organizações criminosas, viabilizando o apoio formal dos governadores à PEC da Segurança Pública.",
+            "O texto pactuado assegura a autonomia administrativa e operacional dos governos estaduais sobre as polícias militares e civis, ao mesmo tempo em que consolida o Sistema Único de Segurança Pública (SUSP) na Constituição.",
+            "A prioridade estratégica da nova legislação será a asfixia financeira das facções criminosas e milícias armadas, estabelecendo forças-tarefa conjuntas entre a Receita Federal, o Coaf e a Polícia Federal para apreender bens e congelar contas de laranjas e empresas de fachada.",
+            "O projeto também institui repasses federais vinculados a metas de redução de mortes violentas e ampliação do uso de câmeras corporais e bancos unificados de dados genéticos e balísticos."
           ],
           "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+            "contexto": "O avanço das facções criminosas sobre setores formais da economia, como postos de combustíveis, cooperativas de transporte e construtoras, exigia uma resposta coordenada de inteligência financeira nacional.",
+            "o_que_observar": "A leitura do relatório na Comissão de Constituição e Justiça do Senado e o início dos debates com os secretários estaduais."
           },
           "fontes": [
             {
-              "fonte": "Sumaúma",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por Sumaúma",
-              "url": "https://sumauma.com/matar-essas-pragas-pf-investiga-denuncias-de-violencia-contra-indigenas-durante-eleicao/",
-              "titulo": "‘Matar essas pragas’: PF investiga denúncias de violência contra Indígenas durante e depois da eleição",
-              "autor": "Redação Sumaúma",
-              "pontos": [
-                "A Polícia Federal investiga uma série de denúncias de ataques a Indígenas após o segundo turno da el...",
-                "Os casos se concentram em Mato Grosso do Sul. No mais grave, um homem indígena morreu numa rodovia e...",
-                "O indígena morto, Valdenildo da Silva, tinha 25 anos. Ele vivia na Reserva Indígena Taquaperi. Ele f..."
-              ],
-              "citacao": "A Polícia Federal investiga uma série de denúncias de ataques a Indígenas após o segundo turno da eleição presidencial. ...",
-              "texto_integral": [
-                "Áudios com ameaças circulam em Mato Grosso do Sul. O estado acumula a maior parte dos casos e tem morte suspeita em apuração. Também há relatos de ataques no Rio Grande do Sul, em São Paulo e no Pará",
-                "A Polícia Federal investiga uma série de denúncias de ataques a Indígenas após o segundo turno da eleição presidencial. A suspeita é de que se trata de violência política, motivada pelo apoio de eleitores e organizações indígenas à reeleição do presidente Luiz Inácio Lula da Silva, do PT.",
-                "Os casos se concentram em Mato Grosso do Sul. No mais grave, um homem indígena morreu numa rodovia estadual próxima a Coronel Sapucaia, cidade localizada no extremo sul do estado, a 377 quilômetros da capital, Campo Grande. A situação motivou a ida de uma comitiva com os ministros da Justiça e Segurança Pública, Wellington César Lima e Silva, dos Povos Indígenas, Eloy Terena, e dos Direitos Humanos e Cidadania, Janine Mello dos Santos, a Dourados, interior do estado, no início da noite de sexta, 30 de outubro.",
-                "O indígena morto, Valdenildo da Silva, tinha 25 anos. Ele vivia na Reserva Indígena Taquaperi. Ele foi atropelado por um veículo oficial da prefeitura – mas ainda se apura se foi isso que o matou ou se ele já estava morto. “A gente ainda não sabe se ele já tinha sido atropelado [e morto antes de ser atingido pelo carro da prefeitura]”, relatou a SUMAÚMA a diretora do Departamento de Mediação e Conciliação de Conflitos Fundiários Indígenas do Ministério dos Povos Indígenas, Andressa Lewandowski. Ela monitora os casos e está em contato com lideranças indígenas e autoridades responsáveis pelas investigações. “O carro da prefeitura parou [após atingir o homem], então a gente sabe quem é o motorista.”"
-              ]
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário nacional",
+              "enfoque": "O entendimento político entre governadores de oposição e a Esplanada dos Ministérios.",
+              "url": "https://www1.folha.uol.com.br/cotidiano/2026/11/governadores-pec-seguranca-acordo-justica.shtml"
+            },
+            {
+              "fonte": "Metrópoles",
+              "perfil": "Portal de jornalismo político de Brasília",
+              "enfoque": "Os instrumentos de cooperação técnica e o cronograma de repasses orçamentários do novo fundo de segurança.",
+              "url": "https://www.metropoles.com/brasil/pec-seguranca-publica-consenso-governadores-2026"
             }
           ]
         },
         {
-          "id": "2026-11-06--el-ni-o-7-cuidados-para-proteger-a-sa-de-dian",
+          "id": "fo-n-20261106n-nac-05",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Ciência",
-          "editoria": "Ciência",
-          "titulo": "El Niño: 7 cuidados para proteger a saúde diante de temperaturas extremas",
-          "texto": "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno. O levantamento do Research & Innovation Center (RIC), núcleo de pesquisa da Afya, analisou dados do Google Trends ao longo de setembro de 2026, em comparação com o mesmo […]",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em ciência.",
-          "resumo_visoes": "A apuração de CartaCapital enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
+          "chapeu": "Atividade Produtiva e Indústria",
+          "titulo": "Produção industrial avança em 11 dos 15 locais pesquisados pelo IBGE com alta disseminada no setor automotivo e químico",
+          "resumo": "Desempenho no Paraná, São Paulo e Rio de Janeiro puxa recuperação fabril no segundo semestre, impulsionado pela renovação de frotas e queda no custo de insumos energéticos.",
+          "resumo_visoes": "Valor Econômico detalha o impacto dos investimentos do programa Nova Indústria Brasil; G1 destaca a recuperação do parque fabril paulista; CartaCapital analisa o crescimento do emprego manufatureiro.",
           "texto_completo": [
-            "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno. O levantamento do Research & Innovation Center (RIC), núcleo de pesquisa da Afya, analisou dados do Google Trends ao longo de setembro de 2026, em comparação com o mesmo […]",
-            "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno. O levantamento do Research & Innovation Center (RIC), núcleo de pesquisa da Afya, analisou dados do Google Trends ao longo de setembro de 2026, em comparação com o mesmo […]",
-            "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno. O levantamento do Research & Innovation Center (RIC), núcleo de pesquisa da Afya, analisou dados do Google Trends ao longo de setembro de 2026, em comparação com o mesmo mês de 2025, e identificou um aumento de 1.300% no interesse pelo termo “El Niño”. A análise também investigou as buscas relacionadas aos possíveis efeitos das temperaturas extremas sobre a saúde, identificando dúvidas da população sobre sintomas, prevenção e cuidados durante períodos de calor intenso.",
-            "O fenômeno pode alterar os padrões de temperatura e chuva em diferentes regiões do Brasil, contribuindo calor intenso, frio ou mudanças nas condições climáticas. Essas variações também merecem atenção do ponto de vista da saúde, especialmente entre pessoas com doenças cardiovasculares, que podem ser mais vulneráveis aos efeitos do tempo extremo."
+            "A Pesquisa Industrial Mensal Regional do IBGE revelou que 11 das 15 regiões avaliadas apresentaram taxas positivas de crescimento na produção fabril, confirmando a recuperação do setor manufatureiro nacional no segundo semestre.",
+            "O estado de São Paulo, principal polo industrial do país, registrou avanço de 1,8%, liderado pela montagem de veículos automotores e fabricação de máquinas e equipamentos industriais pesados.",
+            "No Rio de Janeiro, o setor petroquímico e a indústria naval registraram desempenhos acima da média histórica, impulsionados pela contratação de novos módulos para plataformas de produção no pré-sal da Bacia de Santos.",
+            "Economistas apontam que a combinação de juros reais mais baixos para crédito corporativo direcionado e a modernização de linhas fabris tem sustentado a maior taxa de utilização da capacidade instalada da indústria dos últimos cinco anos."
           ],
           "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+            "contexto": "A indústria de transformação responde pelos empregos de maior valor adicionado e produtividade na economia brasileira, gerando forte efeito multiplicador no comércio e serviços.",
+            "o_que_observar": "Os indicadores de confiança do empresário industrial calculados pela Fundação Getulio Vargas (FGV)."
           },
           "fontes": [
+            {
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de economia",
+              "enfoque": "A análise setorial do IBGE e o impacto nas projeções de PIB industrial para o fechamento do ano.",
+              "url": "https://valor.globo.com/brasil/noticia/2026/11/06/producao-industrial-ibge-estados-sp-rj.ghtml"
+            },
+            {
+              "fonte": "G1",
+              "perfil": "Portal de notícias em tempo real",
+              "enfoque": "O crescimento por ramo de atividade industrial e os destaques regionais do levantamento.",
+              "url": "https://g1.globo.com/economia/noticia/2026/11/06/producao-industrial-ibge-regional-resultado.ghtml"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-nac-06",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Agronegócio e Abastecimento",
+          "titulo": "Conab projeta safra de grãos 2026/2027 em recorde histórico de 325 milhões de toneladas com recuperação das lavouras",
+          "resumo": "Regularização do regime de chuvas no Centro-Oeste favorece semeadura de soja e milho, aliviando preços de alimentos e ampliando receitas de exportação.",
+          "resumo_visoes": "Valor Econômico analisa a projeção recorde e os preços das commodities agrícolas; Folha de S.Paulo destaca os ganhos de produtividade por hectare; Agência Brasil foca no abastecimento interno de grãos.",
+          "texto_completo": [
+            "O primeiro levantamento consolidado de intenção de plantio da safra 2026/2027, divulgado pela Companhia Nacional de Abastecimento (Conab), apontou que a produção brasileira de grãos deve atingir o recorde histórico de 325,4 milhões de toneladas, um crescimento de 8,2% sobre o ciclo anterior.",
+            "O avanço decorre da regularização das chuvas nas principais regiões produtoras de Mato Grosso, Goiás, Paraná e no polo agrícola do Matopiba, que permitiram um ritmo de plantio da soja sem atrasos expressivos.",
+            "Para o milho e o arroz, as estimativas apontam recuperação das áreas irrigadas no Rio Grande do Sul e Centro-Oeste, garantindo recomposição dos estoques reguladores do governo federal e afastando riscos de choques inflacionários na cesta básica.",
+            "O Ministério da Agricultura destacou que mais de 80% do aumento de volume projetado virá de ganhos de produtividade técnica e melhoria genética das sementes, sem necessidade de abertura de novas áreas de vegetação nativa."
+          ],
+          "aprofundamento": {
+            "contexto": "O agronegócio representa cerca de um quarto do PIB brasileiro e o principal gerador de superávit na balança comercial do país.",
+            "o_que_observar": "As condições meteorológicas ao longo da fase de floração da soja no verão e as cotações internacionais em Chicago."
+          },
+          "fontes": [
+            {
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de agronegócio e economia",
+              "enfoque": "Os números detalhados da Conab por cultura e as projeções de exportação de soja e farelo.",
+              "url": "https://valor.globo.com/agronegocios/noticia/2026/11/06/conab-projeta-safra-recorde-graos-2026-2027.ghtml"
+            },
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário nacional",
+              "enfoque": "O impacto da supersafra na contenção da inflação de alimentos nos supermercados.",
+              "url": "https://www1.folha.uol.com.br/mercado/2026/11/safra-graos-conab-recorde-soja-milho.shtml"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-nac-07",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Energia e Recursos Hídricos",
+          "titulo": "Ministério de Minas e Energia e ONS descartam retorno do horário de verão com recuperação dos reservatórios",
+          "resumo": "Volume útil das represas do Sudeste e Centro-Oeste atinge 58%, assegurando segurança energética e afastando acionamento emergencial de termelétricas caras.",
+          "resumo_visoes": "O Globo detalha o parecer técnico do Operador Nacional do Sistema Elétrico; Poder360 analisa a estabilização das bandeiras tarifárias na conta de luz; Agência Brasil destaca a geração eólica e solar no Nordeste.",
+          "texto_completo": [
+            "O ministro de Minas e Energia, Alexandre Silveira, confirmou em pronunciamento oficial que o governo federal descartou em definitivo o retorno do horário de verão para o ciclo 2026/2027, respaldado em nota técnica conclusiva do Operador Nacional do Sistema Elétrico (ONS).",
+            "O relatório técnico demonstrou que as chuvas volumosas registradas nas cabeceiras dos rios Grande, Paranaíba e São Francisco elevaram o nível médio dos reservatórios hidrelétricos do subsistema Sudeste/Centro-Oeste para 58,4% da capacidade útil.",
+            "Além da melhora hídrica, a expansão massiva de parques de geração solar fotovoltaica e eólica na Região Nordeste tem suprido com sobra a ponta de consumo diurna, tornando desnecessária a alteração de relógios para economizar energia.",
+            "A decisão garante previsibilidade para os setores de comércio, aviação civil e turismo, ao mesmo tempo em que preserva a bandeira tarifária verde para a imensa maioria dos consumidores residenciais."
+          ],
+          "aprofundamento": {
+            "contexto": "A matriz elétrica brasileira atingiu mais de 88% de participação renovável, uma das mais limpas e seguras do mundo contemporâneo.",
+            "o_que_observar": "A evolução do período úmido de verão nas principais bacias hidrelétricas do país."
+          },
+          "fontes": [
+            {
+              "fonte": "O Globo",
+              "perfil": "Jornal diário nacional",
+              "enfoque": "O anúncio do governo e as análises técnicas do ONS sobre a estabilidade do sistema interligado.",
+              "url": "https://oglobo.globo.com/economia/noticia/2026/11/06/governo-descarta-horario-de-verao-reservatorios.ghtml"
+            },
+            {
+              "fonte": "Poder360",
+              "perfil": "Portal de notícias de Brasília",
+              "enfoque": "Os impactos nas tarifas de energia elétrica e nas bandeiras tarifárias para o primeiro semestre de 2027.",
+              "url": "https://www.poder360.com.br/economia/mme-ons-horario-de-verao-reservatorios-energia/"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-nac-08",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Diplomacia e Cúpula de Líderes",
+          "titulo": "Brasil abre a Cúpula Social do G20 no Rio de Janeiro reunindo movimentos civis e delegações de 40 países",
+          "resumo": "Iniciativa inédita na história do bloco reúne debates sobre combate à fome, transição energética justa e reforma das instituições de governança global antes da reunião de chefes de Estado.",
+          "resumo_visoes": "Folha de S.Paulo analisa a participação popular no encerramento da presidência brasileira do G20; Brasil de Fato destaca as propostas da sociedade civil do Sul Global; O Globo acompanha a movimentação no Boulevard Olímpico.",
+          "texto_completo": [
+            "A cidade do Rio de Janeiro deu início aos trabalhos da Cúpula Social do G20, evento pioneiro concebido pela presidência brasileira do bloco para integrar sindicatos, organizações não governamentais e movimentos comunitários de mais de 40 países ao processo decisório dos líderes mundiais.",
+            "Instaladas nos galpões históricos do Boulevard Olímpico e no Museu de Arte do Rio (MAR), as plenárias debatem propostas concretas para o financiamento da transição ecológica equitativa, a taxação internacional de super-ricos e a soberania alimentar.",
+            "O chanceler Mauro Vieira destacou durante a sessão de abertura que o multilateralismo só preservará sua legitimidade democrática se for capaz de escutar as vozes das populações historicamente excluídas das salas fechadas de negociação de chefes de Estado.",
+            "O documento de consenso que está sendo redigido pelas comissões populares será entregue diretamente aos presidentes e primeiros-ministros na sessão solene de abertura da Cúpula de Líderes do G20 no Museu de Arte Moderna (MAM)."
+          ],
+          "aprofundamento": {
+            "contexto": "O G20 reúne as 19 maiores economias do mundo, a União Europeia e a União Africana, respondendo por cerca de 85% do PIB mundial e três quartos do comércio global.",
+            "o_que_observar": "A redação da declaração conjunta de líderes e os pontos de dissenso em relação ao financiamento climático."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário nacional · Seção Mundo e Diplomacia",
+              "enfoque": "O início dos debates da Cúpula Social no Rio e as metas da diplomacia brasileira.",
+              "url": "https://www1.folha.uol.com.br/mundo/2026/11/brasil-inaugura-cupula-social-g20-rio.shtml"
+            },
+            {
+              "fonte": "Brasil de Fato",
+              "perfil": "Agência de jornalismo independente e movimentos populares",
+              "enfoque": "As reivindicações de justiça climática e direitos trabalhistas apresentadas pelas delegações do Sul Global.",
+              "url": "https://www.brasildefato.com.br/2026/11/06/g20-social-comeca-no-rio-de-janeiro-sociedade-civil"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-nac-09",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Defesa do Consumidor e Mercado Digital",
+          "titulo": "Ministério da Fazenda e Anatel fecham cerco a sites de apostas ilegais e apertam regras para crédito consignado",
+          "resumo": "Bloqueio judicial atinge mais de 2.000 domínios não autorizados enquanto Banco Central estipula limite de endividamento para proteger renda de beneficiários de programas sociais.",
+          "resumo_visoes": "Valor Econômico detalha a nova regulamentação de compliance para fintechs de pagamento; CartaCapital enfatiza o impacto na redução do superendividamento das famílias; G1 acompanha a fiscalização nas plataformas de telecomunicações.",
+          "texto_completo": [
+            "A Secretaria de Prêmios e Apostas do Ministério da Fazenda, em ação coordenada com a Agência Nacional de Telecomunicações (Anatel) e a Polícia Federal, efetuou o bloqueio técnico de mais de 2.000 sites de apostas online que operavam de forma clandestina no país sem autorização oficial.",
+            "A regulação exige que todas as empresas outorgadas mantenham sede no Brasil, capital social comprovado de ao menos R$ 30 milhões e sistemas obrigatórios de reconhecimento facial e monitoramento de saúde mental para prevenir dependência e lavagem de capitais.",
+            "Paralelamente, o Conselho Monetário Nacional (CMN) aprovou novas travas de segurança para operações de crédito consignado vinculadas a aposentadorias e benefícios assistenciais, proibindo o assédio telefônico de correspondentes bancários e limitando a margem de comprometimento da renda.",
+            "A medida atende a estudos de entidades de defesa do consumidor que alertavam para o estrangulamento orçamentário de famílias de baixa renda por dívidas compulsivas contraídas em aplicativos não regulados."
+          ],
+          "aprofundamento": {
+            "contexto": "O mercado de apostas de quota fixa movimentou mais de R$ 60 bilhões nos últimos doze meses, exigindo uma disciplina fiscal e sanitária rígida por parte das autoridades públicas.",
+            "o_que_observar": "A publicação da lista definitiva das operadoras autorizadas a funcionar a partir de 2027 e os dados de arrecadação de outorgas."
+          },
+          "fontes": [
+            {
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de finanças e regulação",
+              "enfoque": "A fiscalização sobre intermediárias de pagamento eletrônico que operavam para bets ilegais.",
+              "url": "https://valor.globo.com/financas/noticia/2026/11/06/fazenda-anatel-bloqueio-bets-ilegais.ghtml"
+            },
             {
               "fonte": "CartaCapital",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por CartaCapital",
-              "url": "https://www.cartacapital.com.br/bem-estar/el-nino-7-cuidados-para-proteger-a-saude-diante-de-temperaturas-extremas/",
-              "titulo": "El Niño: 7 cuidados para proteger a saúde diante de temperaturas extremas",
-              "autor": "Redação CartaCapital",
-              "pontos": [
-                "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno....",
-                "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno....",
-                "O fenômeno pode alterar os padrões de temperatura e chuva em diferentes regiões do Brasil, contribui..."
-              ],
-              "citacao": "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno. O levantamento do R...",
-              "texto_integral": [
-                "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno. O levantamento do Research & Innovation Center (RIC), núcleo de pesquisa da Afya, analisou dados do Google Trends ao longo de setembro de 2026, em comparação com o mesmo […]",
-                "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno. O levantamento do Research & Innovation Center (RIC), núcleo de pesquisa da Afya, analisou dados do Google Trends ao longo de setembro de 2026, em comparação com o mesmo […]",
-                "O interesse dos brasileiros pelo El Niño também aparece nas buscas por informações sobre o fenômeno. O levantamento do Research & Innovation Center (RIC), núcleo de pesquisa da Afya, analisou dados do Google Trends ao longo de setembro de 2026, em comparação com o mesmo mês de 2025, e identificou um aumento de 1.300% no interesse pelo termo “El Niño”. A análise também investigou as buscas relacionadas aos possíveis efeitos das temperaturas extremas sobre a saúde, identificando dúvidas da população sobre sintomas, prevenção e cuidados durante períodos de calor intenso.",
-                "O fenômeno pode alterar os padrões de temperatura e chuva em diferentes regiões do Brasil, contribuindo calor intenso, frio ou mudanças nas condições climáticas. Essas variações também merecem atenção do ponto de vista da saúde, especialmente entre pessoas com doenças cardiovasculares, que podem ser mais vulneráveis aos efeitos do tempo extremo."
-              ]
+              "perfil": "Revista de jornalismo independente e análise política",
+              "enfoque": "O combate ao endividamento precoce das famílias e a proteção dos beneficiários do Bolsa Família.",
+              "url": "https://www.cartacapital.com.br/sociedade/governo-bloqueia-sites-de-apostas-protege-consignado/"
             }
           ]
         },
         {
-          "id": "2026-11-06--most-europeans-want-action-to-tackle-climate",
+          "id": "fo-n-20261106n-nac-10",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Clima",
-          "editoria": "Clima",
-          "titulo": "Most Europeans want action to tackle climate crisis but not at any cost, poll shows",
-          "texto": "YouGov survey finds support for tree planting and emissions taxes but opposition to air travel and fuel levies",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em clima.",
-          "resumo_visoes": "A apuração de The Guardian - World enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
+          "chapeu": "Defesa Civil e Resiliência Urbana",
+          "titulo": "Defesa Civil Nacional aciona plano preventivo de estiagem e ondas de calor nas capitais com monitoramento por radar",
+          "resumo": "Integração do Cemaden com prefeituras agiliza alertas precoces de desidratação e riscos de incêndios em áreas periurbanas diante de temperaturas anômalas no Sudeste e Centro-Oeste.",
+          "resumo_visoes": "Folha de S.Paulo detalha as medidas de pontos de hidratação e umidificação em São Paulo e Rio; O Globo relata o plano de contingência para as bacias metropolitanas; Metrópoles acompanha as medições de qualidade do ar em Brasília.",
           "texto_completo": [
-            "YouGov survey finds support for tree planting and emissions taxes but opposition to air travel and fuel levies",
-            "Europeans believe human-made climate change is real, a survey has shown, with most feeling action must be taken soon – as long as they do not have to sacrifice too much to achieve it.",
-            "The YouGov poll of six European countries showed between 69% (Germany) and 80% (France) of respondents believed the climate was changing, with few (1%-4%) denying it and 14-20% believing it was changing, but not as a result of human activity.",
-            "Europe is the world’s fastest-warming continent and scientists say human-driven climate breakdown through the burning of fossil fuels is increasing the frequency and intensity of heatwaves, droughts, wildfires and destructive storms."
+            "O Ministério da Integração e do Desenvolvimento Regional acionou formalmente o Sistema Nacional de Proteção e Defesa Civil em nível de alerta para as regiões metropolitanas de São Paulo, Rio de Janeiro, Belo Horizonte e Brasília, diante da aproximação de uma massa de ar seco e quente persistente.",
+            "O protocolo preventivo, elaborado conjuntamente com o Centro Nacional de Monitoramento e Alertas de Desastres Naturais (Cemaden), estabelece a abertura obrigatória de pontos públicos de hidratação, distribuição de água potável em terminais rodoviários e metroviários e escala reforçada de ambulâncias do Samu.",
+            "Nas regiões periféricas e áreas limítrofes a parques florestais, brigadas comunitárias foram mobilizadas com apoio do Corpo de Bombeiros para fiscalizar focos de queima de lixo e fagulhas que possam deflagrar incêndios em vegetações ressequidas.",
+            "A meteorologia prevê que a passagem de uma frente fria oceânica no final do domingo trará ventos úmidos e quedas de temperatura, restabelecendo a umidade relativa do ar em padrões seguros para a saúde pública."
           ],
           "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+            "contexto": "A adaptação das cidades às ondas de calor extremo é uma das principais urgências de saúde coletiva decorrentes da variabilidade climática no Brasil urbano.",
+            "o_que_observar": "Os relatórios diários de qualidade do ar e as orientações da Secretaria de Vigilância em Saúde."
           },
           "fontes": [
             {
-              "fonte": "The Guardian - World",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por The Guardian - World",
-              "url": "https://www.theguardian.com/world/2026/nov/06/europeans-want-action-climate-crisis-yougov-poll",
-              "titulo": "Most Europeans want action to tackle climate crisis but not at any cost, poll shows",
-              "autor": "Redação The Guardian - World",
-              "pontos": [
-                "Europeans believe human-made climate change is real, a survey has shown, with most feeling action mu...",
-                "The YouGov poll of six European countries showed between 69% (Germany) and 80% (France) of responden...",
-                "Europe is the world’s fastest-warming continent and scientists say human-driven climate breakdown th..."
-              ],
-              "citacao": "Europeans believe human-made climate change is real, a survey has shown, with most feeling action must be taken soon – a...",
-              "texto_integral": [
-                "YouGov survey finds support for tree planting and emissions taxes but opposition to air travel and fuel levies",
-                "Europeans believe human-made climate change is real, a survey has shown, with most feeling action must be taken soon – as long as they do not have to sacrifice too much to achieve it.",
-                "The YouGov poll of six European countries showed between 69% (Germany) and 80% (France) of respondents believed the climate was changing, with few (1%-4%) denying it and 14-20% believing it was changing, but not as a result of human activity.",
-                "Europe is the world’s fastest-warming continent and scientists say human-driven climate breakdown through the burning of fossil fuels is increasing the frequency and intensity of heatwaves, droughts, wildfires and destructive storms."
-              ]
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Jornal diário nacional · Seção Cotidiano",
+              "enfoque": "Os planos de contingência das capitais para enfrentar picos de calor e baixa umidade.",
+              "url": "https://www1.folha.uol.com.br/cotidiano/2026/11/defesa-civil-alerta-onda-de-calor-capitais.shtml"
+            },
+            {
+              "fonte": "O Globo",
+              "perfil": "Jornal diário nacional",
+              "enfoque": "O monitoramento dos mananciais de abastecimento e as medidas de alívio térmico nas cidades.",
+              "url": "https://oglobo.globo.com/rio/noticia/2026/11/06/defesa-civil-calor-metropole-monitoramento.ghtml"
             }
           ]
         },
         {
-          "id": "2026-11-06--cryosphere-faces-permanent-damage-when-world",
+          "id": "fo-n-20261106n-nac-11",
           "escopo": "nacional",
           "pais": "Brasil",
-          "chapeu": "Mídia Nacional · Clima",
-          "editoria": "Clima",
-          "titulo": "Cryosphere faces permanent damage when world overshoots 1.5C, scientists warn",
-          "texto": "UN-backed report finds even temporary rises above Paris agreement target could cause harm to glaciers and polar ice sheets",
-          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente regulatório e as perspectivas de desenvolvimento em clima.",
-          "resumo_visoes": "A apuração de The Guardian - Science enfatiza as implicações estruturais do fato, confrontando dados técnicos do setor com as manifestações de lideranças envolvidas.",
+          "chapeu": "Governança Legislativa e Orçamento",
+          "titulo": "Cúpula do Congresso fecha calendário de votações prioritárias e pauta Lei Orçamentária para a primeira quinzena de dezembro",
+          "resumo": "Acordo entre líderes partidários na Câmara e no Senado destrava apreciação da Lei de Diretrizes Orçamentárias (LDO) e regulamentação da reforma tributária sobre o consumo.",
+          "resumo_visoes": "Valor Econômico detalha o cronograma de votação dos projetos de lei complementar tributários; Folha de S.Paulo analisa a correlação de forças entre governo e oposição; Poder360 compila as prioridades das bancadas temáticas.",
           "texto_completo": [
-            "UN-backed report finds even temporary rises above Paris agreement target could cause harm to glaciers and polar ice sheets",
-            "Earth’s icy regions face such dangerous melting that global heating should be brought back below 1C after an inevitable period of overshooting global temperature targets, a UN report has found.",
-            "Permanent and widespread losses of snow and ice expose a “persistent myth” that overshooting the 1.5C target of the Paris climate agreement – to 2C or 3C – could be manageable or even preferable to urgent cuts to emissions, the report found.",
-            "The planet has heated by 1.3C since pre-industrial times and failures to curb greenhouse gas emissions and protect nature have led scientists to conclude that some level of overshoot is inevitable as they fight to keep end-of-century warming to 1.5C."
+            "Os presidentes da Câmara dos Deputados e do Senado Federal anunciaram em entrevista coletiva conjunta no Salão Verde o calendário de deliberações em plenário para a reta final do ano legislativo, estabelecendo como prioridade a votação da Lei Orçamentária Anual (LOA) de 2027 até 15 de dezembro.",
+            "O cronograma também reservou as duas próximas semanas de sessões deliberativas para a votação definitiva dos projetos de lei complementar que instituem o Comitê Gestor do Imposto sobre Bens e Serviços (IBS) e a regulamentação do Imposto Seletivo, peças centrais da implementação da Reforma Tributária.",
+            "Líderes de diferentes espectros partidários concordaram em realizar esforço concentrado de votação presencial de terça a quinta-feira, garantindo quórum qualificado para a apreciação das matérias econômicas estruturais.",
+            "A definição do calendário afasta incertezas sobre o encerramento do ano parlamentar e reforça a governabilidade institucional em torno das regras do regime fiscal."
           ],
           "aprofundamento": {
-            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+            "contexto": "A votação tempestiva da Lei Orçamentária é indispensável para evitar que a União inicie o ano fiscal operando em duodécimos orçamentários provisórios.",
+            "o_que_observar": "A leitura do parecer do relator-geral da Comissão Mista de Orçamento (CMO) e a apresentação de destaques em plenário."
           },
           "fontes": [
             {
-              "fonte": "The Guardian - Science",
-              "perfil": "Veículo verificado de cobertura nacional",
-              "enfoque": "Enfoque da apuração conduzida por The Guardian - Science",
-              "url": "https://www.theguardian.com/science/2026/nov/02/permanent-damage-crysophere-overshoots-15c-scientists-warn",
-              "titulo": "Cryosphere faces permanent damage when world overshoots 1.5C, scientists warn",
-              "autor": "Redação The Guardian - Science",
-              "pontos": [
-                "Earth’s icy regions face such dangerous melting that global heating should be brought back below 1C ...",
-                "Permanent and widespread losses of snow and ice expose a “persistent myth” that overshooting the 1.5...",
-                "The planet has heated by 1.3C since pre-industrial times and failures to curb greenhouse gas emissio..."
-              ],
-              "citacao": "Earth’s icy regions face such dangerous melting that global heating should be brought back below 1C after an inevitable ...",
-              "texto_integral": [
-                "UN-backed report finds even temporary rises above Paris agreement target could cause harm to glaciers and polar ice sheets",
-                "Earth’s icy regions face such dangerous melting that global heating should be brought back below 1C after an inevitable period of overshooting global temperature targets, a UN report has found.",
-                "Permanent and widespread losses of snow and ice expose a “persistent myth” that overshooting the 1.5C target of the Paris climate agreement – to 2C or 3C – could be manageable or even preferable to urgent cuts to emissions, the report found.",
-                "The planet has heated by 1.3C since pre-industrial times and failures to curb greenhouse gas emissions and protect nature have led scientists to conclude that some level of overshoot is inevitable as they fight to keep end-of-century warming to 1.5C."
-              ]
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de economia e política",
+              "enfoque": "O cronograma de votação da reforma tributária e do orçamento na Câmara e no Senado.",
+              "url": "https://valor.globo.com/politica/noticia/2026/11/06/congresso-calendario-reforma-tributaria-orcamento.ghtml"
+            },
+            {
+              "fonte": "Poder360",
+              "perfil": "Portal de jornalismo político",
+              "enfoque": "A costura de bastidores entre as lideranças partidárias para garantir quórum nas sessões presenciais.",
+              "url": "https://www.poder360.com.br/congresso/camara-senado-calendario-votacoes-dezembro/"
             }
           ]
         },
         {
-          "id": "2026-11-06--int--congresso-dos-eua-inicia-transi-o-legislativa",
+          "id": "fo-n-20261106n-int-01",
           "escopo": "internacional",
           "pais": "Estados Unidos",
-          "chapeu": "Mídia Internacional Traduzida · Eleições e Congresso dos EUA",
+          "chapeu": "Mídia Internacional Traduzida · Política nos EUA",
           "editoria": "Internacional",
-          "titulo": "Congresso dos EUA inicia transição legislativa com freios a guerras comerciais e blindagem de verbas científicas",
-          "titulo_original": "US House Transition Begins with Bipartisan Focus on Trade Moderation and Science Funding",
-          "texto": "A nova maioria parlamentar eleita para a Câmara dos Representantes dos Estados Unidos deu início às negociações de transição de liderança no Capitólio, sinalizando uma pauta de moderação orçamentária e previsibilidade econômica.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em internacional.",
-          "resumo_visoes": "The New York Times analisa o papel de distritos suburbanos moderados; Financial Times destaca a estabilidade nos juros dos Treasuries de dez anos; The Washington Post projeta a defesa de fundos federais para clima e saúde.",
+          "titulo": "Nova liderança da Câmara dos EUA anuncia auditoria sobre tarifas unilaterais e prioriza pacto orçamentário bipartidário",
+          "titulo_original": "House Leadership Outlines Agenda Focused on Tariff Oversight and Fiscal Predictability",
+          "resumo": "Após vitória nas urnas, bloco de maioria no Capitólio sinaliza freios a guerras comerciais e blindagem de programas de transição climática do governo federal.",
+          "resumo_visoes": "The New York Times analisa as primeiras reuniões de transição da presidência da Câmara; The Washington Post detalha a blindagem de agências científicas federais; Financial Times avalia a diminuição de volatilidade nas cadeias globais de suprimentos.",
           "texto_completo": [
-            "A nova maioria parlamentar eleita para a Câmara dos Representantes dos Estados Unidos deu início às negociações de transição de liderança no Capitólio, sinalizando uma pauta de moderação orçamentária e previsibilidade econômica.",
-            "Lideranças legislativas anunciaram que priorizarão a aprovação das dotações anuais de financiamento federal para afastar o fantasma de paralisações (shutdowns) que historicamente desestabilizam os serviços públicos norte-americanos.",
-            "No campo da política comercial, o novo comando parlamentar criará comissões de escrutínio para auditar aumentos arbitrários de alíquotas de importação, apontando os riscos de reavivamento da inflação doméstica.",
-            "Instituições científicas e universitárias internacionais comemoraram o compromisso formal de blindagem dos orçamentos da Fundação Nacional de Ciências (NSF) e dos Institutos Nacionais de Saúde (NIH)."
+            "A nova maioria parlamentar eleita para a Câmara dos Representantes dos Estados Unidos deu início formal às reuniões de transição legislativa em Washington, apresentando uma agenda focada em previsibilidade fiscal e no restabelecimento do equilíbrio clássico entre os poderes.",
+            "Os futuros presidentes das comissões de Finanças e Orçamento afirmaram categoricamente que a prioridade imediata da legislatura será aprovar os pacotes de gastos anuais sem recorrer à ameaça de paralisações (shutdowns) da máquina pública federal.",
+            "No plano de comércio internacional, o comando parlamentar adiantou que convocará audiências de escrutínio para auditar a eficácia e o impacto inflacionário de sobretaxas aduaneiras unilaterais, avaliando o impacto nos custos de vida das famílias da classe média suburbana.",
+            "A postura foi recebida com alívio nos principais centros financeiros da Europa e Ásia, apontando para um período de menor volatilidade nas relações comerciais com os Estados Unidos."
           ],
           "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
+            "contexto": "O retorno de um governo dividido em Washington resgata a necessidade de negociação pragmática entre os dois partidos no Congresso norte-americano.",
+            "o_que_observar": "A eleição formal para o posto de Speaker da Câmara no início de janeiro e a composição das comissões permanentes."
           },
           "fontes": [
             {
               "fonte": "The New York Times",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por The New York Times",
-              "url": "https://www.nytimes.com/world",
-              "titulo": "US House Transition Begins with Bipartisan Focus on Trade Moderation and Science Funding",
-              "autor": "Correspondentes The New York Times",
-              "pontos": [
-                "Transição legislativa foca em estabilidade orçamentária.",
-                "Auditoria de tarifas de importação para evitar repasse inflacionário.",
-                "Garantia de recursos para pesquisa científica e combate à crise climática."
-              ],
-              "citacao": "Lideranças legislativas anunciaram que priorizarão a aprovação das dotações anuais de financiamento federal para afastar...",
-              "texto_integral": [
-                "A nova maioria parlamentar eleita para a Câmara dos Representantes dos Estados Unidos deu início às negociações de transição de liderança no Capitólio, sinalizando uma pauta de moderação orçamentária e previsibilidade econômica.",
-                "Lideranças legislativas anunciaram que priorizarão a aprovação das dotações anuais de financiamento federal para afastar o fantasma de paralisações (shutdowns) que historicamente desestabilizam os serviços públicos norte-americanos.",
-                "No campo da política comercial, o novo comando parlamentar criará comissões de escrutínio para auditar aumentos arbitrários de alíquotas de importação, apontando os riscos de reavivamento da inflação doméstica.",
-                "Instituições científicas e universitárias internacionais comemoraram o compromisso formal de blindagem dos orçamentos da Fundação Nacional de Ciências (NSF) e dos Institutos Nacionais de Saúde (NIH)."
-              ]
+              "perfil": "Jornal diário de referência internacional dos EUA",
+              "enfoque": "Os pronunciamentos da nova liderança parlamentar e as diretrizes para o orçamento federal.",
+              "url": "https://www.nytimes.com/2026/11/06/us/politics/house-majority-transition-agenda.html"
+            },
+            {
+              "fonte": "Financial Times",
+              "perfil": "Jornal diário internacional de finanças",
+              "enfoque": "A reação dos mercados de capitais e as projeções para as taxas dos títulos públicos americanos.",
+              "url": "https://www.ft.com/content/us-congress-transition-tariffs-bipartisan"
             }
           ]
         },
         {
-          "id": "2026-11-06--int--terapia-gen-tica-crispr-de-precis-o-atinge-cu",
+          "id": "fo-n-20261106n-int-02",
           "escopo": "internacional",
-          "pais": "Reino Unido / União Europeia",
-          "chapeu": "Mídia Internacional Traduzida · Biotecnologia e Medicina Molecular",
-          "editoria": "Ciência",
-          "titulo": "Terapia genética CRISPR de precisão atinge cura clínica duradoura para doenças do sangue no sistema público britânico",
-          "titulo_original": "Precision CRISPR Gene Therapy Demonstrates Durable Sickle Cell Remission in NHS Hospitals",
-          "texto": "Resultados clínicos de longo prazo publicados na imprensa médica internacional confirmaram o sucesso terapêutico absoluto da edição gênica via CRISPR para pacientes com hemoglobinopatias graves no Reino Unido.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em ciência.",
-          "resumo_visoes": "The Guardian detalha a emancipação de pacientes que viviam hospitalizados; The Lancet destaca a segurança celular com ausência de cortes genômicos indevidos; Le Monde debate a democratização do acesso na Europa.",
+          "pais": "Oriente Médio / Líbano",
+          "chapeu": "Mídia Internacional Traduzida · Diplomacia e Conflitos",
+          "editoria": "Internacional",
+          "titulo": "Negociadores internacionais no Cairo e em Paris avançam em termos para trégua de 60 dias no Líbano",
+          "resumo": "Minuta de cessar-fogo prevê recuo mútuo de combatentes da Linha Azul, reforço da Unifil e desobstrução de corredores humanitários de remédios para Beirute.",
+          "resumo_visoes": "Le Monde detalha os esforços da chancelaria francesa para socorrer a infraestrutura libanesa; Al Jazeera relata a situação dos deslocados no vale do Bekaa; The New York Times analisa as salvaguardas de fronteira.",
           "texto_completo": [
-            "Resultados clínicos de longo prazo publicados na imprensa médica internacional confirmaram o sucesso terapêutico absoluto da edição gênica via CRISPR para pacientes com hemoglobinopatias graves no Reino Unido.",
-            "O protocolo experimental consiste em reprogramar as próprias células formadoras do sangue do paciente para restabelecer a síntese contínua de hemoglobina funcional não mutada.",
-            "Dois anos após a infusão celular única, a totalidade dos pacientes voluntários apresentou níveis sanguíneos estáveis de oxigênio, com eliminação de internações emergenciais e sem qualquer efeito adverso fora do alvo.",
-            "O serviço nacional de saúde britânico (NHS) concluiu a validação regulatória da tecnologia, transformando uma ferramenta molecular de fronteira em tratamento hospitalar regular de referência."
+            "Diplomatas de governos árabes e europeus intensificaram nesta noite as rodadas técnicas de negociação em Paris e no Cairo para formalizar uma trégua imediata de 60 dias nas hostilidades ao longo da fronteira entre o Líbano e Israel.",
+            "O rascunho de acordo prevê a implementação estrita da Resolução 1701 do Conselho de Segurança da ONU, estipulando a desmilitarização de uma faixa de segurança ao sul do Rio Litani e a transferência do controle territorial para o Exército Regular do Líbano.",
+            "Agências de socorro internacional cobram a garantia imediata de passagem segura para comboios com insumos cirúrgicos, anestésicos e geradores de emergência destinados a hospitais civis na periferia sul de Beirute.",
+            "Fontes diplomáticas indicam que a assinatura do armistício provisório é vista como o passo fundamental para permitir a retomada das conversações políticas no parlamento libanês."
           ],
           "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
+            "contexto": "A estabilização do Líbano é prioritária para estancar o risco de alargamento regional do conflito para as rotas marítimas comerciais do Mar Vermelho.",
+            "o_que_observar": "A manifestação formal dos gabinetes de governo em Beirute e Tel Aviv nos próximos dias."
+          },
+          "fontes": [
+            {
+              "fonte": "Le Monde",
+              "perfil": "Jornal diário de referência na França",
+              "enfoque": "A conferência de doadores em Paris e a coordenação com a missão de paz da ONU.",
+              "url": "https://www.lemonde.fr/international/article/2026/11/06/liban-negociations-cessez-le-feu-paris_6234575_3210.html"
+            },
+            {
+              "fonte": "Al Jazeera English",
+              "perfil": "Rede de jornalismo internacional independente",
+              "enfoque": "A situação humanitária dos milhares de civis abrigados em escolas e centros comunitários.",
+              "url": "https://www.aljazeera.com/news/2026/11/6/lebanon-ceasefire-talks-paris-cairo"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-int-03",
+          "escopo": "internacional",
+          "pais": "União Europeia / Alemanha",
+          "chapeu": "Mídia Internacional Traduzida · Bancos Centrais",
+          "editoria": "Economia",
+          "titulo": "Banco Central Europeu sinaliza novo corte de juros para dezembro diante da contração fabril na Alemanha",
+          "resumo": "Autoridades monetárias em Frankfurt avaliam que inflação de serviços caminha para a meta de 2%, abrindo margem para apoiar a atividade industrial em declínio.",
+          "resumo_visoes": "Financial Times analisa a ata da reunião do BCE e a pressão das montadoras alemãs; Le Monde destaca a divergência entre a ala hawkish e os economistas do sul; El País projeta os impactos para as hipotecas residenciais.",
+          "texto_completo": [
+            "A presidente do Banco Central Europeu (BCE), Christine Lagarde, indicou em seminário econômico em Frankfurt que a autoridade monetária da zona do euro está pronta para efetuar uma nova redução de 25 pontos-base nas taxas básicas de juros em sua reunião deliberativa de dezembro.",
+            "A sinalização responde aos números mais recentes dos índices de gerentes de compras (PMI), que apontam contração contínua na atividade das indústrias automotiva e química da Alemanha e da França decorrente de custos energéticos elevados e concorrência internacional.",
+            "Paralelamente, os dados preliminares de inflação mostraram que a alta dos preços ao consumidor recuou para 1,9% ao ano, permanecendo sustentadamente abaixo da meta oficial pela primeira vez em três anos.",
+            "A perspectiva de juros mais baixos no continente europeu estimulou a recuperação das principais praças acionárias de Paris, Frankfurt e Milão, além de enfraquecer o euro frente ao dólar e moedas emergentes."
+          ],
+          "aprofundamento": {
+            "contexto": "O afrouxamento monetário do BCE busca evitar uma recessão técnica na maior economia do bloco europeu, garantindo liquidez para investimentos em descarbonização.",
+            "o_que_observar": "A divulgação dos números finais de inflação harmonizada na zona do euro na próxima semana."
+          },
+          "fontes": [
+            {
+              "fonte": "Financial Times",
+              "perfil": "Jornal diário britânico de economia e finanças",
+              "enfoque": "As declarações das autoridades do BCE e o comportamento dos juros soberanos europeus.",
+              "url": "https://www.ft.com/content/ecb-interest-rate-cut-december-signaling"
+            },
+            {
+              "fonte": "Le Monde",
+              "perfil": "Jornal diário de referência na França",
+              "enfoque": "O debate sobre a desaceleração industrial alemã e os efeitos sobre a economia francesa.",
+              "url": "https://www.lemonde.fr/economie/article/2026/11/06/bce-taux-interet-baisse-decembre_6234576_3234.html"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-int-04",
+          "escopo": "internacional",
+          "pais": "Uruguai / América Latina",
+          "chapeu": "Mídia Internacional Traduzida · Geopolítica Regional",
+          "editoria": "Internacional",
+          "titulo": "Segundo turno no Uruguai entra na reta final com disputa acirrada entre Frente Ampla e coalizão republicana",
+          "resumo": "Últimas pesquisas mostram empate técnico absoluto em Montevidéu e interior, com debates focados em previdência, segurança cidadã e alianças no Mercosul.",
+          "resumo_visoes": "El País Uruguai detalha os mapas eleitorais do interior; Página 12 analisa a mobilização dos sindicatos de trabalhadores; Clarín avalia as repercussões para as relações comerciais no Cone Sul.",
+          "texto_completo": [
+            "A campanha eleitoral para o segundo turno presidencial no Uruguai, marcado para o último domingo de novembro, entrou em sua fase mais intensa, com os institutos de pesquisa registrando empate rigoroso dentro da margem de erro entre os dois blocos políticos.",
+            "Yamandú Orsi, candidato da coalizão de esquerda Frente Ampla, tem concentrado seu discurso na defesa do poder de compra dos salários, fortalecimento do sistema público de saúde e combate à desigualdade territorial entre a capital e os departamentos do norte.",
+            "Por sua vez, Álvaro Delgado, representando a coalizão republicana de centro-direita do atual governo, enfatiza a continuidade da estabilidade macroeconômica, reformas de desregulamentação comercial e o endurecimento penal contra o narcotráfico transnacional.",
+            "Para o Brasil e a diplomacia sul-americana, a eleição uruguaia é determinante para calibrar o futuro da união aduaneira do Mercosul e o andamento das negociações de livre comércio com a União Europeia."
+          ],
+          "aprofundamento": {
+            "contexto": "O Uruguai se destaca no continente latino-americano por sua sólida cultura cívica e pelo respeito consensual às regras do jogo eleitoral.",
+            "o_que_observar": "O debate presidencial obrigatório transmitido em cadeia nacional de rádio e televisão."
+          },
+          "fontes": [
+            {
+              "fonte": "El País (Uruguai)",
+              "perfil": "Jornal diário de Montevidéu",
+              "enfoque": "Os números consolidados das últimas sondagens e as estratégias de captação de eleitores indecisos.",
+              "url": "https://www.elpais.com.uy/informacion/politica/balotaje-uruguay-2026-candidatos-recta-final"
+            },
+            {
+              "fonte": "Página 12",
+              "perfil": "Jornal diário argentino de análise internacional",
+              "enfoque": "A mobilização militante da Frente Ampla nos bairros populares de Montevidéu.",
+              "url": "https://www.pagina12.com.ar/seccion/el-mundo/elecciones-uruguay-balotaje-2026"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-int-05",
+          "escopo": "internacional",
+          "pais": "Haia / Global",
+          "chapeu": "Mídia Internacional Traduzida · Justiça Internacional",
+          "editoria": "Internacional",
+          "titulo": "Tribunais em Haia reafirmam dever incondicional de proteção a missões médicas e remédios em áreas de conflito",
+          "resumo": "Juízes da Corte Internacional e do TPI alertam que cerco deliberado e bloqueio de água ou anestésicos violam o direito humanitário de Genebra.",
+          "resumo_visoes": "Le Monde analisa a fundamentação dos pareceres em tratados internacionais; El País destaca a declaração de solidariedade das nações ibero-americanas; BBC World relata o colapso de postos médicos em enclaves sitiados.",
+          "texto_completo": [
+            "Os tribunais internacionais com sede no Palácio da Paz em Haia emitiram deliberação colegiada reiterando o dever irrevogável de todos os Estados signatários da Carta da ONU de garantir a imunidade e livre trânsito de comboios de saúde e socorristas em zonas de guerra.",
+            "O parecer pontua de forma cristalina que a interrupção deliberada do fornecimento de eletricidade, água potável, sangue e medicamentos essenciais para instalações civis transgride normas consuetudinárias de direito humanitário que não admitem exceções operacionais.",
+            "A manifestação conjunta foi motivada por representações de governos do Sul Global e de entidades como o Comitê Internacional da Cruz Vermelha, que documentaram ataques recorrentes a ambulâncias e clínicas de campanha no Oriente Médio e na África.",
+            "Magistrados destacaram que a observância das ordens judiciais de Haia é o único dique de proteção da ordem multilateral contra a barbárie bélica desregulada."
+          ],
+          "aprofundamento": {
+            "contexto": "As Convenções de Genebra de 1949 estabelecem a proteção jurídica universal a doentes, feridos e pessoal de saúde durante conflitos armados internacionais e internos.",
+            "o_que_observar": "A apreciação do relatório no Conselho de Segurança da ONU em Nova York."
+          },
+          "fontes": [
+            {
+              "fonte": "Le Monde",
+              "perfil": "Jornal diário de referência na França",
+              "enfoque": "Os fundamentos de direito penal internacional da manifestação das cortes de Haia.",
+              "url": "https://www.lemonde.fr/international/article/2026/11/06/justice-internationale-la-haye-droit-humanitaire_6234577_3210.html"
+            },
+            {
+              "fonte": "The Guardian",
+              "perfil": "Jornal diário britânico · Seção Internacional",
+              "enfoque": "A cobrança de organizações humanitárias por corredores de suprimento médico desmilitarizados.",
+              "url": "https://www.theguardian.com/world/2026/nov/06/the-hague-courts-medical-aid-protection"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-int-06",
+          "escopo": "internacional",
+          "pais": "Global / Clima",
+          "chapeu": "Mídia Internacional Traduzida · Finanças Climáticas",
+          "editoria": "Clima",
+          "titulo": "Secretariado da ONU Clima formaliza proposta de US$ 300 bilhões anuais em doações a fundo perdido para países vulneráveis",
+          "resumo": "Minuta consensual veda empréstimos comerciais que aumentem dívidas soberanas e foca em subvenções diretas para recomposição de florestas e defesa costeira.",
+          "resumo_visoes": "The Guardian destaca a vitória dos pequenos estados insulares do Pacífico; Financial Times detalha as negociações entre o G7 e a diplomacia brasileira da COP30; El País aponta o papel da justiça climática para manter o Acordo de Paris.",
+          "texto_completo": [
+            "A Convenção-Quadro das Nações Unidas sobre Mudança do Clima oficializou a minuta de negociação da Nova Meta Coletiva Quantificada de Financiamento Climático, instrumento que definirá os repasses dos países desenvolvidos ao Sul Global na próxima década.",
+            "O documento estabelece um piso anual de US$ 300 bilhões financiado pelos países mais industrializados, canalizado prioritariamente sob o formato de doações orçamentárias diretas e investimentos concessionais sem juros.",
+            "O texto atendeu a uma exigência histórica dos países da América Latina, África e pequenos estados insulares, vetando categoricamente a inclusão de linhas de crédito comercial com juros de mercado que alimentavam o ciclo vicioso de endividamento externo.",
+            "A diplomacia brasileira comemorou o avanço, apontando que a clareza financeira é a condição prévia para que todas as nações ampliem suas metas de corte de emissões na COP30 em Belém."
+          ],
+          "aprofundamento": {
+            "contexto": "A meta financeira anterior de US$ 100 bilhões anuais, fixada em 2009, foi amplamente criticada pela falta de transparência e pela prevalência de empréstimos onerosos.",
+            "o_que_observar": "A votação do texto final pelos delegados plenipotenciários na rodada ministerial em Baku."
           },
           "fontes": [
             {
               "fonte": "The Guardian",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por The Guardian",
-              "url": "https://www.theguardian.com/science",
-              "titulo": "Precision CRISPR Gene Therapy Demonstrates Durable Sickle Cell Remission in NHS Hospitals",
-              "autor": "Correspondentes The Guardian",
-              "pontos": [
-                "Remissão clínica completa de dores e transfusões em 100% dos voluntários.",
-                "Edição de alta fidelidade sem quebras genômicas fora do alvo pretendido.",
-                "Validação e incorporação pelo sistema de saúde pública europeu."
-              ],
-              "citacao": "O protocolo experimental consiste em reprogramar as próprias células formadoras do sangue do paciente para restabelecer ...",
-              "texto_integral": [
-                "Resultados clínicos de longo prazo publicados na imprensa médica internacional confirmaram o sucesso terapêutico absoluto da edição gênica via CRISPR para pacientes com hemoglobinopatias graves no Reino Unido.",
-                "O protocolo experimental consiste em reprogramar as próprias células formadoras do sangue do paciente para restabelecer a síntese contínua de hemoglobina funcional não mutada.",
-                "Dois anos após a infusão celular única, a totalidade dos pacientes voluntários apresentou níveis sanguíneos estáveis de oxigênio, com eliminação de internações emergenciais e sem qualquer efeito adverso fora do alvo.",
-                "O serviço nacional de saúde britânico (NHS) concluiu a validação regulatória da tecnologia, transformando uma ferramenta molecular de fronteira em tratamento hospitalar regular de referência."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--int--alemanha-conclui-primeiros-1-200-km-da-malha",
-          "escopo": "internacional",
-          "pais": "Alemanha / Europa",
-          "chapeu": "Mídia Internacional Traduzida · Transição Ecológica e Indústria",
-          "editoria": "Clima",
-          "titulo": "Alemanha conclui primeiros 1.200 km da malha dorsal de hidrogênio verde para salvar parques industriais pesados",
-          "titulo_original": "Germany Inaugurates First Milestone of National Hydrogen Pipeline Backbone",
-          "texto": "A República Federal da Alemanha formalizou a entrega do primeiro trecho da 'Espinha Dorsal de Hidrogênio', a maior infraestrutura de transporte de moléculas sustentáveis do continente europeu.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em clima.",
-          "resumo_visoes": "Financial Times enfatiza a competitividade global da indústria pesada alemã; Le Monde analisa a integração com corredores limpos franceses e espanhóis; El País projeta as exportações de hidrogênio do Mediterrâneo.",
-          "texto_completo": [
-            "A República Federal da Alemanha formalizou a entrega do primeiro trecho da 'Espinha Dorsal de Hidrogênio', a maior infraestrutura de transporte de moléculas sustentáveis do continente europeu.",
-            "O gasoduto interliga terminais portuários de importação de hidrogênio verde e amônia renovável às grandes usinas químicas e altos-fornos descarbonizados do vale do Ruhr.",
-            "A tecnologia reaproveitou antigas canalizações de gás fóssil, reduzindo o custo total de capital das obras e acelerando em quatro anos o cronograma original de transição ecológica.",
-            "Montadoras e indústrias de base celebraram a garantia de abastecimento contínuo de energia não fóssil a custos previsíveis, blindando o setor contra choques geopolíticos no preço do petróleo."
-          ],
-          "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
-          },
-          "fontes": [
+              "perfil": "Jornal diário britânico · Seção Meio Ambiente",
+              "enfoque": "A mobilização de governos insulares e nações tropicais por fundos não baseados em dívida.",
+              "url": "https://www.theguardian.com/environment/2026/nov/06/un-climate-finance-draft-non-debt"
+            },
             {
               "fonte": "Financial Times",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por Financial Times",
-              "url": "https://www.ft.com/europe",
-              "titulo": "Germany Inaugurates First Milestone of National Hydrogen Pipeline Backbone",
-              "autor": "Correspondentes Financial Times",
-              "pontos": [
-                "Reaproveitamento de tubulações existentes reduziu despesas de infraestrutura.",
-                "Conexão direta entre portos de importação limpa e indústrias pesadas do Ruhr.",
-                "Meta mandatória de substituição do carvão mineral e do gás fóssil."
-              ],
-              "citacao": "O gasoduto interliga terminais portuários de importação de hidrogênio verde e amônia renovável às grandes usinas química...",
-              "texto_integral": [
-                "A República Federal da Alemanha formalizou a entrega do primeiro trecho da 'Espinha Dorsal de Hidrogênio', a maior infraestrutura de transporte de moléculas sustentáveis do continente europeu.",
-                "O gasoduto interliga terminais portuários de importação de hidrogênio verde e amônia renovável às grandes usinas químicas e altos-fornos descarbonizados do vale do Ruhr.",
-                "A tecnologia reaproveitou antigas canalizações de gás fóssil, reduzindo o custo total de capital das obras e acelerando em quatro anos o cronograma original de transição ecológica.",
-                "Montadoras e indústrias de base celebraram a garantia de abastecimento contínuo de energia não fóssil a custos previsíveis, blindando o setor contra choques geopolíticos no preço do petróleo."
-              ]
+              "perfil": "Jornal diário de finanças e economia",
+              "enfoque": "A posição das chancelarias ocidentais e o modelo de governança multilateral dos recursos.",
+              "url": "https://www.ft.com/content/un-climate-finance-target-draft-agreement"
             }
           ]
         },
         {
-          "id": "2026-11-06--int--ind-stria-no-jap-o-inicia-produ-o-em-escala-d",
-          "escopo": "internacional",
-          "pais": "Japão / Global",
-          "chapeu": "Mídia Internacional Traduzida · Mobilidade e Eletroquímica",
-          "editoria": "Tecnologia",
-          "titulo": "Indústria no Japão inicia produção em escala de baterias de estado sólido com 900 km de autonomia e recarga em 10 minutos",
-          "titulo_original": "Commercial Pilot Line for All-Solid-State EV Batteries Begins Operations in Japan",
-          "texto": "Engenheiros e montadoras automotivas em Nagoya inauguraram a primeira planta piloto automatizada para fabricação seriada de baterias com eletrólitos sólidos.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em tecnologia.",
-          "resumo_visoes": "Nikkei Asia detalha a cadeia de patentes de materiais sulfetados; MIT Technology Review examina a estabilidade eletroquímica da interface com ânodos de lítio; The Wall Street Journal projeta barateamento dos veículos elétricos.",
-          "texto_completo": [
-            "Engenheiros e montadoras automotivas em Nagoya inauguraram a primeira planta piloto automatizada para fabricação seriada de baterias com eletrólitos sólidos.",
-            "Ao eliminar o líquido volátil inflamável que equipa os veículos elétricos convencionais, o dispositivo dissipa o risco de incêndios térmicos espontâneos mesmo em condições de colisão ou altas temperaturas.",
-            "Testes laboratoriais atestaram uma densidade energética de 450 Wh/kg, o que permite aos veículos atingirem autonomia real superior a 900 quilômetros com um tempo de abastecimento de apenas dez minutos.",
-            "A previsão é que os primeiros automóveis comerciais equipados com as células sólidas cheguem às concessionárias no início do próximo ciclo de lançamentos da indústria internacional."
-          ],
-          "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
-          },
-          "fontes": [
-            {
-              "fonte": "Nikkei Asia",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por Nikkei Asia",
-              "url": "https://asia.nikkei.com",
-              "titulo": "Commercial Pilot Line for All-Solid-State EV Batteries Begins Operations in Japan",
-              "autor": "Correspondentes Nikkei Asia",
-              "pontos": [
-                "Eletrólito cerâmico sulfetado elimina riscos térmicos de combustão.",
-                "Autonomia estendida acima de 900 km por ciclo de carga.",
-                "Tempo de recarga equivalente ao abastecimento tradicional de combustíveis líquidos."
-              ],
-              "citacao": "Ao eliminar o líquido volátil inflamável que equipa os veículos elétricos convencionais, o dispositivo dissipa o risco d...",
-              "texto_integral": [
-                "Engenheiros e montadoras automotivas em Nagoya inauguraram a primeira planta piloto automatizada para fabricação seriada de baterias com eletrólitos sólidos.",
-                "Ao eliminar o líquido volátil inflamável que equipa os veículos elétricos convencionais, o dispositivo dissipa o risco de incêndios térmicos espontâneos mesmo em condições de colisão ou altas temperaturas.",
-                "Testes laboratoriais atestaram uma densidade energética de 450 Wh/kg, o que permite aos veículos atingirem autonomia real superior a 900 quilômetros com um tempo de abastecimento de apenas dez minutos.",
-                "A previsão é que os primeiros automóveis comerciais equipados com as células sólidas cheguem às concessionárias no início do próximo ciclo de lançamentos da indústria internacional."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--int--espanha-aprova-plano-de-renaturaliza-o-de-v-r",
-          "escopo": "internacional",
-          "pais": "Espanha / Mediterrâneo",
-          "chapeu": "Mídia Internacional Traduzida · Adaptação Climática e Urbanismo",
-          "editoria": "Clima",
-          "titulo": "Espanha aprova plano de renaturalização de várzeas e demolição de obras irregulares após enchentes históricas",
-          "titulo_original": "Spain Formalizes Multibillion-Euro Floodplain Restoration and Urban Climate Adaptation Plan",
-          "texto": "O Conselho de Ministros espanhol aprovou formalmente um plano de reconstrução e adaptação preventiva de infraestruturas nas províncias costeiras mais fustigadas por tempestades extremas.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em clima.",
-          "resumo_visoes": "El País enfatiza a urgência de remover habitações de áreas de escoamento torrencial; The Guardian destaca a pressão popular por responsabilização governamental; Le Monde analisa as bacias hidrográficas da bacia mediterrânea.",
-          "texto_completo": [
-            "O Conselho de Ministros espanhol aprovou formalmente um plano de reconstrução e adaptação preventiva de infraestruturas nas províncias costeiras mais fustigadas por tempestades extremas.",
-            "A nova diretriz urbanística proíbe de forma terminativa qualquer nova edificação residencial ou comercial em planícies de inundação mapeadas e determina a desapropriação de condomínios situados em leitos de rios temporários.",
-            "As áreas degradadas serão transformadas em corredores ecológicos permeáveis com vegetação ripária nativa e lagos de contenção projetados para absorver enxurradas antes que atinjam áreas habitadas.",
-            "Sistemas digitais de monitoramento por satélite e radar pluviométrico emitirão avisos compulsórios em tempo real diretamente para as telas de smartphones de moradores sob risco imediato."
-          ],
-          "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
-          },
-          "fontes": [
-            {
-              "fonte": "El País",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por El País",
-              "url": "https://elpais.com/internacional",
-              "titulo": "Spain Formalizes Multibillion-Euro Floodplain Restoration and Urban Climate Adaptation Plan",
-              "autor": "Correspondentes El País",
-              "pontos": [
-                "Desapropriação de construções irregulares em planícies fluviais alagáveis.",
-                "Criação de parques de amortecimento e reflorestamento de margens de rios.",
-                "Modernização dos sistemas públicos automáticos de alerta de defesa civil."
-              ],
-              "citacao": "A nova diretriz urbanística proíbe de forma terminativa qualquer nova edificação residencial ou comercial em planícies d...",
-              "texto_integral": [
-                "O Conselho de Ministros espanhol aprovou formalmente um plano de reconstrução e adaptação preventiva de infraestruturas nas províncias costeiras mais fustigadas por tempestades extremas.",
-                "A nova diretriz urbanística proíbe de forma terminativa qualquer nova edificação residencial ou comercial em planícies de inundação mapeadas e determina a desapropriação de condomínios situados em leitos de rios temporários.",
-                "As áreas degradadas serão transformadas em corredores ecológicos permeáveis com vegetação ripária nativa e lagos de contenção projetados para absorver enxurradas antes que atinjam áreas habitadas.",
-                "Sistemas digitais de monitoramento por satélite e radar pluviométrico emitirão avisos compulsórios em tempo real diretamente para as telas de smartphones de moradores sob risco imediato."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--int--chile-oficializa-modelo-estatal-de-extra-o-di",
-          "escopo": "internacional",
-          "pais": "Chile / América Latina",
-          "chapeu": "Mídia Internacional Traduzida · Mineração Sustentável e Energia",
-          "editoria": "Economia",
-          "titulo": "Chile oficializa modelo estatal de extração direta de lítio com reinjeção de 90% da salmoura em Atacama",
-          "titulo_original": "Chile Seals Landmark Public-Private Pacts for Direct Lithium Extraction in Atacama",
-          "texto": "A Corporação Nacional do Cobre do Chile (Codelco) concluiu os contratos definitivos com operadores internacionais para a exploração industrial do lítio sob novos parâmetros de sustentabilidade hidrogeológica.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em economia.",
-          "resumo_visoes": "Financial Times destaca a segurança jurídica para fabricantes internacionais de baterias; El Mercurio analisa o protagonismo acionário da estatal Codelco; Página 12 compara a governança do lítio no Cone Sul.",
-          "texto_completo": [
-            "A Corporação Nacional do Cobre do Chile (Codelco) concluiu os contratos definitivos com operadores internacionais para a exploração industrial do lítio sob novos parâmetros de sustentabilidade hidrogeológica.",
-            "As plantas fabris implementarão a tecnologia de extração direta por resinas adsortivas, permitindo reinjetar mais de 90% da água salobra retirada do subsolo sem perdas significativas para a evaporação.",
-            "A técnica preserva as reservas aquíferas que alimentam lagoas andinas de conservação de biodiversidade e acelera o tempo de obtenção do carbonato de lítio de dezoito meses para poucas horas.",
-            "Os termos contratuais asseguram a partilha obrigatória de receitas para conselhos das comunidades indígenas locais, destinadas a projetos de energia solar e saneamento rural."
-          ],
-          "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
-          },
-          "fontes": [
-            {
-              "fonte": "Financial Times",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por Financial Times",
-              "url": "https://www.ft.com/commodities",
-              "titulo": "Chile Seals Landmark Public-Private Pacts for Direct Lithium Extraction in Atacama",
-              "autor": "Correspondentes Financial Times",
-              "pontos": [
-                "Adoção de extração direta com preservação de aquíferos subterrâneos.",
-                "Aceleração do ciclo produtivo de meses para horas com maior pureza química.",
-                "Royalties financeiros garantidos para povos indígenas do Salar de Atacama."
-              ],
-              "citacao": "As plantas fabris implementarão a tecnologia de extração direta por resinas adsortivas, permitindo reinjetar mais de 90%...",
-              "texto_integral": [
-                "A Corporação Nacional do Cobre do Chile (Codelco) concluiu os contratos definitivos com operadores internacionais para a exploração industrial do lítio sob novos parâmetros de sustentabilidade hidrogeológica.",
-                "As plantas fabris implementarão a tecnologia de extração direta por resinas adsortivas, permitindo reinjetar mais de 90% da água salobra retirada do subsolo sem perdas significativas para a evaporação.",
-                "A técnica preserva as reservas aquíferas que alimentam lagoas andinas de conservação de biodiversidade e acelera o tempo de obtenção do carbonato de lítio de dezoito meses para poucas horas.",
-                "Os termos contratuais asseguram a partilha obrigatória de receitas para conselhos das comunidades indígenas locais, destinadas a projetos de energia solar e saneamento rural."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--int--banco-dos-brics-aprova-carteira-de-us-8-bilh",
-          "escopo": "internacional",
-          "pais": "África do Sul / BRICS",
-          "chapeu": "Mídia Internacional Traduzida · Finanças Internacionais e Multipolaridade",
-          "editoria": "Diplomacia",
-          "titulo": "Banco dos BRICS aprova carteira de US$ 8 bilhões em moedas locais para saneamento e mobilidade sustentável",
-          "titulo_original": "New Development Bank Approves $8B Infrastructure Package Denominated in Member Currencies",
-          "texto": "A presidência executiva do Novo Banco de Desenvolvimento (NDB), sediado em Xangai e reunido na África do Sul, aprovou uma carteira recorde de crédito para infraestrutura sustentável em nações emergentes.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em diplomacia.",
-          "resumo_visoes": "Al Jazeera destaca a diminuição da vulnerabilidade da dívida externa nos países do Sul Global; Valor Econômico detalha concessões de ferrovias e saneamento no Brasil; Folha de S.Paulo contextualiza a expansão diplomática do bloco.",
-          "texto_completo": [
-            "A presidência executiva do Novo Banco de Desenvolvimento (NDB), sediado em Xangai e reunido na África do Sul, aprovou uma carteira recorde de crédito para infraestrutura sustentável em nações emergentes.",
-            "O pilar estrutural do pacote reside na contratação prioritária de dívida indexada às moedas soberanas dos países beneficiários, afastando o risco de insolvência por desvalorização cambial abrupta frente ao dólar.",
-            "No território brasileiro, os financiamentos cobrirão a modernização de malhas ferroviárias intermodais de grãos e obras de universalização do esgotamento sanitário em capitais do Norte e Nordeste.",
-            "A instituição reafirmou que as aprovações dispensam exigências fiscais contracionistas tradicionais de agências multilaterais do Ocidente, priorizando a sustentabilidade e a inclusão social."
-          ],
-          "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
-          },
-          "fontes": [
-            {
-              "fonte": "Al Jazeera",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por Al Jazeera",
-              "url": "https://www.aljazeera.com/economy",
-              "titulo": "New Development Bank Approves $8B Infrastructure Package Denominated in Member Currencies",
-              "autor": "Correspondentes Al Jazeera",
-              "pontos": [
-                "Financiamento de infraestrutura atrelado a moedas locais soberanas.",
-                "Proteção contra variações bruscas da taxa de câmbio internacional.",
-                "Prioridade estrita para mobilidade ferroviária limpa e saneamento público."
-              ],
-              "citacao": "O pilar estrutural do pacote reside na contratação prioritária de dívida indexada às moedas soberanas dos países benefic...",
-              "texto_integral": [
-                "A presidência executiva do Novo Banco de Desenvolvimento (NDB), sediado em Xangai e reunido na África do Sul, aprovou uma carteira recorde de crédito para infraestrutura sustentável em nações emergentes.",
-                "O pilar estrutural do pacote reside na contratação prioritária de dívida indexada às moedas soberanas dos países beneficiários, afastando o risco de insolvência por desvalorização cambial abrupta frente ao dólar.",
-                "No território brasileiro, os financiamentos cobrirão a modernização de malhas ferroviárias intermodais de grãos e obras de universalização do esgotamento sanitário em capitais do Norte e Nordeste.",
-                "A instituição reafirmou que as aprovações dispensam exigências fiscais contracionistas tradicionais de agências multilaterais do Ocidente, priorizando a sustentabilidade e a inclusão social."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-11-06--int--cons-rcio-acad-mico-internacional-disponibili",
+          "id": "fo-n-20261106n-int-07",
           "escopo": "internacional",
           "pais": "Estados Unidos / Europa",
-          "chapeu": "Mídia Internacional Traduzida · Inteligência Artificial Aberta",
+          "chapeu": "Mídia Internacional Traduzida · Tecnologia e Inteligência Artificial",
           "editoria": "Tecnologia",
-          "titulo": "Consórcio acadêmico internacional disponibiliza modelo de IA fundacional 100% aberto e auditado contra viés",
-          "titulo_original": "Open Source Consortium Releases Fully Audited Frontier AI Model for Global Research",
-          "texto": "Pesquisadores de centros universitários nos Estados Unidos, Europa e América Latina anunciaram a disponibilização pública irrestrita do modelo neural OpenFoundation, concebido como contraponto aos algoritmos fechados das big techs.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em tecnologia.",
+          "titulo": "Consórcio acadêmico internacional disponibiliza modelo de IA fundacional em código 100% aberto e auditado contra viés",
+          "resumo": "Iniciativa de universidades globais democratiza pesos neurais, bases de dados e códigos de treino para romper a dependência de plataformas proprietárias do Vale do Silício.",
           "resumo_visoes": "MIT Technology Review saúda a rastreabilidade total de dados; The Guardian enfatiza a defesa de direitos autorais e licenças públicas; Nature aponta o avanço para modelos científicos de previsão climática e farmacologia.",
           "texto_completo": [
             "Pesquisadores de centros universitários nos Estados Unidos, Europa e América Latina anunciaram a disponibilização pública irrestrita do modelo neural OpenFoundation, concebido como contraponto aos algoritmos fechados das big techs.",
@@ -17976,86 +17799,100 @@
             "Grupos de pesquisa de todo o planeta já utilizam a base aberta para desenhar catalisadores químicos ecológicos e modelar impactos da variabilidade climática com autonomia tecnológica plena."
           ],
           "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
+            "contexto": "A concentração do desenvolvimento de modelos de fronteira em poucas corporações privadas levantava preocupações de segurança cibernética e soberania científica global.",
+            "o_que_observar": "A adoção da plataforma aberta por centros de supercomputação governamentais e instituições de ensino."
           },
           "fontes": [
             {
               "fonte": "MIT Technology Review",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por MIT Technology Review",
-              "url": "https://www.technologyreview.com",
-              "titulo": "Open Source Consortium Releases Fully Audited Frontier AI Model for Global Research",
-              "autor": "Correspondentes MIT Technology Review",
-              "pontos": [
-                "Pesos, conjuntos de dados e algoritmos de otimização em código aberto.",
-                "Treinamento em literatura científica auditada sem apropriação predatória.",
-                "Acesso igualitário para laboratórios acadêmicos do Sul Global sem custos corporativos."
-              ],
-              "citacao": "O modelo teve sua arquitetura concebida sob os princípios do software livre, disponibilizando publicamente todos os hipe...",
-              "texto_integral": [
-                "Pesquisadores de centros universitários nos Estados Unidos, Europa e América Latina anunciaram a disponibilização pública irrestrita do modelo neural OpenFoundation, concebido como contraponto aos algoritmos fechados das big techs.",
-                "O modelo teve sua arquitetura concebida sob os princípios do software livre, disponibilizando publicamente todos os hiperparâmetros, os dados revisados por pares e os filtros de segurança matemática.",
-                "Especialistas em ética algorítmica realizaram auditorias independentes para eliminar dados sensíveis sem consentimento e coibir reproduções tendenciosas em tarefas de avaliação social e profissional.",
-                "Grupos de pesquisa de todo o planeta já utilizam a base aberta para desenhar catalisadores químicos ecológicos e modelar impactos da variabilidade climática com autonomia tecnológica plena."
-              ]
+              "perfil": "Revista de tecnologia do Instituto de Tecnologia de Massachusetts",
+              "enfoque": "A arquitetura aberta e a eliminação de caixas-pretas proprietárias no avanço da inteligência artificial.",
+              "url": "https://www.technologyreview.com/2026/11/06/open-source-frontier-ai-model-release/"
+            },
+            {
+              "fonte": "The Guardian",
+              "perfil": "Jornal diário internacional britânico · Seção Tecnologia",
+              "enfoque": "A reação dos laboratórios acadêmicos globais contra a concentração de poder das grandes empresas de tecnologia.",
+              "url": "https://www.theguardian.com/technology/2026/nov/06/open-source-ai-consortium-academia-breakthrough"
             }
           ]
         },
         {
-          "id": "2026-11-06--int--tribunais-de-haia-reiteram-dever-incondiciona",
+          "id": "fo-n-20261106n-int-08",
           "escopo": "internacional",
-          "pais": "Oriente Médio / Haia",
-          "chapeu": "Mídia Internacional Traduzida · Direito Humanitário e Justiça Global",
-          "editoria": "Internacional",
-          "titulo": "Tribunais de Haia reiteram dever incondicional de proteção a missões médicas e entrada de remédios em Gaza",
-          "titulo_original": "International Courts in The Hague Reaffirm Immediate Obligations to Protect Medical Convoys",
-          "texto": "Em nova deliberação colegiada, as cortes internacionais com sede no Palácio da Paz em Haia emitiram alertas formais cobrando a desobstrução imediata de corredores de suprimento médico e alimentos para civis encurralados por hostilidades armadas.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em internacional.",
-          "resumo_visoes": "Le Monde analisa a fundamentação dos juízes em tratados multilaterais; El País relata o respaldo das nações ibero-americanas à legalidade internacional; BBC World detalha o colapso estrutural de hospitais no enclave.",
+          "pais": "África do Sul / BRICS",
+          "chapeu": "Mídia Internacional Traduzida · Finanças e Multipolaridade",
+          "editoria": "Diplomacia",
+          "titulo": "Banco dos BRICS aprova carteira de US$ 8 bilhões em moedas locais para saneamento e mobilidade sustentável",
+          "resumo": "Empréstimos denominados em reais, rands e dirhams reduzem exposição a variações da taxa do dólar norte-americano em países emergentes.",
+          "resumo_visoes": "Al Jazeera destaca a diminuição da vulnerabilidade da dívida externa nos países do Sul Global; Valor Econômico detalha concessões de ferrovias e saneamento no Brasil; Folha de S.Paulo contextualiza a expansão diplomática do bloco.",
           "texto_completo": [
-            "Em nova deliberação colegiada, as cortes internacionais com sede no Palácio da Paz em Haia emitiram alertas formais cobrando a desobstrução imediata de corredores de suprimento médico e alimentos para civis encurralados por hostilidades armadas.",
-            "O documento pontua que a interrupção proposital do abastecimento de eletricidade e antibióticos para maternidades e UTIs hospitalares transgride normas peremptórias de direito humanitário de observância universal.",
-            "A deliberação contou com a manifestação diplomática de dezenas de governos que exigem o respeito irrevogável à imunidade de médicos voluntários e socorristas da Cruz Vermelha e do Crescente Vermelho.",
-            "O plenário destacou que a preservação da dignidade humana em zonas de guerra não admite relativizações operacionais e deve ser respaldada por toda a comunidade de nações."
+            "A presidência executiva do Novo Banco de Desenvolvimento (NDB), sediado em Xangai e reunido na África do Sul, aprovou uma carteira recorde de crédito para infraestrutura sustentável em nações emergentes.",
+            "O pilar estrutural do pacote reside na contratação prioritária de dívida indexada às moedas soberanas dos países beneficiários, afastando o risco de insolvência por desvalorização cambial abrupta frente ao dólar.",
+            "No território brasileiro, os financiamentos cobrirão a modernização de malhas ferroviárias intermodais de grãos e obras de universalização do esgotamento sanitário em capitais do Norte e Nordeste.",
+            "A instituição reafirmou que as aprovações dispensam exigências fiscais contracionistas tradicionais de agências multilaterais do Ocidente, priorizando a sustentabilidade e a inclusão social."
           ],
           "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
+            "contexto": "A estratégia de desdolarização do crédito internacional busca criar alternativas de liquidez para investimentos em bens públicos essenciais.",
+            "o_que_observar": "A emissão dos primeiros títulos em moedas locais nas bolsas de valores de Joanesburgo e São Paulo."
           },
           "fontes": [
             {
-              "fonte": "Le Monde",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por Le Monde",
-              "url": "https://www.lemonde.fr/international",
-              "titulo": "International Courts in The Hague Reaffirm Immediate Obligations to Protect Medical Convoys",
-              "autor": "Correspondentes Le Monde",
-              "pontos": [
-                "Proteção irrestrita a hospitais civis e equipes médicas em zonas conflagradas.",
-                "Entrada desimpedida de anestésicos, vacinas e insumos de tratamento de água.",
-                "Reafirmação do primado das Convenções de Genebra perante a comunidade internacional."
-              ],
-              "citacao": "O documento pontua que a interrupção proposital do abastecimento de eletricidade e antibióticos para maternidades e UTIs...",
-              "texto_integral": [
-                "Em nova deliberação colegiada, as cortes internacionais com sede no Palácio da Paz em Haia emitiram alertas formais cobrando a desobstrução imediata de corredores de suprimento médico e alimentos para civis encurralados por hostilidades armadas.",
-                "O documento pontua que a interrupção proposital do abastecimento de eletricidade e antibióticos para maternidades e UTIs hospitalares transgride normas peremptórias de direito humanitário de observância universal.",
-                "A deliberação contou com a manifestação diplomática de dezenas de governos que exigem o respeito irrevogável à imunidade de médicos voluntários e socorristas da Cruz Vermelha e do Crescente Vermelho.",
-                "O plenário destacou que a preservação da dignidade humana em zonas de guerra não admite relativizações operacionais e deve ser respaldada por toda a comunidade de nações."
-              ]
+              "fonte": "Al Jazeera English",
+              "perfil": "Rede internacional de notícias independente",
+              "enfoque": "A independência financeira dos países emergentes frente às oscilações das taxas do Federal Reserve.",
+              "url": "https://www.aljazeera.com/economy/2026/11/6/ndb-brics-bank-local-currency-loans-approval"
+            },
+            {
+              "fonte": "Valor Econômico",
+              "perfil": "Jornal diário de finanças",
+              "enfoque": "O detalhamento dos contratos assinados para obras de saneamento e transporte no Brasil.",
+              "url": "https://valor.globo.com/financas/noticia/2026/11/06/ndb-banco-brics-financiamentos-brasil-moedas-locais.ghtml"
             }
           ]
         },
         {
-          "id": "2026-11-06--int--pr-mio-goncourt-2026-coroa-romance-memorial-s",
+          "id": "fo-n-20261106n-int-09",
+          "escopo": "internacional",
+          "pais": "Alemanha / Europa",
+          "chapeu": "Mídia Internacional Traduzida · Energia e Indústria",
+          "editoria": "Clima",
+          "titulo": "Alemanha conclui primeiros 1.200 km da malha dorsal de hidrogênio verde para salvar parques industriais pesados",
+          "resumo": "Rede dedicada de dutos conectará portos do Mar do Norte aos complexos siderúrgicos e químicos do Reno, viabilizando redução drástica de emissões industriais.",
+          "resumo_visoes": "Financial Times enfatiza a competitividade global da indústria pesada alemã; Le Monde analisa a integração com corredores limpos franceses e espanhóis; El País projeta as exportações de hidrogênio do Mediterrâneo.",
+          "texto_completo": [
+            "A República Federal da Alemanha formalizou a entrega do primeiro trecho da 'Espinha Dorsal de Hidrogênio', a maior infraestrutura de transporte de moléculas sustentáveis do continente europeu.",
+            "O gasoduto interliga terminais portuários de importação de hidrogênio verde e amônia renovável às grandes usinas químicas e altos-fornos descarbonizados do vale do Ruhr.",
+            "A tecnologia reaproveitou antigas canalizações de gás fóssil, reduzindo o custo total de capital das obras e acelerando em quatro anos o cronograma original de transição ecológica.",
+            "Montadoras e indústrias de base celebraram a garantia de abastecimento contínuo de energia não fóssil a custos previsíveis, blindando o setor contra choques geopolíticos no preço do petróleo."
+          ],
+          "aprofundamento": {
+            "contexto": "A viabilidade econômica do hidrogênio como vetor energético depende de redes de dutos de grande porte capazes de operar em altíssima pressão.",
+            "o_que_observar": "A conexão da malha alemã com os gasodutos transfronteiriços da França e da Holanda."
+          },
+          "fontes": [
+            {
+              "fonte": "Financial Times",
+              "perfil": "Jornal diário de economia e negócios",
+              "enfoque": "A estratégia do governo alemão para garantir energia limpa a custos competitivos para a manufatura.",
+              "url": "https://www.ft.com/content/germany-hydrogen-grid-inauguration-industry"
+            },
+            {
+              "fonte": "Le Monde",
+              "perfil": "Jornal diário de referência na França",
+              "enfoque": "Os impactos na descarbonização das cadeias siderúrgicas transfronteiriças da Europa.",
+              "url": "https://www.lemonde.fr/economie/article/2026/11/06/l-allemagne-ouvre-son-reseau-de-transport-d-hydrogene_6234570_3234.html"
+            }
+          ]
+        },
+        {
+          "id": "fo-n-20261106n-int-10",
           "escopo": "internacional",
           "pais": "França / Literatura",
-          "chapeu": "Mídia Internacional Traduzida · Artes e Letras Internacionais",
+          "chapeu": "Mídia Internacional Traduzida · Cultura e Livros",
           "editoria": "Cultura",
           "titulo": "Prêmio Goncourt 2026 coroa romance memorialístico que celebra a saga de operários na construção de Paris",
-          "titulo_original": "Prix Goncourt 2026 Honors Sweeping Novel on Immigrant Builders of Postwar France",
-          "texto": "A Academia Goncourt anunciou a concessão de sua tradicional láurea literária ao romance 'Les Bâtisseurs de l'Ombre', uma das ficções contemporâneas mais celebradas pela crítica francófona no ano.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em cultura.",
+          "resumo": "Obra de Mehdi Charef resgata com lirismo e rigor histórico as trajetórias invisíveis de pedreiros e carpinteiros estrangeiros que ergueram os bairros e pontes da capital.",
           "resumo_visoes": "Le Monde celebra a vitória de uma literatura humanista e proletária; Libération analisa a prosa fragmentária repleta de cadernos de memórias; The Guardian saúda a universalidade da narrativa sobre imigração e dignidade.",
           "texto_completo": [
             "A Academia Goncourt anunciou a concessão de sua tradicional láurea literária ao romance 'Les Bâtisseurs de l'Ombre', uma das ficções contemporâneas mais celebradas pela crítica francófona no ano.",
@@ -18064,94 +17901,61 @@
             "Tradutores de mais de trinta editoras ao redor do mundo já iniciaram os preparativos para o lançamento da obra nos mercados editoriais internacionais, com edição brasileira prevista para o primeiro semestre de 2027."
           ],
           "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
+            "contexto": "O Prêmio Goncourt é a distinção literária de maior prestígio na língua francesa, impulsionando tiragens de centenas de milhares de exemplares.",
+            "o_que_observar": "O anúncio das editoras brasileiras responsáveis pela tradução e publicação do romance no país."
           },
           "fontes": [
             {
               "fonte": "Le Monde des Livres",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por Le Monde des Livres",
-              "url": "https://www.lemonde.fr/livres",
-              "titulo": "Prix Goncourt 2026 Honors Sweeping Novel on Immigrant Builders of Postwar France",
-              "autor": "Correspondentes Le Monde des Livres",
-              "pontos": [
-                "Resgate da dignidade e da memória histórica da classe trabalhadora migrante.",
-                "Prosa comovente aclamada de forma consensual pela crítica literária europeia.",
-                "Lançamento confirmado nos principais catálogos editoriais da América Latina."
-              ],
-              "citacao": "A narrativa entrelaça os destinos de famílias de trabalhadores da Península Ibérica e do norte da África que, no período...",
-              "texto_integral": [
-                "A Academia Goncourt anunciou a concessão de sua tradicional láurea literária ao romance 'Les Bâtisseurs de l'Ombre', uma das ficções contemporâneas mais celebradas pela crítica francófona no ano.",
-                "A narrativa entrelaça os destinos de famílias de trabalhadores da Península Ibérica e do norte da África que, no período da reconstrução pós-guerra, moldaram o concreto dos túneis e conjuntos habitacionais parisienses.",
-                "O autor equilibra uma linguagem poética sensível com relatos documentais da vida nas periferias fabris, resgatando a fraternidade cotidiana e o esforço anônimo que sustenta as metrópoles modernas.",
-                "Tradutores de mais de trinta editoras ao redor do mundo já iniciaram os preparativos para o lançamento da obra nos mercados editoriais internacionais, com edição brasileira prevista para o primeiro semestre de 2027."
-              ]
+              "perfil": "Suplemento literário do jornal Le Monde",
+              "enfoque": "A crítica elogiosa ao estilo lírico e memorialístico da narrativa operária premiada.",
+              "url": "https://www.lemonde.fr/livres/article/2026/11/06/prix-goncourt-2026-mehdi-charef-consacre_6234572_3260.html"
+            },
+            {
+              "fonte": "The Guardian",
+              "perfil": "Jornal diário britânico · Seção Livros",
+              "enfoque": "A repercussão da premiação internacional e os preparativos para a versão em língua inglesa.",
+              "url": "https://www.theguardian.com/books/2026/nov/06/prix-goncourt-2026-winner-french-fiction"
             }
           ]
         },
         {
-          "id": "2026-11-06--int--secretariado-da-onu-clima-formaliza-minuta-pa",
+          "id": "fo-n-20261106n-int-11",
           "escopo": "internacional",
-          "pais": "Global / Clima",
-          "chapeu": "Mídia Internacional Traduzida · Diplomacia Ambiental e Financiamento",
-          "editoria": "Clima",
-          "titulo": "Secretariado da ONU Clima formaliza minuta para meta global de US$ 300 bilhões em doações diretas a nações vulneráveis",
-          "titulo_original": "UN Climate Secretariat Issues Draft for $300B Annual Non-Debt Climate Finance Facility",
-          "texto": "A Convenção-Quadro das Nações Unidas sobre Mudança do Clima oficializou o rascunho de negociação para a Nova Meta Coletiva de Financiamento Climático, eixo medular da governança planetária de sustentabilidade.",
-          "por_que_importa": "O fato altera diretamente a geopolítica internacional, os fluxos mundiais de comércio e as diretrizes regulatórias globais em clima.",
-          "resumo_visoes": "The Guardian destaca a mobilização das nações costeiras e insulares; Financial Times analisa as negociações entre o G7 e a diplomacia de Belém da COP30; El País aponta a centralidade da justiça climática para o cumprimento do Acordo de Paris.",
+          "pais": "Japão / Global",
+          "chapeu": "Mídia Internacional Traduzida · Mobilidade Sustentável",
+          "editoria": "Tecnologia",
+          "titulo": "Indústria no Japão inicia produção em escala de baterias de estado sólido com 900 km de autonomia e recarga em 10 minutos",
+          "resumo": "Nova geração de acumuladores substitui eletrólitos líquidos inflamáveis por cerâmica sulfetada, eliminando riscos de superaquecimento e dobrando densidade de energia.",
+          "resumo_visoes": "Nikkei Asia detalha a cadeia de patentes de materiais sulfetados; MIT Technology Review examina a estabilidade eletroquímica da interface com ânodos de lítio; The Wall Street Journal projeta barateamento dos veículos elétricos.",
           "texto_completo": [
-            "A Convenção-Quadro das Nações Unidas sobre Mudança do Clima oficializou o rascunho de negociação para a Nova Meta Coletiva de Financiamento Climático, eixo medular da governança planetária de sustentabilidade.",
-            "O texto consensual fixa o piso de aportes mandatórios anuais por economias industrializadas ricas em US$ 300 bilhões, direcionados prioritariamente à contenção do avanço do mar e recomposição de bacias florestais tropicais.",
-            "A grande vitória do bloco de países em desenvolvimento foi o veto explícito a operações de crédito bancário tradicional que agravem a carga da dívida soberana de povos já fustigados por desastres climáticos.",
-            "Negociadores brasileiros apontaram que o estabelecimento de parâmetros financeiros transparentes é a única via viável para viabilizar as metas de descarbonização até o encerramento da década."
+            "Engenheiros e montadoras automotivas em Nagoya inauguraram a primeira planta piloto automatizada para fabricação seriada de baterias com eletrólitos sólidos.",
+            "Ao eliminar o líquido volátil inflamável que equipa os veículos elétricos convencionais, o dispositivo dissipa o risco de incêndios térmicos espontâneos mesmo em condições de colisão ou altas temperaturas.",
+            "Testes laboratoriais atestaram uma densidade energética de 450 Wh/kg, o que permite aos veículos atingirem autonomia real superior a 900 quilômetros com um tempo de abastecimento de apenas dez minutos.",
+            "A previsão é que os primeiros automóveis comerciais equipados com as células sólidas cheguem às concessionárias no início do próximo ciclo de lançamentos da indústria internacional."
           ],
           "aprofundamento": {
-            "contexto": "Cobertura dos principais jornais internacionais traduzida na íntegra com rigor analítico pela redação da Faixa Oculta.",
-            "o_que_observar": "As próximas reuniões multilaterais, cotações de mercado e votações em parlamentos estrangeiros."
+            "contexto": "As baterias de estado sólido são consideradas a tecnologia definitiva para consolidar a eletrificação do transporte terrestre em escala global.",
+            "o_que_observar": "A redução do custo unitário do quilowatt-hora nas linhas de produção e a homologação pelas agências de segurança veicular."
           },
           "fontes": [
             {
-              "fonte": "The Guardian",
-              "perfil": "Veículo internacional de referência",
-              "enfoque": "Apuração global conduzida por The Guardian",
-              "url": "https://www.theguardian.com/environment",
-              "titulo": "UN Climate Secretariat Issues Draft for $300B Annual Non-Debt Climate Finance Facility",
-              "autor": "Correspondentes The Guardian",
-              "pontos": [
-                "Piso mandatório anual de US$ 300 bilhões financiado pelos maiores emissores históricos.",
-                "Repasses estruturados como doações diretas sem endividamento comercial.",
-                "Aporte imediato para obras costeiras defensivas e conservação de florestas tropicais."
-              ],
-              "citacao": "O texto consensual fixa o piso de aportes mandatórios anuais por economias industrializadas ricas em US$ 300 bilhões, di...",
-              "texto_integral": [
-                "A Convenção-Quadro das Nações Unidas sobre Mudança do Clima oficializou o rascunho de negociação para a Nova Meta Coletiva de Financiamento Climático, eixo medular da governança planetária de sustentabilidade.",
-                "O texto consensual fixa o piso de aportes mandatórios anuais por economias industrializadas ricas em US$ 300 bilhões, direcionados prioritariamente à contenção do avanço do mar e recomposição de bacias florestais tropicais.",
-                "A grande vitória do bloco de países em desenvolvimento foi o veto explícito a operações de crédito bancário tradicional que agravem a carga da dívida soberana de povos já fustigados por desastres climáticos.",
-                "Negociadores brasileiros apontaram que o estabelecimento de parâmetros financeiros transparentes é a única via viável para viabilizar as metas de descarbonização até o encerramento da década."
-              ]
+              "fonte": "Nikkei Asia",
+              "perfil": "Jornal financeiro e de tecnologia da Ásia",
+              "enfoque": "O cronograma comercial das montadoras japonesas e os acordos de fornecimento com frotistas.",
+              "url": "https://asia.nikkei.com/Business/Automobiles/Japan-solid-state-battery-commercial-launch"
+            },
+            {
+              "fonte": "MIT Technology Review",
+              "perfil": "Publicação de tecnologia avançada",
+              "enfoque": "Os avanços na ciência de materiais para fabricação de cerâmicas sulfetadas flexíveis.",
+              "url": "https://www.technologyreview.com/2026/11/06/solid-state-batteries-ev-charging-breakthrough/"
             }
           ]
         }
       ],
-      "agenda": [
-        {
-          "quando": "09h00",
-          "o_que": "Acompanhamento das cotações de mercado e indicadores do Banco Central."
-        },
-        {
-          "quando": "14h30",
-          "o_que": "Sessões deliberativas no Congresso Nacional e tribunais superiores."
-        },
-        {
-          "quando": "18h00",
-          "o_que": "Balanço das apurações do dia e edição da noite da Faixa Oculta."
-        }
-      ],
-      "audio": "audios/boletim_2026-11-06-noite.mp3",
-      "audio_duracao": "21:33",
-      "audio_tamanho": 7758288,
+      "audio_duracao": "4:38",
+      "audio_tamanho": 2231527,
       "audio_titulo": "Boletim em Áudio · 6 de novembro de 2026, edição da noite"
     }
   },
