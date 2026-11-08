@@ -58,7 +58,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/revista.json index.html pagina.html audios/ capas/
+          git add data/ index.html pagina.html audios/ capas/
           git commit -m "Atualização editorial automatizada na nuvem [skip ci]" || echo "Nenhuma alteração para commitar"
           git fetch origin main
           git rebase -X ours origin/main || (git rebase --abort || true; git merge -X ours origin/main --no-edit)

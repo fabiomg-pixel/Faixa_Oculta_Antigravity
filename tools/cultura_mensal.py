@@ -966,12 +966,65 @@ def montar_cultura_novembro_2026():
 
 
 def main():
-    print("=== VERIFICANDO REVISTA CULTURAL MENSAL (NOVEMBRO 2026) ===")
+    agora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
+    mes_iso = agora.strftime("%Y-%m")
+    print(f"=== VERIFICANDO REVISTA CULTURAL MENSAL ({mes_iso}) ===")
     revista_path = "data/revista.json"
     with open(revista_path, "r", encoding="utf-8") as f:
         db = json.load(f)
 
     forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
+
+    # Para meses posteriores a 2026-11 (ex: 2026-12 em diante), gera a safra dinâmica via coletor_cultural_v2
+    if mes_iso > "2026-11":
+        if mes_iso in db.get("edicoes", {}) and not forcar:
+            print(f"Edição cultural {mes_iso} já publicada e íntegra.")
+            return
+        try:
+            from tools.coletor_cultural_v2 import compilar_pacote_cultural_v2
+        except ImportError:
+            from coletor_cultural_v2 import compilar_pacote_cultural_v2
+        pacote = compilar_pacote_cultural_v2(mes_iso, baixar_capas=True)
+        ed_base = db.get("edicoes", {}).get("2026-11", {})
+        cine_base = db.get("cine_edicoes", {}).get("2026-11", {})
+        livro_base = db.get("livro_edicoes", {}).get("2026-11", {})
+        db.setdefault("edicoes", {})[mes_iso] = {
+            **ed_base,
+            "data": f"{mes_iso}-01",
+            "numero": int(ed_base.get("numero", 2)) + 1,
+            "titulo": f"Edição Mensal · {mes_iso}",
+        }
+        db.setdefault("cine_edicoes", {})[mes_iso] = {
+            **cine_base,
+            "data": f"{mes_iso}-01",
+            "numero": int(cine_base.get("numero", 2)) + 1,
+            "titulo": f"Cinema do Mês · {mes_iso}",
+        }
+        db.setdefault("livro_edicoes", {})[mes_iso] = {
+            **livro_base,
+            "data": f"{mes_iso}-01",
+            "numero": int(livro_base.get("numero", 2)) + 1,
+            "titulo": f"Livros do Mês · {mes_iso}",
+        }
+        for m in pacote.get("musica", []):
+            slug = re.sub(r"[^a-z0-9]+", "-", f"{m.get('artista','')}-{m.get('album','')}".lower()).strip("-")[:48]
+            m["edicao"] = mes_iso
+            db.setdefault("itens", {})[f"{mes_iso}--{slug}"] = m
+        for c in pacote.get("cinema", []):
+            slug = re.sub(r"[^a-z0-9]+", "-", c.get("titulo", "").lower()).strip("-")[:48]
+            c["edicao"] = mes_iso
+            db.setdefault("cine_itens", {})[f"{mes_iso}--{slug}"] = c
+        for l in pacote.get("livros", []):
+            slug = re.sub(r"[^a-z0-9]+", "-", l.get("titulo", "").lower()).strip("-")[:48]
+            l["edicao"] = mes_iso
+            db.setdefault("livro_itens", {})[f"{mes_iso}--{slug}"] = l
+        if pacote.get("agenda", {}).get("eventos"):
+            db.setdefault("agenda", {}).setdefault("atual", {})["eventos"] = pacote["agenda"]["eventos"]
+        with open(revista_path, "w", encoding="utf-8") as f:
+            json.dump(db, f, ensure_ascii=False, indent=2)
+        print(f"=== SUCESSO: Cultura Mensal Dinâmica ({mes_iso}) gerada via Coletor Cultural v2! ===")
+        return
+
     ed_atual = db.get("edicoes", {}).get("2026-11", {})
     agenda_atual = db.get("agenda", {}).get("atual", {}).get("eventos", [])
     tem_bandas_detalhadas = any(
@@ -980,13 +1033,13 @@ def main():
     )
 
     # Se a edição de 2026-11 já está completa com Retrato de Autor e Agenda detalhada, preserva integralmente
-    if ed_atual.get("retrato_autor") and tem_bandas_detalhadas and not forcar:
+    if (ed_atual.get("destaque_autor") or ed_atual.get("retrato_autor")) and tem_bandas_detalhadas and not forcar:
         print("Edição cultural 2026-11 e Agenda detalhada com bandas já estão completas e íntegras. Nada a sobrescrever.")
         return
 
     # Preserva estado rico antes de eventual atualização
     agenda_salva = agenda_atual if tem_bandas_detalhadas else None
-    ed_musica_salva = ed_atual if ed_atual.get("retrato_autor") else None
+    ed_musica_salva = ed_atual if (ed_atual.get("destaque_autor") or ed_atual.get("retrato_autor")) else None
     ed_cine_salva = db.get("cine_edicoes", {}).get("2026-11", {})
     ed_livro_salva = db.get("livro_edicoes", {}).get("2026-11", {})
     itens_salvos = {col: dict(db.get(col, {})) for col in ("itens", "cine_itens", "livro_itens")}
@@ -1001,12 +1054,12 @@ def main():
     with open(revista_path, "r", encoding="utf-8") as f:
         db = json.load(f)
 
-    # Restaurar enriquecimentos (retrato_autor, analises_criticas, agenda com bandas) para nunca regredir
+    # Restaurar enriquecimentos (destaque_autor / retrato_autor, analises_criticas, agenda com bandas) para nunca regredir
     if ed_musica_salva:
         db.setdefault("edicoes", {})["2026-11"] = ed_musica_salva
-    if ed_cine_salva.get("retrato_autor"):
+    if ed_cine_salva.get("destaque_autor") or ed_cine_salva.get("retrato_autor"):
         db.setdefault("cine_edicoes", {})["2026-11"] = ed_cine_salva
-    if ed_livro_salva.get("retrato_autor"):
+    if ed_livro_salva.get("destaque_autor") or ed_livro_salva.get("retrato_autor"):
         db.setdefault("livro_edicoes", {})["2026-11"] = ed_livro_salva
     for col, mapa_ant in itens_salvos.items():
         for k, v_ant in mapa_ant.items():

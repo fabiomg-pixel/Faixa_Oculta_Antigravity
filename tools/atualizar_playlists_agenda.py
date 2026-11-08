@@ -254,10 +254,24 @@ def executar_atualizacao(modo="auto"):
     atualizou_semana = False
     atualizou_trinta = False
 
-    deve_atualizar_semana = modo in ("forcar", "semana") or not semana_atual
-    deve_atualizar_trinta = modo in ("forcar", "mensal") or not trinta_atual
+    hoje = agora.date()
+    intervalo_sem_esperado = f"{dt_sem_inicio.isoformat()} a {dt_sem_fim.isoformat()}"
+    intervalo_tri_esperado = f"{dt_tri_inicio.isoformat()} a {dt_tri_fim.isoformat()}"
+
+    deve_atualizar_semana = (
+        modo in ("forcar", "semana")
+        or not semana_atual
+        or (modo == "auto" and (hoje.weekday() == 0 or semana_atual.get("intervalo") != intervalo_sem_esperado))
+    )
+    deve_atualizar_trinta = (
+        modo in ("forcar", "mensal")
+        or not trinta_atual
+        or (modo == "auto" and (hoje.day == 1 or trinta_atual.get("intervalo") != intervalo_tri_esperado))
+    )
 
     if deve_atualizar_semana:
+        if semana_atual and semana_atual.get("intervalo") != intervalo_sem_esperado:
+            arquivar_se_necessario(anteriores_filtrados, semana_atual)
         print(f"Compilando playlist SEMANAL REAL ({dt_sem_inicio.strftime('%d/%m')} a {dt_sem_fim.strftime('%d/%m')})...")
         artistas_semana = extrair_artistas_periodo(eventos, dt_sem_inicio, dt_sem_fim)
         nome_semana = f"Radar Rio {dt_sem_inicio.strftime('%d/%m')} a {dt_sem_fim.strftime('%d/%m')}"
@@ -267,7 +281,7 @@ def executar_atualizacao(modo="auto"):
 
         playlists["semana"] = {
             "artistas": artistas_semana,
-            "intervalo": f"{dt_sem_inicio.isoformat()} a {dt_sem_fim.isoformat()}",
+            "intervalo": intervalo_sem_esperado,
             "nome": nome_semana,
             "nomePedido": nome_pedido,
             "obs": f"Shows no Rio reunindo {len(artistas_semana)} atrações da semana em áudio integral.",
@@ -278,6 +292,8 @@ def executar_atualizacao(modo="auto"):
         atualizou_semana = True
 
     if deve_atualizar_trinta:
+        if trinta_atual and trinta_atual.get("intervalo") != intervalo_tri_esperado:
+            arquivar_se_necessario(anteriores_filtrados, trinta_atual)
         nome_mes = MESES_PT.get(dt_tri_inicio.month, "")
         print(f"Compilando playlist MENSAL REAL ({nome_mes} {dt_tri_inicio.year})...")
         artistas_trinta = extrair_artistas_periodo(eventos, dt_tri_inicio, dt_tri_fim)
@@ -288,7 +304,7 @@ def executar_atualizacao(modo="auto"):
 
         playlists["trinta"] = {
             "artistas": artistas_trinta,
-            "intervalo": f"{dt_tri_inicio.isoformat()} a {dt_tri_fim.isoformat()}",
+            "intervalo": intervalo_tri_esperado,
             "nome": nome_trinta,
             "nomePedido": nome_pedido,
             "obs": f"Panorama completo do mês de {nome_mes} no Rio com {len(artistas_trinta)} bandas e artistas.",

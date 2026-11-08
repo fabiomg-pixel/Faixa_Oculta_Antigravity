@@ -176,7 +176,7 @@ def executar_localmente(turno):
     log("Orquestrador local concluiu com sucesso! Commitando e publicando no GitHub Pages...")
 
     # 3. Git add, commit, sync e push resiliente
-    subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "add", "data/revista.json", "index.html", "pagina.html", "audios/", "capas/"], check=False)
+    subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "add", "data/", "index.html", "pagina.html", "audios/", "capas/"], check=False)
     subprocess.run(
         [GIT_BIN, "-C", WORKSPACE_DIR, "commit", "-m", f"Atualização editorial executada localmente no Mac ({turno}) [skip ci]"],
         check=False

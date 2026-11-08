@@ -349,19 +349,19 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
 
 ---
 
-## 22. Ferramentas e Scripts de Suporte
+## 22. Arquitetura v2 e Ferramentas de Automação (`tools/`)
 
-Ao manipular a base ou realizar manutenções, utilize os utilitários já homologados em `tools/`:
+Ao manipular a base ou executar atualizações, utilize o pipeline modular v2 em `tools/`:
 
 | Script | Função Principal |
 | :--- | :--- |
-| `tools/processar_jornais_beeper.py` | Consulta, download automatizado via API local e extração de texto de jornais impressos do Beeper. |
-| `tools/varredura_cultural_online.py` | Apuração em tempo real de novos filmes, álbuns e livros via APIs externas (anti-cutoff). |
-| `tools/popular_resenhas_completas.py` | Geração de resenhas críticas densas de 4 parágrafos e erradicação de placeholders. |
-| `tools/gerar_analises_criticas_2026_11.py` | Geração de 2 a 3 análises críticas de veículos especializados por obra (música, cinema e livros). |
-| `tools/gerar_edicoes_diarias.py` | Estruturação e injeção de edições com paridade estrita (11 nacionais + 11 internacionais traduzidas). |
-| `tools/atualizar_radar_edicoes.py` | Mapeamento de artistas para Spotify/YouTube e detalhamento da Agenda do Rio. |
-| `tools/atualizar_playlists_agenda.py` | Atualização automatizada das playlists da agenda (semanal na segunda e mensal no dia 01), com arquivamento de histórico. |
-| `tools/atualizar_filtros_convite.py` | Injeção do modal de convite compartilhável e botões da agenda em `pagina.html` e `index.html`. |
-| `tools/gerar_audio_boletim.py` | Síntese de áudio da notícia completa via `edge-tts` (pt-BR-AntonioNeural) e fallback local. |
-| `tools/orquestrador_nuvem.py` / `sentinela_boletim.py` | Orquestração periódica matinal e noturna das edições. |
+| `tools/orquestrador_nuvem.py` / `sentinela_boletim.py` | Orquestração central de 8 estágios (Boletim -> Jornais Beeper -> Áudio -> Revista Semanal -> Cultura Mensal -> Playlists -> Sharding v2 -> Quality Gate). |
+| `tools/gemini_client.py` | Cliente unificado para **Gemini 4 Argon (`gemini-4-argon`)** e **Gemini 3.8 Flash (`gemini-3.8-flash`)** com contexto SSL compatível com Python 3.14 macOS e fallback determinístico resiliente. |
+| `tools/boletim_nuvem.py` | Apuração diária (manhã `< 17h` e noite `>= 17h`) de 11 notícias nacionais + 11 internacionais traduzidas, usando `<content:encoded>`, POX RSS (*O Globo, Valor, JOTA, Nexo, DW*) e deduplicação entre turnos. |
+| `tools/extrator_pdf_layout_v2.py` & `tools/processar_jornais_beeper.py` | Extração Layout-Aware (`page.get_text("dict")` por tamanho de fonte na capa + `get_text("blocks")` por colunas + Apple Vision OCR bilingue `pt-BR`/`en-US`) para diários (*Folha, Estadão, O Globo, Valor, NYT, FT, WaPo, Guardian, Times UK*) e semanais (*The Economist, Piauí, CartaCapital, Veja Rio, NYTBR*). |
+| `tools/coletor_cultural_v2.py` | Coleta ao vivo de safras de Música (*Pitchfork, Stereogum, BrooklynVegan, The Quietus, Hits Perdidos, TMDQA* + Deezer/iTunes API), Cinema (*AdoroCinema, Guardian Film, IndieWire, Letterboxd, Cinética*), Livros (*Quatro Cinco Um, Rascunho, NYT Books, LitHub*) e 12 fontes da Agenda do Rio. |
+| `tools/revista_semanal.py` & `tools/cultura_mensal.py` | Compiladores semanais (quintas à noite) e mensais (dia 01) dinâmicos, sem travamento em datas passadas. |
+| `tools/atualizar_playlists_agenda.py` | Atualização automatizada das playlists da agenda (semanal na segunda-feira e mensal no dia 01), com arquivamento de histórico. |
+| `tools/gerar_audio_boletim.py` | Síntese de áudio da edição completa via `edge-tts` (`pt-BR-AntonioNeural`) com `--dia <turno_id>`. |
+| `tools/particionar_dados_v2.py` | Particionamento em `data/boot.json` (`< 150 KB` para carregamento instantâneo) + shards em `data/dias/`, `data/semanas/` e `data/cultura/`. |
+| `tools/validar_edicao.py` | Quality Gate automatizado que valida zero notas em língua estrangeira, diversidade de veículos, zero templates, 100% de capas e 3+ parágrafos de crítica antes do commit. |

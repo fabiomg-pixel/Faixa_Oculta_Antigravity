@@ -133,23 +133,68 @@ def log(msg):
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] [BeeperPress] {msg}", flush=True)
 
 
+def _obter_gemini_key():
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        for env_path in [os.path.expanduser("~/.faixaoculta/.env"), os.path.expanduser("~/.env")]:
+            if os.path.exists(env_path):
+                try:
+                    with open(env_path, "r", encoding="utf-8") as f:
+                        for line in f:
+                            if line.strip().startswith("GEMINI_API_KEY="):
+                                api_key = line.strip().split("=", 1)[1].strip().strip('"').strip("'")
+                                break
+                except Exception:
+                    pass
+            if api_key:
+                break
+    return api_key
+
+
 def traduzir_pt(texto):
-    """Traduz textos de jornais internacionais para o português culto."""
+    """Traduz textos de jornais internacionais para o português culto com fallback Gemini (gemini-4-argon / gemini-3.8-flash)."""
     if not texto or not texto.strip():
         return texto
+    texto_limpo = texto.strip()
+    ctx = ssl._create_unverified_context()
     try:
-        ctx = ssl.create_default_context()
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-        q = urllib.parse.quote(texto[:1800])
+        q = urllib.parse.quote(texto_limpo[:1800])
         url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=pt&dt=t&q={q}"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=8, context=ctx) as resp:
             data = json.loads(resp.read().decode("utf-8"))
             partes = [seg[0] for seg in data[0] if seg and seg[0]]
-            return "".join(partes).strip()
+            trad = "".join(partes).strip()
+            if trad and trad.lower() != texto_limpo.lower():
+                return trad
     except Exception:
-        return texto
+        pass
+
+    api_key = _obter_gemini_key()
+    if api_key:
+        for modelo_gemini in ("gemini-4-argon", "gemini-3.8-flash"):
+            try:
+                g_url = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo_gemini}:generateContent?key={api_key}"
+                payload = {
+                    "contents": [{
+                        "parts": [{
+                            "text": f"Traduza fielmente o seguinte texto jornalístico para o português culto do Brasil, retornando apenas a tradução direta sem comentários:\n\n{texto_limpo[:2500]}"
+                        }]
+                    }]
+                }
+                req_g = urllib.request.Request(
+                    g_url,
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers={"Content-Type": "application/json"}
+                )
+                with urllib.request.urlopen(req_g, timeout=12, context=ctx) as r_g:
+                    res_g = json.loads(r_g.read().decode("utf-8"))
+                    cand_txt = res_g.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "").strip()
+                    if cand_txt:
+                        return cand_txt
+            except Exception:
+                continue
+    return texto_limpo
 
 
 def get_access_token():
@@ -310,7 +355,7 @@ def download_file(src_url):
         return clean_path
 
 
-def extract_text_from_pdf(pdf_path, max_pages=15):
+def extract_text_from_pdf(pdf_path, max_pages=15, escopo="nacional"):
     """Extrai texto do PDF usando PyMuPDF; se for imagem pura, aplica OCR nativo Apple Vision."""
     import fitz
 
@@ -320,6 +365,7 @@ def extract_text_from_pdf(pdf_path, max_pages=15):
 
     results = []
     needs_ocr = False
+    manchete_font = None
 
     for page_idx in range(pages_to_read):
         page = doc[page_idx]
@@ -327,10 +373,30 @@ def extract_text_from_pdf(pdf_path, max_pages=15):
         if page_idx == 0 and len(txt.strip()) < 50:
             needs_ocr = True
             break
+        if page_idx == 0:
+            try:
+                d_info = page.get_text("dict")
+                candidatos_fonte = []
+                for b in d_info.get("blocks", []):
+                    for l in b.get("lines", []):
+                        spans = l.get("spans", [])
+                        if not spans:
+                            continue
+                        max_sz = max(s.get("size", 0) for s in spans)
+                        txt_l = " ".join(s.get("text", "").strip() for s in spans).strip()
+                        txt_l = limpar_linha_jornal(txt_l)
+                        if txt_l and len(txt_l) >= 18 and txt_l.count(" ") >= 2:
+                            candidatos_fonte.append((max_sz, txt_l))
+                if candidatos_fonte:
+                    candidatos_fonte.sort(key=lambda x: x[0], reverse=True)
+                    manchete_font = candidatos_fonte[0][1]
+            except Exception:
+                pass
         if len(txt.strip()) >= 80:
             results.append({
                 "pagina": page_idx + 1,
-                "texto": txt
+                "texto": txt,
+                "manchete_font": manchete_font if page_idx == 0 else None
             })
 
     if not needs_ocr and len(results) > 0:
@@ -338,10 +404,12 @@ def extract_text_from_pdf(pdf_path, max_pages=15):
             "metodo": "digital_text",
             "total_paginas": total_pages,
             "paginas_lidas": len(results),
+            "manchete_font": manchete_font,
             "conteudo": results
         }
 
     # Se precisa de OCR, usa Apple Vision nativo via Swift
+    ocr_lang = "en-US" if escopo == "internacional" else "pt-BR"
     ocr_results = []
     swift_script = """
 import Vision
@@ -364,7 +432,7 @@ let request = VNRecognizeTextRequest { (request, error) in
 }
 
 request.recognitionLevel = .accurate
-request.recognitionLanguages = [lang]
+request.recognitionLanguages = [lang, "en-US"]
 request.usesLanguageCorrection = true
 
 let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
@@ -381,7 +449,7 @@ try? handler.perform([request])
         pix.save(tmp_img)
 
         try:
-            cmd = ["/usr/bin/swift", tmp_swift, tmp_img, "pt-BR"]
+            cmd = ["/usr/bin/swift", tmp_swift, tmp_img, ocr_lang]
             proc = subprocess.run(cmd, capture_output=True, text=True, check=True, timeout=30)
             ocr_text = proc.stdout.strip()
             if len(ocr_text) >= 80:
@@ -399,6 +467,7 @@ try? handler.perform([request])
         "metodo": "apple_vision_ocr",
         "total_paginas": total_pages,
         "paginas_lidas": len(ocr_results),
+        "manchete_font": None,
         "conteudo": ocr_results
     }
 
@@ -443,12 +512,13 @@ def extrair_estrutura_jornal_automatica(item, img_rel_path):
         if len(linhas) < 5:
             continue
 
-        # Identificar título candidato na página (linha entre 35 e 130 chars com cara de manchete)
-        cand_tit = None
-        for l in linhas[:10]:
-            if 32 <= len(l) <= 135 and not l.endswith(",") and l.count(" ") >= 4:
-                cand_tit = l
-                break
+        # Identificar título candidato na página (usa manchete por tamanho de fonte na capa se disponível)
+        cand_tit = p_obj.get("manchete_font") if idx_p == 0 else None
+        if not cand_tit:
+            for l in linhas[:10]:
+                if 32 <= len(l) <= 135 and not l.endswith(",") and l.count(" ") >= 4:
+                    cand_tit = l
+                    break
         if not cand_tit:
             cand_tit = linhas[0][:120]
 
@@ -575,10 +645,25 @@ def publicar_banca_jornais(digest_resultado):
             from curadoria_jornais_2026_11_08 import obter_jornais_2026_11_08
         bloco_jornais = obter_jornais_2026_11_08(imagens_por_jornal)
     else:
+        try:
+            from tools.extrator_pdf_layout_v2 import sintetizar_edicao_completa
+        except ImportError:
+            try:
+                from extrator_pdf_layout_v2 import sintetizar_edicao_completa
+            except ImportError:
+                sintetizar_edicao_completa = None
+
         manchetes_auto = []
         for item in digest_resultado.get("itens", []):
             v_nome = item.get("veiculo", "Jornal")
             img_rel = imagens_por_jornal.get(v_nome, "")
+            loc_pdf = item.get("local_path")
+            if sintetizar_edicao_completa and loc_pdf and os.path.exists(loc_pdf):
+                try:
+                    manchetes_auto.append(sintetizar_edicao_completa(v_nome, item.get("escopo", "nacional"), loc_pdf, img_rel_path=img_rel))
+                    continue
+                except Exception as e_v2:
+                    log(f"Aviso no extrator v2 para {v_nome}, usando fallback: {e_v2}")
             manchetes_auto.append(extrair_estrutura_jornal_automatica(item, img_rel))
 
         if manchetes_auto:
@@ -626,18 +711,21 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
     digest_path = os.path.join(output_dir, f"beeper_digest_{perfil_nome}.json")
 
     # Salvaguarda para execução em nuvem (GitHub Actions), onde o Beeper Desktop local não existe
+    hoje_iso = datetime.now().strftime("%Y-%m-%d")
     if not os.path.exists(DB_PATH):
-        log("Beeper Desktop local não detectado neste ambiente (execução em nuvem). Usando digest/curadoria existente.")
+        log("Beeper Desktop local não detectado neste ambiente (execução em nuvem). Verificando digest do dia.")
         if perfil_nome == "diario":
             if os.path.exists(digest_path):
                 try:
                     with open(digest_path, "r", encoding="utf-8") as f:
                         existente = json.load(f)
-                    publicar_banca_jornais(existente)
+                    data_dig = existente.get("data_edicao") or str(existente.get("data_processamento", ""))[:10]
+                    if data_dig == hoje_iso:
+                        publicar_banca_jornais(existente)
+                    else:
+                        log(f"Digest existente é de {data_dig} (diferente de {hoje_iso}); ignorando digest antigo.")
                 except Exception as e:
                     log(f"Aviso ao reutilizar digest existente: {e}")
-            else:
-                publicar_banca_jornais({"itens": []})
         return digest_path
 
     log(f"Iniciando processamento do perfil '{perfil_nome.upper()}'...")
@@ -657,6 +745,7 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
 
     resultado = {
         "perfil": perfil_nome,
+        "data_edicao": hoje_iso,
         "data_processamento": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "itens": []
     }
@@ -700,7 +789,7 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
 
             log(f"     Extraindo texto (até {max_pages_per_doc} páginas)...")
             try:
-                dados_extracao = extract_text_from_pdf(caminho_local, max_pages=max_pages_per_doc)
+                dados_extracao = extract_text_from_pdf(caminho_local, max_pages=max_pages_per_doc, escopo=escopo)
                 resultado["itens"].append({
                     "veiculo": nome_veiculo,
                     "escopo": escopo,

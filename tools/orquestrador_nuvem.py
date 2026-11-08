@@ -51,9 +51,10 @@ def main():
     print("\n[2/6] Processando Jornais do Dia para o Modo Leitor (Beeper / Curadoria)...")
     rodar_script("tools/processar_jornais_beeper.py", ["--perfil", "diario", "--pages", "15"])
 
-    # 3. ÁUDIO DO BOLETIM DIÁRIO (Gera narração em áudio da edição integral)
-    print("\n[3/6] Gerando/Verificando Áudio Narrado do Boletim Diário...")
-    rodar_script("tools/gerar_audio_boletim.py", extra_args)
+    # 3. ÁUDIO DO BOLETIM DIÁRIO (Gera narração em áudio da edição integral do turno atual)
+    print("\n[3/8] Gerando/Verificando Áudio Narrado do Boletim Diário...")
+    turno_id = data_iso if hora < 17 else f"{data_iso}-noite"
+    rodar_script("tools/gerar_audio_boletim.py", ["--dia", turno_id] + extra_args)
 
     # Carregar banco para verificar se edições semanais/mensais já constam
     try:
@@ -66,28 +67,36 @@ def main():
     # 4. REVISTA DA SEMANA (Quinta à noite >= 18h ou Sexta-feira)
     eh_janela_semanal = (dia_semana == 3 and hora >= 18) or (dia_semana == 4)
     if eh_janela_semanal or forcar:
-        print("\n[4/6] Janela da Revista da Semana ativa! Processando revistas semanais e compilação...")
+        print("\n[4/8] Janela da Revista da Semana ativa! Processando revistas semanais e compilação...")
         rodar_script("tools/processar_jornais_beeper.py", ["--perfil", "semana", "--pages", "12"])
         rodar_script("tools/revista_semanal.py", extra_args)
     else:
-        print("\n[4/6] Revista da Semana: fora da janela de quinta à noite / sexta (mantendo edição atual).")
+        print("\n[4/8] Revista da Semana: fora da janela de quinta à noite / sexta (mantendo edição atual).")
 
     # 5. CULTURA MENSAL (Todo dia 01 do mês ou se o mês atual ainda não existir em edicoes)
     falta_mes_atual = mes_iso not in db.get("edicoes", {})
     if dia_mes == 1 or falta_mes_atual:
-        print(f"\n[5/6] Janela da Cultura Mensal ({mes_iso}) ativa! Verificando safra de Música, Cinema, Livros e Agenda...")
+        print(f"\n[5/8] Janela da Cultura Mensal ({mes_iso}) ativa! Verificando safra de Música, Cinema, Livros e Agenda...")
         rodar_script("tools/processar_jornais_beeper.py", ["--perfil", "cultura", "--pages", "12"])
         rodar_script("tools/cultura_mensal.py", extra_args)
     else:
-        print(f"\n[5/6] Cultura Mensal ({mes_iso}): edição do mês já publicada e íntegra.")
+        print(f"\n[5/8] Cultura Mensal ({mes_iso}): edição do mês já publicada e íntegra.")
 
     # 6. PLAYLISTS DA AGENDA DO RIO (Início da semana [segunda-feira] e início do mês [dia 01])
     if dia_semana == 0 or dia_mes == 1 or forcar:
-        print("\n[6/6] Atualizando Playlists da Agenda Cultural do Rio (cadência oficial de início de semana/mês)...")
+        print("\n[6/8] Atualizando Playlists da Agenda Cultural do Rio (cadência oficial de início de semana/mês)...")
         modo_pl = "forcar" if forcar else "auto"
         rodar_script("tools/atualizar_playlists_agenda.py", ["--modo", modo_pl])
     else:
-        print("\n[6/6] Playlists da Agenda: mantendo playlists da semana e do mês atuais.")
+        print("\n[6/8] Playlists da Agenda: mantendo playlists da semana e do mês atuais.")
+
+    # 7. PARTICIONAMENTO DE DADOS V2 (Gera data/boot.json ~145 KB + shards em data/dias, data/semanas e data/cultura)
+    print("\n[7/8] Gerando Manifesto de Boot Rápido (data/boot.json) e Shards da Arquitetura v2...")
+    rodar_script("tools/particionar_dados_v2.py")
+
+    # 8. QUALITY GATE PRÉ-PUBLICAÇÃO (Valida 100% dos critérios editoriais)
+    print("\n[8/8] Executando Quality Gate Pré-Publicação (tools/validar_edicao.py)...")
+    rodar_script("tools/validar_edicao.py")
 
     # Sincronização final garantida de index.html a partir de pagina.html
     try:

@@ -114,12 +114,60 @@ def gerar_audio(roteiro_txt, saida_mp3, voz="pt-BR-AntonioNeural"):
             break
             
     if edge_tts_bin:
-        print(f"Gerando áudio com {edge_tts_bin} (voz: {voz})...")
-        cmd = [edge_tts_bin, "--voice", voz, "--rate=+3%", "--file", tmp_txt, "--write-media", saida_mp3]
-        r = subprocess.run(cmd)
-        if r.returncode == 0 and os.path.exists(saida_mp3) and os.path.getsize(saida_mp3) > 10000:
-            if os.path.exists(tmp_txt): os.remove(tmp_txt)
+        print(f"Gerando áudio em blocos com {edge_tts_bin} (voz: {voz})...")
+        blocos_txt = []
+        atual = []
+        tam_atual = 0
+        for par in roteiro_txt.split("\n\n"):
+            par = par.strip()
+            if not par:
+                continue
+            if tam_atual + len(par) > 3500 and atual:
+                blocos_txt.append("\n\n".join(atual))
+                atual = [par]
+                tam_atual = len(par)
+            else:
+                atual.append(par)
+                tam_atual += len(par)
+        if atual:
+            blocos_txt.append("\n\n".join(atual))
+
+        partes_mp3 = []
+        ok_blocos = True
+        for idx_b, b_str in enumerate(blocos_txt):
+            b_txt = f"{saida_mp3}.part{idx_b}.txt"
+            b_mp3 = f"{saida_mp3}.part{idx_b}.mp3"
+            with open(b_txt, "w", encoding="utf-8") as fb:
+                fb.write(b_str)
+            try:
+                rb = subprocess.run(
+                    [edge_tts_bin, "--voice", voz, "--rate=+3%", "--file", b_txt, "--write-media", b_mp3],
+                    capture_output=True, timeout=45
+                )
+                if rb.returncode == 0 and os.path.exists(b_mp3) and os.path.getsize(b_mp3) > 2000:
+                    partes_mp3.append(b_mp3)
+                else:
+                    ok_blocos = False
+                    break
+            except Exception:
+                ok_blocos = False
+                break
+            finally:
+                if os.path.exists(b_txt):
+                    os.remove(b_txt)
+
+        if ok_blocos and partes_mp3:
+            with open(saida_mp3, "wb") as fout:
+                for p_mp3 in partes_mp3:
+                    with open(p_mp3, "rb") as fin:
+                        fout.write(fin.read())
+                    os.remove(p_mp3)
+            if os.path.exists(tmp_txt):
+                os.remove(tmp_txt)
             return True
+        for p_mp3 in partes_mp3:
+            if os.path.exists(p_mp3):
+                os.remove(p_mp3)
 
     # Tentativa 2: macOS say + ffmpeg
     if sys.platform == "darwin":

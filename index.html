@@ -1097,15 +1097,20 @@ dialog.leitura .l-criticas {
 
 /* Forçar TODAS as cores de texto nos modais do leitor para respeitar o tema */
 dialog.texto h1, dialog.texto h2, dialog.texto h3, dialog.texto h4,
-dialog.texto p, dialog.texto span:not(.fl-ler):not(.edt):not(.mono):not(.lt-meta),
+dialog.texto p, dialog.texto span:not(.edt):not(.mono):not(.lt-meta):not(.lt-nota),
 dialog.texto b, dialog.texto strong,
 dialog.texto li, dialog.texto blockquote,
+dialog.texto .fl-ler,
 dialog.leitura h1, dialog.leitura h2, dialog.leitura h3,
-dialog.leitura p, dialog.leitura span:not(.dot):not(.badge):not(.mono):not(.kicker):not(.l-ctx),
+dialog.leitura p, dialog.leitura span:not(.dot):not(.badge):not(.mono):not(.kicker):not(.l-ctx):not(.lt-nota),
 dialog.leitura b, dialog.leitura strong,
 dialog.leitura li, dialog.leitura dd,
 dialog.leitura .l-alb, dialog.leitura .l-olho {
   color: var(--lt-fg, #1C1A17) !important;
+}
+dialog.texto[data-lt-tema="escuro"] .fl-ler:hover,
+dialog.leitura[data-lt-tema="escuro"] .fl-ler:hover {
+  color: #EE6A50 !important;
 }
 
 dialog.texto .mono, dialog.texto .lt-meta,
@@ -1250,6 +1255,21 @@ dialog.leitura .l-texto p {
   background: var(--sec, var(--red));
   color: var(--on-sec, #fff) !important;
 }
+dialog.texto[data-lt-tema="escuro"] .lt-orig-btn,
+dialog.leitura[data-lt-tema="escuro"] .lt-orig-btn,
+dialog.texto[data-lt-tema="escuro"] .lt-orig,
+dialog.leitura[data-lt-tema="escuro"] .lt-orig {
+  color: #EAE5DB !important;
+  border-color: #EAE5DB !important;
+  background: #22201D !important;
+}
+dialog.texto[data-lt-tema="escuro"] .lt-orig-btn:hover,
+dialog.leitura[data-lt-tema="escuro"] .lt-orig-btn:hover,
+dialog.texto[data-lt-tema="escuro"] .lt-orig:hover,
+dialog.leitura[data-lt-tema="escuro"] .lt-orig:hover {
+  background: #EAE5DB !important;
+  color: #161513 !important;
+}
 
 
 /* Filtros de Mídia: Nacional vs Internacional */
@@ -1345,7 +1365,7 @@ dialog.leitura .l-texto p {
 }
 .ag-btn-convite:hover {
   background: var(--ink) !important;
-  color: var(--bg) !important;
+  color: var(--paper) !important;
 }
 .ag-btn-convite.mini {
   padding: 2px 7px !important;
@@ -1356,7 +1376,7 @@ dialog.texto.convite-dlg {
   max-height: min(90vh, 820px);
   padding: 0;
   border: 1px solid var(--rule);
-  background: var(--bg);
+  background: var(--paper);
   color: var(--ink);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
   border-radius: 6px;
@@ -1476,15 +1496,15 @@ dialog.texto.convite-dlg {
   font: 600 var(--fs-s) var(--f-mono);
   cursor: pointer;
   border: 1px solid var(--rule);
-  background: var(--bg);
+  background: var(--paper);
   color: var(--ink);
   transition: all .15s ease;
   text-decoration: none;
 }
 .convite-btn-acao.destaque {
-  background: var(--ink);
-  color: var(--bg);
-  border-color: var(--ink);
+  background: var(--ink, #161412) !important;
+  color: var(--paper, #F6F1E7) !important;
+  border-color: var(--ink, #161412) !important;
 }
 .convite-btn-acao:hover {
   filter: brightness(0.92);
@@ -2270,6 +2290,7 @@ dialog.texto.convite-dlg {
   function abrirTexto(l) {
     aplicarLeitorPrefs();
     const t = document.getElementById("texto");
+    const prevTop = t.open ? t.scrollTop : 0;
     t.replaceChildren(h("div", { class: "lt-box" },
       h("div", { class: "lt-bar" },
         h("span", { class: "mono" }, l.tipo === "review" ? "Modo Leitor · Crítica Especializada" : "Modo Leitor · Conteúdo na Íntegra"),
@@ -2292,13 +2313,18 @@ dialog.texto.convite-dlg {
         h("a", { class: "lt-orig-btn", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Acessar no site original de ${str(l.fonte) || "origem"} ↗`),
         h("span", { class: "mono lt-aviso" }, "Texto carregado previamente no modo leitor")) : null,
       h("p", { class: "lt-aviso mono", style: "margin-top:20px;" }, "Faixa Oculta · Conteúdo na íntegra em formato leitor padronizado, sem anúncios nem rastreadores.")));
-    t.showModal();
-    t.querySelector(".l-btn").focus({ preventScroll: true });
+    if (!t.open) {
+      t.showModal();
+      t.querySelector(".l-btn")?.focus({ preventScroll: true });
+    } else {
+      t.scrollTop = prevTop;
+    }
   }
 
   function abrirNota(n, d) {
     aplicarLeitorPrefs();
     const t = document.getElementById("texto");
+    const prevTop = t.open ? t.scrollTop : 0;
     const rotulo = d ? rotuloBoletim(d) : "Boletim diário";
     const redesenharNota = () => abrirNota(n, d);
 
@@ -2386,19 +2412,26 @@ dialog.texto.convite-dlg {
         }, isNotaSalva(n, d) ? "✓ Matéria salva" : "🔖 Salvar para ler depois"),
         h("p", { class: "lt-aviso mono", style: "margin:0;" }, "Faixa Oculta · Modo Leitor imersivo, sem anúncios nem rastreadores."))
     ));
-    t.showModal();
-    t.querySelector(".l-btn").focus({ preventScroll: true });
+    if (!t.open) {
+      t.showModal();
+      t.querySelector(".l-btn")?.focus({ preventScroll: true });
+    } else {
+      t.scrollTop = prevTop;
+    }
   }
 
   function abrirTemaRadar(r) {
+    aplicarLeitorPrefs();
     const t = document.getElementById("texto");
+    const prevTop = t.open ? t.scrollTop : 0;
     const leiturasTema = arr(r.ler).map((l) => ({ l, obj: leituraDe(l.url) }));
     t.replaceChildren(h("div", { class: "lt-box" },
       h("div", { class: "lt-bar" },
         h("span", { class: "mono" }, `Fora do radar · Conteúdo na íntegra`),
         h("button", { class: "l-btn", type: "button", onclick: () => t.close(), "aria-label": "Fechar" }, "Fechar ×")),
+      barraControlesLeitor(() => abrirTemaRadar(r)),
       h("h3", { class: "lt-tit" }, str(r.titulo)),
-      h("p", { class: "lt-lead" }, str(r.texto)),
+      h("div", { class: "lt-corpo-completo" }, h("p", { class: "lt-lead" }, str(r.texto))),
       leiturasTema.length ? [
         h("h4", { class: "lt-divisor-tit" }, "Reportagens e leituras na íntegra deste tema"),
         ...leiturasTema.map(({ l, obj }) => {
@@ -2410,7 +2443,7 @@ dialog.texto.convite-dlg {
                 [obj.autor, obj.data ? fmtData(obj.data) : ""].filter(Boolean).join(" · ")),
               obj.titulo ? h("h4", { class: "lt-art-tit" }, str(obj.titulo)) : null,
               /* Removido link do topo em favor da leitura integral */
-              ...paras.map((p) => h("p", null, str(p))),
+              h("div", { class: "lt-corpo-completo" }, paras.map((p) => h("p", null, str(p)))),
               arr(obj.pontos).length ? [
                 h("h5", { style: "margin:18px 0 6px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.05em;color:var(--muted);" }, "Pontos centrais destacados"),
                 h("ul", { class: "lt-pontos" }, arr(obj.pontos).map((x) => h("li", null, str(x))))
@@ -2426,8 +2459,12 @@ dialog.texto.convite-dlg {
         })
       ] : null,
       h("p", { class: "lt-aviso mono", style: "margin-top:28px;" }, "Faixa Oculta · Conteúdo na íntegra em formato leitor padronizado.")));
-    t.showModal();
-    t.querySelector(".l-btn").focus({ preventScroll: true });
+    if (!t.open) {
+      t.showModal();
+      t.querySelector(".l-btn")?.focus({ preventScroll: true });
+    } else {
+      t.scrollTop = prevTop;
+    }
   }
 
   // A source button: always opens our clean in-app reader.
@@ -2800,6 +2837,16 @@ dialog.texto.convite-dlg {
     const audioUrl = safeUrl(d.audio);
     const dur = str(d.audio_duracao) || (audioUrl ? "13:09" : "");
     const titAudio = dur ? `Ouça a edição completa na íntegra das notícias do dia (${dur})` : "Ouça a edição completa na íntegra das notícias do dia";
+    let audioEl = null;
+    if (audioUrl) {
+      if (window._audioBoletimEl && window._audioBoletimSrc === audioUrl) {
+        audioEl = window._audioBoletimEl;
+      } else {
+        audioEl = h("audio", { class: "d-audio-player", controls: true, preload: "metadata", src: audioUrl, title: `Boletim em Áudio · ${d.data || d._id}` });
+        window._audioBoletimEl = audioEl;
+        window._audioBoletimSrc = audioUrl;
+      }
+    }
     return h("section", { class: "wrap", style: "padding-bottom:14px" },
       h("div", { class: "d-audio-card" },
         h("div", { class: "d-audio-head" },
@@ -2807,7 +2854,7 @@ dialog.texto.convite-dlg {
           dur ? h("span", { class: "d-audio-dur mono" }, dur) : null),
         h("h4", { class: "d-audio-tit" }, titAudio),
         h("div", { class: "d-audio-player-wrap" },
-          audioUrl ? h("audio", { controls: true, preload: "metadata", src: audioUrl, title: `Boletim em Áudio · ${d.data || d._id}` }) : null,
+          audioEl,
           h("button", { class: "d-audio-tts-btn mono", type: "button", onclick: (e) => toggleVozNavegador(d, e.currentTarget) }, "🔊 Ouvir com voz do navegador"))));
   }
 
@@ -2875,9 +2922,13 @@ dialog.texto.convite-dlg {
 
     // Filtros de Mídia: Nacional vs Internacional
     S.filtroEscopo = S.filtroEscopo || "todas";
+    const ehInt = (n) => Boolean(n.escopo === "internacional" || n.pais === "Internacional" || n.titulo_original);
     const totalTodas = arr(d.notas).length;
-    const totalNac = arr(d.notas).filter((n) => n.escopo !== "internacional" && n.pais !== "Internacional").length;
-    const totalInt = arr(d.notas).filter((n) => n.escopo === "internacional" || n.pais === "Internacional" || n.titulo_original).length;
+    const totalNac = arr(d.notas).filter((n) => !ehInt(n)).length;
+    const totalInt = arr(d.notas).filter((n) => ehInt(n)).length;
+    if (totalInt === 0 && S.filtroEscopo !== "todas") {
+      S.filtroEscopo = "todas";
+    }
 
     const barraFiltroMidia = totalInt > 0 && !S.filtroSalvas ? h("div", { class: "d-midia-filtro-box" },
       h("span", { class: "mono", style: "font-size:var(--fs-xs);color:var(--muted);margin-right:6px;" }, "Eixo de apuração:"),
@@ -2917,9 +2968,9 @@ dialog.texto.convite-dlg {
     } else {
       let listaNotas = arr(d.notas);
       if (S.filtroEscopo === "nacional") {
-        listaNotas = listaNotas.filter((n) => n.escopo !== "internacional" && n.pais !== "Internacional");
+        listaNotas = listaNotas.filter((n) => !ehInt(n));
       } else if (S.filtroEscopo === "internacional") {
-        listaNotas = listaNotas.filter((n) => n.escopo === "internacional" || n.pais === "Internacional" || n.titulo_original);
+        listaNotas = listaNotas.filter((n) => ehInt(n));
       }
       notasParaExibir = listaNotas.map((n) => ({ nota: n, boletim: d, rotulo: "" }));
     }
@@ -2931,12 +2982,12 @@ dialog.texto.convite-dlg {
         h("button", { class: "d-btn-filtro-salvas mono", type: "button", onclick: () => { S.filtroSalvas = false; render(); } }, "Voltar ao boletim do dia ✕")
       ) : null,
       h("div", { class: "d-notas" }, notasParaExibir.map(({ nota: n, boletim: bol, rotulo }) => {
-        const ehInt = n.escopo === "internacional" || n.pais === "Internacional" || n.titulo_original;
-        return h("article", { class: `d-nota ${ehInt ? "d-nota-int" : ""}`, onclick: () => abrirNota(n, bol), style: "cursor:pointer" },
+        const isInt = ehInt(n);
+        return h("article", { class: `d-nota ${isInt ? "d-nota-int" : ""}`, onclick: () => abrirNota(n, bol), style: "cursor:pointer" },
           h("div", { style: "display:flex;align-items:center;justify-content:space-between;gap:8px;" },
             h("div", { style: "display:flex;align-items:center;gap:6px;flex-wrap:wrap;" },
               h("span", { class: "edt" }, str(n.editoria)),
-              ehInt ? h("span", { class: "badge-int mono" }, "🌍 Internacional") : null
+              isInt ? h("span", { class: "badge-int mono" }, "🌍 Internacional") : null
             ),
             rotulo ? h("span", { class: "mono", style: "font-size:var(--fs-xs);color:var(--muted);" }, rotulo) : null),
           h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n, bol), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
@@ -2968,7 +3019,8 @@ dialog.texto.convite-dlg {
   function abrirJornalCompleto(m, j, scrollIdx = null) {
     aplicarLeitorPrefs();
     const t = document.getElementById("texto");
-    const redesenhar = () => abrirJornalCompleto(m, j, scrollIdx);
+    const prevTop = t.open ? t.scrollTop : 0;
+    const redesenhar = () => abrirJornalCompleto(m, j, null);
     const reps = arr(m.reportagens);
     const ehInt = m.escopo === "internacional" || (m.pais && m.pais !== "Brasil");
     const resumoEd = Array.isArray(m.resumo_edicao) && m.resumo_edicao.length
@@ -3039,13 +3091,21 @@ dialog.texto.convite-dlg {
         h("a", { class: "lt-orig-btn mono", href: safeUrl(m.site), target: "_blank", rel: "noopener" }, `Visitar portal de ${str(m.jornal)} ↗`),
         h("span", { class: "mono lt-aviso" }, "Edição processada e traduzida para leitura integral na Faixa Oculta")) : null
     ));
-    t.showModal();
-    if (scrollIdx !== null && scrollIdx >= 0) {
+    if (!t.open) {
+      t.showModal();
+      if (scrollIdx !== null && scrollIdx >= 0) {
+        setTimeout(() => {
+          document.getElementById(`jr-rep-${scrollIdx}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 60);
+      } else {
+        t.querySelector(".l-btn")?.focus({ preventScroll: true });
+      }
+    } else if (scrollIdx !== null && scrollIdx >= 0) {
       setTimeout(() => {
         document.getElementById(`jr-rep-${scrollIdx}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 60);
     } else {
-      t.querySelector(".l-btn").focus({ preventScroll: true });
+      t.scrollTop = prevTop;
     }
   }
 
@@ -3856,7 +3916,7 @@ dialog.texto.convite-dlg {
           h("h4", { class: "convite-secao-tit" }, "Recepção Crítica"),
           h("div", { class: "convite-review-box" },
             h("p", null, `“${reviews.texto}”`),
-            arr(reviews.fontes).length ? h("span", { class: "convite-review-fontes" }, `Fontes: ${reviews.fontes.join(", ")}`) : null)
+            arr(reviews.fontes).length ? h("span", { class: "convite-review-fontes" }, `Fontes: ${arr(reviews.fontes).map((f) => typeof f === "string" ? f : (f.nome || "")).filter(Boolean).join(", ")}`) : null)
         ] : null,
 
         linkTrailer ? [
@@ -4872,12 +4932,18 @@ dialog.texto.convite-dlg {
   });
   document.getElementById("edicao-sel").addEventListener("change", (e) => { S.sel = e.target.value; S.filtro = "tudo"; render(); window.scrollTo(0, 0); });
 
-  // Outside claude.ai (the GitHub site) the page reads one static bundle and keeps marks in this browser.
+  // Outside claude.ai (the GitHub site) the page boots fast from data/boot.json (~145 KB) and hydrates full history in background.
   async function iniciarEstatico() {
-    try {
-      const r = await fetch("data/revista.json?t=" + Date.now(), { cache: "no-cache" });
-      if (!r.ok) throw new Error(r.status);
-      const b = await r.json();
+    const carregarPrefsLocais = () => {
+      try { S.comentarios = JSON.parse(localStorage.getItem("fo-comentarios") || "{}") || {}; } catch (e) { S.comentarios = {}; }
+      try { S.marcasEm = JSON.parse(localStorage.getItem("fo-marcas-em") || "{}") || {}; } catch (e) { S.marcasEm = {}; }
+      const lerLS = (k, vazio) => { try { const v = JSON.parse(localStorage.getItem(k) || "null"); return v && typeof v === "object" && Array.isArray(v) === Array.isArray(vazio) ? v : vazio; } catch (e) { return vazio; } };
+      S.idasMod = lerLS("fo-idas-mod", {}); S.idasDel = lerLS("fo-idas-del", {}); S.notasNovas = lerLS("fo-notas-novas", []);
+      try { S.marcas = JSON.parse(localStorage.getItem("fo-marcas") || "{}") || {}; } catch (e) { S.marcas = {}; }
+      S.modo = "site";
+      S.podeMarcar = true;
+    };
+    const aplicarBundleCompleto = (b) => {
       const lista = (o) => Object.entries(o || {}).map(([id, d]) => ({ ...d, _id: id }));
       S.edicoes = lista(b.edicoes).sort((a, c) => str(c.data).localeCompare(str(a.data)));
       S.itens = lista(b.itens);
@@ -4889,22 +4955,52 @@ dialog.texto.convite-dlg {
       S.agenda = (b.agenda && b.agenda.atual) || null;
       S.agArtistas = (b.agenda && b.agenda.artistas && b.agenda.artistas.mapa) || {};
       S.agArtistasYT = (b.agenda && b.agenda.artistas && b.agenda.artistas.youtube) || {};
-      S.loaded.agenda = true;
-      setTimeout(checarDeepLinkConvite, 200);
-      try { S.comentarios = JSON.parse(localStorage.getItem("fo-comentarios") || "{}") || {}; } catch (e) { S.comentarios = {}; }
-      try { S.marcasEm = JSON.parse(localStorage.getItem("fo-marcas-em") || "{}") || {}; } catch (e) { S.marcasEm = {}; }
-      const lerLS = (k, vazio) => { try { const v = JSON.parse(localStorage.getItem(k) || "null"); return v && typeof v === "object" && Array.isArray(v) === Array.isArray(vazio) ? v : vazio; } catch (e) { return vazio; } };
-      S.idasMod = lerLS("fo-idas-mod", {}); S.idasDel = lerLS("fo-idas-del", {}); S.notasNovas = lerLS("fo-notas-novas", []);
-      for (const k of ["edicoes", "itens", "guias", "semanas", "cultura", "dias", ...COLS_REV]) S.loaded[k] = true;
+      for (const k of ["edicoes", "itens", "guias", "semanas", "cultura", "dias", "agenda", ...COLS_REV]) S.loaded[k] = true;
+      indices = null; idxLeituras = null;
       S.carregou = true;
-      S.modo = "site";
-      S.podeMarcar = true;
-      try { S.marcas = JSON.parse(localStorage.getItem("fo-marcas") || "{}") || {}; } catch (e) { S.marcas = {}; }
-    } catch (e) { S.falhou = true; }
+    };
+    carregarPrefsLocais();
+    const cbMin = Math.floor(Date.now() / 60000);
+    let renderizouBoot = false;
+    try {
+      const rb = await fetch("data/boot.json?v=" + cbMin);
+      if (rb.ok) {
+        const boot = await rb.json();
+        if (boot && boot.hoje_inicial) {
+          const hojeId = boot.hoje_id || boot.hoje_inicial.id || boot.hoje_inicial.data;
+          const mapaDias = { [hojeId]: { ...boot.hoje_inicial, _id: hojeId } };
+          for (const meta of (boot.dias_index || [])) {
+            if (meta.id && !mapaDias[meta.id]) mapaDias[meta.id] = { ...meta, _id: meta.id, notas: [] };
+          }
+          S.dias = Object.values(mapaDias).sort((a, c) => chaveDia(c).localeCompare(chaveDia(a)));
+          S.agenda = (boot.agenda && boot.agenda.atual) || null;
+          S.agArtistas = (boot.agenda && boot.agenda.artistas && boot.agenda.artistas.mapa) || {};
+          S.agArtistasYT = (boot.agenda && boot.agenda.artistas && boot.agenda.artistas.youtube) || {};
+          S.loaded.dias = true;
+          S.loaded.agenda = true;
+          if (S.aba === "hoje" || S.aba === "agenda") {
+            S.carregou = true;
+            renderizouBoot = true;
+            render();
+            setTimeout(checarDeepLinkConvite, 150);
+          }
+        }
+      }
+    } catch (e) {}
+    try {
+      const r = await fetch("data/revista.json?v=" + cbMin);
+      if (!r.ok) throw new Error(r.status);
+      const b = await r.json();
+      aplicarBundleCompleto(b);
+      if (!renderizouBoot) setTimeout(checarDeepLinkConvite, 200);
+    } catch (e) {
+      if (!renderizouBoot) S.falhou = true;
+    }
     render();
   }
 
   (async () => {
+    try { S.noticiasSalvas = JSON.parse(localStorage.getItem("faixa_noticias_salvas") || "{}") || {}; } catch (e) { S.noticiasSalvas = {}; }
     const db = window.claude?.use ? await window.claude.use("db") : null;
     if (!db) { await iniciarEstatico(); return; }
     S.db = db;
@@ -4919,7 +5015,6 @@ dialog.texto.convite-dlg {
     db.doc("agenda/artistas").onSnapshot((s) => { const a = s.data() || {}; S.agArtistas = a.mapa || {}; S.agArtistasYT = a.youtube || {}; render(); }, () => {});
     const user = await window.claude.use("user");
     const uid = user ? await user.id() : null;
-    try { S.noticiasSalvas = JSON.parse(localStorage.getItem("faixa_noticias_salvas") || "{}") || {}; } catch (e) { S.noticiasSalvas = {}; }
     if (uid) {
       S.uid = uid; S.podeMarcar = true;
       db.doc(`data/users/${uid}/estado`).onSnapshot((d) => {

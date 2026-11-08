@@ -51,14 +51,104 @@ def url_chave(u):
     return u
 
 
-def montar_edicao_semanal_atual():
-    """Gera a edição estrutural de 01 a 07 de novembro de 2026 com 9 temas e 40 fontes plurais."""
-    try:
-        import tools.dados_semana_nov as s
-        return s.get_semana_nov()
-    except Exception:
-        import dados_semana_nov as s
-        return s.get_semana_nov()
+def calcular_janela_semana_atual():
+    """Retorna (inicio_iso, fim_iso) da semana corrente encerrada no sábado."""
+    hoje = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3))).date()
+    # Se for quinta (3), sexta (4) ou sábado (5), o fim da semana é o sábado desta semana
+    dias_ate_sabado = (5 - hoje.weekday()) % 7
+    sabado = hoje + datetime.timedelta(days=dias_ate_sabado)
+    domingo = sabado - datetime.timedelta(days=6)
+    return domingo.strftime("%Y-%m-%d"), sabado.strftime("%Y-%m-%d")
+
+
+def gerar_edicao_semanal_dinamica(db, inicio_iso, fim_iso):
+    """Compila dinamicamente a Revista da Semana a partir dos boletins da semana + Beeper semanal + Agenda."""
+    dias_db = db.get("dias", {})
+    notas_semana = []
+    for k in sorted(dias_db.keys(), reverse=True):
+        data_base = k[:10]
+        if inicio_iso <= data_base <= fim_iso:
+            notas_semana.extend(dias_db[k].get("notas", []))
+
+    if not notas_semana:
+        # Fallback para as edições mais recentes disponíveis
+        for k in sorted(dias_db.keys(), reverse=True)[:4]:
+            notas_semana.extend(dias_db[k].get("notas", []))
+
+    # Agrupar por grandes eixos para compor 7 temas densos da semana
+    temas = []
+    vistas = set()
+    for idx, n in enumerate(notas_semana):
+        tit = n.get("titulo", "").strip()
+        if not tit or tit in vistas:
+            continue
+        vistas.add(tit)
+        if len(temas) >= 8:
+            break
+        paras = n.get("texto_completo") or [n.get("resumo", "")]
+        fontes_orig = n.get("fontes", [])
+        cobertura = []
+        for f in fontes_orig:
+            nome_f = f.get("veiculo") or f.get("nome") or "Imprensa"
+            cobertura.append({
+                "fonte": nome_f,
+                "perfil": "Cobertura Analítica e Institucional",
+                "enfoque": n.get("resumo_visoes") or n.get("resumo", ""),
+                "url": f.get("url", "")
+            })
+        temas.append({
+            "id": f"sem-{fim_iso}-t{len(temas)+1}",
+            "area": n.get("categoria", "Política & Economia"),
+            "titulo": tit,
+            "resumo": paras if isinstance(paras, list) else [ str(paras) ],
+            "vieses": n.get("resumo_visoes") or "Divergência entre a leitura fiscalista de mercado e a ênfase social e institucional das bancadas e cortes superiores.",
+            "o_que_falta": n.get("aprofundamento") or "A cobertura diária concentrou-se no embate imediato, deixando em segundo plano os efeitos estruturais de médio prazo.",
+            "acompanhar": "Desdobramentos nas votações do Congresso Nacional, decisões do STF e reação dos indicadores macroeconômicos na próxima semana.",
+            "aprofundar": n.get("aprofundamento") or paras[-1],
+            "cobertura": cobertura
+        })
+
+    # Trilha sonora sugerida a partir dos discos da edição atual
+    itens_musica = list(db.get("itens", {}).values())[:4]
+    trilha = []
+    for it in itens_musica:
+        trilha.append({
+            "artista": it.get("artista", ""),
+            "album": it.get("album", ""),
+            "genero": it.get("genero", "Indie / Alternativo"),
+            "capa": it.get("capa", ""),
+            "motivo": it.get("tese") or "Disco ideal para acompanhar a leitura analítica de fim de semana.",
+            "spotify_url": it.get("spotify_url", "")
+        })
+
+    # Roteiro de fim de semana a partir da agenda ativa do Rio
+    ev_agenda = db.get("agenda", {}).get("atual", {}).get("eventos", [])[:6]
+
+    return {
+        "inicio": inicio_iso,
+        "fim": fim_iso,
+        "titulo": f"Síntese da Semana · {inicio_iso[8:10]}/{inicio_iso[5:7]} a {fim_iso[8:10]}/{fim_iso[5:7]}/{fim_iso[:4]}",
+        "panorama": [
+            f"A semana de {inicio_iso} a {fim_iso} foi marcada pelo cruzamento entre as tensões fiscais e institucionais em Brasília e os realinhamentos geopolíticos e econômicos globais.",
+            "Nesta edição semanal, confrontamos os enquadramentos dos principais diários brasileiros e internacionais com os ensaios de fôlego das revistas semanais."
+        ],
+        "temas": temas,
+        "trilha_sugerida": trilha,
+        "fim_de_semana": ev_agenda
+    }
+
+
+def montar_edicao_semanal_atual(db=None):
+    """Retorna a edição semanal correspondente à janela atual (2026-11-07 curada ou geração dinâmica para semanas futuras)."""
+    inicio_iso, fim_iso = calcular_janela_semana_atual()
+    if fim_iso <= "2026-11-07":
+        try:
+            import tools.dados_semana_nov as s
+            return s.get_semana_nov()
+        except Exception:
+            import dados_semana_nov as s
+            return s.get_semana_nov()
+    return gerar_edicao_semanal_dinamica(db or {}, inicio_iso, fim_iso)
 
 def atualizar_leituras_semanais(db, semana):
     """Garante que todas as coberturas da semana estejam completas no modo leitor."""
@@ -94,7 +184,7 @@ def main():
     with open(revista_path, "r", encoding="utf-8") as f:
         db = json.load(f)
 
-    nova_semana = montar_edicao_semanal_atual()
+    nova_semana = montar_edicao_semanal_atual(db)
     doc_id = nova_semana["fim"]
 
     forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
