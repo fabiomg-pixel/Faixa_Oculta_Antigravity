@@ -19878,6 +19878,965 @@
       "audio_duracao": "5:00",
       "audio_tamanho": 4409280,
       "audio_titulo": "Boletim em Áudio · 7 de novembro de 2026, edição da noite"
+    },
+    "2026-11-08": {
+      "data": "2026-11-08",
+      "edicao": "manha",
+      "titulo": "Indústria entra com nova ação no STF contra fim da e Investidores perdem confiança no setor de IA ",
+      "resumo_dia": "Edição manha compilada a partir de apurações em tempo real de 13 veículos independentes nacionais e internacionais, com tradução integral e veracidade documental estrita.",
+      "notas": [
+        {
+          "id": "2026-11-08--ind-stria-entra-com-nova-a-o-no-stf-contra-fi",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Contas Públicas e Ajuste Fiscal",
+          "editoria": "Economia",
+          "titulo": "Indústria entra com nova ação no STF contra fim da escala 6x1 e quer limitar Justiça do Trabalho",
+          "texto": "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Folha de S.Paulo enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+            "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+            "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal) contra o fim da escala 6x1. Desta vez, a confederação pede ao Supremo que limite a competência da Justiça do Trabalho e do MPT (Ministério Público do Trabalho) nos processos e nas fiscalizações que envolvam a implantação da nova escala 5x2 e da jornada reduzida de trabalho.",
+            "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas semanais para 42 horas e implantar a escala 5x2, com dois dias de descanso semanal remunerado."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/industria-entra-com-nova-acao-no-stf-contra-fim-da-escala-6x1-e-quer-limitar-justica-do-trabalho.shtml",
+              "titulo": "Indústria entra com nova ação no STF contra fim da escala 6x1 e quer limitar Justiça do Trabalho",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+                "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal)...",
+                "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas sema..."
+              ],
+              "citacao": "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+              "texto_integral": [
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+                "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal) contra o fim da escala 6x1. Desta vez, a confederação pede ao Supremo que limite a competência da Justiça do Trabalho e do MPT (Ministério Público do Trabalho) nos processos e nas fiscalizações que envolvam a implantação da nova escala 5x2 e da jornada reduzida de trabalho.",
+                "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas semanais para 42 horas e implantar a escala 5x2, com dois dias de descanso semanal remunerado."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--investidores-perdem-confian-a-no-setor-de-ia",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Política Monetária, Selic e Câmbio",
+          "editoria": "Economia",
+          "titulo": "Investidores perdem confiança no setor de IA e colocam IPO da Anthropic em risco",
+          "texto": "Potenciais investidores na oferta pública inicial de ações (IPO, na sigla em inglês) da Anthropic têm dúvidas se a startup de inteligência artificial conseguirá realizar na próxima semana a rodada de apresentações a investidores e abrir o capital ainda em novembro, segundo fontes a par das discussões.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de g1 enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Potenciais investidores na oferta pública inicial de ações (IPO, na sigla em inglês) da Anthropic têm dúvidas se a startup de inteligência artificial conseguirá realizar na próxima semana a rodada de apresentações a investidores e abrir o capital ainda em novembro, segundo fontes a par das discussões.",
+            "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns consideram que a avaliação de US$ 1,5 trilhão (R$ 8,22 trilhões), discutida recentemente, está no limite superior das expectativas, disseram as fontes à Reuters.",
+            "📱 Favorite o g1 no Google e acompanhe as principais notícias do dia",
+            "As discussões refletem, em parte, a maior onda de vendas de ações de tecnologia em um ano e as incertezas geopolíticas, que afetam as perspectivas para novas ofertas de ações."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por g1",
+              "url": "https://g1.globo.com/economia/noticia/2026/11/07/investidores-perdem-confianca-no-setor-de-ia-e-colocam-ipo-da-anthropic-em-risco.ghtml",
+              "titulo": "Investidores perdem confiança no setor de IA e colocam IPO da Anthropic em risco",
+              "autor": "Redação g1",
+              "pontos": [
+                "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns c...",
+                "📱 Favorite o g1 no Google e acompanhe as principais notícias do dia...",
+                "As discussões refletem, em parte, a maior onda de vendas de ações de tecnologia em um ano e as incer..."
+              ],
+              "citacao": "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns consideram que a aval...",
+              "texto_integral": [
+                "Potenciais investidores na oferta pública inicial de ações (IPO, na sigla em inglês) da Anthropic têm dúvidas se a startup de inteligência artificial conseguirá realizar na próxima semana a rodada de apresentações a investidores e abrir o capital ainda em novembro, segundo fontes a par das discussões.",
+                "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns consideram que a avaliação de US$ 1,5 trilhão (R$ 8,22 trilhões), discutida recentemente, está no limite superior das expectativas, disseram as fontes à Reuters.",
+                "📱 Favorite o g1 no Google e acompanhe as principais notícias do dia",
+                "As discussões refletem, em parte, a maior onda de vendas de ações de tecnologia em um ano e as incertezas geopolíticas, que afetam as perspectivas para novas ofertas de ações."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--quando-a-marca-famosa-chega-depois-anteriorid",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Emprego, Indústria e Balança Comercial",
+          "editoria": "Economia",
+          "titulo": "Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente",
+          "texto": "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de ConJur enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
+            "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional contemporâneo.",
+            "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais de ConJur."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "ConJur",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por ConJur",
+              "url": "https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/",
+              "titulo": "Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente",
+              "autor": "Redação ConJur",
+              "pontos": [
+                "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema...",
+                "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais ..."
+              ],
+              "citacao": "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional...",
+              "texto_integral": [
+                "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
+                "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional contemporâneo.",
+                "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais de ConJur."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--pt-e-pl-foram-partidos-que-mais-mencionaram-l",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Congresso Nacional e Votações",
+          "editoria": "Política",
+          "titulo": "PT e PL foram partidos que mais mencionaram \"Lula\" na Câmara desde 2023",
+          "texto": "Reflexo claro da polarização política que marca o Brasil nos últimos anos, PT e PL concentram, juntos, 72,4% das citações ao presidente Luiz Inácio Lula da Silva (PT) em discursos na Câmara dos Deputados na atual legislatura.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Metrópoles enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Reflexo claro da polarização política que marca o Brasil nos últimos anos, PT e PL concentram, juntos, 72,4% das citações ao presidente Luiz Inácio Lula da Silva (PT) em discursos na Câmara dos Deputados na atual legislatura.",
+            "Chama a atenção que o PL, principal legenda de oposição ao presidente Lula (PT), é o segundo partido que mais mencionou o nome “Lula” em discursos na Câmara dos Deputados na atual legislatura. Ficou atrás apenas do próprio PT.",
+            "Segundo levantamento do Metrópoles, foram 10.413 menções feita pelo PL entre 1º de fevereiro de 2023 e 5 de novembro de 2026, apenas 679 a menos que o PT, que lidera a lista com 11.092.",
+            "A análise foi feita com base no banco de discursos em plenário da Câmara."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Metrópoles",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Metrópoles",
+              "url": "https://www.metropoles.com/brasil/pt-e-pl-foram-partidos-que-mais-mencionaram-lula-na-camara-desde-2023",
+              "titulo": "PT e PL foram partidos que mais mencionaram \"Lula\" na Câmara desde 2023",
+              "autor": "Redação Metrópoles",
+              "pontos": [
+                "Chama a atenção que o PL, principal legenda de oposição ao presidente Lula (PT), é o segundo partido...",
+                "Segundo levantamento do Metrópoles, foram 10.413 menções feita pelo PL entre 1º de fevereiro de 2023...",
+                "A análise foi feita com base no banco de discursos em plenário da Câmara...."
+              ],
+              "citacao": "Chama a atenção que o PL, principal legenda de oposição ao presidente Lula (PT), é o segundo partido que mais mencionou ...",
+              "texto_integral": [
+                "Reflexo claro da polarização política que marca o Brasil nos últimos anos, PT e PL concentram, juntos, 72,4% das citações ao presidente Luiz Inácio Lula da Silva (PT) em discursos na Câmara dos Deputados na atual legislatura.",
+                "Chama a atenção que o PL, principal legenda de oposição ao presidente Lula (PT), é o segundo partido que mais mencionou o nome “Lula” em discursos na Câmara dos Deputados na atual legislatura. Ficou atrás apenas do próprio PT.",
+                "Segundo levantamento do Metrópoles, foram 10.413 menções feita pelo PL entre 1º de fevereiro de 2023 e 5 de novembro de 2026, apenas 679 a menos que o PT, que lidera a lista com 11.092.",
+                "A análise foi feita com base no banco de discursos em plenário da Câmara."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--primeiro-passo-para-regular-big-techs-exigir",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · STF e Decisões Judiciais Estruturantes",
+          "editoria": "Política",
+          "titulo": "Primeiro passo para regular big techs é exigir transparência, afirma especialista",
+          "texto": "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Brasil de Fato enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas.",
+            "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro de 2026, impulsionado por fortes correções no mercado financeiro global e, em especial, pelo estouro de uma bolha de IA na China.",
+            "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a urgência do debate de regulação das big techs.",
+            "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que participou da elaboração do Marco Civil da Internet, avalia que o maior nó nesse tema é a questão da falta de transparência. “O mais importante é a transparência. As plataformas operam hoje com uma opacidade que não é possível saber, auditar, avaliar se estão funcionando bem ou mal, as regras de funcionamento, e isso dificulta muito para a sociedade e até para as autoridades avaliar o que está funcionando”, afirma. “A gestão dos algoritmos, das publicações que a gente recebe ou não recebe, que foram desequilibradas nas eleições, ou como a inteligência artificial vai funcionar, a regulação mais importante é exigir que as plataformas sejam mais transparentes”, resume."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Brasil de Fato",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Brasil de Fato",
+              "url": "https://www.brasildefato.com.br/2026/11/06/primeiro-passo-para-regular-big-techs-e-exigir-transparencia-afirma-especialista/",
+              "titulo": "Primeiro passo para regular big techs é exigir transparência, afirma especialista",
+              "autor": "Redação Brasil de Fato",
+              "pontos": [
+                "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro ...",
+                "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a u...",
+                "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que..."
+              ],
+              "citacao": "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro de 2026, impulsionad...",
+              "texto_integral": [
+                "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas.",
+                "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro de 2026, impulsionado por fortes correções no mercado financeiro global e, em especial, pelo estouro de uma bolha de IA na China.",
+                "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a urgência do debate de regulação das big techs.",
+                "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que participou da elaboração do Marco Civil da Internet, avalia que o maior nó nesse tema é a questão da falta de transparência. “O mais importante é a transparência. As plataformas operam hoje com uma opacidade que não é possível saber, auditar, avaliar se estão funcionando bem ou mal, as regras de funcionamento, e isso dificulta muito para a sociedade e até para as autoridades avaliar o que está funcionando”, afirma. “A gestão dos algoritmos, das publicações que a gente recebe ou não recebe, que foram desequilibradas nas eleições, ou como a inteligência artificial vai funcionar, a regulação mais importante é exigir que as plataformas sejam mais transparentes”, resume."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--presidente-de-israel-escolhe-rival-de-netanya",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Governo Federal e Articulação Política",
+          "editoria": "Política",
+          "titulo": "Presidente de Israel escolhe rival de Netanyahu para tentar formar um governo",
+          "texto": "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de CartaCapital enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+            "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+            "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da tarefa de formar um governo após as eleições legislativas do fim de outubro, o que pode desbancar o primeiro-ministro Benjamin Netanyahu.",
+            "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palestino Hamas, em 8 de outubro de 2023, terminaram sem maioria tanto para Netanyahu e seus aliados, quanto para o bloco de Eisenkot."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "CartaCapital",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por CartaCapital",
+              "url": "https://www.cartacapital.com.br/mundo/presidente-de-israel-escolhe-rival-de-netanyahu-para-tentar-formar-um-governo/",
+              "titulo": "Presidente de Israel escolhe rival de Netanyahu para tentar formar um governo",
+              "autor": "Redação CartaCapital",
+              "pontos": [
+                "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabi...",
+                "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da t...",
+                "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palest..."
+              ],
+              "citacao": "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possív...",
+              "texto_integral": [
+                "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+                "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+                "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da tarefa de formar um governo após as eleições legislativas do fim de outubro, o que pode desbancar o primeiro-ministro Benjamin Netanyahu.",
+                "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palestino Hamas, em 8 de outubro de 2023, terminaram sem maioria tanto para Netanyahu e seus aliados, quanto para o bloco de Eisenkot."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--lula-e-seu-carcereiro",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Segurança Pública e Inteligência Federativa",
+          "editoria": "Política",
+          "titulo": "Lula e seu carcereiro",
+          "texto": "Jornalista, autor de cinco volumes sobre a história do regime militar, entre eles \"A Ditadura Encurralada\"",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Folha de S.Paulo enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Jornalista, autor de cinco volumes sobre a história do regime militar, entre eles \"A Ditadura Encurralada\"",
+            "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+            "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+            "Está nas livrarias \"Banho de Sol: Os 580 dias de Lula na Prisão\", de Jorge Chastalo Filho, o agente da Polícia Federal que guardava o prisioneiro em 2018/19 em Curitiba. É um documento de raro valor, uma espécie de memória do cárcere pelo olhar do carcereiro."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/eliogaspari/2026/11/lula-e-seu-carcereiro.shtml",
+              "titulo": "Lula e seu carcereiro",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler....",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+                "Está nas livrarias \"Banho de Sol: Os 580 dias de Lula na Prisão\", de Jorge Chastalo Filho, o agente ..."
+              ],
+              "citacao": "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler....",
+              "texto_integral": [
+                "Jornalista, autor de cinco volumes sobre a história do regime militar, entre eles \"A Ditadura Encurralada\"",
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+                "Está nas livrarias \"Banho de Sol: Os 580 dias de Lula na Prisão\", de Jorge Chastalo Filho, o agente da Polícia Federal que guardava o prisioneiro em 2018/19 em Curitiba. É um documento de raro valor, uma espécie de memória do cárcere pelo olhar do carcereiro."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--ueno-bank-esc-ndalo-que-levou-queda-do-presid",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Diplomacia e Relações Internacionais",
+          "editoria": "Internacional",
+          "titulo": "Ueno Bank: escândalo que levou à queda do presidente do Paraguai pode ser comparado ao do Banco Master?",
+          "texto": "A liquidação do banco Ueno desencadeou uma forte crise política no Paraguai, com a renúncia do presidente do Banco Central do País e depois, o impeachment e a prisão do agora ex-presidente Santiago Peña.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de BBC News Brasil enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "A liquidação do banco Ueno desencadeou uma forte crise política no Paraguai, com a renúncia do presidente do Banco Central do País e depois, o impeachment e a prisão do agora ex-presidente Santiago Peña.",
+            "Peña foi acionista do Grupo Vázquez, controlador do banco Ueno, até março de 2025. O então presidente do Banco Central paraguaio, Carlos Carvallo Spalding, também havia comandado o Ueno antes de assumir o cargo público.",
+            "A crise bancária, de um banco com fortes laços políticos e envolvendo montante relevante de recursos públicos, incluindo aposentadorias, levou a comparações entre à crise do Ueno com a do banco Master, no Brasil.",
+            "Especialistas ouvidos pela BBC News Brasil, apontam que, de fato, há muitos pontos de contato entre os casos, mas também diferenças relevantes, como a escala do Ueno na economia paraguaia, e a proximidade direta do banco com o presidente do país – que já estava politicamente fragilizado por crises internas dentro de seu partido, o Colorado, o que acabou precipitando sua rápida queda."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "BBC News Brasil",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por BBC News Brasil",
+              "url": "https://www.bbc.com/portuguese/articles/c6eq33z529jwo?at_medium=RSS&at_campaign=rss",
+              "titulo": "Ueno Bank: escândalo que levou à queda do presidente do Paraguai pode ser comparado ao do Banco Master?",
+              "autor": "Redação BBC News Brasil",
+              "pontos": [
+                "Peña foi acionista do Grupo Vázquez, controlador do banco Ueno, até março de 2025. O então president...",
+                "A crise bancária, de um banco com fortes laços políticos e envolvendo montante relevante de recursos...",
+                "Especialistas ouvidos pela BBC News Brasil, apontam que, de fato, há muitos pontos de contato entre ..."
+              ],
+              "citacao": "Peña foi acionista do Grupo Vázquez, controlador do banco Ueno, até março de 2025. O então presidente do Banco Central p...",
+              "texto_integral": [
+                "A liquidação do banco Ueno desencadeou uma forte crise política no Paraguai, com a renúncia do presidente do Banco Central do País e depois, o impeachment e a prisão do agora ex-presidente Santiago Peña.",
+                "Peña foi acionista do Grupo Vázquez, controlador do banco Ueno, até março de 2025. O então presidente do Banco Central paraguaio, Carlos Carvallo Spalding, também havia comandado o Ueno antes de assumir o cargo público.",
+                "A crise bancária, de um banco com fortes laços políticos e envolvendo montante relevante de recursos públicos, incluindo aposentadorias, levou a comparações entre à crise do Ueno com a do banco Master, no Brasil.",
+                "Especialistas ouvidos pela BBC News Brasil, apontam que, de fato, há muitos pontos de contato entre os casos, mas também diferenças relevantes, como a escala do Ueno na economia paraguaia, e a proximidade direta do banco com o presidente do país – que já estava politicamente fragilizado por crises internas dentro de seu partido, o Colorado, o que acabou precipitando sua rápida queda."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--pol-cia-rodovi-ria-federal-encontra-carro-rou",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Infraestrutura, Energia e Transportes",
+          "editoria": "Sociedade",
+          "titulo": "Polícia Rodoviária Federal encontra carro roubado há dez anos no Rio",
+          "texto": "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Folha de S.Paulo enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+            "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+            "Um Fiat Punto roubado há mais de dez anos no Rio de Janeiro foi encontrado pela Polícia Rodoviária Federal neste sábado (7) na BR-116, durante uma fiscalização em Vitória da Conquista, na Bahia.",
+            "A abordagem ocorreu na altura do km 17 da rodovia. Os policiais desconfiaram de adulteração nos sinais identificadores do carro e descobriram um boletim de ocorrência de julho de 2016 por roubo."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/policia-rodoviaria-federal-encontra-carro-roubado-ha-dez-anos-no-rio.shtml",
+              "titulo": "Polícia Rodoviária Federal encontra carro roubado há dez anos no Rio",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+                "Um Fiat Punto roubado há mais de dez anos no Rio de Janeiro foi encontrado pela Polícia Rodoviária F...",
+                "A abordagem ocorreu na altura do km 17 da rodovia. Os policiais desconfiaram de adulteração nos sina..."
+              ],
+              "citacao": "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+              "texto_integral": [
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+                "Um Fiat Punto roubado há mais de dez anos no Rio de Janeiro foi encontrado pela Polícia Rodoviária Federal neste sábado (7) na BR-116, durante uma fiscalização em Vitória da Conquista, na Bahia.",
+                "A abordagem ocorreu na altura do km 17 da rodovia. Os policiais desconfiaram de adulteração nos sinais identificadores do carro e descobriram um boletim de ocorrência de julho de 2016 por roubo."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--defesa-civil-envia-72-alertas-preventivos-par",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Meio Ambiente em Escala Macro e Defesa Civil",
+          "editoria": "Sociedade",
+          "titulo": "Defesa Civil envia 72 alertas preventivos para chuvas fortes no estado de São Paulo",
+          "texto": "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Folha de S.Paulo enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+            "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+            "Com a chegada de uma frente fria a São Paulo neste sábado (7), a Defesa Civil estadual enviou 72 alertas preventivos a partir das 11h30 em razão das chuvas que atingiram diferentes regiões do estado.",
+            "Um dos alertas Cell Broadcast foi enviado para a região de Interlagos, na zona sul da capital, onde estava sendo realizado o treino de classificação do GP de São Paulo de F1. Devido ao mau tempo, o classificatório teve atraso de mais de uma hora."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/cidade-de-sao-paulo-entra-em-estado-de-atencao-para-alagamentos.shtml",
+              "titulo": "Defesa Civil envia 72 alertas preventivos para chuvas fortes no estado de São Paulo",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+                "Com a chegada de uma frente fria a São Paulo neste sábado (7), a Defesa Civil estadual enviou 72 ale...",
+                "Um dos alertas Cell Broadcast foi enviado para a região de Interlagos, na zona sul da capital, onde ..."
+              ],
+              "citacao": "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+              "texto_integral": [
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+                "Com a chegada de uma frente fria a São Paulo neste sábado (7), a Defesa Civil estadual enviou 72 alertas preventivos a partir das 11h30 em razão das chuvas que atingiram diferentes regiões do estado.",
+                "Um dos alertas Cell Broadcast foi enviado para a região de Interlagos, na zona sul da capital, onde estava sendo realizado o treino de classificação do GP de São Paulo de F1. Devido ao mau tempo, o classificatório teve atraso de mais de uma hora."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--proibidas-por-lula-no-brasil-bets-seguem-atra",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Defesa do Consumidor e Mercado Digital",
+          "editoria": "Sociedade",
+          "titulo": "Proibidas por Lula no Brasil, bets seguem atraindo apostadores no Telegram",
+          "texto": "Às 12h02 dessa sexta-feira (6/11), um tigre e uma coelha sorridentes apareciam entre moedas douradas num anúncio de apostas no Telegram. A imagem trazia a palavra “lançamento” e, em letras menores, o aviso para jogar com responsabilidade. A mensagem vinha acompanhada de links e de uma promessa para quem levasse amigos ao 777 Clube: bônus por convite e comissão diária.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Metrópoles enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Às 12h02 dessa sexta-feira (6/11), um tigre e uma coelha sorridentes apareciam entre moedas douradas num anúncio de apostas no Telegram. A imagem trazia a palavra “lançamento” e, em letras menores, o aviso para jogar com responsabilidade. A mensagem vinha acompanhada de links e de uma promessa para quem levasse amigos ao 777 Clube: bônus por convite e comissão diária.",
+            "Um mês depois de vencer o prazo para que as bets autorizadas tirassem do ar seus sites e aplicativos de apostas no Brasil, canais do Telegram ainda publicam anúncios de jogos. Os arquivos de conversas obtidos pela reportagem registram ofertas de tigrinho, promessas de saques sem taxa e listas de endereços alternativos.",
+            "Em seis canais, a contagem exibida pelo aplicativo soma mais de 43 mil inscrições. Uma mesma pessoa pode aparecer em vários deles.",
+            "No Telegram, a mesma mensagem com links de apostas pode chegar de uma vez a milhares de pessoas. Basta que o administrador a publique num canal, onde todos os inscritos recebem as postagens. O aplicativo também permite criar grupos de conversa com até 200 mil participantes. Para os canais, não há limite de inscritos."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Metrópoles",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Metrópoles",
+              "url": "https://www.metropoles.com/brasil/proibidas-por-lula-no-brasil-bets-seguem-atraindo-apostadores-no-telegram",
+              "titulo": "Proibidas por Lula no Brasil, bets seguem atraindo apostadores no Telegram",
+              "autor": "Redação Metrópoles",
+              "pontos": [
+                "Um mês depois de vencer o prazo para que as bets autorizadas tirassem do ar seus sites e aplicativos...",
+                "Em seis canais, a contagem exibida pelo aplicativo soma mais de 43 mil inscrições. Uma mesma pessoa ...",
+                "No Telegram, a mesma mensagem com links de apostas pode chegar de uma vez a milhares de pessoas. Bas..."
+              ],
+              "citacao": "Um mês depois de vencer o prazo para que as bets autorizadas tirassem do ar seus sites e aplicativos de apostas no Brasi...",
+              "texto_integral": [
+                "Às 12h02 dessa sexta-feira (6/11), um tigre e uma coelha sorridentes apareciam entre moedas douradas num anúncio de apostas no Telegram. A imagem trazia a palavra “lançamento” e, em letras menores, o aviso para jogar com responsabilidade. A mensagem vinha acompanhada de links e de uma promessa para quem levasse amigos ao 777 Clube: bônus por convite e comissão diária.",
+                "Um mês depois de vencer o prazo para que as bets autorizadas tirassem do ar seus sites e aplicativos de apostas no Brasil, canais do Telegram ainda publicam anúncios de jogos. Os arquivos de conversas obtidos pela reportagem registram ofertas de tigrinho, promessas de saques sem taxa e listas de endereços alternativos.",
+                "Em seis canais, a contagem exibida pelo aplicativo soma mais de 43 mil inscrições. Uma mesma pessoa pode aparecer em vários deles.",
+                "No Telegram, a mesma mensagem com links de apostas pode chegar de uma vez a milhares de pessoas. Basta que o administrador a publique num canal, onde todos os inscritos recebem as postagens. O aplicativo também permite criar grupos de conversa com até 200 mil participantes. Para os canais, não há limite de inscritos."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--polluted-delhi-tries-green-fireworks-to-clear",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · The New York Times",
+          "editoria": "Política",
+          "titulo": "Polluted Delhi Tries ‘Green’ Fireworks to Clear the Air at Diwali",
+          "titulo_original": "Polluted Delhi Tries ‘Green’ Fireworks to Clear the Air at Diwali",
+          "texto": "India’s top court decreed that only more environmentally friendly fireworks could be set off this weekend, citing air quality concerns. But environmental activists call it a “green wash.”",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de The New York Times destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "India’s top court decreed that only more environmentally friendly fireworks could be set off this weekend, citing air quality concerns. But environmental activists call it a “green wash.”",
+            "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de The New York Times e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "The New York Times",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por The New York Times",
+              "url": "https://www.nytimes.com/2026/11/08/world/asia/delhi-pollution-green-fireworks-diwali.html",
+              "titulo": "Polluted Delhi Tries ‘Green’ Fireworks to Clear the Air at Diwali",
+              "autor": "Correspondentes The New York Times",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucio...",
+                "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integr..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucionais e diplomáticos ...",
+              "texto_integral": [
+                "India’s top court decreed that only more environmentally friendly fireworks could be set off this weekend, citing air quality concerns. But environmental activists call it a “green wash.”",
+                "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--kenyan-doomsday-sect-leader-jailed-for-200-ye",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · The Guardian",
+          "editoria": "Política",
+          "titulo": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
+          "titulo_original": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
+          "texto": "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de The Guardian destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families",
+            "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 190 children and one adult in one of the world’s worst cult disasters in recent history.",
+            "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came two weeks after the court in Kenya’s coastal city of Mombasa found the cult leader guilty of the crimes.",
+            "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sect whose members were ordered to starve themselves and their children to death to go to heaven before the world ended."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de The Guardian e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "The Guardian",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por The Guardian",
+              "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie",
+              "titulo": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
+              "autor": "Correspondentes The Guardian",
+              "pontos": [
+                "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 19...",
+                "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came t...",
+                "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sec..."
+              ],
+              "citacao": "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 190 children and one a...",
+              "texto_integral": [
+                "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families",
+                "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 190 children and one adult in one of the world’s worst cult disasters in recent history.",
+                "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came two weeks after the court in Kenya’s coastal city of Mombasa found the cult leader guilty of the crimes.",
+                "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sect whose members were ordered to starve themselves and their children to death to go to heaven before the world ended."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--what-we-know-so-far-after-krakow-gun-attack",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · BBC World News",
+          "editoria": "Internacional",
+          "titulo": "What we know so far after Krakow gun attack",
+          "titulo_original": "What we know so far after Krakow gun attack",
+          "texto": "At least six people were killed and more than a dozen others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de BBC World News destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "At least six people were killed and more than a dozen others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland.",
+            "Three bodies were found at his home when it was searched by police. Here is everything we know so far.",
+            "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bustling central point of the city which is popular with tourists.",
+            "Police said a man drove into the square before beginning to fire \"at random people from his car\"."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de BBC World News e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "BBC World News",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por BBC World News",
+              "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+              "titulo": "What we know so far after Krakow gun attack",
+              "autor": "Correspondentes BBC World News",
+              "pontos": [
+                "Three bodies were found at his home when it was searched by police. Here is everything we know so fa...",
+                "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bus...",
+                "Police said a man drove into the square before beginning to fire \"at random people from his car\"...."
+              ],
+              "citacao": "Three bodies were found at his home when it was searched by police. Here is everything we know so far....",
+              "texto_integral": [
+                "At least six people were killed and more than a dozen others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland.",
+                "Three bodies were found at his home when it was searched by police. Here is everything we know so far.",
+                "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bustling central point of the city which is popular with tourists.",
+                "Police said a man drove into the square before beginning to fire \"at random people from his car\"."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--gunman-kills-six-in-krak-w-shooting",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · Financial Times",
+          "editoria": "Internacional",
+          "titulo": "Gunman kills six in Kraków shooting",
+          "titulo_original": "Gunman kills six in Kraków shooting",
+          "texto": "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de Financial Times destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident",
+            "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de Financial Times e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "Financial Times",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por Financial Times",
+              "url": "https://www.ft.com/content/0fab9ede-4fa1-4f94-b23e-e32f07a6b7df?syn-25a6b1a6=1",
+              "titulo": "Gunman kills six in Kraków shooting",
+              "autor": "Correspondentes Financial Times",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionai...",
+                "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralm..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionais e diplomáticos do ...",
+              "texto_integral": [
+                "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident",
+                "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--l-on-xiv-attendu-en-argentine-un-pays-o-l-egl",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · Le Monde",
+          "editoria": "Internacional",
+          "titulo": "Léon XIV attendu en Argentine, un pays où l’Eglise se positionne aux antipodes du projet de société de Javier Milei",
+          "titulo_original": "Léon XIV attendu en Argentine, un pays où l’Eglise se positionne aux antipodes du projet de société de Javier Milei",
+          "texto": "Baptisée ainsi en hommage au pape François, natif du pays, la « Ciudad Papa Francisco », un ensemble de quartiers populaires dans la banlieue de Buenos Aires illustre le combat d’une l’Eglise catholique qui s’est érigée en pilier de l’opposition à la politique ultralibérale du président argentin.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de Le Monde destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Baptisée ainsi en hommage au pape François, natif du pays, la « Ciudad Papa Francisco », un ensemble de quartiers populaires dans la banlieue de Buenos Aires illustre le combat d’une l’Eglise catholique qui s’est érigée en pilier de l’opposition à la politique ultralibérale du président argentin.",
+            "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de Le Monde e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "Le Monde",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por Le Monde",
+              "url": "https://www.lemonde.fr/international/article/2026/11/08/leon-xiv-attendu-en-argentine-un-pays-ou-l-eglise-se-positionne-aux-antipodes-du-projet-de-societe-de-javier-milei_6808418_3210.html",
+              "titulo": "Léon XIV attendu en Argentine, un pays où l’Eglise se positionne aux antipodes du projet de société de Javier Milei",
+              "autor": "Correspondentes Le Monde",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e dip...",
+                "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente pa..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e diplomáticos do tema no...",
+              "texto_integral": [
+                "Baptisée ainsi en hommage au pape François, natif du pays, la « Ciudad Papa Francisco », un ensemble de quartiers populaires dans la banlieue de Buenos Aires illustre le combat d’une l’Eglise catholique qui s’est érigée en pilier de l’opposition à la politique ultralibérale du président argentin.",
+                "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--trump-cae-derrotado-en-las-urnas-pero-a-n-es",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Política",
+          "titulo": "Trump cae derrotado en las urnas, pero aún es poderoso (e impredecible) en política exterior",
+          "titulo_original": "Trump cae derrotado en las urnas, pero aún es poderoso (e impredecible) en política exterior",
+          "texto": "El presidente de EE UU ha comenzado a dar pistas sobre sus próximos pasos con el nombramiento del radical Stephen Miller como nuevo jefe de Gabinete",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "El presidente de EE UU ha comenzado a dar pistas sobre sus próximos pasos con el nombramiento del radical Stephen Miller como nuevo jefe de Gabinete",
+            "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/us/2026-11-08/trump-cae-derrotado-en-las-urnas-pero-aun-es-poderoso-e-impredecible-en-politica-exterior.html",
+              "titulo": "Trump cae derrotado en las urnas, pero aún es poderoso (e impredecible) en política exterior",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no ...",
+              "texto_integral": [
+                "El presidente de EE UU ha comenzado a dar pistas sobre sus próximos pasos con el nombramiento del radical Stephen Miller como nuevo jefe de Gabinete",
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--entre-la-muerte-maga-y-la-radicalizaci-n-del",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Internacional",
+          "titulo": "Entre la muerte MAGA y la radicalización del trumpismo: los republicanos buscan su sitio tras la debacle electoral",
+          "titulo_original": "Entre la muerte MAGA y la radicalización del trumpismo: los republicanos buscan su sitio tras la debacle electoral",
+          "texto": "La elección del radical Stephen Miller como jefe de Gabinete indica que Trump no tolera una reflexión interna sobre el futuro del partido tras la derrota en las ‘midterms’",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "La elección del radical Stephen Miller como jefe de Gabinete indica que Trump no tolera una reflexión interna sobre el futuro del partido tras la derrota en las ‘midterms’",
+            "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/us/2026-11-08/entre-la-muerte-maga-y-la-radicalizacion-del-trumpismo-los-republicanos-buscan-su-sitio-tras-la-debacle-electoral.html",
+              "titulo": "Entre la muerte MAGA y la radicalización del trumpismo: los republicanos buscan su sitio tras la debacle electoral",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no ...",
+              "texto_integral": [
+                "La elección del radical Stephen Miller como jefe de Gabinete indica que Trump no tolera una reflexión interna sobre el futuro del partido tras la derrota en las ‘midterms’",
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--al-menos-seis-muertos-y-una-quincena-de-herid",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Internacional",
+          "titulo": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+          "titulo_original": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+          "texto": "Un coche ha irrumpido a las tres de la tarde de este sábado en la Plaza del Mercado, la mayor de la ciudad polaca de Cracovia, y ha empezado a disparar a los viandantes. Al menos seis personas han muerto y una quincena han resultado heridas en el atentado, como ha denominado el ataque el primer ministro, Donald Tusk.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Un coche ha irrumpido a las tres de la tarde de este sábado en la Plaza del Mercado, la mayor de la ciudad polaca de Cracovia, y ha empezado a disparar a los viandantes. Al menos seis personas han muerto y una quincena han resultado heridas en el atentado, como ha denominado el ataque el primer ministro, Donald Tusk.",
+            "La policía ha confirmado que ha disparado al asaltante, que ha resultado herido y ha sido trasladado al hospital, donde se le ha intervenido quirúrgicamente. Se trata de un hombre de nacionalidad polaca de 24 años que ha actuado solo, aunque la investigación continúa y se están analizando las cámaras de seguridad de la zona. Entre los heridos hay dos agentes de policía, según ha informado el ministro de Interior, Marcin Kierwinski.",
+            "Bien entrada la noche, Tusk ha informado en una comparencencia de prensa en Cracovia, a donde se ha desplazado tras el ataque, que la policía ha encontrado además tres muertos, dos mujeres y un hombre, en el domicilio del asaltante. “Hay muchos indicios de que son miembros de su familia inmediata”, ha añadido el primer ministro. “Esto realmente es una tragedia excepcional”. El dirigente ha declarado los dos próximos días de luto nacional.",
+            "Kierwinski ha asegurado en una conferencia de prensa que “todo indica que el asaltante estaba fascinado por la ideología de extrema derecha. Pero esto requiere una investigación exhaustiva”. “Nos enfrentamos a un atentado: la intervención de los policías evitó una masacre mayor”, ha añadido el titular de Interior."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-07/varios-muertos-y-heridos-en-un-atentado-en-la-plaza-mayor-de-cracovia.html",
+              "titulo": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "La policía ha confirmado que ha disparado al asaltante, que ha resultado herido y ha sido trasladado...",
+                "Bien entrada la noche, Tusk ha informado en una comparencencia de prensa en Cracovia, a donde se ha ...",
+                "Kierwinski ha asegurado en una conferencia de prensa que “todo indica que el asaltante estaba fascin..."
+              ],
+              "citacao": "La policía ha confirmado que ha disparado al asaltante, que ha resultado herido y ha sido trasladado al hospital, donde ...",
+              "texto_integral": [
+                "Un coche ha irrumpido a las tres de la tarde de este sábado en la Plaza del Mercado, la mayor de la ciudad polaca de Cracovia, y ha empezado a disparar a los viandantes. Al menos seis personas han muerto y una quincena han resultado heridas en el atentado, como ha denominado el ataque el primer ministro, Donald Tusk.",
+                "La policía ha confirmado que ha disparado al asaltante, que ha resultado herido y ha sido trasladado al hospital, donde se le ha intervenido quirúrgicamente. Se trata de un hombre de nacionalidad polaca de 24 años que ha actuado solo, aunque la investigación continúa y se están analizando las cámaras de seguridad de la zona. Entre los heridos hay dos agentes de policía, según ha informado el ministro de Interior, Marcin Kierwinski.",
+                "Bien entrada la noche, Tusk ha informado en una comparencencia de prensa en Cracovia, a donde se ha desplazado tras el ataque, que la policía ha encontrado además tres muertos, dos mujeres y un hombre, en el domicilio del asaltante. “Hay muchos indicios de que son miembros de su familia inmediata”, ha añadido el primer ministro. “Esto realmente es una tragedia excepcional”. El dirigente ha declarado los dos próximos días de luto nacional.",
+                "Kierwinski ha asegurado en una conferencia de prensa que “todo indica que el asaltante estaba fascinado por la ideología de extrema derecha. Pero esto requiere una investigación exhaustiva”. “Nos enfrentamos a un atentado: la intervención de los policías evitó una masacre mayor”, ha añadido el titular de Interior."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--repudio-de-la-autocracia-y-del-poder-del-dine",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Economia",
+          "titulo": "Repudio de la autocracia y del poder del dinero",
+          "titulo_original": "Repudio de la autocracia y del poder del dinero",
+          "texto": "El revés republicano en las urnas tiene consecuencias para Putin, Netanyahu y las extremas derechas europeas, además de cuestionar el poder de los multimillonarios tecnológicos",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "El revés republicano en las urnas tiene consecuencias para Putin, Netanyahu y las extremas derechas europeas, además de cuestionar el poder de los multimillonarios tecnológicos",
+            "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-08/repudio-de-la-autocracia-y-del-poder-del-dinero.html",
+              "titulo": "Repudio de la autocracia y del poder del dinero",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no ...",
+              "texto_integral": [
+                "El revés republicano en las urnas tiene consecuencias para Putin, Netanyahu y las extremas derechas europeas, además de cuestionar el poder de los multimillonarios tecnológicos",
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--nacionalismo-y-duelos-de-sables-las-fraternid",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Internacional",
+          "titulo": "Nacionalismo y duelos de sables: las fraternidades de estudiantes que sirven de ‘cantera’ de AfD",
+          "titulo_original": "Nacionalismo y duelos de sables: las fraternidades de estudiantes que sirven de ‘cantera’ de AfD",
+          "texto": "Dos concejales de Alternativa para Alemania (AfD) se batieron el 17 de octubre en un duelo de sables. Matthias Büschges, jefe del grupo municipal de AfD en Colonia, y Jeremy Fanosch, edil en Düsseldorf, se citaron en la sede de la Burschenschaft, fraternidad estudiantil, de esta última ciudad. Acompañados de sus padrinos y compañeros, Bürschges y Fanosch quisieron solucionar a sablazos una disputa personal que mantenían abierta. Ambos políticos son Alte Herren, Viejos Caballeros, de la Deutsche Burschenschaft, la organización que reúne a estas hermandades nacionalistas con raíces en el siglo XIX. Decenas de políticos de AfD han pasado por ellas.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Dos concejales de Alternativa para Alemania (AfD) se batieron el 17 de octubre en un duelo de sables. Matthias Büschges, jefe del grupo municipal de AfD en Colonia, y Jeremy Fanosch, edil en Düsseldorf, se citaron en la sede de la Burschenschaft, fraternidad estudiantil, de esta última ciudad. Acompañados de sus padrinos y compañeros, Bürschges y Fanosch quisieron solucionar a sablazos una disputa personal que mantenían abierta. Ambos políticos son Alte Herren, Viejos Caballeros, de la Deutsche Burschenschaft, la organización que reúne a estas hermandades nacionalistas con raíces en el siglo XIX. Decenas de políticos de AfD han pasado por ellas.",
+            "Los dos ediles protagonizaron una bronca durante el congreso del partido en julio en el land de Renania del Norte-Westfalia. La agencia de noticias DPA y el diario Frankfurter Allgemeine Zeitung reportaron que Büschges es partidario de la continuidad de Martin Vincentz, actual presidente del partido en este Estado federado. Fanosch, en cambio, defiende el nombramiento de Matthias Helferisch como nuevo presidente porque considera que Vincentz es demasiado moderado.",
+            "“Es un tema privado pero creo que fuimos capaces de resolver el asunto que nos separaba”, declaró Büschges a DPA tras el duelo.",
+            "Alemania tiene una larga tradición de hermandades estudiantiles. Muchos políticos de la CDU, como el propio canciller, Friedrich Merz, han formado parte de estos colectivos. Pero Merz, como tantos otros políticos democristianos, ha sido miembro de fraternidades de valores cristianos. Las burschenschaften son hermandades nacionalistas, solo masculinas y que no permiten la membresía a extranjeros. Están cerradas al exterior, centran tradicionalmente su identidad en el orgullo nacional y, desde el siglo XX, en la extrema derecha. Algunas de estas asociaciones han sido monitorizadas por los servicios secretos alemanes por su radicalismo."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-08/nacionalismo-y-duelos-de-sables-las-fraternidades-de-estudiantes-que-sirven-de-cantera-de-afd.html",
+              "titulo": "Nacionalismo y duelos de sables: las fraternidades de estudiantes que sirven de ‘cantera’ de AfD",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "Los dos ediles protagonizaron una bronca durante el congreso del partido en julio en el land de Rena...",
+                "“Es un tema privado pero creo que fuimos capaces de resolver el asunto que nos separaba”, declaró Bü...",
+                "Alemania tiene una larga tradición de hermandades estudiantiles. Muchos políticos de la CDU, como el..."
+              ],
+              "citacao": "Los dos ediles protagonizaron una bronca durante el congreso del partido en julio en el land de Renania del Norte-Westfa...",
+              "texto_integral": [
+                "Dos concejales de Alternativa para Alemania (AfD) se batieron el 17 de octubre en un duelo de sables. Matthias Büschges, jefe del grupo municipal de AfD en Colonia, y Jeremy Fanosch, edil en Düsseldorf, se citaron en la sede de la Burschenschaft, fraternidad estudiantil, de esta última ciudad. Acompañados de sus padrinos y compañeros, Bürschges y Fanosch quisieron solucionar a sablazos una disputa personal que mantenían abierta. Ambos políticos son Alte Herren, Viejos Caballeros, de la Deutsche Burschenschaft, la organización que reúne a estas hermandades nacionalistas con raíces en el siglo XIX. Decenas de políticos de AfD han pasado por ellas.",
+                "Los dos ediles protagonizaron una bronca durante el congreso del partido en julio en el land de Renania del Norte-Westfalia. La agencia de noticias DPA y el diario Frankfurter Allgemeine Zeitung reportaron que Büschges es partidario de la continuidad de Martin Vincentz, actual presidente del partido en este Estado federado. Fanosch, en cambio, defiende el nombramiento de Matthias Helferisch como nuevo presidente porque considera que Vincentz es demasiado moderado.",
+                "“Es un tema privado pero creo que fuimos capaces de resolver el asunto que nos separaba”, declaró Büschges a DPA tras el duelo.",
+                "Alemania tiene una larga tradición de hermandades estudiantiles. Muchos políticos de la CDU, como el propio canciller, Friedrich Merz, han formado parte de estos colectivos. Pero Merz, como tantos otros políticos democristianos, ha sido miembro de fraternidades de valores cristianos. Las burschenschaften son hermandades nacionalistas, solo masculinas y que no permiten la membresía a extranjeros. Están cerradas al exterior, centran tradicionalmente su identidad en el orgullo nacional y, desde el siglo XX, en la extrema derecha. Algunas de estas asociaciones han sido monitorizadas por los servicios secretos alemanes por su radicalismo."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-08--int--detenidos-por-las-pintas-decenas-de-menores-e",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Internacional",
+          "titulo": "Detenidos por las pintas: decenas de menores en comisaría en Italia con el nuevo arresto preventivo en manifestaciones",
+          "titulo_original": "Detenidos por las pintas: decenas de menores en comisaría en Italia con el nuevo arresto preventivo en manifestaciones",
+          "texto": "La policía aplica a adolescentes lo que la oposición ya llama “delito de sudadera negra”, una polémica medida de Meloni que permite detener antes de una protesta a quien sea sospechoso de participar luego en disturbios",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "La policía aplica a adolescentes lo que la oposición ya llama “delito de sudadera negra”, una polémica medida de Meloni que permite detener antes de una protesta a quien sea sospechoso de participar luego en disturbios",
+            "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-08/detenidos-por-las-pintas-decenas-de-menores-en-comisaria-en-italia-con-el-nuevo-arresto-preventivo-en-manifestaciones.html",
+              "titulo": "Detenidos por las pintas: decenas de menores en comisaría en Italia con el nuevo arresto preventivo en manifestaciones",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no ...",
+              "texto_integral": [
+                "La policía aplica a adolescentes lo que la oposición ya llama “delito de sudadera negra”, una polémica medida de Meloni que permite detener antes de una protesta a quien sea sospechoso de participar luego en disturbios",
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "09h00",
+          "o_que": "Acompanhamento das cotações de mercado e indicadores do Banco Central."
+        },
+        {
+          "quando": "14h30",
+          "o_que": "Sessões deliberativas no Congresso Nacional e tribunais superiores."
+        },
+        {
+          "quando": "18h00",
+          "o_que": "Balanço das apurações do dia e edição da noite da Faixa Oculta."
+        }
+      ],
+      "audio": "audios/boletim_2026-11-08.mp3",
+      "audio_duracao": "5:00",
+      "audio_tamanho": 4478400,
+      "audio_titulo": "Boletim em Áudio · 8 de novembro de 2026"
     }
   },
   "cine_edicoes": {
@@ -60178,6 +61137,452 @@
       ],
       "texto_integral": [
         "El dirigente ve prioritario colaborar con el bloque judío de oposición para reemplazar a Netanyahu, pese a las diferencias ideológicas. El jefe de Estado encargará este domingo formar Gobierno al principal líder opositor",
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+      ]
+    },
+    "2026-11-08--ind-stria-entra-com-nova-a-o-no-stf-contra-fi-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/industria-entra-com-nova-acao-no-stf-contra-fim-da-escala-6x1-e-quer-limitar-justica-do-trabalho.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Indústria entra com nova ação no STF contra fim da escala 6x1 e quer limitar Justiça do Trabalho",
+      "resumo": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler."
+      ],
+      "texto_integral": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal) contra o fim da escala 6x1. Desta vez, a confederação pede ao Supremo que limite a competência da Justiça do Trabalho e do MPT (Ministério Público do Trabalho) nos processos e nas fiscalizações que envolvam a implantação da nova escala 5x2 e da jornada reduzida de trabalho.",
+        "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas semanais para 42 horas e implantar a escala 5x2, com dois dias de descanso semanal remunerado."
+      ],
+      "pontos": [
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+        "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal)...",
+        "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas sema..."
+      ]
+    },
+    "2026-11-08--investidores-perdem-confian-a-no-setor-de-ia-g1.globo.com/economia/noticia/": {
+      "url": "https://g1.globo.com/economia/noticia/2026/11/07/investidores-perdem-confianca-no-setor-de-ia-e-colocam-ipo-da-anthropic-em-risco.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Investidores perdem confiança no setor de IA e colocam IPO da Anthropic em risco",
+      "resumo": [
+        "Potenciais investidores na oferta pública inicial de ações (IPO, na sigla em inglês) da Anthropic têm dúvidas se a startup de inteligência artificial conseguirá realizar na próxima semana a rodada de apresentações a investidores e abrir o capital ainda em novembro, segundo fontes a par das discussões."
+      ],
+      "texto_integral": [
+        "Potenciais investidores na oferta pública inicial de ações (IPO, na sigla em inglês) da Anthropic têm dúvidas se a startup de inteligência artificial conseguirá realizar na próxima semana a rodada de apresentações a investidores e abrir o capital ainda em novembro, segundo fontes a par das discussões.",
+        "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns consideram que a avaliação de US$ 1,5 trilhão (R$ 8,22 trilhões), discutida recentemente, está no limite superior das expectativas, disseram as fontes à Reuters.",
+        "📱 Favorite o g1 no Google e acompanhe as principais notícias do dia",
+        "As discussões refletem, em parte, a maior onda de vendas de ações de tecnologia em um ano e as incertezas geopolíticas, que afetam as perspectivas para novas ofertas de ações."
+      ],
+      "pontos": [
+        "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns c...",
+        "📱 Favorite o g1 no Google e acompanhe as principais notícias do dia...",
+        "As discussões refletem, em parte, a maior onda de vendas de ações de tecnologia em um ano e as incer..."
+      ]
+    },
+    "2026-11-08--quando-a-marca-famosa-chega-depois-anteriorid-conjur.com.br/2026-nov-07/quan": {
+      "url": "https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/",
+      "fonte": "ConJur",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente",
+      "resumo": [
+        "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>"
+      ],
+      "texto_integral": [
+        "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
+        "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional contemporâneo.",
+        "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais de ConJur."
+      ],
+      "pontos": [
+        "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema...",
+        "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais ..."
+      ]
+    },
+    "2026-11-08--pt-e-pl-foram-partidos-que-mais-mencionaram-l-metropoles.com/brasil/pt-e-pl-": {
+      "url": "https://www.metropoles.com/brasil/pt-e-pl-foram-partidos-que-mais-mencionaram-lula-na-camara-desde-2023",
+      "fonte": "Metrópoles",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "PT e PL foram partidos que mais mencionaram \"Lula\" na Câmara desde 2023",
+      "resumo": [
+        "Reflexo claro da polarização política que marca o Brasil nos últimos anos, PT e PL concentram, juntos, 72,4% das citações ao presidente Luiz Inácio Lula da Silva (PT) em discursos na Câmara dos Deputados na atual legislatura."
+      ],
+      "texto_integral": [
+        "Reflexo claro da polarização política que marca o Brasil nos últimos anos, PT e PL concentram, juntos, 72,4% das citações ao presidente Luiz Inácio Lula da Silva (PT) em discursos na Câmara dos Deputados na atual legislatura.",
+        "Chama a atenção que o PL, principal legenda de oposição ao presidente Lula (PT), é o segundo partido que mais mencionou o nome “Lula” em discursos na Câmara dos Deputados na atual legislatura. Ficou atrás apenas do próprio PT.",
+        "Segundo levantamento do Metrópoles, foram 10.413 menções feita pelo PL entre 1º de fevereiro de 2023 e 5 de novembro de 2026, apenas 679 a menos que o PT, que lidera a lista com 11.092.",
+        "A análise foi feita com base no banco de discursos em plenário da Câmara."
+      ],
+      "pontos": [
+        "Chama a atenção que o PL, principal legenda de oposição ao presidente Lula (PT), é o segundo partido...",
+        "Segundo levantamento do Metrópoles, foram 10.413 menções feita pelo PL entre 1º de fevereiro de 2023...",
+        "A análise foi feita com base no banco de discursos em plenário da Câmara...."
+      ]
+    },
+    "2026-11-08--primeiro-passo-para-regular-big-techs-exigir-brasildefato.com.br/2026/11/06": {
+      "url": "https://www.brasildefato.com.br/2026/11/06/primeiro-passo-para-regular-big-techs-e-exigir-transparencia-afirma-especialista/",
+      "fonte": "Brasil de Fato",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Primeiro passo para regular big techs é exigir transparência, afirma especialista",
+      "resumo": [
+        "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas."
+      ],
+      "texto_integral": [
+        "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas.",
+        "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro de 2026, impulsionado por fortes correções no mercado financeiro global e, em especial, pelo estouro de uma bolha de IA na China.",
+        "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a urgência do debate de regulação das big techs.",
+        "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que participou da elaboração do Marco Civil da Internet, avalia que o maior nó nesse tema é a questão da falta de transparência. “O mais importante é a transparência. As plataformas operam hoje com uma opacidade que não é possível saber, auditar, avaliar se estão funcionando bem ou mal, as regras de funcionamento, e isso dificulta muito para a sociedade e até para as autoridades avaliar o que está funcionando”, afirma. “A gestão dos algoritmos, das publicações que a gente recebe ou não recebe, que foram desequilibradas nas eleições, ou como a inteligência artificial vai funcionar, a regulação mais importante é exigir que as plataformas sejam mais transparentes”, resume."
+      ],
+      "pontos": [
+        "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro ...",
+        "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a u...",
+        "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que..."
+      ]
+    },
+    "2026-11-08--presidente-de-israel-escolhe-rival-de-netanya-cartacapital.com.br/mundo/pres": {
+      "url": "https://www.cartacapital.com.br/mundo/presidente-de-israel-escolhe-rival-de-netanyahu-para-tentar-formar-um-governo/",
+      "fonte": "CartaCapital",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Presidente de Israel escolhe rival de Netanyahu para tentar formar um governo",
+      "resumo": [
+        "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias"
+      ],
+      "texto_integral": [
+        "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+        "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+        "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da tarefa de formar um governo após as eleições legislativas do fim de outubro, o que pode desbancar o primeiro-ministro Benjamin Netanyahu.",
+        "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palestino Hamas, em 8 de outubro de 2023, terminaram sem maioria tanto para Netanyahu e seus aliados, quanto para o bloco de Eisenkot."
+      ],
+      "pontos": [
+        "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabi...",
+        "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da t...",
+        "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palest..."
+      ]
+    },
+    "2026-11-08--lula-e-seu-carcereiro-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/eliogaspari/2026/11/lula-e-seu-carcereiro.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Lula e seu carcereiro",
+      "resumo": [
+        "Jornalista, autor de cinco volumes sobre a história do regime militar, entre eles \"A Ditadura Encurralada\""
+      ],
+      "texto_integral": [
+        "Jornalista, autor de cinco volumes sobre a história do regime militar, entre eles \"A Ditadura Encurralada\"",
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "Está nas livrarias \"Banho de Sol: Os 580 dias de Lula na Prisão\", de Jorge Chastalo Filho, o agente da Polícia Federal que guardava o prisioneiro em 2018/19 em Curitiba. É um documento de raro valor, uma espécie de memória do cárcere pelo olhar do carcereiro."
+      ],
+      "pontos": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler....",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+        "Está nas livrarias \"Banho de Sol: Os 580 dias de Lula na Prisão\", de Jorge Chastalo Filho, o agente ..."
+      ]
+    },
+    "2026-11-08--ueno-bank-esc-ndalo-que-levou-queda-do-presid-bbc.com/portuguese/articles/c6": {
+      "url": "https://www.bbc.com/portuguese/articles/c6eq33z529jwo?at_medium=RSS&at_campaign=rss",
+      "fonte": "BBC News Brasil",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Ueno Bank: escândalo que levou à queda do presidente do Paraguai pode ser comparado ao do Banco Master?",
+      "resumo": [
+        "A liquidação do banco Ueno desencadeou uma forte crise política no Paraguai, com a renúncia do presidente do Banco Central do País e depois, o impeachment e a prisão do agora ex-presidente Santiago Peña."
+      ],
+      "texto_integral": [
+        "A liquidação do banco Ueno desencadeou uma forte crise política no Paraguai, com a renúncia do presidente do Banco Central do País e depois, o impeachment e a prisão do agora ex-presidente Santiago Peña.",
+        "Peña foi acionista do Grupo Vázquez, controlador do banco Ueno, até março de 2025. O então presidente do Banco Central paraguaio, Carlos Carvallo Spalding, também havia comandado o Ueno antes de assumir o cargo público.",
+        "A crise bancária, de um banco com fortes laços políticos e envolvendo montante relevante de recursos públicos, incluindo aposentadorias, levou a comparações entre à crise do Ueno com a do banco Master, no Brasil.",
+        "Especialistas ouvidos pela BBC News Brasil, apontam que, de fato, há muitos pontos de contato entre os casos, mas também diferenças relevantes, como a escala do Ueno na economia paraguaia, e a proximidade direta do banco com o presidente do país – que já estava politicamente fragilizado por crises internas dentro de seu partido, o Colorado, o que acabou precipitando sua rápida queda."
+      ],
+      "pontos": [
+        "Peña foi acionista do Grupo Vázquez, controlador do banco Ueno, até março de 2025. O então president...",
+        "A crise bancária, de um banco com fortes laços políticos e envolvendo montante relevante de recursos...",
+        "Especialistas ouvidos pela BBC News Brasil, apontam que, de fato, há muitos pontos de contato entre ..."
+      ]
+    },
+    "2026-11-08--pol-cia-rodovi-ria-federal-encontra-carro-rou-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/policia-rodoviaria-federal-encontra-carro-roubado-ha-dez-anos-no-rio.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Polícia Rodoviária Federal encontra carro roubado há dez anos no Rio",
+      "resumo": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler."
+      ],
+      "texto_integral": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "Um Fiat Punto roubado há mais de dez anos no Rio de Janeiro foi encontrado pela Polícia Rodoviária Federal neste sábado (7) na BR-116, durante uma fiscalização em Vitória da Conquista, na Bahia.",
+        "A abordagem ocorreu na altura do km 17 da rodovia. Os policiais desconfiaram de adulteração nos sinais identificadores do carro e descobriram um boletim de ocorrência de julho de 2016 por roubo."
+      ],
+      "pontos": [
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+        "Um Fiat Punto roubado há mais de dez anos no Rio de Janeiro foi encontrado pela Polícia Rodoviária F...",
+        "A abordagem ocorreu na altura do km 17 da rodovia. Os policiais desconfiaram de adulteração nos sina..."
+      ]
+    },
+    "2026-11-08--defesa-civil-envia-72-alertas-preventivos-par-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/cidade-de-sao-paulo-entra-em-estado-de-atencao-para-alagamentos.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Defesa Civil envia 72 alertas preventivos para chuvas fortes no estado de São Paulo",
+      "resumo": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler."
+      ],
+      "texto_integral": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "Com a chegada de uma frente fria a São Paulo neste sábado (7), a Defesa Civil estadual enviou 72 alertas preventivos a partir das 11h30 em razão das chuvas que atingiram diferentes regiões do estado.",
+        "Um dos alertas Cell Broadcast foi enviado para a região de Interlagos, na zona sul da capital, onde estava sendo realizado o treino de classificação do GP de São Paulo de F1. Devido ao mau tempo, o classificatório teve atraso de mais de uma hora."
+      ],
+      "pontos": [
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+        "Com a chegada de uma frente fria a São Paulo neste sábado (7), a Defesa Civil estadual enviou 72 ale...",
+        "Um dos alertas Cell Broadcast foi enviado para a região de Interlagos, na zona sul da capital, onde ..."
+      ]
+    },
+    "2026-11-08--proibidas-por-lula-no-brasil-bets-seguem-atra-metropoles.com/brasil/proibida": {
+      "url": "https://www.metropoles.com/brasil/proibidas-por-lula-no-brasil-bets-seguem-atraindo-apostadores-no-telegram",
+      "fonte": "Metrópoles",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Proibidas por Lula no Brasil, bets seguem atraindo apostadores no Telegram",
+      "resumo": [
+        "Às 12h02 dessa sexta-feira (6/11), um tigre e uma coelha sorridentes apareciam entre moedas douradas num anúncio de apostas no Telegram. A imagem trazia a palavra “lançamento” e, em letras menores, o aviso para jogar com responsabilidade. A mensagem vinha acompanhada de links e de uma promessa para quem levasse amigos ao 777 Clube: bônus por convite e comissão diária."
+      ],
+      "texto_integral": [
+        "Às 12h02 dessa sexta-feira (6/11), um tigre e uma coelha sorridentes apareciam entre moedas douradas num anúncio de apostas no Telegram. A imagem trazia a palavra “lançamento” e, em letras menores, o aviso para jogar com responsabilidade. A mensagem vinha acompanhada de links e de uma promessa para quem levasse amigos ao 777 Clube: bônus por convite e comissão diária.",
+        "Um mês depois de vencer o prazo para que as bets autorizadas tirassem do ar seus sites e aplicativos de apostas no Brasil, canais do Telegram ainda publicam anúncios de jogos. Os arquivos de conversas obtidos pela reportagem registram ofertas de tigrinho, promessas de saques sem taxa e listas de endereços alternativos.",
+        "Em seis canais, a contagem exibida pelo aplicativo soma mais de 43 mil inscrições. Uma mesma pessoa pode aparecer em vários deles.",
+        "No Telegram, a mesma mensagem com links de apostas pode chegar de uma vez a milhares de pessoas. Basta que o administrador a publique num canal, onde todos os inscritos recebem as postagens. O aplicativo também permite criar grupos de conversa com até 200 mil participantes. Para os canais, não há limite de inscritos."
+      ],
+      "pontos": [
+        "Um mês depois de vencer o prazo para que as bets autorizadas tirassem do ar seus sites e aplicativos...",
+        "Em seis canais, a contagem exibida pelo aplicativo soma mais de 43 mil inscrições. Uma mesma pessoa ...",
+        "No Telegram, a mesma mensagem com links de apostas pode chegar de uma vez a milhares de pessoas. Bas..."
+      ]
+    },
+    "2026-11-08--int--polluted-delhi-tries-green-fireworks-to-clear-nytimes.com/2026/11/08/world/a": {
+      "url": "https://www.nytimes.com/2026/11/08/world/asia/delhi-pollution-green-fireworks-diwali.html",
+      "fonte": "The New York Times",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Polluted Delhi Tries ‘Green’ Fireworks to Clear the Air at Diwali",
+      "resumo": [
+        "India’s top court decreed that only more environmentally friendly fireworks could be set off this weekend, citing air quality concerns. But environmental activists call it a “green wash.”"
+      ],
+      "texto_integral": [
+        "India’s top court decreed that only more environmentally friendly fireworks could be set off this weekend, citing air quality concerns. But environmental activists call it a “green wash.”",
+        "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucio...",
+        "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integr..."
+      ]
+    },
+    "2026-11-08--int--kenyan-doomsday-sect-leader-jailed-for-200-ye-theguardian.com/world/2026/nov": {
+      "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie",
+      "fonte": "The Guardian",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
+      "resumo": [
+        "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families"
+      ],
+      "texto_integral": [
+        "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families",
+        "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 190 children and one adult in one of the world’s worst cult disasters in recent history.",
+        "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came two weeks after the court in Kenya’s coastal city of Mombasa found the cult leader guilty of the crimes.",
+        "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sect whose members were ordered to starve themselves and their children to death to go to heaven before the world ended."
+      ],
+      "pontos": [
+        "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 19...",
+        "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came t...",
+        "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sec..."
+      ]
+    },
+    "2026-11-08--int--what-we-know-so-far-after-krakow-gun-attack-bbc.co.uk/news/articles/cmd7q1": {
+      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+      "fonte": "BBC World News",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "What we know so far after Krakow gun attack",
+      "resumo": [
+        "At least six people were killed and more than a dozen others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland."
+      ],
+      "texto_integral": [
+        "At least six people were killed and more than a dozen others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland.",
+        "Three bodies were found at his home when it was searched by police. Here is everything we know so far.",
+        "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bustling central point of the city which is popular with tourists.",
+        "Police said a man drove into the square before beginning to fire \"at random people from his car\"."
+      ],
+      "pontos": [
+        "Three bodies were found at his home when it was searched by police. Here is everything we know so fa...",
+        "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bus...",
+        "Police said a man drove into the square before beginning to fire \"at random people from his car\"...."
+      ]
+    },
+    "2026-11-08--int--gunman-kills-six-in-krak-w-shooting-ft.com/content/0fab9ede-4fa1-4": {
+      "url": "https://www.ft.com/content/0fab9ede-4fa1-4f94-b23e-e32f07a6b7df?syn-25a6b1a6=1",
+      "fonte": "Financial Times",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Gunman kills six in Kraków shooting",
+      "resumo": [
+        "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident"
+      ],
+      "texto_integral": [
+        "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident",
+        "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionai...",
+        "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralm..."
+      ]
+    },
+    "2026-11-08--int--l-on-xiv-attendu-en-argentine-un-pays-o-l-egl-lemonde.fr/international/artic": {
+      "url": "https://www.lemonde.fr/international/article/2026/11/08/leon-xiv-attendu-en-argentine-un-pays-ou-l-eglise-se-positionne-aux-antipodes-du-projet-de-societe-de-javier-milei_6808418_3210.html",
+      "fonte": "Le Monde",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Léon XIV attendu en Argentine, un pays où l’Eglise se positionne aux antipodes du projet de société de Javier Milei",
+      "resumo": [
+        "Baptisée ainsi en hommage au pape François, natif du pays, la « Ciudad Papa Francisco », un ensemble de quartiers populaires dans la banlieue de Buenos Aires illustre le combat d’une l’Eglise catholique qui s’est érigée en pilier de l’opposition à la politique ultralibérale du président argentin."
+      ],
+      "texto_integral": [
+        "Baptisée ainsi en hommage au pape François, natif du pays, la « Ciudad Papa Francisco », un ensemble de quartiers populaires dans la banlieue de Buenos Aires illustre le combat d’une l’Eglise catholique qui s’est érigée en pilier de l’opposition à la politique ultralibérale du président argentin.",
+        "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e dip...",
+        "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente pa..."
+      ]
+    },
+    "2026-11-08--int--trump-cae-derrotado-en-las-urnas-pero-a-n-es-elpais.com/us/2026-11-08/trump": {
+      "url": "https://elpais.com/us/2026-11-08/trump-cae-derrotado-en-las-urnas-pero-aun-es-poderoso-e-impredecible-en-politica-exterior.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Trump cae derrotado en las urnas, pero aún es poderoso (e impredecible) en política exterior",
+      "resumo": [
+        "El presidente de EE UU ha comenzado a dar pistas sobre sus próximos pasos con el nombramiento del radical Stephen Miller como nuevo jefe de Gabinete"
+      ],
+      "texto_integral": [
+        "El presidente de EE UU ha comenzado a dar pistas sobre sus próximos pasos con el nombramiento del radical Stephen Miller como nuevo jefe de Gabinete",
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+      ]
+    },
+    "2026-11-08--int--entre-la-muerte-maga-y-la-radicalizaci-n-del-elpais.com/us/2026-11-08/entre": {
+      "url": "https://elpais.com/us/2026-11-08/entre-la-muerte-maga-y-la-radicalizacion-del-trumpismo-los-republicanos-buscan-su-sitio-tras-la-debacle-electoral.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Entre la muerte MAGA y la radicalización del trumpismo: los republicanos buscan su sitio tras la debacle electoral",
+      "resumo": [
+        "La elección del radical Stephen Miller como jefe de Gabinete indica que Trump no tolera una reflexión interna sobre el futuro del partido tras la derrota en las ‘midterms’"
+      ],
+      "texto_integral": [
+        "La elección del radical Stephen Miller como jefe de Gabinete indica que Trump no tolera una reflexión interna sobre el futuro del partido tras la derrota en las ‘midterms’",
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+      ]
+    },
+    "2026-11-08--int--al-menos-seis-muertos-y-una-quincena-de-herid-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-07/varios-muertos-y-heridos-en-un-atentado-en-la-plaza-mayor-de-cracovia.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+      "resumo": [
+        "Un coche ha irrumpido a las tres de la tarde de este sábado en la Plaza del Mercado, la mayor de la ciudad polaca de Cracovia, y ha empezado a disparar a los viandantes. Al menos seis personas han muerto y una quincena han resultado heridas en el atentado, como ha denominado el ataque el primer ministro, Donald Tusk."
+      ],
+      "texto_integral": [
+        "Un coche ha irrumpido a las tres de la tarde de este sábado en la Plaza del Mercado, la mayor de la ciudad polaca de Cracovia, y ha empezado a disparar a los viandantes. Al menos seis personas han muerto y una quincena han resultado heridas en el atentado, como ha denominado el ataque el primer ministro, Donald Tusk.",
+        "La policía ha confirmado que ha disparado al asaltante, que ha resultado herido y ha sido trasladado al hospital, donde se le ha intervenido quirúrgicamente. Se trata de un hombre de nacionalidad polaca de 24 años que ha actuado solo, aunque la investigación continúa y se están analizando las cámaras de seguridad de la zona. Entre los heridos hay dos agentes de policía, según ha informado el ministro de Interior, Marcin Kierwinski.",
+        "Bien entrada la noche, Tusk ha informado en una comparencencia de prensa en Cracovia, a donde se ha desplazado tras el ataque, que la policía ha encontrado además tres muertos, dos mujeres y un hombre, en el domicilio del asaltante. “Hay muchos indicios de que son miembros de su familia inmediata”, ha añadido el primer ministro. “Esto realmente es una tragedia excepcional”. El dirigente ha declarado los dos próximos días de luto nacional.",
+        "Kierwinski ha asegurado en una conferencia de prensa que “todo indica que el asaltante estaba fascinado por la ideología de extrema derecha. Pero esto requiere una investigación exhaustiva”. “Nos enfrentamos a un atentado: la intervención de los policías evitó una masacre mayor”, ha añadido el titular de Interior."
+      ],
+      "pontos": [
+        "La policía ha confirmado que ha disparado al asaltante, que ha resultado herido y ha sido trasladado...",
+        "Bien entrada la noche, Tusk ha informado en una comparencencia de prensa en Cracovia, a donde se ha ...",
+        "Kierwinski ha asegurado en una conferencia de prensa que “todo indica que el asaltante estaba fascin..."
+      ]
+    },
+    "2026-11-08--int--repudio-de-la-autocracia-y-del-poder-del-dine-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-08/repudio-de-la-autocracia-y-del-poder-del-dinero.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Repudio de la autocracia y del poder del dinero",
+      "resumo": [
+        "El revés republicano en las urnas tiene consecuencias para Putin, Netanyahu y las extremas derechas europeas, además de cuestionar el poder de los multimillonarios tecnológicos"
+      ],
+      "texto_integral": [
+        "El revés republicano en las urnas tiene consecuencias para Putin, Netanyahu y las extremas derechas europeas, además de cuestionar el poder de los multimillonarios tecnológicos",
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+      ]
+    },
+    "2026-11-08--int--nacionalismo-y-duelos-de-sables-las-fraternid-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-08/nacionalismo-y-duelos-de-sables-las-fraternidades-de-estudiantes-que-sirven-de-cantera-de-afd.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Nacionalismo y duelos de sables: las fraternidades de estudiantes que sirven de ‘cantera’ de AfD",
+      "resumo": [
+        "Dos concejales de Alternativa para Alemania (AfD) se batieron el 17 de octubre en un duelo de sables. Matthias Büschges, jefe del grupo municipal de AfD en Colonia, y Jeremy Fanosch, edil en Düsseldorf, se citaron en la sede de la Burschenschaft, fraternidad estudiantil, de esta última ciudad. Acompañados de sus padrinos y compañeros, Bürschges y Fanosch quisieron solucionar a sablazos una disputa personal que mantenían abierta. Ambos políticos son Alte Herren, Viejos Caballeros, de la Deutsche Burschenschaft, la organización que reúne a estas hermandades nacionalistas con raíces en el siglo XIX. Decenas de políticos de AfD han pasado por ellas."
+      ],
+      "texto_integral": [
+        "Dos concejales de Alternativa para Alemania (AfD) se batieron el 17 de octubre en un duelo de sables. Matthias Büschges, jefe del grupo municipal de AfD en Colonia, y Jeremy Fanosch, edil en Düsseldorf, se citaron en la sede de la Burschenschaft, fraternidad estudiantil, de esta última ciudad. Acompañados de sus padrinos y compañeros, Bürschges y Fanosch quisieron solucionar a sablazos una disputa personal que mantenían abierta. Ambos políticos son Alte Herren, Viejos Caballeros, de la Deutsche Burschenschaft, la organización que reúne a estas hermandades nacionalistas con raíces en el siglo XIX. Decenas de políticos de AfD han pasado por ellas.",
+        "Los dos ediles protagonizaron una bronca durante el congreso del partido en julio en el land de Renania del Norte-Westfalia. La agencia de noticias DPA y el diario Frankfurter Allgemeine Zeitung reportaron que Büschges es partidario de la continuidad de Martin Vincentz, actual presidente del partido en este Estado federado. Fanosch, en cambio, defiende el nombramiento de Matthias Helferisch como nuevo presidente porque considera que Vincentz es demasiado moderado.",
+        "“Es un tema privado pero creo que fuimos capaces de resolver el asunto que nos separaba”, declaró Büschges a DPA tras el duelo.",
+        "Alemania tiene una larga tradición de hermandades estudiantiles. Muchos políticos de la CDU, como el propio canciller, Friedrich Merz, han formado parte de estos colectivos. Pero Merz, como tantos otros políticos democristianos, ha sido miembro de fraternidades de valores cristianos. Las burschenschaften son hermandades nacionalistas, solo masculinas y que no permiten la membresía a extranjeros. Están cerradas al exterior, centran tradicionalmente su identidad en el orgullo nacional y, desde el siglo XX, en la extrema derecha. Algunas de estas asociaciones han sido monitorizadas por los servicios secretos alemanes por su radicalismo."
+      ],
+      "pontos": [
+        "Los dos ediles protagonizaron una bronca durante el congreso del partido en julio en el land de Rena...",
+        "“Es un tema privado pero creo que fuimos capaces de resolver el asunto que nos separaba”, declaró Bü...",
+        "Alemania tiene una larga tradición de hermandades estudiantiles. Muchos políticos de la CDU, como el..."
+      ]
+    },
+    "2026-11-08--int--detenidos-por-las-pintas-decenas-de-menores-e-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-08/detenidos-por-las-pintas-decenas-de-menores-en-comisaria-en-italia-con-el-nuevo-arresto-preventivo-en-manifestaciones.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-08",
+      "titulo": "Detenidos por las pintas: decenas de menores en comisaría en Italia con el nuevo arresto preventivo en manifestaciones",
+      "resumo": [
+        "La policía aplica a adolescentes lo que la oposición ya llama “delito de sudadera negra”, una polémica medida de Meloni que permite detener antes de una protesta a quien sea sospechoso de participar luego en disturbios"
+      ],
+      "texto_integral": [
+        "La policía aplica a adolescentes lo que la oposición ya llama “delito de sudadera negra”, una polémica medida de Meloni que permite detener antes de una protesta a quien sea sospechoso de participar luego en disturbios",
         "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
         "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
       ],
