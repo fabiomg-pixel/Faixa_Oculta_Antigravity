@@ -94,3 +94,9 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - 100% das notícias (Nacionais e Internacionais) DEVEM ser apuradas diretamente de matérias reais contemporâneas publicadas nos feeds RSS e portais jornalísticos nas últimas 48 horas, preservando o deep-link real do artigo específico (`f.url`).
    - O material internacional deve ter título e corpo traduzidos para o português culto com fidelidade factual estrita ao despacho original, mantendo o título em língua estrangeira em `titulo_original` e a URL externa autêntica.
 
+21. **Integração Direta com Jornais e Revistas via Beeper (PDFs Nacionais e Internacionais):**
+   - O Beeper Desktop no macOS atua como fonte primária de jornalismo impresso de primeira linha via banco local SQLite (`~/Library/Application Support/BeeperTexts/index.db`) e API REST local (`http://localhost:23373`).
+   - É suportado o download automatizado silencioso e sob demanda de qualquer jornal ou revista das salas *Jornais BR*, *International Newspapers* (*The Washington Post, NYT, The Economist, etc.*) e *Jornais e Revistas 4.0* através de `tools/processar_jornais_beeper.py`.
+   - A extração do texto integral é realizada via PyMuPDF (`fitz`) para edições digitais vetoriais e via Apple Vision Framework OCR nativo no macOS para edições escaneadas em imagem (*Folha de S.Paulo*).
+
+

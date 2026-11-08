@@ -315,12 +315,35 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
 
 ---
 
-## 20. Ferramentas e Scripts de Suporte
+## 21. Integração Direta com Jornais Impressos via Beeper (PDFs Nacionais e Internacionais)
+
+> [!TIP]
+> O Beeper Desktop no macOS funciona como a fonte primária definitiva de jornalismo impresso do dia, contendo as edições completas e integrais das principais publicações do Brasil e do mundo.
+
+1. **Acesso ao Acervo Local e API:**
+   * O acervo de mensagens e metadados é consultado diretamente em `~/Library/Application Support/BeeperTexts/index.db`.
+   * Os canais monitorados incluem:
+     * `Jornais BR` (`!iq3RLvh1JnfH6vJzkvaL:beeper.local`): *Folha de S.Paulo*, *O Estado de S. Paulo*, *O Globo*, *Valor Econômico*, *O Dia*, *Correio Braziliense*.
+     * `International Newspapers` (`!Q3EN2ZSkzkir8tYnRU7t:beeper.local`): *The Washington Post*, *The New York Times Magazine / Book Review*, *Los Angeles Times*, *Chicago Tribune*, *The Economist*.
+     * `Jornais e Revistas 4.0` (`!tFgakhGBTv3CNjiYMdkM:beeper.local`): Edições complementares e revistas semanais.
+2. **Download Automatizado sob Demanda (`tools/processar_jornais_beeper.py`):**
+   * A ferramenta autentica via OAuth PKCE com a Beeper Client API local (`http://localhost:23373`) e executa o download silencioso e imediato de qualquer edição necessária via `POST /v1/assets/download`.
+   * Arquivos baixados residem em `~/Library/Application Support/BeeperTexts/media/local.beeper.com/`.
+3. **Pipeline Duplo de Extração de Texto:**
+   * **PDFs Digitais Vetoriais (*Estadão, O Globo, WaPo, The Economist*):** Extração direta e instantânea com PyMuPDF (`fitz`), capturando dezenas de páginas e colunas completas em frações de segundo.
+   * **PDFs Rasterizados/Escaneados (*Folha de S.Paulo*):** Extração via OCR nativo do macOS com Apple Vision Framework (`VNRecognizeTextRequest` executado via Swift), sem dependência de serviços externos ou custo de API.
+4. **Alimentação Editorial da Faixa Oculta:**
+   * Utilizar o conteúdo extraído desses impressos para formular as reportagens aprofundadas, contrastar as visões plurais da imprensa brasileira e traduzir com precisão os despachos internacionais.
+
+---
+
+## 22. Ferramentas e Scripts de Suporte
 
 Ao manipular a base ou realizar manutenções, utilize os utilitários já homologados em `tools/`:
 
 | Script | Função Principal |
 | :--- | :--- |
+| `tools/processar_jornais_beeper.py` | Consulta, download automatizado via API local e extração de texto de jornais impressos do Beeper. |
 | `tools/varredura_cultural_online.py` | Apuração em tempo real de novos filmes, álbuns e livros via APIs externas (anti-cutoff). |
 | `tools/popular_resenhas_completas.py` | Geração de resenhas críticas densas de 4 parágrafos e erradicação de placeholders. |
 | `tools/gerar_analises_criticas_2026_11.py` | Geração de 2 a 3 análises críticas de veículos especializados por obra (música, cinema e livros). |
