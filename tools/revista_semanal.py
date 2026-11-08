@@ -112,7 +112,10 @@ def main():
         src = f.read()
 
     with open("index.html", "w", encoding="utf-8") as f:
-        f.write(SKELETON_HEAD + src + SKELETON_TAIL)
+        if src.lstrip().lower().startswith("<!doctype"):
+            f.write(src)
+        else:
+            f.write(SKELETON_HEAD + src + SKELETON_TAIL)
 
     print(f"=== SUCESSO: Revista da semana ({doc_id}) gravada com {len(nova_semana['temas'])} temas e trilha sugerida! ===")
 

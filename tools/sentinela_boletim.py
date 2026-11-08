@@ -113,11 +113,14 @@ def verificar_site_publicado(doc_id):
 
 
 def sincronizar_repositorio_local():
-    """Mantém a pasta local no Google Drive sincronizada com a nuvem."""
+    """Mantém a pasta local no Google Drive sincronizada com a nuvem sem falhar em divergências."""
     if not os.path.exists(WORKSPACE_DIR):
         return
     try:
-        subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "pull", "--ff-only"], capture_output=True, timeout=20)
+        r = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "pull", "--ff-only", "origin", "main"], capture_output=True, timeout=25)
+        if r.returncode != 0:
+            subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "fetch", "origin", "main"], capture_output=True, timeout=25)
+            subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "-X", "ours", "origin/main", "--no-edit"], capture_output=True, timeout=25)
     except Exception:
         pass
 
@@ -165,20 +168,26 @@ def executar_localmente(turno):
     cmd = [PYTHON_BIN, script]
 
     log(f"Executando comando local: {' '.join(cmd)}")
-    res = subprocess.run(cmd, cwd=WORKSPACE_DIR, env=env, capture_output=True, text=True, timeout=300)
+    res = subprocess.run(cmd, cwd=WORKSPACE_DIR, env=env, capture_output=True, text=True, timeout=600)
     if res.returncode != 0:
         log(f"Erro na execução local: {res.stderr.strip() or res.stdout.strip()}")
         return False
 
     log("Orquestrador local concluiu com sucesso! Commitando e publicando no GitHub Pages...")
 
-    # 3. Git add, commit e push
+    # 3. Git add, commit, sync e push resiliente
     subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "add", "data/revista.json", "index.html", "pagina.html", "audios/", "capas/"], check=False)
     subprocess.run(
         [GIT_BIN, "-C", WORKSPACE_DIR, "commit", "-m", f"Atualização editorial executada localmente no Mac ({turno}) [skip ci]"],
         check=False
     )
-    push_res = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "push", "origin", "main"], capture_output=True, text=True, timeout=40)
+    push_res = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "push", "origin", "main"], capture_output=True, text=True, timeout=45)
+    if push_res.returncode != 0:
+        log("Sincronizando com origin/main antes de reenviar push...")
+        subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "fetch", "origin", "main"], capture_output=True, timeout=25)
+        subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "-X", "ours", "origin/main", "--no-edit"], capture_output=True, timeout=25)
+        push_res = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "push", "origin", "main"], capture_output=True, text=True, timeout=45)
+
     if push_res.returncode == 0:
         log("SUCESSO: Apuração gerada localmente e enviada ao GitHub Pages com sucesso!")
         return True

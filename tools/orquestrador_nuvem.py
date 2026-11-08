@@ -1,92 +1,125 @@
 #!/usr/bin/env python3
-"""Orquestrador na nuvem da Faixa Oculta.
+# -*- coding: utf-8 -*-
+"""Orquestrador Central de Atualizações da Faixa Oculta (Local & Nuvem).
 
-Gerencia os ciclos editoriais solicitados via GitHub Actions:
-- Boletim Diário (Manhã e Noite - Todos os dias)
-- Revista da Semana (Quinta-feira à noite - 20h00 BRT)
-- Revista de Cultura (Música, Filmes e Livros - Todo dia 01)
+Coordena na ordem correta todas as rotinas automatizadas:
+1. Boletim Diário (Manhã e Noite — Todos os dias via tools/boletim_nuvem.py)
+2. Jornais do Dia no Modo Leitor (via tools/processar_jornais_beeper.py --perfil diario)
+3. Boletim em Áudio Integral (via tools/gerar_audio_boletim.py)
+4. Revista da Semana (Quintas-feiras à noite >= 18h BRT ou Sextas pela manhã)
+5. Cultura Mensal: Música, Cinema, Livros e Agenda Rio (Dia 01 de cada mês)
+6. Playlists da Agenda Cultural do Rio (Segundas-feiras e Dia 01)
 """
 
 import os
 import sys
+import json
 import datetime
 import subprocess
 
-def log(msg):
-    agora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
-    print(f"[{agora.strftime('%Y-%m-%d %H:%M:%S BRT')}] [Orquestrador] {msg}", flush=True)
 
-def executar_script(script_path, extra_args=None):
-    cmd = [sys.executable, script_path] + (extra_args or [])
-    log(f"--- Executando: {' '.join(cmd)} ---")
-    res = subprocess.run(cmd, check=False)
+def rodar_script(caminho_script, args=None):
+    cmd = [sys.executable, caminho_script] + (args or [])
+    print(f"\n>>> Executando: {' '.join(cmd)}")
+    res = subprocess.run(cmd)
     if res.returncode != 0:
-        log(f"Aviso: {script_path} finalizou com código {res.returncode}")
-        return False
-    log(f"--- Concluído com sucesso: {script_path} ---")
-    return True
+        print(f"Aviso: {caminho_script} retornou código {res.returncode}")
+    return res.returncode == 0
+
 
 def main():
-    rotina = os.environ.get("ROTINA_SOLICITADA", "auto").strip().lower()
-    extra_args = [a for a in sys.argv[1:] if a.startswith("--")]
     agora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
-    dia_semana = agora.weekday()  # Segunda=0, Terça=1, Quarta=2, Quinta=3, Sexta=4, Sábado=5, Domingo=6
+    data_iso = agora.strftime("%Y-%m-%d")
+    mes_iso = agora.strftime("%Y-%m")
+    dia_semana = agora.weekday()  # 0=Seg, 1=Ter, 2=Qua, 3=Qui, 4=Sex, 5=Sáb, 6=Dom
     dia_mes = agora.day
     hora = agora.hour
 
-    log(f"Iniciando orquestração. Modo: '{rotina}'. Horário local: {agora.strftime('%A, %d/%m/%Y %H:%M')}")
+    forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
+    extra_args = ["--forcar"] if forcar else []
 
-    if rotina == "boletim":
-        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "diario"])
-        executar_script("tools/boletim_nuvem.py", extra_args)
-        executar_script("tools/gerar_audio_boletim.py", extra_args)
-    elif rotina == "revista_semana":
-        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "semana"])
-        executar_script("tools/revista_semanal.py", extra_args)
-    elif rotina in ("cultura_mensal", "cultura"):
-        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "cultura"])
-        executar_script("tools/varredura_cultural_online.py", extra_args)
-        executar_script("tools/cultura_mensal.py", extra_args)
-        executar_script("tools/atualizar_playlists_agenda.py", ["--modo", "mensal"])
-    elif rotina in ("playlists", "playlist"):
-        executar_script("tools/atualizar_playlists_agenda.py", ["--modo", "forcar"])
-    elif rotina == "varredura":
-        executar_script("tools/varredura_cultural_online.py", extra_args)
-    elif rotina == "tudo":
-        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "diario"])
-        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "semana"])
-        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "cultura"])
-        executar_script("tools/boletim_nuvem.py", extra_args)
-        executar_script("tools/gerar_audio_boletim.py", extra_args)
-        executar_script("tools/revista_semanal.py", extra_args)
-        executar_script("tools/varredura_cultural_online.py", extra_args)
-        executar_script("tools/cultura_mensal.py", extra_args)
-        executar_script("tools/atualizar_playlists_agenda.py", ["--modo", "auto"])
-    elif rotina == "auto":
-        # 1. Boletim Diário roda em todas as chamadas (Manhã e Noite)
-        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "diario"])
-        executar_script("tools/boletim_nuvem.py", extra_args)
-        executar_script("tools/gerar_audio_boletim.py", extra_args)
+    print("=================================================================")
+    print(f" ORQUESTRADOR FAIXA OCULTA · {data_iso} ({agora.strftime('%H:%M')} BRT)")
+    print(f" Dia da semana: {dia_semana} | Dia do mês: {dia_mes} | Forçar: {forcar}")
+    print("=================================================================")
 
-        # 2. Revista da Semana: Quinta-feira a partir das 18h BRT
-        if (dia_semana == 3 and hora >= 18) or dia_semana in (4, 5):
-            log("Janela de Fim de Semana / Quinta-feira detectada: compilando Revista Semanal ampliada via Beeper...")
-            executar_script("tools/processar_jornais_beeper.py", ["--perfil", "semana"])
-            executar_script("tools/revista_semanal.py", extra_args)
+    # 1. BOLETIM DIÁRIO (Roda sempre: manhã e noite)
+    print("\n[1/6] Verificando Boletim Diário (Notícias Clássicas Nacionais + Internacionais)...")
+    rodar_script("tools/boletim_nuvem.py", extra_args)
 
-        # 3. Cultura do Mês: Todo dia 01
-        if dia_mes == 1 or dia_semana == 6:
-            log("Dia 01 / Domingo detectado: processando acervo cultural via Beeper...")
-            executar_script("tools/processar_jornais_beeper.py", ["--perfil", "cultura"])
-            if dia_mes == 1:
-                executar_script("tools/varredura_cultural_online.py", extra_args)
-                executar_script("tools/cultura_mensal.py", extra_args)
+    # 2. JORNAIS DO DIA NO MODO LEITOR (Roda APÓS o boletim para injetar destaques, editoriais e reportagens na edição criada)
+    print("\n[2/6] Processando Jornais do Dia para o Modo Leitor (Beeper / Curadoria)...")
+    rodar_script("tools/processar_jornais_beeper.py", ["--perfil", "diario", "--pages", "15"])
 
-        # 4. Playlists dos Shows da Agenda (Início da semana e Início do mês)
-        executar_script("tools/atualizar_playlists_agenda.py", ["--modo", "auto"])
+    # 3. ÁUDIO DO BOLETIM DIÁRIO (Gera narração em áudio da edição integral)
+    print("\n[3/6] Gerando/Verificando Áudio Narrado do Boletim Diário...")
+    rodar_script("tools/gerar_audio_boletim.py", extra_args)
+
+    # Carregar banco para verificar se edições semanais/mensais já constam
+    try:
+        with open("data/revista.json", "r", encoding="utf-8") as f:
+            db = json.load(f)
+    except Exception as e:
+        print(f"Erro ao ler data/revista.json: {e}")
+        sys.exit(1)
+
+    # 4. REVISTA DA SEMANA (Quinta à noite >= 18h ou Sexta-feira)
+    eh_janela_semanal = (dia_semana == 3 and hora >= 18) or (dia_semana == 4)
+    if eh_janela_semanal or forcar:
+        print("\n[4/6] Janela da Revista da Semana ativa! Processando revistas semanais e compilação...")
+        rodar_script("tools/processar_jornais_beeper.py", ["--perfil", "semana", "--pages", "12"])
+        rodar_script("tools/revista_semanal.py", extra_args)
     else:
-        log(f"Rotina desconhecida: '{rotina}'. Executando boletim diário padrão.")
-        executar_script("tools/boletim_nuvem.py", extra_args)
+        print("\n[4/6] Revista da Semana: fora da janela de quinta à noite / sexta (mantendo edição atual).")
+
+    # 5. CULTURA MENSAL (Todo dia 01 do mês ou se o mês atual ainda não existir em edicoes)
+    falta_mes_atual = mes_iso not in db.get("edicoes", {})
+    if dia_mes == 1 or falta_mes_atual:
+        print(f"\n[5/6] Janela da Cultura Mensal ({mes_iso}) ativa! Verificando safra de Música, Cinema, Livros e Agenda...")
+        rodar_script("tools/processar_jornais_beeper.py", ["--perfil", "cultura", "--pages", "12"])
+        rodar_script("tools/cultura_mensal.py", extra_args)
+    else:
+        print(f"\n[5/6] Cultura Mensal ({mes_iso}): edição do mês já publicada e íntegra.")
+
+    # 6. PLAYLISTS DA AGENDA DO RIO (Início da semana [segunda-feira] e início do mês [dia 01])
+    if dia_semana == 0 or dia_mes == 1 or forcar:
+        print("\n[6/6] Atualizando Playlists da Agenda Cultural do Rio (cadência oficial de início de semana/mês)...")
+        modo_pl = "forcar" if forcar else "auto"
+        rodar_script("tools/atualizar_playlists_agenda.py", ["--modo", modo_pl])
+    else:
+        print("\n[6/6] Playlists da Agenda: mantendo playlists da semana e do mês atuais.")
+
+    # Sincronização final garantida de index.html a partir de pagina.html
+    try:
+        with open("pagina.html", "r", encoding="utf-8") as f:
+            src = f.read()
+        skeleton_head = """<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/svg+xml" href="icone.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="icone-512.png">
+<link rel="apple-touch-icon" href="icone-180.png">
+<meta name="theme-color" content="#F3EEE4">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+"""
+        skeleton_tail = "\n</body>\n</html>\n"
+        with open("index.html", "w", encoding="utf-8") as f:
+            if src.lstrip().lower().startswith("<!doctype"):
+                f.write(src)
+            else:
+                f.write(skeleton_head + src + skeleton_tail)
+    except Exception as e:
+        print(f"Aviso ao sincronizar index.html: {e}")
+
+    print("\n=================================================================")
+    print(" ORQUESTRAÇÃO CONCLUÍDA COM SUCESSO!")
+    print("=================================================================")
+
 
 if __name__ == "__main__":
     main()

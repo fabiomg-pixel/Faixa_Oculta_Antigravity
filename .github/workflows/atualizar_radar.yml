@@ -45,7 +45,7 @@ jobs:
       - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
-          pip install beautifulsoup4 edge-tts
+          pip install beautifulsoup4 edge-tts Pillow
 
       - name: Executar apuração editorial na nuvem
         env:
@@ -60,4 +60,6 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/revista.json index.html pagina.html audios/ capas/
           git commit -m "Atualização editorial automatizada na nuvem [skip ci]" || echo "Nenhuma alteração para commitar"
-          git push
+          git fetch origin main
+          git rebase -X ours origin/main || (git rebase --abort || true; git merge -X ours origin/main --no-edit)
+          git push origin main

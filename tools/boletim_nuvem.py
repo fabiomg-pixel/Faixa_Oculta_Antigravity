@@ -200,7 +200,12 @@ def extrair_paragrafos_artigo(url):
             "receba as notícias", "notificações em tempo real", "foto:", "crédito:",
             "resumo gerado por ferramenta", "publicidade", "newsletter", "siga o canal",
             "ouça este conteúdo", "compartilhar:", "please enable js", "terms of service",
-            "all rights reserved", "subscribe to", "sign up for"
+            "all rights reserved", "subscribe to", "sign up for",
+            "você tem 7 acessos", "acessos por dia para dar de presente",
+            "qualquer pessoa que não é assinante", "assinantes podem liberar",
+            "dê um conteúdo de presente", "recurso exclusivo para assinantes",
+            "conteúdo exclusivo para assinantes", "já é assinante?", "faça seu login",
+            "continua depois da publicidade", "leia mais sobre"
         ]):
             continue
         paragrafos.append(t)
@@ -407,6 +412,19 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
                 ]
             
             slug = re.sub(r"[^a-z0-9]+", "-", tit.lower())[:45].strip("-")
+            importancia_por_subtema = {
+                "Contas Públicas e Ajuste Fiscal": "O desenho do ajuste fiscal e o controle das despesas obrigatórias determinam a trajetória da dívida pública, a ancoragem das expectativas de inflação e o espaço para queda dos juros em 2027.",
+                "Política Monetária, Selic e Câmbio": "Oscilações na taxa Selic, no câmbio e no custo de crédito afetam diretamente o financiamento produtivo, o poder de compra das famílias e o ritmo da atividade econômica.",
+                "Emprego, Indústria e Balança Comercial": "O desempenho da indústria de transformação, do mercado de trabalho e do saldo externo define a capacidade de crescimento sustentado do PIB brasileiro.",
+                "Congresso Nacional e Votações": "A correlação de forças na Câmara e no Senado define a governabilidade do Executivo, o calendário de reformas constitucionais e a alocação do orçamento federal.",
+                "STF e Decisões Judiciais Estruturantes": "Julgamentos dos tribunais superiores estabelecem marcos de segurança jurídica, limites entre os Poderes e parâmetros regulatórios de alcance nacional.",
+                "Governo Federal e Articulação Política": "As decisões da Esplanada e do Palácio do Planalto orientam a execução das políticas públicas prioritárias e a estabilidade da coalizão governamental.",
+                "Segurança Pública e Inteligência Federativa": "O enfrentamento financeiro e operacional ao crime organizado exige coordenação entre União e estados e impacta diretamente a segurança cotidiana nas metrópoles.",
+                "Diplomacia e Relações Internacionais": "Os movimentos diplomáticos na América do Sul e nas grandes potências afetam acordos comerciais, segurança energética e a inserção geopolítica do Brasil.",
+                "Infraestrutura, Energia e Transportes": "Investimentos e marcos de concessão em transportes e energia elétrica condicionam o custo logístico do país e a qualidade dos serviços essenciais.",
+                "Meio Ambiente em Escala Macro e Defesa Civil": "Eventos climáticos extremos e metas de transição energética exigem resposta coordenada de defesa civil, adaptação de infraestrutura urbana e financiamento ambiental.",
+                "Defesa do Consumidor e Mercado Digital": "A regulação de mercados digitais, crédito e apostas eletrônicas protege a renda familiar contra o superendividamento e corrige assimetrias concorrenciais."
+            }
             nota = {
                 "id": f"{data_iso}--{slug}",
                 "escopo": "nacional",
@@ -415,12 +433,12 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso):
                 "editoria": cat,
                 "titulo": tit,
                 "texto": paras[0] if paras else desc,
-                "por_que_importa": f"O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
-                "resumo_visoes": f"A apuração de {v} enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+                "por_que_importa": importancia_por_subtema.get(subtema, "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país."),
+                "resumo_visoes": f"Na cobertura de {subtema.lower()}, a reportagem de {v} confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
                 "texto_completo": paras[:4],
                 "aprofundamento": {
-                    "contexto": f"Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
-                    "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+                    "contexto": paras[1] if len(paras) > 1 else f"Desdobramento acompanhado no eixo de {subtema.lower()} pelos órgãos de Estado e agentes econômicos.",
+                    "o_que_observar": paras[2] if len(paras) > 2 else "Os próximos passos no Congresso, nos tribunais superiores e nos indicadores oficiais."
                 },
                 "fontes": [
                     {
@@ -610,7 +628,18 @@ def main():
                 "pontos": f.get("pontos", [])
             }
 
-    # 4. Atualiza banco e compila index.html
+    # 4. Preserva jornais e áudio existentes (ou herda jornais da edição da manhã do mesmo dia)
+    anterior = db.get("dias", {}).get(doc_id, {})
+    dia_manha = db.get("dias", {}).get(data_iso, {})
+    if anterior.get("jornais"):
+        novo_dia["jornais"] = anterior["jornais"]
+    elif dia_manha.get("jornais"):
+        novo_dia["jornais"] = dia_manha["jornais"]
+    if anterior.get("audio"):
+        novo_dia["audio"] = anterior["audio"]
+    if anterior.get("audio_duracao"):
+        novo_dia["audio_duracao"] = anterior["audio_duracao"]
+
     db["dias"][doc_id] = novo_dia
 
     with open(revista_path, "w", encoding="utf-8") as f:
@@ -620,7 +649,10 @@ def main():
         src = f.read()
 
     with open("index.html", "w", encoding="utf-8") as f:
-        f.write(SKELETON_HEAD + src + SKELETON_TAIL)
+        if src.lstrip().lower().startswith("<!doctype"):
+            f.write(src)
+        else:
+            f.write(SKELETON_HEAD + src + SKELETON_TAIL)
 
     print(f"=== SUCESSO: Boletim {doc_id} gravado com {len(novo_dia['notas'])} notas 100% reais e textos na íntegra! ===")
 

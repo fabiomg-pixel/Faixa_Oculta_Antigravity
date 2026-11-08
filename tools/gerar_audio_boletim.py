@@ -46,11 +46,12 @@ def montar_roteiro_transcricao(d):
     notas_int = [n for n in notas_todas if n.get("escopo") == "internacional" or n.get("pais") == "Internacional" or n.get("titulo_original")]
 
     if notas_nac:
-        partes.append("Iniciamos com o bloco de Mídia Nacional, destacando as pautas estruturais de economia, política e ciência no Brasil.")
+        partes.append("Iniciamos com o bloco de Mídia Nacional, destacando as pautas estruturais de economia, política, relações internacionais e sociedade no Brasil.")
         for n in notas_nac:
             ed = n.get("editoria", "").strip()
             tit = n.get("titulo", "").strip()
-            txt = n.get("texto", "").strip()
+            tc = n.get("texto_completo")
+            txt = " ".join(tc[:3]).strip() if isinstance(tc, list) and tc else n.get("texto", "").strip()
             pqi = n.get("por_que_importa", "").strip()
             bloco = []
             if ed: bloco.append(f"{ed}.")
@@ -64,7 +65,8 @@ def montar_roteiro_transcricao(d):
         for n in notas_int:
             ed = n.get("editoria", "").strip()
             tit = n.get("titulo", "").strip()
-            txt = n.get("texto", "").strip()
+            tc = n.get("texto_completo")
+            txt = " ".join(tc[:3]).strip() if isinstance(tc, list) and tc else n.get("texto", "").strip()
             pqi = n.get("por_que_importa", "").strip()
             bloco = []
             if ed: bloco.append(f"{ed}.")
@@ -138,7 +140,8 @@ def main():
     parser = argparse.ArgumentParser(description="Gera áudio do boletim diário")
     parser.add_argument("--dia", default=None, help="ID da data (ex: 2026-11-02)")
     parser.add_argument("--voz", default="pt-BR-AntonioNeural", help="Voz do edge-tts")
-    args = parser.parse_args()
+    parser.add_argument("--forcar", action="store_true", help="Força regeneração do áudio")
+    args, _ = parser.parse_known_args()
 
     json_path = "data/revista.json"
     with open(json_path, "r", encoding="utf-8") as f:
@@ -156,8 +159,13 @@ def main():
         sys.exit(1)
 
     dia_dados = dias[dia_id]
-    roteiro = montar_roteiro_transcricao(dia_dados)
     saida = f"audios/boletim_{dia_id}.mp3"
+    forcar = args.forcar or os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim")
+    if not forcar and os.path.exists(saida) and os.path.getsize(saida) > 50000 and dia_dados.get("audio") == saida:
+        print(f"Áudio para [{dia_id}] já existe em {saida} ({dia_dados.get('audio_duracao', '')}). Nada a fazer.")
+        return
+
+    roteiro = montar_roteiro_transcricao(dia_dados)
     
     print(f"=== GERANDO ÁUDIO DO BOLETIM: {dia_id} ===")
     print(f"Roteiro: {len(roteiro.split())} palavras")

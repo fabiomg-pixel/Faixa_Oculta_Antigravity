@@ -337,10 +337,15 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
    * A ferramenta autentica via OAuth PKCE com a Beeper Client API local (`http://localhost:23373`) e executa o download silencioso e imediato de qualquer edição necessária via `POST /v1/assets/download`.
    * Arquivos baixados residem em `~/Library/Application Support/BeeperTexts/media/local.beeper.com/`.
 3. **Pipeline Duplo de Extração de Texto:**
-   * **PDFs Digitais Vetoriais (*Estadão, O Globo, WaPo, The Economist*):** Extração direta e instantânea com PyMuPDF (`fitz`), capturando dezenas de páginas e colunas completas em frações de segundo.
-   * **PDFs Rasterizados/Escaneados (*Folha de S.Paulo*):** Extração via OCR nativo do macOS com Apple Vision Framework (`VNRecognizeTextRequest` executado via Swift), sem dependência de serviços externos ou custo de API.
-4. **Alimentação Editorial da Faixa Oculta:**
-   * Utilizar o conteúdo extraído desses impressos para formular as reportagens aprofundadas, contrastar as visões plurais da imprensa brasileira e traduzir com precisão os despachos internacionais.
+   * **PDFs Digitais Vetoriais (*Estadão, O Globo, Valor, WaPo, The Guardian, The Times*):** Extração direta e instantânea com PyMuPDF (`fitz`), capturando 15+ páginas e colunas completas em segundos.
+   * **PDFs Rasterizados/Escaneados (*Folha de S.Paulo, Financial Times*):** Extração via OCR nativo do macOS com Apple Vision Framework (`VNRecognizeTextRequest` executado via Swift), sem dependência de serviços externos ou custo de API.
+4. **Proibição de Expor PDFs Brutos & Exibição Completa no Modo Leitor (`#texto`):**
+   * **Nunca disponibilizar ou linkar arquivos PDF brutos (`jornais/*.pdf`, `url_pdf`, `pdf_url`) na interface web.**
+   * Em vez de PDFs, o bloco "Nos Jornais do Dia" (`blocoJornais` / `abrirJornalCompleto`) DEVE disponibilizar diretamente no **Modo Leitor interno (`#texto`)** o conteúdo estruturado de cada um dos 8 jornais prioritários (*Folha, Estadão, O Globo, Valor, Financial Times, Washington Post, The Guardian, The Times UK*):
+     * Miniatura da primeira página (`capas/<md5>.jpg`), manchete principal e panorama da edição (`resumo_edicao`);
+     * **Editorial & Opinião do Dia** (`editorial`);
+     * **5 a 7 Principais Reportagens de Cada Jornal** (`reportagens`), contendo caderno/página, título (e `titulo_original` se internacional), autor, texto integral de 3 a 4 parágrafos densos em português (`texto_integral`) e destaques em tópicos (`pontos`);
+     * **Destaques Cruzados (`destaques`)** e **Vale Ler na Íntegra (`leitura`)** clicáveis abrindo diretamente no Modo Leitor.
 
 ---
 

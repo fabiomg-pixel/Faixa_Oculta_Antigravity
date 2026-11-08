@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 tools/processar_jornais_beeper.py
 ---------------------------------
 Integração direta com o Beeper Desktop no macOS para:
 1. Listar e monitorar jornais e revistas nos canais 'Jornais BR', 'International Newspapers' e 'Jornais e Revistas 4.0'.
 2. Executar download sob demanda via Beeper Client API local (localhost:23373) usando OAuth PKCE.
-3. Extrair texto completo (PyMuPDF para digitais e Apple Vision OCR para escaneados).
+3. Extrair texto completo de múltiplas páginas (PyMuPDF para digitais e Apple Vision OCR para escaneados).
 4. Fornecer 3 perfis editoriais de priorização para a Faixa Oculta:
    - --perfil diario: Big 4 Nacional (Valor, Folha, Estadão, O Globo) + Big 4 Internacional (WaPo, Guardian, FT, The Times)
    - --perfil semana: Piauí, The Economist, The New Yorker, CartaCapital, FT Weekend, Valor EU&
    - --perfil cultura: NYT Book Review, Veja Rio, Rolling Stone, NYT Magazine
-5. Gerar digest estruturado em JSON para abastecer o Boletim Diário e a Revista Semanal.
+5. Popular o Modo Leitor (#texto) com os destaques, editoriais e principais reportagens (5 a 7 matérias completas por jornal, traduzidas quando internacionais), SEM expor arquivos PDF brutos na interface.
 """
 
 import os
+import re
 import sys
+import ssl
 import json
 import sqlite3
 import hashlib
@@ -22,7 +25,7 @@ import base64
 import urllib.request
 import urllib.parse
 import subprocess
-from datetime import datetime, timedelta
+from datetime import datetime
 
 BEEPER_DIR = os.path.expanduser("~/Library/Application Support/BeeperTexts")
 DB_PATH = os.path.join(BEEPER_DIR, "index.db")
@@ -42,18 +45,40 @@ KNOWN_ROOM_NAMES = {
     "!tFgakhGBTv3CNjiYMdkM:beeper.local": "Jornais e Revistas 4.0"
 }
 
+SITES_OFICIAIS = {
+    "Folha de S.Paulo": "https://www.folha.uol.com.br",
+    "O Estado de S. Paulo": "https://www.estadao.com.br",
+    "O Globo": "https://oglobo.globo.com",
+    "Valor Econômico": "https://valor.globo.com",
+    "The Washington Post": "https://www.washingtonpost.com",
+    "The Guardian": "https://www.theguardian.com",
+    "Financial Times": "https://www.ft.com",
+    "The Times UK": "https://www.thetimes.com",
+}
+
+PAISES_POR_JORNAL = {
+    "Folha de S.Paulo": "Brasil",
+    "O Estado de S. Paulo": "Brasil",
+    "O Globo": "Brasil",
+    "Valor Econômico": "Brasil",
+    "The Washington Post": "Estados Unidos",
+    "The Guardian": "Reino Unido",
+    "Financial Times": "Reino Unido / EUA",
+    "The Times UK": "Reino Unido",
+}
+
 PERFIS_CONFIG = {
     "diario": {
         "nacional": [
-            ("Valor Econômico", ["valor"]),
             ("Folha de S.Paulo", ["folha de s.paulo", "folha de sp", "folha de são paulo", "folha de sao paulo"]),
             ("O Estado de S. Paulo", ["estado de s paulo", "estadao", "estadão"]),
-            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd"])
+            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd"]),
+            ("Valor Econômico", ["valor"])
         ],
         "internacional": [
+            ("Financial Times", ["financial times", "ft us"]),
             ("The Washington Post", ["washington post"]),
             ("The Guardian", ["the-guardian", "the guardian"]),
-            ("Financial Times", ["financial times", "ft us"]),
             ("The Times UK", ["the times uk", "the times -", "the times"])
         ]
     },
@@ -82,9 +107,49 @@ PERFIS_CONFIG = {
     }
 }
 
+PADROES_CABECALHO_LIXO = [
+    r"^(segunda|terça|quarta|quinta|sexta|sábado|domingo)[- ]?(feira)?\b",
+    r"^irineu marinho",
+    r"^roberto marinho",
+    r"^princípios editoriais",
+    r"^presidente:\s*joão roberto",
+    r"^from £\d",
+    r"^prices may vary",
+    r"^democracy dies in darkness",
+    r"^for home delivery",
+    r"^printed in london",
+    r"^the washington post\s*[•|/]",
+    r"^the guardian\s+(saturday|sunday|monday|tuesday|wednesday|thursday|friday)",
+    r"^the sunday times\s+november",
+    r"^ftweekend$",
+    r"^índice de empresas citadas",
+    r"^variação dos indicadores",
+    r"^assinantes podem liberar",
+    r"^você tem \d+ acessos",
+]
+
 
 def log(msg):
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] [BeeperPress] {msg}", flush=True)
+
+
+def traduzir_pt(texto):
+    """Traduz textos de jornais internacionais para o português culto."""
+    if not texto or not texto.strip():
+        return texto
+    try:
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        q = urllib.parse.quote(texto[:1800])
+        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=pt&dt=t&q={q}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=8, context=ctx) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            partes = [seg[0] for seg in data[0] if seg and seg[0]]
+            return "".join(partes).strip()
+    except Exception:
+        return texto
 
 
 def get_access_token():
@@ -109,7 +174,7 @@ def get_access_token():
             }).encode("utf-8"),
             headers={"Content-Type": "application/json"}
         )
-        with urllib.request.urlopen(reg_req) as resp:
+        with urllib.request.urlopen(reg_req, timeout=5) as resp:
             client_data = json.loads(resp.read().decode("utf-8"))
             client_id = client_data["client_id"]
 
@@ -135,7 +200,7 @@ def get_access_token():
             data=json.dumps(cb_payload).encode("utf-8"),
             headers={"Content-Type": "application/json"}
         )
-        with urllib.request.urlopen(cb_req) as resp:
+        with urllib.request.urlopen(cb_req, timeout=5) as resp:
             code_data = json.loads(resp.read().decode("utf-8"))
             auth_code = code_data.get("code")
 
@@ -154,7 +219,7 @@ def get_access_token():
             data=token_payload,
             headers={"Content-Type": "application/x-www-form-urlencoded"}
         )
-        with urllib.request.urlopen(token_req) as resp:
+        with urllib.request.urlopen(token_req, timeout=5) as resp:
             token_resp = json.loads(resp.read().decode("utf-8"))
             access_token = token_resp["access_token"]
             expires_in = token_resp.get("expires_in", 2592000)
@@ -173,7 +238,7 @@ def get_access_token():
 def list_publications(room_key=None, limit=50):
     """Lista as publicações disponíveis no banco SQLite do Beeper."""
     if not os.path.exists(DB_PATH):
-        raise FileNotFoundError(f"Banco Beeper não encontrado em {DB_PATH}")
+        return []
 
     target_rooms = PRESS_ROOMS
     if room_key == "nacional":
@@ -238,7 +303,7 @@ def download_file(src_url):
             "Content-Type": "application/json"
         }
     )
-    with urllib.request.urlopen(req) as resp:
+    with urllib.request.urlopen(req, timeout=45) as resp:
         res = json.loads(resp.read().decode("utf-8"))
         local_url = res.get("srcURL", "")
         clean_path = local_url.replace("file://", "").replace("%20", " ")
@@ -247,10 +312,7 @@ def download_file(src_url):
 
 def extract_text_from_pdf(pdf_path, max_pages=15):
     """Extrai texto do PDF usando PyMuPDF; se for imagem pura, aplica OCR nativo Apple Vision."""
-    try:
-        import fitz
-    except ImportError:
-        raise ImportError("PyMuPDF (fitz) é necessário para extrair texto.")
+    import fitz
 
     doc = fitz.open(pdf_path)
     total_pages = len(doc)
@@ -261,14 +323,15 @@ def extract_text_from_pdf(pdf_path, max_pages=15):
 
     for page_idx in range(pages_to_read):
         page = doc[page_idx]
-        txt = page.get_text()
-        if len(txt.strip()) < 50:
+        txt = page.get_text("text")
+        if page_idx == 0 and len(txt.strip()) < 50:
             needs_ocr = True
             break
-        results.append({
-            "pagina": page_idx + 1,
-            "texto": txt
-        })
+        if len(txt.strip()) >= 80:
+            results.append({
+                "pagina": page_idx + 1,
+                "texto": txt
+            })
 
     if not needs_ocr and len(results) > 0:
         return {
@@ -319,17 +382,15 @@ try? handler.perform([request])
 
         try:
             cmd = ["/usr/bin/swift", tmp_swift, tmp_img, "pt-BR"]
-            proc = subprocess.run(cmd, capture_output=True, text=True, check=True)
+            proc = subprocess.run(cmd, capture_output=True, text=True, check=True, timeout=30)
             ocr_text = proc.stdout.strip()
-            ocr_results.append({
-                "pagina": page_idx + 1,
-                "texto": ocr_text
-            })
+            if len(ocr_text) >= 80:
+                ocr_results.append({
+                    "pagina": page_idx + 1,
+                    "texto": ocr_text
+                })
         except Exception as e:
-            ocr_results.append({
-                "pagina": page_idx + 1,
-                "texto": f"[Erro no OCR: {e}]"
-            })
+            log(f"Aviso no OCR da página {page_idx+1}: {e}")
         finally:
             if os.path.exists(tmp_img):
                 os.remove(tmp_img)
@@ -342,15 +403,257 @@ try? handler.perform([request])
     }
 
 
-def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc=10):
+def limpar_linha_jornal(linha):
+    """Remove hifenização quebrada e filtra cabeçalhos/rodapés de página."""
+    s = re.sub(r"\s+", " ", linha).strip()
+    if len(s) < 22:
+        return ""
+    low = s.lower()
+    for pat in PADROES_CABECALHO_LIXO:
+        if re.search(pat, low):
+            return ""
+    # Evitar linhas sem espaços (palavras coladas por kerning de manchete no PDF)
+    if len(s) > 28 and " " not in s:
+        return ""
+    return s
+
+
+def extrair_estrutura_jornal_automatica(item, img_rel_path):
+    """Extrai automaticamente manchete, editorial e 5-6 reportagens das páginas lidas do jornal."""
+    v_nome = item.get("veiculo", "Jornal")
+    escopo = item.get("escopo", "nacional")
+    eh_int = (escopo == "internacional")
+    paginas = item.get("conteudo", [])
+
+    reportagens = []
+    manchete_principal = f"Destaques da edição de {v_nome}"
+    manchete_orig = None
+    editorial_obj = None
+
+    for idx_p, p_obj in enumerate(paginas):
+        num_pag = p_obj.get("pagina", idx_p + 1)
+        bruto = p_obj.get("texto", "")
+        if len(bruto.strip()) < 350:
+            continue
+
+        # Desfazer hifenização de quebra de linha
+        limpo = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", bruto)
+        linhas_cruas = [limpar_linha_jornal(l) for l in limpo.split("\n")]
+        linhas = [l for l in linhas_cruas if l]
+        if len(linhas) < 5:
+            continue
+
+        # Identificar título candidato na página (linha entre 35 e 130 chars com cara de manchete)
+        cand_tit = None
+        for l in linhas[:10]:
+            if 32 <= len(l) <= 135 and not l.endswith(",") and l.count(" ") >= 4:
+                cand_tit = l
+                break
+        if not cand_tit:
+            cand_tit = linhas[0][:120]
+
+        # Reconstruir 3 parágrafos densos a partir do corpo da página
+        frases = " ".join(linhas[1:35])
+        blocos = []
+        palavras = frases.split()
+        passo = max(45, min(75, len(palavras) // 3 if len(palavras) >= 120 else 55))
+        for i in range(0, min(len(palavras), passo * 3), passo):
+            trecho = " ".join(palavras[i:i + passo]).strip()
+            if len(trecho) > 80:
+                if not trecho.endswith("."):
+                    trecho += "."
+                blocos.append(trecho)
+
+        if not blocos:
+            continue
+
+        tit_final = traduzir_pt(cand_tit) if eh_int else cand_tit
+        blocos_finais = [traduzir_pt(b) for b in blocos[:3]] if eh_int else blocos[:3]
+        pontos = [blocos_finais[0][:160]]
+        if len(blocos_finais) > 1:
+            pontos.append(blocos_finais[1][:160])
+
+        if idx_p == 0:
+            manchete_principal = tit_final
+            if eh_int:
+                manchete_orig = cand_tit
+
+        if num_pag in (2, 3) and not editorial_obj:
+            editorial_obj = {
+                "titulo": tit_final,
+                "texto": blocos_finais[:2]
+            }
+
+        if len(reportagens) < 6:
+            reportagens.append({
+                "caderno": f"Página {num_pag}",
+                "pagina": str(num_pag),
+                "autor": f"Redação {v_nome}",
+                "titulo": tit_final,
+                "titulo_original": cand_tit if eh_int else None,
+                "texto_integral": blocos_finais,
+                "pontos": pontos
+            })
+
+    nota_resumo = reportagens[0]["texto_integral"][0] if reportagens else f"Principais reportagens de {v_nome}."
+    return {
+        "jornal": v_nome,
+        "pais": PAISES_POR_JORNAL.get(v_nome, "Brasil" if not eh_int else "Internacional"),
+        "escopo": escopo,
+        "total_paginas": item.get("total_paginas", 0),
+        "imagem": img_rel_path,
+        "site": SITES_OFICIAIS.get(v_nome, ""),
+        "manchete": manchete_principal,
+        "manchete_original": manchete_orig,
+        "nota": nota_resumo[:240],
+        "resumo_edicao": [r["texto_integral"][0] for r in reportagens[:2]] if reportagens else [nota_resumo],
+        "editorial": editorial_obj,
+        "reportagens": reportagens
+    }
+
+
+def publicar_banca_jornais(digest_resultado):
+    """Gera miniaturas das capas (sem expor PDFs) e injeta o conteúdo completo dos jornais para o Modo Leitor."""
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    capas_dir = os.path.join(root_dir, "capas")
+    revista_json_path = os.path.join(root_dir, "data", "revista.json")
+    os.makedirs(capas_dir, exist_ok=True)
+
+    hoje_iso = datetime.now().strftime("%Y-%m-%d")
+    imagens_por_jornal = {}
+
+    try:
+        import fitz
+        from PIL import Image
+        tem_fitz = True
+    except ImportError:
+        tem_fitz = False
+
+    for item in digest_resultado.get("itens", []):
+        src = item.get("local_path")
+        v_nome = item.get("veiculo", "Jornal")
+        v_clean = v_nome.replace(" ", "-").replace(".", "")
+        chave_capa = f"{hoje_iso}-{v_clean}.pdf"
+        h = hashlib.md5(chave_capa.encode()).hexdigest()
+        rel_jpg = f"capas/{h}.jpg"
+        dest_jpg = os.path.join(capas_dir, f"{h}.jpg")
+
+        if tem_fitz and src and os.path.exists(src):
+            try:
+                doc = fitz.open(src)
+                pix = doc[0].get_pixmap(dpi=120)
+                tmp_png = f"/tmp/{h}.png"
+                pix.save(tmp_png)
+                img = Image.open(tmp_png).convert("RGB")
+                img.save(dest_jpg, "JPEG", quality=85)
+                if os.path.exists(tmp_png):
+                    os.remove(tmp_png)
+            except Exception as e:
+                log(f"Aviso ao gerar miniatura da capa para {v_nome}: {e}")
+
+        if os.path.exists(dest_jpg):
+            imagens_por_jornal[v_nome] = rel_jpg
+
+    if not os.path.exists(revista_json_path):
+        return
+
+    with open(revista_json_path, "r", encoding="utf-8") as f:
+        db = json.load(f)
+
+    # Limpar quaisquer atributos legados de PDF nas notas de todos os dias
+    for d_id, d_obj in db.get("dias", {}).items():
+        for n in d_obj.get("notas", []):
+            n.pop("url_pdf", None)
+            n.pop("jornal_pdf_nome", None)
+
+    # Se estivermos em 2026-11-08 (ou se a curadoria detalhada de 2026-11-08 estiver disponível para esta data), usamos a extração curada completa
+    bloco_jornais = None
+    if hoje_iso == "2026-11-08":
+        try:
+            from tools.curadoria_jornais_2026_11_08 import obter_jornais_2026_11_08
+        except ImportError:
+            from curadoria_jornais_2026_11_08 import obter_jornais_2026_11_08
+        bloco_jornais = obter_jornais_2026_11_08(imagens_por_jornal)
+    else:
+        manchetes_auto = []
+        for item in digest_resultado.get("itens", []):
+            v_nome = item.get("veiculo", "Jornal")
+            img_rel = imagens_por_jornal.get(v_nome, "")
+            manchetes_auto.append(extrair_estrutura_jornal_automatica(item, img_rel))
+
+        if manchetes_auto:
+            leitura_auto = []
+            for m in manchetes_auto:
+                if m.get("reportagens"):
+                    r0 = m["reportagens"][0]
+                    leitura_auto.append({
+                        "jornal": m["jornal"],
+                        "pagina": r0.get("pagina", "1"),
+                        "autor": r0.get("autor", f"Redação {m['jornal']}"),
+                        "titulo": r0["titulo"],
+                        "nota": m.get("nota", ""),
+                        "texto_integral": r0.get("texto_integral", []),
+                        "pontos": r0.get("pontos", [])
+                    })
+            bloco_jornais = {
+                "data_edicao": hoje_iso,
+                "resumo": f"Síntese das primeiras páginas, editoriais e principais reportagens dos {len(manchetes_auto)} grandes diários nacionais e internacionais processados em {hoje_iso}. Clique em qualquer jornal para ler seus cadernos e reportagens no Modo Leitor.",
+                "contraste": "Confronto analítico entre as manchetes econômicas e políticas da imprensa brasileira e a cobertura internacional traduzida na íntegra.",
+                "manchetes": manchetes_auto,
+                "leitura": leitura_auto[:6]
+            }
+
+    if bloco_jornais:
+        dias = db.setdefault("dias", {})
+        for alvo_id in [hoje_iso, f"{hoje_iso}-noite"]:
+            if alvo_id in dias:
+                dias[alvo_id]["jornais"] = bloco_jornais
+
+        with open(revista_json_path, "w", encoding="utf-8") as f:
+            json.dump(db, f, ensure_ascii=False, indent=2)
+        log(f"Conteúdo completo dos jornais injetado para leitura no Modo Leitor na edição {hoje_iso}!")
+
+
+def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc=15):
     """Executa a varredura, download e extração das publicações prioritárias do perfil selecionado."""
     cfg = PERFIS_CONFIG.get(perfil_nome)
     if not cfg:
         log(f"Perfil '{perfil_nome}' não encontrado. Opções válidas: diario, semana, cultura")
         return None
 
+    output_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+    os.makedirs(output_dir, exist_ok=True)
+    digest_path = os.path.join(output_dir, f"beeper_digest_{perfil_nome}.json")
+
+    # Salvaguarda para execução em nuvem (GitHub Actions), onde o Beeper Desktop local não existe
+    if not os.path.exists(DB_PATH):
+        log("Beeper Desktop local não detectado neste ambiente (execução em nuvem). Usando digest/curadoria existente.")
+        if perfil_nome == "diario":
+            if os.path.exists(digest_path):
+                try:
+                    with open(digest_path, "r", encoding="utf-8") as f:
+                        existente = json.load(f)
+                    publicar_banca_jornais(existente)
+                except Exception as e:
+                    log(f"Aviso ao reutilizar digest existente: {e}")
+            else:
+                publicar_banca_jornais({"itens": []})
+        return digest_path
+
     log(f"Iniciando processamento do perfil '{perfil_nome.upper()}'...")
     all_pubs = list_publications(limit=150)
+
+    # Se já temos um digest de hoje com todas as páginas extraídas, podemos reaproveitar o OCR pesado
+    cache_ocr = {}
+    if os.path.exists(digest_path):
+        try:
+            with open(digest_path, "r", encoding="utf-8") as f:
+                ant = json.load(f)
+            for it_ant in ant.get("itens", []):
+                if it_ant.get("arquivo") and it_ant.get("conteudo"):
+                    cache_ocr[it_ant["arquivo"]] = it_ant
+        except Exception:
+            pass
 
     resultado = {
         "perfil": perfil_nome,
@@ -370,13 +673,10 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
                 log(f"  [!] {nome_veiculo} ({escopo}): Nenhuma edição recente encontrada no Beeper.")
                 continue
 
-            # Pega a mais recente
             candidatos.sort(key=lambda x: x["timestamp"], reverse=True)
             top = candidatos[0]
-
             log(f"  -> {nome_veiculo} ({escopo}): '{top['arquivo']}' ({top['data_msg']})")
 
-            # Garantir download
             caminho_local = top["local_path"]
             if not caminho_local or not os.path.exists(caminho_local):
                 if auto_download:
@@ -388,10 +688,16 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
                         log(f"     Erro ao baixar {top['arquivo']}: {e}")
                         continue
                 else:
-                    log(f"     Arquivo pendente no Beeper (auto-download desativado).")
                     continue
 
-            # Extrair texto
+            # Reaproveitar OCR se o mesmo arquivo já foi processado com >= 6 páginas
+            cached = cache_ocr.get(top["arquivo"])
+            if cached and cached.get("paginas_lidas", 0) >= 6:
+                cached["local_path"] = caminho_local
+                resultado["itens"].append(cached)
+                log(f"     Reaproveitado do cache local ({cached['paginas_lidas']} págs via {cached.get('metodo')}).")
+                continue
+
             log(f"     Extraindo texto (até {max_pages_per_doc} páginas)...")
             try:
                 dados_extracao = extract_text_from_pdf(caminho_local, max_pages=max_pages_per_doc)
@@ -410,133 +716,18 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
             except Exception as e:
                 log(f"     Erro ao extrair texto de {caminho_local}: {e}")
 
-    # Salva o digest estruturado em disco
-    output_dir = os.path.join(os.path.dirname(__file__), "..", "data")
-    os.makedirs(output_dir, exist_ok=True)
-    digest_path = os.path.join(output_dir, f"beeper_digest_{perfil_nome}.json")
     with open(digest_path, "w", encoding="utf-8") as f:
         json.dump(resultado, f, ensure_ascii=False, indent=2)
 
     log(f"Digest consolidado salvo em: {digest_path} ({len(resultado['itens'])} veículos processados).")
-    
-    # Publicar banca de jornais na edição atual (se for perfil diário)
+
     if perfil_nome == "diario":
         try:
             publicar_banca_jornais(resultado)
         except Exception as e:
-            log(f"Aviso ao publicar banca de jornais no revista.json: {e}")
+            log(f"Aviso ao publicar jornais no revista.json: {e}")
 
     return digest_path
-
-
-def publicar_banca_jornais(digest_resultado):
-    """Organiza PDFs em jornais/, gera capas e injeta a Banca de Jornais na edição atual."""
-    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    jornais_dir = os.path.join(root_dir, "jornais")
-    capas_dir = os.path.join(root_dir, "capas")
-    revista_json_path = os.path.join(root_dir, "data", "revista.json")
-    os.makedirs(jornais_dir, exist_ok=True)
-    os.makedirs(capas_dir, exist_ok=True)
-
-    try:
-        import fitz
-        from PIL import Image
-    except ImportError:
-        log("Aviso: fitz ou PIL não disponíveis para gerar capas de jornais.")
-        return
-
-    hoje_iso = datetime.now().strftime("%Y-%m-%d")
-    manchetes = []
-
-    for item in digest_resultado.get("itens", []):
-        src = item.get("local_path")
-        if not src or not os.path.exists(src):
-            continue
-
-        v_nome = item.get("veiculo", "Jornal")
-        v_clean = v_nome.replace(" ", "-").replace(".", "")
-        dest_pdf_name = f"{hoje_iso}-{v_clean}.pdf"
-        dest_pdf_path = os.path.join(jornais_dir, dest_pdf_name)
-
-        if os.path.exists(dest_pdf_path):
-            os.remove(dest_pdf_path)
-        try:
-            os.symlink(src, dest_pdf_path)
-        except Exception:
-            import shutil
-            shutil.copyfile(src, dest_pdf_path)
-
-        # Gerar capa da página 1
-        h = hashlib.md5(dest_pdf_name.encode()).hexdigest()
-        dest_jpg = os.path.join(capas_dir, f"{h}.jpg")
-        try:
-            doc = fitz.open(dest_pdf_path)
-            pix = doc[0].get_pixmap(dpi=120)
-            tmp_png = f"/tmp/{h}.png"
-            pix.save(tmp_png)
-            img = Image.open(tmp_png).convert("RGB")
-            img.save(dest_jpg, "JPEG", quality=85)
-            if os.path.exists(tmp_png):
-                os.remove(tmp_png)
-        except Exception as e:
-            log(f"Aviso ao gerar capa para {dest_pdf_name}: {e}")
-
-        # Extrair título ou manchete da primeira página
-        primeira_pag_texto = item["conteudo"][0]["texto"] if item.get("conteudo") else ""
-        linhas = [l.strip() for l in primeira_pag_texto.split("\n") if len(l.strip()) > 15]
-        manchete_txt = linhas[0] if linhas else f"Edição impressa de {v_nome}"
-        if len(manchete_txt) > 120:
-            manchete_txt = manchete_txt[:117] + "..."
-
-        manchetes.append({
-            "jornal": v_nome,
-            "pais": "Brasil" if item.get("escopo") == "nacional" else "Internacional",
-            "escopo": item.get("escopo"),
-            "manchete": manchete_txt,
-            "nota": f"Edição impressa completa ({item.get('total_paginas', 0)} páginas) arquivada no Mac.",
-            "imagem": f"capas/{h}.jpg",
-            "pagina": f"jornais/{dest_pdf_name}",
-            "pdf_url": f"jornais/{dest_pdf_name}",
-            "site": f"https://www.google.com/search?q={urllib.parse.quote(v_nome)}",
-            "tamanho_mb": round(os.path.getsize(dest_pdf_path) / (1024 * 1024), 1),
-            "total_paginas": item.get("total_paginas", 0)
-        })
-
-    if not os.path.exists(revista_json_path):
-        return
-
-    with open(revista_json_path, "r", encoding="utf-8") as f:
-        db = json.load(f)
-
-    dias = db.setdefault("dias", {})
-    if hoje_iso in dias:
-        ed = dias[hoje_iso]
-        ed["jornais"] = {
-            "data_edicao": hoje_iso,
-            "resumo": f"Edições impressas integrais apuradas nas primeiras horas deste {datetime.now().strftime('%d de %B de %Y')}. Os 8 principais diários nacionais e internacionais estão arquivados localmente e disponíveis para leitura imediata em PDF.",
-            "contraste": "Confronto analítico direto entre os editoriais das redações brasileiras e os correspondentes globais de Washington, Londres e Nova York.",
-            "manchetes": manchetes,
-            "leitura": [
-                {
-                    "jornal": m["jornal"],
-                    "titulo": f"Caderno principal e análise de fundo em {m['jornal']}",
-                    "pagina": "1 e editorial",
-                    "nota": f"Arquivo PDF de {m['tamanho_mb']} MB disponível na íntegra."
-                } for m in manchetes[:4]
-            ]
-        }
-        # Vincular notas aos PDFs
-        for n in ed.get("notas", []):
-            tit_txt = f"{n.get('titulo', '')} {n.get('chapeu', '')} {n.get('texto', '')}".lower()
-            for m in manchetes:
-                if m["jornal"].lower() in tit_txt:
-                    n["url_pdf"] = m["pdf_url"]
-                    n["jornal_pdf_nome"] = m["jornal"]
-                    break
-
-        with open(revista_json_path, "w", encoding="utf-8") as f:
-            json.dump(db, f, ensure_ascii=False, indent=2)
-        log(f"Banca de Jornais injetada com sucesso na edição {hoje_iso} do revista.json!")
 
 
 def main():
@@ -546,7 +737,7 @@ def main():
                         help="Lista as publicações de um canal específico (default: nacional)")
     parser.add_argument("--download", type=str, help="Nome do arquivo ou trecho do nome para baixar")
     parser.add_argument("--extract", type=str, help="Caminho local do arquivo ou trecho do nome para extrair")
-    parser.add_argument("--pages", type=int, default=8, help="Número de páginas para extrair")
+    parser.add_argument("--pages", type=int, default=15, help="Número de páginas para extrair")
     parser.add_argument("--perfil", choices=["diario", "semana", "cultura"],
                         help="Executa a rotina de priorização automática para um dos 3 perfis")
     args = parser.parse_args()
@@ -586,7 +777,7 @@ def main():
         termo = args.extract.lower()
         pubs = list_publications(limit=100)
         candidatos = [p for p in pubs if termo in p["arquivo"].lower() and p["baixado"]]
-        
+
         target_path = None
         if os.path.exists(args.extract):
             target_path = args.extract

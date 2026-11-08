@@ -966,7 +966,31 @@ def montar_cultura_novembro_2026():
 
 
 def main():
-    print("=== INICIANDO ATUALIZAÇÃO DA REVISTA CULTURAL (NOVEMBRO 2026) ===")
+    print("=== VERIFICANDO REVISTA CULTURAL MENSAL (NOVEMBRO 2026) ===")
+    revista_path = "data/revista.json"
+    with open(revista_path, "r", encoding="utf-8") as f:
+        db = json.load(f)
+
+    forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
+    ed_atual = db.get("edicoes", {}).get("2026-11", {})
+    agenda_atual = db.get("agenda", {}).get("atual", {}).get("eventos", [])
+    tem_bandas_detalhadas = any(
+        any(d.get("artistas") for d in ev.get("destaques", []))
+        for ev in agenda_atual
+    )
+
+    # Se a edição de 2026-11 já está completa com Retrato de Autor e Agenda detalhada, preserva integralmente
+    if ed_atual.get("retrato_autor") and tem_bandas_detalhadas and not forcar:
+        print("Edição cultural 2026-11 e Agenda detalhada com bandas já estão completas e íntegras. Nada a sobrescrever.")
+        return
+
+    # Preserva estado rico antes de eventual atualização
+    agenda_salva = agenda_atual if tem_bandas_detalhadas else None
+    ed_musica_salva = ed_atual if ed_atual.get("retrato_autor") else None
+    ed_cine_salva = db.get("cine_edicoes", {}).get("2026-11", {})
+    ed_livro_salva = db.get("livro_edicoes", {}).get("2026-11", {})
+    itens_salvos = {col: dict(db.get(col, {})) for col in ("itens", "cine_itens", "livro_itens")}
+
     try:
         import tools.gerar_cultura_novembro_total as g
         g.main()
@@ -974,16 +998,33 @@ def main():
         import gerar_cultura_novembro_total as g
         g.main()
 
-    # Garantir preservação da agenda cultural
-    revista_path = "data/revista.json"
     with open(revista_path, "r", encoding="utf-8") as f:
         db = json.load(f)
-    dados = montar_cultura_novembro_2026()
-    db.setdefault("agenda", {}).setdefault("atual", {})["eventos"] = dados["agenda_eventos"]
+
+    # Restaurar enriquecimentos (retrato_autor, analises_criticas, agenda com bandas) para nunca regredir
+    if ed_musica_salva:
+        db.setdefault("edicoes", {})["2026-11"] = ed_musica_salva
+    if ed_cine_salva.get("retrato_autor"):
+        db.setdefault("cine_edicoes", {})["2026-11"] = ed_cine_salva
+    if ed_livro_salva.get("retrato_autor"):
+        db.setdefault("livro_edicoes", {})["2026-11"] = ed_livro_salva
+    for col, mapa_ant in itens_salvos.items():
+        for k, v_ant in mapa_ant.items():
+            if k in db.get(col, {}) and v_ant.get("analises_criticas"):
+                db[col][k]["analises_criticas"] = v_ant["analises_criticas"]
+                if v_ant.get("capa"):
+                    db[col][k]["capa"] = v_ant["capa"]
+
+    if agenda_salva:
+        db.setdefault("agenda", {}).setdefault("atual", {})["eventos"] = agenda_salva
+    else:
+        dados = montar_cultura_novembro_2026()
+        db.setdefault("agenda", {}).setdefault("atual", {})["eventos"] = dados["agenda_eventos"]
+
     with open(revista_path, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
 
-    print("=== SUCESSO: Cultura Mensal de 2026-11 atualizada com escala total e agenda preservada! ===")
+    print("=== SUCESSO: Cultura Mensal de 2026-11 verificada e preservada sem regressões! ===")
 
 
 

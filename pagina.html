@@ -2359,14 +2359,6 @@ dialog.texto.convite-dlg {
         n.aprofundamento.o_que_observar ? h("p", { style: "margin:0;font-size:15px;line-height:1.6;" }, [h("b", null, "O que observar a seguir: "), str(n.aprofundamento.o_que_observar)]) : null
       ) : null,
 
-      n.url_pdf ? h("div", { style: "margin:20px 0;padding:14px 18px;background:var(--paper);border:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;" },
-        h("div", null,
-          h("b", { class: "mono", style: "font-size:12px;text-transform:uppercase;color:var(--sec);" }, `Edição Impressa Original · ${str(n.jornal_pdf_nome || "Jornal")}`),
-          h("p", { style: "margin:4px 0 0;font-size:14px;" }, "Consulte o exemplar impresso digitalizado completo em alta resolução.")
-        ),
-        h("a", { class: "lt-orig-btn mono", href: safeUrl(n.url_pdf), target: "_blank", rel: "noopener", style: "display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:var(--card);border:1px solid var(--ink);color:var(--ink);font-weight:700;text-decoration:none;" }, "📄 Abrir Edição no PDF ↗")
-      ) : null,
-
       // Fontes verificadas com links diretos
       secaoFontes.length ? [
         h("h4", { class: "lt-divisor-tit", style: "margin:36px 0 12px;text-transform:uppercase;font-size:12px;letter-spacing:.06em;color:var(--sec, var(--red));" }, "Cobertura Completa por Veículo · Notícias na Íntegra"),
@@ -2723,7 +2715,11 @@ dialog.texto.convite-dlg {
     const partes = [];
     if (n.editoria) partes.push(n.editoria + ".");
     if (n.titulo) partes.push(n.titulo + ".");
-    if (n.texto) partes.push(n.texto);
+    if (Array.isArray(n.texto_completo) && n.texto_completo.length) {
+      partes.push(...n.texto_completo);
+    } else if (n.texto) {
+      partes.push(n.texto);
+    }
     if (n.por_que_importa) partes.push(`Por que importa: ${n.por_que_importa}`);
     const txt = partes.join(" \n ");
     const utter = new SpeechSynthesisUtterance(txt);
@@ -2766,7 +2762,11 @@ dialog.texto.convite-dlg {
     for (const n of arr(d.notas)) {
       if (n.editoria) partes.push(n.editoria + ".");
       if (n.titulo) partes.push(n.titulo + ".");
-      if (n.texto) partes.push(n.texto);
+      if (Array.isArray(n.texto_completo) && n.texto_completo.length) {
+        partes.push(...n.texto_completo);
+      } else if (n.texto) {
+        partes.push(n.texto);
+      }
       if (n.por_que_importa) partes.push(`Por que importa: ${n.por_que_importa}`);
     }
     const txtCompleto = partes.join(" \n ");
@@ -2935,7 +2935,6 @@ dialog.texto.convite-dlg {
           f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
         h("div", { class: "d-nota-acts", onclick: (e) => e.stopPropagation() },
           h("button", { class: "ler", type: "button", onclick: () => abrirNota(n, bol) }, "Abrir no leitor"),
-          safeUrl(n.url_pdf) ? h("a", { class: "d-btn-pdf-act mono", href: safeUrl(n.url_pdf), target: "_blank", rel: "noopener", style: "display:inline-flex;align-items:center;gap:4px;padding:5px 9px;border:1px solid var(--rule);background:var(--card);font-size:var(--fs-xs);text-decoration:none;color:var(--ink);border-radius:2px;" }, `📄 PDF (${str(n.jornal_pdf_nome || "Jornal")}) ↗`) : null,
           h("button", {
             class: `d-btn-salvar mono ${isNotaSalva(n, bol) ? "salva" : ""}`,
             type: "button",
@@ -2953,50 +2952,152 @@ dialog.texto.convite-dlg {
     return [head, blocoAudioBoletim(d), blocoJornais(d.jornais), grade, fim];
   }
 
-  // The day's printed papers (PDFs from the Telegram groups, kept in a private folder on the Mac): front pages, how each paper played the big stories, what is worth reading in full.
+  function abrirJornalCompleto(m, j, scrollIdx = null) {
+    aplicarLeitorPrefs();
+    const t = document.getElementById("texto");
+    const redesenhar = () => abrirJornalCompleto(m, j, scrollIdx);
+    const reps = arr(m.reportagens);
+    const ehInt = m.escopo === "internacional" || (m.pais && m.pais !== "Brasil");
+    const resumoEd = Array.isArray(m.resumo_edicao) && m.resumo_edicao.length
+      ? m.resumo_edicao
+      : [m.nota, j && j.resumo ? `Panorama cruzado das edições: ${j.resumo}` : ""].filter(Boolean);
+
+    t.replaceChildren(h("div", { class: "lt-box" },
+      h("div", { class: "lt-bar" },
+        h("span", { class: "mono" }, `Modo Leitor · Edição do Dia · ${str(m.jornal)}`),
+        h("button", { class: "l-btn", type: "button", onclick: () => t.close(), "aria-label": "Fechar" }, "Fechar ×")),
+      barraControlesLeitor(redesenhar),
+      h("div", { style: "display:flex;gap:18px;align-items:flex-start;margin:10px 0 18px;flex-wrap:wrap;" },
+        safeUrl(m.imagem) ? h("img", { src: safeUrl(m.imagem), alt: `Primeira página de ${str(m.jornal)}`, style: "width:92px;height:auto;border:1px solid var(--lt-rule, var(--rule));box-shadow:0 4px 12px rgba(0,0,0,.14);flex-shrink:0;" }) : null,
+        h("div", { style: "flex:1;min-width:220px;" },
+          h("div", { class: "lt-meta mono", style: "margin-bottom:6px;" },
+            h("b", null, str(m.jornal)),
+            [m.pais, j && j.data_edicao ? fmtData(j.data_edicao) : "", m.total_paginas ? `${m.total_paginas} págs.` : ""].filter(Boolean).join(" · ")),
+          h("h2", { class: "lt-tit", style: "margin:4px 0 10px;line-height:1.16;" }, str(m.manchete)),
+          m.manchete_original && m.manchete_original !== m.manchete ? h("p", { class: "d-nota-subtit-orig mono", style: "margin:0 0 8px;font-size:13px;" }, `Manchete original: “${str(m.manchete_original)}”`) : null,
+          ehInt ? h("span", { class: "badge-int mono", style: "display:inline-block;margin-bottom:6px;" }, "🌍 Edição Internacional Traduzida na Íntegra") : null
+        )
+      ),
+      h("div", { class: "lt-corpo-completo" }, resumoEd.map((p) => h("p", null, str(p)))),
+
+      m.editorial ? h("div", { class: "lt-visoes-box", style: "margin:22px 0;padding:16px 20px;background:var(--lt-card, var(--card));border-left:4px solid var(--ocre, #B5862C);" },
+        h("h4", { style: "margin:0 0 6px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.06em;color:var(--ocre, #B5862C);" }, `Editorial & Opinião · ${str(m.editorial.titulo || "Linha Editorial do Dia")}`),
+        ...(Array.isArray(m.editorial.texto) ? m.editorial.texto : [m.editorial.texto || m.editorial]).filter(Boolean).map((p) => h("p", { style: "margin:0 0 10px;font-size:15px;line-height:1.6;" }, str(p)))
+      ) : null,
+
+      reps.length ? h("div", { style: "margin:20px 0 24px;padding:14px 18px;border:1px solid var(--lt-rule, var(--rule));background:var(--lt-card, var(--card));" },
+        h("h4", { class: "mono", style: "margin:0 0 10px;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--lt-muted);" }, `Índice desta edição (${reps.length} reportagens principais)`),
+        h("ol", { style: "margin:0;padding-left:18px;display:grid;gap:6px;" }, reps.map((r, idx) =>
+          h("li", null,
+            h("button", {
+              type: "button",
+              class: "fl-ler",
+              style: "text-align:left;font-weight:600;",
+              onclick: () => document.getElementById(`jr-rep-${idx}`)?.scrollIntoView({ behavior: "smooth", block: "start" })
+            }, `${r.caderno ? `[${str(r.caderno)}] ` : ""}${str(r.titulo)}`))
+        ))
+      ) : null,
+
+      reps.length ? [
+        h("h4", { class: "lt-divisor-tit", style: "margin:32px 0 12px;text-transform:uppercase;font-size:12px;letter-spacing:.06em;color:var(--sec, var(--red));" }, `Principais Reportagens & Cadernos de ${str(m.jornal)}`),
+        ...reps.map((r, idx) => {
+          const paras = arr(r.texto_integral && r.texto_integral.length ? r.texto_integral : r.resumo);
+          return h("article", { id: `jr-rep-${idx}`, class: "lt-fonte-bloco", style: "border-top:2px solid var(--lt-rule, var(--rule));padding:22px 0 16px;margin-top:20px;scroll-margin-top:24px;" },
+            h("div", { class: "lt-meta mono", style: "margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;" },
+              h("span", null, h("b", null, str(r.caderno || "Reportagem")), r.pagina ? ` · Pág. ${str(r.pagina)}` : "", r.autor ? ` · ${str(r.autor)}` : ""),
+              h("span", { class: "badge mono", style: "font-size:10px;text-transform:uppercase;padding:2px 6px;border:1px solid var(--lt-rule, var(--rule));border-radius:2px;" }, `${str(m.jornal)} · Nº ${idx + 1}`)),
+            h("h3", { class: "lt-tit", style: "font-size:clamp(18px,2.3vw,23px);margin:8px 0 10px;line-height:1.22;" }, str(r.titulo)),
+            r.titulo_original && r.titulo_original !== r.titulo ? h("p", { class: "d-nota-subtit-orig mono", style: "margin:0 0 12px;font-size:13px;" }, `Original: “${str(r.titulo_original)}”`) : null,
+            h("div", { class: "lt-corpo-completo", style: "margin:12px 0;" }, paras.map((p) => h("p", null, str(p)))),
+            arr(r.pontos).length ? h("div", { style: "margin:16px 0 10px;padding:12px 16px;background:var(--lt-card, var(--card));border-left:3px solid var(--sec, var(--red));" },
+              h("h5", { style: "margin:0 0 6px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.05em;color:var(--lt-muted);" }, "Destaques e dados da reportagem:"),
+              h("ul", { class: "lt-pontos", style: "margin:0;padding-left:18px;" }, arr(r.pontos).map((pt) => h("li", null, str(pt))))
+            ) : null,
+            r.citacao ? h("blockquote", { class: "lt-cit", style: "margin:14px 0;padding:10px 16px;border-left:4px solid var(--ocre, #B5862C);font-style:italic;" }, `“${str(r.citacao)}”`) : null
+          );
+        })
+      ] : null,
+
+      j && j.contraste ? h("div", { class: "lt-aprofunda-box", style: "margin-top:24px;" },
+        h("h4", { style: "margin:0 0 6px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.06em;color:var(--anil, #2F4F6F);" }, "Onde os jornais divergem hoje"),
+        h("p", { style: "margin:0;font-size:15px;line-height:1.6;" }, str(j.contraste))) : null,
+
+      safeUrl(m.site) ? h("div", { class: "lt-link-rodape", style: "margin-top:28px;padding-top:16px;border-top:1px solid var(--lt-rule, var(--rule));display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;" },
+        h("a", { class: "lt-orig-btn mono", href: safeUrl(m.site), target: "_blank", rel: "noopener" }, `Visitar portal de ${str(m.jornal)} ↗`),
+        h("span", { class: "mono lt-aviso" }, "Edição processada e traduzida para leitura integral na Faixa Oculta")) : null
+    ));
+    t.showModal();
+    if (scrollIdx !== null && scrollIdx >= 0) {
+      setTimeout(() => {
+        document.getElementById(`jr-rep-${scrollIdx}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 60);
+    } else {
+      t.querySelector(".l-btn").focus({ preventScroll: true });
+    }
+  }
+
+  // The day's printed papers: front pages, main stories per paper in Modo Leitor, how each paper played the big stories, and what is worth reading in full.
   function blocoJornais(j) {
     if (!j || (!arr(j.manchetes).length && !arr(j.destaques).length)) return null;
-    const temCapasWeb = arr(j.manchetes).some((m) => m && (m.imagem || m.pagina || m.site));
     return h("section", { class: "wrap secao jr", id: "jornais", style: "margin-block:16px 28px;padding-top:16px;border-top:2px solid var(--rule);" },
       h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, arr(j.manchetes).length || ""),
-        h("h3", null, "banca de jornais · edições impressas (pdf)"),
-        h("p", null, [j.data_edicao ? `Edições impressas de ${rotuloDia(j.data_edicao)}.` : "", str(j.resumo)].filter(Boolean).join(" "))),
+        h("h3", null, "nos jornais do dia · primeiras páginas & reportagens"),
+        h("p", null, [j.data_edicao ? `Edições de ${rotuloDia(j.data_edicao)}.` : "", str(j.resumo)].filter(Boolean).join(" "))),
       arr(j.manchetes).length ? h("ol", { class: "jr-capas" }, arr(j.manchetes).map((m) => {
-        const img = safeUrl(m.imagem), link = safeUrl(m.pdf_url || m.pagina || m.site), site = safeUrl(m.site);
-        const abrirJornal = () => {
-          abrirTexto({
-            fonte: m.jornal,
-            autor: m.pais || "Edição impressa",
-            titulo: `${m.jornal}: ${m.manchete}`,
-            resumo: [
-              m.nota ? m.nota : `Manchete principal da edição impressa de ${m.jornal}.`,
-              j.resumo ? `Panorama do dia: ${j.resumo}` : ""
-            ].filter(Boolean),
-            pontos: j.contraste ? [`Divergência entre jornais: ${j.contraste}`] : [],
-            url: link || site || ""
-          });
-        };
-        return h("li", { class: img ? null : "sem-img" },
-          img ? h("a", { class: "jr-thumb-a", href: link || site, target: "_blank", rel: "noopener", title: `Abrir PDF de ${str(m.jornal)}` },
+        const img = safeUrl(m.imagem), reps = arr(m.reportagens);
+        const abrir = () => abrirJornalCompleto(m, j, null);
+        return h("li", { class: img ? null : "sem-img", onclick: abrir, style: "cursor:pointer" },
+          img ? h("button", { type: "button", class: "jr-thumb-a", onclick: (e) => { e.stopPropagation(); abrir(); }, title: `Ler destaques e reportagens de ${str(m.jornal)} no Modo Leitor`, style: "padding:0;border:none;background:none;cursor:pointer;" },
             h("img", { class: "jr-thumb", src: img, alt: `Capa de ${str(m.jornal)}`, loading: "lazy", decoding: "async", width: "68", height: "96" })) : null,
           h("div", { class: "jr-txt" },
             h("span", { class: "jr-jornal mono" },
-              h("button", { type: "button", class: "fl-ler", onclick: (e) => { e.stopPropagation(); abrirJornal(); } }, str(m.jornal)),
-              m.tamanho_mb ? h("span", { style: "color:var(--muted);font-size:11px;" }, ` · ${m.tamanho_mb} MB (${m.total_paginas || ""} págs)`) : null,
-              m.pais ? h("i", null, ` (${str(m.pais)})`) : null),
+              h("button", { type: "button", class: "fl-ler", onclick: (e) => { e.stopPropagation(); abrir(); } }, str(m.jornal)),
+              m.pais ? h("i", null, ` (${str(m.pais)})`) : null,
+              reps.length ? h("span", { style: "color:var(--sec);font-size:11px;margin-left:4px;" }, `· ${reps.length} reportagens`) : null),
             h("b", null, str(m.manchete)),
+            m.manchete_original && m.manchete_original !== m.manchete ? h("small", { class: "mono", style: "font-size:11px;color:var(--muted);display:block;" }, `Original: “${str(m.manchete_original)}”`) : null,
             m.nota ? h("small", null, str(m.nota)) : null,
+            reps.length ? h("ul", { style: "margin:6px 0 4px;padding-left:15px;font-size:12.5px;color:var(--ink);display:grid;gap:3px;", onclick: (e) => e.stopPropagation() },
+              reps.slice(0, 3).map((r, idx) => h("li", null,
+                h("button", { type: "button", class: "fl-ler", style: "font-size:12.5px;text-align:left;font-weight:400;", onclick: () => abrirJornalCompleto(m, j, idx) },
+                  r.caderno ? h("b", { class: "mono", style: "font-size:10.5px;text-transform:uppercase;margin-right:4px;color:var(--muted);" }, `[${str(r.caderno)}]`) : null,
+                  str(r.titulo))
+              ))
+            ) : null,
             h("div", { style: "margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;", onclick: (e) => e.stopPropagation() },
-              link ? h("a", { href: link, target: "_blank", rel: "noopener", class: "d-btn-pdf-act mono", style: "display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border:1px solid var(--ink);background:var(--paper);font-size:var(--fs-xs);text-decoration:none;color:var(--ink);font-weight:700;" }, "📄 Abrir PDF Integral ↗") : null,
-              h("button", { type: "button", class: "d-btn-pdf-act mono", onclick: abrirJornal, style: "display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border:1px solid var(--rule);background:var(--card);font-size:var(--fs-xs);cursor:pointer;" }, "👁️ Ver Cadernos")
+              h("button", { type: "button", class: "ler", onclick: abrir }, reps.length ? `📖 Ler edição no Modo Leitor (${reps.length} matérias)` : "📖 Ler destaques no Modo Leitor")
             )
           ));
       })) : null,
+      arr(j.destaques).length ? h("div", { style: "margin-top:20px;padding-top:16px;border-top:1px solid var(--rule);" },
+        h("h4", { class: "mono", style: "margin:0 0 12px;font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);" }, "Destaques cruzados nas edições de hoje"),
+        h("div", { class: "d-notas" }, arr(j.destaques).map((d) => h("article", { class: "d-nota", onclick: () => abrirNota(d, { data: j.data_edicao, titulo: "Nos Jornais do Dia" }), style: "cursor:pointer" },
+          h("span", { class: "edt" }, str(d.editoria || "Nos Jornais")),
+          h("h3", { class: "d-nota-tit" }, str(d.titulo)),
+          h("p", null, str(d.texto)),
+          arr(d.jornais).length ? h("p", { class: "mono", style: "font-size:11px;color:var(--muted);margin:6px 0;" }, `Em destaque em: ${arr(d.jornais).join(" · ")}`) : null,
+          h("div", { class: "d-nota-acts", onclick: (e) => e.stopPropagation() },
+            h("button", { class: "ler", type: "button", onclick: () => abrirNota(d, { data: j.data_edicao, titulo: "Nos Jornais do Dia" }) }, "Ler síntese completa no leitor"))
+        )))
+      ) : null,
       j.contraste ? h("div", { class: "jr-contraste" }, h("h4", null, "Onde os jornais divergem"), h("p", null, str(j.contraste))) : null,
-      arr(j.leitura).length ? h("div", { class: "jr-leitura" }, h("h4", null, "Vale ler inteiro no PDF"),
-        h("ul", { class: "estante" }, arr(j.leitura).map((l) => h("li", null, h("span", { class: "tp" }, str(l.jornal)),
-          h("span", null, str(l.titulo)), h("small", null, [l.pagina ? `p. ${str(l.pagina)}` : "", str(l.nota)].filter(Boolean).join(" · ")))))) : null,
-      h("p", { class: "mono jr-nota" }, "Edições impressas completas arquivadas localmente em jornais/ e disponíveis para leitura imediata em alta resolução."));
+      arr(j.leitura).length ? h("div", { class: "jr-leitura" }, h("h4", null, "Vale ler na íntegra no Modo Leitor"),
+        h("ul", { class: "estante" }, arr(j.leitura).map((l) => {
+          const abrirItemLeitura = () => abrirTexto({
+            fonte: l.jornal,
+            autor: [l.autor, l.pagina ? `Pág. ${l.pagina}` : ""].filter(Boolean).join(" · "),
+            data: j.data_edicao,
+            titulo: l.titulo,
+            texto_integral: Array.isArray(l.texto_integral) && l.texto_integral.length ? l.texto_integral : [l.nota || l.titulo],
+            pontos: l.pontos || [],
+            citacao: l.citacao || "",
+            url: l.url || ""
+          });
+          return h("li", { onclick: abrirItemLeitura, style: "cursor:pointer", title: "Abrir reportagem completa no Modo Leitor" },
+            h("span", { class: "tp" }, str(l.jornal)),
+            h("button", { type: "button", class: "fl-ler est-link", onclick: (e) => { e.stopPropagation(); abrirItemLeitura(); } }, str(l.titulo)),
+            h("small", null, [l.pagina ? `p. ${str(l.pagina)}` : "", str(l.nota)].filter(Boolean).join(" · ")));
+        }))) : null);
   }
 
   function blocoTemas() {
