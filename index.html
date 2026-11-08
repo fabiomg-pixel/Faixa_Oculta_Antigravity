@@ -1606,7 +1606,7 @@ dialog.texto.convite-dlg {
     return e;
   }
   const str = (v) => (typeof v === "string" ? v : v == null ? "" : String(v));
-  const safeUrl = (u) => { u = str(u); return /^https:\/\//i.test(u) || u.startsWith("/_blob/") || /^capas\/[0-9a-f]{32}\.jpg$/.test(u) || /^audios\/[a-zA-Z0-9_\-]+\.mp3$/.test(u) ? u : null; };
+  const safeUrl = (u) => { u = str(u); return /^https:\/\//i.test(u) || u.startsWith("/_blob/") || /^capas\/[0-9a-f]{32}\.jpg$/.test(u) || /^audios\/[a-zA-Z0-9_\-]+\.mp3$/.test(u) || /^jornais\/[a-zA-Z0-9_\.\-]+\.pdf$/i.test(u) || /^file:\/\//i.test(u) ? u : null; };
 
   function fmtData(d) {
     d = str(d);
@@ -2372,6 +2372,14 @@ dialog.texto.convite-dlg {
         n.aprofundamento.o_que_observar ? h("p", { style: "margin:0;font-size:15px;line-height:1.6;" }, [h("b", null, "O que observar a seguir: "), str(n.aprofundamento.o_que_observar)]) : null
       ) : null,
 
+      n.url_pdf ? h("div", { style: "margin:20px 0;padding:14px 18px;background:var(--paper);border:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;" },
+        h("div", null,
+          h("b", { class: "mono", style: "font-size:12px;text-transform:uppercase;color:var(--sec);" }, `Edição Impressa Original · ${str(n.jornal_pdf_nome || "Jornal")}`),
+          h("p", { style: "margin:4px 0 0;font-size:14px;" }, "Consulte o exemplar impresso digitalizado completo em alta resolução.")
+        ),
+        h("a", { class: "lt-orig-btn mono", href: safeUrl(n.url_pdf), target: "_blank", rel: "noopener", style: "display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:var(--card);border:1px solid var(--ink);color:var(--ink);font-weight:700;text-decoration:none;" }, "📄 Abrir Edição no PDF ↗")
+      ) : null,
+
       // Fontes verificadas com links diretos
       secaoFontes.length ? [
         h("h4", { class: "lt-divisor-tit", style: "margin:36px 0 12px;text-transform:uppercase;font-size:12px;letter-spacing:.06em;color:var(--sec, var(--red));" }, "Cobertura Completa por Veículo · Notícias na Íntegra"),
@@ -2940,6 +2948,7 @@ dialog.texto.convite-dlg {
           f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
         h("div", { class: "d-nota-acts", onclick: (e) => e.stopPropagation() },
           h("button", { class: "ler", type: "button", onclick: () => abrirNota(n, bol) }, "Abrir no leitor"),
+          safeUrl(n.url_pdf) ? h("a", { class: "d-btn-pdf-act mono", href: safeUrl(n.url_pdf), target: "_blank", rel: "noopener", style: "display:inline-flex;align-items:center;gap:4px;padding:5px 9px;border:1px solid var(--rule);background:var(--card);font-size:var(--fs-xs);text-decoration:none;color:var(--ink);border-radius:2px;" }, `📄 PDF (${str(n.jornal_pdf_nome || "Jornal")}) ↗`) : null,
           h("button", {
             class: `d-btn-salvar mono ${isNotaSalva(n, bol) ? "salva" : ""}`,
             type: "button",
@@ -2954,19 +2963,19 @@ dialog.texto.convite-dlg {
       })));
     const fim = h("div", { class: "wrap", style: "padding-block:8px 32px" },
       h("button", { class: "ler", type: "button", onclick: () => trocarAba("noticias") }, "A revista da semana: grandes temas, cobertura e vieses"));
-    return [head, blocoAudioBoletim(d), grade, blocoJornais(d.jornais), fim];
+    return [head, blocoAudioBoletim(d), blocoJornais(d.jornais), grade, fim];
   }
 
   // The day's printed papers (PDFs from the Telegram groups, kept in a private folder on the Mac): front pages, how each paper played the big stories, what is worth reading in full.
   function blocoJornais(j) {
     if (!j || (!arr(j.manchetes).length && !arr(j.destaques).length)) return null;
     const temCapasWeb = arr(j.manchetes).some((m) => m && (m.imagem || m.pagina || m.site));
-    return h("section", { class: "wrap secao jr", id: "jornais" },
+    return h("section", { class: "wrap secao jr", id: "jornais", style: "margin-block:16px 28px;padding-top:16px;border-top:2px solid var(--rule);" },
       h("div", { class: "sec-head" }, h("span", { class: "num", "aria-hidden": "true" }, arr(j.manchetes).length || ""),
-        h("h3", null, temCapasWeb ? "primeiras páginas" : "nos jornais do dia"),
+        h("h3", null, "banca de jornais · edições impressas (pdf)"),
         h("p", null, [j.data_edicao ? `Edições impressas de ${rotuloDia(j.data_edicao)}.` : "", str(j.resumo)].filter(Boolean).join(" "))),
       arr(j.manchetes).length ? h("ol", { class: "jr-capas" }, arr(j.manchetes).map((m) => {
-        const img = safeUrl(m.imagem), link = safeUrl(m.pagina || m.site), site = safeUrl(m.site);
+        const img = safeUrl(m.imagem), link = safeUrl(m.pdf_url || m.pagina || m.site), site = safeUrl(m.site);
         const abrirJornal = () => {
           abrirTexto({
             fonte: m.jornal,
@@ -2977,35 +2986,30 @@ dialog.texto.convite-dlg {
               j.resumo ? `Panorama do dia: ${j.resumo}` : ""
             ].filter(Boolean),
             pontos: j.contraste ? [`Divergência entre jornais: ${j.contraste}`] : [],
-            url: m.pagina || m.site || ""
+            url: link || site || ""
           });
         };
-        return h("li", { class: img ? null : "sem-img", onclick: abrirJornal, style: "cursor:pointer" },
-          img ? h("div", { class: "jr-thumb-a", title: `Ver capa de ${str(m.jornal)}` },
+        return h("li", { class: img ? null : "sem-img" },
+          img ? h("a", { class: "jr-thumb-a", href: link || site, target: "_blank", rel: "noopener", title: `Abrir PDF de ${str(m.jornal)}` },
             h("img", { class: "jr-thumb", src: img, alt: `Capa de ${str(m.jornal)}`, loading: "lazy", decoding: "async", width: "68", height: "96" })) : null,
           h("div", { class: "jr-txt" },
             h("span", { class: "jr-jornal mono" },
               h("button", { type: "button", class: "fl-ler", onclick: (e) => { e.stopPropagation(); abrirJornal(); } }, str(m.jornal)),
-              site && site !== link ? h("a", { href: site, target: "_blank", rel: "noopener", style: "color:var(--muted);margin-left:6px;" }, "site") : null,
+              m.tamanho_mb ? h("span", { style: "color:var(--muted);font-size:11px;" }, ` · ${m.tamanho_mb} MB (${m.total_paginas || ""} págs)`) : null,
               m.pais ? h("i", null, ` (${str(m.pais)})`) : null),
-            h("b", null, str(m.manchete)), m.nota ? h("small", null, str(m.nota)) : null));
+            h("b", null, str(m.manchete)),
+            m.nota ? h("small", null, str(m.nota)) : null,
+            h("div", { style: "margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;", onclick: (e) => e.stopPropagation() },
+              link ? h("a", { href: link, target: "_blank", rel: "noopener", class: "d-btn-pdf-act mono", style: "display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border:1px solid var(--ink);background:var(--paper);font-size:var(--fs-xs);text-decoration:none;color:var(--ink);font-weight:700;" }, "📄 Abrir PDF Integral ↗") : null,
+              h("button", { type: "button", class: "d-btn-pdf-act mono", onclick: abrirJornal, style: "display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border:1px solid var(--rule);background:var(--card);font-size:var(--fs-xs);cursor:pointer;" }, "👁️ Ver Cadernos")
+            )
+          ));
       })) : null,
-      arr(j.destaques).length ? h("div", { class: "d-notas", style: "margin-top:26px" }, arr(j.destaques).map((n) => h("article", { class: "d-nota", onclick: () => abrirNota(n, bol), style: "cursor:pointer" },
-        h("span", { class: "edt" }, str(n.editoria)),
-        h("h3", { class: "d-nota-tit", role: "button", tabindex: "0", onclick: () => abrirNota(n), title: "Abrir matéria no modo leitor" }, str(n.titulo)),
-        h("p", null, str(n.texto)),
-        n.por_que_importa ? h("p", { class: "ponte" }, h("b", null, "Por que importa: "), str(n.por_que_importa)) : null,
-        arr(n.jornais).length ? h("ul", { class: "d-fontes" }, arr(n.jornais).map((f) => h("li", null,
-          h("b", null, str(f.jornal)), f.pagina ? h("span", { class: "mono" }, ` · p. ${str(f.pagina)}`) : null,
-          f.enfoque ? h("small", null, str(f.enfoque)) : null))) : null,
-        h("div", { class: "d-nota-acts", onclick: (e) => e.stopPropagation() },
-          h("button", { class: "ler", type: "button", onclick: () => abrirNota(n) }, "Abrir no leitor"))
-      ))) : null,
       j.contraste ? h("div", { class: "jr-contraste" }, h("h4", null, "Onde os jornais divergem"), h("p", null, str(j.contraste))) : null,
       arr(j.leitura).length ? h("div", { class: "jr-leitura" }, h("h4", null, "Vale ler inteiro no PDF"),
         h("ul", { class: "estante" }, arr(j.leitura).map((l) => h("li", null, h("span", { class: "tp" }, str(l.jornal)),
           h("span", null, str(l.titulo)), h("small", null, [l.pagina ? `p. ${str(l.pagina)}` : "", str(l.nota)].filter(Boolean).join(" · ")))))) : null,
-      h("p", { class: "mono jr-nota" }, temCapasWeb ? "Capas consultadas via VerCapas." : "Os PDFs completos ficam na pasta privada Faixa Oculta - Jornais, no seu Mac (abra o index.html)."));
+      h("p", { class: "mono jr-nota" }, "Edições impressas completas arquivadas localmente em jornais/ e disponíveis para leitura imediata em alta resolução."));
   }
 
   function blocoTemas() {
@@ -3847,7 +3851,7 @@ dialog.texto.convite-dlg {
 
   function blocoPlaylists(ag) {
     const p = ag.playlists || {};
-    const itens = [["semana", "Esta semana"], ["trinta", "Próximos 30 dias"]].map(([k, rot]) => ({ rot, d: p[k] })).filter((x) => x.d && safeUrl(x.d.url));
+    const itens = [["semana", "Esta semana"], ["trinta", "Próximos 30 dias"]].map(([k, rot]) => ({ rot, d: p[k] })).filter((x) => x.d && (safeUrl(x.d.url_yt) || safeUrl(x.d.embed_url) || safeUrl(x.d.url)));
     if (!itens.length) return null;
     const ant = arr(p.anteriores).filter((a) => a && safeUrl(a.url));
     const mais = !!(str(p.obs) || ant.length), aberto = !!S.agPlInfo;
@@ -3855,15 +3859,14 @@ dialog.texto.convite-dlg {
       h("h4", { class: "ag-rt", id: "ag-pls-tit" }, "Playlists dos shows"),
       h("div", { class: "pls-g" }, itens.map(({ rot, d }) => {
         const bandas = arr(d.artistas).map(str).filter(Boolean);
-        // These playlists are private to Fabio's Spotify account, and Spotify refuses to embed private playlists: link out only.
-        const emb = null;
+        const emb = safeUrl(d.embed_url) || null;
         const ativo = !!emb && tocando.url === emb;
         return h("div", { class: "pl-card" }, h("b", null, str(d.nome) || `Radar: ${rot}`),
           h("span", { class: "pl-meta" }, [rot, d.intervalo].map(str).filter(Boolean).join(", ") + (bandas.length ? ` · ${bandas.length} bandas` : "")),
           h("div", { class: "acts" },
             S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(emb, "Radar", str(d.nome) || rot, false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
-            h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "ag-ref" }, "Spotify"),
-            d.url_yt ? h("a", { href: safeUrl(d.url_yt), target: "_blank", rel: "noopener", class: "ag-ref" }, "YT Music ↗") : null,
+            safeUrl(d.url_yt) ? h("a", { href: safeUrl(d.url_yt), target: "_blank", rel: "noopener", class: "ag-ref" }, "YT Music ↗") : null,
+            safeUrl(d.url) ? h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "ag-ref" }, "Spotify ↗") : null,
             bandas.length ? h("details", null, h("summary", null, "Bandas"), h("p", null, bandas.join(", "))) : null));
       })),
       p.em || mais ? h("p", { class: "pl-note" }, p.em ? h("span", { class: "pl-gerado" }, `Atualizado em ${new Date(p.em).toLocaleDateString("pt-BR")}, no início da semana (semanal) e no início do mês (mensal); cinco músicas por banda, em bloco. `) : null,
