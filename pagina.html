@@ -3850,9 +3850,10 @@ dialog.texto.convite-dlg {
           h("div", { class: "acts" },
             S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(emb, "Radar", str(d.nome) || rot, false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
             h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "ag-ref" }, "Spotify"),
+            d.url_yt ? h("a", { href: safeUrl(d.url_yt), target: "_blank", rel: "noopener", class: "ag-ref" }, "YT Music ↗") : null,
             bandas.length ? h("details", null, h("summary", null, "Bandas"), h("p", null, bandas.join(", "))) : null));
       })),
-      p.em || mais ? h("p", { class: "pl-note" }, p.em ? h("span", { class: "pl-gerado" }, `Gerado em ${new Date(p.em).toLocaleDateString("pt-BR")}, a cada segunda e quinta; cinco músicas por banda, em bloco. `) : null,
+      p.em || mais ? h("p", { class: "pl-note" }, p.em ? h("span", { class: "pl-gerado" }, `Atualizado em ${new Date(p.em).toLocaleDateString("pt-BR")}, no início da semana (semanal) e no início do mês (mensal); cinco músicas por banda, em bloco. `) : null,
         mais ? h("button", { type: "button", class: "ag-tog", "aria-expanded": String(aberto), onclick: () => { S.agPlInfo = !aberto; render(); } }, aberto ? "Esconder notas" : "Notas e versões anteriores") : null) : null,
       aberto && p.obs ? h("p", { class: "pl-note" }, str(p.obs)) : null,
       aberto && ant.length ? h("p", { class: "pl-note pl-old" }, "Versões anteriores: ", ant.map((a) => h("a", { href: safeUrl(a.url), target: "_blank", rel: "noopener" }, str(a.nome) || "playlist"))) : null);

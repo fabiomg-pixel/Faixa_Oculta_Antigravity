@@ -45,6 +45,12 @@ Este documento estabelece as diretrizes permanentes de qualidade, integridade vi
   * A lista completa de faixas da playlist mensal na interface deve permanecer envelopada em `<details class="pl-acc">` retrátil, para nunca empurrar o conteúdo dos demais pilares para baixo.
 * **Grande Destaque do Mês:**
   * O card da "Obra em Foco" DEVE possuir o botão interativo `▶ Tocar álbum no player` com o `youtube_id` cadastrado.
+* **Playlists dos Shows da Agenda (Semanal e Mensal):**
+  * **Cadência Oficial Realista:** As playlists dos shows do Rio são atualizadas no **início da semana** (segunda-feira) para a playlist semanal (`semana`: shows dos próximos 7 dias) e no **início do mês** (todo dia 01) para a playlist mensal/30 dias (`trinta`: shows dos próximos 30 dias / mês).
+  * **Proibição de Falsas Promessas:** É expressamente proibido alegar na interface ou notas que as playlists são atualizadas constantemente ou "a cada segunda e quinta", quando a cadência real estabelecida e suficiente é semanal e mensal.
+  * **Composição Automática via Agenda:** O script `tools/atualizar_playlists_agenda.py` extrai automaticamente todos os artistas com sessões e shows marcados para o período a partir de `agenda.atual.eventos`.
+  * **Acesso Nativo Duplo:** Os cartões das playlists na interface oferecem links diretos tanto para o Spotify quanto para o YouTube Music (`YT Music ↗`), acompanhados da lista retrátil de bandas participantes.
+  * **Preservação do Histórico:** Cada atualização arquiva a versão anterior em `agenda.atual.playlists.anteriores`, acessível pelo botão retrátil "Notas e versões anteriores".
 
 ---
 
@@ -82,9 +88,10 @@ Este documento estabelece as diretrizes permanentes de qualidade, integridade vi
     * Música: 35 a 45 discos distribuídos em guias especializados (Rock/Alt, Jazz/Vanguardas, Eletrônica, Brasil).
     * Cinema: 25 a 35 títulos (estreias, festivais, clássicos e streaming).
     * Livros: 20 a 25 obras (ficção, não-ficção, ensaio científico e traduções no Brasil).
-* **Agenda Cultural do Rio:**
+* **Agenda Cultural do Rio & Playlists dos Shows:**
   * Foco prioritário em **rock, música independente e cena underground/alternativa**.
-  * Circuitos: Botafogo (Audio Rebel, etc.), Estúdio Hanoi, Circo Voador, Centro e Tijuca.
+  * Circuitos: Botafogo (Audio Rebel, Saloon 79, Estúdio Hanoi), Circo Voador, Centro e Tijuca (Garage Grindhouse).
+  * **Cadência das Playlists dos Shows:** Atualização no **início da semana** (segunda-feira) para os shows dos próximos 7 dias e no **início do mês** (todo dia 01) para a safra completa dos próximos 30 dias.
 * **Boletins Diários (Hoje):**
   * Duas edições: Manhã (05h BRT) e Noite (17h BRT).
   * Modo Leitor limpo na íntegra para todas as notas, sem anúncios e sem redirecionamentos externos indesejados.
@@ -349,6 +356,7 @@ Ao manipular a base ou realizar manutenções, utilize os utilitários já homol
 | `tools/gerar_analises_criticas_2026_11.py` | Geração de 2 a 3 análises críticas de veículos especializados por obra (música, cinema e livros). |
 | `tools/gerar_edicoes_diarias.py` | Estruturação e injeção de edições com paridade estrita (11 nacionais + 11 internacionais traduzidas). |
 | `tools/atualizar_radar_edicoes.py` | Mapeamento de artistas para Spotify/YouTube e detalhamento da Agenda do Rio. |
+| `tools/atualizar_playlists_agenda.py` | Atualização automatizada das playlists da agenda (semanal na segunda e mensal no dia 01), com arquivamento de histórico. |
 | `tools/atualizar_filtros_convite.py` | Injeção do modal de convite compartilhável e botões da agenda em `pagina.html` e `index.html`. |
 | `tools/gerar_audio_boletim.py` | Síntese de áudio da notícia completa via `edge-tts` (pt-BR-AntonioNeural) e fallback local. |
 | `tools/orquestrador_nuvem.py` / `sentinela_boletim.py` | Orquestração periódica matinal e noturna das edições. |

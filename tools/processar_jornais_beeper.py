@@ -3,10 +3,14 @@
 tools/processar_jornais_beeper.py
 ---------------------------------
 Integração direta com o Beeper Desktop no macOS para:
-1. Listar jornais e revistas disponíveis nos canais 'Jornais BR', 'International Newspapers' e 'Jornais e Revistas 4.0'.
-2. Fazer download automatizado sob demanda de qualquer edição via Beeper Client API local (localhost:23373).
-3. Processar e extrair o texto completo das reportagens, colunas e editoriais (via PyMuPDF e OCR nativo Apple Vision).
-4. Gerar sínteses e despachos estruturados para abastecer o boletim diário da Faixa Oculta com jornalismo impresso de primeira linha.
+1. Listar e monitorar jornais e revistas nos canais 'Jornais BR', 'International Newspapers' e 'Jornais e Revistas 4.0'.
+2. Executar download sob demanda via Beeper Client API local (localhost:23373) usando OAuth PKCE.
+3. Extrair texto completo (PyMuPDF para digitais e Apple Vision OCR para escaneados).
+4. Fornecer 3 perfis editoriais de priorização para a Faixa Oculta:
+   - --perfil diario: Big 4 Nacional (Valor, Folha, Estadão, O Globo) + Big 4 Internacional (WaPo, Guardian, FT, The Times)
+   - --perfil semana: Piauí, The Economist, The New Yorker, CartaCapital, FT Weekend, Valor EU&
+   - --perfil cultura: NYT Book Review, Veja Rio, Rolling Stone, NYT Magazine
+5. Gerar digest estruturado em JSON para abastecer o Boletim Diário e a Revista Semanal.
 """
 
 import os
@@ -18,7 +22,7 @@ import base64
 import urllib.request
 import urllib.parse
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 
 BEEPER_DIR = os.path.expanduser("~/Library/Application Support/BeeperTexts")
 DB_PATH = os.path.join(BEEPER_DIR, "index.db")
@@ -26,20 +30,61 @@ MEDIA_DIR = os.path.join(BEEPER_DIR, "media", "local.beeper.com")
 TOKEN_FILE = os.path.expanduser("~/.beeper_token.json")
 BEEPER_BASE_URL = "http://localhost:23373"
 
-KNOWN_ROOMS = {
-    "nacional": {
-        "name": "Jornais BR",
-        "room_id": "!iq3RLvh1JnfH6vJzkvaL:beeper.local"
+PRESS_ROOMS = [
+    "!iq3RLvh1JnfH6vJzkvaL:beeper.local",  # Jornais BR
+    "!Q3EN2ZSkzkir8tYnRU7t:beeper.local",  # International Newspapers
+    "!tFgakhGBTv3CNjiYMdkM:beeper.local",  # Jornais e Revistas 4.0
+]
+
+KNOWN_ROOM_NAMES = {
+    "!iq3RLvh1JnfH6vJzkvaL:beeper.local": "Jornais BR",
+    "!Q3EN2ZSkzkir8tYnRU7t:beeper.local": "International Newspapers",
+    "!tFgakhGBTv3CNjiYMdkM:beeper.local": "Jornais e Revistas 4.0"
+}
+
+PERFIS_CONFIG = {
+    "diario": {
+        "nacional": [
+            ("Valor Econômico", ["valor"]),
+            ("Folha de S.Paulo", ["folha de s.paulo", "folha de sp", "folha de são paulo", "folha de sao paulo"]),
+            ("O Estado de S. Paulo", ["estado de s paulo", "estadao", "estadão"]),
+            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd"])
+        ],
+        "internacional": [
+            ("The Washington Post", ["washington post"]),
+            ("The Guardian", ["the-guardian", "the guardian"]),
+            ("Financial Times", ["financial times", "ft us"]),
+            ("The Times UK", ["the times uk", "the times -", "the times"])
+        ]
     },
-    "internacional": {
-        "name": "International Newspapers",
-        "room_id": "!Q3EN2ZSkzkir8tYnRU7t:beeper.local"
+    "semana": {
+        "nacional": [
+            ("Revista Piauí", ["piauí", "piaui"]),
+            ("Revista CartaCapital", ["carta capital", "cartacapital"]),
+            ("Valor Econômico EU&", ["eu&", "valor econômico- eu&"])
+        ],
+        "internacional": [
+            ("The Economist", ["the economist"]),
+            ("The New Yorker", ["the new yorker"]),
+            ("FT Weekend", ["ft weekend", "weekend magazine"]),
+            ("WSJ Weekend", ["wsj weekend", "wall street journal weekend"])
+        ]
     },
-    "revistas": {
-        "name": "Jornais e Revistas 4.0",
-        "room_id": "!tFgakhGBTv3CNjiYMdkM:beeper.local"
+    "cultura": {
+        "nacional": [
+            ("Veja Rio", ["veja rio"]),
+            ("Rolling Stone Brasil", ["rolling stone"])
+        ],
+        "internacional": [
+            ("NYT Book Review", ["book review", "nytbr"]),
+            ("NYT Magazine", ["nyt magazine"])
+        ]
     }
 }
+
+
+def log(msg):
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] [BeeperPress] {msg}", flush=True)
 
 
 def get_access_token():
@@ -55,9 +100,7 @@ def get_access_token():
         except Exception:
             pass
 
-    # Fluxo OAuth PKCE Local
     try:
-        # 1. Registrar cliente
         reg_req = urllib.request.Request(
             f"{BEEPER_BASE_URL}/oauth/register",
             data=json.dumps({
@@ -70,12 +113,10 @@ def get_access_token():
             client_data = json.loads(resp.read().decode("utf-8"))
             client_id = client_data["client_id"]
 
-        # 2. Gerar code verifier e challenge
         verifier = "abcdefghijklmnopqrstuvwxyz0123456789-._~" + hashlib.sha256(str(datetime.now()).encode()).hexdigest()[:20]
         digest = hashlib.sha256(verifier.encode("utf-8")).digest()
         challenge = base64.urlsafe_b64encode(digest).decode("utf-8").rstrip("=")
 
-        # 3. Solicitar código de autorização diretamente ao callback local
         cb_payload = {
             "mode": "oauth2",
             "clientInfo": {
@@ -101,7 +142,6 @@ def get_access_token():
         if not auth_code:
             raise RuntimeError(f"Não foi possível obter authorization code: {code_data}")
 
-        # 4. Trocar código por access token
         token_payload = urllib.parse.urlencode({
             "grant_type": "authorization_code",
             "client_id": client_id,
@@ -119,7 +159,6 @@ def get_access_token():
             access_token = token_resp["access_token"]
             expires_in = token_resp.get("expires_in", 2592000)
 
-            # Salvar cache
             with open(TOKEN_FILE, "w") as f:
                 json.dump({
                     "access_token": access_token,
@@ -127,50 +166,59 @@ def get_access_token():
                 }, f)
             return access_token
     except Exception as e:
-        print(f"Aviso: Erro ao autenticar no Beeper API: {e}", file=sys.stderr)
+        log(f"Aviso ao autenticar no Beeper API: {e}")
         return None
 
 
-def list_publications(room_key="nacional", limit=40):
+def list_publications(room_key=None, limit=50):
     """Lista as publicações disponíveis no banco SQLite do Beeper."""
     if not os.path.exists(DB_PATH):
         raise FileNotFoundError(f"Banco Beeper não encontrado em {DB_PATH}")
 
-    room_info = KNOWN_ROOMS.get(room_key, KNOWN_ROOMS["nacional"])
-    room_id = room_info["room_id"]
+    target_rooms = PRESS_ROOMS
+    if room_key == "nacional":
+        target_rooms = ["!iq3RLvh1JnfH6vJzkvaL:beeper.local"]
+    elif room_key == "internacional":
+        target_rooms = ["!Q3EN2ZSkzkir8tYnRU7t:beeper.local"]
+    elif room_key == "revistas":
+        target_rooms = ["!tFgakhGBTv3CNjiYMdkM:beeper.local"]
 
     conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
     cur = conn.cursor()
 
-    cur.execute("""
-        SELECT timestamp, message 
-        FROM mx_room_messages 
-        WHERE roomID = ? AND type = 'FILE'
-        ORDER BY timestamp DESC LIMIT ?
-    """, (room_id, limit))
-
     publications = []
-    for ts, msg_str in cur.fetchall():
-        try:
-            msg = json.loads(msg_str)
-            for att in msg.get("attachments", []):
-                fn = att.get("fileName", "sem_nome.pdf")
-                size = att.get("fileSize", 0)
-                src = att.get("srcURL", "")
-                media_id = src.replace("mxc://local.beeper.com/", "")
-                local_path = os.path.join(MEDIA_DIR, media_id)
-                baixado = os.path.exists(local_path)
-                publications.append({
-                    "data_msg": datetime.fromtimestamp(ts / 1000.0).strftime("%Y-%m-%d %H:%M"),
-                    "arquivo": fn,
-                    "tamanho_mb": round(size / (1024 * 1024), 2),
-                    "src_url": src,
-                    "media_id": media_id,
-                    "baixado": baixado,
-                    "local_path": local_path if baixado else None
-                })
-        except Exception:
-            continue
+    for rid in target_rooms:
+        rname = KNOWN_ROOM_NAMES.get(rid, rid)
+        cur.execute("""
+            SELECT timestamp, message 
+            FROM mx_room_messages 
+            WHERE roomID = ? AND type = 'FILE'
+            ORDER BY timestamp DESC LIMIT ?
+        """, (rid, limit))
+
+        for ts, msg_str in cur.fetchall():
+            try:
+                msg = json.loads(msg_str)
+                for att in msg.get("attachments", []):
+                    fn = att.get("fileName", "sem_nome.pdf")
+                    size = att.get("fileSize", 0)
+                    src = att.get("srcURL", "")
+                    media_id = src.replace("mxc://local.beeper.com/", "")
+                    local_path = os.path.join(MEDIA_DIR, media_id)
+                    baixado = os.path.exists(local_path)
+                    publications.append({
+                        "canal": rname,
+                        "data_msg": datetime.fromtimestamp(ts / 1000.0).strftime("%Y-%m-%d %H:%M"),
+                        "timestamp": ts,
+                        "arquivo": fn,
+                        "tamanho_mb": round(size / (1024 * 1024), 2),
+                        "src_url": src,
+                        "media_id": media_id,
+                        "baixado": baixado,
+                        "local_path": local_path if baixado else None
+                    })
+            except Exception:
+                continue
 
     conn.close()
     return publications
@@ -294,6 +342,85 @@ try? handler.perform([request])
     }
 
 
+def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc=10):
+    """Executa a varredura, download e extração das publicações prioritárias do perfil selecionado."""
+    cfg = PERFIS_CONFIG.get(perfil_nome)
+    if not cfg:
+        log(f"Perfil '{perfil_nome}' não encontrado. Opções válidas: diario, semana, cultura")
+        return None
+
+    log(f"Iniciando processamento do perfil '{perfil_nome.upper()}'...")
+    all_pubs = list_publications(limit=150)
+
+    resultado = {
+        "perfil": perfil_nome,
+        "data_processamento": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "itens": []
+    }
+
+    for escopo, veiculos in cfg.items():
+        for nome_veiculo, kws in veiculos:
+            candidatos = []
+            for pub in all_pubs:
+                fn_lower = pub["arquivo"].lower()
+                if any(kw in fn_lower for kw in kws):
+                    candidatos.append(pub)
+
+            if not candidatos:
+                log(f"  [!] {nome_veiculo} ({escopo}): Nenhuma edição recente encontrada no Beeper.")
+                continue
+
+            # Pega a mais recente
+            candidatos.sort(key=lambda x: x["timestamp"], reverse=True)
+            top = candidatos[0]
+
+            log(f"  -> {nome_veiculo} ({escopo}): '{top['arquivo']}' ({top['data_msg']})")
+
+            # Garantir download
+            caminho_local = top["local_path"]
+            if not caminho_local or not os.path.exists(caminho_local):
+                if auto_download:
+                    log(f"     Baixando arquivo ({top['tamanho_mb']} MB) via Beeper API...")
+                    try:
+                        caminho_local = download_file(top["src_url"])
+                        log(f"     Baixado com sucesso em: {caminho_local}")
+                    except Exception as e:
+                        log(f"     Erro ao baixar {top['arquivo']}: {e}")
+                        continue
+                else:
+                    log(f"     Arquivo pendente no Beeper (auto-download desativado).")
+                    continue
+
+            # Extrair texto
+            log(f"     Extraindo texto (até {max_pages_per_doc} páginas)...")
+            try:
+                dados_extracao = extract_text_from_pdf(caminho_local, max_pages=max_pages_per_doc)
+                resultado["itens"].append({
+                    "veiculo": nome_veiculo,
+                    "escopo": escopo,
+                    "arquivo": top["arquivo"],
+                    "data_msg": top["data_msg"],
+                    "local_path": caminho_local,
+                    "metodo": dados_extracao["metodo"],
+                    "total_paginas": dados_extracao["total_paginas"],
+                    "paginas_lidas": dados_extracao["paginas_lidas"],
+                    "conteudo": dados_extracao["conteudo"]
+                })
+                log(f"     Extraído com sucesso via {dados_extracao['metodo']} ({dados_extracao['paginas_lidas']} págs).")
+            except Exception as e:
+                log(f"     Erro ao extrair texto de {caminho_local}: {e}")
+
+    # Salva o digest estruturado em disco
+    output_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+    os.makedirs(output_dir, exist_ok=True)
+    digest_path = os.path.join(output_dir, f"beeper_digest_{perfil_nome}.json")
+    with open(digest_path, "w", encoding="utf-8") as f:
+        json.dump(resultado, f, ensure_ascii=False, indent=2)
+
+    log(f"Digest consolidado salvo em: {digest_path} ({len(resultado['itens'])} veículos processados).")
+    return digest_path
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="Processador de Jornais e Revistas via Beeper")
@@ -302,15 +429,19 @@ def main():
     parser.add_argument("--download", type=str, help="Nome do arquivo ou trecho do nome para baixar")
     parser.add_argument("--extract", type=str, help="Caminho local do arquivo ou trecho do nome para extrair")
     parser.add_argument("--pages", type=int, default=8, help="Número de páginas para extrair")
-    parser.add_argument("--digest", action="store_true", help="Gera um panorama estruturado das edições do dia baixadas")
+    parser.add_argument("--perfil", choices=["diario", "semana", "cultura"],
+                        help="Executa a rotina de priorização automática para um dos 3 perfis")
     args = parser.parse_args()
+
+    if args.perfil:
+        processar_perfil(args.perfil, auto_download=True, max_pages_per_doc=args.pages)
+        return
 
     if args.list:
         channels = ["nacional", "internacional", "revistas"] if args.list == "all" else [args.list]
         for ch in channels:
-            info = KNOWN_ROOMS[ch]
             print(f"\n=======================================================")
-            print(f" CANAL: {info['name'].upper()} ({ch})")
+            print(f" CANAL: {ch.upper()}")
             print(f"=======================================================")
             pubs = list_publications(ch, limit=25)
             for p in pubs:
@@ -319,7 +450,7 @@ def main():
 
     if args.download:
         termo = args.download.lower()
-        pubs = list_publications("nacional", 50) + list_publications("internacional", 50) + list_publications("revistas", 50)
+        pubs = list_publications(limit=100)
         candidatos = [p for p in pubs if termo in p["arquivo"].lower()]
         if not candidatos:
             print(f"Nenhuma publicação encontrada correspondente a '{args.download}'.")
@@ -335,7 +466,7 @@ def main():
 
     if args.extract:
         termo = args.extract.lower()
-        pubs = list_publications("nacional", 50) + list_publications("internacional", 50) + list_publications("revistas", 50)
+        pubs = list_publications(limit=100)
         candidatos = [p for p in pubs if termo in p["arquivo"].lower() and p["baixado"]]
         
         target_path = None

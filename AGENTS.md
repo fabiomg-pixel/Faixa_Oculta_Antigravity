@@ -10,10 +10,11 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - 100% dos lançamentos, livros, filmes, álbuns, matérias de capa e itens dos "Retratos de Autor" (essenciais e influenciados) DEVEM ter capas oficiais de alta resolução obtidas via Deezer API (música), Wikimedia / Wikipedia API (cinema) ou Open Library / iTunes API (livros).
    - Use User-Agent `FaixaOcultaBot/1.0 (contact@faixaoculta.com)` ao consultar APIs.
 
-2. **Player de Áudio sem Cortes de 30 Segundos:**
+2. **Player de Áudio sem Cortes de 30 Segundos & Playlists dos Shows:**
    - O player embed padrão é YouTube Music (`youtube-nocookie.com/embed/...`).
    - A playlist do mês deve ser encadeada em URL real contínua (`watch_videos?video_ids=...`) e a lista na interface deve ficar dentro de um bloco retrátil `<details>`.
    - Inclua sempre botões para abrir nos apps externos (`Spotify ↗` e `YT Music ↗`).
+   - **Playlists dos Shows (Cadência Realista Semanal e Mensal):** As playlists dos shows do Rio são atualizadas no **início da semana** (segunda-feira) para a playlist semanal (`semana`) e no **início do mês** (todo dia 01) para a playlist mensal (`trinta`). É proibido alegar na interface atualizações constantes ou 'a cada segunda e quinta'. Versões passadas devem ser arquivadas em `anteriores`.
 
 3. **Integrações de Consumo Cultural:**
    - Cinema: Botão direto para Stremio (`stremio:///detail/movie/...` e web) e JustWatch.

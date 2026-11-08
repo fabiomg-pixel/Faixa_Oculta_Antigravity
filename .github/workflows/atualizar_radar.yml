@@ -24,6 +24,7 @@ on:
           - boletim
           - revista_semana
           - cultura_mensal
+          - playlists
           - tudo
 
 permissions:

@@ -37,36 +37,53 @@ def main():
     log(f"Iniciando orquestração. Modo: '{rotina}'. Horário local: {agora.strftime('%A, %d/%m/%Y %H:%M')}")
 
     if rotina == "boletim":
+        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "diario"])
         executar_script("tools/boletim_nuvem.py", extra_args)
         executar_script("tools/gerar_audio_boletim.py", extra_args)
     elif rotina == "revista_semana":
+        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "semana"])
         executar_script("tools/revista_semanal.py", extra_args)
     elif rotina in ("cultura_mensal", "cultura"):
+        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "cultura"])
         executar_script("tools/varredura_cultural_online.py", extra_args)
         executar_script("tools/cultura_mensal.py", extra_args)
+        executar_script("tools/atualizar_playlists_agenda.py", ["--modo", "mensal"])
+    elif rotina in ("playlists", "playlist"):
+        executar_script("tools/atualizar_playlists_agenda.py", ["--modo", "forcar"])
     elif rotina == "varredura":
         executar_script("tools/varredura_cultural_online.py", extra_args)
     elif rotina == "tudo":
+        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "diario"])
+        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "semana"])
+        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "cultura"])
         executar_script("tools/boletim_nuvem.py", extra_args)
         executar_script("tools/gerar_audio_boletim.py", extra_args)
         executar_script("tools/revista_semanal.py", extra_args)
         executar_script("tools/varredura_cultural_online.py", extra_args)
         executar_script("tools/cultura_mensal.py", extra_args)
+        executar_script("tools/atualizar_playlists_agenda.py", ["--modo", "auto"])
     elif rotina == "auto":
-        # 1. Boletim Diário roda em todas as chamadas
+        # 1. Boletim Diário roda em todas as chamadas (Manhã e Noite)
+        executar_script("tools/processar_jornais_beeper.py", ["--perfil", "diario"])
         executar_script("tools/boletim_nuvem.py", extra_args)
         executar_script("tools/gerar_audio_boletim.py", extra_args)
 
         # 2. Revista da Semana: Quinta-feira a partir das 18h BRT
-        if dia_semana == 3 and hora >= 18:
-            log("Quinta-feira à noite detectada: compilando Revista Semanal ampliada...")
+        if (dia_semana == 3 and hora >= 18) or dia_semana in (4, 5):
+            log("Janela de Fim de Semana / Quinta-feira detectada: compilando Revista Semanal ampliada via Beeper...")
+            executar_script("tools/processar_jornais_beeper.py", ["--perfil", "semana"])
             executar_script("tools/revista_semanal.py", extra_args)
 
         # 3. Cultura do Mês: Todo dia 01
-        if dia_mes == 1:
-            log("Dia 01 do mês detectado: atualizando edições de Música, Filmes e Livros...")
-            executar_script("tools/varredura_cultural_online.py", extra_args)
-            executar_script("tools/cultura_mensal.py", extra_args)
+        if dia_mes == 1 or dia_semana == 6:
+            log("Dia 01 / Domingo detectado: processando acervo cultural via Beeper...")
+            executar_script("tools/processar_jornais_beeper.py", ["--perfil", "cultura"])
+            if dia_mes == 1:
+                executar_script("tools/varredura_cultural_online.py", extra_args)
+                executar_script("tools/cultura_mensal.py", extra_args)
+
+        # 4. Playlists dos Shows da Agenda (Início da semana e Início do mês)
+        executar_script("tools/atualizar_playlists_agenda.py", ["--modo", "auto"])
     else:
         log(f"Rotina desconhecida: '{rotina}'. Executando boletim diário padrão.")
         executar_script("tools/boletim_nuvem.py", extra_args)
