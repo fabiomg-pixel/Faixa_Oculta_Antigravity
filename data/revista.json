@@ -18919,6 +18919,965 @@
       "audio_duracao": "5:00",
       "audio_tamanho": 5002992,
       "audio_titulo": "Boletim em Áudio · 7 de novembro de 2026"
+    },
+    "2026-11-07-noite": {
+      "data": "2026-11-07",
+      "edicao": "noite",
+      "titulo": "Indústria entra com nova ação no STF contra fim da e Investidores perdem confiança no setor de IA ",
+      "resumo_dia": "Edição noite compilada a partir de apurações em tempo real de 13 veículos independentes nacionais e internacionais, com tradução integral e veracidade documental estrita.",
+      "notas": [
+        {
+          "id": "2026-11-07--ind-stria-entra-com-nova-a-o-no-stf-contra-fi",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Contas Públicas e Ajuste Fiscal",
+          "editoria": "Economia",
+          "titulo": "Indústria entra com nova ação no STF contra fim da escala 6x1 e quer limitar Justiça do Trabalho",
+          "texto": "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Folha de S.Paulo enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+            "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+            "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal) contra o fim da escala 6x1. Desta vez, a confederação pede ao Supremo que limite a competência da Justiça do Trabalho e do MPT (Ministério Público do Trabalho) nos processos e nas fiscalizações que envolvam a implantação da nova escala 5x2 e da jornada reduzida de trabalho.",
+            "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas semanais para 42 horas e implantar a escala 5x2, com dois dias de descanso semanal remunerado."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/industria-entra-com-nova-acao-no-stf-contra-fim-da-escala-6x1-e-quer-limitar-justica-do-trabalho.shtml",
+              "titulo": "Indústria entra com nova ação no STF contra fim da escala 6x1 e quer limitar Justiça do Trabalho",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+                "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal)...",
+                "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas sema..."
+              ],
+              "citacao": "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+              "texto_integral": [
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+                "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal) contra o fim da escala 6x1. Desta vez, a confederação pede ao Supremo que limite a competência da Justiça do Trabalho e do MPT (Ministério Público do Trabalho) nos processos e nas fiscalizações que envolvam a implantação da nova escala 5x2 e da jornada reduzida de trabalho.",
+                "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas semanais para 42 horas e implantar a escala 5x2, com dois dias de descanso semanal remunerado."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--investidores-perdem-confian-a-no-setor-de-ia",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Política Monetária, Selic e Câmbio",
+          "editoria": "Economia",
+          "titulo": "Investidores perdem confiança no setor de IA e colocam IPO da Anthropic em risco",
+          "texto": "Potenciais investidores na oferta pública inicial de ações (IPO, na sigla em inglês) da Anthropic têm dúvidas se a startup de inteligência artificial conseguirá realizar na próxima semana a rodada de apresentações a investidores e abrir o capital ainda em novembro, segundo fontes a par das discussões.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de g1 enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Potenciais investidores na oferta pública inicial de ações (IPO, na sigla em inglês) da Anthropic têm dúvidas se a startup de inteligência artificial conseguirá realizar na próxima semana a rodada de apresentações a investidores e abrir o capital ainda em novembro, segundo fontes a par das discussões.",
+            "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns consideram que a avaliação de US$ 1,5 trilhão (R$ 8,22 trilhões), discutida recentemente, está no limite superior das expectativas, disseram as fontes à Reuters.",
+            "📱 Favorite o g1 no Google e acompanhe as principais notícias do dia",
+            "As discussões refletem, em parte, a maior onda de vendas de ações de tecnologia em um ano e as incertezas geopolíticas, que afetam as perspectivas para novas ofertas de ações."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por g1",
+              "url": "https://g1.globo.com/economia/noticia/2026/11/07/investidores-perdem-confianca-no-setor-de-ia-e-colocam-ipo-da-anthropic-em-risco.ghtml",
+              "titulo": "Investidores perdem confiança no setor de IA e colocam IPO da Anthropic em risco",
+              "autor": "Redação g1",
+              "pontos": [
+                "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns c...",
+                "📱 Favorite o g1 no Google e acompanhe as principais notícias do dia...",
+                "As discussões refletem, em parte, a maior onda de vendas de ações de tecnologia em um ano e as incer..."
+              ],
+              "citacao": "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns consideram que a aval...",
+              "texto_integral": [
+                "Potenciais investidores na oferta pública inicial de ações (IPO, na sigla em inglês) da Anthropic têm dúvidas se a startup de inteligência artificial conseguirá realizar na próxima semana a rodada de apresentações a investidores e abrir o capital ainda em novembro, segundo fontes a par das discussões.",
+                "Os investidores pressionam por um valor de mercado mais atraente para participar da oferta. Alguns consideram que a avaliação de US$ 1,5 trilhão (R$ 8,22 trilhões), discutida recentemente, está no limite superior das expectativas, disseram as fontes à Reuters.",
+                "📱 Favorite o g1 no Google e acompanhe as principais notícias do dia",
+                "As discussões refletem, em parte, a maior onda de vendas de ações de tecnologia em um ano e as incertezas geopolíticas, que afetam as perspectivas para novas ofertas de ações."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--quando-a-marca-famosa-chega-depois-anteriorid",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Emprego, Indústria e Balança Comercial",
+          "editoria": "Economia",
+          "titulo": "Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente",
+          "texto": "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de ConJur enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
+            "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional contemporâneo.",
+            "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais de ConJur."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "ConJur",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por ConJur",
+              "url": "https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/",
+              "titulo": "Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente",
+              "autor": "Redação ConJur",
+              "pontos": [
+                "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema...",
+                "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais ..."
+              ],
+              "citacao": "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional...",
+              "texto_integral": [
+                "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
+                "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional contemporâneo.",
+                "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais de ConJur."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--paraguai-justi-a-decreta-pris-o-preventiva-do",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Congresso Nacional e Votações",
+          "editoria": "Política",
+          "titulo": "Paraguai: Justiça decreta prisão preventiva do ex-presidente Santiago Peña",
+          "texto": "A Justiça do Paraguai decretou, neste sábado (7/11), a prisão preventiva do ex-presidente Santiago Peña. Ele foi alvo de um processo de impeachment aprovado pelo Congresso nessa sexta-feira (6/11) e é acusado de fraude na alocação de recursos públicos e interferência na fiscalização sobre o Ueno Bank.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Metrópoles enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "A Justiça do Paraguai decretou, neste sábado (7/11), a prisão preventiva do ex-presidente Santiago Peña. Ele foi alvo de um processo de impeachment aprovado pelo Congresso nessa sexta-feira (6/11) e é acusado de fraude na alocação de recursos públicos e interferência na fiscalização sobre o Ueno Bank.",
+            "A determinação da Justiça para a prisão preventiva acatou um pedido do Ministério Público (MP) do Paraguai realizado neste sábado. A promotoria também indiciou o ex-presidente do Banco Central Carlos Carvallo e pediu a manutenção da prisão dos dois.",
+            "Peña foi preso na noite da sexta-feira (6/11). Até a decisão deste sábado, a ordem era para o cumprimento de prisão domiciliar, medida desencadeada logo após o Congresso paraguaio finalizar o processo de impeachment.",
+            "A prisão preventiva de Peña será cumprida seguindo o Regimento de Escolta Presidencial. Na prática, isto significa que o ex-presidente ficará em uma instalação militar de elite em Assunção."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Metrópoles",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Metrópoles",
+              "url": "https://www.metropoles.com/mundo/paraguai-justica-decreta-prisao-preventiva-do-ex-presidente-santiago-pena",
+              "titulo": "Paraguai: Justiça decreta prisão preventiva do ex-presidente Santiago Peña",
+              "autor": "Redação Metrópoles",
+              "pontos": [
+                "A determinação da Justiça para a prisão preventiva acatou um pedido do Ministério Público (MP) do Pa...",
+                "Peña foi preso na noite da sexta-feira (6/11). Até a decisão deste sábado, a ordem era para o cumpri...",
+                "A prisão preventiva de Peña será cumprida seguindo o Regimento de Escolta Presidencial. Na prática, ..."
+              ],
+              "citacao": "A determinação da Justiça para a prisão preventiva acatou um pedido do Ministério Público (MP) do Paraguai realizado nes...",
+              "texto_integral": [
+                "A Justiça do Paraguai decretou, neste sábado (7/11), a prisão preventiva do ex-presidente Santiago Peña. Ele foi alvo de um processo de impeachment aprovado pelo Congresso nessa sexta-feira (6/11) e é acusado de fraude na alocação de recursos públicos e interferência na fiscalização sobre o Ueno Bank.",
+                "A determinação da Justiça para a prisão preventiva acatou um pedido do Ministério Público (MP) do Paraguai realizado neste sábado. A promotoria também indiciou o ex-presidente do Banco Central Carlos Carvallo e pediu a manutenção da prisão dos dois.",
+                "Peña foi preso na noite da sexta-feira (6/11). Até a decisão deste sábado, a ordem era para o cumprimento de prisão domiciliar, medida desencadeada logo após o Congresso paraguaio finalizar o processo de impeachment.",
+                "A prisão preventiva de Peña será cumprida seguindo o Regimento de Escolta Presidencial. Na prática, isto significa que o ex-presidente ficará em uma instalação militar de elite em Assunção."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--primeiro-passo-para-regular-big-techs-exigir",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · STF e Decisões Judiciais Estruturantes",
+          "editoria": "Política",
+          "titulo": "Primeiro passo para regular big techs é exigir transparência, afirma especialista",
+          "texto": "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Brasil de Fato enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas.",
+            "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro de 2026, impulsionado por fortes correções no mercado financeiro global e, em especial, pelo estouro de uma bolha de IA na China.",
+            "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a urgência do debate de regulação das big techs.",
+            "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que participou da elaboração do Marco Civil da Internet, avalia que o maior nó nesse tema é a questão da falta de transparência. “O mais importante é a transparência. As plataformas operam hoje com uma opacidade que não é possível saber, auditar, avaliar se estão funcionando bem ou mal, as regras de funcionamento, e isso dificulta muito para a sociedade e até para as autoridades avaliar o que está funcionando”, afirma. “A gestão dos algoritmos, das publicações que a gente recebe ou não recebe, que foram desequilibradas nas eleições, ou como a inteligência artificial vai funcionar, a regulação mais importante é exigir que as plataformas sejam mais transparentes”, resume."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Brasil de Fato",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Brasil de Fato",
+              "url": "https://www.brasildefato.com.br/2026/11/06/primeiro-passo-para-regular-big-techs-e-exigir-transparencia-afirma-especialista/",
+              "titulo": "Primeiro passo para regular big techs é exigir transparência, afirma especialista",
+              "autor": "Redação Brasil de Fato",
+              "pontos": [
+                "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro ...",
+                "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a u...",
+                "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que..."
+              ],
+              "citacao": "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro de 2026, impulsionad...",
+              "texto_integral": [
+                "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas.",
+                "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro de 2026, impulsionado por fortes correções no mercado financeiro global e, em especial, pelo estouro de uma bolha de IA na China.",
+                "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a urgência do debate de regulação das big techs.",
+                "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que participou da elaboração do Marco Civil da Internet, avalia que o maior nó nesse tema é a questão da falta de transparência. “O mais importante é a transparência. As plataformas operam hoje com uma opacidade que não é possível saber, auditar, avaliar se estão funcionando bem ou mal, as regras de funcionamento, e isso dificulta muito para a sociedade e até para as autoridades avaliar o que está funcionando”, afirma. “A gestão dos algoritmos, das publicações que a gente recebe ou não recebe, que foram desequilibradas nas eleições, ou como a inteligência artificial vai funcionar, a regulação mais importante é exigir que as plataformas sejam mais transparentes”, resume."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--presidente-de-israel-escolhe-rival-de-netanya",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Governo Federal e Articulação Política",
+          "editoria": "Política",
+          "titulo": "Presidente de Israel escolhe rival de Netanyahu para tentar formar um governo",
+          "texto": "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de CartaCapital enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+            "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+            "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da tarefa de formar um governo após as eleições legislativas do fim de outubro, o que pode desbancar o primeiro-ministro Benjamin Netanyahu.",
+            "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palestino Hamas, em 8 de outubro de 2023, terminaram sem maioria tanto para Netanyahu e seus aliados, quanto para o bloco de Eisenkot."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "CartaCapital",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por CartaCapital",
+              "url": "https://www.cartacapital.com.br/mundo/presidente-de-israel-escolhe-rival-de-netanyahu-para-tentar-formar-um-governo/",
+              "titulo": "Presidente de Israel escolhe rival de Netanyahu para tentar formar um governo",
+              "autor": "Redação CartaCapital",
+              "pontos": [
+                "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabi...",
+                "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da t...",
+                "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palest..."
+              ],
+              "citacao": "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possív...",
+              "texto_integral": [
+                "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+                "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+                "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da tarefa de formar um governo após as eleições legislativas do fim de outubro, o que pode desbancar o primeiro-ministro Benjamin Netanyahu.",
+                "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palestino Hamas, em 8 de outubro de 2023, terminaram sem maioria tanto para Netanyahu e seus aliados, quanto para o bloco de Eisenkot."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--fl-vio-abandona-comiss-o-de-seguran-a-do-sena",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Segurança Pública e Inteligência Federativa",
+          "editoria": "Política",
+          "titulo": "Flávio abandona Comissão de Segurança do Senado, que deve ser herdada por Mourão",
+          "texto": "Editado por Fábio Zanini, espaço traz notícias e bastidores da política. Com Carlos Petrocilo e Gabriela Echenique",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Folha de S.Paulo enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Editado por Fábio Zanini, espaço traz notícias e bastidores da política. Com Carlos Petrocilo e Gabriela Echenique",
+            "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+            "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+            "Receba no seu email as informações exclusivas da coluna Painel"
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/flavio-abandona-comissao-de-seguranca-do-senado-que-deve-ser-herdada-por-mourao.shtml",
+              "titulo": "Flávio abandona Comissão de Segurança do Senado, que deve ser herdada por Mourão",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler....",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+                "Receba no seu email as informações exclusivas da coluna Painel..."
+              ],
+              "citacao": "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler....",
+              "texto_integral": [
+                "Editado por Fábio Zanini, espaço traz notícias e bastidores da política. Com Carlos Petrocilo e Gabriela Echenique",
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+                "Receba no seu email as informações exclusivas da coluna Painel"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--justi-a-do-paraguai-determina-pris-o-preventi",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Diplomacia e Relações Internacionais",
+          "editoria": "Internacional",
+          "titulo": "Justiça do Paraguai determina prisão preventiva de Peña e ex-BC",
+          "texto": "Decisão do juiz Humberto Otazú atende pedido do MP do país, que investiga possíveis favorecimentos ao Ueno Bank",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Poder360 enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Decisão do juiz Humberto Otazú atende pedido do MP do país, que investiga possíveis favorecimentos ao Ueno Bank",
+            "A Justiça do Paraguai determinou neste sábado (7.nov.2026) a prisão preventiva do ex-presidente Santiago Peña e do ex-presidente do Banco Central do país, Carlos Carvallo. A decisão do juiz Humberto Otazú atende a um pedido do MP, que investiga ambos por suspeitas de irregularidades envolvendo recursos públicos e previdenciários depositados no Ueno Bank. Além da prisão preventiva, o órgão também pediu medidas para identificar e preservar seus patrimônios.",
+            "Peña é acusado de incentivar decisões que teriam causado prejuízo aos cofres públicos e de administrar recursos em benefício próprio. Carvallo responde pelos mesmos 2 crimes e também por produção imediata de documentos públicos com conteúdo falso, segundo o MP.",
+            "O pedido de prisão preventiva foi apresentado 1 dia depois de Peña sofrer impeachment. O Senado paraguaio aprovou por unanimidade a destituição na 6ª feira (6.nov), depois de a Câmara dos Deputados também votar pelo afastamento. Peña havia apresentado um pedido de renúncia, mas não compareceu à sessão do Senado. O ex-presidente estava preso provisoriamente desde 6ª feira (6.nov). Após a destituição, o ex-presidente foi transferido da prisão domiciliar para o Regimento de Escolta Presidencial, uma unidade militar paraguaia. Ele cumpria a medida por determinação anterior do Ministério Público, que já investigava sua relação com o Ueno Bank."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Poder360",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Poder360",
+              "url": "https://www.poder360.com.br/poder-internacional/justica-do-paraguai-determina-prisao-preventiva-de-pena-e-ex-bc/",
+              "titulo": "Justiça do Paraguai determina prisão preventiva de Peña e ex-BC",
+              "autor": "Redação Poder360",
+              "pontos": [
+                "A Justiça do Paraguai determinou neste sábado (7.nov.2026) a prisão preventiva do ex-presidente Sant...",
+                "Peña é acusado de incentivar decisões que teriam causado prejuízo aos cofres públicos e de administr...",
+                "O pedido de prisão preventiva foi apresentado 1 dia depois de Peña sofrer impeachment. O Senado para..."
+              ],
+              "citacao": "A Justiça do Paraguai determinou neste sábado (7.nov.2026) a prisão preventiva do ex-presidente Santiago Peña e do ex-pr...",
+              "texto_integral": [
+                "Decisão do juiz Humberto Otazú atende pedido do MP do país, que investiga possíveis favorecimentos ao Ueno Bank",
+                "A Justiça do Paraguai determinou neste sábado (7.nov.2026) a prisão preventiva do ex-presidente Santiago Peña e do ex-presidente do Banco Central do país, Carlos Carvallo. A decisão do juiz Humberto Otazú atende a um pedido do MP, que investiga ambos por suspeitas de irregularidades envolvendo recursos públicos e previdenciários depositados no Ueno Bank. Além da prisão preventiva, o órgão também pediu medidas para identificar e preservar seus patrimônios.",
+                "Peña é acusado de incentivar decisões que teriam causado prejuízo aos cofres públicos e de administrar recursos em benefício próprio. Carvallo responde pelos mesmos 2 crimes e também por produção imediata de documentos públicos com conteúdo falso, segundo o MP.",
+                "O pedido de prisão preventiva foi apresentado 1 dia depois de Peña sofrer impeachment. O Senado paraguaio aprovou por unanimidade a destituição na 6ª feira (6.nov), depois de a Câmara dos Deputados também votar pelo afastamento. Peña havia apresentado um pedido de renúncia, mas não compareceu à sessão do Senado. O ex-presidente estava preso provisoriamente desde 6ª feira (6.nov). Após a destituição, o ex-presidente foi transferido da prisão domiciliar para o Regimento de Escolta Presidencial, uma unidade militar paraguaia. Ele cumpria a medida por determinação anterior do Ministério Público, que já investigava sua relação com o Ueno Bank."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--come-a-instala-o-de-cinco-p-rticos-de-free-fl",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Infraestrutura, Energia e Transportes",
+          "editoria": "Sociedade",
+          "titulo": "Começa instalação de cinco pórticos de free flow na rodovia Castelo Branco, em SP",
+          "texto": "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Folha de S.Paulo enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+            "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+            "A instalação de cinco pórticos de pedágio eletrônico de passagem livre no trecho da Grande São Paulo da rodovia Castelo Branco começa na madrugada deste sábado (7).",
+            "A partir de março de 2027, eles irão substituir três praças de pedágio tradicionais com cancela, em que o motorista é obrigado a parar para fazer o pagamento."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/comeca-instalacao-de-cinco-porticos-de-free-flow-na-rodovia-castelo-branco-em-sp.shtml",
+              "titulo": "Começa instalação de cinco pórticos de free flow na rodovia Castelo Branco, em SP",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+                "A instalação de cinco pórticos de pedágio eletrônico de passagem livre no trecho da Grande São Paulo...",
+                "A partir de março de 2027, eles irão substituir três praças de pedágio tradicionais com cancela, em ..."
+              ],
+              "citacao": "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+              "texto_integral": [
+                "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+                "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+                "A instalação de cinco pórticos de pedágio eletrônico de passagem livre no trecho da Grande São Paulo da rodovia Castelo Branco começa na madrugada deste sábado (7).",
+                "A partir de março de 2027, eles irão substituir três praças de pedágio tradicionais com cancela, em que o motorista é obrigado a parar para fazer o pagamento."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--alertas-extremos-de-inunda-o-com-avisos-sonor",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Meio Ambiente em Escala Macro e Defesa Civil",
+          "editoria": "Sociedade",
+          "titulo": "Alertas extremos de inundação com avisos sonoros disparam em BH: \"Susto\"",
+          "texto": "Belo Horizonte — A Defesa Civil de Belo Horizonte disparou alertas extremos nos celulares de moradores da capital mineira por volta das 20h deste sábado (7/11), devido ao risco iminente de inundação após fortes chuvas na capital mineira. A notificação foi acompanhada de um aviso sonoro de emergência. Avenidas tiveram bloqueios determinados devido ao risco de transbordamento de córregos.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Metrópoles enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Belo Horizonte — A Defesa Civil de Belo Horizonte disparou alertas extremos nos celulares de moradores da capital mineira por volta das 20h deste sábado (7/11), devido ao risco iminente de inundação após fortes chuvas na capital mineira. A notificação foi acompanhada de um aviso sonoro de emergência. Avenidas tiveram bloqueios determinados devido ao risco de transbordamento de córregos.",
+            "Às 19h30, a Defesa Civil havia enviado um alerta severo para chuvas intensas, enxurradas e alagamentos em Belo Horizonte. Já às 19h50, outro aviso severo alertou para o risco de inundações nas avenidas Vilarinho, em Venda Nova, e Heráclito Mourão de Miranda, na Pampulha.",
+            "Na sequência, diversos alertas sonoros chegaram nos celulares dos moradores, que relataram “susto” e “desespero”.",
+            "Gente, tô passada! No meio do jogo do Galo, todos os celulares do bar começaram a tocar ao mesmo tempo com o alerta da Defesa Civil! Que susto!"
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Metrópoles",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Metrópoles",
+              "url": "https://www.metropoles.com/minas-gerais/bh-recebe-alertas-extremos-de-inundacao-com-aviso-sonoro-nos-celulares",
+              "titulo": "Alertas extremos de inundação com avisos sonoros disparam em BH: \"Susto\"",
+              "autor": "Redação Metrópoles",
+              "pontos": [
+                "Às 19h30, a Defesa Civil havia enviado um alerta severo para chuvas intensas, enxurradas e alagament...",
+                "Na sequência, diversos alertas sonoros chegaram nos celulares dos moradores, que relataram “susto” e...",
+                "Gente, tô passada! No meio do jogo do Galo, todos os celulares do bar começaram a tocar ao mesmo tem..."
+              ],
+              "citacao": "Às 19h30, a Defesa Civil havia enviado um alerta severo para chuvas intensas, enxurradas e alagamentos em Belo Horizonte...",
+              "texto_integral": [
+                "Belo Horizonte — A Defesa Civil de Belo Horizonte disparou alertas extremos nos celulares de moradores da capital mineira por volta das 20h deste sábado (7/11), devido ao risco iminente de inundação após fortes chuvas na capital mineira. A notificação foi acompanhada de um aviso sonoro de emergência. Avenidas tiveram bloqueios determinados devido ao risco de transbordamento de córregos.",
+                "Às 19h30, a Defesa Civil havia enviado um alerta severo para chuvas intensas, enxurradas e alagamentos em Belo Horizonte. Já às 19h50, outro aviso severo alertou para o risco de inundações nas avenidas Vilarinho, em Venda Nova, e Heráclito Mourão de Miranda, na Pampulha.",
+                "Na sequência, diversos alertas sonoros chegaram nos celulares dos moradores, que relataram “susto” e “desespero”.",
+                "Gente, tô passada! No meio do jogo do Galo, todos os celulares do bar começaram a tocar ao mesmo tempo com o alerta da Defesa Civil! Que susto!"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--plen-ria-em-bras-lia-re-ne-organiza-es-pela-t",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Defesa do Consumidor e Mercado Digital",
+          "editoria": "Sociedade",
+          "titulo": "Plenária em Brasília reúne organizações pela tarifa zero e cobra controle popular do transporte",
+          "texto": "A defesa da tarifa zero no transporte público e a disputa sobre o modelo de financiamento e gestão do sistema reuniram representantes de movimentos sociais, sindicatos, organizações populares e estudantis na noite desta quinta-feira (5), no Birosca do Conic, em Brasília.",
+          "por_que_importa": "O tema impacta diretamente o equilíbrio institucional, o ambiente de negócios e a estabilidade socioeconômica do país.",
+          "resumo_visoes": "A apuração de Brasil de Fato enfatiza as implicações institucionais do fato, confrontando dados técnicos com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "A defesa da tarifa zero no transporte público e a disputa sobre o modelo de financiamento e gestão do sistema reuniram representantes de movimentos sociais, sindicatos, organizações populares e estudantis na noite desta quinta-feira (5), no Birosca do Conic, em Brasília.",
+            "A plenária discutiu os caminhos para aumentar a gratuidade no país e colocou em debate duas propostas em discussão no Congresso Nacional: a iniciativa apresentada pelo presidente Luiz Inácio Lula da Silva (PT), que prevê a tarifa zero aos finais de semana, e a Proposta de Emenda à Constituição (PEC) que cria o Sistema Único de Mobilidade (SUM), com a perspectiva de garantir transporte gratuito todos os dias.",
+            "Durante o encontro, os participantes defenderam que a gratuidade não seja limitada à isenção da passagem, mas venha acompanhada de mudanças na estrutura de financiamento, gestão e fiscalização do transporte. Entre as reivindicações estão o financiamento com recursos públicos, a participação popular nas decisões e mecanismos de transparência para impedir que a política seja convertida em uma nova fonte de repasses sem controle às empresas privadas.",
+            "A plenária também teve como objetivo articular uma agenda de mobilizações no Distrito Federal e fortalecer a articulação com iniciativas semelhantes em outras cidades. A proposta é aumentar a pressão sobre o Congresso e o governo federal para que a tarifa zero avance em âmbito nacional e contemple a população todos os dias."
+          ],
+          "aprofundamento": {
+            "contexto": "Desdobramento decorrente de discussões regulatórias e econômicas recentes acompanhadas pelos órgãos de fiscalização.",
+            "o_que_observar": "As próximas decisões em plenário, reuniões ministeriais e indicadores setoriais correlatos."
+          },
+          "fontes": [
+            {
+              "fonte": "Brasil de Fato",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Brasil de Fato",
+              "url": "https://www.brasildefato.com.br/2026/11/06/plenaria-em-brasilia-reune-organizacoes-pela-tarifa-zero-e-cobra-controle-popular-do-transporte/",
+              "titulo": "Plenária em Brasília reúne organizações pela tarifa zero e cobra controle popular do transporte",
+              "autor": "Redação Brasil de Fato",
+              "pontos": [
+                "A plenária discutiu os caminhos para aumentar a gratuidade no país e colocou em debate duas proposta...",
+                "Durante o encontro, os participantes defenderam que a gratuidade não seja limitada à isenção da pass...",
+                "A plenária também teve como objetivo articular uma agenda de mobilizações no Distrito Federal e fort..."
+              ],
+              "citacao": "A plenária discutiu os caminhos para aumentar a gratuidade no país e colocou em debate duas propostas em discussão no Co...",
+              "texto_integral": [
+                "A defesa da tarifa zero no transporte público e a disputa sobre o modelo de financiamento e gestão do sistema reuniram representantes de movimentos sociais, sindicatos, organizações populares e estudantis na noite desta quinta-feira (5), no Birosca do Conic, em Brasília.",
+                "A plenária discutiu os caminhos para aumentar a gratuidade no país e colocou em debate duas propostas em discussão no Congresso Nacional: a iniciativa apresentada pelo presidente Luiz Inácio Lula da Silva (PT), que prevê a tarifa zero aos finais de semana, e a Proposta de Emenda à Constituição (PEC) que cria o Sistema Único de Mobilidade (SUM), com a perspectiva de garantir transporte gratuito todos os dias.",
+                "Durante o encontro, os participantes defenderam que a gratuidade não seja limitada à isenção da passagem, mas venha acompanhada de mudanças na estrutura de financiamento, gestão e fiscalização do transporte. Entre as reivindicações estão o financiamento com recursos públicos, a participação popular nas decisões e mecanismos de transparência para impedir que a política seja convertida em uma nova fonte de repasses sem controle às empresas privadas.",
+                "A plenária também teve como objetivo articular uma agenda de mobilizações no Distrito Federal e fortalecer a articulação com iniciativas semelhantes em outras cidades. A proposta é aumentar a pressão sobre o Congresso e o governo federal para que a tarifa zero avance em âmbito nacional e contemple a população todos os dias."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--eisenkot-netanyahu-rival-and-opposition-leade",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · The New York Times",
+          "editoria": "Política",
+          "titulo": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
+          "titulo_original": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
+          "texto": "Gadi Eisenkot, a former military chief, hopes to succeed Benjamin Netanyahu as prime minister by cobbling together a coalition after an inconclusive election.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de The New York Times destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Gadi Eisenkot, a former military chief, hopes to succeed Benjamin Netanyahu as prime minister by cobbling together a coalition after an inconclusive election.",
+            "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de The New York Times e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "The New York Times",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por The New York Times",
+              "url": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
+              "titulo": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
+              "autor": "Correspondentes The New York Times",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucio...",
+                "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integr..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucionais e diplomáticos ...",
+              "texto_integral": [
+                "Gadi Eisenkot, a former military chief, hopes to succeed Benjamin Netanyahu as prime minister by cobbling together a coalition after an inconclusive election.",
+                "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--kenyan-doomsday-sect-leader-jailed-for-200-ye",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · The Guardian",
+          "editoria": "Política",
+          "titulo": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
+          "titulo_original": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
+          "texto": "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de The Guardian destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families",
+            "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 190 children and one adult in one of the world’s worst cult disasters in recent history.",
+            "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came two weeks after the court in Kenya’s coastal city of Mombasa found the cult leader guilty of the crimes.",
+            "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sect whose members were ordered to starve themselves and their children to death to go to heaven before the world ended."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de The Guardian e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "The Guardian",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por The Guardian",
+              "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie",
+              "titulo": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
+              "autor": "Correspondentes The Guardian",
+              "pontos": [
+                "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 19...",
+                "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came t...",
+                "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sec..."
+              ],
+              "citacao": "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 190 children and one a...",
+              "texto_integral": [
+                "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families",
+                "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 190 children and one adult in one of the world’s worst cult disasters in recent history.",
+                "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came two weeks after the court in Kenya’s coastal city of Mombasa found the cult leader guilty of the crimes.",
+                "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sect whose members were ordered to starve themselves and their children to death to go to heaven before the world ended."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--what-we-know-so-far-after-krakow-gun-attack",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · BBC World News",
+          "editoria": "Internacional",
+          "titulo": "What we know so far after Krakow gun attack",
+          "titulo_original": "What we know so far after Krakow gun attack",
+          "texto": "At least six people were killed and several others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de BBC World News destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "At least six people were killed and several others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland.",
+            "Three bodies were found at his home when it was searched by police. Here's everything we know so far.",
+            "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bustling central point of the city.",
+            "Police said a man drove into the square before beginning to fire \"at random people from his car\"."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de BBC World News e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "BBC World News",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por BBC World News",
+              "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+              "titulo": "What we know so far after Krakow gun attack",
+              "autor": "Correspondentes BBC World News",
+              "pontos": [
+                "Three bodies were found at his home when it was searched by police. Here's everything we know so far...",
+                "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bus...",
+                "Police said a man drove into the square before beginning to fire \"at random people from his car\"...."
+              ],
+              "citacao": "Three bodies were found at his home when it was searched by police. Here's everything we know so far....",
+              "texto_integral": [
+                "At least six people were killed and several others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland.",
+                "Three bodies were found at his home when it was searched by police. Here's everything we know so far.",
+                "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bustling central point of the city.",
+                "Police said a man drove into the square before beginning to fire \"at random people from his car\"."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--gunman-kills-six-in-krak-w-shooting",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · Financial Times",
+          "editoria": "Internacional",
+          "titulo": "Gunman kills six in Kraków shooting",
+          "titulo_original": "Gunman kills six in Kraków shooting",
+          "texto": "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de Financial Times destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident",
+            "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de Financial Times e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "Financial Times",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por Financial Times",
+              "url": "https://www.ft.com/content/0fab9ede-4fa1-4f94-b23e-e32f07a6b7df?syn-25a6b1a6=1",
+              "titulo": "Gunman kills six in Kraków shooting",
+              "autor": "Correspondentes Financial Times",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionai...",
+                "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralm..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionais e diplomáticos do ...",
+              "texto_integral": [
+                "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident",
+                "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--dana-white-le-patron-de-l-ufc-et-proche-de-do",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · Le Monde",
+          "editoria": "Internacional",
+          "titulo": "Dana White, le patron de l’UFC et proche de Donald Trump, sollicité pour devenir porte-parole de la Maison Blanche",
+          "titulo_original": "Dana White, le patron de l’UFC et proche de Donald Trump, sollicité pour devenir porte-parole de la Maison Blanche",
+          "texto": "Le président américain a exhorté le dirigeant de la plus grande organisation mondiale d’arts martiaux mixtes à accepter ce poste vacant depuis le 16 octobre, lui suggérant de s’entourer de combattants pour affronter « la gauche cinglée ».",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de Le Monde destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Le président américain a exhorté le dirigeant de la plus grande organisation mondiale d’arts martiaux mixtes à accepter ce poste vacant depuis le 16 octobre, lui suggérant de s’entourer de combattants pour affronter « la gauche cinglée ».",
+            "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de Le Monde e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "Le Monde",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por Le Monde",
+              "url": "https://www.lemonde.fr/international/article/2026/11/07/dana-white-le-patron-de-l-ufc-sollicite-par-donald-trump-au-poste-de-porte-parole-de-la-maison-blanche_6808316_3210.html",
+              "titulo": "Dana White, le patron de l’UFC et proche de Donald Trump, sollicité pour devenir porte-parole de la Maison Blanche",
+              "autor": "Correspondentes Le Monde",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e dip...",
+                "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente pa..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e diplomáticos do tema no...",
+              "texto_integral": [
+                "Le président américain a exhorté le dirigeant de la plus grande organisation mondiale d’arts martiaux mixtes à accepter ce poste vacant depuis le 16 octobre, lui suggérant de s’entourer de combattants pour affronter « la gauche cinglée ».",
+                "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--al-menos-seis-muertos-y-una-quincena-de-herid",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Internacional",
+          "titulo": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+          "titulo_original": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+          "texto": "La policía ha disparado y detenido al atacante, un hombre de nacionalidad polaca de unos 24 años. Las autoridades encuentran tres cadáveres más en su domicilio",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "La policía ha disparado y detenido al atacante, un hombre de nacionalidad polaca de unos 24 años. Las autoridades encuentran tres cadáveres más en su domicilio",
+            "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-07/varios-muertos-y-heridos-en-un-atentado-en-la-plaza-mayor-de-cracovia.html",
+              "titulo": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no ...",
+              "texto_integral": [
+                "La policía ha disparado y detenido al atacante, un hombre de nacionalidad polaca de unos 24 años. Las autoridades encuentran tres cadáveres más en su domicilio",
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--trump-de-aliado-a-r-mora-los-ultras-europeos",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Economia",
+          "titulo": "Trump, de aliado a rémora: los ultras europeos se alejan de su antiguo socio tras la debacle en las urnas",
+          "titulo_original": "Trump, de aliado a rémora: los ultras europeos se alejan de su antiguo socio tras la debacle en las urnas",
+          "texto": "Los partidos de extrema derecha de la UE pasan de jalear al presidente de Estados Unidos a separar su suerte en vísperas de un superaño electoral",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Los partidos de extrema derecha de la UE pasan de jalear al presidente de Estados Unidos a separar su suerte en vísperas de un superaño electoral",
+            "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-07/trump-de-aliado-a-remora-los-ultras-europeos-se-alejan-de-su-antiguo-socio-tras-la-debacle-en-las-urnas.html",
+              "titulo": "Trump, de aliado a rémora: los ultras europeos se alejan de su antiguo socio tras la debacle en las urnas",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no ...",
+              "texto_integral": [
+                "Los partidos de extrema derecha de la UE pasan de jalear al presidente de Estados Unidos a separar su suerte en vísperas de un superaño electoral",
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--trump-ofrece-la-portavoc-a-de-la-casa-blanca",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Política",
+          "titulo": "Trump ofrece la portavocía de la Casa Blanca al presidente de la competición de lucha UFC",
+          "titulo_original": "Trump ofrece la portavocía de la Casa Blanca al presidente de la competición de lucha UFC",
+          "texto": "El presidente de Estados Unidos, Donald Trump, asegura haber ofrecido el puesto de portavoz de la Casa Blanca al presidente y consejero delegado de la competición de lucha Ultimate Fighting Championship (UFC), Dana White, en una iniciativa muy poco convencional incluso para los estándares del impredecible mandatario. En un mensaje en sus redes sociales, Trump ha escrito: “Dana será un jefe de prensa como ningún otro. ¡Dana, por favor, toma el trabajo!”.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "El presidente de Estados Unidos, Donald Trump, asegura haber ofrecido el puesto de portavoz de la Casa Blanca al presidente y consejero delegado de la competición de lucha Ultimate Fighting Championship (UFC), Dana White, en una iniciativa muy poco convencional incluso para los estándares del impredecible mandatario. En un mensaje en sus redes sociales, Trump ha escrito: “Dana será un jefe de prensa como ningún otro. ¡Dana, por favor, toma el trabajo!”.",
+            "No está claro si White aceptará el insólito ofrecimiento. El dirigente deportivo se encontraba en Londres en el momento en el que Trump publicó su anuncio, y su oficina de prensa no respondía a los mensajes. Según la publicación hollywoodiense TMZ, especializada en el mundo de la farándula, Trump y White se verán la semana próxima para abordar la oferta. Pero según la cadena CNN, que cita a una fuente con conocimiento de la situación, el presidente de la UFC ya la ha rechazado.",
+            "Antes de la publicación de estas dos versiones, en un mensaje en la red social X, el director de Comunicaciones de la Casa Blanca, Stephen Cheung, retuiteó el texto de Trump con el comentario: “¡Demonios, sí! ¡Hazlo, @DanaWhite! ¡Será como en los viejos tiempos!\"",
+            "El anuncio del presidente parecía formar parte de una serie de medidas que anticipan una nueva fase de dureza en su política, tras la derrota electoral sin paliativos de su partido en los comicios de mitad de mandato. En otro mensaje, afirma haber dado orden al Departamento de Justicia de examinar supuestas “amenazas” demócratas contra donantes y representantes republicanos."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-07/trump-ofrece-su-portavocia-a-un-exluchador-profesional.html",
+              "titulo": "Trump ofrece la portavocía de la Casa Blanca al presidente de la competición de lucha UFC",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "No está claro si White aceptará el insólito ofrecimiento. El dirigente deportivo se encontraba en Lo...",
+                "Antes de la publicación de estas dos versiones, en un mensaje en la red social X, el director de Com...",
+                "El anuncio del presidente parecía formar parte de una serie de medidas que anticipan una nueva fase ..."
+              ],
+              "citacao": "No está claro si White aceptará el insólito ofrecimiento. El dirigente deportivo se encontraba en Londres en el momento ...",
+              "texto_integral": [
+                "El presidente de Estados Unidos, Donald Trump, asegura haber ofrecido el puesto de portavoz de la Casa Blanca al presidente y consejero delegado de la competición de lucha Ultimate Fighting Championship (UFC), Dana White, en una iniciativa muy poco convencional incluso para los estándares del impredecible mandatario. En un mensaje en sus redes sociales, Trump ha escrito: “Dana será un jefe de prensa como ningún otro. ¡Dana, por favor, toma el trabajo!”.",
+                "No está claro si White aceptará el insólito ofrecimiento. El dirigente deportivo se encontraba en Londres en el momento en el que Trump publicó su anuncio, y su oficina de prensa no respondía a los mensajes. Según la publicación hollywoodiense TMZ, especializada en el mundo de la farándula, Trump y White se verán la semana próxima para abordar la oferta. Pero según la cadena CNN, que cita a una fuente con conocimiento de la situación, el presidente de la UFC ya la ha rechazado.",
+                "Antes de la publicación de estas dos versiones, en un mensaje en la red social X, el director de Comunicaciones de la Casa Blanca, Stephen Cheung, retuiteó el texto de Trump con el comentario: “¡Demonios, sí! ¡Hazlo, @DanaWhite! ¡Será como en los viejos tiempos!\"",
+                "El anuncio del presidente parecía formar parte de una serie de medidas que anticipan una nueva fase de dureza en su política, tras la derrota electoral sin paliativos de su partido en los comicios de mitad de mandato. En otro mensaje, afirma haber dado orden al Departamento de Justicia de examinar supuestas “amenazas” demócratas contra donantes y representantes republicanos."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--europa-ante-la-debacle-trumpista",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Economia",
+          "titulo": "Europa ante la debacle trumpista",
+          "titulo_original": "Europa ante la debacle trumpista",
+          "texto": "La derrota republicana en las elecciones de medio mandato puede parecer un espejismo si se fijan los ojos en el horizonte electoral de la UE",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "La derrota republicana en las elecciones de medio mandato puede parecer un espejismo si se fijan los ojos en el horizonte electoral de la UE",
+            "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-06/europa-ante-la-debacle-trumpista.html",
+              "titulo": "Europa ante la debacle trumpista",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no ...",
+              "texto_integral": [
+                "La derrota republicana en las elecciones de medio mandato puede parecer un espejismo si se fijan los ojos en el horizonte electoral de la UE",
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--trump-afronta-los-dos-ltimos-a-os-de-mandato",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Internacional",
+          "titulo": "Trump afronta los dos últimos años de mandato como un octogenario desafiante obsesionado con las obras",
+          "titulo_original": "Trump afronta los dos últimos años de mandato como un octogenario desafiante obsesionado con las obras",
+          "texto": "Al día siguiente de recibir un histórico revolcón electoral, Donald Trump solo parecía interesado en presumir de las obras del monumental salón de baile que está construyendo en el ala este de la Casa Blanca. Allí, entre material de obra oculto por banderas estadounidenses, imprimió su firma en la última viga de acero de la estructura, junto a dos pequeños sellos dorados que recuerdan su presidencia.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Al día siguiente de recibir un histórico revolcón electoral, Donald Trump solo parecía interesado en presumir de las obras del monumental salón de baile que está construyendo en el ala este de la Casa Blanca. Allí, entre material de obra oculto por banderas estadounidenses, imprimió su firma en la última viga de acero de la estructura, junto a dos pequeños sellos dorados que recuerdan su presidencia.",
+            "Durante la visita trató de eludir las preguntas sobre el resultado de las elecciones de medio mandato, en las que los demócratas le han arrebatado el control del Congreso en el mayor giro político desde los años del Watergate. La escena simboliza la actitud de un presidente desgastado que ha perdido abrumadoramente las últimas elecciones de su carrera: convertido de la noche a la mañana en un octogenario ensimismado en las obras que ha emprendido por todo Washington, obsesionado con dejar su legado en la arquitectura de la capital y eludiendo cualquier responsabilidad por el fracaso electoral.",
+            "Sin embargo, cuando todo el mundo en Washington debatía sobre el extraño comportamiento de Trump tras las elecciones —aceptó el resultado de primeras, cuando había dudas de que lo hiciera, y se mostró dispuesto a colaborar con los demócratas—, este viernes protagonizó su enésima jugada de prestidigitador. Nombró a Stephen Miller, uno de los hombres más radicales de su entorno, como nuevo jefe de Gabinete de la Casa Blanca, en sustitución de Susie Wiles, considerada la más moderada dentro del grupo de confianza del presidente.",
+            "La salida de Wiles se interpreta como un ajuste de cuentas tras la debacle electoral. Y el nombramiento de Miller, arquitecto de la política migratoria de la Casa Blanca con campañas de redadas y deportaciones masivas, plantea nuevas incógnitas sobre la actitud del republicano en el último tramo de su mandato justo cuando parecía que el trumpismo se desinflaba. ¿Mantendrá esa imagen de hombre obsesionado con su legado o querrá ir a la guerra política para impulsar su agenda conservadora? Esa es la gran pregunta ahora."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/us/2026-11-07/trump-afronta-los-dos-ultimos-anos-de-mandato-como-un-octogenario-desafiante-obsesionado-con-las-obras.html",
+              "titulo": "Trump afronta los dos últimos años de mandato como un octogenario desafiante obsesionado con las obras",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "Durante la visita trató de eludir las preguntas sobre el resultado de las elecciones de medio mandat...",
+                "Sin embargo, cuando todo el mundo en Washington debatía sobre el extraño comportamiento de Trump tra...",
+                "La salida de Wiles se interpreta como un ajuste de cuentas tras la debacle electoral. Y el nombramie..."
+              ],
+              "citacao": "Durante la visita trató de eludir las preguntas sobre el resultado de las elecciones de medio mandato, en las que los de...",
+              "texto_integral": [
+                "Al día siguiente de recibir un histórico revolcón electoral, Donald Trump solo parecía interesado en presumir de las obras del monumental salón de baile que está construyendo en el ala este de la Casa Blanca. Allí, entre material de obra oculto por banderas estadounidenses, imprimió su firma en la última viga de acero de la estructura, junto a dos pequeños sellos dorados que recuerdan su presidencia.",
+                "Durante la visita trató de eludir las preguntas sobre el resultado de las elecciones de medio mandato, en las que los demócratas le han arrebatado el control del Congreso en el mayor giro político desde los años del Watergate. La escena simboliza la actitud de un presidente desgastado que ha perdido abrumadoramente las últimas elecciones de su carrera: convertido de la noche a la mañana en un octogenario ensimismado en las obras que ha emprendido por todo Washington, obsesionado con dejar su legado en la arquitectura de la capital y eludiendo cualquier responsabilidad por el fracaso electoral.",
+                "Sin embargo, cuando todo el mundo en Washington debatía sobre el extraño comportamiento de Trump tras las elecciones —aceptó el resultado de primeras, cuando había dudas de que lo hiciera, y se mostró dispuesto a colaborar con los demócratas—, este viernes protagonizó su enésima jugada de prestidigitador. Nombró a Stephen Miller, uno de los hombres más radicales de su entorno, como nuevo jefe de Gabinete de la Casa Blanca, en sustitución de Susie Wiles, considerada la más moderada dentro del grupo de confianza del presidente.",
+                "La salida de Wiles se interpreta como un ajuste de cuentas tras la debacle electoral. Y el nombramiento de Miller, arquitecto de la política migratoria de la Casa Blanca con campañas de redadas y deportaciones masivas, plantea nuevas incógnitas sobre la actitud del republicano en el último tramo de su mandato justo cuando parecía que el trumpismo se desinflaba. ¿Mantendrá esa imagen de hombre obsesionado con su legado o querrá ir a la guerra política para impulsar su agenda conservadora? Esa es la gran pregunta ahora."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-07--int--yusef-yabar-n-l-der-de-la-principal-lista-rab",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Internacional",
+          "titulo": "Yusef Yabarín, líder de la principal lista árabe de Israel: “Al apoyar a Eisenkot, hemos elegido lo menos malo”",
+          "titulo_original": "Yusef Yabarín, líder de la principal lista árabe de Israel: “Al apoyar a Eisenkot, hemos elegido lo menos malo”",
+          "texto": "El dirigente ve prioritario colaborar con el bloque judío de oposición para reemplazar a Netanyahu, pese a las diferencias ideológicas. El jefe de Estado encargará este domingo formar Gobierno al principal líder opositor",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "El dirigente ve prioritario colaborar con el bloque judío de oposición para reemplazar a Netanyahu, pese a las diferencias ideológicas. El jefe de Estado encargará este domingo formar Gobierno al principal líder opositor",
+            "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+            "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-07/yusef-yabarin-lider-de-la-principal-lista-arabe-de-israel-al-apoyar-a-eisenkot-hemos-elegido-lo-menos-malo.html",
+              "titulo": "Yusef Yabarín, líder de la principal lista árabe de Israel: “Al apoyar a Eisenkot, hemos elegido lo menos malo”",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+              ],
+              "citacao": "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no ...",
+              "texto_integral": [
+                "El dirigente ve prioritario colaborar con el bloque judío de oposición para reemplazar a Netanyahu, pese a las diferencias ideológicas. El jefe de Estado encargará este domingo formar Gobierno al principal líder opositor",
+                "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+                "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+              ]
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "09h00",
+          "o_que": "Acompanhamento das cotações de mercado e indicadores do Banco Central."
+        },
+        {
+          "quando": "14h30",
+          "o_que": "Sessões deliberativas no Congresso Nacional e tribunais superiores."
+        },
+        {
+          "quando": "18h00",
+          "o_que": "Balanço das apurações do dia e edição da noite da Faixa Oculta."
+        }
+      ],
+      "audio": "audios/boletim_2026-11-07-noite.mp3",
+      "audio_duracao": "5:00",
+      "audio_tamanho": 4409280,
+      "audio_titulo": "Boletim em Áudio · 7 de novembro de 2026, edição da noite"
     }
   },
   "cine_edicoes": {
@@ -58711,12 +59670,12 @@
       "texto_integral": [
         "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
         "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
-        "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (Superior Tribunal Federal) contra o fim da escala 6x1. Desta vez, a confederação pede ao Supremo que limite a competência da Justiça do Trabalho e do MPT (Ministério Público do Trabalho) nos processos e fiscalizações que envolvam a implantação da nova escala 5x2 e da jornada reduzida de trabalho.",
+        "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal) contra o fim da escala 6x1. Desta vez, a confederação pede ao Supremo que limite a competência da Justiça do Trabalho e do MPT (Ministério Público do Trabalho) nos processos e nas fiscalizações que envolvam a implantação da nova escala 5x2 e da jornada reduzida de trabalho.",
         "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas semanais para 42 horas e implantar a escala 5x2, com dois dias de descanso semanal remunerado."
       ],
       "pontos": [
         "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
-        "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (Superior Tribunal Federa...",
+        "A CNI (Confederação Nacional da Indústria) entrou com uma nova ação no STF (SupremoTribunal Federal)...",
         "A partir de 16 de dezembro, empresas de todo o país deverão reduzir a carga horária de 44 horas sema..."
       ]
     },
@@ -58863,6 +59822,368 @@
         "Foram dezesseis detecções de satélite em menos de um quilômetro quadrado, nas cabeceiras do rio Umbu...",
         "Depois das 1h17, silêncio. Por quatro dias, nenhum satélite veria fogo ali de novo....",
         "Em pouco mais de duas semanas, aquele ponto de calor viraria o maior incêndio da história da Terra I..."
+      ]
+    },
+    "2026-11-07--quando-a-marca-famosa-chega-depois-anteriorid-conjur.com.br/2026-nov-07/quan": {
+      "url": "https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/",
+      "fonte": "ConJur",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente",
+      "resumo": [
+        "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>"
+      ],
+      "texto_integral": [
+        "<p>A propriedade industrial convive com uma tensão recorrente: de um lado, a necessidade de assegurar previsibilidade a quem busca proteger um sinal distintivo; de outro, a realidade de mercados nos quais determinados nomes adquirem fama extraordinária ao longo do tempo. Quando esses fenômenos se encontram, uma questão se impõe: qual é o peso jurídico do [&#8230;]</p>\n<p>O post <a href=\"https://conjur.com.br/2026-nov-07/quando-a-marca-famosa-chega-depois-anterioridade-estrangeiras-e-fama-superveniente/\">Quando a marca famosa chega depois: anterioridade, estrangeiras e fama superveniente</a> apareceu primeiro em <a href=\"https://conjur.com.br\">Consultor Jurídico</a>.</p>",
+        "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema no cenário nacional contemporâneo.",
+        "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais de ConJur."
+      ],
+      "pontos": [
+        "A matéria apurada por ConJur destaca os desdobramentos estruturais e o impacto institucional do tema...",
+        "Análise de acompanhamento compilada pela redação da Faixa Oculta com base nos registros documentais ..."
+      ]
+    },
+    "2026-11-07--paraguai-justi-a-decreta-pris-o-preventiva-do-metropoles.com/mundo/paraguai-": {
+      "url": "https://www.metropoles.com/mundo/paraguai-justica-decreta-prisao-preventiva-do-ex-presidente-santiago-pena",
+      "fonte": "Metrópoles",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Paraguai: Justiça decreta prisão preventiva do ex-presidente Santiago Peña",
+      "resumo": [
+        "A Justiça do Paraguai decretou, neste sábado (7/11), a prisão preventiva do ex-presidente Santiago Peña. Ele foi alvo de um processo de impeachment aprovado pelo Congresso nessa sexta-feira (6/11) e é acusado de fraude na alocação de recursos públicos e interferência na fiscalização sobre o Ueno Bank."
+      ],
+      "texto_integral": [
+        "A Justiça do Paraguai decretou, neste sábado (7/11), a prisão preventiva do ex-presidente Santiago Peña. Ele foi alvo de um processo de impeachment aprovado pelo Congresso nessa sexta-feira (6/11) e é acusado de fraude na alocação de recursos públicos e interferência na fiscalização sobre o Ueno Bank.",
+        "A determinação da Justiça para a prisão preventiva acatou um pedido do Ministério Público (MP) do Paraguai realizado neste sábado. A promotoria também indiciou o ex-presidente do Banco Central Carlos Carvallo e pediu a manutenção da prisão dos dois.",
+        "Peña foi preso na noite da sexta-feira (6/11). Até a decisão deste sábado, a ordem era para o cumprimento de prisão domiciliar, medida desencadeada logo após o Congresso paraguaio finalizar o processo de impeachment.",
+        "A prisão preventiva de Peña será cumprida seguindo o Regimento de Escolta Presidencial. Na prática, isto significa que o ex-presidente ficará em uma instalação militar de elite em Assunção."
+      ],
+      "pontos": [
+        "A determinação da Justiça para a prisão preventiva acatou um pedido do Ministério Público (MP) do Pa...",
+        "Peña foi preso na noite da sexta-feira (6/11). Até a decisão deste sábado, a ordem era para o cumpri...",
+        "A prisão preventiva de Peña será cumprida seguindo o Regimento de Escolta Presidencial. Na prática, ..."
+      ]
+    },
+    "2026-11-07--primeiro-passo-para-regular-big-techs-exigir-brasildefato.com.br/2026/11/06": {
+      "url": "https://www.brasildefato.com.br/2026/11/06/primeiro-passo-para-regular-big-techs-e-exigir-transparencia-afirma-especialista/",
+      "fonte": "Brasil de Fato",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Primeiro passo para regular big techs é exigir transparência, afirma especialista",
+      "resumo": [
+        "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas."
+      ],
+      "texto_integral": [
+        "As eleições brasileiras de 2026, sobretudo a disputa presidencial, foram marcadas por evidências de interferência das big techs, como a própria Meta acabou admitindo, além de decisões controvérsias do Tribunal Superior Eleitoral (TSE) referentes às plataformas.",
+        "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro de 2026, impulsionado por fortes correções no mercado financeiro global e, em especial, pelo estouro de uma bolha de IA na China.",
+        "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a urgência do debate de regulação das big techs.",
+        "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que participou da elaboração do Marco Civil da Internet, avalia que o maior nó nesse tema é a questão da falta de transparência. “O mais importante é a transparência. As plataformas operam hoje com uma opacidade que não é possível saber, auditar, avaliar se estão funcionando bem ou mal, as regras de funcionamento, e isso dificulta muito para a sociedade e até para as autoridades avaliar o que está funcionando”, afirma. “A gestão dos algoritmos, das publicações que a gente recebe ou não recebe, que foram desequilibradas nas eleições, ou como a inteligência artificial vai funcionar, a regulação mais importante é exigir que as plataformas sejam mais transparentes”, resume."
+      ],
+      "pontos": [
+        "No cenário global, o tema da inteligência artificial (IA) ganhou força máxima em outubro e novembro ...",
+        "A conjuntura tem feito diversos analistas políticos e o próprio governo federal sinalizarem para a u...",
+        "Ao Conexão BdF, da Rádio Brasil de Fato, Paulo Rená, especialista em constitucionalismo digital, que..."
+      ]
+    },
+    "2026-11-07--presidente-de-israel-escolhe-rival-de-netanya-cartacapital.com.br/mundo/pres": {
+      "url": "https://www.cartacapital.com.br/mundo/presidente-de-israel-escolhe-rival-de-netanyahu-para-tentar-formar-um-governo/",
+      "fonte": "CartaCapital",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Presidente de Israel escolhe rival de Netanyahu para tentar formar um governo",
+      "resumo": [
+        "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias"
+      ],
+      "texto_integral": [
+        "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+        "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabinete, com uma possível prorrogação de 14 dias",
+        "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da tarefa de formar um governo após as eleições legislativas do fim de outubro, o que pode desbancar o primeiro-ministro Benjamin Netanyahu.",
+        "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palestino Hamas, em 8 de outubro de 2023, terminaram sem maioria tanto para Netanyahu e seus aliados, quanto para o bloco de Eisenkot."
+      ],
+      "pontos": [
+        "Gadi Eisenkot, líder do bloco da oposição, terá 28 dias para tentar formar maioria e montar seu gabi...",
+        "O presidente israelense, Isaac Herzog, encarregará o líder do bloco da oposição, Gadi Eisenkot, da t...",
+        "As primeiras eleições desde a guerra em Gaza, desencadeada pelo ataque do movimento islamista palest..."
+      ]
+    },
+    "2026-11-07--justi-a-do-paraguai-determina-pris-o-preventi-poder360.com.br/poder-internac": {
+      "url": "https://www.poder360.com.br/poder-internacional/justica-do-paraguai-determina-prisao-preventiva-de-pena-e-ex-bc/",
+      "fonte": "Poder360",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Justiça do Paraguai determina prisão preventiva de Peña e ex-BC",
+      "resumo": [
+        "Decisão do juiz Humberto Otazú atende pedido do MP do país, que investiga possíveis favorecimentos ao Ueno Bank"
+      ],
+      "texto_integral": [
+        "Decisão do juiz Humberto Otazú atende pedido do MP do país, que investiga possíveis favorecimentos ao Ueno Bank",
+        "A Justiça do Paraguai determinou neste sábado (7.nov.2026) a prisão preventiva do ex-presidente Santiago Peña e do ex-presidente do Banco Central do país, Carlos Carvallo. A decisão do juiz Humberto Otazú atende a um pedido do MP, que investiga ambos por suspeitas de irregularidades envolvendo recursos públicos e previdenciários depositados no Ueno Bank. Além da prisão preventiva, o órgão também pediu medidas para identificar e preservar seus patrimônios.",
+        "Peña é acusado de incentivar decisões que teriam causado prejuízo aos cofres públicos e de administrar recursos em benefício próprio. Carvallo responde pelos mesmos 2 crimes e também por produção imediata de documentos públicos com conteúdo falso, segundo o MP.",
+        "O pedido de prisão preventiva foi apresentado 1 dia depois de Peña sofrer impeachment. O Senado paraguaio aprovou por unanimidade a destituição na 6ª feira (6.nov), depois de a Câmara dos Deputados também votar pelo afastamento. Peña havia apresentado um pedido de renúncia, mas não compareceu à sessão do Senado. O ex-presidente estava preso provisoriamente desde 6ª feira (6.nov). Após a destituição, o ex-presidente foi transferido da prisão domiciliar para o Regimento de Escolta Presidencial, uma unidade militar paraguaia. Ele cumpria a medida por determinação anterior do Ministério Público, que já investigava sua relação com o Ueno Bank."
+      ],
+      "pontos": [
+        "A Justiça do Paraguai determinou neste sábado (7.nov.2026) a prisão preventiva do ex-presidente Sant...",
+        "Peña é acusado de incentivar decisões que teriam causado prejuízo aos cofres públicos e de administr...",
+        "O pedido de prisão preventiva foi apresentado 1 dia depois de Peña sofrer impeachment. O Senado para..."
+      ]
+    },
+    "2026-11-07--come-a-instala-o-de-cinco-p-rticos-de-free-fl-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/comeca-instalacao-de-cinco-porticos-de-free-flow-na-rodovia-castelo-branco-em-sp.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Começa instalação de cinco pórticos de free flow na rodovia Castelo Branco, em SP",
+      "resumo": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler."
+      ],
+      "texto_integral": [
+        "Você tem 7 acessos por dia para dar de presente. Qualquer pessoa que não é assinante poderá ler.",
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha.",
+        "A instalação de cinco pórticos de pedágio eletrônico de passagem livre no trecho da Grande São Paulo da rodovia Castelo Branco começa na madrugada deste sábado (7).",
+        "A partir de março de 2027, eles irão substituir três praças de pedágio tradicionais com cancela, em que o motorista é obrigado a parar para fazer o pagamento."
+      ],
+      "pontos": [
+        "Assinantes podem liberar 7 acessos por dia para conteúdos da Folha....",
+        "A instalação de cinco pórticos de pedágio eletrônico de passagem livre no trecho da Grande São Paulo...",
+        "A partir de março de 2027, eles irão substituir três praças de pedágio tradicionais com cancela, em ..."
+      ]
+    },
+    "2026-11-07--alertas-extremos-de-inunda-o-com-avisos-sonor-metropoles.com/minas-gerais/bh": {
+      "url": "https://www.metropoles.com/minas-gerais/bh-recebe-alertas-extremos-de-inundacao-com-aviso-sonoro-nos-celulares",
+      "fonte": "Metrópoles",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Alertas extremos de inundação com avisos sonoros disparam em BH: \"Susto\"",
+      "resumo": [
+        "Belo Horizonte — A Defesa Civil de Belo Horizonte disparou alertas extremos nos celulares de moradores da capital mineira por volta das 20h deste sábado (7/11), devido ao risco iminente de inundação após fortes chuvas na capital mineira. A notificação foi acompanhada de um aviso sonoro de emergência. Avenidas tiveram bloqueios determinados devido ao risco de transbordamento de córregos."
+      ],
+      "texto_integral": [
+        "Belo Horizonte — A Defesa Civil de Belo Horizonte disparou alertas extremos nos celulares de moradores da capital mineira por volta das 20h deste sábado (7/11), devido ao risco iminente de inundação após fortes chuvas na capital mineira. A notificação foi acompanhada de um aviso sonoro de emergência. Avenidas tiveram bloqueios determinados devido ao risco de transbordamento de córregos.",
+        "Às 19h30, a Defesa Civil havia enviado um alerta severo para chuvas intensas, enxurradas e alagamentos em Belo Horizonte. Já às 19h50, outro aviso severo alertou para o risco de inundações nas avenidas Vilarinho, em Venda Nova, e Heráclito Mourão de Miranda, na Pampulha.",
+        "Na sequência, diversos alertas sonoros chegaram nos celulares dos moradores, que relataram “susto” e “desespero”.",
+        "Gente, tô passada! No meio do jogo do Galo, todos os celulares do bar começaram a tocar ao mesmo tempo com o alerta da Defesa Civil! Que susto!"
+      ],
+      "pontos": [
+        "Às 19h30, a Defesa Civil havia enviado um alerta severo para chuvas intensas, enxurradas e alagament...",
+        "Na sequência, diversos alertas sonoros chegaram nos celulares dos moradores, que relataram “susto” e...",
+        "Gente, tô passada! No meio do jogo do Galo, todos os celulares do bar começaram a tocar ao mesmo tem..."
+      ]
+    },
+    "2026-11-07--int--eisenkot-netanyahu-rival-and-opposition-leade-nytimes.com/2026/11/07/world/m": {
+      "url": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
+      "fonte": "The New York Times",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
+      "resumo": [
+        "Gadi Eisenkot, a former military chief, hopes to succeed Benjamin Netanyahu as prime minister by cobbling together a coalition after an inconclusive election."
+      ],
+      "texto_integral": [
+        "Gadi Eisenkot, a former military chief, hopes to succeed Benjamin Netanyahu as prime minister by cobbling together a coalition after an inconclusive election.",
+        "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de The New York Times destaca os impactos institucio...",
+        "Texto apurado originalmente por correspondentes de The New York Times no exterior e traduzido integr..."
+      ]
+    },
+    "2026-11-07--int--kenyan-doomsday-sect-leader-jailed-for-200-ye-theguardian.com/world/2026/nov": {
+      "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie",
+      "fonte": "The Guardian",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
+      "resumo": [
+        "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families"
+      ],
+      "texto_integral": [
+        "Paul Mackenzie convicted over deaths of children and one adult after followers were ordered to starve themselves and their families",
+        "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 190 children and one adult in one of the world’s worst cult disasters in recent history.",
+        "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came two weeks after the court in Kenya’s coastal city of Mombasa found the cult leader guilty of the crimes.",
+        "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sect whose members were ordered to starve themselves and their children to death to go to heaven before the world ended."
+      ],
+      "pontos": [
+        "The leader of a Kenyan doomsday sect has been sentenced to 200 years in prison for the murders of 19...",
+        "The sentence, comprising 100 years for murder by starvation and 100 years by direct homicide, came t...",
+        "Prosecutors said Paul Mackenzie and his Good News International church ran ​a Christian doomsday sec..."
+      ]
+    },
+    "2026-11-07--int--what-we-know-so-far-after-krakow-gun-attack-bbc.co.uk/news/articles/cmd7q1": {
+      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+      "fonte": "BBC World News",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "What we know so far after Krakow gun attack",
+      "resumo": [
+        "At least six people were killed and several others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland."
+      ],
+      "texto_integral": [
+        "At least six people were killed and several others injured when a gunman suspected to have ties to the far-right opened fire in central Krakow, the second largest city in Poland.",
+        "Three bodies were found at his home when it was searched by police. Here's everything we know so far.",
+        "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bustling central point of the city.",
+        "Police said a man drove into the square before beginning to fire \"at random people from his car\"."
+      ],
+      "pontos": [
+        "Three bodies were found at his home when it was searched by police. Here's everything we know so far...",
+        "The attack began shortly before 15:00 local time (14:00 GMT) in Krakow's Main Market Square, the bus...",
+        "Police said a man drove into the square before beginning to fire \"at random people from his car\"...."
+      ]
+    },
+    "2026-11-07--int--gunman-kills-six-in-krak-w-shooting-ft.com/content/0fab9ede-4fa1-4": {
+      "url": "https://www.ft.com/content/0fab9ede-4fa1-4f94-b23e-e32f07a6b7df?syn-25a6b1a6=1",
+      "fonte": "Financial Times",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Gunman kills six in Kraków shooting",
+      "resumo": [
+        "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident"
+      ],
+      "texto_integral": [
+        "Poland’s Prime Minister Donald Tusk called on politicians not to exploit the incident",
+        "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de Financial Times destaca os impactos institucionai...",
+        "Texto apurado originalmente por correspondentes de Financial Times no exterior e traduzido integralm..."
+      ]
+    },
+    "2026-11-07--int--dana-white-le-patron-de-l-ufc-et-proche-de-do-lemonde.fr/international/artic": {
+      "url": "https://www.lemonde.fr/international/article/2026/11/07/dana-white-le-patron-de-l-ufc-sollicite-par-donald-trump-au-poste-de-porte-parole-de-la-maison-blanche_6808316_3210.html",
+      "fonte": "Le Monde",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Dana White, le patron de l’UFC et proche de Donald Trump, sollicité pour devenir porte-parole de la Maison Blanche",
+      "resumo": [
+        "Le président américain a exhorté le dirigeant de la plus grande organisation mondiale d’arts martiaux mixtes à accepter ce poste vacant depuis le 16 octobre, lui suggérant de s’entourer de combattants pour affronter « la gauche cinglée »."
+      ],
+      "texto_integral": [
+        "Le président américain a exhorté le dirigeant de la plus grande organisation mondiale d’arts martiaux mixtes à accepter ce poste vacant depuis le 16 octobre, lui suggérant de s’entourer de combattants pour affronter « la gauche cinglée ».",
+        "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de Le Monde destaca os impactos institucionais e dip...",
+        "Texto apurado originalmente por correspondentes de Le Monde no exterior e traduzido integralmente pa..."
+      ]
+    },
+    "2026-11-07--int--al-menos-seis-muertos-y-una-quincena-de-herid-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-07/varios-muertos-y-heridos-en-un-atentado-en-la-plaza-mayor-de-cracovia.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+      "resumo": [
+        "La policía ha disparado y detenido al atacante, un hombre de nacionalidad polaca de unos 24 años. Las autoridades encuentran tres cadáveres más en su domicilio"
+      ],
+      "texto_integral": [
+        "La policía ha disparado y detenido al atacante, un hombre de nacionalidad polaca de unos 24 años. Las autoridades encuentran tres cadáveres más en su domicilio",
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+      ]
+    },
+    "2026-11-07--int--trump-de-aliado-a-r-mora-los-ultras-europeos-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-07/trump-de-aliado-a-remora-los-ultras-europeos-se-alejan-de-su-antiguo-socio-tras-la-debacle-en-las-urnas.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Trump, de aliado a rémora: los ultras europeos se alejan de su antiguo socio tras la debacle en las urnas",
+      "resumo": [
+        "Los partidos de extrema derecha de la UE pasan de jalear al presidente de Estados Unidos a separar su suerte en vísperas de un superaño electoral"
+      ],
+      "texto_integral": [
+        "Los partidos de extrema derecha de la UE pasan de jalear al presidente de Estados Unidos a separar su suerte en vísperas de un superaño electoral",
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+      ]
+    },
+    "2026-11-07--int--trump-ofrece-la-portavoc-a-de-la-casa-blanca-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-07/trump-ofrece-su-portavocia-a-un-exluchador-profesional.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Trump ofrece la portavocía de la Casa Blanca al presidente de la competición de lucha UFC",
+      "resumo": [
+        "El presidente de Estados Unidos, Donald Trump, asegura haber ofrecido el puesto de portavoz de la Casa Blanca al presidente y consejero delegado de la competición de lucha Ultimate Fighting Championship (UFC), Dana White, en una iniciativa muy poco convencional incluso para los estándares del impredecible mandatario. En un mensaje en sus redes sociales, Trump ha escrito: “Dana será un jefe de prensa como ningún otro. ¡Dana, por favor, toma el trabajo!”."
+      ],
+      "texto_integral": [
+        "El presidente de Estados Unidos, Donald Trump, asegura haber ofrecido el puesto de portavoz de la Casa Blanca al presidente y consejero delegado de la competición de lucha Ultimate Fighting Championship (UFC), Dana White, en una iniciativa muy poco convencional incluso para los estándares del impredecible mandatario. En un mensaje en sus redes sociales, Trump ha escrito: “Dana será un jefe de prensa como ningún otro. ¡Dana, por favor, toma el trabajo!”.",
+        "No está claro si White aceptará el insólito ofrecimiento. El dirigente deportivo se encontraba en Londres en el momento en el que Trump publicó su anuncio, y su oficina de prensa no respondía a los mensajes. Según la publicación hollywoodiense TMZ, especializada en el mundo de la farándula, Trump y White se verán la semana próxima para abordar la oferta. Pero según la cadena CNN, que cita a una fuente con conocimiento de la situación, el presidente de la UFC ya la ha rechazado.",
+        "Antes de la publicación de estas dos versiones, en un mensaje en la red social X, el director de Comunicaciones de la Casa Blanca, Stephen Cheung, retuiteó el texto de Trump con el comentario: “¡Demonios, sí! ¡Hazlo, @DanaWhite! ¡Será como en los viejos tiempos!\"",
+        "El anuncio del presidente parecía formar parte de una serie de medidas que anticipan una nueva fase de dureza en su política, tras la derrota electoral sin paliativos de su partido en los comicios de mitad de mandato. En otro mensaje, afirma haber dado orden al Departamento de Justicia de examinar supuestas “amenazas” demócratas contra donantes y representantes republicanos."
+      ],
+      "pontos": [
+        "No está claro si White aceptará el insólito ofrecimiento. El dirigente deportivo se encontraba en Lo...",
+        "Antes de la publicación de estas dos versiones, en un mensaje en la red social X, el director de Com...",
+        "El anuncio del presidente parecía formar parte de una serie de medidas que anticipan una nueva fase ..."
+      ]
+    },
+    "2026-11-07--int--europa-ante-la-debacle-trumpista-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-06/europa-ante-la-debacle-trumpista.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Europa ante la debacle trumpista",
+      "resumo": [
+        "La derrota republicana en las elecciones de medio mandato puede parecer un espejismo si se fijan los ojos en el horizonte electoral de la UE"
+      ],
+      "texto_integral": [
+        "La derrota republicana en las elecciones de medio mandato puede parecer un espejismo si se fijan los ojos en el horizonte electoral de la UE",
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
+      ]
+    },
+    "2026-11-07--int--trump-afronta-los-dos-ltimos-a-os-de-mandato-elpais.com/us/2026-11-07/trump": {
+      "url": "https://elpais.com/us/2026-11-07/trump-afronta-los-dos-ultimos-anos-de-mandato-como-un-octogenario-desafiante-obsesionado-con-las-obras.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Trump afronta los dos últimos años de mandato como un octogenario desafiante obsesionado con las obras",
+      "resumo": [
+        "Al día siguiente de recibir un histórico revolcón electoral, Donald Trump solo parecía interesado en presumir de las obras del monumental salón de baile que está construyendo en el ala este de la Casa Blanca. Allí, entre material de obra oculto por banderas estadounidenses, imprimió su firma en la última viga de acero de la estructura, junto a dos pequeños sellos dorados que recuerdan su presidencia."
+      ],
+      "texto_integral": [
+        "Al día siguiente de recibir un histórico revolcón electoral, Donald Trump solo parecía interesado en presumir de las obras del monumental salón de baile que está construyendo en el ala este de la Casa Blanca. Allí, entre material de obra oculto por banderas estadounidenses, imprimió su firma en la última viga de acero de la estructura, junto a dos pequeños sellos dorados que recuerdan su presidencia.",
+        "Durante la visita trató de eludir las preguntas sobre el resultado de las elecciones de medio mandato, en las que los demócratas le han arrebatado el control del Congreso en el mayor giro político desde los años del Watergate. La escena simboliza la actitud de un presidente desgastado que ha perdido abrumadoramente las últimas elecciones de su carrera: convertido de la noche a la mañana en un octogenario ensimismado en las obras que ha emprendido por todo Washington, obsesionado con dejar su legado en la arquitectura de la capital y eludiendo cualquier responsabilidad por el fracaso electoral.",
+        "Sin embargo, cuando todo el mundo en Washington debatía sobre el extraño comportamiento de Trump tras las elecciones —aceptó el resultado de primeras, cuando había dudas de que lo hiciera, y se mostró dispuesto a colaborar con los demócratas—, este viernes protagonizó su enésima jugada de prestidigitador. Nombró a Stephen Miller, uno de los hombres más radicales de su entorno, como nuevo jefe de Gabinete de la Casa Blanca, en sustitución de Susie Wiles, considerada la más moderada dentro del grupo de confianza del presidente.",
+        "La salida de Wiles se interpreta como un ajuste de cuentas tras la debacle electoral. Y el nombramiento de Miller, arquitecto de la política migratoria de la Casa Blanca con campañas de redadas y deportaciones masivas, plantea nuevas incógnitas sobre la actitud del republicano en el último tramo de su mandato justo cuando parecía que el trumpismo se desinflaba. ¿Mantendrá esa imagen de hombre obsesionado con su legado o querrá ir a la guerra política para impulsar su agenda conservadora? Esa es la gran pregunta ahora."
+      ],
+      "pontos": [
+        "Durante la visita trató de eludir las preguntas sobre el resultado de las elecciones de medio mandat...",
+        "Sin embargo, cuando todo el mundo en Washington debatía sobre el extraño comportamiento de Trump tra...",
+        "La salida de Wiles se interpreta como un ajuste de cuentas tras la debacle electoral. Y el nombramie..."
+      ]
+    },
+    "2026-11-07--int--yusef-yabar-n-l-der-de-la-principal-lista-rab-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-07/yusef-yabarin-lider-de-la-principal-lista-arabe-de-israel-al-apoyar-a-eisenkot-hemos-elegido-lo-menos-malo.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-07",
+      "titulo": "Yusef Yabarín, líder de la principal lista árabe de Israel: “Al apoyar a Eisenkot, hemos elegido lo menos malo”",
+      "resumo": [
+        "El dirigente ve prioritario colaborar con el bloque judío de oposición para reemplazar a Netanyahu, pese a las diferencias ideológicas. El jefe de Estado encargará este domingo formar Gobierno al principal líder opositor"
+      ],
+      "texto_integral": [
+        "El dirigente ve prioritario colaborar con el bloque judío de oposición para reemplazar a Netanyahu, pese a las diferencias ideológicas. El jefe de Estado encargará este domingo formar Gobierno al principal líder opositor",
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e diplomáticos do tema no cenário geopolítico contemporâneo.",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente para o português culto pela redação da Faixa Oculta."
+      ],
+      "pontos": [
+        "A reportagem apurada pela redação internacional de El País destaca os impactos institucionais e dipl...",
+        "Texto apurado originalmente por correspondentes de El País no exterior e traduzido integralmente par..."
       ]
     }
   }
