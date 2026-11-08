@@ -49,7 +49,7 @@ Este documento estabelece as diretrizes permanentes de qualidade, integridade vi
   * **Cadência Oficial Realista:** As playlists dos shows do Rio são atualizadas no **início da semana** (segunda-feira) para a playlist semanal (`semana`: shows dos próximos 7 dias) e no **início do mês** (todo dia 01) para a playlist mensal/30 dias (`trinta`: shows dos próximos 30 dias / mês).
   * **Proibição de Falsas Promessas:** É expressamente proibido alegar na interface ou notas que as playlists são atualizadas constantemente ou "a cada segunda e quinta", quando a cadência real estabelecida e suficiente é semanal e mensal.
   * **Composição Automática via Agenda:** O script `tools/atualizar_playlists_agenda.py` extrai automaticamente todos os artistas com sessões e shows marcados para o período a partir de `agenda.atual.eventos`.
-  * **Acesso Nativo Duplo:** Os cartões das playlists na interface oferecem links diretos tanto para o Spotify quanto para o YouTube Music (`YT Music ↗`), acompanhados da lista retrátil de bandas participantes.
+  * **Acesso Nativo e Reprodutibilidade:** Os cartões das playlists na interface oferecem reprodução direta no site (`Ouvir aqui`) e link para a fila contínua no YouTube (`https://www.youtube.com/watch_videos?video_ids=...`, botão `YouTube ↗`), pois o domínio `music.youtube.com` não suporta `/watch_videos` e descarta para a página inicial. O detalhamento expansível de `Bandas` fornece chips individuais com links para os canais de cada banda no YouTube Music e Spotify.
   * **Preservação do Histórico:** Cada atualização arquiva a versão anterior em `agenda.atual.playlists.anteriores`, acessível pelo botão retrátil "Notas e versões anteriores".
 
 ---

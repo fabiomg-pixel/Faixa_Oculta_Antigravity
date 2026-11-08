@@ -3865,9 +3865,9 @@ dialog.texto.convite-dlg {
           h("span", { class: "pl-meta" }, [rot, d.intervalo].map(str).filter(Boolean).join(", ") + (bandas.length ? ` · ${bandas.length} bandas` : "")),
           h("div", { class: "acts" },
             S.modo === "site" && emb ? h("button", { class: "ouvir ag-ouvir", type: "button", "aria-pressed": String(ativo), onclick: () => tocar(emb, "Radar", str(d.nome) || rot, false) }, ativo ? "Tocando" : "Ouvir aqui") : null,
-            safeUrl(d.url_yt) ? h("a", { href: safeUrl(d.url_yt), target: "_blank", rel: "noopener", class: "ag-ref" }, "YT Music ↗") : null,
+            safeUrl(d.url_yt) ? h("a", { href: safeUrl(d.url_yt), target: "_blank", rel: "noopener", class: "ag-ref", title: "Abrir playlist completa no YouTube" }, "YouTube ↗") : null,
             safeUrl(d.url) ? h("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", class: "ag-ref" }, "Spotify ↗") : null,
-            bandas.length ? h("details", null, h("summary", null, "Bandas"), h("p", null, bandas.join(", "))) : null));
+            bandas.length ? h("details", null, h("summary", null, "Bandas"), h("div", { class: "ag-artistas", style: "margin-top: 6px;" }, bandas.map((b) => chipArtista(b) || h("span", null, b)))) : null));
       })),
       p.em || mais ? h("p", { class: "pl-note" }, p.em ? h("span", { class: "pl-gerado" }, `Atualizado em ${new Date(p.em).toLocaleDateString("pt-BR")}, no início da semana (semanal) e no início do mês (mensal); cinco músicas por banda, em bloco. `) : null,
         mais ? h("button", { type: "button", class: "ag-tog", "aria-expanded": String(aberto), onclick: () => { S.agPlInfo = !aberto; render(); } }, aberto ? "Esconder notas" : "Notas e versões anteriores") : null) : null,

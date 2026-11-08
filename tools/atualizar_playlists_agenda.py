@@ -216,8 +216,8 @@ def montar_playlist_real(nome_pl, artistas, cache_vids):
     if not vids:
         return None, None, []
 
-    # URL sequencial nativa do YouTube Music / YouTube
-    url_yt = f"https://music.youtube.com/watch_videos?video_ids={','.join(vids)}"
+    # URL sequencial nativa do YouTube (watch_videos cria playlist sob demanda com fila contínua)
+    url_yt = f"https://www.youtube.com/watch_videos?video_ids={','.join(vids)}"
     
     # URL de embed iframe para o player interno do topo do site
     primeiro = vids[0]
