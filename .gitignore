@@ -6,4 +6,6 @@ __pycache__/
 .vscode/
 *.log
 data/beeper_digest_*.json
+jornais/
 *.tmp
+

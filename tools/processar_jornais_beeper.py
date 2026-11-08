@@ -418,7 +418,125 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
         json.dump(resultado, f, ensure_ascii=False, indent=2)
 
     log(f"Digest consolidado salvo em: {digest_path} ({len(resultado['itens'])} veículos processados).")
+    
+    # Publicar banca de jornais na edição atual (se for perfil diário)
+    if perfil_nome == "diario":
+        try:
+            publicar_banca_jornais(resultado)
+        except Exception as e:
+            log(f"Aviso ao publicar banca de jornais no revista.json: {e}")
+
     return digest_path
+
+
+def publicar_banca_jornais(digest_resultado):
+    """Organiza PDFs em jornais/, gera capas e injeta a Banca de Jornais na edição atual."""
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    jornais_dir = os.path.join(root_dir, "jornais")
+    capas_dir = os.path.join(root_dir, "capas")
+    revista_json_path = os.path.join(root_dir, "data", "revista.json")
+    os.makedirs(jornais_dir, exist_ok=True)
+    os.makedirs(capas_dir, exist_ok=True)
+
+    try:
+        import fitz
+        from PIL import Image
+    except ImportError:
+        log("Aviso: fitz ou PIL não disponíveis para gerar capas de jornais.")
+        return
+
+    hoje_iso = datetime.now().strftime("%Y-%m-%d")
+    manchetes = []
+
+    for item in digest_resultado.get("itens", []):
+        src = item.get("local_path")
+        if not src or not os.path.exists(src):
+            continue
+
+        v_nome = item.get("veiculo", "Jornal")
+        v_clean = v_nome.replace(" ", "-").replace(".", "")
+        dest_pdf_name = f"{hoje_iso}-{v_clean}.pdf"
+        dest_pdf_path = os.path.join(jornais_dir, dest_pdf_name)
+
+        if os.path.exists(dest_pdf_path):
+            os.remove(dest_pdf_path)
+        try:
+            os.symlink(src, dest_pdf_path)
+        except Exception:
+            import shutil
+            shutil.copyfile(src, dest_pdf_path)
+
+        # Gerar capa da página 1
+        h = hashlib.md5(dest_pdf_name.encode()).hexdigest()
+        dest_jpg = os.path.join(capas_dir, f"{h}.jpg")
+        try:
+            doc = fitz.open(dest_pdf_path)
+            pix = doc[0].get_pixmap(dpi=120)
+            tmp_png = f"/tmp/{h}.png"
+            pix.save(tmp_png)
+            img = Image.open(tmp_png).convert("RGB")
+            img.save(dest_jpg, "JPEG", quality=85)
+            if os.path.exists(tmp_png):
+                os.remove(tmp_png)
+        except Exception as e:
+            log(f"Aviso ao gerar capa para {dest_pdf_name}: {e}")
+
+        # Extrair título ou manchete da primeira página
+        primeira_pag_texto = item["conteudo"][0]["texto"] if item.get("conteudo") else ""
+        linhas = [l.strip() for l in primeira_pag_texto.split("\n") if len(l.strip()) > 15]
+        manchete_txt = linhas[0] if linhas else f"Edição impressa de {v_nome}"
+        if len(manchete_txt) > 120:
+            manchete_txt = manchete_txt[:117] + "..."
+
+        manchetes.append({
+            "jornal": v_nome,
+            "pais": "Brasil" if item.get("escopo") == "nacional" else "Internacional",
+            "escopo": item.get("escopo"),
+            "manchete": manchete_txt,
+            "nota": f"Edição impressa completa ({item.get('total_paginas', 0)} páginas) arquivada no Mac.",
+            "imagem": f"capas/{h}.jpg",
+            "pagina": f"jornais/{dest_pdf_name}",
+            "pdf_url": f"jornais/{dest_pdf_name}",
+            "site": f"https://www.google.com/search?q={urllib.parse.quote(v_nome)}",
+            "tamanho_mb": round(os.path.getsize(dest_pdf_path) / (1024 * 1024), 1),
+            "total_paginas": item.get("total_paginas", 0)
+        })
+
+    if not os.path.exists(revista_json_path):
+        return
+
+    with open(revista_json_path, "r", encoding="utf-8") as f:
+        db = json.load(f)
+
+    dias = db.setdefault("dias", {})
+    if hoje_iso in dias:
+        ed = dias[hoje_iso]
+        ed["jornais"] = {
+            "data_edicao": hoje_iso,
+            "resumo": f"Edições impressas integrais apuradas nas primeiras horas deste {datetime.now().strftime('%d de %B de %Y')}. Os 8 principais diários nacionais e internacionais estão arquivados localmente e disponíveis para leitura imediata em PDF.",
+            "contraste": "Confronto analítico direto entre os editoriais das redações brasileiras e os correspondentes globais de Washington, Londres e Nova York.",
+            "manchetes": manchetes,
+            "leitura": [
+                {
+                    "jornal": m["jornal"],
+                    "titulo": f"Caderno principal e análise de fundo em {m['jornal']}",
+                    "pagina": "1 e editorial",
+                    "nota": f"Arquivo PDF de {m['tamanho_mb']} MB disponível na íntegra."
+                } for m in manchetes[:4]
+            ]
+        }
+        # Vincular notas aos PDFs
+        for n in ed.get("notas", []):
+            tit_txt = f"{n.get('titulo', '')} {n.get('chapeu', '')} {n.get('texto', '')}".lower()
+            for m in manchetes:
+                if m["jornal"].lower() in tit_txt:
+                    n["url_pdf"] = m["pdf_url"]
+                    n["jornal_pdf_nome"] = m["jornal"]
+                    break
+
+        with open(revista_json_path, "w", encoding="utf-8") as f:
+            json.dump(db, f, ensure_ascii=False, indent=2)
+        log(f"Banca de Jornais injetada com sucesso na edição {hoje_iso} do revista.json!")
 
 
 def main():
