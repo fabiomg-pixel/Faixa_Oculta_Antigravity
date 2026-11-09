@@ -54,6 +54,13 @@ SITES_OFICIAIS = {
     "The Guardian": "https://www.theguardian.com",
     "Financial Times": "https://www.ft.com",
     "The Times UK": "https://www.thetimes.com",
+    "Le Monde": "https://www.lemonde.fr",
+    "The Economist": "https://www.economist.com",
+    "Foreign Affairs": "https://www.foreignaffairs.com",
+    "The New Yorker": "https://www.newyorker.com",
+    "Revista Piauí": "https://piaui.folha.uol.com.br",
+    "Time": "https://time.com",
+    "Newsweek": "https://www.newsweek.com",
 }
 
 PAISES_POR_JORNAL = {
@@ -65,6 +72,13 @@ PAISES_POR_JORNAL = {
     "The Guardian": "Reino Unido",
     "Financial Times": "Reino Unido / EUA",
     "The Times UK": "Reino Unido",
+    "Le Monde": "França",
+    "The Economist": "Reino Unido / Global",
+    "Foreign Affairs": "Estados Unidos / Global",
+    "The New Yorker": "Estados Unidos",
+    "Revista Piauí": "Brasil",
+    "Time": "Estados Unidos / Global",
+    "Newsweek": "Estados Unidos / Global",
 }
 
 PERFIS_CONFIG = {
@@ -79,7 +93,8 @@ PERFIS_CONFIG = {
             ("Financial Times", ["financial times", "ft us"]),
             ("The Washington Post", ["washington post"]),
             ("The Guardian", ["the-guardian", "the guardian"]),
-            ("The Times UK", ["the times uk", "the times -", "the times"])
+            ("The Times UK", ["the times uk", "the times -", "the times"]),
+            ("Le Monde", ["le monde", "lemonde", "le-monde"])
         ]
     },
     "semana": {
@@ -90,7 +105,10 @@ PERFIS_CONFIG = {
         ],
         "internacional": [
             ("The Economist", ["the economist"]),
+            ("Foreign Affairs", ["foreign affairs", "foreign-affairs"]),
             ("The New Yorker", ["the new yorker"]),
+            ("Time", ["time magazine", "time -", "time_"]),
+            ("Newsweek", ["newsweek"]),
             ("FT Weekend", ["ft weekend", "weekend magazine"]),
             ("WSJ Weekend", ["wsj weekend", "wall street journal weekend"])
         ]

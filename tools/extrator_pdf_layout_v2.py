@@ -77,7 +77,8 @@ PERFIS_V2 = {
             ("Financial Times", ["ft us", "ft uk", "ft eu", "financial times"]),
             ("The Washington Post", ["washington post", "the-washington-post"]),
             ("The Guardian", ["the guardian", "the-guardian", "the observer"]),
-            ("The Times UK", ["the times uk", "the-times-uk"])
+            ("The Times UK", ["the times uk", "the-times-uk"]),
+            ("Le Monde", ["le monde", "lemonde", "le-monde"])
         ]
     },
     "semana": {
@@ -89,7 +90,10 @@ PERFIS_V2 = {
         ],
         "internacional": [
             ("The Economist", ["the economist", "economist"]),
+            ("Foreign Affairs", ["foreign affairs", "foreign-affairs"]),
             ("The New Yorker", ["the new yorker", "new yorker"]),
+            ("Time", ["time magazine", "time -", "time_"]),
+            ("Newsweek", ["newsweek"]),
             ("NYT Book Review", ["nytbr", "book review"]),
             ("NYT Magazine", ["nyt magazine"]),
             ("FT Weekend Magazine", ["ft weekend", "weekend magazine"])
@@ -108,10 +112,14 @@ SITES_OFICIAIS = {
     "The Guardian": "https://www.theguardian.com",
     "Financial Times": "https://www.ft.com",
     "The Times UK": "https://www.thetimes.com",
+    "Le Monde": "https://www.lemonde.fr",
     "The Economist": "https://www.economist.com",
+    "Foreign Affairs": "https://www.foreignaffairs.com",
     "The New Yorker": "https://www.newyorker.com",
     "Revista Piauí": "https://piaui.folha.uol.com.br",
     "CartaCapital": "https://www.cartacapital.com.br",
+    "Time": "https://time.com",
+    "Newsweek": "https://www.newsweek.com",
     "Veja Rio": "https://vejario.abril.com.br",
     "NYT Book Review": "https://www.nytimes.com/section/books/review",
     "NYT Magazine": "https://www.nytimes.com/section/magazine",
@@ -132,10 +140,14 @@ PAISES_POR_VEICULO = {
     "NYT Magazine": "Estados Unidos",
     "The Washington Post": "Estados Unidos",
     "The New Yorker": "Estados Unidos",
+    "Foreign Affairs": "Estados Unidos / Global",
+    "Time": "Estados Unidos / Global",
+    "Newsweek": "Estados Unidos / Global",
     "The Guardian": "Reino Unido",
     "Financial Times": "Reino Unido / Global",
     "FT Weekend Magazine": "Reino Unido",
     "The Times UK": "Reino Unido",
+    "Le Monde": "França",
     "The Economist": "Reino Unido / Global",
 }
 

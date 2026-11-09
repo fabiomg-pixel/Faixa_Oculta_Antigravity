@@ -9631,7 +9631,7 @@
       "revistas": {
         "data_edicao": "2026-11-07",
         "resumo": "Panorama aprofundado das principais revistas de análise política, geopolítica e diplomacia internacional da semana. Clique em qualquer publicação para acessar seus ensaios, editoriais e grandes reportagens no Modo Leitor.",
-        "contraste": "Confronto entre a visão liberal-global do The Economist, os ensaios geopolíticos do NYT Magazine e as análises políticas nacionais da CartaCapital e da Veja.",
+        "contraste": "The Economist e Foreign Affairs debatem a reconfiguração da grande estratégia diplomática e da multipolaridade; Revista piauí e CartaCapital diagnosticam as tensões sociais, a escala 6x1 e a precarização do trabalho no Brasil; The New Yorker, Time e Newsweek examinam a virada legislativa no Capitólio e os novos eixos de contenção geopolítica.",
         "publicacoes": [
           {
             "revista": "The Economist",
@@ -9745,6 +9745,166 @@
             ]
           },
           {
+            "revista": "Foreign Affairs",
+            "pais": "Estados Unidos / Global",
+            "escopo": "internacional",
+            "imagem": "capas/foreign_affairs_nov_dec_2026.png",
+            "site": "https://www.foreignaffairs.com",
+            "manchete": "A Revolução Silenciosa da Política Externa: Diplomacia de Grande Estratégia em Tempos de Rivalidade",
+            "manchete_original": "Democrats Shouldn’t Squander Their Chance to Launch a Foreign Policy Revolution",
+            "nota": "O mais influente periódico de diplomacia e relações internacionais do mundo debate como os EUA e as potências ocidentais devem reorientar sua grande estratégia diante da consolidação de uma ordem multipolar fragmentada.",
+            "resumo_edicao": [
+              "A edição de fim de ano da Foreign Affairs reúne ensaios de formuladores de políticas e acadêmicos sobre a necessidade imperiosa de Washington abandonar o militarismo reflexivo e adotar uma grande estratégia baseada em contenção responsável, diplomacia multilateral e investimentos em resiliência doméstica.",
+              "Os ensaios em foco analisam a armadilha do envolvimento sem fim em teatros secundários no Oriente Médio, as rotas viáveis de coexistência competitiva com a China no Indo-Pacífico e a ascensão irreversível de potências médias do Sul Global — como Brasil, Índia e Indonésia — que recusam alinhamentos automáticos em blocos fechados.",
+              "O dossiê conclui que o verdadeiro poder dissuasório do século XXI não será medido pelo número de bases ultramarinas, mas pela solidez da base industrial interna e pela capacidade de liderar coalizões pragmáticas na transição energética global."
+            ],
+            "editorial": {
+              "titulo": "A Sobriedade da Grande Estratégia",
+              "texto": [
+                "Durante décadas, a política externa americana operou sob o dogma de que o poder militar podia remodelar sociedades e garantir a hegemonia global. Os custos dessa soberba estão agora patentes na dívida interna e na fadiga popular com compromissos externos ilimitados.",
+                "Uma estratégia de contenção inteligente e diplomacia madura não representa fraqueza, mas o reconhecimento realista de que o mundo é multipolar e que a segurança do Ocidente depende de parcerias equilibradas e respeito à soberania das potências regionais."
+              ]
+            },
+            "reportagens": [
+              {
+                "titulo": "Como Construir uma Grande Estratégia Progressista para a Era da Rivalidade",
+                "titulo_original": "Democrats Shouldn’t Squander Their Chance to Launch a Foreign Policy Revolution",
+                "caderno": "Diplomacia & Grande Estratégia",
+                "pagina": "18 a 34",
+                "autor": "Matt Duss e Daniel Drezner",
+                "texto_integral": [
+                  "A vitória democrata nas eleições legislativas americanas abre uma janela de oportunidade histórica que não pode ser desperdiçada pelo establishment de Washington. Em vez de simplesmente restaurar as premissas gastas da primazia global dos anos 1990, os formuladores de política precisam formular uma doutrina externa centrada nos interesses da classe trabalhadora e na recusa a confrontos desnecessários.",
+                  "Isso significa que a competição com potências como Pequim e Moscou deve ser canalizada para padrões tecnológicos e transição verde, e não para corridas armamentistas que apenas alimentam o complexo industrial-militar. O teste supremo da diplomacia moderna é a capacidade de evitar que fricções locais se transformem em conflitos nucleares ou em catástrofes econômicas globais.",
+                  "Ademais, os autores defendem uma reformulação profunda das alianças com parceiros tradicionais no Oriente Médio, condicionando transferências de armas à adesão a padrões humanitários e apoiando mecanismos regionais de segurança coletiva em que as próprias nações locais assumam a responsabilidade por sua estabilidade."
+                ],
+                "pontos": [
+                  "Fim do militarismo automático e transição para contenção diplomática e cooperação tecnológica.",
+                  "Condicionamento de ajuda militar a parâmetros rigorosos de direitos humanos e estabilidade regional.",
+                  "Reconhecimento da autonomia geopolítica do Sul Global como pilar de um sistema internacional sustentável."
+                ],
+                "citacao": "A melhor defesa da democracia global não começa com frotas em mares distantes, mas com a restauração do pacto social e industrial interno."
+              },
+              {
+                "titulo": "O Triângulo de Segurança no Pacífico: Coexistência Competitiva com Pequim",
+                "titulo_original": "The Taiwan Strait and the Logic of Deterrence without Provocation",
+                "caderno": "Segurança Internacional & Ásia",
+                "pagina": "42 a 58",
+                "autor": "Jessica Chen Weiss",
+                "texto_integral": [
+                  "O equilíbrio de segurança no Estreito de Taiwan entrou em uma fase de alta sensibilidade após os recentes testes militares conjuntos na região. Analisando os canais diplomáticos de crise entre Washington e Pequim, o estudo demonstra que a dissuasão militar só é eficaz quando acompanhada de garantias políticas críveis de que o status quo será respeitado.",
+                  "O risco de uma espiral de hostilidades inadvertida decorre principalmente de declarações inflamadas e de gestos simbólicos vazios que alimentam o nacionalismo interno em ambos os lados do Pacífico, sem trazer ganhos operacionais de segurança aos aliados regionais.",
+                  "O artigo prescreve a retomada urgente de mecanismos bilaterais de desescalada de tráfego marítimo e aéreo e o fortalecimento de canais de diplomacia de bastidores conduzidos por diplomatas experientes, afastando a política externa do ciclo eleitoral imediato."
+                ],
+                "pontos": [
+                  "Dissuasão sem provocação: a necessidade de associar poder militar a garantias diplomáticas críveis.",
+                  "Retomada de linhas diretas entre os comandos militares das duas maiores superpotências.",
+                  "Papel de contenção exercido por Japão, Coreia do Sul e Filipinas na manutenção da estabilidade do comércio marítimo."
+                ],
+                "citacao": "A arte de evitar a guerra entre superpotências reside em demonstrar força sem empurrar o adversário para um beco sem saída diplomático."
+              }
+            ]
+          },
+          {
+            "revista": "Revista piauí",
+            "pais": "Brasil",
+            "escopo": "nacional",
+            "imagem": "capas/piaui_241_capa.jpg",
+            "site": "https://piaui.folha.uol.com.br",
+            "manchete": "O Mau Humor que Ameaça a Democracia: Sofrimento Econômico e Divisão Social",
+            "manchete_original": "O Mau Humor que Ameaça a Democracia",
+            "nota": "Na edição 241 da piauí, o cientista político André Singer analisa como o ressentimento com o custo de vida e o desgaste material da classe trabalhadora corroem o debate cívico e colocam as instituições democráticas sob risco permanente.",
+            "resumo_edicao": [
+              "A edição 241 da piauí apresenta um diagnóstico rigoroso e contundente sobre a encruzilhada da política brasileira. Em ensaio de fôlego que ancora a edição, André Singer examina as razões pelas quais a estabilidade institucional formal convive com um mal-estar social difuso e corrosivo, capaz de desestabilizar qualquer projeto de governabilidade.",
+              "Singer demonstra que, longe de serem disputas meramente simbólicas nas redes sociais, as fraturas eleitorais contemporâneas decorrem da precarização persistente da vida cotidiana: inflação de alimentos, jornadas exaustivas e colapso dos serviços públicos essenciais geram um 'mau humor estrutural' que a política tradicional não consegue aplacar.",
+              "A edição ainda mergulha no avanço do empreendedorismo religioso na metrópole paulistana, na evolução dos apelidos na vida pública como sintoma de desidratação partidária e na prosa refinada de Lydia Davis e J. M. Coetzee."
+            ],
+            "editorial": {
+              "titulo": "A Fratura Silenciosa da Cidadania",
+              "texto": [
+                "A piauí sempre sustentou que a política brasileira não cabe nos simplismos de maniqueísmos superficiais. Quando a economia real espreme a rotina do trabalhador, o desencanto cívico deixa de ser anomalia para se tornar a regra silenciosa das urnas.",
+                "O grande desafio das forças progressistas e republicanas não reside em vencer debates acadêmicos de gabinete, mas em devolver à maioria social a certeza palpável de que o futuro será melhor do que o presente exaustivo."
+              ]
+            },
+            "reportagens": [
+              {
+                "titulo": "O Mau Humor que Ameaça a Democracia",
+                "caderno": "Grande Ensaio / Política",
+                "pagina": "8 a 15",
+                "autor": "André Singer",
+                "texto_integral": [
+                  "A campanha para os pleitos recentes começou em um ambiente ilusório para a franja democrática da sociedade. Acreditava-se que o alívio com a normalidade das instituições bastaria para neutralizar os impulsos autoritários. No entanto, a realidade do cotidiano popular impôs um choque brutal de pragmatismo: a democracia não se alimenta apenas de respeito às regras do jogo, mas da capacidade de entregar segurança econômica básica.",
+                  "O que se convencionou chamar de 'mau humor da população' não é fruto de irracionalidade ou manipulação algorítmica passageira. Trata-se da reação fisiológica de famílias que continuam comprometendo mais da metade de sua renda mensal apenas com alimentação e transporte público de baixa qualidade. Em um país onde a jornada 6x1 drena o tempo do trabalhador e o endividamento atinge marcas recordes, o cansaço vira combustível para discursos de ruptura e ressentimento anti-sistema.",
+                  "A menos que o governo consiga articular uma reestruturação produtiva que aumente a produtividade e distribua os ganhos do crescimento entre os assalariados, a barreira de contenção democrática continuará sendo fustigada por crises de legitimidade a cada nova oscilação inflacionária."
+                ],
+                "pontos": [
+                  "O custo de vida e o endividamento familiar superam pautas identitárias como determinantes do voto popular.",
+                  "A jornada de trabalho extenuante e o isolamento urbano alimentam o desencanto com a política tradicional.",
+                  "André Singer alerta para o perigo de subestimar a capacidade de regeneração do populismo de direita sobre o sofrimento material."
+                ],
+                "citacao": "A sociedade dividida não está em busca de dogmas, mas de alívio econômico concreto; sem isso, a democracia continuará vulnerável ao primeiro choque inflacionário."
+              },
+              {
+                "titulo": "O Púlpito do Capital: A Igreja da Família Batista e a Nova Elite Pentecostal",
+                "caderno": "Sociedade & Poder",
+                "pagina": "22 a 29",
+                "autor": "Fernanda Ezabella",
+                "texto_integral": [
+                  "No coração da capital paulista, um novo modelo de templo evangélico redefine a relação entre fé, sucesso empresarial e influência política. Liderada por herdeiros do grupo J&F, a congregação congrega empresários, executivos do agronegócio e influenciadores digitais sob uma liturgia sofisticada que substituiu os templos tradicionais por auditórios corporativos de acústica impecável.",
+                  "A reportagem acompanhou os cultos semanais onde a teologia da prosperidade ganha traços de gestão de fundos de private equity: pregações sobre integridade nos negócios, mentoria profissional e redes de networking coexistem com apelos à caridade comunitária.",
+                  "Mais do que um fenômeno confessional, o templo expressa a maturidade de uma elite financeira evangélica que já não precisa de intermediários populistas para dialogar em pé de igualdade com a Faria Lima e o Palácio do Planalto."
+                ],
+                "pontos": [
+                  "Rede de influência congrega líderes do agronegócio, mercado financeiro e indústria alimentícia.",
+                  "Liturgia substitui o estilo pentecostal tradicional por técnicas de governança corporativa e mentoria.",
+                  "Articulação discreta ganha peso nas negociações de emendas e políticas setoriais em Brasília."
+                ],
+                "citacao": "A nova elite evangélica já não bate na porta do poder político como pedinte: ela financia, estrutura e pauta os rumos do debate econômico."
+              }
+            ]
+          },
+          {
+            "revista": "The New Yorker",
+            "pais": "Estados Unidos",
+            "escopo": "internacional",
+            "imagem": "capas/new_yorker_capa.jpg",
+            "site": "https://www.newyorker.com",
+            "manchete": "A Anatomia da Fratura: Os Bastidores da Recomposição do Poder em Washington",
+            "manchete_original": "The Morning After: How the Midterms Reshaped Capitol Hill",
+            "nota": "David Remnick e Jane Mayer analisam as correntes subterrâneas que ditaram a virada no Congresso americano e os dilemas éticos e diplomáticos que cercarão os próximos dois anos da república.",
+            "resumo_edicao": [
+              "A edição desta semana da The New Yorker oferece uma narrativa minuciosa e elegante sobre as convulsões políticas nos corredores de Washington após a recomposição das maiorias no Capitólio.",
+              "Em grande reportagem investigativa, Jane Mayer reconstitui os bastidores das campanhas nos estados decisivos da Rust Belt, revelando como a rejeição ao radicalismo cultural e a defesa intransigente de direitos previdenciários e trabalhistas foram os verdadeiros motores da vitória democrata.",
+              "Na seção de Cultura e Ensaio, a revista traz uma crônica magistral sobre a resistência dos museus europeus às pressões de patrocinadores corporativos fósseis e um ensaio sobre a universalidade da literatura de memórias."
+            ],
+            "editorial": {
+              "titulo": "O Alívio Precário da República",
+              "texto": [
+                "O resultado eleitoral nos Estados Unidos trouxe um suspiro de alívio às instituições democráticas, mas seria ingenuidade confundir vitória legislativa com superação do autoritarismo.",
+                "As causas profundas da fragmentação cívica — a desigualdade galopante, a desinformação orquestrada e a sensação de declínio social — permanecem intactas, exigindo coragem moral e governabilidade responsável."
+              ]
+            },
+            "reportagens": [
+              {
+                "titulo": "A Batalha pelo Capitólio: Como o Pragmatismo Venceu o Extremismo",
+                "titulo_original": "The Morning After: Inside the Democratic Resurgence",
+                "caderno": "A Reporter at Large",
+                "pagina": "32 a 46",
+                "autor": "Jane Mayer",
+                "texto_integral": [
+                  "Nos dias que antecederam a eleição de terça-feira, os corredores do Comitê Nacional Democrata em Washington exalavam uma ansiedade quase fúnebre. No entanto, quando os distritos operacionais da Pensilvânia, Michigan e Geórgia começaram a apurar as urnas, ficou claro que os analistas haviam subestimado a força silenciosa de eleitores moderados e independentes exaustos de retóricas revanchistas.",
+                  "A investigação de Mayer revela que o fator decisivo foi a mobilização de sindicatos industriais e comunidades suburbanas que rejeitaram propostas de privatização da seguridade social e de restrições a direitos reprodutivos, forçando até mesmo candidatos conservadores a moderarem seus discursos nos dias finais da corrida.",
+                  "Contudo, a nova liderança do Congresso herda um campo minado: com margens estreitas em ambas as casas legislativas, cada projeto de lei de orçamento ou de nomeação judicial exigirá negociações exaustivas e concessões que já geram atritos entre as alas moderada e progressista do partido."
+                ],
+                "pontos": [
+                  "A virada legislativa foi construída pela aliança entre operários sindicalizados e mulheres do subúrbio.",
+                  "A defesa dos benefícios da seguridade social superou o apelo de discursos conspiratórios nas redes.",
+                  "Margem estreita no Congresso exigirá disciplina rígida para garantir votações cruciais de política externa e gastos."
+                ],
+                "citacao": "A democracia americana não foi curada; ela apenas comprou tempo para demonstrar que é capaz de melhorar a vida dos seus cidadãos."
+              }
+            ]
+          },
+          {
             "revista": "CartaCapital",
             "pais": "Brasil",
             "escopo": "nacional",
@@ -9853,6 +10013,85 @@
                   "A crise da moradia como motor fundamental do descontentamento político moderno.",
                   "Impactos psicológicos e demográficos do adiamento de projetos familiares por restrições de renda."
                 ]
+              }
+            ]
+          },
+          {
+            "revista": "Time",
+            "pais": "Estados Unidos / Global",
+            "escopo": "internacional",
+            "imagem": "capas/time_capa.jpg",
+            "site": "https://time.com",
+            "manchete": "O Reordenamento Global: Como a Nova Correlação de Forças Impacta o Mundo",
+            "manchete_original": "The Midterm Reckoning and the Global Balance of Power",
+            "nota": "A revista Time dedica sua matéria de capa semanal ao impacto internacional da nova correlação de forças em Washington sobre os conflitos na Europa, no Oriente Médio e na transição verde.",
+            "resumo_edicao": [
+              "A edição semanal da Time examina em detalhes as repercussões globais da divisão de poderes nos Estados Unidos. Chefes de estado e diplomatas em Bruxelas, Tóquio, Brasília e Pequim recalculam suas estratégias diante de um Congresso que exigirá prestação de contas rigorosa sobre pacotes de auxílio militar internacional.",
+              "A revista destaca ainda a ascensão de novas lideranças femininas e jovens nas eleições estaduais e traz um dossiê especial sobre o avanço das tecnologias de baterias de estado sólido que prometem revolucionar a indústria automobilística mundial."
+            ],
+            "editorial": {
+              "titulo": "O Fim dos Cheques em Branco",
+              "texto": [
+                "A diplomacia do século XXI não tolera mais compromissos ilimitados sem supervisão democrática. O sinal emitido pelos eleitores é cristalino: o poder externo dos EUA precisa estar ancorado em objetivos estratégicos transparentes e na priorização de crises globais urgentes como o clima e a fome."
+              ]
+            },
+            "reportagens": [
+              {
+                "titulo": "O Congresso Dividido e o Destino dos Conflitos Globais",
+                "titulo_original": "The Global Ripple Effects of the 2026 Midterms",
+                "caderno": "World / Geopolítica",
+                "pagina": "20 a 27",
+                "autor": "Simon Shuster e Brian Bennett",
+                "texto_integral": [
+                  "De Kiev a Tel Aviv e de Taipei a Paris, governos estrangeiros acompanharam a contagem de votos das eleições parlamentares americanas com a atenção de quem sabe que seu orçamento de segurança depende das comissões do Capitólio.",
+                  "Com a transferência do controle da Câmara dos Representantes, os pacotes de auxílio financeiro e militar passarão por escrutínio minucioso. Deputados democratas já sinalizaram que não aprovarão novas dotações orçamentárias sem planos claros de cessar-fogo negociado e respeito irrestrito às resoluções humanitárias das Nações Unidas.",
+                  "Ao mesmo tempo, as economias da América Latina e do Sudeste Asiático respiram aliviadas com o recuo de propostas tarifárias protecionistas que ameaçavam desestabilizar as exportações industriais para o mercado norte-americano."
+                ],
+                "pontos": [
+                  "Comissões do Congresso exigirão cronogramas de desescalada e auditorias sobre ajuda militar externa.",
+                  "Tarifas alfandegárias generalizadas perdem força, beneficiando parceiros comerciais emergentes.",
+                  "O foco diplomático migra para cooperações multilaterais na transição energética e inteligência artificial."
+                ],
+                "citacao": "A era dos cheques em branco na política externa de Washington chegou ao fim; a diplomacia terá de substituir a coerção."
+              }
+            ]
+          },
+          {
+            "revista": "Newsweek",
+            "pais": "Estados Unidos / Global",
+            "escopo": "internacional",
+            "imagem": "capas/newsweek_capa.jpg",
+            "site": "https://www.newsweek.com",
+            "manchete": "Frentes de Tensão: O Novo Tabuleiro da OTAN e a Diplomacia no Oriente Médio",
+            "manchete_original": "Geopolitical Flashpoints: Congress, NATO and the New Middle East Architecture",
+            "nota": "Newsweek mapeia os cenários estratégicos para as zonas de conflito globais após o recuo do isolacionismo em Washington e o aumento da pressão europeia por desescalada humanitária.",
+            "resumo_edicao": [
+              "Newsweek analisa as perspectivas imediatas para a segurança transatlântica e o Oriente Médio. O relatório de capa destaca como os comandantes militares da OTAN buscam consolidar planos de defesa regional que prescindam de autorizações extraordinárias de emergência do Congresso dos EUA.",
+              "Em reportagem exclusiva, correspondentes da revista no Golfo revelam conversas diplomáticas secretas mediadas por Arábia Saudita e Omã para restabelecer canais de coexistência com o Irã, aproveitando a janela de distensão política aberta pelo resultado das eleições legislativas."
+            ],
+            "editorial": {
+              "titulo": "A Janela da Diplomacia Regional",
+              "texto": [
+                "Quando os ventos políticos sopram a favor do diálogo, os diplomatas precisam agir com rapidez antes que novas crises fechem a oportunidade de paz. A segurança duradoura não será imposta por bombardeios, mas por pactos regionais de não agressão."
+              ]
+            },
+            "reportagens": [
+              {
+                "titulo": "A Diplomacia Silenciosa do Golfo: A Corrida pela Coexistência no Oriente Médio",
+                "caderno": "International Security",
+                "pagina": "24 a 31",
+                "autor": "Tom O'Connor e Naveed Jamali",
+                "texto_integral": [
+                  "Longe das câmeras e dos comunicados oficiais, emissários de alto nível de Riad, Teerã e Ancara mantiveram rodadas de consultas diplomáticas em Mascate nas últimas 72 horas. O objetivo é estabelecer um código de conduta marítimo no Estreito de Ormuz e no Mar Vermelho que garanta o fluxo ininterrupto de mercadorias e petroleiros.",
+                  "A iniciativa foi acelerada pela percepção compartilhada de que o novo Congresso dos Estados Unidos não apoiará aventuras militares no Golfo e exigirá a redução das tensões que alimentam a inflação de combustíveis no Ocidente.",
+                  "Analistas de inteligência ouvidos pela Newsweek apontam que, se esse arranjo for consolidado, o Oriente Médio poderá ingressar em sua mais longa fase de estabilidade relativa em uma década, isolando grupos extremistas que apostam no caos perpétuo."
+                ],
+                "pontos": [
+                  "Consultas secretas em Mascate avançam para acordo de segurança de tráfego marítimo no Estreito de Ormuz.",
+                  "Arábia Saudita e Irã negociam mecanismos conjuntos de prevenção de incidentes armados.",
+                  "Apoio discreto da China e da União Europeia fortalece a mediação diplomática regional."
+                ],
+                "citacao": "A estabilidade do Golfo Pérsico está sendo construída pelas mãos das próprias potências regionais, sem esperar por tutelas estrangeiras."
               }
             ]
           },
@@ -22971,6 +23210,85 @@
                 ]
               }
             ]
+          },
+          {
+            "jornal": "Le Monde",
+            "pais": "França",
+            "escopo": "internacional",
+            "imagem": "capas/lemonde_capa.png",
+            "site": "https://www.lemonde.fr",
+            "manchete": "Na Turquia, a COP31 busca recolocar o clima no topo da agenda global diante do avanço das crises",
+            "manchete_original": "En Turquie, la COP31 vise à remettre le climat en haut de l’agenda, dans un monde percuté par les crises",
+            "total_paginas": 32,
+            "nota": "O principal diário vespertino da França traz uma cobertura contundente sobre o início da cúpula climática em Antália, a rebelião europeia contra o consumo energético de data centers de IA e a estratégia da diplomacia francesa frente às pressões de Washington.",
+            "resumo_edicao": [
+              "A edição deste fim de semana do Le Monde centra suas análises na encruzilhada climática global. Com a abertura da COP31 na Turquia, o jornal parisiense aponta que as metas do Acordo de Paris correm sério risco de esvaziamento diante de guerras regionais e crises energéticas que desviaram as prioridades orçamentárias das grandes potências.",
+              "No caderno de Economia, o jornal investiga como dezenas de cidades europeias iniciaram protestos coordenados contra a proliferação desordenada de data centers dedicados a modelos de inteligência artificial generativa, cujas demandas de eletricidade e água estão colidindo com as redes elétricas locais e a legislação ambiental comunitária.",
+              "Na diplomacia, o diário avalia o impacto das eleições legislativas nos Estados Unidos sobre a segurança europeia, destacando a preocupação de Paris e Berlim com o isolacionismo e a necessidade premente de a União Europeia estruturar sua própria autonomia estratégica de defesa e transição energética."
+            ],
+            "editorial": {
+              "titulo": "O Clima no Torvelinho das Crises Geopolíticas",
+              "texto": [
+                "Não há ilusão possível: a COP31 abre seus trabalhos em um planeta cujo concerto diplomático está profundamente esgarçado. A tentação de adiar compromissos ecológicos em nome de urgências econômicas imediatas é o caminho mais curto para catástrofes irreversíveis.",
+                "Para a França e a Europa, a transição ecológica não pode ser tratada como luxo regulatório em tempos de paz, mas como imperativo soberano de segurança alimentar, hídrica e geopolítica. Sem liderança firme e financiamento justo ao Sul Global, o Acordo de Paris corre o risco de virar apenas um monumento à impotência dos governantes."
+              ]
+            },
+            "reportagens": [
+              {
+                "titulo": "A Cúpula de Antália e o Dilema dos Financiamentos Climáticos ao Sul Global",
+                "titulo_original": "La COP31 d’Antalya face au casse-tête de la finance climat pour les pays du Sud",
+                "caderno": "Planète / Climat",
+                "pagina": "1 e 3",
+                "autor": "Stéphane Mandard (Enviado especial a Antália)",
+                "texto_integral": [
+                  "A trigésima primeira conferência das Nações Unidas sobre as mudanças climáticas abre seus trabalhos nesta segunda-feira sob um clima de ceticismo palpável na cidade costeira de Antália, na Turquia. Enquanto delegações de 196 países desembarcam no centro de convenções, o abismo entre as promessas financeiras dos países desenvolvidos e as demandas concretas das nações em desenvolvimento continua no centro da discórdia.",
+                  "O principal teste político da cúpula é a definição de um novo fundo coletivo quantificado que substitua o antigo piso de 100 bilhões de dólares anuais. O bloco africano e os pequenos estados insulares exigem aportes públicos diretos que superem 1 trilhão de dólares por ano, acusando as potências ocidentais de empurrarem a conta para o setor privado e para empréstimos bancários com juros extorsivos que agravam o endividamento externo.",
+                  "A delegação brasileira e a União Europeia tentam costurar uma ponte diplomática, articulando mecanismos de taxação sobre emissões marítimas e transações de combustíveis fósseis, mas a resistência de grandes exportadores de petróleo ameaça travar qualquer consenso ambicioso logo nas primeiras plenárias."
+                ],
+                "pontos": [
+                  "Meta de financiamento anual de US$ 1 trilhão defendida pelo Sul Global enfrenta forte resistência do G7.",
+                  "Delegação da França defende taxação internacional sobre transportes aéreo e marítimo para alimentar fundos de perdas e danos.",
+                  "Eventos climáticos extremos registrados em 2026 aceleram a pressão científica por calendários vinculantes de transição energética."
+                ],
+                "citacao": "A COP31 não pode ser mais um exercício de retórica evasiva enquanto tempestades e secas sem precedentes devastam a economia dos países mais vulneráveis."
+              },
+              {
+                "titulo": "A Rebelião Europeia contra os Data Centers de Inteligência Artificial",
+                "titulo_original": "La contestation contre les data centers monte en Europe",
+                "caderno": "Économie & Technologie",
+                "pagina": "4",
+                "autor": "Alexandre Piquard",
+                "texto_integral": [
+                  "Em cidades como Dublin, Frankfurt, Amsterdã e Marselha, a instalação desenfreada de gigantescos centros de processamento de dados para suportar a infraestrutura de inteligência artificial generativa passou a enfrentar forte oposição civil e política. Coletivos comunitários e entidades ambientais realizaram dezenas de manifestações neste fim de semana para exigir moratórias na concessão de licenças operacionais.",
+                  "O motivo da discórdia é matemático: um único complexo de servidores modernos pode consumir tanta eletricidade quanto uma cidade média de 100 mil habitantes, além de drenar milhões de litros de água tratada diariamente para seus circuitos de resfriamento. Em certas regiões da Irlanda e da Holanda, as redes elétricas já operam no limite técnico, forçando operadores a adiarem conexões residenciais e hospitais.",
+                  "A Comissão Europeia prepara uma diretiva vinculante que exigirá padrões rigorosos de reaproveitamento do calor residual dos servidores para redes urbanas de calefação e auditorias compulsórias sobre eficiência energética, colocando as big techs americanas sob forte escrutínio regulatório no continente."
+                ],
+                "pontos": [
+                  "Data centers já absorvem mais de 20% de toda a energia elétrica gerada na Irlanda, pressionando a matriz nacional.",
+                  "Bruxelas quer obrigar centros de IA a alimentarem sistemas de aquecimento municipal com energia térmica reciclada.",
+                  "Mobilizações populares exigem veto à instalação de novos complexos em áreas de estresse hídrico e agrícola."
+                ],
+                "citacao": "A digitalização e a inteligência artificial não podem se expandir ao preço de esgotar a água e a energia das comunidades locais."
+              },
+              {
+                "titulo": "O Confronto entre o Judiciário Americano e a Maioria Democrata no Congresso",
+                "titulo_original": "Todd Blanche prêt à défendre les membres de l’administration Trump visés par le Congrès",
+                "caderno": "International / Diplomatie",
+                "pagina": "6",
+                "autor": "Piotr Smolar (Correspondente em Washington)",
+                "texto_integral": [
+                  "A vitória do Partido Democrata nas eleições de meio de mandato já começou a produzir choques institucionais na capital americana antes mesmo da posse da nova legislatura. O Departamento de Justiça de Washington anunciou que pretende invocar prerrogativas de imunidade executiva para blindar autoridades contra intimações e comissões parlamentares de inquérito.",
+                  "Em resposta, a liderança democrata que assumirá as comissões-chave de Relações Exteriores e Supervisão Governamental prometeu abrir investigações imediatas sobre acordos bilaterais de segurança, sanções econômicas e a destinação de fundos militares, além de convocar diplomatas de carreira para depor publicamente.",
+                  "Para as chancelarias europeias, o espetáculo de uma guerra de trincheiras em Washington sinaliza meses de paralisia legislativa e imprevisibilidade orçamentária na política externa dos Estados Unidos, reforçando a convicção de Paris de que o continente precisa depender cada vez menos dos humores políticos da Casa Branca."
+                ],
+                "pontos": [
+                  "Comissões de inquérito do Congresso pretendem auditar despesas militares e acordos diplomáticos bilaterais.",
+                  "Guerra jurídica em Washington amplia a incerteza de aliados europeus sobre compromissos estratégicos de longo prazo.",
+                  "Diplomacia francesa intensifica articulações no âmbito da OTAN e da UE para blindar cooperações de defesa."
+                ],
+                "citacao": "A paralisia política em Washington devolve à Europa a responsabilidade intransferível de conduzir seu próprio destino."
+              }
+            ]
           }
         ],
         "destaques": [
@@ -24859,6 +25177,85 @@
                   "Análise de 5.900 cantos de 367 espécies de aves comprova leis acústicas compartilhadas com a fala humana.",
                   "NHS avalia riscos e benefícios da indução precoce de parto em casos de suspeita de macrossomia fetal."
                 ]
+              }
+            ]
+          },
+          {
+            "jornal": "Le Monde",
+            "pais": "França",
+            "escopo": "internacional",
+            "imagem": "capas/lemonde_capa.png",
+            "site": "https://www.lemonde.fr",
+            "manchete": "Na Turquia, a COP31 busca recolocar o clima no topo da agenda global diante do avanço das crises",
+            "manchete_original": "En Turquie, la COP31 vise à remettre le climat en haut de l’agenda, dans un monde percuté par les crises",
+            "total_paginas": 32,
+            "nota": "O principal diário vespertino da França traz uma cobertura contundente sobre o início da cúpula climática em Antália, a rebelião europeia contra o consumo energético de data centers de IA e a estratégia da diplomacia francesa frente às pressões de Washington.",
+            "resumo_edicao": [
+              "A edição deste fim de semana do Le Monde centra suas análises na encruzilhada climática global. Com a abertura da COP31 na Turquia, o jornal parisiense aponta que as metas do Acordo de Paris correm sério risco de esvaziamento diante de guerras regionais e crises energéticas que desviaram as prioridades orçamentárias das grandes potências.",
+              "No caderno de Economia, o jornal investiga como dezenas de cidades europeias iniciaram protestos coordenados contra a proliferação desordenada de data centers dedicados a modelos de inteligência artificial generativa, cujas demandas de eletricidade e água estão colidindo com as redes elétricas locais e a legislação ambiental comunitária.",
+              "Na diplomacia, o diário avalia o impacto das eleições legislativas nos Estados Unidos sobre a segurança europeia, destacando a preocupação de Paris e Berlim com o isolacionismo e a necessidade premente de a União Europeia estruturar sua própria autonomia estratégica de defesa e transição energética."
+            ],
+            "editorial": {
+              "titulo": "O Clima no Torvelinho das Crises Geopolíticas",
+              "texto": [
+                "Não há ilusão possível: a COP31 abre seus trabalhos em um planeta cujo concerto diplomático está profundamente esgarçado. A tentação de adiar compromissos ecológicos em nome de urgências econômicas imediatas é o caminho mais curto para catástrofes irreversíveis.",
+                "Para a França e a Europa, a transição ecológica não pode ser tratada como luxo regulatório em tempos de paz, mas como imperativo soberano de segurança alimentar, hídrica e geopolítica. Sem liderança firme e financiamento justo ao Sul Global, o Acordo de Paris corre o risco de virar apenas um monumento à impotência dos governantes."
+              ]
+            },
+            "reportagens": [
+              {
+                "titulo": "A Cúpula de Antália e o Dilema dos Financiamentos Climáticos ao Sul Global",
+                "titulo_original": "La COP31 d’Antalya face au casse-tête de la finance climat pour les pays du Sud",
+                "caderno": "Planète / Climat",
+                "pagina": "1 e 3",
+                "autor": "Stéphane Mandard (Enviado especial a Antália)",
+                "texto_integral": [
+                  "A trigésima primeira conferência das Nações Unidas sobre as mudanças climáticas abre seus trabalhos nesta segunda-feira sob um clima de ceticismo palpável na cidade costeira de Antália, na Turquia. Enquanto delegações de 196 países desembarcam no centro de convenções, o abismo entre as promessas financeiras dos países desenvolvidos e as demandas concretas das nações em desenvolvimento continua no centro da discórdia.",
+                  "O principal teste político da cúpula é a definição de um novo fundo coletivo quantificado que substitua o antigo piso de 100 bilhões de dólares anuais. O bloco africano e os pequenos estados insulares exigem aportes públicos diretos que superem 1 trilhão de dólares por ano, acusando as potências ocidentais de empurrarem a conta para o setor privado e para empréstimos bancários com juros extorsivos que agravam o endividamento externo.",
+                  "A delegação brasileira e a União Europeia tentam costurar uma ponte diplomática, articulando mecanismos de taxação sobre emissões marítimas e transações de combustíveis fósseis, mas a resistência de grandes exportadores de petróleo ameaça travar qualquer consenso ambicioso logo nas primeiras plenárias."
+                ],
+                "pontos": [
+                  "Meta de financiamento anual de US$ 1 trilhão defendida pelo Sul Global enfrenta forte resistência do G7.",
+                  "Delegação da França defende taxação internacional sobre transportes aéreo e marítimo para alimentar fundos de perdas e danos.",
+                  "Eventos climáticos extremos registrados em 2026 aceleram a pressão científica por calendários vinculantes de transição energética."
+                ],
+                "citacao": "A COP31 não pode ser mais um exercício de retórica evasiva enquanto tempestades e secas sem precedentes devastam a economia dos países mais vulneráveis."
+              },
+              {
+                "titulo": "A Rebelião Europeia contra os Data Centers de Inteligência Artificial",
+                "titulo_original": "La contestation contre les data centers monte en Europe",
+                "caderno": "Économie & Technologie",
+                "pagina": "4",
+                "autor": "Alexandre Piquard",
+                "texto_integral": [
+                  "Em cidades como Dublin, Frankfurt, Amsterdã e Marselha, a instalação desenfreada de gigantescos centros de processamento de dados para suportar a infraestrutura de inteligência artificial generativa passou a enfrentar forte oposição civil e política. Coletivos comunitários e entidades ambientais realizaram dezenas de manifestações neste fim de semana para exigir moratórias na concessão de licenças operacionais.",
+                  "O motivo da discórdia é matemático: um único complexo de servidores modernos pode consumir tanta eletricidade quanto uma cidade média de 100 mil habitantes, além de drenar milhões de litros de água tratada diariamente para seus circuitos de resfriamento. Em certas regiões da Irlanda e da Holanda, as redes elétricas já operam no limite técnico, forçando operadores a adiarem conexões residenciais e hospitais.",
+                  "A Comissão Europeia prepara uma diretiva vinculante que exigirá padrões rigorosos de reaproveitamento do calor residual dos servidores para redes urbanas de calefação e auditorias compulsórias sobre eficiência energética, colocando as big techs americanas sob forte escrutínio regulatório no continente."
+                ],
+                "pontos": [
+                  "Data centers já absorvem mais de 20% de toda a energia elétrica gerada na Irlanda, pressionando a matriz nacional.",
+                  "Bruxelas quer obrigar centros de IA a alimentarem sistemas de aquecimento municipal com energia térmica reciclada.",
+                  "Mobilizações populares exigem veto à instalação de novos complexos em áreas de estresse hídrico e agrícola."
+                ],
+                "citacao": "A digitalização e a inteligência artificial não podem se expandir ao preço de esgotar a água e a energia das comunidades locais."
+              },
+              {
+                "titulo": "O Confronto entre o Judiciário Americano e a Maioria Democrata no Congresso",
+                "titulo_original": "Todd Blanche prêt à défendre les membres de l’administration Trump visés par le Congrès",
+                "caderno": "International / Diplomatie",
+                "pagina": "6",
+                "autor": "Piotr Smolar (Correspondente em Washington)",
+                "texto_integral": [
+                  "A vitória do Partido Democrata nas eleições de meio de mandato já começou a produzir choques institucionais na capital americana antes mesmo da posse da nova legislatura. O Departamento de Justiça de Washington anunciou que pretende invocar prerrogativas de imunidade executiva para blindar autoridades contra intimações e comissões parlamentares de inquérito.",
+                  "Em resposta, a liderança democrata que assumirá as comissões-chave de Relações Exteriores e Supervisão Governamental prometeu abrir investigações imediatas sobre acordos bilaterais de segurança, sanções econômicas e a destinação de fundos militares, além de convocar diplomatas de carreira para depor publicamente.",
+                  "Para as chancelarias europeias, o espetáculo de uma guerra de trincheiras em Washington sinaliza meses de paralisia legislativa e imprevisibilidade orçamentária na política externa dos Estados Unidos, reforçando a convicção de Paris de que o continente precisa depender cada vez menos dos humores políticos da Casa Branca."
+                ],
+                "pontos": [
+                  "Comissões de inquérito do Congresso pretendem auditar despesas militares e acordos diplomáticos bilaterais.",
+                  "Guerra jurídica em Washington amplia a incerteza de aliados europeus sobre compromissos estratégicos de longo prazo.",
+                  "Diplomacia francesa intensifica articulações no âmbito da OTAN e da UE para blindar cooperações de defesa."
+                ],
+                "citacao": "A paralisia política em Washington devolve à Europa a responsabilidade intransferível de conduzir seu próprio destino."
               }
             ]
           }
