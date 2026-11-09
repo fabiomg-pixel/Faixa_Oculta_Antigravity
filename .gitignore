@@ -8,4 +8,5 @@ __pycache__/
 data/beeper_digest_*.json
 jornais/
 *.tmp
+*.part*.mp3
 

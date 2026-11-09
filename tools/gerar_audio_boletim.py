@@ -175,7 +175,7 @@ def gerar_audio(roteiro_txt, saida_mp3, voz="pt-BR-AntonioNeural"):
         tmp_aiff = saida_mp3 + ".aiff"
         r1 = subprocess.run(["say", "-v", "Luciana", "-o", tmp_aiff, "-f", tmp_txt])
         if r1.returncode == 0 and os.path.exists(tmp_aiff):
-            r2 = subprocess.run(["ffmpeg", "-y", "-i", tmp_aiff, "-codec:a", "libmp3lame", "-b:a", "64k", saida_mp3], capture_output=True)
+            r2 = subprocess.run(["ffmpeg", "-y", "-i", tmp_aiff, "-codec:a", "libmp3lame", "-b:a", "32k", "-ac", "1", saida_mp3], capture_output=True)
             if os.path.exists(tmp_aiff): os.remove(tmp_aiff)
             if r2.returncode == 0 and os.path.exists(saida_mp3):
                 if os.path.exists(tmp_txt): os.remove(tmp_txt)
