@@ -2,15 +2,15 @@ name: Atualizar Faixa Oculta (Boletins e Revistas)
 
 on:
   schedule:
-    # Salvaguarda Online (se o computador local atrasar ou estiver fechado):
-    # Boletim Diário - Manhã: 09:30 UTC = 06:30 BRT
-    - cron: '30 9 * * *'
-    # Boletim Diário - Noite: 21:30 UTC = 18:30 BRT
-    - cron: '30 21 * * *'
-    # Revista da Semana - Quinta-feira (online): 01:00 UTC (sexta) = 22:00 BRT (quinta)
-    - cron: '0 1 * * 5'
-    # Cultura do Mês (Música, Filmes e Livros) - Todo dia 01: 11:00 UTC = 08:00 BRT
-    - cron: '0 11 1 * *'
+    # Salvaguarda Online ESTRITA (somente se o computador local Mac não tiver rodado na janela):
+    # Boletim Diário - Manhã: disparado às 13:30 UTC = 10:30 BRT (após o fim da janela matinal do Mac das 05h às 10h)
+    - cron: '30 13 * * *'
+    # Boletim Diário - Noite: disparado às 00:30 UTC = 21:30 BRT (após o fim da janela noturna do Mac das 17h às 21h)
+    - cron: '30 0 * * *'
+    # Revista da Semana - Quinta-feira: 02:00 UTC (sexta) = 23:00 BRT (quinta, tolerância de 5h após a janela local das 18h)
+    - cron: '0 2 * * 5'
+    # Cultura do Mês (Música, Filmes e Livros) - Todo dia 01: 15:00 UTC = 12:00 BRT (após o meio-dia local)
+    - cron: '0 15 1 * *'
   # Permite disparar manualmente escolhendo a rotina
   workflow_dispatch:
     inputs:
@@ -52,6 +52,24 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ROTINA_SOLICITADA: ${{ inputs.rotina || 'auto' }}
         run: |
+          python -c '
+          import os, json, datetime, sys
+          rotina = os.environ.get("ROTINA_SOLICITADA", "auto")
+          if rotina != "auto":
+              sys.exit(0)
+          agora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
+          data_iso = agora.strftime("%Y-%m-%d")
+          turno_id = data_iso if agora.hour < 17 else f"{data_iso}-noite"
+          try:
+              with open("data/revista.json", "r", encoding="utf-8") as f:
+                  db = json.load(f)
+              d = db.get("dias", {}).get(turno_id)
+              if d and d.get("notas") and len(d.get("notas")) >= 20 and d.get("jornais"):
+                  print(f"Salva-guarda nuvem: a edição [{turno_id}] já foi gerada e enriquecida pelo Mac local com jornais. Pulando execução online.")
+                  sys.exit(0)
+          except Exception as e:
+              print(f"Aviso ao checar integridade prévia: {e}")
+          '
           python tools/orquestrador_nuvem.py
 
       - name: Publicar alterações no GitHub Pages
