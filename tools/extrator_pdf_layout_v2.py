@@ -67,17 +67,17 @@ KNOWN_ROOM_NAMES = {
 PERFIS_V2 = {
     "diario": {
         "nacional": [
-            ("Folha de S.Paulo", ["folha de s.paulo", "folha de sp", "folha de são paulo", "folha de sao paulo"]),
+            ("Folha de S.Paulo", ["folha de s paulo", "folha de s.paulo", "folha de sp", "folha de são paulo", "folha de sao paulo", "folha"]),
             ("O Estado de S. Paulo", ["estado de s paulo", "estadao", "estadão"]),
-            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd"]),
+            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd", "o globo"]),
             ("Valor Econômico", ["valor econômico", "valor economico", "valor"])
         ],
         "internacional": [
             ("The New York Times", ["nyt 0", "nyt 1", "nyt 2", "nyt 3", "the-new-york-times", "the new york times -"]),
-            ("Financial Times", ["ft us", "ft uk", "ft eu", "financial times"]),
-            ("The Washington Post", ["washington post", "the-washington-post"]),
-            ("The Guardian", ["the guardian", "the-guardian", "the observer"]),
-            ("The Times UK", ["the times uk", "the-times-uk"]),
+            ("Financial Times", ["financial times", "ft us", "ft uk", "ft eu", "ft me", "ft asia", "ft europe"]),
+            ("The Washington Post", ["the washington post", "washington post", "the-washington-post"]),
+            ("The Guardian", ["the guardian", "the-guardian", "guardian journal", "the observer"]),
+            ("The Times UK", ["the times uk", "the-times-uk", "the times -", "the times"]),
             ("Le Monde", ["le monde", "lemonde", "le-monde"])
         ]
     },

@@ -66,10 +66,15 @@ jobs:
               d = db.get("dias", {}).get(turno_id)
               if d and d.get("notas") and len(d.get("notas")) >= 20 and d.get("jornais"):
                   print(f"Salva-guarda nuvem: a edição [{turno_id}] já foi gerada e enriquecida pelo Mac local com jornais. Pulando execução online.")
-                  sys.exit(0)
+                  sys.exit(10)
           except Exception as e:
               print(f"Aviso ao checar integridade prévia: {e}")
           '
+          STATUS=$?
+          if [ $STATUS -eq 10 ]; then
+              echo "Edição do dia já está completa com jornais locais. Encerrando step sem sobrescrever."
+              exit 0
+          fi
           python tools/orquestrador_nuvem.py
 
       - name: Publicar alterações no GitHub Pages
