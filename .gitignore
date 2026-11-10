@@ -9,4 +9,5 @@ data/beeper_digest_*.json
 jornais/
 *.tmp
 *.part*.mp3
+faixa_oculta_*.zip
 
