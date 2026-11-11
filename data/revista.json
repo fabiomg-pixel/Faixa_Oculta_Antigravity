@@ -34435,6 +34435,964 @@
       "audio_duracao": "28:20",
       "audio_tamanho": 6802512,
       "audio_titulo": "Boletim em Áudio · 10 de novembro de 2026, edição da noite"
+    },
+    "2026-11-11": {
+      "data": "2026-11-11",
+      "edicao": "manha",
+      "titulo": "Governo sinaliza ao mercado cancelamento extra de  e Honda aposta em híbridos como pilar da eletri",
+      "resumo_dia": "Edição manha compilada a partir de apurações em tempo real de 15 veículos independentes nacionais e internacionais, com tradução integral e veracidade documental estrita.",
+      "notas": [
+        {
+          "id": "2026-11-11--governo-sinaliza-ao-mercado-cancelamento-extr",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Contas Públicas e Ajuste Fiscal",
+          "editoria": "Economia",
+          "titulo": "Governo sinaliza ao mercado cancelamento extra de R$ 12,8 bi em gastos em 2027 para cumprir meta",
+          "texto": "Integrantes do governo de Luiz Inácio Lula da Silva (PT) sinalizaram ao mercado financeiro que as medidas de ajuste devem incluir uma autorização para cancelar até R$ 12,8 bilhões em gastos no Orçamento de 2027 para cumprir a meta fiscal.",
+          "por_que_importa": "O desenho do ajuste fiscal e o controle das despesas obrigatórias determinam a trajetória da dívida pública, a ancoragem das expectativas de inflação e o espaço para queda dos juros em 2027.",
+          "resumo_visoes": "Na cobertura de contas públicas e ajuste fiscal, a reportagem de Folha de S.Paulo confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "Integrantes do governo de Luiz Inácio Lula da Silva (PT) sinalizaram ao mercado financeiro que as medidas de ajuste devem incluir uma autorização para cancelar até R$ 12,8 bilhões em gastos no Orçamento de 2027 para cumprir a meta fiscal.",
+            "A medida seria complementar aos instrumentos já usados pela equipe econômica para alcançar o alvo em caso de frustração de receitas, como o congelamento temporário de verbas por meio do chamado contingenciamento.",
+            "O plano de ajuste do governo vem sendo discutido nos últimos dias com representantes do mercado financeiro e também do Congresso Nacional. Nesta segunda-feira (9), os ministros Dario Durigan (Fazenda) e Bruno Moretti (Planejamento) se reuniram com o presidente do Senado, Davi Alcolumbre (União Brasil-AP), para discutir os detalhes.",
+            "Na ocasião, a equipe econômica acenou com um ajuste entre R$ 70 bilhões e R$ 80 bilhões, considerando não só o cancelamento de despesas, mas também outras medidas."
+          ],
+          "aprofundamento": {
+            "contexto": "A medida seria complementar aos instrumentos já usados pela equipe econômica para alcançar o alvo em caso de frustração de receitas, como o congelamento temporário de verbas por meio do chamado contingenciamento.",
+            "o_que_observar": "O plano de ajuste do governo vem sendo discutido nos últimos dias com representantes do mercado financeiro e também do Congresso Nacional. Nesta segunda-feira (9), os ministros Dario Durigan (Fazenda) e Bruno Moretti (Planejamento) se reuniram com o presidente do Senado, Davi Alcolumbre (União Brasil-AP), para discutir os detalhes."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-sinaliza-ao-mercado-cancelamento-extra-de-r-128-bi-em-gastos-em-2027-para-cumprir-meta.shtml",
+              "titulo": "Governo sinaliza ao mercado cancelamento extra de R$ 12,8 bi em gastos em 2027 para cumprir meta",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "A medida seria complementar aos instrumentos já usados pela equipe econômica para alcançar o alvo em...",
+                "O plano de ajuste do governo vem sendo discutido nos últimos dias com representantes do mercado fina...",
+                "Na ocasião, a equipe econômica acenou com um ajuste entre R$ 70 bilhões e R$ 80 bilhões, considerand..."
+              ],
+              "citacao": "A medida seria complementar aos instrumentos já usados pela equipe econômica para alcançar o alvo em caso de frustração ...",
+              "texto_integral": [
+                "Integrantes do governo de Luiz Inácio Lula da Silva (PT) sinalizaram ao mercado financeiro que as medidas de ajuste devem incluir uma autorização para cancelar até R$ 12,8 bilhões em gastos no Orçamento de 2027 para cumprir a meta fiscal.",
+                "A medida seria complementar aos instrumentos já usados pela equipe econômica para alcançar o alvo em caso de frustração de receitas, como o congelamento temporário de verbas por meio do chamado contingenciamento.",
+                "O plano de ajuste do governo vem sendo discutido nos últimos dias com representantes do mercado financeiro e também do Congresso Nacional. Nesta segunda-feira (9), os ministros Dario Durigan (Fazenda) e Bruno Moretti (Planejamento) se reuniram com o presidente do Senado, Davi Alcolumbre (União Brasil-AP), para discutir os detalhes.",
+                "Na ocasião, a equipe econômica acenou com um ajuste entre R$ 70 bilhões e R$ 80 bilhões, considerando não só o cancelamento de despesas, mas também outras medidas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--honda-aposta-em-h-bridos-como-pilar-da-eletri",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Política Monetária, Selic e Câmbio",
+          "editoria": "Economia",
+          "titulo": "Honda aposta em híbridos como pilar da eletrificação nos EUA até meados da próxima década",
+          "texto": "A Honda Motor espera que os veículos híbridos continuem sendo o principal motor da eletrificação nos Estados Unidos até o início da próxima década. A montadora japonesa aposta nessa tecnologia enquanto recua rapidamente de seus planos — que se mostraram onerosos — de investir em veículos totalmente elétricos.",
+          "por_que_importa": "Oscilações na taxa Selic, no câmbio e no custo de crédito afetam diretamente o financiamento produtivo, o poder de compra das famílias e o ritmo da atividade econômica.",
+          "resumo_visoes": "Na cobertura de política monetária, selic e câmbio, a reportagem de Valor Econômico confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "A Honda Motor espera que os veículos híbridos continuem sendo o principal motor da eletrificação nos Estados Unidos até o início da próxima década. A montadora japonesa aposta nessa tecnologia enquanto recua rapidamente de seus planos — que se mostraram onerosos — de investir em veículos totalmente elétricos.",
+            "\"Acreditamos que os híbridos continuarão sendo a principal forma de eletrificação veicular\", ao menos durante a primeira metade da década de 2030, \"especialmente na América do Norte\", afirmou Noriya Kaihara, vice-presidente executivo da Honda, durante uma entrevista coletiva on-line sobre resultados financeiros na terça-feira, mencionando os preços dos combustíveis.",
+            "\"Os preços do petróleo bruto permanecem elevados, e continuamos observando uma demanda muito forte por carros menores ou veículos híbridos com alta eficiência energética\", disse Kaihara, acrescentando que a empresa conseguiu manter uma participação de mercado expressiva, próxima a 10%, na América do Norte.",
+            "Os custos dos combustíveis permanecem altos nos Estados Unidos, por causa do conflito no Oriente Médio, após ataques dos Estados Unidos e de Israel contra o Irã."
+          ],
+          "aprofundamento": {
+            "contexto": "\"Acreditamos que os híbridos continuarão sendo a principal forma de eletrificação veicular\", ao menos durante a primeira metade da década de 2030, \"especialmente na América do Norte\", afirmou Noriya Kaihara, vice-presidente executivo da Honda, durante uma entrevista coletiva on-line sobre resultados financeiros na terça-feira, mencionando os preços dos combustíveis.",
+            "o_que_observar": "\"Os preços do petróleo bruto permanecem elevados, e continuamos observando uma demanda muito forte por carros menores ou veículos híbridos com alta eficiência energética\", disse Kaihara, acrescentando que a empresa conseguiu manter uma participação de mercado expressiva, próxima a 10%, na América do Norte."
+          },
+          "fontes": [
+            {
+              "fonte": "Valor Econômico",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Valor Econômico",
+              "url": "https://valor.globo.com/empresas/noticia/2026/11/11/honda-aposta-em-hbridos-como-pilar-da-eletrificao-nos-eua-at-meados-da-prxima-dcada.ghtml",
+              "titulo": "Honda aposta em híbridos como pilar da eletrificação nos EUA até meados da próxima década",
+              "autor": "Redação Valor Econômico",
+              "pontos": [
+                "\"Acreditamos que os híbridos continuarão sendo a principal forma de eletrificação veicular\", ao meno...",
+                "\"Os preços do petróleo bruto permanecem elevados, e continuamos observando uma demanda muito forte p...",
+                "Os custos dos combustíveis permanecem altos nos Estados Unidos, por causa do conflito no Oriente Méd..."
+              ],
+              "citacao": "\"Acreditamos que os híbridos continuarão sendo a principal forma de eletrificação veicular\", ao menos durante a primeira...",
+              "texto_integral": [
+                "A Honda Motor espera que os veículos híbridos continuem sendo o principal motor da eletrificação nos Estados Unidos até o início da próxima década. A montadora japonesa aposta nessa tecnologia enquanto recua rapidamente de seus planos — que se mostraram onerosos — de investir em veículos totalmente elétricos.",
+                "\"Acreditamos que os híbridos continuarão sendo a principal forma de eletrificação veicular\", ao menos durante a primeira metade da década de 2030, \"especialmente na América do Norte\", afirmou Noriya Kaihara, vice-presidente executivo da Honda, durante uma entrevista coletiva on-line sobre resultados financeiros na terça-feira, mencionando os preços dos combustíveis.",
+                "\"Os preços do petróleo bruto permanecem elevados, e continuamos observando uma demanda muito forte por carros menores ou veículos híbridos com alta eficiência energética\", disse Kaihara, acrescentando que a empresa conseguiu manter uma participação de mercado expressiva, próxima a 10%, na América do Norte.",
+                "Os custos dos combustíveis permanecem altos nos Estados Unidos, por causa do conflito no Oriente Médio, após ataques dos Estados Unidos e de Israel contra o Irã."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--fora-da-comitiva-de-lula-na-cop-marina-silva",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Emprego, Indústria e Balança Comercial",
+          "editoria": "Economia",
+          "titulo": "Fora da comitiva de Lula na COP, Marina Silva tem presença incerta no próximo governo",
+          "texto": "A presença da ex-ministra do Meio Ambiente Marina Silva (Rede) no quarto mandato do presidente Luiz Inácio Lula da Silva (PT) é incerta. Ainda que a redução do desmatamento durante sua gestão tenha sido ressaltada durante o discurso de vitória do petista, no mês passado, as chances de retorno ao comando da pasta a partir do ano que vem são remotas. O cenário é derivado da pressão por troca na posição tanto em uma ala do governo Lula quanto no Congresso.",
+          "por_que_importa": "O desempenho da indústria de transformação, do mercado de trabalho e do saldo externo define a capacidade de crescimento sustentado do PIB brasileiro.",
+          "resumo_visoes": "Na cobertura de emprego, indústria e balança comercial, a reportagem de O Globo confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "A presença da ex-ministra do Meio Ambiente Marina Silva (Rede) no quarto mandato do presidente Luiz Inácio Lula da Silva (PT) é incerta. Ainda que a redução do desmatamento durante sua gestão tenha sido ressaltada durante o discurso de vitória do petista, no mês passado, as chances de retorno ao comando da pasta a partir do ano que vem são remotas. O cenário é derivado da pressão por troca na posição tanto em uma ala do governo Lula quanto no Congresso.",
+            "OAB celebra fim do inquérito das fake news: 'Nenhuma investigação pode se prolongar indefinidamente'Movimentação: Cleitinho busca se aproximar de Lula e do PT em Minas após apoio a Flávio Bolsonaro na campanha",
+            "Marina deixou o ministério do Meio Ambiente em abril para disputar o Senado em São Paulo, mas não foi eleita. Ela foi sucedida pelo aliado João Paulo Capobianco. A gestão teve índices positivos na redução do desmatamento: em 2026, a Amazônia teve o menor nível de devastação desde 1988, quando o monitoramento do Projeto de Monitoramento do Desmatamento na Amazônia Legal por Satélite (Prodes) foi iniciado. O Cerrado seguiu a tendência e alcançou a taxa mais baixa desde 2001, quando teve início a série histórica.",
+            "Os resultados estão entre as bandeiras que o governo Lula leva para a 31ª edição da Conferência das Nações Unidas sobre Mudanças Climáticas (COP), na Turquia, nesta semana. O presidente participa do evento até hoje e levou uma comitiva composta por nomes como Capobianco, o deputado André Janones e o ministro de Minas e Energia, Alexandre Silveira (PSD), com quem a ala ambientalista do governo colecionou embates."
+          ],
+          "aprofundamento": {
+            "contexto": "OAB celebra fim do inquérito das fake news: 'Nenhuma investigação pode se prolongar indefinidamente'Movimentação: Cleitinho busca se aproximar de Lula e do PT em Minas após apoio a Flávio Bolsonaro na campanha",
+            "o_que_observar": "Marina deixou o ministério do Meio Ambiente em abril para disputar o Senado em São Paulo, mas não foi eleita. Ela foi sucedida pelo aliado João Paulo Capobianco. A gestão teve índices positivos na redução do desmatamento: em 2026, a Amazônia teve o menor nível de devastação desde 1988, quando o monitoramento do Projeto de Monitoramento do Desmatamento na Amazônia Legal por Satélite (Prodes) foi iniciado. O Cerrado seguiu a tendência e alcançou a taxa mais baixa desde 2001, quando teve início a série histórica."
+          },
+          "fontes": [
+            {
+              "fonte": "O Globo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por O Globo",
+              "url": "https://oglobo.globo.com/politica/noticia/2026/11/11/fora-da-comitiva-de-lula-na-cop-marina-silva-tem-presenca-incerta-no-proximo-governo.ghtml",
+              "titulo": "Fora da comitiva de Lula na COP, Marina Silva tem presença incerta no próximo governo",
+              "autor": "Redação O Globo",
+              "pontos": [
+                "OAB celebra fim do inquérito das fake news: 'Nenhuma investigação pode se prolongar indefinidamente'...",
+                "Marina deixou o ministério do Meio Ambiente em abril para disputar o Senado em São Paulo, mas não fo...",
+                "Os resultados estão entre as bandeiras que o governo Lula leva para a 31ª edição da Conferência das ..."
+              ],
+              "citacao": "OAB celebra fim do inquérito das fake news: 'Nenhuma investigação pode se prolongar indefinidamente'Movimentação: Cleiti...",
+              "texto_integral": [
+                "A presença da ex-ministra do Meio Ambiente Marina Silva (Rede) no quarto mandato do presidente Luiz Inácio Lula da Silva (PT) é incerta. Ainda que a redução do desmatamento durante sua gestão tenha sido ressaltada durante o discurso de vitória do petista, no mês passado, as chances de retorno ao comando da pasta a partir do ano que vem são remotas. O cenário é derivado da pressão por troca na posição tanto em uma ala do governo Lula quanto no Congresso.",
+                "OAB celebra fim do inquérito das fake news: 'Nenhuma investigação pode se prolongar indefinidamente'Movimentação: Cleitinho busca se aproximar de Lula e do PT em Minas após apoio a Flávio Bolsonaro na campanha",
+                "Marina deixou o ministério do Meio Ambiente em abril para disputar o Senado em São Paulo, mas não foi eleita. Ela foi sucedida pelo aliado João Paulo Capobianco. A gestão teve índices positivos na redução do desmatamento: em 2026, a Amazônia teve o menor nível de devastação desde 1988, quando o monitoramento do Projeto de Monitoramento do Desmatamento na Amazônia Legal por Satélite (Prodes) foi iniciado. O Cerrado seguiu a tendência e alcançou a taxa mais baixa desde 2001, quando teve início a série histórica.",
+                "Os resultados estão entre as bandeiras que o governo Lula leva para a 31ª edição da Conferência das Nações Unidas sobre Mudanças Climáticas (COP), na Turquia, nesta semana. O presidente participa do evento até hoje e levou uma comitiva composta por nomes como Capobianco, o deputado André Janones e o ministro de Minas e Energia, Alexandre Silveira (PSD), com quem a ala ambientalista do governo colecionou embates."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--tesla-vai-devolver-dinheiro-a-clientes-do-cyb",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Congresso Nacional e Votações",
+          "editoria": "Política",
+          "titulo": "Tesla vai devolver dinheiro a clientes do Cybertruck após anunciar fim da produção da picape",
+          "texto": "Tesla reduz produção do Cybertruck para abrir espaço a táxis autônomos",
+          "por_que_importa": "A correlação de forças na Câmara e no Senado define a governabilidade do Executivo, o calendário de reformas constitucionais e a alocação do orçamento federal.",
+          "resumo_visoes": "Na cobertura de congresso nacional e votações, a reportagem de g1 confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "Tesla reduz produção do Cybertruck para abrir espaço a táxis autônomos",
+            "A Tesla terá que devolver o dinheiro pago antecipadamente por muitos clientes que reservaram o Cybertruck, picape elétrica da montadora. Isso porque a empresa não conseguirá produzir veículos suficientes para atender a todos os pedidos antes de encerrar a fabricação do modelo, prevista para meados de 2027.",
+            "O anúncio foi feito pelo presidente-executivo da Tesla, Elon Musk, nesta segunda-feira (9), em uma publicação na rede social X.",
+            "🗒️Tem alguma sugestão de reportagem? Mande para o g1"
+          ],
+          "aprofundamento": {
+            "contexto": "A Tesla terá que devolver o dinheiro pago antecipadamente por muitos clientes que reservaram o Cybertruck, picape elétrica da montadora. Isso porque a empresa não conseguirá produzir veículos suficientes para atender a todos os pedidos antes de encerrar a fabricação do modelo, prevista para meados de 2027.",
+            "o_que_observar": "O anúncio foi feito pelo presidente-executivo da Tesla, Elon Musk, nesta segunda-feira (9), em uma publicação na rede social X."
+          },
+          "fontes": [
+            {
+              "fonte": "g1",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por g1",
+              "url": "https://g1.globo.com/carros/noticia/2026/11/09/tesla-cybertruck-producao.ghtml",
+              "titulo": "Tesla vai devolver dinheiro a clientes do Cybertruck após anunciar fim da produção da picape",
+              "autor": "Redação g1",
+              "pontos": [
+                "A Tesla terá que devolver o dinheiro pago antecipadamente por muitos clientes que reservaram o Cyber...",
+                "O anúncio foi feito pelo presidente-executivo da Tesla, Elon Musk, nesta segunda-feira (9), em uma p...",
+                "🗒️Tem alguma sugestão de reportagem? Mande para o g1..."
+              ],
+              "citacao": "A Tesla terá que devolver o dinheiro pago antecipadamente por muitos clientes que reservaram o Cybertruck, picape elétri...",
+              "texto_integral": [
+                "Tesla reduz produção do Cybertruck para abrir espaço a táxis autônomos",
+                "A Tesla terá que devolver o dinheiro pago antecipadamente por muitos clientes que reservaram o Cybertruck, picape elétrica da montadora. Isso porque a empresa não conseguirá produzir veículos suficientes para atender a todos os pedidos antes de encerrar a fabricação do modelo, prevista para meados de 2027.",
+                "O anúncio foi feito pelo presidente-executivo da Tesla, Elon Musk, nesta segunda-feira (9), em uma publicação na rede social X.",
+                "🗒️Tem alguma sugestão de reportagem? Mande para o g1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--tse-multa-meta-em-r-7-5-mi-por-descumprir-dec",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · STF e Decisões Judiciais Estruturantes",
+          "editoria": "Política",
+          "titulo": "TSE multa Meta em R$ 7,5 mi por descumprir decisão nas eleições",
+          "texto": "Corte entendeu que foram prestadas informações incompletas",
+          "por_que_importa": "Julgamentos dos tribunais superiores estabelecem marcos de segurança jurídica, limites entre os Poderes e parâmetros regulatórios de alcance nacional.",
+          "resumo_visoes": "Na cobertura de stf e decisões judiciais estruturantes, a reportagem de Poder360 confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "Corte entendeu que foram prestadas informações incompletas",
+            "O Tribunal Superior Eleitoral decidiu na 3ª feira (10.nov.2026), por unanimidade, multar a Meta em R$ 7,5 milhões por entregar informações incompletas sobre as acusações de distribuir conteúdo político enviesado na campanha eleitoral deste ano. Eis a íntegra da decisão (PDF – 492 kB).",
+            "A decisão foi motivada por uma representação protocolada pela coligação Brasil Pronto Pra Mais, que apoiou a reeleição do presidente Luiz Inácio Lula da Silva (PT).",
+            "O jurídico da campanha disse que a Meta, que opera as redes sociais Facebook, Instagram e WhatsApp, deu tratamento diferenciado para restringir o alcance de conteúdos de Lula e favorecer a campanha de Flávio Bolsonaro (PL-RJ)."
+          ],
+          "aprofundamento": {
+            "contexto": "O Tribunal Superior Eleitoral decidiu na 3ª feira (10.nov.2026), por unanimidade, multar a Meta em R$ 7,5 milhões por entregar informações incompletas sobre as acusações de distribuir conteúdo político enviesado na campanha eleitoral deste ano. Eis a íntegra da decisão (PDF – 492 kB).",
+            "o_que_observar": "A decisão foi motivada por uma representação protocolada pela coligação Brasil Pronto Pra Mais, que apoiou a reeleição do presidente Luiz Inácio Lula da Silva (PT)."
+          },
+          "fontes": [
+            {
+              "fonte": "Poder360",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Poder360",
+              "url": "https://www.poder360.com.br/poder-eleicoes-2026/tse-multa-meta-em-r-75-mi-por-descumprir-decisao-nas-eleicoes/",
+              "titulo": "TSE multa Meta em R$ 7,5 mi por descumprir decisão nas eleições",
+              "autor": "Redação Poder360",
+              "pontos": [
+                "O Tribunal Superior Eleitoral decidiu na 3ª feira (10.nov.2026), por unanimidade, multar a Meta em R...",
+                "A decisão foi motivada por uma representação protocolada pela coligação Brasil Pronto Pra Mais, que ...",
+                "O jurídico da campanha disse que a Meta, que opera as redes sociais Facebook, Instagram e WhatsApp, ..."
+              ],
+              "citacao": "O Tribunal Superior Eleitoral decidiu na 3ª feira (10.nov.2026), por unanimidade, multar a Meta em R$ 7,5 milhões por en...",
+              "texto_integral": [
+                "Corte entendeu que foram prestadas informações incompletas",
+                "O Tribunal Superior Eleitoral decidiu na 3ª feira (10.nov.2026), por unanimidade, multar a Meta em R$ 7,5 milhões por entregar informações incompletas sobre as acusações de distribuir conteúdo político enviesado na campanha eleitoral deste ano. Eis a íntegra da decisão (PDF – 492 kB).",
+                "A decisão foi motivada por uma representação protocolada pela coligação Brasil Pronto Pra Mais, que apoiou a reeleição do presidente Luiz Inácio Lula da Silva (PT).",
+                "O jurídico da campanha disse que a Meta, que opera as redes sociais Facebook, Instagram e WhatsApp, deu tratamento diferenciado para restringir o alcance de conteúdos de Lula e favorecer a campanha de Flávio Bolsonaro (PL-RJ)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--tse-multa-meta-em-r-7-5-milh-es-por-descumpri",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Governo Federal e Articulação Política",
+          "editoria": "Política",
+          "titulo": "TSE multa Meta em R$ 7,5 milhões por descumprir decisão sobre eleições",
+          "texto": "O Tribunal Superior Eleitoral (TSE), por unanimidade de votos, multou a Meta em R$ 7,5 milhões por entender que a plataforma não apresentou as informações requeridas pela Corte dentro do prazo estipulado nem de forma completa e transparente. Em outubro, o TSE exigiu informações como alcance de postagens, anúncios e valores recebidos. A Meta é responsável pelo WhatsApp, Instagram e Facebook.",
+          "por_que_importa": "As decisões da Esplanada e do Palácio do Planalto orientam a execução das políticas públicas prioritárias e a estabilidade da coalizão governamental.",
+          "resumo_visoes": "Na cobertura de governo federal e articulação política, a reportagem de JOTA confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "O Tribunal Superior Eleitoral (TSE), por unanimidade de votos, multou a Meta em R$ 7,5 milhões por entender que a plataforma não apresentou as informações requeridas pela Corte dentro do prazo estipulado nem de forma completa e transparente. Em outubro, o TSE exigiu informações como alcance de postagens, anúncios e valores recebidos. A Meta é responsável pelo WhatsApp, Instagram e Facebook.",
+            "A multa se deu em uma ação ajuizada pela coligação de Luiz Inácio Lula da Silva (PT), que defendeu que a Meta fez restrição seletiva na entrega dos conteúdos da campanha de 2026. Segundo o PT, a empresa cometeu falhas no impulsionamento contratado e permitiu anúncios políticos pagos por contas estrangeiras, circulação de redes inautênticas e conteúdos gerados por inteligência artificial sem rotulagem.",
+            "Existem outras ações no TSE que questionam a interferência das plataformas digitais nas eleições.",
+            "Nesta terça-feira (10/11), todos acompanharam o voto do ministro relator Marco Aurélio Bellizze, que avaliou que a empresa não cumpriu os prazos fixados pelo TSE para adotar medidas de tratamento igualitário entre os candidatos à presidência da República."
+          ],
+          "aprofundamento": {
+            "contexto": "A multa se deu em uma ação ajuizada pela coligação de Luiz Inácio Lula da Silva (PT), que defendeu que a Meta fez restrição seletiva na entrega dos conteúdos da campanha de 2026. Segundo o PT, a empresa cometeu falhas no impulsionamento contratado e permitiu anúncios políticos pagos por contas estrangeiras, circulação de redes inautênticas e conteúdos gerados por inteligência artificial sem rotulagem.",
+            "o_que_observar": "Existem outras ações no TSE que questionam a interferência das plataformas digitais nas eleições."
+          },
+          "fontes": [
+            {
+              "fonte": "JOTA",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por JOTA",
+              "url": "https://www.jota.info/eleicoes/eleicoes-2026/tse-multa-meta-em-r-75-milhoes-por-descumprir-decisao-sobre-eleicoes",
+              "titulo": "TSE multa Meta em R$ 7,5 milhões por descumprir decisão sobre eleições",
+              "autor": "Redação JOTA",
+              "pontos": [
+                "A multa se deu em uma ação ajuizada pela coligação de Luiz Inácio Lula da Silva (PT), que defendeu q...",
+                "Existem outras ações no TSE que questionam a interferência das plataformas digitais nas eleições....",
+                "Nesta terça-feira (10/11), todos acompanharam o voto do ministro relator Marco Aurélio Bellizze, que..."
+              ],
+              "citacao": "A multa se deu em uma ação ajuizada pela coligação de Luiz Inácio Lula da Silva (PT), que defendeu que a Meta fez restri...",
+              "texto_integral": [
+                "O Tribunal Superior Eleitoral (TSE), por unanimidade de votos, multou a Meta em R$ 7,5 milhões por entender que a plataforma não apresentou as informações requeridas pela Corte dentro do prazo estipulado nem de forma completa e transparente. Em outubro, o TSE exigiu informações como alcance de postagens, anúncios e valores recebidos. A Meta é responsável pelo WhatsApp, Instagram e Facebook.",
+                "A multa se deu em uma ação ajuizada pela coligação de Luiz Inácio Lula da Silva (PT), que defendeu que a Meta fez restrição seletiva na entrega dos conteúdos da campanha de 2026. Segundo o PT, a empresa cometeu falhas no impulsionamento contratado e permitiu anúncios políticos pagos por contas estrangeiras, circulação de redes inautênticas e conteúdos gerados por inteligência artificial sem rotulagem.",
+                "Existem outras ações no TSE que questionam a interferência das plataformas digitais nas eleições.",
+                "Nesta terça-feira (10/11), todos acompanharam o voto do ministro relator Marco Aurélio Bellizze, que avaliou que a empresa não cumpriu os prazos fixados pelo TSE para adotar medidas de tratamento igualitário entre os candidatos à presidência da República."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--policial-gay-e-petista-deputado-eleito-em-goi",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Segurança Pública e Inteligência Federativa",
+          "editoria": "Política",
+          "titulo": "Policial, gay e petista: deputado eleito em Goiás quer aproximar segurança pública e esquerda",
+          "texto": "Entre 66 deputados estaduais, federais, senadores e governo eleitos em Goiás neste ano, Fabrício Rosa (PT) é a única pessoa que se declarou LGBT+ para a Justiça Eleitoral. Pela primeira vez, um homem gay faz parte do grupo de 41 pessoas com mandato para a próxima legislatura na Assembleia Legislativa de Goiás (Alego). Policial rodoviário federal, professor e doutor em Direitos Humanos, Fabrício se prepara para assumir uma cadeira que nunca foi ocupada por uma pessoa assumidamente LGBT+.",
+          "por_que_importa": "O enfrentamento financeiro e operacional ao crime organizado exige coordenação entre União e estados e impacta diretamente a segurança cotidiana nas metrópoles.",
+          "resumo_visoes": "Na cobertura de segurança pública e inteligência federativa, a reportagem de Brasil de Fato confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "Entre 66 deputados estaduais, federais, senadores e governo eleitos em Goiás neste ano, Fabrício Rosa (PT) é a única pessoa que se declarou LGBT+ para a Justiça Eleitoral. Pela primeira vez, um homem gay faz parte do grupo de 41 pessoas com mandato para a próxima legislatura na Assembleia Legislativa de Goiás (Alego). Policial rodoviário federal, professor e doutor em Direitos Humanos, Fabrício se prepara para assumir uma cadeira que nunca foi ocupada por uma pessoa assumidamente LGBT+.",
+            "Sem discrição, Fabrício foi eleito com 81.540 votos e ocupou a votação como segundo deputado estadual mais votado do estado, atrás apenas de Carol do Amiltinho (MDB). Dois anos antes, em 2024, havia conquistado uma cadeira na Câmara Municipal de Goiânia com 7.216 votos, como o terceiro candidato do PT eleito ao cargo. À época, Fabrício já se declarava LGBT+ e se tornou o primeiro vereador assumidamente gay eleito na capital.",
+            "Natural de Goiânia, Fabrício atua em pautas como saúde pública, moradia, cultura, igualdade racial e direitos da população LGBT+. É um dos fundadores do movimento nacional Policiais Antifascismo e diretor da Rede Nacional de Policiais LGBTQIA+ (Renosp), e propõe uma reformulação profunda do modelo de segurança pública do estado. Em abril, foi preso pela Polícia Militar durante um ato do MST em Santa Helena de Goiás, em memória dos 30 anos do Massacre de Eldorado dos Carajás. Em julho, a Justiça arquivou o caso após o Ministério Público de Goiás (MP-GO) concluir que não havia justa causa para uma ação penal.",
+            "Ao olhar para o cenário de disputas nas eleições de 2026, o resultado tem um peso significativo para os corpos dissidentes no estado. Segundo dados do Tribunal Superior Eleitoral (TSE), das 595 candidaturas a deputado estadual em Goiás, 332 informaram a orientação sexual. Desse número, 321 se declararam heterossexuais e apenas 11 informaram outra orientação, entre quatro gays, dois bissexuais, duas lésbicas, dois assexuais e um pansexual. “Ser o primeiro também significa enfrentar muitos ataques, ameaças e tentativas de silenciamento. Espero que as próximas pessoas LGBTQIA+ que chegarem à política não precisem enfrentar a mesma violência que nós enfrentamos”, conta Fabrício."
+          ],
+          "aprofundamento": {
+            "contexto": "Sem discrição, Fabrício foi eleito com 81.540 votos e ocupou a votação como segundo deputado estadual mais votado do estado, atrás apenas de Carol do Amiltinho (MDB). Dois anos antes, em 2024, havia conquistado uma cadeira na Câmara Municipal de Goiânia com 7.216 votos, como o terceiro candidato do PT eleito ao cargo. À época, Fabrício já se declarava LGBT+ e se tornou o primeiro vereador assumidamente gay eleito na capital.",
+            "o_que_observar": "Natural de Goiânia, Fabrício atua em pautas como saúde pública, moradia, cultura, igualdade racial e direitos da população LGBT+. É um dos fundadores do movimento nacional Policiais Antifascismo e diretor da Rede Nacional de Policiais LGBTQIA+ (Renosp), e propõe uma reformulação profunda do modelo de segurança pública do estado. Em abril, foi preso pela Polícia Militar durante um ato do MST em Santa Helena de Goiás, em memória dos 30 anos do Massacre de Eldorado dos Carajás. Em julho, a Justiça arquivou o caso após o Ministério Público de Goiás (MP-GO) concluir que não havia justa causa para uma ação penal."
+          },
+          "fontes": [
+            {
+              "fonte": "Brasil de Fato",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Brasil de Fato",
+              "url": "https://www.brasildefato.com.br/2026/11/10/policial-gay-e-petista-deputado-eleito-em-goias-quer-aproximar-seguranca-publica-e-esquerda/",
+              "titulo": "Policial, gay e petista: deputado eleito em Goiás quer aproximar segurança pública e esquerda",
+              "autor": "Redação Brasil de Fato",
+              "pontos": [
+                "Sem discrição, Fabrício foi eleito com 81.540 votos e ocupou a votação como segundo deputado estadua...",
+                "Natural de Goiânia, Fabrício atua em pautas como saúde pública, moradia, cultura, igualdade racial e...",
+                "Ao olhar para o cenário de disputas nas eleições de 2026, o resultado tem um peso significativo para..."
+              ],
+              "citacao": "Sem discrição, Fabrício foi eleito com 81.540 votos e ocupou a votação como segundo deputado estadual mais votado do est...",
+              "texto_integral": [
+                "Entre 66 deputados estaduais, federais, senadores e governo eleitos em Goiás neste ano, Fabrício Rosa (PT) é a única pessoa que se declarou LGBT+ para a Justiça Eleitoral. Pela primeira vez, um homem gay faz parte do grupo de 41 pessoas com mandato para a próxima legislatura na Assembleia Legislativa de Goiás (Alego). Policial rodoviário federal, professor e doutor em Direitos Humanos, Fabrício se prepara para assumir uma cadeira que nunca foi ocupada por uma pessoa assumidamente LGBT+.",
+                "Sem discrição, Fabrício foi eleito com 81.540 votos e ocupou a votação como segundo deputado estadual mais votado do estado, atrás apenas de Carol do Amiltinho (MDB). Dois anos antes, em 2024, havia conquistado uma cadeira na Câmara Municipal de Goiânia com 7.216 votos, como o terceiro candidato do PT eleito ao cargo. À época, Fabrício já se declarava LGBT+ e se tornou o primeiro vereador assumidamente gay eleito na capital.",
+                "Natural de Goiânia, Fabrício atua em pautas como saúde pública, moradia, cultura, igualdade racial e direitos da população LGBT+. É um dos fundadores do movimento nacional Policiais Antifascismo e diretor da Rede Nacional de Policiais LGBTQIA+ (Renosp), e propõe uma reformulação profunda do modelo de segurança pública do estado. Em abril, foi preso pela Polícia Militar durante um ato do MST em Santa Helena de Goiás, em memória dos 30 anos do Massacre de Eldorado dos Carajás. Em julho, a Justiça arquivou o caso após o Ministério Público de Goiás (MP-GO) concluir que não havia justa causa para uma ação penal.",
+                "Ao olhar para o cenário de disputas nas eleições de 2026, o resultado tem um peso significativo para os corpos dissidentes no estado. Segundo dados do Tribunal Superior Eleitoral (TSE), das 595 candidaturas a deputado estadual em Goiás, 332 informaram a orientação sexual. Desse número, 321 se declararam heterossexuais e apenas 11 informaram outra orientação, entre quatro gays, dois bissexuais, duas lésbicas, dois assexuais e um pansexual. “Ser o primeiro também significa enfrentar muitos ataques, ameaças e tentativas de silenciamento. Espero que as próximas pessoas LGBTQIA+ que chegarem à política não precisem enfrentar a mesma violência que nós enfrentamos”, conta Fabrício."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--wta-finals-ap-s-vit-ria-na-estreia-dupla-de-s",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Diplomacia e Relações Internacionais",
+          "editoria": "Internacional",
+          "titulo": "WTA Finals: após vitória na estreia, dupla de Stefani joga na quarta",
+          "texto": "Favorita ao título de duplas do WTA Finals, a parceria da brasileira Luisa Stefani com a canadense Gabriela Dabrowski volta à quadra nesta quarta-feira (12) para a segunda rodada do Grupo 1 do torneio. Líderes da temporada, elas enfrentarão a quarta melhor dupla do ano, formada pela chinesa Guo Hanyu e a francesa Kristina Mladenovice.",
+          "por_que_importa": "Os movimentos diplomáticos na América do Sul e nas grandes potências afetam acordos comerciais, segurança energética e a inserção geopolítica do Brasil.",
+          "resumo_visoes": "Na cobertura de diplomacia e relações internacionais, a reportagem de Agência Brasil / EBC confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "Favorita ao título de duplas do WTA Finals, a parceria da brasileira Luisa Stefani com a canadense Gabriela Dabrowski volta à quadra nesta quarta-feira (12) para a segunda rodada do Grupo 1 do torneio. Líderes da temporada, elas enfrentarão a quarta melhor dupla do ano, formada pela chinesa Guo Hanyu e a francesa Kristina Mladenovice.",
+            "O embate será em clima de revanche: em julho, as adversárias conquistaram o título de Wimbledon (Inglaterra) com vitória sobre a dupla da brasileira. O jogo desta quarta (11), em Indian Wells (Estados Unidos), tem início previsto para as 19h30 (horário e Brasília). O WTA Finals reúne as oito melhores duplas de 2026 (veja classificação ao final do texto).",
+            "Cabeça de chave número 1, a parceria Brasil-Canadá venceu a estreia na noite de segunda (9) contra a belga Elise Mertens e a chinesa Shuai Zhang (8ª melhor), por 2 sets a 0, com parciais de 6/3 e 7/6 (7-5).",
+            "Adding immediately to the highlight reel 🌟 #FAGEWTAFinals | #TheUltimateStage https://t.co/G5hlgiQ1ea"
+          ],
+          "aprofundamento": {
+            "contexto": "O embate será em clima de revanche: em julho, as adversárias conquistaram o título de Wimbledon (Inglaterra) com vitória sobre a dupla da brasileira. O jogo desta quarta (11), em Indian Wells (Estados Unidos), tem início previsto para as 19h30 (horário e Brasília). O WTA Finals reúne as oito melhores duplas de 2026 (veja classificação ao final do texto).",
+            "o_que_observar": "Cabeça de chave número 1, a parceria Brasil-Canadá venceu a estreia na noite de segunda (9) contra a belga Elise Mertens e a chinesa Shuai Zhang (8ª melhor), por 2 sets a 0, com parciais de 6/3 e 7/6 (7-5)."
+          },
+          "fontes": [
+            {
+              "fonte": "Agência Brasil / EBC",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Agência Brasil / EBC",
+              "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/wta-finals-apos-vitoria-na-estreia-dupla-de-stefani-joga-na-quarta",
+              "titulo": "WTA Finals: após vitória na estreia, dupla de Stefani joga na quarta",
+              "autor": "Redação Agência Brasil / EBC",
+              "pontos": [
+                "O embate será em clima de revanche: em julho, as adversárias conquistaram o título de Wimbledon (Ing...",
+                "Cabeça de chave número 1, a parceria Brasil-Canadá venceu a estreia na noite de segunda (9) contra a...",
+                "Adding immediately to the highlight reel 🌟 #FAGEWTAFinals | #TheUltimateStage https://t.co/G5hlgiQ1e..."
+              ],
+              "citacao": "O embate será em clima de revanche: em julho, as adversárias conquistaram o título de Wimbledon (Inglaterra) com vitória...",
+              "texto_integral": [
+                "Favorita ao título de duplas do WTA Finals, a parceria da brasileira Luisa Stefani com a canadense Gabriela Dabrowski volta à quadra nesta quarta-feira (12) para a segunda rodada do Grupo 1 do torneio. Líderes da temporada, elas enfrentarão a quarta melhor dupla do ano, formada pela chinesa Guo Hanyu e a francesa Kristina Mladenovice.",
+                "O embate será em clima de revanche: em julho, as adversárias conquistaram o título de Wimbledon (Inglaterra) com vitória sobre a dupla da brasileira. O jogo desta quarta (11), em Indian Wells (Estados Unidos), tem início previsto para as 19h30 (horário e Brasília). O WTA Finals reúne as oito melhores duplas de 2026 (veja classificação ao final do texto).",
+                "Cabeça de chave número 1, a parceria Brasil-Canadá venceu a estreia na noite de segunda (9) contra a belga Elise Mertens e a chinesa Shuai Zhang (8ª melhor), por 2 sets a 0, com parciais de 6/3 e 7/6 (7-5).",
+                "Adding immediately to the highlight reel 🌟 #FAGEWTAFinals | #TheUltimateStage https://t.co/G5hlgiQ1ea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--cavalos-furtados-e-feridos-s-o-resgatados-ap",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Infraestrutura, Energia e Transportes",
+          "editoria": "Sociedade",
+          "titulo": "Cavalos furtados e feridos são resgatados após cavalgarem por 30 km na Dutra sem ferraduras",
+          "texto": "A PRF (Polícia Rodoviária Federal) resgatou na última quinta-feira (5) três cavalos vítimas de maus-tratos no km 192 da rodovia Presidente Dutra, no sentido Rio de Janeiro. A equipe abordou duas pessoas que acompanhavam os animais após receber denúncias de usuários da rodovia sobre possíveis agressões aos equinos.",
+          "por_que_importa": "Investimentos e marcos de concessão em transportes e energia elétrica condicionam o custo logístico do país e a qualidade dos serviços essenciais.",
+          "resumo_visoes": "Na cobertura de infraestrutura, energia e transportes, a reportagem de Folha de S.Paulo confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "A PRF (Polícia Rodoviária Federal) resgatou na última quinta-feira (5) três cavalos vítimas de maus-tratos no km 192 da rodovia Presidente Dutra, no sentido Rio de Janeiro. A equipe abordou duas pessoas que acompanhavam os animais após receber denúncias de usuários da rodovia sobre possíveis agressões aos equinos.",
+            "Durante a averiguação, os policiais constataram lesões nas patas dos cavalos. Um deles apresentava estado de exaustão e não conseguia se locomover, afirma a polícia.",
+            "Conforme a PRF, os animais foram furtados de uma fazenda em Jacareí, no Vale do Paraíba. Segundo o registro do caso, os dois homens cortaram a cerca e levaram quatro cavalos.",
+            "Um deles fugiu durante o deslocamento e há suspeita de que tenha sido atropelado."
+          ],
+          "aprofundamento": {
+            "contexto": "Durante a averiguação, os policiais constataram lesões nas patas dos cavalos. Um deles apresentava estado de exaustão e não conseguia se locomover, afirma a polícia.",
+            "o_que_observar": "Conforme a PRF, os animais foram furtados de uma fazenda em Jacareí, no Vale do Paraíba. Segundo o registro do caso, os dois homens cortaram a cerca e levaram quatro cavalos."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/cavalos-furtados-e-feridos-sao-resgatados-apos-cavalgarem-por-30-km-na-dutra-sem-ferraduras.shtml",
+              "titulo": "Cavalos furtados e feridos são resgatados após cavalgarem por 30 km na Dutra sem ferraduras",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "Durante a averiguação, os policiais constataram lesões nas patas dos cavalos. Um deles apresentava e...",
+                "Conforme a PRF, os animais foram furtados de uma fazenda em Jacareí, no Vale do Paraíba. Segundo o r...",
+                "Um deles fugiu durante o deslocamento e há suspeita de que tenha sido atropelado...."
+              ],
+              "citacao": "Durante a averiguação, os policiais constataram lesões nas patas dos cavalos. Um deles apresentava estado de exaustão e ...",
+              "texto_integral": [
+                "A PRF (Polícia Rodoviária Federal) resgatou na última quinta-feira (5) três cavalos vítimas de maus-tratos no km 192 da rodovia Presidente Dutra, no sentido Rio de Janeiro. A equipe abordou duas pessoas que acompanhavam os animais após receber denúncias de usuários da rodovia sobre possíveis agressões aos equinos.",
+                "Durante a averiguação, os policiais constataram lesões nas patas dos cavalos. Um deles apresentava estado de exaustão e não conseguia se locomover, afirma a polícia.",
+                "Conforme a PRF, os animais foram furtados de uma fazenda em Jacareí, no Vale do Paraíba. Segundo o registro do caso, os dois homens cortaram a cerca e levaram quatro cavalos.",
+                "Um deles fugiu durante o deslocamento e há suspeita de que tenha sido atropelado."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--alemanha-vai-investir-15-milh-es-de-euros-na",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Meio Ambiente em Escala Macro e Defesa Civil",
+          "editoria": "Sociedade",
+          "titulo": "Alemanha vai investir 15 milhões de euros na proteção e preservação de terras indígenas no Brasil",
+          "texto": "Repasse prometido na COP30 foi oficializado durante a COP31 em Antália, na Turquia. Fundo gerido por entidades indígenas vai decidir como aplicar recursos.",
+          "por_que_importa": "Eventos climáticos extremos e metas de transição energética exigem resposta coordenada de defesa civil, adaptação de infraestrutura urbana e financiamento ambiental.",
+          "resumo_visoes": "Na cobertura de meio ambiente em escala macro e defesa civil, a reportagem de DW Brasil confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "Repasse prometido na COP30 foi oficializado durante a COP31 em Antália, na Turquia. Fundo gerido por entidades indígenas vai decidir como aplicar recursos.",
+            "Na cobertura de meio ambiente em escala macro e defesa civil, a apuração de DW Brasil detalha as posições técnicas e políticas em disputa, avaliando os efeitos imediatos sobre os indicadores econômicos e o calendário institucional.",
+            "Especialistas e interlocutores acompanhados por DW Brasil apontam que o desfecho da pauta dependerá da articulação entre Executivo, Legislativo e órgãos reguladores ao longo das próximas semanas."
+          ],
+          "aprofundamento": {
+            "contexto": "Na cobertura de meio ambiente em escala macro e defesa civil, a apuração de DW Brasil detalha as posições técnicas e políticas em disputa, avaliando os efeitos imediatos sobre os indicadores econômicos e o calendário institucional.",
+            "o_que_observar": "Especialistas e interlocutores acompanhados por DW Brasil apontam que o desfecho da pauta dependerá da articulação entre Executivo, Legislativo e órgãos reguladores ao longo das próximas semanas."
+          },
+          "fontes": [
+            {
+              "fonte": "DW Brasil",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por DW Brasil",
+              "url": "https://www.dw.com/pt-br/alemanha-vai-investir-15-milhões-de-euros-na-proteção-e-preservação-de-terras-indígenas-no-brasil/a-79910794?maca=bra-rss-br-all-1030-xml-mrss",
+              "titulo": "Alemanha vai investir 15 milhões de euros na proteção e preservação de terras indígenas no Brasil",
+              "autor": "Redação DW Brasil",
+              "pontos": [
+                "Na cobertura de meio ambiente em escala macro e defesa civil, a apuração de DW Brasil detalha as pos...",
+                "Especialistas e interlocutores acompanhados por DW Brasil apontam que o desfecho da pauta dependerá ..."
+              ],
+              "citacao": "Na cobertura de meio ambiente em escala macro e defesa civil, a apuração de DW Brasil detalha as posições técnicas e pol...",
+              "texto_integral": [
+                "Repasse prometido na COP30 foi oficializado durante a COP31 em Antália, na Turquia. Fundo gerido por entidades indígenas vai decidir como aplicar recursos.",
+                "Na cobertura de meio ambiente em escala macro e defesa civil, a apuração de DW Brasil detalha as posições técnicas e políticas em disputa, avaliando os efeitos imediatos sobre os indicadores econômicos e o calendário institucional.",
+                "Especialistas e interlocutores acompanhados por DW Brasil apontam que o desfecho da pauta dependerá da articulação entre Executivo, Legislativo e órgãos reguladores ao longo das próximas semanas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--inadimpl-ncia-do-cart-o-de-cr-dito-chega-a-10",
+          "escopo": "nacional",
+          "pais": "Brasil",
+          "chapeu": "Mídia Nacional · Defesa do Consumidor e Mercado Digital",
+          "editoria": "Sociedade",
+          "titulo": "Inadimplência do cartão de crédito chega a 10% do terceiro trimestre de 2026",
+          "texto": "A taxa de inadimplência do cartão de crédito chegou a 10% no terceiro trimestre de 2026. O valor é 0,9 ponto percentual maior do que em setembro do ano passado, segundo dados da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços).",
+          "por_que_importa": "A regulação de mercados digitais, crédito e apostas eletrônicas protege a renda familiar contra o superendividamento e corrige assimetrias concorrenciais.",
+          "resumo_visoes": "Na cobertura de defesa do consumidor e mercado digital, a reportagem de Folha de S.Paulo confronta os indicadores técnicos e orçamentários com as posições das lideranças políticas e setoriais envolvidas.",
+          "texto_completo": [
+            "A taxa de inadimplência do cartão de crédito chegou a 10% no terceiro trimestre de 2026. O valor é 0,9 ponto percentual maior do que em setembro do ano passado, segundo dados da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços).",
+            "O número foi apresentado nesta terça-feira (10), em coletiva da associação sobre os resultados do setor no terceiro trimestre deste ano.",
+            "A entidade diz, porém, que o endividamento das famílias deve ser analisado com dados de outras modalidades de crédito, e não só do cartão. Segundo pesquisa trimestral Abecs-Datafolha, cerca de 85% dos consumidores pagam a fatura integral no vencimento, sem recorrer a parcelamento ou rotativo.",
+            "Além disso, 74,8% do saldo da carteira de cartão de crédito corresponde a operações sem juros, segundo dados do BC (Banco Central). Os juros do rotativo, ainda segundo os dados do BC apresentados pela associação, representam 2,8% das operações de crédito às pessoas físicas."
+          ],
+          "aprofundamento": {
+            "contexto": "O número foi apresentado nesta terça-feira (10), em coletiva da associação sobre os resultados do setor no terceiro trimestre deste ano.",
+            "o_que_observar": "A entidade diz, porém, que o endividamento das famílias deve ser analisado com dados de outras modalidades de crédito, e não só do cartão. Segundo pesquisa trimestral Abecs-Datafolha, cerca de 85% dos consumidores pagam a fatura integral no vencimento, sem recorrer a parcelamento ou rotativo."
+          },
+          "fontes": [
+            {
+              "fonte": "Folha de S.Paulo",
+              "perfil": "Veículo verificado de cobertura nacional",
+              "enfoque": "Enfoque da apuração conduzida por Folha de S.Paulo",
+              "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inadimplencia-do-cartao-de-credito-chega-a-10-do-terceiro-trimestre-de-2026.shtml",
+              "titulo": "Inadimplência do cartão de crédito chega a 10% do terceiro trimestre de 2026",
+              "autor": "Redação Folha de S.Paulo",
+              "pontos": [
+                "O número foi apresentado nesta terça-feira (10), em coletiva da associação sobre os resultados do se...",
+                "A entidade diz, porém, que o endividamento das famílias deve ser analisado com dados de outras modal...",
+                "Além disso, 74,8% do saldo da carteira de cartão de crédito corresponde a operações sem juros, segun..."
+              ],
+              "citacao": "O número foi apresentado nesta terça-feira (10), em coletiva da associação sobre os resultados do setor no terceiro trim...",
+              "texto_integral": [
+                "A taxa de inadimplência do cartão de crédito chegou a 10% no terceiro trimestre de 2026. O valor é 0,9 ponto percentual maior do que em setembro do ano passado, segundo dados da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços).",
+                "O número foi apresentado nesta terça-feira (10), em coletiva da associação sobre os resultados do setor no terceiro trimestre deste ano.",
+                "A entidade diz, porém, que o endividamento das famílias deve ser analisado com dados de outras modalidades de crédito, e não só do cartão. Segundo pesquisa trimestral Abecs-Datafolha, cerca de 85% dos consumidores pagam a fatura integral no vencimento, sem recorrer a parcelamento ou rotativo.",
+                "Além disso, 74,8% do saldo da carteira de cartão de crédito corresponde a operações sem juros, segundo dados do BC (Banco Central). Os juros do rotativo, ainda segundo os dados do BC apresentados pela associação, representam 2,8% das operações de crédito às pessoas físicas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--novaya-gazeta-o-jornal-mais-corajoso-da-r-ssi",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · The New York Times",
+          "editoria": "Internacional",
+          "titulo": "Novaya Gazeta, o jornal mais corajoso da Rússia, fecha",
+          "titulo_original": "Novaya Gazeta, Russia’s Bravest Newspaper, Closes",
+          "texto": "Durante mais de 30 anos, o jornal cobriu uma Rússia cada vez mais repressiva. “O processo de silenciar-nos começou há muitos anos”, disse um dos seus jornalistas.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de The New York Times destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Durante mais de 30 anos, o jornal cobriu uma Rússia cada vez mais repressiva. “O processo de silenciar-nos começou há muitos anos”, disse um dos seus jornalistas.",
+            "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+            "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de The New York Times e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "The New York Times",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por The New York Times",
+              "url": "https://www.nytimes.com/2026/11/10/world/europe/russia-novaya-gazeta-closure.html",
+              "titulo": "Novaya Gazeta, Russia’s Bravest Newspaper, Closes",
+              "autor": "Correspondentes The New York Times",
+              "pontos": [
+                "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, m...",
+                "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos..."
+              ],
+              "citacao": "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, mercados e lideranças...",
+              "texto_integral": [
+                "Durante mais de 30 anos, o jornal cobriu uma Rússia cada vez mais repressiva. “O processo de silenciar-nos começou há muitos anos”, disse um dos seus jornalistas.",
+                "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+                "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--em-entrevista-sonia-gandhi-relembra-amor-e-pe",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · The New York Times",
+          "editoria": "Política",
+          "titulo": "Em entrevista, Sonia Gandhi relembra amor e perda na Índia",
+          "titulo_original": "In Interview, Sonia Gandhi Recalls Love and Loss in India",
+          "texto": "Num novo livro de memórias e entrevista, a mulher nascida na Itália que se casou com alguém da dinastia Nehru-Gandhi relembra as suas batalhas políticas e os assassinatos do marido e da sogra.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de The New York Times destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Num novo livro de memórias e entrevista, a mulher nascida na Itália que se casou com alguém da dinastia Nehru-Gandhi relembra as suas batalhas políticas e os assassinatos do marido e da sogra.",
+            "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+            "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de The New York Times e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "The New York Times",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por The New York Times",
+              "url": "https://www.nytimes.com/2026/11/10/world/asia/sonia-gandhi-india.html",
+              "titulo": "In Interview, Sonia Gandhi Recalls Love and Loss in India",
+              "autor": "Correspondentes The New York Times",
+              "pontos": [
+                "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, m...",
+                "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos..."
+              ],
+              "citacao": "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, mercados e lideranças...",
+              "texto_integral": [
+                "Num novo livro de memórias e entrevista, a mulher nascida na Itália que se casou com alguém da dinastia Nehru-Gandhi relembra as suas batalhas políticas e os assassinatos do marido e da sogra.",
+                "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+                "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--inunda-es-mortais-atingem-o-iraque-enquanto-t",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · The Guardian",
+          "editoria": "Clima",
+          "titulo": "Inundações mortais atingem o Iraque enquanto tempestades varrem a região",
+          "titulo_original": "Deadly floods hit Iraq as thunderstorms sweep across region",
+          "texto": "Tempestades violentas atingem o norte do Iraque e partes do Irão, enquanto Portugal enfrenta ventos fortes e o Japão se prepara para mais nevascas",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de The Guardian destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Tempestades violentas atingem o norte do Iraque e partes do Irão, enquanto Portugal enfrenta ventos fortes e o Japão se prepara para mais nevascas",
+            "Inundações repentinas mortais atingiram o norte do Iraque no sábado, enquanto fortes tempestades varriam a região, inclusive no vizinho Irã. A cidade de Erbil, no Iraque, foi particularmente atingida, com grandes danos em casas e empresas. As ruas foram inundadas devido a chuvas torrenciais que caíram durante um curto período.",
+            "As chuvas superaram as previsões, com uma queda estimada de 80 mm na cidade, em comparação com as expectativas de 30 mm. Duas pessoas morreram nas enchentes.",
+            "Na Europa, a tempestade Bruna deverá trazer ventos fortes para Portugal esta semana, especialmente ao longo da costa oeste. As rajadas devem atingir 80 km/h (50 mph), com chuvas fortes e trovoadas também esperadas. A precipitação total pode chegar a 200 mm até o final da semana. A tempestade já afetou as Ilhas Canárias, onde Tenerife registou uma rajada de 130 km/h na noite de sábado."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de The Guardian e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "The Guardian",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por The Guardian",
+              "url": "https://www.theguardian.com/environment/2026/nov/09/deadly-floods-iraq-thunderstorms-iran-portugal-japan-snow",
+              "titulo": "Deadly floods hit Iraq as thunderstorms sweep across region",
+              "autor": "Correspondentes The Guardian",
+              "pontos": [
+                "Inundações repentinas mortais atingiram o norte do Iraque no sábado, enquanto fortes tempestades var...",
+                "As chuvas superaram as previsões, com uma queda estimada de 80 mm na cidade, em comparação com as ex...",
+                "Na Europa, a tempestade Bruna deverá trazer ventos fortes para Portugal esta semana, especialmente a..."
+              ],
+              "citacao": "Inundações repentinas mortais atingiram o norte do Iraque no sábado, enquanto fortes tempestades varriam a região, inclu...",
+              "texto_integral": [
+                "Tempestades violentas atingem o norte do Iraque e partes do Irão, enquanto Portugal enfrenta ventos fortes e o Japão se prepara para mais nevascas",
+                "Inundações repentinas mortais atingiram o norte do Iraque no sábado, enquanto fortes tempestades varriam a região, inclusive no vizinho Irã. A cidade de Erbil, no Iraque, foi particularmente atingida, com grandes danos em casas e empresas. As ruas foram inundadas devido a chuvas torrenciais que caíram durante um curto período.",
+                "As chuvas superaram as previsões, com uma queda estimada de 80 mm na cidade, em comparação com as expectativas de 30 mm. Duas pessoas morreram nas enchentes.",
+                "Na Europa, a tempestade Bruna deverá trazer ventos fortes para Portugal esta semana, especialmente ao longo da costa oeste. As rajadas devem atingir 80 km/h (50 mph), com chuvas fortes e trovoadas também esperadas. A precipitação total pode chegar a 200 mm até o final da semana. A tempestade já afetou as Ilhas Canárias, onde Tenerife registou uma rajada de 130 km/h na noite de sábado."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--ucr-nia-captura-primeiro-prisioneiro-de-guerr",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · The Guardian",
+          "editoria": "Internacional",
+          "titulo": "Ucrânia captura primeiro prisioneiro de guerra indonésio em meio ao aumento do recrutamento russo",
+          "titulo_original": "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment",
+          "texto": "A captura de um homem em Java segue-se a relatos de que centenas de pessoas estão a ser recrutadas no país do sudeste asiático, enquanto Moscovo procura aumentar o seu esforço de guerra.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de The Guardian destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "A captura de um homem em Java segue-se a relatos de que centenas de pessoas estão a ser recrutadas no país do sudeste asiático, enquanto Moscovo procura aumentar o seu esforço de guerra.",
+            "A Ucrânia afirma ter capturado o seu primeiro prisioneiro de guerra indonésio, no meio do que considera ser um aumento no recrutamento da Rússia no país do sudeste asiático.",
+            "O homem de 49 anos de Java foi levado para a região ucraniana de Zaporizhzhia para participar de um ataque russo, mas conseguiu chegar ao território controlado pela Ucrânia depois que o grupo foi atacado por drones, de acordo com o projeto estatal ucraniano I Want to Live. Ele foi então capturado pelos ucranianos.",
+            "De acordo com o projecto, cerca de 283 indonésios foram recrutados nos primeiros nove meses deste ano para lutar pela Rússia contra a Ucrânia. Ele disse que o recrutamento na Indonésia não passou de 10 nos três anos anteriores."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de The Guardian e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "The Guardian",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por The Guardian",
+              "url": "https://www.theguardian.com/world/2026/nov/11/ukraine-indonesian-pow-prisoner-of-war-russia",
+              "titulo": "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment",
+              "autor": "Correspondentes The Guardian",
+              "pontos": [
+                "A Ucrânia afirma ter capturado o seu primeiro prisioneiro de guerra indonésio, no meio do que consid...",
+                "O homem de 49 anos de Java foi levado para a região ucraniana de Zaporizhzhia para participar de um ...",
+                "De acordo com o projecto, cerca de 283 indonésios foram recrutados nos primeiros nove meses deste an..."
+              ],
+              "citacao": "A Ucrânia afirma ter capturado o seu primeiro prisioneiro de guerra indonésio, no meio do que considera ser um aumento n...",
+              "texto_integral": [
+                "A captura de um homem em Java segue-se a relatos de que centenas de pessoas estão a ser recrutadas no país do sudeste asiático, enquanto Moscovo procura aumentar o seu esforço de guerra.",
+                "A Ucrânia afirma ter capturado o seu primeiro prisioneiro de guerra indonésio, no meio do que considera ser um aumento no recrutamento da Rússia no país do sudeste asiático.",
+                "O homem de 49 anos de Java foi levado para a região ucraniana de Zaporizhzhia para participar de um ataque russo, mas conseguiu chegar ao território controlado pela Ucrânia depois que o grupo foi atacado por drones, de acordo com o projeto estatal ucraniano I Want to Live. Ele foi então capturado pelos ucranianos.",
+                "De acordo com o projecto, cerca de 283 indonésios foram recrutados nos primeiros nove meses deste ano para lutar pela Rússia contra a Ucrânia. Ele disse que o recrutamento na Indonésia não passou de 10 nos três anos anteriores."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--tr-s-suspeitos-apoiados-pelo-ir-planejaram-at",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · BBC World News",
+          "editoria": "Internacional",
+          "titulo": "Três suspeitos apoiados pelo Irã planejaram ataques, incluindo o incidente da RAF Fairford, dizem os EUA",
+          "titulo_original": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+          "texto": "O Departamento de Justiça dos EUA (DOJ) anunciou acusações contra três agentes apoiados pelo Irão que alega estarem envolvidos numa série de conspirações nos EUA e na Europa.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de BBC World News destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "O Departamento de Justiça dos EUA (DOJ) anunciou acusações contra três agentes apoiados pelo Irão que alega estarem envolvidos numa série de conspirações nos EUA e na Europa.",
+            "O DOJ disse que agentes iranianos recentemente “orquestraram uma conspiração terrorista em uma base da força aérea no Reino Unido”, dizendo que estiveram envolvidos no grande incidente em setembro perto da RAF Fairford, no Reino Unido, onde as forças armadas dos EUA estavam estacionadas.",
+            "Um homem, com dupla nacionalidade iraniano-iraquiana, é acusado de comunicar com contactos no Reino Unido a partir de uma prisão em Nova Iorque, onde aguarda julgamento por acusações anteriores. Os outros dois são acusados ​​de fazer o mesmo no Irã.",
+            "O Irã negou veementemente qualquer envolvimento no incidente da RAF Fairford, que veio à tona quando vans suspeitas foram relatadas perto da base. Sete homens foram presos no Reino Unido por causa do incidente."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de BBC World News e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "BBC World News",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por BBC World News",
+              "url": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
+              "titulo": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+              "autor": "Correspondentes BBC World News",
+              "pontos": [
+                "O DOJ disse que agentes iranianos recentemente “orquestraram uma conspiração terrorista em uma base ...",
+                "Um homem, com dupla nacionalidade iraniano-iraquiana, é acusado de comunicar com contactos no Reino ...",
+                "O Irã negou veementemente qualquer envolvimento no incidente da RAF Fairford, que veio à tona quando..."
+              ],
+              "citacao": "O DOJ disse que agentes iranianos recentemente “orquestraram uma conspiração terrorista em uma base da força aérea no Re...",
+              "texto_integral": [
+                "O Departamento de Justiça dos EUA (DOJ) anunciou acusações contra três agentes apoiados pelo Irão que alega estarem envolvidos numa série de conspirações nos EUA e na Europa.",
+                "O DOJ disse que agentes iranianos recentemente “orquestraram uma conspiração terrorista em uma base da força aérea no Reino Unido”, dizendo que estiveram envolvidos no grande incidente em setembro perto da RAF Fairford, no Reino Unido, onde as forças armadas dos EUA estavam estacionadas.",
+                "Um homem, com dupla nacionalidade iraniano-iraquiana, é acusado de comunicar com contactos no Reino Unido a partir de uma prisão em Nova Iorque, onde aguarda julgamento por acusações anteriores. Os outros dois são acusados ​​de fazer o mesmo no Irã.",
+                "O Irã negou veementemente qualquer envolvimento no incidente da RAF Fairford, que veio à tona quando vans suspeitas foram relatadas perto da base. Sete homens foram presos no Reino Unido por causa do incidente."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--soldado-do-ex-rcito-dos-eua-suspeito-de-espio",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · BBC World News",
+          "editoria": "Internacional",
+          "titulo": "Soldado do Exército dos EUA suspeito de espionar para a Rússia é preso no Reino Unido",
+          "titulo_original": "US Army soldier suspected of spying for Russia arrested in UK",
+          "texto": "Um soldado do Exército dos EUA foi preso sob suspeita de espionagem para a Rússia, disse a polícia antiterrorista britânica.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de BBC World News destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Um soldado do Exército dos EUA foi preso sob suspeita de espionagem para a Rússia, disse a polícia antiterrorista britânica.",
+            "O militar sênior de 41 anos foi preso perto de Gloucester na terça-feira.",
+            "O Policiamento Contra o Terrorismo de Londres disse que o homem foi preso de acordo com a seção um e a seção três da Lei de Segurança Nacional de 2023.",
+            "A primeira seção da Lei refere-se à obtenção ou divulgação de informações protegidas, enquanto a seção três refere-se à assistência a um serviço de inteligência estrangeiro."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de BBC World News e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "BBC World News",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por BBC World News",
+              "url": "https://www.bbc.co.uk/news/articles/c6d7q77xgw0vo?at_medium=RSS&at_campaign=rss",
+              "titulo": "US Army soldier suspected of spying for Russia arrested in UK",
+              "autor": "Correspondentes BBC World News",
+              "pontos": [
+                "O militar sênior de 41 anos foi preso perto de Gloucester na terça-feira....",
+                "O Policiamento Contra o Terrorismo de Londres disse que o homem foi preso de acordo com a seção um e...",
+                "A primeira seção da Lei refere-se à obtenção ou divulgação de informações protegidas, enquanto a seç..."
+              ],
+              "citacao": "O militar sênior de 41 anos foi preso perto de Gloucester na terça-feira....",
+              "texto_integral": [
+                "Um soldado do Exército dos EUA foi preso sob suspeita de espionagem para a Rússia, disse a polícia antiterrorista britânica.",
+                "O militar sênior de 41 anos foi preso perto de Gloucester na terça-feira.",
+                "O Policiamento Contra o Terrorismo de Londres disse que o homem foi preso de acordo com a seção um e a seção três da Lei de Segurança Nacional de 2023.",
+                "A primeira seção da Lei refere-se à obtenção ou divulgação de informações protegidas, enquanto a seção três refere-se à assistência a um serviço de inteligência estrangeiro."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--firstft-banqueiros-antr-picos-se-preparam-par",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · Financial Times",
+          "editoria": "Economia",
+          "titulo": "FirstFT: Banqueiros antrópicos se preparam para aumentar a avaliação do IPO para US$ 1,5 trilhão",
+          "titulo_original": "FirstFT: Anthropic bankers prepare to increase IPO valuation to $1.5tn",
+          "texto": "Também no boletim informativo de hoje: Escândalo de espionagem da Nvidia e defesa nuclear franco-alemã",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de Financial Times destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Também no boletim informativo de hoje: Escândalo de espionagem da Nvidia e defesa nuclear franco-alemã",
+            "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+            "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de Financial Times e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "Financial Times",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por Financial Times",
+              "url": "https://www.ft.com/content/cb451a27-481d-4106-b40f-4a83e3e361fd?syn-25a6b1a6=1",
+              "titulo": "FirstFT: Anthropic bankers prepare to increase IPO valuation to $1.5tn",
+              "autor": "Correspondentes Financial Times",
+              "pontos": [
+                "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, merc...",
+                "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos di..."
+              ],
+              "citacao": "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, mercados e lideranças po...",
+              "texto_integral": [
+                "Também no boletim informativo de hoje: Escândalo de espionagem da Nvidia e defesa nuclear franco-alemã",
+                "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+                "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--a-luta-da-europa-para-competir-com-a-china-au",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · Financial Times",
+          "editoria": "Economia",
+          "titulo": "A luta da Europa para competir com a China aumenta",
+          "titulo_original": "Europe’s struggle to compete with China ramps up",
+          "texto": "Algumas empresas estão a prosperar, mas muitas estão a protestar contra o “dumping”",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de Financial Times destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Algumas empresas estão a prosperar, mas muitas estão a protestar contra o “dumping”",
+            "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+            "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de Financial Times e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "Financial Times",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por Financial Times",
+              "url": "https://www.ft.com/content/efe5f679-ff24-48da-b47e-dcb57494750f?syn-25a6b1a6=1",
+              "titulo": "Europe’s struggle to compete with China ramps up",
+              "autor": "Correspondentes Financial Times",
+              "pontos": [
+                "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, merc...",
+                "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos di..."
+              ],
+              "citacao": "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, mercados e lideranças po...",
+              "texto_integral": [
+                "Algumas empresas estão a prosperar, mas muitas estão a protestar contra o “dumping”",
+                "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+                "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--ao-vivo-guerra-na-ucr-nia-kiev-testa-um-prime",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · Le Monde",
+          "editoria": "Internacional",
+          "titulo": "AO VIVO, guerra na Ucrânia: Kiev testa um primeiro satélite para reduzir sua dependência do Starlink",
+          "titulo_original": "EN DIRECT, guerre en Ukraine : Kiev teste un premier satellite pour réduire sa dépendance à Starlink",
+          "texto": "O fabricante ucraniano de equipamentos de comunicação Himera e a empresa espacial dinamarquesa GomSpace colocaram um primeiro satélite experimental em órbita baixa no início de outubro.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de Le Monde destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "O fabricante ucraniano de equipamentos de comunicação Himera e a empresa espacial dinamarquesa GomSpace colocaram um primeiro satélite experimental em órbita baixa no início de outubro.",
+            "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+            "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de Le Monde e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "Le Monde",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por Le Monde",
+              "url": "https://www.lemonde.fr/international/live/2026/11/11/en-direct-guerre-en-ukraine-kiev-teste-un-premier-satellite-pour-reduire-sa-dependance-a-starlink_6808609_3210.html",
+              "titulo": "EN DIRECT, guerre en Ukraine : Kiev teste un premier satellite pour réduire sa dépendance à Starlink",
+              "autor": "Correspondentes Le Monde",
+              "pontos": [
+                "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e ...",
+                "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serã..."
+              ],
+              "citacao": "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e lideranças políticas...",
+              "texto_integral": [
+                "O fabricante ucraniano de equipamentos de comunicação Himera e a empresa espacial dinamarquesa GomSpace colocaram um primeiro satélite experimental em órbita baixa no início de outubro.",
+                "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+                "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--paola-ugaz-a-jornalista-por-tr-s-das-revela-e",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · Le Monde",
+          "editoria": "Internacional",
+          "titulo": "Paola Ugaz, a jornalista por trás das revelações sobre o maior escândalo de violência ligado à Igreja peruana, perseguida pelos tribunais mas apoiada pelo Papa Leão XIV",
+          "titulo_original": "Paola Ugaz, la journaliste à l’origine des révélations sur le plus grand scandale de violences lié à l’Eglise péruvienne, harcelée par la justice mais soutenue par le pape Léon XIV",
+          "texto": "Após a publicação, em 2015, do seu livro revelando a violência sexual e psicológica no seio do movimento católico Sodalicio, e depois das suas investigações sobre os interesses financeiros desta empresa, Paola Ugaz foi alvo de uma campanha de descrédito. Ela afirma ter o apoio do papa e está encantada com sua chegada ao Peru, a partir de 11 de novembro.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de Le Monde destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "Após a publicação, em 2015, do seu livro revelando a violência sexual e psicológica no seio do movimento católico Sodalicio, e depois das suas investigações sobre os interesses financeiros desta empresa, Paola Ugaz foi alvo de uma campanha de descrédito. Ela afirma ter o apoio do papa e está encantada com sua chegada ao Peru, a partir de 11 de novembro.",
+            "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+            "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de Le Monde e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "Le Monde",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por Le Monde",
+              "url": "https://www.lemonde.fr/international/article/2026/11/11/paola-ugaz-la-journaliste-a-l-origine-des-revelations-sur-le-plus-grand-scandale-de-violences-lie-a-l-eglise-peruvienne-harcelee-par-la-justice-mais-soutenue-par-le-pape-leon-xiv_6808943_3210.html",
+              "titulo": "Paola Ugaz, la journaliste à l’origine des révélations sur le plus grand scandale de violences lié à l’Eglise péruvienne, harcelée par la justice mais soutenue par le pape Léon XIV",
+              "autor": "Correspondentes Le Monde",
+              "pontos": [
+                "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e ...",
+                "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serã..."
+              ],
+              "citacao": "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e lideranças políticas...",
+              "texto_integral": [
+                "Após a publicação, em 2015, do seu livro revelando a violência sexual e psicológica no seio do movimento católico Sodalicio, e depois das suas investigações sobre os interesses financeiros desta empresa, Paola Ugaz foi alvo de uma campanha de descrédito. Ela afirma ter o apoio do papa e está encantada com sua chegada ao Peru, a partir de 11 de novembro.",
+                "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+                "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-11-11--int--um-magma-de-39-candidatos-para-substituir-mac",
+          "escopo": "internacional",
+          "pais": "Internacional",
+          "chapeu": "Mídia Internacional Traduzida · El País",
+          "editoria": "Internacional",
+          "titulo": "Um magma de 39 candidatos para substituir Macron na França",
+          "titulo_original": "Un magma de 39 candidatos para sustituir a Macron en Francia",
+          "texto": "“Digo-vos olhando diretamente nos vossos olhos: sou candidato às eleições presidenciais de 2027.” Teddy Riner, campeão olímpico de judo, um homem negro de 145 quilos e 2,04 metros de altura que os franceses se habituaram a ver subjugar outros homens num tatami, anunciou assim a sua candidatura às eleições presidenciais francesas esta segunda-feira. Parecia uma piada, apenas mais uma, numa pré-campanha inundada de figuras políticas que, até agora, tiveram liberdade para se autoproclamarem candidatos: olhando nos olhos ou no chão. Mas Riner está falando sério. E então recebeu o apoio inesperado de vários candidatos e do próprio Presidente da República, Emmanuel Macron. \"Estou muito feliz (...) que alguém como Teddy Riner, que é um grande campeão, decida envolver-se neste debate presidencial e contribuir com as suas convicções, as suas ideias e o seu talento. Isso só pode beneficiar o país\", disse ele contra todas as probabilidades.",
+          "por_que_importa": "O fato altera diretamente as relações diplomáticas globais, os fluxos mundiais de comércio e as diretrizes regulatórias e políticas internacionais.",
+          "resumo_visoes": "A cobertura internacional de El País destaca as implicações estruturais e diplomáticas do fato, confrontando dados apurados no exterior com as manifestações de lideranças envolvidas.",
+          "texto_completo": [
+            "“Digo-vos olhando diretamente nos vossos olhos: sou candidato às eleições presidenciais de 2027.” Teddy Riner, campeão olímpico de judo, um homem negro de 145 quilos e 2,04 metros de altura que os franceses se habituaram a ver subjugar outros homens num tatami, anunciou assim a sua candidatura às eleições presidenciais francesas esta segunda-feira. Parecia uma piada, apenas mais uma, numa pré-campanha inundada de figuras políticas que, até agora, tiveram liberdade para se autoproclamarem candidatos: olhando nos olhos ou no chão. Mas Riner está falando sério. E então recebeu o apoio inesperado de vários candidatos e do próprio Presidente da República, Emmanuel Macron. \"Estou muito feliz (...) que alguém como Teddy Riner, que é um grande campeão, decida envolver-se neste debate presidencial e contribuir com as suas convicções, as suas ideias e o seu talento. Isso só pode beneficiar o país\", disse ele contra todas as probabilidades.",
+            "O judoca, cujas conquistas esportivas são extraordinárias (cinco medalhas de ouro olímpicas), aparece no vídeo vestido com terno azul e camisa branca, sentado atrás de uma mesa. Uma biblioteca e a bandeira francesa, localizada atrás dele, completam toda a natureza morta visual típica de um discurso político institucional. O atleta, nascido em Guadalupe, dá a impressão de conhecer o manual populista e garante que “não é de direita nem de esquerda”. “Observo a fratura social que o país atravessa, mas o que não aceito é ouvir os jovens, assim como os mais velhos, dizerem que hoje é difícil imaginar um futuro”, analisa sentado naquela secretária.",
+            "Riner é o atleta preferido dos franceses, à frente do jogador de futebol Kylian Mbappé, segundo pesquisa da Odoxa. Ele goza de uma popularidade forjada em milhões de chaves com o quimono que faria mais de um membro da classe política empalidecer de inveja e projeta uma imagem de segurança - quem melhor do que um especialista em artes marciais para proteger a nação em tempos turbulentos - que cativa a muitos. Mas que chances reais tem a sua candidatura às eleições presidenciais? Será que o campeão olímpico conseguirá transformar sua popularidade e notoriedade em intenção de voto?",
+            "Ninguém sabe agora. Não há sondagens (as anteriores à sua autoproclamação falam de 4% de intenção de voto). Mas, por precaução, não houve uma única piada sobre isso. O ex-primeiro-ministro francês e candidato Édouard Philippe, em plena queda nas sondagens, elogiou-o pouco depois de saber das suas intenções. “Ele é um grande campeão francês e um atleta excepcional.” Além disso, considerou que os temas que Riner colocou no centro do seu discurso coincidem com as suas próprias convicções. “Tenho certeza que ele começou a campanha (...) falando de trabalho, esforço e autoridade”, afirmou. “Penso que são questões com as quais me identifico e com as quais muitos homens e mulheres franceses também concordam”, acrescentou, talvez pensando na possibilidade de o recrutar, se necessário."
+          ],
+          "aprofundamento": {
+            "contexto": "Reportagem apurada pelos correspondentes de El País e traduzida integralmente para o português culto pela Faixa Oculta.",
+            "o_que_observar": "As próximas decisões em organismos multilaterais, pronunciamentos oficiais e desdobramentos diplomáticos."
+          },
+          "fontes": [
+            {
+              "fonte": "El País",
+              "perfil": "Veículo internacional de referência",
+              "enfoque": "Apuração global conduzida por El País",
+              "url": "https://elpais.com/internacional/2026-11-11/un-magma-de-39-candidatos-para-sustituir-a-macron-en-francia.html",
+              "titulo": "Un magma de 39 candidatos para sustituir a Macron en Francia",
+              "autor": "Correspondentes El País",
+              "pontos": [
+                "O judoca, cujas conquistas esportivas são extraordinárias (cinco medalhas de ouro olímpicas), aparec...",
+                "Riner é o atleta preferido dos franceses, à frente do jogador de futebol Kylian Mbappé, segundo pesq...",
+                "Ninguém sabe agora. Não há sondagens (as anteriores à sua autoproclamação falam de 4% de intenção de..."
+              ],
+              "citacao": "O judoca, cujas conquistas esportivas são extraordinárias (cinco medalhas de ouro olímpicas), aparece no vídeo vestido c...",
+              "texto_integral": [
+                "“Digo-vos olhando diretamente nos vossos olhos: sou candidato às eleições presidenciais de 2027.” Teddy Riner, campeão olímpico de judo, um homem negro de 145 quilos e 2,04 metros de altura que os franceses se habituaram a ver subjugar outros homens num tatami, anunciou assim a sua candidatura às eleições presidenciais francesas esta segunda-feira. Parecia uma piada, apenas mais uma, numa pré-campanha inundada de figuras políticas que, até agora, tiveram liberdade para se autoproclamarem candidatos: olhando nos olhos ou no chão. Mas Riner está falando sério. E então recebeu o apoio inesperado de vários candidatos e do próprio Presidente da República, Emmanuel Macron. \"Estou muito feliz (...) que alguém como Teddy Riner, que é um grande campeão, decida envolver-se neste debate presidencial e contribuir com as suas convicções, as suas ideias e o seu talento. Isso só pode beneficiar o país\", disse ele contra todas as probabilidades.",
+                "O judoca, cujas conquistas esportivas são extraordinárias (cinco medalhas de ouro olímpicas), aparece no vídeo vestido com terno azul e camisa branca, sentado atrás de uma mesa. Uma biblioteca e a bandeira francesa, localizada atrás dele, completam toda a natureza morta visual típica de um discurso político institucional. O atleta, nascido em Guadalupe, dá a impressão de conhecer o manual populista e garante que “não é de direita nem de esquerda”. “Observo a fratura social que o país atravessa, mas o que não aceito é ouvir os jovens, assim como os mais velhos, dizerem que hoje é difícil imaginar um futuro”, analisa sentado naquela secretária.",
+                "Riner é o atleta preferido dos franceses, à frente do jogador de futebol Kylian Mbappé, segundo pesquisa da Odoxa. Ele goza de uma popularidade forjada em milhões de chaves com o quimono que faria mais de um membro da classe política empalidecer de inveja e projeta uma imagem de segurança - quem melhor do que um especialista em artes marciais para proteger a nação em tempos turbulentos - que cativa a muitos. Mas que chances reais tem a sua candidatura às eleições presidenciais? Será que o campeão olímpico conseguirá transformar sua popularidade e notoriedade em intenção de voto?",
+                "Ninguém sabe agora. Não há sondagens (as anteriores à sua autoproclamação falam de 4% de intenção de voto). Mas, por precaução, não houve uma única piada sobre isso. O ex-primeiro-ministro francês e candidato Édouard Philippe, em plena queda nas sondagens, elogiou-o pouco depois de saber das suas intenções. “Ele é um grande campeão francês e um atleta excepcional.” Além disso, considerou que os temas que Riner colocou no centro do seu discurso coincidem com as suas próprias convicções. “Tenho certeza que ele começou a campanha (...) falando de trabalho, esforço e autoridade”, afirmou. “Penso que são questões com as quais me identifico e com as quais muitos homens e mulheres franceses também concordam”, acrescentou, talvez pensando na possibilidade de o recrutar, se necessário."
+              ]
+            }
+          ]
+        }
+      ],
+      "agenda": [
+        {
+          "quando": "09h00",
+          "o_que": "Acompanhamento das cotações de mercado e indicadores do Banco Central."
+        },
+        {
+          "quando": "14h30",
+          "o_que": "Sessões deliberativas no Congresso Nacional e tribunais superiores."
+        },
+        {
+          "quando": "18h00",
+          "o_que": "Balanço das apurações do dia e edição da noite da Faixa Oculta."
+        }
+      ]
     }
   },
   "cine_edicoes": {
@@ -78504,6 +79462,454 @@
       "pontos": [
         "E também deslegitimou o resultado eleitoral. Para Eisenkot, as palavras “divisivas e odiosas” de Net...",
         "No entanto, ainda há muito trabalho e diplomacia para formar uma coligação. Ele recebeu a ordem no d..."
+      ]
+    },
+    "2026-11-11--governo-sinaliza-ao-mercado-cancelamento-extr-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-sinaliza-ao-mercado-cancelamento-extra-de-r-128-bi-em-gastos-em-2027-para-cumprir-meta.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Governo sinaliza ao mercado cancelamento extra de R$ 12,8 bi em gastos em 2027 para cumprir meta",
+      "resumo": [
+        "Integrantes do governo de Luiz Inácio Lula da Silva (PT) sinalizaram ao mercado financeiro que as medidas de ajuste devem incluir uma autorização para cancelar até R$ 12,8 bilhões em gastos no Orçamento de 2027 para cumprir a meta fiscal."
+      ],
+      "texto_integral": [
+        "Integrantes do governo de Luiz Inácio Lula da Silva (PT) sinalizaram ao mercado financeiro que as medidas de ajuste devem incluir uma autorização para cancelar até R$ 12,8 bilhões em gastos no Orçamento de 2027 para cumprir a meta fiscal.",
+        "A medida seria complementar aos instrumentos já usados pela equipe econômica para alcançar o alvo em caso de frustração de receitas, como o congelamento temporário de verbas por meio do chamado contingenciamento.",
+        "O plano de ajuste do governo vem sendo discutido nos últimos dias com representantes do mercado financeiro e também do Congresso Nacional. Nesta segunda-feira (9), os ministros Dario Durigan (Fazenda) e Bruno Moretti (Planejamento) se reuniram com o presidente do Senado, Davi Alcolumbre (União Brasil-AP), para discutir os detalhes.",
+        "Na ocasião, a equipe econômica acenou com um ajuste entre R$ 70 bilhões e R$ 80 bilhões, considerando não só o cancelamento de despesas, mas também outras medidas."
+      ],
+      "pontos": [
+        "A medida seria complementar aos instrumentos já usados pela equipe econômica para alcançar o alvo em...",
+        "O plano de ajuste do governo vem sendo discutido nos últimos dias com representantes do mercado fina...",
+        "Na ocasião, a equipe econômica acenou com um ajuste entre R$ 70 bilhões e R$ 80 bilhões, considerand..."
+      ]
+    },
+    "2026-11-11--honda-aposta-em-h-bridos-como-pilar-da-eletri-valor.globo.com/empresas/notic": {
+      "url": "https://valor.globo.com/empresas/noticia/2026/11/11/honda-aposta-em-hbridos-como-pilar-da-eletrificao-nos-eua-at-meados-da-prxima-dcada.ghtml",
+      "fonte": "Valor Econômico",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Honda aposta em híbridos como pilar da eletrificação nos EUA até meados da próxima década",
+      "resumo": [
+        "A Honda Motor espera que os veículos híbridos continuem sendo o principal motor da eletrificação nos Estados Unidos até o início da próxima década. A montadora japonesa aposta nessa tecnologia enquanto recua rapidamente de seus planos — que se mostraram onerosos — de investir em veículos totalmente elétricos."
+      ],
+      "texto_integral": [
+        "A Honda Motor espera que os veículos híbridos continuem sendo o principal motor da eletrificação nos Estados Unidos até o início da próxima década. A montadora japonesa aposta nessa tecnologia enquanto recua rapidamente de seus planos — que se mostraram onerosos — de investir em veículos totalmente elétricos.",
+        "\"Acreditamos que os híbridos continuarão sendo a principal forma de eletrificação veicular\", ao menos durante a primeira metade da década de 2030, \"especialmente na América do Norte\", afirmou Noriya Kaihara, vice-presidente executivo da Honda, durante uma entrevista coletiva on-line sobre resultados financeiros na terça-feira, mencionando os preços dos combustíveis.",
+        "\"Os preços do petróleo bruto permanecem elevados, e continuamos observando uma demanda muito forte por carros menores ou veículos híbridos com alta eficiência energética\", disse Kaihara, acrescentando que a empresa conseguiu manter uma participação de mercado expressiva, próxima a 10%, na América do Norte.",
+        "Os custos dos combustíveis permanecem altos nos Estados Unidos, por causa do conflito no Oriente Médio, após ataques dos Estados Unidos e de Israel contra o Irã."
+      ],
+      "pontos": [
+        "\"Acreditamos que os híbridos continuarão sendo a principal forma de eletrificação veicular\", ao meno...",
+        "\"Os preços do petróleo bruto permanecem elevados, e continuamos observando uma demanda muito forte p...",
+        "Os custos dos combustíveis permanecem altos nos Estados Unidos, por causa do conflito no Oriente Méd..."
+      ]
+    },
+    "2026-11-11--fora-da-comitiva-de-lula-na-cop-marina-silva-oglobo.globo.com/politica/noti": {
+      "url": "https://oglobo.globo.com/politica/noticia/2026/11/11/fora-da-comitiva-de-lula-na-cop-marina-silva-tem-presenca-incerta-no-proximo-governo.ghtml",
+      "fonte": "O Globo",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Fora da comitiva de Lula na COP, Marina Silva tem presença incerta no próximo governo",
+      "resumo": [
+        "A presença da ex-ministra do Meio Ambiente Marina Silva (Rede) no quarto mandato do presidente Luiz Inácio Lula da Silva (PT) é incerta. Ainda que a redução do desmatamento durante sua gestão tenha sido ressaltada durante o discurso de vitória do petista, no mês passado, as chances de retorno ao comando da pasta a partir do ano que vem são remotas. O cenário é derivado da pressão por troca na posição tanto em uma ala do governo Lula quanto no Congresso."
+      ],
+      "texto_integral": [
+        "A presença da ex-ministra do Meio Ambiente Marina Silva (Rede) no quarto mandato do presidente Luiz Inácio Lula da Silva (PT) é incerta. Ainda que a redução do desmatamento durante sua gestão tenha sido ressaltada durante o discurso de vitória do petista, no mês passado, as chances de retorno ao comando da pasta a partir do ano que vem são remotas. O cenário é derivado da pressão por troca na posição tanto em uma ala do governo Lula quanto no Congresso.",
+        "OAB celebra fim do inquérito das fake news: 'Nenhuma investigação pode se prolongar indefinidamente'Movimentação: Cleitinho busca se aproximar de Lula e do PT em Minas após apoio a Flávio Bolsonaro na campanha",
+        "Marina deixou o ministério do Meio Ambiente em abril para disputar o Senado em São Paulo, mas não foi eleita. Ela foi sucedida pelo aliado João Paulo Capobianco. A gestão teve índices positivos na redução do desmatamento: em 2026, a Amazônia teve o menor nível de devastação desde 1988, quando o monitoramento do Projeto de Monitoramento do Desmatamento na Amazônia Legal por Satélite (Prodes) foi iniciado. O Cerrado seguiu a tendência e alcançou a taxa mais baixa desde 2001, quando teve início a série histórica.",
+        "Os resultados estão entre as bandeiras que o governo Lula leva para a 31ª edição da Conferência das Nações Unidas sobre Mudanças Climáticas (COP), na Turquia, nesta semana. O presidente participa do evento até hoje e levou uma comitiva composta por nomes como Capobianco, o deputado André Janones e o ministro de Minas e Energia, Alexandre Silveira (PSD), com quem a ala ambientalista do governo colecionou embates."
+      ],
+      "pontos": [
+        "OAB celebra fim do inquérito das fake news: 'Nenhuma investigação pode se prolongar indefinidamente'...",
+        "Marina deixou o ministério do Meio Ambiente em abril para disputar o Senado em São Paulo, mas não fo...",
+        "Os resultados estão entre as bandeiras que o governo Lula leva para a 31ª edição da Conferência das ..."
+      ]
+    },
+    "2026-11-11--tesla-vai-devolver-dinheiro-a-clientes-do-cyb-g1.globo.com/carros/noticia/20": {
+      "url": "https://g1.globo.com/carros/noticia/2026/11/09/tesla-cybertruck-producao.ghtml",
+      "fonte": "g1",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Tesla vai devolver dinheiro a clientes do Cybertruck após anunciar fim da produção da picape",
+      "resumo": [
+        "Tesla reduz produção do Cybertruck para abrir espaço a táxis autônomos"
+      ],
+      "texto_integral": [
+        "Tesla reduz produção do Cybertruck para abrir espaço a táxis autônomos",
+        "A Tesla terá que devolver o dinheiro pago antecipadamente por muitos clientes que reservaram o Cybertruck, picape elétrica da montadora. Isso porque a empresa não conseguirá produzir veículos suficientes para atender a todos os pedidos antes de encerrar a fabricação do modelo, prevista para meados de 2027.",
+        "O anúncio foi feito pelo presidente-executivo da Tesla, Elon Musk, nesta segunda-feira (9), em uma publicação na rede social X.",
+        "🗒️Tem alguma sugestão de reportagem? Mande para o g1"
+      ],
+      "pontos": [
+        "A Tesla terá que devolver o dinheiro pago antecipadamente por muitos clientes que reservaram o Cyber...",
+        "O anúncio foi feito pelo presidente-executivo da Tesla, Elon Musk, nesta segunda-feira (9), em uma p...",
+        "🗒️Tem alguma sugestão de reportagem? Mande para o g1..."
+      ]
+    },
+    "2026-11-11--tse-multa-meta-em-r-7-5-mi-por-descumprir-dec-poder360.com.br/poder-eleicoes": {
+      "url": "https://www.poder360.com.br/poder-eleicoes-2026/tse-multa-meta-em-r-75-mi-por-descumprir-decisao-nas-eleicoes/",
+      "fonte": "Poder360",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "TSE multa Meta em R$ 7,5 mi por descumprir decisão nas eleições",
+      "resumo": [
+        "Corte entendeu que foram prestadas informações incompletas"
+      ],
+      "texto_integral": [
+        "Corte entendeu que foram prestadas informações incompletas",
+        "O Tribunal Superior Eleitoral decidiu na 3ª feira (10.nov.2026), por unanimidade, multar a Meta em R$ 7,5 milhões por entregar informações incompletas sobre as acusações de distribuir conteúdo político enviesado na campanha eleitoral deste ano. Eis a íntegra da decisão (PDF – 492 kB).",
+        "A decisão foi motivada por uma representação protocolada pela coligação Brasil Pronto Pra Mais, que apoiou a reeleição do presidente Luiz Inácio Lula da Silva (PT).",
+        "O jurídico da campanha disse que a Meta, que opera as redes sociais Facebook, Instagram e WhatsApp, deu tratamento diferenciado para restringir o alcance de conteúdos de Lula e favorecer a campanha de Flávio Bolsonaro (PL-RJ)."
+      ],
+      "pontos": [
+        "O Tribunal Superior Eleitoral decidiu na 3ª feira (10.nov.2026), por unanimidade, multar a Meta em R...",
+        "A decisão foi motivada por uma representação protocolada pela coligação Brasil Pronto Pra Mais, que ...",
+        "O jurídico da campanha disse que a Meta, que opera as redes sociais Facebook, Instagram e WhatsApp, ..."
+      ]
+    },
+    "2026-11-11--tse-multa-meta-em-r-7-5-milh-es-por-descumpri-jota.info/eleicoes/eleicoes-20": {
+      "url": "https://www.jota.info/eleicoes/eleicoes-2026/tse-multa-meta-em-r-75-milhoes-por-descumprir-decisao-sobre-eleicoes",
+      "fonte": "JOTA",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "TSE multa Meta em R$ 7,5 milhões por descumprir decisão sobre eleições",
+      "resumo": [
+        "O Tribunal Superior Eleitoral (TSE), por unanimidade de votos, multou a Meta em R$ 7,5 milhões por entender que a plataforma não apresentou as informações requeridas pela Corte dentro do prazo estipulado nem de forma completa e transparente. Em outubro, o TSE exigiu informações como alcance de postagens, anúncios e valores recebidos. A Meta é responsável pelo WhatsApp, Instagram e Facebook."
+      ],
+      "texto_integral": [
+        "O Tribunal Superior Eleitoral (TSE), por unanimidade de votos, multou a Meta em R$ 7,5 milhões por entender que a plataforma não apresentou as informações requeridas pela Corte dentro do prazo estipulado nem de forma completa e transparente. Em outubro, o TSE exigiu informações como alcance de postagens, anúncios e valores recebidos. A Meta é responsável pelo WhatsApp, Instagram e Facebook.",
+        "A multa se deu em uma ação ajuizada pela coligação de Luiz Inácio Lula da Silva (PT), que defendeu que a Meta fez restrição seletiva na entrega dos conteúdos da campanha de 2026. Segundo o PT, a empresa cometeu falhas no impulsionamento contratado e permitiu anúncios políticos pagos por contas estrangeiras, circulação de redes inautênticas e conteúdos gerados por inteligência artificial sem rotulagem.",
+        "Existem outras ações no TSE que questionam a interferência das plataformas digitais nas eleições.",
+        "Nesta terça-feira (10/11), todos acompanharam o voto do ministro relator Marco Aurélio Bellizze, que avaliou que a empresa não cumpriu os prazos fixados pelo TSE para adotar medidas de tratamento igualitário entre os candidatos à presidência da República."
+      ],
+      "pontos": [
+        "A multa se deu em uma ação ajuizada pela coligação de Luiz Inácio Lula da Silva (PT), que defendeu q...",
+        "Existem outras ações no TSE que questionam a interferência das plataformas digitais nas eleições....",
+        "Nesta terça-feira (10/11), todos acompanharam o voto do ministro relator Marco Aurélio Bellizze, que..."
+      ]
+    },
+    "2026-11-11--policial-gay-e-petista-deputado-eleito-em-goi-brasildefato.com.br/2026/11/10": {
+      "url": "https://www.brasildefato.com.br/2026/11/10/policial-gay-e-petista-deputado-eleito-em-goias-quer-aproximar-seguranca-publica-e-esquerda/",
+      "fonte": "Brasil de Fato",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Policial, gay e petista: deputado eleito em Goiás quer aproximar segurança pública e esquerda",
+      "resumo": [
+        "Entre 66 deputados estaduais, federais, senadores e governo eleitos em Goiás neste ano, Fabrício Rosa (PT) é a única pessoa que se declarou LGBT+ para a Justiça Eleitoral. Pela primeira vez, um homem gay faz parte do grupo de 41 pessoas com mandato para a próxima legislatura na Assembleia Legislativa de Goiás (Alego). Policial rodoviário federal, professor e doutor em Direitos Humanos, Fabrício se prepara para assumir uma cadeira que nunca foi ocupada por uma pessoa assumidamente LGBT+."
+      ],
+      "texto_integral": [
+        "Entre 66 deputados estaduais, federais, senadores e governo eleitos em Goiás neste ano, Fabrício Rosa (PT) é a única pessoa que se declarou LGBT+ para a Justiça Eleitoral. Pela primeira vez, um homem gay faz parte do grupo de 41 pessoas com mandato para a próxima legislatura na Assembleia Legislativa de Goiás (Alego). Policial rodoviário federal, professor e doutor em Direitos Humanos, Fabrício se prepara para assumir uma cadeira que nunca foi ocupada por uma pessoa assumidamente LGBT+.",
+        "Sem discrição, Fabrício foi eleito com 81.540 votos e ocupou a votação como segundo deputado estadual mais votado do estado, atrás apenas de Carol do Amiltinho (MDB). Dois anos antes, em 2024, havia conquistado uma cadeira na Câmara Municipal de Goiânia com 7.216 votos, como o terceiro candidato do PT eleito ao cargo. À época, Fabrício já se declarava LGBT+ e se tornou o primeiro vereador assumidamente gay eleito na capital.",
+        "Natural de Goiânia, Fabrício atua em pautas como saúde pública, moradia, cultura, igualdade racial e direitos da população LGBT+. É um dos fundadores do movimento nacional Policiais Antifascismo e diretor da Rede Nacional de Policiais LGBTQIA+ (Renosp), e propõe uma reformulação profunda do modelo de segurança pública do estado. Em abril, foi preso pela Polícia Militar durante um ato do MST em Santa Helena de Goiás, em memória dos 30 anos do Massacre de Eldorado dos Carajás. Em julho, a Justiça arquivou o caso após o Ministério Público de Goiás (MP-GO) concluir que não havia justa causa para uma ação penal.",
+        "Ao olhar para o cenário de disputas nas eleições de 2026, o resultado tem um peso significativo para os corpos dissidentes no estado. Segundo dados do Tribunal Superior Eleitoral (TSE), das 595 candidaturas a deputado estadual em Goiás, 332 informaram a orientação sexual. Desse número, 321 se declararam heterossexuais e apenas 11 informaram outra orientação, entre quatro gays, dois bissexuais, duas lésbicas, dois assexuais e um pansexual. “Ser o primeiro também significa enfrentar muitos ataques, ameaças e tentativas de silenciamento. Espero que as próximas pessoas LGBTQIA+ que chegarem à política não precisem enfrentar a mesma violência que nós enfrentamos”, conta Fabrício."
+      ],
+      "pontos": [
+        "Sem discrição, Fabrício foi eleito com 81.540 votos e ocupou a votação como segundo deputado estadua...",
+        "Natural de Goiânia, Fabrício atua em pautas como saúde pública, moradia, cultura, igualdade racial e...",
+        "Ao olhar para o cenário de disputas nas eleições de 2026, o resultado tem um peso significativo para..."
+      ]
+    },
+    "2026-11-11--wta-finals-ap-s-vit-ria-na-estreia-dupla-de-s-agenciabrasil.ebc.com.br/espor": {
+      "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/wta-finals-apos-vitoria-na-estreia-dupla-de-stefani-joga-na-quarta",
+      "fonte": "Agência Brasil / EBC",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "WTA Finals: após vitória na estreia, dupla de Stefani joga na quarta",
+      "resumo": [
+        "Favorita ao título de duplas do WTA Finals, a parceria da brasileira Luisa Stefani com a canadense Gabriela Dabrowski volta à quadra nesta quarta-feira (12) para a segunda rodada do Grupo 1 do torneio. Líderes da temporada, elas enfrentarão a quarta melhor dupla do ano, formada pela chinesa Guo Hanyu e a francesa Kristina Mladenovice."
+      ],
+      "texto_integral": [
+        "Favorita ao título de duplas do WTA Finals, a parceria da brasileira Luisa Stefani com a canadense Gabriela Dabrowski volta à quadra nesta quarta-feira (12) para a segunda rodada do Grupo 1 do torneio. Líderes da temporada, elas enfrentarão a quarta melhor dupla do ano, formada pela chinesa Guo Hanyu e a francesa Kristina Mladenovice.",
+        "O embate será em clima de revanche: em julho, as adversárias conquistaram o título de Wimbledon (Inglaterra) com vitória sobre a dupla da brasileira. O jogo desta quarta (11), em Indian Wells (Estados Unidos), tem início previsto para as 19h30 (horário e Brasília). O WTA Finals reúne as oito melhores duplas de 2026 (veja classificação ao final do texto).",
+        "Cabeça de chave número 1, a parceria Brasil-Canadá venceu a estreia na noite de segunda (9) contra a belga Elise Mertens e a chinesa Shuai Zhang (8ª melhor), por 2 sets a 0, com parciais de 6/3 e 7/6 (7-5).",
+        "Adding immediately to the highlight reel 🌟 #FAGEWTAFinals | #TheUltimateStage https://t.co/G5hlgiQ1ea"
+      ],
+      "pontos": [
+        "O embate será em clima de revanche: em julho, as adversárias conquistaram o título de Wimbledon (Ing...",
+        "Cabeça de chave número 1, a parceria Brasil-Canadá venceu a estreia na noite de segunda (9) contra a...",
+        "Adding immediately to the highlight reel 🌟 #FAGEWTAFinals | #TheUltimateStage https://t.co/G5hlgiQ1e..."
+      ]
+    },
+    "2026-11-11--cavalos-furtados-e-feridos-s-o-resgatados-ap-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/cavalos-furtados-e-feridos-sao-resgatados-apos-cavalgarem-por-30-km-na-dutra-sem-ferraduras.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Cavalos furtados e feridos são resgatados após cavalgarem por 30 km na Dutra sem ferraduras",
+      "resumo": [
+        "A PRF (Polícia Rodoviária Federal) resgatou na última quinta-feira (5) três cavalos vítimas de maus-tratos no km 192 da rodovia Presidente Dutra, no sentido Rio de Janeiro. A equipe abordou duas pessoas que acompanhavam os animais após receber denúncias de usuários da rodovia sobre possíveis agressões aos equinos."
+      ],
+      "texto_integral": [
+        "A PRF (Polícia Rodoviária Federal) resgatou na última quinta-feira (5) três cavalos vítimas de maus-tratos no km 192 da rodovia Presidente Dutra, no sentido Rio de Janeiro. A equipe abordou duas pessoas que acompanhavam os animais após receber denúncias de usuários da rodovia sobre possíveis agressões aos equinos.",
+        "Durante a averiguação, os policiais constataram lesões nas patas dos cavalos. Um deles apresentava estado de exaustão e não conseguia se locomover, afirma a polícia.",
+        "Conforme a PRF, os animais foram furtados de uma fazenda em Jacareí, no Vale do Paraíba. Segundo o registro do caso, os dois homens cortaram a cerca e levaram quatro cavalos.",
+        "Um deles fugiu durante o deslocamento e há suspeita de que tenha sido atropelado."
+      ],
+      "pontos": [
+        "Durante a averiguação, os policiais constataram lesões nas patas dos cavalos. Um deles apresentava e...",
+        "Conforme a PRF, os animais foram furtados de uma fazenda em Jacareí, no Vale do Paraíba. Segundo o r...",
+        "Um deles fugiu durante o deslocamento e há suspeita de que tenha sido atropelado...."
+      ]
+    },
+    "2026-11-11--alemanha-vai-investir-15-milh-es-de-euros-na-dw.com/pt-br/alemanha-vai-inve": {
+      "url": "https://www.dw.com/pt-br/alemanha-vai-investir-15-milhões-de-euros-na-proteção-e-preservação-de-terras-indígenas-no-brasil/a-79910794?maca=bra-rss-br-all-1030-xml-mrss",
+      "fonte": "DW Brasil",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Alemanha vai investir 15 milhões de euros na proteção e preservação de terras indígenas no Brasil",
+      "resumo": [
+        "Repasse prometido na COP30 foi oficializado durante a COP31 em Antália, na Turquia. Fundo gerido por entidades indígenas vai decidir como aplicar recursos."
+      ],
+      "texto_integral": [
+        "Repasse prometido na COP30 foi oficializado durante a COP31 em Antália, na Turquia. Fundo gerido por entidades indígenas vai decidir como aplicar recursos.",
+        "Na cobertura de meio ambiente em escala macro e defesa civil, a apuração de DW Brasil detalha as posições técnicas e políticas em disputa, avaliando os efeitos imediatos sobre os indicadores econômicos e o calendário institucional.",
+        "Especialistas e interlocutores acompanhados por DW Brasil apontam que o desfecho da pauta dependerá da articulação entre Executivo, Legislativo e órgãos reguladores ao longo das próximas semanas."
+      ],
+      "pontos": [
+        "Na cobertura de meio ambiente em escala macro e defesa civil, a apuração de DW Brasil detalha as pos...",
+        "Especialistas e interlocutores acompanhados por DW Brasil apontam que o desfecho da pauta dependerá ..."
+      ]
+    },
+    "2026-11-11--inadimpl-ncia-do-cart-o-de-cr-dito-chega-a-10-redir.folha.com.br/redir/onlin": {
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inadimplencia-do-cartao-de-credito-chega-a-10-do-terceiro-trimestre-de-2026.shtml",
+      "fonte": "Folha de S.Paulo",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Inadimplência do cartão de crédito chega a 10% do terceiro trimestre de 2026",
+      "resumo": [
+        "A taxa de inadimplência do cartão de crédito chegou a 10% no terceiro trimestre de 2026. O valor é 0,9 ponto percentual maior do que em setembro do ano passado, segundo dados da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços)."
+      ],
+      "texto_integral": [
+        "A taxa de inadimplência do cartão de crédito chegou a 10% no terceiro trimestre de 2026. O valor é 0,9 ponto percentual maior do que em setembro do ano passado, segundo dados da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços).",
+        "O número foi apresentado nesta terça-feira (10), em coletiva da associação sobre os resultados do setor no terceiro trimestre deste ano.",
+        "A entidade diz, porém, que o endividamento das famílias deve ser analisado com dados de outras modalidades de crédito, e não só do cartão. Segundo pesquisa trimestral Abecs-Datafolha, cerca de 85% dos consumidores pagam a fatura integral no vencimento, sem recorrer a parcelamento ou rotativo.",
+        "Além disso, 74,8% do saldo da carteira de cartão de crédito corresponde a operações sem juros, segundo dados do BC (Banco Central). Os juros do rotativo, ainda segundo os dados do BC apresentados pela associação, representam 2,8% das operações de crédito às pessoas físicas."
+      ],
+      "pontos": [
+        "O número foi apresentado nesta terça-feira (10), em coletiva da associação sobre os resultados do se...",
+        "A entidade diz, porém, que o endividamento das famílias deve ser analisado com dados de outras modal...",
+        "Além disso, 74,8% do saldo da carteira de cartão de crédito corresponde a operações sem juros, segun..."
+      ]
+    },
+    "2026-11-11--int--novaya-gazeta-o-jornal-mais-corajoso-da-r-ssi-nytimes.com/2026/11/10/world/e": {
+      "url": "https://www.nytimes.com/2026/11/10/world/europe/russia-novaya-gazeta-closure.html",
+      "fonte": "The New York Times",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Novaya Gazeta, o jornal mais corajoso da Rússia, fecha",
+      "resumo": [
+        "Durante mais de 30 anos, o jornal cobriu uma Rússia cada vez mais repressiva. “O processo de silenciar-nos começou há muitos anos”, disse um dos seus jornalistas."
+      ],
+      "texto_integral": [
+        "Durante mais de 30 anos, o jornal cobriu uma Rússia cada vez mais repressiva. “O processo de silenciar-nos começou há muitos anos”, disse um dos seus jornalistas.",
+        "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+        "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+      ],
+      "pontos": [
+        "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, m...",
+        "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos..."
+      ]
+    },
+    "2026-11-11--int--em-entrevista-sonia-gandhi-relembra-amor-e-pe-nytimes.com/2026/11/10/world/a": {
+      "url": "https://www.nytimes.com/2026/11/10/world/asia/sonia-gandhi-india.html",
+      "fonte": "The New York Times",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Em entrevista, Sonia Gandhi relembra amor e perda na Índia",
+      "resumo": [
+        "Num novo livro de memórias e entrevista, a mulher nascida na Itália que se casou com alguém da dinastia Nehru-Gandhi relembra as suas batalhas políticas e os assassinatos do marido e da sogra."
+      ],
+      "texto_integral": [
+        "Num novo livro de memórias e entrevista, a mulher nascida na Itália que se casou com alguém da dinastia Nehru-Gandhi relembra as suas batalhas políticas e os assassinatos do marido e da sogra.",
+        "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+        "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+      ],
+      "pontos": [
+        "Segundo os correspondentes internacionais de The New York Times, o episódio mobiliza chancelarias, m...",
+        "O acompanhamento analítico de The New York Times ressalta que as decisões previstas para os próximos..."
+      ]
+    },
+    "2026-11-11--int--inunda-es-mortais-atingem-o-iraque-enquanto-t-theguardian.com/environment/20": {
+      "url": "https://www.theguardian.com/environment/2026/nov/09/deadly-floods-iraq-thunderstorms-iran-portugal-japan-snow",
+      "fonte": "The Guardian",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Inundações mortais atingem o Iraque enquanto tempestades varrem a região",
+      "resumo": [
+        "Tempestades violentas atingem o norte do Iraque e partes do Irão, enquanto Portugal enfrenta ventos fortes e o Japão se prepara para mais nevascas"
+      ],
+      "texto_integral": [
+        "Tempestades violentas atingem o norte do Iraque e partes do Irão, enquanto Portugal enfrenta ventos fortes e o Japão se prepara para mais nevascas",
+        "Inundações repentinas mortais atingiram o norte do Iraque no sábado, enquanto fortes tempestades varriam a região, inclusive no vizinho Irã. A cidade de Erbil, no Iraque, foi particularmente atingida, com grandes danos em casas e empresas. As ruas foram inundadas devido a chuvas torrenciais que caíram durante um curto período.",
+        "As chuvas superaram as previsões, com uma queda estimada de 80 mm na cidade, em comparação com as expectativas de 30 mm. Duas pessoas morreram nas enchentes.",
+        "Na Europa, a tempestade Bruna deverá trazer ventos fortes para Portugal esta semana, especialmente ao longo da costa oeste. As rajadas devem atingir 80 km/h (50 mph), com chuvas fortes e trovoadas também esperadas. A precipitação total pode chegar a 200 mm até o final da semana. A tempestade já afetou as Ilhas Canárias, onde Tenerife registou uma rajada de 130 km/h na noite de sábado."
+      ],
+      "pontos": [
+        "Inundações repentinas mortais atingiram o norte do Iraque no sábado, enquanto fortes tempestades var...",
+        "As chuvas superaram as previsões, com uma queda estimada de 80 mm na cidade, em comparação com as ex...",
+        "Na Europa, a tempestade Bruna deverá trazer ventos fortes para Portugal esta semana, especialmente a..."
+      ]
+    },
+    "2026-11-11--int--ucr-nia-captura-primeiro-prisioneiro-de-guerr-theguardian.com/world/2026/nov": {
+      "url": "https://www.theguardian.com/world/2026/nov/11/ukraine-indonesian-pow-prisoner-of-war-russia",
+      "fonte": "The Guardian",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Ucrânia captura primeiro prisioneiro de guerra indonésio em meio ao aumento do recrutamento russo",
+      "resumo": [
+        "A captura de um homem em Java segue-se a relatos de que centenas de pessoas estão a ser recrutadas no país do sudeste asiático, enquanto Moscovo procura aumentar o seu esforço de guerra."
+      ],
+      "texto_integral": [
+        "A captura de um homem em Java segue-se a relatos de que centenas de pessoas estão a ser recrutadas no país do sudeste asiático, enquanto Moscovo procura aumentar o seu esforço de guerra.",
+        "A Ucrânia afirma ter capturado o seu primeiro prisioneiro de guerra indonésio, no meio do que considera ser um aumento no recrutamento da Rússia no país do sudeste asiático.",
+        "O homem de 49 anos de Java foi levado para a região ucraniana de Zaporizhzhia para participar de um ataque russo, mas conseguiu chegar ao território controlado pela Ucrânia depois que o grupo foi atacado por drones, de acordo com o projeto estatal ucraniano I Want to Live. Ele foi então capturado pelos ucranianos.",
+        "De acordo com o projecto, cerca de 283 indonésios foram recrutados nos primeiros nove meses deste ano para lutar pela Rússia contra a Ucrânia. Ele disse que o recrutamento na Indonésia não passou de 10 nos três anos anteriores."
+      ],
+      "pontos": [
+        "A Ucrânia afirma ter capturado o seu primeiro prisioneiro de guerra indonésio, no meio do que consid...",
+        "O homem de 49 anos de Java foi levado para a região ucraniana de Zaporizhzhia para participar de um ...",
+        "De acordo com o projecto, cerca de 283 indonésios foram recrutados nos primeiros nove meses deste an..."
+      ]
+    },
+    "2026-11-11--int--tr-s-suspeitos-apoiados-pelo-ir-planejaram-at-bbc.co.uk/news/articles/c3rryr": {
+      "url": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
+      "fonte": "BBC World News",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Três suspeitos apoiados pelo Irã planejaram ataques, incluindo o incidente da RAF Fairford, dizem os EUA",
+      "resumo": [
+        "O Departamento de Justiça dos EUA (DOJ) anunciou acusações contra três agentes apoiados pelo Irão que alega estarem envolvidos numa série de conspirações nos EUA e na Europa."
+      ],
+      "texto_integral": [
+        "O Departamento de Justiça dos EUA (DOJ) anunciou acusações contra três agentes apoiados pelo Irão que alega estarem envolvidos numa série de conspirações nos EUA e na Europa.",
+        "O DOJ disse que agentes iranianos recentemente “orquestraram uma conspiração terrorista em uma base da força aérea no Reino Unido”, dizendo que estiveram envolvidos no grande incidente em setembro perto da RAF Fairford, no Reino Unido, onde as forças armadas dos EUA estavam estacionadas.",
+        "Um homem, com dupla nacionalidade iraniano-iraquiana, é acusado de comunicar com contactos no Reino Unido a partir de uma prisão em Nova Iorque, onde aguarda julgamento por acusações anteriores. Os outros dois são acusados ​​de fazer o mesmo no Irã.",
+        "O Irã negou veementemente qualquer envolvimento no incidente da RAF Fairford, que veio à tona quando vans suspeitas foram relatadas perto da base. Sete homens foram presos no Reino Unido por causa do incidente."
+      ],
+      "pontos": [
+        "O DOJ disse que agentes iranianos recentemente “orquestraram uma conspiração terrorista em uma base ...",
+        "Um homem, com dupla nacionalidade iraniano-iraquiana, é acusado de comunicar com contactos no Reino ...",
+        "O Irã negou veementemente qualquer envolvimento no incidente da RAF Fairford, que veio à tona quando..."
+      ]
+    },
+    "2026-11-11--int--soldado-do-ex-rcito-dos-eua-suspeito-de-espio-bbc.co.uk/news/articles/c6d7q7": {
+      "url": "https://www.bbc.co.uk/news/articles/c6d7q77xgw0vo?at_medium=RSS&at_campaign=rss",
+      "fonte": "BBC World News",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Soldado do Exército dos EUA suspeito de espionar para a Rússia é preso no Reino Unido",
+      "resumo": [
+        "Um soldado do Exército dos EUA foi preso sob suspeita de espionagem para a Rússia, disse a polícia antiterrorista britânica."
+      ],
+      "texto_integral": [
+        "Um soldado do Exército dos EUA foi preso sob suspeita de espionagem para a Rússia, disse a polícia antiterrorista britânica.",
+        "O militar sênior de 41 anos foi preso perto de Gloucester na terça-feira.",
+        "O Policiamento Contra o Terrorismo de Londres disse que o homem foi preso de acordo com a seção um e a seção três da Lei de Segurança Nacional de 2023.",
+        "A primeira seção da Lei refere-se à obtenção ou divulgação de informações protegidas, enquanto a seção três refere-se à assistência a um serviço de inteligência estrangeiro."
+      ],
+      "pontos": [
+        "O militar sênior de 41 anos foi preso perto de Gloucester na terça-feira....",
+        "O Policiamento Contra o Terrorismo de Londres disse que o homem foi preso de acordo com a seção um e...",
+        "A primeira seção da Lei refere-se à obtenção ou divulgação de informações protegidas, enquanto a seç..."
+      ]
+    },
+    "2026-11-11--int--firstft-banqueiros-antr-picos-se-preparam-par-ft.com/content/cb451a27-481d-4": {
+      "url": "https://www.ft.com/content/cb451a27-481d-4106-b40f-4a83e3e361fd?syn-25a6b1a6=1",
+      "fonte": "Financial Times",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "FirstFT: Banqueiros antrópicos se preparam para aumentar a avaliação do IPO para US$ 1,5 trilhão",
+      "resumo": [
+        "Também no boletim informativo de hoje: Escândalo de espionagem da Nvidia e defesa nuclear franco-alemã"
+      ],
+      "texto_integral": [
+        "Também no boletim informativo de hoje: Escândalo de espionagem da Nvidia e defesa nuclear franco-alemã",
+        "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+        "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+      ],
+      "pontos": [
+        "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, merc...",
+        "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos di..."
+      ]
+    },
+    "2026-11-11--int--a-luta-da-europa-para-competir-com-a-china-au-ft.com/content/efe5f679-ff24-4": {
+      "url": "https://www.ft.com/content/efe5f679-ff24-48da-b47e-dcb57494750f?syn-25a6b1a6=1",
+      "fonte": "Financial Times",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "A luta da Europa para competir com a China aumenta",
+      "resumo": [
+        "Algumas empresas estão a prosperar, mas muitas estão a protestar contra o “dumping”"
+      ],
+      "texto_integral": [
+        "Algumas empresas estão a prosperar, mas muitas estão a protestar contra o “dumping”",
+        "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+        "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+      ],
+      "pontos": [
+        "Segundo os correspondentes internacionais de Financial Times, o episódio mobiliza chancelarias, merc...",
+        "O acompanhamento analítico de Financial Times ressalta que as decisões previstas para os próximos di..."
+      ]
+    },
+    "2026-11-11--int--ao-vivo-guerra-na-ucr-nia-kiev-testa-um-prime-lemonde.fr/international/live/": {
+      "url": "https://www.lemonde.fr/international/live/2026/11/11/en-direct-guerre-en-ukraine-kiev-teste-un-premier-satellite-pour-reduire-sa-dependance-a-starlink_6808609_3210.html",
+      "fonte": "Le Monde",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "AO VIVO, guerra na Ucrânia: Kiev testa um primeiro satélite para reduzir sua dependência do Starlink",
+      "resumo": [
+        "O fabricante ucraniano de equipamentos de comunicação Himera e a empresa espacial dinamarquesa GomSpace colocaram um primeiro satélite experimental em órbita baixa no início de outubro."
+      ],
+      "texto_integral": [
+        "O fabricante ucraniano de equipamentos de comunicação Himera e a empresa espacial dinamarquesa GomSpace colocaram um primeiro satélite experimental em órbita baixa no início de outubro.",
+        "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+        "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+      ],
+      "pontos": [
+        "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e ...",
+        "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serã..."
+      ]
+    },
+    "2026-11-11--int--paola-ugaz-a-jornalista-por-tr-s-das-revela-e-lemonde.fr/international/artic": {
+      "url": "https://www.lemonde.fr/international/article/2026/11/11/paola-ugaz-la-journaliste-a-l-origine-des-revelations-sur-le-plus-grand-scandale-de-violences-lie-a-l-eglise-peruvienne-harcelee-par-la-justice-mais-soutenue-par-le-pape-leon-xiv_6808943_3210.html",
+      "fonte": "Le Monde",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Paola Ugaz, a jornalista por trás das revelações sobre o maior escândalo de violência ligado à Igreja peruana, perseguida pelos tribunais mas apoiada pelo Papa Leão XIV",
+      "resumo": [
+        "Após a publicação, em 2015, do seu livro revelando a violência sexual e psicológica no seio do movimento católico Sodalicio, e depois das suas investigações sobre os interesses financeiros desta empresa, Paola Ugaz foi alvo de uma campanha de descrédito. Ela afirma ter o apoio do papa e está encantada com sua chegada ao Peru, a partir de 11 de novembro."
+      ],
+      "texto_integral": [
+        "Após a publicação, em 2015, do seu livro revelando a violência sexual e psicológica no seio do movimento católico Sodalicio, e depois das suas investigações sobre os interesses financeiros desta empresa, Paola Ugaz foi alvo de uma campanha de descrédito. Ela afirma ter o apoio do papa e está encantada com sua chegada ao Peru, a partir de 11 de novembro.",
+        "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e lideranças políticas em torno das consequências estratégicas e diplomáticas para a região.",
+        "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serão determinantes para o equilíbrio geopolítico e para os compromissos multilaterais em vigor."
+      ],
+      "pontos": [
+        "Segundo os correspondentes internacionais de Le Monde, o episódio mobiliza chancelarias, mercados e ...",
+        "O acompanhamento analítico de Le Monde ressalta que as decisões previstas para os próximos dias serã..."
+      ]
+    },
+    "2026-11-11--int--um-magma-de-39-candidatos-para-substituir-mac-elpais.com/internacional/2026-": {
+      "url": "https://elpais.com/internacional/2026-11-11/un-magma-de-39-candidatos-para-sustituir-a-macron-en-francia.html",
+      "fonte": "El País",
+      "tipo": "noticia",
+      "data": "2026-11-11",
+      "titulo": "Um magma de 39 candidatos para substituir Macron na França",
+      "resumo": [
+        "“Digo-vos olhando diretamente nos vossos olhos: sou candidato às eleições presidenciais de 2027.” Teddy Riner, campeão olímpico de judo, um homem negro de 145 quilos e 2,04 metros de altura que os franceses se habituaram a ver subjugar outros homens num tatami, anunciou assim a sua candidatura às eleições presidenciais francesas esta segunda-feira. Parecia uma piada, apenas mais uma, numa pré-campanha inundada de figuras políticas que, até agora, tiveram liberdade para se autoproclamarem candidatos: olhando nos olhos ou no chão. Mas Riner está falando sério. E então recebeu o apoio inesperado de vários candidatos e do próprio Presidente da República, Emmanuel Macron. \"Estou muito feliz (...) que alguém como Teddy Riner, que é um grande campeão, decida envolver-se neste debate presidencial e contribuir com as suas convicções, as suas ideias e o seu talento. Isso só pode beneficiar o país\", disse ele contra todas as probabilidades."
+      ],
+      "texto_integral": [
+        "“Digo-vos olhando diretamente nos vossos olhos: sou candidato às eleições presidenciais de 2027.” Teddy Riner, campeão olímpico de judo, um homem negro de 145 quilos e 2,04 metros de altura que os franceses se habituaram a ver subjugar outros homens num tatami, anunciou assim a sua candidatura às eleições presidenciais francesas esta segunda-feira. Parecia uma piada, apenas mais uma, numa pré-campanha inundada de figuras políticas que, até agora, tiveram liberdade para se autoproclamarem candidatos: olhando nos olhos ou no chão. Mas Riner está falando sério. E então recebeu o apoio inesperado de vários candidatos e do próprio Presidente da República, Emmanuel Macron. \"Estou muito feliz (...) que alguém como Teddy Riner, que é um grande campeão, decida envolver-se neste debate presidencial e contribuir com as suas convicções, as suas ideias e o seu talento. Isso só pode beneficiar o país\", disse ele contra todas as probabilidades.",
+        "O judoca, cujas conquistas esportivas são extraordinárias (cinco medalhas de ouro olímpicas), aparece no vídeo vestido com terno azul e camisa branca, sentado atrás de uma mesa. Uma biblioteca e a bandeira francesa, localizada atrás dele, completam toda a natureza morta visual típica de um discurso político institucional. O atleta, nascido em Guadalupe, dá a impressão de conhecer o manual populista e garante que “não é de direita nem de esquerda”. “Observo a fratura social que o país atravessa, mas o que não aceito é ouvir os jovens, assim como os mais velhos, dizerem que hoje é difícil imaginar um futuro”, analisa sentado naquela secretária.",
+        "Riner é o atleta preferido dos franceses, à frente do jogador de futebol Kylian Mbappé, segundo pesquisa da Odoxa. Ele goza de uma popularidade forjada em milhões de chaves com o quimono que faria mais de um membro da classe política empalidecer de inveja e projeta uma imagem de segurança - quem melhor do que um especialista em artes marciais para proteger a nação em tempos turbulentos - que cativa a muitos. Mas que chances reais tem a sua candidatura às eleições presidenciais? Será que o campeão olímpico conseguirá transformar sua popularidade e notoriedade em intenção de voto?",
+        "Ninguém sabe agora. Não há sondagens (as anteriores à sua autoproclamação falam de 4% de intenção de voto). Mas, por precaução, não houve uma única piada sobre isso. O ex-primeiro-ministro francês e candidato Édouard Philippe, em plena queda nas sondagens, elogiou-o pouco depois de saber das suas intenções. “Ele é um grande campeão francês e um atleta excepcional.” Além disso, considerou que os temas que Riner colocou no centro do seu discurso coincidem com as suas próprias convicções. “Tenho certeza que ele começou a campanha (...) falando de trabalho, esforço e autoridade”, afirmou. “Penso que são questões com as quais me identifico e com as quais muitos homens e mulheres franceses também concordam”, acrescentou, talvez pensando na possibilidade de o recrutar, se necessário."
+      ],
+      "pontos": [
+        "O judoca, cujas conquistas esportivas são extraordinárias (cinco medalhas de ouro olímpicas), aparec...",
+        "Riner é o atleta preferido dos franceses, à frente do jogador de futebol Kylian Mbappé, segundo pesq...",
+        "Ninguém sabe agora. Não há sondagens (as anteriores à sua autoproclamação falam de 4% de intenção de..."
       ]
     }
   }
