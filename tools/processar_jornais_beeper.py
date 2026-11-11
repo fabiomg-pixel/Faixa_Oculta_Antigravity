@@ -619,17 +619,24 @@ def extrair_estrutura_jornal_automatica(item, img_rel_path):
         if not cand_tit:
             cand_tit = linhas[0][:120]
 
-        # Reconstruir 3 parágrafos densos a partir do corpo da página
+        # Reconstruir parágrafos a partir de sentenças completas
         frases = " ".join(linhas[1:35])
+        sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", frases) if len(s.strip()) >= 25]
         blocos = []
-        palavras = frases.split()
-        passo = max(45, min(75, len(palavras) // 3 if len(palavras) >= 120 else 55))
-        for i in range(0, min(len(palavras), passo * 3), passo):
-            trecho = " ".join(palavras[i:i + passo]).strip()
-            if len(trecho) > 80:
-                if not trecho.endswith("."):
-                    trecho += "."
-                blocos.append(trecho)
+        cur_p = []
+        cur_len = 0
+        for s in sents:
+            cur_p.append(s)
+            cur_len += len(s)
+            if cur_len >= 190 or len(cur_p) >= 3:
+                blocos.append(" ".join(cur_p))
+                cur_p = []
+                cur_len = 0
+        if cur_p:
+            if blocos and cur_len < 100:
+                blocos[-1] = blocos[-1] + " " + " ".join(cur_p)
+            else:
+                blocos.append(" ".join(cur_p))
 
         if not blocos:
             continue
