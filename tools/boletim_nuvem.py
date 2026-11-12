@@ -205,10 +205,10 @@ def traduzir_texto(texto, de="auto", para="pt"):
     except Exception:
         pass
 
-    # Fallback via API do Gemini (gemini-4-argon / gemini-3.8-flash) em caso de falha ou rate-limit (HTTP 429)
+    # Fallback via API do Gemini (gemini-4-hydrogen / gemini-4-argon / gemini-3.8-flash) em caso de falha ou rate-limit (HTTP 429)
     api_key = _obter_gemini_key()
     if api_key:
-        for modelo_gemini in ("gemini-4-argon", "gemini-3.8-flash"):
+        for modelo_gemini in ("gemini-4-hydrogen", "gemini-4-argon", "gemini-3.8-flash"):
             try:
                 g_url = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo_gemini}:generateContent?key={api_key}"
                 payload = {

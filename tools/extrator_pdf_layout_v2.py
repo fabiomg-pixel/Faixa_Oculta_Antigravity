@@ -698,7 +698,7 @@ def chamar_gemini_estruturado_jornal(veiculo, escopo, data_iso, dados_layout):
         f"{json.dumps(resumo_dump, ensure_ascii=False)}"
     )
 
-    modelos = ["gemini-4-argon", "gemini-3.8-flash", "gemini-2.5-flash"]
+    modelos = ["gemini-4-hydrogen", "gemini-4-argon", "gemini-3.8-flash", "gemini-2.5-flash"]
     for mod in modelos:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{mod}:generateContent?key={api_key}"
         payload = {

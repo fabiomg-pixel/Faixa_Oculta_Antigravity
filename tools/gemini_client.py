@@ -23,7 +23,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-MODEL_PRO = "gemini-4-argon"
+MODEL_PRO = "gemini-4-hydrogen"
 MODEL_FLASH = "gemini-3.8-flash"
 API_BASE = "https://generativelanguage.googleapis.com/v1beta"
 
