@@ -45429,7 +45429,11 @@
           "quando": "18h00",
           "o_que": "Balanço das apurações do dia e edição da noite da Faixa Oculta."
         }
-      ]
+      ],
+      "audio": "audios/boletim_2026-11-13.mp3",
+      "audio_duracao": "5:00",
+      "audio_tamanho": 8707536,
+      "audio_titulo": "Boletim em Áudio · 13 de novembro de 2026"
     }
   },
   "cine_edicoes": {
