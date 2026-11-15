@@ -98,44 +98,75 @@ def gerar_edicao_semanal_dinamica(db, inicio_iso, fim_iso):
             })
         temas.append({
             "id": f"sem-{fim_iso}-t{len(temas)+1}",
-            "area": n.get("categoria", "Política & Economia"),
+            "editoria": n.get("categoria", "Política & Economia"),
             "titulo": tit,
+            "linha_fina": n.get("resumo", ""),
             "resumo": paras if isinstance(paras, list) else [ str(paras) ],
+            "por_que_importa": n.get("por_que_importa") or n.get("resumo_visoes") or "",
             "vieses": n.get("resumo_visoes") or "Divergência entre a leitura fiscalista de mercado e a ênfase social e institucional das bancadas e cortes superiores.",
             "o_que_falta": n.get("aprofundamento") or "A cobertura diária concentrou-se no embate imediato, deixando em segundo plano os efeitos estruturais de médio prazo.",
-            "acompanhar": "Desdobramentos nas votações do Congresso Nacional, decisões do STF e reação dos indicadores macroeconômicos na próxima semana.",
-            "aprofundar": n.get("aprofundamento") or paras[-1],
+            "perguntas": [
+                "Quais serão os desdobramentos nas votações do Congresso e decisões das cortes na próxima semana?"
+            ],
+            "aprofundar": {
+                "o_que_esta_em_jogo": n.get("aprofundamento") or paras[-1],
+                "pontos_chave": [n.get("resumo", "")],
+                "contexto_historico": ""
+            },
             "cobertura": cobertura
         })
 
     # Trilha sonora sugerida a partir dos discos da edição atual
-    itens_musica = list(db.get("itens", {}).values())[:4]
-    trilha = []
+    itens_musica = [it for it in db.get("itens", {}).values() if it.get("tipo") == "musica"][:4]
+    if not itens_musica:
+        itens_musica = list(db.get("itens", {}).values())[:4]
+    trilha_albuns = []
     for it in itens_musica:
-        trilha.append({
+        trilha_albuns.append({
             "artista": it.get("artista", ""),
             "album": it.get("album", ""),
-            "genero": it.get("genero", "Indie / Alternativo"),
-            "capa": it.get("capa", ""),
-            "motivo": it.get("tese") or "Disco ideal para acompanhar a leitura analítica de fim de semana.",
-            "spotify_url": it.get("spotify_url", "")
+            "ano": str(it.get("ano", "2026")),
+            "estilo": it.get("genero", "Indie / Alternativo"),
+            "por_que_ouvir": it.get("tese") or "Disco ideal para acompanhar a leitura analítica de fim de semana."
         })
+    trilha = {
+        "titulo": "Trilha sonora para o fim de semana e leitura da revista",
+        "descricao": "Álbuns selecionados para acompanhar a leitura pausada das análises e revistas da semana.",
+        "albuns": trilha_albuns
+    }
+
+    # Preserva bloco de revistas se já existir para a edição ou em edições anteriores próximas
+    prev_sem = db.get("semanas", {}).get(fim_iso, {})
+    revistas_bloco = prev_sem.get("revistas")
 
     # Roteiro de fim de semana a partir da agenda ativa do Rio
     ev_agenda = db.get("agenda", {}).get("atual", {}).get("eventos", [])[:6]
+    fds_lista = []
+    for ev in ev_agenda:
+        fds_lista.append({
+            "evento": ev.get("id"),
+            "titulo": ev.get("titulo"),
+            "onde": ev.get("onde") or ev.get("local", "Rio de Janeiro"),
+            "quando": ev.get("quando") or ev.get("data", "Fim de semana"),
+            "nota": ev.get("sinopse") or ev.get("resumo") or ""
+        })
 
-    return {
+    out_sem = {
+        "id": fim_iso,
         "inicio": inicio_iso,
         "fim": fim_iso,
         "titulo": f"Síntese da Semana · {inicio_iso[8:10]}/{inicio_iso[5:7]} a {fim_iso[8:10]}/{fim_iso[5:7]}/{fim_iso[:4]}",
-        "panorama": [
-            f"A semana de {inicio_iso} a {fim_iso} foi marcada pelo cruzamento entre as tensões fiscais e institucionais em Brasília e os realinhamentos geopolíticos e econômicos globais.",
-            "Nesta edição semanal, confrontamos os enquadramentos dos principais diários brasileiros e internacionais com os ensaios de fôlego das revistas semanais."
-        ],
+        "panorama": (
+            f"A semana de {inicio_iso} a {fim_iso} foi marcada pelo cruzamento entre as tensões fiscais e institucionais em Brasília "
+            "e os realinhamentos geopolíticos e econômicos globais, confrontando a cobertura dos diários com os ensaios das revistas semanais."
+        ),
         "temas": temas,
         "trilha_sugerida": trilha,
-        "fim_de_semana": ev_agenda
+        "fim_de_semana": fds_lista
     }
+    if revistas_bloco:
+        out_sem["revistas"] = revistas_bloco
+    return out_sem
 
 
 def montar_edicao_semanal_atual(db=None):

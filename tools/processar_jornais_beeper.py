@@ -84,33 +84,38 @@ PAISES_POR_JORNAL = {
 PERFIS_CONFIG = {
     "diario": {
         "nacional": [
-            ("Folha de S.Paulo", ["folha de s paulo", "folha de s.paulo", "folha de sp", "folha de são paulo", "folha de sao paulo", "folha"]),
-            ("O Estado de S. Paulo", ["estado de s paulo", "estadao", "estadão"]),
-            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd", "o globo"]),
-            ("Valor Econômico", ["valor econômico", "valor economico", "valor"])
+            ("Folha de S.Paulo", ["folha de s paulo", "folha de s.paulo", "folha de sp", "folha de são paulo", "folha de sao paulo"]),
+            ("O Estado de S. Paulo", ["estado de s paulo", "estado de s.paulo", "estadao", "estadão"]),
+            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd", "o globo -  hd"]),
+            ("Valor Econômico", ["valor econômico", "valor economico"])
         ],
         "internacional": [
             ("Financial Times", ["financial times", "ft us", "ft uk", "ft eu", "ft me", "ft asia", "ft europe"]),
             ("The Washington Post", ["the washington post", "washington post", "the-washington-post"]),
-            ("The Guardian", ["the guardian", "the-guardian", "guardian journal", "the observer"]),
-            ("The Times UK", ["the times uk", "the-times-uk", "the times -", "the times"]),
+            ("The Guardian", ["the guardian", "the-guardian", "guardian uk", "the observer"]),
+            ("The Times UK", ["the times uk", "the-times-uk", "the times -"]),
+            ("The New York Times", ["nyt ", "nyt_", "the new york times", "the-new-york-times"]),
             ("Le Monde", ["le monde", "lemonde", "le-monde"])
         ]
     },
     "semana": {
         "nacional": [
             ("Revista Piauí", ["piauí", "piaui"]),
-            ("Revista CartaCapital", ["carta capital", "cartacapital"]),
-            ("Valor Econômico EU&", ["eu&", "valor econômico- eu&"])
+            ("CartaCapital", ["carta capital", "cartacapital"]),
+            ("Valor Econômico EU&", ["eu&", "valor econômico- eu&", "valor econômico‐ eu&"]),
+            ("Veja", ["veja digital", "revista veja-"]),
+            ("Revista Fórum", ["revista forum", "revista fórum"])
         ],
         "internacional": [
             ("The Economist", ["the economist"]),
             ("Foreign Affairs", ["foreign affairs", "foreign-affairs"]),
             ("The New Yorker", ["the new yorker"]),
+            ("The New York Times Magazine", ["nyt magazine", "nytimes magazine"]),
+            ("The Observer", ["the observer"]),
+            ("FT Weekend Magazine", ["ft weekend", "ft magazine", "weekend magazine"]),
             ("Time", ["time magazine", "time -", "time_"]),
             ("Newsweek", ["newsweek"]),
-            ("FT Weekend", ["ft weekend", "weekend magazine"]),
-            ("WSJ Weekend", ["wsj weekend", "wall street journal weekend"])
+            ("NYT Book Review", ["nytbr", "book review"])
         ]
     },
     "cultura": {
@@ -124,6 +129,11 @@ PERFIS_CONFIG = {
         ]
     }
 }
+
+EXCLUSOES_DIARIO = (
+    "magazine", "style", "nytbr", "book review", "sunday sections",
+    "how to spend it", "piracicaba", "pernambuco", "barra", "niteroi", "niterói", "ela-"
+)
 
 PADROES_CABECALHO_LIXO = [
     r"^(segunda|terça|quarta|quinta|sexta|sábado|domingo)[- ]?(feira)?\b",
@@ -445,7 +455,7 @@ def download_file(src_url):
             "Content-Type": "application/json"
         }
     )
-    with urllib.request.urlopen(req, timeout=45) as resp:
+    with urllib.request.urlopen(req, timeout=150) as resp:
         res = json.loads(resp.read().decode("utf-8"))
         local_url = res.get("srcURL", "")
         clean_path = local_url.replace("file://", "").replace("%20", " ")
@@ -715,7 +725,13 @@ def publicar_banca_jornais(digest_resultado):
         if tem_fitz and src and os.path.exists(src):
             try:
                 doc = fitz.open(src)
-                pix = doc[0].get_pixmap(dpi=120)
+                capa_idx = 0
+                if len(doc) >= 3:
+                    t0 = len((doc[0].get_text() or "").strip())
+                    t2 = len((doc[2].get_text() or "").strip())
+                    if t0 < 120 and t2 > 400:
+                        capa_idx = 2
+                pix = doc[capa_idx].get_pixmap(dpi=120)
                 tmp_png = f"/tmp/{h}.png"
                 pix.save(tmp_png)
                 img = Image.open(tmp_png).convert("RGB")
@@ -859,9 +875,12 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
 
     for escopo, veiculos in cfg.items():
         for nome_veiculo, kws in veiculos:
+            import unicodedata
             candidatos = []
             for pub in all_pubs:
-                fn_lower = pub["arquivo"].lower()
+                fn_lower = unicodedata.normalize("NFC", pub["arquivo"].lower())
+                if perfil_nome == "diario" and any(exc in fn_lower for exc in EXCLUSOES_DIARIO):
+                    continue
                 if any(kw in fn_lower for kw in kws):
                     candidatos.append(pub)
 
@@ -887,7 +906,8 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
                 log(f"  [!] {nome_veiculo} ({escopo}): Nenhuma edição recente encontrada no Beeper.")
                 continue
 
-            candidatos.sort(key=lambda x: (1 if x.get("baixado") else 0, x["timestamp"]), reverse=True)
+            # Prioriza SEMPRE a edição mais recente por data/timestamp; 'baixado' é apenas desempate
+            candidatos.sort(key=lambda x: (x["data_msg"][:10], x["timestamp"], 1 if x.get("baixado") else 0), reverse=True)
             top = candidatos[0]
             log(f"  -> {nome_veiculo} ({escopo}): '{top['arquivo']}' ({top['data_msg']})")
 
