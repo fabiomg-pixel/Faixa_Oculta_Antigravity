@@ -37,12 +37,18 @@ PRESS_ROOMS = [
     "!iq3RLvh1JnfH6vJzkvaL:beeper.local",  # Jornais BR
     "!Q3EN2ZSkzkir8tYnRU7t:beeper.local",  # International Newspapers
     "!tFgakhGBTv3CNjiYMdkM:beeper.local",  # Jornais e Revistas 4.0
+    "!CKYQw8EzDcJJW9ZBUqB7:beeper.local",  # IELTS Newspapers & Magazines
+    "!I86rARDr2VolnIjl9pki:beeper.local",  # Jornais e Revistas 3.0
+    "!0nZuyBr37onTMYp69CUi:beeper.local",  # Revista Jacobina
 ]
 
 KNOWN_ROOM_NAMES = {
     "!iq3RLvh1JnfH6vJzkvaL:beeper.local": "Jornais BR",
     "!Q3EN2ZSkzkir8tYnRU7t:beeper.local": "International Newspapers",
-    "!tFgakhGBTv3CNjiYMdkM:beeper.local": "Jornais e Revistas 4.0"
+    "!tFgakhGBTv3CNjiYMdkM:beeper.local": "Jornais e Revistas 4.0",
+    "!CKYQw8EzDcJJW9ZBUqB7:beeper.local": "IELTS Newspapers & Magazines",
+    "!I86rARDr2VolnIjl9pki:beeper.local": "Jornais e Revistas 3.0",
+    "!0nZuyBr37onTMYp69CUi:beeper.local": "Revista Jacobina",
 }
 
 SITES_OFICIAIS = {
@@ -394,11 +400,11 @@ def list_publications(room_key=None, limit=50):
 
     target_rooms = PRESS_ROOMS
     if room_key == "nacional":
-        target_rooms = ["!iq3RLvh1JnfH6vJzkvaL:beeper.local"]
+        target_rooms = ["!iq3RLvh1JnfH6vJzkvaL:beeper.local", "!I86rARDr2VolnIjl9pki:beeper.local"]
     elif room_key == "internacional":
-        target_rooms = ["!Q3EN2ZSkzkir8tYnRU7t:beeper.local"]
+        target_rooms = ["!Q3EN2ZSkzkir8tYnRU7t:beeper.local", "!CKYQw8EzDcJJW9ZBUqB7:beeper.local"]
     elif room_key == "revistas":
-        target_rooms = ["!tFgakhGBTv3CNjiYMdkM:beeper.local"]
+        target_rooms = PRESS_ROOMS
 
     conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
     cur = conn.cursor()
@@ -549,7 +555,7 @@ try? handler.perform([request])
     with open(tmp_swift, "w") as f:
         f.write(swift_script)
 
-    for page_idx in range(min(total_pages, 8)):
+    for page_idx in range(min(total_pages, min(max_pages, 12))):
         page = doc[page_idx]
         pix = page.get_pixmap(dpi=150)
         tmp_img = f"/tmp/page_{page_idx+1}.png"
@@ -653,9 +659,10 @@ def extrair_estrutura_jornal_automatica(item, img_rel_path):
 
         tit_final = traduzir_pt(cand_tit) if eh_int else cand_tit
         blocos_finais = [traduzir_pt(b) for b in blocos[:3]] if eh_int else blocos[:3]
-        pontos = [blocos_finais[0][:160]]
-        if len(blocos_finais) > 1:
-            pontos.append(blocos_finais[1][:160])
+        pontos = []
+        for blk in blocos_finais[:2]:
+            primeira = re.split(r"(?<=[.!?])\s+", blk.strip())[0]
+            pontos.append(primeira if len(primeira) <= 220 else primeira[:217].rsplit(" ", 1)[0] + "...")
 
         if idx_p == 0:
             manchete_principal = tit_final

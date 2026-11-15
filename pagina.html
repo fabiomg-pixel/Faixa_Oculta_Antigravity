@@ -3081,7 +3081,7 @@ dialog.texto.convite-dlg {
       reps.length ? [
         h("h4", { class: "lt-divisor-tit", style: "margin:32px 0 12px;text-transform:uppercase;font-size:12px;letter-spacing:.06em;color:var(--sec, var(--red));" }, isRevista ? `Principais Reportagens, Ensaios & Seções de ${nomePub}` : `Principais Reportagens & Cadernos de ${nomePub}`),
         ...reps.map((r, idx) => {
-          const paras = arr(r.texto_integral && r.texto_integral.length ? r.texto_integral : r.resumo);
+          const paras = arr(r.texto_integral && r.texto_integral.length ? r.texto_integral : (r.texto && r.texto.length ? r.texto : r.resumo));
           return h("article", { id: `jr-rep-${idx}`, class: "lt-fonte-bloco", style: "border-top:2px solid var(--lt-rule, var(--rule));padding:22px 0 16px;margin-top:20px;scroll-margin-top:24px;" },
             h("div", { class: "lt-meta mono", style: "margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;" },
               h("span", null, h("b", null, str(r.caderno || "Reportagem")), r.pagina ? ` · Pág. ${str(r.pagina)}` : "", r.autor ? ` · ${str(r.autor)}` : ""),
