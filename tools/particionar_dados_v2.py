@@ -338,13 +338,30 @@ def particionar_dados(caminho_revista="data/revista.json", base_dir="data"):
         json.dump(boot_obj, f, ensure_ascii=False, separators=(",", ":"))
 
     tamanho_boot = os.path.getsize(boot_path)
-    # Caso o boletim inicial + jornais exceda 148 KB, enxuga os resumos secundários de reportagens no boot
+    # Caso o boletim inicial + jornais exceda 148 KB, enxuga apenas o espelho inicial no boot
+    # (os dados 100% integrais permanecem preservados em data/dias/<id>.json e hidratam o Modo Leitor).
     if tamanho_boot > 148 * 1024 and isinstance(boot_obj["hoje_inicial"].get("jornais"), dict):
-        for m in boot_obj["hoje_inicial"]["jornais"].get("manchetes", []):
+        jornais_boot = boot_obj["hoje_inicial"]["jornais"]
+        for m in jornais_boot.get("manchetes", []):
+            re_val = m.get("resumo_edicao")
+            if isinstance(re_val, list) and re_val:
+                m["resumo_edicao"] = [str(re_val[0])[:160]]
+            elif isinstance(re_val, str) and len(re_val) > 160:
+                m["resumo_edicao"] = re_val[:157] + "..."
+            ed = m.get("editorial")
+            if isinstance(ed, dict):
+                ed.pop("texto", None)
+                if ed.get("texto_integral"):
+                    ed["texto_integral"] = [str(ed["texto_integral"][0])[:140]]
             for rep in m.get("reportagens", []):
                 rep.pop("pontos", None)
+                rep.pop("texto", None)
+                rep.pop("citacao", None)
+                rep.pop("lide", None)
+                rep.pop("titulo_original", None)
                 if rep.get("texto_integral"):
-                    rep["texto_integral"] = [rep["texto_integral"][0][:220]]
+                    rep["texto_integral"] = [str(rep["texto_integral"][0])[:140]]
+        jornais_boot["leitura"] = []
         with open(boot_path, "w", encoding="utf-8") as f:
             json.dump(boot_obj, f, ensure_ascii=False, separators=(",", ":"))
         tamanho_boot = os.path.getsize(boot_path)

@@ -883,7 +883,7 @@ def extrair_editorial_edicao(paginas, veiculo, eh_int):
         if not cand_tit:
             continue
 
-        pars = format_story_paragraphs(cand_blocos[:4], max_paragraphs=2)
+        pars = format_story_paragraphs(cand_blocos[:14], max_paragraphs=12)
         if pars:
             t_pt = traduzir_texto_pt(cand_tit) if eh_int else cand_tit
             pars_pt = [traduzir_texto_pt(p) for p in pars] if eh_int else pars
@@ -925,7 +925,7 @@ def extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int):
     if not cand_tit:
         return None
 
-    pars = format_story_paragraphs(corpo_blocos[:5], max_paragraphs=4)
+    pars = format_story_paragraphs(corpo_blocos[:20], max_paragraphs=18)
     if not pars:
         return None
 
@@ -940,7 +940,7 @@ def extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int):
         "titulo": t_pt,
         "titulo_original": t_orig,
         "lide": pars_pt[0],
-        "texto": pars_pt[:3],
+        "texto": pars_pt[:6],
         "texto_integral": pars_pt,
         "pontos": extrair_pontos_chave(pars_pt)
     }
@@ -1096,7 +1096,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
                 matched_blocks.sort(key=lambda item: item[0])
 
             raw_texts = [m[2] for m in matched_blocks]
-            pars = format_story_paragraphs(raw_texts, max_paragraphs=4)
+            pars = format_story_paragraphs(raw_texts, max_paragraphs=18)
             if pars:
                 t_pt = traduzir_texto_pt(t_txt) if eh_int else t_txt
                 t_orig = t_txt if eh_int else None
@@ -1119,7 +1119,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
                     "titulo": t_pt,
                     "titulo_original": t_orig,
                     "lide": lide,
-                    "texto": pars_pt[:3],
+                    "texto": pars_pt[:6],
                     "texto_integral": pars_pt,
                     "pontos": pontos
                 })
@@ -1151,7 +1151,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
                                 break
                     if len(textos_apoio) >= 3:
                         break
-            pars = format_story_paragraphs(textos_apoio, max_paragraphs=3) if textos_apoio else [f"Edição de {veiculo} com foco nos principais fatos do dia."]
+            pars = format_story_paragraphs(textos_apoio, max_paragraphs=12) if textos_apoio else [f"Edição de {veiculo} com foco nos principais fatos do dia."]
             t_pt = traduzir_texto_pt(t_capa) if eh_int else t_capa
             t_orig = t_capa if eh_int else None
             pars_pt = [traduzir_texto_pt(p) for p in pars] if eh_int else pars
@@ -1162,7 +1162,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
                 "titulo": t_pt,
                 "titulo_original": t_orig,
                 "lide": pars_pt[0],
-                "texto": pars_pt[:3],
+                "texto": pars_pt[:6],
                 "texto_integral": pars_pt,
                 "pontos": extrair_pontos_chave(pars_pt)
             })

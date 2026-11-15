@@ -31,22 +31,50 @@ FRASES_BOILERPLATE_PROIBIDAS = [
 ]
 
 # Marcadores léxicos exclusivos de textos não traduzidos em inglês, espanhol ou francês
+# (exclui homógrafos do português como durante, contra, desde, mais, entre)
 REGEX_IDIOMA_ESTRANGEIRO = re.compile(
     r"\b("
     r"the|and|with|from|that|this|have|would|after|their|which|while|between|against|under|"
-    r"según|también|después|durante|contra|gobierno|aunque|mientras|hacia|desde|"
-    r"dans|avec|pour|cette|sont|mais|comme|plus|entre|après|contre"
+    r"según|también|después|gobierno|aunque|mientras|hacia|"
+    r"dans|avec|pour|cette|sont|comme|après"
     r")\b",
+    re.I,
+)
+REGEX_STOPWORDS_PT = re.compile(
+    r"\b(de|da|do|das|dos|que|não|para|com|uma|em|os|as|na|no|por|seu|sua|pelo|pela|aos|entre|mais|foi|são)\b",
     re.I,
 )
 
 
 def _eh_texto_estrangeiro(texto):
-    """Detecta se uma frase/parágrafo permaneceu em inglês, espanhol ou francês (4+ stopwords estrangeiras)."""
+    """Detecta se uma frase/parágrafo permaneceu em inglês, espanhol ou francês sem falsos positivos em PT."""
     if not texto:
         return False
-    hits = REGEX_IDIOMA_ESTRANGEIRO.findall(texto)
-    return len(hits) >= 4
+    hits = len(REGEX_IDIOMA_ESTRANGEIRO.findall(texto))
+    if hits < 4:
+        return False
+    pt_hits = len(REGEX_STOPWORDS_PT.findall(texto))
+    return hits >= pt_hits or (len(texto) < 120 and hits >= 4)
+
+
+def _validar_reportagem_leitor(r, rotulo, problemas):
+    """Valida profundidade integral, pontos não duplicados, tradução PT-BR e ausência de ruído de UI."""
+    ti = r.get("texto_integral") or []
+    pts = r.get("pontos") or []
+    tit_r = (r.get("titulo") or "").strip()
+    if not ti or sum(len(str(p).strip()) for p in ti) < 150:
+        problemas.append(f"{rotulo}: texto_integral ausente ou truncado (<150 chars)")
+    if not pts:
+        problemas.append(f"{rotulo}: pontos ausentes")
+    elif ti:
+        p0_norm = re.sub(r"\s+", " ", str(pts[0]).strip()).lower()[:60]
+        t0_norm = re.sub(r"\s+", " ", str(ti[0]).strip()).lower()[:75]
+        if len(p0_norm) > 25 and p0_norm in t0_norm:
+            problemas.append(f"{rotulo}: pontos[0] duplica abertura de texto_integral[0]")
+    if _eh_texto_estrangeiro(tit_r) or (ti and _eh_texto_estrangeiro(str(ti[0]))):
+        problemas.append(f"{rotulo}: título ou corpo não traduzido ('{tit_r[:40]}')")
+    if ti and any("Siga esta seção" in str(p) or "Follow this section" in str(p) for p in ti):
+        problemas.append(f"{rotulo}: contém ruído de UI web")
 
 
 def _coletar_capas_e_pdfs(obj, caminho="", capas=None, pdfs=None):
@@ -236,15 +264,7 @@ def validar_banco(caminho_json="data/revista.json", dia_alvo=None, validar_shard
                 problemas_j.append(f"{j_nome}: sem reportagens")
                 continue
             for r_i, r in enumerate(reps):
-                ti = r.get("texto_integral") or []
-                pts = r.get("pontos") or []
-                tit_r = (r.get("titulo") or "").strip()
-                if not ti or sum(len(str(p).strip()) for p in ti) < 150:
-                    problemas_j.append(f"{j_nome} rep#{r_i+1}: texto_integral ausente ou truncado (<150 chars)")
-                if not pts:
-                    problemas_j.append(f"{j_nome} rep#{r_i+1}: pontos ausentes")
-                if _eh_texto_estrangeiro(tit_r) or (ti and _eh_texto_estrangeiro(str(ti[0]))):
-                    problemas_j.append(f"{j_nome} rep#{r_i+1}: título ou corpo não traduzido ('{tit_r[:40]}')")
+                _validar_reportagem_leitor(r, f"{j_nome} rep#{r_i+1}", problemas_j)
         if problemas_j:
             erros.append(f"[{d_id}] Falhas em jornais no Modo Leitor ({len(problemas_j)}):\n    - " + "\n    - ".join(problemas_j[:8]))
 
@@ -265,15 +285,7 @@ def validar_banco(caminho_json="data/revista.json", dia_alvo=None, validar_shard
                     problemas_rev.append(f"{r_nome}: sem reportagens")
                     continue
                 for r_i, r in enumerate(reps):
-                    ti = r.get("texto_integral") or []
-                    pts = r.get("pontos") or []
-                    tit_r = (r.get("titulo") or "").strip()
-                    if not ti or sum(len(str(p).strip()) for p in ti) < 150:
-                        problemas_rev.append(f"{r_nome} rep#{r_i+1}: texto_integral ausente ou curto")
-                    if not pts:
-                        problemas_rev.append(f"{r_nome} rep#{r_i+1}: pontos ausentes")
-                    if _eh_texto_estrangeiro(tit_r) or (ti and _eh_texto_estrangeiro(str(ti[0]))):
-                        problemas_rev.append(f"{r_nome} rep#{r_i+1}: não traduzido ('{tit_r[:40]}')")
+                    _validar_reportagem_leitor(r, f"{r_nome} rep#{r_i+1}", problemas_rev)
             if problemas_rev:
                 erros.append(f"[Semana {sem_recente}] Falhas em revistas no Modo Leitor ({len(problemas_rev)}):\n    - " + "\n    - ".join(problemas_rev[:8]))
 

@@ -3110,7 +3110,8 @@ dialog.texto.convite-dlg {
               h("h5", { style: "margin:0 0 6px;text-transform:uppercase;font-size:var(--fs-xs);letter-spacing:.05em;color:var(--lt-muted);" }, "Destaques e dados da reportagem:"),
               h("ul", { class: "lt-pontos", style: "margin:0;padding-left:18px;" }, arr(r.pontos).map((pt) => h("li", null, str(pt))))
             ) : null,
-            r.citacao ? h("blockquote", { class: "lt-cit", style: "margin:14px 0;padding:10px 16px;border-left:4px solid var(--ocre, #B5862C);font-style:italic;" }, `“${str(r.citacao)}”`) : null
+            r.citacao ? h("blockquote", { class: "lt-cit", style: "margin:14px 0;padding:10px 16px;border-left:4px solid var(--ocre, #B5862C);font-style:italic;" }, `“${str(r.citacao)}”`) : null,
+            safeUrl(r.url) ? h("p", { style: "margin:10px 0 0;" }, h("a", { class: "lt-orig-btn mono", href: safeUrl(r.url), target: "_blank", rel: "noopener" }, "Ler publicação original ↗")) : null
           );
         })
       ] : null,

@@ -385,6 +385,6 @@ O `tools/validar_edicao.py` só aprova (`Exit Code 0`) quando **todos os 9 crit�
 4. 100% das capas referenciadas existem em disco com tamanho `> 2 KB`.
 5. Zero referências ou links `.pdf` expostos nos JSONs.
 6. 100% dos itens culturais da edição atual têm `resenha` completa (`>= 3` parágrafos).
-7. 100% das reportagens em `dias[id].jornais.manchetes` têm `texto_integral` (`>= 150` chars, sem stubs truncados), `pontos` e tradução em PT-BR.
-8. 100% das reportagens em `semanas[id].revistas.publicacoes` têm `texto_integral` (`>= 150` chars), `pontos` e tradução em PT-BR.
-9. Paridade exata de arquivo entre `pagina.html` e `index.html` e integridade dos shards em `data/dias/`.
+7. 100% das reportagens em `dias[id].jornais.manchetes` têm `texto_integral` completo e na íntegra (parágrafos coerentes da coluna/artigo, `>= 150` chars, sem resumos telegráficos de 3 frases), `pontos` factuais distintos (sem copiar `texto_integral[0]` literalmente) e tradução integral para PT-BR (sem ruído de UI).
+8. 100% das reportagens em `semanas[id].revistas.publicacoes` têm `texto_integral` na íntegra (sem resumos ou cortes prematuros), `pontos` factuais distintos e tradução integral em PT-BR.
+9. Paridade exata de arquivo entre `pagina.html` e `index.html`, orçamento de boot enxuto (`data/boot.json <= 150 KB` hidratando depois `data/dias/<id>.json` e `data/revista.json` integrais) e integridade dos shards em `data/dias/`.
