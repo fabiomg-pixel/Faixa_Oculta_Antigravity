@@ -56,15 +56,26 @@ SITES_OFICIAIS = {
     "O Estado de S. Paulo": "https://www.estadao.com.br",
     "O Globo": "https://oglobo.globo.com",
     "Valor Econômico": "https://valor.globo.com",
+    "Valor Econômico · EU&": "https://valor.globo.com/eu-e/",
+    "The New York Times": "https://www.nytimes.com",
     "The Washington Post": "https://www.washingtonpost.com",
     "The Guardian": "https://www.theguardian.com",
+    "The Observer": "https://www.theguardian.com/observer",
     "Financial Times": "https://www.ft.com",
     "The Times UK": "https://www.thetimes.com",
     "Le Monde": "https://www.lemonde.fr",
     "The Economist": "https://www.economist.com",
     "Foreign Affairs": "https://www.foreignaffairs.com",
     "The New Yorker": "https://www.newyorker.com",
-    "Revista Piauí": "https://piaui.folha.uol.com.br",
+    "Revista piauí": "https://piaui.folha.uol.com.br",
+    "CartaCapital": "https://www.cartacapital.com.br",
+    "Pesquisa FAPESP": "https://revistapesquisa.fapesp.br",
+    "Revista Oeste": "https://revistaoeste.com",
+    "Revista Fórum": "https://revistaforum.com.br",
+    "Veja": "https://veja.abril.com.br",
+    "The New York Times Magazine": "https://www.nytimes.com/section/magazine",
+    "FT Weekend Magazine": "https://www.ft.com/magazine",
+    "NYT Book Review": "https://www.nytimes.com/section/books/review",
     "Time": "https://time.com",
     "Newsweek": "https://www.newsweek.com",
 }
@@ -74,15 +85,26 @@ PAISES_POR_JORNAL = {
     "O Estado de S. Paulo": "Brasil",
     "O Globo": "Brasil",
     "Valor Econômico": "Brasil",
+    "Valor Econômico · EU&": "Brasil",
+    "The New York Times": "Estados Unidos",
     "The Washington Post": "Estados Unidos",
     "The Guardian": "Reino Unido",
+    "The Observer": "Reino Unido",
     "Financial Times": "Reino Unido / EUA",
     "The Times UK": "Reino Unido",
     "Le Monde": "França",
     "The Economist": "Reino Unido / Global",
     "Foreign Affairs": "Estados Unidos / Global",
     "The New Yorker": "Estados Unidos",
-    "Revista Piauí": "Brasil",
+    "The New York Times Magazine": "Estados Unidos",
+    "FT Weekend Magazine": "Reino Unido",
+    "NYT Book Review": "Estados Unidos",
+    "Revista piauí": "Brasil",
+    "CartaCapital": "Brasil",
+    "Pesquisa FAPESP": "Brasil",
+    "Revista Oeste": "Brasil",
+    "Revista Fórum": "Brasil",
+    "Veja": "Brasil",
     "Time": "Estados Unidos / Global",
     "Newsweek": "Estados Unidos / Global",
 }
@@ -106,10 +128,12 @@ PERFIS_CONFIG = {
     },
     "semana": {
         "nacional": [
-            ("Revista Piauí", ["piauí", "piaui"]),
+            ("Revista piauí", ["piauí", "piaui"]),
             ("CartaCapital", ["carta capital", "cartacapital"]),
-            ("Valor Econômico EU&", ["eu&", "valor econômico- eu&", "valor econômico‐ eu&"]),
-            ("Veja", ["veja digital", "revista veja-"]),
+            ("Pesquisa FAPESP", ["pesquisa fapesp"]),
+            ("Revista Oeste", ["revista oeste"]),
+            ("Valor Econômico · EU&", ["eu&", "valor econômico- eu&", "valor econômico‐ eu&"]),
+            ("Veja", ["veja digital", "revista veja-", "veja rio"]),
             ("Revista Fórum", ["revista forum", "revista fórum"])
         ],
         "internacional": [
@@ -829,6 +853,120 @@ def publicar_banca_jornais(digest_resultado):
         log(f"Conteúdo completo dos jornais injetado para leitura no Modo Leitor na edição {hoje_iso}!")
 
 
+def _gerar_capa_jpeg(src_pdf, dest_jpg):
+    """Renderiza a primeira página real de um PDF do Beeper em JPEG RGB sem expor o PDF."""
+    if not src_pdf or not os.path.exists(src_pdf):
+        return False
+    try:
+        import fitz
+        from PIL import Image
+        doc = fitz.open(src_pdf)
+        capa_idx = 0
+        if len(doc) >= 3:
+            t0 = len((doc[0].get_text() or "").strip())
+            t2 = len((doc[2].get_text() or "").strip())
+            if t0 < 120 and t2 > 400:
+                capa_idx = 2
+        pix = doc[capa_idx].get_pixmap(dpi=120)
+        tmp_png = dest_jpg + ".tmp.png"
+        pix.save(tmp_png)
+        img = Image.open(tmp_png).convert("RGB")
+        img.save(dest_jpg, "JPEG", quality=85)
+        if os.path.exists(tmp_png):
+            os.remove(tmp_png)
+        return os.path.exists(dest_jpg)
+    except Exception as e:
+        log(f"Aviso ao renderizar capa JPEG de {src_pdf}: {e}")
+        return False
+
+
+def publicar_revistas_semana(digest_resultado):
+    """Injeta as revistas extraídas dos PDFs do Beeper em semanas[sabado_iso].revistas para leitura no Modo Leitor."""
+    from datetime import timedelta
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    capas_dir = os.path.join(root_dir, "capas")
+    revista_json_path = os.path.join(root_dir, "data", "revista.json")
+    if not os.path.exists(revista_json_path):
+        return
+    os.makedirs(capas_dir, exist_ok=True)
+
+    hoje = datetime.now().date()
+    dias_ate_sabado = (5 - hoje.weekday()) % 7
+    sabado_iso = (hoje + timedelta(days=dias_ate_sabado)).strftime("%Y-%m-%d")
+
+    try:
+        from tools.extrator_pdf_layout_v2 import sintetizar_edicao_completa
+    except ImportError:
+        try:
+            from extrator_pdf_layout_v2 import sintetizar_edicao_completa
+        except ImportError:
+            sintetizar_edicao_completa = None
+
+    extraidas = []
+    for item in digest_resultado.get("itens", []):
+        v_nome = item.get("veiculo", "Revista")
+        escopo = item.get("escopo", "nacional")
+        loc_pdf = item.get("local_path")
+        v_slug = re.sub(r"[^a-z0-9]+", "_", v_nome.lower()).strip("_")
+        h = hashlib.md5(f"{sabado_iso}-{v_slug}.pdf".encode()).hexdigest()[:10]
+        rel_jpg = f"capas/mag_{h}.jpg"
+        dest_jpg = os.path.join(root_dir, rel_jpg)
+        if loc_pdf and not _gerar_capa_jpeg(loc_pdf, dest_jpg):
+            rel_jpg = ""
+
+        obj = None
+        if item.get("estrutura_pronta"):
+            obj = dict(item["estrutura_pronta"])
+        elif sintetizar_edicao_completa and loc_pdf and os.path.exists(loc_pdf):
+            try:
+                obj = sintetizar_edicao_completa(v_nome, escopo, loc_pdf, img_rel_path=rel_jpg, max_pages=12)
+            except Exception as e_v2:
+                log(f"Aviso no extrator v2 para revista {v_nome}: {e_v2}")
+        if not obj:
+            obj = extrair_estrutura_jornal_automatica(item, rel_jpg)
+
+        # Padronizar chave 'revista' em vez de 'jornal' e garantir texto_integral + pontos
+        obj["revista"] = obj.pop("jornal", v_nome) or v_nome
+        if rel_jpg:
+            obj["imagem"] = rel_jpg
+        for rep in obj.get("reportagens", []):
+            ti = rep.get("texto_integral") or rep.get("texto") or []
+            if ti:
+                rep["texto_integral"] = ti
+                rep.pop("texto", None)
+                if not rep.get("pontos"):
+                    s1 = re.split(r"(?<=[.!?])\s+", str(ti[0]).strip())[0]
+                    rep["pontos"] = [s1 if len(s1) <= 220 else s1[:217].rsplit(" ", 1)[0] + "..."]
+        extraidas.append(obj)
+
+    if not extraidas:
+        return
+
+    with open(revista_json_path, "r", encoding="utf-8") as f:
+        db = json.load(f)
+
+    sem_obj = db.setdefault("semanas", {}).get(sabado_iso)
+    if not sem_obj:
+        # Preserva para quando tools/revista_semanal.py criar a semana
+        sem_obj = db["semanas"].setdefault(sabado_iso, {"id": sabado_iso, "fim": sabado_iso, "temas": []})
+
+    rev_prev = sem_obj.get("revistas") or {}
+    mapa_prev = {p.get("revista"): p for p in rev_prev.get("publicacoes", []) if p.get("revista")}
+    for nova in extraidas:
+        mapa_prev[nova["revista"]] = nova
+
+    sem_obj["revistas"] = {
+        "data_edicao": datetime.now().strftime("%Y-%m-%d"),
+        "resumo": rev_prev.get("resumo") or f"Banca semanal com {len(mapa_prev)} revistas extraídas integralmente para o Modo Leitor.",
+        "contraste": rev_prev.get("contraste") or "Cruzamento plural das revistas semanais brasileiras e internacionais.",
+        "publicacoes": list(mapa_prev.values())
+    }
+
+    with open(revista_json_path, "w", encoding="utf-8") as f:
+        json.dump(db, f, ensure_ascii=False, indent=2)
+    log(f"Revistas da semana ({sabado_iso}) atualizadas com {len(extraidas)} publicações via Beeper PDFs!")
+
+
 def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc=15):
     """Executa a varredura, download e extração das publicações prioritárias do perfil selecionado."""
     cfg = PERFIS_CONFIG.get(perfil_nome)
@@ -859,7 +997,7 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
         return digest_path
 
     log(f"Iniciando processamento do perfil '{perfil_nome.upper()}'...")
-    all_pubs = list_publications(limit=150)
+    all_pubs = list_publications(limit=250)
 
     # Se já temos um digest de hoje com todas as páginas extraídas, podemos reaproveitar o OCR pesado
     cache_ocr = {}
@@ -967,6 +1105,11 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
             publicar_banca_jornais(resultado)
         except Exception as e:
             log(f"Aviso ao publicar jornais no revista.json: {e}")
+    elif perfil_nome == "semana":
+        try:
+            publicar_revistas_semana(resultado)
+        except Exception as e:
+            log(f"Aviso ao publicar revistas semanais no revista.json: {e}")
 
     return digest_path
 

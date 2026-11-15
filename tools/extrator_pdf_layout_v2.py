@@ -56,12 +56,18 @@ PRESS_ROOMS = [
     "!iq3RLvh1JnfH6vJzkvaL:beeper.local",  # Jornais BR
     "!Q3EN2ZSkzkir8tYnRU7t:beeper.local",  # International Newspapers
     "!tFgakhGBTv3CNjiYMdkM:beeper.local",  # Jornais e Revistas 4.0
+    "!CKYQw8EzDcJJW9ZBUqB7:beeper.local",  # IELTS Newspapers & Magazines
+    "!I86rARDr2VolnIjl9pki:beeper.local",  # Jornais e Revistas 3.0
+    "!0nZuyBr37onTMYp69CUi:beeper.local",  # Revista Jacobina
 ]
 
 KNOWN_ROOM_NAMES = {
     "!iq3RLvh1JnfH6vJzkvaL:beeper.local": "Jornais BR",
     "!Q3EN2ZSkzkir8tYnRU7t:beeper.local": "International Newspapers",
     "!tFgakhGBTv3CNjiYMdkM:beeper.local": "Jornais e Revistas 4.0",
+    "!CKYQw8EzDcJJW9ZBUqB7:beeper.local": "IELTS Newspapers & Magazines",
+    "!I86rARDr2VolnIjl9pki:beeper.local": "Jornais e Revistas 3.0",
+    "!0nZuyBr37onTMYp69CUi:beeper.local": "Revista Jacobina",
 }
 
 PERFIS_V2 = {
@@ -83,10 +89,13 @@ PERFIS_V2 = {
     },
     "semana": {
         "nacional": [
-            ("Revista Piauí", ["piauí", "piaui"]),
+            ("Revista piauí", ["piauí", "piaui"]),
             ("CartaCapital", ["carta capital", "cartacapital"]),
-            ("Veja Rio", ["veja rio"]),
-            ("Valor Econômico EU&", ["eu&"])
+            ("Pesquisa FAPESP", ["pesquisa fapesp"]),
+            ("Revista Oeste", ["revista oeste"]),
+            ("Revista Fórum", ["revista forum", "revista fórum"]),
+            ("Veja", ["veja digital", "revista veja-", "veja rio"]),
+            ("Valor Econômico · EU&", ["eu&"])
         ],
         "internacional": [
             ("The Economist", ["the economist", "economist"]),
@@ -94,9 +103,10 @@ PERFIS_V2 = {
             ("The New Yorker", ["the new yorker", "new yorker"]),
             ("Time", ["time magazine", "time -", "time_"]),
             ("Newsweek", ["newsweek"]),
+            ("The Observer", ["the observer"]),
             ("NYT Book Review", ["nytbr", "book review"]),
-            ("NYT Magazine", ["nyt magazine"]),
-            ("FT Weekend Magazine", ["ft weekend", "weekend magazine"])
+            ("The New York Times Magazine", ["nyt magazine"]),
+            ("FT Weekend Magazine", ["ft weekend", "ft magazine", "weekend magazine"])
         ]
     }
 }
@@ -106,23 +116,27 @@ SITES_OFICIAIS = {
     "O Estado de S. Paulo": "https://www.estadao.com.br",
     "O Globo": "https://oglobo.globo.com",
     "Valor Econômico": "https://valor.globo.com",
-    "Valor Econômico EU&": "https://valor.globo.com/eu-e/",
+    "Valor Econômico · EU&": "https://valor.globo.com/eu-e/",
     "The New York Times": "https://www.nytimes.com",
     "The Washington Post": "https://www.washingtonpost.com",
     "The Guardian": "https://www.theguardian.com",
+    "The Observer": "https://www.theguardian.com/observer",
     "Financial Times": "https://www.ft.com",
     "The Times UK": "https://www.thetimes.com",
     "Le Monde": "https://www.lemonde.fr",
     "The Economist": "https://www.economist.com",
     "Foreign Affairs": "https://www.foreignaffairs.com",
     "The New Yorker": "https://www.newyorker.com",
-    "Revista Piauí": "https://piaui.folha.uol.com.br",
+    "Revista piauí": "https://piaui.folha.uol.com.br",
     "CartaCapital": "https://www.cartacapital.com.br",
+    "Pesquisa FAPESP": "https://revistapesquisa.fapesp.br",
+    "Revista Oeste": "https://revistaoeste.com",
+    "Revista Fórum": "https://revistaforum.com.br",
     "Time": "https://time.com",
     "Newsweek": "https://www.newsweek.com",
-    "Veja Rio": "https://vejario.abril.com.br",
+    "Veja": "https://veja.abril.com.br",
     "NYT Book Review": "https://www.nytimes.com/section/books/review",
-    "NYT Magazine": "https://www.nytimes.com/section/magazine",
+    "The New York Times Magazine": "https://www.nytimes.com/section/magazine",
     "FT Weekend Magazine": "https://www.ft.com/magazine",
 }
 
@@ -131,19 +145,23 @@ PAISES_POR_VEICULO = {
     "O Estado de S. Paulo": "Brasil",
     "O Globo": "Brasil",
     "Valor Econômico": "Brasil",
-    "Valor Econômico EU&": "Brasil",
-    "Revista Piauí": "Brasil",
+    "Valor Econômico · EU&": "Brasil",
+    "Revista piauí": "Brasil",
     "CartaCapital": "Brasil",
-    "Veja Rio": "Brasil",
+    "Pesquisa FAPESP": "Brasil",
+    "Revista Oeste": "Brasil",
+    "Revista Fórum": "Brasil",
+    "Veja": "Brasil",
     "The New York Times": "Estados Unidos",
     "NYT Book Review": "Estados Unidos",
-    "NYT Magazine": "Estados Unidos",
+    "The New York Times Magazine": "Estados Unidos",
     "The Washington Post": "Estados Unidos",
     "The New Yorker": "Estados Unidos",
     "Foreign Affairs": "Estados Unidos / Global",
     "Time": "Estados Unidos / Global",
     "Newsweek": "Estados Unidos / Global",
     "The Guardian": "Reino Unido",
+    "The Observer": "Reino Unido",
     "Financial Times": "Reino Unido / Global",
     "FT Weekend Magazine": "Reino Unido",
     "The Times UK": "Reino Unido",
@@ -689,8 +707,8 @@ def chamar_gemini_estruturado_jornal(veiculo, escopo, data_iso, dados_layout):
         f'      "titulo": "Título da reportagem em português",\n'
         f'      "titulo_original": "Título original se internacional ou null",\n'
         f'      "lide": "Resumo de abertura da matéria em 1 a 2 frases",\n'
-        f'      "texto": ["Parágrafo 1 denso", "Parágrafo 2 denso", "Parágrafo 3 denso"],\n'
-        f'      "pontos": ["Ponto central 1", "Ponto central 2"]\n'
+        f'      "texto_integral": ["Parágrafo 1 denso", "Parágrafo 2 denso", "Parágrafo 3 denso"],\n'
+        f'      "pontos": ["Ponto central 1 em frase completa", "Ponto central 2 em frase completa"]\n'
         f'    }}\n'
         f'  ]\n'
         f"}}\n"
@@ -797,8 +815,10 @@ def extrair_pontos_chave(pars):
                 if len(pontos) >= 3:
                     return pontos
     while len(pontos) < 2 and pars:
-        trecho = pars[0][:150].strip()
-        if not trecho.endswith('.'):
+        trecho = pars[0].strip()
+        if len(trecho) > 170:
+            trecho = trecho[:167].rsplit(' ', 1)[0].rstrip('.,;:') + '...'
+        elif not trecho.endswith('.'):
             trecho += '.'
         pontos.append(trecho)
     return pontos[:3]

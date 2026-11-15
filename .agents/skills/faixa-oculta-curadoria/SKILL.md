@@ -322,30 +322,30 @@ O diálogo de leitura (`#texto` para notícias e `#leitura` para obras culturais
 
 ---
 
-## 21. Integração Direta com Jornais Impressos via Beeper (PDFs Nacionais e Internacionais)
+## 21. Integração Direta com Jornais e Revistas via Beeper (PDFs no Modo Leitor)
 
 > [!TIP]
-> O Beeper Desktop no macOS funciona como a fonte primária definitiva de jornalismo impresso do dia, contendo as edições completas e integrais das principais publicações do Brasil e do mundo.
+> O Beeper Desktop no macOS funciona como a fonte primária definitiva de jornalismo impresso e revistas de primeira linha, com extração integral dos PDFs diretamente para leitura dentro do Modo Leitor (`#texto`).
 
-1. **Acesso ao Acervo Local e API:**
-   * O acervo de mensagens e metadados é consultado diretamente em `~/Library/Application Support/BeeperTexts/index.db`.
-   * Os canais monitorados incluem:
-     * `Jornais BR` (`!iq3RLvh1JnfH6vJzkvaL:beeper.local`): *Folha de S.Paulo*, *O Estado de S. Paulo*, *O Globo*, *Valor Econômico*, *O Dia*, *Correio Braziliense*.
-     * `International Newspapers` (`!Q3EN2ZSkzkir8tYnRU7t:beeper.local`): *The Washington Post*, *The New York Times Magazine / Book Review*, *Los Angeles Times*, *Chicago Tribune*, *The Economist*.
-     * `Jornais e Revistas 4.0` (`!tFgakhGBTv3CNjiYMdkM:beeper.local`): Edições complementares e revistas semanais.
+1. **Acesso ao Acervo Local, Normalização NFC e Salas Monitoradas:**
+   * O acervo local fica em `~/Library/Application Support/BeeperTexts/index.db` (tabela `mx_room_messages`, `type = 'FILE'`).
+   * **Normalização Unicode obrigatória:** Nomes de arquivos no macOS chegam frequentemente em forma NFD (acentos decompostos em `Piauí`, `Fórum`, `Econômico`, `Estadão`). A busca DEVE aplicar `unicodedata.normalize("NFC", ...)` e consultar `limit >= 250` mensagens por sala (salas diárias recebem ~80 arquivos/dia; limites menores ocultam semanários como *The Economist* e *Pesquisa FAPESP*).
+   * **Salas monitoradas (`PRESS_ROOMS`):**
+     * `Jornais BR` (`!iq3RLvh1JnfH6vJzkvaL:beeper.local`): *Folha de S.Paulo*, *O Estado de S. Paulo*, *O Globo*, *Valor Econômico*, além de revistas brasileiras (*CartaCapital, Revista Fórum, Pesquisa FAPESP, Revista Oeste, Revista piauí, Veja/Veja Rio*) e ocasionais edições internacionais (*The Economist*).
+     * `International Newspapers` (`!Q3EN2ZSkzkir8tYnRU7t:beeper.local`): *The New York Times*, *Financial Times*, *The Washington Post*, *The Guardian*, *The Times / The Sunday Times*, *The Observer*, *FT Weekend Magazine*, *NYT Magazine*, *NYT Book Review*.
+     * Complementares / históricas: `Jornais e Revistas 4.0` (`!tFgakhGBTv3CNjiYMdkM:beeper.local`), `IELTS|Newspapers & Magazines｜English` (`!CKYQw8EzDcJJW9ZBUqB7:beeper.local`), `Jornais e Revistas 3.0` (`!I86rARDr2VolnIjl9pki:beeper.local`) e `Revista Jacobina` (`!0nZuyBr37onTMYp69CUi:beeper.local`).
+     * Para *Le Monde*, caso não haja PDF recente no Beeper, usar o coletor RSS oficial integrado (`obter_edicao_lemonde_rss` em `tools/processar_jornais_beeper.py`).
 2. **Download Automatizado sob Demanda (`tools/processar_jornais_beeper.py`):**
-   * A ferramenta autentica via OAuth PKCE com a Beeper Client API local (`http://localhost:23373`) e executa o download silencioso e imediato de qualquer edição necessária via `POST /v1/assets/download`.
-   * Arquivos baixados residem em `~/Library/Application Support/BeeperTexts/media/local.beeper.com/`.
-3. **Pipeline Duplo de Extração de Texto:**
-   * **PDFs Digitais Vetoriais (*Estadão, O Globo, Valor, WaPo, The Guardian, The Times*):** Extração direta e instantânea com PyMuPDF (`fitz`), capturando 15+ páginas e colunas completas em segundos.
-   * **PDFs Rasterizados/Escaneados (*Folha de S.Paulo, Financial Times*):** Extração via OCR nativo do macOS com Apple Vision Framework (`VNRecognizeTextRequest` executado via Swift), sem dependência de serviços externos ou custo de API.
-4. **Proibição de Expor PDFs Brutos & Exibição Completa no Modo Leitor (`#texto`):**
-   * **Nunca disponibilizar ou linkar arquivos PDF brutos (`jornais/*.pdf`, `url_pdf`, `pdf_url`) na interface web.**
-   * Em vez de PDFs, o bloco "Nos Jornais do Dia" (`blocoJornais` / `abrirJornalCompleto`) DEVE disponibilizar diretamente no **Modo Leitor interno (`#texto`)** o conteúdo estruturado de cada um dos 8 jornais prioritários (*Folha, Estadão, O Globo, Valor, Financial Times, Washington Post, The Guardian, The Times UK*):
-     * Miniatura da primeira página (`capas/<md5>.jpg`), manchete principal e panorama da edição (`resumo_edicao`);
-     * **Editorial & Opinião do Dia** (`editorial`);
-     * **5 a 7 Principais Reportagens de Cada Jornal** (`reportagens`), contendo caderno/página, título (e `titulo_original` se internacional), autor, texto integral de 3 a 4 parágrafos densos em português (`texto_integral`) e destaques em tópicos (`pontos`);
-     * **Destaques Cruzados (`destaques`)** e **Vale Ler na Íntegra (`leitura`)** clicáveis abrindo diretamente no Modo Leitor.
+   * Autentica via OAuth PKCE na Beeper Client API local (`http://localhost:23373`) e baixa via `POST /v1/assets/download` (`timeout >= 150s`), ordenando candidatos SEMPRE por data (`data_msg[:10]`, `timestamp`) e NUNCA priorizando arquivos antigos só porque já estavam baixados em cache.
+3. **Pipeline Layout-Aware de Extração e OCR:**
+   * **PDFs Digitais Vetoriais (*Estadão, O Globo, Valor, WaPo, The Guardian, Pesquisa FAPESP, CartaCapital*):** Extração Layout-Aware (`tools/extrator_pdf_layout_v2.py`) usando `page.get_text("dict")` para ranquear manchetes por tamanho tipográfico e `page.get_text("blocks")` ordenado por coluna `(y0, x0)` para nunca misturar colunas/páginas ou fatiar frases no meio.
+   * **PDFs Escaneados em Imagem (*Folha de S.Paulo, Financial Times, The Times UK, The Economist, Revista piauí, Revista Oeste, Veja Rio*):** OCR nativo do macOS via Apple Vision Framework (`VNRecognizeTextRequest` em Swift com `en-US` ou `pt-BR`, até `min(max_pages, 12)` páginas).
+   * **Coesão Editorial & Integridade de Sentenças:** Nunca juntar blocos de páginas distintas sob a manchete de capa da página 1 e nunca fatiar `pontos` por índice fixo de caracteres (`[:160]` no meio de uma palavra); extrair sempre sentenças inteiras.
+4. **Contrato Obrigatório de Schema e Hidratação no Modo Leitor (`#texto`):**
+   * **Nunca disponibilizar ou linkar PDFs brutos (`jornais/*.pdf`, `url_pdf`, `jornal_pdf_nome`) na interface.**
+   * **Chave Canônica Obrigatória:** Toda reportagem em `dias[id].jornais.manchetes[*].reportagens[*]` e em `semanas[id].revistas.publicacoes[*].reportagens[*]` DEVE preencher **`texto_integral`** (lista de parágrafos densos e traduzidos para português culto) **e `pontos`** (lista de 1–3 frases completas), além de `titulo`, `titulo_original` (quando estrangeiro) e `citacao` (quando disponível).
+   * **Publicação Automática de Revistas Semanais:** `processar_perfil("semana")` deve invocar `publicar_revistas_semana(resultado)` para gravar/mesclar diretamente em `semanas[sabado_iso].revistas.publicacoes` (Preservando revistas curadas como *Foreign Affairs, The New Yorker, Time, Newsweek* ao lado das extrações Beeper *The Economist, Pesquisa FAPESP, Revista Oeste, piauí, CartaCapital, Veja, Fórum, Valor EU&, FT Weekend Magazine, Observer, NYT Magazine, NYTBR*).
+   * **Proteção Anti-Stub no Boot (`pagina.html` -> `index.html`):** Como `data/boot.json` compacta `reportagens[*].texto_integral` para ~140 caracteres durante a carga inicial, `iniciarEstatico()` DEVE carregar imediatamente `data/dias/<hojeId>.json` logo após o primeiro render do boot, e `abrirJornalCompleto()` DEVE ler `r.texto_integral || r.texto || r.resumo` e hidratar `j.shard_completo` sob demanda caso receba qualquer stub truncado.
 
 ---
 
@@ -355,13 +355,36 @@ Ao manipular a base ou executar atualizações, utilize o pipeline modular v2 em
 
 | Script | Função Principal |
 | :--- | :--- |
-| `tools/orquestrador_nuvem.py` / `sentinela_boletim.py` | Orquestração central de 8 estágios (Boletim -> Jornais Beeper -> Áudio -> Revista Semanal -> Cultura Mensal -> Playlists -> Sharding v2 -> Quality Gate). |
-| `tools/gemini_client.py` | Cliente unificado para **Gemini 4 Argon (`gemini-4-argon`)** e **Gemini 3.8 Flash (`gemini-3.8-flash`)** com contexto SSL compatível com Python 3.14 macOS e fallback determinístico resiliente. |
-| `tools/boletim_nuvem.py` | Apuração diária (manhã `< 17h` e noite `>= 17h`) de 11 notícias nacionais + 11 internacionais traduzidas, usando `<content:encoded>`, POX RSS (*O Globo, Valor, JOTA, Nexo, DW*) e deduplicação entre turnos. |
-| `tools/extrator_pdf_layout_v2.py` & `tools/processar_jornais_beeper.py` | Extração Layout-Aware (`page.get_text("dict")` por tamanho de fonte na capa + `get_text("blocks")` por colunas + Apple Vision OCR bilingue `pt-BR`/`en-US`) para diários (*Folha, Estadão, O Globo, Valor, NYT, FT, WaPo, Guardian, Times UK*) e semanais (*The Economist, Piauí, CartaCapital, Veja Rio, NYTBR*). |
-| `tools/coletor_cultural_v2.py` | Coleta ao vivo de safras de Música (*Pitchfork, Stereogum, BrooklynVegan, The Quietus, Hits Perdidos, TMDQA* + Deezer/iTunes API), Cinema (*AdoroCinema, Guardian Film, IndieWire, Letterboxd, Cinética*), Livros (*Quatro Cinco Um, Rascunho, NYT Books, LitHub*) e 12 fontes da Agenda do Rio. |
-| `tools/revista_semanal.py` & `tools/cultura_mensal.py` | Compiladores semanais (quintas à noite) e mensais (dia 01) dinâmicos, sem travamento em datas passadas. |
-| `tools/atualizar_playlists_agenda.py` | Atualização automatizada das playlists da agenda (semanal na segunda-feira e mensal no dia 01), com arquivamento de histórico. |
-| `tools/gerar_audio_boletim.py` | Síntese de áudio da edição completa via `edge-tts` (`pt-BR-AntonioNeural`) com `--dia <turno_id>`. |
-| `tools/particionar_dados_v2.py` | Particionamento em `data/boot.json` (`< 150 KB` para carregamento instantâneo) + shards em `data/dias/`, `data/semanas/` e `data/cultura/`. |
-| `tools/validar_edicao.py` | Quality Gate automatizado que valida zero notas em língua estrangeira, diversidade de veículos, zero templates, 100% de capas e 3+ parágrafos de crítica antes do commit. |
+| `~/.faixaoculta/sentinela_boletim.py` / `tools/orquestrador_nuvem.py` | Sentinela local no Mac (com recuperação automática de `git`/`rebase` antes e depois do `push`) e orquestração central em 8 estágios com salvaguarda em nuvem. |
+| `tools/gemini_client.py` | Cliente unificado com prioridade para **`gemini-4-hydrogen`** / **`gemini-4-argon`** e fallback **`gemini-3.8-flash`**, com contexto SSL macOS e fallback determinístico resiliente. |
+| `tools/boletim_nuvem.py` | Apuração diária (manhã `< 17h` e noite `>= 17h`) de 11 notícias nacionais + 11 internacionais traduzidas na íntegra, deduplicadas entre turnos. |
+| `tools/extrator_pdf_layout_v2.py` & `tools/processar_jornais_beeper.py` | Extração Layout-Aware (`dict` + `blocks` por coluna + Apple Vision OCR bilingue) e publicação automática no `revista.json` tanto para `--perfil diario` (`publicar_banca_jornais`) quanto para `--perfil semana` (`publicar_revistas_semana`), incluindo *Le Monde*, *The Economist*, *Pesquisa FAPESP* e *Revista Oeste*. |
+| `tools/coletor_cultural_v2.py` | Coleta ao vivo de safras de Música, Cinema, Livros e 12 fontes da Agenda do Rio. |
+| `tools/revista_semanal.py` & `tools/cultura_mensal.py` | Compiladores semanais (quintas à noite) e mensais (dia 01) dinâmicos preservando o bloco `revistas`. |
+| `tools/atualizar_playlists_agenda.py` | Atualização automatizada das playlists da agenda (segunda-feira e dia 01), com arquivamento de histórico. |
+| `tools/gerar_audio_boletim.py` | Síntese de áudio integral da edição (`texto_completo`) via `edge-tts` (`pt-BR-AntonioNeural`) com `--dia <turno_id>`. |
+| `tools/particionar_dados_v2.py` | Particionamento em `data/boot.json` + shards completos em `data/dias/`, `data/semanas/` e `data/cultura/`. |
+| `tools/validar_edicao.py` | Quality Gate automatizado (Checks 1–9) que bloqueia publicação em caso de falhas. |
+
+---
+
+## 23. Protocolo Obrigatório Pré-Publicação e Quality Gate
+
+Antes de qualquer `git commit` e `git push origin main`, execute **sempre** na raiz do repositório:
+
+```bash
+cp pagina.html index.html
+python3 tools/particionar_dados_v2.py
+python3 tools/validar_edicao.py
+```
+
+O `tools/validar_edicao.py` só aprova (`Exit Code 0`) quando **todos os 9 critérios** passam simultaneamente:
+1. Edições diárias do dia mais recente com `>= 20` notas reais (`10+` nacionais + `10+` internacionais traduzidas).
+2. Máximo de 2 notas do mesmo veículo internacional e zero textos não traduzidos (`_eh_texto_estrangeiro`).
+3. Zero frases genéricas/boilerplate em títulos, visões ou aprofundamentos.
+4. 100% das capas referenciadas existem em disco com tamanho `> 2 KB`.
+5. Zero referências ou links `.pdf` expostos nos JSONs.
+6. 100% dos itens culturais da edição atual têm `resenha` completa (`>= 3` parágrafos).
+7. 100% das reportagens em `dias[id].jornais.manchetes` têm `texto_integral` (`>= 150` chars, sem stubs truncados), `pontos` e tradução em PT-BR.
+8. 100% das reportagens em `semanas[id].revistas.publicacoes` têm `texto_integral` (`>= 150` chars), `pontos` e tradução em PT-BR.
+9. Paridade exata de arquivo entre `pagina.html` e `index.html` e integridade dos shards em `data/dias/`.

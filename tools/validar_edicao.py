@@ -222,6 +222,70 @@ def validar_banco(caminho_json="data/revista.json", dia_alvo=None, validar_shard
             if not os.path.exists(shard_p):
                 avisos.append(f"Shard v2 ainda não gerado para {d_id} ({shard_p}). Execute tools/particionar_dados_v2.py.")
 
+    # 7. Validação estrita dos Jornais do Dia no Modo Leitor (texto_integral, pontos e tradução)
+    for d_id in edicoes_para_validar:
+        manchetes = dias[d_id].get("jornais", {}).get("manchetes", [])
+        if not manchetes:
+            erros.append(f"[{d_id}] Bloco 'jornais.manchetes' está vazio — PDFs dos jornais não foram publicados.")
+            continue
+        problemas_j = []
+        for m in manchetes:
+            j_nome = m.get("jornal", "?")
+            reps = m.get("reportagens") or []
+            if not reps:
+                problemas_j.append(f"{j_nome}: sem reportagens")
+                continue
+            for r_i, r in enumerate(reps):
+                ti = r.get("texto_integral") or []
+                pts = r.get("pontos") or []
+                tit_r = (r.get("titulo") or "").strip()
+                if not ti or sum(len(str(p).strip()) for p in ti) < 150:
+                    problemas_j.append(f"{j_nome} rep#{r_i+1}: texto_integral ausente ou truncado (<150 chars)")
+                if not pts:
+                    problemas_j.append(f"{j_nome} rep#{r_i+1}: pontos ausentes")
+                if _eh_texto_estrangeiro(tit_r) or (ti and _eh_texto_estrangeiro(str(ti[0]))):
+                    problemas_j.append(f"{j_nome} rep#{r_i+1}: título ou corpo não traduzido ('{tit_r[:40]}')")
+        if problemas_j:
+            erros.append(f"[{d_id}] Falhas em jornais no Modo Leitor ({len(problemas_j)}):\n    - " + "\n    - ".join(problemas_j[:8]))
+
+    # 8. Validação estrita das Revistas Semanais (Semana mais recente)
+    semanas = db.get("semanas", {})
+    if semanas:
+        sem_recente = sorted(semanas.keys())[-1]
+        pubs_rev = semanas[sem_recente].get("revistas", {}).get("publicacoes", [])
+        estatisticas["semana_recente_inspecionada"] = f"{sem_recente} ({len(pubs_rev)} revistas)"
+        if not pubs_rev:
+            erros.append(f"[Semana {sem_recente}] Bloco 'revistas.publicacoes' está vazio.")
+        else:
+            problemas_rev = []
+            for pub in pubs_rev:
+                r_nome = pub.get("revista") or pub.get("jornal") or "?"
+                reps = pub.get("reportagens") or []
+                if not reps:
+                    problemas_rev.append(f"{r_nome}: sem reportagens")
+                    continue
+                for r_i, r in enumerate(reps):
+                    ti = r.get("texto_integral") or []
+                    pts = r.get("pontos") or []
+                    tit_r = (r.get("titulo") or "").strip()
+                    if not ti or sum(len(str(p).strip()) for p in ti) < 150:
+                        problemas_rev.append(f"{r_nome} rep#{r_i+1}: texto_integral ausente ou curto")
+                    if not pts:
+                        problemas_rev.append(f"{r_nome} rep#{r_i+1}: pontos ausentes")
+                    if _eh_texto_estrangeiro(tit_r) or (ti and _eh_texto_estrangeiro(str(ti[0]))):
+                        problemas_rev.append(f"{r_nome} rep#{r_i+1}: não traduzido ('{tit_r[:40]}')")
+            if problemas_rev:
+                erros.append(f"[Semana {sem_recente}] Falhas em revistas no Modo Leitor ({len(problemas_rev)}):\n    - " + "\n    - ".join(problemas_rev[:8]))
+
+    # 9. Paridade garantida entre pagina.html e index.html
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(caminho_json)))
+    pag_p = os.path.join(base_dir, "pagina.html")
+    idx_p = os.path.join(base_dir, "index.html")
+    if os.path.exists(pag_p) and os.path.exists(idx_p):
+        with open(pag_p, "r", encoding="utf-8") as fp, open(idx_p, "r", encoding="utf-8") as fi:
+            if fp.read() != fi.read():
+                erros.append("index.html está dessincronizado em relação a pagina.html! Execute: cp pagina.html index.html")
+
     aprovado = len(erros) == 0
     return aprovado, erros, avisos, estatisticas
 
@@ -239,6 +303,7 @@ def main():
     print("=================================================================")
     print(f" Arquivo auditado         : {args.json}")
     print(f" Edições diárias checadas : {', '.join(stats.get('edicoes_diarias_inspecionadas', []))}")
+    print(f" Semana checada           : {stats.get('semana_recente_inspecionada', '-')}")
     print(f" Edição cultural checada  : {stats.get('edicao_cultural_atual', '-')}")
     print(f" Capas verificadas (>2KB) : {stats.get('total_capas_referenciadas', 0)}")
     print(f" Links PDF expostos       : {stats.get('total_pdfs_expostos', 0)}")

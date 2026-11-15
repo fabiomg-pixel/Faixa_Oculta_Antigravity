@@ -3034,6 +3034,23 @@ dialog.texto.convite-dlg {
     const prevTop = t.open ? t.scrollTop : 0;
     const redesenhar = () => abrirJornalCompleto(m, j, null);
     const reps = arr(m.reportagens);
+    const pareceStubBoot = !!(j && j.shard_completo && !m._shardHydrated && reps.some((r) => !arr(r.pontos).length && arr(r.texto_integral).length === 1 && str(r.texto_integral[0]).length <= 145));
+    if (pareceStubBoot) {
+      m._shardHydrated = true;
+      fetch(`${j.shard_completo}?v=${Math.floor(Date.now() / 60000)}`)
+        .then((r) => r.ok ? r.json() : null)
+        .then((diaFull) => {
+          const jFull = diaFull && diaFull.jornais;
+          const alvoNome = str(m.revista || m.jornal);
+          const mFull = jFull && arr(jFull.manchetes).find((x) => str(x.revista || x.jornal) === alvoNome);
+          if (mFull) {
+            Object.assign(m, mFull, { _shardHydrated: true });
+            Object.assign(j, jFull);
+            if (document.getElementById("texto").open) abrirJornalCompleto(m, j, scrollIdx);
+          }
+        })
+        .catch(() => {});
+    }
     const nomePub = str(m.revista || m.jornal);
     const isRevista = !!m.revista;
     const ehInt = m.escopo === "internacional" || (m.pais && m.pais !== "Brasil");
@@ -5043,6 +5060,17 @@ dialog.texto.convite-dlg {
             render();
             setTimeout(checarDeepLinkConvite, 150);
           }
+          try {
+            const rs = await fetch(`data/dias/${encodeURIComponent(hojeId)}.json?v=${cbMin}`);
+            if (rs.ok) {
+              const diaFull = await rs.json();
+              if (diaFull && Array.isArray(S.dias) && S.dias.length) {
+                S.dias[0] = { ...diaFull, _id: hojeId };
+                indices = null;
+                if (S.aba === "hoje") render();
+              }
+            }
+          } catch (e) {}
         }
       }
     } catch (e) {}
