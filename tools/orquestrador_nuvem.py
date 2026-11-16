@@ -90,40 +90,30 @@ def main():
     else:
         print("\n[6/8] Playlists da Agenda: mantendo playlists da semana e do mês atuais.")
 
-    # 7. PARTICIONAMENTO DE DADOS V2 (Gera data/boot.json ~145 KB + shards em data/dias, data/semanas e data/cultura)
-    print("\n[7/8] Gerando Manifesto de Boot Rápido (data/boot.json) e Shards da Arquitetura v2...")
-    rodar_script("tools/particionar_dados_v2.py")
-
-    # 8. QUALITY GATE PRÉ-PUBLICAÇÃO (Valida 100% dos critérios editoriais)
-    print("\n[8/8] Executando Quality Gate Pré-Publicação (tools/validar_edicao.py)...")
-    rodar_script("tools/validar_edicao.py")
-
-    # Sincronização final garantida de index.html a partir de pagina.html
+    # 7. Sincronização garantida de index.html a partir de pagina.html ANTES do Quality Gate
     try:
         with open("pagina.html", "r", encoding="utf-8") as f:
             src = f.read()
-        skeleton_head = """<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex,nofollow">
-<link rel="icon" type="image/svg+xml" href="icone.svg">
-<link rel="icon" type="image/png" sizes="512x512" href="icone-512.png">
-<link rel="apple-touch-icon" href="icone-180.png">
-<meta name="theme-color" content="#F3EEE4">
-<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
-</head>
-<body>
-"""
-        skeleton_tail = "\n</body>\n</html>\n"
         with open("index.html", "w", encoding="utf-8") as f:
-            if src.lstrip().lower().startswith("<!doctype"):
-                f.write(src)
-            else:
-                f.write(skeleton_head + src + skeleton_tail)
+            f.write(src)
+        print("  [OK] Sincronizado index.html a partir de pagina.html.")
     except Exception as e:
-        print(f"Aviso ao sincronizar index.html: {e}")
+        print(f"Erro ao sincronizar index.html: {e}")
+        sys.exit(1)
+
+    # 8. PARTICIONAMENTO DE DADOS V2 (Gera data/boot.json <= 150 KB + shards em data/dias, data/semanas e data/cultura)
+    print("\n[7/8] Gerando Manifesto de Boot Rápido (data/boot.json) e Shards da Arquitetura v2...")
+    ok_part = rodar_script("tools/particionar_dados_v2.py")
+    if not ok_part:
+        print("Erro crítico no particionamento de dados v2. Abortando.")
+        sys.exit(1)
+
+    # 9. QUALITY GATE PRÉ-PUBLICAÇÃO (Valida 100% dos critérios editoriais; bloqueia push se reprovado)
+    print("\n[8/8] Executando Quality Gate Pré-Publicação (tools/validar_edicao.py)...")
+    ok_val = rodar_script("tools/validar_edicao.py")
+    if not ok_val:
+        print("❌ Quality Gate reprovou a edição atual! Publicação bloqueada para correção.")
+        sys.exit(1)
 
     print("\n=================================================================")
     print(" ORQUESTRAÇÃO CONCLUÍDA COM SUCESSO!")

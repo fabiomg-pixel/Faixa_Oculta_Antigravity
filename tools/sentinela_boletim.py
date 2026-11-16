@@ -90,15 +90,18 @@ def verificar_site_publicado(doc_id):
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
 
+    dia_url = f"https://fabiomg-pixel.github.io/Faixa_Oculta_Antigravity/data/dias/{doc_id}.json"
     req = urllib.request.Request(
-        f"{SITE_JSON}?t={int(time.time())}",
+        f"{dia_url}?t={int(time.time())}",
         headers={"User-Agent": "FaixaOculta-Sentinela/1.0", "Cache-Control": "no-cache"}
     )
     try:
-        with urllib.request.urlopen(req, timeout=10, context=ctx) as r:
-            dados = json.loads(r.read().decode("utf-8"))
-        dias = dados.get("dias", {})
-        return doc_id in dias
+        with urllib.request.urlopen(req, timeout=12, context=ctx) as r:
+            d = json.loads(r.read().decode("utf-8"))
+        if not d:
+            return False
+        tem_jornais = bool(d.get("jornais") and d.get("jornais", {}).get("manchetes"))
+        return tem_jornais
     except Exception as e:
         log(f"Aviso ao consultar GitHub Pages ({e}). Consultando arquivo local de fallback...")
         local_path = os.path.join(WORKSPACE_DIR, "data/revista.json")
@@ -106,10 +109,82 @@ def verificar_site_publicado(doc_id):
             try:
                 with open(local_path, "r", encoding="utf-8") as f:
                     local_dados = json.load(f)
-                return doc_id in local_dados.get("dias", {})
+                d_loc = local_dados.get("dias", {}).get(doc_id)
+                if not d_loc:
+                    return False
+                return bool(d_loc.get("jornais") and d_loc.get("jornais", {}).get("manchetes"))
             except Exception:
                 pass
         return False
+
+
+def precisa_reprocessar_jornais_do_dia(doc_id, turno):
+    """Após as 09h BRT no turno da manhã, atualiza uma vez os jornais se novos PDFs de hoje chegaram no Beeper."""
+    if turno != "manha":
+        return False
+    agora_brt = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
+    if agora_brt.hour < 9:
+        return False
+    hoje_iso = agora_brt.strftime("%Y-%m-%d")
+    if not doc_id.startswith(hoje_iso):
+        return False
+
+    digest_path = os.path.join(WORKSPACE_DIR, "data", "beeper_digest_diario.json")
+    db_beeper = os.path.expanduser("~/Library/Application Support/BeeperTexts/index.db")
+    if not os.path.exists(digest_path) or not os.path.exists(db_beeper):
+        return False
+    try:
+        with open(digest_path, "r", encoding="utf-8") as f:
+            dig = json.load(f)
+        if dig.get("data_edicao") != hoje_iso:
+            return False
+        itens = dig.get("itens", [])
+        mesma_data = sum(1 for it in itens if str(it.get("data_msg", "")).startswith(hoje_iso))
+        max_ts_dig = max((int(it.get("timestamp", 0) or 0) for it in itens), default=0)
+        if mesma_data >= 7:
+            return False
+
+        import sqlite3
+        conn = sqlite3.connect(f"file:{db_beeper}?mode=ro", uri=True)
+        cur = conn.cursor()
+        meia_noite_ms = int(agora_brt.replace(hour=7, minute=30, second=0, microsecond=0).timestamp() * 1000)
+        cur.execute(
+            "SELECT MAX(timestamp), COUNT(*) FROM mx_room_messages WHERE type='FILE' AND timestamp > ?",
+            (meia_noite_ms,),
+        )
+        row = cur.fetchone()
+        conn.close()
+        max_ts_beeper = int(row[0] or 0) if row else 0
+        novos_hoje = int(row[1] or 0) if row else 0
+        if novos_hoje >= 3 and max_ts_beeper > max_ts_dig:
+            log(f"Detectados {novos_hoje} novo(s) arquivo(s) pós-07h30 no Beeper (digest tinha {mesma_data} de hoje). Solicitando atualização...")
+            return True
+    except Exception:
+        pass
+    return False
+
+
+def _limpar_estado_git_preso():
+    """Destrava eventuais rebases/merges abortados e garante que HEAD esteja na branch main."""
+    git_dir = os.path.join(WORKSPACE_DIR, ".git")
+    for lock_rel in ("index.lock", "FETCH_HEAD"):
+        lock_p = os.path.join(git_dir, lock_rel)
+        if os.path.exists(lock_p):
+            try:
+                os.remove(lock_p)
+            except Exception:
+                pass
+    if os.path.exists(os.path.join(git_dir, "rebase-merge")) or os.path.exists(os.path.join(git_dir, "rebase-apply")):
+        log("Destravando rebase git pendente (git rebase --abort)...")
+        subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "rebase", "--abort"], capture_output=True, timeout=20)
+    if os.path.exists(os.path.join(git_dir, "MERGE_HEAD")):
+        log("Destravando merge git pendente (git merge --abort)...")
+        subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "--abort"], capture_output=True, timeout=20)
+
+    br = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "symbolic-ref", "--short", "HEAD"], capture_output=True, text=True, timeout=15)
+    if br.returncode != 0 or br.stdout.strip() != "main":
+        log(f"Reposicionando HEAD para branch main (estado anterior: {br.stdout.strip() or 'detached'})...")
+        subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "checkout", "main"], capture_output=True, timeout=20)
 
 
 def sincronizar_repositorio_local():
@@ -117,10 +192,13 @@ def sincronizar_repositorio_local():
     if not os.path.exists(WORKSPACE_DIR):
         return
     try:
+        _limpar_estado_git_preso()
         r = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "pull", "--ff-only", "origin", "main"], capture_output=True, timeout=25)
         if r.returncode != 0:
             subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "fetch", "origin", "main"], capture_output=True, timeout=25)
-            subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "-X", "ours", "origin/main", "--no-edit"], capture_output=True, timeout=25)
+            m = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "-X", "ours", "origin/main", "--no-edit"], capture_output=True, timeout=25)
+            if m.returncode != 0:
+                subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "--abort"], capture_output=True, timeout=15)
     except Exception:
         pass
 
@@ -168,25 +246,33 @@ def executar_localmente(turno):
     cmd = [PYTHON_BIN, script]
 
     log(f"Executando comando local: {' '.join(cmd)}")
-    res = subprocess.run(cmd, cwd=WORKSPACE_DIR, env=env, capture_output=True, text=True, timeout=600)
+    res = subprocess.run(cmd, cwd=WORKSPACE_DIR, env=env, capture_output=True, text=True, timeout=900)
     if res.returncode != 0:
         log(f"Erro na execução local: {res.stderr.strip() or res.stdout.strip()}")
         return False
 
     log("Orquestrador local concluiu com sucesso! Commitando e publicando no GitHub Pages...")
 
-    # 3. Git add, commit, sync e push resiliente
+    # 3. Git add, commit, sync e push resiliente (nunca deixar detached HEAD nem rebase preso)
+    _limpar_estado_git_preso()
     subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "add", "data/", "index.html", "pagina.html", "audios/", "capas/"], check=False)
     subprocess.run(
         [GIT_BIN, "-C", WORKSPACE_DIR, "commit", "-m", f"Atualização editorial executada localmente no Mac ({turno}) [skip ci]"],
         check=False
     )
-    push_res = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "push", "origin", "main"], capture_output=True, text=True, timeout=45)
+    push_res = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "push", "origin", "main"], capture_output=True, text=True, timeout=120)
     if push_res.returncode != 0:
         log("Sincronizando com origin/main antes de reenviar push...")
+        _limpar_estado_git_preso()
         subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "fetch", "origin", "main"], capture_output=True, timeout=25)
-        subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "-X", "ours", "origin/main", "--no-edit"], capture_output=True, timeout=25)
-        push_res = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "push", "origin", "main"], capture_output=True, text=True, timeout=45)
+        rb = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "rebase", "-X", "ours", "origin/main"], capture_output=True, timeout=30)
+        if rb.returncode != 0:
+            log("Rebase falhou; abortando rebase e aplicando merge seguro (-X ours)...")
+            subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "rebase", "--abort"], capture_output=True, timeout=20)
+            mg = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "-X", "ours", "origin/main", "--no-edit"], capture_output=True, timeout=30)
+            if mg.returncode != 0:
+                subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "merge", "--abort"], capture_output=True, timeout=20)
+        push_res = subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "push", "origin", "main"], capture_output=True, text=True, timeout=120)
 
     if push_res.returncode == 0:
         log("SUCESSO: Apuração gerada localmente e enviada ao GitHub Pages com sucesso!")
@@ -219,6 +305,9 @@ def main():
     log(f"Checagem do sentinela: turno atual [{doc_id}] ({turno})...")
 
     if verificar_site_publicado(doc_id):
+        if precisa_reprocessar_jornais_do_dia(doc_id, turno) and not ja_executado_recentemente():
+            executar_localmente(turno)
+            return
         log(f"OK: Edição [{doc_id}] já está publicada e acessível no ar. Nada a fazer.")
         sincronizar_repositorio_local()
         return

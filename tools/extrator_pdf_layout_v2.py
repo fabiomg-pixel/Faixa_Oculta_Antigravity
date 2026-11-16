@@ -240,23 +240,26 @@ def traduzir_texto_pt(texto):
         return ""
     texto_limpo = texto.strip()
     if texto_limpo in _CACHE_TRADUCOES:
-        return _CACHE_TRADUCOES[texto_limpo]
+        return _CACHE_TRADUCOES[texto_limpo].replace("\u200b", "").replace("\ufeff", "")
 
-    # 1. Provedor primário: Google Translate GTX
-    try:
-        q = urllib.parse.quote(texto_limpo[:1900])
-        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=pt&dt=t&q={q}"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"})
-        with urllib.request.urlopen(req, timeout=5, context=SSL_CTX) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            partes = [seg[0] for seg in data[0] if seg and seg[0]]
-            res = "".join(partes).strip()
-            if res:
-                _CACHE_TRADUCOES[texto_limpo] = res
-                _salvar_cache_traducoes()
-                return res
-    except Exception:
-        pass
+    # 1. Provedor primário: Google Translate GTX (com breve retry em 429)
+    import time as _time
+    for tentativa in range(2):
+        try:
+            q = urllib.parse.quote(texto_limpo[:1900])
+            url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=pt&dt=t&q={q}"
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"})
+            with urllib.request.urlopen(req, timeout=6, context=SSL_CTX) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                partes = [seg[0] for seg in data[0] if seg and seg[0]]
+                res = "".join(partes).replace("\u200b", "").replace("\ufeff", "").strip()
+                if res:
+                    _CACHE_TRADUCOES[texto_limpo] = res
+                    _salvar_cache_traducoes()
+                    return res
+        except Exception:
+            if tentativa == 0:
+                _time.sleep(0.4)
 
     # 2. Provedor secundário: MyMemory
     try:
@@ -276,12 +279,57 @@ def traduzir_texto_pt(texto):
     return texto_limpo
 
 
+def _extrair_texto_rawdict_com_espacos(page, clip_rect=None):
+    """Reconstrói texto por linha usando gaps de bbox entre caracteres quando PDF cola palavras (ex.: Valor Econômico)."""
+    try:
+        raw = page.get_text("rawdict", clip=clip_rect) if clip_rect else page.get_text("rawdict")
+    except Exception:
+        return []
+    linhas_out = []
+    for b in raw.get("blocks", []):
+        if b.get("type") != 0:
+            continue
+        for l in b.get("lines", []):
+            lb = l.get("bbox", [0, 0, 0, 0])
+            chars = []
+            max_sz = 0.0
+            font_p = ""
+            for s in l.get("spans", []):
+                sz = float(s.get("size", 0.0))
+                if sz > max_sz:
+                    max_sz = sz
+                    font_p = s.get("font", "")
+                for ch in s.get("chars", []):
+                    c = ch.get("c", "")
+                    cb = ch.get("bbox")
+                    if c and cb:
+                        chars.append((cb[0], cb[2], c, sz))
+            if not chars:
+                continue
+            chars.sort(key=lambda it: it[0])
+            partes = [chars[0][2]]
+            prev_x1 = chars[0][1]
+            for x0, x1, c, sz in chars[1:]:
+                gap = x0 - prev_x1
+                limiar = max(0.8, (sz or max_sz or 10.0) * 0.04)
+                if gap > limiar and c != " " and partes[-1] != " ":
+                    partes.append(" ")
+                partes.append(c)
+                if x1 > prev_x1:
+                    prev_x1 = x1
+            txt = re.sub(r"\s+", " ", "".join(partes)).strip()
+            if txt:
+                linhas_out.append({"bbox": lb, "size": max_sz, "font": font_p, "text": txt, "b_idx": b.get("number", 0)})
+    return linhas_out
+
+
 def corrigir_colagem_palavras(texto):
-    """Desfaz colagens de palavras típicas de kerning apertado em PDFs (ex: 'Emmeioacrisebancária,SantiagoPeña')."""
+    """Desfaz colagens de palavras típicas de kerning apertado em PDFs e limpa zero-width spaces."""
     if not texto:
         return ""
+    s = texto.replace("\u200b", "").replace("\ufeff", "").replace("\u00ad", "")
     # Insere espaço após vírgula/ponto-e-vírgula colado a letra
-    s = re.sub(r"([,;:])([A-Za-zÀ-ÿ])", r"\1 \2", texto)
+    s = re.sub(r"([,;:])([A-Za-zÀ-ÿ])", r"\1 \2", s)
     # Insere espaço entre minúscula seguida de Maiúscula
     s = re.sub(r"([a-zà-ÿ])([A-ZÀ-Ý])", r"\1 \2", s)
     # Desfaz algumas preposições/artigos comuns colados em manchetes do Valor
@@ -295,6 +343,52 @@ def corrigir_colagem_palavras(texto):
     for pat, rep in padroes_valor:
         s = re.sub(pat, rep, s, flags=re.I)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def _eh_anuncio_ou_lixo(t):
+    """Detecta anúncios comerciais, assinaturas, quadras/cabore ou linhas separadoras."""
+    if not t:
+        return True
+    tl = t.lower().strip()
+    if not re.search(r"[a-zA-ZÀ-ÿ]{3,}", t):
+        return True
+    if t.count("-") > 6 or t.count("•") > 6:
+        return True
+    if any(k in tl for k in [
+        "plano mensal", "edição impressa", "assine a folha", "caboré", "agência do ano",
+        "compra de mídia", "quadras à escolha", "jogue em todas", "grand slam",
+        "hong kong maritime", "complimentary place", "ft live", "in partnership with",
+        "exclusivo para assinantes", "atendimento ao leitor", "painel do leitor",
+        "ombudsman", "fale com", "editoriais@", "@grupofolha", "folha.com",
+        "publicado desde", "propriedade da empresa", "fundado em", "tiragem", "cnpj",
+        "world markets at a glance", "fractional ownership", "hideaways club",
+        "aponte o celular", "qr code", "learn more at", "saiba mais em:",
+        "valor international", "amil resgate", "utis móveis", "menor distância entre você",
+        "whether you are", "investor or someone", "secretary for transport",
+    ]):
+        return True
+    # Bloqueia siglas/ruído de infográficos ou manchas tipográficas com excesso de palavras curtas em caixa alta
+    palavras = t.split()
+    if len(palavras) >= 4:
+        curtas_caps = sum(1 for w in palavras[:6] if len(w) <= 4 and w.isupper())
+        if curtas_caps >= 4:
+            return True
+    return False
+
+
+def _eh_titulo_valido(t):
+    """Garante título jornalístico autêntico (começa por maiúscula/aspas/número e não é frase quebrada ou anúncio)."""
+    if not t or _eh_anuncio_ou_lixo(t):
+        return False
+    s = t.strip()
+    if len(s) < 12 or s.count(" ") < 2:
+        return False
+    if re.search(r"\b(new york times|netu hork|financial times|washington post)\b", s, re.I) and len(s) < 35:
+        return False
+    first = s[0]
+    if not (first.isupper() or first.isdigit() or first in "\"'“‘"):
+        return False
+    return True
 
 
 def eh_span_lixo_ou_logo(texto, font_name=""):
@@ -357,7 +451,13 @@ def extrair_manchetes_detalhadas_capa_por_dict(page):
                     font_principal = fnt
 
             if partes_linha and max_sz >= 14.0:
-                linha_str = corrigir_colagem_palavras(" ".join(partes_linha))
+                joined_raw = " ".join(partes_linha)
+                # Se houver token longo colado sem espaços (>= 16 chars), recompõe via gaps de rawdict
+                if any(len(tok) >= 16 for tok in joined_raw.split()):
+                    raw_linhas = _extrair_texto_rawdict_com_espacos(page, clip_rect=bbox)
+                    if raw_linhas:
+                        joined_raw = " ".join(rl["text"] for rl in raw_linhas)
+                linha_str = corrigir_colagem_palavras(joined_raw)
                 if not eh_span_lixo_ou_logo(linha_str, font_principal):
                     spans_candidatos.append({
                         "size": round(max_sz, 1),
@@ -445,6 +545,10 @@ def extrair_blocos_limpos_pagina(page, num_pagina):
 
         # Desfazer hifenização de quebra de linha dentro do mesmo bloco
         txt = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", raw_txt)
+        if any(len(tok) >= 13 and "http" not in tok for tok in txt.split()):
+            raw_linhas = _extrair_texto_rawdict_com_espacos(page, clip_rect=(x0, y0, x1, y1))
+            if raw_linhas:
+                txt = re.sub(r"(\w)-\s+(\w)", r"\1\2", " ".join(rl["text"] for rl in raw_linhas))
         txt = corrigir_colagem_palavras(txt.replace("\n", " "))
         if len(txt) < 45:
             continue
@@ -460,7 +564,7 @@ def extrair_blocos_limpos_pagina(page, num_pagina):
         if any(lixo in tl for lixo in [
             "dólar turismo", "euro comercial", "euro turismo", "índice de empresas citadas",
             "princípios editoriais", "all rights reserved", "printed in london"
-        ]):
+        ]) or _eh_anuncio_ou_lixo(txt):
             continue
 
         blocos_limpos.append({
@@ -476,22 +580,38 @@ def extrair_blocos_limpos_pagina(page, num_pagina):
     return blocos_limpos
 
 
+def _eh_texto_ocr_corrompido(txt):
+    """Detecta ruído severo de OCR (texto invertido de ponta-cabeça em faixas/banners, ex: 'pausno satebIDues')."""
+    if not txt:
+        return True
+    toks = [t for t in txt.split() if len(t) >= 3]
+    if len(toks) < 3:
+        return False
+    estranhos = sum(
+        1 for t in toks
+        if re.search(r"[a-z]{2}[A-Z]{2}", t) or (len(t) >= 5 and sum(1 for c in t if c.isupper()) >= 2 and not t.isupper())
+    )
+    if estranhos >= max(2, len(toks) * 0.25):
+        return True
+    vogais = sum(1 for c in txt.lower() if c in "aeiouáàâãéêíóôõú")
+    letras = sum(1 for c in txt if c.isalpha())
+    if letras >= 20 and (vogais / max(letras, 1)) < 0.26:
+        return True
+    return False
+
+
 def executar_ocr_apple_vision(doc, max_pages=8, escopo="nacional"):
-    """Executa OCR via Apple Vision Framework usando o idioma adequado ('pt-BR' ou 'en-US')."""
+    """Executa OCR via Apple Vision Framework preservando colunas espaciais e manchetes reais."""
     lang = "en-US" if escopo == "internacional" else "pt-BR"
     swift_script = """
 import Vision
-import AppKit
+import Foundation
 
 let args = CommandLine.arguments
 guard args.count > 2 else { exit(1) }
 let imagePath = args[1]
 let lang = args[2]
-
-guard let img = NSImage(contentsOfFile: imagePath),
-      let cgImage = img.cgImage(forProposedRect: nil, context: nil, hints: nil) else {
-    exit(1)
-}
+let url = URL(fileURLWithPath: imagePath)
 
 let request = VNRecognizeTextRequest { (request, error) in
     guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
@@ -499,11 +619,11 @@ let request = VNRecognizeTextRequest { (request, error) in
     for obs in observations {
         if let top = obs.topCandidates(1).first {
             let box = obs.boundingBox
-            // Prefixa coordenadas y,x normalizadas para permitir reconstrução espacial
-            let y = Int((1.0 - box.origin.y) * 1000)
+            let y = Int((1.0 - box.origin.y - box.size.height) * 1000)
             let x = Int(box.origin.x * 1000)
+            let w = Int(box.size.width * 1000)
             let h = Int(box.size.height * 1000)
-            lines.append("\\(y)|\\(x)|\\(h)|\\(top.string)")
+            lines.append("\\(y)|\\(x)|\\(w)|\\(h)|\\(top.string)")
         }
     }
     print(lines.joined(separator: "\\n"))
@@ -513,7 +633,7 @@ request.recognitionLevel = .accurate
 request.recognitionLanguages = [lang, "pt-BR", "en-US"]
 request.usesLanguageCorrection = true
 
-let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+let handler = VNImageRequestHandler(url: url, options: [:])
 try? handler.perform([request])
 """
     tmp_swift = "/tmp/apple_vision_layout_v2.swift"
@@ -523,78 +643,111 @@ try? handler.perform([request])
     paginas_ocr = []
     manchete_ocr = None
     submanchetes_ocr = []
+    grupos_manchete_ocr = []
 
     total_p = min(len(doc), max_pages)
     for page_idx in range(total_p):
         page = doc[page_idx]
-        pix = page.get_pixmap(dpi=150)
+        rect = page.rect
+        pw = float(rect.width) if rect and rect.width else 800.0
+        ph = float(rect.height) if rect and rect.height else 1200.0
+        pix = page.get_pixmap(dpi=200)
         tmp_img = f"/tmp/ocr_v2_p{page_idx + 1}.png"
         pix.save(tmp_img)
 
         try:
             cmd = ["/usr/bin/swift", tmp_swift, tmp_img, lang]
-            proc = subprocess.run(cmd, capture_output=True, text=True, check=True, timeout=35)
+            proc = subprocess.run(cmd, capture_output=True, text=True, check=True, timeout=45)
             raw_lines = [l.strip() for l in proc.stdout.strip().split("\n") if l.strip()]
 
             parsed_obs = []
             for rl in raw_lines:
-                parts = rl.split("|", 3)
-                if len(parts) == 4:
-                    y, x, h, txt = int(parts[0]), int(parts[1]), int(parts[2]), parts[3].strip()
-                    if y < 55 or y > 950:
+                parts = rl.split("|", 4)
+                if len(parts) == 5:
+                    y, x, w, h, txt = int(parts[0]), int(parts[1]), int(parts[2]), int(parts[3]), parts[4].strip()
+                    if y < 45 or y > 955:
                         continue
-                    if eh_span_lixo_ou_logo(txt):
+                    if eh_span_lixo_ou_logo(txt) or _eh_texto_ocr_corrompido(txt):
                         continue
-                    parsed_obs.append({"y": y, "x": x, "h": h, "text": txt})
+                    parsed_obs.append({"y": y, "x": x, "w": max(w, 20), "h": max(h, 4), "text": txt})
 
+            # Construir grupos de manchetes espaciais na Capa (Página 1, abaixo do logotipo/cabeçalho y >= 115)
             if page_idx == 0 and parsed_obs:
-                # Na capa escaneada, as maiores alturas de bounding box (`h`) são as manchetes!
-                grandes = [o for o in parsed_obs if o["h"] >= 16 and len(o["text"]) >= 12]
-                grandes.sort(key=lambda o: (-o["h"], o["y"]))
-                if grandes:
-                    h_top = grandes[0]["h"]
-                    linhas_manchete = [
-                        g for g in grandes
-                        if abs(g["h"] - h_top) <= 6 and abs(g["y"] - grandes[0]["y"]) <= 120
-                    ]
-                    linhas_manchete.sort(key=lambda o: o["y"])
-                    cand_m = corrigir_colagem_palavras(" ".join(l["text"] for l in linhas_manchete))
-                    if len(cand_m) >= 18:
-                        manchete_ocr = cand_m
-                    for g in grandes[len(linhas_manchete):len(linhas_manchete) + 5]:
-                        if len(g["text"]) >= 20:
-                            submanchetes_ocr.append(g["text"])
+                grandes = [o for o in parsed_obs if o["h"] >= 15 and o["y"] >= 115 and len(o["text"]) >= 6]
+                grandes.sort(key=lambda o: (-o["h"], o["y"], o["x"]))
+                usados_g = set()
+                for gi, g in enumerate(grandes):
+                    if gi in usados_g:
+                        continue
+                    usados_g.add(gi)
+                    grupo = [g]
+                    for gj, out in enumerate(grandes):
+                        if gj in usados_g:
+                            continue
+                        mesmo_h = abs(out["h"] - g["h"]) <= max(8, int(g["h"] * 0.45))
+                        perto_x = abs(out["x"] - g["x"]) <= 120 or (min(out["x"] + out["w"], g["x"] + g["w"]) > max(out["x"], g["x"]) + 20)
+                        min_y = min(it["y"] for it in grupo)
+                        max_y = max(it["y"] + it["h"] for it in grupo)
+                        perto_y = (min_y - out["h"] - 25) <= out["y"] <= (max_y + 25)
+                        if mesmo_h and perto_x and perto_y:
+                            grupo.append(out)
+                            usados_g.add(gj)
+                    grupo.sort(key=lambda o: (o["y"], o["x"]))
+                    tit_g = corrigir_colagem_palavras(" ".join(it["text"] for it in grupo))
+                    if _eh_titulo_valido(tit_g) and not _eh_texto_ocr_corrompido(tit_g):
+                        grupos_manchete_ocr.append({
+                            "size": float(g["h"]),
+                            "font": "OCR",
+                            "manchete": tit_g,
+                            "x0": round(min(it["x"] for it in grupo) * pw / 1000.0, 1),
+                            "y0": round(min(it["y"] for it in grupo) * ph / 1000.0, 1),
+                            "x1": round(max(it["x"] + it["w"] for it in grupo) * pw / 1000.0, 1),
+                            "y1": round(max(it["y"] + it["h"] for it in grupo) * ph / 1000.0, 1),
+                        })
 
-            # Agrupar observações da página em blocos por coluna aproximada
-            parsed_obs.sort(key=lambda o: (o["x"] // 250, o["y"]))
-            texto_pag = " ".join(o["text"] for o in parsed_obs if len(o["text"]) >= 15)
-            texto_pag = re.sub(r"(\w)-\s+(\w)", r"\1\2", texto_pag)
+                grupos_manchete_ocr.sort(key=lambda o: (-o["size"], o["y0"]))
+                if grupos_manchete_ocr:
+                    manchete_ocr = grupos_manchete_ocr[0]["manchete"]
+                    submanchetes_ocr = [g["manchete"] for g in grupos_manchete_ocr[1:6]]
 
-            sents_pag = split_into_sentences(texto_pag)
+            # Agrupar linhas de corpo preservando colunas reais (evitando misturar colunas paralelas)
+            corpo_obs = [o for o in parsed_obs if len(o["text"]) >= 12]
+            corpo_obs.sort(key=lambda o: (o["x"] // 175, o["y"]))
+
             blocos_ocr_pag = []
-            cur_p = []
-            cur_len = 0
-            for s in sents_pag:
-                cur_p.append(s)
-                cur_len += len(s)
-                if cur_len >= 180 or len(cur_p) >= 3:
+
+            def _flush_ocr_cluster(cl_items):
+                if not cl_items:
+                    return
+                txt_c = re.sub(r"(\w)-\s+(\w)", r"\1\2", " ".join(it["text"] for it in cl_items))
+                txt_c = corrigir_colagem_palavras(txt_c)
+                if len(txt_c) >= 40 and not _eh_texto_ocr_corrompido(txt_c) and not _eh_anuncio_ou_lixo(txt_c):
+                    x_min = min(it["x"] for it in cl_items)
+                    x_max = max(it["x"] + it["w"] for it in cl_items)
+                    y_min = min(it["y"] for it in cl_items)
                     blocos_ocr_pag.append({
                         "pagina": page_idx + 1,
-                        "x0": 50,
-                        "y0": 100 + len(blocos_ocr_pag) * 80,
-                        "largura": 450,
-                        "texto": " ".join(cur_p)
+                        "x0": round(x_min * pw / 1000.0, 1),
+                        "y0": round(y_min * ph / 1000.0, 1),
+                        "largura": round((x_max - x_min) * pw / 1000.0, 1),
+                        "texto": txt_c,
                     })
-                    cur_p = []
-                    cur_len = 0
-            if cur_p:
-                blocos_ocr_pag.append({
-                    "pagina": page_idx + 1,
-                    "x0": 50,
-                    "y0": 100 + len(blocos_ocr_pag) * 80,
-                    "largura": 450,
-                    "texto": " ".join(cur_p)
-                })
+
+            cluster = []
+            for ob in corpo_obs:
+                if not cluster:
+                    cluster.append(ob)
+                    continue
+                prev = cluster[-1]
+                mesma_col = (ob["x"] // 175 == prev["x"] // 175) or abs(ob["x"] - prev["x"]) <= 45
+                gap_y = ob["y"] - (prev["y"] + prev["h"])
+                tot_chars = sum(len(it["text"]) for it in cluster)
+                if mesma_col and -5 <= gap_y <= max(28, prev["h"] * 3) and tot_chars < 650:
+                    cluster.append(ob)
+                else:
+                    _flush_ocr_cluster(cluster)
+                    cluster = [ob]
+            _flush_ocr_cluster(cluster)
 
             if blocos_ocr_pag:
                 paginas_ocr.append({
@@ -611,6 +764,7 @@ try? handler.perform([request])
         "metodo": f"apple_vision_ocr_{lang}",
         "manchete_capa": manchete_ocr,
         "submanchetes_capa": submanchetes_ocr,
+        "grupos_manchete": grupos_manchete_ocr,
         "paginas": paginas_ocr
     }
 
@@ -804,23 +958,54 @@ def format_story_paragraphs(blocks_text, max_paragraphs=4):
 
 
 def extrair_pontos_chave(pars):
-    """Extrai 2 a 3 pontos factuais (sentenças completas) do texto da reportagem."""
+    """Extrai 2 a 3 pontos factuais (sentenças completas) distintos da abertura de texto_integral[0]."""
+    if not pars:
+        return []
+    t0_abertura = re.sub(r"\s+", " ", str(pars[0]).strip()).lower()[:85]
     pontos = []
-    for p in pars:
-        for s in split_into_sentences(p):
-            if 40 <= len(s) <= 180 and not s.startswith(('Foto', 'AFP', 'Folha', 'Estadão', 'O Globo', 'Valor', 'Bloomberg')):
-                if not s.endswith('.'):
-                    s += '.'
-                pontos.append(s)
+    vistas = set()
+
+    def _eh_abertura_duplicada(sent_str):
+        sn = re.sub(r"\s+", " ", sent_str.strip()).lower()[:55]
+        return len(sn) >= 20 and sn in t0_abertura
+
+    # Prioriza sentenças dos parágrafos seguintes e sentenças secundárias do 1º parágrafo
+    ordem_pars = list(pars[1:]) + [pars[0]]
+    for p in ordem_pars:
+        for s in split_into_sentences(str(p)):
+            if not (40 <= len(s) <= 210):
+                continue
+            if s.startswith(("Foto", "AFP", "Folha", "Estadão", "O Globo", "Valor", "Bloomberg")):
+                continue
+            if _eh_abertura_duplicada(s):
+                continue
+            s_clean = s if s.endswith((".", "!", "?")) else s + "."
+            chave = s_clean[:50].lower()
+            if chave not in vistas:
+                vistas.add(chave)
+                pontos.append(s_clean)
                 if len(pontos) >= 3:
                     return pontos
-    while len(pontos) < 2 and pars:
-        trecho = pars[0].strip()
-        if len(trecho) > 170:
-            trecho = trecho[:167].rsplit(' ', 1)[0].rstrip('.,;:') + '...'
-        elif not trecho.endswith('.'):
-            trecho += '.'
-        pontos.append(trecho)
+
+    if not pontos:
+        for p in ordem_pars:
+            trecho = re.sub(r"\s+", " ", str(p).strip())
+            if _eh_abertura_duplicada(trecho) and len(pars) == 1:
+                continue
+            if len(trecho) > 190:
+                trecho = trecho[:187].rsplit(" ", 1)[0].rstrip(".,;:") + "..."
+            elif not trecho.endswith("."):
+                trecho += "."
+            if trecho and trecho[:45].lower() not in vistas:
+                vistas.add(trecho[:45].lower())
+                pontos.append(trecho)
+                if len(pontos) >= 2:
+                    break
+
+    if not pontos and pars:
+        palavras = re.sub(r"\s+", " ", str(pars[0]).strip()).split()
+        resumo_sec = " ".join(palavras[12:38]) if len(palavras) > 18 else f"Cobertura em detalhes com foco nos desdobramentos principais."
+        pontos.append(resumo_sec.rstrip(".,;:") + ".")
     return pontos[:3]
 
 
@@ -911,22 +1096,25 @@ def extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int):
     corpo_blocos = []
     for b in blocos_pag:
         t = b.get("texto", "").strip()
-        tl = t.lower()
-        if any(w in tl for w in ["painel do leitor", "atendimento", "ombudsman", "fale com", "índice", "colunistas", "editoriais@", "@grupofolha", "folha.com", "assine", "publicado desde", "propriedade da empresa", "fundado em", "tiragem", "cnpj", "diretor"]):
+        if _eh_anuncio_ou_lixo(t):
             continue
-        if not cand_tit and 15 <= len(t) <= 95 and not t.endswith(".") and t.count(" ") >= 2 and "@" not in t and ".com" not in tl:
+        if not eh_int and len(re.findall(r"\b(the|and|with|you|are|your|this|from|have)\b", t, re.I)) >= 3:
+            continue
+        if not cand_tit and 15 <= len(t) <= 115 and not t.endswith(".") and "@" not in t and ".com" not in t.lower() and _eh_titulo_valido(t):
             cand_tit = t
         elif len(t) >= 60:
             corpo_blocos.append(t)
 
     if not cand_tit and corpo_blocos:
-        primeira_frase = split_into_sentences(corpo_blocos[0])
-        cand_tit = primeira_frase[0][:90] if primeira_frase else f"Reportagem da Página {num_pag}"
-    if not cand_tit:
+        for fr in split_into_sentences(corpo_blocos[0]):
+            if _eh_titulo_valido(fr[:95]):
+                cand_tit = fr[:95]
+                break
+    if not cand_tit or _eh_anuncio_ou_lixo(cand_tit):
         return None
 
     pars = format_story_paragraphs(corpo_blocos[:20], max_paragraphs=18)
-    if not pars:
+    if not pars or sum(len(p) for p in pars) < 220:
         return None
 
     t_pt = traduzir_texto_pt(cand_tit) if eh_int else cand_tit
@@ -995,7 +1183,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
                 continue
             t_txt = re.sub(r'^(?:terça-feira|segunda-feira|quarta-feira|quinta-feira|sexta-feira|sábado|domingo|tuesday|monday|wednesday|thursday|friday|saturday|sunday)[,\s\d\w]*[–—-]\s*|^(?:terça-feira|segunda-feira|quarta-feira|quinta-feira|sexta-feira|sábado|domingo|tuesday|monday|wednesday|thursday|friday|saturday|sunday)[,\s\d\w]*de \d{4}\s*', '', t_txt, flags=re.I).strip()
             g["manchete"] = t_txt
-            if len(t_txt) >= 12 and t_txt.count(" ") >= 1:
+            if _eh_titulo_valido(t_txt):
                 titulos_validos.append(g)
 
         # Consolidar subtítulos / linhas-finas no título principal correspondente
@@ -1059,7 +1247,8 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
                 if by0 < gy0 + 10:
                     continue
                 dist_y = by0 - gy1
-                if dist_y < -10 or dist_y > 170:
+                max_dist_y = 380 if g.get("size", 18) >= 24 else 240
+                if dist_y < -10 or dist_y > max_dist_y:
                     continue
 
                 if is_wide:
@@ -1077,9 +1266,9 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
             if melhor_idx is not None:
                 atribuicoes[melhor_idx].append((by0, bx0, btxt))
 
-        # 3. Montar as reportagens da capa a partir dos blocos atribuídos a cada título
+        # 3. Montar as reportagens da capa (máx 2 destaques densos na capa para reservar espaço às páginas internas)
         for idx_t, g in enumerate(titulos_validos):
-            if len(reportagens) >= 4:
+            if len(reportagens) >= 2:
                 break
             matched_blocks = atribuicoes[idx_t]
             if not matched_blocks:
@@ -1097,7 +1286,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
 
             raw_texts = [m[2] for m in matched_blocks]
             pars = format_story_paragraphs(raw_texts, max_paragraphs=18)
-            if pars:
+            if pars and sum(len(p) for p in pars) >= 220:
                 t_pt = traduzir_texto_pt(t_txt) if eh_int else t_txt
                 t_orig = t_txt if eh_int else None
                 pars_pt = [traduzir_texto_pt(p) for p in pars] if eh_int else pars

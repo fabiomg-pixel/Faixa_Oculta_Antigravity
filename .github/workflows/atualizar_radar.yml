@@ -59,7 +59,13 @@ jobs:
               sys.exit(0)
           agora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
           data_iso = agora.strftime("%Y-%m-%d")
-          turno_id = data_iso if agora.hour < 17 else f"{data_iso}-noite"
+          if 5 <= agora.hour < 17:
+              turno_id = data_iso
+          elif agora.hour >= 17:
+              turno_id = f"{data_iso}-noite"
+          else:
+              ontem = (agora - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+              turno_id = f"{ontem}-noite"
           try:
               with open("data/revista.json", "r", encoding="utf-8") as f:
                   db = json.load(f)

@@ -114,7 +114,7 @@ PERFIS_CONFIG = {
         "nacional": [
             ("Folha de S.Paulo", ["folha de s paulo", "folha de s.paulo", "folha de sp", "folha de são paulo", "folha de sao paulo"]),
             ("O Estado de S. Paulo", ["estado de s paulo", "estado de s.paulo", "estadao", "estadão"]),
-            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd", "o globo -  hd"]),
+            ("O Globo", ["o globo - hd", "o globo – hd", "o globo- hd", "o globo‐ hd", "o globo -  hd", "o globo hd"]),
             ("Valor Econômico", ["valor econômico", "valor economico"])
         ],
         "internacional": [
@@ -162,7 +162,9 @@ PERFIS_CONFIG = {
 
 EXCLUSOES_DIARIO = (
     "magazine", "style", "nytbr", "book review", "sunday sections",
-    "how to spend it", "piracicaba", "pernambuco", "barra", "niteroi", "niterói", "ela-"
+    "how to spend it", "piracicaba", "pernambuco", "barra", "niteroi", "niterói", "ela-",
+    "eu&", "empresas & negócios", "empresas & negocios", "previsões da semana", "previsoes da semana",
+    "signos", "suplemento", "cartacapital", "carta capital", "piaui", "piauí", "economist", "new yorker"
 )
 
 PADROES_CABECALHO_LIXO = [
@@ -301,8 +303,8 @@ def obter_edicao_lemonde_rss():
                 f"Acesso à íntegra da reportagem na cobertura oficial de Le Monde (edição digital): {link}"
             ],
             "pontos": [
-                t_pt[:120],
-                desc_pt[:120] if desc_pt else t_orig[:120]
+                f"Manchete internacional: {t_pt[:140]}",
+                "Cobertura em tempo real da edição diplomática do Le Monde com foco geopolítico."
             ],
             "url": link
         })
@@ -485,7 +487,7 @@ def download_file(src_url):
             "Content-Type": "application/json"
         }
     )
-    with urllib.request.urlopen(req, timeout=150) as resp:
+    with urllib.request.urlopen(req, timeout=240) as resp:
         res = json.loads(resp.read().decode("utf-8"))
         local_url = res.get("srcURL", "")
         clean_path = local_url.replace("file://", "").replace("%20", " ")
@@ -682,11 +684,17 @@ def extrair_estrutura_jornal_automatica(item, img_rel_path):
             continue
 
         tit_final = traduzir_pt(cand_tit) if eh_int else cand_tit
-        blocos_finais = [traduzir_pt(b) for b in blocos[:3]] if eh_int else blocos[:3]
-        pontos = []
-        for blk in blocos_finais[:2]:
-            primeira = re.split(r"(?<=[.!?])\s+", blk.strip())[0]
-            pontos.append(primeira if len(primeira) <= 220 else primeira[:217].rsplit(" ", 1)[0] + "...")
+        blocos_finais = [traduzir_pt(b) for b in blocos[:14]] if eh_int else blocos[:14]
+        try:
+            from tools.extrator_pdf_layout_v2 import extrair_pontos_chave
+            pontos = extrair_pontos_chave(blocos_finais)
+        except Exception:
+            pontos = []
+            for blk in blocos_finais[1:3]:
+                primeira = re.split(r"(?<=[.!?])\s+", blk.strip())[0]
+                pontos.append(primeira if len(primeira) <= 220 else primeira[:217].rsplit(" ", 1)[0] + "...")
+            if not pontos:
+                pontos = [f"Cobertura de {v_nome} sobre '{tit_final[:110]}'."]
 
         if idx_p == 0:
             manchete_principal = tit_final
@@ -834,8 +842,11 @@ def publicar_banca_jornais(digest_resultado):
                         "texto_integral": r0.get("texto_integral", []),
                         "pontos": r0.get("pontos", [])
                     })
+            beeper_max_ts = max((int(it.get("timestamp", 0) or 0) for it in digest_resultado.get("itens", [])), default=0)
             bloco_jornais = {
                 "data_edicao": hoje_iso,
+                "gerado_em": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "beeper_max_ts": beeper_max_ts,
                 "resumo": f"Síntese das primeiras páginas, editoriais e principais reportagens dos {len(manchetes_auto)} grandes diários nacionais e internacionais processados em {hoje_iso}. Clique em qualquer jornal para ler seus cadernos e reportagens no Modo Leitor.",
                 "contraste": "Confronto analítico entre as manchetes econômicas e políticas da imprensa brasileira e a cobertura internacional traduzida na íntegra.",
                 "manchetes": manchetes_auto,
@@ -935,8 +946,16 @@ def publicar_revistas_semana(digest_resultado):
                 rep["texto_integral"] = ti
                 rep.pop("texto", None)
                 if not rep.get("pontos"):
-                    s1 = re.split(r"(?<=[.!?])\s+", str(ti[0]).strip())[0]
-                    rep["pontos"] = [s1 if len(s1) <= 220 else s1[:217].rsplit(" ", 1)[0] + "..."]
+                    try:
+                        from tools.extrator_pdf_layout_v2 import extrair_pontos_chave
+                        rep["pontos"] = extrair_pontos_chave(ti)
+                    except Exception:
+                        alvo_pt = str(ti[1] if len(ti) > 1 else ti[0]).strip()
+                        s1 = re.split(r"(?<=[.!?])\s+", alvo_pt)[0]
+                        if len(ti) == 1 and len(s1) > 80:
+                            rep["pontos"] = [f"Análise em detalhes: {rep.get('titulo', 'Artigo da edição')[:140]}."]
+                        else:
+                            rep["pontos"] = [s1 if len(s1) <= 220 else s1[:217].rsplit(" ", 1)[0] + "..."]
         extraidas.append(obj)
 
     if not extraidas:
@@ -1051,23 +1070,40 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
                 log(f"  [!] {nome_veiculo} ({escopo}): Nenhuma edição recente encontrada no Beeper.")
                 continue
 
-            # Prioriza SEMPRE a edição mais recente por data/timestamp; 'baixado' é apenas desempate
-            candidatos.sort(key=lambda x: (x["data_msg"][:10], x["timestamp"], 1 if x.get("baixado") else 0), reverse=True)
-            top = candidatos[0]
-            log(f"  -> {nome_veiculo} ({escopo}): '{top['arquivo']}' ({top['data_msg']})")
+            # Prioriza SEMPRE a edição mais recente por data; no mesmo dia favorece downloads menores (<=35MB) ou já baixados
+            candidatos.sort(
+                key=lambda x: (
+                    x["data_msg"][:10],
+                    1 if float(x.get("tamanho_mb", 0) or 0) <= 35.0 else 0,
+                    x["timestamp"],
+                    1 if x.get("baixado") else 0,
+                ),
+                reverse=True,
+            )
 
-            caminho_local = top["local_path"]
-            if not caminho_local or not os.path.exists(caminho_local):
+            top = None
+            caminho_local = None
+            for cand in candidatos[:5]:
+                p_cand = cand.get("local_path")
+                if p_cand and os.path.exists(p_cand):
+                    top = cand
+                    caminho_local = p_cand
+                    break
                 if auto_download:
-                    log(f"     Baixando arquivo ({top['tamanho_mb']} MB) via Beeper API...")
+                    log(f"  -> {nome_veiculo} ({escopo}): '{cand['arquivo']}' ({cand['data_msg']}, {cand['tamanho_mb']} MB)")
                     try:
-                        caminho_local = download_file(top["src_url"])
-                        log(f"     Baixado com sucesso em: {caminho_local}")
+                        caminho_local = download_file(cand["src_url"])
+                        if caminho_local and os.path.exists(caminho_local):
+                            top = cand
+                            log(f"     Baixado com sucesso em: {caminho_local}")
+                            break
                     except Exception as e:
-                        log(f"     Erro ao baixar {top['arquivo']}: {e}")
-                        continue
-                else:
-                    continue
+                        log(f"     Erro ao baixar {cand['arquivo']}: {e}; tentando próximo candidato...")
+            if not top or not caminho_local:
+                log(f"  [!] {nome_veiculo} ({escopo}): Falha ao obter PDF válido entre {len(candidatos)} candidato(s).")
+                continue
+            if top.get("local_path"):
+                log(f"  -> {nome_veiculo} ({escopo}): '{top['arquivo']}' ({top['data_msg']})")
 
             # Reaproveitar OCR se o mesmo arquivo já foi processado com >= 6 páginas
             cached = cache_ocr.get(top["arquivo"])
@@ -1085,6 +1121,7 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
                     "escopo": escopo,
                     "arquivo": top["arquivo"],
                     "data_msg": top["data_msg"],
+                    "timestamp": top.get("timestamp", 0),
                     "local_path": caminho_local,
                     "metodo": dados_extracao["metodo"],
                     "total_paginas": dados_extracao["total_paginas"],

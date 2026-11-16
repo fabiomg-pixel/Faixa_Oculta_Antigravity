@@ -17,6 +17,7 @@ DIRETRIZES MANDATÓRIAS INVIOLÁVEIS:
 import os
 import sys
 import json
+import time
 import gzip
 import ssl
 import re
@@ -187,25 +188,66 @@ def _obter_gemini_key():
     return api_key
 
 
+_CACHE_TR_FILE = os.path.join("data", "cache_traducoes.json")
+_CACHE_TR = {}
+if os.path.exists(_CACHE_TR_FILE):
+    try:
+        with open(_CACHE_TR_FILE, "r", encoding="utf-8") as _ft:
+            _CACHE_TR = json.load(_ft)
+    except Exception:
+        pass
+
+
+def _salvar_cache_tr():
+    try:
+        os.makedirs(os.path.dirname(_CACHE_TR_FILE), exist_ok=True)
+        with open(_CACHE_TR_FILE, "w", encoding="utf-8") as _ft:
+            json.dump(_CACHE_TR, _ft, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
+
+
 def traduzir_texto(texto, de="auto", para="pt"):
-    """Traduz texto de notícias internacionais para o português culto com fallback Gemini."""
+    """Traduz texto de notícias internacionais para o português culto com cache, retry GTX, MyMemory e fallback Gemini."""
     if not texto:
         return ""
     texto_limpo = texto.strip()
     if not texto_limpo:
         return ""
+    if texto_limpo in _CACHE_TR:
+        return _CACHE_TR[texto_limpo]
+
+    # 1. Google Translate GTX (com 1 retry em falha transitória/429)
+    for tent in range(2):
+        try:
+            url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl={de}&tl={para}&dt=t&q=" + parse.quote(texto_limpo[:1900])
+            req = request.Request(url, headers=HEADERS)
+            with request.urlopen(req, timeout=7, context=CTX) as r:
+                res = json.loads(r.read().decode("utf-8"))
+                trad = "".join([part[0] for part in res[0] if part[0]]).strip()
+                if trad and trad.lower() != texto_limpo.lower():
+                    _CACHE_TR[texto_limpo] = trad
+                    _salvar_cache_tr()
+                    return trad
+        except Exception:
+            if tent == 0:
+                time.sleep(0.45)
+
+    # 2. Fallback secundário gratuito: MyMemory
     try:
-        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl={de}&tl={para}&dt=t&q=" + parse.quote(texto_limpo)
-        req = request.Request(url, headers=HEADERS)
-        with request.urlopen(req, timeout=6, context=CTX) as r:
-            res = json.loads(r.read().decode("utf-8"))
-            trad = "".join([part[0] for part in res[0] if part[0]]).strip()
-            if trad and trad.lower() != texto_limpo.lower():
-                return trad
+        mm_url = f"https://api.mymemory.translated.net/get?q={parse.quote(texto_limpo[:480])}&langpair=en|pt"
+        req_mm = request.Request(mm_url, headers=HEADERS)
+        with request.urlopen(req_mm, timeout=6, context=CTX) as r_mm:
+            res_mm = json.loads(r_mm.read().decode("utf-8"))
+            trad_mm = res_mm.get("responseData", {}).get("translatedText", "").strip()
+            if trad_mm and "MYMEMORY WARNING" not in trad_mm and trad_mm.lower() != texto_limpo.lower():
+                _CACHE_TR[texto_limpo] = trad_mm
+                _salvar_cache_tr()
+                return trad_mm
     except Exception:
         pass
 
-    # Fallback via API do Gemini (gemini-4-hydrogen / gemini-4-argon / gemini-3.8-flash) em caso de falha ou rate-limit (HTTP 429)
+    # 3. Fallback via API do Gemini (descarta rápido em 402/quota)
     api_key = _obter_gemini_key()
     if api_key:
         for modelo_gemini in ("gemini-4-hydrogen", "gemini-4-argon", "gemini-3.8-flash"):
@@ -227,8 +269,12 @@ def traduzir_texto(texto, de="auto", para="pt"):
                     res_g = json.loads(r_g.read().decode("utf-8"))
                     cand_txt = res_g.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "").strip()
                     if cand_txt:
+                        _CACHE_TR[texto_limpo] = cand_txt
+                        _salvar_cache_tr()
                         return cand_txt
-            except Exception:
+            except Exception as exc:
+                if "402" in str(exc) or "Payment Required" in str(exc):
+                    break
                 continue
     return texto_limpo
 
@@ -714,11 +760,20 @@ def main():
                 break
 
     agora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
-    data_iso = agora.strftime("%Y-%m-%d")
     hora = agora.hour
-
-    edicao = "manha" if hora < 17 else "noite"
-    doc_id = data_iso if edicao == "manha" else f"{data_iso}-noite"
+    if 5 <= hora < 17:
+        data_iso = agora.strftime("%Y-%m-%d")
+        edicao = "manha"
+        doc_id = data_iso
+    elif hora >= 17:
+        data_iso = agora.strftime("%Y-%m-%d")
+        edicao = "noite"
+        doc_id = f"{data_iso}-noite"
+    else:
+        ontem = (agora - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+        data_iso = ontem
+        edicao = "noite"
+        doc_id = f"{ontem}-noite"
 
     print(f"=== INICIANDO APURAÇÃO DA FAIXA OCULTA ({doc_id}) ===")
 
@@ -726,9 +781,52 @@ def main():
     with open(revista_path, "r", encoding="utf-8") as f:
         db = json.load(f)
 
+    def _nota_precisa_traducao(n_obj):
+        if n_obj.get("escopo") != "internacional":
+            return False
+        t_cur = (n_obj.get("titulo") or "").strip()
+        t_org = (n_obj.get("titulo_original") or "").strip()
+        if t_org and t_cur.lower() == t_org.lower():
+            return True
+        return False
+
     forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
     if not forcar and doc_id in db.get("dias", {}):
-        print(f"Edição [{doc_id}] já existe em {revista_path}. Nada a fazer.")
+        dia_exist = db["dias"][doc_id]
+        pendentes = [n for n in dia_exist.get("notas", []) if _nota_precisa_traducao(n)]
+        if not pendentes:
+            print(f"Edição [{doc_id}] já existe em {revista_path} com todas as notas traduzidas. Nada a fazer.")
+            return
+        print(f"Reparando {len(pendentes)} nota(s) internacional(is) sem tradução em [{doc_id}]...")
+        corrigidas = 0
+        for n in pendentes:
+            t_org = (n.get("titulo_original") or n.get("titulo") or "").strip()
+            t_pt = traduzir_texto(t_org)
+            if t_pt and t_pt.lower() != t_org.lower():
+                n["titulo"] = t_pt
+                corrigidas += 1
+            tc = n.get("texto_completo") or []
+            if tc:
+                n["texto_completo"] = [traduzir_texto(p) for p in tc]
+                n["texto"] = n["texto_completo"][0]
+            for f_obj in n.get("fontes", []):
+                if n.get("texto_completo"):
+                    f_obj["texto_integral"] = n["texto_completo"]
+                    if len(n["texto_completo"]) > 1:
+                        f_obj["pontos"] = [p[:100] + "..." for p in n["texto_completo"][1:4]]
+                        f_obj["citacao"] = n["texto_completo"][1][:120] + "..."
+                url_f = f_obj.get("url")
+                if url_f:
+                    ch = f"{n.get('id', 'nota')}-{url_chave(url_f)[:30]}"
+                    if ch in db.get("leituras", {}):
+                        db["leituras"][ch]["titulo"] = n.get("titulo", "")
+                        db["leituras"][ch]["resumo"] = [n.get("texto", "")]
+                        db["leituras"][ch]["texto_integral"] = n.get("texto_completo", [])
+                        db["leituras"][ch]["pontos"] = f_obj.get("pontos", [])
+        if corrigidas:
+            with open(revista_path, "w", encoding="utf-8") as f:
+                json.dump(db, f, ensure_ascii=False, indent=2)
+            print(f"Sucesso: {corrigidas} nota(s) internacional(is) retraduzidas em [{doc_id}].")
         return
 
     # Coletar URLs e títulos da edição imediatamente anterior para evitar duplicatas entre turnos

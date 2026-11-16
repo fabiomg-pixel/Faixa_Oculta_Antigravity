@@ -219,8 +219,9 @@ def main():
     doc_id = nova_semana["fim"]
 
     forcar = os.environ.get("FORCAR_EXECUCAO", "").strip().lower() in ("1", "true", "sim") or "--forcar" in sys.argv
-    if not forcar and doc_id in db.get("semanas", {}):
-        print(f"Revista da semana [{doc_id}] já existe em {revista_path}. Nada a fazer.")
+    sem_existente = db.get("semanas", {}).get(doc_id, {})
+    if not forcar and sem_existente and sem_existente.get("temas"):
+        print(f"Revista da semana [{doc_id}] já existe em {revista_path} com {len(sem_existente['temas'])} tema(s). Nada a fazer.")
         return
 
     db["semanas"][doc_id] = nova_semana
