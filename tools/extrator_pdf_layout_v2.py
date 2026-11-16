@@ -655,21 +655,51 @@ try? handler.perform([request])
         tmp_img = f"/tmp/ocr_v2_p{page_idx + 1}.png"
         pix.save(tmp_img)
 
-        try:
-            cmd = ["/usr/bin/swift", tmp_swift, tmp_img, lang]
+        def _rodar_swift_vision(img_path, y_offset_norm=0.0, y_scale_norm=1.0):
+            cmd = ["/usr/bin/swift", tmp_swift, img_path, lang]
             proc = subprocess.run(cmd, capture_output=True, text=True, check=True, timeout=45)
-            raw_lines = [l.strip() for l in proc.stdout.strip().split("\n") if l.strip()]
-
-            parsed_obs = []
-            for rl in raw_lines:
+            out_obs = []
+            for rl in proc.stdout.strip().split("\n"):
+                rl = rl.strip()
+                if not rl:
+                    continue
                 parts = rl.split("|", 4)
                 if len(parts) == 5:
-                    y, x, w, h, txt = int(parts[0]), int(parts[1]), int(parts[2]), int(parts[3]), parts[4].strip()
+                    y_loc, x, w, h_loc, txt = int(parts[0]), int(parts[1]), int(parts[2]), int(parts[3]), parts[4].strip()
+                    y = int(y_offset_norm * 1000 + y_loc * y_scale_norm)
+                    h = max(int(h_loc * y_scale_norm), 4)
                     if y < 45 or y > 955:
                         continue
                     if eh_span_lixo_ou_logo(txt) or _eh_texto_ocr_corrompido(txt):
                         continue
-                    parsed_obs.append({"y": y, "x": x, "w": max(w, 20), "h": max(h, 4), "text": txt})
+                    out_obs.append({"y": y, "x": x, "w": max(w, 20), "h": h, "text": txt})
+            return out_obs
+
+        try:
+            parsed_obs = _rodar_swift_vision(tmp_img)
+            # Se o Vision inverter a página inteira (típico de folhas altas com < 50 linhas válidas), refaz fatiado em metades 220 DPI
+            if len(parsed_obs) < 50:
+                from PIL import Image as _PILImage
+                pix_hi = page.get_pixmap(dpi=220)
+                tmp_hi = f"/tmp/ocr_v2_p{page_idx + 1}_hi.png"
+                pix_hi.save(tmp_hi)
+                try:
+                    im_hi = _PILImage.open(tmp_hi)
+                    iw, ih = im_hi.size
+                    parsed_split = []
+                    for y0_frac, y1_frac in ((0.0, 0.52), (0.52, 1.0)):
+                        tmp_part = f"/tmp/ocr_v2_p{page_idx + 1}_p{int(y0_frac*100)}.png"
+                        im_hi.crop((0, int(ih * y0_frac), iw, int(ih * y1_frac))).save(tmp_part)
+                        try:
+                            parsed_split.extend(_rodar_swift_vision(tmp_part, y_offset_norm=y0_frac, y_scale_norm=(y1_frac - y0_frac)))
+                        finally:
+                            if os.path.exists(tmp_part):
+                                os.remove(tmp_part)
+                    if len(parsed_split) > len(parsed_obs):
+                        parsed_obs = parsed_split
+                finally:
+                    if os.path.exists(tmp_hi):
+                        os.remove(tmp_hi)
 
             # Construir grupos de manchetes espaciais na Capa (Página 1, abaixo do logotipo/cabeçalho y >= 115)
             if page_idx == 0 and parsed_obs:
@@ -719,9 +749,21 @@ try? handler.perform([request])
             def _flush_ocr_cluster(cl_items):
                 if not cl_items:
                     return
-                txt_c = re.sub(r"(\w)-\s+(\w)", r"\1\2", " ".join(it["text"] for it in cl_items))
+                eh_cab = all(it["h"] >= 15 for it in cl_items)
+                # Recupera ponto final omitido pelo OCR quando a linha seguinte inicia parágrafo indentado em maiúscula
+                col_left = min(it["x"] for it in cl_items)
+                textos_l = []
+                for idx_c, it in enumerate(cl_items):
+                    t_it = it["text"].strip()
+                    if idx_c > 0 and not eh_cab and (it["x"] - col_left >= 8) and t_it and t_it[0].isupper():
+                        if textos_l and textos_l[-1] and textos_l[-1][-1].isalnum():
+                            textos_l[-1] = textos_l[-1] + "."
+                    textos_l.append(t_it)
+
+                txt_c = re.sub(r"(\w)-\s+(\w)", r"\1\2", " ".join(textos_l))
                 txt_c = corrigir_colagem_palavras(txt_c)
-                if len(txt_c) >= 40 and not _eh_texto_ocr_corrompido(txt_c) and not _eh_anuncio_ou_lixo(txt_c):
+                min_len = 15 if eh_cab else 40
+                if len(txt_c) >= min_len and not _eh_texto_ocr_corrompido(txt_c) and not _eh_anuncio_ou_lixo(txt_c):
                     x_min = min(it["x"] for it in cl_items)
                     x_max = max(it["x"] + it["w"] for it in cl_items)
                     y_min = min(it["y"] for it in cl_items)
@@ -730,6 +772,7 @@ try? handler.perform([request])
                         "x0": round(x_min * pw / 1000.0, 1),
                         "y0": round(y_min * ph / 1000.0, 1),
                         "largura": round((x_max - x_min) * pw / 1000.0, 1),
+                        "is_heading": eh_cab,
                         "texto": txt_c,
                     })
 
@@ -740,9 +783,10 @@ try? handler.perform([request])
                     continue
                 prev = cluster[-1]
                 mesma_col = (ob["x"] // 175 == prev["x"] // 175) or abs(ob["x"] - prev["x"]) <= 45
+                mesmo_papel = (ob["h"] >= 15) == (prev["h"] >= 15)
                 gap_y = ob["y"] - (prev["y"] + prev["h"])
                 tot_chars = sum(len(it["text"]) for it in cluster)
-                if mesma_col and -5 <= gap_y <= max(28, prev["h"] * 3) and tot_chars < 650:
+                if mesma_col and mesmo_papel and -5 <= gap_y <= max(28, prev["h"] * 3) and tot_chars < 650:
                     cluster.append(ob)
                 else:
                     _flush_ocr_cluster(cluster)
@@ -939,6 +983,8 @@ def format_story_paragraphs(blocks_text, max_paragraphs=4):
         sentences.extend(sents)
     if not sentences:
         return []
+    while len(sentences) > 2 and sentences[0] and sentences[0][0].islower():
+        sentences.pop(0)
     paragraphs = []
     current_p = []
     current_len = 0
@@ -1044,16 +1090,20 @@ def extrair_editorial_edicao(paginas, veiculo, eh_int):
                         continue
                 # Limpar prefixos comuns de cabeçalho (ex: folha.com/editoriais email EDITORIAIS Título)
                 cleaned = re.sub(r'^(?:[^\s]+@[^\s]+\s+|[^\s]+\.(?:com|br|fr|uk|org)\S*\s+|editoriais?[\s:–—-]+)+', '', t, flags=re.I).strip()
-                if 15 <= len(cleaned) <= 110 and not cleaned.endswith("."):
+                if _eh_titulo_valido(cleaned) and len(cleaned) <= 115 and not cleaned.endswith((".", "-")):
                     cand_tit = cleaned
-                elif len(cleaned) > 110:
+                    continue
+                elif len(cleaned) > 115:
                     cand_sents = split_into_sentences(cleaned)
-                    if cand_sents and len(cand_sents[0]) <= 110:
+                    if cand_sents and _eh_titulo_valido(cand_sents[0]) and len(cand_sents[0]) <= 110:
                         cand_tit = cand_sents[0]
-            if len(t) >= 120 and not any(k in tl for k in ["assine", "atendimento", "painel do leitor", "cartas", "fale com", "publicado desde", "propriedade da empresa", "américo de campos", "rangel pestana", "julio mesquita"]):
+            if b.get("is_heading") and not cand_tit and _eh_titulo_valido(t) and len(t) <= 120 and not t.endswith("-"):
+                cand_tit = t
+                continue
+            if len(t) >= 120 and not _eh_anuncio_ou_lixo(t) and not any(k in tl for k in ["assine", "atendimento", "painel do leitor", "cartas", "fale com", "publicado desde", "propriedade da empresa", "américo de campos", "rangel pestana", "julio mesquita"]):
                 cand_blocos.append(t)
         if not cand_tit and blocos:
-            for b in blocos[:4]:
+            for b in blocos[:6]:
                 bt = b.get("texto", "").strip()
                 bt_lower = bt.lower()
                 if any(k in bt_lower for k in [
@@ -1062,7 +1112,7 @@ def extrair_editorial_edicao(paginas, veiculo, eh_int):
                     "o estado de s. paulo", "folha de s.paulo", "o globo", "valor econômico", "@", ".com", "www."
                 ]):
                     continue
-                if 15 <= len(bt) <= 80 and not bt.endswith("."):
+                if _eh_titulo_valido(bt) and len(bt) <= 115 and not bt.endswith((".", "-")):
                     cand_tit = bt
                     break
         if not cand_tit:
@@ -1088,6 +1138,14 @@ def extrair_editorial_edicao(paginas, veiculo, eh_int):
     }
 
 
+def _eh_bloco_ingles_em_nacional(txt):
+    """Detecta caixas em inglês (ex.: 'Valor International') inseridas em jornais brasileiros."""
+    if not txt:
+        return False
+    hits = len(re.findall(r"\b(the|and|with|for|that|from|this|have|your|expected|investment|private|are|will)\b", txt, re.I))
+    return hits >= 3
+
+
 def extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int):
     """Extrai uma reportagem completa a partir dos blocos da própria página interna (título e corpo 100% alinhados)."""
     if not blocos_pag:
@@ -1098,7 +1156,7 @@ def extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int):
         t = b.get("texto", "").strip()
         if _eh_anuncio_ou_lixo(t):
             continue
-        if not eh_int and len(re.findall(r"\b(the|and|with|you|are|your|this|from|have)\b", t, re.I)) >= 3:
+        if not eh_int and _eh_bloco_ingles_em_nacional(t):
             continue
         if not cand_tit and 15 <= len(t) <= 115 and not t.endswith(".") and "@" not in t and ".com" not in t.lower() and _eh_titulo_valido(t):
             cand_tit = t
@@ -1183,7 +1241,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
                 continue
             t_txt = re.sub(r'^(?:terça-feira|segunda-feira|quarta-feira|quinta-feira|sexta-feira|sábado|domingo|tuesday|monday|wednesday|thursday|friday|saturday|sunday)[,\s\d\w]*[–—-]\s*|^(?:terça-feira|segunda-feira|quarta-feira|quinta-feira|sexta-feira|sábado|domingo|tuesday|monday|wednesday|thursday|friday|saturday|sunday)[,\s\d\w]*de \d{4}\s*', '', t_txt, flags=re.I).strip()
             g["manchete"] = t_txt
-            if _eh_titulo_valido(t_txt):
+            if _eh_titulo_valido(t_txt) and (eh_int or not _eh_bloco_ingles_em_nacional(t_txt)):
                 titulos_validos.append(g)
 
         # Consolidar subtítulos / linhas-finas no título principal correspondente
@@ -1228,7 +1286,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
 
         for b in blocos_p1:
             btxt = b.get("texto", "").strip()
-            if len(btxt) < 30 or eh_bloco_de_titulo(btxt):
+            if len(btxt) < 30 or eh_bloco_de_titulo(btxt) or (not eh_int and _eh_bloco_ingles_em_nacional(btxt)):
                 continue
             by0, bx0 = b.get("y0", 0), b.get("x0", 0)
             bw = b.get("largura", 100)
