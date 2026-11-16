@@ -60118,15 +60118,15 @@
             "total_paginas": 32,
             "imagem": "capas/lemonde_capa.png",
             "site": "https://www.lemonde.fr",
-            "manchete": "A Grécia está a intensificar medidas para atrair grandes fortunas e fundos de cobertura",
-            "manchete_original": "La Grèce multiplie les mesures pour attirer les grosses fortunes et les hedge funds",
-            "nota": "Um novo regime fiscal tributa agora os bónus e ganhos de capital obtidos pelos gestores de fundos de cobertura em 5%, acima dos 15% anteriores. Uma taxa mais atrativa do que nos países anglo-saxões.",
+            "manchete": "A eleição do secretário-geral da Organização Internacional da Francofonia adiada por um ano",
+            "manchete_original": "L’élection du secrétaire général de l’Organisation internationale de la Francophonie reportée d’un an",
+            "nota": "Este adiamento ocorre no contexto de um impasse entre a RDC e o Ruanda. A ruandesa Louise Mushikiwabo, candidata a um terceiro mandato, manter-se-á no cargo até à realização de novas eleições, nas quais o Ruanda não apre",
             "resumo_edicao": [
-              "Um novo regime fiscal tributa agora os bónus e ganhos de capital obtidos pelos gestores de fundos de cobertura em 5%, acima dos 15% anteriores. Uma taxa mais atrativa do que nos países anglo-saxões.",
+              "Este adiamento ocorre no contexto de um impasse entre a RDC e o Ruanda. A ruandesa Louise Mushikiwabo, candidata a um terceiro mandato, manter-se-á no cargo até à realização de novas eleições, nas quais o Ruanda não apresentará candidato.",
               "O Le Monde detalha neste despacho a conjuntura europeia, o avanço dos conflitos e a reconfiguração diplomática global com reportagens exclusivas."
             ],
             "editorial": {
-              "titulo": "Le Monde Éditorial: Em Praga, 400 mil manifestantes denunciam uma reforma da radiodifusão pública checa",
+              "titulo": "Le Monde Éditorial: A Grécia está a intensificar medidas para atrair grandes fortunas e fundos de cobertura",
               "texto": [
                 "Em seu posicionamento de hoje, a redação do Le Monde reflete sobre os rumos da diplomacia internacional e a responsabilidade das democracias ocidentais.",
                 "A cobertura prioriza a defesa do direito internacional humanitário e a estabilidade nas relações multilaterais."
@@ -60136,6 +60136,29 @@
               {
                 "caderno": "International / Diplomatie",
                 "pagina": "1",
+                "autor": "Rédaction Le Monde",
+                "titulo": "A eleição do secretário-geral da Organização Internacional da Francofonia adiada por um ano",
+                "titulo_original": "L’élection du secrétaire général de l’Organisation internationale de la Francophonie reportée d’un an",
+                "lide": "Este adiamento ocorre no contexto de um impasse entre a RDC e o Ruanda. A ruandesa Louise Mushikiwabo, candidata a um terceiro mandato, manter-se-á no cargo até à realização de novas eleições, nas quais o Ruanda não apresentará candidato.",
+                "texto": [
+                  "Este adiamento ocorre no contexto de um impasse entre a RDC e o Ruanda. A ruandesa Louise Mushikiwabo, candidata a um terceiro mandato, manter-se-á no cargo até à realização de novas eleições, nas quais o Ruanda não apresentará candidato.",
+                  "O despacho original publicado pelo diário parisiense contextualiza as tensões diplomáticas e os desdobramentos de política internacional apurados em Paris em 16/11/2026.",
+                  "Para conferir a apuração em língua francesa, acesse a cobertura completa diretamente em https://www.lemonde.fr/afrique/article/2026/11/16/l-election-du-secretaire-general-de-l-organisation-internationale-de-la-francophonie-reportee-d-un-an_6811682_3212.html."
+                ],
+                "texto_integral": [
+                  "Este adiamento ocorre no contexto de um impasse entre a RDC e o Ruanda. A ruandesa Louise Mushikiwabo, candidata a um terceiro mandato, manter-se-á no cargo até à realização de novas eleições, nas quais o Ruanda não apresentará candidato.",
+                  "A edição contemporânea do Le Monde examina as repercussões geopolíticas com ampla análise dos seus correspondentes.",
+                  "Acesso à íntegra da reportagem na cobertura oficial de Le Monde (edição digital): https://www.lemonde.fr/afrique/article/2026/11/16/l-election-du-secretaire-general-de-l-organisation-internationale-de-la-francophonie-reportee-d-un-an_6811682_3212.html"
+                ],
+                "pontos": [
+                  "A eleição do secretário-geral da Organização Internacional da Francofonia adiada por um ano",
+                  "Este adiamento ocorre no contexto de um impasse entre a RDC e o Ruanda. A ruandesa Louise Mushikiwabo, candidata a um te"
+                ],
+                "url": "https://www.lemonde.fr/afrique/article/2026/11/16/l-election-du-secretaire-general-de-l-organisation-internationale-de-la-francophonie-reportee-d-un-an_6811682_3212.html"
+              },
+              {
+                "caderno": "International / Diplomatie",
+                "pagina": "2",
                 "autor": "Rédaction Le Monde",
                 "titulo": "A Grécia está a intensificar medidas para atrair grandes fortunas e fundos de cobertura",
                 "titulo_original": "La Grèce multiplie les mesures pour attirer les grosses fortunes et les hedge funds",
@@ -60158,7 +60181,7 @@
               },
               {
                 "caderno": "International / Diplomatie",
-                "pagina": "2",
+                "pagina": "3",
                 "autor": "Rédaction Le Monde",
                 "titulo": "Em Praga, 400 mil manifestantes denunciam uma reforma da radiodifusão pública checa",
                 "titulo_original": "A Prague, 400 000 manifestants dénoncent une réforme de l’audiovisuel public tchèque",
@@ -60181,7 +60204,7 @@
               },
               {
                 "caderno": "International / Diplomatie",
-                "pagina": "3",
+                "pagina": "4",
                 "autor": "Rédaction Le Monde",
                 "titulo": "IA militar: como a França está tentando entreabrir a porta para a regulamentação",
                 "titulo_original": "IA militaire : comment la France tente d’entrouvrir la porte à une régulation",
@@ -60204,7 +60227,7 @@
               },
               {
                 "caderno": "International / Diplomatie",
-                "pagina": "4",
+                "pagina": "5",
                 "autor": "Rédaction Le Monde",
                 "titulo": "Em “L’Hospitality”, o filósofo Souleymane Bachir Diagne relembra o dever de acolher, contra a “ideologia anti-empatia”",
                 "titulo_original": "Dans « L’Hospitalité », le philosophe Souleymane Bachir Diagne rappelle le devoir d’accueillir, contre l’« idéologie anti-empathie »",
@@ -60224,29 +60247,6 @@
                   "Opondo-se ao retraimento identitário, o filósofo enaltece a hospitalidade e traça uma política de empatia."
                 ],
                 "url": "https://www.lemonde.fr/livres/article/2026/11/16/dans-l-hospitalite-le-philosophe-souleymane-bachir-diagne-rappelle-le-devoir-d-accueillir-contre-l-ideologie-anti-empathie_6811501_3260.html"
-              },
-              {
-                "caderno": "International / Diplomatie",
-                "pagina": "5",
-                "autor": "Rédaction Le Monde",
-                "titulo": "AO VIVO, guerra na Ucrânia: ponte Rússia-Crimeia atacada durante a noite; quase 200 drones neutralizados na aproximação a Moscou",
-                "titulo_original": "EN DIRECT, guerre en Ukraine : le pont reliant la Russie à la Crimée attaqué dans la nuit ; près de 200 drones neutralisés à l’approche de Moscou",
-                "lide": "Mais de 1.300 drones ucranianos foram “interceptados e destruídos” durante a noite na Rússia, na Crimeia e no Mar de Azov e no Mar Negro, segundo o Ministério da Defesa russo.",
-                "texto": [
-                  "Mais de 1.300 drones ucranianos foram “interceptados e destruídos” durante a noite na Rússia, na Crimeia e no Mar de Azov e no Mar Negro, segundo o Ministério da Defesa russo.",
-                  "O despacho original publicado pelo diário parisiense contextualiza as tensões diplomáticas e os desdobramentos de política internacional apurados em Paris em 16/11/2026.",
-                  "Para conferir a apuração em língua francesa, acesse a cobertura completa diretamente em https://www.lemonde.fr/international/live/2026/11/16/en-direct-guerre-en-ukraine-pres-de-200-drones-neutralises-a-l-approche-de-moscou-selon-le-maire-de-la-capitale-russe_6810982_3210.html."
-                ],
-                "texto_integral": [
-                  "Mais de 1.300 drones ucranianos foram “interceptados e destruídos” durante a noite na Rússia, na Crimeia e no Mar de Azov e no Mar Negro, segundo o Ministério da Defesa russo.",
-                  "A edição contemporânea do Le Monde examina as repercussões geopolíticas com ampla análise dos seus correspondentes.",
-                  "Acesso à íntegra da reportagem na cobertura oficial de Le Monde (edição digital): https://www.lemonde.fr/international/live/2026/11/16/en-direct-guerre-en-ukraine-pres-de-200-drones-neutralises-a-l-approche-de-moscou-selon-le-maire-de-la-capitale-russe_6810982_3210.html"
-                ],
-                "pontos": [
-                  "AO VIVO, guerra na Ucrânia: ponte Rússia-Crimeia atacada durante a noite; quase 200 drones neutralizados na aproximação ",
-                  "Mais de 1.300 drones ucranianos foram “interceptados e destruídos” durante a noite na Rússia, na Crimeia e no Mar de Azo"
-                ],
-                "url": "https://www.lemonde.fr/international/live/2026/11/16/en-direct-guerre-en-ukraine-pres-de-200-drones-neutralises-a-l-approche-de-moscou-selon-le-maire-de-la-capitale-russe_6810982_3210.html"
               }
             ]
           }
@@ -70173,7 +70173,7 @@
             "url": "https://www.youtube.com/watch_videos?video_ids=7tUKaUVRmVA,0FtRzYYSWu8,j12DVhkpHAc,IxWzjeWU4bM,5_RrK4S1ZSI,2Ck03qQhQ8A,hTzbFGrR5to,ei4oAa91-wc,_Ezj_7WGUrY"
           }
         ],
-        "em": "2026-11-16T06:30:46-03:00",
+        "em": "2026-11-16T07:00:44-03:00",
         "novosNoRadar": 2,
         "obs": "Edição de Novembro 2026: 30 bandas em pequenas casas e palcos do Rio. Playlist semanal com 7 atrações no período 16/11 a 22/11. Playlists contínuas reais executáveis diretamente pelo player interno (Ouvir aqui) e YouTube Music. Atualização periódica no início da semana (semanal) e início do mês (mensal).",
         "semana": {
