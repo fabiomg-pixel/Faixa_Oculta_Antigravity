@@ -20,6 +20,7 @@ import os
 import json
 import time
 import ssl
+import urllib.error
 import urllib.request
 import datetime
 import subprocess
@@ -46,20 +47,24 @@ GIT_BIN = "/usr/bin/git"
 
 
 def obter_chave_gemini():
-    """Carrega chave do ambiente ou dos arquivos protegidos ~/.faixaoculta/.env ou ~/.env."""
-    if os.environ.get("GEMINI_API_KEY"):
-        return os.environ.get("GEMINI_API_KEY")
-    for env_file in [os.path.expanduser("~/.faixaoculta/.env"), os.path.expanduser("~/.env")]:
+    """Carrega chave priorizando arquivos .env explícitos sobre o ambiente herdado do plist."""
+    for env_file in [
+        os.path.join(WORKSPACE_DIR, ".env"),
+        os.path.expanduser("~/.faixaoculta/.env"),
+        os.path.expanduser("~/.env"),
+    ]:
         if os.path.exists(env_file):
             try:
                 with open(env_file, "r", encoding="utf-8") as f:
                     for line in f:
                         line = line.strip()
                         if line.startswith("GEMINI_API_KEY="):
-                            return line.split("=", 1)[1].strip().strip('"').strip("'")
+                            val = line.split("=", 1)[1].strip().strip('"').strip("'")
+                            if val:
+                                return val
             except Exception:
                 pass
-    return None
+    return os.environ.get("GEMINI_API_KEY")
 
 
 def log(msg):
@@ -85,11 +90,16 @@ def obter_turno_esperado():
     return f"{ontem}-noite", "noite"
 
 
-def verificar_site_publicado(doc_id):
-    ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
+def _criar_ctx_ssl():
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        return ssl.create_default_context()
 
+
+def verificar_site_publicado(doc_id):
+    ctx = _criar_ctx_ssl()
     dia_url = f"https://fabiomg-pixel.github.io/Faixa_Oculta_Antigravity/data/dias/{doc_id}.json"
     req = urllib.request.Request(
         f"{dia_url}?t={int(time.time())}",
@@ -100,10 +110,16 @@ def verificar_site_publicado(doc_id):
             d = json.loads(r.read().decode("utf-8"))
         if not d:
             return False
-        tem_jornais = bool(d.get("jornais") and d.get("jornais", {}).get("manchetes"))
+        j_blk = d.get("jornais") or {}
+        tem_jornais = len(j_blk.get("manchetes") or []) >= 8 and j_blk.get("data_edicao") == doc_id[:10]
         return tem_jornais
+    except urllib.error.HTTPError as he:
+        if he.code == 404:
+            return False
+        log(f"Aviso HTTP ao consultar GitHub Pages ({he.code}); mantendo verificação pendente.")
+        return False
     except Exception as e:
-        log(f"Aviso ao consultar GitHub Pages ({e}). Consultando arquivo local de fallback...")
+        log(f"Aviso de rede ao consultar GitHub Pages ({e}). Consultando arquivo local de fallback...")
         local_path = os.path.join(WORKSPACE_DIR, "data/revista.json")
         if os.path.exists(local_path):
             try:
@@ -112,22 +128,31 @@ def verificar_site_publicado(doc_id):
                 d_loc = local_dados.get("dias", {}).get(doc_id)
                 if not d_loc:
                     return False
-                return bool(d_loc.get("jornais") and d_loc.get("jornais", {}).get("manchetes"))
+                j_loc = d_loc.get("jornais") or {}
+                return len(j_loc.get("manchetes") or []) >= 8 and j_loc.get("data_edicao") == doc_id[:10]
             except Exception:
                 pass
         return False
 
 
 def precisa_reprocessar_jornais_do_dia(doc_id, turno):
-    """Após as 09h BRT no turno da manhã, atualiza uma vez os jornais se novos PDFs de hoje chegaram no Beeper."""
-    if turno != "manha":
-        return False
+    """Atualiza os jornais após chegarem novos PDFs no Beeper (pós-09h) ou se os jornais publicados forem de data anterior."""
     agora_brt = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
-    if agora_brt.hour < 9:
+    if turno == "manha" and agora_brt.hour < 9:
         return False
-    hoje_iso = agora_brt.strftime("%Y-%m-%d")
-    if not doc_id.startswith(hoje_iso):
-        return False
+    data_alvo = doc_id[:10]
+
+    # Se a edição publicada herdou jornais de dia anterior (ex.: rodada nuvem ou madrugadora), reprocessar localmente
+    local_shard = os.path.join(WORKSPACE_DIR, "data", "dias", f"{doc_id}.json")
+    if os.path.exists(local_shard):
+        try:
+            with open(local_shard, "r", encoding="utf-8") as f:
+                shard_d = json.load(f)
+            if (shard_d.get("jornais") or {}).get("data_edicao") != data_alvo:
+                log(f"Jornais em [{doc_id}] ainda estão com data_edicao anterior ({(shard_d.get('jornais') or {}).get('data_edicao')}). Atualizando...")
+                return True
+        except Exception:
+            pass
 
     digest_path = os.path.join(WORKSPACE_DIR, "data", "beeper_digest_diario.json")
     db_beeper = os.path.expanduser("~/Library/Application Support/BeeperTexts/index.db")
@@ -136,10 +161,10 @@ def precisa_reprocessar_jornais_do_dia(doc_id, turno):
     try:
         with open(digest_path, "r", encoding="utf-8") as f:
             dig = json.load(f)
-        if dig.get("data_edicao") != hoje_iso:
-            return False
+        if dig.get("data_edicao") != data_alvo:
+            return True
         itens = dig.get("itens", [])
-        mesma_data = sum(1 for it in itens if str(it.get("data_msg", "")).startswith(hoje_iso))
+        mesma_data = sum(1 for it in itens if str(it.get("data_msg", "")).startswith(data_alvo))
         max_ts_dig = max((int(it.get("timestamp", 0) or 0) for it in itens), default=0)
         if mesma_data >= 7:
             return False

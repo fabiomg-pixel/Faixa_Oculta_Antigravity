@@ -170,119 +170,31 @@ def veiculo_de_canal(canal):
     return canal
 
 
+try:
+    from tools import gemini_client
+except ImportError:
+    import gemini_client
+
+
+def _limpar_str(s):
+    if not s:
+        return ""
+    return re.sub(r"\s+", " ", re.sub(r"[\xa0\u200b\ufeff]", " ", str(s))).strip()
+
+
 def _obter_gemini_key():
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        for env_path in [os.path.expanduser("~/.faixaoculta/.env"), os.path.expanduser("~/.env")]:
-            if os.path.exists(env_path):
-                try:
-                    with open(env_path, "r", encoding="utf-8") as f:
-                        for line in f:
-                            if line.strip().startswith("GEMINI_API_KEY="):
-                                api_key = line.strip().split("=", 1)[1].strip().strip('"').strip("'")
-                                break
-                except Exception:
-                    pass
-            if api_key:
-                break
-    return api_key
-
-
-_CACHE_TR_FILE = os.path.join("data", "cache_traducoes.json")
-_CACHE_TR = {}
-if os.path.exists(_CACHE_TR_FILE):
-    try:
-        with open(_CACHE_TR_FILE, "r", encoding="utf-8") as _ft:
-            _CACHE_TR = json.load(_ft)
-    except Exception:
-        pass
-
-
-def _salvar_cache_tr():
-    try:
-        os.makedirs(os.path.dirname(_CACHE_TR_FILE), exist_ok=True)
-        with open(_CACHE_TR_FILE, "w", encoding="utf-8") as _ft:
-            json.dump(_CACHE_TR, _ft, ensure_ascii=False, indent=2)
-    except Exception:
-        pass
+    return gemini_client.obter_api_key()
 
 
 def traduzir_texto(texto, de="auto", para="pt"):
-    """Traduz texto de notícias internacionais para o português culto com cache, retry GTX, MyMemory e fallback Gemini."""
-    if not texto:
-        return ""
-    texto_limpo = texto.strip()
-    if not texto_limpo:
-        return ""
-    if texto_limpo in _CACHE_TR:
-        return _CACHE_TR[texto_limpo]
-
-    # 1. Google Translate GTX (com 1 retry em falha transitória/429)
-    for tent in range(2):
-        try:
-            url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl={de}&tl={para}&dt=t&q=" + parse.quote(texto_limpo[:1900])
-            req = request.Request(url, headers=HEADERS)
-            with request.urlopen(req, timeout=7, context=CTX) as r:
-                res = json.loads(r.read().decode("utf-8"))
-                trad = "".join([part[0] for part in res[0] if part[0]]).strip()
-                if trad and trad.lower() != texto_limpo.lower():
-                    _CACHE_TR[texto_limpo] = trad
-                    _salvar_cache_tr()
-                    return trad
-        except Exception:
-            if tent == 0:
-                time.sleep(0.45)
-
-    # 2. Fallback secundário gratuito: MyMemory
-    try:
-        mm_url = f"https://api.mymemory.translated.net/get?q={parse.quote(texto_limpo[:480])}&langpair=en|pt"
-        req_mm = request.Request(mm_url, headers=HEADERS)
-        with request.urlopen(req_mm, timeout=6, context=CTX) as r_mm:
-            res_mm = json.loads(r_mm.read().decode("utf-8"))
-            trad_mm = res_mm.get("responseData", {}).get("translatedText", "").strip()
-            if trad_mm and "MYMEMORY WARNING" not in trad_mm and trad_mm.lower() != texto_limpo.lower():
-                _CACHE_TR[texto_limpo] = trad_mm
-                _salvar_cache_tr()
-                return trad_mm
-    except Exception:
-        pass
-
-    # 3. Fallback via API do Gemini (descarta rápido em 402/quota)
-    api_key = _obter_gemini_key()
-    if api_key:
-        for modelo_gemini in ("gemini-4-hydrogen", "gemini-4-argon", "gemini-3.8-flash"):
-            try:
-                g_url = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo_gemini}:generateContent?key={api_key}"
-                payload = {
-                    "contents": [{
-                        "parts": [{
-                            "text": f"Traduza fielmente o seguinte texto jornalístico para o português culto do Brasil, retornando apenas a tradução direta sem comentários:\n\n{texto_limpo}"
-                        }]
-                    }]
-                }
-                req_g = request.Request(
-                    g_url,
-                    data=json.dumps(payload).encode("utf-8"),
-                    headers={"Content-Type": "application/json"}
-                )
-                with request.urlopen(req_g, timeout=12, context=CTX) as r_g:
-                    res_g = json.loads(r_g.read().decode("utf-8"))
-                    cand_txt = res_g.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "").strip()
-                    if cand_txt:
-                        _CACHE_TR[texto_limpo] = cand_txt
-                        _salvar_cache_tr()
-                        return cand_txt
-            except Exception as exc:
-                if "402" in str(exc) or "Payment Required" in str(exc):
-                    break
-                continue
-    return texto_limpo
+    """Traduz texto internacional para o português culto via cliente unificado (`gemini_client`)."""
+    return _limpar_str(gemini_client.traduzir_texto_resiliente(texto, de=de, para="pt-BR"))
 
 
 def _filtrar_paragrafos_limpos(elementos):
     paragrafos = []
     for p in elementos:
-        t = re.sub(r"\s+", " ", p.get_text()).strip()
+        t = _limpar_str(p.get_text())
         if len(t) < 35:
             continue
         tl = t.lower()
@@ -367,69 +279,76 @@ def extrair_paragrafos_artigo(url, _depth=0):
     return paragrafos
 
 
-def coletar_noticias_rss():
-    itens_coletados = []
-    agora_utc = datetime.datetime.now(datetime.timezone.utc)
-    print("Coletando manchetes dos feeds RSS de múltiplos portais nacionais e internacionais...")
-    for canal, feed_url in FEEDS:
+def _buscar_feed_rss(canal_e_url, agora_utc):
+    canal, feed_url = canal_e_url
+    saida = []
+    try:
+        req = request.Request(feed_url, headers=HEADERS)
+        with request.urlopen(req, timeout=6, context=CTX) as resp:
+            conteudo = resp.read()
+            if conteudo[:2] == b"\x1f\x8b" or "gzip" in str(resp.headers.get("Content-Encoding", "")).lower():
+                try:
+                    conteudo = gzip.decompress(conteudo)
+                except Exception:
+                    pass
         try:
-            req = request.Request(feed_url, headers=HEADERS)
-            with request.urlopen(req, timeout=6, context=CTX) as resp:
-                conteudo = resp.read()
-                if conteudo[:2] == b"\x1f\x8b" or "gzip" in str(resp.headers.get("Content-Encoding", "")).lower():
+            root = ET.fromstring(conteudo)
+        except Exception:
+            try:
+                texto = conteudo.decode("utf-8", errors="replace")
+            except Exception:
+                texto = conteudo.decode("latin-1", errors="replace")
+            texto = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD]", "", texto)
+            root = ET.fromstring(texto)
+
+        for it in root.findall(".//item"):
+            tit = it.find("title")
+            lnk = it.find("link")
+            desc = it.find("description")
+            pub = it.find("pubDate")
+            content_enc = it.find("{http://purl.org/rss/1.0/modules/content/}encoded")
+            if tit is not None and lnk is not None and tit.text and lnk.text:
+                link_str = lnk.text.strip()
+                if "/video/" in link_str.lower():
+                    continue
+                pub_str = (pub.text or "").strip() if pub is not None else ""
+                if pub_str:
                     try:
-                        conteudo = gzip.decompress(conteudo)
+                        dt = parsedate_to_datetime(pub_str)
+                        if dt.tzinfo is None:
+                            dt = dt.replace(tzinfo=datetime.timezone.utc)
+                        diff_h = (agora_utc - dt).total_seconds() / 3600
+                        if diff_h > 48 or diff_h < -2:
+                            continue
                     except Exception:
                         pass
-            try:
-                root = ET.fromstring(conteudo)
-            except Exception:
-                try:
-                    texto = conteudo.decode("utf-8", errors="replace")
-                except Exception:
-                    texto = conteudo.decode("latin-1", errors="replace")
-                texto = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD]", "", texto)
-                root = ET.fromstring(texto)
 
-            for it in root.findall(".//item"):
-                tit = it.find("title")
-                lnk = it.find("link")
-                desc = it.find("description")
-                pub = it.find("pubDate")
-                content_enc = it.find("{http://purl.org/rss/1.0/modules/content/}encoded")
-                if tit is not None and lnk is not None and tit.text and lnk.text:
-                    link_str = lnk.text.strip()
-                    if "aljazeera.com/video/" in link_str.lower() or "/video/" in link_str.lower():
-                        continue
-                    pub_str = (pub.text or "").strip() if pub is not None else ""
-                    # Validação estrita de frescor temporal (Anti-Cutoff): apenas notícias das últimas 48 horas
-                    if pub_str:
-                        try:
-                            dt = parsedate_to_datetime(pub_str)
-                            if dt.tzinfo is None:
-                                dt = dt.replace(tzinfo=datetime.timezone.utc)
-                            diff_h = (agora_utc - dt).total_seconds() / 3600
-                            if diff_h > 48 or diff_h < -2:
-                                continue  # Descarta matérias arquivadas antigas
-                        except Exception:
-                            pass
+                desc_raw = (desc.text or "").strip() if desc is not None else ""
+                content_raw = (content_enc.text or "").strip() if content_enc is not None else ""
+                desc_limpa = _limpar_str(re.sub(r"<[^>]+>", " ", desc_raw))
 
-                    desc_raw = (desc.text or "").strip() if desc is not None else ""
-                    content_raw = (content_enc.text or "").strip() if content_enc is not None else ""
-                    desc_limpa = re.sub(r"<[^>]+>", " ", desc_raw)
-                    desc_limpa = re.sub(r"\s+", " ", desc_limpa).strip()
+                saida.append({
+                    "canal": canal,
+                    "veiculo": veiculo_de_canal(canal),
+                    "titulo": _limpar_str(tit.text),
+                    "url": link_str,
+                    "descricao": desc_limpa,
+                    "content_html": content_raw or desc_raw,
+                    "data": pub_str
+                })
+    except Exception as e:
+        print(f"Aviso: falha ao ler feed {canal} ({e})")
+    return saida
 
-                    itens_coletados.append({
-                        "canal": canal,
-                        "veiculo": veiculo_de_canal(canal),
-                        "titulo": tit.text.strip(),
-                        "url": link_str,
-                        "descricao": desc_limpa,
-                        "content_html": content_raw or desc_raw,
-                        "data": pub_str
-                    })
-        except Exception as e:
-            print(f"Aviso: falha ao ler feed {canal} ({e})")
+
+def coletar_noticias_rss():
+    from concurrent.futures import ThreadPoolExecutor
+    agora_utc = datetime.datetime.now(datetime.timezone.utc)
+    print("Coletando manchetes em paralelo dos feeds RSS nacionais e internacionais...")
+    itens_coletados = []
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        for lote in pool.map(lambda c: _buscar_feed_rss(c, agora_utc), FEEDS):
+            itens_coletados.extend(lote)
     print(f"Total de itens contemporâneos coletados nos feeds: {len(itens_coletados)}")
     return itens_coletados
 
@@ -462,17 +381,260 @@ def preparar_candidatos_balanceados(itens_rss, max_por_veiculo=4, total_max=60):
     return balanceados
 
 
+TERMOS_PROIBIDOS_HOJE = (
+    "feira de recrutamento", "recrutamento", "estudantes de veterinária", "veterinária",
+    "cadeado", "naufrágio", "vestibular", "concurso", "biotério", "bioterio", "edital fndct",
+    "estágio", "estagiário", "horóscopo", "horoscope", "famosos", "celebrity", "reality", "bbb",
+    "futebol", "football", "brasileirão", "libertadores", "campeonato", "série a", "série b",
+    "corinthians", "flamengo", "palmeiras", "botafogo", "vasco", "fluminense", "são paulo fc",
+    "grêmio", "cruzeiro", "atletico-mg", "seleção brasileira", "copa do mundo", "premier league",
+    "champions league", "world cup", "nba", "nfl", "nhl", "mlb",
+    "basquete", "basketball", "vôlei", "volei", "tênis", "fórmula 1", "formula 1",
+    "olimpíadas", "olimpiadas", "babuíno", "babuínos", "baboon", "baboons",
+    "santuário de animais", "animal sanctuary", "zoológico", "zoo ", "wildlife", "recipe", "quiz",
+    "umbrella", "crossword", "sudoku", "bactérias", "bacterias", "intestino", "vírus", "virus",
+    "unicamp", "usp", "fapesp", "sbpc", "fiocruz", "pesquisa fapesp", "pesquisador", "doutorado",
+    "pós-graduação", "pos-graduacao", "laboratório", "laboratorio", "ensaio clínico", "artigo científico",
+    "química", "moleculares", "genética", "genômica", "crispr", "terapia gênica", "células-tronco",
+    "galinhas", "galinha", "ovos", "ovo", "desaba", "desabamento", "teto de loja", "mpox", "vacinação", "vacina"
+)
+
+_STOPWORDS_DEDUP = {
+    "para", "pelo", "pela", "pelos", "pelas", "como", "sobre", "contra", "entre",
+    "apos", "após", "ante", "desde", "mais", "menos", "muito", "muita", "muitos",
+    "pode", "podem", "deve", "devem", "sera", "será", "foram", "esta", "está",
+    "estao", "estão", "fazer", "feito", "nova", "novo", "novos", "novas",
+    "brasil", "brasileiro", "governo", "estado", "estados", "unidos", "mundo",
+    "pais", "país", "anos", "dias", "hoje", "ontem", "trump", "lula", "casa",
+    "diz", "afirma", "aponta", "mostra", "revela", "pede", "quer", "eua"
+}
+
+
+def _tokens_tema(texto):
+    toks = re.findall(r"[a-záéíóúâêôãõç0-9]{4,}", (texto or "").lower())
+    return {t for t in toks if t not in _STOPWORDS_DEDUP}
+
+
+def _eh_tema_duplicado(titulo, selecionadas):
+    """Evita seleção de duas notícias sobre o mesmo fato no modo determinístico."""
+    t_novo = _tokens_tema(titulo)
+    if len(t_novo) < 2:
+        return False
+    for nota in selecionadas:
+        t_exist = _tokens_tema(f"{nota.get('titulo', '')} {nota.get('titulo_original', '')}")
+        if not t_exist:
+            continue
+        inter = t_novo & t_exist
+        if len(inter) >= 3 or (len(inter) >= 2 and len(inter) / min(len(t_novo), len(t_exist)) >= 0.45):
+            return True
+    return False
+
+
+def _eh_item_proibido_hoje(it):
+    tit_desc = f"{it.get('titulo', '')} {it.get('descricao', '')}".lower()
+    return any(ign in tit_desc for ign in TERMOS_PROIBIDOS_HOJE)
+
+
+def _enriquecer_paragrafos_item(it):
+    url = it.get("url", "")
+    paras = extrair_paragrafos_artigo(url) if url else []
+    if len(paras) < 3 and it.get("content_html"):
+        paras_inline = extrair_paragrafos_html_inline(it["content_html"])
+        if len(paras_inline) >= 2:
+            paras = paras_inline
+    return paras
+
+
+def curadoria_com_gemini4(itens_rss, edicao, data_iso, urls_ja_usadas=None, titulos_ja_usados=None):
+    """Usa Gemini 4 (`gemini-4-argon` / `gemini-4-hydrogen`) para selecionar, agrupar multi-fonte, sintetizar e traduzir o boletim."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    urls_ja_usadas = set(urls_ja_usadas or [])
+    titulos_ja_usados = set(titulos_ja_usados or [])
+
+    elegiveis = []
+    for it in itens_rss:
+        if _eh_item_proibido_hoje(it):
+            continue
+        u_k = url_chave(it.get("url", ""))
+        t_k = it.get("titulo", "").strip().lower()
+        if u_k in urls_ja_usadas or t_k in titulos_ja_usados:
+            continue
+        elegiveis.append(it)
+    if len(elegiveis) < 25:
+        elegiveis = [it for it in itens_rss if not _eh_item_proibido_hoje(it)]
+
+    nacionais = preparar_candidatos_balanceados([x for x in elegiveis if x.get("canal") not in FEEDS_INTERNACIONAIS], max_por_veiculo=4, total_max=55)
+    internacionais = preparar_candidatos_balanceados([x for x in elegiveis if x.get("canal") in FEEDS_INTERNACIONAIS], max_por_veiculo=4, total_max=45)
+    if len(nacionais) < 10 or len(internacionais) < 10:
+        return None
+
+    lista_prompt = {
+        "nacionais": [{"idx": i, "veiculo": x["veiculo"], "titulo": x["titulo"], "resumo": x["descricao"][:180]} for i, x in enumerate(nacionais)],
+        "internacionais": [{"idx": i, "veiculo": x["veiculo"], "titulo": x["titulo"], "resumo": x["descricao"][:180]} for i, x in enumerate(internacionais)],
+    }
+
+    prompt_sel = (
+        f"Você é o editor-chefe da revista jornalística Faixa Oculta (edição {edicao} de {data_iso}).\n"
+        "Selecione e agrupe APENAS as matérias de primeira linha (Economia dura, Política Nacional, Judiciário, Relações Internacionais, Infraestrutura e Sociedade macro).\n"
+        "REJEITE ESTRITAMENTE: clubes de futebol/esportes, animais/zoológicos, fofocas/celebridades, editais universitários e rotinas de laboratório.\n"
+        "Retorne JSON válido exatamente no formato:\n"
+        "{\n"
+        '  "clusters_nacionais": [\n'
+        '    {"editoria": "Economia|Política|Internacional|Sociedade", "subtema": "Subtema objetivo", "indices": [0, 1]}\n'
+        "  ],\n"
+        '  "indices_internacionais": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n'
+        "}\n"
+        "Exigências: selecione 11 `clusters_nacionais` distintos (agrupando 1 a 3 notícias de veículos diferentes sobre o mesmo fato sempre que houver) e 11 `indices_internacionais` de múltiplos veículos.\n\n"
+        f"{json.dumps(lista_prompt, ensure_ascii=False)}"
+    )
+
+    sel = gemini_client.gerar_json(prompt_sel, prefer_model=gemini_client.MODEL_ARGON, temperature=0.1)
+    clusters_nac = (sel or {}).get("clusters_nacionais") or []
+    idxs_int = (sel or {}).get("indices_internacionais") or []
+    if len(clusters_nac) < 10 or len(idxs_int) < 10:
+        return None
+
+    # Coletar artigos escolhidos e fazer scraping HTML em paralelo
+    urls_para_raspar = {}
+    for cl in clusters_nac[:11]:
+        for idx in (cl.get("indices") or [])[:3]:
+            if isinstance(idx, int) and 0 <= idx < len(nacionais):
+                urls_para_raspar[("n", idx)] = nacionais[idx]
+    for idx in idxs_int[:11]:
+        if isinstance(idx, int) and 0 <= idx < len(internacionais):
+            urls_para_raspar[("i", idx)] = internacionais[idx]
+
+    paras_cache = {}
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        chaves_u = list(urls_para_raspar.keys())
+        resultados_p = list(pool.map(lambda k: _enriquecer_paragrafos_item(urls_para_raspar[k]), chaves_u))
+        for k, ps in zip(chaves_u, resultados_p):
+            paras_cache[k] = ps
+
+    notas_finais = []
+    veiculos_usados = set()
+
+    def _montar_cluster_nac(cl):
+        artigos = []
+        sub = cl.get("subtema", "Conjuntura")
+        ed = cl.get("editoria", "Política")
+        for idx in (cl.get("indices") or [])[:3]:
+            if isinstance(idx, int) and 0 <= idx < len(nacionais):
+                it = dict(nacionais[idx])
+                it["paragrafos"] = paras_cache.get(("n", idx), [])
+                it["editoria"] = ed
+                it["subtema"] = sub
+                artigos.append(it)
+                veiculos_usados.add(it["veiculo"])
+        if not artigos:
+            return None
+        sint = gemini_client.sintetizar_nota_multifonte(artigos, escopo="nacional", prefer_model=gemini_client.MODEL_PRO)
+        tit = _limpar_str(sint.get("titulo") or artigos[0]["titulo"])
+        slug = re.sub(r"[^a-z0-9]+", "-", tit.lower())[:45].strip("-")
+        tc = [_limpar_str(p) for p in (sint.get("texto_completo") or []) if _limpar_str(p)]
+        return {
+            "id": f"{data_iso}--{slug}",
+            "escopo": "nacional",
+            "pais": "Brasil",
+            "chapeu": f"Mídia Nacional · {sub}",
+            "editoria": sint.get("editoria", ed),
+            "titulo": tit,
+            "texto": _limpar_str(sint.get("texto") or (tc[0] if tc else tit)),
+            "por_que_importa": _limpar_str(sint.get("por_que_importa", "")),
+            "resumo_visoes": _limpar_str(sint.get("resumo_visoes", "")),
+            "texto_completo": tc,
+            "aprofundamento": sint.get("aprofundamento", {}),
+            "fontes": sint.get("fontes_enriquecidas") or [],
+        }
+
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for nota_n in pool.map(_montar_cluster_nac, clusters_nac[:11]):
+            if nota_n:
+                notas_finais.append(nota_n)
+
+    lote_int_in = []
+    for pos, idx in enumerate(idxs_int[:11]):
+        if isinstance(idx, int) and 0 <= idx < len(internacionais):
+            it = internacionais[idx]
+            veiculos_usados.add(it["veiculo"])
+            lote_int_in.append({
+                "id": f"int-{pos}",
+                "veiculo": it["veiculo"],
+                "url": it["url"],
+                "titulo": it["titulo"],
+                "titulo_original": it["titulo"],
+                "descricao": it["descricao"],
+                "paragrafos": paras_cache.get(("i", idx), []),
+            })
+
+    lote_int_out = gemini_client.traduzir_lote_noticias(lote_int_in, prefer_model=gemini_client.MODEL_ARGON)
+    for pos, obj in enumerate(lote_int_out):
+        tit_pt = _limpar_str(obj.get("titulo", ""))
+        tit_orig = obj.get("titulo_original", "")
+        slug = re.sub(r"[^a-z0-9]+", "-", tit_pt.lower())[:45].strip("-")
+        tc = [_limpar_str(p) for p in (obj.get("texto_completo") or []) if _limpar_str(p)]
+        pts = [_limpar_str(pt) for pt in (obj.get("pontos") or []) if _limpar_str(pt)]
+        v = obj.get("veiculo", "Imprensa Internacional")
+        url_orig = obj.get("url", "")
+        notas_finais.append({
+            "id": f"{data_iso}--int--{slug}",
+            "escopo": "internacional",
+            "pais": "Internacional",
+            "chapeu": f"Mídia Internacional Traduzida · {v}",
+            "editoria": obj.get("editoria", "Internacional"),
+            "titulo": tit_pt,
+            "titulo_original": tit_orig,
+            "texto": _limpar_str(obj.get("texto") or (tc[0] if tc else tit_pt)),
+            "por_que_importa": _limpar_str(obj.get("por_que_importa", "")),
+            "resumo_visoes": _limpar_str(obj.get("resumo_visoes", "")),
+            "texto_completo": tc,
+            "aprofundamento": obj.get("aprofundamento", {}),
+            "fontes": [{
+                "fonte": v,
+                "perfil": "Veículo internacional de referência",
+                "enfoque": f"Apuração global conduzida por {v}",
+                "url": url_orig,
+                "titulo": tit_orig,
+                "autor": f"Correspondentes {v}",
+                "pontos": pts or [p[:110] + "..." for p in tc[1:4]],
+                "citacao": tc[1][:130] + "..." if len(tc) > 1 else "",
+                "texto_integral": tc,
+            }],
+        })
+
+    if len(notas_finais) < 20:
+        return None
+
+    primeiras_manchetes = [n["titulo"] for n in notas_finais[:2]]
+    return {
+        "_via_gemini": True,
+        "titulo": f"{primeiras_manchetes[0][:50]} e {primeiras_manchetes[1][:45]}",
+        "resumo_dia": f"Edição {edicao} curada via Gemini 4 a partir de {len(veiculos_usados)} veículos independentes nacionais e internacionais, com agrupamento multi-fonte e tradução integral.",
+        "notas": notas_finais,
+        "agenda": [
+            {"quando": "09h00", "o_que": "Acompanhamento das cotações de mercado e indicadores do Banco Central."},
+            {"quando": "14h30", "o_que": "Sessões deliberativas no Congresso Nacional e tribunais superiores."},
+            {"quando": "18h00", "o_que": "Balanço das apurações do dia e edição da noite da Faixa Oculta."},
+        ],
+    }
+
+
 def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso, urls_ja_usadas=None, titulos_ja_usados=None):
     """Curadoria editorial autônoma de alta densidade: 100% de notícias reais (11 nacionais + 11 internacionais traduzidas)."""
     print("Iniciando curadoria editorial de notícias clássicas (Economia, Política, Internacional e Sociedade)...")
     urls_ja_usadas = set(urls_ja_usadas or [])
     titulos_ja_usados = set(titulos_ja_usados or [])
     
-    # Termos estritamente proibidos no 'Hoje' (rotinas de trabalho/laboratório, feiras, editais burocráticos, biologia/saúde de bancada)
+    # Termos estritamente proibidos no 'Hoje' (esportes/clubes, trivialidades zoológicas, rotinas acadêmicas/laboratório)
     termos_ignorar = [
         "feira de recrutamento", "recrutamento", "estudantes de veterinária", "veterinária",
         "cadeado", "naufrágio", "vestibular", "concurso", "biotério", "bioterio", "edital fndct",
-        "estágio", "estagiário", "horóscopo", "famosos", "reality", "futebol",
+        "estágio", "estagiário", "horóscopo", "famosos", "reality", "futebol", "brasileirão",
+        "libertadores", "campeonato", "série a", "série b", "corinthians", "flamengo",
+        "palmeiras", "botafogo", "vasco", "fluminense", "são paulo fc", "grêmio", "cruzeiro",
+        "atletico-mg", "seleção brasileira", "copa do mundo", "babuíno", "babuínos", "baboon",
+        "baboons", "santuário de animais", "animal sanctuary", "zoológico", "zoo", "bbb",
         "bactérias", "bacterias", "intestino", "vírus", "virus", "unicamp", "usp", "fapesp",
         "sbpc", "fiocruz", "pesquisa fapesp", "pesquisador", "doutorado", "pós-graduação",
         "pos-graduacao", "laboratório", "laboratorio", "ensaio clínico", "artigo científico",
@@ -550,23 +712,32 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso, urls_ja_usadas
     for cat, subtema, termos_sub in ordem_prioridade_nacional:
         cands = candidatos_por_cat.get(cat, [])
         escolhido = None
-        # 1. Tentar candidato que coincida com o subtema específico e veículo não usado
+        # 1. Tentar candidato que coincida com o subtema específico, veículo não usado e tema inédito
         for cand in cands:
             t_d = f"{cand.get('titulo', '')} {cand.get('descricao', '')}".lower()
-            if any(ts in t_d for ts in termos_sub) and cand.get("veiculo") not in veiculos_usados:
+            if (
+                any(ts in t_d for ts in termos_sub)
+                and cand.get("veiculo") not in veiculos_usados
+                and not _eh_tema_duplicado(cand.get("titulo", ""), notas_selecionadas)
+            ):
                 escolhido = cand
                 break
-        # 2. Tentar candidato que coincida com o subtema
+        # 2. Tentar candidato que coincida com o subtema e tema inédito
         if not escolhido:
             for cand in cands:
                 t_d = f"{cand.get('titulo', '')} {cand.get('descricao', '')}".lower()
-                if any(ts in t_d for ts in termos_sub):
+                if any(ts in t_d for ts in termos_sub) and not _eh_tema_duplicado(cand.get("titulo", ""), notas_selecionadas):
                     escolhido = cand
                     break
-        # 3. Fallback para primeiro candidato da categoria
+        # 3. Fallback para primeiro candidato da categoria sem tema duplicado
         if not escolhido:
             for cand in cands:
-                if cand.get("veiculo") not in veiculos_usados:
+                if cand.get("veiculo") not in veiculos_usados and not _eh_tema_duplicado(cand.get("titulo", ""), notas_selecionadas):
+                    escolhido = cand
+                    break
+        if not escolhido:
+            for cand in cands:
+                if not _eh_tema_duplicado(cand.get("titulo", ""), notas_selecionadas):
                     escolhido = cand
                     break
         if not escolhido and cands:
@@ -652,9 +823,9 @@ def curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso, urls_ja_usadas
         desc = item.get("descricao", "")
         content_html = item.get("content_html", "")
         
-        # Filtros de relevância internacional: descartar futilidades ou temas paroquiais menores
+        # Filtros de relevância internacional: usa a mesma regra estrita de TERMOS_PROIBIDOS_HOJE + deduplicação de tema
         tit_desc = f"{tit_orig} {desc}".lower()
-        if any(ign in tit_desc for ign in ["horoscope", "recipe", "quiz", "football", "premier league", "celebrity", "umbrella", "crossword", "sudoku"]):
+        if _eh_item_proibido_hoje(item) or _eh_tema_duplicado(tit_orig, notas_inter_selecionadas):
             continue
 
         if contagem_veiculo_inter.get(v, 0) < 2:
@@ -851,13 +1022,23 @@ def main():
         print("Aviso: nenhum feed respondeu. Abortando execução sem alterações.")
         return
 
-    # 2. Curadoria autônoma resiliente com 100% de dados reais contemporâneos
-    print("Executando curadoria algorítmica autônoma baseada nos feeds RSS reais contemporâneos...")
-    boletim_ia = curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso, urls_anteriores, titulos_anteriores)
+    # 2. Curadoria editorial via Gemini 4 (quando créditos ativos) + fallback algorítmico resiliente
+    boletim_ia = None
+    if gemini_client.obter_api_key() and not gemini_client.todas_chaves_esgotadas():
+        try:
+            print("Executando curadoria, agrupamento multi-fonte e síntese via Gemini 4...")
+            boletim_ia = curadoria_com_gemini4(itens_rss, edicao, data_iso, urls_anteriores, titulos_anteriores)
+        except Exception as exc_g:
+            print(f"Aviso na curadoria Gemini 4 ({exc_g}); acionando fallback resiliente...")
+    if not boletim_ia:
+        print("Executando curadoria algorítmica autônoma baseada nos feeds RSS reais contemporâneos...")
+        boletim_ia = curadoria_algoritmica_resiliente(itens_rss, edicao, data_iso, urls_anteriores, titulos_anteriores)
+    gemini_client.flush_cache_traducoes()
 
     novo_dia = {
         "data": data_iso,
         "edicao": edicao,
+        "gerado_via_gemini": bool(boletim_ia.get("_via_gemini")),
         "titulo": boletim_ia.get("titulo", "Boletim do dia"),
         "resumo_dia": boletim_ia.get("resumo_dia", ""),
         "notas": boletim_ia.get("notas", []),
@@ -905,10 +1086,7 @@ def main():
         src = f.read()
 
     with open("index.html", "w", encoding="utf-8") as f:
-        if src.lstrip().lower().startswith("<!doctype"):
-            f.write(src)
-        else:
-            f.write(SKELETON_HEAD + src + SKELETON_TAIL)
+        f.write(src)
 
     print(f"=== SUCESSO: Boletim {doc_id} gravado com {len(novo_dia['notas'])} notas 100% reais e textos na íntegra! ===")
 

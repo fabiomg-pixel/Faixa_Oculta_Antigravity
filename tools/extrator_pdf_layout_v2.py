@@ -192,6 +192,12 @@ STOPWORDS_LOGOTIPO_CAPA = [
     r"^são\s+paulo,\s*(segunda|terça|quarta|quinta|sexta|domingo)",
     r"^edição\s+de\s+",
     r"^ano\s+\d+",
+    r"^diretor(es)?-?gerais?\b",
+    r"^conselho\s+editorial\b",
+    r"^presidente\s*:",
+    r"^fundador(es)?\b",
+    r"^um\s+jornal\s+a\s+serviço",
+    r"^expediente\b",
 ]
 
 
@@ -199,84 +205,33 @@ def log(msg):
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] [ExtratorPDF-v2] {msg}", flush=True)
 
 
+try:
+    from tools import gemini_client
+except ImportError:
+    import gemini_client
+
+
 def obter_chave_gemini():
-    """Recupera GEMINI_API_KEY do ambiente ou de ~/.faixaoculta/.env e ~/.env."""
-    if os.environ.get("GEMINI_API_KEY"):
-        return os.environ["GEMINI_API_KEY"].strip()
-    for p in [os.path.expanduser("~/.faixaoculta/.env"), os.path.expanduser("~/.env"), ".env"]:
-        if os.path.exists(p):
-            try:
-                with open(p, "r", encoding="utf-8") as f:
-                    for line in f:
-                        if line.strip().startswith("GEMINI_API_KEY="):
-                            return line.strip().split("=", 1)[1].strip().strip('"').strip("'")
-            except Exception:
-                pass
-    return None
-
-
-CACHE_TRADUCOES_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "cache_traducoes.json")
-_CACHE_TRADUCOES = {}
-if os.path.exists(CACHE_TRADUCOES_FILE):
-    try:
-        with open(CACHE_TRADUCOES_FILE, "r", encoding="utf-8") as _f_tr:
-            _CACHE_TRADUCOES = json.load(_f_tr)
-    except Exception:
-        pass
-
-
-def _salvar_cache_traducoes():
-    try:
-        os.makedirs(os.path.dirname(CACHE_TRADUCOES_FILE), exist_ok=True)
-        with open(CACHE_TRADUCOES_FILE, "w", encoding="utf-8") as _f_tr:
-            json.dump(_CACHE_TRADUCOES, _f_tr, ensure_ascii=False, indent=2)
-    except Exception:
-        pass
+    """Delega para o cliente unificado Gemini 4 (`tools/gemini_client.py`)."""
+    return gemini_client.obter_api_key()
 
 
 def traduzir_texto_pt(texto):
-    """Traduz texto internacional para o português culto com cache persistente e fallback multi-provedor (Google + MyMemory)."""
-    if not texto or not texto.strip():
-        return ""
-    texto_limpo = texto.strip()
-    if texto_limpo in _CACHE_TRADUCOES:
-        return _CACHE_TRADUCOES[texto_limpo].replace("\u200b", "").replace("\ufeff", "")
+    """Traduz texto internacional para o português culto via cache batelada e cliente unificado."""
+    return gemini_client.traduzir_texto_resiliente(texto, de="auto", para="pt-BR")
 
-    # 1. Provedor primário: Google Translate GTX (com breve retry em 429)
-    import time as _time
-    for tentativa in range(2):
-        try:
-            q = urllib.parse.quote(texto_limpo[:1900])
-            url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=pt&dt=t&q={q}"
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"})
-            with urllib.request.urlopen(req, timeout=6, context=SSL_CTX) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                partes = [seg[0] for seg in data[0] if seg and seg[0]]
-                res = "".join(partes).replace("\u200b", "").replace("\ufeff", "").strip()
-                if res:
-                    _CACHE_TRADUCOES[texto_limpo] = res
-                    _salvar_cache_traducoes()
-                    return res
-        except Exception:
-            if tentativa == 0:
-                _time.sleep(0.4)
 
-    # 2. Provedor secundário: MyMemory
-    try:
-        q = urllib.parse.quote(texto_limpo[:500])
-        url = f"https://api.mymemory.translated.net/get?q={q}&langpair=en|pt"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"})
-        with urllib.request.urlopen(req, timeout=5, context=SSL_CTX) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            res = data.get("responseData", {}).get("translatedText", "").strip()
-            if res and "MYMEMORY WARNING" not in res:
-                _CACHE_TRADUCOES[texto_limpo] = res
-                _salvar_cache_traducoes()
-                return res
-    except Exception:
-        pass
-
-    return texto_limpo
+def traduzir_lista_pt(textos, max_workers=6):
+    """Traduz múltiplos parágrafos em paralelo usando o pool e cache unificado."""
+    if not textos:
+        return []
+    from concurrent.futures import ThreadPoolExecutor
+    if len(textos) <= 2:
+        return [traduzir_texto_pt(t) for t in textos]
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        res = list(pool.map(traduzir_texto_pt, textos))
+    gemini_client.flush_cache_traducoes()
+    return res
 
 
 def _extrair_texto_rawdict_com_espacos(page, clip_rect=None):
@@ -409,6 +364,23 @@ def eh_span_lixo_ou_logo(texto, font_name=""):
     for pat in STOPWORDS_LOGOTIPO_CAPA:
         if re.search(pat, tl):
             return True
+    # Trata datas/expedientes com letras espaçadas típicas de Folha/O Globo/FT (ex.: "t Erç A-f EIr A, 17 d E No VEmbro d E 2026")
+    compact = re.sub(r"\s+", "", tl)
+    if re.search(
+        r"^(segunda|ter[cç]a|quarta|quinta|sexta|s[aá]bado|domingo)(-?feira)?,?\d{1,2}de(janeiro|fevereiro|mar[cç]o|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)(de)?\d{4}",
+        compact,
+    ):
+        return True
+    if re.search(
+        r"^(monday|tuesday|wednesday|thursday|friday|saturday|sunday),?\d{0,2}(january|february|march|april|may|june|july|august|september|october|november|december)\d{0,2},?\d{4}",
+        compact,
+    ):
+        return True
+    if re.match(
+        r"^(folhades\.?paulo|oglobo|oestadodes\.?paulo|valorecon[oô]mico|financialtimes|theguardian)$",
+        compact,
+    ):
+        return True
     return False
 
 
@@ -452,8 +424,8 @@ def extrair_manchetes_detalhadas_capa_por_dict(page):
 
             if partes_linha and max_sz >= 14.0:
                 joined_raw = " ".join(partes_linha)
-                # Se houver token longo colado sem espaços (>= 16 chars), recompõe via gaps de rawdict
-                if any(len(tok) >= 16 for tok in joined_raw.split()):
+                # Se houver token longo colado sem espaços (>= 11 chars), recompõe via gaps de rawdict
+                if any(len(tok) >= 11 for tok in joined_raw.split()):
                     raw_linhas = _extrair_texto_rawdict_com_espacos(page, clip_rect=bbox)
                     if raw_linhas:
                         joined_raw = " ".join(rl["text"] for rl in raw_linhas)
@@ -545,7 +517,7 @@ def extrair_blocos_limpos_pagina(page, num_pagina):
 
         # Desfazer hifenização de quebra de linha dentro do mesmo bloco
         txt = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", raw_txt)
-        if any(len(tok) >= 13 and "http" not in tok for tok in txt.split()):
+        if any(len(tok) >= 11 and "http" not in tok for tok in txt.split()):
             raw_linhas = _extrair_texto_rawdict_com_espacos(page, clip_rect=(x0, y0, x1, y1))
             if raw_linhas:
                 txt = re.sub(r"(\w)-\s+(\w)", r"\1\2", " ".join(rl["text"] for rl in raw_linhas))
@@ -600,9 +572,11 @@ def _eh_texto_ocr_corrompido(txt):
     return False
 
 
-def executar_ocr_apple_vision(doc, max_pages=8, escopo="nacional"):
-    """Executa OCR via Apple Vision Framework preservando colunas espaciais e manchetes reais."""
-    lang = "en-US" if escopo == "internacional" else "pt-BR"
+_VISION_BIN_PATH = os.path.expanduser("~/.faixaoculta/bin/faixa_vision_ocr_v2")
+
+
+def _obter_comando_vision_ocr():
+    """Compila uma única vez o binário nativo Swift do Apple Vision para evitar recompilação JIT por página."""
     swift_script = """
 import Vision
 import Foundation
@@ -640,6 +614,28 @@ try? handler.perform([request])
     with open(tmp_swift, "w", encoding="utf-8") as f:
         f.write(swift_script)
 
+    if os.path.exists(_VISION_BIN_PATH):
+        return [_VISION_BIN_PATH]
+    try:
+        os.makedirs(os.path.dirname(_VISION_BIN_PATH), exist_ok=True)
+        subprocess.run(
+            ["/usr/bin/swiftc", "-O", tmp_swift, "-o", _VISION_BIN_PATH],
+            capture_output=True, text=True, check=True, timeout=45
+        )
+        if os.path.exists(_VISION_BIN_PATH):
+            return [_VISION_BIN_PATH]
+    except Exception:
+        pass
+    return ["/usr/bin/swift", tmp_swift]
+
+
+def executar_ocr_apple_vision(doc, max_pages=8, escopo="nacional"):
+    """Executa OCR via Apple Vision Framework preservando colunas espaciais e manchetes reais."""
+    import hashlib
+    lang = "en-US" if escopo == "internacional" else "pt-BR"
+    cmd_prefix = _obter_comando_vision_ocr()
+    doc_sig = hashlib.md5(str(getattr(doc, "name", "") or "doc").encode()).hexdigest()[:10]
+
     paginas_ocr = []
     manchete_ocr = None
     submanchetes_ocr = []
@@ -652,11 +648,11 @@ try? handler.perform([request])
         pw = float(rect.width) if rect and rect.width else 800.0
         ph = float(rect.height) if rect and rect.height else 1200.0
         pix = page.get_pixmap(dpi=200)
-        tmp_img = f"/tmp/ocr_v2_p{page_idx + 1}.png"
+        tmp_img = f"/tmp/ocr_v2_{doc_sig}_p{page_idx + 1}.png"
         pix.save(tmp_img)
 
         def _rodar_swift_vision(img_path, y_offset_norm=0.0, y_scale_norm=1.0):
-            cmd = ["/usr/bin/swift", tmp_swift, img_path, lang]
+            cmd = list(cmd_prefix) + [img_path, lang]
             proc = subprocess.run(cmd, capture_output=True, text=True, check=True, timeout=45)
             out_obs = []
             for rl in proc.stdout.strip().split("\n"):
@@ -847,6 +843,16 @@ def extrair_layout_pdf_v2(pdf_path, max_pages=12, escopo="nacional"):
                 "blocos": blocos
             })
 
+    # Híbridos (ex.: Folha com capa rasterizada/em curvas e miolo vetorial): OCR cirúrgico só na página 1
+    if not manchete_capa and not grupos_manchete:
+        ocr_capa = executar_ocr_apple_vision(doc, max_pages=1, escopo=escopo)
+        if ocr_capa.get("manchete_capa") or ocr_capa.get("grupos_manchete"):
+            manchete_capa = ocr_capa.get("manchete_capa")
+            submanchetes_capa = ocr_capa.get("submanchetes_capa", [])
+            grupos_manchete = ocr_capa.get("grupos_manchete", [])
+            if ocr_capa.get("paginas") and not any(p.get("pagina") == 1 for p in paginas_estruturadas):
+                paginas_estruturadas.insert(0, ocr_capa["paginas"][0])
+
     return {
         "metodo": "pymupdf_dict_blocks_v2",
         "total_paginas": total_pages,
@@ -860,11 +866,10 @@ def extrair_layout_pdf_v2(pdf_path, max_pages=12, escopo="nacional"):
 
 def chamar_gemini_estruturado_jornal(veiculo, escopo, data_iso, dados_layout):
     """
-    Envia os blocos estruturados da edição para `gemini-4-argon` (com fallback para `gemini-3.8-flash`)
-    para sintetizar o objeto completo do jornal no Modo Leitor.
+    Envia os blocos completos (sem truncamento) da edição para `gemini-4-argon` / `gemini-4-hydrogen`
+    via `tools/gemini_client.py` para isolar artigos inteiros, corrigir quebras de OCR e traduzir integralmente.
     """
-    api_key = obter_chave_gemini()
-    if not api_key:
+    if not gemini_client.obter_api_key() or gemini_client.todas_chaves_esgotadas():
         return None
 
     resumo_dump = {
@@ -872,85 +877,100 @@ def chamar_gemini_estruturado_jornal(veiculo, escopo, data_iso, dados_layout):
         "escopo": escopo,
         "data": data_iso,
         "manchete_tipografica_capa": dados_layout.get("manchete_capa"),
-        "submanchetes_capa": dados_layout.get("submanchetes_capa", [])[:5],
+        "submanchetes_capa": dados_layout.get("submanchetes_capa", [])[:6],
         "paginas": []
     }
-    for p in dados_layout.get("paginas", [])[:10]:
-        textos_b = [b["texto"][:600] for b in p.get("blocos", [])[:8]]
+    orcamento_chars = 52000
+    acum_chars = 0
+    for p in dados_layout.get("paginas", [])[:12]:
+        textos_b = []
+        for b in p.get("blocos", []):
+            bt = b.get("texto", "").strip()
+            if not bt:
+                continue
+            if acum_chars + len(bt) > orcamento_chars:
+                break
+            textos_b.append({"x0": b.get("x0", 0), "y0": b.get("y0", 0), "h": bool(b.get("is_heading")), "t": bt})
+            acum_chars += len(bt)
         if textos_b:
             resumo_dump["paginas"].append({
                 "pagina": p["pagina"],
                 "blocos": textos_b
             })
+        if acum_chars >= orcamento_chars:
+            break
+
+    if not resumo_dump["paginas"]:
+        return None
 
     prompt = (
-        f"Você é o editor-chefe da revista cultural e jornalística Faixa Oculta.\n"
-        f"Abaixo está a extração estruturada por blocos tipográficos da edição de hoje ({data_iso}) "
-        f"do periódico '{veiculo}' (escopo: {escopo}).\n"
-        f"Reconstrua fielmente a edição para o Modo Leitor em português culto (se o jornal for internacional, "
-        f"traduza integralmente tudo para o português culto e preserve os títulos originais em 'manchete_original' "
-        f"e 'titulo_original').\n\n"
-        f"Retorne APENAS um objeto JSON válido com a seguinte estrutura exata:\n"
+        f"Você é o editor-chefe da revista cultural e jornalística brasileira Faixa Oculta.\n"
+        f"Abaixo estão os blocos ordenados por coluna/página (com `x0`, `y0` e `t`) extraídos da edição de {data_iso} "
+        f"do periódico '{veiculo}' (escopo: {escopo}).\n\n"
+        f"REGRAS INVIOLÁVEIS DE EXTRAÇÃO E TRADUÇÃO:\n"
+        f"1. NÃO RESUMA: Preserve o TEXTO INTEGRAL (4 a 16 parágrafos contínuos por reportagem conforme os blocos reais), ligando colunas da mesma matéria na ordem de leitura correta.\n"
+        f"2. SANEAMENTO FIEL DE OCR: Corrija exclusivamente palavras partidas sem hífen pelo OCR (ex.: 'ampli ação' -> 'ampliação', 'endossa da' -> 'endossada'), acentos perdidos ('legitima' -> 'legítima') e pontuação final omitida antes de novo parágrafo, SEM inventar fatos.\n"
+        f"3. IGNORE RUÍDO: Descarte anúncios comerciais, propagandas de assinatura, QR Codes, palavras cruzadas, cotações isoladas e blocos promocionais em inglês dentro de jornais nacionais.\n"
+        f"4. TRADUÇÃO INTEGRAL: Se escopo == 'internacional', traduza manchete, editorial e 100% dos parágrafos para português culto do Brasil, mantendo os títulos de origem em `manchete_original` e `titulo_original`.\n"
+        f"5. PONTOS FACTUAIS DISTINTOS: Para cada reportagem, crie 2 a 3 `pontos` factuais em frases completas que NÃO copiem a primeira frase de `texto_integral[0]`.\n"
+        f"6. Retorne APENAS JSON válido seguindo exatamente o esquema:\n"
         f"{{\n"
         f'  "manchete": "Manchete principal em português",\n'
         f'  "manchete_original": "Manchete no idioma original (ou null se nacional)",\n'
-        f'  "nota": "Síntese executiva de 1 parágrafo (até 240 chars) dos destaques da capa",\n'
-        f'  "resumo_edicao": ["Parágrafo 1 denso sobre a capa", "Parágrafo 2 denso sobre os demais cadernos"],\n'
-        f'  "editorial": {{"titulo": "Título da opinião/editorial", "texto": ["Parágrafo 1", "Parágrafo 2"]}},\n'
+        f'  "nota": "Síntese executiva (até 240 chars) dos destaques da capa",\n'
+        f'  "resumo_edicao": ["Parágrafo 1 sobre a capa", "Parágrafo 2 sobre os demais cadernos"],\n'
+        f'  "editorial": {{"pagina_origem": 2, "titulo": "Título do editorial", "texto": ["Parágrafo 1", "Parágrafo 2", "..."]}},\n'
         f'  "reportagens": [\n'
         f'    {{\n'
         f'      "caderno": "Nome do Caderno (ex: Economia, Política, Mundo, Cultura)",\n'
         f'      "pagina": "Número da página",\n'
-        f'      "autor": "Autor ou Redação",\n'
+        f'      "autor": "Autor ou Redação {veiculo}",\n'
         f'      "titulo": "Título da reportagem em português",\n'
         f'      "titulo_original": "Título original se internacional ou null",\n'
-        f'      "lide": "Resumo de abertura da matéria em 1 a 2 frases",\n'
-        f'      "texto_integral": ["Parágrafo 1 denso", "Parágrafo 2 denso", "Parágrafo 3 denso"],\n'
-        f'      "pontos": ["Ponto central 1 em frase completa", "Ponto central 2 em frase completa"]\n'
+        f'      "lide": "Primeiro parágrafo de abertura da matéria",\n'
+        f'      "texto_integral": ["Parágrafo 1 completo...", "Parágrafo 2...", "..."],\n'
+        f'      "pontos": ["Ponto factual 1 (distinto da abertura)", "Ponto factual 2"]\n'
         f'    }}\n'
         f'  ]\n'
         f"}}\n"
-        f"Gere exatamente 5 reportagens completas baseadas estritamente nos blocos reais abaixo:\n\n"
+        f"Extraia o editorial autêntico (pág. 2/3) e exatamente 5 reportagens jornalísticas completas baseadas estritamente nos blocos reais abaixo:\n\n"
         f"{json.dumps(resumo_dump, ensure_ascii=False)}"
     )
 
-    modelos = ["gemini-4-hydrogen", "gemini-4-argon", "gemini-3.8-flash", "gemini-2.5-flash"]
-    for mod in modelos:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{mod}:generateContent?key={api_key}"
-        payload = {
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {
-                "temperature": 0.2,
-                "responseMimeType": "application/json"
-            }
-        }
-        req = urllib.request.Request(
-            url,
-            data=json.dumps(payload).encode("utf-8"),
-            headers={"Content-Type": "application/json"}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=35, context=SSL_CTX) as resp:
-                body = json.loads(resp.read().decode("utf-8"))
-                cand_txt = (
-                    body.get("candidates", [{}])[0]
-                    .get("content", {})
-                    .get("parts", [{}])[0]
-                    .get("text", "")
-                )
-                if cand_txt:
-                    parsed = json.loads(cand_txt)
-                    if parsed.get("manchete") and parsed.get("reportagens"):
-                        log(f"Síntese estruturada gerada via {mod} para {veiculo}!")
-                        return parsed
-        except Exception as e:
-            err_msg = str(e)
-            log(f"Aviso ao consultar modelo {mod} para {veiculo}: {err_msg}")
-            if "402" in err_msg or "Payment Required" in err_msg or "quota" in err_msg.lower():
-                log("Quota/créditos de API esgotados. Ativando fallback Layout-Aware determinístico imediatamente.")
-                break
+    try:
+        parsed = gemini_client.gerar_json(prompt, prefer_model=gemini_client.MODEL_ARGON, temperature=0.15)
+    except Exception as e:
+        log(f"Aviso Gemini 4 em {veiculo}: {e}")
+        return None
+
+    if not isinstance(parsed, dict) or not parsed.get("manchete") or not parsed.get("reportagens"):
+        return None
+
+    reps_validas = []
+    for r in parsed.get("reportagens", []):
+        ti = r.get("texto_integral") or r.get("texto") or []
+        if not isinstance(ti, list):
+            ti = [str(ti)]
+        ti = [re.sub(r"[\u200b\ufeff\xa0]", " ", str(p)).strip() for p in ti if str(p).strip()]
+        if sum(len(p) for p in ti) < 180:
             continue
-    return None
+        r["texto_integral"] = ti
+        r["texto"] = ti[:6]
+        r["lide"] = r.get("lide") or ti[0]
+        pts = [re.sub(r"[\u200b\ufeff\xa0]", " ", str(pt)).strip() for pt in (r.get("pontos") or []) if str(pt).strip()]
+        t0_norm = re.sub(r"\s+", " ", ti[0]).lower()[:75]
+        if not pts or (len(pts[0]) > 20 and re.sub(r"\s+", " ", pts[0]).lower()[:55] in t0_norm):
+            r["pontos"] = extrair_pontos_chave(ti)
+        else:
+            r["pontos"] = pts[:3]
+        reps_validas.append(r)
+
+    if len(reps_validas) < 3:
+        return None
+
+    parsed["reportagens"] = reps_validas[:6]
+    log(f"Síntese integral estruturada via Gemini 4 para {veiculo} ({len(parsed['reportagens'])} reportagens)!")
+    return parsed
 
 
 def clean_hyphenation_and_breaks(text):
@@ -1121,7 +1141,7 @@ def extrair_editorial_edicao(paginas, veiculo, eh_int):
         pars = format_story_paragraphs(cand_blocos[:14], max_paragraphs=12)
         if pars:
             t_pt = traduzir_texto_pt(cand_tit) if eh_int else cand_tit
-            pars_pt = [traduzir_texto_pt(p) for p in pars] if eh_int else pars
+            pars_pt = traduzir_lista_pt(pars) if eh_int else pars
             return {
                 "pagina_origem": num_pag,
                 "titulo": t_pt,
@@ -1177,7 +1197,7 @@ def extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int):
 
     t_pt = traduzir_texto_pt(cand_tit) if eh_int else cand_tit
     t_orig = cand_tit if eh_int else None
-    pars_pt = [traduzir_texto_pt(p) for p in pars] if eh_int else pars
+    pars_pt = traduzir_lista_pt(pars) if eh_int else pars
 
     return {
         "caderno": f"Caderno Principal · Pág. {num_pag}",
@@ -1347,7 +1367,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
             if pars and sum(len(p) for p in pars) >= 220:
                 t_pt = traduzir_texto_pt(t_txt) if eh_int else t_txt
                 t_orig = t_txt if eh_int else None
-                pars_pt = [traduzir_texto_pt(p) for p in pars] if eh_int else pars
+                pars_pt = traduzir_lista_pt(pars) if eh_int else pars
 
                 sub = g.get("subtitulo", "")
                 if sub:
@@ -1401,7 +1421,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
             pars = format_story_paragraphs(textos_apoio, max_paragraphs=12) if textos_apoio else [f"Edição de {veiculo} com foco nos principais fatos do dia."]
             t_pt = traduzir_texto_pt(t_capa) if eh_int else t_capa
             t_orig = t_capa if eh_int else None
-            pars_pt = [traduzir_texto_pt(p) for p in pars] if eh_int else pars
+            pars_pt = traduzir_lista_pt(pars) if eh_int else pars
             reportagens.append({
                 "caderno": "Capa · Destaque Principal",
                 "pagina": "1",
@@ -1415,7 +1435,7 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
             })
 
     pag_ed = editorial_obj.get("pagina_origem")
-    for p_obj in paginas[1:10]:
+    for p_obj in paginas[1:12]:
         if len(reportagens) >= 5:
             break
         num_pag = p_obj.get("pagina", 2)
@@ -1425,13 +1445,26 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
         if not blocos_pag:
             continue
 
+        # Divide em faixas horizontais se a página tiver muitas colunas/matérias distintas
         art_interna = extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int)
-        if art_interna:
-            # Evitar adicionar título duplicado
-            if not any(r["titulo"] == art_interna["titulo"] for r in reportagens):
-                reportagens.append(art_interna)
+        if art_interna and not any(r["titulo"] == art_interna["titulo"] for r in reportagens):
+            reportagens.append(art_interna)
 
-    # Garantir ao menos 5 reportagens
+    # Segunda varredura: se faltarem matérias para completar 5, inclui pág. 2 ou blocos distintos não usados
+    if len(reportagens) < 5:
+        for p_obj in paginas[1:12]:
+            if len(reportagens) >= 5:
+                break
+            num_pag = p_obj.get("pagina", 2)
+            blocos_pag = [b for b in p_obj.get("blocos", []) if len(b.get("texto", "").strip()) >= 40]
+            if len(blocos_pag) < 4:
+                continue
+            metade = blocos_pag[len(blocos_pag) // 2:]
+            art2 = extrair_artigo_pagina_interna(metade, num_pag, veiculo, eh_int)
+            if art2 and not any(r["titulo"][:35].lower() == art2["titulo"][:35].lower() for r in reportagens):
+                reportagens.append(art2)
+
+    # Só clona fallback em caso extremo onde o PDF inteiro tenha menos de 5 matérias reais
     while len(reportagens) < 5 and len(reportagens) > 0:
         base = reportagens[0]
         reportagens.append({
@@ -1460,19 +1493,20 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
     }
 
 
-def sintetizar_edicao_completa(veiculo, escopo, pdf_path, img_rel_path="", max_pages=12):
+def sintetizar_edicao_completa(veiculo, escopo, pdf_path, img_rel_path="", max_pages=12, dados_layout_pronto=None):
     """
     Pipeline principal de extração v2 para um arquivo PDF do Beeper:
-    1. Extrai layout (`dict` + `blocks` ou Apple Vision OCR bilingue).
-    2. Tenta síntese estruturada via `gemini-4-argon` / `gemini-3.8-flash`.
-    3. Aplica fallback determinístico Layout-Aware garantindo 100% de disponibilidade.
+    1. Reutiliza layout pré-extraído (evitando OCR duplicado) ou extrai `dict`+`blocks`/Apple Vision.
+    2. Tenta síntese estruturada completa via Gemini 4 (`tools/gemini_client.py`).
+    3. Aplica fallback determinístico Layout-Aware com tradução paralela em lote.
     """
     hoje_iso = datetime.now().strftime("%Y-%m-%d")
-    dados_layout = extrair_layout_pdf_v2(pdf_path, max_pages=max_pages, escopo=escopo)
+    dados_layout = dados_layout_pronto or extrair_layout_pdf_v2(pdf_path, max_pages=max_pages, escopo=escopo)
 
     sintese = chamar_gemini_estruturado_jornal(veiculo, escopo, hoje_iso, dados_layout)
     if not sintese:
         sintese = construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout)
+        gemini_client.flush_cache_traducoes()
 
     # Normalizar campos para compatibilidade total v1 e v2
     for rep in sintese.get("reportagens", []):

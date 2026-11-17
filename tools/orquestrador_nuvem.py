@@ -53,7 +53,13 @@ def main():
 
     # 3. ÁUDIO DO BOLETIM DIÁRIO (Gera narração em áudio da edição integral do turno atual)
     print("\n[3/8] Gerando/Verificando Áudio Narrado do Boletim Diário...")
-    turno_id = data_iso if hora < 17 else f"{data_iso}-noite"
+    if 5 <= hora < 17:
+        turno_id = data_iso
+    elif hora >= 17:
+        turno_id = f"{data_iso}-noite"
+    else:
+        ontem_iso = (agora - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+        turno_id = f"{ontem_iso}-noite"
     rodar_script("tools/gerar_audio_boletim.py", ["--dia", turno_id] + extra_args)
 
     # Carregar banco para verificar se edições semanais/mensais já constam

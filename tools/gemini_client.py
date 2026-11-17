@@ -24,19 +24,40 @@ import urllib.parse
 import urllib.request
 
 MODEL_PRO = "gemini-4-hydrogen"
+MODEL_ARGON = "gemini-4-argon"
 MODEL_FLASH = "gemini-3.8-flash"
 API_BASE = "https://generativelanguage.googleapis.com/v1beta"
 
-# Contexto SSL não verificado para evitar SSLCertVerificationError no Python 3.14 / macOS
-SSL_CTX = ssl._create_unverified_context()
+
+def _criar_ssl_ctx():
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        return ssl.create_default_context()
+
+
+SSL_CTX = _criar_ssl_ctx()
+# Feeds/portais externos com cadeias SSL inconsistentes usam fallback apenas onde necessário
+SSL_CTX_PERMISSIVO = ssl._create_unverified_context()
 
 _CACHED_KEYS = None
 _AVAILABLE_MODELS = None
 _DEPLETED_KEYS = set()
 
+_CACHE_TRAD_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "cache_traducoes.json")
+_CACHE_TRAD = None
+_CACHE_TRAD_DIRTY = 0
+
+
+def limpar_cache_chaves():
+    global _CACHED_KEYS
+    _CACHED_KEYS = None
+    _DEPLETED_KEYS.clear()
+
 
 def obter_todas_api_keys():
-    """Retorna todas as GEMINI_API_KEY configuradas no ambiente e em arquivos locais, sem duplicatas."""
+    """Retorna todas as GEMINI_API_KEY configuradas (prioriza .env local e ambiente antes do plist), sem duplicatas."""
     global _CACHED_KEYS
     if _CACHED_KEYS is not None:
         return _CACHED_KEYS
@@ -44,15 +65,15 @@ def obter_todas_api_keys():
     chaves = []
 
     def _add(k):
-        if k and k not in chaves:
-            chaves.append(k)
+        k_s = (k or "").strip().strip('"').strip("'")
+        if k_s and k_s not in chaves:
+            chaves.append(k_s)
 
-    _add(os.environ.get("GEMINI_API_KEY", "").strip())
-
+    # 1. Arquivos .env explícitos têm precedência sobre variável herdada do plist antigo
     candidatos = [
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env"),
         os.path.expanduser("~/.faixaoculta/.env"),
         os.path.expanduser("~/.env"),
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env"),
     ]
     for path in candidatos:
         if os.path.exists(path):
@@ -61,11 +82,14 @@ def obter_todas_api_keys():
                     for line in f:
                         line_s = line.strip()
                         if line_s.startswith("GEMINI_API_KEY="):
-                            val = line_s.split("=", 1)[1].strip().strip('"').strip("'")
-                            _add(val)
+                            _add(line_s.split("=", 1)[1])
             except Exception:
                 pass
 
+    # 2. Variável de ambiente (CI / terminal / launchd)
+    _add(os.environ.get("GEMINI_API_KEY", ""))
+
+    # 3. Fallback legado no plist
     plist_path = os.path.expanduser("~/Library/LaunchAgents/br.fabiogomes.faixaoculta.sentinela.plist")
     if os.path.exists(plist_path):
         try:
@@ -73,12 +97,47 @@ def obter_todas_api_keys():
                 conteudo = f.read()
             m = re.search(r"<key>GEMINI_API_KEY</key>\s*<string>([^<]+)</string>", conteudo)
             if m:
-                _add(m.group(1).strip())
+                _add(m.group(1))
         except Exception:
             pass
 
     _CACHED_KEYS = chaves
     return chaves
+
+
+def todas_chaves_esgotadas():
+    chaves = obter_todas_api_keys()
+    return bool(chaves) and all(k in _DEPLETED_KEYS for k in chaves)
+
+
+def _carregar_cache_traducoes():
+    global _CACHE_TRAD
+    if _CACHE_TRAD is None:
+        _CACHE_TRAD = {}
+        if os.path.exists(_CACHE_TRAD_FILE):
+            try:
+                with open(_CACHE_TRAD_FILE, "r", encoding="utf-8") as f:
+                    _CACHE_TRAD = json.load(f)
+            except Exception:
+                _CACHE_TRAD = {}
+    return _CACHE_TRAD
+
+
+def flush_cache_traducoes():
+    global _CACHE_TRAD_DIRTY
+    if _CACHE_TRAD is None or _CACHE_TRAD_DIRTY == 0:
+        return
+    try:
+        os.makedirs(os.path.dirname(_CACHE_TRAD_FILE), exist_ok=True)
+        with open(_CACHE_TRAD_FILE, "w", encoding="utf-8") as f:
+            json.dump(_CACHE_TRAD, f, ensure_ascii=False, indent=2)
+        _CACHE_TRAD_DIRTY = 0
+    except Exception:
+        pass
+
+
+import atexit
+atexit.register(flush_cache_traducoes)
 
 
 def obter_api_key():
@@ -198,13 +257,15 @@ def _chamar_modelo_json(modelo, prompt, schema=None, temperature=0.2, timeout=75
 
 
 def gerar_json(prompt, schema=None, prefer_model=MODEL_PRO, temperature=0.2):
-    """Gera saída JSON estruturada usando prefer_model (default: gemini-4-argon) com retry e fallback para gemini-3.8-flash."""
-    chaves = [k for k in obter_todas_api_keys() if k not in _DEPLETED_KEYS] or obter_todas_api_keys()
+    """Gera saída JSON estruturada usando Gemini 4 (Hydrogen / Argon) com fallback para 3.8 Flash."""
+    chaves = [k for k in obter_todas_api_keys() if k not in _DEPLETED_KEYS]
     if not chaves:
+        if obter_todas_api_keys():
+            raise RuntimeError("Todas as chaves GEMINI_API_KEY estão sem créditos/quota (HTTP 402/403).")
         raise RuntimeError("Nenhuma GEMINI_API_KEY encontrada.")
 
     cadeia_modelos = []
-    for m in [prefer_model, MODEL_FLASH, MODEL_PRO, "gemini-2.5-flash"]:
+    for m in [prefer_model, MODEL_PRO, MODEL_ARGON, MODEL_FLASH, "gemini-4-carbon", "gemini-2.5-flash"]:
         m_clean = (m or MODEL_PRO).replace("models/", "")
         if m_clean not in cadeia_modelos:
             cadeia_modelos.append(m_clean)
@@ -255,35 +316,78 @@ def gerar_json(prompt, schema=None, prefer_model=MODEL_PRO, temperature=0.2):
 
 
 def traduzir_texto_resiliente(texto, de="auto", para="pt-BR"):
-    """Traduz texto para o português usando múltiplos endpoints espelhados (sem sofrer HTTP 429 do client=gtx)."""
+    """Traduz texto para o português com cache em memória (flush único no fim) e múltiplos provedores."""
+    global _CACHE_TRAD_DIRTY
     if not texto or not str(texto).strip():
         return ""
-    limpo = str(texto).strip()
-    q = urllib.parse.quote(limpo[:2400])
+    limpo = re.sub(r"[\u200b\ufeff\xa0]", " ", str(texto)).strip()
+    limpo = re.sub(r"\s+", " ", limpo)
+    if not limpo:
+        return ""
 
-    # Endpoint 1: clients5 dict-chrome-ex (alta disponibilidade, imune ao 429 do client=gtx)
+    cache = _carregar_cache_traducoes()
+    if limpo in cache:
+        return re.sub(r"[\u200b\ufeff\xa0]", " ", str(cache[limpo])).strip()
+
+    def _salvar_hit(trad):
+        global _CACHE_TRAD_DIRTY
+        t_ok = re.sub(r"[\u200b\ufeff\xa0]", " ", trad).strip()
+        if t_ok and t_ok.lower() != limpo.lower():
+            cache[limpo] = t_ok
+            _CACHE_TRAD_DIRTY += 1
+            if _CACHE_TRAD_DIRTY >= 80:
+                flush_cache_traducoes()
+            return t_ok
+        return None
+
+    q = urllib.parse.quote(limpo[:1900])
+
+    # Endpoint 1: clients5 dict-chrome-ex (baixa incidência de 429)
     url1 = f"https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl={de}&tl={para}&q={q}"
     try:
         req = urllib.request.Request(url1, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as r:
+        with urllib.request.urlopen(req, timeout=6, context=SSL_CTX) as r:
             res = json.loads(r.read().decode("utf-8"))
+            cand = None
             if isinstance(res, list) and res:
                 if isinstance(res[0], list) and res[0]:
-                    return str(res[0][0]).strip()
-                if isinstance(res[0], str):
-                    return res[0].strip()
+                    cand = str(res[0][0])
+                elif isinstance(res[0], str):
+                    cand = res[0]
+            if cand:
+                ok = _salvar_hit(cand)
+                if ok:
+                    return ok
     except Exception:
         pass
 
-    # Endpoint 2: client=E
-    url2 = f"https://translate.googleapis.com/translate_a/single?client=E&sl={de}&tl=pt&dt=t&q={q}"
+    # Endpoint 2: Google Translate GTX
+    url2 = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl={de}&tl=pt&dt=t&q={q}"
     try:
         req = urllib.request.Request(url2, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as r:
+        with urllib.request.urlopen(req, timeout=6, context=SSL_CTX) as r:
             res = json.loads(r.read().decode("utf-8"))
-            return "".join([part[0] for part in res[0] if part and part[0]]).strip()
+            cand = "".join([part[0] for part in res[0] if part and part[0]])
+            ok = _salvar_hit(cand)
+            if ok:
+                return ok
     except Exception:
         pass
+
+    # Endpoint 3: MyMemory (trechos <= 480 chars)
+    if len(limpo) <= 480:
+        try:
+            url3 = f"https://api.mymemory.translated.net/get?q={urllib.parse.quote(limpo)}&langpair=en|pt"
+            req = urllib.request.Request(url3, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=5, context=SSL_CTX) as r:
+                res = json.loads(r.read().decode("utf-8"))
+                cand = res.get("responseData", {}).get("translatedText", "")
+                if cand and "MYMEMORY WARNING" not in cand:
+                    ok = _salvar_hit(cand)
+                    if ok:
+                        return ok
+        except Exception:
+            pass
 
     return limpo
 

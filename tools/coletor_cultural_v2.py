@@ -947,8 +947,12 @@ def descobrir_pequenas_casas_rio_v2(contexto_agenda_extraido=""):
         }
     ]
 
-    api_key = obter_chave_gemini()
-    if api_key and contexto_agenda_extraido:
+    try:
+        from tools import gemini_client as _gc
+    except ImportError:
+        import gemini_client as _gc
+
+    if contexto_agenda_extraido and _gc.obter_api_key() and not _gc.todas_chaves_esgotadas():
         prompt = (
             "Com base nos eventos culturais coletados hoje no Rio de Janeiro:\n"
             f"{contexto_agenda_extraido[:3500]}\n"
@@ -956,25 +960,13 @@ def descobrir_pequenas_casas_rio_v2(contexto_agenda_extraido=""):
             "Saloon 79, Estúdio Hanoi, Circo Voador) mantendo o JSON estrito da lista abaixo:\n"
             f"{json.dumps(casas_base, ensure_ascii=False)}"
         )
-        for mod in ["gemini-4-argon", "gemini-3.8-flash"]:
-            try:
-                u = f"https://generativelanguage.googleapis.com/v1beta/models/{mod}:generateContent?key={api_key}"
-                payload = {
-                    "contents": [{"parts": [{"text": prompt}]}],
-                    "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"}
-                }
-                req = urllib.request.Request(u, data=json.dumps(payload).encode("utf-8"), headers={"Content-Type": "application/json"})
-                with urllib.request.urlopen(req, timeout=20, context=SSL_CTX) as r:
-                    resp = json.loads(r.read().decode("utf-8"))
-                    txt = resp.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "")
-                    if txt:
-                        parsed = json.loads(txt)
-                        if isinstance(parsed, list) and len(parsed) >= 3:
-                            casas_base = parsed
-                            log(f"Pequenas casas enriquecidas via {mod}!")
-                            break
-            except Exception:
-                continue
+        try:
+            parsed = _gc.gerar_json(prompt, prefer_model=_gc.MODEL_ARGON, temperature=0.2)
+            if isinstance(parsed, list) and len(parsed) >= 3:
+                casas_base = parsed
+                log("Pequenas casas enriquecidas via Gemini 4!")
+        except Exception:
+            pass
 
     return casas_base
 

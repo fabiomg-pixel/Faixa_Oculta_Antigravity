@@ -193,68 +193,19 @@ def log(msg):
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] [BeeperPress] {msg}", flush=True)
 
 
+try:
+    from tools import gemini_client
+except ImportError:
+    import gemini_client
+
+
 def _obter_gemini_key():
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        for env_path in [os.path.expanduser("~/.faixaoculta/.env"), os.path.expanduser("~/.env")]:
-            if os.path.exists(env_path):
-                try:
-                    with open(env_path, "r", encoding="utf-8") as f:
-                        for line in f:
-                            if line.strip().startswith("GEMINI_API_KEY="):
-                                api_key = line.strip().split("=", 1)[1].strip().strip('"').strip("'")
-                                break
-                except Exception:
-                    pass
-            if api_key:
-                break
-    return api_key
+    return gemini_client.obter_api_key()
 
 
 def traduzir_pt(texto):
-    """Traduz textos de jornais internacionais para o português culto com fallback Gemini (gemini-4-argon / gemini-3.8-flash)."""
-    if not texto or not texto.strip():
-        return texto
-    texto_limpo = texto.strip()
-    ctx = ssl._create_unverified_context()
-    try:
-        q = urllib.parse.quote(texto_limpo[:1800])
-        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=pt&dt=t&q={q}"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=8, context=ctx) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            partes = [seg[0] for seg in data[0] if seg and seg[0]]
-            trad = "".join(partes).strip()
-            if trad and trad.lower() != texto_limpo.lower():
-                return trad
-    except Exception:
-        pass
-
-    api_key = _obter_gemini_key()
-    if api_key:
-        for modelo_gemini in ("gemini-4-argon", "gemini-3.8-flash"):
-            try:
-                g_url = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo_gemini}:generateContent?key={api_key}"
-                payload = {
-                    "contents": [{
-                        "parts": [{
-                            "text": f"Traduza fielmente o seguinte texto jornalístico para o português culto do Brasil, retornando apenas a tradução direta sem comentários:\n\n{texto_limpo[:2500]}"
-                        }]
-                    }]
-                }
-                req_g = urllib.request.Request(
-                    g_url,
-                    data=json.dumps(payload).encode("utf-8"),
-                    headers={"Content-Type": "application/json"}
-                )
-                with urllib.request.urlopen(req_g, timeout=12, context=ctx) as r_g:
-                    res_g = json.loads(r_g.read().decode("utf-8"))
-                    cand_txt = res_g.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "").strip()
-                    if cand_txt:
-                        return cand_txt
-            except Exception:
-                continue
-    return texto_limpo
+    """Traduz textos de jornais internacionais delegando ao cliente unificado."""
+    return gemini_client.traduzir_texto_resiliente(texto, de="auto", para="pt-BR")
 
 
 def obter_edicao_lemonde_rss():
@@ -487,7 +438,7 @@ def download_file(src_url):
             "Content-Type": "application/json"
         }
     )
-    with urllib.request.urlopen(req, timeout=240) as resp:
+    with urllib.request.urlopen(req, timeout=75) as resp:
         res = json.loads(resp.read().decode("utf-8"))
         local_url = res.get("srcURL", "")
         clean_path = local_url.replace("file://", "").replace("%20", " ")
@@ -797,7 +748,20 @@ def publicar_banca_jornais(digest_resultado):
 
     # Se estivermos em 2026-11-08 (ou se a curadoria detalhada de 2026-11-08 estiver disponível para esta data), usamos a extração curada completa
     bloco_jornais = None
-    if hoje_iso == "2026-11-08":
+    beeper_max_ts = max((int(it.get("timestamp", 0) or 0) for it in digest_resultado.get("itens", [])), default=0)
+    gemini_disponivel = bool(gemini_client.obter_api_key() and not gemini_client.todas_chaves_esgotadas())
+    dia_hoje_prev = db.get("dias", {}).get(hoje_iso, {})
+    jornais_prev = dia_hoje_prev.get("jornais", {})
+    if (
+        hoje_iso != "2026-11-08"
+        and jornais_prev.get("data_edicao") == hoje_iso
+        and int(jornais_prev.get("beeper_max_ts", 0) or 0) == beeper_max_ts
+        and len(jornais_prev.get("manchetes", [])) >= 9
+        and (not gemini_disponivel or jornais_prev.get("gerado_via_gemini"))
+    ):
+        bloco_jornais = jornais_prev
+        log(f"Reutilizando banca de jornais já extraída hoje ({hoje_iso}, {len(jornais_prev['manchetes'])} veículos) sem reprocessar.")
+    elif hoje_iso == "2026-11-08":
         try:
             from tools.curadoria_jornais_2026_11_08 import obter_jornais_2026_11_08
         except ImportError:
@@ -822,7 +786,15 @@ def publicar_banca_jornais(digest_resultado):
             loc_pdf = item.get("local_path")
             if sintetizar_edicao_completa and loc_pdf and os.path.exists(loc_pdf):
                 try:
-                    manchetes_auto.append(sintetizar_edicao_completa(v_nome, item.get("escopo", "nacional"), loc_pdf, img_rel_path=img_rel))
+                    manchetes_auto.append(
+                        sintetizar_edicao_completa(
+                            v_nome,
+                            item.get("escopo", "nacional"),
+                            loc_pdf,
+                            img_rel_path=img_rel,
+                            dados_layout_pronto=item.get("layout_v2"),
+                        )
+                    )
                     continue
                 except Exception as e_v2:
                     log(f"Aviso no extrator v2 para {v_nome}, usando fallback: {e_v2}")
@@ -842,11 +814,11 @@ def publicar_banca_jornais(digest_resultado):
                         "texto_integral": r0.get("texto_integral", []),
                         "pontos": r0.get("pontos", [])
                     })
-            beeper_max_ts = max((int(it.get("timestamp", 0) or 0) for it in digest_resultado.get("itens", [])), default=0)
             bloco_jornais = {
                 "data_edicao": hoje_iso,
                 "gerado_em": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                 "beeper_max_ts": beeper_max_ts,
+                "gerado_via_gemini": bool(gemini_client.obter_api_key() and not gemini_client.todas_chaves_esgotadas()),
                 "resumo": f"Síntese das primeiras páginas, editoriais e principais reportagens dos {len(manchetes_auto)} grandes diários nacionais e internacionais processados em {hoje_iso}. Clique em qualquer jornal para ler seus cadernos e reportagens no Modo Leitor.",
                 "contraste": "Confronto analítico entre as manchetes econômicas e políticas da imprensa brasileira e a cobertura internacional traduzida na íntegra.",
                 "manchetes": manchetes_auto,
@@ -930,7 +902,9 @@ def publicar_revistas_semana(digest_resultado):
             obj = dict(item["estrutura_pronta"])
         elif sintetizar_edicao_completa and loc_pdf and os.path.exists(loc_pdf):
             try:
-                obj = sintetizar_edicao_completa(v_nome, escopo, loc_pdf, img_rel_path=rel_jpg, max_pages=12)
+                obj = sintetizar_edicao_completa(
+                    v_nome, escopo, loc_pdf, img_rel_path=rel_jpg, max_pages=12, dados_layout_pronto=item.get("layout_v2")
+                )
             except Exception as e_v2:
                 log(f"Aviso no extrator v2 para revista {v_nome}: {e_v2}")
         if not obj:
@@ -1018,17 +992,28 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
     log(f"Iniciando processamento do perfil '{perfil_nome.upper()}'...")
     all_pubs = list_publications(limit=250)
 
-    # Se já temos um digest de hoje com todas as páginas extraídas, podemos reaproveitar o OCR pesado
+    # Cache keyed por (arquivo NFC, timestamp) para nunca colidir nomes recorrentes como 'FT Asia.pdf'
+    import unicodedata as _ud
     cache_ocr = {}
     if os.path.exists(digest_path):
         try:
             with open(digest_path, "r", encoding="utf-8") as f:
                 ant = json.load(f)
             for it_ant in ant.get("itens", []):
-                if it_ant.get("arquivo") and it_ant.get("conteudo"):
-                    cache_ocr[it_ant["arquivo"]] = it_ant
+                arq_k = _ud.normalize("NFC", str(it_ant.get("arquivo", "")))
+                ts_k = int(it_ant.get("timestamp", 0) or 0)
+                if arq_k and ts_k and (it_ant.get("layout_v2") or it_ant.get("conteudo")):
+                    cache_ocr[(arq_k, ts_k)] = it_ant
         except Exception:
             pass
+
+    try:
+        from tools.extrator_pdf_layout_v2 import extrair_layout_pdf_v2
+    except ImportError:
+        try:
+            from extrator_pdf_layout_v2 import extrair_layout_pdf_v2
+        except ImportError:
+            extrair_layout_pdf_v2 = None
 
     resultado = {
         "perfil": perfil_nome,
@@ -1070,13 +1055,13 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
                 log(f"  [!] {nome_veiculo} ({escopo}): Nenhuma edição recente encontrada no Beeper.")
                 continue
 
-            # Prioriza SEMPRE a edição mais recente por data; no mesmo dia favorece downloads menores (<=35MB) ou já baixados
+            # Prioriza SEMPRE a edição mais recente por data; no mesmo dia favorece arquivos já baixados e menores (<=35MB)
             candidatos.sort(
                 key=lambda x: (
                     x["data_msg"][:10],
+                    1 if x.get("baixado") else 0,
                     1 if float(x.get("tamanho_mb", 0) or 0) <= 35.0 else 0,
                     x["timestamp"],
-                    1 if x.get("baixado") else 0,
                 ),
                 reverse=True,
             )
@@ -1105,30 +1090,51 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
             if top.get("local_path"):
                 log(f"  -> {nome_veiculo} ({escopo}): '{top['arquivo']}' ({top['data_msg']})")
 
-            # Reaproveitar OCR se o mesmo arquivo já foi processado com >= 6 páginas
-            cached = cache_ocr.get(top["arquivo"])
+            # Reaproveitar extração apenas quando arquivo E timestamp da mensagem forem idênticos
+            chave_cache = (_ud.normalize("NFC", str(top["arquivo"])), int(top.get("timestamp", 0) or 0))
+            cached = cache_ocr.get(chave_cache)
             if cached and cached.get("paginas_lidas", 0) >= 6:
                 cached["local_path"] = caminho_local
+                cached["timestamp"] = int(top.get("timestamp", 0) or 0)
+                cached["data_msg"] = top["data_msg"]
                 resultado["itens"].append(cached)
                 log(f"     Reaproveitado do cache local ({cached['paginas_lidas']} págs via {cached.get('metodo')}).")
                 continue
 
-            log(f"     Extraindo texto (até {max_pages_per_doc} páginas)...")
+            log(f"     Extraindo layout único (até {max_pages_per_doc} páginas)...")
             try:
-                dados_extracao = extract_text_from_pdf(caminho_local, max_pages=max_pages_per_doc, escopo=escopo)
-                resultado["itens"].append({
-                    "veiculo": nome_veiculo,
-                    "escopo": escopo,
-                    "arquivo": top["arquivo"],
-                    "data_msg": top["data_msg"],
-                    "timestamp": top.get("timestamp", 0),
-                    "local_path": caminho_local,
-                    "metodo": dados_extracao["metodo"],
-                    "total_paginas": dados_extracao["total_paginas"],
-                    "paginas_lidas": dados_extracao["paginas_lidas"],
-                    "conteudo": dados_extracao["conteudo"]
-                })
-                log(f"     Extraído com sucesso via {dados_extracao['metodo']} ({dados_extracao['paginas_lidas']} págs).")
+                if extrair_layout_pdf_v2:
+                    dados_l = extrair_layout_pdf_v2(caminho_local, max_pages=max_pages_per_doc, escopo=escopo)
+                    pags_l = dados_l.get("paginas", [])
+                    resultado["itens"].append({
+                        "veiculo": nome_veiculo,
+                        "escopo": escopo,
+                        "arquivo": top["arquivo"],
+                        "data_msg": top["data_msg"],
+                        "timestamp": top.get("timestamp", 0),
+                        "local_path": caminho_local,
+                        "metodo": dados_l.get("metodo"),
+                        "total_paginas": dados_l.get("total_paginas", 0),
+                        "paginas_lidas": len(pags_l),
+                        "conteudo": [],
+                        "layout_v2": dados_l,
+                    })
+                    log(f"     Layout extraído em passe único via {dados_l.get('metodo')} ({len(pags_l)} págs).")
+                else:
+                    dados_extracao = extract_text_from_pdf(caminho_local, max_pages=max_pages_per_doc, escopo=escopo)
+                    resultado["itens"].append({
+                        "veiculo": nome_veiculo,
+                        "escopo": escopo,
+                        "arquivo": top["arquivo"],
+                        "data_msg": top["data_msg"],
+                        "timestamp": top.get("timestamp", 0),
+                        "local_path": caminho_local,
+                        "metodo": dados_extracao["metodo"],
+                        "total_paginas": dados_extracao["total_paginas"],
+                        "paginas_lidas": dados_extracao["paginas_lidas"],
+                        "conteudo": dados_extracao["conteudo"]
+                    })
+                    log(f"     Extraído com sucesso via {dados_extracao['metodo']} ({dados_extracao['paginas_lidas']} págs).")
             except Exception as e:
                 log(f"     Erro ao extrair texto de {caminho_local}: {e}")
 
