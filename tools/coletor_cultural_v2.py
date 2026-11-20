@@ -961,7 +961,7 @@ def descobrir_pequenas_casas_rio_v2(contexto_agenda_extraido=""):
             f"{json.dumps(casas_base, ensure_ascii=False)}"
         )
         try:
-            parsed = _gc.gerar_json(prompt, prefer_model=_gc.MODEL_ARGON, temperature=0.2)
+            parsed = _gc.gerar_json(prompt, prefer_model=_gc.MODEL_NEON, temperature=0.2)
             if isinstance(parsed, list) and len(parsed) >= 3:
                 casas_base = parsed
                 log("Pequenas casas enriquecidas via Gemini 4!")

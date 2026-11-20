@@ -23,7 +23,9 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-MODEL_PRO = "gemini-4-hydrogen"
+MODEL_NEON = "gemini-4-neon"
+MODEL_PRO = "gemini-4-neon"
+MODEL_HYDROGEN = "gemini-4-hydrogen"
 MODEL_ARGON = "gemini-4-argon"
 MODEL_FLASH = "gemini-3.8-flash"
 API_BASE = "https://generativelanguage.googleapis.com/v1beta"
@@ -256,8 +258,8 @@ def _chamar_modelo_json(modelo, prompt, schema=None, temperature=0.2, timeout=75
     return _limpar_json_texto(texto_final)
 
 
-def gerar_json(prompt, schema=None, prefer_model=MODEL_PRO, temperature=0.2):
-    """Gera saída JSON estruturada usando Gemini 4 (Hydrogen / Argon) com fallback para 3.8 Flash."""
+def gerar_json(prompt, schema=None, prefer_model=MODEL_NEON, temperature=0.2):
+    """Gera saída JSON estruturada usando Gemini 4 Neon (com fallback Hydrogen / Argon / 3.8 Flash)."""
     chaves = [k for k in obter_todas_api_keys() if k not in _DEPLETED_KEYS]
     if not chaves:
         if obter_todas_api_keys():
@@ -265,8 +267,8 @@ def gerar_json(prompt, schema=None, prefer_model=MODEL_PRO, temperature=0.2):
         raise RuntimeError("Nenhuma GEMINI_API_KEY encontrada.")
 
     cadeia_modelos = []
-    for m in [prefer_model, MODEL_PRO, MODEL_ARGON, MODEL_FLASH, "gemini-4-carbon", "gemini-2.5-flash"]:
-        m_clean = (m or MODEL_PRO).replace("models/", "")
+    for m in [prefer_model, MODEL_NEON, MODEL_HYDROGEN, MODEL_ARGON, MODEL_FLASH, "gemini-4-carbon", "gemini-2.5-flash"]:
+        m_clean = (m or MODEL_NEON).replace("models/", "")
         if m_clean not in cadeia_modelos:
             cadeia_modelos.append(m_clean)
 

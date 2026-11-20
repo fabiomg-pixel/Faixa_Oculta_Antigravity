@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""Sentinela da Faixa Oculta / Radar Cultural.
+"""Sentinela Local da Faixa Oculta / Radar Cultural.
 
-Regra de ouro: A prioridade é rodar por aqui (localmente no Mac). Se atrasar, roda online.
-Executado via launchd no macOS sempre que o computador estiver ativo ou ao abrir a tampa.
+Regra de ouro: Execução 100% LOCAL neste computador (sem GitHub Actions remoto).
+Executado via launchd no macOS nos horários programados, ao ligar o computador (`RunAtLoad`)
+e em verificações periódicas (`StartInterval`) para recuperar qualquer turno perdido caso
+o computador estivesse desligado no horário previsto.
 
 Fluxo:
 1. Verifica se a edição esperada do turno atual já está publicada no ar (GitHub Pages).
-2. Se já estiver no ar: apenas sincroniza a pasta local do repositório (git pull) e encerra.
+2. Se já estiver no ar: apenas verifica se há novos jornais do dia no Beeper para atualizar e encerra.
 3. Se NÃO estiver no ar:
-   - Prioridade 1: Executa a apuração e geração LOCALMENTE no Mac com Python e Gemini.
+   - Executa a apuração e geração LOCALMENTE com Python + Beeper + Gemini 4 Neon.
    - Monta o site, commita e faz o push para o GitHub Pages.
-   - Se a execução local concluir com sucesso, tudo resolvido diretamente pelo computador!
-   - Se houver falha local (ex: sem conexão de rede momentânea no Mac):
-     - Prioridade 2 (salvaguarda): Aciona o GitHub Actions para rodar online.
+   - Se houver falha momentânea (ex.: sem rede), aguarda o próximo ciclo local sem disparar nuvem.
 """
 
 import sys
@@ -343,15 +343,11 @@ def main():
         log(f"Execução já solicitada recentemente (cooldown de {COOLDOWN_SEGUNDOS // 60}m). Aguardando conclusão.")
         return
 
-    # Prioridade 1: Roda por aqui (Localmente no Mac)
-    log(">> PRIORIDADE 1: Executando apuração por aqui (localmente no Mac)...")
+    # Execução estritamente local (sem acionamento de GitHub Actions na nuvem)
+    log(">> Executando apuração localmente neste computador...")
     sucesso_local = executar_localmente(turno)
-    if sucesso_local:
-        return
-
-    # Prioridade 2: Se falhar localmente ou atrasar, aciona online
-    log(">> PRIORIDADE 2: Execução local indisponível. Acionando GitHub Actions online como salvaguarda...")
-    disparar_nuvem()
+    if not sucesso_local:
+        log(">> Execução local não concluída neste ciclo (ex.: rede indisponível). Tentará novamente assim que possível no próximo ciclo local.")
 
 
 if __name__ == "__main__":

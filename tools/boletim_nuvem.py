@@ -489,7 +489,7 @@ def curadoria_com_gemini4(itens_rss, edicao, data_iso, urls_ja_usadas=None, titu
         f"{json.dumps(lista_prompt, ensure_ascii=False)}"
     )
 
-    sel = gemini_client.gerar_json(prompt_sel, prefer_model=gemini_client.MODEL_ARGON, temperature=0.1)
+    sel = gemini_client.gerar_json(prompt_sel, prefer_model=gemini_client.MODEL_NEON, temperature=0.1)
     clusters_nac = (sel or {}).get("clusters_nacionais") or []
     idxs_int = (sel or {}).get("indices_internacionais") or []
     if len(clusters_nac) < 10 or len(idxs_int) < 10:
@@ -568,7 +568,7 @@ def curadoria_com_gemini4(itens_rss, edicao, data_iso, urls_ja_usadas=None, titu
                 "paragrafos": paras_cache.get(("i", idx), []),
             })
 
-    lote_int_out = gemini_client.traduzir_lote_noticias(lote_int_in, prefer_model=gemini_client.MODEL_ARGON)
+    lote_int_out = gemini_client.traduzir_lote_noticias(lote_int_in, prefer_model=gemini_client.MODEL_NEON)
     for pos, obj in enumerate(lote_int_out):
         tit_pt = _limpar_str(obj.get("titulo", ""))
         tit_orig = obj.get("titulo_original", "")

@@ -938,7 +938,7 @@ def chamar_gemini_estruturado_jornal(veiculo, escopo, data_iso, dados_layout):
     )
 
     try:
-        parsed = gemini_client.gerar_json(prompt, prefer_model=gemini_client.MODEL_ARGON, temperature=0.15)
+        parsed = gemini_client.gerar_json(prompt, prefer_model=gemini_client.MODEL_NEON, temperature=0.15)
     except Exception as e:
         log(f"Aviso Gemini 4 em {veiculo}: {e}")
         return None
@@ -1400,39 +1400,51 @@ def construir_jornal_de_blocos_fallback(veiculo, escopo, dados_layout):
     # 3. EXTRAÇÃO DE REPORTAGENS DAS PÁGINAS INTERNAS (PÁGINAS 1 A 10)
     # -------------------------------------------------------------
     if not reportagens and paginas:
-        # Capa estilo poster sem texto longo (ex: The Times UK)
+        # Capa estilo poster sem texto longo (ex: The Times UK, revistas semanais)
         t_capa = manchete_capa or (grupos_manchete[0]["manchete"] if grupos_manchete else None)
         if t_capa:
             textos_apoio = []
             for b in paginas[0].get("blocos", []):
                 bt = b.get("texto", "").strip()
-                if len(bt) >= 30 and not any(w in bt.lower() for w in ["subscription", "based on", "thetimes.com", "printed in", "all rights reserved"]):
+                if (
+                    len(bt) >= 45
+                    and not eh_span_lixo_ou_logo(bt)
+                    and not any(w in bt.lower() for w in [
+                        "subscription", "based on", "thetimes.com", "printed in",
+                        "all rights reserved", "www.", "número ", "r$ "
+                    ])
+                ):
                     textos_apoio.append(bt)
-            if not textos_apoio and len(paginas) > 1:
-                for p_sub in paginas[1:4]:
+            if sum(len(t) for t in textos_apoio) < 260 and len(paginas) > 1:
+                for p_sub in paginas[1:6]:
                     for b in p_sub.get("blocos", []):
                         bt = b.get("texto", "").strip()
-                        if len(bt) >= 60 and not any(w in bt.lower() for w in ["subscription", "printed in"]):
+                        if (
+                            len(bt) >= 60
+                            and not eh_span_lixo_ou_logo(bt)
+                            and not any(w in bt.lower() for w in ["subscription", "printed in", "all rights reserved"])
+                        ):
                             textos_apoio.append(bt)
-                            if len(textos_apoio) >= 3:
+                            if sum(len(t) for t in textos_apoio) >= 600 and len(textos_apoio) >= 4:
                                 break
-                    if len(textos_apoio) >= 3:
+                    if sum(len(t) for t in textos_apoio) >= 600 and len(textos_apoio) >= 4:
                         break
-            pars = format_story_paragraphs(textos_apoio, max_paragraphs=12) if textos_apoio else [f"Edição de {veiculo} com foco nos principais fatos do dia."]
-            t_pt = traduzir_texto_pt(t_capa) if eh_int else t_capa
-            t_orig = t_capa if eh_int else None
-            pars_pt = traduzir_lista_pt(pars) if eh_int else pars
-            reportagens.append({
-                "caderno": "Capa · Destaque Principal",
-                "pagina": "1",
-                "autor": f"Redação {veiculo}",
-                "titulo": t_pt,
-                "titulo_original": t_orig,
-                "lide": pars_pt[0],
-                "texto": pars_pt[:6],
-                "texto_integral": pars_pt,
-                "pontos": extrair_pontos_chave(pars_pt)
-            })
+            pars = format_story_paragraphs(textos_apoio, max_paragraphs=12) if textos_apoio else []
+            if pars and sum(len(p) for p in pars) >= 200:
+                t_pt = traduzir_texto_pt(t_capa) if eh_int else t_capa
+                t_orig = t_capa if eh_int else None
+                pars_pt = traduzir_lista_pt(pars) if eh_int else pars
+                reportagens.append({
+                    "caderno": "Capa · Destaque Principal",
+                    "pagina": "1",
+                    "autor": f"Redação {veiculo}",
+                    "titulo": t_pt,
+                    "titulo_original": t_orig,
+                    "lide": pars_pt[0],
+                    "texto": pars_pt[:6],
+                    "texto_integral": pars_pt,
+                    "pontos": extrair_pontos_chave(pars_pt)
+                })
 
     pag_ed = editorial_obj.get("pagina_origem")
     for p_obj in paginas[1:12]:
