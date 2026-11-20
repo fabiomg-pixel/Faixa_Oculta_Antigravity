@@ -61,6 +61,8 @@ def limpar_cache_chaves():
 def obter_todas_api_keys():
     """Retorna todas as GEMINI_API_KEY configuradas (prioriza .env local e ambiente antes do plist), sem duplicatas."""
     global _CACHED_KEYS
+    if os.environ.get("FAIXA_SEM_API_EXTERNA", "").strip() in ("1", "true", "sim"):
+        return []
     if _CACHED_KEYS is not None:
         return _CACHED_KEYS
 
