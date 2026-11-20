@@ -323,6 +323,10 @@ def _eh_anuncio_ou_lixo(t):
         "diretor presidente", "diretor de jornalismo", "conselho editorial",
         "américo de campos", "rangel pestana", "julio mesquita", "_ seg _",
         "o estado de s. paulo a", "folha de s.paulo",
+        "exclusive sales", "douglas elliman", "concierge service", "fortnum",
+        "pubusher:", "publisher:", "redator-chefe", "editoras-assistentes",
+        "repórteres:", "entre aqui", "vantagens exclusivas", "che new hork",
+        "formato ideal para ler no celular", "navegue pelo site", "away from the traffic",
     ]):
         return True
     if re.search(
