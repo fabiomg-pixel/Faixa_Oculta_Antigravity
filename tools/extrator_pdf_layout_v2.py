@@ -320,7 +320,17 @@ def _eh_anuncio_ou_lixo(t):
         "aponte o celular", "qr code", "learn more at", "saiba mais em:",
         "valor international", "amil resgate", "utis móveis", "menor distância entre você",
         "whether you are", "investor or someone", "secretary for transport",
+        "diretor presidente", "diretor de jornalismo", "conselho editorial",
+        "américo de campos", "rangel pestana", "julio mesquita", "_ seg _",
+        "o estado de s. paulo a", "folha de s.paulo",
     ]):
+        return True
+    if re.search(
+        r"^(segunda|ter[cç]a|quarta|quinta|sexta|s[aá]bado|domingo)-?feira,\s*\d{1,2}\s+de\s+",
+        tl,
+    ):
+        return True
+    if re.match(r"^(com|por)\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}(?:\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ,]{2,}){1,8}$", t.strip()):
         return True
     # Bloqueia siglas/ruído de infográficos ou manchas tipográficas com excesso de palavras curtas em caixa alta
     palavras = t.split()
@@ -339,6 +349,14 @@ def _eh_titulo_valido(t):
     if len(s) < 12 or s.count(" ") < 2:
         return False
     if re.search(r"\b(new york times|netu hork|financial times|washington post)\b", s, re.I) and len(s) < 35:
+        return False
+    if s.isupper() and len(s) >= 20:
+        return False
+    if " _ " in s or s.startswith("_ "):
+        return False
+    if re.search(r"\b(De Brasília|De São Paulo|Do Rio|De Londres|De Nova York)\s*$", s):
+        return False
+    if re.match(r"^(Foto|Crédito|Legenda)\s*:|^Presidente\s+[A-ZÀ-Ý]\w+,\s+em\s+", s):
         return False
     first = s[0]
     if not (first.isupper() or first.isdigit() or first in "\"'“‘"):
@@ -802,6 +820,7 @@ def executar_ocr_apple_vision(doc, max_pages=8, escopo="nacional"):
 
     return {
         "metodo": f"apple_vision_ocr_{lang}",
+        "caminho_pdf": getattr(doc, "name", "") or "",
         "manchete_capa": manchete_ocr,
         "submanchetes_capa": submanchetes_ocr,
         "grupos_manchete": grupos_manchete_ocr,
@@ -1171,6 +1190,7 @@ def extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int):
     if not blocos_pag:
         return None
     cand_tit = None
+    tit_meta = None
     corpo_blocos = []
     for b in blocos_pag:
         t = b.get("texto", "").strip()
@@ -1180,7 +1200,18 @@ def extrair_artigo_pagina_interna(blocos_pag, num_pag, veiculo, eh_int):
             continue
         if not cand_tit and 15 <= len(t) <= 115 and not t.endswith(".") and "@" not in t and ".com" not in t.lower() and _eh_titulo_valido(t):
             cand_tit = t
+            tit_meta = b
         elif len(t) >= 60:
+            if tit_meta is not None:
+                tx0 = float(tit_meta.get("x0", 0) or 0)
+                ty0 = float(tit_meta.get("y0", 0) or 0)
+                tw = float(tit_meta.get("largura", 240) or 240)
+                bx0 = float(b.get("x0", 0) or 0)
+                by0 = float(b.get("y0", 0) or 0)
+                if by0 < ty0 - 25:
+                    continue
+                if tw < 260 and abs(bx0 - tx0) > max(180.0, tw + 40.0):
+                    continue
             corpo_blocos.append(t)
 
     if not cand_tit and corpo_blocos:

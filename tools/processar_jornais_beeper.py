@@ -19,6 +19,7 @@ import re
 import sys
 import ssl
 import json
+import shutil
 import sqlite3
 import hashlib
 import base64
@@ -32,6 +33,34 @@ DB_PATH = os.path.join(BEEPER_DIR, "index.db")
 MEDIA_DIR = os.path.join(BEEPER_DIR, "media", "local.beeper.com")
 TOKEN_FILE = os.path.expanduser("~/.beeper_token.json")
 BEEPER_BASE_URL = "http://localhost:23373"
+PDF_ARCHIVE_DIR = os.environ.get("FAIXA_PDF_ARCHIVE_DIR") or os.path.expanduser(
+    "~/Library/CloudStorage/GoogleDrive-fabiomg@biof.ufrj.br/Meu Drive/Faixa Oculta PDFs"
+)
+
+
+def _arquivar_pdf_drive(veiculo, caminho_local, perfil_nome, data_msg=""):
+    """Copia o PDF baixado com nome legível para a pasta privada no Google Drive (fora do repo Git)."""
+    try:
+        if not caminho_local or not os.path.exists(caminho_local):
+            return None
+        sz = os.path.getsize(caminho_local)
+        if sz < 10240:
+            return None
+        pasta_tipo = "Revistas" if perfil_nome == "semana" else "Jornais"
+        data_sub = (data_msg or "")[:10]
+        if not re.match(r"^\d{4}-\d{2}-\d{2}$", data_sub):
+            data_sub = datetime.now().strftime("%Y-%m-%d")
+        nome_safe = re.sub(r'[\\/:*?"<>|]+', "-", str(veiculo)).strip()
+        dest_dir = os.path.join(PDF_ARCHIVE_DIR, pasta_tipo, data_sub)
+        os.makedirs(dest_dir, exist_ok=True)
+        dest_path = os.path.join(dest_dir, f"{nome_safe} - {data_sub}.pdf")
+        if os.path.exists(dest_path) and os.path.getsize(dest_path) == sz:
+            return dest_path
+        shutil.copy2(caminho_local, dest_path)
+        return dest_path
+    except Exception as e:
+        log(f"     Aviso ao arquivar PDF no Meu Drive ({veiculo}): {e}")
+        return None
 
 PRESS_ROOMS = [
     "!iq3RLvh1JnfH6vJzkvaL:beeper.local",  # Jornais BR
@@ -1089,6 +1118,10 @@ def processar_perfil(perfil_nome="diario", auto_download=True, max_pages_per_doc
                 continue
             if top.get("local_path"):
                 log(f"  -> {nome_veiculo} ({escopo}): '{top['arquivo']}' ({top['data_msg']})")
+
+            arq_drive = _arquivar_pdf_drive(nome_veiculo, caminho_local, perfil_nome, top.get("data_msg", ""))
+            if arq_drive:
+                log(f"     PDF arquivado no Meu Drive: {os.path.basename(arq_drive)}")
 
             # Reaproveitar extração apenas quando arquivo E timestamp da mensagem forem idênticos
             chave_cache = (_ud.normalize("NFC", str(top["arquivo"])), int(top.get("timestamp", 0) or 0))
