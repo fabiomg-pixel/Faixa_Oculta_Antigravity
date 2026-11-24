@@ -89,9 +89,10 @@ def compactar_hoje_para_boot(dia_id, dia_obj):
         for m in j.get("manchetes", []):
             for rep in m.get("reportagens", []):
                 rep.pop("pontos", None)
+                rep.pop("lide", None)
                 ti = rep.get("texto_integral") or []
                 if len(ti) >= 1:
-                    rep["texto_integral"] = [ti[0][:140]]
+                    rep["texto_integral"] = [ti[0][:80]]
             if isinstance(m.get("editorial"), dict):
                 ed_t = m["editorial"].get("texto") or []
                 if len(ed_t) > 1:
