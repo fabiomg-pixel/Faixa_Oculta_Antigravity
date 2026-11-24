@@ -363,8 +363,9 @@ Ao manipular a base ou executar atualizações, utilize o pipeline modular v2 em
 | `tools/revista_semanal.py` & `tools/cultura_mensal.py` | Compiladores semanais (quintas à noite) e mensais (dia 01) dinâmicos preservando o bloco `revistas`. |
 | `tools/atualizar_playlists_agenda.py` | Atualização automatizada das playlists da agenda (segunda-feira e dia 01), com arquivamento de histórico. |
 | `tools/gerar_audio_boletim.py` | Síntese de áudio integral da edição (`texto_completo`) via `edge-tts` (`pt-BR-AntonioNeural`) com `--dia <turno_id>`. |
-| `tools/particionar_dados_v2.py` | Particionamento em `data/boot.json` + shards completos em `data/dias/`, `data/semanas/` e `data/cultura/`. |
-| `tools/validar_edicao.py` | Quality Gate automatizado (Checks 1–9) que bloqueia publicação em caso de falhas. |
+| `tools/otimizar_midias.py` | Padronização de 100% das capas em `capas/<md5_32_hex>.jpg`, compressão JPEG RGB progressiva (`<= 1000px`) e arquivamento de órfãos/backups no Google Drive privado. |
+| `tools/particionar_dados_v2.py` | Particionamento v2.1 em `data/boot.json` (`<= 150 KB`) + `data/arquivo_index.json` + shards completos sob demanda em `data/dias/`, `data/semanas/` e `data/cultura/` (eliminando o download de `data/revista.json` no cliente). |
+| `tools/validar_edicao.py` | Quality Gate automatizado (Checks 1–9, incluindo `<!DOCTYPE html>`, `viewport`, `boot.json <= 150 KB`, `arquivo_index.json` e MD5 `.jpg` em 100% das capas) que bloqueia publicação em caso de falhas. |
 
 ---
 
@@ -373,6 +374,7 @@ Ao manipular a base ou executar atualizações, utilize o pipeline modular v2 em
 Antes de qualquer `git commit` e `git push origin main`, execute **sempre** na raiz do repositório:
 
 ```bash
+python3 tools/otimizar_midias.py
 cp pagina.html index.html
 python3 tools/particionar_dados_v2.py
 python3 tools/validar_edicao.py

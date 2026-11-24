@@ -6,6 +6,8 @@ __pycache__/
 .vscode/
 *.log
 data/beeper_digest_*.json
+data/cache_traducoes.json
+data/agenda_vids_nov.json
 jornais/
 *.tmp
 *.part*.mp3

@@ -296,7 +296,7 @@ def obter_edicao_lemonde_rss():
         "escopo": "internacional",
         "metodo_extracao": "rss_lemonde_diplomatie",
         "total_paginas": 32,
-        "imagem": "capas/lemonde_capa.png",
+        "imagem": "capas/29bfeb27e2e608a182a75716a4e395ed.jpg",
         "site": "https://www.lemonde.fr",
         "manchete": m_top["titulo"],
         "manchete_original": m_top["titulo_original"],
@@ -741,24 +741,8 @@ def publicar_banca_jornais(digest_resultado):
         rel_jpg = f"capas/{h}.jpg"
         dest_jpg = os.path.join(capas_dir, f"{h}.jpg")
 
-        if tem_fitz and src and os.path.exists(src):
-            try:
-                doc = fitz.open(src)
-                capa_idx = 0
-                if len(doc) >= 3:
-                    t0 = len((doc[0].get_text() or "").strip())
-                    t2 = len((doc[2].get_text() or "").strip())
-                    if t0 < 120 and t2 > 400:
-                        capa_idx = 2
-                pix = doc[capa_idx].get_pixmap(dpi=120)
-                tmp_png = f"/tmp/{h}.png"
-                pix.save(tmp_png)
-                img = Image.open(tmp_png).convert("RGB")
-                img.save(dest_jpg, "JPEG", quality=85)
-                if os.path.exists(tmp_png):
-                    os.remove(tmp_png)
-            except Exception as e:
-                log(f"Aviso ao gerar miniatura da capa para {v_nome}: {e}")
+        if tem_fitz and src and os.path.exists(src) and not os.path.exists(dest_jpg):
+            _gerar_capa_jpeg(src, dest_jpg)
 
         if os.path.exists(dest_jpg):
             imagens_por_jornal[v_nome] = rel_jpg
@@ -806,28 +790,42 @@ def publicar_banca_jornais(digest_resultado):
                 sintetizar_edicao_completa = None
 
         manchetes_auto = []
+        digest_sujo = False
         for item in digest_resultado.get("itens", []):
-            if item.get("estrutura_pronta"):
-                manchetes_auto.append(item["estrutura_pronta"])
-                continue
             v_nome = item.get("veiculo", "Jornal")
             img_rel = imagens_por_jornal.get(v_nome, "")
+            if item.get("estrutura_pronta"):
+                pronta = dict(item["estrutura_pronta"])
+                if img_rel:
+                    pronta["imagem"] = img_rel
+                manchetes_auto.append(pronta)
+                continue
             loc_pdf = item.get("local_path")
+            sintetizada = None
             if sintetizar_edicao_completa and loc_pdf and os.path.exists(loc_pdf):
                 try:
-                    manchetes_auto.append(
-                        sintetizar_edicao_completa(
-                            v_nome,
-                            item.get("escopo", "nacional"),
-                            loc_pdf,
-                            img_rel_path=img_rel,
-                            dados_layout_pronto=item.get("layout_v2"),
-                        )
+                    sintetizada = sintetizar_edicao_completa(
+                        v_nome,
+                        item.get("escopo", "nacional"),
+                        loc_pdf,
+                        img_rel_path=img_rel,
+                        dados_layout_pronto=item.get("layout_v2"),
                     )
-                    continue
                 except Exception as e_v2:
                     log(f"Aviso no extrator v2 para {v_nome}, usando fallback: {e_v2}")
-            manchetes_auto.append(extrair_estrutura_jornal_automatica(item, img_rel))
+            if not sintetizada:
+                sintetizada = extrair_estrutura_jornal_automatica(item, img_rel)
+            item["estrutura_pronta"] = sintetizada
+            digest_sujo = True
+            manchetes_auto.append(sintetizada)
+
+        if digest_sujo:
+            try:
+                dig_diario = os.path.join(root_dir, "data", "beeper_digest_diario.json")
+                with open(dig_diario, "w", encoding="utf-8") as fd:
+                    json.dump(digest_resultado, fd, ensure_ascii=False, indent=2)
+            except Exception:
+                pass
 
         if manchetes_auto:
             leitura_auto = []
@@ -865,8 +863,8 @@ def publicar_banca_jornais(digest_resultado):
         log(f"Conteúdo completo dos jornais injetado para leitura no Modo Leitor na edição {hoje_iso}!")
 
 
-def _gerar_capa_jpeg(src_pdf, dest_jpg):
-    """Renderiza a primeira página real de um PDF do Beeper em JPEG RGB sem expor o PDF."""
+def _gerar_capa_jpeg(src_pdf, dest_jpg, max_dim=960):
+    """Renderiza a primeira página real de um PDF do Beeper em JPEG RGB enxuto (<=960px, progressivo) sem expor o PDF."""
     if not src_pdf or not os.path.exists(src_pdf):
         return False
     try:
@@ -882,8 +880,11 @@ def _gerar_capa_jpeg(src_pdf, dest_jpg):
         pix = doc[capa_idx].get_pixmap(dpi=120)
         tmp_png = dest_jpg + ".tmp.png"
         pix.save(tmp_png)
-        img = Image.open(tmp_png).convert("RGB")
-        img.save(dest_jpg, "JPEG", quality=85)
+        with Image.open(tmp_png) as raw_im:
+            img = raw_im.convert("RGB")
+            if max(img.size) > max_dim:
+                img.thumbnail((max_dim, max_dim), Image.Resampling.LANCZOS)
+            img.save(dest_jpg, "JPEG", quality=84, optimize=True, progressive=True)
         if os.path.exists(tmp_png):
             os.remove(tmp_png)
         return os.path.exists(dest_jpg)
@@ -920,10 +921,10 @@ def publicar_revistas_semana(digest_resultado):
         escopo = item.get("escopo", "nacional")
         loc_pdf = item.get("local_path")
         v_slug = re.sub(r"[^a-z0-9]+", "_", v_nome.lower()).strip("_")
-        h = hashlib.md5(f"{sabado_iso}-{v_slug}.pdf".encode()).hexdigest()[:10]
-        rel_jpg = f"capas/mag_{h}.jpg"
+        h = hashlib.md5(f"{sabado_iso}-{v_slug}.pdf".encode()).hexdigest()
+        rel_jpg = f"capas/{h}.jpg"
         dest_jpg = os.path.join(root_dir, rel_jpg)
-        if loc_pdf and not _gerar_capa_jpeg(loc_pdf, dest_jpg):
+        if loc_pdf and not os.path.exists(dest_jpg) and not _gerar_capa_jpeg(loc_pdf, dest_jpg):
             rel_jpg = ""
 
         obj = None

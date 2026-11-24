@@ -96,7 +96,11 @@ def main():
     else:
         print("\n[6/8] Playlists da Agenda: mantendo playlists da semana e do mês atuais.")
 
-    # 7. Sincronização garantida de index.html a partir de pagina.html ANTES do Quality Gate
+    # 7. Padronização e compressão de mídias (capas MD5 <=1000px JPEG progressivo e limpeza de órfãos)
+    print("\n[7/9] Otimizando e padronizando capas e mídias (tools/otimizar_midias.py)...")
+    rodar_script("tools/otimizar_midias.py")
+
+    # 8. Sincronização garantida de index.html a partir de pagina.html ANTES do Quality Gate
     try:
         with open("pagina.html", "r", encoding="utf-8") as f:
             src = f.read()
@@ -107,15 +111,15 @@ def main():
         print(f"Erro ao sincronizar index.html: {e}")
         sys.exit(1)
 
-    # 8. PARTICIONAMENTO DE DADOS V2 (Gera data/boot.json <= 150 KB + shards em data/dias, data/semanas e data/cultura)
-    print("\n[7/8] Gerando Manifesto de Boot Rápido (data/boot.json) e Shards da Arquitetura v2...")
+    # 9. PARTICIONAMENTO DE DADOS V2.1 (Gera data/boot.json <= 150 KB + data/arquivo_index.json + shards)
+    print("\n[8/9] Gerando Manifesto de Boot Rápido (data/boot.json), Índice do Arquivo e Shards v2.1...")
     ok_part = rodar_script("tools/particionar_dados_v2.py")
     if not ok_part:
-        print("Erro crítico no particionamento de dados v2. Abortando.")
+        print("Erro crítico no particionamento de dados v2.1. Abortando.")
         sys.exit(1)
 
-    # 9. QUALITY GATE PRÉ-PUBLICAÇÃO (Valida 100% dos critérios editoriais; bloqueia push se reprovado)
-    print("\n[8/8] Executando Quality Gate Pré-Publicação (tools/validar_edicao.py)...")
+    # 10. QUALITY GATE PRÉ-PUBLICAÇÃO (Valida 100% dos critérios editoriais e estruturais; bloqueia push se reprovado)
+    print("\n[9/9] Executando Quality Gate Pré-Publicação (tools/validar_edicao.py)...")
     ok_val = rodar_script("tools/validar_edicao.py")
     if not ok_val:
         print("❌ Quality Gate reprovou a edição atual! Publicação bloqueada para correção.")

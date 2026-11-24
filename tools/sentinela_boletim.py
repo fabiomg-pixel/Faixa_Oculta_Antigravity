@@ -280,7 +280,7 @@ def executar_localmente(turno):
 
     # 3. Git add, commit, sync e push resiliente (nunca deixar detached HEAD nem rebase preso)
     _limpar_estado_git_preso()
-    subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "add", "data/", "index.html", "pagina.html", "audios/", "capas/"], check=False)
+    subprocess.run([GIT_BIN, "-C", WORKSPACE_DIR, "add", "-A", "data/", "index.html", "pagina.html", "audios/", "capas/"], check=False)
     subprocess.run(
         [GIT_BIN, "-C", WORKSPACE_DIR, "commit", "-m", f"Atualização editorial executada localmente no Mac ({turno}) [skip ci]"],
         check=False

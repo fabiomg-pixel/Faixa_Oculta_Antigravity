@@ -101,4 +101,11 @@ Ao executar tarefas neste repositório, obedeça rigorosamente às diretrizes co
    - A extração do texto integral é realizada via PyMuPDF (`fitz`) para edições digitais vetoriais e via Apple Vision Framework OCR nativo no macOS para edições escaneadas em imagem (*Folha de S.Paulo, Financial Times*).
    - **Proibido expor ou linkar PDFs brutos na interface (`jornais/*.pdf`):** Todo o conteúdo extraído de cada jornal (manchete, editorial/opinião, 5 a 7 reportagens principais divididas por caderno com 3–4 parágrafos em português, destaques cruzados e "Vale ler na íntegra") DEVE ser disponibilizado diretamente no **Modo Leitor interno (`#texto`)**.
 
+22. **Arquitetura v2.1 de Performance, Higiene de Mídias e Boot Enxuto:**
+   - `pagina.html` (e `index.html`) DEVE conter obrigatoriamente o documento HTML5 completo (`<!DOCTYPE html>`, `<html lang="pt-BR">`, `<meta charset="utf-8">`, `<meta name="viewport">` e `[hidden] { display: none !important; }`).
+   - **Proibido baixar `data/revista.json` (20 MB) no carregamento normal do site:** O cliente carrega apenas `data/boot.json` (`<= 150 KB`) + o shard da aba ativa (`data/dias/<id>.json`, `data/semanas/<id>.json` ou `data/cultura/<eixo>_<mes>.json`) e `data/arquivo_index.json` sob demanda/idle.
+   - **Padronização e Compressão Obrigatória de Mídias (`tools/otimizar_midias.py`):** 100% das capas referenciadas devem estar em `capas/<md5_32_hex>.jpg` (`<= 1000px`, JPEG RGB progressivo, compatível com `safeUrl`). Antes de particionar e validar qualquer edição, execute `python3 tools/otimizar_midias.py` para converter capas novas, comprimir arquivos pesados e arquivar órfãos em `Meu Drive/Faixa Oculta PDFs/`.
+   - **Higiene do Git:** Nunca versionar caches internos (`data/cache_traducoes.json`, `data/beeper_digest_*.json`, `data/insumos_agente_rss.json`) nem backups `.zip`. Use sempre `git add -A` nos diretórios publicados (`data/`, `capas/`, `audios/`, `index.html`, `pagina.html`) após validar `Exit Code 0` em `tools/validar_edicao.py`.
+
+
 

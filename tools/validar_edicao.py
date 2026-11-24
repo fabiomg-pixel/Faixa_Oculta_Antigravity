@@ -201,9 +201,12 @@ def validar_banco(caminho_json="data/revista.json", dia_alvo=None, validar_shard
     estatisticas["total_pdfs_expostos"] = len(pdfs_ref)
 
     capas_invalidas = []
+    safe_capa_re = re.compile(r"^capas/[0-9a-f]{32}\.jpg$")
     for c_path, json_loc in capas_ref:
         if not os.path.exists(c_path):
             capas_invalidas.append(f"{c_path} (AUSENTE em {json_loc})")
+        elif not safe_capa_re.match(c_path):
+            capas_invalidas.append(f"{c_path} (FORA DO PADRÃO MD5 .jpg em {json_loc})")
         else:
             sz = os.path.getsize(c_path)
             if sz <= 2048:
@@ -289,14 +292,33 @@ def validar_banco(caminho_json="data/revista.json", dia_alvo=None, validar_shard
             if problemas_rev:
                 erros.append(f"[Semana {sem_recente}] Falhas em revistas no Modo Leitor ({len(problemas_rev)}):\n    - " + "\n    - ".join(problemas_rev[:8]))
 
-    # 9. Paridade garantida entre pagina.html e index.html
+    # 9. Paridade garantida entre pagina.html e index.html, HTML5 válido e orçamento de boot.json <= 150 KB
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(caminho_json)))
     pag_p = os.path.join(base_dir, "pagina.html")
     idx_p = os.path.join(base_dir, "index.html")
     if os.path.exists(pag_p) and os.path.exists(idx_p):
         with open(pag_p, "r", encoding="utf-8") as fp, open(idx_p, "r", encoding="utf-8") as fi:
-            if fp.read() != fi.read():
+            pag_txt = fp.read()
+            idx_txt = fi.read()
+            if pag_txt != idx_txt:
                 erros.append("index.html está dessincronizado em relação a pagina.html! Execute: cp pagina.html index.html")
+            if not pag_txt.lstrip().lower().startswith("<!doctype html>"):
+                erros.append("pagina.html sem '<!DOCTYPE html>' (risco de Quirks Mode no navegador).")
+            if 'name="viewport"' not in pag_txt:
+                erros.append("pagina.html sem '<meta name=\"viewport\">' para dispositivos móveis.")
+
+    boot_p = os.path.join(os.path.dirname(os.path.abspath(caminho_json)), "boot.json")
+    arq_idx_p = os.path.join(os.path.dirname(os.path.abspath(caminho_json)), "arquivo_index.json")
+    if validar_shards:
+        if not os.path.exists(boot_p):
+            erros.append("data/boot.json não encontrado! Execute: python3 tools/particionar_dados_v2.py")
+        else:
+            boot_sz = os.path.getsize(boot_p)
+            estatisticas["boot_kb"] = round(boot_sz / 1024.0, 1)
+            if boot_sz > 150 * 1024:
+                erros.append(f"data/boot.json excedeu o orçamento de 150 KB ({boot_sz / 1024:.1f} KB).")
+        if not os.path.exists(arq_idx_p):
+            erros.append("data/arquivo_index.json não encontrado! Execute: python3 tools/particionar_dados_v2.py")
 
     aprovado = len(erros) == 0
     return aprovado, erros, avisos, estatisticas

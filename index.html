@@ -1,5 +1,16 @@
-<title>Faixa Oculta</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
 <meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#F3EEE4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C1A17" media="(prefers-color-scheme: dark)">
+<title>Faixa Oculta</title>
+<link rel="icon" type="image/svg+xml" href="icone.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="icone-512.png">
+<link rel="apple-touch-icon" href="icone-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
@@ -100,12 +111,17 @@
 }
 
 * { box-sizing: border-box; }
-html { background: var(--paper); }
-body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: var(--fs-m); line-height: 1.5; }
+[hidden] { display: none !important; }
+html { background: var(--paper); color-scheme: light; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: var(--fs-m); line-height: 1.5; }
 a { color: inherit; text-decoration-color: var(--sec); text-underline-offset: 2px; }
-img { display: block; }
+img { display: block; max-width: 100%; }
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.n-tema, .spread, .secao + .secao, #ag-fomos, #ag-gosto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 540px;
+}
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 .mono { font-family: var(--f-mono); font-size: var(--fs-xs); letter-spacing: .04em; text-transform: uppercase; }
@@ -195,7 +211,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .ponte b { color: var(--ink); font-weight: 600; }
 .acts { display: flex; flex-wrap: wrap; gap: var(--sp-1) var(--sp-2); align-items: center; margin-top: 2px; }
 .links { display: flex; flex-wrap: wrap; gap: 4px var(--sp-2); }
-.links a { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: 1px solid var(--sec); padding-bottom: 1px; }
+.links a { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: underline var(--sec); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .links a:hover { color: var(--sec); }
 .marks { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .mk { border: var(--bw) solid var(--ink); background: transparent; padding: 3px 8px; border-radius: var(--pill); font: 600 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; transition: all .15s ease; }
@@ -312,7 +328,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .ag-conta { margin: 0; font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); border-bottom: var(--bw-rule) solid var(--ink); padding-bottom: var(--sp-1); }
 .ag-conta b { font: 900 22px/1 var(--f-display); font-stretch: 62%; color: var(--sec); margin-right: 1px; }
 .ag-atalhos { display: flex; flex-wrap: wrap; gap: 4px var(--sp-2); border-top: 1px solid var(--rule); padding-top: 10px; }
-.ag-atalhos a { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: var(--bw) solid var(--sec); }
+.ag-atalhos a { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: underline var(--sec); text-decoration-thickness: var(--bw); text-underline-offset: 3px; }
 .ag-atalhos a:hover { color: var(--sec); }
 .ag-rt { margin: 0; font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--sec); }
 .ag-tog { all: unset; cursor: pointer; font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--sec); }
@@ -328,7 +344,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .jr-thumb-a:hover .jr-thumb { transform: scale(1.03); }
 .jr-txt { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
 .jr-jornal { font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .06em; color: var(--sec); display: flex; flex-wrap: wrap; gap: 4px var(--sp-1); align-items: baseline; }
-.jr-jornal a { text-decoration: none; border-bottom: 1px solid var(--sec); }
+.jr-jornal a { text-decoration: underline var(--sec); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .jr-jornal a:hover { color: var(--ink); }
 .jr-jornal i { font-style: normal; color: var(--muted); }
 .jr-capas b { font: 800 20px/1.12 var(--f-display); font-stretch: 75%; }
@@ -531,7 +547,7 @@ dialog.texto::backdrop { background: var(--backdrop); }
 .ag-rev a { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .03em; margin-left: var(--sp-1); }
 .ag-lbl { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-right: var(--sp-1); }
 .ag-links { margin: 0; display: flex; flex-wrap: wrap; gap: 4px var(--sp-2); align-items: baseline; }
-.ag-links a { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-bottom: var(--bw) solid var(--sec); padding-bottom: 1px; }
+.ag-links a { font: 500 var(--fs-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: underline var(--sec); text-decoration-thickness: var(--bw); text-underline-offset: 3px; }
 .ag-links a:hover { color: var(--sec); }
 .ag-links .fonte { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
 .ag-refs, .ag-artistas { display: flex; flex-wrap: wrap; gap: 4px var(--sp-1); align-items: center; min-width: 0; }
@@ -1497,6 +1513,8 @@ dialog.texto.convite-dlg {
   filter: brightness(0.92);
 }
 </style>
+</head>
+<body>
 
 <header class="mast">
   <div class="wrap">
@@ -1596,7 +1614,7 @@ dialog.texto.convite-dlg {
     },
   };
   const COLS_REV = ["cine_edicoes", "cine_itens", "cine_guias", "livro_edicoes", "livro_itens", "livro_guias", "leituras"];
-  const S = { db: null, uid: null, edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agInfo: {}, agPlInfo: false, agArtistas: {}, agArtistasYT: {}, comentarios: {}, marcasEm: {}, idasMod: {}, idasDel: {}, notasNovas: [], fIda: { ano: String(new Date().getFullYear()), tipo: "todos" }, notaMsg: "", loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false, noticiasSalvas: {}, filtroSalvas: false };
+  const S = { db: null, uid: null, versao: "", edicoes: [], itens: [], guias: [], semanas: [], cultura: [], dias: [], cine_edicoes: [], cine_itens: [], cine_guias: [], livro_edicoes: [], livro_itens: [], livro_guias: [], leituras: [], arquivoIndex: null, selRev: {}, agenda: null, agQuando: "mes", agOnde: "todos", agTipo: "todos", agQ: "", agAbertos: {}, agRasc: {}, agNota: null, agDispOpen: false, agInfo: {}, agPlInfo: false, agArtistas: {}, agArtistasYT: {}, comentarios: {}, marcasEm: {}, idasMod: {}, idasDel: {}, notasNovas: [], fIda: { ano: String(new Date().getFullYear()), tipo: "todos" }, notaMsg: "", loaded: {}, marcas: {}, sel: null, selSem: null, selDia: null, aba: "hoje", filtro: "tudo", podeMarcar: false, falhou: false, noticiasSalvas: {}, filtroSalvas: false };
   const ABAS = [["hoje", "hoje"], ["noticias", "semana"], ["musica", "música"], ["filmes", "filmes"], ["livros", "livros"], ["agenda", "agenda"], ["arquivo", "arquivo"]];
   const DSEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
@@ -1613,7 +1631,7 @@ dialog.texto.convite-dlg {
     return e;
   }
   const str = (v) => (typeof v === "string" ? v : v == null ? "" : String(v));
-  const safeUrl = (u) => { u = str(u); return /^https:\/\//i.test(u) || u.startsWith("/_blob/") || /^capas\/[0-9a-f]{32}\.jpg$/.test(u) || /^audios\/[a-zA-Z0-9_\-]+\.mp3$/.test(u) || /^jornais\/[a-zA-Z0-9_\.\-]+\.pdf$/i.test(u) || /^file:\/\//i.test(u) ? u : null; };
+  const safeUrl = (u) => { u = str(u); return /^https:\/\//i.test(u) || u.startsWith("/_blob/") || /^capas\/[A-Za-z0-9_\-]{6,64}\.(?:jpg|jpeg|png|webp)$/i.test(u) || /^audios\/[a-zA-Z0-9_\-]+\.mp3$/.test(u) || /^file:\/\//i.test(u) ? u : null; };
 
   function fmtData(d) {
     d = str(d);
@@ -1905,10 +1923,23 @@ dialog.texto.convite-dlg {
 
   // Missing covers become a typographic sleeve, coloured by kind (disc, film, series, book...).
   const PH = { filme: ["filme", "cinema"], serie: ["série", "teatro"], documentario: ["documentário", "festival"], ficcao: ["ficção", "livros"], contos: ["contos", "artes"], nao_ficcao: ["não ficção", "outros"] };
-  function capa(a, cls) {
+  function capa(a, cls, opts) {
     const src = safeUrl(a.capa || a.imagem);
     const nome = str(a.exibir_artista || a.artista);
-    if (src) return h("img", { src, alt: `Capa de ${str(a.album)}, de ${nome}`, loading: "lazy", class: cls || null });
+    const ehPoster = Boolean(a._tipo && a._tipo !== "disco");
+    if (src) {
+      const attrs = {
+        src,
+        alt: `Capa de ${str(a.album)}, de ${nome}`,
+        width: ehPoster ? "480" : "600",
+        height: ehPoster ? "720" : "600",
+        decoding: opts?.lcp ? "sync" : "async",
+        class: cls || null,
+      };
+      if (opts?.lcp) attrs.fetchpriority = "high";
+      else attrs.loading = "lazy";
+      return h("img", attrs);
+    }
     const [rot, cor] = PH[str(a._tipo)] || [a._tipo ? str(a._tipo) : "disco", a._tipo ? "outros" : "musica"];
     let v = 0;
     for (const ch of str(a.album) + nome) v = (v * 31 + ch.charCodeAt(0)) % 997;
@@ -2008,7 +2039,7 @@ dialog.texto.convite-dlg {
   function blocoCapa(ed, it) {
     if (!it) return null;
     return h("section", { class: "wrap capa", id: "capa" },
-      h("div", { class: "capa-img" }, capa(it), h("div", { class: "badge", "aria-hidden": "true" }, "Matéria de capa")),
+      h("div", { class: "capa-img" }, capa(it, null, { lcp: true }), h("div", { class: "badge", "aria-hidden": "true" }, "Matéria de capa")),
       h("div", { style: "min-width:0" },
         h("div", { class: "kicker mono" }, `Edição nº ${str(ed.numero)} · ${str(ed.mes)}`),
         h("h2", null, str(ed.manchete || it.album)),
@@ -2232,7 +2263,7 @@ dialog.texto.convite-dlg {
     if (S.semanas.length < 2) return null;
     return h("label", { class: "edsel mono", for: "semana-sel" }, "Semana ",
       (() => {
-        const sel = h("select", { id: "semana-sel", onchange: (e) => { S.selSem = e.target.value; render(); window.scrollTo(0, 0); } },
+        const sel = h("select", { id: "semana-sel", onchange: (e) => { S.selSem = e.target.value; garantirSemana(S.selSem); render(); window.scrollTo(0, 0); } },
           S.semanas.map((x, idx) => {
             const rotulo = idx === 0 ? `${fmtPeriodo(x.inicio, x.fim)} (atual · fim de semana)` : fmtPeriodo(x.inicio, x.fim);
             return h("option", { value: x._id }, rotulo);
@@ -2250,6 +2281,9 @@ dialog.texto.convite-dlg {
     return url ? idxLeituras.get(urlChave(url)) : null;
   }
   function criticasDe(ref, item) {
+    if (item && Array.isArray(item.leituras_criticas) && item.leituras_criticas.length) {
+      return item.leituras_criticas;
+    }
     const chaveItem = item ? (item._id || item.id || ref) : ref;
     const slugLimpo = str(ref).replace(/^\d{4}-\d{2}--/, "");
     const slugItem = item ? str(item._id || item.id || "").replace(/^\d{4}-\d{2}--/, "") : "";
@@ -2265,10 +2299,11 @@ dialog.texto.convite-dlg {
     return [];
   }
   function corpoLeitura(l, comTitulo) {
-    const paras = arr(l.texto_integral && l.texto_integral.length ? l.texto_integral : l.resumo);
+    const fonteNome = l.fonte || l.veiculo;
+    const paras = arr(l.texto_integral && l.texto_integral.length ? l.texto_integral : (l.paragrafos && l.paragrafos.length ? l.paragrafos : l.resumo));
     return [
       h("div", { class: "lt-meta mono" },
-        h("b", null, str(l.fonte)),
+        h("b", null, str(fonteNome)),
         [l.autor, l.data ? fmtData(l.data) : ""].map(str).filter(Boolean).join(" · "),
         l.nota ? h("span", { class: "lt-nota" }, str(l.nota)) : null),
       comTitulo && l.titulo ? h("h3", { class: "lt-tit" }, str(l.titulo)) : null,
@@ -2280,7 +2315,7 @@ dialog.texto.convite-dlg {
       ] : null,
       l.citacao ? h("blockquote", { class: "lt-cit" }, `“${str(l.citacao)}”`) : null,
       safeUrl(l.url) ? h("div", { class: "lt-link-rodape" },
-        h("a", { class: "lt-orig", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Acessar matéria original em ${str(l.fonte) || "origem"} ↗`)) : null,
+        h("a", { class: "lt-orig", href: safeUrl(l.url), target: "_blank", rel: "noopener" }, `Acessar matéria original em ${str(fonteNome) || "origem"} ↗`)) : null,
     ];
   }
   function abrirTexto(l) {
@@ -2420,7 +2455,7 @@ dialog.texto.convite-dlg {
     aplicarLeitorPrefs();
     const t = document.getElementById("texto");
     const prevTop = t.open ? t.scrollTop : 0;
-    const leiturasTema = arr(r.ler).map((l) => ({ l, obj: leituraDe(l.url) }));
+    const leiturasTema = arr(r.ler).map((l) => ({ l, obj: leituraDe(l.url) || (Array.isArray(l.texto_integral) && l.texto_integral.length ? l : null) }));
     t.replaceChildren(h("div", { class: "lt-box" },
       h("div", { class: "lt-bar" },
         h("span", { class: "mono" }, `Fora do radar · Conteúdo na íntegra`),
@@ -2503,6 +2538,7 @@ dialog.texto.convite-dlg {
     if (!S.loaded.semanas) return [estado("abrindo a semana", "Os temas da semana aparecem aqui assim que o arquivo da revista responder.")];
     const s = semanaAtual();
     if (!s) return [estado("nenhuma semana ainda", "A primeira análise semanal de notícias aparece aqui quando for publicada.")];
+    if (s._stub) { garantirSemana(s._id); return [estado("abrindo a semana", "Carregando os ensaios, temas e revistas desta edição.")]; }
     const temas = arr(s.temas);
     const irPara = (id) => document.getElementById(`tema-${id}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
     const head = h("section", { class: "wrap n-head" },
@@ -2540,7 +2576,7 @@ dialog.texto.convite-dlg {
         h("div", { class: "resumo" }, arr(t.resumo).map((p) => h("p", null, str(p)))),
         t.por_que_importa ? h("aside", { class: "importa" }, h("h4", { style: "margin-top:0" }, "Por que importa"), h("p", null, str(t.por_que_importa))) : null),
       arr(t.cobertura).length ? [h("h4", null, "Como cada um cobriu"), h("div", { class: "cob" }, arr(t.cobertura).map((c) => {
-        const l = leituraDe(c.url);
+        const l = leituraDe(c.url) || (Array.isArray(c.texto_integral) && c.texto_integral.length ? { ...c, resumo: c.texto_integral } : null);
         const abrir = () => {
           if (l) abrirTexto(l);
           else abrirTexto({
@@ -2741,10 +2777,11 @@ dialog.texto.convite-dlg {
     const k = chaveNota(n, d);
     return Boolean(S.noticiasSalvas && S.noticiasSalvas[k]);
   }
-  function toggleSalvarNoticia(n, d) {
+  function toggleSalvarNoticia(n, d, btnEl) {
     const k = chaveNota(n, d);
     if (!S.noticiasSalvas) S.noticiasSalvas = {};
-    if (S.noticiasSalvas[k]) {
+    const agoraSalva = !S.noticiasSalvas[k];
+    if (!agoraSalva) {
       delete S.noticiasSalvas[k];
     } else {
       S.noticiasSalvas[k] = {
@@ -2759,6 +2796,13 @@ dialog.texto.convite-dlg {
     try {
       localStorage.setItem("faixa_noticias_salvas", JSON.stringify(S.noticiasSalvas));
     } catch (e) {}
+    if (btnEl && !S.filtroSalvas) {
+      btnEl.classList.toggle("salva", agoraSalva);
+      btnEl.textContent = agoraSalva ? "✓ Salva" : "🔖 Salvar";
+      const btnTopo = document.querySelector(".d-btn-filtro-salvas");
+      if (btnTopo) btnTopo.textContent = `🔖 Notícias salvas (${Object.keys(S.noticiasSalvas).length})`;
+      return;
+    }
     render();
   }
   function toggleVozNota(n, btn) {
@@ -2875,15 +2919,11 @@ dialog.texto.convite-dlg {
     if (!S.loaded.dias) return [estado("abrindo o boletim", "As notícias do dia aparecem aqui assim que o arquivo da revista responder.")];
     const d = diaAtual();
     if (!d) return [estado("nenhum boletim ainda", "O boletim aparece aqui de manhã e no fim da tarde.")];
+    if (d._stub) { garantirDia(d._id); return [estado("abrindo o boletim", "Carregando as reportagens e os jornais desta edição.")]; }
 
     // Dropdown elegante com todas as edições do mês (e meses anteriores)
     const totalSalvas = Object.keys(S.noticiasSalvas || {}).length;
-    const gruposMes = {};
-    for (const x of S.dias) {
-      const m = str(x.data || x._id).slice(0, 7);
-      if (!gruposMes[m]) gruposMes[m] = [];
-      gruposMes[m].push(x);
-    }
+    const gruposMes = Object.groupBy(S.dias, (x) => str(x.data || x._id).slice(0, 7));
     const chavesMes = Object.keys(gruposMes).sort().reverse();
     const optKids = [];
     if (chavesMes.length <= 1) {
@@ -2894,7 +2934,7 @@ dialog.texto.convite-dlg {
       for (const m of chavesMes) {
         const rotMes = fmtData(m).toUpperCase();
         optKids.push(h("optgroup", { label: `Edições de ${rotMes}` },
-          gruposMes[m].map((x) => h("option", { value: x._id, selected: x._id === d._id }, rotuloBoletim(x)))
+          (gruposMes[m] ?? []).map((x) => h("option", { value: x._id, selected: x._id === d._id }, rotuloBoletim(x)))
         ));
       }
     }
@@ -2908,6 +2948,7 @@ dialog.texto.convite-dlg {
           onchange: (e) => {
             S.selDia = e.target.value;
             S.filtroSalvas = false;
+            garantirDia(S.selDia);
             render();
             window.scrollTo(0, 0);
           }
@@ -3014,7 +3055,7 @@ dialog.texto.convite-dlg {
           h("button", {
             class: `d-btn-salvar mono ${isNotaSalva(n, bol) ? "salva" : ""}`,
             type: "button",
-            onclick: () => toggleSalvarNoticia(n, bol)
+            onclick: (e) => toggleSalvarNoticia(n, bol, e.currentTarget)
           }, isNotaSalva(n, bol) ? "✓ Salva" : "🔖 Salvar"),
           h("button", {
             class: "d-btn-ouvir-nota mono",
@@ -3037,7 +3078,7 @@ dialog.texto.convite-dlg {
     const pareceStubBoot = !!(j && j.shard_completo && !m._shardHydrated && reps.some((r) => !arr(r.pontos).length && arr(r.texto_integral).length === 1 && str(r.texto_integral[0]).length <= 145));
     if (pareceStubBoot) {
       m._shardHydrated = true;
-      fetch(`${j.shard_completo}?v=${Math.floor(Date.now() / 60000)}`)
+      fetch(`${j.shard_completo}?v=${encodeURIComponent(S.versao || Math.floor(Date.now() / 60000))}`)
         .then((r) => r.ok ? r.json() : null)
         .then((diaFull) => {
           const jFull = diaFull && diaFull.jornais;
@@ -3254,6 +3295,7 @@ dialog.texto.convite-dlg {
     if (!S.loaded.semanas) return [estado("abrindo os temas", "Os temas aparecem aqui assim que o arquivo da revista responder.")];
     if (!S.semanas.length) return [estado("nenhum tema ainda", "Os temas fora do radar chegam junto com a primeira análise semanal.")];
     const s = semanaAtual();
+    if (!s || s._stub) { if (s) garantirSemana(s._id); return [estado("abrindo os temas", "Carregando os temas desta semana.")]; }
     const head = h("section", { class: "wrap secao", id: "fora-do-radar", style: "padding-bottom:8px;scroll-margin-top:120px" }, h("div", { class: "sec-head" },
       h("span", { class: "num", "aria-hidden": "true" }, h("span", { class: "dot" })),
       h("h3", null, "fora do radar"),
@@ -3263,7 +3305,7 @@ dialog.texto.convite-dlg {
       h("span", { class: "edt" }, str(r.editoria)),
       h("h3", { class: "radar-tit", role: "button", tabindex: "0", onclick: () => abrirTemaRadar(r), title: "Abrir tema no modo leitor" }, str(r.titulo)),
       h("p", null, str(r.texto)),
-      h("div", { class: "links" }, arr(r.ler).map((l) => safeUrl(l.url) ? fonteLink(l.url, `${str(l.fonte)}: ${str(l.titulo)}`, { editoria: r.editoria, titulo: r.titulo, texto: r.texto, fontes: r.ler }) : null)),
+      h("div", { class: "links" }, arr(r.ler).map((l) => safeUrl(l.url) ? fonteLink(l.url, `${str(l.fonte)}: ${str(l.titulo)}`, { editoria: r.editoria, titulo: r.titulo, texto: r.texto, fontes: r.ler }, l) : null)),
       h("button", { class: "ler", type: "button", style: "margin-top:14px;", onclick: () => abrirTemaRadar(r) }, "Abrir tema no leitor"))))
       : h("p", { class: "vazio" }, "Nenhum tema fora do radar nesta semana."));
     const todos = arr(s.temas).flatMap((t) => arr(t.aprofundar).map((a) => ({ ...a, _tema: t.titulo })));
@@ -3340,6 +3382,7 @@ dialog.texto.convite-dlg {
     S.aba = k;
     try { localStorage.setItem("fo-aba", k); } catch (e) {}
     hashAba(k);
+    garantirAbaAtiva();
     // From a link inside the page, land on the new tab's button rather than a random spot in the new content.
     const deMain = document.getElementById("main").contains(document.activeElement);
     if (deMain) document.activeElement.blur();
@@ -3349,7 +3392,7 @@ dialog.texto.convite-dlg {
   }
 
   // ---------- Cinema and books magazines ----------
-  const capaObra = (a) => capa({ capa: a.capa || a.imagem, artista: a.autor, album: a.titulo, _tipo: a.tipo || "obra" });
+  const capaObra = (a, opts) => capa({ capa: a.capa || a.imagem, artista: a.autor, album: a.titulo, _tipo: a.tipo || "obra" }, null, opts);
 
   // Section banner: contact sheet of the edition's covers (cover story in colour) + name, edition, contents.
   function banner(o) {
@@ -3366,9 +3409,13 @@ dialog.texto.convite-dlg {
     const reduz = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
     const ir = (id) => document.getElementById(id)?.scrollIntoView({ behavior: reduz ? "auto" : "smooth", block: "start" });
     return h("section", { class: "banner", "aria-label": `${o.nome}, edição nº ${o.numero}` },
-      tira.length >= 2 ? h("div", { class: "b-tira", "aria-hidden": "true" }, tira.map((c) => {
+      tira.length >= 2 ? h("div", { class: "b-tira", "aria-hidden": "true" }, tira.map((c, idx) => {
         const el = capa(c.a);
-        if (el.tagName === "IMG") { el.alt = ""; el.loading = "eager"; }
+        if (el.tagName === "IMG") {
+          el.alt = "";
+          if (idx < 6) el.removeAttribute("loading");
+          else { el.loading = "lazy"; el.fetchPriority = "low"; }
+        }
         return h("figure", { class: "b-c" + (o.quadrado ? " sq" : "") + (c.capa ? " cap" : "") }, el);
       })) : null,
       h("div", { class: "wrap b-in" },
@@ -3389,7 +3436,7 @@ dialog.texto.convite-dlg {
       safeUrl(a.fonte) ? h("button", { type: "button", class: "fl-ler", style: "font-size:11px;", onclick: (e) => { e.stopPropagation(); abrirTexto({ fonte: "Fonte Oficial", titulo: `${str(a.album || a.titulo)} — Cobertura e Análise`, resumo: Array.isArray(a.resenha) && a.resenha.length ? a.resenha : [a.texto || a.nota || ""], url: a.fonte }); }, title: "Abrir fonte no modo leitor" }, "Fonte") : null);
   }
   function edicaoRevista(cfg) {
-    const eds = [...S[cfg.ed]].sort((a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
+    const eds = S[cfg.ed].toSorted((a, b) => str(b.data || b._id).localeCompare(str(a.data || a._id)));
     return { eds, ed: eds.find((e) => e._id === S.selRev[cfg.nome]) || eds[0] };
   }
   function cardObra(a, key, cfg) {
@@ -3438,12 +3485,13 @@ dialog.texto.convite-dlg {
     if (!S.loaded[cfg.ed]) return [estado(`abrindo ${cfg.nome}`, "A edição aparece aqui assim que o arquivo da revista responder.")];
     const { eds, ed } = edicaoRevista(cfg);
     if (!ed) return fallback();
+    if (ed._stub) { garantirCultura(cfg.nome, ed._id); return [estado(`abrindo ${cfg.nome}`, "Carregando os lançamentos, guias e resenhas desta edição.")]; }
     const itens = S[cfg.it].filter((i) => i.edicao === ed._id).sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0));
     const guias = new Map(S[cfg.gu].filter((g) => g.edicao === ed._id).map((g) => [g._id, g]));
     const dest = itens.find((i) => i.destaque);
     const partes = [];
     const sel = eds.length > 1 ? h("label", { class: "edsel mono" }, "Edição ",
-      (() => { const s = h("select", { onchange: (e) => { S.selRev[cfg.nome] = e.target.value; render(); window.scrollTo(0, 0); } }, eds.map((e) => h("option", { value: e._id }, `Nº ${str(e.numero)} · ${str(e.mes)}`))); s.value = ed._id; return s; })()) : null;
+      (() => { const s = h("select", { onchange: (e) => { S.selRev[cfg.nome] = e.target.value; garantirCultura(cfg.nome, e.target.value); render(); window.scrollTo(0, 0); } }, eds.map((e) => h("option", { value: e._id }, `Nº ${str(e.numero)} · ${str(e.mes)}`))); s.value = ed._id; return s; })()) : null;
     {
       const capas = [], toc = [];
       let nT = 0, nG = 0, k = 0;
@@ -3471,7 +3519,7 @@ dialog.texto.convite-dlg {
         stats: [plural(nT, ...nomeObra), nG ? plural(nG, "guia", "guias") : ""].filter(Boolean).join(" · ") }));
     }
     if (dest) partes.push(h("section", { class: "wrap capa capa-obra", id: "capa" },
-      h("div", { class: "capa-img poster" }, capaObra(dest), h("div", { class: "badge", "aria-hidden": "true" }, "Matéria de capa")),
+      h("div", { class: "capa-img poster" }, capaObra(dest, { lcp: true }), h("div", { class: "badge", "aria-hidden": "true" }, "Matéria de capa")),
       h("div", { style: "min-width:0" },
         h("div", { class: "kicker mono" }, `${cfg.edicaoRot} · edição nº ${str(ed.numero)} · ${str(ed.mes)}`),
         h("h2", null, str(ed.manchete || dest.titulo)),
@@ -3665,6 +3713,11 @@ dialog.texto.convite-dlg {
     for (const g of S.cine_guias) arr(g.filmes).forEach((a, i) => { pos(a.titulo, { key: `${g._id}~${i}`, rot: str(a.titulo) }); pos(a.titulo_original, { key: `${g._id}~${i}`, rot: str(a.titulo) }); });
     for (const it of S.livro_itens) pos(it.autor, { key: it._id, rot: `${str(it.autor)} · ${str(it.titulo)}` });
     for (const g of S.livro_guias) arr(g.livros).forEach((a, i) => pos(a.autor, { key: `${g._id}~${i}`, rot: `${str(a.autor)} · ${str(a.titulo)}` }));
+    for (const x of arr(S.arquivoIndex)) {
+      if (x.eixo === "musica") pos(x.artista || x.t2, { key: x.key, rot: `${str(x.artista || x.t2)} · ${str(x.t1)}` });
+      else if (x.eixo === "cinema") { pos(x.t1, { key: x.key, rot: str(x.t1) }); if (x.titulo_original) pos(x.titulo_original, { key: x.key, rot: str(x.t1) }); }
+      else if (x.eixo === "livros") pos(x.artista, { key: x.key, rot: `${str(x.artista)} · ${str(x.t1)}` });
+    }
     for (const ev of arr(S.agenda && S.agenda.eventos)) {
       if (!proximaDoEvento(ev)) continue;
       const nomes = [...arr(ev.artistas)];
@@ -4250,7 +4303,7 @@ dialog.texto.convite-dlg {
     }
     const ev = c.ev, comum = { ...base, eventoId: ev.id, evento: str(ev.titulo), tipo: ev.tipo || "outros", regiao: str(ev.regiao) };
     if (c.pick) {
-      const p = c.pick, ss = arr(p.sessoes).slice().sort((a, b) => (str(a.data) + str(a.hora)).localeCompare(str(b.data) + str(b.hora)));
+      const p = c.pick, ss = arr(p.sessoes).toSorted((a, b) => (str(a.data) + str(a.hora)).localeCompare(str(b.data) + str(b.hora)));
       const passadas = ss.filter((s) => str(s.data) <= hj), s = passadas.length ? passadas[passadas.length - 1] : (ss[0] || {});
       const nomes = arr(p.artistas).length ? arr(p.artistas) : [p.titulo];
       return { ...comum, titulo: str(p.titulo), local: str(s.local || p.local || ev.local), bairro: str(s.bairro || ev.bairro), data: s.data || (p.temporada ? hj : dataDoEvento(ev)), hora: str(s.hora), itens: nomes.map(novoItem), sugestoes: sugestoesDe(p.titulo, nomes, ev.tipo) };
@@ -4355,7 +4408,7 @@ dialog.texto.convite-dlg {
     if (alvo && !alvo.disabled) alvo.focus({ preventScroll: false });
   }
   function abrirEditor(ida, op) {
-    edit = JSON.parse(JSON.stringify(ida));
+    edit = structuredClone(ida);
     delete edit._pend;
     edit.itens = arr(edit.itens).map((i) => ({ ...novoItem(i.nome), ...i }));
     edit.sugestoes = arr(edit.sugestoes);
@@ -4409,7 +4462,7 @@ dialog.texto.convite-dlg {
     const sug = edit.sugestoes.filter((s) => !edit.itens.some((i) => nrm(i.nome) === nrm(s)));
     const novoNome = h("input", { type: "text", "data-f": "novo-item", placeholder: "Outra banda, filme, obra…", "aria-label": "Adicionar item" });
     const add = () => { const v = novoNome.value.trim(); if (!v) { novoNome.focus(); return; } edit.itens.push(novoItem(v)); redesenhar("novo-item"); };
-    novoNome.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); add(); } });
+    novoNome.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); if (e.isComposing || e.keyCode === 229) return; add(); } });
     const err = h("p", { class: "ed-err", role: "alert" });
     const fechar = fecharEditor;
     const pode = S.podeMarcar;
@@ -4452,9 +4505,9 @@ dialog.texto.convite-dlg {
     const agora = new Date().toISOString();
     const id = edit.id || `fo-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
     const { id: _sem, _apagar, ...resto } = edit;
-    const dados = JSON.parse(JSON.stringify({ ...resto, titulo, data, link, hora: str(resto.hora).trim(), local: str(resto.local).trim(), bairro: str(resto.bairro).trim(), com: str(resto.com).trim(), comentario: str(resto.comentario).trim(),
+    const dados = structuredClone({ ...resto, titulo, data, link, hora: str(resto.hora).trim(), local: str(resto.local).trim(), bairro: str(resto.bairro).trim(), com: str(resto.com).trim(), comentario: str(resto.comentario).trim(),
       nota: Number(resto.nota) || 0, itens: arr(resto.itens).filter((i) => str(i.nome).trim()).map((i) => ({ nome: str(i.nome).trim(), viu: i.viu !== false, nota: i.viu === false ? 0 : Number(i.nota) || 0, obs: str(i.obs).trim() })),
-      criadoEm: resto.criadoEm || agora, origem: resto.origem || "faixa-oculta", atualizadoEm: agora }));
+      criadoEm: resto.criadoEm || agora, origem: resto.origem || "faixa-oculta", atualizadoEm: agora });
     const del = { ...S.idasDel }; delete del[id];
     podarLocais();
     S.idasMod = { ...S.idasMod, [id]: dados }; S.idasDel = del;
@@ -4594,14 +4647,24 @@ dialog.texto.convite-dlg {
 
   // ---------- Arquivo: every album, film and book ever published, searchable ----------
   function indiceArquivo() {
+    if (Array.isArray(S.arquivoIndex) && S.arquivoIndex.length) {
+      return S.arquivoIndex.map((x) => ({
+        ...x,
+        cap: { capa: x.capa, album: x.t1, artista: x.artista || x.t2, _tipo: x._tipo || (x.eixo === "musica" ? "" : "obra") },
+      }));
+    }
     const out = [];
-    for (const ed of S.edicoes) for (const e of entradas(ed)) out.push({ ...e, rev: "música", ed: `Nº ${str(ed.numero)} · ${str(ed.mes)}`, t1: str(e.a.album), t2: str(e.a.exibir_artista || e.a.artista), cap: e.a });
-    for (const cfg of Object.values(REVISTAS)) for (const ed of S[cfg.ed]) for (const e of entradasRevista(cfg, ed))
+    for (const ed of S.edicoes) if (!ed._stub) for (const e of entradas(ed)) out.push({ ...e, rev: "música", ed: `Nº ${str(ed.numero)} · ${str(ed.mes)}`, t1: str(e.a.album), t2: str(e.a.exibir_artista || e.a.artista), cap: e.a });
+    for (const cfg of Object.values(REVISTAS)) for (const ed of S[cfg.ed]) if (!ed._stub) for (const e of entradasRevista(cfg, ed))
       out.push({ ...e, rev: cfg.nome, ed: `Nº ${str(ed.numero)} · ${str(ed.mes)}`, t1: str(e.a.titulo), t2: [e.a.autor, e.a.ano].map(str).filter(Boolean).join(", "), cap: { capa: e.a.capa || e.a.imagem, album: e.a.titulo, artista: e.a.autor, _tipo: e.a.tipo } });
     for (const x of out) x.busca = nrm([x.t1, x.t2, x.a.titulo_original, x.a.genero, arr(x.a.generos).join(" "), x.a.pais, x.a.onde, x.ctx, x.ed, x.rev, arr(x.a.resenha).join(" "), x.a.linha_fina].map(str).join(" "));
     return out;
   }
   function blocoArquivo() {
+    if (!S.arquivoIndex && S.modo === "site") {
+      garantirArquivoIndex().then(() => { if (S.aba === "arquivo") render(); });
+      return [estado("abrindo o arquivo", "Carregando o índice completo de discos, filmes, séries e livros.")];
+    }
     const todos = indiceArquivo();
     const res = h("div", { class: "arq-res", "aria-live": "polite" });
     const mostrar = () => {
@@ -4643,14 +4706,16 @@ dialog.texto.convite-dlg {
     return out;
   }
   function acharEntrada(key) {
-    const eds = [...S.edicoes].sort((a, b) => (a._id === S.sel ? -1 : b._id === S.sel ? 1 : 0));
+    const eds = S.edicoes.toSorted((a, b) => (a._id === S.sel ? -1 : b._id === S.sel ? 1 : 0));
     for (const ed of eds) {
+      if (ed._stub) continue;
       const lista = entradas(ed);
       const idx = lista.findIndex((e) => e.key === key);
       if (idx >= 0) return { lista, idx, ed };
     }
     for (const cfg of Object.values(REVISTAS)) {
       for (const ed of S[cfg.ed]) {
+        if (ed._stub) continue;
         const lista = entradasRevista(cfg, ed);
         const idx = lista.findIndex((e) => e.key === key);
         if (idx >= 0) return { lista, idx, ed };
@@ -4682,7 +4747,18 @@ dialog.texto.convite-dlg {
   }
 
   let abertoAntes = null, opener = null, openerRef = null;
-  function abrirLeitura(key) { opener = document.activeElement; openerRef = guardarFoco(); S.aberto = key; aplicarLeitorPrefs(); renderLeitura(); }
+  async function abrirLeitura(key) {
+    opener = document.activeElement;
+    openerRef = guardarFoco();
+    if (!acharEntrada(key) && S.modo === "site") {
+      await garantirArquivoIndex();
+      const meta = arr(S.arquivoIndex).find((x) => x.key === key);
+      if (meta) await garantirCultura(meta.eixo, meta.mes_id);
+    }
+    S.aberto = key;
+    aplicarLeitorPrefs();
+    renderLeitura();
+  }
   function voltarAoOpener() {
     if (opener && document.contains(opener)) opener.focus();
     else restaurarFoco(openerRef, true);
@@ -4805,12 +4881,15 @@ dialog.texto.convite-dlg {
   function renderTudo() {
     renderLeitura();
     renderVersoes();
-    if (!S.hashLido && S.carregou && S.itens.length) {
+    if (!S.hashLido && S.carregou) {
       let k = ""; try { k = decodeURIComponent(location.hash.slice(1)); } catch (e) {}
-      const todasCarregadas = ["edicoes", "itens", "guias", ...COLS_REV].every((c) => S.loaded[c]);
-      if (!k) S.hashLido = true;
+      if (!k || k.startsWith("convite=")) S.hashLido = true;
       else if (acharEntrada(k)) { S.hashLido = true; S.aberto = k; renderLeitura(); }
-      else if (todasCarregadas) S.hashLido = true;
+      else if (Array.isArray(S.arquivoIndex)) {
+        S.hashLido = true;
+        const meta = S.arquivoIndex.find((x) => x.key === k);
+        if (meta) abrirLeitura(k);
+      } else if (["edicoes", "itens", "guias", ...COLS_REV].every((c) => S.loaded[c])) S.hashLido = true;
     }
     const main = document.getElementById("main");
     const y = window.scrollY;
@@ -4852,6 +4931,11 @@ dialog.texto.convite-dlg {
     const ed = S.edicoes.find((e) => e._id === S.sel) || S.edicoes[0];
     S.sel = ed._id; sel.value = ed._id;
     document.getElementById("edline").textContent = `Nº ${str(ed.numero)} · ${str(ed.mes)}`;
+    if (ed._stub) {
+      garantirCultura("musica", ed._id);
+      main.append(h("div", { class: "wrap estado" }, h("h3", null, "abrindo a edição"), h("p", null, "Carregando os discos, guias e resenhas desta edição.")));
+      return;
+    }
 
     const itensEd = S.itens.filter((i) => i.edicao === ed._id).sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0));
     const guiasEd = new Map(S.guias.filter((g) => g.edicao === ed._id).map((g) => [g._id, g]));
@@ -4860,7 +4944,7 @@ dialog.texto.convite-dlg {
 
     renderChips(itensEd, guiasEd, ed);
     const f = S.filtro;
-    if (f === "fila") { main.append(blocoFila()); return; }
+    if (f === "fila") { garantirFila(); main.append(blocoFila()); return; }
 
     const capas = [], toc = [];
     let nD = 0, nG = 0, k = 0;
@@ -5007,9 +5091,133 @@ dialog.texto.convite-dlg {
     if (e.key === "ArrowRight") dlg.querySelector('[aria-label="Próximo disco"]:not(:disabled)')?.click();
     if (e.key === "ArrowLeft") dlg.querySelector('[aria-label="Disco anterior"]:not(:disabled)')?.click();
   });
-  document.getElementById("edicao-sel").addEventListener("change", (e) => { S.sel = e.target.value; S.filtro = "tudo"; render(); window.scrollTo(0, 0); });
+  document.getElementById("edicao-sel").addEventListener("change", (e) => { S.sel = e.target.value; S.filtro = "tudo"; garantirCultura("musica", S.sel); render(); window.scrollTo(0, 0); });
 
-  // Outside claude.ai (the GitHub site) the page boots fast from data/boot.json (~145 KB) and hydrates full history in background.
+  // Carregadores sob demanda de shards v2.1 (evitam baixar os 20 MB de data/revista.json no cliente)
+  const _inflightShards = new Map();
+  const _shardsCulturaHidratados = new Set();
+  const _verQuery = () => encodeURIComponent(S.versao || Math.floor(Date.now() / 300000));
+
+  function _dedupFetchJson(chave, url) {
+    if (_inflightShards.has(chave)) return _inflightShards.get(chave);
+    const p = fetch(url)
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null)
+      .finally(() => _inflightShards.delete(chave));
+    _inflightShards.set(chave, p);
+    return p;
+  }
+
+  async function garantirDia(diaId) {
+    if (S.modo !== "site") return;
+    const alvo = diaId || S.selDia || (S.dias[0] && S.dias[0]._id);
+    if (!alvo) return;
+    const atual = S.dias.find((d) => d._id === alvo);
+    const precisaShard = !atual || atual._stub || Boolean(atual.jornais && atual.jornais.shard_completo && !atual._fullHydrated);
+    if (!precisaShard) return;
+    const diaFull = await _dedupFetchJson(`dia:${alvo}`, `data/dias/${encodeURIComponent(alvo)}.json?v=${_verQuery()}`);
+    if (!diaFull) return;
+    const obj = { ...diaFull, _id: alvo, _fullHydrated: true };
+    const idxD = S.dias.findIndex((d) => d._id === alvo);
+    if (idxD >= 0) S.dias[idxD] = obj;
+    else { S.dias.push(obj); S.dias.sort((a, c) => chaveDia(c).localeCompare(chaveDia(a))); }
+    S.loaded.dias = true;
+    if (S.aba === "hoje") render();
+  }
+
+  async function garantirSemana(semId) {
+    if (S.modo !== "site") return;
+    const alvo = semId || S.selSem || (S.semanas[0] && S.semanas[0]._id);
+    if (!alvo) return;
+    const atual = S.semanas.find((s) => s._id === alvo);
+    if (atual && !atual._stub) return;
+    const semFull = await _dedupFetchJson(`sem:${alvo}`, `data/semanas/${encodeURIComponent(alvo)}.json?v=${_verQuery()}`);
+    if (!semFull) return;
+    const obj = { ...semFull, _id: alvo };
+    const idxS = S.semanas.findIndex((s) => s._id === alvo);
+    if (idxS >= 0) S.semanas[idxS] = obj;
+    else { S.semanas.push(obj); S.semanas.sort((a, c) => str(c.fim).localeCompare(str(a.fim))); }
+    S.loaded.semanas = true;
+    if (S.aba === "noticias" || S.aba === "temas") render();
+  }
+
+  const _MAPA_EIXO_COLS = {
+    musica: ["edicoes", "itens", "guias"],
+    cinema: ["cine_edicoes", "cine_itens", "cine_guias"],
+    livros: ["livro_edicoes", "livro_itens", "livro_guias"],
+  };
+
+  async function garantirCultura(eixo, mesId) {
+    if (S.modo !== "site") return;
+    const cols = _MAPA_EIXO_COLS[eixo];
+    if (!cols) return;
+    const [colEd, colIt, colGu] = cols;
+    const selPadrao = eixo === "musica" ? S.sel : S.selRev[eixo];
+    const alvo = mesId || selPadrao || (S[colEd][0] && S[colEd][0]._id);
+    if (!alvo) return;
+    const chave = `${eixo}:${alvo}`;
+    if (_shardsCulturaHidratados.has(chave)) return;
+    const pac = await _dedupFetchJson(`cult:${chave}`, `data/cultura/${eixo}_${encodeURIComponent(alvo)}.json?v=${_verQuery()}`);
+    if (!pac || !pac.edicao) return;
+    _shardsCulturaHidratados.add(chave);
+    const edObj = { ...pac.edicao, _id: alvo };
+    const idxE = S[colEd].findIndex((e) => e._id === alvo);
+    if (idxE >= 0) S[colEd][idxE] = edObj;
+    else { S[colEd].push(edObj); S[colEd].sort((a, c) => str(c.data || c._id).localeCompare(str(a.data || a._id))); }
+
+    const mapIt = new Map(S[colIt].map((x) => [x._id, x]));
+    for (const [id, d] of Object.entries(pac.itens || {})) mapIt.set(id, { ...d, _id: id });
+    S[colIt] = [...mapIt.values()];
+
+    const mapGu = new Map(S[colGu].map((x) => [x._id, x]));
+    for (const [id, d] of Object.entries(pac.guias || {})) mapGu.set(id, { ...d, _id: id });
+    S[colGu] = [...mapGu.values()];
+
+    S.loaded[colEd] = true; S.loaded[colIt] = true; S.loaded[colGu] = true;
+    if (eixo === "musica") S.carregou = true;
+    indices = null;
+    render();
+  }
+
+  async function garantirArquivoIndex() {
+    if (S.modo !== "site" || Array.isArray(S.arquivoIndex)) return;
+    const arq = await _dedupFetchJson("arquivo_index", `data/arquivo_index.json?v=${_verQuery()}`);
+    if (!arq || !Array.isArray(arq.entradas)) return;
+    S.arquivoIndex = arq.entradas;
+    if (arq.cultura_curta && !S.cultura.length) {
+      S.cultura = Object.entries(arq.cultura_curta).map(([id, d]) => ({ ...d, _id: id }));
+    }
+    S.loaded.cultura = true;
+    S.loaded.leituras = true;
+    indices = null;
+  }
+
+  async function garantirFila() {
+    if (S.modo !== "site") return;
+    await garantirArquivoIndex();
+    const queros = new Set(Object.entries(S.marcas || {}).filter(([k, v]) => v === "quero" && !k.startsWith("radar:")).map(([k]) => k));
+    if (!queros.size || !Array.isArray(S.arquivoIndex)) return;
+    const promessas = [];
+    for (const x of S.arquivoIndex) {
+      if (queros.has(x.key) && !_shardsCulturaHidratados.has(`${x.eixo}:${x.mes_id}`)) {
+        promessas.push(garantirCultura(x.eixo, x.mes_id));
+      }
+    }
+    if (promessas.length) await Promise.all(promessas);
+  }
+
+  function garantirAbaAtiva() {
+    if (S.modo !== "site") return Promise.resolve();
+    if (S.aba === "hoje") return garantirDia();
+    if (S.aba === "noticias" || S.aba === "temas") return garantirSemana();
+    if (S.aba === "musica") return S.filtro === "fila" ? Promise.all([garantirCultura("musica"), garantirFila()]) : garantirCultura("musica");
+    if (S.aba === "filmes") return garantirCultura("cinema");
+    if (S.aba === "livros") return garantirCultura("livros");
+    if (S.aba === "arquivo") return garantirArquivoIndex();
+    return Promise.resolve();
+  }
+
+  // Outside claude.ai (the GitHub site) the page boots fast from data/boot.json (~145 KB) and loads only the active section's shard on demand.
   async function iniciarEstatico() {
     const carregarPrefsLocais = () => {
       try { S.comentarios = JSON.parse(localStorage.getItem("fo-comentarios") || "{}") || {}; } catch (e) { S.comentarios = {}; }
@@ -5037,54 +5245,62 @@ dialog.texto.convite-dlg {
       S.carregou = true;
     };
     carregarPrefsLocais();
-    const cbMin = Math.floor(Date.now() / 60000);
-    let renderizouBoot = false;
+    const cbBoot = Math.floor(Date.now() / 60000);
+    let bootOk = false;
     try {
-      const rb = await fetch("data/boot.json?v=" + cbMin);
+      const rb = await fetch("data/boot.json?v=" + cbBoot);
       if (rb.ok) {
         const boot = await rb.json();
         if (boot && boot.hoje_inicial) {
+          bootOk = true;
+          S.versao = str(boot.versao_dados || boot.gerado_em || cbBoot);
           const hojeId = boot.hoje_id || boot.hoje_inicial.id || boot.hoje_inicial.data;
           const mapaDias = { [hojeId]: { ...boot.hoje_inicial, _id: hojeId } };
           for (const meta of (boot.dias_index || [])) {
-            if (meta.id && !mapaDias[meta.id]) mapaDias[meta.id] = { ...meta, _id: meta.id, notas: [] };
+            if (meta.id && !mapaDias[meta.id]) mapaDias[meta.id] = { ...meta, _id: meta.id, _stub: true, notas: [] };
           }
           S.dias = Object.values(mapaDias).sort((a, c) => chaveDia(c).localeCompare(chaveDia(a)));
+          S.semanas = arr(boot.semanas_index).map((m) => ({ ...m, _id: m.id, _stub: true, temas: [] }));
+          const edIdx = boot.edicoes_index || {};
+          S.edicoes = arr(edIdx.musica).map((m) => ({ ...m, _id: m.id, _stub: true }));
+          S.cine_edicoes = arr(edIdx.cinema).map((m) => ({ ...m, _id: m.id, _stub: true }));
+          S.livro_edicoes = arr(edIdx.livros).map((m) => ({ ...m, _id: m.id, _stub: true }));
           S.agenda = (boot.agenda && boot.agenda.atual) || null;
           S.agArtistas = (boot.agenda && boot.agenda.artistas && boot.agenda.artistas.mapa) || {};
           S.agArtistasYT = (boot.agenda && boot.agenda.artistas && boot.agenda.artistas.youtube) || {};
           S.loaded.dias = true;
           S.loaded.agenda = true;
-          if (S.aba === "hoje" || S.aba === "agenda") {
-            S.carregou = true;
-            renderizouBoot = true;
-            render();
-            setTimeout(checarDeepLinkConvite, 150);
-          }
-          try {
-            const rs = await fetch(`data/dias/${encodeURIComponent(hojeId)}.json?v=${cbMin}`);
-            if (rs.ok) {
-              const diaFull = await rs.json();
-              if (diaFull && Array.isArray(S.dias) && S.dias.length) {
-                S.dias[0] = { ...diaFull, _id: hojeId };
-                indices = null;
-                if (S.aba === "hoje") render();
-              }
-            }
-          } catch (e) {}
+          if (S.semanas.length) S.loaded.semanas = true;
+          if (S.edicoes.length) S.loaded.edicoes = true;
+          if (S.cine_edicoes.length) S.loaded.cine_edicoes = true;
+          if (S.livro_edicoes.length) S.loaded.livro_edicoes = true;
+          S.carregou = true;
+          render();
+          setTimeout(checarDeepLinkConvite, 120);
+
+          await garantirAbaAtiva();
+          const agendarIdle = window.requestIdleCallback || ((fn) => setTimeout(fn, 500));
+          agendarIdle(() => {
+            garantirArquivoIndex().then(() => {
+              if (S.aba === "agenda" || !S.hashLido) render();
+            });
+          });
+          return;
         }
       }
     } catch (e) {}
-    try {
-      const r = await fetch("data/revista.json?v=" + cbMin);
-      if (!r.ok) throw new Error(r.status);
-      const b = await r.json();
-      aplicarBundleCompleto(b);
-      if (!renderizouBoot) setTimeout(checarDeepLinkConvite, 200);
-    } catch (e) {
-      if (!renderizouBoot) S.falhou = true;
+    if (!bootOk) {
+      try {
+        const r = await fetch("data/revista.json?v=" + cbBoot);
+        if (!r.ok) throw new Error(r.status);
+        const b = await r.json();
+        aplicarBundleCompleto(b);
+        setTimeout(checarDeepLinkConvite, 200);
+      } catch (e) {
+        S.falhou = true;
+      }
+      render();
     }
-    render();
   }
 
   (async () => {
@@ -5116,3 +5332,5 @@ dialog.texto.convite-dlg {
   })();
 })();
 </script>
+</body>
+</html>

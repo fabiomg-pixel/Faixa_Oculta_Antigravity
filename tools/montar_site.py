@@ -77,7 +77,8 @@ def main():
 
     os.makedirs(os.path.join(saida, "data"), exist_ok=True)
     open(os.path.join(saida, "data", "revista.json"), "w", encoding="utf-8").write(txt)
-    open(os.path.join(saida, "index.html"), "w", encoding="utf-8").write(SKELETON_HEAD + src + SKELETON_TAIL)
+    html_final = src if src.lstrip().lower().startswith("<!doctype html") else (SKELETON_HEAD + src + SKELETON_TAIL)
+    open(os.path.join(saida, "index.html"), "w", encoding="utf-8").write(html_final)
     open(os.path.join(saida, ".nojekyll"), "w").close()
 
     print("documentos:", {k: len(v) for k, v in bundle.items()}, "| capas:", len(ids) - len(faltando), "de", len(ids))
