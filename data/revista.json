@@ -107581,7 +107581,7 @@
       "edicao": "manha",
       "curadoria_modelo": "antigravity-neon",
       "titulo": "Boletim da Manhã · 26/11 — Dólar toca R$ 5,75 com Trabuco cotado na Fazenda, confederações vão ao STF contra CBS/IBS e Brasil prepara 'panda bonds'; NYT revela brasileiros aliciados pela Rússia, bolsas oscilam com IA e China reage a Trump",
-      "resumo_dia": "Curadoria nativa Antigravity de 26/11/2026 (manhã) com 22 reportagens (11 nacionais e 11 internacionais): no Brasil, a queda do dólar para R$ 5,75 diante de especulações sobre Luiz Carlos Trabuco na Fazenda e nova PEC fiscal, a ação das confederações no STF para adiar a CBS e o IBS, a estreia soberana em 'panda bonds' na China, o recorde de US$ 1,416 trilhão no estoque de IDP, a ofensiva americana sobre açúcar e aeronaves, a Operação Dinheiro Fictício contra o Grupo Fictor, o impasse do gás natural no decreto do Redata, o julgamento no STF sobre o 2º turno no RJ em 4 de dezembro, as falhas de LGPD no Smart Sampa, os vácuos legais da Polícia Municipal e o projeto das tornozeleiras na Lei Maria da Penha; no exterior, brasileiros enganados para combater pela Rússia, a ascensão do preparacionismo civil na Europa, a volatilidade global das ações de IA, a articulação de € 35 bilhões por Paris e Berlim contra Marine Le Pen, a disputa na ONU sobre o Sudão, o suicídio de solicitante de asilo enviado pelo Reino Unido a Essuatíni, a recusa de Mianmar à condenação da CIJ, apelos de mulheres no corredor da morte no Irã, a reação da China e aliados às novas tarifas de Trump, os deslocamentos climáticos na Europa, a tensão entre Bagdá e o Curdistão pelo petróleo e a expansão marítima e energética da guerra na Ucrânia.",
+      "resumo_dia": "Curadoria nativa Antigravity de 26/11/2026 (manhã) com 22 reportagens (11 nacionais e 11 internacionais): no Brasil, a queda do dólar para R$ 5,75 diante de especulações sobre Luiz Carlos Trabuco na Fazenda e nova PEC fiscal, a ação das confederações no STF para adiar a CBS e o IBS, a estreia soberana em 'panda bonds' na China, o recorde de US$ 1,416 trilhão no estoque de IDP, a ofensiva americana sobre açúcar e aeronaves, a Operação Dinheiro Fictício contra o Grupo Fictor, o impasse do gás natural no decreto do Redata, o julgamento no STF sobre o 2º turno no RJ em 4 de dezembro, as falhas de LGPD no Smart Sampa, os vácuos legais da Polícia Municipal e o projeto das tornozeleiras na Lei Maria da Penha; no exterior, brasileiros enganados para combater pela Rússia, a ascensão do preparacionismo civil na Europa, a volatilidade global das ações de IA, a articulação de € 35 bilhões por Paris e Berlim contra Marine Le Pen, a disputa na ONU sobre o Sudão, a recusa de Mianmar à condenação da CIJ, apelos de mulheres no corredor da morte no Irã, a reação da China e aliados às novas tarifas de Trump, os deslocamentos climáticos na Europa, a tensão entre Bagdá e o Curdistão pelo petróleo e a expansão marítima e energética da guerra na Ucrânia.",
       "agenda": [
         {
           "quando": "Sábado · 28 de novembro · Taiwan",
@@ -108363,48 +108363,6 @@
           ]
         },
         {
-          "id": "2026-11-26--int--guardian-reino-unido-asilo-essuatini",
-          "escopo": "internacional",
-          "pais": "Reino Unido / Essuatíni",
-          "chapeu": "Mídia Internacional Traduzida · Política Migratória",
-          "editoria": "Mundo",
-          "titulo": "Solicitante de asilo enviado pelo Reino Unido a Essuatíni tira a própria vida após deportação para país sem vínculos",
-          "titulo_original": "Sri Lankan asylum seeker killed himself after being sent by UK to Eswatini",
-          "texto": "Caso de Kishanth Peramalya expõe acordos sigilosos de transferência de migrantes barrados em solo britânico para terceiros países africanos.",
-          "por_que_importa": "Morte reacende escrutínio jurídico e ético sobre terceirização de asilo pelo governo britânico mesmo após o abandono do plano original de Ruanda.",
-          "resumo_visoes": "The Guardian detalha a trajetória de Kishanth Peramalya — desde o resgate no oceano Índico e detenção em Diego Garcia até o envio para Essuatíni sem acordo formal de residência permanente — e cobra transparência de Londres.",
-          "texto_completo": [
-            "Um solicitante de asilo originário do Sri Lanka enviado pelo governo britânico para Essuatíni — país do sul da África com o qual não possuía qualquer vínculo familiar, linguístico ou histórico — tirou a própria vida após permanecer em situação jurídica indefinida, revelou reportagem do jornal The Guardian publicada entre quarta e quinta-feira.",
-            "Kishanth Peramalya havia sido resgatado pela Marinha Real em outubro de 2021 quando tentava chegar de barco ao Canadá e levado ao acampamento da base militar britânica de Diego Garcia, no Oceano Índico. Embora tivesse proteção legal contra deportação de volta ao Sri Lanka por ter sido torturado por militares quando adolescente, teve sua entrada no Reino Unido barrada em 2024 após condenações criminais ocorridas durante a detenção na ilha.",
-            "Após passagem temporária de 30 dias pelas Maldivas em março deste ano, Peramalya foi transferido para Essuatíni, onde morreu por suicídio em 13 de setembro. Segundo documentos apurados pela imprensa britânica, um rascunho de acordo previa que Londres custearia por três anos seu reassentamento e negociaria residência definitiva, mas nenhum tratado formal chegou a ser assinado.",
-            "Questionada pelo Guardian, a porta-voz do governo de Essuatíni, Thabile Mdluli, confirmou que o arranjo inicial tinha caráter meramente temporário enquanto o Reino Unido buscava uma solução de longo prazo — revelação que intensifica a pressão no Parlamento britânico sobre acordos bilaterais de transferência de migrantes."
-          ],
-          "aprofundamento": {
-            "contexto": "Debate migratório britânico segue tenso mesmo após o anúncio nesta quinta-feira de que a imigração líquida caiu ao menor nível desde 1997.",
-            "o_que_observar": "Possíveis inquéritos parlamentares em Westminster sobre acordos bilaterais de transferência de solicitantes de asilo."
-          },
-          "fontes": [
-            {
-              "fonte": "The Guardian",
-              "perfil": "Veículo internacional traduzido",
-              "enfoque": "Trajetória de Diego Garcia a Essuatíni e ausência de acordo formal de permanência por Londres",
-              "url": "https://www.theguardian.com/uk-news/2026/nov/25/sri-lanka-asylum-seeker-convicted-sexual-assault-uk-kills-himself-eswatini",
-              "titulo": "Solicitante de asilo do Sri Lanka tirou a própria vida após ser enviado pelo Reino Unido a Essuatíni",
-              "titulo_original": "Sri Lankan asylum seeker killed himself after being sent by UK to Eswatini",
-              "autor": "The Guardian",
-              "pontos": [
-                "Kishanth Peramalya tinha proteção contra retorno ao Sri Lanka, mas teve entrada negada no Reino Unido por condenações em Diego Garcia.",
-                "Governo de Essuatíni afirma que acolhida era temporária e que nenhum acordo definitivo de residência foi fechado."
-              ],
-              "citacao": "O Reino Unido enviou um solicitante de asilo do Sri Lanka condenado por agressão sexual a Essuatíni, um país do sul da África com o qual ele não tinha conexão e onde se matou.",
-              "texto_integral": [
-                "O envio de um solicitante de asilo pelo Reino Unido a Essuatíni terminou em suicídio e revelou a falta de acordos definitivos de residência.",
-                "Entidades de direitos humanos questionam a legalidade e a responsabilidade britânica na transferência para terceiros países."
-              ]
-            }
-          ]
-        },
-        {
           "id": "2026-11-26--int--bbc-mianmar-recusa-sentenca-genocidio-cij",
           "escopo": "internacional",
           "pais": "Mianmar",
@@ -108722,10 +108680,10 @@
       ],
       "jornais": {
         "data_edicao": "2026-11-26",
-        "gerado_em": "2026-11-26 10:20:00",
+        "gerado_em": "2026-11-26 10:20:13",
         "beeper_max_ts": 1795693080000,
         "curadoria_revisada": true,
-        "resumo": "Síntese revisada das primeiras páginas, editoriais e 50 reportagens integrais dos 10 grandes diários nacionais e internacionais processados para 26/11/2026 (Folha, Estadão, O Globo, Valor, Financial Times 26/11, Washington Post 26/11, The Guardian 26/11, The Times UK 26/11, NYT International 26/11 e Le Monde). Clique em qualquer jornal para ler seus cadernos no Modo Leitor.",
+        "resumo": "Síntese das primeiras páginas, editoriais e principais reportagens dos 10 grandes diários nacionais e internacionais processados para 2026-11-26. Clique em qualquer jornal para ler seus cadernos e reportagens integrais no Modo Leitor.",
         "contraste": "Confronto analítico entre a busca de novo ajuste fiscal via PEC e as tensões STF-PF no Brasil frente à volatilidade da IA, à ofensiva tarifária americana e às crises geopolíticas globais.",
         "manchetes": [
           {
@@ -109158,103 +109116,126 @@
             "jornal": "Financial Times",
             "pais": "Reino Unido / Global",
             "escopo": "internacional",
+            "metodo_extracao": "apple_vision_ocr_en-US",
             "total_paginas": 22,
             "imagem": "capas/2079774d133e2405e997e0c6ff68aaa3.jpg",
             "site": "https://www.ft.com",
-            "manchete": "Ações de tecnologia oscilam com força enquanto investidores questionam fé na tese de IA",
-            "manchete_original": "Tech stocks whipsaw as investors question faith in AI trade",
-            "nota": "Nasdaq 100 chega a cair 4,7% encaminhando pior novembro desde 2008; FT de 26/11 também traz cartel de perfumarias multado em € 557 mi, salto de 26% na conta de luz britânica e fusão Tesla-SpaceX.",
+            "manchete": "Cartel de fragrâncias é multado em € 557 mi enquanto temor sobre inteligência artificial derruba ações de tecnologia",
+            "manchete_original": "Perfumers fined €557mn for colluding to fix prices on scents sold to Unilever",
+            "nota": "A edição do Financial Times destaca a multa antitruste de € 557 milhões aplicada por UE e Reino Unido contra Firmenich, Givaudan e IFF, a forte volatilidade nas bolsas globais em meio a dúvidas sobre a sustentabilidade dos investimentos em inteligência artificial e a nova ofensiva tarifária de Donald Trump contra 14 parceiros comerciais, além do salto de 26% no teto de energia britânico e da saída do negociador Michael Ellam.",
             "resumo_edicao": [
-              "A edição de 26 de novembro do Financial Times destaca a forte correção nas bolsas de tecnologia — atingindo Nvidia, Anthropic, Samsung e SK Hynix — e a busca por títulos do Tesouro dos EUA diante dos riscos à tese de IA.",
-              "O jornal traz ainda a multa de € 557 milhões da UE e do Reino Unido contra cartel de fragrâncias, o aumento de 26% no teto de energia britânico em janeiro, a nova rodada tarifária de Trump de até 20% e o avanço da renda de imigrantes na Espanha antes das eleições de domingo."
+              "Na primeira página e nos cadernos de economia, o jornal britânico registra a derrocada intradiária do Nasdaq 100 e o recuo de Nvidia, SK Hynix e Samsung diante da reavaliação do ciclo de inteligência artificial, ao lado da multa conjunta de Bruxelas e Londres ao cartel de fragrâncias e do plano de cinco conselheiros para uma eventual fusão de US$ 3,5 trilhões entre Tesla e SpaceX.",
+              "No noticiário político e geopolítico, a edição cobre a nova rodada tarifária americana sob a Seção 301, o abandono pela Casa Branca do plano de usar negócios empresariais para atrair Moscou a um acordo na Ucrânia, os ataques cibernéticos atribuídos à Guarda Revolucionária iraniana contra supermercados europeus, o fundo soberano de € 50 bilhões proposto pela UE para IA e quântica e a condenação criminal da Huawei em Nova York."
             ],
             "editorial": {
-              "titulo": "Saída do negociador do acordo Reino Unido-UE expõe vácuo antes do G20",
+              "pagina_origem": 2,
+              "titulo": "Choques energéticos, guerras comerciais e soberania tecnológica pressionam a Europa",
               "texto": [
-                "A decisão do ex-executivo do HSBC Michael Ellam de deixar o posto de negociador-chefe britânico para a reaproximação com a União Europeia e de 'sherpa' do G20 ocorre em momento delicado para o primeiro-ministro Andy Burnham, justamente após a cúpula de sexta-feira em Bruxelas e às vésperas da presidência britânica do G20.",
-                "Conhecido por trânsito sólido tanto em Whitehall quanto na Comissão Europeia, Ellam conseguiu adiar por seis meses o ultimato europeu sobre a redução de taxas universitárias para estudantes da UE no Reino Unido — que hoje pagam mais de £ 30 mil anuais ante o teto doméstico de £ 9.790.",
-                "Com pendências sensíveis pela frente, incluindo regras alimentares na Irlanda do Norte, interligação elétrica e acesso à política industrial europeia 'Made in Europe', Londres enfrenta dificuldade evidente para encontrar substituto à altura."
+                "O cruzamento das páginas iniciais do Financial Times evidencia a vulnerabilidade simultânea do Reino Unido e da União Europeia diante de choques externos sobre energia, comércio e infraestrutura digital. Enquanto a Ofgem elevou em 26% o teto da conta residencial de energia no Reino Unido a partir de janeiro — refletindo uma alta de 33% no gás atacadista com o conflito no Irã —, Londres perde seu principal negociador da reaproximação com Bruxelas, Michael Ellam, às vésperas da presidência britânica do G20.",
+                "Do outro lado do Canal da Mancha, a resposta europeia combina defesa industrial e cautela monetária: a Comissão Europeia articula um fundo soberano de até € 50 bilhões para reduzir a dependência de tecnologia americana e chinesa em inteligência artificial e computação quântica, ao mesmo tempo em que a Alemanha planeja elevar seus gastos de defesa em 30% diante de ciberataques atribuídos ao Irã e da escalada híbrida russa, sob o pano de fundo das novas tarifas de 15% anunciadas por Washington."
               ]
             },
             "reportagens": [
               {
-                "caderno": "Primeira Página · Mercados Globais",
+                "caderno": "Capa e Mercados · Pág. 1",
                 "pagina": "1",
-                "autor": "William Sandlund",
-                "titulo": "Ações de tecnologia oscilam fortemente com dúvidas sobre a sustentabilidade do ciclo de IA",
-                "titulo_original": "Tech stocks whipsaw as investors question faith in AI trade",
+                "autor": "William Sandlund (com David Keohane)",
+                "titulo": "Ações globais de tecnologia despencam com dúvidas sobre IA e retorno de Jensen Huang à Nvidia",
+                "titulo_original": "Investors question faith in AI trade as tech stocks whipsaw",
+                "lide": "Nasdaq 100 chegou a cair 4,7% e caminha para seu pior mês desde 2008 em meio a temores sobre juros altos e desgaste político do setor de inteligência artificial nos EUA.",
                 "texto_integral": [
-                  "As ações globais de tecnologia enfrentaram intensa volatilidade nas últimas sessões, com o índice Nasdaq 100 chegando a recuar 4,7% durante o pregão — caminhando para uma perda mensal próxima de 10% em novembro, potencialmente sua pior marca desde a crise financeira global de 2008 — à medida que investidores questionam a durabilidade da corrida pela inteligência artificial.",
-                  "Os papéis da Nvidia caíram 5% à tarde, apagando parte do rali provocado na segunda-feira pelo retorno inesperado de Jensen Huang ao comando da fabricante de chips, enquanto ações da Anthropic recuaram abaixo do preço de listagem de US$ 83 e chegaram a perder a marca de US$ 1 trilhão em valor de mercado. Na Ásia, o índice sul-coreano Kospi tombou 6,2% com quedas de 11,1% na SK Hynix e de 9,9% na Samsung Electronics.",
-                  "Com o índice VIX de volatilidade dobrando desde setembro para cerca de 30 pontos e o anúncio de novas tarifas americanas agravando a aversão ao risco, gestores buscaram proteção em títulos soberanos dos EUA de dez anos, derrubando o rendimento em 0,07 ponto percentual para 4,83%."
+                  "As ações globais de tecnologia atravessaram nova sessão de forte volatilidade nesta quarta-feira, com o índice Nasdaq 100 chegando a recuar 4,7% antes de reduzir parte das perdas, mantendo o indicador em rota para uma queda mensal próxima de 10% — o pior desempenho desde a crise financeira de 2008. Na Ásia, o índice sul-coreano Kospi tombou 6,2%, puxado pelos tombos de 11,1% da SK Hynix e 9,9% da Samsung Electronics, enquanto o japonês Nikkei 225 recuou 2,8%.",
+                  "A euforia observada na segunda-feira com a recondução de Jensen Huang ao comando da Nvidia deu lugar a nova onda de vendas: os papéis da fabricante de chips cederam 5% à tarde, enquanto ações da Anthropic chegaram a cair abaixo do preço de estreia de US$ 83 e a avaliação de mercado da Micron e de fornecedores do ecossistema de IA também oscilou com força. Como resumiu Luca Paolini, estrategista-chefe da Pictet Asset Management, 'é possível trazer um CEO de volta, mas não o entusiasmo do mercado'.",
+                  "Analistas ouvidos pelo jornal atribuíram a aversão ao risco à combinação de juros elevados, crescente reação política nos Estados Unidos após as eleições legislativas e os novos anúncios tarifários de Donald Trump. Com o índice de volatilidade VIX próximo de 30 pontos — cerca do dobro do patamar de setembro —, investidores buscaram abrigo em títulos do Tesouro americano, empurrando o rendimento dos papéis de 10 anos em 0,07 ponto percentual para 4,83%."
                 ],
                 "pontos": [
-                  "Nasdaq 100 caiu até 4,7% e acumula recuo próximo de 10% no mês; VIX subiu a 30 pontos.",
-                  "Nvidia recuou 5%, Anthropic caiu abaixo de US$ 83 e Kospi perdeu 6,2% em Seul."
+                  "Na mesma capa, o FT informa que cinco conselheiros ligados a Tesla e SpaceX buscam estruturar uma fusão de US$ 3,5 trilhões evitando novos litígios de acionistas.",
+                  "Pela primeira vez, a China enviou um astronauta estrangeiro — o piloto paquistanês Muhammad Zeeshan Ali — à estação espacial Tiangong para mais de 90 experimentos."
                 ]
               },
               {
-                "caderno": "Primeira Página · Empresas e Antitruste",
+                "caderno": "Capa e Concorrência · Pág. 1",
                 "pagina": "1",
-                "autor": "Barbara Moens",
-                "titulo": "Fornecedoras de fragrâncias são multadas em € 557 milhões por cartel contra a Unilever",
+                "autor": "Barbara Moens (com Florian Muller e Mercedes Ruehl)",
+                "titulo": "Fornecedores de fragrâncias são multados em € 557 milhões por cartel em vendas à Unilever",
                 "titulo_original": "Perfumers fined €557mn for colluding to fix prices on scents sold to Unilever",
+                "lide": "Autoridades antitruste da União Europeia e do Reino Unido puniram Firmenich, Givaudan e IFF por troca de informações sensíveis e coordenação comercial coordenada em Londres e via WhatsApp.",
                 "texto_integral": [
-                  "As autoridades antitruste da União Europeia e do Reino Unido aplicaram multas que somam € 557 milhões contra três das maiores fabricantes mundiais de fragrâncias — as suíças Firmenich e Givaudan e a norte-americana IFF — por participarem de um cartel ilegal para coordenar preços e estratégias comerciais junto ao grupo britânico de bens de consumo Unilever.",
-                  "Bruxelas impôs penalidades de € 471,9 milhões (€ 252,4 milhões à Givaudan, € 137,7 milhões à Firmenich e € 81,9 milhões à IFF), enquanto a autoridade britânica CMA aplicou £ 85 milhões adicionais. Segundo a investigação, executivos combinavam respostas de negociação em reuniões informais em Londres e por mensagens no WhatsApp.",
-                  "A chefe de concorrência da UE, Teresa Ribera, destacou que a infração pode ter encarecido itens básicos como pastas de dente e detergentes aos consumidores europeus; as três companhias admitiram a conduta em graus distintos para obter descontos nas sanções."
+                  "A União Europeia e o Reino Unido aplicaram multas somadas em cerca de € 557 milhões contra três das maiores fabricantes mundiais de fragrâncias por participarem de um cartel internacional destinado a manipular preços e respostas comerciais em negociações com a Unilever. Bruxelas impôs penalidades de € 471,9 milhões — divididas entre a suíça Givaudan (€ 252,4 milhões), a também suíça Firmenich (€ 137,7 milhões) e a americana IFF (€ 81,9 milhões) —, enquanto a autoridade britânica CMA aplicou £ 85 milhões adicionais já com desconto de 20% pela colaboração das empresas.",
+                  "Segundo os reguladores, executivos das companhias trocaram informações comerciais confidenciais sobre ingredientes usados em itens de higiene e limpeza doméstica, como cremes dentais e detergentes. A autoridade britânica detalhou que parte da coordenação ocorria presencialmente em encontros informais de 'cerveja e curry' em Londres, complementados por trocas diretas de mensagens via WhatsApp.",
+                  "A comissária europeia de Concorrência, Teresa Ribera, destacou que executivos de alto escalão tinham conhecimento das práticas anticompetitivas e alertou que consumidores em toda a Europa podem ter pago mais caro nas compras semanais em razão da infração. A Givaudan classificou a conduta como isolada a dois funcionários e incompatível com seus padrões; a IFF afirmou ter assumido responsabilidade pelos envolvidos, já desligados; e a Firmenich sustentou que sua participação limitou-se à troca de dados sobre um único cliente sem acordo de fixação de preços."
                 ],
                 "pontos": [
-                  "Comissão Europeia multou Givaudan, Firmenich e IFF em € 471,9 mi; CMA britânica somou £ 85 milhões.",
-                  "Colusão envolveu troca de informações sensíveis e coordenação comercial contra a Unilever."
+                  "Na página 10 do bloco econômico britânico, o FT registra ainda o pedido de administração judicial da varejista Poundland, ameaçando 10.500 postos de trabalho, e queda de 92% no lucro anual da easyJet.",
+                  "O financista Todd Boehly fechou acordo para adquirir os ativos internacionais da petrolífera russa Lukoil, encerrando mais de um ano de impasses sobre a operação."
                 ]
               },
               {
-                "caderno": "Reino Unido · Pág. 2",
+                "caderno": "Reino Unido & Energia · Pág. 2",
                 "pagina": "2",
-                "autor": "Rachel Millard",
-                "titulo": "Teto da conta residencial de energia no Reino Unido saltará 26% a partir de janeiro",
-                "titulo_original": "Energy bill cap will jump 26% from January",
+                "autor": "George Parker, Peter Foster e Rachel Millard",
+                "titulo": "Teto da conta de energia no Reino Unido salta 26% com gás da guerra no Irã enquanto negociador do 'reset' com a UE renuncia",
+                "titulo_original": "Energy bill cap jumps 26% from January as top UK-EU reset negotiator steps down",
+                "lide": "Ofgem eleva tarifa típica anual para £ 2.166 em janeiro às vésperas da saída de Michael Ellam, deixando lacuna diplomática antes da presidência britânica do G20.",
                 "texto_integral": [
-                  "O regulador britânico Ofgem elevou em 26% o teto da tarifa residencial de energia a partir de janeiro de 2027, levando a conta anual média das famílias britânicas de £ 1.723 para £ 2.166 por trimestre anualizado após a disparada de 33% nos preços do gás no atacado nos últimos três meses em razão da guerra no Irã.",
-                  "Como grande parte da eletricidade britânica ainda é precificada pelo custo marginal do gás, as famílias pagarão por unidade de energia valores superiores aos registrados no pico da crise de 2022 após a invasão russa da Ucrânia — agora sem os mesmos subsídios fiscais.",
-                  "Para conter o impacto sobre o inverno e a pressão política sobre o governo Andy Burnham, Londres planeja conceder pagamento único de £ 100 às faixas mais baixas de imposto municipal e cortar o IVA sobre eletricidade residencial até julho de 2027."
+                  "A agência reguladora britânica Ofgem anunciou que o teto da conta residencial de energia subirá 26% a partir de janeiro, elevando a fatura anual de um domicílio típico dos atuais £ 1.723 para £ 2.166 no trimestre de inverno. O aumento decorre da disparada de 33% nos preços atacadistas do gás nos últimos três meses diante das interrupções de fornecimento provocadas pela guerra no Irã, levando as famílias a pagar por unidade de gás mais do que na crise de 2022 após a invasão russa da Ucrânia.",
+                  "O aperto energético amplia a pressão política sobre o governo do primeiro-ministro Andy Burnham — que pretende oferecer pagamento único de £ 100 às faixas mais baixas e cortar o IVA sobre eletricidade até julho de 2027 — e complica o trabalho do Banco da Inglaterra. Em audiência no Parlamento, o governador Andrew Bailey disse que a recente queda do petróleo pode reduzir o pico inflacionário esperado, mas recusou descartar uma nova elevação de juros em dezembro, enquanto a vice Clare Lombardelli advertiu que a persistência dos choques energéticos fortalece o argumento por política monetária mais restritiva.",
+                  "No mesmo front político, o ex-executivo do HSBC Michael Ellam anunciou sua saída do cargo de principal negociador do acordo de 'redefinição' pós-Brexit entre Londres e Bruxelas para assumir bolsa acadêmica em Oxford. Autoridades britânicas e europeias lamentaram a perda do 'sherpa' a poucas semanas da presidência britânica do G20 e de negociações sensíveis sobre taxas universitárias, interligação elétrica e política industrial, enquanto o ministro da Agricultura da Irlanda do Norte, Andrew Muir, cobrou alinhamento pleno às normas alimentares europeias para eliminar a etiqueta 'not for EU'."
                 ],
                 "pontos": [
-                  "Teto médio da energia subirá de £ 1.723 para £ 2.166 ao ano em janeiro após alta de 33% no gás.",
-                  "Governo britânico prepara bônus de £ 100 para famílias de menor renda e corte de IVA na eletricidade."
+                  "Aeroporto de Heathrow planeja gastar mais de £ 300 milhões no primeiro semestre de 2027 com o pedido da terceira pista e busca autorização para repassar custos aos passageiros por 20 anos.",
+                  "Na página 3, a líder conservadora Kemi Badenoch evita reabrir o debate do Brexit para não dividir sua base diante dos Liberal Democratas, deixando espaço para o movimento 'Keep Britain Out' de Nigel Farage e Arron Banks."
                 ]
               },
               {
-                "caderno": "Mundo & Comércio · Pág. 4",
+                "caderno": "Comércio & Geopolítica · Pág. 4",
                 "pagina": "4",
-                "autor": "Redação Financial Times",
-                "titulo": "Trump anuncia novas tarifas de até 20% sobre 14 parceiros e UE apesar de revés eleitoral",
-                "titulo_original": "Trump sets new tariffs for list of countries",
+                "autor": "Barney Jopson, Amy Borrett e Henry Foy",
+                "titulo": "Trump anuncia novas tarifas a 14 parceiros e arquiva plano de negócios para persuadir Rússia sobre a Ucrânia",
+                "titulo_original": "Trump sets new tariffs for list of countries and shelves Russia business-for-peace plan",
+                "lide": "Washington recorre à Seção 301 contra China, UE, Japão e parceiros asiáticos após derrota na Suprema Corte, enquanto Moscou rejeita incentivos empresariais em Abu Dhabi.",
                 "texto_integral": [
-                  "O governo Donald Trump anunciou uma nova rodada de tarifas de até 20% sobre importações oriundas de mais de uma dúzia de grandes parceiros comerciais — incluindo União Europeia (15%), Japão, Coreia do Sul e Taiwan (15%), Vietnã e China (até 20%), além de Camboja, Indonésia, Malásia, Tailândia e Bangladesh (18%) e Singapura (10%).",
-                  "As taxas, propostas pelo representante comercial Jamieson Greer após a Suprema Corte derrubar em fevereiro as tarifas decretadas com base em poderes de emergência, substituem ou alinham alíquotas de acordos bilaterais sob acusação de subsídios industriais e excesso de capacidade produtiva.",
-                  "A ofensiva comercial ocorre menos de uma semana após o encontro entre Trump e Xi Jinping na Ásia — onde Washington aceitou estender a trégua tarifária apenas até janeiro por cobrar avanços em terras raras — e apesar da derrota republicana nas eleições legislativas de meio de mandato causada pela alta do custo de vida."
+                  "Mesmo após pesadas derrotas republicanas nas eleições de meio de mandato impulsionadas pela alta dos preços, Donald Trump anunciou uma nova rodada de tarifas contra 14 grandes parceiros comerciais sob a Seção 301, visando recompor parte das taxas globais anuladas pela Suprema Corte em fevereiro. A proposta do representante comercial Jamieson Greer prevê alíquota de até 20% sobre listas de produtos de China e Vietnã, 18% para Camboja, Indonésia, Malásia, Tailândia e Bangladesh, 15% para União Europeia, Japão, Coreia do Sul e Taiwan, e 10% para Singapura, após investigações sobre subsídios e excesso de capacidade industrial.",
+                  "As novas alíquotas não se somam integralmente às tarifas recíprocas firmadas em acordos anteriores, prevalecendo a taxa mais alta, embora EUA e China tenham prorrogado sua trégua comercial por apenas dois meses, até janeiro, diante de atritos sobre terras raras antes do encontro previsto entre Trump e Xi Jinping no G20 de Miami. Na mesma frente geopolítica, o FT revela que Jared Kushner e Steve Witkoff arquivaram silenciosamente as propostas de oferecer investimentos americanos em petróleo, titânio e gás russo como incentivo à paz na Ucrânia, depois que o Kremlin endureceu exigências territoriais na rodada de Abu Dhabi.",
+                  "Na Europa, a página 4 destaca ainda levantamento do FT mostrando que a renda domiciliar real dos imigrantes na Espanha cresceu 28% nos oito anos de governo Pedro Sánchez — ante alta de quase 19% entre espanhóis nativos, para mediana de € 22.505 —, acirrando a disputa com o partido de extrema direita Vox às vésperas das eleições gerais de 29 de novembro, em meio a uma alta de 45% nos aluguéis que alimenta o discurso anti-imigração."
                 ],
                 "pontos": [
-                  "China e Vietnã enfrentam teto de 20%, Sudeste Asiático 18% e UE, Japão e Coreia do Sul 15%.",
-                  "Medida tenta recompor arquitetura tarifária após derrota de fevereiro na Suprema Corte dos EUA."
+                  "No mesmo caderno, Michael Peel relata estudo da Caltech publicado na Science Robotics com nanorrobôs biodegradáveis ativados por infravermelho ('Brain Bots') que elevaram em cinco vezes a entrega de quimioterápicos ao cérebro de camundongos.",
+                  "A rede de inteligência financeira do Tesouro americano (FinCEN) retirou sistemas do ar após identificar acesso não autorizado a parte de sua infraestrutura."
                 ]
               },
               {
-                "caderno": "Europa & Eleições · Pág. 4",
-                "pagina": "4",
-                "autor": "Barney Jopson e Amy Borrett",
-                "titulo": "Na Espanha, renda de imigrantes cresceu mais que a dos nativos antes das eleições de domingo",
-                "titulo_original": "Income growth of migrants outpaces Spaniards'",
+                "caderno": "Europa & Segurança · Pág. 5",
+                "pagina": "5",
+                "autor": "Barbara Moens (Bruxelas) e John Paul Rathbone (Istambul)",
+                "titulo": "UE articula fundo de € 50 bi para IA e quântica após ciberataques iranianos a supermercados na Europa",
+                "titulo_original": "EU plans €50bn tech fund to close gap with US and China amid Iran freezer hacks",
+                "lide": "Bruxelas busca mobilizar capital de longo prazo diante de ofensivas digitais da Guarda Revolucionária e do alerta de Friedrich Merz sobre escalada russa no espaço.",
                 "texto_integral": [
-                  "Análise do Financial Times com base em dados oficiais do mercado de trabalho revela que a renda domiciliar real após impostos dos imigrantes na Espanha cresceu 28% durante os oito anos de governo do premiê socialista Pedro Sánchez — superando o ganho de quase 19% dos nascidos no país (mediana de € 22.505).",
-                  "Às vésperas da eleição geral antecipada de 29 de novembro, o dado ilustra a disputa central da campanha: enquanto Sánchez — apoiado pelo Banco Central Europeu, que calcula em 75% a contribuição de trabalhadores estrangeiros para o crescimento do PIB espanhol entre 2019 e 2026 — defende a imigração e o aumento de 66% no salário mínimo para sustentar previdência e serviços, o partido de extrema direita Vox culpa os estrangeiros pela alta de 45% nos aluguéis.",
-                  "Na mesma página, o FT informa ainda que a Casa Branca engavetou propostas lideradas por Jared Kushner e Steve Witkoff para usar negócios corporativos como incentivo de paz a Moscou diante do desinteresse do Kremlin, e que o órgão antilavagem do Tesouro americano (FinCEN) retirou sistemas do ar após suspeita de invasão cibernética."
+                  "A União Europeia prepara a criação de um fundo soberano denominado Sovereign Tech Equity Fund para mobilizar até € 50 bilhões em investimentos de longo prazo e alto risco em empresas europeias de inteligência artificial e computação quântica. Segundo autoridades envolvidas na formulação da proposta — que será detalhada em fevereiro pela presidente Ursula von der Leyen e pela comissária Henna Virkkunen junto ao Banco Europeu de Investimento —, Bruxelas pretende usar recursos públicos como capital semente para atrair até € 6 privados para cada euro investido e reduzir a dependência tecnológica de Estados Unidos e China.",
+                  "A busca por autonomia ocorre sob crescente pressão de segurança: serviços de inteligência franceses rastrearam até a unidade Shahid Kaveh (também conhecida como Cyber Av3ngers), ligada à Guarda Revolucionária do Irã, uma operação que elevou remotamente a temperatura de sistemas de refrigeração em centenas de supermercados na França em outubro, destruindo milhões de euros em alimentos, seguida de ataques semelhantes em outros dez países europeus em novembro. Em discurso ao Bundestag, o chanceler alemão Friedrich Merz também alertou que a Rússia está escalando ações híbridas na Europa e no espaço — diante de informes sobre possível arma nuclear espacial — ao defender aumento de 30% nos gastos de defesa e € 11,6 bilhões para a Ucrânia em 2027.",
+                  "No plano institucional e político do continente, capitais da zona do euro negociam um cargo alternativo para o ex-banqueiro central holandês Klaas Knot — possivelmente no Mecanismo Europeu de Estabilidade — para evitar disputa por voto na cúpula que deve confirmar o espanhol Pablo Hernández de Cos como sucessor de Christine Lagarde no BCE. Já na Turquia, o Conselho de Estado confirmou a anulação do diploma universitário do prefeito preso de Istambul, Ekrem İmamoğlu, barrando sua candidatura presidencial contra Recep Tayyip Erdoğan enquanto o escândalo financeiro 'Fonzi' provoca baixas na cúpula do partido governista AKP."
                 ],
                 "pontos": [
-                  "BCE atribui a trabalhadores estrangeiros 75% do crescimento do PIB espanhol desde 2019; Vox promete deportações.",
-                  "Em nota paralela, FinCEN do Tesouro dos EUA investiga acesso não autorizado e Casa Branca arquiva plano empresarial para a Rússia."
+                  "Na página 6, o presidente sul-africano Cyril Ramaphosa obteve vitória judicial que anulou o relatório parlamentar do caso Phala Phala e barrou a abertura imediata de impeachment.",
+                  "A Coreia do Norte fechou o recém-reaberto escritório diplomático da Suíça em Pyongyang e expulsou seu chefe em 48 horas após Berna sancionar um acampamento infantil ligado à guerra na Ucrânia."
+                ]
+              },
+              {
+                "caderno": "Tecnologia & Justiça · Pág. 8",
+                "pagina": "8",
+                "autor": "Rachel Rees, Emily Goldberg e Gregory Meyer",
+                "titulo": "Júri condena Huawei por furto de segredos e fraude bancária enquanto Jensen Huang e Shein enfrentam cerco nos EUA",
+                "titulo_original": "Huawei convicted of theft conspiracy as Huang and Shein face US scrutiny",
+                "lide": "Fabricante chinesa é considerada culpada em 10 de 12 acusações em Nova York; CEO da Nvidia depõe em três dias seguidos no Congresso e Shein paga US$ 100 mi à FTC.",
+                "texto_integral": [
+                  "Um júri federal de Nova York condenou a gigante chinesa Huawei em dez das doze acusações apresentadas por promotores americanos após dois meses de julgamento, incluindo conspiração para roubo de segredos comerciais e fraude bancária relacionada à ocultação de negócios no Irã por meio da subsidiária Skycom. Embora tenha sido absolvida da acusação mais grave de formação de organização criminosa, a empresa — que anunciou intenção de recorrer — foi responsabilizada por manter uma estrutura interna que premiava funcionários pela obtenção ilícita de códigos e projetos de hardware de concorrentes como a T-Mobile.",
+                  "Na mesma página corporativa, a recondução de Jensen Huang à chefia da Nvidia não estancou a ofensiva institucional em Washington: o executivo e o diretor jurídico Tim Teter foram convocados para três dias consecutivos de depoimentos fechados e abertos na Câmara e no Senado na próxima semana sobre a relação com a empresária Alice Huang, suspeita de vínculos com a inteligência chinesa, e sobre as vendas da empresa à cingapuriana Megaspeed. Paralelamente, a SEC investiga a contabilidade da Nvidia após quase metade da receita global ter sido registrada em Singapura, enquanto acionistas acionaram a empresa na Justiça por declarações enganosas.",
+                  "No varejo digital, a Shein concordou em pagar US$ 100 milhões à Comissão Federal de Comércio (FTC) para encerrar acusações de propaganda enganosa sobre a origem de tecidos de algodão, atrasos de meses em entregas e supressão deliberada de avaliações negativas de consumidores, sem admitir culpa. Em San Francisco, um juiz federal concedeu fiança de US$ 1 milhão com monitoramento eletrônico ao ex-engenheiro da OpenAI Abderrahman Alfozan, acusado de grampear salas da startup, afirmando que a promotoria ainda não demonstrou tratar-se de um caso comprovado de espionagem estatal saudita."
+                ],
+                "pontos": [
+                  "Na página 7, executivos das fabricantes de defesa Saab e Nammo alertaram que a Europa não pode normalizar tentativas russas de sabotagem, incêndios e aliciamento contra funcionários do setor.",
+                  "Na mesma página, a NBA busca captar mais de € 10 bilhões junto a fundos de private equity como Apollo, Ares e Blackstone para viabilizar novas arenas e sua liga europeia."
                 ]
               }
             ]
@@ -109368,103 +109349,126 @@
             "jornal": "The Guardian",
             "pais": "Reino Unido",
             "escopo": "internacional",
-            "total_paginas": 44,
+            "metodo_extracao": "apple_vision_ocr_en-US",
+            "total_paginas": 75,
             "imagem": "capas/1d280cd8296ba2060a0d8645a2e90c2e.jpg",
             "site": "https://www.theguardian.com",
-            "manchete": "Exclusivo: sequência de seis dias acima de 2°C quebra recorde global de temperatura",
-            "manchete_original": "Revealed: six-day streak 'smashes' the global temperature record",
-            "nota": "Termômetros planetários atingem pico inédito de 2,24°C acima da era pré-industrial sob efeito de fósseis e El Niño; edição traz sentença de tribunal da ONU sobre Unrwa e falência da Poundland.",
+            "manchete": "Quase 43% das amostras de peru moído da maior produtora dos EUA têm salmonela e superbactérias resistentes",
+            "manchete_original": "High levels of salmonella found in some products from nation's biggest turkey producer",
+            "nota": "A edição norte-americana do Guardian traz como destaque principal a investigação sobre contaminação por salmonela e bactérias resistentes a antibióticos nos abatedouros da Butterball às vésperas do Dia de Ação de Graças, acompanhada das marés recordes do Super El Niño na Califórnia, da reação firme de Brasil e China às novas tarifas de Donald Trump, de vitórias judiciais sobre a Primeira Emenda e moradia em Nova York, e da alta da inflação americana a 3,8%.",
             "resumo_edicao": [
-              "Reportagem de capa do Guardian revela seis dias seguidos de temperatura global acima de 2°C sobre o nível pré-industrial, com pico de 2,24°C e previsão do Met Office de salto acelerado de CO2 por secas tropicais.",
-              "A edição destaca ainda a decisão de um tribunal da ONU censurando demissões na Unrwa baseadas em alegações israelenses não provadas, o pedido de concordata da rede Poundland ameaçando 10 mil vagas e o recurso urgente da BBC contra processo de US$ 10 bi de Trump."
+              "Nas páginas iniciais de saúde pública e clima, o Guardian detalha inspeções federais mostrando taxas de salmonela muito acima do limite nos frigoríficos da Butterball — agravadas pelo ritmo acelerado das linhas de abate e pelo uso rotineiro de antibióticos na pecuária —, além das inundações costeiras causadas por 'king tides' na Califórnia e do adiamento inédito desde 1971 do desfile da Macy's em Nova York.",
+              "Nos cadernos políticos e econômicos, o jornal acompanha a reação de Brasil, China, Índia e Japão ao novo pacote tarifário da Casa Branca, a liminar federal que barrou retaliações da FCC contra a rede ABC, a decisão judicial que manteve o congelamento de aluguéis defendido pelo prefeito Zohran Mamdani, o salto da inflação americana para 3,8% e o apelo de uma criança venezuelana detida pelo ICE."
             ],
             "editorial": {
-              "titulo": "Clima em ebulição após fracasso da COP31 exige abandono urgente dos fósseis",
+              "pagina_origem": 1,
+              "titulo": "Desregulamentação, custo de vida e freios judiciais nos Estados Unidos",
               "texto": [
-                "A sequência inédita de seis dias consecutivos em que a temperatura média da superfície terrestre superou em mais de 2°C os níveis pré-industriais — culminando em 2,24°C na segunda-feira segundo o serviço europeu Copernicus — não configura ainda violação permanente do teto de longo prazo do Acordo de Paris, mas soa um alarme inequívoco sobre a aceleração do aquecimento.",
-                "Impulsionado pela queima contínua de combustíveis fósseis e por um El Niño comparável apenas ao de 1870 em anomalia no Pacífico, o calor adicional já provoca secas severas na Amazônia e na Indonésia, reduzindo a absorção natural de carbono e acelerando em 3,5 partes por milhão o acúmulo anual de CO2 na atmosfera.",
-                "Depois de o calor extremo matar mais de 50 mil pessoas na União Europeia e 5 mil no Reino Unido apenas neste ano e de a COP31 na Turquia ruir sem acordo pelo bloqueio dos petroestados, os governos não têm mais margem para adiar planos de adaptação nem a eliminação dos hidrocarbonetos."
+                "A edição do Guardian compõe um retrato convergente das tensões estruturais nos Estados Unidos às vésperas do feriado de Ação de Graças. Na frente regulatória, reportagens baseadas em dados oficiais do Departamento de Agricultura apontam que a flexibilização da velocidade das linhas de abate e o consumo crescente de antibióticos na agroindústria favorecem índices elevados de salmonela e superbactérias em produtos amplamente distribuídos no varejo nacional.",
+                "No plano institucional e econômico, enquanto a Casa Branca dobra a aposta em tarifas unilaterais contra 14 parceiros comerciais e enfrenta nova aceleração inflacionária para 3,8% ao ano, o Poder Judiciário voltou a atuar como contrapeso em frentes distintas: bloqueou a ofensiva da Comissão Federal de Comunicações contra licenças da rede ABC por retaliação editorial e validou o congelamento de aluguéis em cerca de um milhão de apartamentos estabilizados em Nova York."
               ]
             },
             "reportagens": [
               {
-                "caderno": "Primeira Página & Clima · Pág. 2",
-                "pagina": "1",
-                "autor": "Jonathan Watts",
-                "titulo": "Sequência de seis dias quebra recorde global e supera 2°C acima da era pré-industrial",
-                "titulo_original": "Revealed: six-day streak 'smashes' the global temperature record",
+                "caderno": "Capa e Saúde Pública · Pág. 1 e 2",
+                "pagina": "1 e 2",
+                "autor": "Luke Barratt",
+                "titulo": "Quase 43% das amostras de peru moído da maior produtora dos EUA têm salmonela e superbactérias resistentes",
+                "titulo_original": "High levels of salmonella found in some products from nation's biggest turkey producer",
+                "lide": "Dados do USDA analisados pela publicação Source Material revelam contaminação bem acima do limite regulatório de 13,5% em frigoríficos da Butterball que abastecem grandes redes.",
                 "texto_integral": [
-                  "Pela primeira vez na série histórica observacional, o planeta atravessou seis dias consecutivos com temperatura média global superior a 2°C acima da linha de base pré-industrial de 1850–1900, atingindo na segunda-feira o pico inédito de +2,24°C — superando com folga a marca anterior de +2,05°C registrada em 2023.",
-                  "Segundo Samantha Burgess, do serviço climático europeu Copernicus, e o pesquisador Zeke Hausfather, da Berkeley Earth, a escalada combina o aquecimento estrutural causado por combustíveis fósseis com um El Niño excepcional previsto para atingir o auge até janeiro.",
-                  "O centro Hadley do Met Office britânico projeta agora um salto de 3,5 ppm na concentração atmosférica de CO2 para o próximo ano — quase o dobro da trajetória compatível com a meta de 1,5°C — porque secas na Amazônia e na Indonésia enfraquecem a absorção de carbono pelas florestas tropicais e aumentam queimadas."
+                  "Inspetores do Serviço de Segurança e Inspeção Alimentar (FSIS) do Departamento de Agricultura dos Estados Unidos identificaram presença de salmonela em quase 43% das amostras de carne de peru moída ou picada coletadas ao longo do último ano em quatro abatedouros da Butterball, maior produtora do país. Na unidade de Mount Olive, na Carolina do Norte — que abate 285 mil aves por semana e fornece para Walmart, Costco e Kroger —, a incidência chegou a 36%, quase o triplo do teto aceitável de 13,5% fixado pelo órgão, embora não haja multas nem recolhimento obrigatório por ultrapassar o limite.",
+                  "Embora nenhuma contaminação tenha sido registrada em aves inteiras ou produtos pré-cozidos, exames feitos nas vísceras de aves abatidas na Butterball apontaram que dois terços das amostras com salmonela ou campylobacter apresentavam cepas resistentes a pelo menos um antibiótico. O problema não se restringe à empresa: dados federais mostraram resistência antimicrobiana em 61% das amostras positivas na rival Jennie-O (onde a contaminação de carne moída foi de 7%), 55% na Foster Farms e 51% na Koch Foods.",
+                  "Especialistas em segurança alimentar ouvidos pelo Guardian atribuem a escalada à autorização do governo Trump para acelerar as linhas de abate — dificultando o controle higiênico durante a evisceração — e à alta de 16% nas vendas de antibióticos para a agropecuária em 2024 segundo a FDA. A Butterball afirmou cumprir normas rigorosas baseadas em ciência e defendeu que o USDA meça a carga bacteriana e não apenas a presença do patógeno, enquanto entidades de saúde pública e a OMS alertam para o avanço de infecções resistentes que já causam cerca de 25,5 mil internações e 435 mortes anuais nos EUA."
                 ],
                 "pontos": [
-                  "Temperatura média global marcou +2,24°C na segunda-feira, superando antigo recorde diário de +2,05°C.",
-                  "Met Office prevê aceleração de 3,5 ppm no CO2 atmosférico devido a secas tropicais induzidas pelo El Niño."
+                  "Na página 2, a tempestade esperada para esta quinta-feira levou Nova York a adiar o tradicional desfile da Macy's para sábado — a primeira remarcação por mau tempo na história centenária do evento, cujos balões só haviam ficado no chão em 1971.",
+                  "Cerca de 60% dos perus da Butterball não receberam antibióticos no último ano, segundo a empresa, enquanto ativistas apontam que a criação intensiva em galpões superlotados inviabiliza a eliminação do uso profilático."
                 ]
               },
               {
-                "caderno": "Primeira Página & Oriente Médio · Pág. 4",
+                "caderno": "Clima & Costa Oeste · Pág. 3 e 4",
+                "pagina": "3 e 4",
+                "autor": "Lois Beckett",
+                "titulo": "Marés recordes impulsionadas pelo Super El Niño inundam litoral da Califórnia e derrubam píer histórico",
+                "titulo_original": "Record-breaking California tides cause major flooding of roads and businesses",
+                "lide": "Fenômeno combinado a uma onda Kelvin no Pacífico elevou o nível do mar a marcas históricas de San Diego à Baía de São Francisco e obrigou o fechamento de praias e vias costeiras.",
+                "texto_integral": [
+                  "Ondas gigantes e marés extraordinárias impulsionadas pelo Super El Niño atingiram recordes históricos ao longo do litoral da Califórnia nesta quarta-feira, inundando vias costeiras, comércios e residências à beira-mar. Em Pacifica, ao sul de São Francisco, a extremidade de um píer histórico desabou no oceano após ser atingida por ondulações doze vezes mais intensas que a média de novembro, enquanto águas avançaram sobre a Rodovia 1 e trechos baixos próximos à Ponte Golden Gate.",
+                  "De acordo com o Serviço Meteorológico Nacional (NWS), Santa Bárbara (8,21 pés) e Los Angeles (8,19 pés) igualaram ou quebraram seus recordes históricos de maré alta, acompanhadas por La Jolla (8,11 pés) e por dados preliminares inéditos em Monterey (8,03 pés), levando autoridades municipais e do condado de Santa Cruz a interditarem praias até sexta-feira. Em São Francisco, o aeroporto internacional manteve o centro de emergências em alerta diante do tráfego da semana de Ação de Graças, mas saiu ileso após o pico da maré.",
+                  "O governador Gavin Newsom classificou o episódio como 'uma prévia do que está por vir' e cobrou soluções estruturais de longo prazo, enquanto autoridades locais apontaram o papel de uma gigantesca onda Kelvin que elevou o nível do Pacífico antes de coincidir com as chamadas 'king tides' sazonais. Meteorologistas advertiram que o maior risco ocorrerá entre o fim de dezembro e o fim de janeiro, caso novas marés extremas coincidam com tempestades de inverno."
+                ],
+                "pontos": [
+                  "No Oregon, imagens locais mostraram um morador e seu cão por pouco não serem arrastados por ondas súbitas em Cannon Beach.",
+                  "Em Sunset Beach, no condado de Orange, obras prévias de contenção feitas por moradores ajudaram a reduzir danos em residências costeiras."
+                ]
+              },
+              {
+                "caderno": "Comércio Exterior · Pág. 4",
                 "pagina": "4",
-                "autor": "Julian Borger",
-                "titulo": "Tribunal da ONU conclui que funcionários palestinos em Gaza foram demitidos sem provas",
-                "titulo_original": "UN sacked Palestinian aid workers over unproven Israeli allegations, tribunal rules",
+                "autor": "Redação The Guardian",
+                "titulo": "Brasil classifica ameaça tarifária de Trump como 'inaceitável' e China denuncia manipulação política",
+                "titulo_original": "Trump tariff threat 'unacceptable', says Brazil, as China denounces levies as baseless",
+                "lide": "Itamaraty reage à proposta de sobretaxa ao açúcar e de 10% sobre aeronaves da Embraer sem descartar retaliação, enquanto Pequim rebate argumento de excesso de capacidade.",
                 "texto_integral": [
-                  "Um tribunal administrativo de disputas da ONU deu ganho de causa a Abu Awad, um dos funcionários palestinos demitidos pela Unrwa em janeiro de 2024 após acusações israelenses de participação nos ataques de 7 de outubro, classificando os elementos apresentados contra ele como 'não comprovados' e de 'limitado valor probatório e confiabilidade'.",
-                  "A sentença revelou que a investigação interna da ONU não chegou a entrevistar os 19 servidores acusados e baseou-se quase integralmente em materiais fornecidos por Israel ou publicados por imprensa e grupos pró-Israel — incluindo interceptações telefônicas com possível erro de identidade por clonagem de cartão SIM e transcrições que não sustentavam vínculos com o Hamas.",
-                  "As demissões sumárias adotadas pelo então chefe da Unrwa Philippe Lazzarini — descritas por ele próprio em 2024 como 'devido processo reverso' na tentativa de aplacar doadores — não impediram a suspensão de US$ 450 milhões em verbas pelos EUA e outros 16 países. O tribunal determinou o pagamento de um ano de salário e US$ 5 mil por danos morais ao trabalhador."
+                  "O Brasil afirmou que não cederá à nova ofensiva tarifária dos Estados Unidos e a China acusou Washington de manipulação política após o governo Donald Trump propor tarifas adicionais contra 14 grandes parceiros comerciais. Em nota oficial divulgada nesta quarta-feira, o governo brasileiro classificou a medida unilateral como 'uma ação inaceitável dentro do processo negociador bilateral', protestando contra as taxas propostas sobre açúcar bruto e refinado e contra uma nova alíquota de 10% sobre aeronaves que atingiria diretamente a Embraer — sem descartar medidas retaliatórias.",
+                  "O representante comercial dos EUA, Jamieson Greer, sustentou à CNBC que os parceiros adotam práticas que distorcem mercados e corroem a manufatura americana, informando que o governo receberá contribuições setoriais e fará audiência pública em 25 de janeiro, o que empurra a entrada em vigor das tarifas para fevereiro ou março. A China enfrenta o teto mais alto do pacote, de 20% — podendo chegar a 45% somado a tributos anteriores —, ainda que Washington proponha isenção ampla para US$ 30 bilhões em bens chineses às vésperas do vencimento da trégua bilateral em 10 de janeiro de 2027.",
+                  "Em Washington, a embaixada chinesa e o Ministério das Relações Exteriores negaram que o país exporte excesso de capacidade e pediram diálogo em vez de guerra comercial, posição ecoada por manifestações de Índia, Vietnã, Taiwan e Japão. No Congresso americano, contudo, a medida enfrenta reação crescente: o senador democrata Ron Wyden, que assumirá o Comitê de Finanças em janeiro, prometeu usar todos os instrumentos disponíveis para encerrar 'o caos tarifário' e conter a escalada de preços ao consumidor."
                 ],
                 "pontos": [
-                  "Tribunal apontou falha probatória grave em interceptações e uso de documentos posteriores às demissões.",
-                  "Crise de financiamento gerada pelas acusações abriu rombo de US$ 450 milhões na agência humanitária."
+                  "Analistas do American Enterprise Institute criticaram o pacote contra a China por pouco alterar tarifas já vigentes e consideraram improvável qualquer mudança no modelo industrial de Pequim.",
+                  "Taipei afirmou estar confiante na manutenção da tarifa de 15% protegida por acordos de semicondutores assinados no início do ano."
                 ]
               },
               {
-                "caderno": "Primeira Página & Economia · Pág. 2",
-                "pagina": "2",
-                "autor": "Sarah Butler",
-                "titulo": "Colapso da rede Poundland coloca mais de 10 mil empregos em risco no Reino Unido",
-                "titulo_original": "Poundland collapse puts 10,000 jobs at risk",
-                "texto_integral": [
-                  "A rede varejista de preços baixos Poundland ingressou em processo de administração judicial nesta quarta-feira sob comando da consultoria AlixPartners, colocando mais de 10 mil postos diretos em risco imediato — além de até 30 mil vagas na cadeia de suprimentos — às vésperas do Natal.",
-                  "A falência ocorre após o fundo norte-americano Gordon Brothers, que adquiriu a rede da Pepco no ano passado pelo valor simbólico de £ 1, recusar duas ofertas de última hora (da norte-irlandesa Martin Property Group e da alemã Zachert Private Equity) e interromper aportes financeiros alegando vulnerabilidade a pressões inflacionárias.",
-                  "As lojas e centros de distribuição permanecem abertos enquanto os administradores buscam compradores em partes ou no todo. O sindicato Usdaw denunciou a decisão como 'devastadora' por ocorrer sem diálogo com trabalhadores e o premiê Andy Burnham prometeu empenho para tentar preservar vagas nas ruas comerciais britânicas."
-                ],
-                "pontos": [
-                  "AlixPartners assumiu administração judicial após Gordon Brothers cortar financiamento às portas do Natal.",
-                  "Cerca de 2 mil fornecedores enfrentam perdas milionárias por estoques já entregues à rede."
-                ]
-              },
-              {
-                "caderno": "Mídia & Justiça · Pág. 5",
+                "caderno": "Justiça & Imprensa · Pág. 5",
                 "pagina": "5",
-                "autor": "Michael Savage",
-                "titulo": "BBC recorre com urgência pedindo que tribunal dos EUA derrube ação de US$ 10 bi de Trump",
-                "titulo_original": "BBC lodges urgent appeal asking US court to throw out $10bn Trump defamation suit",
+                "autor": "Redação The Guardian",
+                "titulo": "Juíza federal barra ofensiva da FCC de Brendan Carr contra licenças da rede ABC",
+                "titulo_original": "Judge blocks Brendan Carr-led FCC from taking any further action against ABC's licenses",
+                "lide": "Magistrada Loren L. AliKhan apontou forte indício de retaliação política e violação da Primeira Emenda após críticas de Donald e Melania Trump ao apresentador Jimmy Kimmel.",
                 "texto_integral": [
-                  "A emissora pública britânica BBC protocolou recurso de urgência em corte superior norte-americana para tentar arquivar o processo de difamação de US$ 10 bilhões (£ 7,6 bilhões) movido por Donald Trump, após o juiz federal da Flórida Jeffrey T. Kuntz — nomeado pelo próprio presidente — autorizar o prosseguimento da ação até julgamento.",
-                  "A ação contesta a edição feita no documentário 'Trump: A Second Chance?' (Panorama, 2024), que uniu trechos separados por 55 minutos do discurso de Trump antes da invasão ao Capitólio em 6 de janeiro de 2021. Embora já tenha pedido desculpas pela montagem, a BBC nega difamação e sustenta que a corte da Flórida carece absolutamente de jurisdição.",
-                  "Na apelação, os advogados enfatizam que o programa foi exibido exclusivamente nos canais britânicos e no iPlayer do Reino Unido, com bloqueios técnicos para impedir acesso nos Estados Unidos, sem qualquer prova de visualização na Flórida. O depoimento juramentado de Trump no caso segue adiado para janeiro."
+                  "A juíza federal Loren L. AliKhan concedeu nesta quarta-feira liminar que impede a Comissão Federal de Comunicações (FCC), presidida por Brendan Carr, de tomar qualquer medida para restringir a renovação das oito licenças locais da rede de televisão ABC. A emissora havia processado o órgão em agosto após receber ordem incomum de renovação antecipada, justificada pela agência como parte de uma investigação sobre programas de Diversidade, Equidade e Inclusão (DEI), mas vista pela rede como punição por sua linha editorial.",
+                  "Na decisão, a magistrada rejeitou o pedido da FCC para arquivar a ação e concluiu que a ABC tem alta probabilidade de vencer na alegação de retaliação contrária à Primeira Emenda. AliKhan destacou que a ordem de renovação antecipada surgiu mais de um ano após a abertura do processo de DEI e exatamente um dia depois de Donald Trump criticar nas redes sociais um quadro do apresentador Jimmy Kimmel — configurando, segundo a juíza, um 'descompasso significativo' com aparência de pretexto e risco existencial capaz de intimidar o jornalismo.",
+                  "Embora tenha negado pedido mais amplo da ABC para proibir manifestações informais do órgão sobre discricionariedade editorial, a decisão foi celebrada pela emissora e pela única comissária democrata da FCC, Anna M. Gomez, que afirmou ter o tribunal imposto um freio ao uso do licenciamento como arma de censura. A direção da FCC classificou a liminar como equivocada e afirmou que recorrerá para sustentar sua autoridade regulatória."
                 ],
                 "pontos": [
-                  "BBC contesta decisão do juiz Jeffrey Kuntz alegando inexistência de exibição ou acesso ao programa na Flórida.",
-                  "Processo bilionário aumenta pressão financeira e política sobre a emissora durante negociações de sua carta régia."
+                  "Decisão reforça precedentes de proteção a emissoras diante de ameaças regulatórias motivadas por críticas presidenciais.",
+                  "Segundo Anna M. Gomez, o caso demonstra que 'as ameaças dessa FCC desmoronam quando confrontadas judicialmente'."
                 ]
               },
               {
-                "caderno": "Reino Unido · Pág. 6",
-                "pagina": "6",
-                "autor": "Rowena Mason, Jessica Elgot e Kiran Stacey",
-                "titulo": "Tesouro britânico resiste ao custo de plano contra desemprego juvenil e avalia cortes no PIP",
-                "titulo_original": "Treasury raises cost concerns over support for youth unemployment",
+                "caderno": "Cidades & Moradia · Pág. 5 e 6",
+                "pagina": "5 e 6",
+                "autor": "Redação The Guardian",
+                "titulo": "Justiça de Nova York mantém congelamento de aluguéis em 1 milhão de imóveis e dá vitória a Zohran Mamdani",
+                "titulo_original": "Mamdani wins against landlords in New York rent freeze lawsuit: 'Housing is not a luxury'",
+                "lide": "Tribunal de Manhattan rejeitou ação de proprietários contra decisão do conselho municipal que congelou reajustes em contratos de um e dois anos a partir de outubro.",
                 "texto_integral": [
-                  "O Tesouro britânico, comandado pelo chanceler John Healey, manifestou forte reserva quanto aos custos iniciais do plano elaborado por Alan Milburn para combater o desemprego juvenil, que prevê atingir £ 5,8 bilhões anuais até o fim da década em orientação profissional, cursos técnicos e incentivos a empresas.",
-                  "Diante da pressão para conter mais rapidamente a conta de seguridade social, ministros analisam reduzir a ajuda inicial aos menores de 25 anos ou utilizar a reforma paralela desenhada pelo ministro Stephen Timms para restringir o pagamento de auxílio por invalidez (PIP) a adultos acima de 25 anos sem custos extras comprovados — medida que, segundo a Resolution Foundation, pode cortar o benefício de até um em cada seis segurados (mais de 600 mil pessoas).",
-                  "O governo Andy Burnham enfrenta um dilema político agudo: enquanto Timms propôs 'reumanizar' as perícias médicas e facilitar trocas voluntárias por serviços, alas trabalhistas temem que o corte para jovens em duas faixas gere nova rebelião na bancada antes do livro branco do início do próximo ano."
+                  "Um juiz da Suprema Corte estadual em Manhattan rejeitou nesta quarta-feira a ação movida por proprietários de imóveis para derrubar o congelamento de aluguéis em cerca de um milhão de apartamentos com renda estabilizada na cidade de Nova York, assegurando vitória política relevante ao prefeito socialista democrata Zohran Mamdani. A medida havia sido aprovada em junho pelo Conselho de Diretrizes de Aluguel da cidade para contratos de um e dois anos iniciados a partir de 1º de outubro.",
+                  "Em sua decisão, o juiz Brendan Lantry afirmou que não cabe ao tribunal julgar a conveniência econômica do congelamento diante de possíveis efeitos colaterais no mercado imobiliário, mas apenas verificar se o conselho teve base racional e não agiu de maneira arbitrária ou caprichosa. Ao concluir que os autores não provaram irregularidade no processo administrativo, o magistrado manteve a validade integral da resolução — ainda que tenha criticado a promessa de campanha de Mamdani por lembrar que prefeitos não têm autoridade unilateral para congelar aluguéis sem aval do conselho.",
+                  "Mamdani celebrou a sentença em nota como 'uma vitória dos inquilinos, da acessibilidade e do princípio de que os trabalhadores nova-iorquinos merecem viver na cidade', acrescentando que 'moradia não é um luxo, é uma necessidade básica'. Do lado dos proprietários, que alegavam elevação de custos com seguros, impostos e manutenção, o advogado Randy Mastro declarou-se desapontado e informou que os demandantes avaliam recorrer."
                 ],
                 "pontos": [
-                  "Chanceler John Healey cobra retorno fiscal mais rápido do plano de £ 5,8 bi de Alan Milburn.",
-                  "Proposta paralela de Stephen Timms sobre o PIP pode excluir até 600 mil adultos que não comprovem custos adicionais."
+                  "Na página 6, o Guardian relata reação em fórum feminino de liderança no Canadá após falas sexistas do fundador da Lululemon, Chip Wilson.",
+                  "Na mesma página e na página 7, o jornal publica o obituário de Andy Taylor, guitarrista do Duran Duran morto aos 65 anos em decorrência de câncer de próstata."
+                ]
+              },
+              {
+                "caderno": "Economia & Imigração · Pág. 7 e 8",
+                "pagina": "7 e 8",
+                "autor": "Lauren Aratani, Blake Paterson e Ramon Antonio Vargas",
+                "titulo": "Inflação nos EUA salta a 3,8% e pressiona Fed enquanto menina venezuelana detida pelo ICE escreve a Trump",
+                "titulo_original": "US inflation hits highest since May as detained child implores Trump for ICE release",
+                "lide": "Alta anual de preços acelera às vésperas da reunião do banco central americano em dezembro; no Texas, criança de 7 anos ultrapassa limite judicial de 20 dias sob custódia.",
+                "texto_integral": [
+                  "Novos dados oficiais divulgados nesta quarta-feira mostraram que a inflação ao consumidor nos Estados Unidos acelerou para 3,8% em termos anuais em outubro — o maior patamar desde maio —, elevando a pressão para que o Federal Reserve promova seu segundo aumento de juros no ano na reunião de dezembro. Segundo o Departamento de Comércio, o índice PCE preferido pelo banco central avançou 0,3% no mês (após 0,4% no CPI), enquanto atas do encontro anterior já apontavam temor de diretores quanto à persistência inflacionária acima da meta de 2% em meio à turbulência de ações de inteligência artificial e ao salto de 4,1% na queda da Nvidia na quarta.",
+                  "No caderno nacional, o Guardian relata o caso de Charlotte Ortiz, uma menina venezuelana de 7 anos que escreveu uma carta à mão a Donald Trump pedindo para sair do centro de detenção familiar de Dilley, no Texas, para rever o pai e voltar à escola. Presa com a mãe, Karen, em Nova Orleans após a revogação pela Casa Branca do programa humanitário que havia permitido o ingresso regular da família em 2024, a criança completou 29 dias sob custódia — acima do teto federal de 20 dias estabelecido por decisão judicial para menores migrantes.",
+                  "O episódio ganha peso político com a posse iminente da governadora eleita do Texas, a democrata Gina Hinojosa, que prometeu usar o poder estadual de licenciamento para impedir presídios privados de manterem crianças detidas, enquanto o DHS alegou haver ordem final de remoção contra a mãe por ausência a audiência que a defesa atribui a falha de notificação. A página 8 registra ainda a recuperação dos corpos de seis vítimas de queda de avião no Golfo do México, na costa do Mississippi."
+                ],
+                "pontos": [
+                  "Na página 7, Brad Pitt e Angelina Jolie encerraram fora dos tribunais a disputa judicial de anos pela vinícola francesa Château Miraval.",
+                  "Ações da Anthropic encerraram o pregão a US$ 82,79, ligeiramente abaixo do preço de estreia de US$ 83 na semana passada."
                 ]
               }
             ]
@@ -109852,17 +109856,17 @@
           {
             "jornal": "Financial Times",
             "pagina": "1",
-            "autor": "William Sandlund",
-            "titulo": "Ações de tecnologia oscilam fortemente com dúvidas sobre a sustentabilidade do ciclo de IA",
-            "nota": "Nasdaq 100 chega a cair 4,7% encaminhando pior novembro desde 2008; FT de 26/11 também traz cartel de perfumarias multado em € 557 mi, salto de 26% na conta de luz britânica e fusão Tesla-SpaceX.",
+            "autor": "William Sandlund (com David Keohane)",
+            "titulo": "Ações globais de tecnologia despencam com dúvidas sobre IA e retorno de Jensen Huang à Nvidia",
+            "nota": "A edição do Financial Times destaca a multa antitruste de € 557 milhões aplicada por UE e Reino Unido contra Firmenich, Givaudan e IFF, a forte volatilidade nas bolsas globais em meio a dúvidas sobre a sustentabilidade dos investimentos em inteligência artificial e a nova ofensiva tarifária de Donald Trump contra 14 parceiros comerciais, além do salto de 26% no teto de energia britânico e da saída do negociador Michael Ellam.",
             "texto_integral": [
-              "As ações globais de tecnologia enfrentaram intensa volatilidade nas últimas sessões, com o índice Nasdaq 100 chegando a recuar 4,7% durante o pregão — caminhando para uma perda mensal próxima de 10% em novembro, potencialmente sua pior marca desde a crise financeira global de 2008 — à medida que investidores questionam a durabilidade da corrida pela inteligência artificial.",
-              "Os papéis da Nvidia caíram 5% à tarde, apagando parte do rali provocado na segunda-feira pelo retorno inesperado de Jensen Huang ao comando da fabricante de chips, enquanto ações da Anthropic recuaram abaixo do preço de listagem de US$ 83 e chegaram a perder a marca de US$ 1 trilhão em valor de mercado. Na Ásia, o índice sul-coreano Kospi tombou 6,2% com quedas de 11,1% na SK Hynix e de 9,9% na Samsung Electronics.",
-              "Com o índice VIX de volatilidade dobrando desde setembro para cerca de 30 pontos e o anúncio de novas tarifas americanas agravando a aversão ao risco, gestores buscaram proteção em títulos soberanos dos EUA de dez anos, derrubando o rendimento em 0,07 ponto percentual para 4,83%."
+              "As ações globais de tecnologia atravessaram nova sessão de forte volatilidade nesta quarta-feira, com o índice Nasdaq 100 chegando a recuar 4,7% antes de reduzir parte das perdas, mantendo o indicador em rota para uma queda mensal próxima de 10% — o pior desempenho desde a crise financeira de 2008. Na Ásia, o índice sul-coreano Kospi tombou 6,2%, puxado pelos tombos de 11,1% da SK Hynix e 9,9% da Samsung Electronics, enquanto o japonês Nikkei 225 recuou 2,8%.",
+              "A euforia observada na segunda-feira com a recondução de Jensen Huang ao comando da Nvidia deu lugar a nova onda de vendas: os papéis da fabricante de chips cederam 5% à tarde, enquanto ações da Anthropic chegaram a cair abaixo do preço de estreia de US$ 83 e a avaliação de mercado da Micron e de fornecedores do ecossistema de IA também oscilou com força. Como resumiu Luca Paolini, estrategista-chefe da Pictet Asset Management, 'é possível trazer um CEO de volta, mas não o entusiasmo do mercado'.",
+              "Analistas ouvidos pelo jornal atribuíram a aversão ao risco à combinação de juros elevados, crescente reação política nos Estados Unidos após as eleições legislativas e os novos anúncios tarifários de Donald Trump. Com o índice de volatilidade VIX próximo de 30 pontos — cerca do dobro do patamar de setembro —, investidores buscaram abrigo em títulos do Tesouro americano, empurrando o rendimento dos papéis de 10 anos em 0,07 ponto percentual para 4,83%."
             ],
             "pontos": [
-              "Nasdaq 100 caiu até 4,7% e acumula recuo próximo de 10% no mês; VIX subiu a 30 pontos.",
-              "Nvidia recuou 5%, Anthropic caiu abaixo de US$ 83 e Kospi perdeu 6,2% em Seul."
+              "Na mesma capa, o FT informa que cinco conselheiros ligados a Tesla e SpaceX buscam estruturar uma fusão de US$ 3,5 trilhões evitando novos litígios de acionistas.",
+              "Pela primeira vez, a China enviou um astronauta estrangeiro — o piloto paquistanês Muhammad Zeeshan Ali — à estação espacial Tiangong para mais de 90 experimentos."
             ]
           },
           {
@@ -109882,7 +109886,11 @@
             ]
           }
         ]
-      }
+      },
+      "audio": "audios/boletim_2026-11-26.mp3",
+      "audio_duracao": "42:26",
+      "audio_tamanho": 10187981,
+      "audio_titulo": "Boletim em Áudio · 26 de novembro de 2026"
     }
   },
   "cine_edicoes": {
