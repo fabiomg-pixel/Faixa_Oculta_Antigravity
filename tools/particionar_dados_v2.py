@@ -514,25 +514,35 @@ def particionar_dados(caminho_revista="data/revista.json", base_dir="data"):
     if tamanho_boot > 148 * 1024 and isinstance(boot_obj["hoje_inicial"].get("jornais"), dict):
         jornais_boot = boot_obj["hoje_inicial"]["jornais"]
         for m in jornais_boot.get("manchetes", []):
-            re_val = m.get("resumo_edicao")
-            if isinstance(re_val, list) and re_val:
-                m["resumo_edicao"] = [str(re_val[0])[:160]]
-            elif isinstance(re_val, str) and len(re_val) > 160:
-                m["resumo_edicao"] = re_val[:157] + "..."
+            m["resumo_edicao"] = []
+            nota_m = str(m.get("nota") or "")
+            if len(nota_m) > 160:
+                m["nota"] = nota_m[:157] + "..."
             ed = m.get("editorial")
             if isinstance(ed, dict):
                 ed.pop("texto", None)
                 if ed.get("texto_integral"):
-                    ed["texto_integral"] = [str(ed["texto_integral"][0])[:140]]
+                    ed["texto_integral"] = [str(ed["texto_integral"][0])[:100]]
             for rep in m.get("reportagens", []):
                 rep.pop("pontos", None)
                 rep.pop("texto", None)
                 rep.pop("citacao", None)
                 rep.pop("lide", None)
                 rep.pop("titulo_original", None)
+                # Preserva stub de 1 elemento <=145 chars para manter hidratação automática em abrirJornalCompleto()
                 if rep.get("texto_integral"):
-                    rep["texto_integral"] = [str(rep["texto_integral"][0])[:140]]
+                    rep["texto_integral"] = [""]
         jornais_boot["leitura"] = []
+        with open(boot_path, "w", encoding="utf-8") as f:
+            json.dump(boot_obj, f, ensure_ascii=False, separators=(",", ":"))
+        tamanho_boot = os.path.getsize(boot_path)
+
+    if tamanho_boot > 148 * 1024 and isinstance(boot_obj.get("dias_index"), list):
+        for idx_d, d_meta in enumerate(boot_obj["dias_index"]):
+            if idx_d >= 10:
+                tit_d = str(d_meta.get("titulo") or "")
+                if len(tit_d) > 96:
+                    d_meta["titulo"] = tit_d[:93] + "..."
         with open(boot_path, "w", encoding="utf-8") as f:
             json.dump(boot_obj, f, ensure_ascii=False, separators=(",", ":"))
         tamanho_boot = os.path.getsize(boot_path)
