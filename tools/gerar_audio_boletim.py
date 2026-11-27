@@ -142,7 +142,7 @@ def gerar_audio(roteiro_txt, saida_mp3, voz="pt-BR-AntonioNeural"):
             try:
                 rb = subprocess.run(
                     [edge_tts_bin, "--voice", voz, "--rate=+3%", "--file", b_txt, "--write-media", b_mp3],
-                    capture_output=True, timeout=45
+                    capture_output=True, timeout=120
                 )
                 if rb.returncode == 0 and os.path.exists(b_mp3) and os.path.getsize(b_mp3) > 2000:
                     partes_mp3.append(b_mp3)
