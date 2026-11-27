@@ -547,6 +547,15 @@ def particionar_dados(caminho_revista="data/revista.json", base_dir="data"):
             json.dump(boot_obj, f, ensure_ascii=False, separators=(",", ":"))
         tamanho_boot = os.path.getsize(boot_path)
 
+    if tamanho_boot > 148 * 1024 and isinstance(boot_obj["hoje_inicial"].get("notas"), list):
+        for n in boot_obj["hoje_inicial"]["notas"]:
+            tc = n.get("texto_completo")
+            if isinstance(tc, list) and len(tc) > 1:
+                n["texto_completo"] = tc[:1]
+        with open(boot_path, "w", encoding="utf-8") as f:
+            json.dump(boot_obj, f, ensure_ascii=False, separators=(",", ":"))
+        tamanho_boot = os.path.getsize(boot_path)
+
     return {
         "boot_path": boot_path,
         "boot_bytes": tamanho_boot,
